@@ -70,6 +70,10 @@ Outputs are written to:
 discoveries/morphwiki_quantum/book/
 ```
 
+Current generated book:
+
+[Quantum Theory: As A Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+
 The important files are:
 
 ```text
