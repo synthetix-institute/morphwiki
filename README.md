@@ -141,8 +141,11 @@ evidence.
 ## Adapt To Another Field
 
 MorphWiki is portable, but a new field is not created by renaming quantum terms.
-Each field needs its own constructor grammar: the sequence of roles that makes a
-claim predictive in that field.
+Each field needs its own constructor grammar, but that grammar should not be
+invented by hand. In the quantum build, the constructor spine was inferred from
+topic profiles, witness links, and sparse-attention structure, then named in
+human-readable form. A new field should follow the same pattern: generate a
+candidate spine from the corpus first, then audit and edit the labels.
 
 Minimal adaptation path:
 
@@ -150,26 +153,27 @@ Minimal adaptation path:
 1. Choose a field
    active matter, soft robotics, biological intelligence, patents, AI safety, ...
 
-2. Define the constructor spine
-   What sequence turns a field-specific statement into a testable mechanism?
-
-3. Build topic/source pages
+2. Build topic/source pages
    Use Wikipedia pages, PDFs, reviews, papers, patents, or curated notes.
 
-4. Export a field topic index
+3. Export a field topic index
    Adapt scripts/export_morphwiki_topic_index.py.
 
-5. Build the field tree
-   Adapt scripts/build_morphwiki_quantum_tree.py.
+4. Infer a candidate constructor spine
+   Use route/fiber profiles and sparse attention to find the dominant sequence
+   of roles in the field.
 
-6. Run sparse-attention analysis
+5. Build the field tree
+   Adapt scripts/build_morphwiki_quantum_tree.py, using the inferred spine.
+
+6. Run sparse-attention analysis again
    Adapt scripts/analyze_morphwiki_rewrite_transition.py.
 
 7. Build the book or site
    Adapt scripts/build_morphwiki_quantum_book.py.
 ```
 
-Examples of field-specific spines:
+Examples of possible field-specific spines after inference and audit:
 
 ```text
 material intelligence:
@@ -198,16 +202,17 @@ public Hyperion witness-index format
 Field-specific parts:
 
 ```text
-constructor spine
+inferred constructor spine
 role vocabulary
 topic preset
 mechanism language
 equations, measurements, and falsifying controls
 ```
 
-The rule is simple: if the field-specific roles are not defined, MorphWiki
-degenerates into generic prose. A useful field adaptation must say what is being
-carried, what acts, what is read out, and what would falsify the construction.
+The rule is simple: if the field-specific roles are not inferred and audited,
+MorphWiki degenerates into generic prose. A useful field adaptation must discover
+which roles are active in the corpus, then state what is being carried, what
+acts, what is read out, and what would falsify the construction.
 
 ## Scientific Boundary
 
