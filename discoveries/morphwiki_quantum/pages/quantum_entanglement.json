@@ -1,0 +1,1101 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-15T06:27:11.310702+00:00",
+  "wikipedia": {
+    "title": "Quantum entanglement",
+    "pageid": 25336,
+    "url": "https://en.wikipedia.org/wiki/Quantum_entanglement",
+    "description": "Physics phenomenon",
+    "summary": "Quantum entanglement is the phenomenon in which the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+    "lang": "en",
+    "license_note": "Wikipedia text is CC BY-SA; this export uses Wikipedia as the topic scaffold and keeps attribution metadata."
+  },
+  "hyperion": {
+    "source_index": "discoveries/fieldbridge_static_index/hyperion_static_index.json",
+    "route_profile": {
+      "transport_flow_route": 0.2665,
+      "constraint_closure_route": 0.2148,
+      "spectral_operator_route": 0.2163,
+      "boundary_weak_form_route": 0.1535,
+      "commutator_incompatibility_route": 0.076,
+      "discrete_protocol_route": 0.1491
+    },
+    "fiber_profile": {
+      "structure": 0.3333,
+      "spectral": 0.3333,
+      "geometry": 0.3333,
+      "syntax": 0.5858,
+      "entropy": 0.4142
+    },
+    "topic_route_profile_from_wikipedia": {
+      "transport_flow_route": 0.356,
+      "constraint_closure_route": 0.5852,
+      "spectral_operator_route": 0.356,
+      "boundary_weak_form_route": 0.5852,
+      "commutator_incompatibility_route": 0.356,
+      "discrete_protocol_route": 0.5852
+    },
+    "topic_fiber_profile_from_wikipedia": {
+      "structure": 0.356,
+      "spectral": 0.0,
+      "geometry": 0.0,
+      "syntax": 0.356,
+      "entropy": 0.356
+    },
+    "equation_witnesses": [
+      {
+        "record_id": "hyperion:EW000000596",
+        "title": "Α11 witness EW000000596 / arXiv:1604.05385",
+        "score": 0.476519,
+        "route_score": 0.742119,
+        "lexical_score": 0.007502,
+        "equation": "+1} |j rangle langle j|_{ chi_j- chi_{j-1}}. end{equation} to begin, we represent $ psi(x, tau)$ as, begin{equation} | psi rangle = sum_{l=1}^ infty d_l |l rangle |0 rangle = sum_{l=1}^ infty d_l sum_{j=1}^{n+1} |l_j rangle |j\\ gle, end{equation} where $|l rangle$ represents ${ psi^0_l(x)}$, and $|l_j rangle$ is the unit ket for the (unnormalized) truncated eigenfunction in the $j$-th well, such that $ {|j rangle|l_j rangle }$ is a complete orthonormal...",
+        "equation_excerpt": "",
+        "witness_quality": 0.8798,
+        "invariant": "Ξ00 :: Ω00 ⊕ Ω12 ⊕ Ω14 :: Λ27 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + discrete_protocol + transport_flow + constraint_closure :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α11",
+        "omega_tokens": "Ω00 ⊕ Ω12 ⊕ Ω14",
+        "paper_id": "1604.05385",
+        "arxiv_url": "https://arxiv.org/abs/1604.05385",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0531,
+          "commutator_incompatibility_route": 0.048,
+          "discrete_protocol_route": 0.4457
+        },
+        "fibers": {
+          "structure": 0.3333336777248173,
+          "spectral": 0.3333797136090042,
+          "geometry": 0.3332866086658451,
+          "syntax": 0.5858083508725721,
+          "entropy": 0.4141916491270137
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000227",
+        "title": "Α07 witness EW000000227 / arXiv:0912.2823",
+        "score": 0.476484,
+        "route_score": 0.738779,
+        "lexical_score": 0.010503,
+        "equation": "lenumi}{( roman{enumi})} item a special boundary neighborhood $u subset m$ containing $p$; item an integer $m=m(u) neq q$; item an orthonormal basis $l_1, dots,l_{n-1}$ of $ toz(u)$ so that $ mu_1+ cdots+ mu_q-(c_{11}+ cdots+c_{mm})\\ 0$ on $u$, where $ mu_1, dots, mu_{n-1}$ are the eigenvalues of the levi form in increasing order. end{enumerate} we say that $m$ is bfem{weakly z(q)} if $m$ is $z(q)$ weakly at $p$ for all $p in m$ and the condition $m>q$...",
+        "equation_excerpt": "",
+        "witness_quality": 0.8856,
+        "invariant": "Ξ00 :: Ω02 ⊕ Ω07 ⊕ Ω03 :: Λ08 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form spectral_operator + boundary_weak_form + transport_flow + constraint_closure :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α07",
+        "omega_tokens": "Ω02 ⊕ Ω07 ⊕ Ω03",
+        "paper_id": "0912.2823",
+        "arxiv_url": "https://arxiv.org/abs/0912.2823",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.4457,
+          "commutator_incompatibility_route": 0.047,
+          "discrete_protocol_route": 0.0441
+        },
+        "fibers": {
+          "structure": 0.33331841303394444,
+          "spectral": 0.3333838954659278,
+          "geometry": 0.3332976914997944,
+          "syntax": 0.5857808042904665,
+          "entropy": 0.41421919570911925
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000595",
+        "title": "Α11 witness EW000000595 / arXiv:1604.06537",
+        "score": 0.443287,
+        "route_score": 0.675703,
+        "lexical_score": 0.016504,
+        "equation": "$ forall x in sigma_t$). such states form a complete basis of states for each value of $t$. it thus follows that, begin{align} frac{d}{dt} langle f | hat rho_t|f\\' rangle = - gamma[f,f\\'] langle f | hat rho_t|f\\'\\ gle, end{align} %where $|f rangle$ are field eigenstates (i.e.~states which satisfy $ hat{f}(x)|f\\' rangle ={f\\'}(x)|f\\' rangle $) and the collapse rate is begin{align} gamma[f,f\\'] = int d^{d-1} x n sqrt{h} frac{ mu}{8 zeta^2} l",
+        "equation_excerpt": "",
+        "witness_quality": 0.8795,
+        "invariant": "Ξ00 :: Ω00 ⊕ Ω12 ⊕ Ω14 :: Λ27 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + commutator_incompatibility + transport_flow + constraint_closure :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α11",
+        "omega_tokens": "Ω00 ⊕ Ω12 ⊕ Ω14",
+        "paper_id": "1604.06537",
+        "arxiv_url": "https://arxiv.org/abs/1604.06537",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0531,
+          "commutator_incompatibility_route": 0.2882,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.33335527577092927,
+          "spectral": 0.333365051514381,
+          "geometry": 0.3332796727143563,
+          "syntax": 0.5857735612781908,
+          "entropy": 0.4142264387213949
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000594",
+        "title": "Α11 witness EW000000594 / arXiv:1801.03283",
+        "score": 0.431628,
+        "route_score": 0.660231,
+        "lexical_score": 0.013503,
+        "equation": "end{equation} where $|1 rangle_{i}= int_{- infty}^ infty theta( omega)|1_{ omega} rangle_{i} mathrm{d} omega$, $ theta( omega)$ is the pulse shape associated with the coming photon. then, acting the projection operator $ p_{f}=| psi^{+}\\ gle langle psi^{+}| $ on the wave function $| psi(t) rangle$ (after normalization), we obtain begin{equation} begin{aligned} | psi_{aa}(t) rangle= langle psi^{+}| psi(t) rangle = frac{1}{ sqrt{n(t)}}[x_{12}(t)|e,g rangl...",
+        "equation_excerpt": "",
+        "witness_quality": 0.8625,
+        "invariant": "Ξ00 :: Ω00 ⊕ Ω12 ⊕ Ω14 :: Λ27 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + constraint_closure + transport_flow + boundary_weak_form :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α11",
+        "omega_tokens": "Ω00 ⊕ Ω12 ⊕ Ω14",
+        "paper_id": "1801.03283",
+        "arxiv_url": "https://arxiv.org/abs/1801.03283",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.2882,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0531,
+          "commutator_incompatibility_route": 0.048,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.3333259957981037,
+          "spectral": 0.3333574253483496,
+          "geometry": 0.33331657885321336,
+          "syntax": 0.5858112883842971,
+          "entropy": 0.4141887116152887
+        }
+      },
+      {
+        "record_id": "hyperion:EW000003332",
+        "title": "Α08 witness EW000003332 / arXiv:quant-ph0205159",
+        "score": 0.427171,
+        "route_score": 0.639775,
+        "lexical_score": 0.024006,
+        "equation": "forall b mbox{integer} . end{equation} the unbiased basis found is of course not unique. it was generated by the operator $tb$ but there are many other operators whose eigenvectors build unbiased basis to $ { varphi_{x} }$ and to $ {\\ hi_{p} }$. indeed, any combination $t^{n}b^{m}$ or $b^{m}t^{n}$ where $n$ and $m$ are not divisors of $n$ could do the job. par we will now try to find the physical meaning of the basis $ { eta_{s} }$. that is, we would li...",
+        "equation_excerpt": "",
+        "witness_quality": 0.8868,
+        "invariant": "Ξ01 :: Ω13 ⊕ Ω19 ⊕ Ω21 :: Λ24 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form spectral_operator + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α08",
+        "omega_tokens": "Ω13 ⊕ Ω19 ⊕ Ω21",
+        "paper_id": "quant-ph0205159",
+        "arxiv_url": "https://arxiv.org/abs/quant-ph/0205159",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0532,
+          "commutator_incompatibility_route": 0.0488,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.3333585068161707,
+          "spectral": 0.3333847333335282,
+          "geometry": 0.3332567598499678,
+          "syntax": 0.5858146366318773,
+          "entropy": 0.4141853633677085
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002770",
+        "title": "Α03 witness EW000002770 / arXiv:1612.00682",
+        "score": 0.423984,
+        "route_score": 0.633869,
+        "lexical_score": 0.012753,
+        "equation": "ss. according to whether $ lambda>0$ or $ lambda<0$, the range of the coordinate $x$ is $(- infty,+ infty)$ or $ left(-1/ sqrt{| lambda|}, 1/ sqrt{| lambda|} right)$. such a hamiltonian is formally self-adjoint with respect to the measure $d mu (1+ lambda x^2)^{-1/2} dx$. par % %------------------------------------------------------------------------------------------------------- % the corresponding schr\\ödinger equation % begin{equation} left(-(1+ lam...",
+        "equation_excerpt": "",
+        "witness_quality": 0.922,
+        "invariant": "Ξ00 :: Ω14 ⊕ Ω16 ⊕ Ω05 :: Λ01 :: J_flat :: spectral>geometry:MIX/C1.00/A0.02 preserves the route/fiber form spectral_operator + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α03",
+        "omega_tokens": "Ω14 ⊕ Ω16 ⊕ Ω05",
+        "paper_id": "1612.00682",
+        "arxiv_url": "https://arxiv.org/abs/1612.00682",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.6054,
+          "boundary_weak_form_route": 0.0511,
+          "commutator_incompatibility_route": 0.0473,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.3333277174046687,
+          "spectral": 0.33330939941129717,
+          "geometry": 0.3333628831837008,
+          "syntax": 0.5857599373080239,
+          "entropy": 0.4142400626915619
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002994",
+        "title": "Α05 witness EW000002994 / arXiv:1708.03640",
+        "score": 0.423547,
+        "route_score": 0.631494,
+        "lexical_score": 0.008252,
+        "equation": "_2$ remains odd under reflection. consistent with the $ zz_2$ topological index, a quartet of andreev dirac cones with hamiltonian $h_2 = v (k_1 tau_1 + k_2 tau_3) sigma_0 rho_0$ can be gapped out by a reflection-allowed mass term $m tau_2 \\ igma_2 rho_2$. end{widetext} end{document} '}]",
+        "equation_excerpt": "_2$ remains odd under reflection. consistent with the $ zz_2$ topological index, a quartet of andreev dirac cones with hamiltonian $h_2 = v (k_1 tau_1 + k_2 tau_3) sigma_0 rho_0...",
+        "witness_quality": 0.9431,
+        "invariant": "Ξ00 :: Ω03 ⊕ Ω11 ⊕ Ω02 :: Λ02 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α05",
+        "omega_tokens": "Ω03 ⊕ Ω11 ⊕ Ω02",
+        "paper_id": "1708.03640",
+        "arxiv_url": "https://arxiv.org/abs/1708.03640",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.2882,
+          "boundary_weak_form_route": 0.0502,
+          "commutator_incompatibility_route": 0.047,
+          "discrete_protocol_route": 0.0441
+        },
+        "fibers": {
+          "structure": 0.33335344457121446,
+          "spectral": 0.3333659602906104,
+          "geometry": 0.33328059513784186,
+          "syntax": 0.5857440612308544,
+          "entropy": 0.41425593876873135
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000547",
+        "title": "Α05 witness EW000000547 / arXiv:1506.05598",
+        "score": 0.421093,
+        "route_score": 0.639048,
+        "lexical_score": 0.009752,
+        "equation": "i = frac{1}{ sinh^2 rho} bigg[ frac{ partial}{ partial rho} left( sinh^2 rho frac{ partial phi}{ partial rho} right) + frac{1}{ sin^2 theta} frac{ partial}{ partial theta} left( sin theta frac{ partial \\ hi}{ partial theta} right) + frac{1}{ sin^2 theta} frac{ partial^2 phi}{ partial phi^2} bigg] ; . end{eqnarray} in the simply connected space the eigenvalues take all values in the range $q^2 = [1, infty)$, and the eigenmodes a",
+        "equation_excerpt": "",
+        "witness_quality": 0.8834,
+        "invariant": "Ξ00 :: Ω17 ⊕ Ω11 ⊕ Ω14 :: Λ20 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α05",
+        "omega_tokens": "Ω17 ⊕ Ω11 ⊕ Ω14",
+        "paper_id": "1506.05598",
+        "arxiv_url": "https://arxiv.org/abs/1506.05598",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0523,
+          "commutator_incompatibility_route": 0.0474,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.33335373284048403,
+          "spectral": 0.33334093678592885,
+          "geometry": 0.3333053303732537,
+          "syntax": 0.5858470820023047,
+          "entropy": 0.41415291799728093
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000562",
+        "title": "Α11 witness EW000000562 / arXiv:0908.0752",
+        "score": 0.416446,
+        "route_score": 0.632814,
+        "lexical_score": 0.013503,
+        "equation": "ac{ partial phi }{ partial x^{i}} frac{ partial phi }{ partial x^{j}}+v left( phi right) right] ]% is the ensemble hamiltonian for gravity with a classical scalar field and [ f_{ phi }= frac{ hbar ^{2}}{4} frac{1}{2 sqrt{h}}\\ ft( frac{ delta log p% }{ delta phi } right) ^{2} nonumber ]% is an additional, non-classical kinetic energy term. assuming again the constraints $ frac{ partial s}{ partial t}=$ $ frac{ partial p}{ partial t}=0$, the coresponding",
+        "equation_excerpt": "",
+        "witness_quality": 0.8617,
+        "invariant": "Ξ00 :: Ω12 ⊕ Ω17 ⊕ Ω13 :: Λ26 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α11",
+        "omega_tokens": "Ω12 ⊕ Ω17 ⊕ Ω13",
+        "paper_id": "0908.0752",
+        "arxiv_url": "https://arxiv.org/abs/0908.0752",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.2882,
+          "boundary_weak_form_route": 0.0531,
+          "commutator_incompatibility_route": 0.048,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.33329830212601236,
+          "spectral": 0.3333902640115556,
+          "geometry": 0.33331143386209877,
+          "syntax": 0.5857894666413607,
+          "entropy": 0.4142105333582251
+        }
+      },
+      {
+        "record_id": "hyperion:EW000003683",
+        "title": "Α10 witness EW000003683 / arXiv:1706.03846",
+        "score": 0.409698,
+        "route_score": 0.596765,
+        "lexical_score": 0.023256,
+        "equation": "rences are due to the different deuteron wave functions and are visible near the minimum of the it$_{11}$. in the case of the deuteron tensor analyzing power t$_{22}$ (the right panel) the same modification of all the partial wave components with $j \\ 2$ does not reproduce the chiral results either. while the maximum of the t$_{22}$ observed for the jisp16 force around the scattering angle $ theta_{c.m.}=130^{ circ}$ is substantially reduced, the emergi...",
+        "equation_excerpt": "rences are due to the different deuteron wave functions and are visible near the minimum of the it$_{11}$. in the case of the deuteron tensor analyzing power t$_{22}$ (the right...",
+        "witness_quality": 0.9406,
+        "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω04 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form transport_flow + constraint_closure + spectral_operator + boundary_weak_form :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α10",
+        "omega_tokens": "Ω10 ⊕ Ω09 ⊕ Ω04",
+        "paper_id": "1706.03846",
+        "arxiv_url": "https://arxiv.org/abs/1706.03846",
+        "routes": {
+          "transport_flow_route": 0.2882,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.057,
+          "boundary_weak_form_route": 0.0495,
+          "commutator_incompatibility_route": 0.0468,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.33334357172863016,
+          "spectral": 0.33333049890034083,
+          "geometry": 0.33332592937069566,
+          "syntax": 0.5858425438746762,
+          "entropy": 0.41415745612490956
+        }
+      },
+      {
+        "record_id": "hyperion:EW000001410",
+        "title": "Α04 witness EW000001410 / arXiv:2501.07524",
+        "score": 0.401821,
+        "route_score": 0.736529,
+        "lexical_score": 0.007502,
+        "equation": "fontsize{40}{1} selectfont] at (axis cs: 1,79) {rtf vector matching}; addplot [domain=-0.125:0.125,line width=8pt,black]{74.431006203514240}; addplot [domain=-0.108:0.108,line width=5pt,mycolor3] {74.431006203514240}; addplot[only marks, mark *, mark options={}, mark size=2.5pt, color=mycolor1, fill=mycolor1] table[row sep=crcr]{% x\\ty 1.02716065029192\\t74.3151639654855 0.893241302508462\\t74.3969031147488 1.08283013123073\\t74.2322068487664 0.81360257301...",
+        "equation_excerpt": "fontsize{40}{1} selectfont] at (axis cs: 1,79) {rtf vector matching}; addplot [domain=-0.125:0.125,line width=8pt,black]{74.431006203514240}; addplot [domain=-0.108:0.108,line w...",
+        "witness_quality": 0.9496,
+        "invariant": "Ξ00 :: Ω23 ⊕ Ω03 ⊕ Ω05 :: Λ23 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form boundary_weak_form + commutator_incompatibility + transport_flow + constraint_closure :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α04",
+        "omega_tokens": "Ω23 ⊕ Ω03 ⊕ Ω05",
+        "paper_id": "2501.07524",
+        "arxiv_url": "https://arxiv.org/abs/2501.07524",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0566,
+          "boundary_weak_form_route": 0.4457,
+          "commutator_incompatibility_route": 0.2882,
+          "discrete_protocol_route": 0.0436
+        },
+        "fibers": {
+          "structure": 0.3333428504322403,
+          "spectral": 0.33328775457508525,
+          "geometry": 0.33336939499234103,
+          "syntax": 0.5857679780045827,
+          "entropy": 0.41423202199500314
+        }
+      },
+      {
+        "record_id": "hyperion:EW000003681",
+        "title": "Α10 witness EW000003681 / arXiv:astro-ph0604157",
+        "score": 0.389707,
+        "route_score": 0.702427,
+        "lexical_score": 0.021755,
+        "equation": "parameter $ alpha$ by $ pm$0.3. we computed six models for each of the three selected masses by fixing, in turn, one of the three parameters at its boundary values (lower and upper) and keeping the others at their central values ($z$=0.013, $y$ 0.27, $ alpha$=1.9). in this way, we obtained relative variations of li abundance and effective temperature with respect to our ``standard\\'\\' model, representing an evaluation of the uncertainties on li and teff...",
+        "equation_excerpt": "parameter $ alpha$ by $ pm$0.3. we computed six models for each of the three selected masses by fixing, in turn, one of the three parameters at its boundary values (lower and up...",
+        "witness_quality": 0.961,
+        "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω04 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form boundary_weak_form + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α10",
+        "omega_tokens": "Ω10 ⊕ Ω09 ⊕ Ω04",
+        "paper_id": "astro-ph0604157",
+        "arxiv_url": "https://arxiv.org/abs/astro-ph/0604157",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.057,
+          "boundary_weak_form_route": 0.4457,
+          "commutator_incompatibility_route": 0.0468,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.3333334194213098,
+          "spectral": 0.3332888986357152,
+          "geometry": 0.33337768194264167,
+          "syntax": 0.5858340185168679,
+          "entropy": 0.41416598148271777
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002819",
+        "title": "Α03 witness EW000002819 / arXiv:1302.5510",
+        "score": 0.387555,
+        "route_score": 0.704674,
+        "lexical_score": 0.009002,
+        "equation": "rstand the mechanism that provides stability to the multiphase medium. these are important for understanding the contribution of associated neo absorbers to the agn feedback. end {abstract} %=========================== key words =============== ======================================= %=========================== key words ======================================================= begin{keywords} galaxies:active -- quasars:absorption lines --quasars:outflow...",
+        "equation_excerpt": "rstand the mechanism that provides stability to the multiphase medium. these are important for understanding the contribution of associated neo absorbers to the agn feedback. en...",
+        "witness_quality": 0.9721,
+        "invariant": "Ξ00 :: Ω25 ⊕ Ω16 ⊕ Ω14 :: Λ11 :: J_flat :: spectral>geometry:MIX/C1.00/A0.03 preserves the route/fiber form discrete_protocol + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α03",
+        "omega_tokens": "Ω25 ⊕ Ω16 ⊕ Ω14",
+        "paper_id": "1302.5510",
+        "arxiv_url": "https://arxiv.org/abs/1302.5510",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0536,
+          "boundary_weak_form_route": 0.0519,
+          "commutator_incompatibility_route": 0.0471,
+          "discrete_protocol_route": 0.4457
+        },
+        "fibers": {
+          "structure": 0.3333287039880975,
+          "spectral": 0.3333199420086984,
+          "geometry": 0.3333513540028707,
+          "syntax": 0.5857260282939223,
+          "entropy": 0.41427397170566355
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002962",
+        "title": "Α07 witness EW000002962 / arXiv:2303.16962",
+        "score": 0.384031,
+        "route_score": 0.708854,
+        "lexical_score": 0.012753,
+        "equation": "[{'name': 'app-bootstrap.tex', 'string': 'to compute the 2$ sigma$ confidence interval of the gaussian mixture fit to the $f$-mode frequencies for each of our $m nns{}$ models, we use a bootstrap procedure with $n = 1000$ bootstrap samples. the distributions $p(f | theta_{ij})$ are evaluated at $n = 1000$ test frequencies $f$. begin{algorithm} setalgolined kwinput{$m$: number of exploding supernova",
+        "equation_excerpt": "",
+        "witness_quality": 0.912,
+        "invariant": "Ξ00 :: Ω02 ⊕ Ω03 ⊕ Ω14 :: Λ02 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + discrete_protocol + transport_flow + constraint_closure :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α07",
+        "omega_tokens": "Ω02 ⊕ Ω03 ⊕ Ω14",
+        "paper_id": "2303.16962",
+        "arxiv_url": "https://arxiv.org/abs/2303.16962",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.2882,
+          "boundary_weak_form_route": 0.0502,
+          "commutator_incompatibility_route": 0.047,
+          "discrete_protocol_route": 0.2882
+        },
+        "fibers": {
+          "structure": 0.33332624686539347,
+          "spectral": 0.33332435934826155,
+          "geometry": 0.3333493937860116,
+          "syntax": 0.5857730061171561,
+          "entropy": 0.4142269938824296
+        }
+      },
+      {
+        "record_id": "hyperion:EW000001121",
+        "title": "Α07 witness EW000001121 / arXiv:2105.13961",
+        "score": 0.383869,
+        "route_score": 0.708848,
+        "lexical_score": 0.012753,
+        "equation": "year={2018}, publisher={cengage learning} } @book{dillman2014, author = {dillman, don a. and smyth, jolene d. and christian, leah melani}, title = {{internet, phone, mail, and mixed-mode surveys: the tailored design method}}, publisher {john wiley \\ sons}, address = {hoboken, n.j.}, year = {2014}, } @inproceedings{hamcp2010, author={harding, bruce, and mcpherson, paul}, year={2010}, title={{what do employers want in terms of employee knowledge of technical",
+        "equation_excerpt": "",
+        "witness_quality": 0.9107,
+        "invariant": "Ξ01 :: Ω06 ⊕ Ω05 ⊕ Ω02 :: Λ00 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + discrete_protocol + transport_flow + constraint_closure :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α07",
+        "omega_tokens": "Ω06 ⊕ Ω05 ⊕ Ω02",
+        "paper_id": "2105.13961",
+        "arxiv_url": "https://arxiv.org/abs/2105.13961",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.2882,
+          "boundary_weak_form_route": 0.0502,
+          "commutator_incompatibility_route": 0.047,
+          "discrete_protocol_route": 0.2882
+        },
+        "fibers": {
+          "structure": 0.3333124785610805,
+          "spectral": 0.33332739942536604,
+          "geometry": 0.3333601220132201,
+          "syntax": 0.585797247839457,
+          "entropy": 0.4142027521601288
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000162",
+        "title": "Α07 witness EW000000162 / arXiv:2502.06200",
+        "score": 0.379821,
+        "route_score": 0.702337,
+        "lexical_score": 0.012003,
+        "equation": "e large enough to guarantee a smooth transition at the boundary, ensuring that $ mu_{v_i}$ remains $ +o(l)$-log-smooth. end{itemize} % under these conditions, we can find $n=()$ disjoint balls with centers $ ab {v_i }_{i in[n]}$ and $r= +o tp{\\ { frac{d}{l}}}$. to recognize the perturbed ball among the $n$ ones, it will take $()$ queries. suppose we pick a gaussian distribution as the base distribution $ mu_0$ as in the previous work, namely that $ mu_0...",
+        "equation_excerpt": "",
+        "witness_quality": 0.9091,
+        "invariant": "Ξ01 :: Ω02 ⊕ Ω07 ⊕ Ω09 :: Λ10 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form boundary_weak_form + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α07",
+        "omega_tokens": "Ω02 ⊕ Ω07 ⊕ Ω09",
+        "paper_id": "2502.06200",
+        "arxiv_url": "https://arxiv.org/abs/2502.06200",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0565,
+          "boundary_weak_form_route": 0.4457,
+          "commutator_incompatibility_route": 0.047,
+          "discrete_protocol_route": 0.0441
+        },
+        "fibers": {
+          "structure": 0.33337759119608984,
+          "spectral": 0.33330597850328453,
+          "geometry": 0.3333164303002922,
+          "syntax": 0.5858391307441373,
+          "entropy": 0.4141608692554484
+        }
+      },
+      {
+        "record_id": "hyperion:EW000001058",
+        "title": "Α03 witness EW000001058 / arXiv:1502.01094",
+        "score": 0.378038,
+        "route_score": 0.703442,
+        "lexical_score": 0.013503,
+        "equation": "$t= 1, dots, t$} \\t state draw a random sample $( +x^1_t, dots, +x^s_t, {y}^{}_t)$ from the training data. \\t state find solution $ +a^{ star} = left[{ balpha^ star}^1 dots { balpha^ star}^s right] in mathbb{r}^{d\\ s}$ of the joint sparse coding problem \\t\\t [ \\t\\t\\t argmin_{ +a = left[{ balpha}^1 dots { balpha}^s right]} frac{1}{2} sum_{s=1}^s vert +x^s_t - +d^s balpha^s vert_{ ell_2}^2 + lambda_1 vert +a vert_{ e",
+        "equation_excerpt": "",
+        "witness_quality": 0.8846,
+        "invariant": "Ξ00 :: Ω05 ⊕ Ω17 ⊕ Ω16 :: Λ15 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form discrete_protocol + transport_flow + spectral_operator + constraint_closure :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α03",
+        "omega_tokens": "Ω05 ⊕ Ω17 ⊕ Ω16",
+        "paper_id": "1502.01094",
+        "arxiv_url": "https://arxiv.org/abs/1502.01094",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.2212,
+          "boundary_weak_form_route": 0.0519,
+          "commutator_incompatibility_route": 0.0471,
+          "discrete_protocol_route": 0.2882
+        },
+        "fibers": {
+          "structure": 0.33333689003116,
+          "spectral": 0.33329611715871116,
+          "geometry": 0.3333669928097955,
+          "syntax": 0.5857792593803767,
+          "entropy": 0.41422074061920905
+        }
+      },
+      {
+        "record_id": "hyperion:EW000001104",
+        "title": "Α01 witness EW000001104 / arXiv:2310.19304",
+        "score": 0.37728,
+        "route_score": 0.701683,
+        "lexical_score": 0.012753,
+        "equation": "\\t \\t myparagraph{inputs at pns:} sets of candidate account identifiers with counts and associated flag values for `red' leaf nodes $ left {( mathsf{tests}_{f_b}[l], acc^{0}[l], acc^{1}[l]) right }_{l in mathcal{l}_b}$, an he key-pair $( sk,\\ k)$ \\t \\t myparagraph{inputs at banks:} sets of account identifiers $ { acc_{b_j}^{ flag}: flag in textrm{ domain of flags} }$, an he public-key $ pk$ \\t myparagraph{output:} bank obtains encrypted counts for the `...",
+        "equation_excerpt": "",
+        "witness_quality": 0.8886,
+        "invariant": "Ξ01 :: Ω13 ⊕ Ω16 ⊕ Ω12 :: Λ07 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form boundary_weak_form + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α01",
+        "omega_tokens": "Ω13 ⊕ Ω16 ⊕ Ω12",
+        "paper_id": "2310.19304",
+        "arxiv_url": "https://arxiv.org/abs/2310.19304",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0515,
+          "boundary_weak_form_route": 0.4457,
+          "commutator_incompatibility_route": 0.0488,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.33331658487726895,
+          "spectral": 0.33336778389386634,
+          "geometry": 0.33331563122853136,
+          "syntax": 0.5858215272975936,
+          "entropy": 0.4141784727019921
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000689",
+        "title": "Α11 witness EW000000689 / arXiv:0807.4020",
+        "score": 0.375146,
+        "route_score": 0.705053,
+        "lexical_score": 0.012003,
+        "equation": "= gamma left( zeta^{-1} circ z right) text{ for }z, zeta in mathbb{r}^{n+1}, ] with% begin{equation} gamma left( z right) = left { begin{array} [c]{l}% 0 text{ for }t leq0 frac{ left( 4 pi right) ^{-n/2}}{\\ qrt{ det c left( t right) }}% exp left( - frac{1}{4} left langle c^{-1} left( t right) x,x right rangle -t text{tr}b right) text{ for }t>0 end{array} right. nonumber end{equation} where $z= left( x,t right) $ a",
+        "equation_excerpt": "",
+        "witness_quality": 0.8577,
+        "invariant": "Ξ00 :: Ω12 ⊕ Ω17 ⊕ Ω05 :: Λ08 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form discrete_protocol + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α11",
+        "omega_tokens": "Ω12 ⊕ Ω17 ⊕ Ω05",
+        "paper_id": "0807.4020",
+        "arxiv_url": "https://arxiv.org/abs/0807.4020",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0524,
+          "boundary_weak_form_route": 0.0531,
+          "commutator_incompatibility_route": 0.048,
+          "discrete_protocol_route": 0.4457
+        },
+        "fibers": {
+          "structure": 0.3333100010886828,
+          "spectral": 0.3333815475654808,
+          "geometry": 0.3333084513455031,
+          "syntax": 0.5857543249840298,
+          "entropy": 0.414245675015556
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000528",
+        "title": "Α05 witness EW000000528 / arXiv:2003.10194",
+        "score": 0.37467,
+        "route_score": 0.696955,
+        "lexical_score": 0.010503,
+        "equation": "d $x$, i.e. if they are independent of $ xi$, in the case when $g = mathrm{h}^{2n+1}$, then the laplace-beltrami operator satisfies begin{equation*} tau( phi) = sum_k lrpar{ frac{ partial^2 phi}{ partial t_k^2} - omega_k , frac{\\ artial phi}{ partial t_k} } + sum_{ij} ( mu(t) , mu(t)^ transp)_{ij} , frac{ partial^2 phi}{ partial x_i partial x_j} end{equation*} and the conformality operator is given by begin{equation*} kappa( phi, psi) = sum_k",
+        "equation_excerpt": "",
+        "witness_quality": 0.8955,
+        "invariant": "Ξ00 :: Ω01 ⊕ Ω05 ⊕ Ω14 :: Λ14 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form spectral_operator + transport_flow + discrete_protocol + constraint_closure :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α05",
+        "omega_tokens": "Ω01 ⊕ Ω05 ⊕ Ω14",
+        "paper_id": "2003.10194",
+        "arxiv_url": "https://arxiv.org/abs/2003.10194",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0523,
+          "commutator_incompatibility_route": 0.0474,
+          "discrete_protocol_route": 0.2212
+        },
+        "fibers": {
+          "structure": 0.33335725031027474,
+          "spectral": 0.33331623842384184,
+          "geometry": 0.3333265112655501,
+          "syntax": 0.5858267893055803,
+          "entropy": 0.41417321069400537
+        }
+      },
+      {
+        "record_id": "hyperion:EW000003699",
+        "title": "Α10 witness EW000003699 / arXiv:2306.14142",
+        "score": 0.374406,
+        "route_score": 0.674908,
+        "lexical_score": 0.016504,
+        "equation": "hers and that their behaviors are correlated with the characteristics of their immediate neighbors, and possibly the entire network parencite{mcpherson2001birds}. this can lead to biased estimates of the policy effect parencite{vanderweele_2013}. n our proposed approach, we use a stochastic actor-oriented model (saom), which accounts for dependencies among individuals in a networked sample, and hence can be used as a suitable alternative to regression-b...",
+        "equation_excerpt": "hers and that their behaviors are correlated with the characteristics of their immediate neighbors, and possibly the entire network parencite{mcpherson2001birds}. this can lead...",
+        "witness_quality": 0.9758,
+        "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω19 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form discrete_protocol + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α10",
+        "omega_tokens": "Ω10 ⊕ Ω09 ⊕ Ω19",
+        "paper_id": "2306.14142",
+        "arxiv_url": "https://arxiv.org/abs/2306.14142",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.057,
+          "boundary_weak_form_route": 0.0495,
+          "commutator_incompatibility_route": 0.0468,
+          "discrete_protocol_route": 0.2882
+        },
+        "fibers": {
+          "structure": 0.33332671033805583,
+          "spectral": 0.3333576662174635,
+          "geometry": 0.33331562344414734,
+          "syntax": 0.5858146578191106,
+          "entropy": 0.41418534218047515
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002915",
+        "title": "Α10 witness EW000002915 / arXiv:1304.6875",
+        "score": 0.373666,
+        "route_score": 0.67477,
+        "lexical_score": 0.016504,
+        "equation": "at $t=10000$ ,k and consequently metals are absent from surface layers due to gravitational settling. therefore we consider that any uncertainties due to metallicity are small and anyway included in our adopted errors. %======================== =====================================================% paragraph*{input physics of the stellar evolution models} stellar models used in our analysis were constructed using the 1-d stellar evolution code `` texttt...",
+        "equation_excerpt": "at $t=10000$ ,k and consequently metals are absent from surface layers due to gravitational settling. therefore we consider that any uncertainties due to metallicity are small a...",
+        "witness_quality": 0.9703,
+        "invariant": "Ξ01 :: Ω25 ⊕ Ω10 ⊕ Ω06 :: Λ10 :: J_flat :: spectral>geometry:MIX/C1.00/A0.02 preserves the route/fiber form transport_flow + boundary_weak_form + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α10",
+        "omega_tokens": "Ω25 ⊕ Ω10 ⊕ Ω06",
+        "paper_id": "1304.6875",
+        "arxiv_url": "https://arxiv.org/abs/1304.6875",
+        "routes": {
+          "transport_flow_route": 0.2882,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0558,
+          "boundary_weak_form_route": 0.2882,
+          "commutator_incompatibility_route": 0.0472,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.33328706871076047,
+          "spectral": 0.33338696214981184,
+          "geometry": 0.33332596913909435,
+          "syntax": 0.5857721156061321,
+          "entropy": 0.41422788439345365
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002851",
+        "title": "Α08 witness EW000002851 / arXiv:2104.04275",
+        "score": 0.373271,
+        "route_score": 0.672633,
+        "lexical_score": 0.018005,
+        "equation": "atent dynamics in predicting the various physical contexts conditioned on its own action. % 1116: consistent generation? %make a decision for control tasks from the spatio-temporal context. %============================================================= ================= % explanation of our model - highlight factorization we propose a fully-unsupervised action-conditioned video prediction model, named acrfull{gatsbi}. our method is explicitly designed f...",
+        "equation_excerpt": "atent dynamics in predicting the various physical contexts conditioned on its own action. % 1116: consistent generation? %make a decision for control tasks from the spatio-tempo...",
+        "witness_quality": 0.9722,
+        "invariant": "Ξ01 :: Ω25 ⊕ Ω21 ⊕ Ω22 :: Λ05 :: J_flat :: spectral>geometry:MIX/C1.00/A0.02 preserves the route/fiber form boundary_weak_form + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α08",
+        "omega_tokens": "Ω25 ⊕ Ω21 ⊕ Ω22",
+        "paper_id": "2104.04275",
+        "arxiv_url": "https://arxiv.org/abs/2104.04275",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0558,
+          "boundary_weak_form_route": 0.2882,
+          "commutator_incompatibility_route": 0.0472,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.33334686471915265,
+          "spectral": 0.33330744288407776,
+          "geometry": 0.3333456923964362,
+          "syntax": 0.5858279000957259,
+          "entropy": 0.41417209990385984
+        }
+      },
+      {
+        "record_id": "hyperion:EW000002849",
+        "title": "Α08 witness EW000002849 / arXiv:1304.6875",
+        "score": 0.37296,
+        "route_score": 0.674794,
+        "lexical_score": 0.015754,
+        "equation": "ently metals are absent from surface layers due to gravitational settling. therefore we consider that any uncertainties due to metallicity are small and anyway included in our adopted errors. %===================================================== ========================% paragraph*{input physics of the stellar evolution models} stellar models used in our analysis were constructed using the 1-d stellar evolution code `` texttt{star}\" provided with the m...",
+        "equation_excerpt": "ently metals are absent from surface layers due to gravitational settling. therefore we consider that any uncertainties due to metallicity are small and anyway included in our a...",
+        "witness_quality": 0.9666,
+        "invariant": "Ξ01 :: Ω25 ⊕ Ω21 ⊕ Ω22 :: Λ05 :: J_flat :: spectral>geometry:MIX/C1.00/A0.02 preserves the route/fiber form transport_flow + boundary_weak_form + constraint_closure + spectral_operator :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α08",
+        "omega_tokens": "Ω25 ⊕ Ω21 ⊕ Ω22",
+        "paper_id": "1304.6875",
+        "arxiv_url": "https://arxiv.org/abs/1304.6875",
+        "routes": {
+          "transport_flow_route": 0.2882,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0558,
+          "boundary_weak_form_route": 0.2882,
+          "commutator_incompatibility_route": 0.0472,
+          "discrete_protocol_route": 0.0442
+        },
+        "fibers": {
+          "structure": 0.3333729916706843,
+          "spectral": 0.3333061526690698,
+          "geometry": 0.3333208556599125,
+          "syntax": 0.5857532679206052,
+          "entropy": 0.4142467320789805
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000449",
+        "title": "Α05 witness EW000000449 / arXiv:2101.07524",
+        "score": 0.372084,
+        "route_score": 0.70683,
+        "lexical_score": 0.008252,
+        "equation": "}$ from data generating distribution $p_{ text{data}}(x)$. item combine two subsets $t:=x cup z$, and denote by $t= {t_1,...,t_{2m} }$. item update discriminator $d_i (i in {1, 2 })$ by ascending the stochastic gradient: { \\ (structural) nabla_{ theta_{d_i}} dfrac{1}{m} sum_{i=1}^{m} big[ log d_{i}(x_{i})+ log big(1-d_{i} big(g(z_{i}) big) big) big] notag + dfrac{ beta}{2m} sum_{j=1}^{2m} bigg[ ell_{ text{ce}} bigg(d_i(t_{j}), br b",
+        "equation_excerpt": "",
+        "witness_quality": 0.8356,
+        "invariant": "Ξ00 :: Ω01 ⊕ Ω11 ⊕ Ω05 :: Λ24 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form discrete_protocol + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α05",
+        "omega_tokens": "Ω01 ⊕ Ω11 ⊕ Ω05",
+        "paper_id": "2101.07524",
+        "arxiv_url": "https://arxiv.org/abs/2101.07524",
+        "routes": {
+          "transport_flow_route": 0.2882,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0531,
+          "boundary_weak_form_route": 0.0523,
+          "commutator_incompatibility_route": 0.0474,
+          "discrete_protocol_route": 0.4457
+        },
+        "fibers": {
+          "structure": 0.33330964496219984,
+          "spectral": 0.3333888357759224,
+          "geometry": 0.33330151926154444,
+          "syntax": 0.5858055597534144,
+          "entropy": 0.4141944402461713
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000549",
+        "title": "Α05 witness EW000000549 / arXiv:1112.4129",
+        "score": 0.371521,
+        "route_score": 0.701657,
+        "lexical_score": 0.006002,
+        "equation": "plastic component. end{itemize} in addition, $m$ satisfies in the sense of distributions the following equation in $ mathcal{o}$, [ alpha frac{ partial}{ partial x}[xm] + frac{ partial}{ partial y}[( beta x + c_0 y + kz)m] -y frac{\\ artial m }{ partial z} + frac{1}{2} frac{ partial^2 m}{ partial x^2} + frac{1}{2} frac{ partial^2 m}{ partial y^2} = 0 quad mbox{ in } mathcal{o}, ] and on the boundary begin{eqnarray*} ym+ frac{ partial}{ partial x}[ xm ]",
+        "equation_excerpt": "",
+        "witness_quality": 0.8616,
+        "invariant": "Ξ00 :: Ω17 ⊕ Ω11 ⊕ Ω14 :: Λ20 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form boundary_weak_form + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α05",
+        "omega_tokens": "Ω17 ⊕ Ω11 ⊕ Ω14",
+        "paper_id": "1112.4129",
+        "arxiv_url": "https://arxiv.org/abs/1112.4129",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0531,
+          "boundary_weak_form_route": 0.4457,
+          "commutator_incompatibility_route": 0.0474,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.33333434661502204,
+          "spectral": 0.33327201985019855,
+          "geometry": 0.33339363353444607,
+          "syntax": 0.5857647652598523,
+          "entropy": 0.41423523473973345
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000563",
+        "title": "Α11 witness EW000000563 / arXiv:2107.13025",
+        "score": 0.370926,
+        "route_score": 0.705046,
+        "lexical_score": 0.009752,
+        "equation": "al}{ partial varphi_k} rho_{eq}^{- frac{1}{2}}( bm{ varphi}) % = - sum_{k=1}^{n+1} d_k left[ frac{ partial^2}{ partial theta_k^2}+ frac{1}{2} frac{ partial^2 u( bm{ theta})}{ partial theta_k^2}- frac{1}{4} left( frac{\\ artial u( bm{ theta})}{ partial theta_k} right)^2 right] end{split} end{equation} in which $ bm{ varphi}= left( varphi_0,..., varphi_{n} right) in mathbb{r}^{n+1}$ represents the vector encoding the orientation of each rotor.",
+        "equation_excerpt": "",
+        "witness_quality": 0.8295,
+        "invariant": "Ξ00 :: Ω12 ⊕ Ω17 ⊕ Ω13 :: Λ26 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form discrete_protocol + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + geometry at the witness level.",
+        "apparatus_regime": "Α11",
+        "omega_tokens": "Ω12 ⊕ Ω17 ⊕ Ω13",
+        "paper_id": "2107.13025",
+        "arxiv_url": "https://arxiv.org/abs/2107.13025",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0524,
+          "boundary_weak_form_route": 0.0531,
+          "commutator_incompatibility_route": 0.048,
+          "discrete_protocol_route": 0.4457
+        },
+        "fibers": {
+          "structure": 0.3333136590262427,
+          "spectral": 0.3332947661289649,
+          "geometry": 0.333391574844459,
+          "syntax": 0.5858318796778421,
+          "entropy": 0.4141681203217436
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000452",
+        "title": "Α05 witness EW000000452 / arXiv:1709.03841",
+        "score": 0.370026,
+        "route_score": 0.692641,
+        "lexical_score": 0.008252,
+        "equation": "gamma$, with $$ gamma = k gamma_p, quad gamma_p in prim, quad n_p( gamma) := n( gamma_p).$$ recall that by the gauss-bonnet theorem, the area of our riemann surface is $4 pi(g-1)$. by the selberg trace formula, $$r(s, s'):= sum_{n \\ q 0} frac{1}{r_n^2 + alpha^2} - frac{1}{r_n^2 + beta^2} =$$ $$ (g-1) int_{ r} left( frac{1}{r^2 + alpha^2} - frac{1}{r^2 + beta^2} right) c(r) dr + frac{1}{2 alpha} sum_{ gamma in cl} frac{ log n_p( gamma) n( gamma",
+        "equation_excerpt": "gamma$, with $$ gamma = k gamma_p, quad gamma_p in prim, quad n_p( gamma) := n( gamma_p).$$ recall that by the gauss-bonnet theorem, the area of our riemann surface is $4 pi(g-1...",
+        "witness_quality": 0.8835,
+        "invariant": "Ξ00 :: Ω01 ⊕ Ω11 ⊕ Ω05 :: Λ24 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form constraint_closure + boundary_weak_form + transport_flow + spectral_operator :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α05",
+        "omega_tokens": "Ω01 ⊕ Ω11 ⊕ Ω05",
+        "paper_id": "1709.03841",
+        "arxiv_url": "https://arxiv.org/abs/1709.03841",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.2882,
+          "spectral_operator_route": 0.0531,
+          "boundary_weak_form_route": 0.2882,
+          "commutator_incompatibility_route": 0.0474,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.33330676501383855,
+          "spectral": 0.33336888799592684,
+          "geometry": 0.33332434698990127,
+          "syntax": 0.5858604089596668,
+          "entropy": 0.4141395910399189
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000176",
+        "title": "Α07 witness EW000000176 / arXiv:2410.23811",
+        "score": 0.369392,
+        "route_score": 0.675125,
+        "lexical_score": 0.018005,
+        "equation": "troduce an ancilla register $p$ of dimension $l$ for qpe, where $l= poly(n)$ is the resolution of the qpe algorithm and chosen to be large enough such that $e_0$ can be represented exactly (see cref{as:good_energy}). consider the energy window $ mc i_\\ $, where $ omega = delta-1/ sqrt{l}$. by choice of $l$ the values $(e_0 pm omega/2)l$ are integers exactly represented by the $p$ register. let $ pi_p$ be the projector onto the state $ ket{ mu}_p= frac{1...",
+        "equation_excerpt": "troduce an ancilla register $p$ of dimension $l$ for qpe, where $l= poly(n)$ is the resolution of the qpe algorithm and chosen to be large enough such that $e_0$ can be represen...",
+        "witness_quality": 0.9284,
+        "invariant": "Ξ01 :: Ω15 ⊕ Ω14 ⊕ Ω02 :: Λ00 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form discrete_protocol + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α07",
+        "omega_tokens": "Ω15 ⊕ Ω14 ⊕ Ω02",
+        "paper_id": "2410.23811",
+        "arxiv_url": "https://arxiv.org/abs/2410.23811",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.0565,
+          "boundary_weak_form_route": 0.0502,
+          "commutator_incompatibility_route": 0.047,
+          "discrete_protocol_route": 0.2882
+        },
+        "fibers": {
+          "structure": 0.3333206975243531,
+          "spectral": 0.33338016132300907,
+          "geometry": 0.33329914115230447,
+          "syntax": 0.5857430248489313,
+          "entropy": 0.41425697515065457
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000228",
+        "title": "Α07 witness EW000000228 / arXiv:2106.04617",
+        "score": 0.36676,
+        "route_score": 0.674671,
+        "lexical_score": 0.012753,
+        "equation": "olute momentum slope, $ chi equiv alpha/ alpha_c$, i.e., be lambda_{inc} = {2 over chi} sqrt{ chi -1} , . ee in figure 5 we plot $[ lambda, (u,v,w),( omega_x, omega_y)]$ as a function of $ chi$ for the instability regime ($ chi 1$). the largest growth rate is obtained at $ chi=2$ ($ lambda_{max}( chi=2) = 1$), that is when the parcels slope at the $(x,z)$ plane is twice of the critical slope (${w/u} = 2 alpha_c = varomega_0/s_0$). since $w=2v$ for $ chi...",
+        "equation_excerpt": "",
+        "witness_quality": 0.9248,
+        "invariant": "Ξ00 :: Ω02 ⊕ Ω07 ⊕ Ω03 :: Λ08 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form spectral_operator + commutator_incompatibility + transport_flow + constraint_closure :: syntax + entropy + spectral at the witness level.",
+        "apparatus_regime": "Α07",
+        "omega_tokens": "Ω02 ⊕ Ω07 ⊕ Ω03",
+        "paper_id": "2106.04617",
+        "arxiv_url": "https://arxiv.org/abs/2106.04617",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.21,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0502,
+          "commutator_incompatibility_route": 0.2882,
+          "discrete_protocol_route": 0.0441
+        },
+        "fibers": {
+          "structure": 0.3333080623194803,
+          "spectral": 0.333391067268705,
+          "geometry": 0.3333008704114814,
+          "syntax": 0.5857967433495539,
+          "entropy": 0.4142032566500319
+        }
+      },
+      {
+        "record_id": "hyperion:EW000003346",
+        "title": "Α08 witness EW000003346 / arXiv:0805.4565",
+        "score": 0.366412,
+        "route_score": 0.517837,
+        "lexical_score": 0.019505,
+        "equation": "e mass eigenvalues but do not generate any flavor mixing. the case of the $a$-terms in more complicated. insofar as they are proportional to their respective yukawa matrices, these do not generate flavor mixing either. but though we set $ bar{a}_{u} \\ y_{u}$ at the high scale, this will not be respected by the renormalization group flow as discussed previously. at low $ tan beta$, however, the case is moot. with $y_d=0$, left-right mixing in the down se...",
+        "equation_excerpt": "e mass eigenvalues but do not generate any flavor mixing. the case of the $a$-terms in more complicated. insofar as they are proportional to their respective yukawa matrices, th...",
+        "witness_quality": 0.9532,
+        "invariant": "Ξ01 :: Ω19 ⊕ Ω21 ⊕ Ω04 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form spectral_operator + transport_flow :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α08",
+        "omega_tokens": "Ω19 ⊕ Ω21 ⊕ Ω04",
+        "paper_id": "0805.4565",
+        "arxiv_url": "https://arxiv.org/abs/0805.4565",
+        "routes": {
+          "transport_flow_route": 0.2882,
+          "constraint_closure_route": 0.0,
+          "spectral_operator_route": 0.4457,
+          "boundary_weak_form_route": 0.0,
+          "commutator_incompatibility_route": 0.0,
+          "discrete_protocol_route": 0.0
+        },
+        "fibers": {
+          "structure": 0.333364792013967,
+          "spectral": 0.3333293066220869,
+          "geometry": 0.33330590136361277,
+          "syntax": 0.5858059510998448,
+          "entropy": 0.414194048899741
+        }
+      },
+      {
+        "record_id": "hyperion:EW000000147",
+        "title": "Α00 witness EW000000147 / arXiv:2106.04271",
+        "score": 0.365789,
+        "route_score": 0.681223,
+        "lexical_score": 0.020255,
+        "equation": "eries input:} residuals $ {r_{ij}: i neq j }$, number of blocks $b$, $k$ for nearest neighbor graph state { bfseries output:} estimated block memberships $ { hat{g}_i }$ state __HYPERION_SEQ_09A2__ for each actor $i$ and configuration $m in {\\ igma^2, phi_a, phi_b, phi_c, phi_d }$, calculate the set of residual products for $ phi_{m,i}$: begin{center} $ boldsymbol{r}_{m,i}= { r_{ab}r_{cd}: [(a,b),(c,d)] in phi_{m,i} }$ end{center} state 2. let $f_{i,m}$...",
+        "equation_excerpt": "",
+        "witness_quality": 0.8635,
+        "invariant": "Ξ00 :: Ω08 ⊕ Ω14 ⊕ Ω12 :: Λ17 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form constraint_closure + commutator_incompatibility + transport_flow + spectral_operator :: syntax + entropy + structure at the witness level.",
+        "apparatus_regime": "Α00",
+        "omega_tokens": "Ω08 ⊕ Ω14 ⊕ Ω12",
+        "paper_id": "2106.04271",
+        "arxiv_url": "https://arxiv.org/abs/2106.04271",
+        "routes": {
+          "transport_flow_route": 0.2625,
+          "constraint_closure_route": 0.4173,
+          "spectral_operator_route": 0.055,
+          "boundary_weak_form_route": 0.0511,
+          "commutator_incompatibility_route": 0.2882,
+          "discrete_protocol_route": 0.044
+        },
+        "fibers": {
+          "structure": 0.3333652062966511,
+          "spectral": 0.3333085145481083,
+          "geometry": 0.3333262791549072,
+          "syntax": 0.5857837340156684,
+          "entropy": 0.41421626598391736
+        }
+      }
+    ],
+    "candidate_pool_size": 946
+  },
+  "morphwiki": {
+    "takeaway": "a quantum entanglement modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
+    "object_view": "Quantum entanglement is the phenomenon in which the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+    "mechanism_view": "a quantum entanglement acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.",
+    "what_this_adds": [
+      "The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.",
+      "It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.",
+      "It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.",
+      "It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation."
+    ],
+    "what_survives": [
+      "the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation",
+      "the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels",
+      "the dependence of admissible readout on measurement context or boundary condition",
+      "the non-commuting compatibility structure, which survives changes of representation"
+    ],
+    "what_changes": [
+      "the name of the carrier: particle, wave, field, qubit, or excitation",
+      "where time dependence is represented: on the state, on the operator, or in a path weight",
+      "the coordinate system, basis, or geometric picture used to display the same relation",
+      "the physical implementation of detector, boundary, preparation, or readout"
+    ],
+    "active_apparatus": [
+      "Α11",
+      "Α07",
+      "Α03",
+      "Α05",
+      "Α10",
+      "Α08",
+      "Α04",
+      "Α01"
+    ],
+    "active_operator_atoms": [
+      "Ω14",
+      "Ω12",
+      "Ω02",
+      "Ω03",
+      "Ω16",
+      "Ω05",
+      "Ω00",
+      "Ω13",
+      "Ω17",
+      "Ω09",
+      "Ω07",
+      "Ω11"
+    ],
+    "missing_experiments": [
+      "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
+      "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
+    ],
+    "public_evidence_summary": "Hyperion evidence ranks this page near state evolution / transport, operator and spectrum, closure / conservation, and boundary or preparation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "conversion_form": [
+      "Preparation or domain terms (potential or domain condition, basis, or preparation context) determine which states are admissible.",
+      "State terms (quantum state, wave function, or superposition) name the predictive carrier: vector, wave function, density operator, field state, or register state.",
+      "Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.",
+      "Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.",
+      "The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.",
+      "Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis."
+    ],
+    "mathematical_skeleton": "B \\longmapsto \\rho_B \\quad \\text{(context specifies an admissible state)}\n\\rho_t = U_t \\rho_B U_t^\\dagger \\quad \\text{(unitary evolution from preparation to readout)}\nO = \\sum_i \\lambda_i P_i,\\quad p_i=\\operatorname{Tr}(P_i\\rho_t) \\quad \\text{(spectral probability measure)}\n[O_1,O_2]\\neq 0 \\quad \\text{(incompatible observables: no common sharp basis)}",
+    "grammar": {
+      "state": [
+        "quantum state",
+        "wave function",
+        "superposition"
+      ],
+      "operator": [
+        "Hamiltonian",
+        "observable operator",
+        "generator"
+      ],
+      "spectrum": [
+        "eigenvalue",
+        "energy level",
+        "measurement outcome"
+      ],
+      "boundary": [
+        "potential",
+        "basis"
+      ],
+      "incompatibility": [
+        "commutator",
+        "uncertainty relation",
+        "non-commuting transformations"
+      ],
+      "protocol": [
+        "collapse"
+      ]
+    },
+    "llm_used": false
+  }
+}

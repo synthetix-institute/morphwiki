@@ -1,0 +1,3092 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-15T06:34:13.648345+00:00",
+  "source": "Hyperion MorphWiki topic export",
+  "status": "complete",
+  "claim_boundary": "Wikipedia is used as a public topic scaffold. Mechanism claims are ranked from Hyperion route/fiber witnesses. Optional LLM synthesis is evidence-constrained and non-authoritative.",
+  "hyperion_index": "discoveries/fieldbridge_static_index/hyperion_static_index.json",
+  "requested_topics": [
+    "Quantum mechanics",
+    "Wave function",
+    "Schrödinger equation",
+    "Schrödinger picture",
+    "Heisenberg picture",
+    "Path integral formulation",
+    "Path integral",
+    "Born rule",
+    "Measurement in quantum mechanics",
+    "Measurement problem",
+    "Quantum state",
+    "Density matrix",
+    "Hilbert space",
+    "Observable",
+    "Hamiltonian mechanics",
+    "Hamiltonian (quantum mechanics)",
+    "Commutator",
+    "Canonical commutation relation",
+    "Uncertainty principle",
+    "Wave–particle duality",
+    "Superposition principle",
+    "Quantum entanglement",
+    "Bell's theorem",
+    "Einstein–Podolsky–Rosen paradox",
+    "Quantum decoherence",
+    "Quantum information",
+    "Quantum computing",
+    "Qubit",
+    "Quantum circuit",
+    "Quantum algorithm",
+    "Quantum logic gate",
+    "Quantum cryptography",
+    "Quantum teleportation",
+    "Quantum error correction",
+    "Quantum field theory",
+    "Gauge theory",
+    "Quantum electrodynamics",
+    "Quantum chromodynamics",
+    "Standard Model",
+    "Dirac equation",
+    "Klein–Gordon equation",
+    "Pauli matrices",
+    "Spin (physics)",
+    "Angular momentum operator",
+    "Creation and annihilation operators",
+    "Fock space",
+    "Eigenvalues and eigenvectors",
+    "Spectral theory",
+    "Operator theory",
+    "Self-adjoint operator",
+    "Unitary operator",
+    "Projection-valued measure",
+    "POVM",
+    "Von Neumann algebra",
+    "Heisenberg group",
+    "Fourier transform",
+    "Quantum harmonic oscillator",
+    "Particle in a box",
+    "Quantum tunnelling",
+    "Potential well",
+    "Scattering",
+    "S-matrix",
+    "Perturbation theory",
+    "Renormalization",
+    "Quantum statistical mechanics",
+    "Bose–Einstein statistics",
+    "Fermi–Dirac statistics",
+    "Boson",
+    "Fermion",
+    "Photon",
+    "Electron",
+    "Quantum optics",
+    "Quantum gravity",
+    "AdS/CFT correspondence",
+    "String theory",
+    "Applications of quantum mechanics",
+    "David Hilbert",
+    "Delayed-choice quantum eraser",
+    "Electron microscope",
+    "Erwin Schrödinger",
+    "History of quantum field theory",
+    "History of quantum mechanics",
+    "Interpretations of quantum mechanics",
+    "Introduction to Quantum Mechanics (book)",
+    "Introduction to quantum mechanics",
+    "Loop quantum gravity",
+    "Macroscopic quantum phenomena",
+    "Mathematical formulation of quantum mechanics",
+    "Modern Quantum Mechanics",
+    "Old quantum theory",
+    "Operator (physics)",
+    "Perturbation theory (quantum mechanics)",
+    "QBism",
+    "Quantum Computing: A Gentle Introduction",
+    "Quantum Theory: Concepts and Methods",
+    "Quantum amplifier",
+    "Quantum biology",
+    "Quantum bus",
+    "Quantum cellular automaton",
+    "Quantum channel",
+    "Quantum chaos",
+    "Quantum chemistry",
+    "Coherence (physics)",
+    "Quantum complexity theory",
+    "Quantum cosmology",
+    "Quantum differential calculus",
+    "Quantum dynamics",
+    "Quantum engineering",
+    "Quantum eraser experiment",
+    "Quantum finite automaton",
+    "Quantum fluctuation",
+    "Quantum geometry",
+    "Quantum image processing",
+    "Quantum imaging",
+    "Quantum information science",
+    "Wave interference",
+    "Quantum jump",
+    "Quantum key distribution",
+    "Quantum logic",
+    "Quantum machine",
+    "Quantum machine learning",
+    "Quantum metamaterial",
+    "Quantum metrology",
+    "Quantum mind",
+    "Quantum mysticism",
+    "Quantum network",
+    "Quantum neural network",
+    "Quantum nonlocality",
+    "Quantum number",
+    "Quantum programming",
+    "Quantum sensor",
+    "Quantum simulator",
+    "Quantum spacetime",
+    "Quantum stochastic calculus",
+    "Quantum superposition",
+    "Relational quantum mechanics",
+    "Relativistic quantum mechanics",
+    "Schrödinger's cat",
+    "Spectral line",
+    "Spin foam",
+    "Spin network",
+    "Symmetry in quantum mechanics",
+    "The Quantum Universe",
+    "Transformation theory (quantum mechanics)",
+    "Two-state quantum system",
+    "Wave function collapse",
+    "Werner Heisenberg"
+  ],
+  "pages": [
+    {
+      "topic": "Quantum mechanics",
+      "slug": "quantum_mechanics",
+      "json": "pages/quantum_mechanics.json",
+      "markdown": "pages/quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Wave function",
+      "slug": "wave_function",
+      "json": "pages/wave_function.json",
+      "markdown": "pages/wave_function.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wave_function",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Schrödinger equation",
+      "slug": "schr_dinger_equation",
+      "json": "pages/schr_dinger_equation.json",
+      "markdown": "pages/schr_dinger_equation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Schrödinger picture",
+      "slug": "schr_dinger_picture",
+      "json": "pages/schr_dinger_picture.json",
+      "markdown": "pages/schr_dinger_picture.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_picture",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Heisenberg picture",
+      "slug": "heisenberg_picture",
+      "json": "pages/heisenberg_picture.json",
+      "markdown": "pages/heisenberg_picture.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heisenberg_picture",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Path integral formulation",
+      "slug": "path_integral_formulation",
+      "json": "pages/path_integral_formulation.json",
+      "markdown": "pages/path_integral_formulation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Path_integral_formulation",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Path integral",
+      "slug": "path_integral",
+      "json": "pages/path_integral.json",
+      "markdown": "pages/path_integral.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Path_integral",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Born rule",
+      "slug": "born_rule",
+      "json": "pages/born_rule.json",
+      "markdown": "pages/born_rule.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Born_rule",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Measurement in quantum mechanics",
+      "slug": "measurement_in_quantum_mechanics",
+      "json": "pages/measurement_in_quantum_mechanics.json",
+      "markdown": "pages/measurement_in_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Measurement problem",
+      "slug": "measurement_problem",
+      "json": "pages/measurement_problem.json",
+      "markdown": "pages/measurement_problem.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Measurement_problem",
+      "top_routes": [
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum state",
+      "slug": "quantum_state",
+      "json": "pages/quantum_state.json",
+      "markdown": "pages/quantum_state.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_state",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Density matrix",
+      "slug": "density_matrix",
+      "json": "pages/density_matrix.json",
+      "markdown": "pages/density_matrix.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Density_matrix",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Hilbert space",
+      "slug": "hilbert_space",
+      "json": "pages/hilbert_space.json",
+      "markdown": "pages/hilbert_space.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hilbert_space",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Observable",
+      "slug": "observable",
+      "json": "pages/observable.json",
+      "markdown": "pages/observable.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Observable",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Hamiltonian mechanics",
+      "slug": "hamiltonian_mechanics",
+      "json": "pages/hamiltonian_mechanics.json",
+      "markdown": "pages/hamiltonian_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamiltonian_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Hamiltonian (quantum mechanics)",
+      "slug": "hamiltonian_quantum_mechanics",
+      "json": "pages/hamiltonian_quantum_mechanics.json",
+      "markdown": "pages/hamiltonian_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Commutator",
+      "slug": "commutator",
+      "json": "pages/commutator.json",
+      "markdown": "pages/commutator.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Commutator",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Canonical commutation relation",
+      "slug": "canonical_commutation_relation",
+      "json": "pages/canonical_commutation_relation.json",
+      "markdown": "pages/canonical_commutation_relation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canonical_commutation_relation",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Uncertainty principle",
+      "slug": "uncertainty_principle",
+      "json": "pages/uncertainty_principle.json",
+      "markdown": "pages/uncertainty_principle.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Wave–particle duality",
+      "slug": "wave_particle_duality",
+      "json": "pages/wave_particle_duality.json",
+      "markdown": "pages/wave_particle_duality.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Superposition principle",
+      "slug": "superposition_principle",
+      "json": "pages/superposition_principle.json",
+      "markdown": "pages/superposition_principle.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Superposition_principle",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum entanglement",
+      "slug": "quantum_entanglement",
+      "json": "pages/quantum_entanglement.json",
+      "markdown": "pages/quantum_entanglement.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_entanglement",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Bell's theorem",
+      "slug": "bell_s_theorem",
+      "json": "pages/bell_s_theorem.json",
+      "markdown": "pages/bell_s_theorem.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bell%27s_theorem",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Einstein–Podolsky–Rosen paradox",
+      "slug": "einstein_podolsky_rosen_paradox",
+      "json": "pages/einstein_podolsky_rosen_paradox.json",
+      "markdown": "pages/einstein_podolsky_rosen_paradox.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum decoherence",
+      "slug": "quantum_decoherence",
+      "json": "pages/quantum_decoherence.json",
+      "markdown": "pages/quantum_decoherence.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_decoherence",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum information",
+      "slug": "quantum_information",
+      "json": "pages/quantum_information.json",
+      "markdown": "pages/quantum_information.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_information",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum computing",
+      "slug": "quantum_computing",
+      "json": "pages/quantum_computing.json",
+      "markdown": "pages/quantum_computing.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_computing",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "discrete_protocol_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Qubit",
+      "slug": "qubit",
+      "json": "pages/qubit.json",
+      "markdown": "pages/qubit.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qubit",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum circuit",
+      "slug": "quantum_circuit",
+      "json": "pages/quantum_circuit.json",
+      "markdown": "pages/quantum_circuit.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_circuit",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum algorithm",
+      "slug": "quantum_algorithm",
+      "json": "pages/quantum_algorithm.json",
+      "markdown": "pages/quantum_algorithm.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_algorithm",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum logic gate",
+      "slug": "quantum_logic_gate",
+      "json": "pages/quantum_logic_gate.json",
+      "markdown": "pages/quantum_logic_gate.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_logic_gate",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum cryptography",
+      "slug": "quantum_cryptography",
+      "json": "pages/quantum_cryptography.json",
+      "markdown": "pages/quantum_cryptography.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_cryptography",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum teleportation",
+      "slug": "quantum_teleportation",
+      "json": "pages/quantum_teleportation.json",
+      "markdown": "pages/quantum_teleportation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_teleportation",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "discrete_protocol_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum error correction",
+      "slug": "quantum_error_correction",
+      "json": "pages/quantum_error_correction.json",
+      "markdown": "pages/quantum_error_correction.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_error_correction",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum field theory",
+      "slug": "quantum_field_theory",
+      "json": "pages/quantum_field_theory.json",
+      "markdown": "pages/quantum_field_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_field_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Gauge theory",
+      "slug": "gauge_theory",
+      "json": "pages/gauge_theory.json",
+      "markdown": "pages/gauge_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gauge_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum electrodynamics",
+      "slug": "quantum_electrodynamics",
+      "json": "pages/quantum_electrodynamics.json",
+      "markdown": "pages/quantum_electrodynamics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_electrodynamics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum chromodynamics",
+      "slug": "quantum_chromodynamics",
+      "json": "pages/quantum_chromodynamics.json",
+      "markdown": "pages/quantum_chromodynamics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_chromodynamics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Standard Model",
+      "slug": "standard_model",
+      "json": "pages/standard_model.json",
+      "markdown": "pages/standard_model.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Standard_Model",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Dirac equation",
+      "slug": "dirac_equation",
+      "json": "pages/dirac_equation.json",
+      "markdown": "pages/dirac_equation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dirac_equation",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Klein–Gordon equation",
+      "slug": "klein_gordon_equation",
+      "json": "pages/klein_gordon_equation.json",
+      "markdown": "pages/klein_gordon_equation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Klein%E2%80%93Gordon_equation",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Pauli matrices",
+      "slug": "pauli_matrices",
+      "json": "pages/pauli_matrices.json",
+      "markdown": "pages/pauli_matrices.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pauli_matrices",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Spin (physics)",
+      "slug": "spin_physics",
+      "json": "pages/spin_physics.json",
+      "markdown": "pages/spin_physics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spin_(physics)",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Angular momentum operator",
+      "slug": "angular_momentum_operator",
+      "json": "pages/angular_momentum_operator.json",
+      "markdown": "pages/angular_momentum_operator.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Angular_momentum_operator",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Creation and annihilation operators",
+      "slug": "creation_and_annihilation_operators",
+      "json": "pages/creation_and_annihilation_operators.json",
+      "markdown": "pages/creation_and_annihilation_operators.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Creation_and_annihilation_operators",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Fock space",
+      "slug": "fock_space",
+      "json": "pages/fock_space.json",
+      "markdown": "pages/fock_space.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fock_space",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Eigenvalues and eigenvectors",
+      "slug": "eigenvalues_and_eigenvectors",
+      "json": "pages/eigenvalues_and_eigenvectors.json",
+      "markdown": "pages/eigenvalues_and_eigenvectors.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Spectral theory",
+      "slug": "spectral_theory",
+      "json": "pages/spectral_theory.json",
+      "markdown": "pages/spectral_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spectral_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Operator theory",
+      "slug": "operator_theory",
+      "json": "pages/operator_theory.json",
+      "markdown": "pages/operator_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Operator_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Self-adjoint operator",
+      "slug": "self_adjoint_operator",
+      "json": "pages/self_adjoint_operator.json",
+      "markdown": "pages/self_adjoint_operator.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Unitary operator",
+      "slug": "unitary_operator",
+      "json": "pages/unitary_operator.json",
+      "markdown": "pages/unitary_operator.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unitary_operator",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Projection-valued measure",
+      "slug": "projection_valued_measure",
+      "json": "pages/projection_valued_measure.json",
+      "markdown": "pages/projection_valued_measure.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Projection-valued_measure",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "POVM",
+      "slug": "povm",
+      "json": "pages/povm.json",
+      "markdown": "pages/povm.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/POVM",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Von Neumann algebra",
+      "slug": "von_neumann_algebra",
+      "json": "pages/von_neumann_algebra.json",
+      "markdown": "pages/von_neumann_algebra.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Von_Neumann_algebra",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Heisenberg group",
+      "slug": "heisenberg_group",
+      "json": "pages/heisenberg_group.json",
+      "markdown": "pages/heisenberg_group.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heisenberg_group",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Fourier transform",
+      "slug": "fourier_transform",
+      "json": "pages/fourier_transform.json",
+      "markdown": "pages/fourier_transform.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fourier_transform",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum harmonic oscillator",
+      "slug": "quantum_harmonic_oscillator",
+      "json": "pages/quantum_harmonic_oscillator.json",
+      "markdown": "pages/quantum_harmonic_oscillator.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Particle in a box",
+      "slug": "particle_in_a_box",
+      "json": "pages/particle_in_a_box.json",
+      "markdown": "pages/particle_in_a_box.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Particle_in_a_box",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum tunnelling",
+      "slug": "quantum_tunnelling",
+      "json": "pages/quantum_tunnelling.json",
+      "markdown": "pages/quantum_tunnelling.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_tunnelling",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Potential well",
+      "slug": "potential_well",
+      "json": "pages/potential_well.json",
+      "markdown": "pages/potential_well.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Potential_well",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Scattering",
+      "slug": "scattering",
+      "json": "pages/scattering.json",
+      "markdown": "pages/scattering.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scattering",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "S-matrix",
+      "slug": "s_matrix",
+      "json": "pages/s_matrix.json",
+      "markdown": "pages/s_matrix.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S-matrix",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Perturbation theory",
+      "slug": "perturbation_theory",
+      "json": "pages/perturbation_theory.json",
+      "markdown": "pages/perturbation_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perturbation_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Renormalization",
+      "slug": "renormalization",
+      "json": "pages/renormalization.json",
+      "markdown": "pages/renormalization.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Renormalization",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum statistical mechanics",
+      "slug": "quantum_statistical_mechanics",
+      "json": "pages/quantum_statistical_mechanics.json",
+      "markdown": "pages/quantum_statistical_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_statistical_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Bose–Einstein statistics",
+      "slug": "bose_einstein_statistics",
+      "json": "pages/bose_einstein_statistics.json",
+      "markdown": "pages/bose_einstein_statistics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_statistics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Fermi–Dirac statistics",
+      "slug": "fermi_dirac_statistics",
+      "json": "pages/fermi_dirac_statistics.json",
+      "markdown": "pages/fermi_dirac_statistics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_statistics",
+      "top_routes": [
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "spectral_operator_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Boson",
+      "slug": "boson",
+      "json": "pages/boson.json",
+      "markdown": "pages/boson.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boson",
+      "top_routes": [
+        "constraint_closure_route",
+        "transport_flow_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Fermion",
+      "slug": "fermion",
+      "json": "pages/fermion.json",
+      "markdown": "pages/fermion.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fermion",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Photon",
+      "slug": "photon",
+      "json": "pages/photon.json",
+      "markdown": "pages/photon.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Photon",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Electron",
+      "slug": "electron",
+      "json": "pages/electron.json",
+      "markdown": "pages/electron.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Electron",
+      "top_routes": [
+        "spectral_operator_route",
+        "boundary_weak_form_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum optics",
+      "slug": "quantum_optics",
+      "json": "pages/quantum_optics.json",
+      "markdown": "pages/quantum_optics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_optics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum gravity",
+      "slug": "quantum_gravity",
+      "json": "pages/quantum_gravity.json",
+      "markdown": "pages/quantum_gravity.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_gravity",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "AdS/CFT correspondence",
+      "slug": "ads_cft_correspondence",
+      "json": "pages/ads_cft_correspondence.json",
+      "markdown": "pages/ads_cft_correspondence.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "String theory",
+      "slug": "string_theory",
+      "json": "pages/string_theory.json",
+      "markdown": "pages/string_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Applications of quantum mechanics",
+      "slug": "applications_of_quantum_mechanics",
+      "json": "pages/applications_of_quantum_mechanics.json",
+      "markdown": "pages/applications_of_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Applications_of_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "David Hilbert",
+      "slug": "david_hilbert",
+      "json": "pages/david_hilbert.json",
+      "markdown": "pages/david_hilbert.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/David_Hilbert",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Delayed-choice quantum eraser",
+      "slug": "delayed_choice_quantum_eraser",
+      "json": "pages/delayed_choice_quantum_eraser.json",
+      "markdown": "pages/delayed_choice_quantum_eraser.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Delayed-choice_quantum_eraser",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Electron microscope",
+      "slug": "electron_microscope",
+      "json": "pages/electron_microscope.json",
+      "markdown": "pages/electron_microscope.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Electron_microscope",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Erwin Schrödinger",
+      "slug": "erwin_schr_dinger",
+      "json": "pages/erwin_schr_dinger.json",
+      "markdown": "pages/erwin_schr_dinger.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "History of quantum field theory",
+      "slug": "history_of_quantum_field_theory",
+      "json": "pages/history_of_quantum_field_theory.json",
+      "markdown": "pages/history_of_quantum_field_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_quantum_field_theory",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "History of quantum mechanics",
+      "slug": "history_of_quantum_mechanics",
+      "json": "pages/history_of_quantum_mechanics.json",
+      "markdown": "pages/history_of_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Interpretations of quantum mechanics",
+      "slug": "interpretations_of_quantum_mechanics",
+      "json": "pages/interpretations_of_quantum_mechanics.json",
+      "markdown": "pages/interpretations_of_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Introduction to Quantum Mechanics (book)",
+      "slug": "introduction_to_quantum_mechanics_book",
+      "json": "pages/introduction_to_quantum_mechanics_book.json",
+      "markdown": "pages/introduction_to_quantum_mechanics_book.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Introduction_to_Quantum_Mechanics_(book)",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Introduction to quantum mechanics",
+      "slug": "introduction_to_quantum_mechanics",
+      "json": "pages/introduction_to_quantum_mechanics.json",
+      "markdown": "pages/introduction_to_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Introduction_to_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Loop quantum gravity",
+      "slug": "loop_quantum_gravity",
+      "json": "pages/loop_quantum_gravity.json",
+      "markdown": "pages/loop_quantum_gravity.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Loop_quantum_gravity",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Macroscopic quantum phenomena",
+      "slug": "macroscopic_quantum_phenomena",
+      "json": "pages/macroscopic_quantum_phenomena.json",
+      "markdown": "pages/macroscopic_quantum_phenomena.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macroscopic_quantum_phenomena",
+      "top_routes": [
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Mathematical formulation of quantum mechanics",
+      "slug": "mathematical_formulation_of_quantum_mechanics",
+      "json": "pages/mathematical_formulation_of_quantum_mechanics.json",
+      "markdown": "pages/mathematical_formulation_of_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mathematical_formulation_of_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Modern Quantum Mechanics",
+      "slug": "modern_quantum_mechanics",
+      "json": "pages/modern_quantum_mechanics.json",
+      "markdown": "pages/modern_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Modern_Quantum_Mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Old quantum theory",
+      "slug": "old_quantum_theory",
+      "json": "pages/old_quantum_theory.json",
+      "markdown": "pages/old_quantum_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_quantum_theory",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Operator (physics)",
+      "slug": "operator_physics",
+      "json": "pages/operator_physics.json",
+      "markdown": "pages/operator_physics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Operator_(physics)",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Perturbation theory (quantum mechanics)",
+      "slug": "perturbation_theory_quantum_mechanics",
+      "json": "pages/perturbation_theory_quantum_mechanics.json",
+      "markdown": "pages/perturbation_theory_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)",
+      "top_routes": [
+        "spectral_operator_route",
+        "boundary_weak_form_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "QBism",
+      "slug": "qbism",
+      "json": "pages/qbism.json",
+      "markdown": "pages/qbism.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/QBism",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum Computing: A Gentle Introduction",
+      "slug": "quantum_computing_a_gentle_introduction",
+      "json": "pages/quantum_computing_a_gentle_introduction.json",
+      "markdown": "pages/quantum_computing_a_gentle_introduction.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_Computing:_A_Gentle_Introduction",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum Theory: Concepts and Methods",
+      "slug": "quantum_theory_concepts_and_methods",
+      "json": "pages/quantum_theory_concepts_and_methods.json",
+      "markdown": "pages/quantum_theory_concepts_and_methods.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_Theory:_Concepts_and_Methods",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum amplifier",
+      "slug": "quantum_amplifier",
+      "json": "pages/quantum_amplifier.json",
+      "markdown": "pages/quantum_amplifier.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_amplifier",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum biology",
+      "slug": "quantum_biology",
+      "json": "pages/quantum_biology.json",
+      "markdown": "pages/quantum_biology.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_biology",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum bus",
+      "slug": "quantum_bus",
+      "json": "pages/quantum_bus.json",
+      "markdown": "pages/quantum_bus.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_bus",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum cellular automaton",
+      "slug": "quantum_cellular_automaton",
+      "json": "pages/quantum_cellular_automaton.json",
+      "markdown": "pages/quantum_cellular_automaton.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_cellular_automaton",
+      "top_routes": [
+        "boundary_weak_form_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum channel",
+      "slug": "quantum_channel",
+      "json": "pages/quantum_channel.json",
+      "markdown": "pages/quantum_channel.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_channel",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum chaos",
+      "slug": "quantum_chaos",
+      "json": "pages/quantum_chaos.json",
+      "markdown": "pages/quantum_chaos.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_chaos",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum chemistry",
+      "slug": "quantum_chemistry",
+      "json": "pages/quantum_chemistry.json",
+      "markdown": "pages/quantum_chemistry.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_chemistry",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Coherence (physics)",
+      "slug": "coherence_physics",
+      "json": "pages/coherence_physics.json",
+      "markdown": "pages/coherence_physics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coherence_(physics)",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "boundary_weak_form_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum complexity theory",
+      "slug": "quantum_complexity_theory",
+      "json": "pages/quantum_complexity_theory.json",
+      "markdown": "pages/quantum_complexity_theory.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_complexity_theory",
+      "top_routes": [
+        "boundary_weak_form_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum cosmology",
+      "slug": "quantum_cosmology",
+      "json": "pages/quantum_cosmology.json",
+      "markdown": "pages/quantum_cosmology.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_cosmology",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum differential calculus",
+      "slug": "quantum_differential_calculus",
+      "json": "pages/quantum_differential_calculus.json",
+      "markdown": "pages/quantum_differential_calculus.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_differential_calculus",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum dynamics",
+      "slug": "quantum_dynamics",
+      "json": "pages/quantum_dynamics.json",
+      "markdown": "pages/quantum_dynamics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_dynamics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum engineering",
+      "slug": "quantum_engineering",
+      "json": "pages/quantum_engineering.json",
+      "markdown": "pages/quantum_engineering.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_engineering",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum eraser experiment",
+      "slug": "quantum_eraser_experiment",
+      "json": "pages/quantum_eraser_experiment.json",
+      "markdown": "pages/quantum_eraser_experiment.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_eraser_experiment",
+      "top_routes": [
+        "spectral_operator_route",
+        "boundary_weak_form_route",
+        "transport_flow_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum finite automaton",
+      "slug": "quantum_finite_automaton",
+      "json": "pages/quantum_finite_automaton.json",
+      "markdown": "pages/quantum_finite_automaton.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_finite_automaton",
+      "top_routes": [
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum fluctuation",
+      "slug": "quantum_fluctuation",
+      "json": "pages/quantum_fluctuation.json",
+      "markdown": "pages/quantum_fluctuation.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_fluctuation",
+      "top_routes": [
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum geometry",
+      "slug": "quantum_geometry",
+      "json": "pages/quantum_geometry.json",
+      "markdown": "pages/quantum_geometry.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_geometry",
+      "top_routes": [
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "transport_flow_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum image processing",
+      "slug": "quantum_image_processing",
+      "json": "pages/quantum_image_processing.json",
+      "markdown": "pages/quantum_image_processing.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_image_processing",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum imaging",
+      "slug": "quantum_imaging",
+      "json": "pages/quantum_imaging.json",
+      "markdown": "pages/quantum_imaging.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_imaging",
+      "top_routes": [
+        "boundary_weak_form_route",
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum information science",
+      "slug": "quantum_information_science",
+      "json": "pages/quantum_information_science.json",
+      "markdown": "pages/quantum_information_science.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_information_science",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "discrete_protocol_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Wave interference",
+      "slug": "wave_interference",
+      "json": "pages/wave_interference.json",
+      "markdown": "pages/wave_interference.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wave_interference",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum jump",
+      "slug": "quantum_jump",
+      "json": "pages/quantum_jump.json",
+      "markdown": "pages/quantum_jump.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_jump",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum key distribution",
+      "slug": "quantum_key_distribution",
+      "json": "pages/quantum_key_distribution.json",
+      "markdown": "pages/quantum_key_distribution.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_key_distribution",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum logic",
+      "slug": "quantum_logic",
+      "json": "pages/quantum_logic.json",
+      "markdown": "pages/quantum_logic.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_logic",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum machine",
+      "slug": "quantum_machine",
+      "json": "pages/quantum_machine.json",
+      "markdown": "pages/quantum_machine.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_machine",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "discrete_protocol_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum machine learning",
+      "slug": "quantum_machine_learning",
+      "json": "pages/quantum_machine_learning.json",
+      "markdown": "pages/quantum_machine_learning.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_machine_learning",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum metamaterial",
+      "slug": "quantum_metamaterial",
+      "json": "pages/quantum_metamaterial.json",
+      "markdown": "pages/quantum_metamaterial.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_metamaterial",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum metrology",
+      "slug": "quantum_metrology",
+      "json": "pages/quantum_metrology.json",
+      "markdown": "pages/quantum_metrology.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_metrology",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum mind",
+      "slug": "quantum_mind",
+      "json": "pages/quantum_mind.json",
+      "markdown": "pages/quantum_mind.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_mind",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "discrete_protocol_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum mysticism",
+      "slug": "quantum_mysticism",
+      "json": "pages/quantum_mysticism.json",
+      "markdown": "pages/quantum_mysticism.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_mysticism",
+      "top_routes": [
+        "commutator_incompatibility_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum network",
+      "slug": "quantum_network",
+      "json": "pages/quantum_network.json",
+      "markdown": "pages/quantum_network.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_network",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum neural network",
+      "slug": "quantum_neural_network",
+      "json": "pages/quantum_neural_network.json",
+      "markdown": "pages/quantum_neural_network.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_neural_network",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum nonlocality",
+      "slug": "quantum_nonlocality",
+      "json": "pages/quantum_nonlocality.json",
+      "markdown": "pages/quantum_nonlocality.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_nonlocality",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "discrete_protocol_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum number",
+      "slug": "quantum_number",
+      "json": "pages/quantum_number.json",
+      "markdown": "pages/quantum_number.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_number",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum programming",
+      "slug": "quantum_programming",
+      "json": "pages/quantum_programming.json",
+      "markdown": "pages/quantum_programming.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_programming",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "discrete_protocol_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum sensor",
+      "slug": "quantum_sensor",
+      "json": "pages/quantum_sensor.json",
+      "markdown": "pages/quantum_sensor.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_sensor",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum simulator",
+      "slug": "quantum_simulator",
+      "json": "pages/quantum_simulator.json",
+      "markdown": "pages/quantum_simulator.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_simulator",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum spacetime",
+      "slug": "quantum_spacetime",
+      "json": "pages/quantum_spacetime.json",
+      "markdown": "pages/quantum_spacetime.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_spacetime",
+      "top_routes": [
+        "commutator_incompatibility_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum stochastic calculus",
+      "slug": "quantum_stochastic_calculus",
+      "json": "pages/quantum_stochastic_calculus.json",
+      "markdown": "pages/quantum_stochastic_calculus.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_stochastic_calculus",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "spectral"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Quantum superposition",
+      "slug": "quantum_superposition",
+      "json": "pages/quantum_superposition.json",
+      "markdown": "pages/quantum_superposition.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_superposition",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Relational quantum mechanics",
+      "slug": "relational_quantum_mechanics",
+      "json": "pages/relational_quantum_mechanics.json",
+      "markdown": "pages/relational_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Relational_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "discrete_protocol_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Relativistic quantum mechanics",
+      "slug": "relativistic_quantum_mechanics",
+      "json": "pages/relativistic_quantum_mechanics.json",
+      "markdown": "pages/relativistic_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Relativistic_quantum_mechanics",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Schrödinger's cat",
+      "slug": "schr_dinger_s_cat",
+      "json": "pages/schr_dinger_s_cat.json",
+      "markdown": "pages/schr_dinger_s_cat.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Spectral line",
+      "slug": "spectral_line",
+      "json": "pages/spectral_line.json",
+      "markdown": "pages/spectral_line.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spectral_line",
+      "top_routes": [
+        "spectral_operator_route",
+        "boundary_weak_form_route",
+        "transport_flow_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Spin foam",
+      "slug": "spin_foam",
+      "json": "pages/spin_foam.json",
+      "markdown": "pages/spin_foam.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spin_foam",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Spin network",
+      "slug": "spin_network",
+      "json": "pages/spin_network.json",
+      "markdown": "pages/spin_network.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spin_network",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Symmetry in quantum mechanics",
+      "slug": "symmetry_in_quantum_mechanics",
+      "json": "pages/symmetry_in_quantum_mechanics.json",
+      "markdown": "pages/symmetry_in_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symmetry_in_quantum_mechanics",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "The Quantum Universe",
+      "slug": "the_quantum_universe",
+      "json": "pages/the_quantum_universe.json",
+      "markdown": "pages/the_quantum_universe.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Quantum_Universe",
+      "top_routes": [
+        "transport_flow_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route",
+        "spectral_operator_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Transformation theory (quantum mechanics)",
+      "slug": "transformation_theory_quantum_mechanics",
+      "json": "pages/transformation_theory_quantum_mechanics.json",
+      "markdown": "pages/transformation_theory_quantum_mechanics.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Transformation_theory_(quantum_mechanics)",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Two-state quantum system",
+      "slug": "two_state_quantum_system",
+      "json": "pages/two_state_quantum_system.json",
+      "markdown": "pages/two_state_quantum_system.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two-state_quantum_system",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "boundary_weak_form_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Wave function collapse",
+      "slug": "wave_function_collapse",
+      "json": "pages/wave_function_collapse.json",
+      "markdown": "pages/wave_function_collapse.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wave_function_collapse",
+      "top_routes": [
+        "spectral_operator_route",
+        "transport_flow_route",
+        "constraint_closure_route",
+        "commutator_incompatibility_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    },
+    {
+      "topic": "Werner Heisenberg",
+      "slug": "werner_heisenberg",
+      "json": "pages/werner_heisenberg.json",
+      "markdown": "pages/werner_heisenberg.md",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Werner_Heisenberg",
+      "top_routes": [
+        "transport_flow_route",
+        "spectral_operator_route",
+        "commutator_incompatibility_route",
+        "constraint_closure_route"
+      ],
+      "top_fibers": [
+        "syntax",
+        "entropy",
+        "structure"
+      ],
+      "witnesses": 32,
+      "llm_used": false
+    }
+  ],
+  "skipped_topics": []
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "user_provided_ggae_epoch_7_metrics",
+  "interpretation_boundary": "operator-core decoder run with detached geometry losses; raw Poincare geometry is diagnostic, not the training objective",
+  "epoch": 7.0,
+  "temperature": 1.0833371428567529,
+  "operator_core_decoder": true,
+  "geometry_loss_detached": true,
+  "geometry_role": "detached_rendering_diagnostic",
+  "fidelity": 0.9218382456718103,
+  "engram_stability": 0.5039793252944946,
+  "head_entropy": 0.14899452030658722,
+  "order_parameter": 0.36091408133506775,
+  "raw_poincare_mean_radius": 0.8352800011634827,
+  "raw_poincare_radius_std": 0.021325327455997467,
+  "raw_poincare_fraction_radius_gt_wall_start": 0.9988462328910828,
+  "fixed_probe_raw_poincare_mean_radius": 0.8336655778639566,
+  "fixed_probe_raw_poincare_shell_span_p99_p50": 0.0366681204096605,
+  "fixed_probe_raw_branch_health": 0.17090631841041015,
+  "fixed_probe_calibrated_branch_health": 0.11744994477314458,
+  "fixed_probe_calibrated_specialization_radius_gap": 0.15821468518855736,
+  "risk_flags": [
+    "fixed_probe_raw_mean_wall_saturation",
+    "fixed_probe_raw_thin_shell",
+    "latent_radius_wall_saturation",
+    "raw_latent_thin_shell",
+    "raw_latent_wall_saturation"
+  ],
+  "text_claim": "The GGAE learns a usable operator-core/engram layer while the raw Poincare embedding remains shell-like. The calibrated geometry is useful for visualization, but the raw geometry should not be used as evidence for a learned hierarchy."
+}

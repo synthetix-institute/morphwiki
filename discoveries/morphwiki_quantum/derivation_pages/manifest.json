@@ -1,0 +1,1037 @@
+{
+  "report_type": "quantum_derivation_pages_manifest",
+  "row_count": 147,
+  "topic_specific_count": 145,
+  "core_derived_count": 2,
+  "pages": [
+    {
+      "slug": "mathematical_formulation_of_quantum_mechanics",
+      "title": "Mathematical formulation of quantum mechanics",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/mathematical_formulation_of_quantum_mechanics.md"
+    },
+    {
+      "slug": "hilbert_space",
+      "title": "Hilbert space",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/hilbert_space.md"
+    },
+    {
+      "slug": "transformation_theory_quantum_mechanics",
+      "title": "Transformation theory (quantum mechanics)",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/transformation_theory_quantum_mechanics.md"
+    },
+    {
+      "slug": "quantum_differential_calculus",
+      "title": "Quantum differential calculus",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_differential_calculus.md"
+    },
+    {
+      "slug": "quantum_complexity_theory",
+      "title": "Quantum complexity theory",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_complexity_theory.md"
+    },
+    {
+      "slug": "quantum_cellular_automaton",
+      "title": "Quantum cellular automaton",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_cellular_automaton.md"
+    },
+    {
+      "slug": "relativistic_quantum_mechanics",
+      "title": "Relativistic quantum mechanics",
+      "branch": "context",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/relativistic_quantum_mechanics.md"
+    },
+    {
+      "slug": "density_matrix",
+      "title": "Density matrix",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/density_matrix.md"
+    },
+    {
+      "slug": "quantum_superposition",
+      "title": "Quantum superposition",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_superposition.md"
+    },
+    {
+      "slug": "quantum_decoherence",
+      "title": "Quantum decoherence",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_decoherence.md"
+    },
+    {
+      "slug": "superposition_principle",
+      "title": "Superposition principle",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/superposition_principle.md"
+    },
+    {
+      "slug": "coherence_physics",
+      "title": "Coherence (physics)",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/coherence_physics.md"
+    },
+    {
+      "slug": "wave_function",
+      "title": "Wave function",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/wave_function.md"
+    },
+    {
+      "slug": "quantum_state",
+      "title": "Quantum state",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_state.md"
+    },
+    {
+      "slug": "two_state_quantum_system",
+      "title": "Two-state quantum system",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/two_state_quantum_system.md"
+    },
+    {
+      "slug": "qubit",
+      "title": "Qubit",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/qubit.md"
+    },
+    {
+      "slug": "quantum_fluctuation",
+      "title": "Quantum fluctuation",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_fluctuation.md"
+    },
+    {
+      "slug": "bose_einstein_statistics",
+      "title": "Bose–Einstein statistics",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/bose_einstein_statistics.md"
+    },
+    {
+      "slug": "quantum_number",
+      "title": "Quantum number",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_number.md"
+    },
+    {
+      "slug": "fourier_transform",
+      "title": "Fourier transform",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/fourier_transform.md"
+    },
+    {
+      "slug": "wave_particle_duality",
+      "title": "Wave–particle duality",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/wave_particle_duality.md"
+    },
+    {
+      "slug": "quantum_statistical_mechanics",
+      "title": "Quantum statistical mechanics",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_statistical_mechanics.md"
+    },
+    {
+      "slug": "quantum_machine",
+      "title": "Quantum machine",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_machine.md"
+    },
+    {
+      "slug": "quantum_chemistry",
+      "title": "Quantum chemistry",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chemistry.md"
+    },
+    {
+      "slug": "applications_of_quantum_mechanics",
+      "title": "Applications of quantum mechanics",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/applications_of_quantum_mechanics.md"
+    },
+    {
+      "slug": "quantum_machine_learning",
+      "title": "Quantum machine learning",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_machine_learning.md"
+    },
+    {
+      "slug": "standard_model",
+      "title": "Standard Model",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/standard_model.md"
+    },
+    {
+      "slug": "spin_physics",
+      "title": "Spin (physics)",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/spin_physics.md"
+    },
+    {
+      "slug": "quantum_simulator",
+      "title": "Quantum simulator",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_simulator.md"
+    },
+    {
+      "slug": "werner_heisenberg",
+      "title": "Werner Heisenberg",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/werner_heisenberg.md"
+    },
+    {
+      "slug": "schr_dinger_s_cat",
+      "title": "Schrödinger's cat",
+      "branch": "states",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/schr_dinger_s_cat.md"
+    },
+    {
+      "slug": "unitary_operator",
+      "title": "Unitary operator",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/unitary_operator.md"
+    },
+    {
+      "slug": "perturbation_theory",
+      "title": "Perturbation theory",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/perturbation_theory.md"
+    },
+    {
+      "slug": "quantum_dynamics",
+      "title": "Quantum dynamics",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_dynamics.md"
+    },
+    {
+      "slug": "path_integral_formulation",
+      "title": "Path integral formulation",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/path_integral_formulation.md"
+    },
+    {
+      "slug": "hamiltonian_mechanics",
+      "title": "Hamiltonian mechanics",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/hamiltonian_mechanics.md"
+    },
+    {
+      "slug": "path_integral",
+      "title": "Path integral",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/path_integral.md"
+    },
+    {
+      "slug": "hamiltonian_quantum_mechanics",
+      "title": "Hamiltonian (quantum mechanics)",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/hamiltonian_quantum_mechanics.md"
+    },
+    {
+      "slug": "perturbation_theory_quantum_mechanics",
+      "title": "Perturbation theory (quantum mechanics)",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/perturbation_theory_quantum_mechanics.md"
+    },
+    {
+      "slug": "schr_dinger_picture",
+      "title": "Schrödinger picture",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/schr_dinger_picture.md"
+    },
+    {
+      "slug": "creation_and_annihilation_operators",
+      "title": "Creation and annihilation operators",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/creation_and_annihilation_operators.md"
+    },
+    {
+      "slug": "schr_dinger_equation",
+      "title": "Schrödinger equation",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/schr_dinger_equation.md"
+    },
+    {
+      "slug": "quantum_stochastic_calculus",
+      "title": "Quantum stochastic calculus",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_stochastic_calculus.md"
+    },
+    {
+      "slug": "quantum_chaos",
+      "title": "Quantum chaos",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chaos.md"
+    },
+    {
+      "slug": "symmetry_in_quantum_mechanics",
+      "title": "Symmetry in quantum mechanics",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/symmetry_in_quantum_mechanics.md"
+    },
+    {
+      "slug": "quantum_amplifier",
+      "title": "Quantum amplifier",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_amplifier.md"
+    },
+    {
+      "slug": "quantum_mechanics",
+      "title": "Quantum mechanics",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_mechanics.md"
+    },
+    {
+      "slug": "heisenberg_picture",
+      "title": "Heisenberg picture",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/heisenberg_picture.md"
+    },
+    {
+      "slug": "heisenberg_group",
+      "title": "Heisenberg group",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/heisenberg_group.md"
+    },
+    {
+      "slug": "canonical_commutation_relation",
+      "title": "Canonical commutation relation",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/canonical_commutation_relation.md"
+    },
+    {
+      "slug": "quantum_biology",
+      "title": "Quantum biology",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_biology.md"
+    },
+    {
+      "slug": "quantum_engineering",
+      "title": "Quantum engineering",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_engineering.md"
+    },
+    {
+      "slug": "quantum_logic",
+      "title": "Quantum logic",
+      "branch": "generators",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_logic.md"
+    },
+    {
+      "slug": "angular_momentum_operator",
+      "title": "Angular momentum operator",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/angular_momentum_operator.md"
+    },
+    {
+      "slug": "observable",
+      "title": "Observable",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/observable.md"
+    },
+    {
+      "slug": "self_adjoint_operator",
+      "title": "Self-adjoint operator",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/self_adjoint_operator.md"
+    },
+    {
+      "slug": "spectral_theory",
+      "title": "Spectral theory",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/spectral_theory.md"
+    },
+    {
+      "slug": "pauli_matrices",
+      "title": "Pauli matrices",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/pauli_matrices.md"
+    },
+    {
+      "slug": "operator_theory",
+      "title": "Operator theory",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/operator_theory.md"
+    },
+    {
+      "slug": "operator_physics",
+      "title": "Operator (physics)",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/operator_physics.md"
+    },
+    {
+      "slug": "eigenvalues_and_eigenvectors",
+      "title": "Eigenvalues and eigenvectors",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/eigenvalues_and_eigenvectors.md"
+    },
+    {
+      "slug": "von_neumann_algebra",
+      "title": "Von Neumann algebra",
+      "branch": "observables",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/von_neumann_algebra.md"
+    },
+    {
+      "slug": "electron_microscope",
+      "title": "Electron microscope",
+      "branch": "observables",
+      "status": "core_derived",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/electron_microscope.md"
+    },
+    {
+      "slug": "povm",
+      "title": "POVM",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/povm.md"
+    },
+    {
+      "slug": "wave_function_collapse",
+      "title": "Wave function collapse",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/wave_function_collapse.md"
+    },
+    {
+      "slug": "born_rule",
+      "title": "Born rule",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/born_rule.md"
+    },
+    {
+      "slug": "measurement_in_quantum_mechanics",
+      "title": "Measurement in quantum mechanics",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/measurement_in_quantum_mechanics.md"
+    },
+    {
+      "slug": "quantum_jump",
+      "title": "Quantum jump",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_jump.md"
+    },
+    {
+      "slug": "measurement_problem",
+      "title": "Measurement problem",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/measurement_problem.md"
+    },
+    {
+      "slug": "quantum_eraser_experiment",
+      "title": "Quantum eraser experiment",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_eraser_experiment.md"
+    },
+    {
+      "slug": "projection_valued_measure",
+      "title": "Projection-valued measure",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/projection_valued_measure.md"
+    },
+    {
+      "slug": "delayed_choice_quantum_eraser",
+      "title": "Delayed-choice quantum eraser",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/delayed_choice_quantum_eraser.md"
+    },
+    {
+      "slug": "quantum_metrology",
+      "title": "Quantum metrology",
+      "branch": "measurement",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_metrology.md"
+    },
+    {
+      "slug": "bell_s_theorem",
+      "title": "Bell's theorem",
+      "branch": "incompatibility",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/bell_s_theorem.md"
+    },
+    {
+      "slug": "quantum_entanglement",
+      "title": "Quantum entanglement",
+      "branch": "incompatibility",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_entanglement.md"
+    },
+    {
+      "slug": "commutator",
+      "title": "Commutator",
+      "branch": "incompatibility",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/commutator.md"
+    },
+    {
+      "slug": "uncertainty_principle",
+      "title": "Uncertainty principle",
+      "branch": "incompatibility",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/uncertainty_principle.md"
+    },
+    {
+      "slug": "einstein_podolsky_rosen_paradox",
+      "title": "Einstein–Podolsky–Rosen paradox",
+      "branch": "incompatibility",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/einstein_podolsky_rosen_paradox.md"
+    },
+    {
+      "slug": "quantum_nonlocality",
+      "title": "Quantum nonlocality",
+      "branch": "incompatibility",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_nonlocality.md"
+    },
+    {
+      "slug": "potential_well",
+      "title": "Potential well",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/potential_well.md"
+    },
+    {
+      "slug": "particle_in_a_box",
+      "title": "Particle in a box",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/particle_in_a_box.md"
+    },
+    {
+      "slug": "scattering",
+      "title": "Scattering",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/scattering.md"
+    },
+    {
+      "slug": "wave_interference",
+      "title": "Wave interference",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/wave_interference.md"
+    },
+    {
+      "slug": "quantum_optics",
+      "title": "Quantum optics",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_optics.md"
+    },
+    {
+      "slug": "spectral_line",
+      "title": "Spectral line",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/spectral_line.md"
+    },
+    {
+      "slug": "s_matrix",
+      "title": "S-matrix",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/s_matrix.md"
+    },
+    {
+      "slug": "quantum_tunnelling",
+      "title": "Quantum tunnelling",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_tunnelling.md"
+    },
+    {
+      "slug": "quantum_imaging",
+      "title": "Quantum imaging",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_imaging.md"
+    },
+    {
+      "slug": "quantum_harmonic_oscillator",
+      "title": "Quantum harmonic oscillator",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_harmonic_oscillator.md"
+    },
+    {
+      "slug": "macroscopic_quantum_phenomena",
+      "title": "Macroscopic quantum phenomena",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/macroscopic_quantum_phenomena.md"
+    },
+    {
+      "slug": "quantum_metamaterial",
+      "title": "Quantum metamaterial",
+      "branch": "boundaries",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_metamaterial.md"
+    },
+    {
+      "slug": "fermi_dirac_statistics",
+      "title": "Fermi–Dirac statistics",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/fermi_dirac_statistics.md"
+    },
+    {
+      "slug": "dirac_equation",
+      "title": "Dirac equation",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/dirac_equation.md"
+    },
+    {
+      "slug": "quantum_electrodynamics",
+      "title": "Quantum electrodynamics",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_electrodynamics.md"
+    },
+    {
+      "slug": "renormalization",
+      "title": "Renormalization",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/renormalization.md"
+    },
+    {
+      "slug": "gauge_theory",
+      "title": "Gauge theory",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/gauge_theory.md"
+    },
+    {
+      "slug": "photon",
+      "title": "Photon",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/photon.md"
+    },
+    {
+      "slug": "quantum_field_theory",
+      "title": "Quantum field theory",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_field_theory.md"
+    },
+    {
+      "slug": "fermion",
+      "title": "Fermion",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/fermion.md"
+    },
+    {
+      "slug": "boson",
+      "title": "Boson",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/boson.md"
+    },
+    {
+      "slug": "quantum_chromodynamics",
+      "title": "Quantum chromodynamics",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chromodynamics.md"
+    },
+    {
+      "slug": "ads_cft_correspondence",
+      "title": "AdS/CFT correspondence",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/ads_cft_correspondence.md"
+    },
+    {
+      "slug": "klein_gordon_equation",
+      "title": "Klein–Gordon equation",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/klein_gordon_equation.md"
+    },
+    {
+      "slug": "quantum_gravity",
+      "title": "Quantum gravity",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_gravity.md"
+    },
+    {
+      "slug": "spin_network",
+      "title": "Spin network",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/spin_network.md"
+    },
+    {
+      "slug": "electron",
+      "title": "Electron",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/electron.md"
+    },
+    {
+      "slug": "loop_quantum_gravity",
+      "title": "Loop quantum gravity",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/loop_quantum_gravity.md"
+    },
+    {
+      "slug": "spin_foam",
+      "title": "Spin foam",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/spin_foam.md"
+    },
+    {
+      "slug": "quantum_cosmology",
+      "title": "Quantum cosmology",
+      "branch": "fields",
+      "status": "core_derived",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_cosmology.md"
+    },
+    {
+      "slug": "string_theory",
+      "title": "String theory",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/string_theory.md"
+    },
+    {
+      "slug": "quantum_geometry",
+      "title": "Quantum geometry",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_geometry.md"
+    },
+    {
+      "slug": "fock_space",
+      "title": "Fock space",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/fock_space.md"
+    },
+    {
+      "slug": "quantum_spacetime",
+      "title": "Quantum spacetime",
+      "branch": "fields",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_spacetime.md"
+    },
+    {
+      "slug": "quantum_information_science",
+      "title": "Quantum information science",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_information_science.md"
+    },
+    {
+      "slug": "quantum_network",
+      "title": "Quantum network",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_network.md"
+    },
+    {
+      "slug": "quantum_algorithm",
+      "title": "Quantum algorithm",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_algorithm.md"
+    },
+    {
+      "slug": "quantum_error_correction",
+      "title": "Quantum error correction",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_error_correction.md"
+    },
+    {
+      "slug": "quantum_channel",
+      "title": "Quantum channel",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_channel.md"
+    },
+    {
+      "slug": "quantum_logic_gate",
+      "title": "Quantum logic gate",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_logic_gate.md"
+    },
+    {
+      "slug": "quantum_neural_network",
+      "title": "Quantum neural network",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_neural_network.md"
+    },
+    {
+      "slug": "quantum_circuit",
+      "title": "Quantum circuit",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_circuit.md"
+    },
+    {
+      "slug": "quantum_information",
+      "title": "Quantum information",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_information.md"
+    },
+    {
+      "slug": "quantum_computing",
+      "title": "Quantum computing",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_computing.md"
+    },
+    {
+      "slug": "quantum_key_distribution",
+      "title": "Quantum key distribution",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_key_distribution.md"
+    },
+    {
+      "slug": "quantum_sensor",
+      "title": "Quantum sensor",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_sensor.md"
+    },
+    {
+      "slug": "quantum_teleportation",
+      "title": "Quantum teleportation",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_teleportation.md"
+    },
+    {
+      "slug": "quantum_bus",
+      "title": "Quantum bus",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_bus.md"
+    },
+    {
+      "slug": "quantum_image_processing",
+      "title": "Quantum image processing",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_image_processing.md"
+    },
+    {
+      "slug": "quantum_finite_automaton",
+      "title": "Quantum finite automaton",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_finite_automaton.md"
+    },
+    {
+      "slug": "quantum_cryptography",
+      "title": "Quantum cryptography",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_cryptography.md"
+    },
+    {
+      "slug": "quantum_programming",
+      "title": "Quantum programming",
+      "branch": "protocols",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_programming.md"
+    },
+    {
+      "slug": "introduction_to_quantum_mechanics",
+      "title": "Introduction to quantum mechanics",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/introduction_to_quantum_mechanics.md"
+    },
+    {
+      "slug": "old_quantum_theory",
+      "title": "Old quantum theory",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/old_quantum_theory.md"
+    },
+    {
+      "slug": "history_of_quantum_mechanics",
+      "title": "History of quantum mechanics",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/history_of_quantum_mechanics.md"
+    },
+    {
+      "slug": "introduction_to_quantum_mechanics_book",
+      "title": "Introduction to Quantum Mechanics (book)",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/introduction_to_quantum_mechanics_book.md"
+    },
+    {
+      "slug": "quantum_mind",
+      "title": "Quantum mind",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_mind.md"
+    },
+    {
+      "slug": "history_of_quantum_field_theory",
+      "title": "History of quantum field theory",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/history_of_quantum_field_theory.md"
+    },
+    {
+      "slug": "erwin_schr_dinger",
+      "title": "Erwin Schrödinger",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/erwin_schr_dinger.md"
+    },
+    {
+      "slug": "interpretations_of_quantum_mechanics",
+      "title": "Interpretations of quantum mechanics",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/interpretations_of_quantum_mechanics.md"
+    },
+    {
+      "slug": "quantum_mysticism",
+      "title": "Quantum mysticism",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_mysticism.md"
+    },
+    {
+      "slug": "david_hilbert",
+      "title": "David Hilbert",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/david_hilbert.md"
+    },
+    {
+      "slug": "quantum_computing_a_gentle_introduction",
+      "title": "Quantum Computing: A Gentle Introduction",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_computing_a_gentle_introduction.md"
+    },
+    {
+      "slug": "qbism",
+      "title": "QBism",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/qbism.md"
+    },
+    {
+      "slug": "relational_quantum_mechanics",
+      "title": "Relational quantum mechanics",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/relational_quantum_mechanics.md"
+    },
+    {
+      "slug": "modern_quantum_mechanics",
+      "title": "Modern Quantum Mechanics",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/modern_quantum_mechanics.md"
+    },
+    {
+      "slug": "the_quantum_universe",
+      "title": "The Quantum Universe",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/the_quantum_universe.md"
+    },
+    {
+      "slug": "quantum_theory_concepts_and_methods",
+      "title": "Quantum Theory: Concepts and Methods",
+      "branch": "annotations",
+      "status": "topic_specific",
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_theory_concepts_and_methods.md"
+    }
+  ]
+}

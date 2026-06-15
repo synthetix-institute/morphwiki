@@ -1,0 +1,14 @@
+{
+  "title": "Path integral",
+  "pageid": 5651006,
+  "url": "https://en.wikipedia.org/wiki/Path_integral",
+  "summary": "Path integral may refer to:Line integral, the integral of a function along a curve\nContour integral, the integral of a complex function along a curve used in complex analysis\nFunctional integration, the integral of a functional over a space of curves\nPath integral formulation, Richard Feynman's formulation of quantum mechanics using functional integration",
+  "description": "Topics referred to by the same term",
+  "extract": "Path integral may refer to:\n\nLine integral, the integral of a function along a curve\nContour integral, the integral of a complex function along a curve used in complex analysis\nFunctional integration, the integral of a functional over a space of curves\nPath integral formulation, Richard Feynman's formulation of quantum mechanics using functional integration",
+  "lang": "en",
+  "license_note": "Wikipedia text is CC BY-SA; this export uses Wikipedia as the topic scaffold and keeps attribution metadata.",
+  "source_api": {
+    "summary": "https://en.wikipedia.org/api/rest_v1/page/summary/Path_integral",
+    "content": "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&redirects=1&inprop=url&titles=Path+integral"
+  }
+}

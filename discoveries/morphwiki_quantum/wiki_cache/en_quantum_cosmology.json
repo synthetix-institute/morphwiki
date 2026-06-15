@@ -1,0 +1,14 @@
+{
+  "title": "Quantum cosmology",
+  "pageid": 1213566,
+  "url": "https://en.wikipedia.org/wiki/Quantum_cosmology",
+  "summary": "Quantum cosmology is the attempt in theoretical physics to develop a quantum theory of the universe. This approach attempts to answer open questions of classical physical cosmology, particularly those related to the first phases of the universe.",
+  "description": "Attempts to develop a quantum mechanical theory of cosmology",
+  "extract": "Quantum cosmology is the attempt in theoretical physics to develop a quantum theory of the universe. This approach attempts to answer open questions of classical physical cosmology, particularly those related to the first phases of the universe.\nClassical cosmology is based on Albert Einstein's general theory of relativity (GTR or simply GR) which describes the evolution of the universe very well, as long as you do not approach the Big Bang. It is the gravitational singularity and the Planck time where relativity theory fails to provide what must be demanded of a final theory of space and time. Therefore, a theory is needed that integrates relativity theory and quantum theory. Such an approach is attempted for instance with loop quantum cosmology, loop quantum gravity, string theory and causal set theory.\nIn quantum cosmology, the universe is treated as a wave function instead of classical spacetime.\n\n\n== See also ==\n\n\n=== References ===\n\n\n== Further reading ==\nBojowald, Martin (2011). Quantum Cosmology. A Fundamental Description of the Universe. Lecture Notes in Physics. Vol. 835. Springer. ISBN 978-1-4419-8276-6.\nHalliwell, Jonathan J. (July 1989). \"The dichotomy of cosmogeny\". Nature. 340 (6228): 17–18. Bibcode:1989Natur.340...17H. doi:10.1038/340017a0. ISSN 0028-0836. The introduction describes quantum cosmology.\n\n\n== External links ==\nQuantum Cosmology by Paulo Vargas Moniz\nLectures on Quantum Cosmology by J.J. Halliwell",
+  "lang": "en",
+  "license_note": "Wikipedia text is CC BY-SA; this export uses Wikipedia as the topic scaffold and keeps attribution metadata.",
+  "source_api": {
+    "summary": "https://en.wikipedia.org/api/rest_v1/page/summary/Quantum_cosmology",
+    "content": "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&redirects=1&inprop=url&titles=Quantum+cosmology"
+  }
+}

@@ -1,0 +1,4207 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T07:49:00.889483+00:00",
+  "statement": "Operationally, quantum mechanics can be read as a rule that assigns probabilities to the spectrum of an observable.",
+  "method": {
+    "records_total": 2633,
+    "records_clean": 2180,
+    "hyperion_index": "discoveries/fieldbridge_static_index/hyperion_static_index.json",
+    "sparse_top_k": 24,
+    "record_fibers": "real hyperion.band_profile primary/context ratios when present; record fibers otherwise",
+    "query_side": "component lexical lenses plus route/fiber priors; not a full GPU featurization of the sentence"
+  },
+  "joint_attention": {
+    "component_weights": {
+      "observable_operator": 0.22,
+      "spectrum_readout": 0.2,
+      "probability_assignment": 0.2,
+      "prepared_state": 0.16,
+      "measurement_context": 0.12,
+      "noncommuting_compatibility": 0.1
+    },
+    "component_means_top_k": {
+      "prepared_state": 0.177124,
+      "observable_operator": 0.484402,
+      "spectrum_readout": 0.472317,
+      "probability_assignment": 0.19594,
+      "measurement_context": 0.40343,
+      "noncommuting_compatibility": 0.177656
+    },
+    "route_profile_top_k": {
+      "transport_flow_route": 0.0961,
+      "constraint_closure_route": 0.1246,
+      "spectral_operator_route": 0.4526,
+      "boundary_weak_form_route": 0.0426,
+      "commutator_incompatibility_route": 0.1046,
+      "discrete_protocol_route": 0.0186
+    },
+    "fiber_profile_top_k": {
+      "structure": 0.3472,
+      "spectral": 0.3472,
+      "geometry": 0.3055,
+      "syntax": 0.5858,
+      "entropy": 0.4142
+    },
+    "top_attention": {
+      "top_k": 24,
+      "mass": 1.0,
+      "rows": [
+        {
+          "record_id": "hyperion:EW000003340",
+          "attention": 0.050305,
+          "score": 0.404134,
+          "paper_id": "2206.05302",
+          "arxiv_url": "https://arxiv.org/abs/2206.05302",
+          "apparatus": "Α08",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333006243507217,
+            "spectral": 0.33328482946850596,
+            "geometry": 0.333414546180439,
+            "syntax": 0.5857367737039892,
+            "entropy": 0.41426322629559653
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000594",
+          "attention": 0.046523,
+          "score": 0.373752,
+          "paper_id": "1801.03283",
+          "arxiv_url": "https://arxiv.org/abs/1801.03283",
+          "apparatus": "Α11",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.2882,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333259957981037,
+            "spectral": 0.3333574253483496,
+            "geometry": 0.33331657885321336,
+            "syntax": 0.5858112883842971,
+            "entropy": 0.4141887116152887
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000009",
+          "attention": 0.046335,
+          "score": 0.37224,
+          "paper_id": "quant-ph0610203",
+          "arxiv_url": "https://arxiv.org/abs/quant-ph/0610203",
+          "apparatus": "Α01",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333328896012215,
+            "spectral": 0.3333834154435109,
+            "geometry": 0.3332836949549342,
+            "syntax": 0.585785354532643,
+            "entropy": 0.41421464546694275
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000187",
+          "attention": 0.046285,
+          "score": 0.371839,
+          "paper_id": "0809.2455",
+          "arxiv_url": "https://arxiv.org/abs/0809.2455",
+          "apparatus": "Α07",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.2882,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333738189502497,
+            "spectral": 0.3333217745305859,
+            "geometry": 0.333304406518831,
+            "syntax": 0.5857643734421604,
+            "entropy": 0.41423562655742546
+          }
+        },
+        {
+          "record_id": "hyperion:EW000003356",
+          "attention": 0.046195,
+          "score": 0.371114,
+          "paper_id": "hep-th9909221",
+          "arxiv_url": "https://arxiv.org/abs/hep-th/9909221",
+          "apparatus": "Α08",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.5852,
+            "spectral_operator_route": 0.6054,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333218692672971,
+            "spectral": 0.33331318677715976,
+            "geometry": 0.33336494395520977,
+            "syntax": 0.585741701008194,
+            "entropy": 0.41425829899139177
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000019",
+          "attention": 0.044007,
+          "score": 0.353537,
+          "paper_id": "1005.2682",
+          "arxiv_url": "https://arxiv.org/abs/1005.2682",
+          "apparatus": "Α00",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.2882,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333435186534685,
+            "spectral": 0.3333706176979728,
+            "geometry": 0.3332858636482253,
+            "syntax": 0.585743937577496,
+            "entropy": 0.4142560624220898
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000134",
+          "attention": 0.043669,
+          "score": 0.350822,
+          "paper_id": "cond-mat0412475",
+          "arxiv_url": "https://arxiv.org/abs/cond-mat/0412475",
+          "apparatus": "Α00",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3332995564457767,
+            "spectral": 0.33339206537986277,
+            "geometry": 0.3333083781740272,
+            "syntax": 0.5858129940546551,
+            "entropy": 0.4141870059449306
+          }
+        },
+        {
+          "record_id": "hyperion:EW000002770",
+          "attention": 0.042774,
+          "score": 0.34363,
+          "paper_id": "1612.00682",
+          "arxiv_url": "https://arxiv.org/abs/1612.00682",
+          "apparatus": "Α03",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.6054,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333277174046687,
+            "spectral": 0.33330939941129717,
+            "geometry": 0.3333628831837008,
+            "syntax": 0.5857599373080239,
+            "entropy": 0.4142400626915619
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000172",
+          "attention": 0.042188,
+          "score": 0.338921,
+          "paper_id": "1711.02122",
+          "arxiv_url": "https://arxiv.org/abs/1711.02122",
+          "apparatus": "Α07",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.6054,
+            "boundary_weak_form_route": 0.2882,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.33332116667716244,
+            "spectral": 0.3333558585358674,
+            "geometry": 0.33332297478663675,
+            "syntax": 0.5857888592493384,
+            "entropy": 0.4142111407502473
+          }
+        },
+        {
+          "record_id": "hyperion:EW000003676",
+          "attention": 0.041784,
+          "score": 0.335676,
+          "paper_id": "gr-qc9508045",
+          "arxiv_url": "https://arxiv.org/abs/gr-qc/9508045",
+          "apparatus": "Α08",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.2882,
+            "spectral_operator_route": 0.2882,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333232143242732,
+            "spectral": 0.3333981930018392,
+            "geometry": 0.33327859267355425,
+            "syntax": 0.5857939115435076,
+            "entropy": 0.41420608845607815
+          }
+        },
+        {
+          "record_id": "hyperion:EW000003461",
+          "attention": 0.040519,
+          "score": 0.325519,
+          "paper_id": "2211.16555",
+          "arxiv_url": "https://arxiv.org/abs/2211.16555",
+          "apparatus": "Α08",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.33332551899728785,
+            "spectral": 0.33333342604568245,
+            "geometry": 0.33334105495669636,
+            "syntax": 0.585819534291485,
+            "entropy": 0.41418046570810063
+          }
+        },
+        {
+          "record_id": "hyperion:EW000003141",
+          "attention": 0.040494,
+          "score": 0.325318,
+          "paper_id": "hep-th9611130",
+          "arxiv_url": "https://arxiv.org/abs/hep-th/9611130",
+          "apparatus": "Α09",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.4173,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.5000044702266087,
+            "spectral": 0.49999552977289136,
+            "geometry": 0.0,
+            "syntax": 0.5857788658092863,
+            "entropy": 0.4142211341902995
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000012",
+          "attention": 0.040108,
+          "score": 0.322214,
+          "paper_id": "2303.07459",
+          "arxiv_url": "https://arxiv.org/abs/2303.07459",
+          "apparatus": "Α01",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.6054,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.33327561597016936,
+            "spectral": 0.3333666419996008,
+            "geometry": 0.3333577420298965,
+            "syntax": 0.5858028405495561,
+            "entropy": 0.41419715945002966
+          }
+        },
+        {
+          "record_id": "hyperion:EW000003166",
+          "attention": 0.039991,
+          "score": 0.321278,
+          "paper_id": "1510.02612",
+          "arxiv_url": "https://arxiv.org/abs/1510.02612",
+          "apparatus": "Α09",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.2882,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.4457
+          },
+          "fibers": {
+            "structure": 0.5000377908492143,
+            "spectral": 0.4999622091502856,
+            "geometry": 0.0,
+            "syntax": 0.5858431941435758,
+            "entropy": 0.41415680585600995
+          }
+        },
+        {
+          "record_id": "hyperion:EW000002986",
+          "attention": 0.039404,
+          "score": 0.316557,
+          "paper_id": "quant-ph0405176",
+          "arxiv_url": "https://arxiv.org/abs/quant-ph/0405176",
+          "apparatus": "Α02",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333294855868635,
+            "spectral": 0.3333760956365584,
+            "geometry": 0.33329441877624477,
+            "syntax": 0.5857651947682229,
+            "entropy": 0.4142348052313629
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000525",
+          "attention": 0.039403,
+          "score": 0.316555,
+          "paper_id": "2111.07213",
+          "arxiv_url": "https://arxiv.org/abs/2111.07213",
+          "apparatus": "Α11",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.33337667985734326,
+            "spectral": 0.33329307305512723,
+            "geometry": 0.33333024708719616,
+            "syntax": 0.5857524480150137,
+            "entropy": 0.4142475519845721
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000388",
+          "attention": 0.039403,
+          "score": 0.316554,
+          "paper_id": "1806.05704",
+          "arxiv_url": "https://arxiv.org/abs/1806.05704",
+          "apparatus": "Α07",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333313068035648,
+            "spectral": 0.3333374658642882,
+            "geometry": 0.3333312273318136,
+            "syntax": 0.5857680058566687,
+            "entropy": 0.41423199414291717
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000646",
+          "attention": 0.039269,
+          "score": 0.315472,
+          "paper_id": "1010.5840",
+          "arxiv_url": "https://arxiv.org/abs/1010.5840",
+          "apparatus": "Α01",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.4173,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.2882,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333129491279058,
+            "spectral": 0.3333969892726313,
+            "geometry": 0.33329006159912955,
+            "syntax": 0.5857445384337566,
+            "entropy": 0.4142554615658291
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000272",
+          "attention": 0.039066,
+          "score": 0.313841,
+          "paper_id": "0809.5271",
+          "arxiv_url": "https://arxiv.org/abs/0809.5271",
+          "apparatus": "Α07",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333703453967572,
+            "spectral": 0.33331850333854524,
+            "geometry": 0.33331115126436417,
+            "syntax": 0.5858101986426358,
+            "entropy": 0.4141898013569499
+          }
+        },
+        {
+          "record_id": "hyperion:EW000002674",
+          "attention": 0.038763,
+          "score": 0.311413,
+          "paper_id": "1206.6727",
+          "arxiv_url": "https://arxiv.org/abs/1206.6727",
+          "apparatus": "Α03",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.4457,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3332841469096446,
+            "spectral": 0.3333434248934716,
+            "geometry": 0.3333724281965505,
+            "syntax": 0.5857841289334764,
+            "entropy": 0.41421587106610935
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000786",
+          "attention": 0.038486,
+          "score": 0.309181,
+          "paper_id": "2111.12617",
+          "arxiv_url": "https://arxiv.org/abs/2111.12617",
+          "apparatus": "Α05",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.2882,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.4934,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333185853286415,
+            "spectral": 0.3333105788905911,
+            "geometry": 0.333370835780434,
+            "syntax": 0.5857686910529255,
+            "entropy": 0.41423130894666027
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000193",
+          "attention": 0.038434,
+          "score": 0.308769,
+          "paper_id": "2301.05159",
+          "arxiv_url": "https://arxiv.org/abs/2301.05159",
+          "apparatus": "Α07",
+          "routes": {
+            "transport_flow_route": 0.2882,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.3333436518604624,
+            "spectral": 0.33331007359787723,
+            "geometry": 0.33334627454132704,
+            "syntax": 0.5858516015811787,
+            "entropy": 0.4141483984184071
+          }
+        },
+        {
+          "record_id": "hyperion:EW000003398",
+          "attention": 0.038299,
+          "score": 0.307685,
+          "paper_id": "math0502410",
+          "arxiv_url": "https://arxiv.org/abs/math/0502410",
+          "apparatus": "Α00",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.4173,
+            "spectral_operator_route": 0.4457,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.33332653193354317,
+            "spectral": 0.3333685323977735,
+            "geometry": 0.33330493566835,
+            "syntax": 0.5858457702706235,
+            "entropy": 0.4141542297289622
+          }
+        },
+        {
+          "record_id": "hyperion:EW000000198",
+          "attention": 0.038296,
+          "score": 0.307661,
+          "paper_id": "cond-mat9706226",
+          "arxiv_url": "https://arxiv.org/abs/cond-mat/9706226",
+          "apparatus": "Α07",
+          "routes": {
+            "transport_flow_route": 0.0,
+            "constraint_closure_route": 0.0,
+            "spectral_operator_route": 0.2882,
+            "boundary_weak_form_route": 0.0,
+            "commutator_incompatibility_route": 0.0,
+            "discrete_protocol_route": 0.0
+          },
+          "fibers": {
+            "structure": 0.33332824078267204,
+            "spectral": 0.33336853087050977,
+            "geometry": 0.3333032283464848,
+            "syntax": 0.5857933855831388,
+            "entropy": 0.414206614416447
+          }
+        }
+      ]
+    }
+  },
+  "component_attention": {
+    "prepared_state": {
+      "description": "Prepared state/state representation is present.",
+      "mean_top_score": 0.285902,
+      "top_attention": {
+        "top_k": 24,
+        "mass": 1.0,
+        "rows": [
+          {
+            "record_id": "hyperion:EW000000594",
+            "attention": 0.062947,
+            "score": 0.431923,
+            "paper_id": "1801.03283",
+            "arxiv_url": "https://arxiv.org/abs/1801.03283",
+            "apparatus": "Α11",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333259957981037,
+              "spectral": 0.3333574253483496,
+              "geometry": 0.33331657885321336,
+              "syntax": 0.5858112883842971,
+              "entropy": 0.4141887116152887
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003340",
+            "attention": 0.051609,
+            "score": 0.35412,
+            "paper_id": "2206.05302",
+            "arxiv_url": "https://arxiv.org/abs/2206.05302",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333006243507217,
+              "spectral": 0.33328482946850596,
+              "geometry": 0.333414546180439,
+              "syntax": 0.5857367737039892,
+              "entropy": 0.41426322629559653
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000022",
+            "attention": 0.051608,
+            "score": 0.354116,
+            "paper_id": "0912.5213",
+            "arxiv_url": "https://arxiv.org/abs/0912.5213",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333585457357931,
+              "spectral": 0.3333968113680638,
+              "geometry": 0.3332446428958097,
+              "syntax": 0.5857641322543911,
+              "entropy": 0.41423586774519466
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002828",
+            "attention": 0.051608,
+            "score": 0.354116,
+            "paper_id": "2007.01668",
+            "arxiv_url": "https://arxiv.org/abs/2007.01668",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.4457
+            },
+            "fibers": {
+              "structure": 0.33331245926291886,
+              "spectral": 0.3333675119743503,
+              "geometry": 0.3333200287623975,
+              "syntax": 0.5857623762051154,
+              "entropy": 0.41423762379447043
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003470",
+            "attention": 0.051608,
+            "score": 0.354114,
+            "paper_id": "hep-th0509204",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/0509204",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2212,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333493332618053,
+              "spectral": 0.3333222737799384,
+              "geometry": 0.333328392957923,
+              "syntax": 0.5857742849924858,
+              "entropy": 0.41422571500709987
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000009",
+            "attention": 0.051608,
+            "score": 0.354113,
+            "paper_id": "quant-ph0610203",
+            "arxiv_url": "https://arxiv.org/abs/quant-ph/0610203",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333328896012215,
+              "spectral": 0.3333834154435109,
+              "geometry": 0.3332836949549342,
+              "syntax": 0.585785354532643,
+              "entropy": 0.41421464546694275
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000015",
+            "attention": 0.051607,
+            "score": 0.354112,
+            "paper_id": "1007.4477",
+            "arxiv_url": "https://arxiv.org/abs/1007.4477",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3332806883185561,
+              "spectral": 0.3333599140991178,
+              "geometry": 0.33335939758199273,
+              "syntax": 0.5857908702888925,
+              "entropy": 0.41420912971069324
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003521",
+            "attention": 0.051607,
+            "score": 0.354112,
+            "paper_id": "2107.01923",
+            "arxiv_url": "https://arxiv.org/abs/2107.01923",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33332608761685295,
+              "spectral": 0.33336564763867516,
+              "geometry": 0.3333082647441385,
+              "syntax": 0.5857917667536832,
+              "entropy": 0.41420823324590267
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000008",
+            "attention": 0.051607,
+            "score": 0.354111,
+            "paper_id": "2110.11947",
+            "arxiv_url": "https://arxiv.org/abs/2110.11947",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333301720434243,
+              "spectral": 0.33331201085003975,
+              "geometry": 0.33338626871538396,
+              "syntax": 0.5857963961660202,
+              "entropy": 0.41420360383356547
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000134",
+            "attention": 0.051607,
+            "score": 0.354109,
+            "paper_id": "cond-mat0412475",
+            "arxiv_url": "https://arxiv.org/abs/cond-mat/0412475",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3332995564457767,
+              "spectral": 0.33339206537986277,
+              "geometry": 0.3333083781740272,
+              "syntax": 0.5858129940546551,
+              "entropy": 0.4141870059449306
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000272",
+            "attention": 0.051607,
+            "score": 0.354109,
+            "paper_id": "0809.5271",
+            "arxiv_url": "https://arxiv.org/abs/0809.5271",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333703453967572,
+              "spectral": 0.33331850333854524,
+              "geometry": 0.33331115126436417,
+              "syntax": 0.5858101986426358,
+              "entropy": 0.4141898013569499
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000616",
+            "attention": 0.051607,
+            "score": 0.354108,
+            "paper_id": "math0610635",
+            "arxiv_url": "https://arxiv.org/abs/math/0610635",
+            "apparatus": "Α11",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333313930602772,
+              "spectral": 0.33326720511947616,
+              "geometry": 0.3334188642774185,
+              "syntax": 0.5858150456768935,
+              "entropy": 0.41418495432269226
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002644",
+            "attention": 0.051607,
+            "score": 0.354108,
+            "paper_id": "math9804116",
+            "arxiv_url": "https://arxiv.org/abs/math/9804116",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33330234095919387,
+              "spectral": 0.3333726499410441,
+              "geometry": 0.3333250090994287,
+              "syntax": 0.5858170993089991,
+              "entropy": 0.41418290069058666
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003356",
+            "attention": 0.032083,
+            "score": 0.220143,
+            "paper_id": "hep-th9909221",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/9909221",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.5852,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333218692672971,
+              "spectral": 0.33331318677715976,
+              "geometry": 0.33336494395520977,
+              "syntax": 0.585741701008194,
+              "entropy": 0.41425829899139177
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000678",
+            "attention": 0.028667,
+            "score": 0.196705,
+            "paper_id": "1610.04373",
+            "arxiv_url": "https://arxiv.org/abs/1610.04373",
+            "apparatus": "Α11",
+            "routes": {
+              "transport_flow_route": 0.4984,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333362008507787,
+              "spectral": 0.3333928227332449,
+              "geometry": 0.33327097641564307,
+              "syntax": 0.5857530633753986,
+              "entropy": 0.41424693662418716
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001064",
+            "attention": 0.028667,
+            "score": 0.196704,
+            "paper_id": "1305.7382",
+            "arxiv_url": "https://arxiv.org/abs/1305.7382",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.4984,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333428964392783,
+              "spectral": 0.33329100135683004,
+              "geometry": 0.33336610220355833,
+              "syntax": 0.5857577525973291,
+              "entropy": 0.4142422474022566
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000535",
+            "attention": 0.028666,
+            "score": 0.196693,
+            "paper_id": "2303.05870",
+            "arxiv_url": "https://arxiv.org/abs/2303.05870",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.4984,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333192995226665,
+              "spectral": 0.33340133671537714,
+              "geometry": 0.333279363761623,
+              "syntax": 0.5858334262338779,
+              "entropy": 0.4141665737657078
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001082",
+            "attention": 0.028665,
+            "score": 0.196692,
+            "paper_id": "2306.17265",
+            "arxiv_url": "https://arxiv.org/abs/2306.17265",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.4984,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333359958251016,
+              "spectral": 0.3332877530617943,
+              "geometry": 0.33337625111277075,
+              "syntax": 0.5858411046054729,
+              "entropy": 0.41415889539411277
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003427",
+            "attention": 0.028665,
+            "score": 0.196691,
+            "paper_id": "1905.02221",
+            "arxiv_url": "https://arxiv.org/abs/1905.02221",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.4984,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331108148823135,
+              "spectral": 0.3333269160600686,
+              "geometry": 0.3333620024513667,
+              "syntax": 0.5858494918736229,
+              "entropy": 0.4141505081259628
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000552",
+            "attention": 0.028471,
+            "score": 0.195355,
+            "paper_id": "2506.08732",
+            "arxiv_url": "https://arxiv.org/abs/2506.08732",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.4934,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3332868082826908,
+              "spectral": 0.3333206789962502,
+              "geometry": 0.3333925127207257,
+              "syntax": 0.5857528970699348,
+              "entropy": 0.414247102929651
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003405",
+            "attention": 0.02847,
+            "score": 0.195351,
+            "paper_id": "2405.07790",
+            "arxiv_url": "https://arxiv.org/abs/2405.07790",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.4934,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.3333421344818774,
+              "spectral": 0.3333111615907861,
+              "geometry": 0.3333467039270031,
+              "syntax": 0.5857808052012098,
+              "entropy": 0.414219194798376
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000030",
+            "attention": 0.02847,
+            "score": 0.19535,
+            "paper_id": "astro-ph0301202",
+            "arxiv_url": "https://arxiv.org/abs/astro-ph/0301202",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.4934,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333333690946298,
+              "spectral": 0.3333174394187438,
+              "geometry": 0.33334886963462484,
+              "syntax": 0.5857866285792276,
+              "entropy": 0.4142133714203582
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000077",
+            "attention": 0.02847,
+            "score": 0.195348,
+            "paper_id": "2109.11618",
+            "arxiv_url": "https://arxiv.org/abs/2109.11618",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.4934,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333179962578809,
+              "spectral": 0.33334640560728257,
+              "geometry": 0.3333355981345032,
+              "syntax": 0.5857975637569549,
+              "entropy": 0.41420243624263076
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000120",
+            "attention": 0.028469,
+            "score": 0.195347,
+            "paper_id": "1903.11687",
+            "arxiv_url": "https://arxiv.org/abs/1903.11687",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.4934,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333573491969387,
+              "spectral": 0.3333051713220466,
+              "geometry": 0.33333747948068126,
+              "syntax": 0.5858054685759313,
+              "entropy": 0.4141945314236545
+            }
+          }
+        ]
+      }
+    },
+    "observable_operator": {
+      "description": "Observable/operator role is present.",
+      "mean_top_score": 0.500029,
+      "top_attention": {
+        "top_k": 24,
+        "mass": 1.000001,
+        "rows": [
+          {
+            "record_id": "hyperion:EW000000172",
+            "attention": 0.0542,
+            "score": 0.650435,
+            "paper_id": "1711.02122",
+            "arxiv_url": "https://arxiv.org/abs/1711.02122",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.2882,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33332116667716244,
+              "spectral": 0.3333558585358674,
+              "geometry": 0.33332297478663675,
+              "syntax": 0.5857888592493384,
+              "entropy": 0.4142111407502473
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000594",
+            "attention": 0.050607,
+            "score": 0.607316,
+            "paper_id": "1801.03283",
+            "arxiv_url": "https://arxiv.org/abs/1801.03283",
+            "apparatus": "Α11",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333259957981037,
+              "spectral": 0.3333574253483496,
+              "geometry": 0.33331657885321336,
+              "syntax": 0.5858112883842971,
+              "entropy": 0.4141887116152887
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003340",
+            "attention": 0.050606,
+            "score": 0.607308,
+            "paper_id": "2206.05302",
+            "arxiv_url": "https://arxiv.org/abs/2206.05302",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333006243507217,
+              "spectral": 0.33328482946850596,
+              "geometry": 0.333414546180439,
+              "syntax": 0.5857367737039892,
+              "entropy": 0.41426322629559653
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003130",
+            "attention": 0.044201,
+            "score": 0.530439,
+            "paper_id": "1511.08092",
+            "arxiv_url": "https://arxiv.org/abs/1511.08092",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000039044802993,
+              "spectral": 0.49999609551920055,
+              "geometry": 0.0,
+              "syntax": 0.585726714760202,
+              "entropy": 0.4142732852393838
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000012",
+            "attention": 0.042118,
+            "score": 0.505444,
+            "paper_id": "2303.07459",
+            "arxiv_url": "https://arxiv.org/abs/2303.07459",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33327561597016936,
+              "spectral": 0.3333666419996008,
+              "geometry": 0.3333577420298965,
+              "syntax": 0.5858028405495561,
+              "entropy": 0.41419715945002966
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000099",
+            "attention": 0.042118,
+            "score": 0.505444,
+            "paper_id": "2108.07838",
+            "arxiv_url": "https://arxiv.org/abs/2108.07838",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331659845287864,
+              "spectral": 0.3333686308845602,
+              "geometry": 0.33331477066222776,
+              "syntax": 0.5858119986138641,
+              "entropy": 0.4141880013857216
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003721",
+            "attention": 0.042118,
+            "score": 0.505442,
+            "paper_id": "2004.05709",
+            "arxiv_url": "https://arxiv.org/abs/2004.05709",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33335704865468874,
+              "spectral": 0.33329269741796985,
+              "geometry": 0.333350253927008,
+              "syntax": 0.5857361212899419,
+              "entropy": 0.41426387870964393
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002770",
+            "attention": 0.042117,
+            "score": 0.505438,
+            "paper_id": "1612.00682",
+            "arxiv_url": "https://arxiv.org/abs/1612.00682",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333277174046687,
+              "spectral": 0.33330939941129717,
+              "geometry": 0.3333628831837008,
+              "syntax": 0.5857599373080239,
+              "entropy": 0.4142400626915619
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003746",
+            "attention": 0.042117,
+            "score": 0.505438,
+            "paper_id": "2308.15676",
+            "arxiv_url": "https://arxiv.org/abs/2308.15676",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333120481825824,
+              "spectral": 0.33333050546784476,
+              "geometry": 0.33335744634923953,
+              "syntax": 0.5858404256107366,
+              "entropy": 0.41415957438884915
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003356",
+            "attention": 0.042117,
+            "score": 0.505437,
+            "paper_id": "hep-th9909221",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/9909221",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.5852,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333218692672971,
+              "spectral": 0.33331318677715976,
+              "geometry": 0.33336494395520977,
+              "syntax": 0.585741701008194,
+              "entropy": 0.41425829899139177
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003157",
+            "attention": 0.040608,
+            "score": 0.487328,
+            "paper_id": "1201.4252",
+            "arxiv_url": "https://arxiv.org/abs/1201.4252",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000539762105174,
+              "spectral": 0.4999460237889825,
+              "geometry": 0.0,
+              "syntax": 0.5857749478123295,
+              "entropy": 0.41422505218725625
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003166",
+            "attention": 0.040608,
+            "score": 0.487325,
+            "paper_id": "1510.02612",
+            "arxiv_url": "https://arxiv.org/abs/1510.02612",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.4457
+            },
+            "fibers": {
+              "structure": 0.5000377908492143,
+              "spectral": 0.4999622091502856,
+              "geometry": 0.0,
+              "syntax": 0.5858431941435758,
+              "entropy": 0.41415680585600995
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003131",
+            "attention": 0.040608,
+            "score": 0.487322,
+            "paper_id": "2406.14388",
+            "arxiv_url": "https://arxiv.org/abs/2406.14388",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000168711259858,
+              "spectral": 0.49998312887351404,
+              "geometry": 0.0,
+              "syntax": 0.5857687589373878,
+              "entropy": 0.4142312410621979
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003141",
+            "attention": 0.040608,
+            "score": 0.48732,
+            "paper_id": "hep-th9611130",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/9611130",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000044702266087,
+              "spectral": 0.49999552977289136,
+              "geometry": 0.0,
+              "syntax": 0.5857788658092863,
+              "entropy": 0.4142211341902995
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000646",
+            "attention": 0.038525,
+            "score": 0.462329,
+            "paper_id": "1010.5840",
+            "arxiv_url": "https://arxiv.org/abs/1010.5840",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333129491279058,
+              "spectral": 0.3333969892726313,
+              "geometry": 0.33329006159912955,
+              "syntax": 0.5857445384337566,
+              "entropy": 0.4142554615658291
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000017",
+            "attention": 0.038525,
+            "score": 0.462328,
+            "paper_id": "1611.03923",
+            "arxiv_url": "https://arxiv.org/abs/1611.03923",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333392600062568,
+              "spectral": 0.3332924334613279,
+              "geometry": 0.3333149664757707,
+              "syntax": 0.5857911756855406,
+              "entropy": 0.4142088243140451
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000134",
+            "attention": 0.038525,
+            "score": 0.462328,
+            "paper_id": "cond-mat0412475",
+            "arxiv_url": "https://arxiv.org/abs/cond-mat/0412475",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3332995564457767,
+              "spectral": 0.33339206537986277,
+              "geometry": 0.3333083781740272,
+              "syntax": 0.5858129940546551,
+              "entropy": 0.4141870059449306
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000009",
+            "attention": 0.038525,
+            "score": 0.462327,
+            "paper_id": "quant-ph0610203",
+            "arxiv_url": "https://arxiv.org/abs/quant-ph/0610203",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333328896012215,
+              "spectral": 0.3333834154435109,
+              "geometry": 0.3332836949549342,
+              "syntax": 0.585785354532643,
+              "entropy": 0.41421464546694275
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002669",
+            "attention": 0.038525,
+            "score": 0.462327,
+            "paper_id": "0907.2759",
+            "arxiv_url": "https://arxiv.org/abs/0907.2759",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33338386266422715,
+              "spectral": 0.3332832212715649,
+              "geometry": 0.33333291606387455,
+              "syntax": 0.5857712812898838,
+              "entropy": 0.414228718709702
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003332",
+            "attention": 0.038525,
+            "score": 0.462327,
+            "paper_id": "quant-ph0205159",
+            "arxiv_url": "https://arxiv.org/abs/quant-ph/0205159",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333585068161707,
+              "spectral": 0.3333847333335282,
+              "geometry": 0.3332567598499678,
+              "syntax": 0.5858146366318773,
+              "entropy": 0.4141853633677085
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003358",
+            "attention": 0.038525,
+            "score": 0.462327,
+            "paper_id": "2311.14083",
+            "arxiv_url": "https://arxiv.org/abs/2311.14083",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33330071266027406,
+              "spectral": 0.3333817279491185,
+              "geometry": 0.3333175593902741,
+              "syntax": 0.5858006492284221,
+              "entropy": 0.41419935077116365
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000187",
+            "attention": 0.038525,
+            "score": 0.462326,
+            "paper_id": "0809.2455",
+            "arxiv_url": "https://arxiv.org/abs/0809.2455",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.2882,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333738189502497,
+              "spectral": 0.3333217745305859,
+              "geometry": 0.333304406518831,
+              "syntax": 0.5857643734421604,
+              "entropy": 0.41423562655742546
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000356",
+            "attention": 0.038525,
+            "score": 0.462326,
+            "paper_id": "2210.07341",
+            "arxiv_url": "https://arxiv.org/abs/2210.07341",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333746513591741,
+              "spectral": 0.3333029972385028,
+              "geometry": 0.33332235140198974,
+              "syntax": 0.5857442196668503,
+              "entropy": 0.4142557803327354
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000525",
+            "attention": 0.038525,
+            "score": 0.462326,
+            "paper_id": "2111.07213",
+            "arxiv_url": "https://arxiv.org/abs/2111.07213",
+            "apparatus": "Α11",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33337667985734326,
+              "spectral": 0.33329307305512723,
+              "geometry": 0.33333024708719616,
+              "syntax": 0.5857524480150137,
+              "entropy": 0.4142475519845721
+            }
+          }
+        ]
+      }
+    },
+    "spectrum_readout": {
+      "description": "Spectrum/eigenvalue/readout role is present.",
+      "mean_top_score": 0.556699,
+      "top_attention": {
+        "top_k": 24,
+        "mass": 1.0,
+        "rows": [
+          {
+            "record_id": "hyperion:EW000002647",
+            "attention": 0.048683,
+            "score": 0.650438,
+            "paper_id": "cond-mat0410029",
+            "arxiv_url": "https://arxiv.org/abs/cond-mat/0410029",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33332578972569016,
+              "spectral": 0.3333726011550463,
+              "geometry": 0.3333016091189302,
+              "syntax": 0.5857434018523925,
+              "entropy": 0.4142565981471933
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003356",
+            "attention": 0.048682,
+            "score": 0.650429,
+            "paper_id": "hep-th9909221",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/9909221",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.5852,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333218692672971,
+              "spectral": 0.33331318677715976,
+              "geometry": 0.33336494395520977,
+              "syntax": 0.585741701008194,
+              "entropy": 0.41425829899139177
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003095",
+            "attention": 0.044143,
+            "score": 0.589788,
+            "paper_id": "2108.04661",
+            "arxiv_url": "https://arxiv.org/abs/2108.04661",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000012218522178,
+              "spectral": 0.49999877814728216,
+              "geometry": 0.0,
+              "syntax": 0.5857380291076343,
+              "entropy": 0.4142619708919515
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003301",
+            "attention": 0.042273,
+            "score": 0.564798,
+            "paper_id": "1508.05217",
+            "arxiv_url": "https://arxiv.org/abs/1508.05217",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333142725905893,
+              "spectral": 0.3334023109685667,
+              "geometry": 0.33328341644051057,
+              "syntax": 0.5858323189773855,
+              "entropy": 0.4141676810222002
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003545",
+            "attention": 0.042273,
+            "score": 0.564797,
+            "paper_id": "1601.05545",
+            "arxiv_url": "https://arxiv.org/abs/1601.05545",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333306312030038,
+              "spectral": 0.3333929987526769,
+              "geometry": 0.33327637004398586,
+              "syntax": 0.5857837767182034,
+              "entropy": 0.4142162232813824
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000274",
+            "attention": 0.042273,
+            "score": 0.564795,
+            "paper_id": "hep-ex0201005",
+            "arxiv_url": "https://arxiv.org/abs/hep-ex/0201005",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333384923595464,
+              "spectral": 0.33338073147366143,
+              "geometry": 0.33328077616645885,
+              "syntax": 0.5857857388894714,
+              "entropy": 0.4142142611101144
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002122",
+            "attention": 0.042273,
+            "score": 0.564795,
+            "paper_id": "1908.06244",
+            "arxiv_url": "https://arxiv.org/abs/1908.06244",
+            "apparatus": "Α02",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33330669070968555,
+              "spectral": 0.3333815523096007,
+              "geometry": 0.3333117569803804,
+              "syntax": 0.5857604805690099,
+              "entropy": 0.41423951943057585
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003285",
+            "attention": 0.042272,
+            "score": 0.564789,
+            "paper_id": "quant-ph9810051",
+            "arxiv_url": "https://arxiv.org/abs/quant-ph/9810051",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33327462586442774,
+              "spectral": 0.33334365647148645,
+              "geometry": 0.3333817176637525,
+              "syntax": 0.58577921607338,
+              "entropy": 0.4142207839262057
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002094",
+            "attention": 0.042272,
+            "score": 0.564788,
+            "paper_id": "0909.1322",
+            "arxiv_url": "https://arxiv.org/abs/0909.1322",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33334002876561214,
+              "spectral": 0.3333373267513539,
+              "geometry": 0.3333226444827006,
+              "syntax": 0.5858130975954882,
+              "entropy": 0.41418690240409756
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002970",
+            "attention": 0.042272,
+            "score": 0.564788,
+            "paper_id": "hep-ex0408093",
+            "arxiv_url": "https://arxiv.org/abs/hep-ex/0408093",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33329828696562624,
+              "spectral": 0.3333316048559088,
+              "geometry": 0.3333701081781316,
+              "syntax": 0.5858122728029342,
+              "entropy": 0.41418772719665153
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003223",
+            "attention": 0.042272,
+            "score": 0.564788,
+            "paper_id": "hep-th9912118",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/9912118",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33330101981839,
+              "spectral": 0.33333530657654603,
+              "geometry": 0.3333636736047307,
+              "syntax": 0.5857713403204077,
+              "entropy": 0.41422865967917805
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001121",
+            "attention": 0.042272,
+            "score": 0.564787,
+            "paper_id": "2105.13961",
+            "arxiv_url": "https://arxiv.org/abs/2105.13961",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.3333124785610805,
+              "spectral": 0.33332739942536604,
+              "geometry": 0.3333601220132201,
+              "syntax": 0.585797247839457,
+              "entropy": 0.4142027521601288
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002962",
+            "attention": 0.042272,
+            "score": 0.564786,
+            "paper_id": "2303.16962",
+            "arxiv_url": "https://arxiv.org/abs/2303.16962",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.33332624686539347,
+              "spectral": 0.33332435934826155,
+              "geometry": 0.3333493937860116,
+              "syntax": 0.5857730061171561,
+              "entropy": 0.4142269938824296
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000234",
+            "attention": 0.042272,
+            "score": 0.564785,
+            "paper_id": "hep-th0112227",
+            "arxiv_url": "https://arxiv.org/abs/hep-th/0112227",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333277704538711,
+              "spectral": 0.3333178367407441,
+              "geometry": 0.33335439280505147,
+              "syntax": 0.5858052790885168,
+              "entropy": 0.41419472091106896
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002922",
+            "attention": 0.042272,
+            "score": 0.564783,
+            "paper_id": "hep-ex0605067",
+            "arxiv_url": "https://arxiv.org/abs/hep-ex/0605067",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333644306576541,
+              "spectral": 0.33330142131850166,
+              "geometry": 0.33333414802351086,
+              "syntax": 0.5857951390421823,
+              "entropy": 0.41420486095740344
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003505",
+            "attention": 0.042272,
+            "score": 0.564782,
+            "paper_id": "quant-ph0607206",
+            "arxiv_url": "https://arxiv.org/abs/quant-ph/0607206",
+            "apparatus": "Α11",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.4457
+            },
+            "fibers": {
+              "structure": 0.3333700072205448,
+              "spectral": 0.33329817620952557,
+              "geometry": 0.33333181656959626,
+              "syntax": 0.58582044584862,
+              "entropy": 0.4141795541509657
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000167",
+            "attention": 0.042271,
+            "score": 0.56478,
+            "paper_id": "1505.08060",
+            "arxiv_url": "https://arxiv.org/abs/1505.08060",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333199422760881,
+              "spectral": 0.3332817559084147,
+              "geometry": 0.3333983018151639,
+              "syntax": 0.5858165366742895,
+              "entropy": 0.41418346332529626
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003130",
+            "attention": 0.039701,
+            "score": 0.530438,
+            "paper_id": "1511.08092",
+            "arxiv_url": "https://arxiv.org/abs/1511.08092",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000039044802993,
+              "spectral": 0.49999609551920055,
+              "geometry": 0.0,
+              "syntax": 0.585726714760202,
+              "entropy": 0.4142732852393838
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000012",
+            "attention": 0.03783,
+            "score": 0.505444,
+            "paper_id": "2303.07459",
+            "arxiv_url": "https://arxiv.org/abs/2303.07459",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33327561597016936,
+              "spectral": 0.3333666419996008,
+              "geometry": 0.3333577420298965,
+              "syntax": 0.5858028405495561,
+              "entropy": 0.41419715945002966
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000099",
+            "attention": 0.03783,
+            "score": 0.505444,
+            "paper_id": "2108.07838",
+            "arxiv_url": "https://arxiv.org/abs/2108.07838",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331659845287864,
+              "spectral": 0.3333686308845602,
+              "geometry": 0.33331477066222776,
+              "syntax": 0.5858119986138641,
+              "entropy": 0.4141880013857216
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000172",
+            "attention": 0.03783,
+            "score": 0.505442,
+            "paper_id": "1711.02122",
+            "arxiv_url": "https://arxiv.org/abs/1711.02122",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.2882,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33332116667716244,
+              "spectral": 0.3333558585358674,
+              "geometry": 0.33332297478663675,
+              "syntax": 0.5857888592493384,
+              "entropy": 0.4142111407502473
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003535",
+            "attention": 0.03783,
+            "score": 0.50544,
+            "paper_id": "1802.00110",
+            "arxiv_url": "https://arxiv.org/abs/1802.00110",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331750621378814,
+              "spectral": 0.33334412756112075,
+              "geometry": 0.33333836622475777,
+              "syntax": 0.5858202414626168,
+              "entropy": 0.414179758536969
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003752",
+            "attention": 0.03783,
+            "score": 0.50544,
+            "paper_id": "1002.0169",
+            "arxiv_url": "https://arxiv.org/abs/1002.0169",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333207512203671,
+              "spectral": 0.33334403475131374,
+              "geometry": 0.3333352140279858,
+              "syntax": 0.5857925698064238,
+              "entropy": 0.41420743019316186
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003746",
+            "attention": 0.03783,
+            "score": 0.505438,
+            "paper_id": "2308.15676",
+            "arxiv_url": "https://arxiv.org/abs/2308.15676",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333120481825824,
+              "spectral": 0.33333050546784476,
+              "geometry": 0.33335744634923953,
+              "syntax": 0.5858404256107366,
+              "entropy": 0.41415957438884915
+            }
+          }
+        ]
+      }
+    },
+    "probability_assignment": {
+      "description": "Probability/Born/readout assignment is present.",
+      "mean_top_score": 0.46779,
+      "top_attention": {
+        "top_k": 24,
+        "mass": 1.000001,
+        "rows": [
+          {
+            "record_id": "hyperion:EW000000177",
+            "attention": 0.054491,
+            "score": 0.61177,
+            "paper_id": "2112.10557",
+            "arxiv_url": "https://arxiv.org/abs/2112.10557",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331614699028905,
+              "spectral": 0.33337487858533005,
+              "geometry": 0.33330897442404755,
+              "syntax": 0.5858348904636589,
+              "entropy": 0.4141651095359268
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003382",
+            "attention": 0.051388,
+            "score": 0.576928,
+            "paper_id": "hep-ph0504263",
+            "arxiv_url": "https://arxiv.org/abs/hep-ph/0504263",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33329365089603186,
+              "spectral": 0.3333626315812413,
+              "geometry": 0.3333437175223935,
+              "syntax": 0.5857347212672617,
+              "entropy": 0.41426527873232416
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002091",
+            "attention": 0.044457,
+            "score": 0.499111,
+            "paper_id": "1711.02497",
+            "arxiv_url": "https://arxiv.org/abs/1711.02497",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331975694330335,
+              "spectral": 0.3333516051672642,
+              "geometry": 0.33332863788909906,
+              "syntax": 0.5857544577030869,
+              "entropy": 0.41424554229649896
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003342",
+            "attention": 0.044456,
+            "score": 0.499108,
+            "paper_id": "1401.3891",
+            "arxiv_url": "https://arxiv.org/abs/1401.3891",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33335023367156935,
+              "spectral": 0.33332766456769514,
+              "geometry": 0.33332210176040217,
+              "syntax": 0.5857705244070539,
+              "entropy": 0.4142294755925319
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002764",
+            "attention": 0.044456,
+            "score": 0.499107,
+            "paper_id": "2409.01304",
+            "arxiv_url": "https://arxiv.org/abs/2409.01304",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331026618445414,
+              "spectral": 0.3333279490116751,
+              "geometry": 0.33336178480353734,
+              "syntax": 0.5857809223596779,
+              "entropy": 0.41421907763990784
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000324",
+            "attention": 0.044456,
+            "score": 0.499104,
+            "paper_id": "2504.09654",
+            "arxiv_url": "https://arxiv.org/abs/2504.09654",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333333108142863,
+              "spectral": 0.33332953159009915,
+              "geometry": 0.33333736026670446,
+              "syntax": 0.5857980905900879,
+              "entropy": 0.41420190940949775
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002085",
+            "attention": 0.044456,
+            "score": 0.499103,
+            "paper_id": "1812.09967",
+            "arxiv_url": "https://arxiv.org/abs/1812.09967",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33330126804686877,
+              "spectral": 0.3333175390936615,
+              "geometry": 0.33338119285913637,
+              "syntax": 0.5858038343082256,
+              "entropy": 0.4141961656913602
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002785",
+            "attention": 0.044455,
+            "score": 0.499099,
+            "paper_id": "1605.08833",
+            "arxiv_url": "https://arxiv.org/abs/1605.08833",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333000631959319,
+              "spectral": 0.3333738879352855,
+              "geometry": 0.33332604886844924,
+              "syntax": 0.5858302215979658,
+              "entropy": 0.4141697784016199
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000449",
+            "attention": 0.04226,
+            "score": 0.474449,
+            "paper_id": "2101.07524",
+            "arxiv_url": "https://arxiv.org/abs/2101.07524",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.4457
+            },
+            "fibers": {
+              "structure": 0.33330964496219984,
+              "spectral": 0.3333888357759224,
+              "geometry": 0.33330151926154444,
+              "syntax": 0.5858055597534144,
+              "entropy": 0.4141944402461713
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000062",
+            "attention": 0.04226,
+            "score": 0.474448,
+            "paper_id": "0710.3703",
+            "arxiv_url": "https://arxiv.org/abs/0710.3703",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.4457
+            },
+            "fibers": {
+              "structure": 0.3333616036147862,
+              "spectral": 0.3333136143481669,
+              "geometry": 0.3333247820367135,
+              "syntax": 0.5858086607953928,
+              "entropy": 0.41419133920419293
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003222",
+            "attention": 0.041577,
+            "score": 0.466781,
+            "paper_id": "1801.08949",
+            "arxiv_url": "https://arxiv.org/abs/1801.08949",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333324856163354,
+              "spectral": 0.33340514422543976,
+              "geometry": 0.33326237015789145,
+              "syntax": 0.5858018890620428,
+              "entropy": 0.41419811093754294
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003148",
+            "attention": 0.039619,
+            "score": 0.444802,
+            "paper_id": "2209.11837",
+            "arxiv_url": "https://arxiv.org/abs/2209.11837",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.5000527990482404,
+              "spectral": 0.4999472009512595,
+              "geometry": 0.0,
+              "syntax": 0.5858189869008119,
+              "entropy": 0.4141810130987738
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000019",
+            "attention": 0.038473,
+            "score": 0.431933,
+            "paper_id": "1005.2682",
+            "arxiv_url": "https://arxiv.org/abs/1005.2682",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333435186534685,
+              "spectral": 0.3333706176979728,
+              "geometry": 0.3332858636482253,
+              "syntax": 0.585743937577496,
+              "entropy": 0.4142560624220898
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000188",
+            "attention": 0.038473,
+            "score": 0.431932,
+            "paper_id": "0903.5323",
+            "arxiv_url": "https://arxiv.org/abs/0903.5323",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.2882,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333207298530536,
+              "spectral": 0.3333697065928574,
+              "geometry": 0.3333095635537556,
+              "syntax": 0.5857508359050595,
+              "entropy": 0.4142491640945262
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000133",
+            "attention": 0.038473,
+            "score": 0.431931,
+            "paper_id": "2506.19780",
+            "arxiv_url": "https://arxiv.org/abs/2506.19780",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.3333939654232241,
+              "spectral": 0.3333261865094171,
+              "geometry": 0.33327984806702543,
+              "syntax": 0.585753984812357,
+              "entropy": 0.41424601518722876
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002855",
+            "attention": 0.038473,
+            "score": 0.43193,
+            "paper_id": "1812.01226",
+            "arxiv_url": "https://arxiv.org/abs/1812.01226",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.3333615663409302,
+              "spectral": 0.3333181340011345,
+              "geometry": 0.3333202996576019,
+              "syntax": 0.5857662899951551,
+              "entropy": 0.4142337100044306
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003430",
+            "attention": 0.038473,
+            "score": 0.43193,
+            "paper_id": "2002.12008",
+            "arxiv_url": "https://arxiv.org/abs/2002.12008",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333603727923758,
+              "spectral": 0.33331028721079886,
+              "geometry": 0.33332933999649195,
+              "syntax": 0.5857625001232032,
+              "entropy": 0.4142374998763826
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003445",
+            "attention": 0.038473,
+            "score": 0.431929,
+            "paper_id": "2005.11758",
+            "arxiv_url": "https://arxiv.org/abs/2005.11758",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.33333718115694644,
+              "spectral": 0.3333065641361598,
+              "geometry": 0.33335625470656044,
+              "syntax": 0.58577315673939,
+              "entropy": 0.41422684326019577
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002786",
+            "attention": 0.038472,
+            "score": 0.431927,
+            "paper_id": "1510.06328",
+            "arxiv_url": "https://arxiv.org/abs/1510.06328",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33335030276920147,
+              "spectral": 0.33331725807126994,
+              "geometry": 0.3333324391591952,
+              "syntax": 0.5857850713097273,
+              "entropy": 0.41421492868985843
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003343",
+            "attention": 0.038472,
+            "score": 0.431927,
+            "paper_id": "2506.02972",
+            "arxiv_url": "https://arxiv.org/abs/2506.02972",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.3333492538223261,
+              "spectral": 0.33334281675268845,
+              "geometry": 0.3333079294246521,
+              "syntax": 0.58578039713059,
+              "entropy": 0.41421960286899573
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003405",
+            "attention": 0.038472,
+            "score": 0.431927,
+            "paper_id": "2405.07790",
+            "arxiv_url": "https://arxiv.org/abs/2405.07790",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.4934,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.3333421344818774,
+              "spectral": 0.3333111615907861,
+              "geometry": 0.3333467039270031,
+              "syntax": 0.5857808052012098,
+              "entropy": 0.414219194798376
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002753",
+            "attention": 0.038472,
+            "score": 0.431926,
+            "paper_id": "2003.09948",
+            "arxiv_url": "https://arxiv.org/abs/2003.09948",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.33331559056783483,
+              "spectral": 0.3333662557993442,
+              "geometry": 0.3333181536324876,
+              "syntax": 0.5857876007506189,
+              "entropy": 0.41421239924896686
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003676",
+            "attention": 0.038472,
+            "score": 0.431925,
+            "paper_id": "gr-qc9508045",
+            "arxiv_url": "https://arxiv.org/abs/gr-qc/9508045",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333232143242732,
+              "spectral": 0.3333981930018392,
+              "geometry": 0.33327859267355425,
+              "syntax": 0.5857939115435076,
+              "entropy": 0.41420608845607815
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000200",
+            "attention": 0.038472,
+            "score": 0.431924,
+            "paper_id": "1310.2865",
+            "arxiv_url": "https://arxiv.org/abs/1310.2865",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333348917959548,
+              "spectral": 0.33330339601448333,
+              "geometry": 0.3333476860256353,
+              "syntax": 0.5858007491909512,
+              "entropy": 0.41419925080863457
+            }
+          }
+        ]
+      }
+    },
+    "measurement_context": {
+      "description": "Measurement/preparation/context/boundary role is present.",
+      "mean_top_score": 0.637392,
+      "top_attention": {
+        "top_k": 24,
+        "mass": 1.000002,
+        "rows": [
+          {
+            "record_id": "hyperion:EW000003794",
+            "attention": 0.042177,
+            "score": 0.645191,
+            "paper_id": "1603.05022",
+            "arxiv_url": "https://arxiv.org/abs/1603.05022",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333122485469259,
+              "spectral": 0.3333540075489311,
+              "geometry": 0.33333374390380965,
+              "syntax": 0.5858553402171182,
+              "entropy": 0.4141446597824676
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003544",
+            "attention": 0.042176,
+            "score": 0.645187,
+            "paper_id": "2204.13078",
+            "arxiv_url": "https://arxiv.org/abs/2204.13078",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333110155396295,
+              "spectral": 0.3333729225825092,
+              "geometry": 0.33331606187752794,
+              "syntax": 0.5858267431134329,
+              "entropy": 0.4141732568861528
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001104",
+            "attention": 0.042176,
+            "score": 0.645186,
+            "paper_id": "2310.19304",
+            "arxiv_url": "https://arxiv.org/abs/2310.19304",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331658487726895,
+              "spectral": 0.33336778389386634,
+              "geometry": 0.33331563122853136,
+              "syntax": 0.5858215272975936,
+              "entropy": 0.4141784727019921
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003352",
+            "attention": 0.042176,
+            "score": 0.645184,
+            "paper_id": "2402.11586",
+            "arxiv_url": "https://arxiv.org/abs/2402.11586",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333285519597368,
+              "spectral": 0.33331877729593556,
+              "geometry": 0.3333526707439943,
+              "syntax": 0.5858094319528989,
+              "entropy": 0.4141905680466868
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000393",
+            "attention": 0.042176,
+            "score": 0.645183,
+            "paper_id": "1506.00034",
+            "arxiv_url": "https://arxiv.org/abs/1506.00034",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33333333995575937,
+              "spectral": 0.333272803343894,
+              "geometry": 0.3333938567000133,
+              "syntax": 0.5857993042496442,
+              "entropy": 0.41420069574994145
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002090",
+            "attention": 0.042176,
+            "score": 0.645182,
+            "paper_id": "2411.08750",
+            "arxiv_url": "https://arxiv.org/abs/2411.08750",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33330099411976155,
+              "spectral": 0.333326604551556,
+              "geometry": 0.33337240132834906,
+              "syntax": 0.5857956723482136,
+              "entropy": 0.4142043276513721
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002788",
+            "attention": 0.042176,
+            "score": 0.645182,
+            "paper_id": "1305.5025",
+            "arxiv_url": "https://arxiv.org/abs/1305.5025",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33336315098523245,
+              "spectral": 0.3333280215258228,
+              "geometry": 0.3333088274886114,
+              "syntax": 0.5857918072980128,
+              "entropy": 0.41420819270157294
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003688",
+            "attention": 0.042176,
+            "score": 0.645182,
+            "paper_id": "hep-ph9511469",
+            "arxiv_url": "https://arxiv.org/abs/hep-ph/9511469",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331645910728513,
+              "spectral": 0.33335327379409213,
+              "geometry": 0.3333302670982894,
+              "syntax": 0.5857967247061997,
+              "entropy": 0.4142032752933861
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000255",
+            "attention": 0.042176,
+            "score": 0.645181,
+            "paper_id": "1002.1929",
+            "arxiv_url": "https://arxiv.org/abs/1002.1929",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2212,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333318777465976,
+              "spectral": 0.33336665686551664,
+              "geometry": 0.3333145656681741,
+              "syntax": 0.5857859373986166,
+              "entropy": 0.41421406260096916
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003388",
+            "attention": 0.042176,
+            "score": 0.645181,
+            "paper_id": "1311.3490",
+            "arxiv_url": "https://arxiv.org/abs/1311.3490",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33331855983710734,
+              "spectral": 0.3332832186677819,
+              "geometry": 0.33339822149477744,
+              "syntax": 0.5857876890728357,
+              "entropy": 0.41421231092675004
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002674",
+            "attention": 0.042176,
+            "score": 0.64518,
+            "paper_id": "1206.6727",
+            "arxiv_url": "https://arxiv.org/abs/1206.6727",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3332841469096446,
+              "spectral": 0.3333434248934716,
+              "geometry": 0.3333724281965505,
+              "syntax": 0.5857841289334764,
+              "entropy": 0.41421587106610935
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002822",
+            "attention": 0.042176,
+            "score": 0.645179,
+            "paper_id": "1904.02887",
+            "arxiv_url": "https://arxiv.org/abs/1904.02887",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333205904072036,
+              "spectral": 0.3333409565701491,
+              "geometry": 0.3333384530223139,
+              "syntax": 0.5857768002486671,
+              "entropy": 0.4142231997509187
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001410",
+            "attention": 0.042176,
+            "score": 0.645178,
+            "paper_id": "2501.07524",
+            "arxiv_url": "https://arxiv.org/abs/2501.07524",
+            "apparatus": "Α04",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333428504322403,
+              "spectral": 0.33328775457508525,
+              "geometry": 0.33336939499234103,
+              "syntax": 0.5857679780045827,
+              "entropy": 0.41423202199500314
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003342",
+            "attention": 0.042176,
+            "score": 0.645178,
+            "paper_id": "1401.3891",
+            "arxiv_url": "https://arxiv.org/abs/1401.3891",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33335023367156935,
+              "spectral": 0.33332766456769514,
+              "geometry": 0.33332210176040217,
+              "syntax": 0.5857705244070539,
+              "entropy": 0.4142294755925319
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000537",
+            "attention": 0.042176,
+            "score": 0.645177,
+            "paper_id": "1603.02295",
+            "arxiv_url": "https://arxiv.org/abs/1603.02295",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333626117676301,
+              "spectral": 0.33332361138305017,
+              "geometry": 0.33331377684898644,
+              "syntax": 0.5857608755759762,
+              "entropy": 0.4142391244236095
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003594",
+            "attention": 0.042176,
+            "score": 0.645177,
+            "paper_id": "2501.12973",
+            "arxiv_url": "https://arxiv.org/abs/2501.12973",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333330485571592,
+              "spectral": 0.33331761103994284,
+              "geometry": 0.3333519033881318,
+              "syntax": 0.5857602182005459,
+              "entropy": 0.4142397817990399
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003756",
+            "attention": 0.042176,
+            "score": 0.645177,
+            "paper_id": "1906.04671",
+            "arxiv_url": "https://arxiv.org/abs/1906.04671",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33333211460760104,
+              "spectral": 0.3333193378591055,
+              "geometry": 0.33334854753296,
+              "syntax": 0.5857622649705269,
+              "entropy": 0.4142377350290589
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003595",
+            "attention": 0.042176,
+            "score": 0.645176,
+            "paper_id": "1912.01738",
+            "arxiv_url": "https://arxiv.org/abs/1912.01738",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33333549895044867,
+              "spectral": 0.3334045205490234,
+              "geometry": 0.33325998050019456,
+              "syntax": 0.5857581668516887,
+              "entropy": 0.4142418331478971
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003578",
+            "attention": 0.042175,
+            "score": 0.645175,
+            "paper_id": "1703.07297",
+            "arxiv_url": "https://arxiv.org/abs/1703.07297",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333278563148212,
+              "spectral": 0.3333156373318106,
+              "geometry": 0.3333565063530348,
+              "syntax": 0.5857506636457332,
+              "entropy": 0.4142493363538526
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003811",
+            "attention": 0.042175,
+            "score": 0.645172,
+            "paper_id": "gr-qc9410034",
+            "arxiv_url": "https://arxiv.org/abs/gr-qc/9410034",
+            "apparatus": "Α10",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333330419449406,
+              "spectral": 0.33335147887621197,
+              "geometry": 0.33331547917851406,
+              "syntax": 0.5857297215200147,
+              "entropy": 0.4142702784795711
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000031",
+            "attention": 0.042175,
+            "score": 0.645171,
+            "paper_id": "hep-ph9409255",
+            "arxiv_url": "https://arxiv.org/abs/hep-ph/9409255",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2212,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33334080419482537,
+              "spectral": 0.3333046619148889,
+              "geometry": 0.3333545338899524,
+              "syntax": 0.5857221382835702,
+              "entropy": 0.41427786171601555
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003499",
+            "attention": 0.039396,
+            "score": 0.602658,
+            "paper_id": "1811.03011",
+            "arxiv_url": "https://arxiv.org/abs/1811.03011",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.2882,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333558847531917,
+              "spectral": 0.3333290018710607,
+              "geometry": 0.33331511337541425,
+              "syntax": 0.5857997027363024,
+              "entropy": 0.41420029726328333
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003640",
+            "attention": 0.039396,
+            "score": 0.602658,
+            "paper_id": "1604.05644",
+            "arxiv_url": "https://arxiv.org/abs/1604.05644",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.2882,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33334700349700686,
+              "spectral": 0.3333453742042302,
+              "geometry": 0.3333076222984296,
+              "syntax": 0.5858037664472061,
+              "entropy": 0.41419623355237956
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003298",
+            "attention": 0.035516,
+            "score": 0.543304,
+            "paper_id": "0709.4575",
+            "arxiv_url": "https://arxiv.org/abs/0709.4575",
+            "apparatus": "Α08",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.6054,
+              "commutator_incompatibility_route": 0.0,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3332913480786026,
+              "spectral": 0.33336171642490986,
+              "geometry": 0.3333469354961542,
+              "syntax": 0.5857705359179408,
+              "entropy": 0.41422946408164496
+            }
+          }
+        ]
+      }
+    },
+    "noncommuting_compatibility": {
+      "description": "Non-commuting/incompatibility relation is present.",
+      "mean_top_score": 0.435873,
+      "top_attention": {
+        "top_k": 24,
+        "mass": 0.999999,
+        "rows": [
+          {
+            "record_id": "hyperion:EW000000102",
+            "attention": 0.045426,
+            "score": 0.4752,
+            "paper_id": "2007.01040",
+            "arxiv_url": "https://arxiv.org/abs/2007.01040",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.4934,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333413864098849,
+              "spectral": 0.3333802080672836,
+              "geometry": 0.33327840552249816,
+              "syntax": 0.5858007677286762,
+              "entropy": 0.4141992322709096
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000786",
+            "attention": 0.045426,
+            "score": 0.475196,
+            "paper_id": "2111.12617",
+            "arxiv_url": "https://arxiv.org/abs/2111.12617",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.4934,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333185853286415,
+              "spectral": 0.3333105788905911,
+              "geometry": 0.333370835780434,
+              "syntax": 0.5857686910529255,
+              "entropy": 0.41423130894666027
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003090",
+            "attention": 0.04252,
+            "score": 0.444799,
+            "paper_id": "1410.0911",
+            "arxiv_url": "https://arxiv.org/abs/1410.0911",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000310561743493,
+              "spectral": 0.4999689438251506,
+              "geometry": 0.0,
+              "syntax": 0.5857743281977137,
+              "entropy": 0.41422567180187203
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003160",
+            "attention": 0.04252,
+            "score": 0.444798,
+            "paper_id": "1903.12272",
+            "arxiv_url": "https://arxiv.org/abs/1903.12272",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2882,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000257953112264,
+              "spectral": 0.4999742046882736,
+              "geometry": 0.0,
+              "syntax": 0.5857712932418853,
+              "entropy": 0.4142287067577004
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003123",
+            "attention": 0.04252,
+            "score": 0.444795,
+            "paper_id": "2310.08485",
+            "arxiv_url": "https://arxiv.org/abs/2310.08485",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.2882,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.5000058267436222,
+              "spectral": 0.4999941732558778,
+              "geometry": 0.0,
+              "syntax": 0.5857955527647836,
+              "entropy": 0.4142044472348022
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003203",
+            "attention": 0.042519,
+            "score": 0.444794,
+            "paper_id": "hep-ph0212256",
+            "arxiv_url": "https://arxiv.org/abs/hep-ph/0212256",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.4999988972823384,
+              "spectral": 0.5000011027171616,
+              "geometry": 0.0,
+              "syntax": 0.5857962787736771,
+              "entropy": 0.4142037212259086
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003097",
+            "attention": 0.042519,
+            "score": 0.444793,
+            "paper_id": "math0512531",
+            "arxiv_url": "https://arxiv.org/abs/math/0512531",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2212,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.4457
+            },
+            "fibers": {
+              "structure": 0.49999178930357024,
+              "spectral": 0.5000082106959297,
+              "geometry": 0.0,
+              "syntax": 0.5857452176018849,
+              "entropy": 0.4142547823977008
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003124",
+            "attention": 0.042519,
+            "score": 0.444793,
+            "paper_id": "2110.09771",
+            "arxiv_url": "https://arxiv.org/abs/2110.09771",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.2882
+            },
+            "fibers": {
+              "structure": 0.49999186363111203,
+              "spectral": 0.5000081363683879,
+              "geometry": 0.0,
+              "syntax": 0.5857748866988288,
+              "entropy": 0.41422511330075695
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003127",
+            "attention": 0.042519,
+            "score": 0.444792,
+            "paper_id": "1508.06979",
+            "arxiv_url": "https://arxiv.org/abs/1508.06979",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.4999840862596122,
+              "spectral": 0.5000159137398877,
+              "geometry": 0.0,
+              "syntax": 0.5857207994169591,
+              "entropy": 0.41427920058262674
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003155",
+            "attention": 0.042519,
+            "score": 0.444791,
+            "paper_id": "1010.0161",
+            "arxiv_url": "https://arxiv.org/abs/1010.0161",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.4999773952662979,
+              "spectral": 0.500022604733202,
+              "geometry": 0.0,
+              "syntax": 0.5858145015672631,
+              "entropy": 0.41418549843232255
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003156",
+            "attention": 0.042519,
+            "score": 0.444791,
+            "paper_id": "hep-ph9402358",
+            "arxiv_url": "https://arxiv.org/abs/hep-ph/9402358",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.4999758614250202,
+              "spectral": 0.5000241385744798,
+              "geometry": 0.0,
+              "syntax": 0.5858271051683305,
+              "entropy": 0.4141728948312553
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003125",
+            "attention": 0.042519,
+            "score": 0.444789,
+            "paper_id": "2104.11546",
+            "arxiv_url": "https://arxiv.org/abs/2104.11546",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.49996555234641593,
+              "spectral": 0.500034447653084,
+              "geometry": 0.0,
+              "syntax": 0.5858542857859971,
+              "entropy": 0.41414571421358864
+            }
+          },
+          {
+            "record_id": "hyperion:EW000003144",
+            "attention": 0.042519,
+            "score": 0.444789,
+            "paper_id": "1601.01085",
+            "arxiv_url": "https://arxiv.org/abs/1601.01085",
+            "apparatus": "Α09",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.499960841970101,
+              "spectral": 0.500039158029399,
+              "geometry": 0.0,
+              "syntax": 0.5857422734211762,
+              "entropy": 0.4142577265784095
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001253",
+            "attention": 0.040131,
+            "score": 0.419804,
+            "paper_id": "2008.01808",
+            "arxiv_url": "https://arxiv.org/abs/2008.01808",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33339586606380117,
+              "spectral": 0.33331342300718464,
+              "geometry": 0.33329071092868073,
+              "syntax": 0.5857797789592436,
+              "entropy": 0.4142202210403422
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000312",
+            "attention": 0.040131,
+            "score": 0.419803,
+            "paper_id": "1705.10065",
+            "arxiv_url": "https://arxiv.org/abs/1705.10065",
+            "apparatus": "Α05",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33339097480742524,
+              "spectral": 0.3332945480324141,
+              "geometry": 0.33331447715982726,
+              "syntax": 0.585803333326754,
+              "entropy": 0.4141966666728317
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001282",
+            "attention": 0.040131,
+            "score": 0.419803,
+            "paper_id": "2303.16566",
+            "arxiv_url": "https://arxiv.org/abs/2303.16566",
+            "apparatus": "Α04",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333930773506404,
+              "spectral": 0.33331534389294415,
+              "geometry": 0.333291578756082,
+              "syntax": 0.5857464128810839,
+              "entropy": 0.41425358711850185
+            }
+          },
+          {
+            "record_id": "hyperion:EW000001434",
+            "attention": 0.040131,
+            "score": 0.419803,
+            "paper_id": "2202.02993",
+            "arxiv_url": "https://arxiv.org/abs/2202.02993",
+            "apparatus": "Α04",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.333389218019867,
+              "spectral": 0.33328107141543195,
+              "geometry": 0.33332971056436766,
+              "syntax": 0.5857556696370623,
+              "entropy": 0.41424433036252356
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002330",
+            "attention": 0.040131,
+            "score": 0.419803,
+            "paper_id": "math0507558",
+            "arxiv_url": "https://arxiv.org/abs/math/0507558",
+            "apparatus": "Α03",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33338862791750445,
+              "spectral": 0.3333070968875655,
+              "geometry": 0.3333042751945966,
+              "syntax": 0.5857746155988903,
+              "entropy": 0.41422538440069534
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000003",
+            "attention": 0.04013,
+            "score": 0.419802,
+            "paper_id": "1503.04426",
+            "arxiv_url": "https://arxiv.org/abs/1503.04426",
+            "apparatus": "Α01",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333801471167738,
+              "spectral": 0.33331020462182404,
+              "geometry": 0.3333096482610688,
+              "syntax": 0.5857556419911327,
+              "entropy": 0.414244358008453
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000145",
+            "attention": 0.04013,
+            "score": 0.419802,
+            "paper_id": "2406.13687",
+            "arxiv_url": "https://arxiv.org/abs/2406.13687",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.2212,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333805176207961,
+              "spectral": 0.33328639410722044,
+              "geometry": 0.33333308827165004,
+              "syntax": 0.5857764977258194,
+              "entropy": 0.41422350227376625
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000231",
+            "attention": 0.04013,
+            "score": 0.419802,
+            "paper_id": "2501.06352",
+            "arxiv_url": "https://arxiv.org/abs/2501.06352",
+            "apparatus": "Α07",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.2882,
+              "spectral_operator_route": 0.6054,
+              "boundary_weak_form_route": 0.4457,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333832506801758,
+              "spectral": 0.33329097942135166,
+              "geometry": 0.33332576989813917,
+              "syntax": 0.5857833206551949,
+              "entropy": 0.41421667934439094
+            }
+          },
+          {
+            "record_id": "hyperion:EW000002309",
+            "attention": 0.04013,
+            "score": 0.419802,
+            "paper_id": "1806.07082",
+            "arxiv_url": "https://arxiv.org/abs/1806.07082",
+            "apparatus": "Α02",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33338049425000604,
+              "spectral": 0.333334691196697,
+              "geometry": 0.33328481455296355,
+              "syntax": 0.5858115402237042,
+              "entropy": 0.4141884597758815
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000058",
+            "attention": 0.04013,
+            "score": 0.419801,
+            "paper_id": "2404.17939",
+            "arxiv_url": "https://arxiv.org/abs/2404.17939",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.4173,
+              "spectral_operator_route": 0.4457,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.33337403917867564,
+              "spectral": 0.3332794408072777,
+              "geometry": 0.33334652001371323,
+              "syntax": 0.5857470390577071,
+              "entropy": 0.41425296094187875
+            }
+          },
+          {
+            "record_id": "hyperion:EW000000151",
+            "attention": 0.04013,
+            "score": 0.419801,
+            "paper_id": "hep-ph0510041",
+            "arxiv_url": "https://arxiv.org/abs/hep-ph/0510041",
+            "apparatus": "Α00",
+            "routes": {
+              "transport_flow_route": 0.0,
+              "constraint_closure_route": 0.0,
+              "spectral_operator_route": 0.0,
+              "boundary_weak_form_route": 0.0,
+              "commutator_incompatibility_route": 0.2882,
+              "discrete_protocol_route": 0.0
+            },
+            "fibers": {
+              "structure": 0.3333737016990977,
+              "spectral": 0.3332988927257485,
+              "geometry": 0.3333274055748205,
+              "syntax": 0.5857832566034391,
+              "entropy": 0.4142167433961466
+            }
+          }
+        ]
+      }
+    }
+  },
+  "alternative_query_contrast": {
+    "tested_statement": {
+      "mean_morphwiki_score_top_k": 0.32781,
+      "route_profile_top_k": {
+        "transport_flow_route": 0.0448,
+        "constraint_closure_route": 0.1366,
+        "spectral_operator_route": 0.4342,
+        "boundary_weak_form_route": 0.0983,
+        "commutator_incompatibility_route": 0.1526,
+        "discrete_protocol_route": 0.0306
+      },
+      "fiber_profile_top_k": {
+        "structure": 0.3472,
+        "spectral": 0.3472,
+        "geometry": 0.3055,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "top_papers": [
+        {
+          "record_id": "hyperion:EW000000231",
+          "score": 0.450511,
+          "paper_id": "2501.06352",
+          "arxiv_url": "https://arxiv.org/abs/2501.06352",
+          "apparatus": "Α07"
+        },
+        {
+          "record_id": "hyperion:EW000000172",
+          "score": 0.35799,
+          "paper_id": "1711.02122",
+          "arxiv_url": "https://arxiv.org/abs/1711.02122",
+          "apparatus": "Α07"
+        },
+        {
+          "record_id": "hyperion:EW000003676",
+          "score": 0.350271,
+          "paper_id": "gr-qc9508045",
+          "arxiv_url": "https://arxiv.org/abs/gr-qc/9508045",
+          "apparatus": "Α08"
+        },
+        {
+          "record_id": "hyperion:EW000003752",
+          "score": 0.346183,
+          "paper_id": "1002.0169",
+          "arxiv_url": "https://arxiv.org/abs/1002.0169",
+          "apparatus": "Α00"
+        },
+        {
+          "record_id": "hyperion:EW000000595",
+          "score": 0.345721,
+          "paper_id": "1604.06537",
+          "arxiv_url": "https://arxiv.org/abs/1604.06537",
+          "apparatus": "Α11"
+        }
+      ]
+    },
+    "object_taxonomy": {
+      "mean_morphwiki_score_top_k": 0.080132,
+      "route_profile_top_k": {
+        "transport_flow_route": 0.048,
+        "constraint_closure_route": 0.024,
+        "spectral_operator_route": 0.3759,
+        "boundary_weak_form_route": 0.0371,
+        "commutator_incompatibility_route": 0.048,
+        "discrete_protocol_route": 0.012
+      },
+      "fiber_profile_top_k": {
+        "structure": 0.3333,
+        "spectral": 0.3333,
+        "geometry": 0.3333,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "top_papers": [
+        {
+          "record_id": "hyperion:EW000003461",
+          "score": 0.102617,
+          "paper_id": "2211.16555",
+          "arxiv_url": "https://arxiv.org/abs/2211.16555",
+          "apparatus": "Α08"
+        },
+        {
+          "record_id": "hyperion:EW000002654",
+          "score": 0.099263,
+          "paper_id": "1312.7087",
+          "arxiv_url": "https://arxiv.org/abs/1312.7087",
+          "apparatus": "Α03"
+        },
+        {
+          "record_id": "hyperion:EW000000327",
+          "score": 0.097499,
+          "paper_id": "1507.03039",
+          "arxiv_url": "https://arxiv.org/abs/1507.03039",
+          "apparatus": "Α07"
+        },
+        {
+          "record_id": "hyperion:EW000002327",
+          "score": 0.096872,
+          "paper_id": "1704.02589",
+          "arxiv_url": "https://arxiv.org/abs/1704.02589",
+          "apparatus": "Α03"
+        },
+        {
+          "record_id": "hyperion:EW000000046",
+          "score": 0.095164,
+          "paper_id": "1704.02439",
+          "arxiv_url": "https://arxiv.org/abs/1704.02439",
+          "apparatus": "Α11"
+        }
+      ]
+    },
+    "dynamics_only": {
+      "mean_morphwiki_score_top_k": 0.408783,
+      "route_profile_top_k": {
+        "transport_flow_route": 0.1649,
+        "constraint_closure_route": 0.1366,
+        "spectral_operator_route": 0.4528,
+        "boundary_weak_form_route": 0.0491,
+        "commutator_incompatibility_route": 0.012,
+        "discrete_protocol_route": 0.0
+      },
+      "fiber_profile_top_k": {
+        "structure": 0.3611,
+        "spectral": 0.3611,
+        "geometry": 0.2778,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "top_papers": [
+        {
+          "record_id": "hyperion:EW000001082",
+          "score": 0.484383,
+          "paper_id": "2306.17265",
+          "arxiv_url": "https://arxiv.org/abs/2306.17265",
+          "apparatus": "Α03"
+        },
+        {
+          "record_id": "hyperion:EW000000099",
+          "score": 0.453554,
+          "paper_id": "2108.07838",
+          "arxiv_url": "https://arxiv.org/abs/2108.07838",
+          "apparatus": "Α00"
+        },
+        {
+          "record_id": "hyperion:EW000003132",
+          "score": 0.425061,
+          "paper_id": "2207.09284",
+          "arxiv_url": "https://arxiv.org/abs/2207.09284",
+          "apparatus": "Α09"
+        },
+        {
+          "record_id": "hyperion:EW000003159",
+          "score": 0.421837,
+          "paper_id": "1001.0370",
+          "arxiv_url": "https://arxiv.org/abs/1001.0370",
+          "apparatus": "Α09"
+        },
+        {
+          "record_id": "hyperion:EW000003130",
+          "score": 0.4196,
+          "paper_id": "1511.08092",
+          "arxiv_url": "https://arxiv.org/abs/1511.08092",
+          "apparatus": "Α09"
+        }
+      ]
+    },
+    "spectrum_only": {
+      "mean_morphwiki_score_top_k": 0.436962,
+      "route_profile_top_k": {
+        "transport_flow_route": 0.036,
+        "constraint_closure_route": 0.048,
+        "spectral_operator_route": 0.4658,
+        "boundary_weak_form_route": 0.0677,
+        "commutator_incompatibility_route": 0.024,
+        "discrete_protocol_route": 0.0306
+      },
+      "fiber_profile_top_k": {
+        "structure": 0.3472,
+        "spectral": 0.3472,
+        "geometry": 0.3055,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "top_papers": [
+        {
+          "record_id": "hyperion:EW000000231",
+          "score": 0.505009,
+          "paper_id": "2501.06352",
+          "arxiv_url": "https://arxiv.org/abs/2501.06352",
+          "apparatus": "Α07"
+        },
+        {
+          "record_id": "hyperion:EW000000227",
+          "score": 0.484248,
+          "paper_id": "0912.2823",
+          "arxiv_url": "https://arxiv.org/abs/0912.2823",
+          "apparatus": "Α07"
+        },
+        {
+          "record_id": "hyperion:EW000003159",
+          "score": 0.479605,
+          "paper_id": "1001.0370",
+          "arxiv_url": "https://arxiv.org/abs/1001.0370",
+          "apparatus": "Α09"
+        },
+        {
+          "record_id": "hyperion:EW000000172",
+          "score": 0.472216,
+          "paper_id": "1711.02122",
+          "arxiv_url": "https://arxiv.org/abs/1711.02122",
+          "apparatus": "Α07"
+        },
+        {
+          "record_id": "hyperion:EW000000596",
+          "score": 0.453917,
+          "paper_id": "1604.05385",
+          "arxiv_url": "https://arxiv.org/abs/1604.05385",
+          "apparatus": "Α11"
+        }
+      ]
+    }
+  },
+  "verdict": "partially_supported_with_boundaries",
+  "limitations": [
+    "Prepared-state/state-representation support is secondary in the selected public index.",
+    "Probability/readout support is weak in the selected public index.",
+    "Non-commuting compatibility support is present but sparse; do not make it the sole headline."
+  ],
+  "recommended_public_wording": "Hyperion supports a more bounded wording: the ranked witnesses concentrate strongly on operator/spectral structure, with additional but weaker state, probability/readout, context, and non-commutation components.  The public sentence should say that quantum mechanics can be read operationally through prepared states, observables, spectra, and probabilities, not that Hyperion proves this is the whole theory."
+}
