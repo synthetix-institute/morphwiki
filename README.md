@@ -134,6 +134,77 @@ The deterministic pipeline works without an LLM. If an LLM is enabled, it should
 only rewrite prose from the same structured payload; it should not invent
 evidence.
 
+## Adapt To Another Field
+
+MorphWiki is portable, but a new field is not created by renaming quantum terms.
+Each field needs its own constructor grammar: the sequence of roles that makes a
+claim predictive in that field.
+
+Minimal adaptation path:
+
+```text
+1. Choose a field
+   active matter, soft robotics, biological intelligence, patents, AI safety, ...
+
+2. Define the constructor spine
+   What sequence turns a field-specific statement into a testable mechanism?
+
+3. Build topic/source pages
+   Use Wikipedia pages, PDFs, reviews, papers, patents, or curated notes.
+
+4. Export a field topic index
+   Adapt scripts/export_morphwiki_topic_index.py.
+
+5. Build the field tree
+   Adapt scripts/build_morphwiki_quantum_tree.py.
+
+6. Run sparse-attention analysis
+   Adapt scripts/analyze_morphwiki_rewrite_transition.py.
+
+7. Build the book or site
+   Adapt scripts/build_morphwiki_quantum_book.py.
+```
+
+Examples of field-specific spines:
+
+```text
+material intelligence:
+stimulus -> material state -> transport/relaxation law
+         -> boundary/interface -> output/action -> erasure control
+
+patents:
+technical input -> transformed state -> constraint
+                -> measurable effect -> novelty boundary -> claim skeleton
+
+biology:
+signal -> regulatory state -> transport/interaction law
+       -> phenotype readout -> perturbation control
+```
+
+Reusable parts:
+
+```text
+page/tree/book generation
+sparse-attention scoring pattern
+evidence-boundary logic
+placement/construction/validation distinction
+public Hyperion witness-index format
+```
+
+Field-specific parts:
+
+```text
+constructor spine
+role vocabulary
+topic preset
+mechanism language
+equations, measurements, and falsifying controls
+```
+
+The rule is simple: if the field-specific roles are not defined, MorphWiki
+degenerates into generic prose. A useful field adaptation must say what is being
+carried, what acts, what is read out, and what would falsify the construction.
+
 ## Scientific Boundary
 
 MorphWiki is not a replacement for a textbook and not a claim that physics is
