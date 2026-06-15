@@ -2,6 +2,8 @@
 
 **A GitHub repository where physics compiles.**
 
+![MorphWiki operator-native physics workflow](docs/assets/morphwiki-operator-native-physics.svg)
+
 MorphWiki is an operator-native rewrite system for scientific knowledge. It takes
 historical prose, such as Wikipedia physics pages, and rewrites it as typed
 mechanism constructors: state, carrier, operator, spectrum, boundary, readout,
