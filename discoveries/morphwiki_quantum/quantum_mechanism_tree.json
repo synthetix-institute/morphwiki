@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-07T21:37:29.660296+00:00",
+  "generated_at": "2026-07-07T22:50:32.867491+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "The quantum prediction problem",
@@ -3351,7 +3351,7 @@
     "boundaries": {
       "title": "Boundary realization: how effects appear",
       "definition": "Many named quantum effects are boundary realizations of the same construction.  A potential, barrier, box, cavity, detector, or medium changes the allowed spectral channels without changing the basic prediction problem.",
-      "insight": "Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives.",
+      "insight": "Named effects such as tunnelling and particle-in-a-box are boundary realizations of the state-operator-readout construction.",
       "pages": [
         {
           "title": "Potential well",
@@ -5480,7 +5480,7 @@
     "annotations": {
       "title": "Annotations: history, interpretations, and popular frames",
       "definition": "Some pages help readers navigate the subject but do not form steps in the mechanism. They are kept as annotations so books, historical figures, interpretations, and popular frames do not distort the constructive tree.",
-      "insight": "These pages remain useful for orientation, but they are deliberately not treated as construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.",
+      "insight": "These pages remain useful for orientation and are placed downstream of the construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.",
       "pages": [
         {
           "title": "Introduction to quantum mechanics",
@@ -6696,7 +6696,7 @@
   "discovery_leads": [
     "Search for systems where a state-like carrier and a legal-question operator exist, but the incompatibility relation has not been tested.  Those systems are candidates for quantum-like contextual behavior without importing quantum ontology.",
     "Treat tunnelling, particle-in-a-box, cavity optics, and spectral lines as one family of boundary-shaped spectra.  This suggests looking for overlooked boundary controls in systems currently described only by bulk evolution.",
-    "Quantum computing should be read as an engineering layer over the state-operator-readout constructor, not as a separate foundation. New protocols should be searched by composing lawful quantum questions and controlled maps, not by naming new qubit objects.",
+    "Quantum computing should be read as an engineering layer over the state-operator-readout constructor. New protocols should be searched by composing lawful quantum questions and controlled maps.",
     "Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.",
     "Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization."
   ]

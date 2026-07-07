@@ -6,8 +6,8 @@
     "page_count": 147,
     "constructed_pages": 145,
     "evidence_placements": 2,
-    "mean_operation_gain": 22.0529,
-    "mean_object_shift": 3.6325,
+    "mean_operation_gain": 22.0967,
+    "mean_object_shift": 3.6544,
     "route_means": {
       "transport_flow_route": 0.2321,
       "constraint_closure_route": 0.1646,
@@ -31,9 +31,9 @@
           "boundaries": 12,
           "fields": 21,
           "protocols": 18,
+          "unresolved": 1,
           "context": 7,
-          "observables": 10,
-          "unresolved": 1
+          "observables": 10
         },
         "constructed_pages": 145,
         "evidence_placements": 2
@@ -1373,7 +1373,7 @@
       "branch_title": "Unresolved",
       "count": 1,
       "constructed": 0,
-      "mean_operation_gain": 24.8049,
+      "mean_operation_gain": 31.25,
       "mean_route_profile": {
         "transport_flow_route": 0.2833,
         "constraint_closure_route": 0.0878,
@@ -1385,19 +1385,19 @@
       "top_transition_pages": [
         {
           "title": "Quantum cosmology",
-          "score": 0.387096,
+          "score": 0.46888,
           "top_post_roles": [
             [
               "state",
-              0.20000000797333348
+              0.2500000045714286
             ],
             [
               "observable",
-              0.20000000797333348
+              0.23214285224489786
             ],
             [
-              "context",
-              0.15555555068296284
+              "measurement",
+              0.16071427951020395
             ]
           ]
         }
@@ -1531,7 +1531,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.603036,
-      "transition_attention": 0.00824595
+      "transition_attention": 0.00824128
     },
     {
       "slug": "quantum_biology",
@@ -1660,7 +1660,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.564918,
-      "transition_attention": 0.00793754
+      "transition_attention": 0.00793305
     },
     {
       "slug": "schr_dinger_s_cat",
@@ -1789,7 +1789,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.564708,
-      "transition_attention": 0.00793588
+      "transition_attention": 0.00793139
     },
     {
       "slug": "measurement_problem",
@@ -1917,7 +1917,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.555044,
-      "transition_attention": 0.00785955
+      "transition_attention": 0.00785511
     },
     {
       "slug": "delayed_choice_quantum_eraser",
@@ -2045,7 +2045,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.543928,
-      "transition_attention": 0.00777267
+      "transition_attention": 0.00776827
     },
     {
       "slug": "introduction_to_quantum_mechanics",
@@ -2174,7 +2174,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.542382,
-      "transition_attention": 0.00776066
+      "transition_attention": 0.00775627
     },
     {
       "slug": "einstein_podolsky_rosen_paradox",
@@ -2303,7 +2303,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.541265,
-      "transition_attention": 0.007752
+      "transition_attention": 0.00774761
     },
     {
       "slug": "quantum_nonlocality",
@@ -2430,7 +2430,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.525728,
-      "transition_attention": 0.00763249
+      "transition_attention": 0.00762817
     },
     {
       "slug": "wave_particle_duality",
@@ -2558,7 +2558,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.523242,
-      "transition_attention": 0.00761354
+      "transition_attention": 0.00760923
     },
     {
       "slug": "scattering",
@@ -2686,7 +2686,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.513957,
-      "transition_attention": 0.00754317
+      "transition_attention": 0.0075389
     },
     {
       "slug": "quantum_gravity",
@@ -2814,7 +2814,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.51297,
-      "transition_attention": 0.00753573
+      "transition_attention": 0.00753147
     },
     {
       "slug": "fermi_dirac_statistics",
@@ -2942,7 +2942,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.501914,
-      "transition_attention": 0.00745287
+      "transition_attention": 0.00744866
     },
     {
       "slug": "quantum_simulator",
@@ -3069,7 +3069,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.496801,
-      "transition_attention": 0.00741487
+      "transition_attention": 0.00741067
     },
     {
       "slug": "wave_function",
@@ -3197,7 +3197,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.47859,
-      "transition_attention": 0.00728106
+      "transition_attention": 0.00727694
     },
     {
       "slug": "spin_physics",
@@ -3324,7 +3324,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.476684,
-      "transition_attention": 0.00726719
+      "transition_attention": 0.00726308
     },
     {
       "slug": "quantum_theory_concepts_and_methods",
@@ -3440,7 +3440,7 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.476453,
-      "transition_attention": 0.00726551
+      "transition_attention": 0.0072614
     },
     {
       "slug": "quantum_computing",
@@ -3567,7 +3567,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.472616,
-      "transition_attention": 0.00723769
+      "transition_attention": 0.00723359
     },
     {
       "slug": "quantum_electrodynamics",
@@ -3695,7 +3695,123 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.471496,
-      "transition_attention": 0.00722959
+      "transition_attention": 0.0072255
+    },
+    {
+      "slug": "quantum_cosmology",
+      "title": "Quantum cosmology",
+      "status": "evidence_placement",
+      "branch": "unresolved",
+      "branch_title": "Unresolved",
+      "secondary": null,
+      "routes": {
+        "transport_flow_route": 0.2833,
+        "constraint_closure_route": 0.0878,
+        "spectral_operator_route": 0.1604,
+        "boundary_weak_form_route": 0.0333,
+        "commutator_incompatibility_route": 0.0268,
+        "discrete_protocol_route": 0.0305
+      },
+      "fibers": {
+        "structure": 0.3333,
+        "spectral": 0.3333,
+        "geometry": 0.3333,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "pre_role_scores": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_scores": {
+        "context": 7.8125,
+        "state": 13.671875,
+        "generator": 2.929688,
+        "observable": 12.695312,
+        "measurement": 8.789062,
+        "incompatibility": 0.976562,
+        "boundary": 3.90625,
+        "fields": 2.929688,
+        "protocol": 0.976562,
+        "annotation": 0.0
+      },
+      "pre_role_distribution": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_distribution": {
+        "context": 0.1428571454693878,
+        "state": 0.2500000045714286,
+        "generator": 0.05357143869387773,
+        "observable": 0.23214285224489786,
+        "measurement": 0.16071427951020395,
+        "incompatibility": 0.017857134040816167,
+        "boundary": 0.0714285727346939,
+        "fields": 0.05357143869387773,
+        "protocol": 0.017857134040816167,
+        "annotation": 0.0
+      },
+      "top_pre_roles": [
+        [
+          "context",
+          0.0
+        ],
+        [
+          "state",
+          0.0
+        ],
+        [
+          "generator",
+          0.0
+        ]
+      ],
+      "top_post_roles": [
+        [
+          "state",
+          0.2500000045714286
+        ],
+        [
+          "observable",
+          0.23214285224489786
+        ],
+        [
+          "measurement",
+          0.16071427951020395
+        ]
+      ],
+      "object_density_pre": 0.0,
+      "object_density_post": 8.7891,
+      "operation_density_pre": 0.0,
+      "operation_density_post": 31.25,
+      "operation_gain": 31.25,
+      "object_shift": 8.7891,
+      "role_focus_gain": 0.25,
+      "role_entropy_drop": -1.9032,
+      "route_strength": 0.2833,
+      "route_balance_entropy": 1.4241,
+      "anomaly_score": 0.0,
+      "anomaly_labels": [],
+      "anomaly_explanation": "",
+      "anomaly_routes": {},
+      "hyperion_witness_count": 32,
+      "transition_attention_score": 0.46888,
+      "transition_attention": 0.00720662
     },
     {
       "slug": "quantum_entanglement",
@@ -3823,7 +3939,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.459632,
-      "transition_attention": 0.00714432
+      "transition_attention": 0.00714028
     },
     {
       "slug": "quantum_field_theory",
@@ -3951,7 +4067,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.459,
-      "transition_attention": 0.00713981
+      "transition_attention": 0.00713577
     },
     {
       "slug": "quantum_finite_automaton",
@@ -4078,7 +4194,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.457396,
-      "transition_attention": 0.00712836
+      "transition_attention": 0.00712433
     },
     {
       "slug": "relativistic_quantum_mechanics",
@@ -4206,7 +4322,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.456604,
-      "transition_attention": 0.00712272
+      "transition_attention": 0.00711869
     },
     {
       "slug": "bell_s_theorem",
@@ -4333,7 +4449,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.456129,
-      "transition_attention": 0.00711934
+      "transition_attention": 0.00711531
     },
     {
       "slug": "quantum_chaos",
@@ -4449,7 +4565,7 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.456073,
-      "transition_attention": 0.00711894
+      "transition_attention": 0.00711491
     },
     {
       "slug": "quantum_amplifier",
@@ -4565,7 +4681,7 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.455734,
-      "transition_attention": 0.00711653
+      "transition_attention": 0.0071125
     },
     {
       "slug": "electron_microscope",
@@ -4681,7 +4797,7 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.454225,
-      "transition_attention": 0.0071058
+      "transition_attention": 0.00710178
     },
     {
       "slug": "transformation_theory_quantum_mechanics",
@@ -4797,7 +4913,7 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.45235,
-      "transition_attention": 0.00709249
+      "transition_attention": 0.00708847
     },
     {
       "slug": "heisenberg_group",
@@ -4913,7 +5029,7 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.449103,
-      "transition_attention": 0.00706949
+      "transition_attention": 0.00706549
     },
     {
       "slug": "hamiltonian_quantum_mechanics",
@@ -5041,123 +5157,7 @@
       },
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.446998,
-      "transition_attention": 0.00705463
-    },
-    {
-      "slug": "perturbation_theory",
-      "title": "Perturbation theory",
-      "status": "constructed",
-      "branch": "generators",
-      "branch_title": "Generator: lawful change before readout",
-      "secondary": "context",
-      "routes": {
-        "transport_flow_route": 0.2139,
-        "constraint_closure_route": 0.1205,
-        "spectral_operator_route": 0.3908,
-        "boundary_weak_form_route": 0.1014,
-        "commutator_incompatibility_route": 0.0313,
-        "discrete_protocol_route": 0.0346
-      },
-      "fibers": {
-        "structure": 0.3385,
-        "spectral": 0.3385,
-        "geometry": 0.3229,
-        "syntax": 0.5858,
-        "entropy": 0.4142
-      },
-      "pre_role_scores": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_scores": {
-        "context": 10.035682,
-        "state": 8.474576,
-        "generator": 6.690455,
-        "observable": 9.812667,
-        "measurement": 9.366637,
-        "incompatibility": 4.014273,
-        "boundary": 3.345227,
-        "fields": 1.561106,
-        "protocol": 0.669045,
-        "annotation": 0.0
-      },
-      "pre_role_distribution": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_distribution": {
-        "context": 0.1859504119980875,
-        "state": 0.15702479400095626,
-        "generator": 0.1239669475083671,
-        "observable": 0.18181818350262965,
-        "measurement": 0.17355372651171397,
-        "incompatibility": 0.07438016850502027,
-        "boundary": 0.06198346448972041,
-        "fields": 0.02892561799713128,
-        "protocol": 0.01239668548637357,
-        "annotation": 0.0
-      },
-      "top_pre_roles": [
-        [
-          "context",
-          0.0
-        ],
-        [
-          "state",
-          0.0
-        ],
-        [
-          "generator",
-          0.0
-        ]
-      ],
-      "top_post_roles": [
-        [
-          "context",
-          0.1859504119980875
-        ],
-        [
-          "observable",
-          0.18181818350262965
-        ],
-        [
-          "measurement",
-          0.17355372651171397
-        ]
-      ],
-      "object_density_pre": 0.0,
-      "object_density_post": 6.2444,
-      "operation_density_pre": 0.0,
-      "operation_density_post": 23.4166,
-      "operation_gain": 23.4166,
-      "object_shift": 6.2444,
-      "role_focus_gain": 0.186,
-      "role_entropy_drop": -1.9988,
-      "route_strength": 0.3908,
-      "route_balance_entropy": 1.4649,
-      "anomaly_score": 0.0,
-      "anomaly_labels": [],
-      "anomaly_explanation": "",
-      "anomaly_routes": {},
-      "hyperion_witness_count": 32,
-      "transition_attention_score": 0.445709,
-      "transition_attention": 0.00704554
+      "transition_attention": 0.00705064
     }
   ],
   "uses": [

@@ -227,8 +227,8 @@ CORE_TITLE_PATTERNS = {
 NON_REPRESENTATIVE_APPLICATION_SLUGS = {
     # Application/frontier pages can be useful later, but they should not enter
     # the core mechanism-tree book unless they have a clean topic-native
-    # constructor.  Quantum cosmology currently falls back to a generic
-    # field/geometry frame, so it is excluded rather than promoted.
+    # constructor.  Excluded pages currently fall back to generic
+    # application frames, so they are held out rather than promoted.
     "quantum_cosmology",
 }
 
@@ -742,7 +742,7 @@ ANOMALY_LABEL_EXPLANATIONS = {
         "several construction steps meet in one topic, so the page is a junction rather than a clean leaf in the tree"
     ),
     "branch-ambiguous": (
-        "the topic belongs at an interface between two explanatory roles and should be read as a bridge, not assigned to one branch too early"
+        "the topic belongs at an interface between two explanatory roles and should be read as a bridge before branch assignment"
     ),
 }
 
@@ -943,7 +943,7 @@ def branch_insights(assignments: Mapping[str, Sequence[Mapping[str, Any]]]) -> D
             "uncertainty are different faces of this compatibility structure."
         ),
         "boundaries": (
-            "Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives."
+            "Named effects such as tunnelling and particle-in-a-box are boundary realizations of the state-operator-readout construction."
         ),
         "fields": (
             "Field theory and gauge theory extend the same construction to many modes, local generators, and "
@@ -954,7 +954,7 @@ def branch_insights(assignments: Mapping[str, Sequence[Mapping[str, Any]]]) -> D
             "a controlled sequence of transformations."
         ),
         "annotations": (
-            "These pages remain useful for orientation, but they are deliberately not treated as construction steps. "
+            "These pages remain useful for orientation and are placed downstream of the construction steps. "
             "This prevents biographies, books, and interpretations from becoming false roots of the mechanism."
         ),
     }
@@ -982,6 +982,13 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines.append("REALIZATION adds boundaries, fields, detectors, protocols, and scaling limits.")
     lines.append("```")
     lines.append("")
+    lines.append("## DAG Then Constructor")
+    lines.append("")
+    lines.append(
+        "The DAG gives the assembly order: context and admissibility precede state transport; state transport precedes spectral readout; readout and compatibility precede boundary, field, detector, or protocol realization. "
+        "The constructor fills this ordered scaffold with the carrier, operator, map, question, readout, closure condition, and realization needed for a predictive mechanism."
+    )
+    lines.append("")
     lines.append("## Re-Derivation Path")
     lines.append("1. **Selector.** A context selects the Hilbert space and operator domain. Euclidean space may label a representation, but Hilbert space is the admissible carrier.")
     lines.append("2. **Carrier.** The state, density operator, field state, or register state carries predictive information on that selected space.")
@@ -1006,7 +1013,7 @@ def render_markdown(report: Mapping[str, Any]) -> str:
         route_lines.append(f"{label}: mean {stats['mean_routes'].get(key, 0):.3f}, pages above 0.10 = {stats['count_gt_0_1'].get(key, 0)}")
     lines.extend(f"- {line}" for line in route_lines)
     lines.append("")
-    lines.append("Interpretation: the stable evidence signal is observables-and-spectra, but the mechanism tree is not the same object as the evidence ranking.  The tree orders quantum theory by construction role; the route scores explain why each role is supported.")
+    lines.append("Interpretation: the stable evidence signal is observables-and-spectra. The mechanism tree orders quantum theory by construction role; the route scores explain why each role is supported.")
     lines.append("")
     lag_prior = report.get("lagrangian_construction_prior") or {}
     if lag_prior.get("available"):
@@ -1021,8 +1028,7 @@ def render_markdown(report: Mapping[str, Any]) -> str:
                 lines.append(f"- {label}: {count}")
         else:
             lines.append(
-                "Page-level road classes are not assigned in this export. The Lagrangian report is used as a global road map; "
-                "direct page-level action requires full page-coordinate vectors or witness transition vectors."
+                "This export uses the Lagrangian report as a global road map. Direct page-level action requires full page-coordinate vectors or witness transition vectors."
             )
         lines.append("")
     lines.append("## Tree")
@@ -1050,7 +1056,7 @@ def render_markdown(report: Mapping[str, Any]) -> str:
         if hidden > 0:
             lines.append(f"- {hidden} more pages in this branch")
         if annotation_count:
-            lines.append(f"- {annotation_count} historical, interpretive, or popular pages are treated as annotations, not as conceptual roots")
+            lines.append(f"- {annotation_count} historical, interpretive, or popular pages are treated as annotations downstream of the conceptual roots")
         lines.append("")
     lines.append("## A New Reading Of Quantum Mechanics")
     lines.append("")
@@ -1062,9 +1068,8 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     )
     lines.append("")
     lines.append(
-        "In this reading, the measurement problem is not the root of the subject.  It is a junction where the readout "
-        "protocol, context dependence, and incompatible questions meet.  Likewise, tunnelling is not a paradox about a "
-        "particle crossing a wall; it is a boundary-shaped spectral channel with non-zero amplitude in a region that "
+        "In this reading, the measurement problem is a junction where the readout "
+        "protocol, context dependence, and incompatible questions meet.  Tunnelling is a boundary-shaped spectral channel with non-zero amplitude in a region that "
         "the classical energy description would exclude."
     )
     lines.append("")
@@ -1146,7 +1151,7 @@ def build_report(
         "discovery_leads": [
             "Search for systems where a state-like carrier and a legal-question operator exist, but the incompatibility relation has not been tested.  Those systems are candidates for quantum-like contextual behavior without importing quantum ontology.",
             "Treat tunnelling, particle-in-a-box, cavity optics, and spectral lines as one family of boundary-shaped spectra.  This suggests looking for overlooked boundary controls in systems currently described only by bulk evolution.",
-            "Quantum computing should be read as an engineering layer over the state-operator-readout constructor, not as a separate foundation. New protocols should be searched by composing lawful quantum questions and controlled maps, not by naming new qubit objects.",
+            "Quantum computing should be read as an engineering layer over the state-operator-readout constructor. New protocols should be searched by composing lawful quantum questions and controlled maps.",
             "Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.",
             "Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.",
         ],

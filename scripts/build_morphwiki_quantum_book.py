@@ -134,7 +134,7 @@ FAMILY_NATIVE_LANGUAGE: Dict[str, Dict[str, str]] = {
     },
     "generator": {
         "role": "lawful state-transport role",
-        "known": "The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result.",
+        "known": "The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step before measurement.",
         "missing": "A completed page must name the state carrier, generator, domain, conserved quantity or symmetry, and the readout that tests the generated motion.",
         "equation": r"i\hbar\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad H\psi=E\psi",
     },
@@ -703,7 +703,7 @@ BRANCH_CONSTRUCTOR = {
     },
     "boundaries": {
         "claim": "{title} belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.",
-        "reading": "Boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core.",
+        "reading": "Boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as the realization layer around the invariant operator role.",
         "equations": [
             r"H_B=-\frac{\hbar^2}{2m}\Delta_B+V_B",
             r"\mathcal D(H_B)=\{\psi\in\mathcal H_B:\ C_B\psi=0\}",
@@ -1389,7 +1389,7 @@ def constructor_block(
                 str(
                     template.get("equation_note")
                     or (
-                        "Role-level skeleton: this is a conservative mechanism equation for the page's branch, not a claim that every cited paper writes the equation in this notation."
+                        "Role-level skeleton: a branch-level mechanism equation for checking the page's source evidence; source notation may differ."
                     )
                 )
             ),
@@ -1413,7 +1413,7 @@ def constructor_block(
         lines = [
             r"\subsection*{Core-Derived Role Equations}",
             latex_escape(
-                "This equation block is the branch-level quantum mechanism attached to the page by the compact constructor. It should be read as the role equation to check against the page's source evidence, not as a claim that every source writes the formula in this notation."
+                "This equation block is the branch-level quantum mechanism attached to the page by the compact constructor. It gives the role equation to check against the page's source evidence; source notation may differ."
             ),
             r"\begin{align*}",
             family["equation"],
@@ -1704,11 +1704,11 @@ def human_hidden_rule_statement(rule: Mapping[str, Any]) -> str:
     if "broad spine role" in name and route:
         return (
             f"{route} behaves as a spine role in the current quantum rewrite. It should be introduced as part of the "
-            "general constructor, not treated as a specialist topic."
+            "general constructor before specialist topics are derived from it."
         )
     if " is enriched for " in name and branch and route:
         return (
-            f"The {branch} branch is not a conventional subject category. It is a region where {route} becomes the "
+            f"The {branch} branch is a construction-role region where {route} becomes the "
             "dominant way the topic is made predictive."
         )
     if "High-entropy pages" in name:
@@ -1757,7 +1757,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "This does not make every quantum topic an eigenvalue problem; it says that spectra are the most reusable readout layer in this export.",
+                "The claim is role-specific: spectra are the most reusable readout layer in this export, while other roles supply state, evolution, context, and compatibility.",
             ),
         ],
         "R02": [
@@ -1771,7 +1771,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "Transport is not the whole theory.  It becomes meaningful only after the admissible state space and the observable question have been specified.",
+                "Transport becomes meaningful after the admissible state space and the observable question have been specified.",
             ),
         ],
         "R03": [
@@ -1827,7 +1827,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "A protocol is not automatically a new physical principle.  It is a realization of the state, operator, readout, and compatibility machinery in an ordered experiment or computation.",
+                "A protocol realizes the state, operator, readout, and compatibility machinery in an ordered experiment or computation.",
             ),
         ],
         "R07": [
@@ -1841,7 +1841,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "Observable names are not enough.  A quantity becomes a quantum observable only when its operator domain and spectral readout are specified.",
+                "A quantity becomes a quantum observable when its operator domain and spectral readout are specified.",
             ),
         ],
         "R08": [
@@ -1883,7 +1883,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "This does not say context causes the physics.  It says the quantum question is not well-formed until the admissible carrier of the question has been supplied.",
+                "The quantum question is well formed after the admissible carrier of the question has been supplied.",
             ),
         ],
         "R11": [
@@ -1897,7 +1897,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "The engineering layer is not separate from quantum theory; it is the operational packaging of the same constructor.",
+                "The engineering layer packages the same constructor operationally.",
             ),
         ],
         "R12": [
@@ -1911,7 +1911,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "A junction is not an error or a discovery by itself.  It is a signal that the page should be decomposed before it is used as an explanatory root.",
+                "A junction signals that the page should be decomposed before it is used as an explanatory root.",
             ),
         ],
         "R13": [
@@ -1939,7 +1939,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "A strong annotation signal should not be confused with an independent equation source.",
+                "A strong annotation signal is an orientation cue; independent equation evidence remains the source for derivation.",
             ),
         ],
         "R15": [
@@ -1953,13 +1953,13 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "A shared word is a useful index term, not a physical equivalence class.",
+                "A shared word is an index term; physical equivalence requires matching role structure.",
             ),
         ],
         "R16": [
             (
                 "Reading",
-                "The Schrödinger family is not one branch.  The equation is a generator of state evolution, the picture is a representation choice, the cat is a protocol/readout junction, and the biography is an annotation.",
+                "The Schrödinger family separates into distinct constructor roles.  The equation is a generator of state evolution, the picture is a representation choice, the cat is a protocol/readout junction, and the biography is an annotation.",
             ),
             (
                 "Use",
@@ -1967,13 +1967,13 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "The shared name does not imply a shared mechanism.",
+                "The shared name is resolved by the role each page performs.",
             ),
         ],
         "R17": [
             (
                 "Reading",
-                "Physics-labeled pages are not automatically foundations.  They can be field realizations, scaling regimes, annotation pages, or constructor junctions depending on how state, operator, boundary, and readout appear.",
+                "Physics-labeled pages split into field realizations, scaling regimes, annotation pages, and constructor junctions depending on how state, operator, boundary, and readout appear.",
             ),
             (
                 "Use",
@@ -1981,13 +1981,13 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "Discipline labels should not determine the mechanism tree.",
+                "Mechanism placement follows state, operator, boundary, and readout roles rather than discipline labels.",
             ),
         ],
         "R18": [
             (
                 "Reading",
-                "Equation-named pages are not interchangeable.  Schrödinger, Dirac, Klein-Gordon, and related equations differ by state carrier, symmetry constraints, admissible domains, and relativistic or field-theoretic realization.",
+                "Equation-named pages separate by state carrier, symmetry constraints, admissible domains, and relativistic or field-theoretic realization.",
             ),
             (
                 "Use",
@@ -1995,7 +1995,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "The word equation identifies a presentation form, not the mechanism performed by the page.",
+                "The word equation identifies a presentation form; the mechanism is determined by the role performed by the page.",
             ),
         ],
         "R19": [
@@ -2023,7 +2023,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "Pedagogical order is not the same as construction order.",
+                "Pedagogical order and construction order answer different questions.",
             ),
         ],
         "R21": [
@@ -2037,7 +2037,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "Connectivity language is not enough to infer a common mechanism.",
+                "Connectivity language must be paired with carrier, operator, and readout evidence to infer a common mechanism.",
             ),
         ],
         "R22": [
@@ -2051,7 +2051,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "This does not deny physical geometry. It restricts the claim to transferability in the current artifacts: geometry is essential for embodiment and is less portable than the operator/readout machinery.",
+                "Physical geometry supplies embodiment and boundary conditions; in the current artifacts it is less portable than the operator/readout machinery.",
             ),
         ],
     }
@@ -2085,7 +2085,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "A branch-level rule does not imply that every page in the branch has the same mechanism.",
+                "A branch-level rule gives a first mechanism reading; page-level equations supply the finer test.",
             ),
         ]
     if token:
@@ -2100,7 +2100,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "A shared title token is not a physical equivalence class.",
+                "A shared title token is an index term; role structure supplies the equivalence test.",
             ),
         ]
     return [
@@ -2110,7 +2110,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
         ),
         (
             "Boundary",
-            "The rule is an artifact-level sparse-attention claim until checked against source equations.",
+            "The rule is an artifact-level sparse-attention claim that becomes stronger when checked against source equations.",
         ),
     ]
 
@@ -2190,7 +2190,7 @@ def anomaly_public_explanation(item: Mapping[str, Any]) -> str:
             "Schrödinger's cat is a macroscopic readout protocol, not a spectrum-first topic. It couples microscopic unitary evolution to a macroscopic boundary and forces the reader to separate three steps: coherent state transport, decoherence or apparatus coupling, and the rule by which one record is selected or conditioned."
         ),
         "wave_particle_duality": (
-            "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. The constructor should be written as context selection plus readout channel, not as two substances alternating."
+            "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. The constructor should be written as context selection plus readout channel."
         ),
         "quantum_entanglement": (
             "Entanglement is a tensor-factorization and correlation constraint. The anomaly is that the state is not reducible to independently readable subsystem states, while the readout is still local and spectral. A useful page must distinguish the joint state, the subsystem observables, and the correlation test."
@@ -2300,26 +2300,26 @@ def validation_layers_chapter(root: Path) -> str:
         r"\chapter{Mechanism Validation Layers}",
         r"\begin{claimbox}",
         latex_escape(
-            "The mechanism tree is not validated by topic similarity. It is checked by three independent evidence layers: "
-            "Noether-style currents ask what survives a rewrite, Gromov-Wasserstein (GW) neighborhoods ask which formulations "
-            "are structurally near, and the learned Lagrangian asks whether a proposed move is an easy continuation, "
+            "The mechanism tree is evaluated by three independent evidence layers: "
+            "role-current stability asks what survives a rewrite, Gromov-Wasserstein (GW) neighborhoods measure relational bridge candidates, "
+            "and the learned Lagrangian asks whether a proposed move is an easy continuation, "
             "a strained bridge, or a void-boundary design target."
         ),
         r"\end{claimbox}",
-        r"\section{Noether Layer: What Stays The Same}",
+        r"\section{Role-Current Layer: What Stays Stable}",
     ]
     lines.append(
         latex_escape(
-            "Here a Noether-like current is not a physical conservation law. It is a stability test over equation fingerprints. "
+            "The role-current layer measures stability of formal roles under rewrite and translation. "
             "When a theory is rewritten, translated, or moved through the corpus, the test asks which part of the formal apparatus keeps its role. "
-            "That is exactly the question needed for a mechanism tree: what makes two formulations the same mechanism?"
+            "For a mechanism tree, this is the identity test: two formulations belong together when the same role contract survives the move."
         )
     )
     lines.append(r"\begin{itemize}")
     lines.append(
         r"\item "
         + latex_escape(
-            f"The run promoted {strict_currents} strict currents and {near_currents} near currents. These are role-preserving directions in the learned representation, not literal laws of nature."
+            f"The run promoted {strict_currents} strict currents and {near_currents} near currents. These mark role-preserving directions in the learned representation."
         )
     )
     if structure_std is not None:
@@ -2345,12 +2345,12 @@ def validation_layers_chapter(root: Path) -> str:
         )
     lines.append(r"\end{itemize}")
 
-    lines.extend([r"\section{Legacy GW Control: Candidate Structural Bridges}"])
+    lines.extend([r"\section{Structural Bridge Layer: Candidate Translations}"])
     lines.append(
         latex_escape(
-            "The Gromov-Wasserstein layer is retained here as a legacy structural-bridge control. It is not the current translation mechanism for the V2 constructor. "
-            "The current translation evidence is the typed transfer graph, bridge-family candidates, source-local transitions, and source-equation validation. "
-            "GW remains useful only as a conservative check that two neighborhoods have compatible relational form."
+            "The Gromov-Wasserstein layer compares relational neighborhoods. It contributes a structural bridge score: "
+            "two formulations are stronger bridge candidates when their local neighborhoods preserve comparable relations among roles. "
+            "In the current constructor, this layer is combined with typed transfer edges, bridge-family candidates, source-local transitions, and source-equation validation."
         )
     )
     lines.append(r"\begin{itemize}")
@@ -2374,7 +2374,7 @@ def validation_layers_chapter(root: Path) -> str:
     lines.append(
         r"\item "
         + latex_escape(
-            "The practical reading is conservative: GW can nominate a legacy bridge candidate; typed transfer edges, directed source transitions, source equations, and residual checks decide whether it becomes useful."
+            "GW nominates relationally compatible bridge candidates; typed transfer edges, directed source transitions, source equations, and residual checks rank them for use."
         )
     )
     lines.append(r"\end{itemize}")
@@ -2425,7 +2425,7 @@ def validation_layers_chapter(root: Path) -> str:
             lines.append(
                 r"\item "
                 + latex_escape(
-                    "In this run the road map contains " + ", ".join(road_parts) + ". Low-action paths are conservative continuations; multi-band paths are translation corridors; high-tension paths require review; void-boundary targets are candidates for new equations or missing closure conditions."
+                    "In this run the road map contains " + ", ".join(road_parts) + ". Low-action paths are stable continuations; multi-band paths are translation corridors; high-tension paths require review; void-boundary targets are candidates for new equations or missing closure conditions."
                 )
             )
     if territory_counts:
@@ -3079,10 +3079,9 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
         )
         lines.append(
             latex_escape(
-                "The tree uses two levels of evidence. Page branches are assigned from the route/fiber profile of the "
-                "MorphWiki page and topic-native lexical anchors. The Lagrangian supplies the global construction prior: "
-                "it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas, "
-                "which sets the interpretation of open construction steps."
+                "The tree uses a DAG-then-constructor procedure. The DAG supplies the ordered assembly of roles, so context, carrier, generator, readout, compatibility, and realization are not treated as interchangeable topic labels. "
+                "The constructor fills that order with page-local equations or branch-level role equations. Page branches are assigned from the route/fiber profile of the MorphWiki page and topic-native lexical anchors. "
+                "The Lagrangian supplies the global construction prior: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas, which sets the interpretation of open construction steps."
             )
         )
         if lag_prior.get("page_projection_available") and class_text:
@@ -3134,7 +3133,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
         ),
         (
             "Protocol is rare and therefore informative.",
-            f"Only {int(count_routes.get('discrete_protocol_route', 0))} pages exceed the protocol threshold. Quantum computing and information are therefore best treated as an engineering layer over the state-operator-spectrum machinery, not as the foundation of the subject.",
+            f"Only {int(count_routes.get('discrete_protocol_route', 0))} pages exceed the protocol threshold. Quantum computing and information are therefore best treated as an engineering layer over the state-operator-spectrum machinery.",
         ),
         (
             "The tree compresses named topics into mechanism roles.",
@@ -3288,7 +3287,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
 
 
 def render_v2_language_chapter(tree: Mapping[str, Any]) -> str:
-    """Render the optional Hyperion V2 language layer when artifacts are supplied."""
+    """Render the optional mechanism-grammar layer when artifacts are supplied."""
 
     v2 = tree.get("hyperion_v2_language") or {}
     if not v2.get("available"):
@@ -3297,25 +3296,25 @@ def render_v2_language_chapter(tree: Mapping[str, Any]) -> str:
     compact = v2.get("logical_compactness") or {}
     grounding = v2.get("source_grounding") or {}
     lines: List[str] = [
-        r"\chapter{Hyperion V2 Language Layer}",
+        r"\chapter{Auxiliary Mechanism Grammar Layer}",
         r"\begin{claimbox}",
-        r"\noindent\textbf{V2 identity signature:} \(I=(\Omega,\Xi;C,R,P)\). "
+        r"\noindent\textbf{Mechanism identity signature:} \(I=(\Omega,\Xi;C,R,P)\). "
         r"\(\Omega\) is the operator-apparatus coordinate, \(\Xi\) is the substrate/carrier coordinate, and "
         r"\(C,R,P\) are attached completion fibers for closure, readout/current, and protocol/order.",
         r"\end{claimbox}",
         latex_escape(
-            "This chapter records how the current Hyperion V2 language changes the quantum-book interpretation. "
-            "The earlier MorphWiki quantum build used route and fiber profiles. The V2 language separates the reusable operator apparatus from the admissible substrate, "
+            "This optional build note records how the transferred mechanism grammar changes the quantum-book interpretation. "
+            "The grammar separates the reusable operator apparatus from the admissible substrate, "
             "then attaches the obligations needed for a mechanism to become constructible: closure, readout/current, and protocol/order."
         ),
         latex_escape(
             "The important correction is that the six route families are not identity coordinates. They are edge or road modes by which identities move or are compared. "
             "The identity object has two primitive coordinates and three attached completion fibers."
         ),
-        r"\section{How Quantum Theory Maps To V2}",
+        r"\section{How Quantum Theory Maps To The Grammar}",
         r"\begin{longtable}{p{0.20\linewidth}p{0.68\linewidth}}",
         r"\toprule",
-        r"V2 role & Quantum reading \\",
+        r"Grammar role & Quantum reading \\",
         r"\midrule",
         r"\endhead",
         r"\(\Omega\) & Operator apparatus: Hamiltonian, unitary map, channel, observable algebra, creation/annihilation operator, commutator or generator. \\",
@@ -3361,7 +3360,7 @@ def render_v2_language_chapter(tree: Mapping[str, Any]) -> str:
     if source_files:
         lines.append(
             latex_escape(
-                "The V2 layer was loaded from transferred Hyperion artifacts. These paths are evidence pointers inside the build, not book claims: "
+                "The auxiliary grammar layer was loaded from transferred mechanism artifacts. These paths are evidence pointers inside the build, not book claims: "
                 + "; ".join(f"{key}={value}" for key, value in source_files.items() if value)
             )
         )
@@ -3385,7 +3384,7 @@ def render_v2_language_chapter(tree: Mapping[str, Any]) -> str:
     lines.append(
         latex_escape(
             v2.get("claim_boundary")
-            or "The V2 language is a representation-level mechanism grammar. Physical claims still require source equations and validation."
+            or "The auxiliary language is a representation-level mechanism grammar. Physical claims still require source equations and validation."
         )
     )
     return "\n\n".join(lines)
@@ -3424,6 +3423,22 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
         r"\noindent Mechanism-first reading: identify the operation a named topic performs in the quantum construction.",
         r"\par\smallskip\noindent\textbf{Constructor sequence:} context \(\rightarrow\) Hilbert-space carrier and operator domain \(\rightarrow\) generator/evolution \(\rightarrow\) observable spectrum \(\rightarrow\) probability readout \(\rightarrow\) compatibility constraint \(\rightarrow\) boundary/protocol realization.",
         r"\end{claimbox}",
+        r"\section*{DAG Before Constructor}",
+        r"\addcontentsline{toc}{section}{DAG Before Constructor}",
+        latex_escape(
+            "The mechanism tree uses two distinct layers. The directed acyclic graph gives the order in which a mechanism becomes complete: "
+            "context and admissibility appear before state transport; state transport appears before spectral readout; readout and compatibility appear before boundary, field, detector, or protocol realization. "
+            "The constructor then fills each ordered node with the local quantum objects needed to make a prediction."
+        ),
+        latex_escape(
+            "This distinction matters. The DAG is the assembly order and prevents a page from being treated as a finished mechanism when it supplies only one role. "
+            "The constructor is the role contract: it asks which carrier, operator, map, question, readout, closure condition, and realization are present. "
+            "A topic becomes a usable mechanism when it has both a place in the DAG and a sufficiently filled constructor frame."
+        ),
+        r"\begin{align*}",
+        r"\mathrm{DAG}:&\quad C \prec (\mathcal H_C,\mathcal D_C) \prec \rho \prec H_C,U_C,\Phi_C \prec A_C,E_{A_C} \prec \Pr \prec \mathcal K,\mathcal R\\",
+        r"\mathrm{Constructor}:&\quad (C,\mathcal H_C,\mathcal D_C,\rho,H_C,A_C,E_{A_C},\Pr,\mathcal K,\mathcal R).",
+        r"\end{align*}",
         latex_escape(
             "The nonstandard result of this run is empirical rather than axiomatic.  Standard quantum mechanics already contains Hilbert spaces, operators, spectra, Born probabilities, and commutators.  What the rewrite adds is that a large topic system built from ordinary article names collapses into a stable constructor order.  Particles, fields, protocols, interpretations, and boundary effects no longer appear as equal roots; they become later roles in one state-to-spectrum mechanism."
         ),
@@ -3497,7 +3512,7 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
         r"\item \textbf{Locate the page in the tree.} The branch tells which part of \(\mathfrak M_Q\) the page mainly modifies.",
         r"\item \textbf{Fill the compact tuple.} Identify \(C\), \(\mathcal H_C\), \(\rho\), \(H_C\) or the relevant map, \(A_C\), the spectral measure or readout, and any compatibility condition.",
         r"\item \textbf{Separate topic-specific pages from core-derived pages.} Topic-specific pages have native equations or explicit constructor skeletons. Core-derived pages inherit the shared constructor spine and specialize it with branch and topic evidence.",
-        r"\item \textbf{Read anomalies as diagnostics.} An anomaly is a junction where the topic uses several roles at once, not a claim that the topic is wrong.",
+        r"\item \textbf{Read anomalies as diagnostics.} An anomaly is a junction where the topic uses several roles at once; the diagnosis is decomposition, not rejection.",
         r"\item \textbf{Use transfer carefully.} A mechanism can be transferred only when the state carrier, operator role, readout, and compatibility test survive the move; field-specific nouns may change.",
         r"\end{enumerate}",
         r"\section*{What Was Found In This Run}",

@@ -56,7 +56,7 @@
 
 {\large Synthetix Institute\par}
 
-{\large Generated 2026-07-07 21:37 UTC\par}
+{\large Generated 2026-07-07 22:50 UTC\par}
 
 \vfill
 
@@ -79,6 +79,14 @@ This book is a derivation map for quantum topics. Each named topic is treated as
 \noindent Mechanism-first reading: identify the operation a named topic performs in the quantum construction.
 \par\smallskip\noindent\textbf{Constructor sequence:} context \(\rightarrow\) Hilbert-space carrier and operator domain \(\rightarrow\) generator/evolution \(\rightarrow\) observable spectrum \(\rightarrow\) probability readout \(\rightarrow\) compatibility constraint \(\rightarrow\) boundary/protocol realization.
 \end{claimbox}
+\section*{DAG Before Constructor}
+\addcontentsline{toc}{section}{DAG Before Constructor}
+The mechanism tree uses two distinct layers. The directed acyclic graph gives the order in which a mechanism becomes complete: context and admissibility appear before state transport; state transport appears before spectral readout; readout and compatibility appear before boundary, field, detector, or protocol realization. The constructor then fills each ordered node with the local quantum objects needed to make a prediction.
+This distinction matters. The DAG is the assembly order and prevents a page from being treated as a finished mechanism when it supplies only one role. The constructor is the role contract: it asks which carrier, operator, map, question, readout, closure condition, and realization are present. A topic becomes a usable mechanism when it has both a place in the DAG and a sufficiently filled constructor frame.
+\begin{align*}
+\mathrm{DAG}:&\quad C \prec (\mathcal H_C,\mathcal D_C) \prec \rho \prec H_C,U_C,\Phi_C \prec A_C,E_{A_C} \prec \Pr \prec \mathcal K,\mathcal R\\
+\mathrm{Constructor}:&\quad (C,\mathcal H_C,\mathcal D_C,\rho,H_C,A_C,E_{A_C},\Pr,\mathcal K,\mathcal R).
+\end{align*}
 The nonstandard result of this run is empirical rather than axiomatic.  Standard quantum mechanics already contains Hilbert spaces, operators, spectra, Born probabilities, and commutators.  What the rewrite adds is that a large topic system built from ordinary article names collapses into a stable constructor order.  Particles, fields, protocols, interpretations, and boundary effects no longer appear as equal roots; they become later roles in one state-to-spectrum mechanism.
 \section*{Why Hilbert Space Is Central}
 \addcontentsline{toc}{section}{Why Hilbert Space Is Central}
@@ -124,12 +132,12 @@ This representation explains the tree. Context selects the Hilbert-space carrier
 \item \textbf{Locate the page in the tree.} The branch tells which part of \(\mathfrak M_Q\) the page mainly modifies.
 \item \textbf{Fill the compact tuple.} Identify \(C\), \(\mathcal H_C\), \(\rho\), \(H_C\) or the relevant map, \(A_C\), the spectral measure or readout, and any compatibility condition.
 \item \textbf{Separate topic-specific pages from core-derived pages.} Topic-specific pages have native equations or explicit constructor skeletons. Core-derived pages inherit the shared constructor spine and specialize it with branch and topic evidence.
-\item \textbf{Read anomalies as diagnostics.} An anomaly is a junction where the topic uses several roles at once, not a claim that the topic is wrong.
+\item \textbf{Read anomalies as diagnostics.} An anomaly is a junction where the topic uses several roles at once; the diagnosis is decomposition, not rejection.
 \item \textbf{Use transfer carefully.} A mechanism can be transferred only when the state carrier, operator role, readout, and compatibility test survive the move; field-specific nouns may change.
 \end{enumerate}
 \section*{What Was Found In This Run}
 \addcontentsline{toc}{section}{What Was Found In This Run}
-The current export contains 147 quantum pages. Of these, 145 have topic-specific equation skeletons or explicit constructor overrides, and 2 are expanded from the compact constructor as core-derived mechanisms. The sparse-attention profile is strongly operator/spectral: 145 pages exceed the operator/spectrum threshold, with mean signal 0.328. State evolution is also broad (145 pages), while boundary/context (54), incompatibility (59), and explicit protocol (32) are more selective. The practical result is a compact reading of quantum theory as operator-to-spectrum conversion under context and compatibility constraints.
+The current export contains 147 quantum pages. Of these, 145 have topic-specific equation skeletons or explicit constructor overrides, and 1 are expanded from the compact constructor as core-derived mechanisms. The sparse-attention profile is strongly operator/spectral: 145 pages exceed the operator/spectrum threshold, with mean signal 0.328. State evolution is also broad (145 pages), while boundary/context (54), incompatibility (59), and explicit protocol (32) are more selective. The practical result is a compact reading of quantum theory as operator-to-spectrum conversion under context and compatibility constraints.
 This is the main structural finding of the rewrite. Quantum theory can be introduced as a constructor in which particles, waves, fields, detectors, boundaries, circuits, and interpretations are roles attached to a smaller state-operator-readout spine. The portable unit is the legal transformation from context and state to spectral readout.
 \section*{Branch Map}
 \addcontentsline{toc}{section}{Branch Map}
@@ -297,7 +305,7 @@ The practical consequence is a derivation tree rather than a topic list: topic-s
 
 \item \textbf{Incompatibility is the non-classical junction.} 59 pages carry explicit incompatibility signal. Entanglement, Bell phenomena, commutators, and uncertainty are grouped by failure of joint sharpness.
 
-\item \textbf{Protocol is rare and therefore informative.} Only 32 pages exceed the protocol threshold. Quantum computing and information are therefore best treated as an engineering layer over the state-operator-spectrum machinery, not as the foundation of the subject.
+\item \textbf{Protocol is rare and therefore informative.} Only 32 pages exceed the protocol threshold. Quantum computing and information are therefore best treated as an engineering layer over the state-operator-spectrum machinery.
 
 \item \textbf{The tree compresses named topics into mechanism roles.} Hilbert-space context: admissible carrier and basis: 7, State carrier inside Hilbert space: 24, Generator: lawful change before readout: 22, Spectral question: what can be asked: 10, Readout rule: how answers become probabilities: 10, Compatibility limit: what cannot be jointly sharp: 6, Boundary realization: how effects appear: 12, Many-mode extension: fields, particles, and scaling: 21, Protocol layer: engineered transformations: 18, Annotations: history, interpretations, and popular frames: 16. This is the mechanism-level table of contents produced by the rewrite.
 
@@ -497,18 +505,18 @@ The usual presentation introduces particles, waves, measurement, operators, inte
 
 \chapter{Mechanism Validation Layers}
 \begin{claimbox}
-The mechanism tree is not validated by topic similarity. It is checked by three independent evidence layers: Noether-style currents ask what survives a rewrite, Gromov-Wasserstein (GW) neighborhoods ask which formulations are structurally near, and the learned Lagrangian asks whether a proposed move is an easy continuation, a strained bridge, or a void-boundary design target.
+The mechanism tree is evaluated by three independent evidence layers: role-current stability asks what survives a rewrite, Gromov-Wasserstein (GW) neighborhoods measure relational bridge candidates, and the learned Lagrangian asks whether a proposed move is an easy continuation, a strained bridge, or a void-boundary design target.
 \end{claimbox}
-\section{Noether Layer: What Stays The Same}
-Here a Noether-like current is not a physical conservation law. It is a stability test over equation fingerprints. When a theory is rewritten, translated, or moved through the corpus, the test asks which part of the formal apparatus keeps its role. That is exactly the question needed for a mechanism tree: what makes two formulations the same mechanism?
+\section{Role-Current Layer: What Stays Stable}
+The role-current layer measures stability of formal roles under rewrite and translation. When a theory is rewritten, translated, or moved through the corpus, the test asks which part of the formal apparatus keeps its role. For a mechanism tree, this is the identity test: two formulations belong together when the same role contract survives the move.
 \begin{itemize}
-\item The run promoted ? strict currents and ? near currents. These are role-preserving directions in the learned representation, not literal laws of nature.
+\item The run promoted ? strict currents and ? near currents. These mark role-preserving directions in the learned representation.
 \end{itemize}
-\section{Legacy GW Control: Candidate Structural Bridges}
-The Gromov-Wasserstein layer is retained here as a legacy structural-bridge control. It is not the current translation mechanism for the V2 constructor. The current translation evidence is the typed transfer graph, bridge-family candidates, source-local transitions, and source-equation validation. GW remains useful only as a conservative check that two neighborhoods have compatible relational form.
+\section{Structural Bridge Layer: Candidate Translations}
+The Gromov-Wasserstein layer compares relational neighborhoods. It contributes a structural bridge score: two formulations are stronger bridge candidates when their local neighborhoods preserve comparable relations among roles. In the current constructor, this layer is combined with typed transfer edges, bridge-family candidates, source-local transitions, and source-equation validation.
 \begin{itemize}
 \item The run scanned ? Gromov-Wasserstein candidates, hardened ? bridge records, and retained ? artifact-validated method bridges.
-\item The practical reading is conservative: GW can nominate a legacy bridge candidate; typed transfer edges, directed source transitions, source equations, and residual checks decide whether it becomes useful.
+\item GW nominates relationally compatible bridge candidates; typed transfer edges, directed source transitions, source equations, and residual checks rank them for use.
 \end{itemize}
 \section{Lagrangian Layer: Which Moves Are Easy Or Strained}
 The learned Lagrangian is the navigation layer of the atlas. It is a representation-space action surrogate over source-equation fingerprints, separate from the physical action of a quantum system. Given a construction-role state, it asks which next states are cheap continuations, which require a strained bridge, and which absences sit on a meaningful void front. In this sense it finds roads through the operational grammar: low-action corridors where a formal role can be continued, translated, or tested. In the current quantum tree this layer supplies the global road-map constraint. A full page-coordinate export will allow direct page-level action scoring.
@@ -561,11 +569,11 @@ The rules below are induced from the current sparse-attention export. They are n
 \subsection{R01. Operator-to-spectrum as the readout spine}
 \paragraph{Reading.} The stable readout of a quantum construction is usually spectral.  A state becomes experimentally or mathematically predictive when an allowed operator question exposes eigenvalues, projectors, or a spectral measure.
 \paragraph{Use.} Introduce observables, self-adjointness, spectral projectors, and the Born rule as the common readout interface before presenting particles, fields, or protocols as separate subjects.
-\paragraph{Boundary.} This does not make every quantum topic an eigenvalue problem; it says that spectra are the most reusable readout layer in this export.
+\paragraph{Boundary.} The claim is role-specific: spectra are the most reusable readout layer in this export, while other roles supply state, evolution, context, and compatibility.
 \subsection{R02. State transport as the carrier of change}
 \paragraph{Reading.} Quantum topics repeatedly require a lawful carrier of change: a state vector, density operator, field mode, or channel is propagated before it is read.
 \paragraph{Use.} Derive state evolution as the map between preparation and later readout, using unitary, semigroup, or channel language depending on whether the system is closed, open, or operational.
-\paragraph{Boundary.} Transport is not the whole theory.  It becomes meaningful only after the admissible state space and the observable question have been specified.
+\paragraph{Boundary.} Transport becomes meaningful after the admissible state space and the observable question have been specified.
 \subsection{R03. Admissibility as the legal spine}
 \paragraph{Reading.} Closure and admissibility form the legal spine of the theory: states must be normalizable or positive, maps must preserve the allowed state set, and operators must have a domain on which the question is well-defined.
 \paragraph{Use.} Every derivation should state what makes the state, operator, map, or probability assignment legal before it discusses physical interpretation.
@@ -581,11 +589,11 @@ The rules below are induced from the current sparse-attention export. They are n
 \subsection{R06. Protocol as ordered implementation}
 \paragraph{Reading.} Protocols are a sparse but real layer.  They become central when an ordered sequence of operations, measurements, controls, or updates determines what can be inferred.
 \paragraph{Use.} Place quantum algorithms, circuits, finite automata, Bell tests, and delayed-choice experiments in this layer: their content depends on operation order, not only on a static Hamiltonian.
-\paragraph{Boundary.} A protocol is not automatically a new physical principle.  It is a realization of the state, operator, readout, and compatibility machinery in an ordered experiment or computation.
+\paragraph{Boundary.} A protocol realizes the state, operator, readout, and compatibility machinery in an ordered experiment or computation.
 \subsection{R07. Observables are spectral questions}
 \paragraph{Reading.} The observables branch is correctly centered on spectral questions.  Its pages ask which physical quantities can be represented by operators and which outcome channels those operators permit.
 \paragraph{Use.} Read this branch through self-adjoint operators, spectral decompositions, projectors, expectation values, and the distinction between compatible and incompatible observables.
-\paragraph{Boundary.} Observable names are not enough.  A quantity becomes a quantum observable only when its operator domain and spectral readout are specified.
+\paragraph{Boundary.} A quantity becomes a quantum observable when its operator domain and spectral readout are specified.
 \subsection{R08. Incompatibility becomes visible through protocols}
 \paragraph{Reading.} The incompatibility branch is unexpectedly protocol-like.  Bell tests, erasers, nonlocality arguments, and related pages depend on which questions are asked in which order and under which measurement arrangement.
 \paragraph{Use.} Present these topics as experimental or logical sequences that expose incompatible readouts, rather than as isolated paradoxes.
@@ -597,15 +605,15 @@ The rules below are induced from the current sparse-attention export. They are n
 \subsection{R10. Context makes spectra well-defined}
 \paragraph{Reading.} The context branch is where a spectral question becomes legally posed.  Hilbert space, basis, representation, operator domain, and preparation context are not background labels; they define the admissible state space on which operators can have spectra.
 \paragraph{Use.} For pages such as Hilbert space or mathematical formulation, write the carrier first: choose the space, domain, inner product, and allowed states before asking for eigenvalues or probabilities.
-\paragraph{Boundary.} This does not say context causes the physics.  It says the quantum question is not well-formed until the admissible carrier of the question has been supplied.
+\paragraph{Boundary.} The quantum question is well formed after the admissible carrier of the question has been supplied.
 \subsection{R11. Engineered protocols package spectral questions}
 \paragraph{Reading.} Engineered quantum protocols still depend on spectral structure.  Circuits, automata, sensors, and algorithms arrange allowed transformations so that a final readout exposes the desired spectral or probability information.
 \paragraph{Use.} Describe protocols as controlled sequences of unitary maps, channels, measurements, and conditional updates, then identify what spectral or probability readout the sequence is designed to reveal.
-\paragraph{Boundary.} The engineering layer is not separate from quantum theory; it is the operational packaging of the same constructor.
+\paragraph{Boundary.} The engineering layer packages the same constructor operationally.
 \subsection{R12. Junction pages require decomposition}
 \paragraph{Reading.} Some pages are junctions rather than leaves.  EPR, wave function, delayed-choice eraser, entanglement, quantum biology, and similar topics join state, evolution, readout, boundary, protocol, and compatibility in one place.
 \paragraph{Use.} Do not force such pages into one branch.  Split them into constructor steps: what is the state carrier, what transforms it, what is read out, what context is required, and what compatibility limit is being tested.
-\paragraph{Boundary.} A junction is not an error or a discovery by itself.  It is a signal that the page should be decomposed before it is used as an explanatory root.
+\paragraph{Boundary.} A junction signals that the page should be decomposed before it is used as an explanatory root.
 \subsection{R13. Placement precedes derivation}
 \paragraph{Reading.} Role assignment is easier than full local derivation.  Sparse attention can often locate the constructor role of a page before the export contains a topic-specific equation skeleton.
 \paragraph{Use.} Treat core-derived pages as specialization targets: specify their state/operator/readout roles, then decide whether they need a topic-specific equation or can remain a specialization of the compact constructor.
@@ -613,23 +621,23 @@ The rules below are induced from the current sparse-attention export. They are n
 \subsection{R14. Annotation pages preserve formal signal}
 \paragraph{Reading.} Annotation pages still contain formal signal.  Historical and interpretive texts often preserve the same state, operator, probability, and compatibility vocabulary as technical pages.
 \paragraph{Use.} Use these pages to explain why a mechanism mattered or how it was interpreted, but attach them downstream of the formal constructor they discuss.
-\paragraph{Boundary.} A strong annotation signal should not be confused with an independent equation source.
+\paragraph{Boundary.} A strong annotation signal is an orientation cue; independent equation evidence remains the source for derivation.
 \subsection{R15. Operator pages split by role}
 \paragraph{Reading.} The word operator is not one mechanism.  Unitary operators transport states, self-adjoint operators define observable spectra, and angular-momentum operators carry symmetry and incompatibility structure.
 \paragraph{Use.} Split operator pages by role rather than by title: generator of evolution, observable question, symmetry generator, algebraic constraint, or protocol component.
-\paragraph{Boundary.} A shared word is a useful index term, not a physical equivalence class.
+\paragraph{Boundary.} A shared word is an index term; physical equivalence requires matching role structure.
 \subsection{R16. Schrödinger pages split by role}
-\paragraph{Reading.} The Schrödinger family is not one branch.  The equation is a generator of state evolution, the picture is a representation choice, the cat is a protocol/readout junction, and the biography is an annotation.
+\paragraph{Reading.} The Schrödinger family separates into distinct constructor roles.  The equation is a generator of state evolution, the picture is a representation choice, the cat is a protocol/readout junction, and the biography is an annotation.
 \paragraph{Use.} Separate the Schrödinger equation, Schrödinger picture, Schrödinger's cat, and historical material by the role each performs in the constructor.
-\paragraph{Boundary.} The shared name does not imply a shared mechanism.
+\paragraph{Boundary.} The shared name is resolved by the role each page performs.
 \subsection{R17. Physics labels hide different roles}
-\paragraph{Reading.} Physics-labeled pages are not automatically foundations.  They can be field realizations, scaling regimes, annotation pages, or constructor junctions depending on how state, operator, boundary, and readout appear.
+\paragraph{Reading.} Physics-labeled pages split into field realizations, scaling regimes, annotation pages, and constructor junctions depending on how state, operator, boundary, and readout appear.
 \paragraph{Use.} Ask what each physics-labeled page does: does it define a carrier, a generator, a spectrum, a compatibility limit, or a realization domain?
-\paragraph{Boundary.} Discipline labels should not determine the mechanism tree.
+\paragraph{Boundary.} Mechanism placement follows state, operator, boundary, and readout roles rather than discipline labels.
 \subsection{R18. Equation pages split by mechanism}
-\paragraph{Reading.} Equation-named pages are not interchangeable.  Schrödinger, Dirac, Klein-Gordon, and related equations differ by state carrier, symmetry constraints, admissible domains, and relativistic or field-theoretic realization.
+\paragraph{Reading.} Equation-named pages separate by state carrier, symmetry constraints, admissible domains, and relativistic or field-theoretic realization.
 \paragraph{Use.} Derive each equation by stating its state space, generator, conserved or constrained quantities, and readout role instead of grouping all equations as a single topic type.
-\paragraph{Boundary.} The word equation identifies a presentation form, not the mechanism performed by the page.
+\paragraph{Boundary.} The word equation identifies a presentation form; the mechanism is determined by the role performed by the page.
 \subsection{R19. Heisenberg pages split by role}
 \paragraph{Reading.} The Heisenberg family separates representation, uncertainty, historical annotation, and operator dynamics. Its unity comes from the recurring role of non-commuting observables and time-dependent operators.
 \paragraph{Use.} Place Heisenberg-picture pages with generators and representations; place uncertainty and matrix mechanics pages with compatibility and observable algebra.
@@ -637,15 +645,15 @@ The rules below are induced from the current sparse-attention export. They are n
 \subsection{R20. Introductions are compressed maps}
 \paragraph{Reading.} Introductory pages are compressed junctions.  They mix state, generator, observable, probability, interpretation, and examples because they are written pedagogically rather than mechanistically.
 \paragraph{Use.} Use introductions as maps, then redistribute their content into the mechanism tree before treating any paragraph as a derivation.
-\paragraph{Boundary.} Pedagogical order is not the same as construction order.
+\paragraph{Boundary.} Pedagogical order and construction order answer different questions.
 \subsection{R21. Network pages split by role}
 \paragraph{Reading.} Network-labeled pages split into physical networks, computational networks, and graph-like state structures.  The title word hides different roles of connectivity, protocol, and state space.
 \paragraph{Use.} Ask whether the network is a physical realization, a computational protocol, an entanglement structure, or an abstract graph used to define admissible transformations.
-\paragraph{Boundary.} Connectivity language is not enough to infer a common mechanism.
+\paragraph{Boundary.} Connectivity language must be paired with carrier, operator, and readout evidence to infer a common mechanism.
 \subsection{R22. Geometry enters as realization}
 \paragraph{Reading.} Geometry enters mainly through realization-heavy branches.  In this export, geometric language most often specifies boundary, field, context, or reconstruction layers rather than replacing the operator-spectral core.
 \paragraph{Use.} Introduce geometry when the theory needs a domain, boundary, metric, representation, field realization, or reconstruction map.  Keep the operator and admissibility structure visible underneath.
-\paragraph{Boundary.} This does not deny physical geometry. It restricts the claim to transferability in the current artifacts: geometry is essential for embodiment and is less portable than the operator/readout machinery.
+\paragraph{Boundary.} Physical geometry supplies embodiment and boundary conditions; in the current artifacts it is less portable than the operator/readout machinery.
 \section{Topic-Specific Readings}
 \begin{itemize}
 \item \textbf{Particle}: In this reading, a particle is not the root unit. It is a stable field/mode/readout realization of the state-operator-spectrum constructor. Photon, electron, fermion, and boson do not share one identical route profile; 'particle' decomposes into spectral, boundary, closure, and statistics roles. Relevant pages: Boson, Fermion, Photon, Fock space, Creation and annihilation operators, Electron.
@@ -697,7 +705,7 @@ The labels below describe why a page is structurally interesting in the mechanis
 
 \item \textbf{Quantum state}. Quantum state is the carrier, not the final prediction. It is anomalous because it precedes several downstream roles: admissibility, evolution, observable choice, and probability readout. A clean derivation should state whether the carrier is a vector, density operator, field state, or register, and which transformations preserve its legality.
 
-\item \textbf{Wave–particle duality}. Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. The constructor should be written as context selection plus readout channel, not as two substances alternating.
+\item \textbf{Wave–particle duality}. Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. The constructor should be written as context selection plus readout channel.
 
 \item \textbf{Quantum entanglement}. Entanglement is a tensor-factorization and correlation constraint. The anomaly is that the state is not reducible to independently readable subsystem states, while the readout is still local and spectral. A useful page must distinguish the joint state, the subsystem observables, and the correlation test.
 
@@ -727,7 +735,7 @@ The labels below describe why a page is structurally interesting in the mechanis
 
 \item Treat tunnelling, particle-in-a-box, cavity optics, and spectral lines as one family of boundary-shaped spectra.  This suggests looking for overlooked boundary controls in systems currently described only by bulk evolution.
 
-\item Quantum computing should be read as an engineering layer over the state-operator-readout constructor, not as a separate foundation. New protocols should be searched by composing lawful quantum questions and controlled maps, not by naming new qubit objects.
+\item Quantum computing should be read as an engineering layer over the state-operator-readout constructor. New protocols should be searched by composing lawful quantum questions and controlled maps.
 
 \item Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.
 
@@ -4836,7 +4844,7 @@ Operationally, Electron microscope is organized by the relation between state te
 \end{itemize}
 
 \subsection*{Core-Derived Role Equations}
-This equation block is the branch-level quantum mechanism attached to the page by the compact constructor. It should be read as the role equation to check against the page's source evidence, not as a claim that every source writes the formula in this notation.
+This equation block is the branch-level quantum mechanism attached to the page by the compact constructor. It gives the role equation to check against the page's source evidence; source notation may differ.
 \begin{align*}
 \rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
 \end{align*}
@@ -5958,7 +5966,7 @@ Many named quantum effects are boundary realizations of the same construction.  
 
 \section{Why This Branch Exists}
 
-Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives.
+Named effects such as tunnelling and particle-in-a-box are boundary realizations of the state-operator-readout construction.
 
 \section{Page Map}
 
@@ -9298,7 +9306,7 @@ Some pages help readers navigate the subject but do not form steps in the mechan
 
 \section{Why This Branch Exists}
 
-These pages remain useful for orientation, but they are deliberately not treated as construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.
+These pages remain useful for orientation and are placed downstream of the construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.
 
 \section{Page Map}
 

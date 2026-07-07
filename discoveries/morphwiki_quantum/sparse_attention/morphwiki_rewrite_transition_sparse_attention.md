@@ -7,8 +7,8 @@ This run treats the rewrite itself as the transition: Wikipedia/topic view -> me
 - `page_count`: `147`
 - `constructed_pages`: `145`
 - `evidence_placements`: `2`
-- `mean_operation_gain`: `22.0529`
-- `mean_object_shift`: `3.6325`
+- `mean_operation_gain`: `22.0967`
+- `mean_object_shift`: `3.6544`
 
 ### Mean Route Profile
 
@@ -59,7 +59,7 @@ The new object is not a better summary of each topic; it is an ordering relation
 
 Evidence:
 - `page_count`: `147`
-- `branch_counts`: `{'generators': 22, 'states': 24, 'measurement': 10, 'annotations': 16, 'incompatibility': 6, 'boundaries': 12, 'fields': 21, 'protocols': 18, 'context': 7, 'observables': 10, 'unresolved': 1}`
+- `branch_counts`: `{'generators': 22, 'states': 24, 'measurement': 10, 'annotations': 16, 'incompatibility': 6, 'boundaries': 12, 'fields': 21, 'protocols': 18, 'unresolved': 1, 'context': 7, 'observables': 10}`
 - `constructed_pages`: `145`
 - `evidence_placements`: `2`
 
@@ -149,10 +149,9 @@ Evidence:
   - Interpretation: This protocol page mixes observables and spectra, state evolution, and controlled update protocol. Write it as an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters.
 - **Quantum electrodynamics** (fields): attention `0.471496`, operation gain `21.6905`, top roles measurement=0.22, context=0.20, observable=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, multi-role hub
   - Interpretation: Quantum electrodynamics is a field-interaction constructor. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. Derive it through field operators, gauge constraints, interaction terms, and observable amplitudes.
+- **Quantum cosmology** (unresolved): attention `0.46888`, operation gain `31.25`, top roles state=0.25, observable=0.23, measurement=0.16
 - **Quantum entanglement** (incompatibility): attention `0.459632`, operation gain `18.9988`, top roles measurement=0.22, state=0.19, context=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
   - Interpretation: Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. Separate the joint state, subsystem observables, and correlation test.
-- **Quantum field theory** (fields): attention `0.459`, operation gain `20.3919`, top roles context=0.20, measurement=0.17, state=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, multi-role hub
-  - Interpretation: This field-level page mixes observables and spectra, state evolution, and normalization and admissibility. Treat it as a many-mode or geometric realization problem: identify the state sector or field algebra, then the constraints and readout that make the field content observable.
 
 ## Branch-Level Transition
 
@@ -166,7 +165,7 @@ Evidence:
 - **Spectral question: what can be asked**: `10` pages, `9` constructed, mean operation gain `21.414`.
 - **Hilbert-space context: admissible carrier and basis**: `7` pages, `7` constructed, mean operation gain `22.8302`.
 - **Compatibility limit: what cannot be jointly sharp**: `6` pages, `6` constructed, mean operation gain `21.5705`.
-- **Unresolved**: `1` pages, `0` constructed, mean operation gain `24.8049`.
+- **Unresolved**: `1` pages, `0` constructed, mean operation gain `31.25`.
 
 ## Practical Conclusion
 

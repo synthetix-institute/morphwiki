@@ -18,6 +18,10 @@ COMPATIBILITY constrains which questions can be jointly sharp.
 REALIZATION adds boundaries, fields, detectors, protocols, and scaling limits.
 ```
 
+## DAG Then Constructor
+
+The DAG gives the assembly order: context and admissibility precede state transport; state transport precedes spectral readout; readout and compatibility precede boundary, field, detector, or protocol realization. The constructor fills this ordered scaffold with the carrier, operator, map, question, readout, closure condition, and realization needed for a predictive mechanism.
+
 ## Re-Derivation Path
 1. **Selector.** A context selects the Hilbert space and operator domain. Euclidean space may label a representation, but Hilbert space is the admissible carrier.
 2. **Carrier.** The state, density operator, field state, or register state carries predictive information on that selected space.
@@ -43,7 +47,7 @@ p_i = \operatorname{Tr}(P_i \rho_t)
 - incompatible questions: mean 0.086, pages above 0.10 = 59
 - controlled update protocol: mean 0.076, pages above 0.10 = 32
 
-Interpretation: the stable evidence signal is observables-and-spectra, but the mechanism tree is not the same object as the evidence ranking.  The tree orders quantum theory by construction role; the route scores explain why each role is supported.
+Interpretation: the stable evidence signal is observables-and-spectra. The mechanism tree orders quantum theory by construction role; the route scores explain why each role is supported.
 
 ## Tree
 ### Hilbert-space context: admissible carrier and basis
@@ -140,7 +144,7 @@ Representative pages:
 ### Boundary realization: how effects appear
 Many named quantum effects are boundary realizations of the same construction.  A potential, barrier, box, cavity, detector, or medium changes the allowed spectral channels without changing the basic prediction problem.
 
-Why it belongs here: Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives.
+Why it belongs here: Named effects such as tunnelling and particle-in-a-box are boundary realizations of the state-operator-readout construction.
 
 Representative pages:
 - Potential well - evidence route: observables and spectra (0.42); assignment score 1.44
@@ -188,19 +192,19 @@ Representative pages:
 ### Annotations: history, interpretations, and popular frames
 Some pages help readers navigate the subject but do not form steps in the mechanism. They are kept as annotations so books, historical figures, interpretations, and popular frames do not distort the constructive tree.
 
-Why it belongs here: These pages remain useful for orientation, but they are deliberately not treated as construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.
+Why it belongs here: These pages remain useful for orientation and are placed downstream of the construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.
 
 Representative pages:
 - Introduction to quantum mechanics - evidence route: observables and spectra (0.29); assignment score 0.72
 - Old quantum theory - evidence route: observables and spectra (0.34); assignment score 0.91
 - 14 more pages in this branch
-- 14 historical, interpretive, or popular pages are treated as annotations, not as conceptual roots
+- 14 historical, interpretive, or popular pages are treated as annotations downstream of the conceptual roots
 
 ## A New Reading Of Quantum Mechanics
 
 Quantum mechanics can be introduced through a direct constructor order: first define the Hilbert space, operator domain, and basis; then define a state as a predictive carrier; then define lawful change; then define legal questions as operators; then show that each question exposes a spectrum of possible answers; then add the probability rule; only then introduce particles, waves, detectors, barriers, fields, and computers as realizations of this construction.
 
-In this reading, the measurement problem is not the root of the subject.  It is a junction where the readout protocol, context dependence, and incompatible questions meet.  Likewise, tunnelling is not a paradox about a particle crossing a wall; it is a boundary-shaped spectral channel with non-zero amplitude in a region that the classical energy description would exclude.
+In this reading, the measurement problem is a junction where the readout protocol, context dependence, and incompatible questions meet.  Tunnelling is a boundary-shaped spectral channel with non-zero amplitude in a region that the classical energy description would exclude.
 
 ## Anomalies And Discovery Leads
 
@@ -212,7 +216,7 @@ Label guide:
 - **compatibility/closure junction**: the page joins the rules that make a state legal with the rules that limit which questions can be resolved together.
 - **protocol is unusually explicit**: the order of operations is itself mechanistic; changing the sequence changes what can be inferred or observed.
 - **multi-role hub**: several construction steps meet in one topic, so the page is a junction rather than a clean leaf in the tree.
-- **branch-ambiguous**: the topic belongs at an interface between two explanatory roles and should be read as a bridge, not assigned to one branch too early.
+- **branch-ambiguous**: the topic belongs at an interface between two explanatory roles and should be read as a bridge before branch assignment.
 
 - **Schrödinger's cat**. Schrödinger's cat is a macroscopic readout protocol. It couples microscopic unitary evolution to a macroscopic boundary and forces three steps apart: coherent transport, decoherence or apparatus coupling, and the rule by which one record is selected or conditioned. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub, and branch-ambiguous. Branch: State carrier inside Hilbert space; secondary: Annotations: history, interpretations, and popular frames.
 - **Einstein–Podolsky–Rosen paradox**. EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. Start from the joint state and local observables, then ask which correlation constraint fails. Flags: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, and multi-role hub. Branch: Compatibility limit: what cannot be jointly sharp; secondary: Annotations: history, interpretations, and popular frames.
@@ -230,7 +234,7 @@ Label guide:
 Possible leads:
 - Search for systems where a state-like carrier and a legal-question operator exist, but the incompatibility relation has not been tested.  Those systems are candidates for quantum-like contextual behavior without importing quantum ontology.
 - Treat tunnelling, particle-in-a-box, cavity optics, and spectral lines as one family of boundary-shaped spectra.  This suggests looking for overlooked boundary controls in systems currently described only by bulk evolution.
-- Quantum computing should be read as an engineering layer over the state-operator-readout constructor, not as a separate foundation. New protocols should be searched by composing lawful quantum questions and controlled maps, not by naming new qubit objects.
+- Quantum computing should be read as an engineering layer over the state-operator-readout constructor. New protocols should be searched by composing lawful quantum questions and controlled maps.
 - Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.
 - Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.
 
