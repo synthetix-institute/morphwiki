@@ -83,42 +83,6 @@ quantum_mechanism_tree_book.pdf   # generated when xelatex/lualatex is present
 
 For a step-by-step guide, see [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
 
-## Use Hyperion V2 Language Artifacts
-
-The book can now consume the V2 operator/substrate language when those artifacts
-are available. This is optional: the cached quantum book still rebuilds without
-them, but the improved build adds the V2 identity contract
-
-```text
-I = (Ω, Ξ; C, R, P)
-```
-
-where `Ω` is operator apparatus, `Ξ` is substrate/carrier evidence, and
-`C/R/P` are closure, readout/current, and protocol/order completion fibers. The
-six route families remain roads, not identity coordinates.
-
-Copy the artifacts from the Hyperion/KnowledgeParser run, or point to them
-directly:
-
-```bash
-MORPHWIKI_V2_LANGUAGE_JSON=../KnowledgeParser/discoveries/operator_substrate_v2_full_radius4_hierarchical_language.json \
-MORPHWIKI_V2_GRAMMAR_RULES_JSON=../KnowledgeParser/discoveries/operator_substrate_v2_full_radius4_grammar_rule_learner.json \
-MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON=../KnowledgeParser/discoveries/operator_substrate_v2_full_radius4_source_language_examples.json \
-bash scripts/run_quantum_book.sh
-```
-
-Equivalent local layout:
-
-```text
-discoveries/morphwiki_quantum/v2_language/hierarchical_language.json
-discoveries/morphwiki_quantum/v2_language/grammar_rules.json
-discoveries/morphwiki_quantum/v2_language/source_language_examples.json
-```
-
-The V2 layer is used as an evidence contract for the book. It does not make a
-page-level physical claim unless the page has source equations, assumptions,
-domains, and validation checks.
-
 ## Repository Map
 
 ```text

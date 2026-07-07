@@ -3,6 +3,14 @@ set -euo pipefail
 
 ROOT="${MORPHWIKI_ROOT:-discoveries/morphwiki_quantum}"
 OUT_DIR="${MORPHWIKI_OUT_DIR:-$ROOT/book}"
+PYTHON_BIN="${PYTHON_BIN:-}"
+if [[ -z "$PYTHON_BIN" ]]; then
+  if command -v python >/dev/null 2>&1; then
+    PYTHON_BIN=python
+  else
+    PYTHON_BIN=python3
+  fi
+fi
 
 echo "[MorphWiki] building mechanism tree"
 tree_args=()
@@ -15,16 +23,21 @@ fi
 if [[ -n "${MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON:-}" ]]; then
   tree_args+=(--v2-source-examples-json "$MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON")
 fi
-python -B scripts/build_morphwiki_quantum_tree.py \
-  --root "$ROOT" \
-  "${tree_args[@]}"
+if ((${#tree_args[@]})); then
+  "$PYTHON_BIN" -B scripts/build_morphwiki_quantum_tree.py \
+    --root "$ROOT" \
+    "${tree_args[@]}"
+else
+  "$PYTHON_BIN" -B scripts/build_morphwiki_quantum_tree.py \
+    --root "$ROOT"
+fi
 
 echo "[MorphWiki] running sparse-attention rewrite analysis"
-python -B scripts/analyze_morphwiki_rewrite_transition.py \
+"$PYTHON_BIN" -B scripts/analyze_morphwiki_rewrite_transition.py \
   --root "$ROOT"
 
 echo "[MorphWiki] building LaTeX book"
-python -B scripts/build_morphwiki_quantum_book.py \
+"$PYTHON_BIN" -B scripts/build_morphwiki_quantum_book.py \
   --root "$ROOT" \
   --out-dir "$OUT_DIR"
 

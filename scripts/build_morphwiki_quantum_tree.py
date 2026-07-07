@@ -1000,27 +1000,6 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines.append("")
     lines.append("Interpretation: the stable evidence signal is observables-and-spectra, but the mechanism tree is not the same object as the evidence ranking.  The tree orders quantum theory by construction role; the route scores explain why each role is supported.")
     lines.append("")
-    v2 = report.get("hyperion_v2_language") or {}
-    if v2.get("available"):
-        counts = v2.get("language_counts") or {}
-        compact = v2.get("logical_compactness") or {}
-        lines.append("## Hyperion V2 Language Contract")
-        lines.append("")
-        lines.append(f"Identity signature: `{v2.get('identity_signature') or 'I := (Ω, Ξ; C, R, P)'}`")
-        lines.append("")
-        lines.append(
-            "Interpretation: quantum pages should be read as operator apparatus realized on an admissible substrate, "
-            "with closure, readout/current and protocol/order obligations. The six route families remain roads, not identity coordinates."
-        )
-        lines.append("")
-        lines.append(f"- Primitive factor tokens: `{compact.get('primitive_factor_token_count')}`")
-        lines.append(f"- Attached completion fibers: `{compact.get('attached_completion_fiber_count')}`")
-        lines.append(f"- Relation tokens: `{compact.get('relation_token_count')}`")
-        lines.append(f"- Ω tokens: `{counts.get('omega')}`; Ξ tokens: `{counts.get('xi')}`; Γ bridge tokens: `{counts.get('gamma')}`")
-        selected = v2.get("selected_grammar")
-        if selected:
-            lines.append(f"- Selected grammar: `{selected}`")
-        lines.append("")
     lag_prior = report.get("lagrangian_construction_prior") or {}
     if lag_prior.get("available"):
         lines.append("## Lagrangian Construction Prior")
@@ -1135,7 +1114,7 @@ def build_report(
             "insight": insights[branch_id],
             "pages": assignments[branch_id],
         }
-    return {
+    report = {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": str(root),
@@ -1144,7 +1123,6 @@ def build_report(
             "definition": BRANCHES["root"]["definition"],
         },
         "sparse_attention": stats,
-        "hyperion_v2_language": v2_context,
         "lagrangian_construction_prior": {
             "available": bool(lagrangian_model.get("available")),
             "page_projection_available": bool(lagrangian_model.get("page_projection_available")),
@@ -1163,12 +1141,11 @@ def build_report(
             "Quantum computing should be read as an engineering layer over the state-operator-readout constructor, not as a separate foundation. New protocols should be searched by composing lawful quantum questions and controlled maps, not by naming new qubit objects.",
             "Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.",
             "Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.",
-            (
-                "When V2 language artifacts are supplied, read the quantum constructor through the identity signature "
-                "I=(Ω,Ξ;C,R,P): operator apparatus, admissible substrate, closure, readout/current, and protocol/order."
-            ),
         ],
     }
+    if os.environ.get("MORPHWIKI_EXPOSE_INTERNAL_METHOD", "").strip() == "1":
+        report["hyperion_v2_language"] = v2_context
+    return report
 
 
 def main() -> None:

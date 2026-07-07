@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from collections import Counter
 from datetime import datetime, timezone
@@ -3289,9 +3290,10 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         )
     )
     lines.append(compact_operator_formulation_chapter())
-    v2_chapter = render_v2_language_chapter(tree)
-    if v2_chapter:
-        lines.append(v2_chapter)
+    if os.environ.get("MORPHWIKI_EXPOSE_INTERNAL_METHOD", "").strip() == "1":
+        v2_chapter = render_v2_language_chapter(tree)
+        if v2_chapter:
+            lines.append(v2_chapter)
     lines.append(validation_layers_chapter(root))
     sparse_chapter = sparse_attention_results_chapter(root)
     if sparse_chapter:
