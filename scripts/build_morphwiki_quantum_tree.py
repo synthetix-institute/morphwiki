@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import re
 from collections import Counter
 from datetime import datetime, timezone
@@ -233,6 +234,107 @@ def load_pages(root: Path) -> List[Dict[str, Any]]:
         page["_slug"] = path.stem
         pages.append(page)
     return pages
+
+
+def load_optional_json(path: str | Path | None) -> Dict[str, Any]:
+    if not path:
+        return {}
+    p = Path(path)
+    if not p.exists() or not p.is_file():
+        return {}
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def first_existing_path(*paths: str | Path | None) -> str:
+    for raw in paths:
+        if not raw:
+            continue
+        path = Path(raw)
+        if path.exists() and path.is_file():
+            return str(path)
+    return ""
+
+
+def v2_language_context(
+    root: Path,
+    language_json: str = "",
+    grammar_rules_json: str = "",
+    source_examples_json: str = "",
+) -> Dict[str, Any]:
+    """Load optional V2 language artifacts without making the book dependent on them."""
+
+    language_path = first_existing_path(
+        language_json,
+        os.environ.get("MORPHWIKI_V2_LANGUAGE_JSON"),
+        root / "v2_language" / "hierarchical_language.json",
+        root / "v2_language" / "operator_substrate_v2_full_radius4_hierarchical_language.json",
+    )
+    grammar_path = first_existing_path(
+        grammar_rules_json,
+        os.environ.get("MORPHWIKI_V2_GRAMMAR_RULES_JSON"),
+        root / "v2_language" / "grammar_rules.json",
+        root / "v2_language" / "operator_substrate_v2_full_radius4_grammar_rules.json",
+    )
+    source_path = first_existing_path(
+        source_examples_json,
+        os.environ.get("MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON"),
+        root / "v2_language" / "source_language_examples.json",
+        root / "v2_language" / "operator_substrate_v2_full_radius4_source_language_examples.json",
+    )
+    language = load_optional_json(language_path)
+    grammar = load_optional_json(grammar_path)
+    source_examples = load_optional_json(source_path)
+    if not language:
+        return {
+            "available": False,
+            "reason": "No V2 hierarchical-language artifact was supplied.",
+            "expected_files": [
+                "hierarchical_language.json",
+                "grammar_rules.json",
+                "source_language_examples.json",
+            ],
+        }
+
+    counts = language.get("language_counts") or {}
+    compact = language.get("logical_compactness") or {}
+    hierarchy = language.get("hierarchy") or {}
+    grammar_rules = language.get("grammar_rules") or {}
+    claims = list(language.get("claims_supported") or [])[:8]
+    source_grounding = ((hierarchy.get("source_grounding") or {}).get("by_kind") or {})
+    selected = (
+        grammar.get("selected_grammar")
+        or grammar.get("decision")
+        or grammar.get("recommended_grammar")
+        or "not supplied"
+    )
+    return {
+        "available": True,
+        "source_files": {
+            "hierarchical_language": language_path,
+            "grammar_rules": grammar_path,
+            "source_language_examples": source_path,
+        },
+        "readiness": language.get("readiness"),
+        "identity_signature": (
+            grammar_rules.get("identity_signature")
+            or ((hierarchy.get("attached_completion_fibers") or {}).get("identity_signature"))
+            or "I := (Ω, Ξ; C, R, P)"
+        ),
+        "language_counts": counts,
+        "logical_compactness": compact,
+        "selected_grammar": selected,
+        "claims_supported": claims,
+        "source_grounding": source_grounding,
+        "source_examples_available": bool(source_examples),
+        "claim_boundary": (
+            "V2 language artifacts describe representation-level mechanism roles. "
+            "Quantum-page claims still require source equations, assumptions, domains, and residual checks."
+        ),
+    }
 
 
 def words(*values: Any) -> Counter:
@@ -898,6 +1000,27 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines.append("")
     lines.append("Interpretation: the stable evidence signal is observables-and-spectra, but the mechanism tree is not the same object as the evidence ranking.  The tree orders quantum theory by construction role; the route scores explain why each role is supported.")
     lines.append("")
+    v2 = report.get("hyperion_v2_language") or {}
+    if v2.get("available"):
+        counts = v2.get("language_counts") or {}
+        compact = v2.get("logical_compactness") or {}
+        lines.append("## Hyperion V2 Language Contract")
+        lines.append("")
+        lines.append(f"Identity signature: `{v2.get('identity_signature') or 'I := (Ω, Ξ; C, R, P)'}`")
+        lines.append("")
+        lines.append(
+            "Interpretation: quantum pages should be read as operator apparatus realized on an admissible substrate, "
+            "with closure, readout/current and protocol/order obligations. The six route families remain roads, not identity coordinates."
+        )
+        lines.append("")
+        lines.append(f"- Primitive factor tokens: `{compact.get('primitive_factor_token_count')}`")
+        lines.append(f"- Attached completion fibers: `{compact.get('attached_completion_fiber_count')}`")
+        lines.append(f"- Relation tokens: `{compact.get('relation_token_count')}`")
+        lines.append(f"- Ω tokens: `{counts.get('omega')}`; Ξ tokens: `{counts.get('xi')}`; Γ bridge tokens: `{counts.get('gamma')}`")
+        selected = v2.get("selected_grammar")
+        if selected:
+            lines.append(f"- Selected grammar: `{selected}`")
+        lines.append("")
     lag_prior = report.get("lagrangian_construction_prior") or {}
     if lag_prior.get("available"):
         lines.append("## Lagrangian Construction Prior")
@@ -990,9 +1113,15 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def build_report(root: Path) -> Dict[str, Any]:
+def build_report(
+    root: Path,
+    v2_language_json: str = "",
+    v2_grammar_rules_json: str = "",
+    v2_source_examples_json: str = "",
+) -> Dict[str, Any]:
     pages = load_pages(root)
     lagrangian_model = load_lagrangian_model(root)
+    v2_context = v2_language_context(root, v2_language_json, v2_grammar_rules_json, v2_source_examples_json)
     assignments, page_rows = assign_pages(pages, lagrangian_model)
     stats = route_stats(pages)
     anomaly_rows = anomalies(pages, page_rows)
@@ -1015,6 +1144,7 @@ def build_report(root: Path) -> Dict[str, Any]:
             "definition": BRANCHES["root"]["definition"],
         },
         "sparse_attention": stats,
+        "hyperion_v2_language": v2_context,
         "lagrangian_construction_prior": {
             "available": bool(lagrangian_model.get("available")),
             "page_projection_available": bool(lagrangian_model.get("page_projection_available")),
@@ -1033,6 +1163,10 @@ def build_report(root: Path) -> Dict[str, Any]:
             "Quantum computing should be read as an engineering layer over the state-operator-readout constructor, not as a separate foundation. New protocols should be searched by composing lawful quantum questions and controlled maps, not by naming new qubit objects.",
             "Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.",
             "Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.",
+            (
+                "When V2 language artifacts are supplied, read the quantum constructor through the identity signature "
+                "I=(Ω,Ξ;C,R,P): operator apparatus, admissible substrate, closure, readout/current, and protocol/order."
+            ),
         ],
     }
 
@@ -1042,10 +1176,18 @@ def main() -> None:
     parser.add_argument("--root", default="discoveries/morphwiki_quantum", help="MorphWiki quantum output directory")
     parser.add_argument("--out-json", default=None)
     parser.add_argument("--out-md", default=None)
+    parser.add_argument("--v2-language-json", default=os.environ.get("MORPHWIKI_V2_LANGUAGE_JSON", ""))
+    parser.add_argument("--v2-grammar-rules-json", default=os.environ.get("MORPHWIKI_V2_GRAMMAR_RULES_JSON", ""))
+    parser.add_argument("--v2-source-examples-json", default=os.environ.get("MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON", ""))
     args = parser.parse_args()
 
     root = Path(args.root)
-    report = build_report(root)
+    report = build_report(
+        root,
+        v2_language_json=args.v2_language_json,
+        v2_grammar_rules_json=args.v2_grammar_rules_json,
+        v2_source_examples_json=args.v2_source_examples_json,
+    )
     out_json = Path(args.out_json) if args.out_json else root / "quantum_mechanism_tree.json"
     out_md = Path(args.out_md) if args.out_md else root / "quantum_mechanism_tree.md"
     out_json.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

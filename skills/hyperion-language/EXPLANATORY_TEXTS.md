@@ -88,11 +88,13 @@ or shape variable
 Hyperion language is an audit language:
 
 ```text
-Ξ tells where the field sits.
-Ω tells which coordinate radicals are active.
-Α tells the apparatus or equation-construction regime.
+Ω tells which reusable operator apparatus remains recognizable.
+Ξ tells which substrate, carrier, or selector-context can realize it.
+C/R/P tell which closure, readout/current, and protocol obligations complete it.
+Α tells the derived operator-on-substrate regime; it is not a primitive factor.
 Λ tells the local transformation family.
 Τ tells a directed transition only when promoted by edge evidence.
+Γ tells bridge or transfer evidence across operator/substrate views.
 J tells current/conservation evidence only after Noether validation.
 V tells variance-axis diagnostics only.
 GW tells relational similarity transport, not causality or physical flow.
@@ -104,7 +106,9 @@ Human text should translate this into:
 ```text
 what equation form appears,
 what operation transforms it,
+what substrate or carrier realizes it,
 what constraint closes it,
+what readout/current or protocol is required,
 what symmetry or current may be preserved,
 what evidence is missing.
 ```

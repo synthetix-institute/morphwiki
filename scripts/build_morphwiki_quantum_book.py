@@ -2923,6 +2923,110 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     return "\n\n".join(lines)
 
 
+def render_v2_language_chapter(tree: Mapping[str, Any]) -> str:
+    """Render the optional Hyperion V2 language layer when artifacts are supplied."""
+
+    v2 = tree.get("hyperion_v2_language") or {}
+    if not v2.get("available"):
+        return ""
+    counts = v2.get("language_counts") or {}
+    compact = v2.get("logical_compactness") or {}
+    grounding = v2.get("source_grounding") or {}
+    lines: List[str] = [
+        r"\chapter{Hyperion V2 Language Layer}",
+        r"\begin{claimbox}",
+        r"\noindent\textbf{V2 identity signature:} \(I=(\Omega,\Xi;C,R,P)\). "
+        r"\(\Omega\) is the operator-apparatus coordinate, \(\Xi\) is the substrate/carrier coordinate, and "
+        r"\(C,R,P\) are attached completion fibers for closure, readout/current, and protocol/order.",
+        r"\end{claimbox}",
+        latex_escape(
+            "This chapter records how the current Hyperion V2 language changes the quantum-book interpretation. "
+            "The earlier MorphWiki quantum build used route and fiber profiles. The V2 language separates the reusable operator apparatus from the admissible substrate, "
+            "then attaches the obligations needed for a mechanism to become constructible: closure, readout/current, and protocol/order."
+        ),
+        latex_escape(
+            "The important correction is that the six route families are not identity coordinates. They are edge or road modes by which identities move or are compared. "
+            "The identity object has two primitive coordinates and three attached completion fibers."
+        ),
+        r"\section{How Quantum Theory Maps To V2}",
+        r"\begin{longtable}{p{0.20\linewidth}p{0.68\linewidth}}",
+        r"\toprule",
+        r"V2 role & Quantum reading \\",
+        r"\midrule",
+        r"\endhead",
+        r"\(\Omega\) & Operator apparatus: Hamiltonian, unitary map, channel, observable algebra, creation/annihilation operator, commutator or generator. \\",
+        r"\(\Xi\) & Admissible substrate/carrier: Hilbert space, Fock space, density-operator state space, operator domain, gauge sector, boundary domain or detector context. \\",
+        r"\(C\) & Closure/admissibility: normalization, positivity, self-adjointness, gauge constraint, boundary condition, trace preservation or complete positivity. \\",
+        r"\(R\) & Readout/current: Born rule, spectral projector, POVM effect, detector record, occupation number, scattering amplitude or conserved-current checkpoint. \\",
+        r"\(P\) & Protocol/order: preparation--evolution--measurement order, circuit sequence, channel composition, perturbative expansion or source-local derivation step. \\",
+        r"\(\Lambda,T,\Gamma,J,\Pi\) & Typed roads, directed transitions, transfer bridges, first-variation current candidates and repeated construction motifs. \\",
+        r"\bottomrule",
+        r"\end{longtable}",
+        r"\section{Counts And Compactness}",
+    ]
+    lines.append(
+        latex_escape(
+            f"Artifact readiness: {v2.get('readiness') or 'not reported'}. "
+            f"Selected grammar: {v2.get('selected_grammar') or 'not supplied'}."
+        )
+    )
+    lines.extend(
+        [
+            r"\begin{longtable}{p{0.38\linewidth}p{0.20\linewidth}p{0.32\linewidth}}",
+            r"\toprule",
+            r"Layer & Count & Interpretation \\",
+            r"\midrule",
+            r"\endhead",
+            rf"Primitive factor tokens & {int(compact.get('primitive_factor_token_count') or 0)} & \(\Omega+\Xi\), not a flat apparatus vocabulary \\",
+            rf"Identity components & {int(compact.get('identity_component_count') or 5)} & two coordinates plus three attached completion fibers \\",
+            rf"Relation tokens & {int(compact.get('relation_token_count') or 0)} & \(\Lambda,T,\Gamma,J\) relation or variation layers \\",
+            rf"Derived regime tokens & {int(compact.get('derived_regime_token_count') or 0)} & \(A\) or \(A^\ast\), derived from product context \\",
+            rf"Motif tokens & {int(compact.get('motif_token_count') or 0)} & repeated transition fragments \(\Pi\) \\",
+            r"\bottomrule",
+            r"\end{longtable}",
+            r"\section{Evidence Boundary}",
+        ]
+    )
+    claims = [str(x) for x in (v2.get("claims_supported") or []) if str(x).strip()]
+    if claims:
+        lines.append(r"\begin{itemize}")
+        for claim in claims[:6]:
+            lines.append(r"\item " + latex_escape(claim))
+        lines.append(r"\end{itemize}")
+    source_files = v2.get("source_files") or {}
+    if source_files:
+        lines.append(
+            latex_escape(
+                "The V2 layer was loaded from transferred Hyperion artifacts. These paths are evidence pointers inside the build, not book claims: "
+                + "; ".join(f"{key}={value}" for key, value in source_files.items() if value)
+            )
+        )
+    if grounding:
+        lines.append(r"\section{Source Grounding Rates}")
+        lines.append(r"\begin{longtable}{p{0.22\linewidth}p{0.18\linewidth}p{0.18\linewidth}p{0.22\linewidth}}")
+        lines.append(r"\toprule")
+        lines.append(r"Token kind & Grounded & Checked & Rate \\")
+        lines.append(r"\midrule")
+        lines.append(r"\endhead")
+        for kind, row in grounding.items():
+            try:
+                rate = float(row.get("grounding_rate") or 0.0)
+            except Exception:
+                rate = 0.0
+            lines.append(
+                rf"{latex_escape(kind)} & {int(row.get('grounded') or 0)} & {int(row.get('checked') or 0)} & {rate:.4f} \\"
+            )
+        lines.append(r"\bottomrule")
+        lines.append(r"\end{longtable}")
+    lines.append(
+        latex_escape(
+            v2.get("claim_boundary")
+            or "The V2 language is a representation-level mechanism grammar. Physical claims still require source equations and validation."
+        )
+    )
+    return "\n\n".join(lines)
+
+
 def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
     """Opening guide: define the mechanism tree and how to use it."""
     stats = tree.get("sparse_attention", {})
@@ -3185,6 +3289,9 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         )
     )
     lines.append(compact_operator_formulation_chapter())
+    v2_chapter = render_v2_language_chapter(tree)
+    if v2_chapter:
+        lines.append(v2_chapter)
     lines.append(validation_layers_chapter(root))
     sparse_chapter = sparse_attention_results_chapter(root)
     if sparse_chapter:

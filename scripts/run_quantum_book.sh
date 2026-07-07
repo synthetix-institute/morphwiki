@@ -5,8 +5,19 @@ ROOT="${MORPHWIKI_ROOT:-discoveries/morphwiki_quantum}"
 OUT_DIR="${MORPHWIKI_OUT_DIR:-$ROOT/book}"
 
 echo "[MorphWiki] building mechanism tree"
+tree_args=()
+if [[ -n "${MORPHWIKI_V2_LANGUAGE_JSON:-}" ]]; then
+  tree_args+=(--v2-language-json "$MORPHWIKI_V2_LANGUAGE_JSON")
+fi
+if [[ -n "${MORPHWIKI_V2_GRAMMAR_RULES_JSON:-}" ]]; then
+  tree_args+=(--v2-grammar-rules-json "$MORPHWIKI_V2_GRAMMAR_RULES_JSON")
+fi
+if [[ -n "${MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON:-}" ]]; then
+  tree_args+=(--v2-source-examples-json "$MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON")
+fi
 python -B scripts/build_morphwiki_quantum_tree.py \
-  --root "$ROOT"
+  --root "$ROOT" \
+  "${tree_args[@]}"
 
 echo "[MorphWiki] running sparse-attention rewrite analysis"
 python -B scripts/analyze_morphwiki_rewrite_transition.py \
