@@ -367,6 +367,7 @@ def public_book_text(value: Any, limit: Optional[int] = None) -> str:
         "apparatus-route-fiber": "construction-role",
         "366D page-coordinate export": "page-coordinate export",
         "366D": "high-dimensional",
+        "but they need explicit topic reruns and typed equations": "They require explicit topic reruns and typed equations",
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
@@ -1810,7 +1811,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
         "R19": [
             (
                 "Reading",
-                "The Heisenberg family separates representation, uncertainty, historical annotation, and operator dynamics.  Its unity is not a person-name label but a recurring role of non-commuting observables and time-dependent operators.",
+                "The Heisenberg family separates representation, uncertainty, historical annotation, and operator dynamics. Its unity comes from the recurring role of non-commuting observables and time-dependent operators.",
             ),
             (
                 "Use",
@@ -1860,7 +1861,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "This does not deny physical geometry.  It restricts the claim to transferability in the current artifacts: geometry is essential for embodiment, but less portable than the operator/readout machinery.",
+                "This does not deny physical geometry. It restricts the claim to transferability in the current artifacts: geometry is essential for embodiment and is less portable than the operator/readout machinery.",
             ),
         ],
     }
@@ -1984,13 +1985,13 @@ def anomaly_public_explanation(item: Mapping[str, Any]) -> str:
             "Quantum biology is an open-system transfer problem. The anomaly is that the biological environment is not background noise only; it is part of the boundary that may preserve, destroy, or select coherence. A rigorous constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control that would remove the quantum contribution."
         ),
         "measurement_problem": (
-            "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. The useful decomposition is not 'observer versus system' but: state evolution before measurement, coupling to an apparatus or environment, POVM or projection readout, and the rule used to condition the state after the record."
+            "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. Use four parts: state evolution before measurement, coupling to an apparatus or environment, POVM or projection readout, and the rule used to condition the state after the record."
         ),
         "quantum_gravity": (
             "Quantum gravity is a field/boundary junction. It asks whether geometry itself becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing constructor is explicit: a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test showing which geometric quantities survive quantization."
         ),
         "scattering": (
-            "Scattering is a boundary-to-spectrum mechanism. The important object is not the incoming particle name but the map from asymptotic in-states to out-states. The constructor should specify the Hamiltonian or interaction region, the boundary/asymptotic channels, the S-matrix or cross-section readout, and the conservation constraints."
+            "Scattering is a boundary-to-spectrum mechanism. The relevant object is the map from asymptotic in-states to out-states. The constructor should specify the Hamiltonian or interaction region, the boundary/asymptotic channels, the S-matrix or cross-section readout, and the conservation constraints."
         ),
         "quantum_state": (
             "Quantum state is the carrier, not the final prediction. It is anomalous because it precedes several downstream roles: admissibility, evolution, observable choice, and probability readout. A clean derivation should state whether the carrier is a vector, density operator, field state, or register, and which transformations preserve its legality."
@@ -2208,7 +2209,7 @@ def validation_layers_chapter(root: Path) -> str:
         lines.append(
             r"\item "
             + latex_escape(
-                "Most empty cells are inert search space. The Lagrangian is useful because it does not treat all emptiness equally: an empty cell becomes actionable only when it lies next to a low-action road, a validated bridge, or a void boundary with compatible surrounding evidence."
+                "Most empty cells are inert search space. The Lagrangian is useful because it does not treat all emptiness equally: an empty cell becomes testable only when it lies next to a low-action road, a validated bridge, or a void boundary with compatible surrounding evidence."
             )
         )
     if path_counts:

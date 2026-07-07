@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-07T19:42:23.889034+00:00",
+  "generated_at": "2026-07-07T19:52:44.850008+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "The quantum prediction problem",
@@ -2259,7 +2259,7 @@
     "observables": {
       "title": "Spectral question: what can be asked",
       "definition": "An observable is a permitted question whose operator form determines the possible numerical answers.",
-      "insight": "The central unit is not a microscopic entity but a legal question.  Spectra make the possible answers visible.",
+      "insight": "The central unit is a legal question posed to a state. Spectra make the possible answers visible.",
       "pages": [
         {
           "title": "Angular momentum operator",
@@ -3351,7 +3351,7 @@
     "boundaries": {
       "title": "Boundary realization: how effects appear",
       "definition": "Many named quantum effects are boundary realizations of the same construction.  A potential, barrier, box, cavity, detector, or medium changes the allowed spectral channels without changing the basic prediction problem.",
-      "insight": "Named effects such as tunnelling and particle-in-a-box are boundary realizations.  They are not separate conceptual primitives.",
+      "insight": "Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives.",
       "pages": [
         {
           "title": "Potential well",

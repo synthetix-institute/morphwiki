@@ -95,7 +95,7 @@ Representative pages:
 ### Spectral question: what can be asked
 An observable is a permitted question whose operator form determines the possible numerical answers.
 
-Why it belongs here: The central unit is not a microscopic entity but a legal question.  Spectra make the possible answers visible.
+Why it belongs here: The central unit is a legal question posed to a state. Spectra make the possible answers visible.
 
 Representative pages:
 - Angular momentum operator - evidence route: observables and spectra (0.38); assignment score 1.48
@@ -140,7 +140,7 @@ Representative pages:
 ### Boundary realization: how effects appear
 Many named quantum effects are boundary realizations of the same construction.  A potential, barrier, box, cavity, detector, or medium changes the allowed spectral channels without changing the basic prediction problem.
 
-Why it belongs here: Named effects such as tunnelling and particle-in-a-box are boundary realizations.  They are not separate conceptual primitives.
+Why it belongs here: Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives.
 
 Representative pages:
 - Potential well - evidence route: observables and spectra (0.42); assignment score 1.44

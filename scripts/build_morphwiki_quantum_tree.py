@@ -922,8 +922,7 @@ def branch_insights(assignments: Mapping[str, Sequence[Mapping[str, Any]]]) -> D
             "views of the same generator role rather than unrelated formalisms."
         ),
         "observables": (
-            "The central unit is not a microscopic entity but a legal question.  Spectra make the possible "
-            "answers visible."
+            "The central unit is a legal question posed to a state. Spectra make the possible answers visible."
         ),
         "measurement": (
             "Measurement is best placed after observables and spectra: it is the rule that turns spectral "
@@ -934,8 +933,7 @@ def branch_insights(assignments: Mapping[str, Sequence[Mapping[str, Any]]]) -> D
             "uncertainty are different faces of this compatibility structure."
         ),
         "boundaries": (
-            "Named effects such as tunnelling and particle-in-a-box are boundary realizations.  They are not "
-            "separate conceptual primitives."
+            "Named effects such as tunnelling and particle-in-a-box are boundary realizations, not separate conceptual primitives."
         ),
         "fields": (
             "Field theory and gauge theory extend the same construction to many modes, local generators, and "
