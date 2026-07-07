@@ -10,7 +10,17 @@ Fock space is the occupation-number state space: the construction that replaces 
 
 ## Mechanism
 
-Fock space changes the carrier of the quantum state. Instead of describing one system in one Hilbert space, it builds sectors with zero, one, two, and more identical quanta, then imposes the bosonic or fermionic exchange rule. Creation and annihilation operators are the native coordinates of this page because they move the state between occupation sectors. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Fock space changes the carrier of the quantum state. Instead of describing one system in one Hilbert space, it builds sectors with zero, one, two, and more identical quanta, then imposes the bosonic or fermionic exchange rule. Creation and annihilation operators are the native coordinates of this page because they move the state between occupation sectors. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Fock space contributes a many-mode field or particle-realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
+- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
+- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
 
 ## Topic Equations
 
@@ -41,9 +51,9 @@ N=\sum_i a_i^\dagger a_i,\qquad N\ket{n_1,n_2,\ldots}=\left(\sum_i n_i\right)\ke
 
 ## Evidence Links
 
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.548; A00[O10 + O14 + O08]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.539; A00[O04 + O14 + O00]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.533; A03[O14 + O16 + O05]
-- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.528; A07[O09 + O02 + O07]
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.520; A00[O08 + O15 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.506; A11[O00 + O12 + O14]
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.548
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.539
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.533
+- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.528
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.520
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.506

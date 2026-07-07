@@ -10,7 +10,17 @@ Introduction to Quantum Mechanics (book) is a broad quantum constructor role in 
 
 ## Mechanism
 
-Operationally, Introduction to Quantum Mechanics (book) contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier evidence is local notation, information profile, spectral profile. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, Introduction to Quantum Mechanics (book) contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, spectral profile. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** Introduction to Quantum Mechanics (book) contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.454; A10[O10 + O09 + O04]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.427; A05[O03 + O11 + O02]
-- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.425; A07[O15 + O14 + O02]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.418; A11[O12 + O17 + O13]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.416; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.405; A08[O13 + O19 + O21]
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.454
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.427
+- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.425
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.418
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.416
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.405

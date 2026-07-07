@@ -10,7 +10,17 @@ Klein–Gordon equation is a lawful state-transport role in the compact quantum 
 
 ## Mechanism
 
-Operationally, Klein–Gordon equation contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Klein–Gordon equation contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Klein–Gordon equation contributes a lawful state-transport role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
+- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
+- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
+- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.573; A11[O00 + O12 + O14]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.537; A11[O12 + O17 + O13]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.537; A05[O17 + O11 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.536; A05[O03 + O11 + O02]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.536; A08[O13 + O19 + O21]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.535; A11[O00 + O12 + O14]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.573
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.537
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.537
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.536
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.536
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.535

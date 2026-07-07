@@ -10,7 +10,17 @@ Quantum imaging is an instrument-mediated readout role in the compact quantum co
 
 ## Mechanism
 
-Operationally, Quantum imaging contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the Hyperion profile for this page, the strongest route evidence is preparation, basis, or boundary context, operator-to-spectrum readout, state evolution; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum imaging contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the source-evidence profile for this page, the strongest construction signal is preparation, basis, or boundary context, operator-to-spectrum readout, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum imaging contributes an instrument-mediated readout role to the quantum construction.
+- **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
+- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
+- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
+- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
+- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.523; A07[O02 + O07 + O03]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.484; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.452; A03[O14 + O16 + O05]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.449; A08[O13 + O19 + O21]
-- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.447; A08[O21 + O22 + O19]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.447; A05[O17 + O11 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.523
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.484
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.452
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.449
+- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.447
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.447

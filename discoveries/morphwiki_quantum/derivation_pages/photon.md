@@ -10,7 +10,17 @@ Photon is a field-mode constructor: a one-quantum excitation of the electromagne
 
 ## Mechanism
 
-The native photon mechanism is field quantization. The electromagnetic field is decomposed into modes, creation and annihilation operators act on those modes, and a one-photon state is created from the vacuum. The relevant readouts are occupation number, energy, momentum, polarization, and detector clicks; the constraints are dispersion and gauge-compatible transversality. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+The native photon mechanism is field quantization. The electromagnetic field is decomposed into modes, creation and annihilation operators act on those modes, and a one-photon state is created from the vacuum. The relevant readouts are occupation number, energy, momentum, polarization, and detector clicks; the constraints are dispersion and gauge-compatible transversality. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Photon contributes a many-mode field or particle-realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
+- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
+- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.536; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.504; A07[O02 + O07 + O03]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.495; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.494; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.488; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.487; A05[O17 + O11 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.536
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.504
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.495
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.494
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.488
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.487

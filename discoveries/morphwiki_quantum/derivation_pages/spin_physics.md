@@ -10,7 +10,17 @@ Spin (physics) is a broad quantum constructor role in the compact quantum constr
 
 ## Mechanism
 
-Operationally, Spin (physics) contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Spin (physics) contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Spin (physics) contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.528; A07[O02 + O07 + O03]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.527; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.509; A08[O13 + O19 + O21]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.508; A11[O00 + O12 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.507; A05[O03 + O11 + O02]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.505; A05[O17 + O11 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.528
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.527
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.509
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.508
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.507
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.505

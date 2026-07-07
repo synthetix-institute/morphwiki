@@ -10,7 +10,17 @@ Quantum sensor is an instrument-mediated readout role in the compact quantum con
 
 ## Mechanism
 
-Operationally, Quantum sensor contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum sensor contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum sensor contributes an instrument-mediated readout role to the quantum construction.
+- **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
+- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
+- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
+- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
+- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.528; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.528; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.526; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.503; A08[O13 + O19 + O21]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.501; A03[O14 + O16 + O05]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.498; A05[O03 + O11 + O02]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.528
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.528
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.526
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.503
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.501
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.498

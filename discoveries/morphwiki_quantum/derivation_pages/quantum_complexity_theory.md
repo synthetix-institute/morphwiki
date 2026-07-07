@@ -10,7 +10,17 @@ Quantum complexity theory is a broad quantum constructor role in the compact qua
 
 ## Mechanism
 
-Operationally, Quantum complexity theory contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the context step, the constructor starts by declaring the legal state carrier and the conditions under which states are admissible. In this role, Quantum complexity theory specifies the mathematical setting in which states, operators, spectra, and readout probabilities can be written without ambiguity. In the Hyperion profile for this page, the strongest route evidence is preparation, basis, or boundary context, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum complexity theory contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the context step, the constructor starts by declaring the legal state carrier and the conditions under which states are admissible. In this role, Quantum complexity theory specifies the mathematical setting in which states, operators, spectra, and readout probabilities can be written without ambiguity. In the source-evidence profile for this page, the strongest construction signal is preparation, basis, or boundary context, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum complexity theory contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.520; A07[O02 + O07 + O03]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.515; A10[O10 + O09 + O04]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.499; A05[O03 + O11 + O02]
-- [arXiv:1605.07654](https://arxiv.org/abs/1605.07654), score 0.494; A07[O14 + O02 + O07]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.492; A11[O12 + O17 + O13]
-- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.490; A10[O10 + O09 + O04]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.520
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.515
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.499
+- [arXiv:1605.07654](https://arxiv.org/abs/1605.07654), score 0.494
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.492
+- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.490

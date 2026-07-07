@@ -10,7 +10,17 @@ Quantum metrology is an instrument-mediated readout role in the compact quantum 
 
 ## Mechanism
 
-Operationally, Quantum metrology contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum metrology contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum metrology contributes an instrument-mediated readout role to the quantum construction.
+- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
+- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
+- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
+- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
+- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.556; A11[O00 + O12 + O14]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.548; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.547; A07[O02 + O07 + O03]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.538; A03[O14 + O16 + O05]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.536; A05[O17 + O11 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.534; A08[O13 + O19 + O21]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.556
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.548
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.547
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.538
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.536
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.534

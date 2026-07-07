@@ -10,7 +10,17 @@ Wave function collapse is a probability/readout role in the compact quantum cons
 
 ## Mechanism
 
-Operationally, Wave function collapse contributes a probability/readout role. The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Wave function collapse contributes a probability/readout role. The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Wave function collapse contributes a probability/readout role to the quantum construction.
+- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
+- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
+- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
+- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
+- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
+- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.535; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.525; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.524; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.494; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.493; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.492; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.535
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.525
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.524
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.494
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.493
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.492

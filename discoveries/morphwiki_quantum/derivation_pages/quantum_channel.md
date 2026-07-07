@@ -10,7 +10,17 @@ Quantum channel is the open-system protocol constructor: it maps input states to
 
 ## Mechanism
 
-A channel is the mechanism for noisy transformations, measurements with forgotten outcomes, and subsystem evolution. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+A channel is the mechanism for noisy transformations, measurements with forgotten outcomes, and subsystem evolution. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum channel contributes an engineered operation-sequence role to the quantum construction.
+- **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
+- **Carrier or domain:** An input state, register, channel state, error syndrome, key, or controlled experimental configuration.
+- **Operator or map:** An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.
+- **Admissibility:** Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.
+- **Readout:** Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
+- **Check:** Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.560; A11[O00 + O12 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.555; A11[O00 + O12 + O14]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.542; A05[O17 + O11 + O14]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.542; A08[O19 + O21 + O04]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.539; A05[O03 + O11 + O02]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.538; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.560
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.555
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.542
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.542
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.539
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.538

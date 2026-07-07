@@ -10,7 +10,17 @@ David Hilbert is a state-carrier role in the compact quantum constructor. In thi
 
 ## Mechanism
 
-Operationally, David Hilbert contributes a state-carrier role. The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, David Hilbert contributes a state-carrier role. The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** David Hilbert contributes a state-carrier role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
+- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
+- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.528; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.523; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.518; A03[O14 + O16 + O05]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.505; A08[O13 + O19 + O21]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.503; A11[O00 + O12 + O14]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.500; A05[O17 + O11 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.528
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.523
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.518
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.505
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.503
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.500

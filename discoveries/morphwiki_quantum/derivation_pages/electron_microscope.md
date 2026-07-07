@@ -10,7 +10,17 @@ Electron microscope is an instrument-mediated readout role in the compact quantu
 
 ## Mechanism
 
-Operationally, Electron microscope contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Electron microscope contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Electron microscope contributes an instrument-mediated readout role to the quantum construction.
+- **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
+- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
+- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
+- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
+- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
 
 ## Core-Derived Role Equations
 
@@ -40,9 +50,9 @@ Operationally, Electron microscope contributes an instrument-mediated readout ro
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.567; A07[O02 + O07 + O03]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.554; A03[O14 + O16 + O05]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.553; A08[O19 + O21 + O04]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.552; A00[O04 + O14 + O00]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.543; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.539; A05[O17 + O11 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.567
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.554
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.553
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.552
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.543
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.539

@@ -10,7 +10,17 @@ Angular momentum operator is a broad quantum constructor role in the compact qua
 
 ## Mechanism
 
-Operationally, Angular momentum operator contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Angular momentum operator contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Angular momentum operator contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.538; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.516; A07[O02 + O07 + O03]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.515; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.511; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.506; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.506; A08[O13 + O19 + O21]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.538
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.516
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.515
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.511
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.506
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.506

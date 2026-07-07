@@ -10,7 +10,17 @@ Boson is an exchange-symmetry constructor: identical bosons live in symmetric se
 
 ## Mechanism
 
-The mechanism is symmetric exchange. Commuting creation and annihilation operators allow arbitrary nonnegative occupation of a mode, which supports field modes, coherent states, condensates, and photon-like readouts. In the Hyperion profile for this page, the strongest route evidence is normalization or admissibility, state evolution, operator-to-spectrum readout; the strongest carrier evidence is local notation, information profile, spectral profile.
+The mechanism is symmetric exchange. Commuting creation and annihilation operators allow arbitrary nonnegative occupation of a mode, which supports field modes, coherent states, condensates, and photon-like readouts. In the source-evidence profile for this page, the strongest construction signal is normalization or admissibility, state evolution, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, spectral profile.
+
+## Quantum Mechanism Frame
+
+- **Role:** Boson contributes a many-mode field or particle-realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
+- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
+- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
 
 ## Topic Equations
 
@@ -41,9 +51,9 @@ n_i=a_i^\dagger a_i\in\{0,1,2,\ldots\}
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.448; A10[O10 + O09 + O04]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.430; A05[O03 + O11 + O02]
-- [arXiv:1801.08949](https://arxiv.org/abs/1801.08949), score 0.424; A08[O22 + O21 + O19]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.421; A11[O12 + O17 + O13]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.413; A11[O00 + O12 + O14]
-- [arXiv:1108.5312](https://arxiv.org/abs/1108.5312), score 0.408; A03[O25 + O14 + O16]
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.448
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.430
+- [arXiv:1801.08949](https://arxiv.org/abs/1801.08949), score 0.424
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.421
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.413
+- [arXiv:1108.5312](https://arxiv.org/abs/1108.5312), score 0.408

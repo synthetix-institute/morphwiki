@@ -10,7 +10,17 @@ Spin network is an engineered operation-sequence role in the compact quantum con
 
 ## Mechanism
 
-Operationally, Spin network contributes an engineered operation-sequence role. The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Spin network contributes an engineered operation-sequence role. The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Spin network contributes an engineered operation-sequence role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** An input state, register, channel state, error syndrome, key, or controlled experimental configuration.
+- **Operator or map:** An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.
+- **Admissibility:** Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.
+- **Readout:** Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
+- **Check:** Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.587; A07[O02 + O07 + O03]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.545; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.545; A03[O14 + O16 + O05]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.540; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.539; A05[O17 + O11 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.531; A05[O03 + O11 + O02]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.587
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.545
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.545
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.540
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.539
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.531

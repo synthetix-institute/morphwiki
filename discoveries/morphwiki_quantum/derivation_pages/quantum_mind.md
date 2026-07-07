@@ -10,7 +10,17 @@ Quantum mind is a broad quantum constructor role in the compact quantum construc
 
 ## Mechanism
 
-Operationally, Quantum mind contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier evidence is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, Quantum mind contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum mind contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.547; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.510; A07[O02 + O07 + O03]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.483; A08[O13 + O19 + O21]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.480; A03[O14 + O16 + O05]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.480; A08[O19 + O21 + O04]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.479; A05[O03 + O11 + O02]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.547
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.510
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.483
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.480
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.480
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.479

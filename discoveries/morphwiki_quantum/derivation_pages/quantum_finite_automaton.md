@@ -10,7 +10,17 @@ Quantum finite automaton is a broad quantum constructor role in the compact quan
 
 ## Mechanism
 
-Operationally, Quantum finite automaton contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the Hyperion profile for this page, the strongest route evidence is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum finite automaton contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum finite automaton contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.446; A11[O00 + O12 + O14]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.442; A10[O10 + O09 + O04]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.420; A05[O03 + O11 + O02]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.410; A11[O12 + O17 + O13]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.408; A11[O00 + O12 + O14]
-- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.402; A07[O15 + O14 + O02]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.446
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.442
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.420
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.410
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.408
+- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.402

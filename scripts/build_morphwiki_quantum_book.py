@@ -159,6 +159,139 @@ FAMILY_NATIVE_LANGUAGE: Dict[str, Dict[str, str]] = {
 }
 
 
+FAMILY_MECHANISM_FRAMES: Dict[str, Dict[str, str]] = {
+    "particle_field": {
+        "carrier": "Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.",
+        "operator": "Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.",
+        "admissibility": "Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.",
+        "readout": "Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.",
+        "test": "The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.",
+    },
+    "boundary_spectrum": {
+        "carrier": "A Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition.",
+        "operator": "A Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary.",
+        "admissibility": "Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra.",
+        "readout": "Eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.",
+        "test": "Changing the boundary should change the spectrum or amplitude in the predicted way, while the free or asymptotic limit is recovered when the boundary is removed.",
+    },
+    "readout": {
+        "carrier": "A state vector or density operator together with the measurement context in which outcome channels are defined.",
+        "operator": "A projection-valued measure, POVM, update map, or instrument map connecting state to record.",
+        "admissibility": "Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.",
+        "readout": "Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.",
+        "test": "The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.",
+    },
+    "instrument_readout": {
+        "carrier": "A probe state, sample state, field mode, detector state, or estimation register.",
+        "operator": "An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.",
+        "admissibility": "The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.",
+        "readout": "Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.",
+        "test": "The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.",
+    },
+    "compatibility": {
+        "carrier": "One state space or a multipartite state space on which several questions can be asked.",
+        "operator": "Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.",
+        "admissibility": "Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.",
+        "readout": "Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.",
+        "test": "The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.",
+    },
+    "protocol": {
+        "carrier": "An input state, register, channel state, error syndrome, key, or controlled experimental configuration.",
+        "operator": "An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.",
+        "admissibility": "Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.",
+        "readout": "Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.",
+        "test": "Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.",
+    },
+    "geometry_boundary": {
+        "carrier": "A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space.",
+        "operator": "Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.",
+        "admissibility": "Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content.",
+        "readout": "Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.",
+        "test": "A geometric reformulation is physical only to the extent that it preserves observables or correlation functions across the representation change.",
+    },
+    "generator": {
+        "carrier": "A state vector, density operator, wavefunction, field state, or register on a specified domain.",
+        "operator": "Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.",
+        "admissibility": "Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.",
+        "readout": "Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.",
+        "test": "The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.",
+    },
+    "state_carrier": {
+        "carrier": "The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.",
+        "operator": "Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.",
+        "admissibility": "Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.",
+        "readout": "Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.",
+        "test": "Equivalent representations must preserve probabilities and expectation values when the change is only representational.",
+    },
+    "general_quantum": {
+        "carrier": "A context-selected state space or effective carrier for prediction.",
+        "operator": "The relevant Hamiltonian, observable, channel, constraint, or update map.",
+        "admissibility": "Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.",
+        "readout": "The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.",
+        "test": "A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.",
+    },
+    "open_system": {
+        "carrier": "A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier.",
+        "operator": "Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.",
+        "admissibility": "Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal.",
+        "readout": "Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.",
+        "test": "The quantum contribution must survive controls against classical noise, preparation artifacts, and coarse-graining choices.",
+    },
+}
+
+
+BRANCH_FRAME_FOCUS: Dict[str, str] = {
+    "context": "This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.",
+    "states": "This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.",
+    "generators": "This page is read first as a lawful-transport move: it identifies what changes the state before readout.",
+    "observables": "This page is read first as a question-selection move: it identifies the spectrum or answer set being read.",
+    "measurement": "This page is read first as a readout move: it connects the state and question to recorded outcomes.",
+    "incompatibility": "This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.",
+    "boundaries": "This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.",
+    "fields": "This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.",
+    "protocols": "This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.",
+    "annotations": "This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.",
+}
+
+
+def quantum_mechanism_frame_rows(title: str, branch_id: str, row: Mapping[str, Any]) -> List[tuple[str, str]]:
+    """Return a public quantum-language mechanism frame for a page.
+
+    This is the public translation of the internal mechanism grammar.  It uses
+    ordinary quantum vocabulary only; codebook names and internal coordinate
+    symbols are intentionally not emitted into the book.
+    """
+    slug = str(row.get("slug") or "")
+    family_key = topic_family(slug, title)
+    family = FAMILY_NATIVE_LANGUAGE[family_key]
+    frame = FAMILY_MECHANISM_FRAMES.get(family_key, FAMILY_MECHANISM_FRAMES["general_quantum"])
+    return [
+        ("Role", f"{page_display_name(title)} contributes {indefinite_article(family['role'])} {family['role']} to the quantum construction."),
+        ("Placement", BRANCH_FRAME_FOCUS.get(branch_id, BRANCH_FRAME_FOCUS["annotations"])),
+        ("Carrier or domain", frame["carrier"]),
+        ("Operator or map", frame["operator"]),
+        ("Admissibility", frame["admissibility"]),
+        ("Readout", frame["readout"]),
+        ("Check", frame["test"]),
+    ]
+
+
+def quantum_mechanism_frame_block(title: str, branch_id: str, row: Mapping[str, Any]) -> str:
+    lines = [r"\subsection*{Quantum Mechanism Frame}", r"\begin{itemize}"]
+    for label, text in quantum_mechanism_frame_rows(title, branch_id, row):
+        lines.append(rf"\item \textbf{{{latex_escape(label)}}}. {latex_escape(text)}")
+    lines.append(r"\end{itemize}")
+    return "\n".join(lines)
+
+
+def markdown_mechanism_frame(title: str, branch_id: str, row: Mapping[str, Any]) -> str:
+    lines = ["## Quantum Mechanism Frame", ""]
+    for label, text in quantum_mechanism_frame_rows(title, branch_id, row):
+        lines.append(f"- **{label}:** {text}")
+    lines.append("")
+    return "\n".join(lines)
+
+
 def latex_escape(value: Any) -> str:
     text = str(value or "")
     replacements = {
@@ -214,6 +347,29 @@ def clean_text(value: Any, limit: Optional[int] = None) -> str:
     text = re.sub(r"\s+", " ", str(value or "")).strip()
     if limit and len(text) > limit:
         return text[:limit].rsplit(" ", 1)[0].rstrip()
+    return text
+
+
+def public_book_text(value: Any, limit: Optional[int] = None) -> str:
+    """Sanitize imported analysis text for the public quantum book.
+
+    The build may consume internal analysis artifacts.  This function keeps the
+    generated book in ordinary quantum/evidence language.
+    """
+    text = clean_text(value, limit)
+    replacements = {
+        "this matches Hyperion geometry ablations and Noether stability": "this matches the current source-equation stability checks",
+        "Hyperion geometry ablations and Noether stability": "source-equation stability checks",
+        "A09-like kernel/geometry void": "geometry-free operator-kernel gap",
+        "A09-like geometry-free kernels": "geometry-free operator kernels",
+        "A09-like": "geometry-free",
+        "Hyperion": "source-equation",
+        "apparatus-route-fiber": "construction-role",
+        "366D page-coordinate export": "page-coordinate export",
+        "366D": "high-dimensional",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
     return text
 
 
@@ -335,30 +491,28 @@ def source_equations_block(evidence: Sequence[Mapping[str, Any]], limit: int = 5
             continue
         arxiv = witness.get("paper_id") or ""
         url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
-        apparatus = witness.get("apparatus_regime") or "unresolved apparatus"
-        omega = witness.get("omega_tokens") or "unresolved operator atoms"
         score = float(witness.get("score") or 0.0)
         quality = float(witness.get("witness_quality") or 0.0)
         label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "source witness")
         link = rf"\href{{{latex_url(url)}}}{{{latex_escape(label)}}}" if url else latex_escape(label)
         rows.extend(
             [
-                rf"\item \textbf{{{link}}} ({latex_escape(apparatus)}, {latex_escape(omega)}; score {score:.3f}; parser quality {quality:.2f}).",
+                rf"\item \textbf{{{link}}} (match score {score:.3f}; parser quality {quality:.2f}).",
                 r"\begin{quote}\footnotesize\ttfamily " + latex_escape(equation) + r"\end{quote}",
             ]
         )
     if not rows:
         return "\n".join(
             [
-                r"\subsection*{Hyperion Source Equation Witnesses}",
+                r"\subsection*{Source Equation Witnesses}",
                 latex_escape("No clean source-backed equation excerpt is available for this page in the public export."),
             ]
         )
     return "\n".join(
         [
-            r"\subsection*{Hyperion Source Equation Witnesses}",
+            r"\subsection*{Source Equation Witnesses}",
             latex_escape(
-                "The formulas below are parser excerpts from the ranked Hyperion equation witnesses, not generated textbook equations."
+                "The formulas below are parser excerpts from ranked source-equation witnesses, not generated textbook equations."
             ),
             r"\begin{itemize}",
             *rows,
@@ -1024,8 +1178,8 @@ def constructor_text(title: str, branch_id: str, row: Mapping[str, Any], hyperio
         claim = template["claim"].format(title=display)
         reading = template["reading"].format(title=display)
     reading += (
-        f" In the Hyperion profile for this page, the strongest route evidence is {route_sentence}; "
-        f"the strongest carrier evidence is {fiber_sentence}."
+        f" In the source-evidence profile for this page, the strongest construction signal is {route_sentence}; "
+        f"the strongest carrier signal is {fiber_sentence}."
     )
     if branch_id == "annotations" or row.get("is_annotation"):
         reading += (
@@ -1346,7 +1500,7 @@ def human_hidden_rule_basis(rule: Mapping[str, Any]) -> str:
             return f"The repeated topic family around '{token}' shares a route profile strongly enough to form a local mechanism family."
         return "A repeated title family shares a route profile strongly enough to form a local mechanism family."
     if basis == "finding text plus boundary/field/context branch profile":
-        return "This rule links the quantum tree to an independent Hyperion finding and checks whether the relevant branches carry the same kind of signal."
+        return "This rule links the quantum tree to an independent source-equation finding and checks whether the relevant branches carry the same kind of signal."
     return "The rule is induced from a repeated sparse-attention pattern in the current export."
 
 
@@ -1955,7 +2109,7 @@ def validation_layers_chapter(root: Path) -> str:
         r"\chapter{Mechanism Validation Layers}",
         r"\begin{claimbox}",
         latex_escape(
-            "The mechanism tree is not validated by topic similarity. It is checked by three independent Hyperion layers: "
+            "The mechanism tree is not validated by topic similarity. It is checked by three independent evidence layers: "
             "Noether-style currents ask what survives a rewrite, Gromov-Wasserstein (GW) neighborhoods ask which formulations "
             "are structurally near, and the learned Lagrangian asks whether a proposed move is an easy continuation, "
             "a strained bridge, or a void-boundary design target."
@@ -2036,10 +2190,10 @@ def validation_layers_chapter(root: Path) -> str:
     lines.extend([r"\section{Lagrangian Layer: Which Moves Are Easy Or Strained}"])
     lines.append(
         latex_escape(
-            "The learned Lagrangian is the navigation layer of the atlas. It is a representation-space action surrogate over Hyperion fingerprints, separate from the physical action of a quantum system. "
-            "Given an apparatus-route-fiber state, it asks which next states are cheap continuations, which require a strained bridge, and which absences sit on a meaningful void front. "
+            "The learned Lagrangian is the navigation layer of the atlas. It is a representation-space action surrogate over source-equation fingerprints, separate from the physical action of a quantum system. "
+            "Given a construction-role state, it asks which next states are cheap continuations, which require a strained bridge, and which absences sit on a meaningful void front. "
             "In this sense it finds roads through the operational grammar: low-action corridors where a formal role can be continued, translated, or tested. "
-            "In the current quantum tree this layer supplies the global road-map constraint. A full 366D page-coordinate export will allow direct page-level action scoring."
+            "In the current quantum tree this layer supplies the global road-map constraint. A full page-coordinate export will allow direct page-level action scoring."
         )
     )
     lines.append(r"\begin{itemize}")
@@ -2219,13 +2373,13 @@ def sparse_attention_results_chapter(root: Path) -> str:
         claim = row.get("claim")
         unusual = row.get("unusual_observation")
         pages = ", ".join(row.get("top_pages") or [])
-        body = " ".join(part for part in [claim, unusual, f"Relevant pages: {pages}." if pages else ""] if part)
+        body = public_book_text(" ".join(part for part in [claim, unusual, f"Relevant pages: {pages}." if pages else ""] if part))
         if body:
             lines.append(rf"\item \textbf{{{latex_escape(label)}}}: {latex_escape(body)}")
     lines.append(r"\end{itemize}")
     lines.append(
         latex_escape(
-            "These statements are role hypotheses produced by deterministic sparse attention over the MorphWiki quantum pages and existing Hyperion findings. They are not final physics claims. The next test is to rerun the same analysis on explicit black-hole, horizon, Hawking-radiation, entropy, holography, and information-loss topics with typed equation witnesses."
+            "These statements are role hypotheses produced by deterministic sparse attention over the MorphWiki quantum pages and existing source-equation findings. They are not final physics claims. The next test is to rerun the same analysis on explicit black-hole, horizon, Hawking-radiation, entropy, holography, and information-loss topics with typed equation witnesses."
         )
     )
     return "\n".join(lines)
@@ -2310,6 +2464,8 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines.append(r"\subsection*{Mechanism Reading}")
     lines.append(latex_escape(clean_text(mechanism, 1200)))
     lines.append("")
+    lines.append(quantum_mechanism_frame_block(title, branch_id, row))
+    lines.append("")
     topic_equations = math_skeleton_block(mw.get("mathematical_skeleton"))
     if topic_equations:
         lines.append(topic_equations)
@@ -2342,14 +2498,11 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
             arxiv = witness.get("paper_id") or ""
             url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
             score = witness.get("score")
-            apparatus = normalize_private_formula(witness.get("apparatus_regime") or "")
-            omega = normalize_private_formula(witness.get("omega_tokens") or "")
             label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "witness")
-            suffix = f"; {apparatus}[{omega}]" if apparatus or omega else ""
             if url:
-                lines.append(rf"\item \href{{{latex_url(url)}}}{{{latex_escape(label)}}}, score {float(score or 0):.3f}{latex_escape(suffix)}")
+                lines.append(rf"\item \href{{{latex_url(url)}}}{{{latex_escape(label)}}}, score {float(score or 0):.3f}")
             else:
-                lines.append(rf"\item {latex_escape(label)}, score {float(score or 0):.3f}{latex_escape(suffix)}")
+                lines.append(rf"\item {latex_escape(label)}, score {float(score or 0):.3f}")
         lines.append(r"\end{itemize}")
     return "\n".join(lines)
 
@@ -2364,18 +2517,15 @@ def markdown_equations(value: Any) -> str:
 
 def markdown_evidence(evidence: Sequence[Mapping[str, Any]]) -> str:
     if not evidence:
-        return "No ranked Hyperion witness links are available in the public export.\n"
+        return "No ranked source-equation witness links are available in the public export.\n"
     lines = []
     for witness in evidence[:6]:
         arxiv = witness.get("paper_id") or ""
         url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
         label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "source witness")
         score = float(witness.get("score") or 0.0)
-        apparatus = normalize_private_formula(witness.get("apparatus_regime") or "")
-        omega = normalize_private_formula(witness.get("omega_tokens") or "")
         linked = f"[{label}]({url})" if url else label
-        suffix = f"; {apparatus}[{omega}]" if apparatus or omega else ""
-        lines.append(f"- {linked}, score {score:.3f}{suffix}")
+        lines.append(f"- {linked}, score {score:.3f}")
     return "\n".join(lines) + "\n"
 
 
@@ -2408,6 +2558,7 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
             "",
         ]
     )
+    lines.append(markdown_mechanism_frame(title, branch_id, row))
     eq = markdown_equations(mw.get("mathematical_skeleton"))
     if eq:
         lines.append(eq)
@@ -2732,7 +2883,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
             lines.append(
                 latex_escape(
                     "The current MorphWiki quantum export contains route/fiber profiles and witness links. A later export with "
-                    "full 366D page coordinates and page-specific transition velocities will support direct page-level action scoring. "
+                    "full page-coordinate vectors and page-specific transition velocities will support direct page-level action scoring. "
                     "For this version, the Lagrangian supplies the road-map logic for construction priority."
                 )
             )
@@ -2795,7 +2946,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
         ),
         (
             "Geometry appears as realization and reconstruction.",
-            "Geometry is necessary for embodiment, boundary conditions, and physical interpretation, but Hyperion stability checks preserve structure and spectral/operator roles more strongly than geometry.",
+            "Geometry is necessary for embodiment, boundary conditions, and physical interpretation, but source-equation stability checks preserve structure and spectral/operator roles more strongly than geometry.",
         ),
     ]
     for head, body in findings:
@@ -2900,7 +3051,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     )
     lines.append(
         latex_escape(
-            "The later validation chapter explains how three global Hyperion layers check this tree. Noether-style tests ask "
+            "The later validation chapter explains how three global evidence layers check this tree. Noether-style tests ask "
             "which part of a formalism remains the same after a rewrite. Gromov-Wasserstein neighborhoods ask which formulations are structurally "
             "near enough to translate. The learned Lagrangian asks whether a proposed move through the atlas is a low-resistance "
             "continuation, a strained bridge, or a void-boundary target. In ordinary quantum language: the invariant is mostly "
@@ -3205,9 +3356,9 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         r"\vspace{0.12cm}",
         r"{\Huge\bfseries As A Mechanism Tree\par}",
             r"\vspace{0.45cm}",
-            r"{\Large A MorphWiki book from Hyperion witness profiles\par}",
+        r"{\Large A MorphWiki mechanism synthesis\par}",
             r"\vspace{1.2cm}",
-            r"{\large Synthetix Institute / Hyperion\par}",
+            r"{\large Synthetix Institute\par}",
             rf"{{\large Generated {latex_escape(generated)}\par}}",
             r"\vfill",
             r"\begin{claimbox}",
@@ -3224,7 +3375,7 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
             r"\addcontentsline{toc}{chapter}{Boundary Of The Claim}",
             latex_escape(
                 "The book is a mechanism-indexed synthesis generated from Wikipedia topic scaffolds, MorphWiki mechanism "
-                "summaries, and Hyperion equation-witness profiles. Its uses are reading, teaching, hypothesis generation, "
+                "summaries, and ranked source-equation witness profiles. Its uses are reading, teaching, hypothesis generation, "
                 "and constructor-target selection. Formal derivation, domain review, and experimental validation are the "
                 "tests that promote a mechanism reading into a physical claim."
             ),

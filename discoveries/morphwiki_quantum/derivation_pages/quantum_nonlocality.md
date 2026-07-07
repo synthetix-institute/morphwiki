@@ -10,7 +10,17 @@ Quantum nonlocality is a compatibility or joint-readout role in the compact quan
 
 ## Mechanism
 
-Operationally, Quantum nonlocality contributes a compatibility or joint-readout role. The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. In the incompatibility step, in this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier evidence is local notation, information profile, spectral profile.
+Operationally, Quantum nonlocality contributes a compatibility or joint-readout role. The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. In the incompatibility step, in this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, spectral profile.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum nonlocality contributes a compatibility or joint-readout role to the quantum construction.
+- **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
+- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
+- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
+- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
+- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.555; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.485; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.480; A11[O00 + O12 + O14]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.477; A05[O17 + O11 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.475; A08[O13 + O19 + O21]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.471; A11[O00 + O12 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.555
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.485
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.480
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.477
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.475
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.471

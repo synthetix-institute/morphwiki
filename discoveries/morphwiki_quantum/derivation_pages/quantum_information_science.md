@@ -10,7 +10,17 @@ Quantum information science is a broad quantum constructor role in the compact q
 
 ## Mechanism
 
-Operationally, Quantum information science contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum information science contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum information science contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.561; A11[O00 + O12 + O14]
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.535; A00[O10 + O14 + O08]
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.533; A00[O08 + O15 + O14]
-- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.531; A07[O09 + O02 + O07]
-- [arXiv:cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470), score 0.530; A03[O14 + O16 + O03]
-- [arXiv:1507.08248](https://arxiv.org/abs/1507.08248), score 0.529; A11[O06 + O17 + O13]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.561
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.535
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.533
+- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.531
+- [arXiv:cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470), score 0.530
+- [arXiv:1507.08248](https://arxiv.org/abs/1507.08248), score 0.529

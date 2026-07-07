@@ -10,7 +10,17 @@ Einstein–Podolsky–Rosen paradox is a broad quantum constructor role in the c
 
 ## Mechanism
 
-Operationally, Einstein–Podolsky–Rosen paradox contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the incompatibility step, in this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both. In the Hyperion profile for this page, the strongest route evidence is state evolution, normalization or admissibility, non-commuting compatibility limits; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Einstein–Podolsky–Rosen paradox contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the incompatibility step, in this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Einstein–Podolsky–Rosen paradox contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.449; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.447; A07[O02 + O07 + O03]
-- [arXiv:2501.07524](https://arxiv.org/abs/2501.07524), score 0.440; A04[O23 + O03 + O05]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.439; A10[O10 + O09 + O04]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.437; A11[O00 + O12 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.419; A05[O03 + O11 + O02]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.449
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.447
+- [arXiv:2501.07524](https://arxiv.org/abs/2501.07524), score 0.440
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.439
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.437
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.419

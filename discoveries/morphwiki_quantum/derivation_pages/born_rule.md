@@ -10,7 +10,17 @@ Born rule is the probability-readout constructor: it maps a state and a spectral
 
 ## Mechanism
 
-The Born rule is the point where the constructor becomes predictive. It does not name an object; it connects state preparation and a legal question to frequencies over outcome channels. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+The Born rule is the point where the constructor becomes predictive. It does not name an object; it connects state preparation and a legal question to frequencies over outcome channels. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Born rule contributes a probability/readout role to the quantum construction.
+- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
+- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
+- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
+- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
+- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
+- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.568; A11[O00 + O12 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.539; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.537; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.530; A03[O14 + O16 + O05]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.527; A07[O02 + O07 + O03]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.521; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.568
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.539
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.537
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.530
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.527
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.521

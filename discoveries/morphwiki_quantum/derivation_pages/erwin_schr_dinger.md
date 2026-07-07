@@ -10,7 +10,17 @@ Erwin Schrödinger is a lawful state-transport role in the compact quantum const
 
 ## Mechanism
 
-Operationally, Erwin Schrödinger contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, Erwin Schrödinger contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** Erwin Schrödinger contributes a lawful state-transport role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
+- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
+- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
+- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.519; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.518; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.516; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.507; A11[O00 + O12 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.500; A05[O03 + O11 + O02]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.498; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.519
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.518
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.516
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.507
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.500
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.498

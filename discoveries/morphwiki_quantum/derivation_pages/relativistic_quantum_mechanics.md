@@ -10,7 +10,17 @@ Relativistic quantum mechanics is a broad quantum constructor role in the compac
 
 ## Mechanism
 
-Operationally, Relativistic quantum mechanics contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the context step, the constructor starts by declaring the legal state carrier and the conditions under which states are admissible. In this role, Relativistic quantum mechanics specifies the mathematical setting in which states, operators, spectra, and readout probabilities can be written without ambiguity. In the Hyperion profile for this page, the strongest route evidence is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Relativistic quantum mechanics contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the context step, the constructor starts by declaring the legal state carrier and the conditions under which states are admissible. In this role, Relativistic quantum mechanics specifies the mathematical setting in which states, operators, spectra, and readout probabilities can be written without ambiguity. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Relativistic quantum mechanics contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.550; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.526; A11[O00 + O12 + O14]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.523; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.517; A11[O00 + O12 + O14]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.517; A11[O12 + O17 + O13]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.515; A05[O03 + O11 + O02]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.550
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.526
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.523
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.517
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.517
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.515

@@ -10,7 +10,17 @@ Hamiltonian mechanics is a lawful state-transport role in the compact quantum co
 
 ## Mechanism
 
-Operationally, Hamiltonian mechanics contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Hamiltonian mechanics contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Hamiltonian mechanics contributes a lawful state-transport role to the quantum construction.
+- **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
+- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
+- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
+- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
+- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.481; A11[O00 + O12 + O14]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.467; A00[O04 + O14 + O00]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.464; A05[O17 + O11 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.462; A03[O14 + O16 + O05]
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.454; A05[O11 + O01 + O14]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.453; A11[O12 + O17 + O13]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.481
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.467
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.464
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.462
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.454
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.453

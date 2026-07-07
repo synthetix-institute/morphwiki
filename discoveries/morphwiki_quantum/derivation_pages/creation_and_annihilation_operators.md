@@ -10,7 +10,17 @@ Creation and annihilation operators are sector-changing operators: they add or r
 
 ## Mechanism
 
-The page is about the algebraic move that changes occupation number. Creation raises the population of a mode, annihilation lowers it, and the commutation or anticommutation rule determines the statistics. The number operator gives the spectral readout. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier evidence is local notation, information profile, formula structure.
+The page is about the algebraic move that changes occupation number. Creation raises the population of a mode, annihilation lowers it, and the commutation or anticommutation rule determines the statistics. The number operator gives the spectral readout. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Creation and annihilation operators contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.536; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.509; A07[O02 + O07 + O03]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.505; A11[O00 + O12 + O14]
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.503; A05[O11 + O01 + O14]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.502; A05[O17 + O11 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.500; A03[O14 + O16 + O05]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.536
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.509
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.505
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.503
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.502
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.500

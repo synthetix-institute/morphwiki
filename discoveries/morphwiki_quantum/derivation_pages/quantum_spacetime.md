@@ -10,7 +10,17 @@ Quantum spacetime is a geometry or holographic realization role in the compact q
 
 ## Mechanism
 
-Operationally, Quantum spacetime contributes a geometry or holographic realization role. Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the Hyperion profile for this page, the strongest route evidence is non-commuting compatibility limits, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum spacetime contributes a geometry or holographic realization role. Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is non-commuting compatibility limits, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum spacetime contributes a geometry or holographic realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space.
+- **Operator or map:** Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.
+- **Admissibility:** Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content.
+- **Readout:** Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
+- **Check:** A geometric reformulation is physical only to the extent that it preserves observables or correlation functions across the representation change.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.500; A11[O00 + O12 + O14]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.489; A10[O10 + O09 + O04]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.478; A11[O00 + O12 + O14]
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.476; A05[O11 + O01 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.470; A05[O03 + O11 + O02]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.467; A11[O12 + O17 + O13]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.500
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.489
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.478
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.476
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.470
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.467

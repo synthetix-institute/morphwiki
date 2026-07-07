@@ -10,7 +10,17 @@ Quantum eraser experiment is a compatibility or joint-readout role in the compac
 
 ## Mechanism
 
-Operationally, Quantum eraser experiment contributes a compatibility or joint-readout role. The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier evidence is local notation, information profile, spectral profile.
+Operationally, Quantum eraser experiment contributes a compatibility or joint-readout role. The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier signal is local notation, information profile, spectral profile.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum eraser experiment contributes a compatibility or joint-readout role to the quantum construction.
+- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
+- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
+- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
+- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
+- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.485; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.484; A07[O02 + O07 + O03]
-- [arXiv:gr-qc0303063](https://arxiv.org/abs/gr-qc/0303063), score 0.467; A09[O26 + O05 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.445; A11[O00 + O12 + O14]
-- [arXiv:2110.09771](https://arxiv.org/abs/2110.09771), score 0.436; A09[O26 + O00 + O14]
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.435; A05[O11 + O01 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.485
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.484
+- [arXiv:gr-qc0303063](https://arxiv.org/abs/gr-qc/0303063), score 0.467
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.445
+- [arXiv:2110.09771](https://arxiv.org/abs/2110.09771), score 0.436
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.435

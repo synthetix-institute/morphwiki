@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-07T19:23:56.268004+00:00",
+  "generated_at": "2026-07-07T19:42:23.889034+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "The quantum prediction problem",
@@ -35,7 +35,7 @@
     "available": false,
     "page_projection_available": false,
     "source": "discoveries/operational_geometry/atlas_void_lagrangian_report.json",
-    "method": "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas. The current MorphWiki quantum export does not contain 366D page coordinates, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page.",
+    "method": "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas. The current MorphWiki quantum export does not contain page-coordinate vectors, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page.",
     "path_class_counts": {
       "unavailable": 147
     }

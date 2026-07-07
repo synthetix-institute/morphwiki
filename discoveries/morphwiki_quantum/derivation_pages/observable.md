@@ -10,7 +10,17 @@ Observable is the legal-question constructor: it turns a physical question into 
 
 ## Mechanism
 
-An observable is the mathematical form of a question that can be asked of a state. Its spectral decomposition defines the possible answers. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+An observable is the mathematical form of a question that can be asked of a state. Its spectral decomposition defines the possible answers. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Observable contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.567; A11[O00 + O12 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.561; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.522; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.521; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.519; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.517; A05[O17 + O11 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.567
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.561
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.522
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.521
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.519
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.517

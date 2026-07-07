@@ -10,7 +10,17 @@ QBism is a probability/readout role in the compact quantum constructor. In this 
 
 ## Mechanism
 
-Operationally, QBism contributes a probability/readout role. The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, QBism contributes a probability/readout role. The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** QBism contributes a probability/readout role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
+- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
+- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
+- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
+- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.486; A11[O00 + O12 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.471; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.452; A07[O02 + O07 + O03]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.429; A08[O13 + O19 + O21]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.428; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.427; A11[O00 + O12 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.486
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.471
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.452
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.429
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.428
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.427

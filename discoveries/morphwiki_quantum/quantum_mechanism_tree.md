@@ -235,4 +235,4 @@ Possible leads:
 - Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.
 
 ## Boundary
-This tree is a mechanism-indexed synthesis from MorphWiki pages and Hyperion witness profiles.  It supports reading, hypothesis generation, and constructor-target selection; formal derivation and experimental validation promote a proposed mechanism into a physical claim.
+This tree is a mechanism-indexed synthesis from MorphWiki pages and ranked source-equation witness profiles. It supports reading, hypothesis generation, and constructor-target selection; formal derivation and experimental validation promote a proposed mechanism into a physical claim.

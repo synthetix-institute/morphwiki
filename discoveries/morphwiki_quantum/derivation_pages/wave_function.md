@@ -10,7 +10,17 @@ Wave function is a representation of the state carrier in a chosen basis, not a 
 
 ## Mechanism
 
-The wave function is the coordinate expression of a quantum state after a representation has been chosen. Its modulus squared gives a probability density in the position representation, while operators act as transformations on that representation. In the Hyperion profile for this page, the strongest route evidence is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+The wave function is the coordinate expression of a quantum state after a representation has been chosen. Its modulus squared gives a probability density in the position representation, while operators act as transformations on that representation. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Wave function contributes a state-carrier role to the quantum construction.
+- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
+- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
+- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
+- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.513; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.512; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.505; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.479; A11[O00 + O12 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.476; A05[O03 + O11 + O02]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.475; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.513
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.512
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.505
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.479
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.476
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.475

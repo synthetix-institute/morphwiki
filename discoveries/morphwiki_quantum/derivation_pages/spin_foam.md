@@ -10,7 +10,17 @@ Spin foam is a geometry or holographic realization role in the compact quantum c
 
 ## Mechanism
 
-Operationally, Spin foam contributes a geometry or holographic realization role. Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Spin foam contributes a geometry or holographic realization role. Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Spin foam contributes a geometry or holographic realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space.
+- **Operator or map:** Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.
+- **Admissibility:** Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content.
+- **Readout:** Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
+- **Check:** A geometric reformulation is physical only to the extent that it preserves observables or correlation functions across the representation change.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.487; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.485; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.470; A03[O14 + O16 + O05]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.456; A00[O04 + O14 + O00]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.449; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.448; A05[O17 + O11 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.487
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.485
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.470
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.456
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.449
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.448

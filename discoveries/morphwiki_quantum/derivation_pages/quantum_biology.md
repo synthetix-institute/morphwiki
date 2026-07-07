@@ -10,7 +10,17 @@ Quantum biology is an open-system transport and coherence role in the compact qu
 
 ## Mechanism
 
-Operationally, Quantum biology contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the Hyperion profile for this page, the strongest route evidence is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum biology contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum biology contributes an open-system transport and coherence role to the quantum construction.
+- **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
+- **Carrier or domain:** A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier.
+- **Operator or map:** Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.
+- **Admissibility:** Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal.
+- **Readout:** Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
+- **Check:** The quantum contribution must survive controls against classical noise, preparation artifacts, and coarse-graining choices.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.447; A10[O10 + O09 + O04]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.438; A07[O02 + O07 + O03]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.437; A11[O00 + O12 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.429; A11[O00 + O12 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.422; A05[O03 + O11 + O02]
-- [arXiv:2006.13679](https://arxiv.org/abs/2006.13679), score 0.421; A10[O04 + O09 + O07]
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.447
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.438
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.437
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.429
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.422
+- [arXiv:2006.13679](https://arxiv.org/abs/2006.13679), score 0.421

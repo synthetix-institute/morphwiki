@@ -10,7 +10,17 @@ Unitary operator is the reversible-map constructor: it changes the state while p
 
 ## Mechanism
 
-Unitary maps are the admissible reversible transformations of closed-system quantum theory. They preserve normalization and carry projective geometry of the state space through time or controlled operations. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, spectral profile.
+Unitary maps are the admissible reversible transformations of closed-system quantum theory. They preserve normalization and carry projective geometry of the state space through time or controlled operations. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, spectral profile.
+
+## Quantum Mechanism Frame
+
+- **Role:** Unitary operator contributes a lawful state-transport role to the quantum construction.
+- **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
+- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
+- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
+- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
+- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.500; A07[O02 + O07 + O03]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.492; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.477; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.471; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.468; A05[O17 + O11 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.463; A11[O00 + O12 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.500
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.492
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.477
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.471
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.468
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.463

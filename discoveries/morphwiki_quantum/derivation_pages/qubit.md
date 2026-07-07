@@ -10,7 +10,17 @@ Qubit is the two-dimensional state-carrier constructor used when the admissible 
 
 ## Mechanism
 
-A qubit is the minimal quantum state space with a basis, amplitudes, unitary control, and measurement readout. Bloch-vector language is a representation of the same two-dimensional carrier. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+A qubit is the minimal quantum state space with a basis, amplitudes, unitary control, and measurement readout. Bloch-vector language is a representation of the same two-dimensional carrier. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Qubit contributes a state-carrier role to the quantum construction.
+- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
+- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
+- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
+- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.577; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.522; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.519; A03[O14 + O16 + O05]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.511; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.511; A05[O17 + O11 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.505; A11[O00 + O12 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.577
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.522
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.519
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.511
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.511
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.505

@@ -10,7 +10,17 @@ POVM is the generalized-readout constructor: outcome effects need not be orthogo
 
 ## Mechanism
 
-POVMs separate the probability readout from the idealized projection assumption. They are the natural mechanism for noisy, coarse-grained, indirect, or open-system measurements. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+POVMs separate the probability readout from the idealized projection assumption. They are the natural mechanism for noisy, coarse-grained, indirect, or open-system measurements. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** POVM contributes a probability/readout role to the quantum construction.
+- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
+- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
+- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
+- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
+- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
+- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.574; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.552; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.546; A03[O14 + O16 + O05]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.533; A05[O17 + O11 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.531; A08[O13 + O19 + O21]
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.527; A00[O10 + O14 + O08]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.574
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.552
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.546
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.533
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.531
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.527

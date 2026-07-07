@@ -10,7 +10,17 @@ Quantum bus is a broad quantum constructor role in the compact quantum construct
 
 ## Mechanism
 
-Operationally, Quantum bus contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, preparation, basis, or boundary context; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum bus contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum bus contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.574; A07[O02 + O07 + O03]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.556; A00[O04 + O14 + O00]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.546; A08[O19 + O21 + O04]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.545; A11[O12 + O17 + O13]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.545; A03[O14 + O16 + O05]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.540; A05[O17 + O11 + O14]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.574
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.556
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.546
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.545
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.545
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.540

@@ -10,7 +10,17 @@ Quantum chaos is a broad quantum constructor role in the compact quantum constru
 
 ## Mechanism
 
-Operationally, Quantum chaos contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum chaos contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum chaos contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.570; A07[O02 + O07 + O03]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.563; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.562; A03[O14 + O16 + O05]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.562; A08[O13 + O19 + O21]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.557; A05[O17 + O11 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.551; A05[O03 + O11 + O02]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.570
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.563
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.562
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.562
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.557
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.551

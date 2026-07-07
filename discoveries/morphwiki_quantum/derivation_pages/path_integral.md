@@ -10,7 +10,17 @@ Path integral is an alternate generator constructor: transition amplitudes are o
 
 ## Mechanism
 
-The path integral does not replace the operator constructor. It repackages the generator step as a weighted sum over histories between boundary conditions. It is especially useful when action, symmetry, and field degrees of freedom are more natural than state-vector evolution. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+The path integral does not replace the operator constructor. It repackages the generator step as a weighted sum over histories between boundary conditions. It is especially useful when action, symmetry, and field degrees of freedom are more natural than state-vector evolution. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Path integral contributes a lawful state-transport role to the quantum construction.
+- **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
+- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
+- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
+- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
+- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:2107.01923](https://arxiv.org/abs/2107.01923), score 0.313; A03[O06 + O16 + O14]
-- [arXiv:0801.3568](https://arxiv.org/abs/0801.3568), score 0.272; A07[O14 + O02 + O07]
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.271; A00[O08 + O15 + O14]
-- [arXiv:1706.07300](https://arxiv.org/abs/1706.07300), score 0.264; A03[O14 + O16 + O07]
-- [arXiv:cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470), score 0.263; A03[O14 + O16 + O03]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.262; A10[O10 + O09 + O04]
+- [arXiv:2107.01923](https://arxiv.org/abs/2107.01923), score 0.313
+- [arXiv:0801.3568](https://arxiv.org/abs/0801.3568), score 0.272
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.271
+- [arXiv:1706.07300](https://arxiv.org/abs/1706.07300), score 0.264
+- [arXiv:cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470), score 0.263
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.262

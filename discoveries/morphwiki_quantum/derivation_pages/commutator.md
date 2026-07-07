@@ -10,7 +10,17 @@ Commutator is the incompatibility constructor: it measures the failure of two tr
 
 ## Mechanism
 
-The commutator is the algebraic source of many non-classical restrictions. If two observables do not commute, they generally cannot be resolved in one common sharp basis. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier evidence is local notation, information profile, formula structure.
+The commutator is the algebraic source of many non-classical restrictions. If two observables do not commute, they generally cannot be resolved in one common sharp basis. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Commutator contributes a compatibility or joint-readout role to the quantum construction.
+- **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
+- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
+- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
+- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
+- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.550; A11[O00 + O12 + O14]
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.543; A05[O11 + O01 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.525; A03[O14 + O16 + O05]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.519; A00[O04 + O14 + O00]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.516; A08[O19 + O21 + O04]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.514; A05[O17 + O11 + O14]
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.550
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.543
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.525
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.519
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.516
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.514

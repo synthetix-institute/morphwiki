@@ -10,7 +10,17 @@ Spectral line is a boundary-shaped spectrum role in the compact quantum construc
 
 ## Mechanism
 
-Operationally, Spectral line contributes a boundary-shaped spectrum role. The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Spectral line contributes a boundary-shaped spectrum role. The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Spectral line contributes a boundary-shaped spectrum role to the quantum construction.
+- **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
+- **Carrier or domain:** A Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition.
+- **Operator or map:** A Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary.
+- **Admissibility:** Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra.
+- **Readout:** Eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
+- **Check:** Changing the boundary should change the spectrum or amplitude in the predicted way, while the free or asymptotic limit is recovered when the boundary is removed.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.552; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.516; A11[O00 + O12 + O14]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.516; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.497; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.497; A08[O13 + O19 + O21]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.497; A05[O03 + O11 + O02]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.552
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.516
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.516
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.497
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.497
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.497

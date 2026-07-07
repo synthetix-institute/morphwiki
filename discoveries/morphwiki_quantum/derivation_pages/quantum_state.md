@@ -10,7 +10,17 @@ Quantum state is a state-carrier role in the compact quantum constructor. In thi
 
 ## Mechanism
 
-Operationally, Quantum state contributes a state-carrier role. The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the Hyperion profile for this page, the strongest route evidence is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum state contributes a state-carrier role. The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum state contributes a state-carrier role to the quantum construction.
+- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
+- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
+- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
+- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.539; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.534; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.511; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.495; A08[O13 + O19 + O21]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.495; A05[O03 + O11 + O02]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.494; A11[O00 + O12 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.539
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.534
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.511
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.495
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.495
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.494

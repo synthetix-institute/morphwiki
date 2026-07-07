@@ -451,7 +451,7 @@ def lagrangian_path_signal(
             "branch_bonus": 0.0,
             "note": (
                 "The atlas Lagrangian report has no discriminative page-level route signature; "
-                "true page-level action requires exported 366D page coordinates or witness transition vectors."
+                "true page-level action requires exported page-coordinate vectors or witness transition vectors."
             ),
         }
 
@@ -1014,7 +1014,7 @@ def render_markdown(report: Mapping[str, Any]) -> str:
         else:
             lines.append(
                 "Page-level road classes are not assigned in this export. The Lagrangian report is used as a global road map; "
-                "direct page-level action requires full 366D page coordinates or witness transition vectors."
+                "direct page-level action requires full page-coordinate vectors or witness transition vectors."
             )
         lines.append("")
     lines.append("## Tree")
@@ -1086,7 +1086,7 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines.append("")
     lines.append("## Boundary")
     lines.append(
-        "This tree is a mechanism-indexed synthesis from MorphWiki pages and Hyperion witness profiles.  It supports reading, hypothesis generation, and constructor-target selection; formal derivation and experimental validation promote a proposed mechanism into a physical claim."
+        "This tree is a mechanism-indexed synthesis from MorphWiki pages and ranked source-equation witness profiles. It supports reading, hypothesis generation, and constructor-target selection; formal derivation and experimental validation promote a proposed mechanism into a physical claim."
     )
     lines.append("")
     return "\n".join(lines)
@@ -1129,7 +1129,7 @@ def build_report(
             "source": lagrangian_model.get("source"),
             "method": (
                 "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas. "
-                "The current MorphWiki quantum export does not contain 366D page coordinates, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page."
+                "The current MorphWiki quantum export does not contain page-coordinate vectors, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page."
             ),
             "path_class_counts": dict(Counter(str((row.get("lagrangian") or {}).get("path_class")) for row in page_rows)),
         },

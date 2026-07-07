@@ -10,7 +10,17 @@ Density matrix is the mixed-state constructor: it keeps probabilistic preparatio
 
 ## Mechanism
 
-Density matrices generalize pure states without changing the state-to-spectrum readout rule. They are the correct carrier when the preparation is statistical, when a subsystem is traced out, or when decoherence is being described. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Density matrices generalize pure states without changing the state-to-spectrum readout rule. They are the correct carrier when the preparation is statistical, when a subsystem is traced out, or when decoherence is being described. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Density matrix contributes a state-carrier role to the quantum construction.
+- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
+- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
+- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
+- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.512; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.493; A07[O02 + O07 + O03]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.486; A03[O14 + O16 + O05]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.481; A11[O00 + O12 + O14]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.473; A05[O17 + O11 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.469; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.512
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.493
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.486
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.481
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.473
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.469

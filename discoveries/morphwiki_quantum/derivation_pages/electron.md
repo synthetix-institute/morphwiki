@@ -10,7 +10,17 @@ Electron is a charged spinor constructor: its identity is fixed by mass, charge,
 
 ## Mechanism
 
-The electron is not a generic object label in this tree. Its native mechanism combines a spinor state, a Schrödinger/Pauli/Dirac generator depending on regime, conserved charge, and fermionic anticommutation. The readouts are charge, spin, momentum, energy, and scattering response. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier evidence is local notation, information profile, formula structure.
+The electron is not a generic object label in this tree. Its native mechanism combines a spinor state, a Schrödinger/Pauli/Dirac generator depending on regime, conserved charge, and fermionic anticommutation. The readouts are charge, spin, momentum, energy, and scattering response. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Electron contributes a many-mode field or particle-realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
+- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
+- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.507; A07[O02 + O07 + O03]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.467; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.436; A03[O14 + O16 + O05]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.435; A08[O13 + O19 + O21]
-- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.431; A08[O21 + O22 + O19]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.431; A08[O19 + O21 + O04]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.507
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.467
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.436
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.435
+- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.431
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.431

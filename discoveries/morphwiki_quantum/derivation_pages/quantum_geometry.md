@@ -10,7 +10,17 @@ Quantum geometry is a geometry-realization page: geometric quantities are promot
 
 ## Mechanism
 
-Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary frontier rather than inside a generic many-mode field layer. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, normalization or admissibility, state evolution; the strongest carrier evidence is local notation, information profile, formula structure.
+Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary frontier rather than inside a generic many-mode field layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, normalization or admissibility, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum geometry contributes a geometry or holographic realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space.
+- **Operator or map:** Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.
+- **Admissibility:** Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content.
+- **Readout:** Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
+- **Check:** A geometric reformulation is physical only to the extent that it preserves observables or correlation functions across the representation change.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.596; A05[O03 + O11 + O02]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.595; A08[O13 + O19 + O21]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.594; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.593; A03[O14 + O16 + O05]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.592; A05[O17 + O11 + O14]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.591; A11[O12 + O17 + O13]
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.596
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.595
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.594
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.593
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.592
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.591

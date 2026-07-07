@@ -10,7 +10,17 @@ Quantum mysticism is a broad quantum constructor role in the compact quantum con
 
 ## Mechanism
 
-Operationally, Quantum mysticism contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is non-commuting compatibility limits, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, Quantum mysticism contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is non-commuting compatibility limits, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum mysticism contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.373; A05[O11 + O01 + O14]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.361; A11[O00 + O12 + O14]
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.349; A11[O00 + O12 + O14]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.325; A10[O10 + O09 + O04]
-- [arXiv:2410.23449](https://arxiv.org/abs/2410.23449), score 0.319; A00[O25 + O14 + O10]
-- [arXiv:2402.03709](https://arxiv.org/abs/2402.03709), score 0.317; A05[O03 + O23 + O11]
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.373
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.361
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.349
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.325
+- [arXiv:2410.23449](https://arxiv.org/abs/2410.23449), score 0.319
+- [arXiv:2402.03709](https://arxiv.org/abs/2402.03709), score 0.317

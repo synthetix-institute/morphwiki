@@ -10,7 +10,17 @@ Macroscopic quantum phenomena is an open-system transport and coherence role in 
 
 ## Mechanism
 
-Operationally, Macroscopic quantum phenomena contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the Hyperion profile for this page, the strongest route evidence is state evolution, preparation, basis, or boundary context, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Macroscopic quantum phenomena contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the source-evidence profile for this page, the strongest construction signal is state evolution, preparation, basis, or boundary context, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Macroscopic quantum phenomena contributes an open-system transport and coherence role to the quantum construction.
+- **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
+- **Carrier or domain:** A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier.
+- **Operator or map:** Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.
+- **Admissibility:** Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal.
+- **Readout:** Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
+- **Check:** The quantum contribution must survive controls against classical noise, preparation artifacts, and coarse-graining choices.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.544; A07[O02 + O07 + O03]
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.539; A10[O10 + O09 + O04]
-- [arXiv:hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080), score 0.518; A10[O09 + O07 + O06]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.511; A05[O03 + O11 + O02]
-- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.510; A10[O10 + O09 + O04]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.504; A11[O12 + O17 + O13]
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.544
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.539
+- [arXiv:hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080), score 0.518
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.511
+- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.510
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.504

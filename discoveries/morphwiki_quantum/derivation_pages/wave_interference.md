@@ -10,7 +10,17 @@ Wave interference is a broad quantum constructor role in the compact quantum con
 
 ## Mechanism
 
-Operationally, Wave interference contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Wave interference contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Wave interference contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.561; A11[O00 + O12 + O14]
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.541; A05[O17 + O11 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.538; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.535; A03[O14 + O16 + O05]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.532; A11[O12 + O17 + O13]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.531; A08[O13 + O19 + O21]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.561
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.541
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.538
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.535
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.532
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.531

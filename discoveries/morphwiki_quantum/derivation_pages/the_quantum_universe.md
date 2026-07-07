@@ -10,7 +10,17 @@ The Quantum Universe is a broad quantum constructor role in the compact quantum 
 
 ## Mechanism
 
-Operationally, The Quantum Universe contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the Hyperion profile for this page, the strongest route evidence is state evolution, non-commuting compatibility limits, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Operationally, The Quantum Universe contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is state evolution, non-commuting compatibility limits, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+
+## Quantum Mechanism Frame
+
+- **Role:** The Quantum Universe contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.533; A10[O10 + O09 + O04]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.516; A11[O00 + O12 + O14]
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.515; A05[O11 + O01 + O14]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.510; A05[O03 + O11 + O02]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.501; A11[O12 + O17 + O13]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.496; A08[O19 + O21 + O04]
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.533
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.516
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.515
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.510
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.501
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.496

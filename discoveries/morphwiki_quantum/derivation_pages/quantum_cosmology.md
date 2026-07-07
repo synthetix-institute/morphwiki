@@ -10,7 +10,17 @@ Quantum cosmology is a broad quantum constructor role in the compact quantum con
 
 ## Mechanism
 
-Operationally, Quantum cosmology contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the Hyperion profile for this page, the strongest route evidence is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Operationally, Quantum cosmology contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum cosmology contributes a broad quantum constructor role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
+- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
+- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
+- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
+- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
 
 ## Core-Derived Role Equations
 
@@ -40,9 +50,9 @@ C\mapsto(\mathcal H_C,\mathcal D_C),\quad \rho\mapsto U\rho U^\dagger,\quad A=\i
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.466; A10[O10 + O09 + O04]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.443; A11[O12 + O17 + O13]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.441; A05[O03 + O11 + O02]
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.440; A08[O19 + O21 + O04]
-- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.423; A07[O15 + O14 + O02]
-- [arXiv:1905.02221](https://arxiv.org/abs/1905.02221), score 0.422; A00[O08 + O04 + O14]
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.466
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.443
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.441
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.440
+- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.423
+- [arXiv:1905.02221](https://arxiv.org/abs/1905.02221), score 0.422

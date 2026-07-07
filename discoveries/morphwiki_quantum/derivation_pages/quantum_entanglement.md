@@ -10,7 +10,17 @@ Quantum entanglement is the non-factorization constructor: a composite state can
 
 ## Mechanism
 
-Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability. In the Hyperion profile for this page, the strongest route evidence is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Quantum entanglement contributes a compatibility or joint-readout role to the quantum construction.
+- **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
+- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
+- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
+- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
+- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.477; A11[O00 + O12 + O14]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.476; A07[O02 + O07 + O03]
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.443; A11[O00 + O12 + O14]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.432; A11[O00 + O12 + O14]
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.427; A08[O13 + O19 + O21]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.424; A03[O14 + O16 + O05]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.477
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.476
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.443
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.432
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.427
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.424

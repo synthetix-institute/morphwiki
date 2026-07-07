@@ -10,7 +10,17 @@ Fermion is an exchange-symmetry constructor: identical fermions live in antisymm
 
 ## Mechanism
 
-The mechanism is an admissibility rule on many-body state space. Antisymmetry, anticommutation, and zero-or-one mode occupation define the portable role. In the Hyperion profile for this page, the strongest route evidence is state evolution, normalization or admissibility, preparation, basis, or boundary context; the strongest carrier evidence is local notation, information profile, formula structure.
+The mechanism is an admissibility rule on many-body state space. Antisymmetry, anticommutation, and zero-or-one mode occupation define the portable role. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Fermion contributes a many-mode field or particle-realization role to the quantum construction.
+- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
+- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
+- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
 
 ## Topic Equations
 
@@ -42,9 +52,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.487; A10[O10 + O09 + O04]
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.479; A07[O02 + O07 + O03]
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.465; A05[O03 + O11 + O02]
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.453; A11[O12 + O17 + O13]
-- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.452; A10[O10 + O09 + O04]
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.449; A11[O00 + O12 + O14]
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.487
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.479
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.465
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.453
+- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.452
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.449

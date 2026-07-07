@@ -10,7 +10,17 @@ Hilbert space is the admissible state carrier of quantum theory: it supplies the
 
 ## Mechanism
 
-Hilbert space is not physical space and not a geometric background in this book. It is the legal carrier of quantum identity. A state is a vector or density operator on it; the inner product gives amplitudes and norms; observables are self-adjoint operators on it; spectral projectors define possible answers; and unitary evolution preserves norm and probability. Hilbert space is therefore central because it binds state, probability, operator spectrum, and identity preservation into one formal carrier. In the Hyperion profile for this page, the strongest route evidence is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier evidence is local notation, information profile, formula structure.
+Hilbert space is not physical space and not a geometric background in this book. It is the legal carrier of quantum identity. A state is a vector or density operator on it; the inner product gives amplitudes and norms; observables are self-adjoint operators on it; spectral projectors define possible answers; and unitary evolution preserves norm and probability. Hilbert space is therefore central because it binds state, probability, operator spectrum, and identity preservation into one formal carrier. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+
+## Quantum Mechanism Frame
+
+- **Role:** Hilbert space contributes a state-carrier role to the quantum construction.
+- **Placement:** This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
+- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
+- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
+- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
 
 ## Topic Equations
 
@@ -43,9 +53,9 @@ A=A^\dagger,\qquad A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.416; A11[O00 + O12 + O14]
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.384; A03[O14 + O16 + O05]
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.382; A00[O10 + O14 + O08]
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.375; A00[O04 + O14 + O00]
-- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.344; A07[O09 + O02 + O07]
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.343; A00[O08 + O15 + O14]
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.416
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.384
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.382
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.375
+- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.344
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.343

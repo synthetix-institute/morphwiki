@@ -7,8 +7,8 @@ This run treats the rewrite itself as the transition: Wikipedia/topic view -> me
 - `page_count`: `147`
 - `constructed_pages`: `145`
 - `evidence_placements`: `2`
-- `mean_operation_gain`: `22.0487`
-- `mean_object_shift`: `3.899`
+- `mean_operation_gain`: `22.5962`
+- `mean_object_shift`: `3.6514`
 
 ### Mean Route Profile
 
@@ -59,7 +59,7 @@ The new object is not a better summary of each topic; it is an ordering relation
 
 Evidence:
 - `page_count`: `147`
-- `branch_counts`: `{'generators': 22, 'measurement': 10, 'states': 24, 'annotations': 16, 'boundaries': 12, 'incompatibility': 6, 'fields': 22, 'context': 7, 'protocols': 18, 'observables': 10}`
+- `branch_counts`: `{'generators': 22, 'states': 24, 'measurement': 10, 'annotations': 16, 'boundaries': 12, 'fields': 22, 'incompatibility': 6, 'context': 7, 'protocols': 18, 'observables': 10}`
 - `constructed_pages`: `145`
 - `evidence_placements`: `2`
 
@@ -77,7 +77,7 @@ Evidence:
 The particle pages are not discarded; they are relocated as field/mode/statistics/readout constructions. This is a more precise statement than 'particles are not fundamental'.
 
 Evidence:
-- `particle_like_pages`: Wave–particle duality; Quantum field theory; Particle in a box; Photon; Fock space; Electron microscope; Boson; Fermion; Electron; History of quantum field theory
+- `particle_like_pages`: Wave–particle duality; Quantum field theory; Particle in a box; Photon; Fock space; Electron microscope; Fermion; Electron; Boson; History of quantum field theory
 - `field_branch_count`: `22`
 
 ### 4. Interpretations mostly act on readout semantics rather than replacing the formal constructor.
@@ -85,7 +85,7 @@ Evidence:
 QBism, relational quantum mechanics, collapse language, and popular frames can be kept without letting them become false roots of the derivation tree.
 
 Evidence:
-- `interpretation_like_pages`: Introduction to quantum mechanics; Quantum Theory: Concepts and Methods; Erwin Schrödinger; Old quantum theory; David Hilbert; QBism; Quantum mind; History of quantum mechanics; Modern Quantum Mechanics; Interpretations of quantum mechanics; Quantum mysticism; Introduction to Quantum Mechanics (book)
+- `interpretation_like_pages`: Introduction to quantum mechanics; Quantum Theory: Concepts and Methods; Erwin Schrödinger; Old quantum theory; David Hilbert; History of quantum mechanics; Quantum mind; Modern Quantum Mechanics; QBism; Interpretations of quantum mechanics; Quantum mysticism; Introduction to Quantum Mechanics (book)
 - `annotation_count`: `16`
 
 ### 5. Boundary pages are realization gates: they change allowed spectra without changing the core prediction problem.
@@ -94,7 +94,7 @@ Tunnelling, particle-in-a-box, scattering, cavities, and spectral lines become o
 
 Evidence:
 - `boundary_count`: `12`
-- `boundary_pages`: Scattering; Quantum metamaterial; Potential well; Particle in a box; Macroscopic quantum phenomena; Quantum tunnelling; Quantum harmonic oscillator; Quantum optics; Quantum imaging; Wave interference; Spectral line; S-matrix
+- `boundary_pages`: Scattering; Quantum metamaterial; Potential well; Quantum tunnelling; Quantum harmonic oscillator; Macroscopic quantum phenomena; Quantum optics; Particle in a box; Wave interference; Spectral line; Quantum imaging; S-matrix
 
 ### 6. Protocol pages are an engineering layer over the constructor, not the root of the theory.
 
@@ -102,7 +102,7 @@ Quantum computing is reorganized as controlled composition of states, operators,
 
 Evidence:
 - `protocol_count`: `18`
-- `protocol_pages`: Quantum computing; Quantum finite automaton; Quantum programming; Quantum neural network; Quantum circuit; Quantum image processing; Quantum key distribution; Quantum channel; Quantum logic gate; Quantum bus; Quantum error correction; Quantum information science
+- `protocol_pages`: Quantum computing; Quantum finite automaton; Quantum programming; Quantum neural network; Quantum image processing; Quantum key distribution; Quantum circuit; Quantum bus; Quantum channel; Quantum information science; Quantum logic gate; Quantum teleportation
 - `protocol_route_mean`: `0.0753`
 
 ### 7. Anomalies identify where several constructor roles collide.
@@ -114,59 +114,58 @@ Evidence:
 
 ## Sparse Transition Hotspots
 
-- **Quantum logic** (generators): attention `0.613832`, operation gain `24.2629`, top roles measurement=0.23, context=0.20, state=0.17; anomaly: compatibility/closure junction, protocol is unusually explicit, multi-role hub, branch-ambiguous
+- **Quantum logic** (generators): attention `0.625252`, operation gain `25.419`, top roles measurement=0.23, context=0.20, state=0.19; anomaly: compatibility/closure junction, protocol is unusually explicit, multi-role hub, branch-ambiguous
   - Interpretation: This page sits between Generator: lawful change before readout and Annotations: history, interpretations, and popular frames. The ambiguity is useful: it marks a place where two constructor roles meet and should be separated before the page is used as a derivation.
-- **Measurement problem** (measurement): attention `0.600635`, operation gain `27.6074`, top roles measurement=0.30, context=0.19, state=0.17; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
-  - Interpretation: The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. Decompose it into pre-measurement evolution, apparatus/environment coupling, POVM or projection readout, and post-record conditioning.
-- **Quantum biology** (generators): attention `0.594145`, operation gain `22.9029`, top roles context=0.20, state=0.18, measurement=0.17; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, multi-role hub
-  - Interpretation: Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. A constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control.
-- **Schrödinger's cat** (states): attention `0.593268`, operation gain `25.7177`, top roles state=0.22, measurement=0.22, context=0.19; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub, branch-ambiguous
+- **Schrödinger's cat** (states): attention `0.613827`, operation gain `27.5081`, top roles state=0.23, measurement=0.19, context=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub, branch-ambiguous
   - Interpretation: Schrödinger's cat is a macroscopic readout protocol. It couples microscopic unitary evolution to a macroscopic boundary and forces three steps apart: coherent transport, decoherence or apparatus coupling, and the rule by which one record is selected or conditioned.
-- **Introduction to quantum mechanics** (annotations): attention `0.580124`, operation gain `21.3514`, top roles context=0.22, measurement=0.22, state=0.19; anomaly: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub, branch-ambiguous
+- **Measurement problem** (measurement): attention `0.600635`, operation gain `27.7778`, top roles measurement=0.33, context=0.18, state=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
+  - Interpretation: The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. Decompose it into pre-measurement evolution, apparatus/environment coupling, POVM or projection readout, and post-record conditioning.
+- **Quantum biology** (generators): attention `0.596331`, operation gain `23.0924`, top roles state=0.21, context=0.19, observable=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, multi-role hub
+  - Interpretation: Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. A constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control.
+- **Introduction to quantum mechanics** (annotations): attention `0.58681`, operation gain `22.0297`, top roles context=0.22, measurement=0.21, state=0.20; anomaly: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub, branch-ambiguous
   - Interpretation: An introductory page is a compressed map. It mixes states, operators, spectra, measurement, examples, and interpretations because it is written pedagogically. Decompose it into mechanism branches before using it for technical claims.
-- **Delayed-choice quantum eraser** (measurement): attention `0.578219`, operation gain `26.0098`, top roles measurement=0.25, context=0.19, state=0.18; anomaly: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub
-  - Interpretation: The delayed-choice eraser is a protocol-order stress test. Its mechanism is the arrangement of which-path information, later measurement choice, and conditional correlation readout. The relevant statistics are defined only after the full measurement protocol is specified.
-- **Scattering** (boundaries): attention `0.56782`, operation gain `25.1659`, top roles context=0.20, observable=0.16, state=0.15; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
+- **Scattering** (boundaries): attention `0.576573`, operation gain `26.0159`, top roles context=0.20, boundary=0.20, observable=0.17; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
   - Interpretation: Scattering is a boundary-to-spectrum mechanism. The central map is from asymptotic in-states to out-states. Specify the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints.
-- **Einstein–Podolsky–Rosen paradox** (incompatibility): attention `0.551351`, operation gain `22.6438`, top roles measurement=0.23, context=0.20, state=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, multi-role hub
-  - Interpretation: EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. Start from the joint state and local observables, then ask which correlation constraint fails.
-- **Quantum simulator** (states): attention `0.540834`, operation gain `20.9924`, top roles state=0.23, context=0.20, measurement=0.19; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
-  - Interpretation: A quantum simulator is an engineered realization of another Hamiltonian or channel. It is both an observable system and a protocol for representing a target system. Name the simulated target, physical carrier, encoding map, and validation observable.
-- **Wave–particle duality** (states): attention `0.538443`, operation gain `22.8249`, top roles context=0.19, state=0.19, observable=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
-  - Interpretation: Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Write it as context selection plus readout channel.
-- **Fermi–Dirac statistics** (fields): attention `0.537482`, operation gain `22.9482`, top roles context=0.22, measurement=0.18, state=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
+- **Delayed-choice quantum eraser** (measurement): attention `0.567636`, operation gain `25.3304`, top roles measurement=0.26, state=0.19, context=0.18; anomaly: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub
+  - Interpretation: The delayed-choice eraser is a protocol-order stress test. Its mechanism is the arrangement of which-path information, later measurement choice, and conditional correlation readout. The relevant statistics are defined only after the full measurement protocol is specified.
+- **Fermi–Dirac statistics** (fields): attention `0.560934`, operation gain `24.9511`, top roles context=0.21, state=0.19, measurement=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
   - Interpretation: Fermi-Dirac statistics is an admissibility rule for many-particle states. The mechanism is antisymmetry and occupation restriction. Expose anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space.
-- **Quantum nonlocality** (incompatibility): attention `0.535175`, operation gain `23.7654`, top roles measurement=0.24, context=0.21, state=0.15; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
-  - Interpretation: This incompatibility page mixes observables and spectra, state evolution, and controlled update protocol. State which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure.
-- **Quantum gravity** (fields): attention `0.533536`, operation gain `22.4252`, top roles context=0.22, observable=0.18, state=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
+- **Einstein–Podolsky–Rosen paradox** (incompatibility): attention `0.556978`, operation gain `23.2301`, top roles measurement=0.22, context=0.20, state=0.20; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, multi-role hub
+  - Interpretation: EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. Start from the joint state and local observables, then ask which correlation constraint fails.
+- **Quantum simulator** (states): attention `0.555931`, operation gain `22.0662`, top roles state=0.24, context=0.20, measurement=0.18; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
+  - Interpretation: A quantum simulator is an engineered realization of another Hamiltonian or channel. It is both an observable system and a protocol for representing a target system. Name the simulated target, physical carrier, encoding map, and validation observable.
+- **Quantum gravity** (fields): attention `0.543276`, operation gain `23.3366`, top roles context=0.22, observable=0.17, state=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
   - Interpretation: Quantum gravity is a field/boundary junction. It asks whether geometry becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing constructor is a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test of which geometric quantities survive quantization.
-- **Wave function** (states): attention `0.52176`, operation gain `22.2294`, top roles measurement=0.22, context=0.22, state=0.22; anomaly: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub
-  - Interpretation: The wave function is a representation of the state carrier. It stores amplitude, phase, normalization, basis choice, and probability potential in one object. Separate representation, admissibility, evolution, and Born readout.
-- **Quantum field theory** (fields): attention `0.52001`, operation gain `22.7273`, top roles context=0.21, measurement=0.19, observable=0.17; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, multi-role hub
-  - Interpretation: This field-level page mixes observables and spectra, state evolution, and normalization and admissibility. Treat it as a many-mode or geometric realization problem: identify the state sector or field algebra, then the constraints and readout that make the field content observable.
-- **Quantum entanglement** (incompatibility): attention `0.519704`, operation gain `21.4293`, top roles measurement=0.22, context=0.20, state=0.17; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
-  - Interpretation: Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. Separate the joint state, subsystem observables, and correlation test.
-- **Bell's theorem** (incompatibility): attention `0.512008`, operation gain `21.816`, top roles context=0.22, measurement=0.20, state=0.17; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
-  - Interpretation: This incompatibility page mixes observables and spectra, state evolution, and normalization and admissibility. State which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure.
-- **Spin (physics)** (states): attention `0.511046`, operation gain `22.107`, top roles state=0.23, context=0.21, measurement=0.19; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
-  - Interpretation: This state page mixes observables and spectra, state evolution, and normalization and admissibility. Specify the state carrier, then distinguish representation, evolution, admissibility, and later readout.
-- **Quantum electrodynamics** (fields): attention `0.51018`, operation gain `22.107`, top roles context=0.21, measurement=0.20, state=0.17; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, multi-role hub
+- **Quantum electrodynamics** (fields): attention `0.535253`, operation gain `24.2334`, top roles context=0.20, state=0.18, measurement=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, multi-role hub
   - Interpretation: Quantum electrodynamics is a field-interaction constructor. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. Derive it through field operators, gauge constraints, interaction terms, and observable amplitudes.
-- **Relativistic quantum mechanics** (context): attention `0.506371`, operation gain `21.5299`, top roles context=0.27, measurement=0.19, state=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, multi-role hub, branch-ambiguous
+- **Spin (physics)** (states): attention `0.521742`, operation gain `23.0924`, top roles state=0.24, context=0.21, measurement=0.18; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
+  - Interpretation: This state page mixes observables and spectra, state evolution, and normalization and admissibility. Specify the state carrier, then distinguish representation, evolution, admissibility, and later readout.
+- **Wave function** (states): attention `0.520846`, operation gain `22.2941`, top roles state=0.26, measurement=0.21, context=0.21; anomaly: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub
+  - Interpretation: The wave function is a representation of the state carrier. It stores amplitude, phase, normalization, basis choice, and probability potential in one object. Separate representation, admissibility, evolution, and Born readout.
+- **Quantum nonlocality** (incompatibility): attention `0.519929`, operation gain `22.7021`, top roles measurement=0.24, context=0.20, state=0.16; anomaly: weak spectral anchor, protocol is unusually explicit, multi-role hub
+  - Interpretation: This incompatibility page mixes observables and spectra, state evolution, and controlled update protocol. State which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure.
+- **Wave–particle duality** (states): attention `0.519681`, operation gain `21.4768`, top roles context=0.20, state=0.18, observable=0.15; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
+  - Interpretation: Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Write it as context selection plus readout channel.
+- **Relativistic quantum mechanics** (context): attention `0.514861`, operation gain `22.3366`, top roles context=0.27, state=0.19, measurement=0.19; anomaly: weak spectral anchor, boundary-driven dynamics, multi-role hub, branch-ambiguous
   - Interpretation: Relativistic quantum mechanics is a compatibility junction between quantum state evolution and spacetime symmetry. It must preserve relativistic covariance, define the correct state carrier, and explain how spin, energy, and causality constraints enter the operator algebra.
+- **Transformation theory (quantum mechanics)** (context): attention `0.506087`, operation gain `23.622`, top roles context=0.25, state=0.18, measurement=0.17
+- **Quantum entanglement** (incompatibility): attention `0.50151`, operation gain `20.1176`, top roles measurement=0.22, context=0.19, state=0.18; anomaly: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub
+  - Interpretation: Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. Separate the joint state, subsystem observables, and correlation test.
+- **Quantum field theory** (fields): attention `0.501503`, operation gain `21.3987`, top roles context=0.21, measurement=0.17, state=0.16; anomaly: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, multi-role hub
+  - Interpretation: This field-level page mixes observables and spectra, state evolution, and normalization and admissibility. Treat it as a many-mode or geometric realization problem: identify the state sector or field algebra, then the constraints and readout that make the field content observable.
 
 ## Branch-Level Transition
 
-- **State carrier inside Hilbert space**: `24` pages, `24` constructed, mean operation gain `21.3747`.
-- **Generator: lawful change before readout**: `22` pages, `22` constructed, mean operation gain `21.8136`.
-- **Many-mode extension: fields, particles, and scaling**: `22` pages, `21` constructed, mean operation gain `22.0176`.
-- **Protocol layer: engineered transformations**: `18` pages, `18` constructed, mean operation gain `21.1423`.
-- **Annotations: history, interpretations, and popular frames**: `16` pages, `16` constructed, mean operation gain `22.7054`.
-- **Boundary realization: how effects appear**: `12` pages, `12` constructed, mean operation gain `23.5914`.
-- **Readout rule: how answers become probabilities**: `10` pages, `10` constructed, mean operation gain `23.3299`.
-- **Spectral question: what can be asked**: `10` pages, `9` constructed, mean operation gain `20.8714`.
-- **Hilbert-space context: admissible carrier and basis**: `7` pages, `7` constructed, mean operation gain `23.2121`.
-- **Compatibility limit: what cannot be jointly sharp**: `6` pages, `6` constructed, mean operation gain `22.0729`.
+- **State carrier inside Hilbert space**: `24` pages, `24` constructed, mean operation gain `21.8866`.
+- **Generator: lawful change before readout**: `22` pages, `22` constructed, mean operation gain `23.2786`.
+- **Many-mode extension: fields, particles, and scaling**: `22` pages, `21` constructed, mean operation gain `22.5872`.
+- **Protocol layer: engineered transformations**: `18` pages, `18` constructed, mean operation gain `21.1493`.
+- **Annotations: history, interpretations, and popular frames**: `16` pages, `16` constructed, mean operation gain `22.9891`.
+- **Boundary realization: how effects appear**: `12` pages, `12` constructed, mean operation gain `24.166`.
+- **Readout rule: how answers become probabilities**: `10` pages, `10` constructed, mean operation gain `23.6298`.
+- **Spectral question: what can be asked**: `10` pages, `9` constructed, mean operation gain `21.7364`.
+- **Hilbert-space context: admissible carrier and basis**: `7` pages, `7` constructed, mean operation gain `23.8526`.
+- **Compatibility limit: what cannot be jointly sharp**: `6` pages, `6` constructed, mean operation gain `21.3631`.
 
 ## Practical Conclusion
 
