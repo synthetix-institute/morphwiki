@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum logic is a broad quantum constructor role in the compact quantum constructor. In this tree, quantum logic belongs to the lawful-change step: it specifies how the state changes before a question is asked.
+a quantum logic modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Quantum logic contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+a quantum logic acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Quantum logic contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Quantum logic contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: wavefunction and superposition. Context/domain terms: potential and basis.
+- **Operator or map:** Operator terms: observable and Hamiltonian. Protocol or update terms: collapse and projection.
+- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

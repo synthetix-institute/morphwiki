@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Spin foam is a geometry or holographic realization role in the compact quantum constructor. In this tree, spin foam belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+A spin foam can be read as a quantum construction: the boundary conditions that define which histories are included fixes the admissible state space; the action functional assigning phases to histories defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Spin foam contributes a geometry or holographic realization role. Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a spin foam is described by boundary states or field configurations at the endpoints of a process. The physical question is represented by the action functional assigning phases to histories; the experimental or mathematical setting is the boundary conditions that define which histories are included. The observable content is obtained from transition amplitudes and probabilities obtained by summing over histories. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Spin foam contributes a geometry or holographic realization role to the quantum construction.
 - **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space.
-- **Operator or map:** Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.
-- **Admissibility:** Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content.
-- **Readout:** Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
-- **Check:** A geometric reformulation is physical only to the extent that it preserves observables or correlation functions across the representation change.
+- **Carrier or domain:** State terms: superposition. Context/domain terms: basis.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: path integral.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum jump is a broad quantum constructor role in the compact quantum constructor. In this tree, quantum jump belongs to the readout step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+A quantum jump can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum jump contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum jump is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, unitary operator or Hamiltonian, and energy level or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Quantum jump contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Quantum jump contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: quantum state. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: unitary. Protocol or update terms: unitary evolution.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: energy level. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

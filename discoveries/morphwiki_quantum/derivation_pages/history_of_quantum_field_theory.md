@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-History of quantum field theory is a many-mode field or particle-realization role in the compact quantum constructor. In this tree, history of quantum field theory is an annotation layer attached to the formal constructor.
+A history of quantum field theory can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, History of quantum field theory contributes a many-mode field or particle-realization role. The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and readouts are occupation, charge, spin, momentum, energy, or scattering response. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+In quantum-mechanical terms, a history of quantum field theory is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
 
 ## Quantum Mechanism Frame
 
 - **Role:** History of quantum field theory contributes a many-mode field or particle-realization role to the quantum construction.
 - **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
-- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
-- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
-- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
-- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
+- **Carrier or domain:** State terms: quantum state. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: Uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

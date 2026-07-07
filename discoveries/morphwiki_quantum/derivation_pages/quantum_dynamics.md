@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum dynamics is a lawful state-transport role in the compact quantum constructor. In this tree, quantum dynamics belongs to the lawful-change step: it specifies how the state changes before a question is asked.
+A quantum dynamics can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum dynamics contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum dynamics is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through state vector or density matrix, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum dynamics contributes a lawful state-transport role to the quantum construction.
 - **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
-- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
-- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
-- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
-- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
+- **Carrier or domain:** State terms: state vector, density matrix, quantum state, or superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: Hamiltonian, observable, matrix, unitary, or commutator. Protocol or update terms: unitary evolution.
+- **Admissibility:** Compatibility or closure terms: commutator and uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

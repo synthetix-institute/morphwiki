@@ -14,7 +14,7 @@ An observable is the mathematical form of a question that can be asked of a stat
 
 ## Quantum Mechanism Frame
 
-- **Role:** Observable contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Observable contributes an unresolved constructor role to the quantum construction.
 - **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
 - **Carrier or domain:** A context-selected state space or effective carrier for prediction.
 - **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
@@ -24,11 +24,12 @@ An observable is the mathematical form of a question that can be asked of a stat
 
 ## Topic Equations
 
+Standard constructor skeleton: self-adjoint question, spectral projectors, and Born probabilities.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+A=A^\dagger
+A=\sum_i a_iP_i
+p(a_i)=\operatorname{Tr}(\rho P_i)
 ```
 
 ## What Remains Stable

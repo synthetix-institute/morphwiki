@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-David Hilbert is a state-carrier role in the compact quantum constructor. In this tree, david Hilbert is an annotation layer attached to the formal constructor.
+A david hilbert can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, David Hilbert contributes a state-carrier role. The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+In quantum-mechanical terms, a david Hilbert is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
 
 ## Quantum Mechanism Frame
 
 - **Role:** David Hilbert contributes a state-carrier role to the quantum construction.
 - **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
-- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
-- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
-- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
-- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: basis.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

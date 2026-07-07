@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum superposition is a state-carrier role in the compact quantum constructor. In this tree, quantum superposition supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+A quantum superposition can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum superposition contributes a state-carrier role. The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum superposition is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, observable operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum superposition contributes a state-carrier role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
-- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
-- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
-- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
-- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
+- **Carrier or domain:** State terms: quantum state, wave function, or superposition. Context/domain terms: basis.
+- **Operator or map:** Operator terms: observable and Hamiltonian. Protocol or update terms: Born rule.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

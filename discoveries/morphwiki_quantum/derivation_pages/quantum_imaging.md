@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum imaging is an instrument-mediated readout role in the compact quantum constructor. In this tree, quantum imaging belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
+A quantum imaging can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum imaging contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the source-evidence profile for this page, the strongest construction signal is preparation, basis, or boundary context, operator-to-spectrum readout, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum imaging is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and mode or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is preparation, basis, or boundary context, operator-to-spectrum readout, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum imaging contributes an instrument-mediated readout role to the quantum construction.
 - **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
-- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
-- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
-- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: potential and detector.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: mode. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

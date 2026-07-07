@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Electron microscope is an instrument-mediated readout role in the compact quantum constructor. In this tree, electron microscope belongs to the question step: it turns a physical question into an operator with admissible answers.
+Electron microscope can be represented as an operational construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.
 
 ## Mechanism
 
-Operationally, Electron microscope contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Operationally, Electron microscope is organized by the relation between state terms (quantum state, wave function, density operator), operator terms (Hamiltonian, observable operator, generator), context or boundary terms (detector), and spectral readout terms (mode). The local vocabulary can change across formulations, but the same state-to-transformation-to-readout structure can remain identifiable. Across equation-level evidence the dominant pattern is operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, carried by field-specific vocabulary, probability / information, and symbolic structure. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Electron microscope contributes an instrument-mediated readout role to the quantum construction.
 - **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
-- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
-- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
-- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: detector.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: mode. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** Candidate transfer targets are systems where the same state-to-operator-to-spectrum conversion appears, but one edge of the construction remains experimentally unresolved.
 
 ## Core-Derived Role Equations
 

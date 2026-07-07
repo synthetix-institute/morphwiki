@@ -16,19 +16,20 @@ The commutator is the algebraic source of many non-classical restrictions. If tw
 
 - **Role:** Commutator contributes a compatibility or joint-readout role to the quantum construction.
 - **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
-- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
-- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
-- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
-- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
-- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
+- **Carrier or domain:** A common state space on which two transformations, observables, or questions are both defined.
+- **Operator or map:** The ordered products AB and BA, compared through the obstruction [A,B]=AB-BA.
+- **Admissibility:** A nonzero commutator marks an order-dependence or compatibility limit; a zero commutator permits a common sharp refinement only when the remaining spectral conditions hold.
+- **Readout:** Compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.
+- **Check:** The mechanism is supported only when changing operator order changes the algebraic or statistical prediction.
 
 ## Topic Equations
 
+Standard constructor skeleton: order obstruction and canonical commutation.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+[A,B]=AB-BA
+[A,B]=0\quad\Rightarrow\quad \text{common spectral refinement may exist}
+[x,p]=i\hbar
 ```
 
 ## What Remains Stable

@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Erwin Schrödinger is a lawful state-transport role in the compact quantum constructor. In this tree, erwin Schrödinger is an annotation layer attached to the formal constructor.
+an erwin Schrödinger modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Erwin Schrödinger contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+an erwin Schrödinger acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Erwin Schrödinger contributes a lawful state-transport role to the quantum construction.
 - **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
-- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
-- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
-- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
+- **Carrier or domain:** State terms: wave function. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: Eigenvalue. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum machine is a broad quantum constructor role in the compact quantum constructor. In this tree, quantum machine supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+A quantum machine can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum machine contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum machine is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or superposition, observable operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Quantum machine contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Quantum machine contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: quantum state and superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: observable. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

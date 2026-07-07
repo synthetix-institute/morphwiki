@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum mysticism is a broad quantum constructor role in the compact quantum constructor. In this tree, quantum mysticism is an annotation layer attached to the formal constructor.
+a quantum mysticism modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Quantum mysticism contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is non-commuting compatibility limits, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+a quantum mysticism acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is non-commuting compatibility limits, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Quantum mysticism contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Quantum mysticism contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: collapse.
+- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

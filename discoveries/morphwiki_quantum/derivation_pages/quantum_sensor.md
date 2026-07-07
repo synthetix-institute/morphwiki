@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum sensor is an instrument-mediated readout role in the compact quantum constructor. In this tree, quantum sensor belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and readouts.
+A quantum sensor can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum sensor contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum sensor is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or observable operator, and mode or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum sensor contributes an instrument-mediated readout role to the quantum construction.
 - **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
-- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
-- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
-- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
+- **Carrier or domain:** State terms: superposition. Context/domain terms: potential.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: projection.
+- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: mode. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

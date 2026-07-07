@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum biology is an open-system transport and coherence role in the compact quantum constructor. In this tree, quantum biology belongs to the lawful-change step: it specifies how the state changes before a question is asked.
+Quantum biology can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum biology contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, quantum biology is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through complementarity or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum biology contributes an open-system transport and coherence role to the quantum construction.
 - **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
-- **Carrier or domain:** A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier.
-- **Operator or map:** Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.
-- **Admissibility:** Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal.
-- **Readout:** Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
-- **Check:** The quantum contribution must survive controls against classical noise, preparation artifacts, and coarse-graining choices.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: potential.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: complementarity and Uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

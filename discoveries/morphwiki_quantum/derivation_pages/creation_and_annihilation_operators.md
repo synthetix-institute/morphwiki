@@ -14,7 +14,7 @@ The page is about the algebraic move that changes occupation number. Creation ra
 
 ## Quantum Mechanism Frame
 
-- **Role:** Creation and annihilation operators contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Creation and annihilation operators contributes an unresolved constructor role to the quantum construction.
 - **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
 - **Carrier or domain:** A context-selected state space or effective carrier for prediction.
 - **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
@@ -24,11 +24,12 @@ The page is about the algebraic move that changes occupation number. Creation ra
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express raising, lowering, and occupation-number readout.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+a_i^\dagger\ket{\ldots,n_i,\ldots}=\sqrt{n_i+1}\ket{\ldots,n_i+1,\ldots}
+a_i\ket{\ldots,n_i,\ldots}=\sqrt{n_i}\ket{\ldots,n_i-1,\ldots}
+N_i=a_i^\dagger a_i
 ```
 
 ## What Remains Stable

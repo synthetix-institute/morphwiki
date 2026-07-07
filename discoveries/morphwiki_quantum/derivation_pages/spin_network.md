@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Spin network is an engineered operation-sequence role in the compact quantum constructor. In this tree, spin network belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+A spin network can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Spin network contributes an engineered operation-sequence role. The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a spin network is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or Hamiltonian, and spectrum or eigenstate. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Spin network contributes an engineered operation-sequence role to the quantum construction.
 - **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** An input state, register, channel state, error syndrome, key, or controlled experimental configuration.
-- **Operator or map:** An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.
-- **Admissibility:** Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.
-- **Readout:** Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-- **Check:** Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.
+- **Carrier or domain:** State terms: quantum state. Context/domain terms: context and basis.
+- **Operator or map:** Operator terms: matrix and Hamiltonian. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: spectrum, eigenstate, or eigenvalue. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

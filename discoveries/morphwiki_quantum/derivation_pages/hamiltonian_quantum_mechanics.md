@@ -24,11 +24,12 @@ The Hamiltonian has a dual role. Dynamically, it generates unitary time evolutio
 
 ## Topic Equations
 
+Standard constructor skeleton: energy spectrum and unitary generation.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+H\ket{E_n}=E_n\ket{E_n}
+U(t)=e^{-iHt/\hbar}
+\rho(t)=U(t)\rho(0)U(t)^\dagger
 ```
 
 ## What Remains Stable

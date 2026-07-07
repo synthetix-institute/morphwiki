@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-S-matrix is a boundary-shaped spectrum role in the compact quantum constructor. In this tree, s-matrix belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
+The s-matrix can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, S-matrix contributes a boundary-shaped spectrum role. The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. In the boundaries step, boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as realization, not as the invariant core. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, the S-matrix is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through wave function or probability amplitude, matrix or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** S-matrix contributes a boundary-shaped spectrum role to the quantum construction.
 - **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
-- **Carrier or domain:** A Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition.
-- **Operator or map:** A Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary.
-- **Admissibility:** Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra.
-- **Readout:** Eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
-- **Check:** Changing the boundary should change the spectrum or amplitude in the predicted way, while the free or asymptotic limit is recovered when the boundary is removed.
+- **Carrier or domain:** State terms: wave function and probability amplitude. Context/domain terms: potential, context, or basis.
+- **Operator or map:** Operator terms: matrix, Hamiltonian, or unitary. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

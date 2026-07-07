@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum error correction is an engineered operation-sequence role in the compact quantum constructor. In this tree, quantum error correction belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and readouts.
+A quantum error correction can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum error correction contributes an engineered operation-sequence role. The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum error correction is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or unitary operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum error correction contributes an engineered operation-sequence role to the quantum construction.
 - **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
-- **Carrier or domain:** An input state, register, channel state, error syndrome, key, or controlled experimental configuration.
-- **Operator or map:** An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.
-- **Admissibility:** Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.
-- **Readout:** Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-- **Check:** Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.
+- **Carrier or domain:** State terms: superposition. Context/domain terms: preparation.
+- **Operator or map:** Operator terms: Hamiltonian and unitary. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

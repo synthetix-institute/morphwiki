@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Pauli matrices is a broad quantum constructor role in the compact quantum constructor. In this tree, pauli matrices belongs to the question step: it turns a physical question into an operator with admissible answers.
+The pauli matrices can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Pauli matrices contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, the Pauli matrices is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Pauli matrices contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Pauli matrices contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: basis and context.
+- **Operator or map:** Operator terms: matrix, observable, or unitary. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

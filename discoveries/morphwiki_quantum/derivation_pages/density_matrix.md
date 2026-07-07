@@ -24,11 +24,13 @@ Density matrices generalize pure states without changing the state-to-spectrum r
 
 ## Topic Equations
 
+Standard constructor skeleton: mixed state, trace rule, and subsystem reduction.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\rho=\sum_a p_a\ket{\psi_a}\bra{\psi_a},\qquad p_a\ge0,\quad \sum_a p_a=1
+\rho\ge0,\qquad \operatorname{Tr}\rho=1
+p(i)=\operatorname{Tr}(\rho P_i)
+\rho_A=\operatorname{Tr}_B(\rho_{AB})
 ```
 
 ## What Remains Stable

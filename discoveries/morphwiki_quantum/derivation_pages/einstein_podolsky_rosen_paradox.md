@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Einstein–Podolsky–Rosen paradox is a broad quantum constructor role in the compact quantum constructor. In this tree, einstein–Podolsky–Rosen paradox belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
+the Einstein–Podolsky–Rosen paradox modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Einstein–Podolsky–Rosen paradox contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the incompatibility step, in this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+the Einstein–Podolsky–Rosen paradox acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Einstein–Podolsky–Rosen paradox contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Einstein–Podolsky–Rosen paradox contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: wave function, quantum state, or superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: incompatible and uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

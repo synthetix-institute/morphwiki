@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum nonlocality is a compatibility or joint-readout role in the compact quantum constructor. In this tree, quantum nonlocality belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
+a quantum nonlocality modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Quantum nonlocality contributes a compatibility or joint-readout role. The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. In the incompatibility step, in this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, spectral profile.
+a quantum nonlocality acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, controlled update protocol; the strongest carrier signal is local notation, information profile, spectral profile.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum nonlocality contributes a compatibility or joint-readout role to the quantum construction.
 - **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
-- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
-- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
-- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
-- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
-- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
+- **Carrier or domain:** State terms: wavefunction, quantum state, or wave function. Context/domain terms: basis.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: collapse.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

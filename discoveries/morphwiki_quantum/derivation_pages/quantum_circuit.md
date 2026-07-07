@@ -24,11 +24,11 @@ A circuit is the protocol layer of the same state-operator-readout machinery. Ga
 
 ## Topic Equations
 
+Standard constructor skeleton: composed gates and final measurement.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\rho_{\mathrm{out}}=U_m\cdots U_2U_1\,\rho_{\mathrm{in}}\,U_1^\dagger U_2^\dagger\cdots U_m^\dagger
+p(y)=\operatorname{Tr}(M_y\rho_{\mathrm{out}})
 ```
 
 ## What Remains Stable

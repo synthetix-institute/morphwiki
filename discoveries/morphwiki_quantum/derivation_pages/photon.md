@@ -24,11 +24,13 @@ The native photon mechanism is field quantization. The electromagnetic field is 
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express massless dispersion, one-mode occupation, number readout, and transverse polarization.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+E=\hbar\omega,\qquad \mathbf p=\hbar\mathbf k,\qquad \omega=c|\mathbf k|
+\ket{1_{\mathbf k,\lambda}}=a_{\mathbf k,\lambda}^{\dagger}\ket{0}
+\hat N_{\mathbf k,\lambda}=a_{\mathbf k,\lambda}^{\dagger}a_{\mathbf k,\lambda}
+\mathbf k\cdot\boldsymbol\epsilon_{\mathbf k,\lambda}=0
 ```
 
 ## What Remains Stable

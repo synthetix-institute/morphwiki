@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum amplifier is an instrument-mediated readout role in the compact quantum constructor. In this tree, quantum amplifier belongs to the lawful-change step: it specifies how the state changes before a question is asked.
+A quantum amplifier can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum amplifier contributes an instrument-mediated readout role. The mechanism is an apparatus-coupled readout: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. In the generators step, the generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum amplifier is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or state vector, unitary operator or Hamiltonian, and mode or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum amplifier contributes an instrument-mediated readout role to the quantum construction.
 - **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
-- **Carrier or domain:** A probe state, sample state, field mode, detector state, or estimation register.
-- **Operator or map:** An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-- **Admissibility:** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts.
-- **Readout:** Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-- **Check:** The claimed mechanism is credible only when the same readout survives control experiments, calibration changes, and reconstruction checks.
+- **Carrier or domain:** State terms: quantum state, state vector, or superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: unitary. Protocol or update terms: projection.
+- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: mode. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

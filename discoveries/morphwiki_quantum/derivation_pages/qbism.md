@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-QBism is a probability/readout role in the compact quantum constructor. In this tree, qBism is an annotation layer attached to the formal constructor.
+QBism modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, QBism contributes a probability/readout role. The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. In the annotations step, this page changes how the formalism is narrated, interpreted, taught, or historically situated. The underlying assembly remains the same: a context admits states, operators expose spectra, and probability rules connect states to outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+QBism acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
 
 ## Quantum Mechanism Frame
 
 - **Role:** QBism contributes a probability/readout role to the quantum construction.
 - **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
-- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
-- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
-- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
+- **Carrier or domain:** State terms: wavefunction, quantum state, wave function, or superposition. Context/domain terms: measurement apparatus.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: Born rule and collapse.
+- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

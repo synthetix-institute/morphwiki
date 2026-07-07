@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Schrödinger's cat is a lawful state-transport role in the compact quantum constructor. In this tree, schrödinger's cat supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+a schrödinger's cat modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Schrödinger's cat contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+a schrödinger's cat acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Schrödinger's cat contributes a lawful state-transport role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
-- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
-- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
-- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
+- **Carrier or domain:** State terms: wave function, quantum state, wavefunction, or superposition. Context/domain terms: domain.
+- **Operator or map:** Operator terms: observable. Protocol or update terms: collapse.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

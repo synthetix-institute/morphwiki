@@ -24,11 +24,12 @@ The page shows how a boundary condition changes the domain of the Hamiltonian an
 
 ## Topic Equations
 
+Standard constructor skeleton: boundary condition and discrete spectrum.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\psi(0)=\psi(L)=0
+\psi_n(x)=\sqrt{\frac{2}{L}}\sin\frac{n\pi x}{L}
+E_n=\frac{\hbar^2\pi^2n^2}{2mL^2}
 ```
 
 ## What Remains Stable

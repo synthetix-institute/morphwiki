@@ -24,6 +24,8 @@ Fock space changes the carrier of the quantum state. Instead of describing one s
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express variable particle number, exchange symmetry, and occupation-number readout.
+
 ```math
 \mathcal F_{\pm}(\mathcal H)=\bigoplus_{n=0}^{\infty} \mathcal S_{\pm}\mathcal H^{\otimes n}
 [a_i,a_j^\dagger]_{\mp}=\delta_{ij},\qquad [a_i,a_j]_{\mp}=0

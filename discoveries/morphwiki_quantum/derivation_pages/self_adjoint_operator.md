@@ -14,7 +14,7 @@ Self-adjointness is not a technical decoration. It is the condition that makes a
 
 ## Quantum Mechanism Frame
 
-- **Role:** Self-adjoint operator contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Self-adjoint operator contributes an unresolved constructor role to the quantum construction.
 - **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
 - **Carrier or domain:** A context-selected state space or effective carrier for prediction.
 - **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
@@ -24,11 +24,12 @@ Self-adjointness is not a technical decoration. It is the condition that makes a
 
 ## Topic Equations
 
+Standard constructor skeleton: spectral theorem form of a legitimate observable.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+A=A^\dagger
+A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)
+\Pr(\Delta)=\operatorname{Tr}(\rho E_A(\Delta))
 ```
 
 ## What Remains Stable

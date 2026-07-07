@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum fluctuation is an open-system transport and coherence role in the compact quantum constructor. In this tree, quantum fluctuation supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+A quantum fluctuation can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum fluctuation contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is state evolution, non-commuting compatibility limits, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, a quantum fluctuation is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator. In the source-evidence profile for this page, the strongest construction signal is state evolution, non-commuting compatibility limits, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum fluctuation contributes an open-system transport and coherence role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier.
-- **Operator or map:** Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.
-- **Admissibility:** Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal.
-- **Readout:** Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
-- **Check:** The quantum contribution must survive controls against classical noise, preparation artifacts, and coarse-graining choices.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: preparation condition, measurement setup, or potential or domain.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

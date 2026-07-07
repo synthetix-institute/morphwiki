@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum neural network is an engineered operation-sequence role in the compact quantum constructor. In this tree, quantum neural network belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and readouts.
+a quantum neural network modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Quantum neural network contributes an engineered operation-sequence role. The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. In the protocols step, protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+a quantum neural network acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum neural network contributes an engineered operation-sequence role to the quantum construction.
 - **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
-- **Carrier or domain:** An input state, register, channel state, error syndrome, key, or controlled experimental configuration.
-- **Operator or map:** An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.
-- **Admissibility:** Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.
-- **Readout:** Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-- **Check:** Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.
+- **Carrier or domain:** State terms: superposition. Context/domain terms: basis.
+- **Operator or map:** Operator terms: unitary. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

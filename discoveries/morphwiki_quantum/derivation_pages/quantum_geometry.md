@@ -24,11 +24,12 @@ Quantum geometry uses a quantum state of geometry, often represented by graph or
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express graph-based geometry states and spectral readout of geometric observables.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\mathcal H_{\Gamma}=L^2\!\left(SU(2)^E/SU(2)^V\right),\qquad \ket{\Gamma,j_e,\iota_v}
+\hat A(S)\ket{\Gamma,j,\iota}=8\pi\gamma\ell_P^2\sum_{e\cap S}\sqrt{j_e(j_e+1)}\,\ket{\Gamma,j,\iota}
+\text{geometry readout}:\quad \hat G\,\ket{g_i}=g_i\ket{g_i}
 ```
 
 ## What Remains Stable

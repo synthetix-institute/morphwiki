@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-String theory is a geometry or holographic realization role in the compact quantum constructor. In this tree, string theory belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+String theory can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, String theory contributes a geometry or holographic realization role. Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, string theory is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** String theory contributes a geometry or holographic realization role to the quantum construction.
 - **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space.
-- **Operator or map:** Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.
-- **Admissibility:** Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content.
-- **Readout:** Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
-- **Check:** A geometric reformulation is physical only to the extent that it preserves observables or correlation functions across the representation change.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: basis.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

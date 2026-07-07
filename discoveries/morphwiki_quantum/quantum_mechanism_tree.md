@@ -36,12 +36,12 @@ p_i = \operatorname{Tr}(P_i \rho_t)
 ```
 
 ## Sparse Attention Summary
-- state evolution: mean 0.232, pages above 0.10 = 146
+- state evolution: mean 0.232, pages above 0.10 = 145
 - normalization and admissibility: mean 0.165, pages above 0.10 = 136
-- observables and spectra: mean 0.327, pages above 0.10 = 146
-- preparation and boundary context: mean 0.094, pages above 0.10 = 54
+- observables and spectra: mean 0.328, pages above 0.10 = 145
+- preparation and boundary context: mean 0.095, pages above 0.10 = 54
 - incompatible questions: mean 0.086, pages above 0.10 = 59
-- controlled update protocol: mean 0.075, pages above 0.10 = 32
+- controlled update protocol: mean 0.076, pages above 0.10 = 32
 
 Interpretation: the stable evidence signal is observables-and-spectra, but the mechanism tree is not the same object as the evidence ranking.  The tree orders quantum theory by construction role; the route scores explain why each role is supported.
 
@@ -167,7 +167,7 @@ Representative pages:
 - Photon - evidence route: observables and spectra (0.40); assignment score 1.48
 - Quantum field theory - evidence route: observables and spectra (0.27); assignment score 1.47
 - Fermion - evidence route: state evolution (0.28); assignment score 1.42
-- 14 more pages in this branch
+- 13 more pages in this branch
 
 ### Protocol layer: engineered transformations
 Quantum computing, channels, circuits, algorithms, networks, sensors, and error correction turn the same formal machinery into controlled sequences of operations.

@@ -224,11 +224,21 @@ CORE_TITLE_PATTERNS = {
     "annotations": r"\b(history|book|introduction|interpretations|mysticism|mind|erwin|hilbert)\b",
 }
 
+NON_REPRESENTATIVE_APPLICATION_SLUGS = {
+    # Application/frontier pages can be useful later, but they should not enter
+    # the core mechanism-tree book unless they have a clean topic-native
+    # constructor.  Quantum cosmology currently falls back to a generic
+    # field/geometry frame, so it is excluded rather than promoted.
+    "quantum_cosmology",
+}
+
 
 def load_pages(root: Path) -> List[Dict[str, Any]]:
     page_dir = root / "pages"
     pages = []
     for path in sorted(page_dir.glob("*.json")):
+        if path.stem in NON_REPRESENTATIVE_APPLICATION_SLUGS:
+            continue
         page = json.loads(path.read_text(encoding="utf-8"))
         page["_path"] = str(path)
         page["_slug"] = path.stem

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-07T19:52:44.850008+00:00",
+  "generated_at": "2026-07-07T21:37:29.660296+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "The quantum prediction problem",
@@ -8,23 +8,23 @@
   },
   "sparse_attention": {
     "mean_routes": {
-      "transport_flow_route": 0.2321,
-      "constraint_closure_route": 0.1646,
-      "spectral_operator_route": 0.3272,
-      "boundary_weak_form_route": 0.0943,
-      "commutator_incompatibility_route": 0.0861,
-      "discrete_protocol_route": 0.0753
+      "transport_flow_route": 0.2318,
+      "constraint_closure_route": 0.1651,
+      "spectral_operator_route": 0.3284,
+      "boundary_weak_form_route": 0.0947,
+      "commutator_incompatibility_route": 0.0865,
+      "discrete_protocol_route": 0.0756
     },
     "count_gt_0_1": {
-      "transport_flow_route": 146,
+      "transport_flow_route": 145,
       "constraint_closure_route": 136,
-      "spectral_operator_route": 146,
+      "spectral_operator_route": 145,
       "boundary_weak_form_route": 54,
       "commutator_incompatibility_route": 59,
       "discrete_protocol_route": 32
     },
     "dominant_route_counts": {
-      "transport_flow_route": 27,
+      "transport_flow_route": 26,
       "spectral_operator_route": 114,
       "constraint_closure_route": 1,
       "boundary_weak_form_route": 3,
@@ -37,7 +37,7 @@
     "source": "discoveries/operational_geometry/atlas_void_lagrangian_report.json",
     "method": "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas. The current MorphWiki quantum export does not contain page-coordinate vectors, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page.",
     "path_class_counts": {
-      "unavailable": 147
+      "unavailable": 146
     }
   },
   "branches": {
@@ -4563,46 +4563,6 @@
             "branch_bonus": 0.0
           },
           "takeaway": "A spin foam can be read as a quantum construction: the boundary conditions that define which histories are included fixes the admissible state space; the action functional assigning phases to histories defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-          "witnesses": 32
-        },
-        {
-          "title": "Quantum cosmology",
-          "slug": "quantum_cosmology",
-          "score": 0.9059,
-          "secondary": "states",
-          "secondary_score": 0.534,
-          "core_priority": 0.0,
-          "is_annotation": false,
-          "top_route": "state evolution (0.28)",
-          "routes": {
-            "transport_flow_route": 0.2833,
-            "constraint_closure_route": 0.0878,
-            "spectral_operator_route": 0.1604,
-            "boundary_weak_form_route": 0.0333,
-            "commutator_incompatibility_route": 0.0268,
-            "discrete_protocol_route": 0.0305
-          },
-          "fibers": {
-            "structure": 0.3333,
-            "spectral": 0.3333,
-            "geometry": 0.3333,
-            "syntax": 0.5858,
-            "entropy": 0.4142
-          },
-          "lagrangian": {
-            "available": false,
-            "global_only": false,
-            "active_bands": [
-              "flow",
-              "spectral"
-            ],
-            "dominant_fiber": "structure",
-            "path_class": "unavailable",
-            "road_label": "no Lagrangian road map available",
-            "road_score": 0.0,
-            "branch_bonus": 0.0
-          },
-          "takeaway": "Quantum cosmology is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
           "witnesses": 32
         },
         {

@@ -24,6 +24,8 @@ The mechanism is symmetric exchange. Commuting creation and annihilation operato
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express symmetric sectors, commutation, and unrestricted mode occupation.
+
 ```math
 \mathcal F_{+}(\mathcal H)=\bigoplus_{n=0}^{\infty}\operatorname{Sym}^n\mathcal H
 [a_i,a_j^\dagger]=\delta_{ij},\qquad [a_i,a_j]=0

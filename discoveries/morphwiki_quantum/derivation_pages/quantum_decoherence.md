@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum decoherence is an open-system transport and coherence role in the compact quantum constructor. In this tree, quantum decoherence supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+a quantum decoherence modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Quantum decoherence contributes an open-system transport and coherence role. The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+a quantum decoherence acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum decoherence contributes an open-system transport and coherence role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier.
-- **Operator or map:** Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.
-- **Admissibility:** Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal.
-- **Readout:** Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
-- **Check:** The quantum contribution must survive controls against classical noise, preparation artifacts, and coarse-graining choices.
+- **Carrier or domain:** State terms: quantum state, wave function, wavefunction, density matrix, state vector, or superposition. Context/domain terms: basis.
+- **Operator or map:** Operator terms: matrix and unitary. Protocol or update terms: Born rule, collapse, or projection.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

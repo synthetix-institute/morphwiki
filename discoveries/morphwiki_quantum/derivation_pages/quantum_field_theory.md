@@ -24,11 +24,12 @@ Quantum field theory lifts the state-operator-spectrum construction to fields, l
 
 ## Topic Equations
 
+Standard constructor skeleton: field expansion, mode algebra, and correlation readout.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\Phi(x)=\sum_k\left(a_k u_k(x)+a_k^\dagger u_k^*(x)\right)
+[a_k,a_l^\dagger]_{\mp}=\delta_{kl}
+\langle 0|T\{\Phi(x)\Phi(y)\}|0\rangle
 ```
 
 ## What Remains Stable

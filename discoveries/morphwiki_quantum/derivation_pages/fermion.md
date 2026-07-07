@@ -24,11 +24,12 @@ The mechanism is an admissibility rule on many-body state space. Antisymmetry, a
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express antisymmetric sectors, anticommutation, and occupation restriction.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\mathcal F_{-}(\mathcal H)=\bigoplus_{n=0}^{\infty}\wedge^n\mathcal H
+\{a_i,a_j^\dagger\}=\delta_{ij},\qquad \{a_i,a_j\}=0
+n_i=a_i^\dagger a_i\in\{0,1\}
 ```
 
 ## What Remains Stable

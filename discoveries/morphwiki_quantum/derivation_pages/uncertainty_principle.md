@@ -24,11 +24,11 @@ Uncertainty is not detector imperfection. It is a structural consequence of stat
 
 ## Topic Equations
 
+Standard constructor skeleton: variance bound from commutator structure.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\Delta_\rho A\,\Delta_\rho B\ge \frac12\left|\operatorname{Tr}(\rho[A,B])\right|
+\Delta x\,\Delta p\ge\frac{\hbar}{2}
 ```
 
 ## What Remains Stable

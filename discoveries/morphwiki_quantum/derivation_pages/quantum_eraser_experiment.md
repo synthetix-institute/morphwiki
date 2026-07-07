@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Quantum eraser experiment is a compatibility or joint-readout role in the compact quantum constructor. In this tree, quantum eraser experiment belongs to the readout step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+A quantum eraser experiment can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Quantum eraser experiment contributes a compatibility or joint-readout role. The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier signal is local notation, information profile, spectral profile.
+In quantum-mechanical terms, a quantum eraser experiment is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and mode or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through complementarity or commutator. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier signal is local notation, information profile, spectral profile.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum eraser experiment contributes a compatibility or joint-readout role to the quantum construction.
 - **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** One state space or a multipartite state space on which several questions can be asked.
-- **Operator or map:** Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
-- **Admissibility:** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible.
-- **Readout:** Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
-- **Check:** The non-classical content appears only if the incompatible questions cannot be replaced by one common sharp classical assignment.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: detector and experimental setup.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: complementarity. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: mode. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

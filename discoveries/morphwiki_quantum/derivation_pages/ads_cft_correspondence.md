@@ -24,11 +24,11 @@ AdS/CFT belongs at the frontier where geometry becomes a realization rather than
 
 ## Topic Equations
 
+Standard constructor skeleton: boundary-source/bulk-field dictionary.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+Z_{\mathrm{grav}}[\phi_0]\simeq Z_{\mathrm{CFT}}[J=\phi_0]
+\left\langle \exp\!\int J\mathcal O\right\rangle_{\mathrm{CFT}}=Z_{\mathrm{bulk}}[\phi|_{\partial}=J]
 ```
 
 ## What Remains Stable

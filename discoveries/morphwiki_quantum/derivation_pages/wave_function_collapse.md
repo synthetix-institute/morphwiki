@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Wave function collapse is a probability/readout role in the compact quantum constructor. In this tree, wave function collapse belongs to the readout step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+a wave function collapse modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
 ## Mechanism
 
-Operationally, Wave function collapse contributes a probability/readout role. The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. In the measurement step, the constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+a wave function collapse acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Wave function collapse contributes a probability/readout role to the quantum construction.
 - **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
-- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
-- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
-- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
+- **Carrier or domain:** State terms: Wave function, state vector, quantum state, or superposition. Context/domain terms: detector, measurement apparatus, or basis.
+- **Operator or map:** Operator terms: observable. Protocol or update terms: collapse and Born rule.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenstate and eigenvalue. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

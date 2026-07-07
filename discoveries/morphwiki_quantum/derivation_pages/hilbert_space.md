@@ -16,13 +16,15 @@ Hilbert space is not physical space and not a geometric background in this book.
 
 - **Role:** Hilbert space contributes a state-carrier role to the quantum construction.
 - **Placement:** This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
-- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
-- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
-- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
-- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
-- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
+- **Carrier or domain:** A complex Hilbert space, or a density-operator state space built on it.
+- **Operator or map:** Self-adjoint observables, unitary maps, spectral projectors, and domain-restricted generators defined on the carrier.
+- **Admissibility:** Inner-product structure, normalization, positivity for density states, and operator-domain conditions make states and observables legal.
+- **Readout:** Born probabilities, spectral projectors, expectation values, and preserved norms.
+- **Check:** Changing basis or representation should preserve probabilities and expectation values when the change is unitary.
 
 ## Topic Equations
+
+Standard constructor skeleton: normalized states, density states, spectral resolution, Born readout, and unitary identity preservation.
 
 ```math
 \ket{\psi}\in\mathcal H,\qquad \langle\psi|\psi\rangle=1

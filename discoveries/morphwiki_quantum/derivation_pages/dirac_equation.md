@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Dirac equation is a lawful state-transport role in the compact quantum constructor. In this tree, dirac equation belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+The dirac equation can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Dirac equation contributes a lawful state-transport role. The topic supplies or modifies the generator of state evolution before readout. It should be read as a transport step, not as a measurement result. In the fields step, the field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, the Dirac equation is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through wavefunction or wave function, matrix or Hamiltonian, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Dirac equation contributes a lawful state-transport role to the quantum construction.
 - **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** A state vector, density operator, wavefunction, field state, or register on a specified domain.
-- **Operator or map:** Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state.
-- **Admissibility:** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal.
-- **Readout:** Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-- **Check:** The generator must predict the observed evolution while preserving the relevant normalization, positivity, symmetry, or conservation constraint.
+- **Carrier or domain:** State terms: wavefunction and wave function. Context/domain terms: context.
+- **Operator or map:** Operator terms: matrix and Hamiltonian. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

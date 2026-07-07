@@ -24,11 +24,11 @@ Tunnelling shows that the realization layer matters. A potential barrier changes
 
 ## Topic Equations
 
+Standard constructor skeleton: barrier-domain Schrödinger equation and WKB transmission.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+T\sim \exp\!\left(-2\int_{x_1}^{x_2}\sqrt{\frac{2m(V(x)-E)}{\hbar^2}}\,dx\right)
+-\frac{\hbar^2}{2m}\psi''(x)+V(x)\psi(x)=E\psi(x)
 ```
 
 ## What Remains Stable

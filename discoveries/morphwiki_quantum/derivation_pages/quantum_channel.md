@@ -16,19 +16,20 @@ A channel is the mechanism for noisy transformations, measurements with forgotte
 
 - **Role:** Quantum channel contributes an engineered operation-sequence role to the quantum construction.
 - **Placement:** This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
-- **Carrier or domain:** An input state, register, channel state, error syndrome, key, or controlled experimental configuration.
-- **Operator or map:** An ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps.
-- **Admissibility:** Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective.
-- **Readout:** Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-- **Check:** Changing operation order, inserting classical controls, or replacing a quantum channel should identify which step carries the effect.
+- **Carrier or domain:** Input and output density operators, possibly on different Hilbert spaces or subsystem carriers.
+- **Operator or map:** A completely positive trace-preserving map, often represented by Kraus operators or by a Stinespring dilation.
+- **Admissibility:** Complete positivity and trace preservation are the legal conditions; non-trace-preserving maps require an explicitly conditioned outcome.
+- **Readout:** Output state, final POVM probabilities, fidelity, capacity, error rate, or recovered subsystem statistics.
+- **Check:** The channel claim requires a map that stays positive under extension by an untouched reference system and preserves total probability.
 
 ## Topic Equations
 
+Standard constructor skeleton: completely positive trace-preserving map and readout.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
+\sum_aK_a^\dagger K_a=I
+p(y)=\operatorname{Tr}(M_y\mathcal E(\rho))
 ```
 
 ## What Remains Stable

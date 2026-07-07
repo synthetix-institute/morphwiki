@@ -24,11 +24,12 @@ Measurement is not the root of quantum theory in this book. It is the junction w
 
 ## Topic Equations
 
+Standard constructor skeleton: generalized measurement probability and conditional update.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+p(i)=\operatorname{Tr}(\rho E_i)
+\rho\mapsto \rho_i=\frac{K_i\rho K_i^\dagger}{\operatorname{Tr}(K_i\rho K_i^\dagger)}
+E_i=K_i^\dagger K_i
 ```
 
 ## What Remains Stable

@@ -24,11 +24,12 @@ The electron is not a generic object label in this tree. Its native mechanism co
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express relativistic spinor transport, electromagnetic coupling, and fermionic field statistics.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+(i\hbar\gamma^{\mu}D_{\mu}-mc)\psi=0
+D_{\mu}=\partial_{\mu}+\frac{ie}{\hbar c}A_{\mu}
+\{\psi_{\alpha}(x),\psi_{\beta}^{\dagger}(y)\}=\delta_{\alpha\beta}\delta(x-y)
 ```
 
 ## What Remains Stable

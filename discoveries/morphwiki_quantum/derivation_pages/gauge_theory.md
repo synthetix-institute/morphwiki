@@ -14,7 +14,7 @@ Gauge theory belongs at the field/geometry frontier. It separates physical degre
 
 ## Quantum Mechanism Frame
 
-- **Role:** Gauge theory contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Gauge theory contributes an unresolved constructor role to the quantum construction.
 - **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
 - **Carrier or domain:** A context-selected state space or effective carrier for prediction.
 - **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
@@ -24,11 +24,12 @@ Gauge theory belongs at the field/geometry frontier. It separates physical degre
 
 ## Topic Equations
 
+Standard constructor skeleton: covariant derivative, curvature, and local gauge transformation.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+D_\mu=\partial_\mu+igA_\mu
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]
+\psi(x)\mapsto U(x)\psi(x)
 ```
 
 ## What Remains Stable

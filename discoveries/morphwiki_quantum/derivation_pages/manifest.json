@@ -1,8 +1,8 @@
 {
   "report_type": "quantum_derivation_pages_manifest",
-  "row_count": 147,
+  "row_count": 146,
   "topic_specific_count": 145,
-  "core_derived_count": 2,
+  "core_derived_count": 1,
   "pages": [
     {
       "slug": "mathematical_formulation_of_quantum_mechanics",
@@ -759,13 +759,6 @@
       "branch": "fields",
       "status": "topic_specific",
       "path": "discoveries/morphwiki_quantum/derivation_pages/spin_foam.md"
-    },
-    {
-      "slug": "quantum_cosmology",
-      "title": "Quantum cosmology",
-      "branch": "fields",
-      "status": "core_derived",
-      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_cosmology.md"
     },
     {
       "slug": "string_theory",

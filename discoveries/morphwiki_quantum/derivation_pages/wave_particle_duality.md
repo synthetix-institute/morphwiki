@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Wave–particle duality is a many-mode field or particle-realization role in the compact quantum constructor. In this tree, wave–particle duality supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+Wave–particle duality can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Wave–particle duality contributes a many-mode field or particle-realization role. The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and readouts are occupation, charge, spin, momentum, energy, or scattering response. In the states step, at this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, wave–particle duality is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through probability amplitude or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Wave–particle duality contributes a many-mode field or particle-realization role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
-- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
-- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
-- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
-- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
+- **Carrier or domain:** State terms: probability amplitude. Context/domain terms: potential and detector.
+- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

@@ -6,21 +6,21 @@
 
 ## Role In The Derivation
 
-Eigenvalues and eigenvectors is a broad quantum constructor role in the compact quantum constructor. In this tree, eigenvalues and eigenvectors belongs to the question step: it turns a physical question into an operator with admissible answers.
+An eigenvalues and eigenvectors can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
 ## Mechanism
 
-Operationally, Eigenvalues and eigenvectors contributes a broad quantum constructor role. The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer. In the observables step, the constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+In quantum-mechanical terms, an eigenvalues and eigenvectors is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or Hamiltonian, and eigenvalue or eigenstate. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Eigenvalues and eigenvectors contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Eigenvalues and eigenvectors contributes a topic-native constructor role to the quantum construction.
 - **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: basis, domain, or context.
+- **Operator or map:** Operator terms: matrix. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
+- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
+- **Readout:** Readout terms: eigenvalue. These name the outcome labels, projectors, amplitudes, or records used for testing.
+- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 
 ## Topic Equations
 

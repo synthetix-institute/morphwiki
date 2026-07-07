@@ -14,7 +14,7 @@ The page supplies the general quantum assembly. A preparation gives a state vect
 
 ## Quantum Mechanism Frame
 
-- **Role:** Quantum mechanics contributes a broad quantum constructor role to the quantum construction.
+- **Role:** Quantum mechanics contributes an unresolved constructor role to the quantum construction.
 - **Placement:** This page is read first as a lawful-transport move: it identifies what changes the state before readout.
 - **Carrier or domain:** A context-selected state space or effective carrier for prediction.
 - **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
@@ -24,11 +24,13 @@ The page supplies the general quantum assembly. A preparation gives a state vect
 
 ## Topic Equations
 
+Topic-specific constructor: the equations express state admissibility, spectral readout, unitary evolution, and incompatibility.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\rho\ge 0,\qquad \operatorname{Tr}\rho=1
+A=\sum_a aP_a,\qquad p(a)=\operatorname{Tr}(\rho P_a)
+\rho(t)=U(t)\rho(0)U(t)^\dagger,\qquad U(t)=e^{-iHt/\hbar}
+[A,B]\ne0\quad\Rightarrow\quad \text{no generic common sharp eigenbasis}
 ```
 
 ## What Remains Stable

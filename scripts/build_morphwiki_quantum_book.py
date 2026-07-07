@@ -80,7 +80,7 @@ def topic_family(slug: str, title: str) -> str:
         return "compatibility"
     if any(term in text for term in ("circuit", "algorithm", "channel", "logic gate", "network", "cryptography", "error correction", "computing", "programming", "sensor")):
         return "protocol"
-    if any(term in text for term in ("gravity", "geometry", "spacetime", "spin foam", "spin network", "ads", "holograph", "string")):
+    if any(term in text for term in ("gravity", "geometry", "spacetime", "cosmology", "spin foam", "spin network", "ads", "holograph", "string")):
         return "geometry_boundary"
     if any(term in text for term in ("hamiltonian", "schr", "dirac", "klein", "path integral", "unitary", "dynamics", "evolution")):
         return "generator"
@@ -145,9 +145,9 @@ FAMILY_NATIVE_LANGUAGE: Dict[str, Dict[str, str]] = {
         "equation": r"\ket{\psi}\in\mathcal H,\quad \rho\ge0,\quad \operatorname{Tr}\rho=1,\quad p_i=\operatorname{Tr}(\rho P_i)",
     },
     "general_quantum": {
-        "role": "broad quantum constructor role",
-        "known": "The mechanism is read through the shared quantum constructor: state carrier, legal transformation, readout, compatibility condition, and realization layer.",
-        "missing": "A completed page must name the state carrier, operator or map, admissibility condition, readout, compatibility test, and falsifier.",
+        "role": "unresolved constructor role",
+        "known": "The page has enough evidence to be placed in the quantum tree, but its source record does not yet identify a topic-native carrier, transformation, readout, compatibility condition, and falsifier.",
+        "missing": "A completed page must name the state carrier, operator or map, admissibility condition, readout, compatibility test, and falsifier before a mechanism claim is made.",
         "equation": r"C\mapsto(\mathcal H_C,\mathcal D_C),\quad \rho\mapsto U\rho U^\dagger,\quad A=\int\lambda\,dE_A(\lambda)",
     },
     "open_system": {
@@ -254,7 +254,80 @@ BRANCH_FRAME_FOCUS: Dict[str, str] = {
 }
 
 
-def quantum_mechanism_frame_rows(title: str, branch_id: str, row: Mapping[str, Any]) -> List[tuple[str, str]]:
+def first_sentence(value: Any, limit: int = 420) -> str:
+    text = clean_text(value, limit)
+    if not text:
+        return ""
+    match = re.search(r"(.+?[.!?])(?:\s|$)", text)
+    return match.group(1).strip() if match else text
+
+
+def terms_text(values: Any, fallback: str = "not specified in the page artifact") -> str:
+    if isinstance(values, str):
+        terms = [values]
+    else:
+        terms = [str(item) for item in (values or []) if str(item).strip()]
+    if not terms:
+        return fallback
+    if len(terms) == 1:
+        return terms[0]
+    if len(terms) == 2:
+        return f"{terms[0]} and {terms[1]}"
+    return ", ".join(terms[:-1]) + f", or {terms[-1]}"
+
+
+def page_native_constructor_available(mw: Mapping[str, Any]) -> bool:
+    return bool(
+        clean_text(mw.get("mechanism_view"))
+        or clean_text(mw.get("takeaway"))
+        or mw.get("conversion_form")
+        or mw.get("grammar")
+        or clean_text(mw.get("mathematical_skeleton"))
+    )
+
+
+def page_native_mechanism_frame_rows(
+    title: str,
+    branch_id: str,
+    row: Mapping[str, Any],
+    mw: Mapping[str, Any],
+) -> Optional[List[tuple[str, str]]]:
+    if not page_native_constructor_available(mw):
+        return None
+    grammar = mw.get("grammar") or {}
+    missing = [public_book_text(item) for item in (mw.get("missing_experiments") or []) if clean_text(item)]
+    claim_boundary = public_book_text(mw.get("claim_boundary"))
+    display = page_display_name(title)
+    role = "topic-native constructor role"
+    family_key = topic_family(str(row.get("slug") or ""), title)
+    if family_key != "general_quantum":
+        role = FAMILY_NATIVE_LANGUAGE[family_key]["role"]
+    carrier_terms = terms_text(grammar.get("state"))
+    boundary_terms = terms_text(grammar.get("boundary"))
+    operator_terms = terms_text(grammar.get("operator"))
+    protocol_terms = terms_text(grammar.get("protocol"))
+    spectrum_terms = terms_text(grammar.get("spectrum"))
+    compatibility_terms = terms_text(grammar.get("incompatibility"))
+    check = missing[0] if missing else claim_boundary
+    if not check:
+        check = "The page assignment remains a constructor hypothesis until checked against source equations and controls."
+    return [
+        ("Role", f"{display} contributes {indefinite_article(role)} {role} to the quantum construction."),
+        ("Placement", BRANCH_FRAME_FOCUS.get(branch_id, BRANCH_FRAME_FOCUS["annotations"])),
+        ("Carrier or domain", f"State terms: {carrier_terms}. Context/domain terms: {boundary_terms}."),
+        ("Operator or map", f"Operator terms: {operator_terms}. Protocol or update terms: {protocol_terms}."),
+        ("Admissibility", f"Compatibility or closure terms: {compatibility_terms}. These determine which questions, states, or updates are legal."),
+        ("Readout", f"Readout terms: {spectrum_terms}. These name the outcome labels, projectors, amplitudes, or records used for testing."),
+        ("Check", check),
+    ]
+
+
+def quantum_mechanism_frame_rows(
+    title: str,
+    branch_id: str,
+    row: Mapping[str, Any],
+    mw: Optional[Mapping[str, Any]] = None,
+) -> List[tuple[str, str]]:
     """Return a public quantum-language mechanism frame for a page.
 
     This is the public translation of the internal mechanism grammar.  It uses
@@ -262,9 +335,13 @@ def quantum_mechanism_frame_rows(title: str, branch_id: str, row: Mapping[str, A
     symbols are intentionally not emitted into the book.
     """
     slug = str(row.get("slug") or "")
+    if slug not in TOPIC_CONSTRUCTOR_OVERRIDES:
+        native = page_native_mechanism_frame_rows(title, branch_id, row, mw or {})
+        if native:
+            return native
     family_key = topic_family(slug, title)
     family = FAMILY_NATIVE_LANGUAGE[family_key]
-    frame = FAMILY_MECHANISM_FRAMES.get(family_key, FAMILY_MECHANISM_FRAMES["general_quantum"])
+    frame = TOPIC_FRAME_OVERRIDES.get(slug) or FAMILY_MECHANISM_FRAMES.get(family_key, FAMILY_MECHANISM_FRAMES["general_quantum"])
     return [
         ("Role", f"{page_display_name(title)} contributes {indefinite_article(family['role'])} {family['role']} to the quantum construction."),
         ("Placement", BRANCH_FRAME_FOCUS.get(branch_id, BRANCH_FRAME_FOCUS["annotations"])),
@@ -276,17 +353,17 @@ def quantum_mechanism_frame_rows(title: str, branch_id: str, row: Mapping[str, A
     ]
 
 
-def quantum_mechanism_frame_block(title: str, branch_id: str, row: Mapping[str, Any]) -> str:
+def quantum_mechanism_frame_block(title: str, branch_id: str, row: Mapping[str, Any], mw: Optional[Mapping[str, Any]] = None) -> str:
     lines = [r"\subsection*{Quantum Mechanism Frame}", r"\begin{itemize}"]
-    for label, text in quantum_mechanism_frame_rows(title, branch_id, row):
+    for label, text in quantum_mechanism_frame_rows(title, branch_id, row, mw):
         lines.append(rf"\item \textbf{{{latex_escape(label)}}}. {latex_escape(text)}")
     lines.append(r"\end{itemize}")
     return "\n".join(lines)
 
 
-def markdown_mechanism_frame(title: str, branch_id: str, row: Mapping[str, Any]) -> str:
+def markdown_mechanism_frame(title: str, branch_id: str, row: Mapping[str, Any], mw: Optional[Mapping[str, Any]] = None) -> str:
     lines = ["## Quantum Mechanism Frame", ""]
-    for label, text in quantum_mechanism_frame_rows(title, branch_id, row):
+    for label, text in quantum_mechanism_frame_rows(title, branch_id, row, mw):
         lines.append(f"- **{label}:** {text}")
     lines.append("")
     return "\n".join(lines)
@@ -364,7 +441,9 @@ def public_book_text(value: Any, limit: Optional[int] = None) -> str:
         "A09-like geometry-free kernels": "geometry-free operator kernels",
         "A09-like": "geometry-free",
         "Hyperion": "source-equation",
+        "MorphWiki": "source-equation",
         "apparatus-route-fiber": "construction-role",
+        "shared quantum constructor": "page-native constructor",
         "366D page-coordinate export": "page-coordinate export",
         "366D": "high-dimensional",
         "but they need explicit topic reruns and typed equations": "They require explicit topic reruns and typed equations",
@@ -372,6 +451,30 @@ def public_book_text(value: Any, limit: Optional[int] = None) -> str:
     for old, new in replacements.items():
         text = text.replace(old, new)
     return text
+
+
+def is_generic_native_constructor_text(value: str) -> bool:
+    """Detect imported constructor text that is too broad for a topic page."""
+    lowered = clean_text(value).lower()
+    if not lowered:
+        return True
+    if "read through the compact quantum constructor" in lowered and len(lowered.split()) < 28:
+        return True
+    if "available language supplies" in lowered and "mechanism should be completed" in lowered:
+        return True
+    markers = [
+        "read through the compact quantum constructor",
+        "mechanism should be completed by naming",
+        "state terms such as",
+        "operator terms such as",
+        "spectral terms such as",
+        "constructor role",
+        "placed by route/fiber evidence",
+        "public morphwiki export",
+        "complete mechanism names",
+    ]
+    hits = sum(1 for marker in markers if marker in lowered)
+    return hits >= 2
 
 
 def clean_math_skeleton(value: Any) -> List[str]:
@@ -1052,6 +1155,31 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
 )
 
 
+TOPIC_FRAME_OVERRIDES: Dict[str, Dict[str, str]] = {
+    "hilbert_space": {
+        "carrier": "A complex Hilbert space, or a density-operator state space built on it.",
+        "operator": "Self-adjoint observables, unitary maps, spectral projectors, and domain-restricted generators defined on the carrier.",
+        "admissibility": "Inner-product structure, normalization, positivity for density states, and operator-domain conditions make states and observables legal.",
+        "readout": "Born probabilities, spectral projectors, expectation values, and preserved norms.",
+        "test": "Changing basis or representation should preserve probabilities and expectation values when the change is unitary.",
+    },
+    "commutator": {
+        "carrier": "A common state space on which two transformations, observables, or questions are both defined.",
+        "operator": "The ordered products AB and BA, compared through the obstruction [A,B]=AB-BA.",
+        "admissibility": "A nonzero commutator marks an order-dependence or compatibility limit; a zero commutator permits a common sharp refinement only when the remaining spectral conditions hold.",
+        "readout": "Compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.",
+        "test": "The mechanism is supported only when changing operator order changes the algebraic or statistical prediction.",
+    },
+    "quantum_channel": {
+        "carrier": "Input and output density operators, possibly on different Hilbert spaces or subsystem carriers.",
+        "operator": "A completely positive trace-preserving map, often represented by Kraus operators or by a Stinespring dilation.",
+        "admissibility": "Complete positivity and trace preservation are the legal conditions; non-trace-preserving maps require an explicitly conditioned outcome.",
+        "readout": "Output state, final POVM probabilities, fidelity, capacity, error rate, or recovered subsystem statistics.",
+        "test": "The channel claim requires a map that stays positive under extension by an untouched reference system and preserves total probability.",
+    },
+}
+
+
 def page_display_name(title: str) -> str:
     clean = clean_text(title)
     special = {
@@ -1151,7 +1279,13 @@ def top_constructor_index(evidence: Sequence[Mapping[str, Any]], hyperion: Mappi
     }
 
 
-def constructor_text(title: str, branch_id: str, row: Mapping[str, Any], hyperion: Mapping[str, Any]) -> Dict[str, str]:
+def constructor_text(
+    title: str,
+    branch_id: str,
+    row: Mapping[str, Any],
+    hyperion: Mapping[str, Any],
+    mw: Optional[Mapping[str, Any]] = None,
+) -> Dict[str, str]:
     template = constructor_template(branch_id, row)
     slug = str(row.get("slug") or "")
     display = page_display_name(title)
@@ -1159,25 +1293,71 @@ def constructor_text(title: str, branch_id: str, row: Mapping[str, Any], hyperio
     fiber_terms = ranked_keys(hyperion.get("fiber_profile") or {}, FIBER_PUBLIC, 3)
     route_sentence = ", ".join(route_terms) if route_terms else "no dominant public route"
     fiber_sentence = ", ".join(fiber_terms) if fiber_terms else "no dominant public fiber"
-    if slug not in TOPIC_CONSTRUCTOR_OVERRIDES:
+    mw = mw or {}
+    native_reading = public_book_text(mw.get("mechanism_view"))
+    native_claim = public_book_text(mw.get("takeaway"))
+    generic_native = is_generic_native_constructor_text(native_reading) or is_generic_native_constructor_text(native_claim)
+    source_specific = bool(
+        mw.get("mathematical_skeleton_is_source_backed")
+        or mw.get("mathematical_skeleton_is_topic_native")
+        or clean_math_skeleton(mw.get("mathematical_skeleton"))
+        or (mw.get("grammar") or {})
+    )
+    weak_claim = (
+        not native_claim
+        or "placed by route/fiber evidence" in native_claim.lower()
+        or "complete mechanism names" in native_claim.lower()
+        or "read through the compact quantum constructor" in native_claim.lower()
+    )
+    if slug in TOPIC_CONSTRUCTOR_OVERRIDES:
+        claim = template["claim"].format(title=display)
+        reading = template["reading"].format(title=display)
+    elif native_reading and not generic_native:
+        if weak_claim:
+            native_claim = first_sentence(native_reading, 520)
+        claim = native_claim or first_sentence(native_reading, 520)
+        reading = native_reading
+    elif source_specific:
+        family = FAMILY_NATIVE_LANGUAGE[topic_family(slug, title)]
+        frame_rows = quantum_mechanism_frame_rows(title, branch_id, row, mw)
+        frame = {key: value for key, value in frame_rows}
+        skeleton_count = len(clean_math_skeleton(mw.get("mathematical_skeleton")))
+        skeleton_phrase = (
+            f" and {skeleton_count} equation skeleton line"
+            + ("" if skeleton_count == 1 else "s")
+            if skeleton_count
+            else ""
+        )
+        claim = (
+            f"{display} is read as {indefinite_article(family['role'])} {family['role']} because the page artifact supplies "
+            f"topic-native constructor evidence{skeleton_phrase}, not merely a branch label."
+        )
+        reading = (
+            f"{display} is treated as a page-specific constructor placement in the {branch_id.replace('_', ' ')} step. "
+            f"Its source-backed frame identifies the carrier or domain as: {frame.get('Carrier or domain', 'not specified')}. "
+            f"The operator or map evidence is: {frame.get('Operator or map', 'not specified')}. "
+            f"The admissibility condition is: {frame.get('Admissibility', 'not specified')}. "
+            f"The readout evidence is: {frame.get('Readout', 'not specified')}. "
+            f"This makes the page usable as a constructor node, while still requiring source-equation checks before it is read as a completed derivation."
+        )
+    else:
         family = FAMILY_NATIVE_LANGUAGE[topic_family(slug, title)]
         branch_role = BRANCH_CONSTRUCTOR.get(branch_id, BRANCH_CONSTRUCTOR["annotations"])
         branch_claim = branch_role["claim"].format(title=display)
-        branch_reading = branch_role["reading"].format(title=display)
         branch_name = branch_id.replace("_", " ")
+        frame = TOPIC_FRAME_OVERRIDES.get(slug) or FAMILY_MECHANISM_FRAMES.get(topic_family(slug, title), FAMILY_MECHANISM_FRAMES["general_quantum"])
         claim = (
-            f"{display} is {indefinite_article(family['role'])} {family['role']} in the compact quantum constructor. "
+            f"{display} is {indefinite_article(family['role'])} {family['role']} in this quantum mechanism tree. "
             f"In this tree, {branch_claim[:1].lower() + branch_claim[1:]}"
         )
         reading = (
-            f"Operationally, {display} contributes {indefinite_article(family['role'])} {family['role']}. "
-            f"{family['known']} "
-            f"In the {branch_name} step, "
-            f"{branch_reading[:1].lower() + branch_reading[1:]}"
+            f"Operationally, {display} is treated as {indefinite_article(family['role'])} {family['role']} in the {branch_name} step. "
+            f"The page is placed here because its evidence profile asks for {route_sentence} on a carrier signalled by {fiber_sentence}. "
+            f"For this placement to become a topic-level derivation, the page must identify a carrier or domain ({frame['carrier']}), "
+            f"an operator or map ({frame['operator']}), an admissibility condition ({frame['admissibility']}), "
+            f"and a readout ({frame['readout']}). "
+            f"{family['known']}"
         )
-    else:
-        claim = template["claim"].format(title=display)
-        reading = template["reading"].format(title=display)
     reading += (
         f" In the source-evidence profile for this page, the strongest construction signal is {route_sentence}; "
         f"the strongest carrier signal is {fiber_sentence}."
@@ -1195,10 +1375,40 @@ def constructor_block(
     row: Mapping[str, Any],
     hyperion: Mapping[str, Any],
     evidence: Sequence[Mapping[str, Any]],
+    mw: Optional[Mapping[str, Any]] = None,
 ) -> str:
     template = constructor_template(branch_id, row)
     slug = str(row.get("slug") or "")
-    if slug not in TOPIC_CONSTRUCTOR_OVERRIDES:
+    mw = mw or {}
+    if slug in TOPIC_CONSTRUCTOR_OVERRIDES:
+        if not template.get("equation_note"):
+            return ""
+        lines = [
+            r"\subsection*{Topic Equations}",
+            latex_escape(
+                str(
+                    template.get("equation_note")
+                    or (
+                        "Role-level skeleton: this is a conservative mechanism equation for the page's branch, not a claim that every cited paper writes the equation in this notation."
+                    )
+                )
+            ),
+            r"\begin{align*}",
+        ]
+        equations = list(template["equations"])
+        for idx, equation in enumerate(equations):
+            suffix = r"\\" if idx < len(equations) - 1 else ""
+            lines.append(equation + suffix)
+        lines.append(r"\end{align*}")
+        return "\n".join(lines)
+    conversion = [public_book_text(item) for item in (mw.get("conversion_form") or []) if clean_text(item)]
+    if conversion:
+        rows = [r"\subsection*{Constructor Obligations}", r"\begin{itemize}"]
+        for item in conversion[:6]:
+            rows.append(r"\item " + latex_escape(item))
+        rows.append(r"\end{itemize}")
+        return "\n".join(rows)
+    else:
         family = FAMILY_NATIVE_LANGUAGE[topic_family(slug, title)]
         lines = [
             r"\subsection*{Core-Derived Role Equations}",
@@ -1210,26 +1420,6 @@ def constructor_block(
             r"\end{align*}",
         ]
         return "\n".join(lines)
-    if not template.get("equation_note"):
-        return ""
-    lines = [
-        r"\subsection*{Role-Level Equations}",
-        latex_escape(
-            str(
-                template.get("equation_note")
-                or (
-                    "Role-level skeleton: this is a conservative mechanism equation for the page's branch, not a claim that every cited paper writes the equation in this notation."
-                )
-            )
-        ),
-        r"\begin{align*}",
-    ]
-    equations = list(template["equations"])
-    for idx, equation in enumerate(equations):
-        suffix = r"\\" if idx < len(equations) - 1 else ""
-        lines.append(equation + suffix)
-    lines.append(r"\end{align*}")
-    return "\n".join(lines)
 
 
 def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str], List[str], List[str]]:
@@ -1439,9 +1629,9 @@ def support_lists_for_page(
         ]
         return (stable[:4], variable[:4], falsifiers[:3])
 
-    survives = [clean_text(item, 240) for item in (mw.get("what_survives") or []) if clean_text(item)]
-    changes = [clean_text(item, 240) for item in (mw.get("what_changes") or []) if clean_text(item)]
-    tests = [clean_text(item, 260) for item in (mw.get("missing_experiments") or []) if clean_text(item)]
+    survives = [public_book_text(item, 240) for item in (mw.get("what_survives") or []) if clean_text(item)]
+    changes = [public_book_text(item, 240) for item in (mw.get("what_changes") or []) if clean_text(item)]
+    tests = [public_book_text(item, 260) for item in (mw.get("missing_experiments") or []) if clean_text(item)]
     unresolved_markers = (
         "future constructor",
         "does not yet",
@@ -2155,11 +2345,12 @@ def validation_layers_chapter(root: Path) -> str:
         )
     lines.append(r"\end{itemize}")
 
-    lines.extend([r"\section{Gromov-Wasserstein Layer (GW): What Can Be Translated}"])
+    lines.extend([r"\section{Legacy GW Control: Candidate Structural Bridges}"])
     lines.append(
         latex_escape(
-            "The Gromov-Wasserstein layer is an analogy layer, but not semantic analogy. It asks whether two equation neighborhoods have compatible relational geometry. "
-            "For the mechanism tree, this means that a concept transfers when it preserves a role: context, state carrier, generator, spectral question, readout, compatibility limit, boundary realization, field extension, or protocol."
+            "The Gromov-Wasserstein layer is retained here as a legacy structural-bridge control. It is not the current translation mechanism for the V2 constructor. "
+            "The current translation evidence is the typed transfer graph, bridge-family candidates, source-local transitions, and source-equation validation. "
+            "GW remains useful only as a conservative check that two neighborhoods have compatible relational form."
         )
     )
     lines.append(r"\begin{itemize}")
@@ -2183,7 +2374,7 @@ def validation_layers_chapter(root: Path) -> str:
     lines.append(
         r"\item "
         + latex_escape(
-            "The practical reading is conservative: Gromov-Wasserstein can nominate a bridge, but source equations, directed transitions, and residual checks decide whether it becomes useful."
+            "The practical reading is conservative: GW can nominate a legacy bridge candidate; typed transfer edges, directed source transitions, source equations, and residual checks decide whether it becomes useful."
         )
     )
     lines.append(r"\end{itemize}")
@@ -2433,7 +2624,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     evidence = top_evidence(page, 5)
     title = page_title(page)
     constructed = has_topic_constructor(page, str(row.get("slug") or ""))
-    constructor = constructor_text(title, branch_id, row, hyperion)
+    constructor = constructor_text(title, branch_id, row, hyperion, mw)
     claim = constructor["claim"]
     mechanism = constructor["reading"]
     survives, changes, tests = support_lists_for_page(page, row, branch_id, constructed)
@@ -2465,14 +2656,15 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines.append(r"\subsection*{Mechanism Reading}")
     lines.append(latex_escape(clean_text(mechanism, 1200)))
     lines.append("")
-    lines.append(quantum_mechanism_frame_block(title, branch_id, row))
+    lines.append(quantum_mechanism_frame_block(title, branch_id, row, mw))
     lines.append("")
-    topic_equations = math_skeleton_block(mw.get("mathematical_skeleton"))
+    slug = str(row.get("slug") or "")
+    topic_equations = "" if slug in TOPIC_CONSTRUCTOR_OVERRIDES else math_skeleton_block(mw.get("mathematical_skeleton"))
     if topic_equations:
         lines.append(topic_equations)
         lines.append("")
     else:
-        block = constructor_block(title, branch_id, row, hyperion, evidence)
+        block = constructor_block(title, branch_id, row, hyperion, evidence, mw)
         if block:
             lines.append(block)
             lines.append("")
@@ -2537,7 +2729,7 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
     title = page_title(page)
     evidence = top_evidence(page, 6)
     constructed = has_topic_constructor(page, str(row.get("slug") or ""))
-    constructor = constructor_text(title, branch_id, row, hyperion)
+    constructor = constructor_text(title, branch_id, row, hyperion, mw)
     status = page_mechanism_status(page, str(row.get("slug") or ""))
     lines = [
         f"# {title}",
@@ -2559,19 +2751,39 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
             "",
         ]
     )
-    lines.append(markdown_mechanism_frame(title, branch_id, row))
-    eq = markdown_equations(mw.get("mathematical_skeleton"))
+    lines.append(markdown_mechanism_frame(title, branch_id, row, mw))
+    slug = str(row.get("slug") or "")
+    eq = "" if slug in TOPIC_CONSTRUCTOR_OVERRIDES else markdown_equations(mw.get("mathematical_skeleton"))
     if eq:
         lines.append(eq)
     else:
-        template = constructor_template(branch_id, row)
-        slug = str(row.get("slug") or "")
-        equations = template.get("equations") or []
-        if slug not in TOPIC_CONSTRUCTOR_OVERRIDES:
-            equations = [FAMILY_NATIVE_LANGUAGE[topic_family(slug, title)]["equation"]]
-        if equations:
-            heading = "Topic Equations" if constructed else "Core-Derived Role Equations"
-            lines.extend(["## " + heading, "", "```math", "\n".join(equations), "```", ""])
+        conversion = [public_book_text(item) for item in (mw.get("conversion_form") or []) if clean_text(item)]
+        if slug in TOPIC_CONSTRUCTOR_OVERRIDES:
+            template = constructor_template(branch_id, row)
+            equations = template.get("equations") or []
+            if equations:
+                lines.extend(
+                    [
+                        "## Topic Equations",
+                        "",
+                        str(template.get("equation_note") or "Topic-specific constructor skeleton."),
+                        "",
+                        "```math",
+                        "\n".join(equations),
+                        "```",
+                        "",
+                    ]
+                )
+        elif conversion:
+            lines.extend(["## Constructor Obligations", "", *[f"- {item}" for item in conversion[:6]], ""])
+        else:
+            template = constructor_template(branch_id, row)
+            equations = template.get("equations") or []
+            if slug not in TOPIC_CONSTRUCTOR_OVERRIDES:
+                equations = [FAMILY_NATIVE_LANGUAGE[topic_family(slug, title)]["equation"]]
+            if equations:
+                heading = "Topic Equations" if constructed else "Core-Derived Role Equations"
+                lines.extend(["## " + heading, "", "```math", "\n".join(equations), "```", ""])
     survives, changes, tests = support_lists_for_page(page, row, branch_id, constructed)
     if survives:
         lines.extend(["## What Remains Stable", "", *[f"- {item}" for item in survives[:4]], ""])
@@ -3046,17 +3258,16 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
         lines.append(r"\end{itemize}")
     lines.extend(
         [
-            r"\section*{Relation To Lagrangian, Gromov-Wasserstein, And Noether Layers}",
-            r"\addcontentsline{toc}{section}{Relation To Lagrangian, Gromov-Wasserstein, And Noether Layers}",
+            r"\section*{Relation To Lagrangian, Transfer, And Stability Layers}",
+            r"\addcontentsline{toc}{section}{Relation To Lagrangian, Transfer, And Stability Layers}",
         ]
     )
     lines.append(
         latex_escape(
-            "The later validation chapter explains how three global evidence layers check this tree. Noether-style tests ask "
-            "which part of a formalism remains the same after a rewrite. Gromov-Wasserstein neighborhoods ask which formulations are structurally "
-            "near enough to translate. The learned Lagrangian asks whether a proposed move through the atlas is a low-resistance "
-            "continuation, a strained bridge, or a void-boundary target. In ordinary quantum language: the invariant is mostly "
-            "operator/structural role, while geometry, boundary, and representation are where the role becomes embodied."
+            "The later validation chapter explains how the global evidence layers check this tree. Stability tests ask "
+            "which part of a formalism remains the same after a rewrite. Typed transfer and bridge-family layers ask which constructor roles can move between contexts. "
+            "The Lagrangian navigation layer asks whether a proposed move through the atlas is a low-resistance continuation, a strained bridge, or a void-boundary target. "
+            "In ordinary quantum language: the invariant is mostly operator/structural role, while geometry, boundary, and representation are where the role becomes embodied."
         )
     )
     lines.extend(
@@ -3356,8 +3567,6 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         r"{\Huge\bfseries Quantum Theory\par}",
         r"\vspace{0.12cm}",
         r"{\Huge\bfseries As A Mechanism Tree\par}",
-            r"\vspace{0.45cm}",
-        r"{\Large A MorphWiki mechanism synthesis\par}",
             r"\vspace{1.2cm}",
             r"{\large Synthetix Institute\par}",
             rf"{{\large Generated {latex_escape(generated)}\par}}",
