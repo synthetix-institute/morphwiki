@@ -12,6 +12,32 @@ if [[ -z "$PYTHON_BIN" ]]; then
   fi
 fi
 
+
+BUILD_V2_EVIDENCE_INDEX="${MORPHWIKI_BUILD_V2_EVIDENCE_INDEX:-auto}"
+if [[ -n "${MORPHWIKI_V2_ROOT:-}" ]]; then
+  V2_ROOT="$MORPHWIKI_V2_ROOT"
+elif [[ -d "../tm" ]]; then
+  V2_ROOT="../tm"
+elif [[ -d "../goidanich/tm" ]]; then
+  V2_ROOT="../goidanich/tm"
+else
+  V2_ROOT=""
+fi
+if [[ "$BUILD_V2_EVIDENCE_INDEX" != "0" && "$BUILD_V2_EVIDENCE_INDEX" != "false" && -n "$V2_ROOT" && -d "$V2_ROOT" ]]; then
+  export MORPHWIKI_V2_EVIDENCE_INDEX_JSON="${MORPHWIKI_V2_EVIDENCE_INDEX_JSON:-$ROOT/v2_quantum_evidence_index.json}"
+  echo "[MorphWiki] building V2 evidence index from $V2_ROOT"
+  "$PYTHON_BIN" -B scripts/build_morphwiki_v2_quantum_evidence_index.py \
+    --root "$ROOT" \
+    --v2-root "$V2_ROOT" \
+    --out-json "$MORPHWIKI_V2_EVIDENCE_INDEX_JSON" \
+    --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_MD:-$ROOT/v2_quantum_evidence_index.md}"
+  "$PYTHON_BIN" -B scripts/audit_morphwiki_v2_quantum_evidence_index.py \
+    --index "$MORPHWIKI_V2_EVIDENCE_INDEX_JSON" \
+    --tree "$ROOT/quantum_mechanism_tree.json" \
+    --out-json "${MORPHWIKI_V2_EVIDENCE_INDEX_AUDIT_JSON:-$ROOT/v2_quantum_evidence_index_audit.json}" \
+    --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_AUDIT_MD:-$ROOT/v2_quantum_evidence_index_audit.md}"
+fi
+
 echo "[MorphWiki] building mechanism tree"
 tree_args=()
 if [[ -n "${MORPHWIKI_V2_LANGUAGE_JSON:-}" ]]; then
@@ -22,6 +48,9 @@ if [[ -n "${MORPHWIKI_V2_GRAMMAR_RULES_JSON:-}" ]]; then
 fi
 if [[ -n "${MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON:-}" ]]; then
   tree_args+=(--v2-source-examples-json "$MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON")
+fi
+if [[ -n "${MORPHWIKI_V2_EVIDENCE_INDEX_JSON:-}" ]]; then
+  tree_args+=(--v2-evidence-index-json "$MORPHWIKI_V2_EVIDENCE_INDEX_JSON")
 fi
 if ((${#tree_args[@]})); then
   "$PYTHON_BIN" -B scripts/build_morphwiki_quantum_tree.py \

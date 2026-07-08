@@ -347,6 +347,52 @@ def v2_language_context(
     }
 
 
+
+def v2_evidence_index_context(root: Path, evidence_index_json: str = "") -> Dict[str, Any]:
+    """Load optional page-level V2 evidence index as a private routing layer."""
+
+    index_path = first_existing_path(
+        evidence_index_json,
+        os.environ.get("MORPHWIKI_V2_EVIDENCE_INDEX_JSON"),
+        root / "v2_quantum_evidence_index.json",
+    )
+    index = load_optional_json(index_path)
+    if not index:
+        return {
+            "available": False,
+            "reason": "No page-level V2 evidence index was supplied.",
+            "expected_files": ["v2_quantum_evidence_index.json"],
+        }
+    return {
+        "available": True,
+        "source_file": index_path,
+        "readiness": index.get("readiness"),
+        "coverage": index.get("coverage") or {},
+        "pages": index.get("pages") or {},
+        "claim_boundary": index.get("claim_scope") or "Evidence index only; not physical validation.",
+    }
+
+
+def v2_page_evidence_summary(slug: str, evidence_index: Mapping[str, Any]) -> Dict[str, Any]:
+    if not evidence_index.get("available"):
+        return {"available": False, "status": "no_v2_index"}
+    page = ((evidence_index.get("pages") or {}).get(slug) or {})
+    if not page:
+        return {"available": False, "status": "page_not_in_v2_index"}
+    examples = page.get("source_examples") or []
+    return {
+        "available": page.get("status") == "v2_source_grounded",
+        "status": page.get("status"),
+        "matched_source_examples": page.get("matched_source_examples", 0),
+        "matched_alignment_records": page.get("matched_alignment_records", 0),
+        "matched_v2_row_count": len(page.get("matched_v2_row_ids") or []),
+        "tokens": dict(list((page.get("tokens") or {}).items())[:12]),
+        "routes": dict(list((page.get("routes") or {}).items())[:8]),
+        "constructor_roles": dict(list((page.get("constructor_roles") or {}).items())[:8]),
+        "source_examples": examples[:3],
+        "claim_boundary": "Private V2 evidence summary for page grounding; not public explanatory text.",
+    }
+
 def words(*values: Any) -> Counter:
     text = " ".join(str(v or "") for v in values)
     tokens = re.findall(r"[A-Za-z][A-Za-z0-9_+-]{2,}", text.lower())
@@ -1110,10 +1156,12 @@ def build_report(
     v2_language_json: str = "",
     v2_grammar_rules_json: str = "",
     v2_source_examples_json: str = "",
+    v2_evidence_index_json: str = "",
 ) -> Dict[str, Any]:
     pages = load_pages(root)
     lagrangian_model = load_lagrangian_model(root)
     v2_context = v2_language_context(root, v2_language_json, v2_grammar_rules_json, v2_source_examples_json)
+    v2_evidence_index = v2_evidence_index_context(root, v2_evidence_index_json)
     assignments, page_rows = assign_pages(pages, lagrangian_model)
     stats = route_stats(pages)
     anomaly_rows = anomalies(pages, page_rows)
@@ -1121,11 +1169,16 @@ def build_report(
     branches = {}
     for branch_id in BRANCH_ORDER:
         branch = BRANCHES[branch_id]
+        branch_pages = []
+        for row in assignments[branch_id]:
+            row = dict(row)
+            row["v2_evidence"] = v2_page_evidence_summary(str(row.get("slug") or ""), v2_evidence_index)
+            branch_pages.append(row)
         branches[branch_id] = {
             "title": branch["title"],
             "definition": branch["definition"],
             "insight": insights[branch_id],
-            "pages": assignments[branch_id],
+            "pages": branch_pages,
         }
     report = {
         "schema_version": 1,
@@ -1158,6 +1211,12 @@ def build_report(
     }
     if os.environ.get("MORPHWIKI_EXPOSE_INTERNAL_METHOD", "").strip() == "1":
         report["hyperion_v2_language"] = v2_context
+        report["hyperion_v2_evidence_index"] = {
+            "available": v2_evidence_index.get("available"),
+            "source_file": v2_evidence_index.get("source_file"),
+            "readiness": v2_evidence_index.get("readiness"),
+            "coverage": v2_evidence_index.get("coverage") or {},
+        }
     return report
 
 
@@ -1169,6 +1228,7 @@ def main() -> None:
     parser.add_argument("--v2-language-json", default=os.environ.get("MORPHWIKI_V2_LANGUAGE_JSON", ""))
     parser.add_argument("--v2-grammar-rules-json", default=os.environ.get("MORPHWIKI_V2_GRAMMAR_RULES_JSON", ""))
     parser.add_argument("--v2-source-examples-json", default=os.environ.get("MORPHWIKI_V2_SOURCE_LANGUAGE_EXAMPLES_JSON", ""))
+    parser.add_argument("--v2-evidence-index-json", default=os.environ.get("MORPHWIKI_V2_EVIDENCE_INDEX_JSON", ""))
     args = parser.parse_args()
 
     root = Path(args.root)
@@ -1177,6 +1237,7 @@ def main() -> None:
         v2_language_json=args.v2_language_json,
         v2_grammar_rules_json=args.v2_grammar_rules_json,
         v2_source_examples_json=args.v2_source_examples_json,
+        v2_evidence_index_json=args.v2_evidence_index_json,
     )
     out_json = Path(args.out_json) if args.out_json else root / "quantum_mechanism_tree.json"
     out_md = Path(args.out_md) if args.out_md else root / "quantum_mechanism_tree.md"
