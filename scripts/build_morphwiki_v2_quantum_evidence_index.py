@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Mapping, Iterable
 
 ARXIV_RE = re.compile(r"(?:arxiv:\s*)?(?:(?P<old>[a-z][a-z-]+/[0-9]{7})|(?P<oldflat>[a-z][a-z-]+[0-9]{7})|(?P<new>[0-9]{4}\.[0-9]{4,5}))(?:v[0-9]+)?", re.I)
-TOKEN_RE = re.compile(r"(?:Ω|Ξ|A\*?|Α|Λ|T|Τ|Γ|J|Π)[0-9]{2,3}")
+TOKEN_RE = re.compile(r"(?:Ω|Ξ|Λ|T|Τ|Γ|J|Π)[0-9]{2,3}|(?:A\*?|Α)[0-9]{2}")
 ROLES = {"operator_apparatus","real_substrate_geometry","selector","selector_context","closure_constraints","readout_current","protocol_order"}
 ROUTES = {"transport_flow","spectral_operator","boundary_weak_form","constraint_closure","discrete_protocol","commutator_incompatibility","unclassified"}
 
