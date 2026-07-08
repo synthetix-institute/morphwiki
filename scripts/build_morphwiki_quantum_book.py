@@ -3648,14 +3648,6 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
     lines.append(render_mechanism_guide(tree))
     lines.extend(
         [
-            r"\chapter*{Boundary Of The Claim}",
-            r"\addcontentsline{toc}{chapter}{Boundary Of The Claim}",
-            latex_escape(
-                "The book is a mechanism-indexed synthesis generated from Wikipedia topic scaffolds, MorphWiki mechanism "
-                "summaries, and ranked source-equation witness profiles. Its uses are reading, teaching, hypothesis generation, "
-                "and constructor-target selection. Formal derivation, domain review, and experimental validation are the "
-                "tests that promote a mechanism reading into a physical claim."
-            ),
             render_preamble(tree),
             r"\mainmatter",
             r"\part{The Mechanism Tree}",

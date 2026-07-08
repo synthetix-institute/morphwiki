@@ -1143,11 +1143,6 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     for lead in report["discovery_leads"]:
         lines.append(f"- {lead}")
     lines.append("")
-    lines.append("## Boundary")
-    lines.append(
-        "This tree is a mechanism-indexed synthesis from MorphWiki pages and ranked source-equation witness profiles. It supports reading, hypothesis generation, and constructor-target selection; formal derivation and experimental validation promote a proposed mechanism into a physical claim."
-    )
-    lines.append("")
     return "\n".join(lines)
 
 
