@@ -12,3 +12,5 @@ __pycache__/
 *.synctex.gz
 *.bbl
 *.blg
+# Large local V2 page-grounding transfer; keep out of git.
+discoveries/morphwiki_quantum/v2_language/*_source_card_alignment.jsonl
