@@ -2538,15 +2538,22 @@ def sparse_attention_results_chapter(root: Path) -> str:
         )
     )
 
-    lines.extend([r"\section{Hidden Rules}"])
+    regularity_ids = ["R01", "R02", "R03", "R04", "R05", "R06", "R12", "R22"]
+    rules_by_id = {str(rule.get("id")): rule for rule in hidden_rules}
+    regularities = [rules_by_id[rid] for rid in regularity_ids if rid in rules_by_id]
+    lines.extend([r"\section{Constructor Regularities}"])
     lines.append(
         latex_escape(
-            "The rules below are induced from the current sparse-attention export. They are not a fixed taxonomy: a rule is included only when a route, branch, title-token family, or page subset crosses a measurable threshold. Each rule therefore remains an artifact-level claim until the corresponding equations and controls are attached."
+            "The regularities below are the strongest reusable patterns in the sparse-attention export. "
+            "They are public reading rules for the quantum book, not internal diagnostics or a fixed ontology. "
+            "Title-token rules and other lexical artifacts are omitted here because they are useful for auditing but too weak for the main exposition."
         )
     )
-    for rule in hidden_rules:
-        lines.append(rf"\subsection{{{latex_escape(rule.get('id'))}. {latex_escape(hidden_rule_public_title(rule))}}}")
+    for rule in regularities:
+        lines.append(rf"\subsection{{{latex_escape(hidden_rule_public_title(rule))}}}")
         for label, text in hidden_rule_public_blocks(rule):
+            if label == "Use":
+                label = "Reading consequence"
             if label:
                 lines.append(rf"\paragraph{{{latex_escape(label)}.}} {latex_escape(text)}")
             else:
