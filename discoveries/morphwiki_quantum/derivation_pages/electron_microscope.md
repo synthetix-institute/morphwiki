@@ -42,7 +42,7 @@ Operationally, Electron microscope is organized by the relation between state te
 - Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed.
 - Detector implementation changes the physical realization, not the operator role itself.
 
-## Validation Boundary
+## Checks
 
 - Use this role by specifying the page's state carrier, operator or map, readout, and compatibility condition in its own quantum language.
 - Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal readout.

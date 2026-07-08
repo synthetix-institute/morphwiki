@@ -294,8 +294,7 @@ def render_md(report: Mapping[str, Any]) -> str:
     for slug, p in sorted((report.get('pages') or {}).items(), key=lambda it: (-int(it[1].get('matched_source_examples',0)), it[0])):
         if p.get('status') != 'v2_source_grounded': continue
         shown += 1; lines.append(f"### {p.get('title')} (`{slug}`)"); lines.append(f"- V2 source examples: `{p.get('matched_source_examples')}`; row ids: `{len(p.get('matched_v2_row_ids') or [])}`")
-        if p.get('tokens'): lines.append('- Tokens: ' + ', '.join(f"{k}:{v}" for k,v in list(p['tokens'].items())[:8]))
-        for ex in (p.get('source_examples') or [])[:3]: lines.append(f"- `{', '.join(ex.get('tokens') or [])}` {ex.get('equation_preview') or ''}")
+        for ex in (p.get('source_examples') or [])[:3]: lines.append(f"- {ex.get('equation_preview') or ''}")
         lines.append('')
         if shown >= 10: break
     if not shown:

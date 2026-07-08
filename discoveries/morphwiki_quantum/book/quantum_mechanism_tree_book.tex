@@ -56,7 +56,7 @@
 
 {\large Synthetix Institute\par}
 
-{\large Generated 2026-07-08 10:24 UTC\par}
+{\large Generated 2026-07-08 13:35 UTC\par}
 
 \vfill
 
@@ -591,35 +591,27 @@ The regularities below are the strongest reusable patterns in the sparse-attenti
 \subsection{Operator-to-spectrum as the readout spine}
 \paragraph{Reading.} The stable readout of a quantum construction is usually spectral.  A state becomes experimentally or mathematically predictive when an allowed operator question exposes eigenvalues, projectors, or a spectral measure.
 \paragraph{Reading consequence.} Introduce observables, self-adjointness, spectral projectors, and the Born rule as the common readout interface before presenting particles, fields, or protocols as separate subjects.
-\paragraph{Boundary.} The claim is role-specific: spectra are the most reusable readout layer in this export, while other roles supply state, evolution, context, and compatibility.
 \subsection{State transport as the carrier of change}
 \paragraph{Reading.} Quantum topics repeatedly require a lawful carrier of change: a state vector, density operator, field mode, or channel is propagated before it is read.
 \paragraph{Reading consequence.} Derive state evolution as the map between preparation and later readout, using unitary, semigroup, or channel language depending on whether the system is closed, open, or operational.
-\paragraph{Boundary.} Transport becomes meaningful after the admissible state space and the observable question have been specified.
 \subsection{Admissibility as the legal spine}
 \paragraph{Reading.} Closure and admissibility form the legal spine of the theory: states must be normalizable or positive, maps must preserve the allowed state set, and operators must have a domain on which the question is well-defined.
 \paragraph{Reading consequence.} Every derivation should state what makes the state, operator, map, or probability assignment legal before it discusses physical interpretation.
-\paragraph{Boundary.} Admissibility is the formal condition that prevents the same symbols from representing an illegal quantum construction.
 \subsection{Incompatibility as a selective limit}
 \paragraph{Reading.} Incompatibility is selective.  It becomes central when two questions, bases, or transformations cannot be made sharp at the same time.
 \paragraph{Reading consequence.} Use commutators, non-common eigenbases, Bell-type constraints, or contextuality tests only where the page is actually about jointly unavailable readouts.
-\paragraph{Boundary.} Use non-commutation where jointly unavailable readouts are the active mechanism; many topics are dominated by state evolution, spectra, or admissibility instead.
 \subsection{Context as the active boundary of the question}
 \paragraph{Reading.} Context is sometimes part of the law.  Preparation, boundary conditions, detector arrangement, basis choice, or representation can change which state and operator are admissible.
 \paragraph{Reading consequence.} When context is active, write the context before the state: specify the Hilbert space, domain, boundary, apparatus, or channel that makes the later spectral question meaningful.
-\paragraph{Boundary.} The mathematical question is defined only after its carrier and boundary conditions are fixed.
 \subsection{Protocol as ordered implementation}
 \paragraph{Reading.} Protocols are a sparse but real layer.  They become central when an ordered sequence of operations, measurements, controls, or updates determines what can be inferred.
 \paragraph{Reading consequence.} Place quantum algorithms, circuits, finite automata, Bell tests, and delayed-choice experiments in this layer: their content depends on operation order, not only on a static Hamiltonian.
-\paragraph{Boundary.} A protocol realizes the state, operator, readout, and compatibility machinery in an ordered experiment or computation.
 \subsection{Junction pages require decomposition}
 \paragraph{Reading.} Some pages are junctions rather than leaves.  EPR, wave function, delayed-choice eraser, entanglement, quantum biology, and similar topics join state, evolution, readout, boundary, protocol, and compatibility in one place.
 \paragraph{Reading consequence.} Such pages should be read as junctions of several formal roles: state carrier, transformation, readout, context, and compatibility condition. Their position marks where a single topic name covers more than one construction step.
-\paragraph{Boundary.} A junction signals that the page should be decomposed before it is used as an explanatory root.
 \subsection{Geometry enters as realization}
 \paragraph{Reading.} Geometry enters mainly through realization-heavy branches.  In this export, geometric language most often specifies boundary, field, context, or reconstruction layers rather than replacing the operator-spectral core.
 \paragraph{Reading consequence.} Introduce geometry when the theory needs a domain, boundary, metric, representation, field realization, or reconstruction map.  Keep the operator and admissibility structure visible underneath.
-\paragraph{Boundary.} Physical geometry supplies embodiment and boundary conditions; in the current artifacts it is less portable than the operator/readout machinery.
 \section{Topic-Specific Readings}
 \begin{itemize}
 \item \textbf{Particle}: In this reading, a particle is not the root unit. It is a stable field/mode/readout realization of the state-operator-spectrum constructor. Photon, electron, fermion, and boson do not share one identical route profile; 'particle' decomposes into spectral, boundary, closure, and statistics roles. Relevant pages: Boson, Fermion, Photon, Fock space, Creation and annihilation operators, Electron.
@@ -791,7 +783,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -856,7 +848,7 @@ A=A^\dagger,\qquad A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -919,7 +911,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -982,7 +974,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1045,7 +1037,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1108,7 +1100,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1171,7 +1163,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1285,7 +1277,7 @@ p(i)=\operatorname{Tr}(\rho P_i)\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1348,7 +1340,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1411,7 +1403,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1474,7 +1466,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1537,7 +1529,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1600,7 +1592,7 @@ Standard constructor skeleton: state representation, normalization, and expectat
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1663,7 +1655,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1726,7 +1718,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1789,7 +1781,7 @@ p(0)=|\langle0|\psi\rangle|^2,\qquad p(1)=|\langle1|\psi\rangle|^2
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1852,7 +1844,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1915,7 +1907,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -1978,7 +1970,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2041,7 +2033,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2104,7 +2096,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2167,7 +2159,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2230,7 +2222,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2293,7 +2285,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2356,7 +2348,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2419,7 +2411,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2482,7 +2474,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2545,7 +2537,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2608,7 +2600,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2671,7 +2663,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2734,7 +2726,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2845,7 +2837,7 @@ U^\dagger U=UU^\dagger=I\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2908,7 +2900,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -2971,7 +2963,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3033,7 +3025,7 @@ Z[J]=\int\mathcal D\phi\,\exp\!\left(\frac{i}{\hbar}(S[\phi]+\int J\phi)\right)
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3096,7 +3088,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3158,7 +3150,7 @@ K(x_f,t_f;x_i,t_i)=\int_{x_i}^{x_f}\mathcal D x(t)\,\exp\!\left(\frac{i}{\hbar}S
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3221,7 +3213,7 @@ U(t)=e^{-iHt/\hbar}\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3284,7 +3276,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3347,7 +3339,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3410,7 +3402,7 @@ N_i=a_i^\dagger a_i
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3473,7 +3465,7 @@ i\hbar\,\partial_t\ket{\psi(t)}=H\ket{\psi(t)}\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3536,7 +3528,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3599,7 +3591,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3662,7 +3654,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3725,7 +3717,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3789,7 +3781,7 @@ A=\sum_a aP_a,\qquad p(a)=\operatorname{Tr}(\rho P_a)\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3852,7 +3844,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3915,7 +3907,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -3978,7 +3970,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4041,7 +4033,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4104,7 +4096,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4167,7 +4159,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4266,7 +4258,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4329,7 +4321,7 @@ p(a_i)=\operatorname{Tr}(\rho P_i)
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4392,7 +4384,7 @@ A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4455,7 +4447,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4518,7 +4510,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4581,7 +4573,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4644,7 +4636,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4707,7 +4699,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4770,7 +4762,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4831,7 +4823,7 @@ This equation block is the branch-level quantum mechanism attached to the page b
 \item Detector implementation changes the physical realization, not the operator role itself.
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item Use this role by specifying the page's state carrier, operator or map, readout, and compatibility condition in its own quantum language.
 \item Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal readout.
@@ -4931,7 +4923,7 @@ E_i=\sum_\alpha K_{i\alpha}^\dagger K_{i\alpha}
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -4994,7 +4986,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5057,7 +5049,7 @@ p(x|\psi)=|\psi(x)|^2\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5120,7 +5112,7 @@ E_i=K_i^\dagger K_i
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5183,7 +5175,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5246,7 +5238,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5309,7 +5301,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5372,7 +5364,7 @@ p(i)=\operatorname{Tr}(\rho P_i)\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5435,7 +5427,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5498,7 +5490,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5592,7 +5584,7 @@ Standard constructor skeleton: CHSH inequality and quantum violation bound.
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5655,7 +5647,7 @@ Standard constructor skeleton: tensor composition, non-factorization, and reduce
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5718,7 +5710,7 @@ Standard constructor skeleton: order obstruction and canonical commutation.
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5780,7 +5772,7 @@ Standard constructor skeleton: variance bound from commutator structure.
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5843,7 +5835,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -5906,7 +5898,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6007,7 +5999,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6070,7 +6062,7 @@ E_n=\frac{\hbar^2\pi^2n^2}{2mL^2}
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6133,7 +6125,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6196,7 +6188,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6259,7 +6251,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6322,7 +6314,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6385,7 +6377,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6447,7 +6439,7 @@ T\sim \exp\!\left(-2\int_{x_1}^{x_2}\sqrt{\frac{2m(V(x)-E)}{\hbar^2}}\,dx\right)
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6510,7 +6502,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6573,7 +6565,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6636,7 +6628,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6699,7 +6691,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6809,7 +6801,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6872,7 +6864,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6935,7 +6927,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -6998,7 +6990,7 @@ g=g(\mu)\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7061,7 +7053,7 @@ F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7125,7 +7117,7 @@ E=\hbar\omega,\qquad \mathbf p=\hbar\mathbf k,\qquad \omega=c|\mathbf k|\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7188,7 +7180,7 @@ Standard constructor skeleton: field expansion, mode algebra, and correlation re
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7251,7 +7243,7 @@ n_i=a_i^\dagger a_i\in\{0,1\}
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7314,7 +7306,7 @@ n_i=a_i^\dagger a_i\in\{0,1,2,\ldots\}
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7377,7 +7369,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7439,7 +7431,7 @@ Z_{\mathrm{grav}}[\phi_0]\simeq Z_{\mathrm{CFT}}[J=\phi_0]\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7502,7 +7494,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7565,7 +7557,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7628,7 +7620,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7691,7 +7683,7 @@ D_{\mu}=\partial_{\mu}+\frac{ie}{\hbar c}A_{\mu}\\
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7754,7 +7746,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7817,7 +7809,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7880,7 +7872,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -7943,7 +7935,7 @@ Topic-specific constructor: the equations express graph-based geometry states an
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8006,7 +7998,7 @@ N=\sum_i a_i^\dagger a_i,\qquad N\ket{n_1,n_2,\ldots}=\left(\sum_i n_i\right)\ke
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8069,7 +8061,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8176,7 +8168,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8239,7 +8231,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8302,7 +8294,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8365,7 +8357,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8428,7 +8420,7 @@ p(y)=\operatorname{Tr}(M_y\mathcal E(\rho))
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8491,7 +8483,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8554,7 +8546,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8616,7 +8608,7 @@ p(y)=\operatorname{Tr}(M_y\rho_{\mathrm{out}})
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8679,7 +8671,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8742,7 +8734,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8805,7 +8797,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8868,7 +8860,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8931,7 +8923,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -8994,7 +8986,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9057,7 +9049,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9120,7 +9112,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9183,7 +9175,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9246,7 +9238,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9351,7 +9343,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9414,7 +9406,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9478,7 +9470,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9542,7 +9534,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9606,7 +9598,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9670,7 +9662,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9734,7 +9726,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9798,7 +9790,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9862,7 +9854,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9926,7 +9918,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -9990,7 +9982,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -10054,7 +10046,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -10118,7 +10110,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -10182,7 +10174,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -10246,7 +10238,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
@@ -10310,7 +10302,7 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 \item the physical implementation of detector, boundary, preparation, or readout
 \end{itemize}
 
-\subsection*{Validation Boundary}
+\subsection*{Checks}
 \begin{itemize}
 \item A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 \item The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.

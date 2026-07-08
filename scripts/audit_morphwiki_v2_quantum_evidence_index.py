@@ -25,7 +25,6 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
 def md(r: Mapping[str, Any]) -> str:
     c=r.get('coverage') or {}; lines=['# MorphWiki Quantum V2 Evidence Index Audit','',f"- Readiness: `{r.get('readiness')}`",f"- Pages total: `{c.get('pages_total',0)}`",f"- Pages with V2 source grounding: `{c.get('pages_with_v2_source_grounding',0)}`",f"- Pages with V2 row ids: `{c.get('pages_with_v2_row_ids',0)}`",'', '## Status Counts']
     for k,v in sorted((r.get('status_counts') or {}).items()): lines.append(f"- `{k}`: `{v}`")
-    lines += ['', '## Top Tokens']; lines += [f"- `{k}`: `{v}`" for k,v in r.get('top_tokens') or []]
     lines += ['', '## Top Constructor Roles']; lines += [f"- `{k}`: `{v}`" for k,v in r.get('top_constructor_roles') or []]
     lines += ['', '## Top Routes']; lines += [f"- `{k}`: `{v}`" for k,v in r.get('top_routes') or []]
     if r.get('pages_without_v2_source_grounding_examples'):

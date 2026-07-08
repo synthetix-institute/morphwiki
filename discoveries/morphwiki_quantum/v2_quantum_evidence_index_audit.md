@@ -9,9 +9,6 @@
 - `legacy_witness_only`: `35`
 - `v2_source_grounded`: `112`
 
-## Top Tokens
-- `A21`: `24`
-
 ## Top Constructor Roles
 
 ## Top Routes

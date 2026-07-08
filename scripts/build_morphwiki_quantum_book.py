@@ -1736,8 +1736,8 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
     """Render sparse-attention rules as quantum-mechanics claims.
 
     The JSON rule fields are useful for auditing, but many of them are written
-    in metric language.  The book should state the scientific reading directly
-    and keep the claim boundary explicit.
+    in metric language. The book states the scientific reading directly and
+    omits internal diagnostic boundaries from public prose.
     """
     rid = str(rule.get("id") or "")
     evidence = rule.get("evidence") or {}
@@ -2552,6 +2552,8 @@ def sparse_attention_results_chapter(root: Path) -> str:
     for rule in regularities:
         lines.append(rf"\subsection{{{latex_escape(hidden_rule_public_title(rule))}}}")
         for label, text in hidden_rule_public_blocks(rule):
+            if label == "Boundary":
+                continue
             if label == "Use":
                 label = "Reading consequence"
             if label:
@@ -2685,7 +2687,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines.append(list_items(changes, 4))
     lines.append(r"\end{itemize}")
     lines.append("")
-    lines.append(r"\subsection*{Validation Boundary}")
+    lines.append(r"\subsection*{Checks}")
     lines.append(r"\begin{itemize}")
     lines.append(list_items(tests, 3))
     lines.append(r"\end{itemize}")
@@ -2797,7 +2799,7 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
     if changes:
         lines.extend(["## What Changes With Realization", "", *[f"- {item}" for item in changes[:4]], ""])
     if tests:
-        lines.extend(["## Validation Boundary", "", *[f"- {item}" for item in tests[:3]], ""])
+        lines.extend(["## Checks", "", *[f"- {item}" for item in tests[:3]], ""])
     lines.extend(["## Evidence Links", "", markdown_evidence(evidence)])
     return "\n".join(lines).rstrip() + "\n"
 
