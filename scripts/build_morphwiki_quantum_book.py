@@ -28,7 +28,7 @@ BRANCH_ORDER = [
 
 ANOMALY_LABEL_EXPLANATIONS = {
     "weak spectral anchor": (
-        "the page should not be explained by spectra first; another construction step fixes the admissible question before eigenvalues become meaningful"
+        "another construction step fixes the admissible question before eigenvalues become meaningful"
     ),
     "boundary-driven dynamics": (
         "preparation, apparatus, context, representation, or boundary conditions are part of the mechanism rather than surrounding detail"
@@ -49,7 +49,7 @@ ANOMALY_LABEL_EXPLANATIONS = {
 
 
 ANOMALY_PUBLIC_NAMES = {
-    "weak spectral anchor": "not eigenvalue-first",
+    "weak spectral anchor": "pre-spectral admissibility",
     "boundary-driven dynamics": "context participates in the law",
     "compatibility/closure junction": "admissibility meets incompatibility",
     "protocol is unusually explicit": "operation order matters",
@@ -1906,8 +1906,8 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
                 "Some pages are junctions rather than leaves.  EPR, wave function, delayed-choice eraser, entanglement, quantum biology, and similar topics join state, evolution, readout, boundary, protocol, and compatibility in one place.",
             ),
             (
-                "Use",
-                "Do not force such pages into one branch.  Split them into constructor steps: what is the state carrier, what transforms it, what is read out, what context is required, and what compatibility limit is being tested.",
+                "Reading consequence",
+                "Such pages should be read as junctions of several formal roles: state carrier, transformation, readout, context, and compatibility condition. Their position marks where a single topic name covers more than one construction step.",
             ),
             (
                 "Boundary",
@@ -3209,24 +3209,24 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
             rf"{latex_escape(explanation)}"
         )
     lines.append(r"\end{itemize}")
-    anomaly_tests = {
+    anomaly_implications = {
         "weak spectral anchor": (
-            "check whether the page needs a non-spectral root role before forcing an eigenvalue-first derivation"
+            "the eigenvalue problem is downstream of another role that first defines the admissible question"
         ),
         "boundary-driven dynamics": (
-            "name the preparation, apparatus, domain, detector, or context variable and test whether changing it changes the readout"
+            "preparation, apparatus, domain, detector, or boundary conditions participate in the observed law"
         ),
         "compatibility/closure junction": (
-            "separate the admissibility condition from the non-commuting or jointly unresolvable question"
+            "admissibility conditions and jointly resolvable questions meet in the same topic"
         ),
         "protocol is unusually explicit": (
-            "write the ordered experimental or computational sequence and test whether changing the order changes the mechanism"
+            "the order of preparation, transformation, and readout is part of the mechanism"
         ),
         "multi-role hub": (
-            "split the page into smaller constructor steps and test whether each step has its own state, map, readout, and constraint"
+            "one topic name covers several formal roles, so the page is a junction rather than a single branch leaf"
         ),
         "branch-ambiguous": (
-            "treat the page as a junction and compare both branch assignments against source equations"
+            "the topic lies at an interface between explanatory roles and should be read as a bridge"
         ),
     }
     label_counts: Counter[str] = Counter()
@@ -3241,20 +3241,63 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     if label_counts:
         lines.append(
             latex_escape(
-                "The anomaly interpretation is aggregated from the labels assigned by the sparse-attention pass. "
-                "It is therefore a map of recurring failure modes in the mechanism tree, not a list of hand-picked examples."
+                "The sparse-attention interpretation is aggregated from role labels assigned by the mechanism pass. "
+                "It summarizes recurring junction types in the mechanism tree rather than presenting a list of physical anomalies."
             )
         )
         lines.append(r"\begin{itemize}")
         for label, _count in label_counts.most_common():
             explanation = ANOMALY_LABEL_EXPLANATIONS.get(label, "the page has an unresolved constructor role")
-            test = anomaly_tests.get(label, "compare the assignment against source equations and route/fiber evidence")
+            implication = anomaly_implications.get(label, "the assignment should be read with source-equation and route evidence")
             public_name = ANOMALY_PUBLIC_NAMES.get(label, label)
             lines.append(
                 rf"\item \textbf{{{latex_escape(public_name)}}}. "
-                rf"{latex_escape(explanation)}. Diagnostic use: {latex_escape(test)}."
+                rf"{latex_escape(explanation)}. Mechanism implication: {latex_escape(implication)}."
             )
         lines.append(r"\end{itemize}")
+    lines.extend(
+        [
+            r"\section*{Constructor-Detected Research Leads}",
+            r"\addcontentsline{toc}{section}{Constructor-Detected Research Leads}",
+        ]
+    )
+    lines.append(
+        latex_escape(
+            "The useful anomalies in this book are constructor junctions: places where a topic requires several formal roles at once. "
+            "Some are established foundational problems; others are under-formulated mechanism questions that can guide derivation and experiment."
+        )
+    )
+    constructor_leads = [
+        (
+            "Measurement as a four-map junction",
+            "The established measurement problem becomes operationally sharper when split into pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record state conditioning. The useful signal is the missing local map between probability readout and state update.",
+        ),
+        (
+            "Geometry as a possible state carrier",
+            "Quantum gravity is a recognized frontier. The constructor reading isolates the specific unresolved choice: whether geometry remains a substrate on which operators act, or becomes part of the quantum state carrier itself. The corresponding test is which geometric quantities survive as admissible observables after quantization.",
+        ),
+        (
+            "Boundary-selected spectra across different phenomena",
+            "Scattering, tunnelling, cavities, particle-in-a-box systems, spectral lines, and optical boundary problems share a boundary-to-spectrum construction. The research lead is to treat them as one transferable mechanism family rather than as separate examples tied to different physical nouns.",
+        ),
+        (
+            "Environment as an active selector in quantum biology",
+            "In quantum biology, the useful constructor signal is that the environment can be part of the mechanism: it may preserve, destroy, or select coherence. A useful derivation must name the carrier, coupling, coherence or transport observable, and classical control.",
+        ),
+        (
+            "Hamiltonian dual role",
+            "The Hamiltonian is both a generator of time evolution and an observable with an energy spectrum. This is standard formalism. The constructor lead is to keep those roles distinct when deriving mechanisms that use energy conservation, spectral measurement, and unitary transport in the same page.",
+        ),
+        (
+            "Quantum simulation as a target-carrier-validation triangle",
+            "A simulator is an engineered realization of another Hamiltonian, channel, or field theory. The anomaly is practical: the physical carrier, encoded target, and validation observable are distinct roles. A simulator claim is incomplete until all three are specified.",
+        ),
+    ]
+    lines.append(r"\begin{itemize}")
+    for title, body in constructor_leads:
+        lines.append(rf"\item \textbf{{{latex_escape(title)}}}. {latex_escape(body)}")
+    lines.append(r"\end{itemize}")
+
     lines.extend(
         [
             r"\section*{Relation To Lagrangian, Transfer, And Stability Layers}",
