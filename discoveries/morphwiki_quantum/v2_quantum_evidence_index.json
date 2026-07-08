@@ -2,26 +2,26 @@
   "schema_version": 1,
   "report_type": "morphwiki_quantum_v2_evidence_index",
   "readiness": "usable",
-  "generated_at": "2026-07-08T12:44:50.840300+00:00",
+  "generated_at": "2026-07-08T13:00:59.158001+00:00",
   "root": "discoveries/morphwiki_quantum",
-  "v2_root": "../goidanich/tm",
+  "v2_root": "discoveries/morphwiki_quantum/v2_language",
   "artifacts": {
     "apparatus_basin_a00": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.json",
       "available": true,
       "report_type": "operator_substrate_v2_apparatus_basin_audit",
       "readiness": "usable",
       "claim_scope": "Enrichment audit for a derived V2 apparatus basin using source-card/V2-row alignments. It tests whether the target basin is enriched for marker families; it does not prove physical equivalence or that all rows in the basin are Abelian mechanisms."
     },
     "gamma_bridges": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_gamma_bridges.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_gamma_bridges.json",
       "available": true,
       "report_type": "operator_substrate_v2_gamma_bridge_candidates",
       "readiness": "usable",
       "claim_scope": "Gamma bridge candidates are learned from V2 transfer roads and typed operator/substrate evidence. They are bridge-family candidates, not proof of physical equivalence and not a solved global Gromov-Wasserstein transport plan."
     },
     "grammar_rules": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
       "available": true,
       "report_type": "operator_substrate_v2_grammar_rule_learner",
       "readiness": "usable",
@@ -37,7 +37,7 @@
       "claim_scope": "Grammar-rule learner over deterministic V2 evidence matrices and typed edges. It selects a compact logical factorization for the language; it does not prove physical equivalence and does not replace source-card or decoder validation."
     },
     "hierarchical_language": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_hierarchical_language.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_hierarchical_language.json",
       "available": true,
       "report_type": "operator_substrate_v2_hierarchical_language",
       "readiness": "usable",
@@ -129,14 +129,14 @@
       }
     },
     "readout_application_coverage": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_readout_application_coverage.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_readout_application_coverage.json",
       "available": true,
       "report_type": "operator_substrate_v2_readout_application_coverage",
       "readiness": "usable",
       "claim_scope": "Coverage audit for V2 readout/protocol/application evidence. It tests extraction coverage and sparsity; it does not validate equation reconstruction or physical mechanisms."
     },
     "source_card_alignment": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_source_card_alignment.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_card_alignment.json",
       "available": true,
       "report_type": "source_card_v2_row_alignment",
       "readiness": "usable",
@@ -146,7 +146,7 @@
       "claim_scope": "Alignment between source equation cards and V2 feature rows by paper id plus equation overlap. It creates row ids needed to attach original equations to atlas/DAG/language objects."
     },
     "source_language_examples": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_source_language_examples.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_language_examples.json",
       "available": true,
       "report_type": "source_grounded_v2_language_examples",
       "readiness": "usable",
@@ -185,14 +185,14 @@
       "claim_scope": "Examples attach original source equation cards to V2 symbolic-language assignments through conservative source-card/V2-row alignment. They support inspection and decoder conditioning; they do not prove physical equivalence or exact mechanism reconstruction."
     },
     "symbolic_full_assignment": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_symbolic_full_assignment.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_symbolic_full_assignment.json",
       "available": true,
       "report_type": "operator_substrate_v2_symbolic_full_assignment_audit",
       "readiness": "usable",
       "claim_scope": "Full assignment of learned V2 symbolic codebooks to retained rows and retained typed edges. This tests corpus-scale coverage and sample stability of the learned language; it is not a proof of physical equivalence or exact mechanism reconstruction."
     },
     "symbolic_language": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_symbolic_language.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_symbolic_language.json",
       "available": true,
       "report_type": "operator_substrate_v2_symbolic_language",
       "readiness": "usable",
@@ -210,7 +210,7 @@
       "claim_scope": "V2-native symbolic language learned from operator/substrate matrices, typed graph edges, directed sequence evidence and variational first-variation diagnostics. Tokens are machine language for mechanism construction, not human field names."
     },
     "v2_dag": {
-      "path": "../goidanich/tm/operator_substrate_v2_full_radius4_v2_dag.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_v2_dag.json",
       "available": true,
       "report_type": "operator_substrate_v2_dag_audit",
       "readiness": "usable",
@@ -218,16 +218,16 @@
     }
   },
   "artifact_paths": {
-    "hierarchical_language": "../goidanich/tm/operator_substrate_v2_full_radius4_hierarchical_language.json",
-    "symbolic_language": "../goidanich/tm/operator_substrate_v2_full_radius4_symbolic_language.json",
-    "symbolic_full_assignment": "../goidanich/tm/operator_substrate_v2_full_radius4_symbolic_full_assignment.json",
-    "grammar_rules": "../goidanich/tm/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
-    "source_language_examples": "../goidanich/tm/operator_substrate_v2_full_radius4_source_language_examples.json",
-    "source_card_alignment": "../goidanich/tm/operator_substrate_v2_full_radius4_source_card_alignment.json",
-    "v2_dag": "../goidanich/tm/operator_substrate_v2_full_radius4_v2_dag.json",
-    "gamma_bridges": "../goidanich/tm/operator_substrate_v2_full_radius4_gamma_bridges.json",
-    "readout_application_coverage": "../goidanich/tm/operator_substrate_v2_full_radius4_readout_application_coverage.json",
-    "apparatus_basin_a00": "../goidanich/tm/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.json"
+    "hierarchical_language": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_hierarchical_language.json",
+    "symbolic_language": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_symbolic_language.json",
+    "symbolic_full_assignment": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_symbolic_full_assignment.json",
+    "grammar_rules": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
+    "source_language_examples": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_language_examples.json",
+    "source_card_alignment": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_card_alignment.json",
+    "v2_dag": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_v2_dag.json",
+    "gamma_bridges": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_gamma_bridges.json",
+    "readout_application_coverage": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_readout_application_coverage.json",
+    "apparatus_basin_a00": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.json"
   },
   "coverage": {
     "pages_total": 147,

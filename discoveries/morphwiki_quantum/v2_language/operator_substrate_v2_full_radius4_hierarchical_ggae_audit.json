@@ -1,0 +1,778 @@
+{
+  "report_type": "operator_substrate_hierarchical_ggae_audit",
+  "readiness": "usable",
+  "train_json": "discoveries/operator_substrate_v2_full_radius4_hierarchical_ggae.json",
+  "checkpoint": "results/operator_substrate_v2_full_radius4_hierarchical_ggae/operator_substrate_hierarchical_ggae.pt",
+  "rows_used": 14523959,
+  "edge_aux_features_enabled": true,
+  "edge_aux_features": [
+    "operator_cosine",
+    "substrate_cosine",
+    "operator_minus_substrate_cosine",
+    "absolute_operator_substrate_cosine_gap",
+    "operator_source_energy",
+    "operator_target_energy",
+    "substrate_source_energy",
+    "substrate_target_energy",
+    "operator_energy_gap",
+    "substrate_energy_gap"
+  ],
+  "transfer_strength_enabled": true,
+  "transfer_strength_target": "absolute_operator_substrate_cosine_gap/2",
+  "neighbor_preservation": {
+    "operator_to_z_operator": {
+      "mean_topk_overlap": 0.58294,
+      "median_topk_overlap": 0.7,
+      "rows_used": 10000,
+      "k": 10
+    },
+    "substrate_to_z_substrate": {
+      "mean_topk_overlap": 0.66663,
+      "median_topk_overlap": 0.8,
+      "rows_used": 10000,
+      "k": 10
+    },
+    "operator_plus_substrate_to_z_product": {
+      "mean_topk_overlap": 0.5265,
+      "median_topk_overlap": 0.5,
+      "rows_used": 10000,
+      "k": 10
+    }
+  },
+  "edge_decoder": {
+    "per_edge_type": {
+      "operator_knn": {
+        "count": 8192,
+        "target": {
+          "level1": "mechanism",
+          "level2": "operator_near",
+          "level3": "knn"
+        },
+        "level1_accuracy": 1.0,
+        "level2_accuracy": 0.9215087890625,
+        "level3_accuracy": 0.1373291015625,
+        "mean_target_probability": {
+          "level1": 0.9963783062121365,
+          "level2": 0.91148653828742,
+          "level3": 0.4079060622335504
+        },
+        "transfer_strength": {
+          "target_mean": 0.26920437812805176,
+          "predicted_mean": 0.31600382924079895,
+          "mse": 0.008110634982585907,
+          "correlation": 0.9038998743757473
+        },
+        "predicted_counts": {
+          "level1": {
+            "mechanism": 8192
+          },
+          "level2": {
+            "operator_near": 7549,
+            "coupled": 577,
+            "control": 40,
+            "sequence": 26
+          },
+          "level3": {
+            "transfer": 6245,
+            "knn": 1125,
+            "coupled": 690,
+            "control": 88,
+            "ordered": 44
+          }
+        }
+      },
+      "substrate_knn": {
+        "count": 8192,
+        "target": {
+          "level1": "mechanism",
+          "level2": "substrate_near",
+          "level3": "knn"
+        },
+        "level1_accuracy": 0.987548828125,
+        "level2_accuracy": 0.8648681640625,
+        "level3_accuracy": 0.7950439453125,
+        "mean_target_probability": {
+          "level1": 0.9775830270982624,
+          "level2": 0.8504763648671325,
+          "level3": 0.47852894091373344
+        },
+        "transfer_strength": {
+          "target_mean": 0.27900606393814087,
+          "predicted_mean": 0.3427441716194153,
+          "mse": 0.012564427219331264,
+          "correlation": 0.8733561608160221
+        },
+        "predicted_counts": {
+          "level1": {
+            "mechanism": 8090,
+            "control": 102
+          },
+          "level2": {
+            "substrate_near": 7085,
+            "coupled": 850,
+            "control": 166,
+            "sequence": 91
+          },
+          "level3": {
+            "knn": 6513,
+            "coupled": 931,
+            "transfer": 379,
+            "control": 218,
+            "ordered": 151
+          }
+        }
+      },
+      "coupled_operator_substrate": {
+        "count": 8192,
+        "target": {
+          "level1": "mechanism",
+          "level2": "coupled",
+          "level3": "coupled"
+        },
+        "level1_accuracy": 1.0,
+        "level2_accuracy": 0.99853515625,
+        "level3_accuracy": 0.99951171875,
+        "mean_target_probability": {
+          "level1": 0.9974875275001978,
+          "level2": 0.9508142198428686,
+          "level3": 0.9474250369694346
+        },
+        "transfer_strength": {
+          "target_mean": 0.0003719564701896161,
+          "predicted_mean": 1.2216604394765795e-09,
+          "mse": 6.3585052885173354e-06,
+          "correlation": 0.35074001312261327
+        },
+        "predicted_counts": {
+          "level1": {
+            "mechanism": 8192
+          },
+          "level2": {
+            "coupled": 8180,
+            "operator_near": 9,
+            "control": 2,
+            "sequence": 1
+          },
+          "level3": {
+            "coupled": 8188,
+            "control": 2,
+            "ordered": 1,
+            "transfer": 1
+          }
+        }
+      },
+      "operator_transfer_candidate": {
+        "count": 8192,
+        "target": {
+          "level1": "mechanism",
+          "level2": "operator_near",
+          "level3": "transfer"
+        },
+        "level1_accuracy": 0.9998779296875,
+        "level2_accuracy": 0.9405517578125,
+        "level3_accuracy": 0.803466796875,
+        "mean_target_probability": {
+          "level1": 0.9966399426957651,
+          "level2": 0.9318916110532598,
+          "level3": 0.5227290961117887
+        },
+        "transfer_strength": {
+          "target_mean": 0.27741074562072754,
+          "predicted_mean": 0.3253304362297058,
+          "mse": 0.008178047835826874,
+          "correlation": 0.8988711425120566
+        },
+        "predicted_counts": {
+          "level1": {
+            "mechanism": 8191,
+            "control": 1
+          },
+          "level2": {
+            "operator_near": 7705,
+            "coupled": 405,
+            "control": 56,
+            "sequence": 26
+          },
+          "level3": {
+            "transfer": 6582,
+            "knn": 984,
+            "coupled": 487,
+            "control": 94,
+            "ordered": 45
+          }
+        }
+      },
+      "substrate_transfer_candidate": {
+        "count": 8192,
+        "target": {
+          "level1": "mechanism",
+          "level2": "substrate_near",
+          "level3": "transfer"
+        },
+        "level1_accuracy": 0.986083984375,
+        "level2_accuracy": 0.8836669921875,
+        "level3_accuracy": 0.04345703125,
+        "mean_target_probability": {
+          "level1": 0.9756446825849707,
+          "level2": 0.865155704213576,
+          "level3": 0.37359642215766087
+        },
+        "transfer_strength": {
+          "target_mean": 0.2840239405632019,
+          "predicted_mean": 0.3484903573989868,
+          "mse": 0.012853091582655907,
+          "correlation": 0.8652617138439949
+        },
+        "predicted_counts": {
+          "level1": {
+            "mechanism": 8078,
+            "control": 114
+          },
+          "level2": {
+            "substrate_near": 7239,
+            "coupled": 680,
+            "control": 181,
+            "sequence": 92
+          },
+          "level3": {
+            "knn": 6654,
+            "coupled": 779,
+            "transfer": 356,
+            "control": 241,
+            "ordered": 162
+          }
+        }
+      },
+      "within_paper_sequence": {
+        "count": 8192,
+        "target": {
+          "level1": "mechanism",
+          "level2": "sequence",
+          "level3": "ordered"
+        },
+        "level1_accuracy": 0.7257080078125,
+        "level2_accuracy": 0.2630615234375,
+        "level3_accuracy": 0.2705078125,
+        "mean_target_probability": {
+          "level1": 0.7287037114849042,
+          "level2": 0.3057914013429134,
+          "level3": 0.3054905326219764
+        },
+        "transfer_strength": {
+          "target_mean": 0.1425924152135849,
+          "predicted_mean": 0.15688858926296234,
+          "mse": 0.006080925464630127,
+          "correlation": 0.9259435205739971
+        },
+        "predicted_counts": {
+          "level1": {
+            "mechanism": 5945,
+            "control": 2247
+          },
+          "level2": {
+            "control": 2531,
+            "sequence": 2155,
+            "coupled": 1785,
+            "operator_near": 1652,
+            "substrate_near": 69
+          },
+          "level3": {
+            "control": 2570,
+            "ordered": 2216,
+            "coupled": 1886,
+            "transfer": 1231,
+            "knn": 289
+          }
+        }
+      },
+      "control_only_candidate": {
+        "count": 8192,
+        "target": {
+          "level1": "control",
+          "level2": "control",
+          "level3": "control"
+        },
+        "level1_accuracy": 0.6954345703125,
+        "level2_accuracy": 0.73583984375,
+        "level3_accuracy": 0.73876953125,
+        "mean_target_probability": {
+          "level1": 0.6472143118267047,
+          "level2": 0.670878624330525,
+          "level3": 0.6703764072406866
+        },
+        "transfer_strength": {
+          "target_mean": 0.10672483593225479,
+          "predicted_mean": 0.1486012190580368,
+          "mse": 0.009262035600841045,
+          "correlation": 0.9120712748436957
+        },
+        "predicted_counts": {
+          "level1": {
+            "control": 5697,
+            "mechanism": 2495
+          },
+          "level2": {
+            "control": 6028,
+            "sequence": 950,
+            "operator_near": 669,
+            "coupled": 519,
+            "substrate_near": 26
+          },
+          "level3": {
+            "control": 6052,
+            "ordered": 955,
+            "transfer": 603,
+            "coupled": 526,
+            "knn": 56
+          }
+        }
+      }
+    },
+    "level1_accuracy": 0.9135219029017857,
+    "level2_accuracy": 0.8011474609375,
+    "level3_accuracy": 0.5411551339285714,
+    "mechanism_level2_accuracy": 0.8120320638020834,
+    "mechanism_level3_accuracy": 0.5082194010416666,
+    "transfer_subtype_accuracy": 0.4234619140625,
+    "transfer_strength_mse": 0.008150788955390453,
+    "transfer_strength_correlation": 0.9241025951388037,
+    "transfer_strength_target_mean": 0.1941906213760376,
+    "transfer_strength_predicted_mean": 0.23400838673114777
+  },
+  "source_training_summary": {
+    "report_type": "operator_substrate_hierarchical_ggae",
+    "readiness": "usable",
+    "source_manifest": "discoveries/operator_substrate_v2_full_active_matrices_manifest.json",
+    "edge_npz": "discoveries/operator_substrate_v2_full_typed_graph_edges.npz",
+    "rows": 14523959,
+    "operator_dim": 44,
+    "substrate_dim": 28,
+    "latent_dim_per_view": 16,
+    "latent_bound": "softsign",
+    "latent_max_radius": 4.0,
+    "latent_radius": {
+      "operator": {
+        "mean": 3.1992549896240234,
+        "std": 0.17896723747253418,
+        "p05": 2.9540762901306152,
+        "p50": 3.2364141941070557,
+        "p95": 3.447559118270874,
+        "max": 3.6101832389831543
+      },
+      "substrate": {
+        "mean": 3.4735844135284424,
+        "std": 0.08869629353284836,
+        "p05": 3.3012442588806152,
+        "p50": 3.5063934326171875,
+        "p95": 3.5550899505615234,
+        "max": 3.6680057048797607
+      }
+    },
+    "edge_aux_dim": 10,
+    "edge_aux_features_enabled": true,
+    "transfer_strength_enabled": true,
+    "transfer_strength_target": "absolute_operator_substrate_cosine_gap/2",
+    "hierarchy": {
+      "level1": {
+        "control": 0,
+        "mechanism": 1
+      },
+      "level2": {
+        "control": 0,
+        "coupled": 1,
+        "operator_near": 2,
+        "substrate_near": 3,
+        "sequence": 4
+      },
+      "level3": {
+        "control": 0,
+        "coupled": 1,
+        "knn": 2,
+        "transfer": 3,
+        "ordered": 4
+      },
+      "edge_mapping": {
+        "operator_knn": [
+          1,
+          2,
+          2
+        ],
+        "substrate_knn": [
+          1,
+          3,
+          2
+        ],
+        "coupled_operator_substrate": [
+          1,
+          1,
+          1
+        ],
+        "operator_transfer_candidate": [
+          1,
+          2,
+          3
+        ],
+        "substrate_transfer_candidate": [
+          1,
+          3,
+          3
+        ],
+        "within_paper_sequence": [
+          1,
+          4,
+          4
+        ],
+        "control_only_candidate": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "edge_counts": {
+      "operator_knn": 500000,
+      "substrate_knn": 500000,
+      "coupled_operator_substrate": 265740,
+      "operator_transfer_candidate": 500000,
+      "substrate_transfer_candidate": 500000,
+      "within_paper_sequence": 250000,
+      "control_only_candidate": 500000
+    },
+    "device": {
+      "cuda_available": true,
+      "visible_gpu_count": 4,
+      "used_gpu_count": 4
+    },
+    "history": [
+      {
+        "epoch": 0,
+        "train": {
+          "reconstruction_loss": 0.004829877905881985,
+          "hierarchy_edge_loss": 0.9370148997931254,
+          "level1_accuracy": 0.933040091847268,
+          "level2_accuracy": 0.9151270914738788,
+          "level3_accuracy": 0.7578393860316291,
+          "transfer_strength_mse": 0.002626727703493526,
+          "transfer_strength_corr": 0.9595253149840839
+        },
+        "validation": {
+          "operator_mse": 0.0004439498607098358,
+          "substrate_mse": 0.0005079514794488205,
+          "reconstruction_mse": 0.0009519013401586562,
+          "hierarchy_edge_loss": 0.8978452682495117,
+          "level1_accuracy": 0.9369351640343666,
+          "level2_accuracy": 0.9221269115805626,
+          "level3_accuracy": 0.764960914850235,
+          "mechanism_level2_accuracy": 0.9209433197975159,
+          "mechanism_level3_accuracy": 0.6062286347150803,
+          "transfer_subtype_accuracy": 0.7184750661253929,
+          "transfer_strength_mse": 0.0006556388470926322,
+          "transfer_strength_corr": 0.9902241934149508
+        }
+      },
+      {
+        "epoch": 1,
+        "train": {
+          "reconstruction_loss": 0.0010848095462598283,
+          "hierarchy_edge_loss": 0.8826904613011164,
+          "level1_accuracy": 0.9356436172038093,
+          "level2_accuracy": 0.9214584109814543,
+          "level3_accuracy": 0.764118440337199,
+          "transfer_strength_mse": 0.0008255330977592626,
+          "transfer_strength_corr": 0.9875067732761988
+        },
+        "validation": {
+          "operator_mse": 0.0002889150691771647,
+          "substrate_mse": 0.0003470569736236939,
+          "reconstruction_mse": 0.0006359720428008586,
+          "hierarchy_edge_loss": 0.8646805882453918,
+          "level1_accuracy": 0.9353932738304138,
+          "level2_accuracy": 0.9220734797418118,
+          "level3_accuracy": 0.7648006193339825,
+          "mechanism_level2_accuracy": 0.930565744638443,
+          "mechanism_level3_accuracy": 0.6156677752733231,
+          "transfer_subtype_accuracy": 0.6118951737880707,
+          "transfer_strength_mse": 0.0005268741260806564,
+          "transfer_strength_corr": 0.991923134208075
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "reconstruction_loss": 0.0008818485189397308,
+          "hierarchy_edge_loss": 0.8653136185349378,
+          "level1_accuracy": 0.9363902090187359,
+          "level2_accuracy": 0.9233911016157695,
+          "level3_accuracy": 0.7661891393083379,
+          "transfer_strength_mse": 0.0007667797006907952,
+          "transfer_strength_corr": 0.9882817229276721
+        },
+        "validation": {
+          "operator_mse": 0.0002592976916275802,
+          "substrate_mse": 0.0002852242705557728,
+          "reconstruction_mse": 0.000544521962183353,
+          "hierarchy_edge_loss": 0.8561127185821533,
+          "level1_accuracy": 0.9381640963256359,
+          "level2_accuracy": 0.925348088145256,
+          "level3_accuracy": 0.7675485424697399,
+          "mechanism_level2_accuracy": 0.929817333817482,
+          "mechanism_level3_accuracy": 0.6140182167291641,
+          "transfer_subtype_accuracy": 0.5633247792720795,
+          "transfer_strength_mse": 0.0005650456369039603,
+          "transfer_strength_corr": 0.9914088718411187
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "reconstruction_loss": 0.000820423470799698,
+          "hierarchy_edge_loss": 0.8549207549234082,
+          "level1_accuracy": 0.9368336569321783,
+          "level2_accuracy": 0.9245237112045288,
+          "level3_accuracy": 0.7673213280233225,
+          "transfer_strength_mse": 0.0007310076928166509,
+          "transfer_strength_corr": 0.9887623431695319
+        },
+        "validation": {
+          "operator_mse": 0.0002430670974717941,
+          "substrate_mse": 0.00026069334489875473,
+          "reconstruction_mse": 0.0005037604423705488,
+          "hierarchy_edge_loss": 0.8346992135047913,
+          "level1_accuracy": 0.9372633881866932,
+          "level2_accuracy": 0.926279328763485,
+          "level3_accuracy": 0.768594279885292,
+          "mechanism_level2_accuracy": 0.9356977045536041,
+          "mechanism_level3_accuracy": 0.6199902296066284,
+          "transfer_subtype_accuracy": 0.6078170873224735,
+          "transfer_strength_mse": 0.0004804409618373029,
+          "transfer_strength_corr": 0.9926078836779291
+        }
+      },
+      {
+        "epoch": 4,
+        "train": {
+          "reconstruction_loss": 0.0008030952655979874,
+          "hierarchy_edge_loss": 0.847816194937492,
+          "level1_accuracy": 0.9372908788964265,
+          "level2_accuracy": 0.9253480498840038,
+          "level3_accuracy": 0.7682697479438064,
+          "transfer_strength_mse": 0.0006953816454117081,
+          "transfer_strength_corr": 0.9892817618112886
+        },
+        "validation": {
+          "operator_mse": 0.00024536388082196936,
+          "substrate_mse": 0.00026111324586963747,
+          "reconstruction_mse": 0.0005064771266916068,
+          "hierarchy_edge_loss": 0.8417111113667488,
+          "level1_accuracy": 0.9383930899202824,
+          "level2_accuracy": 0.9256992116570473,
+          "level3_accuracy": 0.7693194262683392,
+          "mechanism_level2_accuracy": 0.9331469982862473,
+          "mechanism_level3_accuracy": 0.6201429665088654,
+          "transfer_subtype_accuracy": 0.5564516186714172,
+          "transfer_strength_mse": 0.00046121330524329096,
+          "transfer_strength_corr": 0.992947828436628
+        }
+      },
+      {
+        "epoch": 5,
+        "train": {
+          "reconstruction_loss": 0.0008027552581292444,
+          "hierarchy_edge_loss": 0.8421334870402377,
+          "level1_accuracy": 0.9375816261521855,
+          "level2_accuracy": 0.9259588142534844,
+          "level3_accuracy": 0.7688749644317125,
+          "transfer_strength_mse": 0.0006838144401813691,
+          "transfer_strength_corr": 0.9894518327778429
+        },
+        "validation": {
+          "operator_mse": 0.00024086973917292198,
+          "substrate_mse": 0.0002713220364967128,
+          "reconstruction_mse": 0.0005121917756696348,
+          "hierarchy_edge_loss": 0.8259670287370682,
+          "level1_accuracy": 0.935660433024168,
+          "level2_accuracy": 0.925180159509182,
+          "level3_accuracy": 0.7675485424697399,
+          "mechanism_level2_accuracy": 0.9377443790435791,
+          "mechanism_level3_accuracy": 0.6223423779010773,
+          "transfer_subtype_accuracy": 0.525430716574192,
+          "transfer_strength_mse": 0.00043081104013253935,
+          "transfer_strength_corr": 0.993412675405026
+        }
+      },
+      {
+        "epoch": 6,
+        "train": {
+          "reconstruction_loss": 0.0008038581268500682,
+          "hierarchy_edge_loss": 0.838581027075611,
+          "level1_accuracy": 0.9376519503337997,
+          "level2_accuracy": 0.9262727095668477,
+          "level3_accuracy": 0.7693370073137427,
+          "transfer_strength_mse": 0.0006744752789469422,
+          "transfer_strength_corr": 0.9895931034946744
+        },
+        "validation": {
+          "operator_mse": 0.0002473647709848592,
+          "substrate_mse": 0.0002678343953448348,
+          "reconstruction_mse": 0.000515199166329694,
+          "hierarchy_edge_loss": 0.8225926235318184,
+          "level1_accuracy": 0.9398662820458412,
+          "level2_accuracy": 0.9288974888622761,
+          "level3_accuracy": 0.7721513137221336,
+          "mechanism_level2_accuracy": 0.9351478517055511,
+          "mechanism_level3_accuracy": 0.6213343143463135,
+          "transfer_subtype_accuracy": 0.683009535074234,
+          "transfer_strength_mse": 0.00041748083822312765,
+          "transfer_strength_corr": 0.9935942139079378
+        }
+      },
+      {
+        "epoch": 7,
+        "train": {
+          "reconstruction_loss": 0.0008003948005854344,
+          "hierarchy_edge_loss": 0.8350350161953678,
+          "level1_accuracy": 0.9378810587122028,
+          "level2_accuracy": 0.9267138235439035,
+          "level3_accuracy": 0.7697184719985589,
+          "transfer_strength_mse": 0.0006753632233016844,
+          "transfer_strength_corr": 0.9895764772820863
+        },
+        "validation": {
+          "operator_mse": 0.00024101520830299705,
+          "substrate_mse": 0.0002545501274653361,
+          "reconstruction_mse": 0.0004955653357683332,
+          "hierarchy_edge_loss": 0.8126357607543468,
+          "level1_accuracy": 0.9403013698756695,
+          "level2_accuracy": 0.9292333461344242,
+          "level3_accuracy": 0.772449005395174,
+          "mechanism_level2_accuracy": 0.9365224838256836,
+          "mechanism_level3_accuracy": 0.6226173043251038,
+          "transfer_subtype_accuracy": 0.5502199493348598,
+          "transfer_strength_mse": 0.00040476089452567976,
+          "transfer_strength_corr": 0.9938085199464075
+        }
+      },
+      {
+        "epoch": 8,
+        "train": {
+          "reconstruction_loss": 0.000808121934277093,
+          "hierarchy_edge_loss": 0.8323902352561329,
+          "level1_accuracy": 0.9379628612694884,
+          "level2_accuracy": 0.9268944549157208,
+          "level3_accuracy": 0.7700061966153912,
+          "transfer_strength_mse": 0.0006768803095906321,
+          "transfer_strength_corr": 0.9895388669511107
+        },
+        "validation": {
+          "operator_mse": 0.00025354442004754674,
+          "substrate_mse": 0.0002586046857686597,
+          "reconstruction_mse": 0.0005121491058162064,
+          "hierarchy_edge_loss": 0.8250808715820312,
+          "level1_accuracy": 0.9374236837029457,
+          "level2_accuracy": 0.9268976114690304,
+          "level3_accuracy": 0.7706094235181808,
+          "mechanism_level2_accuracy": 0.9358962625265121,
+          "mechanism_level3_accuracy": 0.6229075044393539,
+          "transfer_subtype_accuracy": 0.6145986095070839,
+          "transfer_strength_mse": 0.0004068626294611022,
+          "transfer_strength_corr": 0.9937157591820882
+        }
+      },
+      {
+        "epoch": 9,
+        "train": {
+          "reconstruction_loss": 0.0008100634027016582,
+          "hierarchy_edge_loss": 0.8291135122229282,
+          "level1_accuracy": 0.9381509918467443,
+          "level2_accuracy": 0.9272095745891556,
+          "level3_accuracy": 0.7704344930729472,
+          "transfer_strength_mse": 0.0006718171123583874,
+          "transfer_strength_corr": 0.98961711488894
+        },
+        "validation": {
+          "operator_mse": 0.00024130082692863652,
+          "substrate_mse": 0.00026089090079040034,
+          "reconstruction_mse": 0.0005021917277190369,
+          "hierarchy_edge_loss": 0.817676953971386,
+          "level1_accuracy": 0.9389503076672554,
+          "level2_accuracy": 0.9290654174983501,
+          "level3_accuracy": 0.772365041077137,
+          "mechanism_level2_accuracy": 0.9377138316631317,
+          "mechanism_level3_accuracy": 0.6240683048963547,
+          "transfer_subtype_accuracy": 0.5993860065937042,
+          "transfer_strength_mse": 0.0003944083018723177,
+          "transfer_strength_corr": 0.9939502332245169
+        }
+      },
+      {
+        "epoch": 10,
+        "train": {
+          "reconstruction_loss": 0.0008089888047779686,
+          "hierarchy_edge_loss": 0.8278351340601617,
+          "level1_accuracy": 0.9381225637363312,
+          "level2_accuracy": 0.927282347490913,
+          "level3_accuracy": 0.7704464688448978,
+          "transfer_strength_mse": 0.0006638737459959378,
+          "transfer_strength_corr": 0.9897374432704695
+        },
+        "validation": {
+          "operator_mse": 0.0002428748730380903,
+          "substrate_mse": 0.00026038565647468204,
+          "reconstruction_mse": 0.0005032605295127723,
+          "hierarchy_edge_loss": 0.8081544227898121,
+          "level1_accuracy": 0.9412707760930061,
+          "level2_accuracy": 0.9310805611312389,
+          "level3_accuracy": 0.7746702432632446,
+          "mechanism_level2_accuracy": 0.938049852848053,
+          "mechanism_level3_accuracy": 0.6248778104782104,
+          "transfer_subtype_accuracy": 0.513975428417325,
+          "transfer_strength_mse": 0.00038766482430219185,
+          "transfer_strength_corr": 0.9940983143777732
+        }
+      },
+      {
+        "epoch": 11,
+        "train": {
+          "reconstruction_loss": 0.0008112288247265813,
+          "hierarchy_edge_loss": 0.825834198367028,
+          "level1_accuracy": 0.9382622173070011,
+          "level2_accuracy": 0.9275039949251297,
+          "level3_accuracy": 0.7707371395781524,
+          "transfer_strength_mse": 0.0006595277210137629,
+          "transfer_strength_corr": 0.9898043370725794
+        },
+        "validation": {
+          "operator_mse": 0.00024245014446933055,
+          "substrate_mse": 0.00026394673841423355,
+          "reconstruction_mse": 0.0005063968828835641,
+          "hierarchy_edge_loss": 0.8123880885541439,
+          "level1_accuracy": 0.9381335638463497,
+          "level2_accuracy": 0.9276380240917206,
+          "level3_accuracy": 0.7706017903983593,
+          "mechanism_level2_accuracy": 0.937301442027092,
+          "mechanism_level3_accuracy": 0.6228922307491302,
+          "transfer_subtype_accuracy": 0.5970491170883179,
+          "transfer_strength_mse": 0.00041045728175959084,
+          "transfer_strength_corr": 0.9938574806840563
+        }
+      }
+    ],
+    "best_score": 0.2025418662269658,
+    "outputs": {
+      "checkpoint": "results/operator_substrate_v2_full_radius4_hierarchical_ggae/operator_substrate_hierarchical_ggae.pt",
+      "z_operator": "results/operator_substrate_v2_full_radius4_hierarchical_ggae/z_operator.npy",
+      "z_substrate": "results/operator_substrate_v2_full_radius4_hierarchical_ggae/z_substrate.npy",
+      "z_product": "results/operator_substrate_v2_full_radius4_hierarchical_ggae/z_product.npy"
+    },
+    "claim_scope": "Hierarchical bounded two-stream graph autoencoder over V2 operator/substrate features. The hierarchy separates mechanism/control and view family; transfer intensity is also learned as a continuous operator/substrate mismatch score.",
+    "elapsed_seconds": 2516.886356830597
+  },
+  "claim_scope": "Fixed-sample audit of a hierarchical two-stream operator/substrate graph autoencoder. It tests parent-road and transfer-subtype separability; it does not prove physical equivalence.",
+  "conclusions": [
+    "Mechanism/control separation is stable.",
+    "The parent road taxonomy is stable: coupled, operator-near and substrate-near are separable.",
+    "KNN-vs-transfer remains the harder distinction; use Level 2 roads as the primary manuscript claim and Level 3 as a measured subtype.",
+    "The continuous transfer-strength target is learned from operator/substrate mismatch evidence.",
+    "Use this fixed-sample audit, not stochastic epoch validation alone, when comparing hierarchical runs."
+  ]
+}

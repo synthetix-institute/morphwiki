@@ -1,0 +1,567 @@
+{
+  "report_type": "operator_substrate_v2_derivation_fragments",
+  "readiness": "usable",
+  "fragments": [
+    {
+      "token": "Π000",
+      "source_route": "unclassified",
+      "tau": "T00",
+      "target_route": "unclassified",
+      "support": 21699
+    },
+    {
+      "token": "Π001",
+      "source_route": "spectral_operator",
+      "tau": "T00",
+      "target_route": "spectral_operator",
+      "support": 16136
+    },
+    {
+      "token": "Π002",
+      "source_route": "transport_flow",
+      "tau": "T00",
+      "target_route": "transport_flow",
+      "support": 11030
+    },
+    {
+      "token": "Π003",
+      "source_route": "constraint_closure",
+      "tau": "T00",
+      "target_route": "constraint_closure",
+      "support": 10401
+    },
+    {
+      "token": "Π004",
+      "source_route": "boundary_weak_form",
+      "tau": "T00",
+      "target_route": "boundary_weak_form",
+      "support": 9730
+    },
+    {
+      "token": "Π005",
+      "source_route": "spectral_operator",
+      "tau": "T01",
+      "target_route": "spectral_operator",
+      "support": 1844
+    },
+    {
+      "token": "Π006",
+      "source_route": "unclassified",
+      "tau": "T01",
+      "target_route": "unclassified",
+      "support": 1486
+    },
+    {
+      "token": "Π007",
+      "source_route": "spectral_operator",
+      "tau": "T02",
+      "target_route": "spectral_operator",
+      "support": 1361
+    },
+    {
+      "token": "Π008",
+      "source_route": "constraint_closure",
+      "tau": "T00",
+      "target_route": "unclassified",
+      "support": 1331
+    },
+    {
+      "token": "Π009",
+      "source_route": "unclassified",
+      "tau": "T00",
+      "target_route": "constraint_closure",
+      "support": 1272
+    },
+    {
+      "token": "Π010",
+      "source_route": "commutator_incompatibility",
+      "tau": "T00",
+      "target_route": "commutator_incompatibility",
+      "support": 1234
+    },
+    {
+      "token": "Π011",
+      "source_route": "transport_flow",
+      "tau": "T01",
+      "target_route": "transport_flow",
+      "support": 1075
+    },
+    {
+      "token": "Π012",
+      "source_route": "unclassified",
+      "tau": "T02",
+      "target_route": "unclassified",
+      "support": 1015
+    },
+    {
+      "token": "Π013",
+      "source_route": "unclassified",
+      "tau": "T01",
+      "target_route": "constraint_closure",
+      "support": 1001
+    },
+    {
+      "token": "Π014",
+      "source_route": "transport_flow",
+      "tau": "T02",
+      "target_route": "transport_flow",
+      "support": 988
+    },
+    {
+      "token": "Π015",
+      "source_route": "boundary_weak_form",
+      "tau": "T01",
+      "target_route": "unclassified",
+      "support": 896
+    },
+    {
+      "token": "Π016",
+      "source_route": "constraint_closure",
+      "tau": "T01",
+      "target_route": "constraint_closure",
+      "support": 835
+    },
+    {
+      "token": "Π017",
+      "source_route": "boundary_weak_form",
+      "tau": "T01",
+      "target_route": "boundary_weak_form",
+      "support": 821
+    },
+    {
+      "token": "Π018",
+      "source_route": "unclassified",
+      "tau": "T03",
+      "target_route": "transport_flow",
+      "support": 813
+    },
+    {
+      "token": "Π019",
+      "source_route": "spectral_operator",
+      "tau": "T02",
+      "target_route": "unclassified",
+      "support": 797
+    },
+    {
+      "token": "Π020",
+      "source_route": "transport_flow",
+      "tau": "T02",
+      "target_route": "unclassified",
+      "support": 788
+    },
+    {
+      "token": "Π021",
+      "source_route": "spectral_operator",
+      "tau": "T03",
+      "target_route": "spectral_operator",
+      "support": 747
+    },
+    {
+      "token": "Π022",
+      "source_route": "constraint_closure",
+      "tau": "T02",
+      "target_route": "constraint_closure",
+      "support": 726
+    },
+    {
+      "token": "Π023",
+      "source_route": "unclassified",
+      "tau": "T02",
+      "target_route": "boundary_weak_form",
+      "support": 694
+    },
+    {
+      "token": "Π024",
+      "source_route": "transport_flow",
+      "tau": "T03",
+      "target_route": "transport_flow",
+      "support": 689
+    },
+    {
+      "token": "Π025",
+      "source_route": "unclassified",
+      "tau": "T01",
+      "target_route": "spectral_operator",
+      "support": 685
+    },
+    {
+      "token": "Π026",
+      "source_route": "boundary_weak_form",
+      "tau": "T02",
+      "target_route": "boundary_weak_form",
+      "support": 653
+    },
+    {
+      "token": "Π027",
+      "source_route": "unclassified",
+      "tau": "T00",
+      "target_route": "spectral_operator",
+      "support": 633
+    },
+    {
+      "token": "Π028",
+      "source_route": "spectral_operator",
+      "tau": "T02",
+      "target_route": "boundary_weak_form",
+      "support": 619
+    },
+    {
+      "token": "Π029",
+      "source_route": "boundary_weak_form",
+      "tau": "T01",
+      "target_route": "constraint_closure",
+      "support": 592
+    },
+    {
+      "token": "Π030",
+      "source_route": "transport_flow",
+      "tau": "T02",
+      "target_route": "boundary_weak_form",
+      "support": 591
+    },
+    {
+      "token": "Π031",
+      "source_route": "spectral_operator",
+      "tau": "T03",
+      "target_route": "unclassified",
+      "support": 530
+    },
+    {
+      "token": "Π032",
+      "source_route": "spectral_operator",
+      "tau": "T02",
+      "target_route": "constraint_closure",
+      "support": 509
+    },
+    {
+      "token": "Π033",
+      "source_route": "constraint_closure",
+      "tau": "T03",
+      "target_route": "transport_flow",
+      "support": 501
+    },
+    {
+      "token": "Π034",
+      "source_route": "boundary_weak_form",
+      "tau": "T01",
+      "target_route": "spectral_operator",
+      "support": 498
+    },
+    {
+      "token": "Π035",
+      "source_route": "transport_flow",
+      "tau": "T00",
+      "target_route": "unclassified",
+      "support": 491
+    },
+    {
+      "token": "Π036",
+      "source_route": "transport_flow",
+      "tau": "T02",
+      "target_route": "constraint_closure",
+      "support": 485
+    },
+    {
+      "token": "Π037",
+      "source_route": "constraint_closure",
+      "tau": "T01",
+      "target_route": "unclassified",
+      "support": 456
+    },
+    {
+      "token": "Π038",
+      "source_route": "constraint_closure",
+      "tau": "T02",
+      "target_route": "boundary_weak_form",
+      "support": 448
+    },
+    {
+      "token": "Π039",
+      "source_route": "spectral_operator",
+      "tau": "T01",
+      "target_route": "constraint_closure",
+      "support": 446
+    },
+    {
+      "token": "Π040",
+      "source_route": "constraint_closure",
+      "tau": "T00",
+      "target_route": "spectral_operator",
+      "support": 445
+    },
+    {
+      "token": "Π041",
+      "source_route": "constraint_closure",
+      "tau": "T02",
+      "target_route": "unclassified",
+      "support": 444
+    },
+    {
+      "token": "Π042",
+      "source_route": "unclassified",
+      "tau": "T00",
+      "target_route": "boundary_weak_form",
+      "support": 440
+    },
+    {
+      "token": "Π043",
+      "source_route": "constraint_closure",
+      "tau": "T03",
+      "target_route": "constraint_closure",
+      "support": 438
+    },
+    {
+      "token": "Π044",
+      "source_route": "spectral_operator",
+      "tau": "T03",
+      "target_route": "transport_flow",
+      "support": 436
+    },
+    {
+      "token": "Π045",
+      "source_route": "constraint_closure",
+      "tau": "T01",
+      "target_route": "spectral_operator",
+      "support": 424
+    },
+    {
+      "token": "Π046",
+      "source_route": "discrete_protocol",
+      "tau": "T00",
+      "target_route": "discrete_protocol",
+      "support": 420
+    },
+    {
+      "token": "Π047",
+      "source_route": "transport_flow",
+      "tau": "T00",
+      "target_route": "constraint_closure",
+      "support": 416
+    },
+    {
+      "token": "Π048",
+      "source_route": "boundary_weak_form",
+      "tau": "T03",
+      "target_route": "boundary_weak_form",
+      "support": 381
+    },
+    {
+      "token": "Π049",
+      "source_route": "unclassified",
+      "tau": "T00",
+      "target_route": "transport_flow",
+      "support": 379
+    },
+    {
+      "token": "Π050",
+      "source_route": "spectral_operator",
+      "tau": "T01",
+      "target_route": "unclassified",
+      "support": 364
+    },
+    {
+      "token": "Π051",
+      "source_route": "unclassified",
+      "tau": "T04",
+      "target_route": "unclassified",
+      "support": 362
+    },
+    {
+      "token": "Π052",
+      "source_route": "boundary_weak_form",
+      "tau": "T03",
+      "target_route": "transport_flow",
+      "support": 353
+    },
+    {
+      "token": "Π053",
+      "source_route": "transport_flow",
+      "tau": "T01",
+      "target_route": "spectral_operator",
+      "support": 339
+    },
+    {
+      "token": "Π054",
+      "source_route": "spectral_operator",
+      "tau": "T00",
+      "target_route": "constraint_closure",
+      "support": 334
+    },
+    {
+      "token": "Π055",
+      "source_route": "spectral_operator",
+      "tau": "T06",
+      "target_route": "spectral_operator",
+      "support": 332
+    },
+    {
+      "token": "Π056",
+      "source_route": "boundary_weak_form",
+      "tau": "T01",
+      "target_route": "transport_flow",
+      "support": 329
+    },
+    {
+      "token": "Π057",
+      "source_route": "spectral_operator",
+      "tau": "T04",
+      "target_route": "spectral_operator",
+      "support": 327
+    },
+    {
+      "token": "Π058",
+      "source_route": "constraint_closure",
+      "tau": "T00",
+      "target_route": "transport_flow",
+      "support": 321
+    },
+    {
+      "token": "Π059",
+      "source_route": "spectral_operator",
+      "tau": "T02",
+      "target_route": "transport_flow",
+      "support": 321
+    },
+    {
+      "token": "Π060",
+      "source_route": "unclassified",
+      "tau": "T06",
+      "target_route": "spectral_operator",
+      "support": 312
+    },
+    {
+      "token": "Π061",
+      "source_route": "unclassified",
+      "tau": "T02",
+      "target_route": "constraint_closure",
+      "support": 308
+    },
+    {
+      "token": "Π062",
+      "source_route": "transport_flow",
+      "tau": "T01",
+      "target_route": "unclassified",
+      "support": 297
+    },
+    {
+      "token": "Π063",
+      "source_route": "constraint_closure",
+      "tau": "T00",
+      "target_route": "boundary_weak_form",
+      "support": 282
+    },
+    {
+      "token": "Π064",
+      "source_route": "transport_flow",
+      "tau": "T01",
+      "target_route": "constraint_closure",
+      "support": 274
+    },
+    {
+      "token": "Π065",
+      "source_route": "transport_flow",
+      "tau": "T02",
+      "target_route": "spectral_operator",
+      "support": 269
+    },
+    {
+      "token": "Π066",
+      "source_route": "unclassified",
+      "tau": "T01",
+      "target_route": "transport_flow",
+      "support": 268
+    },
+    {
+      "token": "Π067",
+      "source_route": "constraint_closure",
+      "tau": "T03",
+      "target_route": "unclassified",
+      "support": 254
+    },
+    {
+      "token": "Π068",
+      "source_route": "boundary_weak_form",
+      "tau": "T00",
+      "target_route": "constraint_closure",
+      "support": 251
+    },
+    {
+      "token": "Π069",
+      "source_route": "unclassified",
+      "tau": "T03",
+      "target_route": "unclassified",
+      "support": 244
+    },
+    {
+      "token": "Π070",
+      "source_route": "transport_flow",
+      "tau": "T00",
+      "target_route": "boundary_weak_form",
+      "support": 215
+    },
+    {
+      "token": "Π071",
+      "source_route": "transport_flow",
+      "tau": "T00",
+      "target_route": "spectral_operator",
+      "support": 215
+    },
+    {
+      "token": "Π072",
+      "source_route": "transport_flow",
+      "tau": "T06",
+      "target_route": "spectral_operator",
+      "support": 208
+    },
+    {
+      "token": "Π073",
+      "source_route": "boundary_weak_form",
+      "tau": "T00",
+      "target_route": "unclassified",
+      "support": 206
+    },
+    {
+      "token": "Π074",
+      "source_route": "constraint_closure",
+      "tau": "T03",
+      "target_route": "spectral_operator",
+      "support": 204
+    },
+    {
+      "token": "Π075",
+      "source_route": "constraint_closure",
+      "tau": "T01",
+      "target_route": "transport_flow",
+      "support": 203
+    },
+    {
+      "token": "Π076",
+      "source_route": "transport_flow",
+      "tau": "T04",
+      "target_route": "transport_flow",
+      "support": 197
+    },
+    {
+      "token": "Π077",
+      "source_route": "constraint_closure",
+      "tau": "T06",
+      "target_route": "spectral_operator",
+      "support": 195
+    },
+    {
+      "token": "Π078",
+      "source_route": "spectral_operator",
+      "tau": "T00",
+      "target_route": "unclassified",
+      "support": 192
+    },
+    {
+      "token": "Π079",
+      "source_route": "unclassified",
+      "tau": "T02",
+      "target_route": "transport_flow",
+      "support": 191
+    }
+  ],
+  "claim_scope": "Π fragments are repeated directed route-transition-route motifs in V2 sequence evidence."
+}

@@ -1,0 +1,155 @@
+{
+  "report_type": "operator_substrate_twostream_ggae_audit",
+  "readiness": "usable",
+  "train_report": "discoveries/operator_substrate_v2_full_radius4_twostream_ggae.json",
+  "checkpoint": "results/operator_substrate_v2_full_radius4_twostream_ggae/operator_substrate_twostream_ggae.pt",
+  "rows_used": 14523959,
+  "neighbor_preservation": {
+    "operator_to_z_operator": {
+      "mean_topk_overlap": 0.5791299999999999,
+      "median_topk_overlap": 0.7,
+      "rows_used": 10000,
+      "k": 10
+    },
+    "substrate_to_z_substrate": {
+      "mean_topk_overlap": 0.6389600000000001,
+      "median_topk_overlap": 0.8,
+      "rows_used": 10000,
+      "k": 10
+    },
+    "operator_plus_substrate_to_z_product": {
+      "mean_topk_overlap": 0.5698,
+      "median_topk_overlap": 0.6,
+      "rows_used": 10000,
+      "k": 10
+    }
+  },
+  "edge_decoder": {
+    "per_edge_type": {
+      "operator_knn": {
+        "count": 8192,
+        "target_label": "operator_knn",
+        "top1_accuracy": 0.265380859375,
+        "mean_target_probability": 0.424229662627533,
+        "predicted_counts": {
+          "operator_transfer_candidate": 5629,
+          "operator_knn": 2174,
+          "within_paper_sequence": 172,
+          "no_edge_or_control": 113,
+          "coupled_operator_substrate": 97,
+          "substrate_knn": 5,
+          "substrate_transfer_candidate": 2
+        }
+      },
+      "substrate_knn": {
+        "count": 8192,
+        "target_label": "substrate_knn",
+        "top1_accuracy": 0.3291015625,
+        "mean_target_probability": 0.49112763703203655,
+        "predicted_counts": {
+          "substrate_transfer_candidate": 5427,
+          "substrate_knn": 2696,
+          "coupled_operator_substrate": 59,
+          "within_paper_sequence": 5,
+          "operator_transfer_candidate": 2,
+          "operator_knn": 2,
+          "no_edge_or_control": 1
+        }
+      },
+      "coupled_operator_substrate": {
+        "count": 8192,
+        "target_label": "coupled_operator_substrate",
+        "top1_accuracy": 0.81591796875,
+        "mean_target_probability": 0.7629844982434669,
+        "predicted_counts": {
+          "coupled_operator_substrate": 6684,
+          "substrate_knn": 521,
+          "operator_knn": 445,
+          "operator_transfer_candidate": 235,
+          "within_paper_sequence": 136,
+          "substrate_transfer_candidate": 86,
+          "no_edge_or_control": 85
+        }
+      },
+      "operator_transfer_candidate": {
+        "count": 8192,
+        "target_label": "operator_transfer_candidate",
+        "top1_accuracy": 0.740234375,
+        "mean_target_probability": 0.5553122507646692,
+        "predicted_counts": {
+          "operator_transfer_candidate": 6064,
+          "operator_knn": 1849,
+          "within_paper_sequence": 136,
+          "no_edge_or_control": 105,
+          "coupled_operator_substrate": 34,
+          "substrate_transfer_candidate": 2,
+          "substrate_knn": 2
+        }
+      },
+      "substrate_transfer_candidate": {
+        "count": 8192,
+        "target_label": "substrate_transfer_candidate",
+        "top1_accuracy": 0.6739501953125,
+        "mean_target_probability": 0.5048651543223741,
+        "predicted_counts": {
+          "substrate_transfer_candidate": 5521,
+          "substrate_knn": 2657,
+          "within_paper_sequence": 7,
+          "coupled_operator_substrate": 7
+        }
+      },
+      "within_paper_sequence": {
+        "count": 8192,
+        "target_label": "within_paper_sequence",
+        "top1_accuracy": 0.3748779296875,
+        "mean_target_probability": 0.40751951533493674,
+        "predicted_counts": {
+          "no_edge_or_control": 4724,
+          "within_paper_sequence": 3071,
+          "operator_transfer_candidate": 115,
+          "operator_knn": 93,
+          "substrate_knn": 79,
+          "coupled_operator_substrate": 66,
+          "substrate_transfer_candidate": 44
+        }
+      },
+      "control_only_candidate": {
+        "count": 8192,
+        "target_label": "no_edge_or_control",
+        "top1_accuracy": 0.9351806640625,
+        "mean_target_probability": 0.8469963809429444,
+        "predicted_counts": {
+          "no_edge_or_control": 7661,
+          "within_paper_sequence": 435,
+          "operator_transfer_candidate": 31,
+          "substrate_knn": 26,
+          "substrate_transfer_candidate": 15,
+          "operator_knn": 12,
+          "coupled_operator_substrate": 12
+        }
+      }
+    },
+    "mean_positive_accuracy": 0.5332438151041666,
+    "mean_transfer_accuracy": 0.70709228515625
+  },
+  "source_training_summary": {
+    "best_score": 0.12955167331165285,
+    "last_validation": {
+      "operator_mse": 0.00013967586119179032,
+      "substrate_mse": 0.00015399301582874614,
+      "reconstruction_mse": 0.00029366887974902056,
+      "edge_loss": 0.5193463303148746,
+      "edge_accuracy": 0.7705025598406792,
+      "positive_edge_accuracy": 0.6254887580871582
+    }
+  },
+  "claim_scope": "Audit of a bounded two-stream operator/substrate graph autoencoder. It tests latent neighbourhood preservation and typed edge separability; it does not prove physical equivalence.",
+  "conclusions": [
+    "The operator latent preserves nontrivial local operator neighbourhood structure.",
+    "The substrate latent preserves nontrivial local substrate neighbourhood structure.",
+    "The edge decoder separates positive mechanism edge classes above a trivial-collapse regime.",
+    "Transfer edge classes are partially separable and should be retained as typed roads.",
+    "Control-only edges are mostly recognized as non-mechanism/control edges.",
+    "Use these diagnostics as the acceptance gate before scaling the two-stream GGAE beyond the 100k V2 sample."
+  ]
+}

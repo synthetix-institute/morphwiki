@@ -1,0 +1,44 @@
+{
+  "report_type": "operator_substrate_v2_noether_orbit_alphabet",
+  "readiness": "usable",
+  "threshold": 0.05,
+  "tokens": [
+    {
+      "token": "J00",
+      "generator": "coupled_operator_substrate",
+      "relative_first_variation": 0.0009483417137170462,
+      "promoted": true
+    },
+    {
+      "token": "J_candidate_01",
+      "generator": "within_paper_sequence",
+      "relative_first_variation": 0.2909711798263155,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_02",
+      "generator": "operator_transfer_candidate",
+      "relative_first_variation": 0.40999336462628194,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_03",
+      "generator": "operator_knn",
+      "relative_first_variation": 0.43274682346508414,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_04",
+      "generator": "substrate_knn",
+      "relative_first_variation": 0.5597014232722278,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_05",
+      "generator": "substrate_transfer_candidate",
+      "relative_first_variation": 0.5636864268193207,
+      "promoted": false
+    }
+  ],
+  "claim_scope": "V2 J tokens are finite-dimensional current candidates from exact first variation of the typed action. Physical Noether currents require source actions and symmetries."
+}

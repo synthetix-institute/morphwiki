@@ -1,0 +1,856 @@
+{
+  "report_type": "operator_substrate_v2_substrate_signature_names",
+  "readiness": "usable",
+  "object": "xi_substrate_codewords",
+  "tokens": [
+    {
+      "token": "Ξ00",
+      "cluster": 13,
+      "support": 105591,
+      "signature_name": "Ξ:coordinate_field_carrier_selector",
+      "signature_slug": "xi_coordinate_field_carrier_selector",
+      "display_label": "Ξ:coordinate_field_carrier_selector",
+      "signature_terms": [
+        "coordinate",
+        "field_carrier",
+        "selector"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5516059994697571
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.47841498255729675
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.4627044200897217
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.4436657726764679
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.40058016777038574
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.3627314269542694
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.3582600951194763
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.33384987711906433
+        }
+      ]
+    },
+    {
+      "token": "Ξ01",
+      "cluster": 2,
+      "support": 84751,
+      "signature_name": "Ξ:selector_hilbert_field_carrier",
+      "signature_slug": "xi_selector_hilbert_field_carrier",
+      "display_label": "Ξ:selector_hilbert_field_carrier",
+      "signature_terms": [
+        "selector",
+        "hilbert",
+        "field_carrier"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.8268105983734131
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 0.634563684463501
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.5344602465629578
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": 0.5250133275985718
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.4989900588989258
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.47870126366615295
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.41543760895729065
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.3590811491012573
+        }
+      ]
+    },
+    {
+      "token": "Ξ02",
+      "cluster": 0,
+      "support": 46684,
+      "signature_name": "Ξ:field_carrier",
+      "signature_slug": "xi_field_carrier",
+      "display_label": "Ξ:field_carrier",
+      "signature_terms": [
+        "field_carrier"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 2.4698684215545654
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.32327085733413696
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.3196451961994171
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.31476765871047974
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.3077583312988281
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.28809866309165955
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.25386136770248413
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.24327021837234497
+        }
+      ]
+    },
+    {
+      "token": "Ξ03",
+      "cluster": 4,
+      "support": 42564,
+      "signature_name": "Ξ:markov",
+      "signature_slug": "xi_markov",
+      "display_label": "Ξ:markov",
+      "signature_terms": [
+        "markov"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 2.985957622528076
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 2.9428396224975586
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.24596835672855377
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.1894342005252838
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.1534462571144104
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.14892172813415527
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.14181338250637054
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.13425315916538239
+        }
+      ]
+    },
+    {
+      "token": "Ξ04",
+      "cluster": 12,
+      "support": 41323,
+      "signature_name": "Ξ:selector",
+      "signature_slug": "xi_selector",
+      "display_label": "Ξ:selector",
+      "signature_terms": [
+        "selector"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 2.4934005737304688
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.3199903070926666
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.30953606963157654
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.3008723855018616
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.23594194650650024
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.22657126188278198
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.21448548138141632
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.20196275413036346
+        }
+      ]
+    },
+    {
+      "token": "Ξ05",
+      "cluster": 1,
+      "support": 40746,
+      "signature_name": "Ξ:closure_field_carrier_coordinate",
+      "signature_slug": "xi_closure_field_carrier_coordinate",
+      "display_label": "Ξ:closure_field_carrier_coordinate",
+      "signature_terms": [
+        "closure",
+        "field_carrier",
+        "coordinate"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 3.1518616676330566
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 1.6541342735290527
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.4241256713867188
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.17527036368846893
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.17168158292770386
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.14949479699134827
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.1445986032485962
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": -0.1252889782190323
+        }
+      ]
+    },
+    {
+      "token": "Ξ06",
+      "cluster": 6,
+      "support": 40344,
+      "signature_name": "Ξ:graph_closure",
+      "signature_slug": "xi_graph_closure",
+      "display_label": "Ξ:graph_closure",
+      "signature_terms": [
+        "graph",
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 2.598191976547241
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 2.580484628677368
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.2727319896221161
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.2617223262786865
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.24420271813869476
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.1944277584552765
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.19198757410049438
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.19169005751609802
+        }
+      ]
+    },
+    {
+      "token": "Ξ07",
+      "cluster": 17,
+      "support": 38816,
+      "signature_name": "Ξ:coordinate_field_carrier",
+      "signature_slug": "xi_coordinate_field_carrier",
+      "display_label": "Ξ:coordinate_field_carrier",
+      "signature_terms": [
+        "coordinate",
+        "field_carrier"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.9628300666809082
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": 1.290550947189331
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.319487601518631
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.30865779519081116
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.3050123453140259
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.29628318548202515
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.29258280992507935
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.2766650915145874
+        }
+      ]
+    },
+    {
+      "token": "Ξ08",
+      "cluster": 3,
+      "support": 12770,
+      "signature_name": "Ξ:reaction_hilbert",
+      "signature_slug": "xi_reaction_hilbert",
+      "display_label": "Ξ:reaction_hilbert",
+      "signature_terms": [
+        "reaction",
+        "hilbert"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 5.485995769500732
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.36843305826187134
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.34272247552871704
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.2773642838001251
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.2673968970775604
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.26053234934806824
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.2505929172039032
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.21834896504878998
+        }
+      ]
+    },
+    {
+      "token": "Ξ09",
+      "cluster": 10,
+      "support": 10032,
+      "signature_name": "Ξ:lattice_selector",
+      "signature_slug": "xi_lattice_selector",
+      "display_label": "Ξ:lattice_selector",
+      "signature_terms": [
+        "lattice",
+        "selector"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 6.381995677947998
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.4008689224720001
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.2712486982345581
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.25501030683517456
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.23750993609428406
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.19931037724018097
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.17070125043392181
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.14686408638954163
+        }
+      ]
+    },
+    {
+      "token": "Ξ10",
+      "cluster": 11,
+      "support": 9748,
+      "signature_name": "Ξ:selector",
+      "signature_slug": "xi_selector",
+      "display_label": "Ξ:selector",
+      "signature_terms": [
+        "selector"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 6.407991409301758
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": -0.23434443771839142
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.16631756722927094
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.15627093613147736
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.14914248883724213
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.14797115325927734
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.12928931415081024
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.1265328824520111
+        }
+      ]
+    },
+    {
+      "token": "Ξ11",
+      "cluster": 9,
+      "support": 8897,
+      "signature_name": "Ξ:positivity",
+      "signature_slug": "xi_positivity",
+      "display_label": "Ξ:positivity",
+      "signature_terms": [
+        "positivity"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:positivity#0",
+          "weight": 6.9029154777526855
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.19937120378017426
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.1892068237066269
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.1798192709684372
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.1303291767835617
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.1286766529083252
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.11339656263589859
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.11234116554260254
+        }
+      ]
+    },
+    {
+      "token": "Ξ12",
+      "cluster": 7,
+      "support": 6116,
+      "signature_name": "Ξ:phase_coordinate_markov",
+      "signature_slug": "xi_phase_coordinate_markov",
+      "display_label": "Ξ:phase_coordinate_markov",
+      "signature_terms": [
+        "phase",
+        "coordinate",
+        "markov"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 8.138904571533203
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.4894259572029114
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.2470168024301529
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 0.16365434229373932
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.1529737263917923
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.13097743690013885
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.12384722381830215
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.11695859581232071
+        }
+      ]
+    },
+    {
+      "token": "Ξ13",
+      "cluster": 14,
+      "support": 4518,
+      "signature_name": "Ξ:normalization_selector_boundary",
+      "signature_slug": "xi_normalization_selector_boundary",
+      "display_label": "Ξ:normalization_selector_boundary",
+      "signature_terms": [
+        "normalization",
+        "selector",
+        "boundary"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:normalization#0",
+          "weight": 9.747371673583984
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.7157049775123596
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.4077777564525604
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.2117602825164795
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.2110125869512558
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.16987992823123932
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.152292862534523
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.12835395336151123
+        }
+      ]
+    },
+    {
+      "token": "Ξ14",
+      "cluster": 16,
+      "support": 2679,
+      "signature_name": "Ξ:closure_selector",
+      "signature_slug": "xi_closure_selector",
+      "display_label": "Ξ:closure_selector",
+      "signature_terms": [
+        "closure",
+        "selector"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:admissible_set#0",
+          "weight": 13.130382537841797
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.18150442838668823
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.15092042088508606
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.1401524394750595
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.1354569047689438
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.11914119124412537
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.11134322732686996
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": -0.1025005653500557
+        }
+      ]
+    },
+    {
+      "token": "Ξ15",
+      "cluster": 8,
+      "support": 1973,
+      "signature_name": "Ξ:boundary_bundle_gauge_field_carrier",
+      "signature_slug": "xi_boundary_bundle_gauge_field_carrier",
+      "display_label": "Ξ:boundary_bundle_gauge_field_carrier",
+      "signature_terms": [
+        "boundary",
+        "bundle_gauge",
+        "field_carrier"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 5.237668037414551
+        },
+        {
+          "feature": "real_substrate_geometry:bundle_gauge_space#0",
+          "weight": 3.413214683532715
+        },
+        {
+          "feature": "real_substrate_geometry:tensor_field_carrier#0",
+          "weight": 3.1475915908813477
+        },
+        {
+          "feature": "selector:gauge_choice#0",
+          "weight": 2.382955312728882
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.3211047351360321
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.28461718559265137
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.2835325300693512
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.21039284765720367
+        }
+      ]
+    },
+    {
+      "token": "Ξ16",
+      "cluster": 5,
+      "support": 1752,
+      "signature_name": "Ξ:selector_coordinate_field_carrier",
+      "signature_slug": "xi_selector_coordinate_field_carrier",
+      "display_label": "Ξ:selector_coordinate_field_carrier",
+      "signature_terms": [
+        "selector",
+        "coordinate",
+        "field_carrier"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": 16.090999603271484
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.6629177927970886
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": 0.34487366676330566
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.15072442591190338
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.14544133841991425
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.11320367455482483
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": -0.10302741825580597
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 0.09657096117734909
+        }
+      ]
+    },
+    {
+      "token": "Ξ17",
+      "cluster": 15,
+      "support": 696,
+      "signature_name": "Ξ:selector_quotient",
+      "signature_slug": "xi_selector_quotient",
+      "display_label": "Ξ:selector_quotient",
+      "signature_terms": [
+        "selector",
+        "quotient"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 6.3537163734436035
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": 3.999997854232788
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.2079424113035202
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.19463641941547394
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.19384443759918213
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.18750672042369843
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.17516396939754486
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.17434746026992798
+        }
+      ]
+    }
+  ],
+  "claim_scope": "Readable signature names are deterministic summaries of learned codeword centroids and profiles. Numeric tokens remain the stable machine ids; signature names are publication labels, not new clusters."
+}

@@ -1,0 +1,371 @@
+{
+  "report_type": "operator_substrate_v2_readout_application_coverage",
+  "readiness": "usable",
+  "active_manifest": "discoveries/operator_substrate_v2_full_active_matrices_manifest.json",
+  "source_cards": "discoveries/source_equation_cards_full.jsonl",
+  "matrix_audit": {
+    "readiness": "usable",
+    "rows_sampled": 200000,
+    "operator_core_dims": 44,
+    "groups": {
+      "operator_apparatus": {
+        "active_dims": 16,
+        "nonzero_row_rate": 0.52133,
+        "mean_energy": 0.5213299989700317,
+        "features": [
+          {
+            "feature": "hamiltonian_generator",
+            "nonzero_rate": 0.14573,
+            "mean_activation": 0.12252141535282135
+          },
+          {
+            "feature": "time_derivative",
+            "nonzero_rate": 0.11965,
+            "mean_activation": 0.09507130086421967
+          },
+          {
+            "feature": "laplacian_diffusion",
+            "nonzero_rate": 0.115655,
+            "mean_activation": 0.09455523639917374
+          },
+          {
+            "feature": "spectral_operator",
+            "nonzero_rate": 0.10811,
+            "mean_activation": 0.09184129536151886
+          },
+          {
+            "feature": "integral_operator",
+            "nonzero_rate": 0.098495,
+            "mean_activation": 0.07725029438734055
+          },
+          {
+            "feature": "commutator_operator",
+            "nonzero_rate": 0.05234,
+            "mean_activation": 0.04172713682055473
+          },
+          {
+            "feature": "spatial_derivative",
+            "nonzero_rate": 0.03973,
+            "mean_activation": 0.029627026990056038
+          },
+          {
+            "feature": "liouvillian_generator",
+            "nonzero_rate": 0.03922,
+            "mean_activation": 0.030967222526669502
+          },
+          {
+            "feature": "nonlinear_operator",
+            "nonzero_rate": 0.01877,
+            "mean_activation": 0.014769798144698143
+          },
+          {
+            "feature": "control_update",
+            "nonzero_rate": 0.003865,
+            "mean_activation": 0.002929133363068104
+          },
+          {
+            "feature": "variational_derivative",
+            "nonzero_rate": 0.00185,
+            "mean_activation": 0.0009581716731190681
+          },
+          {
+            "feature": "markov_transition",
+            "nonzero_rate": 0.00145,
+            "mean_activation": 0.0011385255493223667
+          },
+          {
+            "feature": "graph_operator",
+            "nonzero_rate": 0.000485,
+            "mean_activation": 0.0002739123592618853
+          },
+          {
+            "feature": "stochastic_operator",
+            "nonzero_rate": 0.00042,
+            "mean_activation": 0.0003553140559233725
+          },
+          {
+            "feature": "reaction_operator",
+            "nonzero_rate": 3e-05,
+            "mean_activation": 2.7129664886160754e-05
+          },
+          {
+            "feature": "nonlocal_operator",
+            "nonzero_rate": 2.5e-05,
+            "mean_activation": 1.6241194316535257e-05
+          }
+        ]
+      },
+      "closure_constraints": {
+        "active_dims": 10,
+        "nonzero_row_rate": 0.30551,
+        "mean_energy": 0.305510014295578,
+        "features": [
+          {
+            "feature": "probability_readout",
+            "nonzero_rate": 0.147565,
+            "mean_activation": 0.13774168491363525
+          },
+          {
+            "feature": "classifier_control_output",
+            "nonzero_rate": 0.10267,
+            "mean_activation": 0.09525611996650696
+          },
+          {
+            "feature": "measurement_order",
+            "nonzero_rate": 0.042885,
+            "mean_activation": 0.038819871842861176
+          },
+          {
+            "feature": "biological_response",
+            "nonzero_rate": 0.03354,
+            "mean_activation": 0.02906358614563942
+          },
+          {
+            "feature": "write_hold_read",
+            "nonzero_rate": 0.012515,
+            "mean_activation": 0.010952821932733059
+          },
+          {
+            "feature": "recurrence_step",
+            "nonzero_rate": 0.009975,
+            "mean_activation": 0.007861524820327759
+          },
+          {
+            "feature": "training_recall",
+            "nonzero_rate": 0.003695,
+            "mean_activation": 0.0031594117172062397
+          },
+          {
+            "feature": "material_response",
+            "nonzero_rate": 0.00157,
+            "mean_activation": 0.0013114538742229342
+          },
+          {
+            "feature": "intervention_sequence",
+            "nonzero_rate": 0.00051,
+            "mean_activation": 0.0004333981778472662
+          },
+          {
+            "feature": "algorithmic_protocol",
+            "nonzero_rate": 0.000345,
+            "mean_activation": 0.0002750221756286919
+          }
+        ]
+      },
+      "readout_current": {
+        "active_dims": 10,
+        "nonzero_row_rate": 0.395155,
+        "mean_energy": 0.39515501260757446,
+        "features": [
+          {
+            "feature": "operator_core:59",
+            "nonzero_rate": 0.22734,
+            "mean_activation": 0.21398867666721344
+          },
+          {
+            "feature": "operator_core:56",
+            "nonzero_rate": 0.105655,
+            "mean_activation": 0.09503289312124252
+          },
+          {
+            "feature": "operator_core:62",
+            "nonzero_rate": 0.043235,
+            "mean_activation": 0.03797638416290283
+          },
+          {
+            "feature": "operator_core:57",
+            "nonzero_rate": 0.04012,
+            "mean_activation": 0.032385148108005524
+          },
+          {
+            "feature": "operator_core:58",
+            "nonzero_rate": 0.02322,
+            "mean_activation": 0.020267941057682037
+          },
+          {
+            "feature": "operator_core:61",
+            "nonzero_rate": 0.01995,
+            "mean_activation": 0.017054077237844467
+          },
+          {
+            "feature": "operator_core:60",
+            "nonzero_rate": 0.004615,
+            "mean_activation": 0.003949414473026991
+          },
+          {
+            "feature": "operator_core:63",
+            "nonzero_rate": 0.00078,
+            "mean_activation": 0.0006705141277052462
+          },
+          {
+            "feature": "operator_core:65",
+            "nonzero_rate": 0.00032,
+            "mean_activation": 0.00026849619462154806
+          },
+          {
+            "feature": "operator_core:64",
+            "nonzero_rate": 6e-05,
+            "mean_activation": 4.5687211240874603e-05
+          }
+        ]
+      },
+      "protocol_order": {
+        "active_dims": 8,
+        "nonzero_row_rate": 0.02682,
+        "mean_energy": 0.026820000261068344,
+        "features": [
+          {
+            "feature": "operator_core:80",
+            "nonzero_rate": 0.01729,
+            "mean_activation": 0.01724320463836193
+          },
+          {
+            "feature": "operator_core:85",
+            "nonzero_rate": 0.003865,
+            "mean_activation": 0.0038206337485462427
+          },
+          {
+            "feature": "operator_core:87",
+            "nonzero_rate": 0.00365,
+            "mean_activation": 0.003599091898649931
+          },
+          {
+            "feature": "operator_core:84",
+            "nonzero_rate": 0.00098,
+            "mean_activation": 0.0009623210644349456
+          },
+          {
+            "feature": "operator_core:82",
+            "nonzero_rate": 0.00076,
+            "mean_activation": 0.000743829645216465
+          },
+          {
+            "feature": "operator_core:81",
+            "nonzero_rate": 0.00054,
+            "mean_activation": 0.0005215866258367896
+          },
+          {
+            "feature": "operator_core:83",
+            "nonzero_rate": 3.5e-05,
+            "mean_activation": 3.3535532566020265e-05
+          },
+          {
+            "feature": "operator_core:86",
+            "nonzero_rate": 3e-05,
+            "mean_activation": 2.5606603230698965e-05
+          }
+        ]
+      }
+    },
+    "application_readout_features": [],
+    "application_readout_nonzero_rate_max": 0.0
+  },
+  "source_card_audit": {
+    "readiness": "usable",
+    "cards": "discoveries/source_equation_cards_full.jsonl",
+    "cards_scanned": 500000,
+    "status_counts": {
+      "equation_shape_only": 117617,
+      "partial_constructor_frame": 310401,
+      "complete_constructor_frame": 71982
+    },
+    "role_counts": {
+      "closure_constraints": 108331,
+      "selector": 212172,
+      "real_substrate_geometry": 238649,
+      "operator_apparatus": 187466,
+      "readout_current": 128665,
+      "protocol_order": 35511
+    },
+    "readout_counts": [
+      [
+        "order_parameter",
+        70328
+      ],
+      [
+        "eigenvalue_spectrum",
+        32647
+      ],
+      [
+        "observable_expectation",
+        10735
+      ],
+      [
+        "probability_readout",
+        10255
+      ],
+      [
+        "current_flux",
+        7737
+      ],
+      [
+        "residual_error",
+        5362
+      ],
+      [
+        "free_energy_action",
+        4320
+      ],
+      [
+        "material_response",
+        1862
+      ],
+      [
+        "classifier_control_output",
+        435
+      ],
+      [
+        "biological_response",
+        229
+      ]
+    ],
+    "protocol_counts": [
+      [
+        "discrete_update",
+        24444
+      ],
+      [
+        "recurrence_step",
+        3841
+      ],
+      [
+        "measurement_order",
+        3071
+      ],
+      [
+        "write_hold_read",
+        1733
+      ],
+      [
+        "algorithmic_protocol",
+        1628
+      ],
+      [
+        "training_recall",
+        1335
+      ],
+      [
+        "feedback_loop",
+        57
+      ],
+      [
+        "intervention_sequence",
+        52
+      ]
+    ],
+    "application_context_counts": {
+      "biology_application": 145995,
+      "measurement_application": 80671,
+      "material_application": 32149,
+      "chemistry_application": 11615
+    },
+    "readout_role_rate": 0.25733,
+    "protocol_role_rate": 0.071022
+  },
+  "conclusions": [
+    "Readout and protocol channels are present in the active operator-core matrix; they were not pruned away.",
+    "Application-like readout labels are sparse; application/realization should not be treated as well learned without source-card or knowledge-graph support.",
+    "Source cards can provide the missing human-readable realization/readout context above the V2 endpoint fingerprints."
+  ],
+  "claim_scope": "Coverage audit for V2 readout/protocol/application evidence. It tests extraction coverage and sparsity; it does not validate equation reconstruction or physical mechanisms."
+}

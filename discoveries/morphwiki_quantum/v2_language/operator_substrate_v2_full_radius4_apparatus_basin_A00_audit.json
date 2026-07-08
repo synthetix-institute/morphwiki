@@ -1,0 +1,1820 @@
+{
+  "report_type": "operator_substrate_v2_apparatus_basin_audit",
+  "readiness": "usable",
+  "out_json": "discoveries/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.json",
+  "out_md": "discoveries/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.md",
+  "target_alpha": "A00",
+  "target_cluster": 4,
+  "target_signature": {
+    "cluster": 4,
+    "signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+    "support": 211394,
+    "top_features": [
+      {
+        "feature": "real_substrate_geometry:spinor_carrier#0",
+        "weight": -0.46992364525794983
+      },
+      {
+        "feature": "operator_apparatus:laplacian_diffusion#0",
+        "weight": -0.34674522280693054
+      },
+      {
+        "feature": "operator_apparatus:time_derivative#0",
+        "weight": -0.33659541606903076
+      },
+      {
+        "feature": "readout_current:eigenvalue_spectrum#0",
+        "weight": -0.33434394001960754
+      },
+      {
+        "feature": "operator_apparatus:spectral_operator#0",
+        "weight": -0.3334076702594757
+      },
+      {
+        "feature": "real_substrate_geometry:graph_topology#0",
+        "weight": -0.32201087474823
+      },
+      {
+        "feature": "selector:probability_selector#0",
+        "weight": -0.32198041677474976
+      },
+      {
+        "feature": "real_substrate_geometry:probability_space#0",
+        "weight": -0.3182442784309387
+      },
+      {
+        "feature": "selector:boundary_admissibility#0",
+        "weight": -0.312486469745636
+      },
+      {
+        "feature": "readout_current:order_parameter#0",
+        "weight": -0.2754298150539398
+      }
+    ]
+  },
+  "language_json": "discoveries/operator_substrate_v2_full_radius4_symbolic_language.json",
+  "assignments_npz": "discoveries/operator_substrate_v2_full_radius4_symbolic_full_assignments.npz",
+  "alignment_jsonl": "discoveries/operator_substrate_v2_full_radius4_source_card_alignment.jsonl",
+  "assignment_rows": 14523959,
+  "target_total_rows": 6151464,
+  "target_total_fraction": 0.42353906397009244,
+  "control_total_rows": 8372495,
+  "alignment_rows_seen": 2420388,
+  "alignment_rows_skipped_bad_id": 0,
+  "alignment_rows_skipped_unassigned": 0,
+  "target_aligned": {
+    "aligned_rows": 1340624,
+    "unique_cards": 510556,
+    "mean_alignment_score": 0.7015877166542236,
+    "math_like_rate": 1.0,
+    "prose_like_rate": 0.0,
+    "marker_counts": {
+      "commutator_bracket": 310282,
+      "linear_superposition": 135647,
+      "spectral_diagonal": 24124,
+      "differential_transport": 32236,
+      "abelian_commutative": 19061,
+      "prose_noise": 573,
+      "readout_observable": 4511,
+      "closure_constraint": 477
+    },
+    "marker_rates": {
+      "abelian_commutative": 0.014218005943500938,
+      "closure_constraint": 0.0003558044612061249,
+      "commutator_bracket": 0.23144595352611919,
+      "differential_transport": 0.02404551910155271,
+      "linear_superposition": 0.10118198689565457,
+      "prose_noise": 0.00042741290622874125,
+      "readout_observable": 0.003364850994760649,
+      "spectral_diagonal": 0.01799460549714163
+    }
+  },
+  "control_aligned": {
+    "aligned_rows": 1079764,
+    "unique_cards": 434015,
+    "mean_alignment_score": 0.6716347917617674,
+    "math_like_rate": 1.0,
+    "prose_like_rate": 0.0,
+    "marker_counts": {
+      "spectral_diagonal": 141962,
+      "commutator_bracket": 247702,
+      "linear_superposition": 141632,
+      "differential_transport": 42197,
+      "readout_observable": 44288,
+      "abelian_commutative": 10111,
+      "prose_noise": 327,
+      "closure_constraint": 1285
+    },
+    "marker_rates": {
+      "abelian_commutative": 0.009364083262638873,
+      "closure_constraint": 0.0011900748682119426,
+      "commutator_bracket": 0.22940383268936546,
+      "differential_transport": 0.03907983596415513,
+      "linear_superposition": 0.13116940368450883,
+      "prose_noise": 0.0003028439547901208,
+      "readout_observable": 0.0410163702438681,
+      "spectral_diagonal": 0.1314750260242053
+    }
+  },
+  "marker_enrichment": {
+    "abelian_commutative": {
+      "target_count": 19061,
+      "control_count": 10111,
+      "target_rate": 0.014218005943500938,
+      "control_rate": 0.009364083262638873,
+      "enrichment_ratio": 1.518355297188899,
+      "log2_enrichment": 0.6025094228449072
+    },
+    "closure_constraint": {
+      "target_count": 477,
+      "control_count": 1285,
+      "target_rate": 0.0003558044612061249,
+      "control_rate": 0.0011900748682119426,
+      "enrichment_ratio": 0.29897712466072707,
+      "log2_enrichment": -1.7418929897316255
+    },
+    "commutator_bracket": {
+      "target_count": 310282,
+      "control_count": 247702,
+      "target_rate": 0.23144595352611919,
+      "control_rate": 0.22940383268936546,
+      "enrichment_ratio": 1.0089018601124118,
+      "log2_enrichment": 0.012785844597663422
+    },
+    "differential_transport": {
+      "target_count": 32236,
+      "control_count": 42197,
+      "target_rate": 0.02404551910155271,
+      "control_rate": 0.03907983596415513,
+      "enrichment_ratio": 0.615292231735966,
+      "log2_enrichment": -0.7006563167263794
+    },
+    "linear_superposition": {
+      "target_count": 135647,
+      "control_count": 141632,
+      "target_rate": 0.10118198689565457,
+      "control_rate": 0.13116940368450883,
+      "enrichment_ratio": 0.7713840597128532,
+      "log2_enrichment": -0.37447876122406626
+    },
+    "prose_noise": {
+      "target_count": 573,
+      "control_count": 327,
+      "target_rate": 0.00042741290622874125,
+      "control_rate": 0.0003028439547901208,
+      "enrichment_ratio": 1.4113291288770187,
+      "log2_enrichment": 0.497054470733007
+    },
+    "readout_observable": {
+      "target_count": 4511,
+      "control_count": 44288,
+      "target_rate": 0.003364850994760649,
+      "control_rate": 0.0410163702438681,
+      "enrichment_ratio": 0.08203680366443168,
+      "log2_enrichment": -3.6075849074560606
+    },
+    "spectral_diagonal": {
+      "target_count": 24124,
+      "control_count": 141962,
+      "target_rate": 0.01799460549714163,
+      "control_rate": 0.1314750260242053,
+      "enrichment_ratio": 0.1368671062819308,
+      "log2_enrichment": -2.86915233423792
+    }
+  },
+  "decision": {
+    "verdict": "weak_abelian_surface_enrichment_without_closure_support",
+    "target_alignment_support_ok": true,
+    "abelian_enrichment_ratio": 1.518355297188899,
+    "abelian_target_rate": 0.014218005943500938,
+    "spectral_enrichment_ratio": 0.1368671062819308,
+    "spectral_target_rate": 0.01799460549714163,
+    "closure_enrichment_ratio": 0.29897712466072707,
+    "closure_target_rate": 0.0003558044612061249,
+    "readout_enrichment_ratio": 0.08203680366443168,
+    "readout_target_rate": 0.003364850994760649
+  },
+  "examples": {
+    "target": {
+      "commutator_bracket": [
+        {
+          "v2_row_id": 8549032,
+          "equation_card_id": "EQC-000036e94b169f24",
+          "source_id": "0712.3304",
+          "score": 0.833333,
+          "endpoint": "object",
+          "equation_preview": "x_{u, \\\\alpha} = (1/2) n_{u, \\\\alpha}/n",
+          "subject_preview": "n = n_{vv} + n_{vu} + n_{uu} + (1/2) [n_{v, a} + n_{v, alpha} + n_{u, a} + n_{u, alpha}]",
+          "object_preview": "x_{u, a} = (1/2) n_{u, a}/n",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{u, \\alpha}",
+              "context": "x_{u, \\alpha} = (1/2) n_{u, \\alpha}/n"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\[[^\\]]+,[^\\]]+\\]",
+              "match": "[n_{v, a} + n_{v, alpha} + n_{u, a} + n_{u, alpha}]",
+              "context": "n = n_{vv} + n_{vu} + n_{uu} + (1/2) [n_{v, a} + n_{v, alpha} + n_{u, a} + n_{u, alpha}]"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{v, a}",
+              "context": "n = n_{vv} + n_{vu} + n_{uu} + (1/2) [n_{v, a} + n_{v, alpha} + n_{u, a} + n_{u, alpha}]"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 12138472,
+          "equation_card_id": "EQC-00007338f923ad0f",
+          "source_id": "2102.05093",
+          "score": 0.611111,
+          "endpoint": "subject",
+          "equation_preview": "M_{1,i}=\\\\frac{12B_{i}L_{i}^{4}}{\\\\pi^{4}}",
+          "subject_preview": "m_{1,1}= frac{12b_{1}l_{1}^{4}}{ pi^{4}}, qquad m_{1,2}",
+          "object_preview": "m_{2,1}= frac{8 pi^{2}m_{1,1}}{l_{1}^{2}}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{1,i}",
+              "context": "m_{1,i}=\\frac{12b_{i}l_{i}^{4}}{\\pi^{4}}"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{1,1}",
+              "context": "m_{1,1}= frac{12b_{1}l_{1}^{4}}{ pi^{4}}, qquad m_{1,2}"
+            },
+            {
+              "field": "object_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{2,1}",
+              "context": "m_{2,1}= frac{8 pi^{2}m_{1,1}}{l_{1}^{2}}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10524029,
+          "equation_card_id": "EQC-0000887a97ba0758",
+          "source_id": "1611.00588",
+          "score": 0.666667,
+          "endpoint": "object",
+          "equation_preview": "r_1 = \\\\overline{r}_1 -1",
+          "subject_preview": "a = sum_{h=1}^q overline{ theta}_h b_h + sum_{h=1}^q ( sum_{j=1}^s 2 pi l_j beta_{j,h}) b_h = sum_{h=1}^q ( overline{ theta}_h +2 pi overline{r}_h)b_h",
+          "object_preview": "r_1 = overline{r}_1",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{j,h}",
+              "context": "= sum_{h=1}^q overline{ theta}_h b_h + sum_{h=1}^q ( sum_{j=1}^s 2 pi l_j beta_{j,h}) b_h = sum_{h=1}^q ( overline{ theta}_h +2 pi overline{r}_h)b_h"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 14428694,
+          "equation_card_id": "EQC-0001067590675632",
+          "source_id": "astro-ph9810122",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "t_{1} < t_{p}",
+          "subject_preview": "t_{1} < t_{p}",
+          "object_preview": "\\nc_{p} > c_{1,2}+ alpha sqrt{c_{p}+c_{1,2}}\\n",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{1,2}",
+              "context": "\\nc_{p} > c_{1,2}+ alpha sqrt{c_{p}+c_{1,2}}\\n"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 6964934,
+          "equation_card_id": "EQC-000194598b21c0d5",
+          "source_id": "2501.10030",
+          "score": 0.571429,
+          "endpoint": "object",
+          "equation_preview": "\\ \\n\\t\\t{H_1^{mos}(\\\\{{x_{i}^{[0,{T_i-L}]}\\\\}_{i=1}^p})}\\\\\\\\\\n\\t\\t{H_L^{mos}(\\\\{{u_{i}^{[0,{T_i-1}]}\\\\}_{i=1}^p})}\\n\\t\\",
+          "subject_preview": "text{rank} \\n\\t\\t\\t\\t{h_1^{cum}( {{x_{i}^{[0,{t_i-l}]} }_{i=1}^p})} \\n\\t\\t\\t\\t{h_l^{cum}( {{u_{i}^{[0,{t_i-1}]} }_{i=1}^p})}\\n\\t\\t\\t = n + ml",
+          "object_preview": "text{rank} \\n\\t\\t\\t\\t{h_1^{mos}( {{x_{i}^{[0,{t_i-l}]} }_{i=1}^p})} \\n\\t\\t\\t\\t{h_l^{mos}( {{u_{i}^{[0,{t_i-1}]} }_{i=1}^p})}\\n\\t\\t\\t = n + ml",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\[[^\\]]+,[^\\]]+\\]",
+              "match": "[0,{t_i-l}]",
+              "context": "\\ \\n\\t\\t{h_1^{mos}(\\{{x_{i}^{[0,{t_i-l}]}\\}_{i=1}^p})}\\\\\\n\\t\\t{h_l^{mos}(\\{{u_{i}^{[0,{t_i-1}]}\\}_{i=1}^p})}\\n\\t\\"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{[0,{t_i-l}",
+              "context": "\\ \\n\\t\\t{h_1^{mos}(\\{{x_{i}^{[0,{t_i-l}]}\\}_{i=1}^p})}\\\\\\n\\t\\t{h_l^{mos}(\\{{u_{i}^{[0,{t_i-1}]}\\}_{i=1}^p})}\\n\\t\\"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\[[^\\]]+,[^\\]]+\\]",
+              "match": "[0,{t_i-l}]",
+              "context": "text{rank} \\n\\t\\t\\t\\t{h_1^{cum}( {{x_{i}^{[0,{t_i-l}]} }_{i=1}^p})} \\n\\t\\t\\t\\t{h_l^{cum}( {{u_{i}^{[0,{t_i-1}]} }_{i=1}^p})}\\n\\t\\t\\t"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 3696735,
+          "equation_card_id": "EQC-0001968839a6433f",
+          "source_id": "1802.04838",
+          "score": 0.9,
+          "endpoint": "subject",
+          "equation_preview": "\\\\|a_{m.}\\\\|_1 = \\\\|a_{m.}\\\\|_{1+} + \\\\|a_{m.}\\\\|_{1-}",
+          "subject_preview": "|a_{m.} |_1 = |a_{m.} |_{1+} + |a_{m.} |_{1-}",
+          "object_preview": "|a |_{p,q}=( sum_m |a_{m.} |_q^p)^{ frac{1}{p}}",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{p,q}",
+              "context": "|a |_{p,q}=( sum_m |a_{m.} |_q^p)^{ frac{1}{p}}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 4650632,
+          "equation_card_id": "EQC-0001a4283c3e5323",
+          "source_id": "2005.13988",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "Z_{x,y}=Z_{y}+z_{x,y}",
+          "subject_preview": "z_{x,y}=z_{y}+z_{x,y}",
+          "object_preview": "split n=10000= sum_{x}n_{x} total size to these 50 multinomial",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{x,y}",
+              "context": "z_{x,y}=z_{y}+z_{x,y}"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{x,y}",
+              "context": "z_{x,y}=z_{y}+z_{x,y}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1562154,
+          "equation_card_id": "EQC-0001f3d28ecc03f3",
+          "source_id": "0911.1344",
+          "score": 0.9,
+          "endpoint": "object",
+          "equation_preview": "Ext_A^{3,p^nq+(p+1)q+2}(H^{\\\\ast}K,H^{\\\\ast}M)=0",
+          "subject_preview": "d_2(h_ng_0)= alpha_2b_0h_n not=0 , so j^{ ast}d_2",
+          "object_preview": "ext_a^{3,p^nq+(p+1)q+2}(h^{ ast}k,h^{ ast}m)=0",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{3,p^nq+(p+1)q+2}",
+              "context": "ext_a^{3,p^nq+(p+1)q+2}(h^{\\ast}k,h^{\\ast}m)=0"
+            },
+            {
+              "field": "object_preview",
+              "pattern": "\\{[^\\}]+,[^\\}]+\\}",
+              "match": "{3,p^nq+(p+1)q+2}",
+              "context": "ext_a^{3,p^nq+(p+1)q+2}(h^{ ast}k,h^{ ast}m)=0"
+            }
+          ]
+        }
+      ],
+      "linear_superposition": [
+        {
+          "v2_row_id": 10524029,
+          "equation_card_id": "EQC-0000887a97ba0758",
+          "source_id": "1611.00588",
+          "score": 0.666667,
+          "endpoint": "object",
+          "equation_preview": "r_1 = \\\\overline{r}_1 -1",
+          "subject_preview": "a = sum_{h=1}^q overline{ theta}_h b_h + sum_{h=1}^q ( sum_{j=1}^s 2 pi l_j beta_{j,h}) b_h = sum_{h=1}^q ( overline{ theta}_h +2 pi overline{r}_h)b_h",
+          "object_preview": "r_1 = overline{r}_1",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "a = sum_{h=1}^q overline{ theta}_h b_h + sum_{h=1}^q ( sum_{j=1}^s 2 pi l_j beta_{j,h})"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 3696735,
+          "equation_card_id": "EQC-0001968839a6433f",
+          "source_id": "1802.04838",
+          "score": 0.9,
+          "endpoint": "subject",
+          "equation_preview": "\\\\|a_{m.}\\\\|_1 = \\\\|a_{m.}\\\\|_{1+} + \\\\|a_{m.}\\\\|_{1-}",
+          "subject_preview": "|a_{m.} |_1 = |a_{m.} |_{1+} + |a_{m.} |_{1-}",
+          "object_preview": "|a |_{p,q}=( sum_m |a_{m.} |_q^p)^{ frac{1}{p}}",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "|a |_{p,q}=( sum_m |a_{m.} |_q^p)^{ frac{1}{p}}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 4650632,
+          "equation_card_id": "EQC-0001a4283c3e5323",
+          "source_id": "2005.13988",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "Z_{x,y}=Z_{y}+z_{x,y}",
+          "subject_preview": "z_{x,y}=z_{y}+z_{x,y}",
+          "object_preview": "split n=10000= sum_{x}n_{x} total size to these 50 multinomial",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "split n=10000= sum_{x}n_{x} total size to these 50 multinomial"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 2942563,
+          "equation_card_id": "EQC-00040ac2fb87b5aa",
+          "source_id": "1511.06461",
+          "score": 0.615385,
+          "endpoint": "subject",
+          "equation_preview": "\\\\sum_{n=1}^{\\\\infty}t_{n} = \\\\infty",
+          "subject_preview": "f((i_{n},t_{n})_{i=1}^{ infty})=t_{1}",
+          "object_preview": "f circ theta^{k}((i_{n},t_{n})_{n=1}^{ infty})=t_{k+1}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "\\sum_{n=1}^{\\infty}t_{n} = \\infty"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10499585,
+          "equation_card_id": "EQC-000568a3ed76d10e",
+          "source_id": "1610.02766",
+          "score": 0.5625,
+          "endpoint": "object",
+          "equation_preview": "\\\\sum_{i=0}^{r-1} X_i (x) = \\\\eta^{B_{2^r} (x)} (x)",
+          "subject_preview": "eta^{v_{5n}} - h^b = eta^b",
+          "object_preview": "h_{2^r} (x) : = h^{b_{2^r} (x)} (x)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "\\sum_{i=0}^{r-1} x_i (x) = \\eta^{b_{2^r} (x)} (x)"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 3968316,
+          "equation_card_id": "EQC-00091ca73984d288",
+          "source_id": "1810.09024",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "X=(x_{ij})_{i,j}",
+          "subject_preview": "x=(x_{ij})_{i,j}",
+          "object_preview": "x= sum_{i,j} e_{i1} y_{ij} e_{1j} in u",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "x= sum_{i,j} e_{i1} y_{ij} e_{1j} in u"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 984766,
+          "equation_card_id": "EQC-0009859bbad36f8a",
+          "source_id": "math0610601",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "A(r+1) = 2^{r-1}+2^r+A(r)",
+          "subject_preview": "{2^r-1} t(2^{r+1} + 2k) = frac 12 left( \\n sum_{k=0}^{2^r-1} t(2^{r+1} + 2k) + t(2^{r+2}-2k-2) right) \\n = 2^{r-1},\\n \\nand\\n \\n sum_{k=0}^{2^r-1} t(2^{r+1} + 2k+1) = sum_{k=0}^{2^r-1} bigl(1 +\\n t(2^r+k) bigr)",
+          "object_preview": "a(r+1) = 2^{r-1}+2^r+a(r)",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "{2^r-1} t(2^{r+1} + 2k) = frac 12 left( \\n sum_{k=0}^{2^r-1} t(2^{r+1} + 2k) + t(2^{r+2}-2k-2) right) \\n = 2^{r-1},\\n \\nand\\n \\"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 7271938,
+          "equation_card_id": "EQC-000c06ff8860f860",
+          "source_id": "cond-mat9308038",
+          "score": 0.692308,
+          "endpoint": "subject",
+          "equation_preview": "\\n{\\\\cal H} = {\\\\cal H}_S + {\\\\cal H}_i + {\\\\cal H}_b\\n\\",
+          "subject_preview": "\\n{ cal h} = { cal h}_s + { cal h}_i + { cal h}_b\\n",
+          "object_preview": "\\n{ cal h}_i = - sum_{k=1}^n j_k x sigma_{x_k} \\n{ cal h}_b = sum_{k=1}^n frac{ hbar omega_k}{2} sigma_{z_k}\\n",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bsum_",
+              "match": "sum_",
+              "context": "\\n{ cal h}_i = - sum_{k=1}^n j_k x sigma_{x_k} \\n{ cal h}_b = sum_{k=1}^n frac{ hbar omega_k}{2} sigm"
+            }
+          ]
+        }
+      ],
+      "spectral_diagonal": [
+        {
+          "v2_row_id": 4897793,
+          "equation_card_id": "EQC-0000c19cc0409605",
+          "source_id": "2012.01436",
+          "score": 0.6875,
+          "endpoint": "subject",
+          "equation_preview": "\\n U(T) = (U_0)^{\\\\Omega T/2 \\\\pi}.\\n\\",
+          "subject_preview": "\\n u(t) = (u_0)^{ omega t/2 pi}.\\n",
+          "object_preview": "text{sff} = overline{| text{tr}[u(t)]|^2}",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\btr\\b",
+              "match": "tr",
+              "context": "text{sff} = overline{| text{tr}[u(t)]|^2}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 14326453,
+          "equation_card_id": "EQC-000a2f3faf4bfa0f",
+          "source_id": "dg-ga9710035",
+          "score": 0.615385,
+          "endpoint": "subject",
+          "equation_preview": "\\\\Omega ^p_{B/A}= \\\\Lambda ^p_B \\\\Omega _{B/A}",
+          "subject_preview": "omega ^1_{b/a}= omega _{b/a}",
+          "object_preview": "omega ^*_{b/a}= bigoplus _{p=0}^{ infty} omega ^p_{b/a}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\lambda\\b",
+              "match": "\\lambda",
+              "context": "\\omega ^p_{b/a}= \\lambda ^p_b \\omega _{b/a}"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blambda\\b",
+              "match": "lambda",
+              "context": "\\omega ^p_{b/a}= \\lambda ^p_b \\omega _{b/a}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 4489712,
+          "equation_card_id": "EQC-000db974801aa90d",
+          "source_id": "2002.00050",
+          "score": 0.666667,
+          "endpoint": "object",
+          "equation_preview": "x_1=\\\\frac{1}{1+(u+u^q)^{q-1}}",
+          "subject_preview": "tr left( frac{1}{v_1^{ frac{1}{q-1}}} right)=tr left( frac{1}{v_2^{ frac{1}{q-1}}} right)",
+          "object_preview": "frac{1}{v_2^{ frac{1}{q-1}}}= frac{(u+u^q)^{q}}{u^{q(q+1)}}= frac{1}{u^q}+ frac{1}{u^{q^2}}",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\btr\\b",
+              "match": "tr",
+              "context": "tr left( frac{1}{v_1^{ frac{1}{q-1}}} right)=tr left( frac{1}{v_2^{ frac{1}{q-1}}}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1949289,
+          "equation_card_id": "EQC-00213ed750e83d73",
+          "source_id": "1201.1022",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "Q=Q_s=x^3+axyz+bxz^2+cyz^2+dz^3",
+          "subject_preview": "q=q_s=x^3+axyz+bxz^2+cyz^2+dz^3",
+          "object_preview": "r=r(k,l,m):= det(d^2(q_e))=3k^2mp+9km^2q-3kl^2-m^3p^2",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bdet\\b",
+              "match": "det",
+              "context": "r=r(k,l,m):= det(d^2(q_e))=3k^2mp+9km^2q-3kl^2-m^3p^2"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 9815635,
+          "equation_card_id": "EQC-00264a17cddca91c",
+          "source_id": "1403.0807",
+          "score": 0.631579,
+          "endpoint": "object",
+          "equation_preview": "\\n\\\\Cc_k\\\\colon v^\\\\ell=u(u+1)^{\\\\ell-k-1}\\\\,.\\n",
+          "subject_preview": "\\n tr v_{ ell\\'}( cc_k)( frob_p)=0\\n",
+          "object_preview": "\\n cc_k colon v^ ell=u(u+1)^{ ell-k-1}\\n",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\btr\\b",
+              "match": "tr",
+              "context": "\\n tr v_{ ell\\'}( cc_k)( frob_p)=0\\n"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10182819,
+          "equation_card_id": "EQC-002ce3460e33271c",
+          "source_id": "1507.06213",
+          "score": 0.6,
+          "endpoint": "subject",
+          "equation_preview": "C^T P^\\\\ad C=a \\\\det P",
+          "subject_preview": "c^t p^ ad c=a det p",
+          "object_preview": "bigl(c^t p^ ad c bigr) ,t^2+ bigl(2 c_0^t p^ ad c-a det p bigr) ,t=0",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bdet\\b",
+              "match": "det",
+              "context": "c^t p^\\ad c=a \\det p"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\bdet\\b",
+              "match": "det",
+              "context": "c^t p^ ad c=a det p"
+            },
+            {
+              "field": "object_preview",
+              "pattern": "\\bdet\\b",
+              "match": "det",
+              "context": "bigl(c^t p^ ad c bigr) ,t^2+ bigl(2 c_0^t p^ ad c-a det p bigr) ,t=0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10841554,
+          "equation_card_id": "EQC-00315a478bfebc3b",
+          "source_id": "1709.08373",
+          "score": 0.588235,
+          "endpoint": "object",
+          "equation_preview": "\\n\\\\exp\\\\left(\\\\boldsymbol{J}_{h}^{'}\\\\phi\\\\right)=\\\\boldsymbol{g}^{-1}\\\\exp\\\\left(\\\\boldsymbol{J}_{h}\\\\phi\\\\right)\\\\boldsymbol{g}\\n\\",
+          "subject_preview": "phi sim textrm{tr} boldsymbol{h}= textrm{tr} boldsymbol{h}'",
+          "object_preview": "boldsymbol{j}_{h}^{'n}= boldsymbol{g}^{-1} boldsymbol{j}_{h}^{n} boldsymbol{g}",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\btr\\b",
+              "match": "tr",
+              "context": "phi sim textrm{tr} boldsymbol{h}= textrm{tr} boldsymbol{h}'"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 7654290,
+          "equation_card_id": "EQC-0039c8ef1cb5a358",
+          "source_id": "math0004080",
+          "score": 0.65,
+          "endpoint": "object",
+          "equation_preview": "T(G)(x) = \\\\sum_{J \\\\subset V(G)}{(-1)^{|J|}x^{det(G^J)}}",
+          "subject_preview": "widehat{s}(g)(x) = sum_{j subset v(g)}{(x-1)^{n-|j|}s(g_j)}",
+          "object_preview": "widehat{t}(g)(x) = sum_{j subset v(g)}{t(g_j)} =\\n sum_{j subset v(g)}{ sum_{j_m subset j}{(-1)^{|j_m|}x^{det(g^{j_m}_j)}}}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bdet\\b",
+              "match": "det",
+              "context": "t(g)(x) = \\sum_{j \\subset v(g)}{(-1)^{|j|}x^{det(g^j)}}"
+            },
+            {
+              "field": "object_preview",
+              "pattern": "\\bdet\\b",
+              "match": "det",
+              "context": "subset v(g)}{t(g_j)} =\\n sum_{j subset v(g)}{ sum_{j_m subset j}{(-1)^{|j_m|}x^{det(g^{j_m}_j)}}}"
+            }
+          ]
+        }
+      ],
+      "differential_transport": [
+        {
+          "v2_row_id": 852823,
+          "equation_card_id": "EQC-000269592aaf0b8d",
+          "source_id": "math0601526",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "f_{vv}(x)=0",
+          "subject_preview": "partial_v^2( a\\nh)(x_0,t_0)=0",
+          "object_preview": "f_{vv}(x_0)=0",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "partial_v^2( a\\nh)(x_0,t_0)=0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 6908012,
+          "equation_card_id": "EQC-0003f6545a50fc9c",
+          "source_id": "2412.05458",
+          "score": 0.692308,
+          "endpoint": "subject",
+          "equation_preview": "q_\\\\mu^{\\\\pm} = q_\\\\mu^1 \\\\pm i q_\\\\mu^2",
+          "subject_preview": "q_ mu^{ pm} = q_ mu^1 pm i q_ mu^2",
+          "object_preview": "q_{ mu nu}^3 = partial_ mu q_ nu^3",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "q_{ mu nu}^3 = partial_ mu q_ nu^3"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 2516042,
+          "equation_card_id": "EQC-0007f7481fd2a963",
+          "source_id": "1407.0259",
+          "score": 0.857143,
+          "endpoint": "subject",
+          "equation_preview": "F_{Bu}=\\\\partial_B A_u-\\\\partial_u A_B = O(1)",
+          "subject_preview": "f_{bu}= partial_b a_u- partial_u a_b = o(1)",
+          "object_preview": "e_b =f_{bu}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "f_{bu}=\\partial_b a_u-\\partial_u a_b = o(1)"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "f_{bu}= partial_b a_u- partial_u a_b = o(1)"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1574363,
+          "equation_card_id": "EQC-00155ded2eeb1094",
+          "source_id": "0911.4608",
+          "score": 0.703704,
+          "endpoint": "object",
+          "equation_preview": "\\nE_{BR}(\\\\vec{q},k)=\\\\frac{1}{4M}\\\\, q^{2}+\\\\frac{u_{1}(k)}{Z_{\\\\phi}(k)}\\n+\\\\frac{R_{B}(q,k)}{Z_{\\\\phi}(k)}\\",
+          "subject_preview": "partial_{k}u_{2}|_{b}= frac{u_{2}^{2}(k)}{2z_{ phi}^{3}(k)}",
+          "object_preview": "\\ne_{br}( vec{q},k)= frac{1}{4m} , q^{2}+ frac{u_{1}(k)}{z_{ phi}(k)}\\n+ frac{r_{b}(q,k)}{z_{ phi}(k)}",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "partial_{k}u_{2}|_{b}= frac{u_{2}^{2}(k)}{2z_{ phi}^{3}(k)}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 9403670,
+          "equation_card_id": "EQC-0015f6a2a354e965",
+          "source_id": "1206.3856",
+          "score": 0.684211,
+          "endpoint": "object",
+          "equation_preview": "\\\\forall e\\',\\\\quad\\\\partial_{e\\'} i^{u,v}_r(e\\')=\\\\frac{i^{u,v}_r(e\\')}{r(e\\')}j(e\\')=\\\\frac{i^{u,v}_r(e\\')}{r(e\\')}(i^{e\\'}_r(e\\')-1)\\\\",
+          "subject_preview": "forall e\\' not=e, quad partial_{e\\'} i^{u,v}_r(e)= frac{i^{u,v}_r(e\\')}{r(e\\')}i^{e\\'}_r(e)",
+          "object_preview": "artial_{e\\'} i^{u,v}_r(e\\')= frac{i^{u,v}_r(e\\')}{r(e\\')}j(e\\')= frac{i^{u,v}_r(e\\')}{r(e\\')}(i^{e\\'}_r(e\\')-1)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "\\forall e\\',\\quad\\partial_{e\\'} i^{u,v}_r(e\\')=\\frac{i^{u,v}_r(e\\')}{r(e\\')}j(e\\')=\\frac{i^{u,v}_r(e\\')}{r"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\bpartial_",
+              "match": "partial_",
+              "context": "forall e\\' not=e, quad partial_{e\\'} i^{u,v}_r(e)= frac{i^{u,v}_r(e\\')}{r(e\\')}i^{e\\'}_r(e)"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 11775921,
+          "equation_card_id": "EQC-0019226cd4a78e3c",
+          "source_id": "2003.07484",
+          "score": 0.578947,
+          "endpoint": "object",
+          "equation_preview": "\\nZ_H=\\\\mathbf{T}+X_H=\\\\frac{\\\\partial}{\\\\partial t}+\\\\frac{\\\\partial H}{\\\\partial p}\\\\frac{\\\\partial }{\\\\partial q}-\\\\frac{\\\\partial H}{\\\\partial q}\\\\frac{\\\\partial }{\\\\partial p},\\n\\",
+          "subject_preview": "i_{x_h} omega=dh- mathbf{t}(h) eta, quad i_{x_h} eta=0",
+          "object_preview": "mathbf{t}+x_h= frac{ partial}{ partial t}+ frac{ partial h}{ partial p} frac{ partial }{ partial q}- frac{ partial h}{ partial q} frac{ partial }{ partial p}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\partial\\b",
+              "match": "\\partial",
+              "context": "\\nz_h=\\mathbf{t}+x_h=\\frac{\\partial}{\\partial t}+\\frac{\\partial h}{\\partial p}\\frac{\\partial }{\\partial q}-\\frac{\\p"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 804709,
+          "equation_card_id": "EQC-0019300ad864ecb5",
+          "source_id": "math0506004",
+          "score": 0.636364,
+          "endpoint": "subject",
+          "equation_preview": "h|_{\\\\partial\\nX}=Id_X|_{\\\\partial X}",
+          "subject_preview": "h|_{ partial\\nx}=id_x|_{ partial x}",
+          "object_preview": "h( _,t)|_{ partial x}=id_x|_{ partial x}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\partial\\b",
+              "match": "\\partial",
+              "context": "h|_{\\partial\\nx}=id_x|_{\\partial x}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 4725860,
+          "equation_card_id": "EQC-001a93d74dabda03",
+          "source_id": "2007.10343",
+          "score": 0.615385,
+          "endpoint": "object",
+          "equation_preview": "\\\\vec{v}_\\\\mathrm{pl} = \\\\vec{v} = v \\\\, \\\\vec{e}_z",
+          "subject_preview": "velocity is vec{v}_ mathrm{w} = - vec{v}",
+          "object_preview": "vec{v}_ mathrm{pl} = vec{v} = v , vec{e}_z",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\bvelocity\\b",
+              "match": "velocity",
+              "context": "velocity is vec{v}_ mathrm{w} = - vec{v}"
+            }
+          ]
+        }
+      ],
+      "abelian_commutative": [
+        {
+          "v2_row_id": 10492901,
+          "equation_card_id": "EQC-000b12ef9a5a717a",
+          "source_id": "1609.08601",
+          "score": 0.625,
+          "endpoint": "subject_object",
+          "equation_preview": "[\\\\xi_1,\\\\xi_3]=\\\\xi_2",
+          "subject_preview": "[ xi_2, xi_3]= 0",
+          "object_preview": "[ xi_1, xi_2]= xi_1",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\[ *[^\\]]+ *, *[^\\]]+ *\\] *= *0",
+              "match": "[ xi_2, xi_3]= 0",
+              "context": "[ xi_2, xi_3]= 0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10861946,
+          "equation_card_id": "EQC-000c73d220af5628",
+          "source_id": "1710.04084",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "y_{1,1}=1",
+          "subject_preview": "y_{1,1}=1 , y_{1,2}=0 , y_{2,1}",
+          "object_preview": "r_{j_1,j_2}(x_{i_1,i_2}) = r_{j_1,j_2}(x_{i_1, i_2}, y_{i_1, i_2})",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{1,2}=0",
+              "context": "y_{1,1}=1 , y_{1,2}=0 , y_{2,1}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 5128426,
+          "equation_card_id": "EQC-001486243c494da8",
+          "source_id": "2105.09516",
+          "score": 0.583333,
+          "endpoint": "object",
+          "equation_preview": "P_{O, 4}=0.13",
+          "subject_preview": "{{p}_{o, 2}}= frac{ zeta_{1}}{2}",
+          "object_preview": "{{p}_{o, 4}}= frac{ zeta_{2}}{2}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{o, 4}=0",
+              "context": "p_{o, 4}=0.13"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8676928,
+          "equation_card_id": "EQC-00191602047b9769",
+          "source_id": "0810.3148",
+          "score": 0.55,
+          "endpoint": "object",
+          "equation_preview": "\\n Y_3=X_{-\\\\lambda_1}+X_{-\\\\lambda_2}-X_{-\\\\lambda_3}+ X_{-\\\\lambda_4}",
+          "subject_preview": "[x_2,ad(a_1)^2(x_2)]=[x_2,[a_1,x_1]]=-[x_2,[x_1,a_1]]=\\n-[x_1,[x_2,a_1]]=[x_1,x_1]=0",
+          "object_preview": "\\n a_1=[ x_2^{-1},x_1] , a_2={1 over\\n2}[x_2^{-1},x_0] ,x=x_2 ,y=x_0-{1 over\\n2}(ad(x_1))^2(x_2^{-1})+ {1 over 2}ad(x_2^{-1})ad(x_2)(x_0)",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\[ *[^\\]]+ *, *[^\\]]+ *\\] *= *0",
+              "match": "[x_1,x_1]=0",
+              "context": "[x_2,ad(a_1)^2(x_2)]=[x_2,[a_1,x_1]]=-[x_2,[x_1,a_1]]=\\n-[x_1,[x_2,a_1]]=[x_1,x_1]=0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8576006,
+          "equation_card_id": "EQC-001a4103dc5aa7e2",
+          "source_id": "0803.0244",
+          "score": 0.5625,
+          "endpoint": "subject",
+          "equation_preview": "b^K=\\\\sum_{k=0}^K \\\\sum_{l=0}^{m_k-1} b_{k,l}B^{k,l}",
+          "subject_preview": "tilde b= { tilde b_{k,l} }_{k, 0 le l<m_k}",
+          "object_preview": "0, tilde b_{k,l}=0 hbox{otherwise}",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{k,l}=0",
+              "context": "0, tilde b_{k,l}=0 hbox{otherwise}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 622674,
+          "equation_card_id": "EQC-001f612c235ae596",
+          "source_id": "math0406048",
+          "score": 0.636364,
+          "endpoint": "object",
+          "equation_preview": "Im (e^{-N}(e^Ke^N))=0",
+          "subject_preview": "e^n+e^{n_1-n_2}=2 cos |n|+2[( sin |n|)/|n|]n_1",
+          "object_preview": "{ e^m, e^n } =0",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{ e^m, e^n } =0",
+              "context": "{ e^m, e^n } =0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1571879,
+          "equation_card_id": "EQC-00204b57c77e043f",
+          "source_id": "0911.4243",
+          "score": 0.615385,
+          "endpoint": "subject_object",
+          "equation_preview": "a_{3,1}=0",
+          "subject_preview": "position (2,5) gives a_{1,9}=0",
+          "object_preview": "a_{3,5}=a_{3,9}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{3,1}=0",
+              "context": "a_{3,1}=0"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{1,9}=0",
+              "context": "position (2,5) gives a_{1,9}=0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 279628,
+          "equation_card_id": "EQC-00227cd42a67122e",
+          "source_id": "hep-th0204244",
+          "score": 0.590909,
+          "endpoint": "subject_object",
+          "equation_preview": "{\\\\bf ( 6_{a}|6_{1/a}.i|b)} : \\\\;\\n [X_1,X_2]=-a X_2-X_3, \\\\ [X_2,X_3] = 0, \\\\ [X_3,X_1] = X_2+ a X_3",
+          "subject_preview": "[x_1,x_2]=-a x_2-x_3, [x_2,x_3] = 0, [x_3,x_1]",
+          "object_preview": "[ tilde{x}^1, tilde{x}^2]=- b ( frac{1}{a} tilde{x}^2+ tilde{x}^3)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\[ *[^\\]]+ *, *[^\\]]+ *\\] *= *0",
+              "match": "[x_2,x_3] = 0",
+              "context": "{\\bf ( 6_{a}|6_{1/a}.i|b)} : \\;\\n [x_1,x_2]=-a x_2-x_3, \\ [x_2,x_3] = 0, \\ [x_3,x_1] = x_2+ a x_3"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\[ *[^\\]]+ *, *[^\\]]+ *\\] *= *0",
+              "match": "[x_2,x_3] = 0",
+              "context": "[x_1,x_2]=-a x_2-x_3, [x_2,x_3] = 0, [x_3,x_1]"
+            }
+          ]
+        }
+      ],
+      "prose_noise": [
+        {
+          "v2_row_id": 8954454,
+          "equation_card_id": "EQC-0016d180fe4aece5",
+          "source_id": "1001.2554",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "we consider \\\\\\\\ Q_c=(1-(x_1-c)^{q-1})P",
+          "subject_preview": "q_c=(1-(x_1-c)^{q-1})p",
+          "object_preview": "q (q-k)(q-(q-1+s-d))q^{m-t-1} \\ = (q-k)(d-s+1)q^{m-t-1}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwe\\b",
+              "match": "we",
+              "context": "we consider \\\\ q_c=(1-(x_1-c)^{q-1})p"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8706819,
+          "equation_card_id": "EQC-00296afd5c98c98d",
+          "source_id": "0812.0443",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "{anneal-1}\\n\\\\{\\\\check{X}_n(z),\\\\ z\\\\in \\\\Z^d\\\\}\\\\stackrel{Q-\\\\text{law}}{=}\\n\\\\{X_n(z),\\\\ z\\\\in \\\\Z^d\\\\}\\\\quad\\\\text{where}\\\\quad\\nX_n(z)=q_n^2(z)-l_n(z).\\n\\",
+          "subject_preview": "q_n(z)= sum_{i=1}^{l_n(z)} eta_z(i)",
+          "object_preview": "x_n(z)=q_n^2(z)-l_n(z)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "_n(z),\\ z\\in \\z^d\\}\\stackrel{q-\\text{law}}{=}\\n\\{x_n(z),\\ z\\in \\z^d\\}\\quad\\text{where}\\quad\\nx_n(z)=q_n^2(z)-l_n(z).\\n\\"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 7904025,
+          "equation_card_id": "EQC-011eb9ebf7123d31",
+          "source_id": "astro-ph0308143",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "4.3 ). Remarkably, the difference in the \\nnormalization between observation and theory is quite similar to that found \\nin the study of B335, a core that is likely associated with the same parent\\nmolecular cloud as...",
+          "subject_preview": "mathcal{f}={}",
+          "object_preview": "mathcal{f}={} (1.1 pm 0.1) (0.5 , mathrm{pc}/l) 1.190",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bthe\\b.*\\bis\\b",
+              "match": "the difference in the \\nnormalization between observation and theory is quite similar to that found \\nin the study of b335, a core that is",
+              "context": "4.3 ). remarkably, the difference in the \\nnormalization between observation and theory is quite similar to that found \\nin the study of b335, a core that is likely associated with the same parent\\nmolecular cloud as..."
+            }
+          ]
+        },
+        {
+          "v2_row_id": 3723749,
+          "equation_card_id": "EQC-013a3e238617759d",
+          "source_id": "1803.04995",
+          "score": 0.685714,
+          "endpoint": "object",
+          "equation_preview": "\\nI_1&=&I_1^{out}-I_1^{in}=\\\\frac{e^2}{h}[(T_1(3 - 2 f + f^2 (-2 + R_1) R_1)/a^2)V_1\\ \\\\\\\\&-&T_1V''_{1}-(T_1(1-f)/a^2+R_1 T_1 (1 - f) f/a^2)(V'_1+V'_{6})]\\ \\\\\\\\ \\\\qquad\\\\text{with }& & I_4=-I_1, \\\\text{where a=1-R_1f...",
+          "subject_preview": "i_1^{in}= frac{e^2}{h}(t_1(1-f)/a^2+t_1r_1(1-f)f/a^2)(v_1'+v_6')+ frac{e^2}{h}t_1v_6''",
+          "object_preview": "\\ni_1 = i_1^{out}-i_1^{in}= frac{e^2}{h}[(t_1(3 - 2 f + f^2 (-2 + r_1) r_1)/a^2)v_1 \\ - t_1v''_{1}-(t_1(1-f)/a^2+r_1 t_1 (1 - f) f/a^2)(v'_1+v'_{6})]",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "+r_1 t_1 (1 - f) f/a^2)(v'_1+v'_{6})]\\ \\\\ \\qquad\\text{with }& & i_4=-i_1, \\text{where a=1-r_1f..."
+            }
+          ]
+        },
+        {
+          "v2_row_id": 9167488,
+          "equation_card_id": "EQC-0170da4469ccea9e",
+          "source_id": "1102.0366",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "the relations\\n\\\\bes\\nh_{x_i}f=[h_{x_i},f]+fh_{x_i}, h_{y_i}f=[h_{y_i},f]+fh_{y_i},\\n\\\\ees\\nand multinomial coefficients, we get\\n\\\\bes\\n\\\\frac{1}{\\\\g!}h^{\\\\g}f=\\\\sum_{\\\\a+\\\\b=\\\\g}\\n\\\\frac{1}{\\\\a!\\\\b!} H^{\\\\a}(f) h^{\\...",
+          "subject_preview": "h_{x_i}f=[h_{x_i},f]+fh_{x_i}, h_{y_i}f=[h_{y_i},f]+fh_{y_i}",
+          "object_preview": "h_{x_i}(f)=[h_{x_i},f]= frac{ partial}{ partial y_i}(f), h_{y_i}(f)=[h_{y_i},f]=- frac{ partial}{ partial x_i}(f)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwe\\b",
+              "match": "we",
+              "context": "]+fh_{x_i}, h_{y_i}f=[h_{y_i},f]+fh_{y_i},\\n\\ees\\nand multinomial coefficients, we get\\n\\bes\\n\\frac{1}{\\g!}h^{\\g}f=\\sum_{\\a+\\b=\\g}\\n\\frac{1}{\\a!\\b!} h^{\\a}(f) h^{"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 3832189,
+          "equation_card_id": "EQC-03576851c013dd1b",
+          "source_id": "1806.07553",
+          "score": 0.590909,
+          "endpoint": "subject_object",
+          "equation_preview": "\\n{\\\\rm d}\\\\omega_1=-\\\\omega_2 \\\\wedge\\\\omega_4-\\\\omega_3\\\\wedge\\\\omega_5, \\\\\\\\\\n{\\\\rm d}\\\\omega_2=\\\\omega_1 \\\\wedge\\\\omega_4-\\\\omega_3\\\\wedge\\\\omega_6, \\\\\\\\\\n{\\\\rm d}\\\\omega_3=\\\\omega_1 \\\\wedge\\\\omega_5+\\\\omega_2\\\\we...",
+          "subject_preview": "{ rm d} omega_1=- omega_2 wedge omega_4- omega_3 wedge omega_5",
+          "object_preview": "{ rm d} omega_3= omega_1 wedge omega_5+ omega_2 wedge omega_6",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwe\\b",
+              "match": "we",
+              "context": "_4-\\omega_3\\wedge\\omega_6, \\\\\\n{\\rm d}\\omega_3=\\omega_1 \\wedge\\omega_5+\\omega_2\\we..."
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1321742,
+          "equation_card_id": "EQC-0402a81407614144",
+          "source_id": "0808.2728",
+          "score": 0.566667,
+          "endpoint": "subject_object",
+          "equation_preview": "Z \\nis the central charge. We take\\n\\\\ben\\nJ_{06} = g^3 E , \\\\quad J_{12} = g^4 J_a , \\\\quad J_{34} = g^4 J_b , \\\\quad Z = g^3 Q ,\\n\\\\een\\nso the eigenvalues of the Bogomolny matrix",
+          "subject_preview": "j_{06} = g^3 e , quad j_{12}",
+          "object_preview": "g^4 j_a , quad j_{34} = g^4 j_b , quad z = g^3 q",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwe\\b",
+              "match": "we",
+              "context": "z \\nis the central charge. we take\\n\\ben\\nj_{06} = g^3 e , \\quad j_{12} = g^4 j_a , \\quad j_{34} = g^4 j_b ,"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 3262880,
+          "equation_card_id": "EQC-042cb6198481df08",
+          "source_id": "1610.03549",
+          "score": 0.692308,
+          "endpoint": "object",
+          "equation_preview": "H(Du, D^2u)=\\\\D_{p,q}^su=|Du|^q\\\\sum_{i=1}^n |D_iu|^p D_{ii}u,\\\\;\\\\;\\\\mbox{where p,\\\\;q\\\\ge 0 }",
+          "subject_preview": "h(du, d^2u)=|du|^{q} d u+a|du|^{q-2} d_ infty u",
+          "object_preview": "h(du, d^2u)= d_{p,q}^su=|du|^q sum_{i=1}^n |d_iu|^p d_{ii}u",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "h(du, d^2u)=\\d_{p,q}^su=|du|^q\\sum_{i=1}^n |d_iu|^p d_{ii}u,\\;\\;\\mbox{where p,\\;q\\ge 0 }"
+            }
+          ]
+        }
+      ],
+      "readout_observable": [
+        {
+          "v2_row_id": 3620332,
+          "equation_card_id": "EQC-001edd29c4e0344f",
+          "source_id": "1711.11389",
+          "score": 0.55,
+          "endpoint": "subject",
+          "equation_preview": "=\\\\langle \\\\alpha,\\\\beta|[(\\\\alpha\\\\beta^{n-k+1}\\\\alpha\\\\beta^{-n+k})^{n+k}(\\\\alpha\\\\beta)^{-2k+1}\\\\beta^{-n+k-1}]^{m+1}=\\\\alpha\\\\beta^{n-k+1}\\\\alpha\\\\beta^{-n+k}\\\\rangle.\\",
+          "subject_preview": "\\t\\t = [ alpha( alpha beta^{n-k+1} alpha beta^{-n+k})^{n+k}( alpha beta)^{-2k+1} beta^{-n+k-1} alpha^{-1}]^{-(m+1)(n-k)+1} alpha beta^{n-k} alpha",
+          "object_preview": "\\t\\t = alpha[( alpha beta^{n-k+1} alpha beta^{-n+k})^{n+k}( alpha beta)^{-2k+1} beta^{-n+k-1}]^{-(m+1)(n-k)+1} beta^{n-k} alpha^{-1}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\langle",
+              "match": "\\langle",
+              "context": "=\\langle \\alpha,\\beta|[(\\alpha\\beta^{n-k+1}\\alpha\\beta^{-n+k})^{n+k}(\\alpha\\beta)^{-2k+1"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "=\\langle \\alpha,\\beta|[(\\alpha\\beta^{n-k+1}\\alpha\\beta^{-n+k})^{n+k}(\\alpha\\beta)^{-2k+1"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 6107748,
+          "equation_card_id": "EQC-002a2780a57dfd89",
+          "source_id": "2306.08654",
+          "score": 0.571429,
+          "endpoint": "object",
+          "equation_preview": "\\\\langle q, x\\\\rangle:=\\\\frac{1}{2}(\\\\bar q x + \\\\bar x q) = \\\\frac{1}{2}(q \\\\bar x + x \\\\bar q)",
+          "subject_preview": "|x|^{2} := x^{2}_{0}+x^{2}_{1}+x^{2}_{2}+x^{2}_{3}= x ,{ overline x}={ overline x} ,x",
+          "object_preview": "frac{1}{2}( bar q x + bar x q) = frac{1}{2}(q bar x + x bar q)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\langle",
+              "match": "\\langle",
+              "context": "\\langle q, x\\rangle:=\\frac{1}{2}(\\bar q x + \\bar x q) = \\frac{1}{2}(q \\bar x + x \\bar q"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "\\langle q, x\\rangle:=\\frac{1}{2}(\\bar q x + \\bar x q) = \\frac{1}{2}(q \\bar x + x \\bar q"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8992215,
+          "equation_card_id": "EQC-002da7a7f7134e70",
+          "source_id": "1003.5379",
+          "score": 0.6,
+          "endpoint": "subject_object",
+          "equation_preview": "\\\\langle\\\\mathcal{J}(x_2)x_1,x_1\\\\rangle=A(x_1,x_2,x_2,x_1)=\\\\alpha",
+          "subject_preview": "mathcal{j}(x_2)x_1= alpha x_1",
+          "object_preview": "a(x_1,x_2,x_2,x_1)=a(jx_1,jx_2,jx_2,jx_1)=a(jx_1,jx_2,x_2,x_1)= alpha",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\langle",
+              "match": "\\langle",
+              "context": "\\langle\\mathcal{j}(x_2)x_1,x_1\\rangle=a(x_1,x_2,x_2,x_1)=\\alpha"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "\\langle\\mathcal{j}(x_2)x_1,x_1\\rangle=a(x_1,x_2,x_2,x_1)=\\alpha"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8274589,
+          "equation_card_id": "EQC-004c8ffa512225dc",
+          "source_id": "quant-ph0607134",
+          "score": 0.607143,
+          "endpoint": "subject",
+          "equation_preview": "\\n X_{n,m}(E_1,E_2,\\\\omega,t):=\\n \\\\lim\\\\limits_{\\\\xi\\\\to 0}X_{n,m,\\\\xi}(E_1,E_2,\\\\omega,t), \\\\qquad X=B,B^+,N\\n",
+          "subject_preview": "\\n x_{n,m}(e_1,e_2, omega,t):=\\n lim limits_{ xi to 0}x_{n,m, xi}(e_1,e_2, omega,t), qquad x=b,b^+,n\\n",
+          "object_preview": "\\n [b_{n,m}(e_1,e_2, omega,t),b^+_{n\\',m\\'}(e_3,e_4, omega\\',t\\')]=\\n2 pi dl_{ omega, omega\\'} dl_{n,n\\'} dl_{m,m\\'} dl(t\\'-t) \\n times dl(e_1-e_3) dl(e_2-e_4) dl(e_1-e_2- omega) langle g_{n},p_{e_1}g_{n} r",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "n,n\\'} dl_{m,m\\'} dl(t\\'-t) \\n times dl(e_1-e_3) dl(e_2-e_4) dl(e_1-e_2- omega) langle g_{n},p_{e_1}g_{n} r"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 2156180,
+          "equation_card_id": "EQC-00641d0e815d0121",
+          "source_id": "1302.3882",
+          "score": 0.583333,
+          "endpoint": "object",
+          "equation_preview": "\\\\langle \\\\overline{a_2},\\\\overline{b_2},\\\\overline{c_2}\\\\mid \\\\overline{a_2}\\\\hspace{1pt}^{2^n}=\\\\overline{b_2}\\\\hspace{1pt}^{2^k}=\\\\overline{c_2}\\\\hspace{1pt}^2=1,\\n\\\\overline{a_2}\\\\hspace{1pt}^{\\\\overline{b_2}}=\\\\o...",
+          "subject_preview": "langle overline{a_2}, overline{b_2}, overline{c_2} mid overline{a_2} hspace{1pt}^{2^n}= overline{b_2} hspace{1pt}^{2^k}",
+          "object_preview": "overline{c_2} hspace{1pt}^2= overline{a_2} hspace{1pt}^{2^{n-1}}, overline{a_2} hspace{1pt}^{ overline{b_2}}= overline{a_2} hspace{1pt}^r",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\langle",
+              "match": "\\langle",
+              "context": "\\langle \\overline{a_2},\\overline{b_2},\\overline{c_2}\\mid \\overline{a_2}\\hspace{1pt}^{2^"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "\\langle \\overline{a_2},\\overline{b_2},\\overline{c_2}\\mid \\overline{a_2}\\hspace{1pt}^{2^"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "langle overline{a_2}, overline{b_2}, overline{c_2} mid overline{a_2} hspace{1pt}^{2^n}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 503542,
+          "equation_card_id": "EQC-007c3a814f87f928",
+          "source_id": "cond-mat0311163",
+          "score": 0.555556,
+          "endpoint": "subject",
+          "equation_preview": "\\\\omega({\\\\bf p},z) = |{\\\\bf p}|= p",
+          "subject_preview": "omega({ bf p},z) = |{ bf p}|= p",
+          "object_preview": "g(0,z) = {1 over a} sum_{{ bf p} } langle tilde{ phi}({ bf p},z)",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "g(0,z) = {1 over a} sum_{{ bf p} } langle tilde{ phi}({ bf p},z)"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 11984603,
+          "equation_card_id": "EQC-00af074a7147c65e",
+          "source_id": "2009.08540",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "\\\\mathbf{H_{6}} = \\\\langle g,x,y \\\\, | \\\\, g^4 = 1, x^2 = 0, y^2 =g^2 - 1, xg = -gx, yg = -gy, yx = -xy + g^2 - 1 \\\\rangle",
+          "subject_preview": "mathbf{h_{6}} = langle g,x,y , | , g^4",
+          "object_preview": "1, x^2 = 0, y^2 =g^2 - 1, xg = -gx, yg = -gy, yx = -xy + g^2 - 1",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\langle",
+              "match": "\\langle",
+              "context": "\\mathbf{h_{6}} = \\langle g,x,y \\, | \\, g^4 = 1, x^2 = 0, y^2 =g^2 - 1, xg = -gx, yg = -gy, yx = -xy + g^"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "\\mathbf{h_{6}} = \\langle g,x,y \\, | \\, g^4 = 1, x^2 = 0, y^2 =g^2 - 1, xg = -gx, yg = -gy, yx = -xy + g^"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "mathbf{h_{6}} = langle g,x,y , | , g^4"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10173786,
+          "equation_card_id": "EQC-0137a794c808936a",
+          "source_id": "1507.02554",
+          "score": 0.733333,
+          "endpoint": "object",
+          "equation_preview": "{\\\\phi(H_2) = \\\\langle a_2^{-1}, ta_2^{-1}t^{-2}a_2 \\\\rangle}",
+          "subject_preview": "\\na_1 = phi(a_1) \\na_2 = phi((a_2t)^{-1}) \\nt~ = phi(t^{-1}a_1)\\n",
+          "object_preview": "a_1a_2^{-1}t^{-1}a_2= [a_2, t]a_2^{-1}t^{-1}a_2= a_2^{-1}t^{-1}a_2ta_2^{-1}t^{-1}a_2 = (a_2^{-1}t^{-1}a_2)t(a_2^{-1}t^{-1}a_2)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\\\langle",
+              "match": "\\langle",
+              "context": "{\\phi(h_2) = \\langle a_2^{-1}, ta_2^{-1}t^{-2}a_2 \\rangle}"
+            },
+            {
+              "field": "equation_preview",
+              "pattern": "\\blangle\\b",
+              "match": "langle",
+              "context": "{\\phi(h_2) = \\langle a_2^{-1}, ta_2^{-1}t^{-2}a_2 \\rangle}"
+            }
+          ]
+        }
+      ],
+      "closure_constraint": [
+        {
+          "v2_row_id": 614179,
+          "equation_card_id": "EQC-0081dc027f23761a",
+          "source_id": "cond-mat0406441",
+          "score": 0.5625,
+          "endpoint": "subject",
+          "equation_preview": "u'_{\\\\v i\\\\v j}=W_{\\\\v\\ni}u_{\\\\v i \\\\v j}W^\\\\dag_{\\\\v j}",
+          "subject_preview": "u'_{ v i v j}=w_{ v\\ni}u_{ v i v j}w^ dag_{ v j}",
+          "object_preview": "si^ dag_{2 v i}|0 > are invariant under su(2) gauge",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\binvariant\\b",
+              "match": "invariant",
+              "context": "si^ dag_{2 v i}|0 > are invariant under su(2) gauge"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 9095349,
+          "equation_card_id": "EQC-00e284983108d40d",
+          "source_id": "1009.5768",
+          "score": 0.555556,
+          "endpoint": "subject",
+          "equation_preview": "\\n\\\\frac{Q^2}{2}&=&(-q_0 p^1 + q_2 q_3)\\\\ ,\\\\\\\\\\n\\\\frac{P^2}{2}&=&(q_1 p^0+ q_2 q_3)\\\\ ,\\\\\\\\\\nQ\\\\cdot P&=& q_0 p^0 - q_1 p^1 + q_1 p^1 + q_2 p^2\\\\ .\\n\\",
+          "subject_preview": "q=(q_0, -p^1, q_2,q_3)",
+          "object_preview": "4d duality invariant is given by i_4= 4 p^0 q_1 q_2 q_3",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\binvariant\\b",
+              "match": "invariant",
+              "context": "4d duality invariant is given by i_4= 4 p^0 q_1 q_2 q_3"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 13112743,
+          "equation_card_id": "EQC-022e3127539f3700",
+          "source_id": "2305.19647",
+          "score": 0.6,
+          "endpoint": "subject",
+          "equation_preview": "A= A-\\\\overline{(X-A)}^{\\\\mathcal{I}^{*}}",
+          "subject_preview": "cap overline{(x-a)}^{ mathcal{i}^{*}}= phi",
+          "object_preview": "assertions are equivalent:\\n\\n(i) a is mathcal{i}^{*} - closed.\\n\\n(ii) a= bigcap lbrace f:f text{ is } mathcal{i}^{*}- tex",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bclosed\\b",
+              "match": "closed",
+              "context": "assertions are equivalent:\\n\\n(i) a is mathcal{i}^{*} - closed.\\n\\n(ii) a= bigcap lbrace f:f text{ is } mathcal{i}^{*}- tex"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1851612,
+          "equation_card_id": "EQC-02c5ead5ca1cfec5",
+          "source_id": "1108.2005",
+          "score": 0.5625,
+          "endpoint": "subject",
+          "equation_preview": "d\\\\eta_{k_1,k_2}=\\\\pi^*\\\\gro_{k_1,k_2}",
+          "subject_preview": "d eta_{k_1,k_2}= pi^* gro_{k_1,k_2}",
+          "object_preview": "s^2 is natural projection defines a contact structure cald_{k_1,k_2}= ker eta_{k_1,k_2} on m^5_{k_1,k_2}",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bprojection\\b",
+              "match": "projection",
+              "context": "s^2 is natural projection defines a contact structure cald_{k_1,k_2}= ker eta_{k_1,k_2} on m^5_{k_1,k_2}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 612860,
+          "equation_card_id": "EQC-058843a8037507a6",
+          "source_id": "cond-mat0406028",
+          "score": 0.818182,
+          "endpoint": "object",
+          "equation_preview": "\\\\mbox{[open]}/\\\\mbox{[closed]}=a^N",
+          "subject_preview": "k_2= frac{ mbox{[open]}}{ mbox{[bubble]}}= frac{k_{ rm f}}{k_2}",
+          "object_preview": "mbox{[open]}/ mbox{[closed]}=a^n",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bclosed\\b",
+              "match": "closed",
+              "context": "\\mbox{[open]}/\\mbox{[closed]}=a^n"
+            },
+            {
+              "field": "object_preview",
+              "pattern": "\\bclosed\\b",
+              "match": "closed",
+              "context": "mbox{[open]}/ mbox{[closed]}=a^n"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1320237,
+          "equation_card_id": "EQC-093d0c2522b32a98",
+          "source_id": "0808.2487",
+          "score": 0.55,
+          "endpoint": "object",
+          "equation_preview": "[(M_1)_{\\\\omega}:M_0^{\\\\omega}\\\\cap M_1'] \\\\ge ||E_{M_0}(p)||^{-1}\\n= ||E_{A_{00}' \\\\cap A_{i0}}(p)||^{-1}",
+          "subject_preview": "tilde{e}_i = u_i^* e u_i gives a projection in m_1^{ omega}",
+          "object_preview": "e_{m_0}(u_i^* e u_i) = u_i^* e_{m_0}(e) u_i = [m_1:m_0]^{-1}1",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\bprojection\\b",
+              "match": "projection",
+              "context": "tilde{e}_i = u_i^* e u_i gives a projection in m_1^{ omega}"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 9112493,
+          "equation_card_id": "EQC-097aea247983ec9e",
+          "source_id": "1010.4412",
+          "score": 0.8,
+          "endpoint": "subject",
+          "equation_preview": "S_{1z}=S_{2z}=1/2",
+          "subject_preview": "s_z= s_{1z}+ s_{2z}",
+          "object_preview": "projector p=(1+2 s_{1z})(1+2 s_{2z})/4",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\bprojector\\b",
+              "match": "projector",
+              "context": "projector p=(1+2 s_{1z})(1+2 s_{2z})/4"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8165323,
+          "equation_card_id": "EQC-0a0d6398ad482f3d",
+          "source_id": "cond-mat0512244",
+          "score": 0.578947,
+          "endpoint": "subject",
+          "equation_preview": "B_q = \\\\frac{1}{2}\\\\left( \\\\cos (q_x) + \\\\cos (q_y)\\\\right)",
+          "subject_preview": "b_q = frac{1}{2} left( cos (q_x) + cos (q_y) right)",
+          "object_preview": "big[ cos (k^ prime_x+q_x-k_x)+ cos\\n (k^ prime_y+q_y-k_y) phantom{ big]} + phantom{ big[} cos (q_x) + cos\\n (q_y) big] = u/(2n)+f(k,k^ prime,q) .\\nthe hamiltonian remains invariant under translations by one lattice co",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\binvariant\\b",
+              "match": "invariant",
+              "context": "os (q_x) + cos\\n (q_y) big] = u/(2n)+f(k,k^ prime,q) .\\nthe hamiltonian remains invariant under translations by one lattice co"
+            }
+          ]
+        }
+      ]
+    },
+    "control": {
+      "abelian_commutative": [
+        {
+          "v2_row_id": 2993475,
+          "equation_card_id": "EQC-000ede875940649f",
+          "source_id": "1601.01307",
+          "score": 0.576923,
+          "endpoint": "subject",
+          "equation_preview": "\\n\\\\frac{\\\\lambda^2}{2z^2}+\\\\frac{(z^{\\\\gamma-1}-1)}{(\\\\gamma-1)}x^4-(1+\\\\alpha I_{1})x^3-\\\\alpha x^4I_{2}=0\\n\\",
+          "subject_preview": "\\n frac{ lambda^2}{2z^2}+ frac{(z^{ gamma-1}-1)}{( gamma-1)}x^4-(1+ alpha i_{1})x^3- alpha x^4i_{2}=0\\n",
+          "object_preview": "frac{ partial lambda}{ partial x} mid_{(x=xc,y=yc,z=zc)}=0",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{(x=xc,y=yc,z=zc)}=0",
+              "context": "frac{ partial lambda}{ partial x} mid_{(x=xc,y=yc,z=zc)}=0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 6122545,
+          "equation_card_id": "EQC-000f81940b9980dd",
+          "source_id": "2306.13562",
+          "score": 0.777778,
+          "endpoint": "subject",
+          "equation_preview": "w|_{r=1,R}=0",
+          "subject_preview": "psi|_{r=1, r}=0",
+          "object_preview": "w(r)= frac{1}{r^2}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{r=1,r}=0",
+              "context": "w|_{r=1,r}=0"
+            },
+            {
+              "field": "subject_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{r=1, r}=0",
+              "context": "psi|_{r=1, r}=0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 2632399,
+          "equation_card_id": "EQC-0016789a8c03889a",
+          "source_id": "1412.5099",
+          "score": 0.615385,
+          "endpoint": "subject",
+          "equation_preview": "1-T(e_{0}+e_{1}))^{-1} = (1-Te_{0})^{-1} + (1-Te_{0})^{-1}e_{1}(1-T(e_{0}+e_{1}))^{-1}",
+          "subject_preview": "e_{0}+e_{1}+e_{ infty} = 0",
+          "object_preview": "[e_{ij},e_{kl}] = 0",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\[ *[^\\]]+ *, *[^\\]]+ *\\] *= *0",
+              "match": "[e_{ij},e_{kl}] = 0",
+              "context": "[e_{ij},e_{kl}] = 0"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 279624,
+          "equation_card_id": "EQC-00227cd42a67122e",
+          "source_id": "hep-th0204244",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "{\\\\bf ( 6_{a}|6_{1/a}.i|b)} : \\\\;\\n [X_1,X_2]=-a X_2-X_3, \\\\ [X_2,X_3] = 0, \\\\ [X_3,X_1] = X_2+ a X_3",
+          "subject_preview": "langle . , . rangle = frac{a}{4b(a-1)^2} k^{1} - \\n frac{a}{4b(1+a)^2} k^{2}",
+          "object_preview": "[x_1,x_2]=-a x_2-x_3",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\[ *[^\\]]+ *, *[^\\]]+ *\\] *= *0",
+              "match": "[x_2,x_3] = 0",
+              "context": "{\\bf ( 6_{a}|6_{1/a}.i|b)} : \\;\\n [x_1,x_2]=-a x_2-x_3, \\ [x_2,x_3] = 0, \\ [x_3,x_1] = x_2+ a x_3"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1571877,
+          "equation_card_id": "EQC-002a5a08b9379186",
+          "source_id": "0911.4243",
+          "score": 0.666667,
+          "endpoint": "subject",
+          "equation_preview": "b_{1,1}=1",
+          "subject_preview": "b_{14,14}=1+b_{8,14}",
+          "object_preview": "can get b_{13,1}=0 , b_{13,2}=-1 .\\n\\nafter it",
+          "marker_matches": [
+            {
+              "field": "object_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{13,1}=0",
+              "context": "can get b_{13,1}=0 , b_{13,2}=-1 .\\n\\nafter it"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 4362204,
+          "equation_card_id": "EQC-0031ae59a21af4f6",
+          "source_id": "1910.05394",
+          "score": 0.551724,
+          "endpoint": "subject",
+          "equation_preview": "-\\\\partial_{tt}v_{2,s}+\\\\partial_{rr}v_{2,s}+\\\\frac{1}{r}\\\\partial_{r}v_{2,s}-\\\\frac{4}{r^{2}}v_{2,s}=0\\\\\\\\\\nv_{2,s}(s,r)=0\\\\\\\\\\n\\\\partial_{t}v_{2,s}(s,r) = RHS_{2}(s,r)\\",
+          "subject_preview": "- partial_{tt}v_{1}+ partial_{rr}v_{1}+ frac{1}{r} partial_{r}v_{1}- frac{4}{r^{2}} v_{1}=0, quad e(v_{1}, partial_{t}v_{1})< infty",
+          "object_preview": "frac{c}{ log^{4b-2}(t)}, quad t geq t_{0} \\nand lambda(t) = lambda_{0}(t) left(1+e(t) right)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{2,s}=0",
+              "context": "tt}v_{2,s}+\\partial_{rr}v_{2,s}+\\frac{1}{r}\\partial_{r}v_{2,s}-\\frac{4}{r^{2}}v_{2,s}=0\\\\\\nv_{2,s}(s,r)=0\\\\\\n\\partial_{t}v_{2,s}(s,r) = rhs_{2}(s,r)\\"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 9147718,
+          "equation_card_id": "EQC-003a0c2e76021f44",
+          "source_id": "1101.0847",
+          "score": 0.8,
+          "endpoint": "object",
+          "equation_preview": "a_1^*=a_2a_3, \\\\qquad a_2^*=a_1a_3, \\\\qquad a_3^*=a_1a_2",
+          "subject_preview": "a_i cdot d_{1,2,3,4}=a_i cdot d_{1,2,3,5}=a_i cdot d_{1,2,3,6}=0 qquad i=1,2,3",
+          "object_preview": "a_1^*=a_2a_3, qquad a_2^*=a_1a_3, qquad a_3^*=a_1a_2",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{1,2,3,6}=0",
+              "context": "a_i cdot d_{1,2,3,4}=a_i cdot d_{1,2,3,5}=a_i cdot d_{1,2,3,6}=0 qquad i=1,2,3"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 614701,
+          "equation_card_id": "EQC-0064dac59505d70d",
+          "source_id": "cond-mat0406578",
+          "score": 0.681818,
+          "endpoint": "subject_object",
+          "equation_preview": "\\nu_{j}^{*} \\\\pi_{j+1,N}^{*}+w_{j}^{*} \\\\pi_{j-1,N}^{*} -(u_{j}^{*}+w_{j}^{*}) \\\\pi_{j,N}^{*}=0,\\n\\",
+          "subject_preview": "\\nu_{j} pi_{j+1,n}+w_{j} pi_{j-1,n} -(u_{j}+w_{j}+ delta_{j}) pi_{j,n}=0.\\n",
+          "object_preview": "i_{j,n}= phi_{j} pi_{j,n}^{*}",
+          "marker_matches": [
+            {
+              "field": "subject_preview",
+              "pattern": "\\{ *[^\\}]+ *, *[^\\}]+ *\\} *= *0",
+              "match": "{j,n}=0",
+              "context": "\\nu_{j} pi_{j+1,n}+w_{j} pi_{j-1,n} -(u_{j}+w_{j}+ delta_{j}) pi_{j,n}=0.\\n"
+            }
+          ]
+        }
+      ],
+      "prose_noise": [
+        {
+          "v2_row_id": 12697247,
+          "equation_card_id": "EQC-0044884c9ec5556f",
+          "source_id": "2206.13673",
+          "score": 1.0,
+          "endpoint": "subject",
+          "equation_preview": "\\n p(u, v) = P_{XY}(X=u, Y=v) = \\\\frac{S_{u,v}}{A}, \\\\text{where}\\n\\",
+          "subject_preview": "p(u, v) = p_{xy}(x=u, y=v)",
+          "object_preview": "a= sum_{u=1}^{w} , sum_{v=1}^{h}s_{u,v}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "\\n p(u, v) = p_{xy}(x=u, y=v) = \\frac{s_{u,v}}{a}, \\text{where}\\n\\"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 7539179,
+          "equation_card_id": "EQC-00550da81a486a0e",
+          "source_id": "math9902073",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "H^0(X,\\\\xi_n)^*=\\\\rho_R \\\\text{ where } \\nR=F[S_1,S_2]/[S_1S_2,S_1^{n+1}]",
+          "subject_preview": "r=f[s_1,s_2]/[s_1s_2,s_2-s_1^{n+1}]",
+          "object_preview": "r=f[s_1,s_2]/[s_1s_2,s_1^{n+1}]",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "h^0(x,\\xi_n)^*=\\rho_r \\text{ where } \\nr=f[s_1,s_2]/[s_1s_2,s_1^{n+1}]"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 7904022,
+          "equation_card_id": "EQC-011eb9ebf7123d31",
+          "source_id": "astro-ph0308143",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "4.3 ). Remarkably, the difference in the \\nnormalization between observation and theory is quite similar to that found \\nin the study of B335, a core that is likely associated with the same parent\\nmolecular cloud as...",
+          "subject_preview": "iia scaled bonnor-ebert rho propto mathcal{f} rho_{be} r<83\\'\\'",
+          "object_preview": "mathcal{f}={}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bthe\\b.*\\bis\\b",
+              "match": "the difference in the \\nnormalization between observation and theory is quite similar to that found \\nin the study of b335, a core that is",
+              "context": "4.3 ). remarkably, the difference in the \\nnormalization between observation and theory is quite similar to that found \\nin the study of b335, a core that is likely associated with the same parent\\nmolecular cloud as..."
+            }
+          ]
+        },
+        {
+          "v2_row_id": 10391570,
+          "equation_card_id": "EQC-01e2b405cde01652",
+          "source_id": "1604.08837",
+          "score": 1.0,
+          "endpoint": "object",
+          "equation_preview": "\\nFor hooks, this can be rewritten as:\\n\\ \\n f_{h(a,b)} = f_{h(a-1, b)} + f_{h(a, b-1)},\\n\\ \\nwith the initial condition",
+          "subject_preview": "f_ lambda = sum_{ mu in lambda^-} f_ mu",
+          "object_preview": "f_{h(a,b)} = f_{h(a-1, b)} + f_{h(a, b-1)}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bthis\\b",
+              "match": "this",
+              "context": "\\nfor hooks, this can be rewritten as:\\n\\ \\n f_{h(a,b)} = f_{h(a-1, b)} + f_{h(a, b-1)},\\n\\ \\nwit"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 1321740,
+          "equation_card_id": "EQC-0402a81407614144",
+          "source_id": "0808.2728",
+          "score": 0.566667,
+          "endpoint": "object",
+          "equation_preview": "Z \\nis the central charge. We take\\n\\\\ben\\nJ_{06} = g^3 E , \\\\quad J_{12} = g^4 J_a , \\\\quad J_{34} = g^4 J_b , \\\\quad Z = g^3 Q ,\\n\\\\een\\nso the eigenvalues of the Bogomolny matrix",
+          "subject_preview": "m := { mathcal{q} , overline{ mathcal{q}} } = frac{1}{2} j_{ab} gamma^{ab} + z",
+          "object_preview": "j_{06} = g^3 e , quad j_{12} = g^4 j_a , quad j_{34} = g^4 j_b , quad z = g^3 q",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwe\\b",
+              "match": "we",
+              "context": "z \\nis the central charge. we take\\n\\ben\\nj_{06} = g^3 e , \\quad j_{12} = g^4 j_a , \\quad j_{34} = g^4 j_b ,"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 8500911,
+          "equation_card_id": "EQC-055ba23310c7dbc9",
+          "source_id": "0708.3609",
+          "score": 0.565217,
+          "endpoint": "subject_object",
+          "equation_preview": "\\n\\ \\nx_n^{-1}x_k&\\\\rightarrow x_kx_{n+1}^{-1}\\\\\\\\\\nx_k^{-1}x_n&\\\\rightarrow x_{n+1}x_k^{-1}\\\\\\\\\\nx_nx_k&\\\\rightarrow x_kx_{n+1}\\\\\\\\\\nx_k^{-1}x_n^{-1}&\\\\rightarrow x_{n+1}^{-1}x_k^{-1}\\n\\ \\n\\\\qquad\\\\text{(where }k<n\\\\...",
+          "subject_preview": "\\nx_n=(x_1)^{x_0^{n-1}}\\n",
+          "object_preview": "\\nx_nx_k=x_kx_{n+1}\\n",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "kx_{n+1}\\\\\\nx_k^{-1}x_n^{-1}&\\rightarrow x_{n+1}^{-1}x_k^{-1}\\n\\ \\n\\qquad\\text{(where }k<n\\..."
+            }
+          ]
+        },
+        {
+          "v2_row_id": 12290621,
+          "equation_card_id": "EQC-07376b4d3440e2a2",
+          "source_id": "2107.01320",
+          "score": 0.75,
+          "endpoint": "subject",
+          "equation_preview": "f(f(x,y),f(x,y))= f(x,y) \\\\ \\\\therefore \\\\ (c_1+c_2)(c_1x+c_2y) = (c_1x+c_2y)\\",
+          "subject_preview": "f=f(x,y)=c_1x+c_2y",
+          "object_preview": "c_1f(f,f)+c_2f(f,f)=(c_1+c_2)f(f,f) =(c_1+c_2)(c_1f+c_2f)=(c_1+c_2)^2f=(c_1+c_2)^2(c_1x+c_2y)",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\btherefore\\b",
+              "match": "therefore",
+              "context": "f(f(x,y),f(x,y))= f(x,y) \\ \\therefore \\ (c_1+c_2)(c_1x+c_2y) = (c_1x+c_2y)\\"
+            }
+          ]
+        },
+        {
+          "v2_row_id": 2678226,
+          "equation_card_id": "EQC-0a48bf4eeea1feb5",
+          "source_id": "1502.02301",
+          "score": 0.642857,
+          "endpoint": "object",
+          "equation_preview": "U_{\\\\text{BB}}=D_{\\\\text{o}} D_{\\\\text{e}} \\\\hbox{ where} \\",
+          "subject_preview": "\\np_{ text{o}} u_{ text{qw}}^2( alpha, beta, theta) p_{ text{o}}= d_{ text{e}}(r, theta, nu, tilde gamma)d_{ text{o}}(r, theta, nu, tilde gamma)",
+          "object_preview": "u_{ text{bb}}=d_{ text{o}}d_{ text{e}}",
+          "marker_matches": [
+            {
+              "field": "equation_preview",
+              "pattern": "\\bwhere\\b",
+              "match": "where",
+              "context": "u_{\\text{bb}}=d_{\\text{o}} d_{\\text{e}} \\hbox{ where} \\"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "claim_scope": "Enrichment audit for a derived V2 apparatus basin using source-card/V2-row alignments. It tests whether the target basin is enriched for marker families; it does not prove physical equivalence or that all rows in the basin are Abelian mechanisms."
+}

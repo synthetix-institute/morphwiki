@@ -1,0 +1,4725 @@
+{
+  "report_type": "operator_substrate_v2_apparatus_regimes",
+  "readiness": "usable",
+  "tokens": [
+    {
+      "token": "A00",
+      "cluster": 4,
+      "support": 211394,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.46992364525794983
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.34674522280693054
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.33659541606903076
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.33434394001960754
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.3334076702594757
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.32201087474823
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.32198041677474976
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.3182442784309387
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.312486469745636
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.2754298150539398
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω00",
+          "count": 99389
+        },
+        {
+          "token": "Ω02",
+          "count": 24596
+        },
+        {
+          "token": "Ω08",
+          "count": 15428
+        },
+        {
+          "token": "Ω06",
+          "count": 12512
+        },
+        {
+          "token": "Ω03",
+          "count": 11490
+        },
+        {
+          "token": "Ω07",
+          "count": 11045
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ00",
+          "count": 83543
+        },
+        {
+          "token": "Ξ01",
+          "count": 34457
+        },
+        {
+          "token": "Ξ02",
+          "count": 27297
+        },
+        {
+          "token": "Ξ04",
+          "count": 26900
+        },
+        {
+          "token": "Ξ07",
+          "count": 20924
+        },
+        {
+          "token": "Ξ09",
+          "count": 5401
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "unclassified",
+          "count": 103991
+        },
+        {
+          "route": "constraint_closure",
+          "count": 52543
+        },
+        {
+          "route": "spectral_operator",
+          "count": 25265
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 17546
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 6980
+        },
+        {
+          "route": "transport_flow",
+          "count": 4451
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 618
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.012972034513950348
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.009359866380691528
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.002794533269479871
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.0016258230898529291
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.0016228032764047384
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.0014351276913657784
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.0003231177688576281
+        }
+      ],
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_diffuse_r_mixed_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:diffuse",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.39520043142189465
+      }
+    },
+    {
+      "token": "A01",
+      "cluster": 11,
+      "support": 39917,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 2.8333094120025635
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 2.830700397491455
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 2.215825319290161
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.4949021339416504
+        },
+        {
+          "feature": "operator_apparatus:variational_derivative#0",
+          "weight": 0.4520876705646515
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.24006499350070953
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.22889624536037445
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.1862708330154419
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.18476556241512299
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.1831740438938141
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω04",
+          "count": 27135
+        },
+        {
+          "token": "Ω01",
+          "count": 2126
+        },
+        {
+          "token": "Ω06",
+          "count": 1570
+        },
+        {
+          "token": "Ω13",
+          "count": 1112
+        },
+        {
+          "token": "Ω11",
+          "count": 1051
+        },
+        {
+          "token": "Ω15",
+          "count": 972
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ06",
+          "count": 31180
+        },
+        {
+          "token": "Ξ05",
+          "count": 1733
+        },
+        {
+          "token": "Ξ01",
+          "count": 1097
+        },
+        {
+          "token": "Ξ07",
+          "count": 1019
+        },
+        {
+          "token": "Ξ04",
+          "count": 948
+        },
+        {
+          "token": "Ξ03",
+          "count": 909
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "transport_flow",
+          "count": 30139
+        },
+        {
+          "route": "spectral_operator",
+          "count": 4051
+        },
+        {
+          "route": "constraint_closure",
+          "count": 3157
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 2316
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 182
+        },
+        {
+          "route": "unclassified",
+          "count": 46
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 26
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.01506172027438879
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.013139032758772373
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.011559611186385155
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.009156662039458752
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.006912438198924065
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.006475231144577265
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.006362792104482651
+        }
+      ],
+      "signature_name": "A:Ω_derivative_graph-Ξ_graph_closure-R_transport-Γ_lo",
+      "signature_slug": "a_omega_derivative_graph_xi_graph_closure_r_transport_gamma_lo",
+      "display_label": "Ω:derivative_graph|Ξ:graph_closure|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:derivative_graph",
+        "xi": "Ξ:graph_closure",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.7811208257133552
+      }
+    },
+    {
+      "token": "A02",
+      "cluster": 1,
+      "support": 37851,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 2.9699716567993164
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 2.9343111515045166
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.6452580690383911
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.22825849056243896
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.19852064549922943
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.19168761372566223
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.18486936390399933
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.1785612255334854
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.17174549400806427
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.16184763610363007
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω01",
+          "count": 31229
+        },
+        {
+          "token": "Ω18",
+          "count": 3483
+        },
+        {
+          "token": "Ω11",
+          "count": 928
+        },
+        {
+          "token": "Ω21",
+          "count": 651
+        },
+        {
+          "token": "Ω15",
+          "count": 363
+        },
+        {
+          "token": "Ω16",
+          "count": 249
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ00",
+          "count": 10552
+        },
+        {
+          "token": "Ξ01",
+          "count": 6965
+        },
+        {
+          "token": "Ξ02",
+          "count": 4663
+        },
+        {
+          "token": "Ξ04",
+          "count": 3832
+        },
+        {
+          "token": "Ξ07",
+          "count": 3550
+        },
+        {
+          "token": "Ξ05",
+          "count": 3267
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "spectral_operator",
+          "count": 37564
+        },
+        {
+          "route": "constraint_closure",
+          "count": 240
+        },
+        {
+          "route": "transport_flow",
+          "count": 30
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 14
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 3
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.012678277678787708
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.008653045631945133
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.006689450237900019
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.00610970426350832
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.005770227871835232
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.003930649254471064
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.003327242797240615
+        }
+      ],
+      "signature_name": "A:Ω_spectral-Ξ_diffuse-R_spectral-Γ_lo",
+      "signature_slug": "a_omega_spectral_xi_diffuse_r_spectral_gamma_lo",
+      "display_label": "Ω:spectral|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:spectral",
+        "xi": "Ξ:diffuse",
+        "route": "spectral",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.27877731103537556
+      }
+    },
+    {
+      "token": "A03",
+      "cluster": 0,
+      "support": 36408,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 2.1283767223358154
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 1.9031460285186768
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 1.4021276235580444
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.2776060402393341
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.2673419415950775
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.2605970501899719
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.25617581605911255
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.2475811243057251
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.24380724132061005
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.2353084683418274
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω03",
+          "count": 16140
+        },
+        {
+          "token": "Ω02",
+          "count": 3868
+        },
+        {
+          "token": "Ω06",
+          "count": 3347
+        },
+        {
+          "token": "Ω14",
+          "count": 2519
+        },
+        {
+          "token": "Ω09",
+          "count": 2222
+        },
+        {
+          "token": "Ω13",
+          "count": 1660
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ01",
+          "count": 22608
+        },
+        {
+          "token": "Ξ02",
+          "count": 5175
+        },
+        {
+          "token": "Ξ04",
+          "count": 2542
+        },
+        {
+          "token": "Ξ07",
+          "count": 1734
+        },
+        {
+          "token": "Ξ09",
+          "count": 1167
+        },
+        {
+          "token": "Ξ05",
+          "count": 959
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "unclassified",
+          "count": 14256
+        },
+        {
+          "route": "constraint_closure",
+          "count": 7859
+        },
+        {
+          "route": "spectral_operator",
+          "count": 6206
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 3789
+        },
+        {
+          "route": "transport_flow",
+          "count": 3171
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 1048
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 79
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.013911673799157143
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.0062301852740347385
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.004817935172468424
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.004677848890423775
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.003730985103175044
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.0032987261656671762
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.0023075956851243973
+        }
+      ],
+      "signature_name": "A:Ω_readout-Ξ_selector_hilbert_field_carrier-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_xi_selector_hilbert_field_carrier_r_mixed_gamma_lo",
+      "display_label": "Ω:readout|Ξ:selector_hilbert_field_carrier|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout",
+        "xi": "Ξ:selector_hilbert_field_carrier",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.6209624258404747
+      }
+    },
+    {
+      "token": "A04",
+      "cluster": 13,
+      "support": 29880,
+      "top_features": [
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 3.2404754161834717
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 1.710767388343811
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.4936329126358032
+        },
+        {
+          "feature": "route:boundary_weak_form",
+          "weight": 0.6229883432388306
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.25453484058380127
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.24982036650180817
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.2300225794315338
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.21645884215831757
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.21588553488254547
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.19979776442050934
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω00",
+          "count": 9756
+        },
+        {
+          "token": "Ω02",
+          "count": 2754
+        },
+        {
+          "token": "Ω03",
+          "count": 2552
+        },
+        {
+          "token": "Ω05",
+          "count": 2401
+        },
+        {
+          "token": "Ω06",
+          "count": 2357
+        },
+        {
+          "token": "Ω08",
+          "count": 1314
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ05",
+          "count": 28544
+        },
+        {
+          "token": "Ξ10",
+          "count": 374
+        },
+        {
+          "token": "Ξ07",
+          "count": 195
+        },
+        {
+          "token": "Ξ12",
+          "count": 182
+        },
+        {
+          "token": "Ξ14",
+          "count": 123
+        },
+        {
+          "token": "Ξ09",
+          "count": 117
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "boundary_weak_form",
+          "count": 28717
+        },
+        {
+          "route": "spectral_operator",
+          "count": 693
+        },
+        {
+          "route": "transport_flow",
+          "count": 238
+        },
+        {
+          "route": "constraint_closure",
+          "count": 207
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 24
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 1
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.012694860808551311
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.007071938365697861
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.006093672011047602
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.0039833784103393555
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.003675165819004178
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.003624001517891884
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.0019466755911707878
+        }
+      ],
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_closure_field_carrier_coordinate-R_boundary-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_closure_field_carrier_coordinate_r_boundary_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:closure_field_carrier_coordinate|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:closure_field_carrier_coordinate",
+        "route": "boundary",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9552878179384203
+      }
+    },
+    {
+      "token": "A05",
+      "cluster": 3,
+      "support": 27065,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 3.0404839515686035
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.5396782159805298
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.3251548707485199
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.32390472292900085
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.32367029786109924
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.30577436089515686
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.3050922751426697
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.29035019874572754
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.28476884961128235
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.28348878026008606
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω05",
+          "count": 20165
+        },
+        {
+          "token": "Ω06",
+          "count": 2055
+        },
+        {
+          "token": "Ω11",
+          "count": 696
+        },
+        {
+          "token": "Ω02",
+          "count": 663
+        },
+        {
+          "token": "Ω16",
+          "count": 623
+        },
+        {
+          "token": "Ω13",
+          "count": 580
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ00",
+          "count": 8506
+        },
+        {
+          "token": "Ξ01",
+          "count": 4938
+        },
+        {
+          "token": "Ξ02",
+          "count": 4215
+        },
+        {
+          "token": "Ξ07",
+          "count": 3956
+        },
+        {
+          "token": "Ξ04",
+          "count": 2818
+        },
+        {
+          "token": "Ξ10",
+          "count": 798
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "transport_flow",
+          "count": 22290
+        },
+        {
+          "route": "constraint_closure",
+          "count": 2463
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 1386
+        },
+        {
+          "route": "spectral_operator",
+          "count": 818
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 91
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 17
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.010853747837245464
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.010762522928416729
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.007531014736741781
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.007338953670114279
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.0025373755488544703
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.001788629568181932
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.0016411109827458858
+        }
+      ],
+      "signature_name": "A:Ω_derivative-Ξ_diffuse-R_transport-Γ_lo",
+      "signature_slug": "a_omega_derivative_xi_diffuse_r_transport_gamma_lo",
+      "display_label": "Ω:derivative|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:derivative",
+        "xi": "Ξ:diffuse",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.31428043598743766
+      }
+    },
+    {
+      "token": "A06",
+      "cluster": 2,
+      "support": 22598,
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 2.9788413047790527
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 2.9690768718719482
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.23127418756484985
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.19852294027805328
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.19686634838581085
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.19038914144039154
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.19005568325519562
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.18447202444076538
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.1836172640323639
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.17698830366134644
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω00",
+          "count": 6060
+        },
+        {
+          "token": "Ω02",
+          "count": 2145
+        },
+        {
+          "token": "Ω06",
+          "count": 1964
+        },
+        {
+          "token": "Ω03",
+          "count": 1929
+        },
+        {
+          "token": "Ω05",
+          "count": 1563
+        },
+        {
+          "token": "Ω01",
+          "count": 1520
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ03",
+          "count": 21532
+        },
+        {
+          "token": "Ξ10",
+          "count": 223
+        },
+        {
+          "token": "Ξ12",
+          "count": 163
+        },
+        {
+          "token": "Ξ09",
+          "count": 146
+        },
+        {
+          "token": "Ξ07",
+          "count": 118
+        },
+        {
+          "token": "Ξ02",
+          "count": 89
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "unclassified",
+          "count": 7139
+        },
+        {
+          "route": "constraint_closure",
+          "count": 5089
+        },
+        {
+          "route": "spectral_operator",
+          "count": 4436
+        },
+        {
+          "route": "transport_flow",
+          "count": 3143
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 2273
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 445
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 73
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.012719802558422089
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.007610844913870096
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.00646849675104022
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.004566457588225603
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.0044610206969082355
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.004450349137187004
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.004284494090825319
+        }
+      ],
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_markov-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_markov_r_mixed_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:markov|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:markov",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9528276838658288
+      }
+    },
+    {
+      "token": "A07",
+      "cluster": 9,
+      "support": 18578,
+      "top_features": [
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 4.3921966552734375
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 3.8721749782562256
+        },
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 2.7684197425842285
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.6435802578926086
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.17163915932178497
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.16693632304668427
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.15470615029335022
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.1417258381843567
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.1411774605512619
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.14058369398117065
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω10",
+          "count": 9309
+        },
+        {
+          "token": "Ω07",
+          "count": 2941
+        },
+        {
+          "token": "Ω02",
+          "count": 1048
+        },
+        {
+          "token": "Ω06",
+          "count": 739
+        },
+        {
+          "token": "Ω04",
+          "count": 637
+        },
+        {
+          "token": "Ω01",
+          "count": 535
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ01",
+          "count": 10395
+        },
+        {
+          "token": "Ξ04",
+          "count": 1709
+        },
+        {
+          "token": "Ξ06",
+          "count": 1395
+        },
+        {
+          "token": "Ξ03",
+          "count": 1212
+        },
+        {
+          "token": "Ξ05",
+          "count": 1167
+        },
+        {
+          "token": "Ξ02",
+          "count": 909
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "spectral_operator",
+          "count": 18406
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 78
+        },
+        {
+          "route": "transport_flow",
+          "count": 49
+        },
+        {
+          "route": "constraint_closure",
+          "count": 41
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 4
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.02808115817606449
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.013657879084348679
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.012943858280777931
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.010468581691384315
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.008281300775706768
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.005738930311053991
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.00528301578015089
+        }
+      ],
+      "signature_name": "A:Ω_spectral_readout_closure-Ξ_selector_hilbert_field_carrier-R_spectral-Γ_lo",
+      "signature_slug": "a_omega_spectral_readout_closure_xi_selector_hilbert_field_carrier_r_spectral_gamma_lo",
+      "display_label": "Ω:spectral_readout_closure|Ξ:selector_hilbert_field_carrier|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:spectral_readout_closure",
+        "xi": "Ξ:selector_hilbert_field_carrier",
+        "route": "spectral",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.5595327807083648
+      }
+    },
+    {
+      "token": "A08",
+      "cluster": 15,
+      "support": 17428,
+      "top_features": [
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 4.748363494873047
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 2.8942759037017822
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 2.8331761360168457
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.2875162959098816
+        },
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 0.23300355672836304
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.20162008702754974
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.1576300412416458
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.15159718692302704
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.14856113493442535
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.1471814513206482
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω12",
+          "count": 10941
+        },
+        {
+          "token": "Ω22",
+          "count": 2046
+        },
+        {
+          "token": "Ω24",
+          "count": 1810
+        },
+        {
+          "token": "Ω01",
+          "count": 621
+        },
+        {
+          "token": "Ω11",
+          "count": 393
+        },
+        {
+          "token": "Ω06",
+          "count": 193
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ03",
+          "count": 14053
+        },
+        {
+          "token": "Ξ05",
+          "count": 926
+        },
+        {
+          "token": "Ξ12",
+          "count": 714
+        },
+        {
+          "token": "Ξ06",
+          "count": 338
+        },
+        {
+          "token": "Ξ10",
+          "count": 312
+        },
+        {
+          "token": "Ξ09",
+          "count": 260
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "unclassified",
+          "count": 5386
+        },
+        {
+          "route": "constraint_closure",
+          "count": 3430
+        },
+        {
+          "route": "spectral_operator",
+          "count": 3034
+        },
+        {
+          "route": "transport_flow",
+          "count": 2607
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 2159
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 749
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 63
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.01666240766644478
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.010328876785933971
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.009936243295669556
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.009097753092646599
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.008929666131734848
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.006885196547955275
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.006440784782171249
+        }
+      ],
+      "signature_name": "A:Ω_markov_integral-Ξ_markov-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_markov_integral_xi_markov_r_mixed_gamma_lo",
+      "display_label": "Ω:markov_integral|Ξ:markov|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:markov_integral",
+        "xi": "Ξ:markov",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.8063461097085151
+      }
+    },
+    {
+      "token": "A09",
+      "cluster": 8,
+      "support": 13484,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 5.174666404724121
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.6249840259552002
+        },
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": 1.0261150598526
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.45412805676460266
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.31239253282546997
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.2906982898712158
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.26033347845077515
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.22945764660835266
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.19234688580036163
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.1732925921678543
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω09",
+          "count": 7985
+        },
+        {
+          "token": "Ω14",
+          "count": 2943
+        },
+        {
+          "token": "Ω06",
+          "count": 326
+        },
+        {
+          "token": "Ω11",
+          "count": 310
+        },
+        {
+          "token": "Ω01",
+          "count": 282
+        },
+        {
+          "token": "Ω15",
+          "count": 273
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ07",
+          "count": 5198
+        },
+        {
+          "token": "Ξ01",
+          "count": 1522
+        },
+        {
+          "token": "Ξ02",
+          "count": 1501
+        },
+        {
+          "token": "Ξ05",
+          "count": 1285
+        },
+        {
+          "token": "Ξ03",
+          "count": 1257
+        },
+        {
+          "token": "Ξ04",
+          "count": 826
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "transport_flow",
+          "count": 9442
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 2156
+        },
+        {
+          "route": "constraint_closure",
+          "count": 950
+        },
+        {
+          "route": "spectral_operator",
+          "count": 890
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 32
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 14
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.027664436027407646
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.018782714381814003
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.01645546406507492
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.008772478438913822
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.008335385471582413
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.006458084098994732
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.006233909633010626
+        }
+      ],
+      "signature_name": "A:Ω_readout_derivative_closure-Ξ_diffuse-R_transport-Γ_lo",
+      "signature_slug": "a_omega_readout_derivative_closure_xi_diffuse_r_transport_gamma_lo",
+      "display_label": "Ω:readout_derivative_closure|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout_derivative_closure",
+        "xi": "Ξ:diffuse",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.38549391871848115
+      }
+    },
+    {
+      "token": "A10",
+      "cluster": 6,
+      "support": 10193,
+      "top_features": [
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 4.715425491333008
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 3.509413003921509
+        },
+        {
+          "feature": "protocol_order:write_hold_read#0",
+          "weight": 0.24964450299739838
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.2382713407278061
+        },
+        {
+          "feature": "operator_apparatus:reaction_operator#0",
+          "weight": 0.2245326191186905
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.219886913895607
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.19300349056720734
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.1663208305835724
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.15181516110897064
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.1414315551519394
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω07",
+          "count": 2604
+        },
+        {
+          "token": "Ω09",
+          "count": 1511
+        },
+        {
+          "token": "Ω04",
+          "count": 958
+        },
+        {
+          "token": "Ω02",
+          "count": 909
+        },
+        {
+          "token": "Ω05",
+          "count": 736
+        },
+        {
+          "token": "Ω06",
+          "count": 712
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ08",
+          "count": 3915
+        },
+        {
+          "token": "Ξ05",
+          "count": 1126
+        },
+        {
+          "token": "Ξ01",
+          "count": 875
+        },
+        {
+          "token": "Ξ02",
+          "count": 868
+        },
+        {
+          "token": "Ξ03",
+          "count": 773
+        },
+        {
+          "token": "Ξ06",
+          "count": 767
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "spectral_operator",
+          "count": 2297
+        },
+        {
+          "route": "transport_flow",
+          "count": 2167
+        },
+        {
+          "route": "unclassified",
+          "count": 2079
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 2040
+        },
+        {
+          "route": "constraint_closure",
+          "count": 1253
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 261
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 96
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.034984465688467026
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.013908931985497475
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.011637954972684383
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.009824962355196476
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.009640974923968315
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.007333884947001934
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.007243532687425613
+        }
+      ],
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_spectral-Γ_lo",
+      "signature_slug": "a_omega_closure_protocol_derivative_xi_diffuse_r_spectral_gamma_lo",
+      "display_label": "Ω:closure_protocol_derivative|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:closure_protocol_derivative",
+        "xi": "Ξ:diffuse",
+        "route": "spectral",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.38408711861081135
+      }
+    },
+    {
+      "token": "A11",
+      "cluster": 10,
+      "support": 8683,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 6.198094367980957
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 4.742392063140869
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5414897799491882
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5353770852088928
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.4771428108215332
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.4468423128128052
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.3525146245956421
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.3428780734539032
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.3257175385951996
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.3223012387752533
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω07",
+          "count": 4527
+        },
+        {
+          "token": "Ω02",
+          "count": 873
+        },
+        {
+          "token": "Ω05",
+          "count": 689
+        },
+        {
+          "token": "Ω01",
+          "count": 592
+        },
+        {
+          "token": "Ω08",
+          "count": 443
+        },
+        {
+          "token": "Ω06",
+          "count": 246
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ08",
+          "count": 8481
+        },
+        {
+          "token": "Ξ10",
+          "count": 121
+        },
+        {
+          "token": "Ξ14",
+          "count": 56
+        },
+        {
+          "token": "Ξ15",
+          "count": 8
+        },
+        {
+          "token": "Ξ11",
+          "count": 7
+        },
+        {
+          "token": "Ξ12",
+          "count": 7
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "unclassified",
+          "count": 4132
+        },
+        {
+          "route": "spectral_operator",
+          "count": 1851
+        },
+        {
+          "route": "constraint_closure",
+          "count": 1263
+        },
+        {
+          "route": "transport_flow",
+          "count": 1005
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 236
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 149
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 47
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.012937125749886036
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.011548623442649841
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.010899786837399006
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.007118426728993654
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.0037934002466499805
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 7.677837857045233e-05
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 3.8389189285226166e-05
+        }
+      ],
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_reaction_hilbert-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_closure_protocol_derivative_xi_reaction_hilbert_r_mixed_gamma_lo",
+      "display_label": "Ω:closure_protocol_derivative|Ξ:reaction_hilbert|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:closure_protocol_derivative",
+        "xi": "Ξ:reaction_hilbert",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9767361510998502
+      }
+    },
+    {
+      "token": "A12",
+      "cluster": 12,
+      "support": 8127,
+      "top_features": [
+        {
+          "feature": "selector:positivity#0",
+          "weight": 7.216842174530029
+        },
+        {
+          "feature": "readout_current:biological_response#0",
+          "weight": 0.31632480025291443
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.27933722734451294
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.26818668842315674
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.24980643391609192
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.23717303574085236
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.21126876771450043
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.20614930987358093
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.1933632493019104
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.1904895007610321
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω00",
+          "count": 2638
+        },
+        {
+          "token": "Ω01",
+          "count": 650
+        },
+        {
+          "token": "Ω02",
+          "count": 641
+        },
+        {
+          "token": "Ω07",
+          "count": 565
+        },
+        {
+          "token": "Ω06",
+          "count": 529
+        },
+        {
+          "token": "Ω03",
+          "count": 505
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ11",
+          "count": 7762
+        },
+        {
+          "token": "Ξ09",
+          "count": 91
+        },
+        {
+          "token": "Ξ12",
+          "count": 61
+        },
+        {
+          "token": "Ξ04",
+          "count": 41
+        },
+        {
+          "token": "Ξ14",
+          "count": 39
+        },
+        {
+          "token": "Ξ10",
+          "count": 38
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "unclassified",
+          "count": 3127
+        },
+        {
+          "route": "spectral_operator",
+          "count": 1520
+        },
+        {
+          "route": "constraint_closure",
+          "count": 1500
+        },
+        {
+          "route": "transport_flow",
+          "count": 986
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 640
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 206
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 148
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.013046706095337868
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.01135876215994358
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.0070083364844322205
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.0068290880881249905
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.005903992336243391
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.00426288228482008
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.0032698181457817554
+        }
+      ],
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_positivity-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_positivity_r_mixed_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:positivity|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:positivity",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9550879783437923
+      }
+    },
+    {
+      "token": "A13",
+      "cluster": 16,
+      "support": 8040,
+      "top_features": [
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 7.545806884765625
+        },
+        {
+          "feature": "route:discrete_protocol",
+          "weight": 0.2580997943878174
+        },
+        {
+          "feature": "route:constraint_closure",
+          "weight": 0.12301182746887207
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.11151127517223358
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.10721508413553238
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.10170714557170868
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.09160283207893372
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.08944445103406906
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.08870218694210052
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": -0.08716973662376404
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω07",
+          "count": 2853
+        },
+        {
+          "token": "Ω14",
+          "count": 688
+        },
+        {
+          "token": "Ω04",
+          "count": 575
+        },
+        {
+          "token": "Ω01",
+          "count": 561
+        },
+        {
+          "token": "Ω02",
+          "count": 501
+        },
+        {
+          "token": "Ω03",
+          "count": 492
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ00",
+          "count": 2141
+        },
+        {
+          "token": "Ξ01",
+          "count": 1272
+        },
+        {
+          "token": "Ξ02",
+          "count": 713
+        },
+        {
+          "token": "Ξ06",
+          "count": 695
+        },
+        {
+          "token": "Ξ04",
+          "count": 672
+        },
+        {
+          "token": "Ξ03",
+          "count": 621
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "discrete_protocol",
+          "count": 3160
+        },
+        {
+          "route": "constraint_closure",
+          "count": 1574
+        },
+        {
+          "route": "spectral_operator",
+          "count": 1336
+        },
+        {
+          "route": "transport_flow",
+          "count": 1122
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 687
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 161
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.010657130740582943
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.009641106240451336
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.005659203976392746
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.003781246952712536
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.00363865215331316
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.0030151025857776403
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.0027866617310792208
+        }
+      ],
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_protocol-Γ_lo",
+      "signature_slug": "a_omega_closure_protocol_derivative_xi_diffuse_r_protocol_gamma_lo",
+      "display_label": "Ω:closure_protocol_derivative|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:closure_protocol_derivative",
+        "xi": "Ξ:diffuse",
+        "route": "protocol",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.26629353233830844
+      }
+    },
+    {
+      "token": "A14",
+      "cluster": 7,
+      "support": 4990,
+      "top_features": [
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 9.509182929992676
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": 9.401223182678223
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.7563785910606384
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.7476806044578552
+        },
+        {
+          "feature": "route:constraint_closure",
+          "weight": 0.575817346572876
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.5393702983856201
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.34331828355789185
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.2742190659046173
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.2641081213951111
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.18175923824310303
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω20",
+          "count": 4363
+        },
+        {
+          "token": "Ω11",
+          "count": 167
+        },
+        {
+          "token": "Ω16",
+          "count": 71
+        },
+        {
+          "token": "Ω01",
+          "count": 48
+        },
+        {
+          "token": "Ω06",
+          "count": 32
+        },
+        {
+          "token": "Ω07",
+          "count": 26
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ13",
+          "count": 4473
+        },
+        {
+          "token": "Ξ03",
+          "count": 114
+        },
+        {
+          "token": "Ξ09",
+          "count": 72
+        },
+        {
+          "token": "Ξ05",
+          "count": 68
+        },
+        {
+          "token": "Ξ06",
+          "count": 59
+        },
+        {
+          "token": "Ξ15",
+          "count": 46
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "constraint_closure",
+          "count": 4443
+        },
+        {
+          "route": "spectral_operator",
+          "count": 464
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 55
+        },
+        {
+          "route": "transport_flow",
+          "count": 26
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 2
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.07948123663663864
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.0189092718064785
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.017601419240236282
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.015154327265918255
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.013524624519050121
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.008435336872935295
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.0028056111186742783
+        }
+      ],
+      "signature_name": "A:Ω_closure_integral_spectral-Ξ_normalization_selector_boundary-R_closure-Γ_lo",
+      "signature_slug": "a_omega_closure_integral_spectral_xi_normalization_selector_boundary_r_closure_gamma_lo",
+      "display_label": "Ω:closure_integral_spectral|Ξ:normalization_selector_boundary|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:closure_integral_spectral",
+        "xi": "Ξ:normalization_selector_boundary",
+        "route": "closure",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.8963927855711423
+      }
+    },
+    {
+      "token": "A15",
+      "cluster": 14,
+      "support": 1857,
+      "top_features": [
+        {
+          "feature": "protocol_order:discrete_update#0",
+          "weight": 16.316267013549805
+        },
+        {
+          "feature": "operator_apparatus:control_update#0",
+          "weight": 2.3612446784973145
+        },
+        {
+          "feature": "route:discrete_protocol",
+          "weight": 0.2876216471195221
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.21723225712776184
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": 0.20513798296451569
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.18300603330135345
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.1685340404510498
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.12163699418306351
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.1183895394206047
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.11502416431903839
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω27",
+          "count": 1712
+        },
+        {
+          "token": "Ω28",
+          "count": 144
+        },
+        {
+          "token": "Ω25",
+          "count": 1
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ00",
+          "count": 379
+        },
+        {
+          "token": "Ξ01",
+          "count": 265
+        },
+        {
+          "token": "Ξ04",
+          "count": 222
+        },
+        {
+          "token": "Ξ02",
+          "count": 208
+        },
+        {
+          "token": "Ξ05",
+          "count": 145
+        },
+        {
+          "token": "Ξ03",
+          "count": 136
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "discrete_protocol",
+          "count": 839
+        },
+        {
+          "route": "spectral_operator",
+          "count": 335
+        },
+        {
+          "route": "constraint_closure",
+          "count": 276
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 180
+        },
+        {
+          "route": "transport_flow",
+          "count": 165
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 62
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.023279035463929176
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.019116854295134544
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.005699156783521175
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.005474780220538378
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.0020059235394001007
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.001595315057784319
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.0009872554801404476
+        }
+      ],
+      "signature_name": "A:Ω_protocol_commutator-Ξ_diffuse-R_protocol-Γ_lo",
+      "signature_slug": "a_omega_protocol_commutator_xi_diffuse_r_protocol_gamma_lo",
+      "display_label": "Ω:protocol_commutator|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:protocol_commutator",
+        "xi": "Ξ:diffuse",
+        "route": "protocol",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.2040926225094238
+      }
+    },
+    {
+      "token": "A16",
+      "cluster": 5,
+      "support": 1755,
+      "top_features": [
+        {
+          "feature": "closure_constraints:boundary_condition#0",
+          "weight": 16.50662612915039
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 3.6739189624786377
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 2.604327440261841
+        },
+        {
+          "feature": "route:boundary_weak_form",
+          "weight": 0.5945266485214233
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 0.30227863788604736
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.28915613889694214
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.1479988843202591
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.14051751792430878
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": 0.13257277011871338
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.12550540268421173
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω26",
+          "count": 1721
+        },
+        {
+          "token": "Ω16",
+          "count": 12
+        },
+        {
+          "token": "Ω28",
+          "count": 5
+        },
+        {
+          "token": "Ω25",
+          "count": 4
+        },
+        {
+          "token": "Ω14",
+          "count": 3
+        },
+        {
+          "token": "Ω13",
+          "count": 2
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ05",
+          "count": 757
+        },
+        {
+          "token": "Ξ15",
+          "count": 346
+        },
+        {
+          "token": "Ξ04",
+          "count": 122
+        },
+        {
+          "token": "Ξ01",
+          "count": 103
+        },
+        {
+          "token": "Ξ03",
+          "count": 87
+        },
+        {
+          "token": "Ξ02",
+          "count": 72
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "boundary_weak_form",
+          "count": 1604
+        },
+        {
+          "route": "spectral_operator",
+          "count": 123
+        },
+        {
+          "route": "transport_flow",
+          "count": 14
+        },
+        {
+          "route": "constraint_closure",
+          "count": 11
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 3
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.10387906432151794
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.018073078244924545
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.015292927622795105
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.007834757678210735
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.007375752087682486
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.005125121213495731
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.003672870108857751
+        }
+      ],
+      "signature_name": "A:Ω_boundary_derivative_readout-Ξ_diffuse-R_boundary-Γ_lo",
+      "signature_slug": "a_omega_boundary_derivative_readout_xi_diffuse_r_boundary_gamma_lo",
+      "display_label": "Ω:boundary_derivative_readout|Ξ:diffuse|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:boundary_derivative_readout",
+        "xi": "Ξ:diffuse",
+        "route": "boundary",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.43133903133903134
+      }
+    },
+    {
+      "token": "A17",
+      "cluster": 17,
+      "support": 1752,
+      "top_features": [
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": 16.078041076660156
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 4.741405010223389
+        },
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": 1.6165064573287964
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.6849263906478882
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.45928463339805603
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.4133281409740448
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": 0.38218390941619873
+        },
+        {
+          "feature": "closure_constraints:weak_form_closure#0",
+          "weight": 0.3064291179180145
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.2966817021369934
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.1670694500207901
+        }
+      ],
+      "dominant_omega_atoms": [
+        {
+          "token": "Ω09",
+          "count": 817
+        },
+        {
+          "token": "Ω14",
+          "count": 479
+        },
+        {
+          "token": "Ω01",
+          "count": 58
+        },
+        {
+          "token": "Ω06",
+          "count": 52
+        },
+        {
+          "token": "Ω11",
+          "count": 41
+        },
+        {
+          "token": "Ω02",
+          "count": 30
+        }
+      ],
+      "dominant_xi_states": [
+        {
+          "token": "Ξ16",
+          "count": 1715
+        },
+        {
+          "token": "Ξ15",
+          "count": 14
+        },
+        {
+          "token": "Ξ05",
+          "count": 7
+        },
+        {
+          "token": "Ξ14",
+          "count": 6
+        },
+        {
+          "token": "Ξ10",
+          "count": 3
+        },
+        {
+          "token": "Ξ03",
+          "count": 3
+        }
+      ],
+      "dominant_routes": [
+        {
+          "route": "transport_flow",
+          "count": 1133
+        },
+        {
+          "route": "constraint_closure",
+          "count": 230
+        },
+        {
+          "route": "spectral_operator",
+          "count": 197
+        },
+        {
+          "route": "boundary_weak_form",
+          "count": 187
+        },
+        {
+          "route": "commutator_incompatibility",
+          "count": 3
+        },
+        {
+          "route": "discrete_protocol",
+          "count": 2
+        }
+      ],
+      "edge_family_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "mean_participation": 0.10553395748138428
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "mean_participation": 0.027026237919926643
+        },
+        {
+          "edge_type": "operator_knn",
+          "mean_participation": 0.01187178771942854
+        },
+        {
+          "edge_type": "control_only_candidate",
+          "mean_participation": 0.011558218859136105
+        },
+        {
+          "edge_type": "substrate_knn",
+          "mean_participation": 0.011378164403140545
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "mean_participation": 0.011088448576629162
+        },
+        {
+          "edge_type": "within_paper_sequence",
+          "mean_participation": 0.004191575571894646
+        }
+      ],
+      "signature_name": "A:Ω_readout_derivative_closure-Ξ_selector_coordinate_field_carrier-R_transport-Γ_lo",
+      "signature_slug": "a_omega_readout_derivative_closure_xi_selector_coordinate_field_carrier_r_transport_gamma_lo",
+      "display_label": "Ω:readout_derivative_closure|Ξ:selector_coordinate_field_carrier|Γ:lo",
+      "signature_components": {
+        "omega": "Ω:readout_derivative_closure",
+        "xi": "Ξ:selector_coordinate_field_carrier",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9788812785388128
+      }
+    }
+  ],
+  "centroids_standardized": [
+    [
+      -0.11140605807304382,
+      -0.15786203742027283,
+      -0.22496525943279266,
+      0.10693290084600449,
+      0.0779288113117218,
+      -0.07318931072950363,
+      -0.25617581605911255,
+      -0.014424547553062439,
+      -0.004719893913716078,
+      -0.011486571282148361,
+      -0.00017483493138570338,
+      -0.04043335095047951,
+      0.025762414559721947,
+      -0.001620386727154255,
+      0.0235486701130867,
+      -0.0062412419356405735,
+      -0.033213209360837936,
+      -0.028283949941396713,
+      -0.022943327203392982,
+      -0.0009561387705616653,
+      -0.0948365107178688,
+      0.009975850582122803,
+      -0.20257163047790527,
+      0.03857894241809845,
+      -0.05922539159655571,
+      -0.012290035374462605,
+      -0.2776060402393341,
+      -0.14884109795093536,
+      -0.04793855547904968,
+      1.9031460285186768,
+      -0.03011908382177353,
+      -0.05542296543717384,
+      -0.18068529665470123,
+      -0.020607726648449898,
+      -0.007489184848964214,
+      -0.007820283062756062,
+      -0.13201835751533508,
+      -0.0013255206868052483,
+      0.004486575722694397,
+      -0.008330725133419037,
+      0.0014581534778699279,
+      -0.015509438700973988,
+      -0.004655179567635059,
+      -0.061280764639377594,
+      -0.19869671761989594,
+      -0.018280839547514915,
+      -0.033821456134319305,
+      -0.05080908164381981,
+      -0.2605970501899719,
+      -0.2475811243057251,
+      0.025781365111470222,
+      -0.0021754633635282516,
+      -0.19522130489349365,
+      -0.009885563515126705,
+      -0.031152673065662384,
+      0.2353084683418274,
+      -0.05703793466091156,
+      -0.003631137777119875,
+      2.1283767223358154,
+      -0.02350272238254547,
+      -0.0438103973865509,
+      0.018835147842764854,
+      -0.09376059472560883,
+      -0.09518445283174515,
+      -0.23230916261672974,
+      -0.023463474586606026,
+      -0.24380724132061005,
+      1.4021276235580444,
+      0.0028028322849422693,
+      -0.014865316450595856,
+      -0.05842774361371994,
+      -0.2673419415950775,
+      0.05969204008579254,
+      0.1386219710111618,
+      0.11399945616722107,
+      0.06886082142591476,
+      0.017791809514164925,
+      0.0014891732716932893,
+      0.0026860665529966354,
+      0.005221221596002579,
+      0.0036274695303291082,
+      0.0033720876090228558,
+      0.005101398099213839,
+      0.005910062696784735,
+      0.014283305034041405
+    ],
+    [
+      -0.14246118068695068,
+      -0.1405864804983139,
+      -0.22825849056243896,
+      -0.11753952503204346,
+      -0.1262739598751068,
+      -0.11688169836997986,
+      2.9699716567993164,
+      -0.007737915031611919,
+      -0.0047197104431688786,
+      -0.01776074431836605,
+      -0.030626336112618446,
+      -0.03846079856157303,
+      -0.10010302811861038,
+      -0.00881973747164011,
+      -0.009307601489126682,
+      -0.006241797003895044,
+      -0.007430041208863258,
+      -0.03284379094839096,
+      -0.004998673684895039,
+      0.009923044592142105,
+      -0.0948486402630806,
+      0.007229762151837349,
+      -0.19852064549922943,
+      -0.005746886134147644,
+      -0.05825788155198097,
+      0.0027424355503171682,
+      2.9343111515045166,
+      -0.1445622444152832,
+      -0.058824244886636734,
+      -0.18486936390399933,
+      -0.03328121453523636,
+      -0.06065112724900246,
+      -0.1785612255334854,
+      -0.017675714567303658,
+      -0.007488723378628492,
+      -0.012836962938308716,
+      -0.13201157748699188,
+      -0.004915758967399597,
+      0.0066621070727705956,
+      0.0042847152799367905,
+      -0.011134814471006393,
+      -0.007248708978295326,
+      0.016113262623548508,
+      -0.06128070876002312,
+      0.0025669715832918882,
+      0.026089193299412727,
+      -0.09624266624450684,
+      -0.019631605595350266,
+      -0.16170690953731537,
+      -0.17174549400806427,
+      -0.022832302376627922,
+      0.012269234284758568,
+      -0.19168761372566223,
+      0.05420058220624924,
+      -0.016372889280319214,
+      0.036079272627830505,
+      -0.008355560712516308,
+      0.003617293667048216,
+      -0.04111966863274574,
+      0.030129436403512955,
+      0.02177553065121174,
+      0.030996650457382202,
+      -0.09343759715557098,
+      -0.09353964775800705,
+      -0.00532749155536294,
+      -0.011790366843342781,
+      -0.15691599249839783,
+      -0.03814145550131798,
+      0.019041910767555237,
+      0.011980154551565647,
+      -0.057666976004838943,
+      -0.16184763610363007,
+      0.0005281851626932621,
+      0.003953840117901564,
+      0.6452580690383911,
+      0.0004527301643975079,
+      6.036403647158295e-05,
+      0.0,
+      0.005955811589956284,
+      0.004707413259893656,
+      0.006220622453838587,
+      0.009410888887941837,
+      0.0036782545503228903,
+      0.006845901254564524,
+      0.013236829079687595
+    ],
+    [
+      0.04306360334157944,
+      -0.12292449921369553,
+      -0.12176311761140823,
+      0.19005568325519562,
+      0.028307167813181877,
+      -0.096196748316288,
+      -0.1058155745267868,
+      0.12772241234779358,
+      -0.00472249323502183,
+      -0.026784494519233704,
+      0.009346465580165386,
+      -0.030545756220817566,
+      -0.0108871441334486,
+      0.00584371667355299,
+      0.004220194648951292,
+      0.04478118196129799,
+      -0.010775289498269558,
+      -0.021472079679369926,
+      -0.044283073395490646,
+      0.17698830366134644,
+      -0.09467002004384995,
+      -0.00500732846558094,
+      -0.19038914144039154,
+      -0.008258789777755737,
+      -0.05907728150486946,
+      -0.025576461106538773,
+      -0.10369288921356201,
+      -0.15607225894927979,
+      0.006560873705893755,
+      0.0754278302192688,
+      0.002415656577795744,
+      0.041092291474342346,
+      -0.15137815475463867,
+      0.013777471147477627,
+      -0.005007356870919466,
+      -0.005683562718331814,
+      -0.13207978010177612,
+      -0.012877864763140678,
+      0.07573109865188599,
+      -0.008330299519002438,
+      -0.0030160504393279552,
+      -0.027028342708945274,
+      -0.004656102973967791,
+      -0.06128184124827385,
+      -0.1356930136680603,
+      0.028135886415839195,
+      -0.1400730013847351,
+      -0.0551387183368206,
+      2.9690768718719482,
+      -0.17065826058387756,
+      -0.09344793111085892,
+      -0.006150078494101763,
+      -0.18447202444076538,
+      -0.04595395177602768,
+      -0.02087821066379547,
+      -0.048058029264211655,
+      -0.09084048867225647,
+      -0.005340056959539652,
+      -0.1836172640323639,
+      -0.017672168090939522,
+      -0.19686634838581085,
+      -0.08469181507825851,
+      -0.09370174258947372,
+      -0.09501112997531891,
+      -0.23127418756484985,
+      -0.057915739715099335,
+      -0.19852294027805328,
+      -0.15059266984462738,
+      -0.007664032280445099,
+      -0.03404194861650467,
+      -0.05445362627506256,
+      2.9788413047790527,
+      0.09953455626964569,
+      0.14940327405929565,
+      0.11641193926334381,
+      0.06934843212366104,
+      0.012216758914291859,
+      0.0017997992690652609,
+      0.005236664786934853,
+      0.004264764953404665,
+      0.005282624624669552,
+      0.00820899847894907,
+      0.004499404225498438,
+      0.006878658663481474,
+      0.013371794484555721
+    ],
+    [
+      3.0404839515686035,
+      -0.15019294619560242,
+      -0.3251548707485199,
+      -0.0031253129709511995,
+      -0.1238894984126091,
+      -0.12768752872943878,
+      -0.32390472292900085,
+      -0.014288363046944141,
+      -0.004721787758171558,
+      -0.005917854607105255,
+      -0.03858574107289314,
+      -0.04044415056705475,
+      -0.10654161125421524,
+      -0.000296189944492653,
+      -0.041665706783533096,
+      -0.006241167429834604,
+      0.04239748790860176,
+      -0.001838541473262012,
+      -0.01267153024673462,
+      -0.016048580408096313,
+      -0.09541472792625427,
+      -0.006709836423397064,
+      -0.2030530869960785,
+      -0.01667242869734764,
+      -0.059167806059122086,
+      -0.016529466956853867,
+      -0.32367029786109924,
+      -0.178770050406456,
+      0.006680294405668974,
+      -0.05420377105474472,
+      -0.0011480217799544334,
+      0.048593919724226,
+      -0.20110316574573517,
+      0.013224475085735321,
+      -0.007491794880479574,
+      -0.011939757503569126,
+      -0.1320798695087433,
+      -0.012598683126270771,
+      -0.01371292769908905,
+      -0.008330504409968853,
+      -0.00513949990272522,
+      -0.01501434575766325,
+      -0.004655660130083561,
+      -0.06128132715821266,
+      0.03883548080921173,
+      0.023472009226679802,
+      -0.18651776015758514,
+      0.018486514687538147,
+      -0.28348878026008606,
+      -0.30577436089515686,
+      -0.01844194158911705,
+      -0.012040141969919205,
+      -0.19465550780296326,
+      0.0036088742781430483,
+      -0.005956932436674833,
+      0.1323760449886322,
+      0.18923594057559967,
+      0.0030109232757240534,
+      -0.3050922751426697,
+      0.02417534589767456,
+      0.028132326900959015,
+      0.03616391867399216,
+      -0.0928376242518425,
+      -0.12174735218286514,
+      -0.28476884961128235,
+      0.07819229364395142,
+      -0.26122531294822693,
+      -0.14694957435131073,
+      -0.004727522376924753,
+      -0.0059218695387244225,
+      -0.05834436044096947,
+      -0.29035019874572754,
+      0.5396782159805298,
+      0.05700713396072388,
+      0.01744665391743183,
+      0.03337500989437103,
+      0.0022784960456192493,
+      0.00034719903487712145,
+      0.007670653983950615,
+      0.0019942482467740774,
+      0.002025327878072858,
+      0.010933051817119122,
+      0.00289380201138556,
+      0.007808982860296965,
+      0.010741510428488255
+    ],
+    [
+      -0.33659541606903076,
+      -0.1777498424053192,
+      -0.34674522280693054,
+      -0.035713937133550644,
+      0.05308062583208084,
+      -0.10539645701646805,
+      -0.3334076702594757,
+      -0.020587097853422165,
+      -0.004716436378657818,
+      0.007980279624462128,
+      -0.004938727710396051,
+      -0.04043161869049072,
+      0.03633471205830574,
+      -0.0008664618944749236,
+      0.02316388487815857,
+      -0.00623347656801343,
+      0.007633381988853216,
+      -0.03254513815045357,
+      0.006416502874344587,
+      -0.02727178856730461,
+      -0.09543342143297195,
+      -0.0002845624403562397,
+      -0.20661717653274536,
+      -0.009040648117661476,
+      -0.05914878845214844,
+      0.01349719613790512,
+      -0.33434394001960754,
+      -0.18543148040771484,
+      0.013746201992034912,
+      -0.2754298150539398,
+      0.013433286920189857,
+      0.025098375976085663,
+      -0.20421305298805237,
+      0.0017094918293878436,
+      -0.006267108488827944,
+      0.0033185554202646017,
+      -0.13233616948127747,
+      0.0017102614510804415,
+      -0.012177279219031334,
+      0.0040518613532185555,
+      -0.0006034132675267756,
+      0.004234462510794401,
+      0.0009592778515070677,
+      -0.06145535781979561,
+      -0.18931472301483154,
+      0.0019058594480156898,
+      -0.16451692581176758,
+      0.015017424710094929,
+      -0.3182442784309387,
+      -0.32201087474823,
+      0.03353940322995186,
+      0.00413339352235198,
+      -0.1987333446741104,
+      0.030783837661147118,
+      -0.010469657368957996,
+      0.0016255826922133565,
+      0.03093956969678402,
+      -0.001703329966403544,
+      -0.46992364525794983,
+      0.01562914066016674,
+      0.0635044053196907,
+      0.02244366891682148,
+      -0.09454094618558884,
+      -0.12585678696632385,
+      -0.312486469745636,
+      0.016091695055365562,
+      -0.22967363893985748,
+      -0.1635179966688156,
+      0.0001963673421414569,
+      0.011675967834889889,
+      -0.058566853404045105,
+      -0.32198041677474976,
+      0.016219545155763626,
+      0.16166767477989197,
+      0.0782315731048584,
+      0.05464751645922661,
+      0.02143685705959797,
+      0.0018700105138123035,
+      0.0018777643563225865,
+      0.0015471875667572021,
+      0.00043210890726186335,
+      0.0029917366337031126,
+      0.0019024404464289546,
+      0.009608871303498745,
+      0.013198468834161758
+    ],
+    [
+      0.09991152584552765,
+      0.28915613889694214,
+      -0.08990313857793808,
+      -0.052858222275972366,
+      0.037447456270456314,
+      -0.08278661221265793,
+      -0.07969188690185547,
+      -0.021228482946753502,
+      -0.004722077865153551,
+      0.06502075493335724,
+      0.013963328674435616,
+      -0.03262322023510933,
+      0.012388905510306358,
+      0.007298037875443697,
+      -0.05546683818101883,
+      -0.006242690607905388,
+      0.03771122917532921,
+      -0.02201787196099758,
+      0.028671108186244965,
+      -0.10886544734239578,
+      -0.06356877088546753,
+      -0.0007457244209945202,
+      -0.057730596512556076,
+      -0.023147502914071083,
+      16.50662612915039,
+      -0.04343172162771225,
+      -0.09666643291711807,
+      -0.04928556829690933,
+      -0.010262577794492245,
+      -0.1479988843202591,
+      0.0021568576339632273,
+      0.30227863788604736,
+      -0.056242719292640686,
+      0.05034858360886574,
+      -0.007490172982215881,
+      0.13257277011871338,
+      -0.041620247066020966,
+      0.019426757469773293,
+      0.03630958870053291,
+      -0.008328454568982124,
+      0.07976573705673218,
+      -0.009143354371190071,
+      -0.004657409153878689,
+      -0.016657838597893715,
+      0.039542295038700104,
+      -0.00447725597769022,
+      -0.055079441517591476,
+      -0.014521078206598759,
+      -0.09757734835147858,
+      -0.08719254285097122,
+      -0.03919419273734093,
+      0.029475267976522446,
+      0.00675469683483243,
+      -0.024717463180422783,
+      3.6739189624786377,
+      -0.11443749070167542,
+      0.0505327545106411,
+      -0.0272979699075222,
+      -0.1223614513874054,
+      -0.057744331657886505,
+      -0.017989132553339005,
+      -0.01318278070539236,
+      -0.0572659894824028,
+      -0.03030562773346901,
+      2.604327440261841,
+      -0.034573715180158615,
+      -0.14051751792430878,
+      -0.12279070913791656,
+      -0.0032268541399389505,
+      -0.054432980716228485,
+      0.05145753547549248,
+      -0.12550540268421173,
+      0.00667206896468997,
+      0.0042139389552176,
+      0.04354409873485565,
+      0.5945266485214233,
+      0.0010534846223890781,
+      0.0,
+      0.018481221050024033,
+      0.0066057671792805195,
+      0.10288563370704651,
+      0.0233447402715683,
+      0.00419920589774847,
+      0.005807672627270222,
+      0.007773577701300383
+    ],
+    [
+      0.06790784001350403,
+      -0.059572745114564896,
+      0.08425797522068024,
+      0.04838452860713005,
+      0.0745907798409462,
+      -0.07418805360794067,
+      -0.02923654578626156,
+      -0.021226145327091217,
+      0.2245326191186905,
+      0.005408007185906172,
+      0.00386136956512928,
+      -0.020684368908405304,
+      -0.028720112517476082,
+      0.030138012021780014,
+      0.0006790037150494754,
+      0.01786191761493683,
+      -0.19300349056720734,
+      -0.028074175119400024,
+      -0.07945679128170013,
+      -0.033288441598415375,
+      -0.0938640609383583,
+      0.023690421134233475,
+      4.715425491333008,
+      -0.01597536914050579,
+      -0.05764278769493103,
+      -0.024343937635421753,
+      -0.02098931185901165,
+      -0.10662281513214111,
+      -0.002183321164920926,
+      0.219886913895607,
+      0.00842376984655857,
+      -0.011618663556873798,
+      -0.0665353462100029,
+      0.11056634038686752,
+      0.021019723266363144,
+      0.040871843695640564,
+      -0.12832608819007874,
+      0.033269841223955154,
+      0.052293144166469574,
+      0.005841068457812071,
+      0.1111469492316246,
+      0.24964450299739838,
+      0.013547246344387531,
+      -0.06128424033522606,
+      0.0457242913544178,
+      0.004261366091668606,
+      -0.07491495460271835,
+      -0.004934591241180897,
+      -0.027378588914871216,
+      0.02815697342157364,
+      0.028027774766087532,
+      0.06585345417261124,
+      3.509413003921509,
+      0.009317022748291492,
+      0.06669709086418152,
+      0.2382713407278061,
+      0.06269647181034088,
+      0.012647811323404312,
+      0.08702679723501205,
+      0.0491158664226532,
+      0.1663208305835724,
+      0.1414315551519394,
+      -0.08155079185962677,
+      -0.06534408777952194,
+      0.07105176895856857,
+      -0.01375293917953968,
+      0.07512479275465012,
+      0.08533581346273422,
+      0.022538891062140465,
+      -0.025547217577695847,
+      -0.056583549827337265,
+      0.008520309813320637,
+      0.1325536072254181,
+      0.08111891895532608,
+      0.15181516110897064,
+      0.1188482791185379,
+      0.015609703958034515,
+      0.008677969686686993,
+      0.0075316838920116425,
+      0.011664211750030518,
+      0.032325439155101776,
+      0.010386311449110508,
+      0.012850058265030384,
+      0.007668512407690287,
+      0.012005575932562351
+    ],
+    [
+      -0.03341365233063698,
+      -0.07296153903007507,
+      -0.048218414187431335,
+      0.5393702983856201,
+      0.0061068967916071415,
+      0.04685288667678833,
+      0.10559731721878052,
+      -0.015214643441140652,
+      -0.0047221495769917965,
+      0.021733256056904793,
+      -0.007401990704238415,
+      -0.026097485795617104,
+      -0.04092581570148468,
+      -0.004377467092126608,
+      -0.08049289882183075,
+      0.031408682465553284,
+      -0.11755828559398651,
+      -0.02173955738544464,
+      0.7476806044578552,
+      0.2641081213951111,
+      9.509182929992676,
+      0.028939973562955856,
+      -0.097357839345932,
+      -0.005469434428960085,
+      -0.04849603399634361,
+      -0.012553640641272068,
+      0.09953435510396957,
+      0.03159863501787186,
+      0.03129353001713753,
+      -0.038934409618377686,
+      0.010791762731969357,
+      0.03861747309565544,
+      0.04611692950129509,
+      0.08877533674240112,
+      -0.0074905711226165295,
+      0.03430220112204552,
+      0.028913602232933044,
+      -0.020906904712319374,
+      -0.01911533623933792,
+      -0.008328501135110855,
+      0.07594501972198486,
+      0.01113065890967846,
+      -0.004657630808651447,
+      -0.05825033038854599,
+      -0.027553975582122803,
+      -0.04227219894528389,
+      0.03792598098516464,
+      0.028742490336298943,
+      0.11678184568881989,
+      -0.04727064073085785,
+      0.2742190659046173,
+      -0.010158156044781208,
+      -0.05540826544165611,
+      -0.027903813868761063,
+      0.34331828355789185,
+      -0.02133699133992195,
+      0.18175923824310303,
+      -0.00724177248775959,
+      -0.08330828696489334,
+      -0.028552137315273285,
+      -0.1405700147151947,
+      -0.09977008402347565,
+      9.401223182678223,
+      -0.03096383437514305,
+      -0.14032430946826935,
+      -0.07273916155099869,
+      -0.1103890910744667,
+      0.7563785910606384,
+      0.016999484971165657,
+      -0.04013276472687721,
+      -0.0532379224896431,
+      0.029782980680465698,
+      0.0037081330083310604,
+      0.575817346572876,
+      0.06387526541948318,
+      0.006459330208599567,
+      0.00011961722339037806,
+      0.0,
+      0.021386878564953804,
+      0.012978263199329376,
+      0.07613271474838257,
+      0.018074529245495796,
+      0.014800598844885826,
+      0.0036805300042033195,
+      0.008080844767391682
+    ],
+    [
+      0.2906982898712158,
+      5.174666404724121,
+      -0.09022222459316254,
+      0.022628314793109894,
+      -0.10675866901874542,
+      -0.07538323104381561,
+      -0.22945764660835266,
+      0.009196795523166656,
+      -0.004722416866570711,
+      -0.02538827434182167,
+      0.019631987437605858,
+      -0.029652245342731476,
+      -0.06869082897901535,
+      -0.003278638469055295,
+      -0.07589224725961685,
+      0.008625119924545288,
+      0.26033347845077515,
+      1.0261150598526,
+      -0.04911632835865021,
+      -0.035000309348106384,
+      -0.0966685488820076,
+      -0.0017575569218024611,
+      -0.1457364857196808,
+      0.0726650208234787,
+      -0.0587991364300251,
+      -0.05704767629504204,
+      -0.19234688580036163,
+      -0.07601439952850342,
+      -0.005285367369651794,
+      0.31239253282546997,
+      -0.012995792552828789,
+      -0.02189694717526436,
+      -0.15109360218048096,
+      -0.01621471717953682,
+      -0.0074914684519171715,
+      -0.005198072642087936,
+      -0.1320795714855194,
+      -0.007735231891274452,
+      -0.017718622460961342,
+      -0.008329552598297596,
+      -0.0009075740235857666,
+      -0.025305161252617836,
+      -0.0046576992608606815,
+      -0.06128374859690666,
+      1.6249840259552002,
+      0.0712638795375824,
+      -0.12865597009658813,
+      -0.030979376286268234,
+      -0.07843087613582611,
+      -0.1732925921678543,
+      -0.09404630213975906,
+      0.01133761741220951,
+      -0.156633198261261,
+      -0.005247911438345909,
+      -0.014854266308248043,
+      0.08810104429721832,
+      0.16018198430538177,
+      0.04142099246382713,
+      0.0667799711227417,
+      0.004754231311380863,
+      -0.11533357948064804,
+      0.09526487439870834,
+      -0.09514930844306946,
+      -0.1192663237452507,
+      0.09137833118438721,
+      0.07135196775197983,
+      -0.1259484887123108,
+      -0.017841093242168427,
+      -0.003522548358887434,
+      -0.0033362205140292645,
+      -0.04381461441516876,
+      0.012465916574001312,
+      0.45412805676460266,
+      0.0436609648168087,
+      0.04027293622493744,
+      0.1097991093993187,
+      0.0012883568415418267,
+      0.0008111876668408513,
+      0.014855490997433662,
+      0.0062947627156972885,
+      0.01716040074825287,
+      0.025338828563690186,
+      0.006798767019063234,
+      0.008698288351297379,
+      0.007551452610641718
+    ],
+    [
+      -0.08608358353376389,
+      -0.06493367999792099,
+      0.010787582024931908,
+      -0.0071545070968568325,
+      0.003223311621695757,
+      2.7684197425842285,
+      -0.15470615029335022,
+      -0.0024530114606022835,
+      -0.004722473211586475,
+      -0.0066435448825359344,
+      -0.020590392872691154,
+      -0.020136790350079536,
+      -0.023422755300998688,
+      -0.01096897292882204,
+      -0.024366071447730064,
+      -0.0062413290143013,
+      0.06991668045520782,
+      -0.025708114728331566,
+      -0.02913282997906208,
+      0.02836710587143898,
+      -0.09184268116950989,
+      0.0012998307356610894,
+      -0.1094880998134613,
+      0.03661278262734413,
+      -0.05856311693787575,
+      0.007127150893211365,
+      -0.17163915932178497,
+      4.3921966552734375,
+      0.014331507496535778,
+      -0.038378745317459106,
+      -0.02259177342057228,
+      -0.08281432837247849,
+      -0.1354941725730896,
+      -0.014965484850108624,
+      -0.007491657510399818,
+      -0.016468191519379616,
+      -0.105343297123909,
+      -0.004357288591563702,
+      0.0047246841713786125,
+      -0.008330106735229492,
+      -0.02491248957812786,
+      -0.0009901676094159484,
+      -0.004656527191400528,
+      -0.06128234416246414,
+      -0.16693632304668427,
+      -0.03384416922926903,
+      3.8721749782562256,
+      -0.05295182019472122,
+      -0.1417258381843567,
+      -0.062422093003988266,
+      -0.07365833967924118,
+      -0.01581982523202896,
+      -0.14058369398117065,
+      -0.07970882207155228,
+      -0.026520736515522003,
+      -0.1411774605512619,
+      -0.05920688435435295,
+      -0.014334785751998425,
+      -0.0898280143737793,
+      -0.06422928720712662,
+      -0.021083969622850418,
+      0.057993389666080475,
+      -0.08950036019086838,
+      -0.09774265438318253,
+      -0.04702154919505119,
+      -0.015897829085588455,
+      -0.020984597504138947,
+      0.02769423834979534,
+      -0.0009756305371411145,
+      0.015692438930273056,
+      -0.057796359062194824,
+      -0.06844369322061539,
+      0.0017919797683134675,
+      0.002150376560166478,
+      0.6435802578926086,
+      0.0025087734684348106,
+      6.516290159197524e-05,
+      0.0,
+      0.010725731030106544,
+      0.004887799266725779,
+      0.024695701897144318,
+      0.0132699403911829,
+      0.005034590605646372,
+      0.00901837833225727,
+      0.012468108907341957
+    ],
+    [
+      0.005437863525003195,
+      -0.18068844079971313,
+      -0.3428780734539032,
+      -0.15591831505298615,
+      -0.005235183984041214,
+      -0.0937076061964035,
+      -0.07350067794322968,
+      -0.02122623473405838,
+      -0.004722315818071365,
+      -0.005640145391225815,
+      -0.038875557482242584,
+      -0.040436457842588425,
+      -0.013162375427782536,
+      -0.00708330562338233,
+      -0.03392426297068596,
+      -0.006241958122700453,
+      -0.13538789749145508,
+      -0.03114166669547558,
+      -0.06358444690704346,
+      -0.1635207086801529,
+      -0.09420071542263031,
+      -0.01871214248239994,
+      4.742392063140869,
+      -0.005289692897349596,
+      -0.048547618091106415,
+      -0.0015906293410807848,
+      -0.0716986283659935,
+      -0.18695707619190216,
+      -0.013120451010763645,
+      -0.5353770852088928,
+      -0.011783672496676445,
+      0.04112683981657028,
+      -0.1922263503074646,
+      -0.01316859945654869,
+      -0.007491131313145161,
+      0.004687356762588024,
+      -0.017875049263238907,
+      0.03239946439862251,
+      0.004896220285445452,
+      -0.008328558877110481,
+      0.01728023774921894,
+      -0.035007938742637634,
+      -0.00465767364948988,
+      -0.06128630042076111,
+      -0.5414897799491882,
+      -0.05903726816177368,
+      -0.24812184274196625,
+      -0.10407022386789322,
+      -0.3257175385951996,
+      -0.3525146245956421,
+      -0.14948458969593048,
+      -0.015073082409799099,
+      6.198094367980957,
+      -0.2406255602836609,
+      -0.04163366183638573,
+      -0.4468423128128052,
+      -0.2638692855834961,
+      -0.024691961705684662,
+      -0.4771428108215332,
+      -0.17101061344146729,
+      0.09378970414400101,
+      0.14558549225330353,
+      -0.0909542366862297,
+      -0.07663284242153168,
+      -0.31345435976982117,
+      -0.02348378486931324,
+      -0.18395446240901947,
+      -0.14683851599693298,
+      -0.01829681172966957,
+      0.02382708340883255,
+      -0.056733325123786926,
+      -0.3223012387752533,
+      0.07061640173196793,
+      0.09607819467782974,
+      0.12895387411117554,
+      0.0029205065220594406,
+      0.019470026716589928,
+      0.009510381147265434,
+      0.007359619252383709,
+      3.8402464269893244e-05,
+      0.0029690589290112257,
+      0.012395297177135944,
+      7.680492853978649e-05,
+      0.010097105987370014,
+      0.013607493601739407
+    ],
+    [
+      -0.10384996980428696,
+      -0.11290180683135986,
+      2.8333094120025635,
+      -0.07857200503349304,
+      -0.13884547352790833,
+      -0.12490066885948181,
+      -0.1605139523744583,
+      0.07779428362846375,
+      -0.0030599820893257856,
+      -0.004064551554620266,
+      -0.02143673785030842,
+      0.4520876705646515,
+      -0.03175947070121765,
+      -0.008493375033140182,
+      -0.033746425062417984,
+      -0.0037572572473436594,
+      -0.004281347617506981,
+      -0.029704183340072632,
+      -0.003247269196435809,
+      0.03818557783961296,
+      -0.0954495370388031,
+      0.0015487734926864505,
+      -0.1862708330154419,
+      -0.007119640242308378,
+      -0.05899547412991524,
+      -0.00509004108607769,
+      -0.09045953303575516,
+      -0.1547393947839737,
+      0.031474221497774124,
+      0.03543052077293396,
+      -0.013622848317027092,
+      -0.004393424838781357,
+      -0.18476556241512299,
+      -0.004587783943861723,
+      -9.545891225570813e-05,
+      0.0056201983243227005,
+      -0.13185200095176697,
+      0.00028946794918738306,
+      -0.0069017489440739155,
+      -0.008330756798386574,
+      -0.009968549944460392,
+      -0.027401011437177658,
+      -0.001058897702023387,
+      -0.06128067895770073,
+      -0.10230852663516998,
+      0.0021181455813348293,
+      -0.149709090590477,
+      -0.02882206253707409,
+      -0.22889624536037445,
+      2.830700397491455,
+      -0.036108583211898804,
+      -0.006676726508885622,
+      -0.1831740438938141,
+      -0.01771036721765995,
+      -0.02300635725259781,
+      -0.08464564383029938,
+      -0.055992282927036285,
+      0.016128094866871834,
+      -0.12505021691322327,
+      -0.02322932705283165,
+      -0.1100168526172638,
+      -0.08641250431537628,
+      -0.09216715395450592,
+      -0.08418580144643784,
+      -0.14607667922973633,
+      -0.013737593777477741,
+      2.215825319290161,
+      -0.07438112795352936,
+      0.0013885290827602148,
+      -0.026252176612615585,
+      -0.0556778758764267,
+      -0.24006499350070953,
+      0.4949021339416504,
+      0.051015473902225494,
+      0.06624814867973328,
+      0.034153688699007034,
+      0.002751170890405774,
+      0.00029582431307062507,
+      0.011493491940200329,
+      0.006079699378460646,
+      0.009383069351315498,
+      0.01570671983063221,
+      0.005924351047724485,
+      0.006758041679859161,
+      0.013285876251757145
+    ],
+    [
+      -0.07677623629570007,
+      -0.12706191837787628,
+      -0.1933632493019104,
+      -0.015225514769554138,
+      -0.06444650143384933,
+      -0.12945125997066498,
+      -0.008782557211816311,
+      -0.0020181755535304546,
+      -0.004722296725958586,
+      0.003689281176775694,
+      0.01614990457892418,
+      -0.04043649509549141,
+      -0.040046509355306625,
+      -0.005997881293296814,
+      -0.05043712630867958,
+      -0.00624203123152256,
+      -0.030978955328464508,
+      -0.034759338945150375,
+      0.011124694719910622,
+      -0.06430119276046753,
+      -0.0966610237956047,
+      -0.018712470307946205,
+      -0.08323805034160614,
+      -0.004234849009662867,
+      -0.05944623425602913,
+      0.09451059997081757,
+      -0.015589400194585323,
+      -0.1316777914762497,
+      -0.011048730462789536,
+      -0.14023928344249725,
+      0.0014192408416420221,
+      0.0013920541387051344,
+      -0.1722533106803894,
+      0.024057533591985703,
+      0.31632480025291443,
+      0.00021500136062968522,
+      0.08147527277469635,
+      0.030604524537920952,
+      0.053042300045490265,
+      -0.008328372612595558,
+      0.053286198526620865,
+      -0.007502594031393528,
+      -0.004657667595893145,
+      -0.06128675863146782,
+      -0.21126876771450043,
+      -0.021041668951511383,
+      -0.1729024201631546,
+      -0.00392680149525404,
+      -0.24980643391609192,
+      -0.16793671250343323,
+      0.26818668842315674,
+      -0.026747586205601692,
+      -0.06722100079059601,
+      -0.016275525093078613,
+      -0.01575556769967079,
+      0.07782959938049316,
+      -0.038008224219083786,
+      -0.01895309053361416,
+      -0.20614930987358093,
+      -0.0005109620979055762,
+      -0.04892516881227493,
+      -0.1641312837600708,
+      -0.09588629752397537,
+      7.216842174530029,
+      -0.23717303574085236,
+      -0.0722343921661377,
+      -0.1904895007610321,
+      -0.16766108572483063,
+      -0.01829690672457218,
+      -0.009901651181280613,
+      -0.0585942268371582,
+      -0.27933722734451294,
+      0.07817279547452927,
+      0.1206977590918541,
+      0.1150224357843399,
+      0.05091582238674164,
+      0.01518693845719099,
+      0.01143016666173935,
+      0.0029067995492368937,
+      0.009603945538401604,
+      0.00449561420828104,
+      0.005308684892952442,
+      0.011479463428258896,
+      0.007357762660831213,
+      0.006806409452110529
+    ],
+    [
+      0.054120369255542755,
+      -0.15462103486061096,
+      -0.109918013215065,
+      0.06913364678621292,
+      0.0002754502056632191,
+      -0.10746189206838608,
+      -0.25453484058380127,
+      -0.009415814653038979,
+      -0.004721139091998339,
+      -0.015432695858180523,
+      -0.016372648999094963,
+      -0.03669581189751625,
+      0.03813031688332558,
+      -0.001896405010484159,
+      0.018316546455025673,
+      -0.006241136696189642,
+      -0.03365825489163399,
+      -0.03106418438255787,
+      -0.03600287809967995,
+      0.024791285395622253,
+      -0.09549607336521149,
+      -0.0101730702444911,
+      -0.1896565556526184,
+      -0.01415351964533329,
+      -0.0562935508787632,
+      -0.032524626702070236,
+      -0.24982036650180817,
+      -0.17683354020118713,
+      0.05269021913409233,
+      -0.007923618890345097,
+      -0.0258722435683012,
+      0.004738204181194305,
+      -0.18865849077701569,
+      -0.020355790853500366,
+      -0.0074918209575116634,
+      -0.013454686850309372,
+      -0.13206441700458527,
+      -0.008812807500362396,
+      0.0005849864101037383,
+      -0.008330579847097397,
+      -0.01670759730041027,
+      -0.012345146387815475,
+      -0.004655494820326567,
+      -0.06128113716840744,
+      1.4936329126358032,
+      -0.013747412711381912,
+      -0.18419919908046722,
+      -0.045457713305950165,
+      -0.2300225794315338,
+      -0.19979776442050934,
+      -0.07925817370414734,
+      -0.012779317796230316,
+      -0.18690770864486694,
+      -0.059288233518600464,
+      -0.02887778915464878,
+      -0.18324576318264008,
+      -0.1079927533864975,
+      0.005671530030667782,
+      1.710767388343811,
+      -0.022854819893836975,
+      -0.1524258852005005,
+      -0.10729622840881348,
+      -0.09415137022733688,
+      -0.1069633811712265,
+      3.2404754161834717,
+      -0.06018717959523201,
+      -0.21645884215831757,
+      -0.16631031036376953,
+      -0.012368032708764076,
+      -0.028727862983942032,
+      -0.05779734626412392,
+      -0.21588553488254547,
+      0.007107019890099764,
+      0.004574423190206289,
+      0.01494040060788393,
+      0.6229883432388306,
+      0.0005300831981003284,
+      0.0,
+      0.003614552319049835,
+      0.0034361255820840597,
+      0.0022451775148510933,
+      0.005755751393735409,
+      0.004138370510190725,
+      0.007052675820887089,
+      0.01253951620310545
+    ],
+    [
+      -0.06352482736110687,
+      0.011902865022420883,
+      -0.1183895394206047,
+      -0.028197921812534332,
+      0.02989063411951065,
+      0.013055805116891861,
+      -0.04756222665309906,
+      0.06168557330965996,
+      -0.0047220345586538315,
+      0.031711384654045105,
+      2.3612446784973145,
+      -0.016637654975056648,
+      0.18300603330135345,
+      -0.009272477589547634,
+      -0.05918385088443756,
+      -0.006242696195840836,
+      -0.1685340404510498,
+      -0.018505239859223366,
+      -0.051736943423748016,
+      0.08387434482574463,
+      -0.07661417126655579,
+      -0.018712598830461502,
+      0.07747575640678406,
+      0.023864908143877983,
+      -0.012728755362331867,
+      -0.026327302679419518,
+      -0.04493239149451256,
+      -0.04421703889966011,
+      -0.01276355143636465,
+      -0.022512849420309067,
+      0.057514339685440063,
+      0.07954417914152145,
+      0.004042758606374264,
+      0.05198008939623833,
+      -0.007490170653909445,
+      0.06728021055459976,
+      -0.08528444916009903,
+      0.20513798296451569,
+      0.03384662792086601,
+      0.034090716391801834,
+      0.08120270073413849,
+      0.020563963800668716,
+      -0.004657441284507513,
+      16.316267013549805,
+      -0.04785650968551636,
+      -0.05386751517653465,
+      -0.07722160965204239,
+      0.01013379916548729,
+      -0.016338568180799484,
+      -0.054987940937280655,
+      -0.01648646965622902,
+      -0.008123842068016529,
+      0.0693129301071167,
+      -0.0006621834472753108,
+      0.11502416431903839,
+      0.06523895263671875,
+      -0.00939808040857315,
+      0.006496477872133255,
+      -0.0887085348367691,
+      -0.026515768840909004,
+      0.21723225712776184,
+      0.005613661836832762,
+      -0.06103286147117615,
+      0.01891165040433407,
+      -0.004236164502799511,
+      -0.025750698521733284,
+      -0.06754209846258163,
+      0.02207467518746853,
+      -0.01829902082681656,
+      0.03034260869026184,
+      -0.035403694957494736,
+      -0.04002010449767113,
+      0.05480029061436653,
+      0.09534580260515213,
+      0.12163699418306351,
+      0.06588701903820038,
+      0.024707617238163948,
+      0.2876216471195221,
+      0.001137102022767067,
+      0.002119883196428418,
+      0.021990740671753883,
+      0.005929174832999706,
+      0.0006213451852090657,
+      0.016812866553664207,
+      0.0054824561811983585
+    ],
+    [
+      -0.012262596748769283,
+      -0.10614575445652008,
+      -0.08898423612117767,
+      0.14856113493442535,
+      0.006252540275454521,
+      -0.08987724781036377,
+      -0.0977029874920845,
+      -0.01835172437131405,
+      -0.004722475074231625,
+      0.03167383372783661,
+      0.016086265444755554,
+      -0.02195473201572895,
+      0.028484662994742393,
+      -0.0009391010971739888,
+      -0.03036338835954666,
+      -0.006241323426365852,
+      -0.029502427205443382,
+      -0.0269825030118227,
+      0.02408663183450699,
+      0.0007717613480053842,
+      -0.09002827852964401,
+      -0.0041055153124034405,
+      -0.09774288535118103,
+      -0.017374584451317787,
+      -0.059032175689935684,
+      0.06870172172784805,
+      -0.1471814513206482,
+      -0.126776784658432,
+      -0.05740458145737648,
+      -0.2875162959098816,
+      -0.018558086827397346,
+      -0.058570198714733124,
+      4.748363494873047,
+      -0.006224313285201788,
+      -0.007491663563996553,
+      -0.007556136231869459,
+      -0.12789303064346313,
+      0.037785470485687256,
+      0.013910505920648575,
+      0.003863923018798232,
+      -0.011560986749827862,
+      0.0057213217951357365,
+      -0.004656495526432991,
+      -0.06128230690956116,
+      -0.13772331178188324,
+      -0.051866043359041214,
+      -0.15159718692302704,
+      0.23300355672836304,
+      2.8942759037017822,
+      -0.13642974197864532,
+      -0.04442812502384186,
+      -0.011436928063631058,
+      -0.12247592210769653,
+      -0.0722474530339241,
+      -0.017675936222076416,
+      -0.09553524106740952,
+      -0.061977751553058624,
+      -0.02121075987815857,
+      -0.20162008702754974,
+      -0.0527668297290802,
+      -0.023558860644698143,
+      -0.10280927270650864,
+      -0.08879000693559647,
+      -0.0070954072289168835,
+      -0.12593908607959747,
+      0.009972074069082737,
+      -0.09062333405017853,
+      -0.1576300412416458,
+      -0.007929149083793163,
+      -0.019918883219361305,
+      -0.05343141034245491,
+      2.8331761360168457,
+      0.09310787916183472,
+      0.12858206033706665,
+      0.11586728692054749,
+      0.07955362647771835,
+      0.026753230020403862,
+      0.00238236878067255,
+      0.006015315186232328,
+      0.008371509611606598,
+      0.015870003029704094,
+      0.00928508397191763,
+      0.007682273630052805,
+      0.007685322314500809,
+      0.009478801861405373
+    ],
+    [
+      -0.07349924743175507,
+      -0.06557876616716385,
+      0.008854370564222336,
+      -0.020842179656028748,
+      -0.07603496313095093,
+      -0.07287824153900146,
+      -0.040789660066366196,
+      -0.021226178854703903,
+      -0.00472232885658741,
+      -0.014258681796491146,
+      -0.039767224341630936,
+      0.005384093150496483,
+      0.004778929054737091,
+      -0.019826577976346016,
+      -0.05820804089307785,
+      -0.006241906899958849,
+      0.11151127517223358,
+      -0.0316576287150383,
+      0.07929710298776627,
+      -0.06210652366280556,
+      -0.08716973662376404,
+      -0.018711918964982033,
+      -0.09160283207893372,
+      -0.02314756065607071,
+      -0.05852441117167473,
+      -0.0164684746414423,
+      -0.04910577833652496,
+      -0.07291760295629501,
+      0.03428983688354492,
+      -0.08944445103406906,
+      -0.02112843282520771,
+      -0.04198988154530525,
+      0.009856343269348145,
+      -0.00774000957608223,
+      0.024409502744674683,
+      -0.01646553725004196,
+      7.545806884765625,
+      -0.003373784478753805,
+      -0.0112166041508317,
+      -0.008328682743012905,
+      -0.022760115563869476,
+      -0.048547178506851196,
+      -0.004657676909118891,
+      -0.05869147554039955,
+      -0.08188564330339432,
+      -0.04428340867161751,
+      -0.07126876711845398,
+      0.04499443992972374,
+      -0.029048331081867218,
+      0.018559711053967476,
+      0.07954008877277374,
+      -0.024321800097823143,
+      -0.10170714557170868,
+      -0.03724045306444168,
+      -0.02746226266026497,
+      -0.07590629905462265,
+      -0.07186926901340485,
+      -0.011199339292943478,
+      -0.03698697313666344,
+      -0.022529063746333122,
+      -0.03003033995628357,
+      -0.04811086133122444,
+      -0.0811457708477974,
+      0.01261831820011139,
+      -0.033096108585596085,
+      -0.03311636298894882,
+      -0.0027010219637304544,
+      -0.013135546818375587,
+      -0.01298315729945898,
+      -0.0004466289246920496,
+      -0.05663640797138214,
+      -0.03386082872748375,
+      0.08870218694210052,
+      0.12301182746887207,
+      0.10721508413553238,
+      0.05860978364944458,
+      0.01436663419008255,
+      0.2580997943878174,
+      0.0023647192865610123,
+      0.003557864110916853,
+      0.010483103804290295,
+      0.0036329550202935934,
+      0.003858306212350726,
+      0.004838354419916868,
+      0.009091834537684917
+    ],
+    [
+      0.2966817021369934,
+      4.741405010223389,
+      -0.002843420021235943,
+      0.12377488613128662,
+      0.019729163497686386,
+      -0.07128000259399414,
+      -0.11480334401130676,
+      0.00320678879506886,
+      -0.004722067154943943,
+      -0.01666603423655033,
+      0.10197614133358002,
+      0.02191508375108242,
+      -0.11368829756975174,
+      -0.019828790798783302,
+      -0.07799668610095978,
+      -0.006242690607905388,
+      0.45928463339805603,
+      1.6165064573287964,
+      -0.016818702220916748,
+      0.12196090072393417,
+      -0.03557493910193443,
+      0.07431433349847794,
+      0.0067965928465127945,
+      0.3064291179180145,
+      0.04773307219147682,
+      -0.054396048188209534,
+      -0.13958005607128143,
+      0.06891892105340958,
+      -0.00503995968028903,
+      0.03503113612532616,
+      -0.017164185643196106,
+      -0.07859447598457336,
+      0.01748630404472351,
+      0.007291259244084358,
+      -0.0074901701882481575,
+      -0.01646650955080986,
+      -0.0671936571598053,
+      -0.024936683475971222,
+      -0.026214607059955597,
+      -0.0083284517750144,
+      -0.012141996994614601,
+      0.00792241096496582,
+      -0.004657416138797998,
+      -0.05257332697510719,
+      0.6849263906478882,
+      -0.0031986229587346315,
+      -0.04776507616043091,
+      -0.046952299773693085,
+      0.13045966625213623,
+      0.0711333304643631,
+      -0.09580854326486588,
+      0.05391016975045204,
+      0.014352698810398579,
+      -0.051883161067962646,
+      0.1670694500207901,
+      0.026219017803668976,
+      0.12851472198963165,
+      0.011052696034312248,
+      -0.0697493627667427,
+      0.38218390941619873,
+      0.02036256343126297,
+      -0.012481186538934708,
+      -0.03471128270030022,
+      -0.0704021155834198,
+      -0.01418941281735897,
+      -0.01065916195511818,
+      -0.03731703385710716,
+      -0.12837670743465424,
+      0.05867259204387665,
+      0.014491928741335869,
+      16.078041076660156,
+      0.07522892206907272,
+      0.4133281409740448,
+      0.0881529450416565,
+      0.07271774113178253,
+      0.07443276792764664,
+      0.00034300785046070814,
+      0.0010290236677974463,
+      0.016026588156819344,
+      0.011654553934931755,
+      0.11811187118291855,
+      0.03064548783004284,
+      0.009698841720819473,
+      0.010246261954307556,
+      0.002033288823440671
+    ]
+  ],
+  "feature_space": "operator_plus_substrate_active_standardized_plus_route_plus_edge_participation",
+  "mean": [
+    0.09528830647468567,
+    0.02967732399702072,
+    0.09588050097227097,
+    0.07783360779285431,
+    0.1220267117023468,
+    0.030992694199085236,
+    0.09093870222568512,
+    0.00026468458236195147,
+    1.9051743947784416e-05,
+    0.001020450028590858,
+    0.0028845344204455614,
+    0.0009062713361345232,
+    0.04154128581285477,
+    0.0003339830436743796,
+    0.014872383326292038,
+    3.0512595913023688e-05,
+    0.13793052732944489,
+    0.0010421917540952563,
+    0.02904125675559044,
+    0.0955934077501297,
+    0.007847186177968979,
+    0.00030023985891602933,
+    0.03874601796269417,
+    0.0004798851441591978,
+    0.0031706292647868395,
+    0.010646622627973557,
+    0.09353756904602051,
+    0.03237844631075859,
+    0.020414985716342926,
+    0.21584194898605347,
+    0.004226891789585352,
+    0.01713850349187851,
+    0.036752521991729736,
+    0.0006649721181020141,
+    5.163816240383312e-05,
+    0.00024277204647660255,
+    0.017187852412462234,
+    0.0006073497934266925,
+    0.0006795345689170063,
+    6.765685975551605e-05,
+    0.0008862085524015129,
+    0.00374014163389802,
+    2.08284254767932e-05,
+    0.0037093700375407934,
+    0.17802007496356964,
+    0.0030002472922205925,
+    0.04970816150307655,
+    0.008803602308034897,
+    0.08027824014425278,
+    0.08871675282716751,
+    0.019656991586089134,
+    0.0004949325229972601,
+    0.030901221558451653,
+    0.04760357365012169,
+    0.0016579279908910394,
+    0.1432390660047531,
+    0.05583583936095238,
+    0.0005396942142397165,
+    0.13735324144363403,
+    0.01841004192829132,
+    0.1399560123682022,
+    0.08233076333999634,
+    0.006639448925852776,
+    0.017279112711548805,
+    0.07914988696575165,
+    0.020605795085430145,
+    0.09769274294376373,
+    0.11872854828834534,
+    0.00026777165476232767,
+    0.004451404325664043,
+    0.002687184838578105,
+    0.08686361461877823
+  ],
+  "scale": [
+    0.26886382699012756,
+    0.15169355273246765,
+    0.27263498306274414,
+    0.24398311972618103,
+    0.30580559372901917,
+    0.15955735743045807,
+    0.26928654313087463,
+    0.012468570843338966,
+    0.004034583922475576,
+    0.029292026534676552,
+    0.04888364300131798,
+    0.022410809993743896,
+    0.18458014726638794,
+    0.01684340089559555,
+    0.11115144938230515,
+    0.004887782037258148,
+    0.33600136637687683,
+    0.029984109103679657,
+    0.1594109833240509,
+    0.28557631373405457,
+    0.08118685334920883,
+    0.016044721007347107,
+    0.18696530163288116,
+    0.020731912925839424,
+    0.05334055423736572,
+    0.09769915789365768,
+    0.2787439227104187,
+    0.1655196249485016,
+    0.1347457617521286,
+    0.40076902508735657,
+    0.06179386377334595,
+    0.12394987046718597,
+    0.17946073412895203,
+    0.024708954617381096,
+    0.006894062738865614,
+    0.014743232168257236,
+    0.1301383674144745,
+    0.024355575442314148,
+    0.02592189610004425,
+    0.00812349934130907,
+    0.02952723391354084,
+    0.06077467277646065,
+    0.004472043365240097,
+    0.060519251972436905,
+    0.32161945104599,
+    0.04665070027112961,
+    0.19374395906925201,
+    0.07571128755807877,
+    0.24052421748638153,
+    0.24693170189857483,
+    0.12478014081716537,
+    0.018505308777093887,
+    0.15544557571411133,
+    0.18824420869350433,
+    0.035392776131629944,
+    0.31042468547821045,
+    0.2074236422777176,
+    0.019770551472902298,
+    0.28731024265289307,
+    0.10585121065378189,
+    0.3145122230052948,
+    0.2513183653354645,
+    0.06924180686473846,
+    0.11745563894510269,
+    0.2493465095758438,
+    0.13090737164020538,
+    0.2687593102455139,
+    0.2962830364704132,
+    0.014633320271968842,
+    0.06016306206583977,
+    0.04585887864232063,
+    0.26136314868927
+  ],
+  "route_weight": 0.65,
+  "edge_participation_weight": 1.0,
+  "diagnostics": {
+    "readiness": "usable",
+    "n_clusters": 18,
+    "counts": [
+      36408,
+      37851,
+      22598,
+      27065,
+      211394,
+      1755,
+      10193,
+      4990,
+      13484,
+      18578,
+      8683,
+      39917,
+      8127,
+      29880,
+      1857,
+      17428,
+      8040,
+      1752
+    ],
+    "silhouette_sample": 0.12099471688270569
+  },
+  "claim_scope": "V2-native symbolic language learned from operator/substrate matrices, typed graph edges, directed sequence evidence and variational first-variation diagnostics. Tokens are machine language for mechanism construction, not human field names."
+}

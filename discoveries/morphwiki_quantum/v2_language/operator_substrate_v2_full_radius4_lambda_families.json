@@ -1,0 +1,2605 @@
+{
+  "report_type": "operator_substrate_v2_lambda_transformation_families",
+  "readiness": "usable",
+  "tokens": [
+    {
+      "token": "Λ00",
+      "cluster": 8,
+      "support": 239162,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.11393681913614273
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.07214502990245819
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.06708329916000366
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.056514397263526917
+        },
+        {
+          "feature": "closure_constraints:compatibility_condition#0",
+          "weight": -0.05478353425860405
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.053710076957941055
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.0475023053586483
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.04560530558228493
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.041693925857543945
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.04165623337030411
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 119178
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 31467
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 30718
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 30479
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 27320
+        }
+      ]
+    },
+    {
+      "token": "Λ01",
+      "cluster": 3,
+      "support": 82612,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.40858879685401917
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.3099731504917145
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.2638210356235504
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.24214449524879456
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.215830460190773
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.20619504153728485
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.18624651432037354
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.18475569784641266
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.18267318606376648
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.15796227753162384
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 24450
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 23126
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 17469
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 17217
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 350
+        }
+      ]
+    },
+    {
+      "token": "Λ02",
+      "cluster": 2,
+      "support": 68853,
+      "top_features": [
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.4413144588470459
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.41993480920791626
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.372981458902359
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.37259024381637573
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": -0.24594253301620483
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.2447717934846878
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.24449849128723145
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.24040429294109344
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.23221774399280548
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.22304947674274445
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 24122
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 23541
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 10489
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 10346
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 355
+        }
+      ]
+    },
+    {
+      "token": "Λ03",
+      "cluster": 12,
+      "support": 34746,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 2.2602124214172363
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 1.5766700506210327
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 1.4515851736068726
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -1.0872949361801147
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.5952122807502747
+        },
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": -0.3102201223373413
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.294269323348999
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.28686490654945374
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.2634008824825287
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.2417687177658081
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 17558
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 17188
+        }
+      ]
+    },
+    {
+      "token": "Λ04",
+      "cluster": 9,
+      "support": 31887,
+      "top_features": [
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 1.9079548120498657
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -1.7222895622253418
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 0.8831148147583008
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 0.18389929831027985
+        },
+        {
+          "feature": "protocol_order:training_recall#0",
+          "weight": -0.09875276684761047
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.08918362110853195
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": -0.0844452902674675
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.08011585474014282
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.07210440933704376
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.0599532276391983
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 15949
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 15857
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 81
+        }
+      ]
+    },
+    {
+      "token": "Λ05",
+      "cluster": 0,
+      "support": 20692,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 3.6488428115844727
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 3.631924867630005
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.6173015236854553
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5660070776939392
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.27396222949028015
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.2654394507408142
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": -0.2370804399251938
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.22955909371376038
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.20863881707191467
+        },
+        {
+          "feature": "closure_constraints:compatibility_condition#0",
+          "weight": 0.17063429951667786
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_knn",
+          "count": 10447
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 10244
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "token": "Λ06",
+      "cluster": 7,
+      "support": 19660,
+      "top_features": [
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -3.583770990371704
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -3.527533531188965
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.7381918430328369
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.5936187505722046
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 0.23134873807430267
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.19953827559947968
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 0.1395355761051178
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.1355961114168167
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.1347230225801468
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.12341812998056412
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 9851
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 9804
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "token": "Λ07",
+      "cluster": 5,
+      "support": 15765,
+      "top_features": [
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -3.930269479751587
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -2.8725197315216064
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -1.3926503658294678
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.9632972478866577
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.3933642506599426
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.36431825160980225
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.21617479622364044
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": 0.19808100163936615
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.18589146435260773
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.1827872395515442
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 8171
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7594
+        }
+      ]
+    },
+    {
+      "token": "Λ08",
+      "cluster": 6,
+      "support": 15524,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 3.30234694480896
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -2.209508180618286
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -1.115325689315796
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.38534703850746155
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.18571923673152924
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.16807112097740173
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": -0.16492459177970886
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": -0.12579916417598724
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.12538056075572968
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.12371764332056046
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 7785
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7739
+        }
+      ]
+    },
+    {
+      "token": "Λ09",
+      "cluster": 17,
+      "support": 14702,
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -4.137113094329834
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -4.0567169189453125
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.5325807929039001
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.3563395142555237
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.31623196601867676
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": 0.28296008706092834
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.2693067193031311
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.22150234878063202
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 0.1939886063337326
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.19245590269565582
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 7353
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7349
+        }
+      ]
+    },
+    {
+      "token": "Λ10",
+      "cluster": 16,
+      "support": 14505,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 4.3476057052612305
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 3.994143486022949
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5671278238296509
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.5521621704101562
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.4789266586303711
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.4716171622276306
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.4447052776813507
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.3313246965408325
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.31633076071739197
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": -0.31493642926216125
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 7424
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7081
+        }
+      ]
+    },
+    {
+      "token": "Λ11",
+      "cluster": 1,
+      "support": 8816,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": 5.212192535400391
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5737276077270508
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.39281120896339417
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.3598612844944
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.35318243503570557
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.27744224667549133
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.16109313070774078
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.1492043286561966
+        },
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": -0.1394808143377304
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.12859557569026947
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 4514
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 4302
+        }
+      ]
+    },
+    {
+      "token": "Λ12",
+      "cluster": 15,
+      "support": 8217,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": -5.876876354217529
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.6090838313102722
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.21902117133140564
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.20994964241981506
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.198647603392601
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.19236235320568085
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 0.17430442571640015
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 0.13259342312812805
+        },
+        {
+          "feature": "readout_current:free_energy_action#0",
+          "weight": -0.1241365298628807
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.11862663924694061
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 4175
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 4032
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "token": "Λ13",
+      "cluster": 13,
+      "support": 7829,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 6.03565788269043
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.9961020350456238
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.9079159498214722
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.5518216490745544
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.3546941578388214
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.28098204731941223
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.24288319051265717
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": -0.23062367737293243
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": -0.22506634891033173
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": -0.21341626346111298
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 4055
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 3774
+        }
+      ]
+    },
+    {
+      "token": "Λ14",
+      "cluster": 11,
+      "support": 7617,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 4.39219856262207
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -1.8347272872924805
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.4444805979728699
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": -0.33891645073890686
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.3206876218318939
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": -0.27074751257896423
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.2591359615325928
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.1848653107881546
+        },
+        {
+          "feature": "operator_apparatus:markov_transition#0",
+          "weight": 0.15391606092453003
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": -0.1488640159368515
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 3817
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 3792
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "token": "Λ15",
+      "cluster": 4,
+      "support": 7239,
+      "top_features": [
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": -6.798575401306152
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 0.990399181842804
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 0.5488693118095398
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 0.5486175417900085
+        },
+        {
+          "feature": "protocol_order:training_recall#0",
+          "weight": -0.43374916911125183
+        },
+        {
+          "feature": "readout_current:material_response#0",
+          "weight": -0.3325784504413605
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.3305900990962982
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.15562105178833008
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.15478453040122986
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": -0.13980679214000702
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 3629
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 3600
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "token": "Λ16",
+      "cluster": 10,
+      "support": 1664,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 13.327127456665039
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": -2.2915878295898438
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -1.4611468315124512
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.6268948912620544
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.29541078209877014
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.23716440796852112
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.18971586227416992
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.18285565078258514
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.18000639975070953
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.15653282403945923
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 881
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 783
+        }
+      ]
+    },
+    {
+      "token": "Λ17",
+      "cluster": 14,
+      "support": 510,
+      "top_features": [
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": -22.686492919921875
+        },
+        {
+          "feature": "operator_apparatus:control_update#0",
+          "weight": -5.6354241371154785
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -2.8341927528381348
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": -2.6098568439483643
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -1.0507460832595825
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -1.005942940711975
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.4413067102432251
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 0.23439766466617584
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.18200872838497162
+        },
+        {
+          "feature": "operator_apparatus:variational_derivative#0",
+          "weight": 0.14065949618816376
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 265
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 243
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "centroids_standardized": [
+    [
+      -0.20863881707191467,
+      -0.2370804399251938,
+      -0.6173015236854553,
+      -0.27396222949028015,
+      -0.22955909371376038,
+      0.05714390054345131,
+      3.6488428115844727,
+      -0.012745607644319534,
+      0.0043153828009963036,
+      -0.04067882522940636,
+      -0.04359902814030647,
+      0.006639318075031042,
+      -0.10375085473060608,
+      0.03973197191953659,
+      -0.08185867965221405,
+      0.0024609018582850695,
+      -0.00033730422728694975,
+      0.000664711173158139,
+      0.11062701046466827,
+      0.07716747373342514,
+      -0.05025932565331459,
+      0.0005991443176753819,
+      -0.11298888176679611,
+      -0.016480600461363792,
+      -0.025422891601920128,
+      0.17063429951667786,
+      3.631924867630005,
+      -0.15940925478935242,
+      0.058031901717185974,
+      -0.5660070776939392,
+      -0.05122186616063118,
+      -0.11016079038381577,
+      -0.2654394507408142,
+      0.02971041202545166,
+      -0.00223581213504076,
+      -0.00952235609292984,
+      -0.09726380556821823,
+      -0.028079373762011528,
+      -0.011929439380764961,
+      0.003162379376590252,
+      0.1179630309343338,
+      -0.03799109533429146,
+      0.0012911118101328611,
+      -0.05379730835556984,
+      -0.011926517821848392,
+      -0.014738865196704865,
+      -0.027719564735889435,
+      3.5049335565418005e-05,
+      0.0018482516752555966,
+      0.006752639077603817,
+      0.012879532761871815,
+      -0.0036283405497670174,
+      -0.015853816643357277,
+      0.006662614643573761,
+      0.004180901683866978,
+      0.012111684307456017,
+      0.021670551970601082,
+      0.002244488103315234,
+      0.013503947295248508,
+      0.01056569442152977,
+      0.04021739214658737,
+      0.03283529728651047,
+      -0.003676466178148985,
+      0.011465437710285187,
+      0.013490002602338791,
+      0.005135279148817062,
+      0.006553102284669876,
+      -0.00016376760322600603,
+      -0.0007331825327128172,
+      0.01493864692747593,
+      0.008057079277932644,
+      0.00031025384669192135
+    ],
+    [
+      0.02225334569811821,
+      0.03314243257045746,
+      -0.00759515818208456,
+      0.013549106195569038,
+      -0.01040375605225563,
+      0.016889238730072975,
+      -0.01310645043849945,
+      -0.005598590709269047,
+      0.004316160921007395,
+      0.008827527053654194,
+      0.022005295380949974,
+      0.0021069475915282965,
+      0.005680111702531576,
+      0.0038274230901151896,
+      -0.009028404019773006,
+      0.002461361465975642,
+      -0.009560621343553066,
+      0.006467305123806,
+      0.020170215517282486,
+      0.005359782371670008,
+      -0.0013584819389507174,
+      -0.0007383816409856081,
+      0.008350653573870659,
+      0.007263570092618465,
+      -0.003976857755333185,
+      0.0030725563410669565,
+      -0.010479829274117947,
+      0.010130686685442924,
+      0.0018603164935484529,
+      -0.0037701958790421486,
+      0.020644590258598328,
+      -0.008201885968446732,
+      0.012488428503274918,
+      0.02598562277853489,
+      -0.0022361138835549355,
+      0.004678728058934212,
+      -0.007583301514387131,
+      -0.0048032840713858604,
+      0.008002053946256638,
+      0.0031623714603483677,
+      0.005980003625154495,
+      -0.004936366807669401,
+      0.001290933694690466,
+      0.004344269633293152,
+      -0.5737276077270508,
+      -0.07794631272554398,
+      -0.27744224667549133,
+      -0.08221948146820068,
+      -0.07963674515485764,
+      -0.39281120896339417,
+      -0.113860122859478,
+      -0.03733953461050987,
+      -0.1492043286561966,
+      5.212192535400391,
+      -0.02272014133632183,
+      -0.3598612844944,
+      -0.16109313070774078,
+      -0.020328914746642113,
+      -0.04755843058228493,
+      -0.12063191831111908,
+      -0.12859557569026947,
+      -0.07396877557039261,
+      0.07592702656984329,
+      -0.05947471782565117,
+      -0.09145862609148026,
+      -0.050935011357069016,
+      0.07642363756895065,
+      -0.35318243503570557,
+      -0.007863149978220463,
+      -0.044048137962818146,
+      -0.1394808143377304,
+      -0.013789346441626549
+    ],
+    [
+      0.24449849128723145,
+      0.13521204888820648,
+      0.24040429294109344,
+      -0.22304947674274445,
+      -0.41993480920791626,
+      0.017205363139510155,
+      -0.014285139739513397,
+      -0.021905960515141487,
+      0.004317494574934244,
+      0.01110759750008583,
+      -0.09895915538072586,
+      -0.08072052896022797,
+      -0.009927893057465553,
+      0.0033229172695428133,
+      -0.11618190258741379,
+      0.0024618632160127163,
+      -0.4413144588470459,
+      0.0719505026936531,
+      0.2447717934846878,
+      0.372981458902359,
+      -0.11185240745544434,
+      0.0005208135698921978,
+      -0.08081329613924026,
+      -0.0006805730517953634,
+      0.04634018614888191,
+      0.1135881319642067,
+      -0.013088093139231205,
+      0.0653257668018341,
+      0.15033012628555298,
+      -0.23221774399280548,
+      0.06172937527298927,
+      -0.24594253301620483,
+      0.17541345953941345,
+      0.05197072774171829,
+      0.01309744082391262,
+      0.012506832368671894,
+      -0.04659741371870041,
+      -0.028401214629411697,
+      -0.0019876162987202406,
+      -0.007679799105972052,
+      0.03820725157856941,
+      -0.05664485692977905,
+      0.001290139160118997,
+      -0.06511229276657104,
+      -0.014977892860770226,
+      -0.06629548966884613,
+      -0.061414532363414764,
+      -0.008918781764805317,
+      -0.00037083675852045417,
+      0.07305996865034103,
+      0.1818263828754425,
+      -0.040838804095983505,
+      -0.0614139549434185,
+      -0.15215496718883514,
+      -0.02057608775794506,
+      -0.011224009096622467,
+      -0.025506192818284035,
+      0.044485677033662796,
+      0.03193514049053192,
+      0.15263180434703827,
+      0.37259024381637573,
+      0.19082024693489075,
+      -0.11688482761383057,
+      0.1328025758266449,
+      0.008432818576693535,
+      -0.04645778238773346,
+      0.0670379102230072,
+      0.1544228047132492,
+      -0.005897566210478544,
+      -0.07166772335767746,
+      -0.021590139716863632,
+      -0.018720706924796104
+    ],
+    [
+      -0.24214449524879456,
+      -0.14464348554611206,
+      -0.020642271265387535,
+      0.018721388652920723,
+      0.2638210356235504,
+      0.04048573598265648,
+      -0.013427660800516605,
+      0.05788188800215721,
+      0.0031087836250662804,
+      -0.018176373094320297,
+      0.05505866929888725,
+      0.03713912516832352,
+      -0.10587266832590103,
+      -0.014591625891625881,
+      0.12499750405550003,
+      -0.006961253006011248,
+      -0.10452692955732346,
+      -0.00012566645455081016,
+      0.03788908198475838,
+      0.08982475101947784,
+      -0.015893662348389626,
+      -0.0009009558125399053,
+      0.003170530777424574,
+      -0.030916446819901466,
+      -0.02275051362812519,
+      0.009548152796924114,
+      -0.011220492422580719,
+      -0.04648911952972412,
+      -0.14327526092529297,
+      0.18475569784641266,
+      -0.07020270079374313,
+      -0.019875818863511086,
+      -0.18267318606376648,
+      -0.08649076521396637,
+      -0.00223759887740016,
+      0.009601342491805553,
+      0.0876675471663475,
+      0.060628365725278854,
+      -0.019670061767101288,
+      0.0031595430336892605,
+      0.0059813689440488815,
+      0.01729382574558258,
+      0.001289936015382409,
+      0.0456102229654789,
+      -0.40858879685401917,
+      0.08889288455247879,
+      -0.1314721405506134,
+      -0.1153397485613823,
+      0.1094203069806099,
+      0.215830460190773,
+      -0.1292080134153366,
+      0.03783970698714256,
+      0.15796227753162384,
+      -0.10558165609836578,
+      0.008062956854701042,
+      -0.20619504153728485,
+      0.06231122463941574,
+      -0.02400609664618969,
+      0.13820107281208038,
+      -0.08952746540307999,
+      -0.3099731504917145,
+      -0.18624651432037354,
+      0.07543765753507614,
+      -0.11893480271100998,
+      0.04463215544819832,
+      -0.06845469027757645,
+      -0.07234040647745132,
+      0.005008247215300798,
+      0.010837017558515072,
+      0.029108276590704918,
+      0.10486123710870743,
+      0.10783031582832336
+    ],
+    [
+      -0.032146796584129333,
+      -0.1216665729880333,
+      -0.060279328376054764,
+      0.05265553295612335,
+      0.017531055957078934,
+      0.0767563134431839,
+      0.5486175417900085,
+      -0.07741668820381165,
+      -0.019180014729499817,
+      -0.02591080777347088,
+      -0.027837391942739487,
+      -0.03287249803543091,
+      0.013885761611163616,
+      -0.023818468675017357,
+      0.11278673261404037,
+      0.002461348893120885,
+      0.039215002208948135,
+      0.03081858903169632,
+      -6.798575401306152,
+      0.15478453040122986,
+      0.990399181842804,
+      0.01522368285804987,
+      0.3305900990962982,
+      0.023265207186341286,
+      0.06575708091259003,
+      -0.017488790675997734,
+      0.5488693118095398,
+      0.014355041086673737,
+      -0.11929875612258911,
+      -0.15562105178833008,
+      0.018793171271681786,
+      0.04548078402876854,
+      -0.010439644567668438,
+      -0.3325784504413605,
+      -0.0022360708098858595,
+      0.03914501518011093,
+      -0.07435900717973709,
+      -0.13980679214000702,
+      -0.09727136790752411,
+      0.0031623695977032185,
+      -0.43374916911125183,
+      -0.02530256286263466,
+      0.0012909568613395095,
+      0.008849024772644043,
+      -0.01192497182637453,
+      -0.014736463315784931,
+      -0.02772333286702633,
+      3.505319182295352e-05,
+      0.0018483164021745324,
+      0.006930298637598753,
+      0.01288142055273056,
+      -0.003151683136820793,
+      -0.015853675082325935,
+      0.006662881467491388,
+      0.0048715355806052685,
+      0.011981909163296223,
+      0.0216745026409626,
+      0.0022440908942371607,
+      0.013503775000572205,
+      0.01056645903736353,
+      0.039753589779138565,
+      0.03235384821891785,
+      -0.003676400752738118,
+      0.011466735042631626,
+      0.013876242563128471,
+      0.005135977640748024,
+      0.0064383926801383495,
+      -0.00016373518155887723,
+      0.0033293862361460924,
+      0.014939267188310623,
+      0.008058014325797558,
+      0.0003103011113125831
+    ],
+    [
+      0.022250747308135033,
+      0.03314225375652313,
+      -0.007595827337354422,
+      0.013549457304179668,
+      -0.010404769331216812,
+      0.01689036190509796,
+      -0.0131068779155612,
+      -0.0055991834960877895,
+      0.004315700847655535,
+      0.008827367797493935,
+      0.022004229947924614,
+      0.002107061678543687,
+      0.00568009726703167,
+      0.0038273660466074944,
+      -0.009027689695358276,
+      0.002461041556671262,
+      -0.009560124948620796,
+      0.006466780789196491,
+      0.020171169191598892,
+      0.005359715316444635,
+      -0.0013582892715930939,
+      -0.0007382679614238441,
+      0.008351508527994156,
+      0.007263376377522945,
+      -0.003977267537266016,
+      0.0030726471450179815,
+      -0.010480969212949276,
+      0.010131264105439186,
+      0.0018603048520162702,
+      -0.00377016537822783,
+      0.02064487151801586,
+      -0.008201743476092815,
+      0.012488782405853271,
+      0.02598489820957184,
+      -0.0022359443828463554,
+      0.004679376725107431,
+      -0.007583459839224815,
+      -0.004802992567420006,
+      0.008002646267414093,
+      0.0031623777467757463,
+      0.005980692338198423,
+      -0.004936291836202145,
+      0.0012910576770082116,
+      0.004344606772065163,
+      -1.3926503658294678,
+      0.0837949886918068,
+      0.06505362689495087,
+      -0.024399498477578163,
+      0.07467475533485413,
+      0.9632972478866577,
+      0.06462138891220093,
+      0.0856216549873352,
+      0.3933642506599426,
+      -0.02396947517991066,
+      0.18589146435260773,
+      0.21617479622364044,
+      0.15314190089702606,
+      0.03859124705195427,
+      -2.8725197315216064,
+      0.07086385041475296,
+      0.03644050657749176,
+      0.13855522871017456,
+      0.19808100163936615,
+      0.04538527503609657,
+      -3.930269479751587,
+      0.09205985069274902,
+      0.36431825160980225,
+      0.1827872395515442,
+      0.1417631357908249,
+      0.03696209192276001,
+      0.054509323090314865,
+      0.07210459560155869
+    ],
+    [
+      0.022251449525356293,
+      0.03314229100942612,
+      -0.007595208007842302,
+      0.013549386523663998,
+      -0.010404416359961033,
+      0.016890134662389755,
+      -0.013106790371239185,
+      -0.005599022842943668,
+      0.004315961617976427,
+      0.008827400393784046,
+      0.022004446014761925,
+      0.0021069480571895838,
+      0.005680100526660681,
+      0.0038276163395494223,
+      -0.009028122760355473,
+      0.002461155876517296,
+      -0.00956022460013628,
+      0.0064667463302612305,
+      0.020170975476503372,
+      0.005359729286283255,
+      -0.0013583417749032378,
+      -0.0007382934563793242,
+      0.008350963704288006,
+      0.007263415493071079,
+      -0.003976969979703426,
+      0.00307262921705842,
+      -0.010480598546564579,
+      0.01013114582747221,
+      0.0018604352371767163,
+      -0.0037704184651374817,
+      0.020644811913371086,
+      -0.008201769553124905,
+      0.01248878426849842,
+      0.025985661894083023,
+      -0.0022360533475875854,
+      0.004679120145738125,
+      -0.007583427708595991,
+      -0.004803050775080919,
+      0.008002525195479393,
+      0.0031623768154531717,
+      0.005980540066957474,
+      -0.004936307203024626,
+      0.0012910133227705956,
+      0.004344537388533354,
+      -0.16807112097740173,
+      0.03679550811648369,
+      -0.18571923673152924,
+      -0.01724991202354431,
+      0.0049051279202103615,
+      -0.04343012347817421,
+      -0.12579916417598724,
+      -0.023982252925634384,
+      -0.38534703850746155,
+      -0.16492459177970886,
+      -0.07978953421115875,
+      3.30234694480896,
+      -0.12371764332056046,
+      -0.022372037172317505,
+      -2.209508180618286,
+      -0.07053975015878677,
+      0.025951819494366646,
+      0.08299671113491058,
+      0.0006903876783326268,
+      0.007172899786382914,
+      -0.011933569796383381,
+      0.09261378645896912,
+      0.12538056075572968,
+      -1.115325689315796,
+      0.01678583212196827,
+      -0.1040387973189354,
+      -0.012728198431432247,
+      0.09417301416397095
+    ],
+    [
+      0.1355961114168167,
+      0.059307850897312164,
+      0.7381918430328369,
+      0.1347230225801468,
+      0.19953827559947968,
+      0.01443499606102705,
+      -3.527533531188965,
+      -0.012443071231245995,
+      0.0043154205195605755,
+      -0.003992644604295492,
+      -0.007330937311053276,
+      0.011531073600053787,
+      0.12341812998056412,
+      -0.058639928698539734,
+      0.07541505992412567,
+      0.0024609186220914125,
+      -0.01056287344545126,
+      0.0502946563065052,
+      0.09208619594573975,
+      -0.010419487953186035,
+      -0.018200498074293137,
+      0.012206745333969593,
+      0.005365882068872452,
+      -0.0268168393522501,
+      -0.004907921887934208,
+      -0.05596330761909485,
+      -3.583770990371704,
+      0.1395355761051178,
+      0.07848093658685684,
+      0.5936187505722046,
+      -0.005998172797262669,
+      0.05513780564069748,
+      0.23134873807430267,
+      0.040989331901073456,
+      -0.002235828200355172,
+      -0.0018406602321192622,
+      0.07957182079553604,
+      0.004163963720202446,
+      -0.037693873047828674,
+      -0.044422611594200134,
+      -0.03807993605732918,
+      -0.025443049147725105,
+      0.0012911054072901607,
+      -0.05397830531001091,
+      -0.011926288716495037,
+      -0.014738821424543858,
+      -0.02771993726491928,
+      3.5049411962972954e-05,
+      0.0018482531886547804,
+      0.006752668414264917,
+      0.012879576534032822,
+      -0.0031512349378317595,
+      -0.01585381291806698,
+      0.006662700325250626,
+      0.0048714675940573215,
+      0.012038036249577999,
+      0.021670671179890633,
+      0.002244469942525029,
+      0.013503946363925934,
+      0.010565954260528088,
+      0.040245551615953445,
+      0.032835233956575394,
+      -0.0036764307878911495,
+      0.011465678922832012,
+      0.013490050099790096,
+      0.005135306157171726,
+      0.006553081329911947,
+      -0.00016376658459194005,
+      -0.001256717136129737,
+      0.014938658103346825,
+      0.008057096973061562,
+      0.00031024726922623813
+    ],
+    [
+      0.04560530558228493,
+      0.04165623337030411,
+      -0.056514397263526917,
+      0.11393681913614273,
+      0.009559120051562786,
+      0.015406090766191483,
+      -0.012906010262668133,
+      -0.00874315295368433,
+      0.00027836966910399497,
+      0.012995714321732521,
+      0.03047281689941883,
+      0.013479745015501976,
+      0.06708329916000366,
+      0.004086642526090145,
+      -0.018495433032512665,
+      0.003589458530768752,
+      -0.013411818072199821,
+      0.006779687479138374,
+      0.021639548242092133,
+      0.015816565603017807,
+      0.006865191739052534,
+      0.0029073941987007856,
+      0.026533683761954308,
+      0.021509775891900063,
+      -0.009119359776377678,
+      -0.05478353425860405,
+      -0.01113561075180769,
+      0.011167199350893497,
+      0.013679631985723972,
+      -0.010745784267783165,
+      0.022384461015462875,
+      -0.008929586969316006,
+      0.027942150831222534,
+      0.028194086626172066,
+      -0.0022382286842912436,
+      0.003985538147389889,
+      -0.030570708215236664,
+      -0.00838646199554205,
+      0.01341803278774023,
+      0.003164607333019376,
+      0.00787670724093914,
+      0.025769002735614777,
+      0.0012913327664136887,
+      0.010541534051299095,
+      0.00885004736483097,
+      -0.0213229488581419,
+      -0.03291166201233864,
+      0.011880745179951191,
+      -0.00313799106515944,
+      -0.017173567786812782,
+      0.012539719231426716,
+      -0.001882390584796667,
+      -0.02393682859838009,
+      0.004722278099507093,
+      0.019274739548563957,
+      0.014651256613433361,
+      0.01971726305782795,
+      0.00014554246445186436,
+      0.010701128281652927,
+      -0.006368693429976702,
+      0.041693925857543945,
+      0.0475023053586483,
+      0.0078712347894907,
+      0.013442477211356163,
+      0.012218687683343887,
+      0.053710076957941055,
+      0.028675980865955353,
+      -0.07214502990245819,
+      -0.003662329399958253,
+      0.029344432055950165,
+      0.0014070445904508233,
+      -0.0012921193847432733
+    ],
+    [
+      0.00983009859919548,
+      0.0599532276391983,
+      0.08011585474014282,
+      -0.07210440933704376,
+      -0.051058080047369,
+      0.014777770265936852,
+      -0.008002355694770813,
+      -0.046937376260757446,
+      -0.03482017293572426,
+      -0.0577949695289135,
+      -0.05090887472033501,
+      -0.007231569848954678,
+      0.028398647904396057,
+      0.005257515236735344,
+      0.01251833513379097,
+      0.0024607793893665075,
+      1.9079548120498657,
+      0.054579902440309525,
+      0.08918362110853195,
+      -1.7222895622253418,
+      0.18389929831027985,
+      0.008100220933556557,
+      5.8228997659171e-05,
+      -0.00014457653742283583,
+      -0.03640793263912201,
+      -0.03366568312048912,
+      0.0035612760111689568,
+      0.005941725801676512,
+      -0.028246408328413963,
+      0.05120709910988808,
+      -0.051798030734062195,
+      0.8831148147583008,
+      0.0006052677053958178,
+      -0.016309769824147224,
+      -0.002235696418210864,
+      -0.0844452902674675,
+      0.03129088506102562,
+      -0.028986351564526558,
+      0.004868545103818178,
+      0.003162380773574114,
+      -0.09875276684761047,
+      -0.03739502280950546,
+      0.0012911591911688447,
+      -0.03516864404082298,
+      -0.011958678252995014,
+      -0.014739190228283405,
+      -0.02778901904821396,
+      3.50488189724274e-05,
+      0.001797127421014011,
+      0.006744893733412027,
+      0.012879208661615849,
+      -0.003419353859499097,
+      -0.015624761581420898,
+      0.006662086118012667,
+      0.005793842487037182,
+      0.012024199590086937,
+      0.021590501070022583,
+      0.0022441118489950895,
+      0.013564538210630417,
+      0.010626355186104774,
+      0.040016863495111465,
+      0.03284304589033127,
+      -0.003676727879792452,
+      0.01146367285400629,
+      0.013482286594808102,
+      0.005135077517479658,
+      0.006553262006491423,
+      -0.00021814748470205814,
+      0.0008145380415953696,
+      0.014940383844077587,
+      0.008056951686739922,
+      0.0003026409540325403
+    ],
+    [
+      0.022252999246120453,
+      0.033143699169158936,
+      -0.007595520932227373,
+      0.013548638671636581,
+      -0.010404299944639206,
+      0.016888899728655815,
+      -0.013105646707117558,
+      -0.005598995368927717,
+      0.004315862897783518,
+      0.008828085847198963,
+      0.022006869316101074,
+      0.0021069925278425217,
+      0.005680216010659933,
+      0.003827347420156002,
+      -0.009028419852256775,
+      0.00246120966039598,
+      -0.00956089049577713,
+      0.006466979160904884,
+      0.020169513300061226,
+      0.005360100883990526,
+      -0.0013584225671365857,
+      -0.000738379021640867,
+      0.008350984193384647,
+      0.007264041807502508,
+      -0.003976995125412941,
+      0.003072491381317377,
+      -0.010479984804987907,
+      0.010130011476576328,
+      0.001860357355326414,
+      -0.0037701325491070747,
+      0.020643338561058044,
+      -0.008202197961509228,
+      0.012487675063312054,
+      0.025985276326537132,
+      -0.002236106200143695,
+      0.004678733646869659,
+      -0.007583016995340586,
+      -0.004803490359336138,
+      0.00800192728638649,
+      0.003162326058372855,
+      0.005980358924716711,
+      -0.0049366881139576435,
+      0.0012910012155771255,
+      0.004344032146036625,
+      0.18000639975070953,
+      0.015657709911465645,
+      -0.08870350569486618,
+      13.327127456665039,
+      -0.18971586227416992,
+      -0.23716440796852112,
+      -0.048574600368738174,
+      -0.07552319765090942,
+      -0.10820414125919342,
+      -2.2915878295898438,
+      0.04549555480480194,
+      -0.074505515396595,
+      -0.29541078209877014,
+      -0.15358558297157288,
+      -0.15653282403945923,
+      -0.12622714042663574,
+      0.07056336104869843,
+      -1.4611468315124512,
+      0.1335853934288025,
+      0.024863190948963165,
+      -0.18285565078258514,
+      0.6268948912620544,
+      0.041622038930654526,
+      -0.08636971563100815,
+      -0.0012565016513690352,
+      -0.007656792178750038,
+      0.02233833447098732,
+      -0.11313820630311966
+    ],
+    [
+      -0.4444805979728699,
+      -0.33891645073890686,
+      -1.8347272872924805,
+      0.032329149544239044,
+      0.3206876218318939,
+      4.39219856262207,
+      -0.06358678638935089,
+      -0.01840732805430889,
+      0.0043161725625395775,
+      0.15391606092453003,
+      0.08092726022005081,
+      -0.009102031588554382,
+      -0.07296226173639297,
+      0.08820679783821106,
+      -0.08416825532913208,
+      0.002461366355419159,
+      0.1848653107881546,
+      0.02484135329723358,
+      0.13335734605789185,
+      0.2591359615325928,
+      -0.1488640159368515,
+      -0.0007383768097497523,
+      -0.10492020845413208,
+      -0.09624125808477402,
+      0.09200844168663025,
+      -0.0652993842959404,
+      -0.05726495012640953,
+      -0.27074751257896423,
+      -0.08232450485229492,
+      0.10508648306131363,
+      0.07366713881492615,
+      -0.017527535557746887,
+      0.013788661919534206,
+      0.04442586004734039,
+      -0.002236130880191922,
+      -0.017468588426709175,
+      -0.01897762529551983,
+      0.0457913875579834,
+      -0.01782027818262577,
+      0.003162372624501586,
+      0.10143245756626129,
+      -0.09597859531641006,
+      0.0012909250799566507,
+      -0.014988238923251629,
+      -0.011924926191568375,
+      -0.014737180434167385,
+      -0.02772371470928192,
+      3.5052049497608095e-05,
+      0.001848299172706902,
+      0.006753574591130018,
+      0.012881197966635227,
+      -0.0031516477465629578,
+      -0.01585371606051922,
+      0.006663030479103327,
+      0.004871502052992582,
+      0.012036429718136787,
+      0.0216746274381876,
+      0.0022440720349550247,
+      0.013503826223313808,
+      0.010566511191427708,
+      0.04024098068475723,
+      0.032832883298397064,
+      -0.0036762102972716093,
+      0.01146678626537323,
+      0.013491843827068806,
+      0.005136081948876381,
+      0.006552286446094513,
+      -0.00016373494872823358,
+      -0.0012564730131998658,
+      0.014939084649085999,
+      0.008057737722992897,
+      0.00031030125683173537
+    ],
+    [
+      0.022248927503824234,
+      0.03314216434955597,
+      -0.007597502786666155,
+      0.013549648225307465,
+      -0.01040571741759777,
+      0.016885744407773018,
+      -0.013104773126542568,
+      -0.00559961935505271,
+      0.0043163602240383625,
+      0.008830114267766476,
+      0.022003648802638054,
+      0.002106717322021723,
+      0.005681860726326704,
+      0.0038277411367744207,
+      -0.009029464796185493,
+      0.002460732590407133,
+      -0.009563052095472813,
+      0.006468401290476322,
+      0.020171690732240677,
+      0.005361519753932953,
+      -0.0013581478269770741,
+      -0.0007381998002529144,
+      0.008350422605872154,
+      0.007263269275426865,
+      -0.003976917825639248,
+      0.0030720201320946217,
+      -0.010481970384716988,
+      0.010131577961146832,
+      0.0018604376818984747,
+      -0.0037694808561354876,
+      0.020637962967157364,
+      -0.00820413138717413,
+      0.012484880164265633,
+      0.025981396436691284,
+      -0.00223565218038857,
+      0.004678515251725912,
+      -0.007583546917885542,
+      -0.004804444033652544,
+      0.0080006318166852,
+      0.003161913715302944,
+      0.00598110631108284,
+      -0.004936251789331436,
+      0.0012911772355437279,
+      0.004343411419540644,
+      2.2602124214172363,
+      -0.019584301859140396,
+      -0.28686490654945374,
+      0.014589632861316204,
+      0.062120530754327774,
+      -1.0872949361801147,
+      -0.08488486707210541,
+      -0.024857426062226295,
+      -0.2634008824825287,
+      -0.21497781574726105,
+      -0.07360534369945526,
+      -0.5952122807502747,
+      -0.2417687177658081,
+      0.02627716399729252,
+      1.4515851736068726,
+      0.03825465589761734,
+      -0.17728735506534576,
+      -0.05390580743551254,
+      -0.04823682829737663,
+      -0.026431219652295113,
+      1.5766700506210327,
+      -0.03689192607998848,
+      -0.294269323348999,
+      0.04923880845308304,
+      -0.01272345706820488,
+      -0.03665201738476753,
+      -0.3102201223373413,
+      0.10223288834095001
+    ],
+    [
+      0.022253291681408882,
+      0.033142440021038055,
+      -0.007595163304358721,
+      0.013549085706472397,
+      -0.01040379237383604,
+      0.016889171674847603,
+      -0.01310642622411251,
+      -0.005598605144768953,
+      0.004316156264394522,
+      0.008827539160847664,
+      0.022005362436175346,
+      0.0021069562062621117,
+      0.0056801107712090015,
+      0.003827402601018548,
+      -0.009028375148773193,
+      0.0024613593704998493,
+      -0.009560652077198029,
+      0.006467348895967007,
+      0.02017015591263771,
+      0.005359785631299019,
+      -0.0013584810076281428,
+      -0.0007383815245702863,
+      0.008350664749741554,
+      0.007263581734150648,
+      -0.0039768582209944725,
+      0.003072550054639578,
+      -0.010479859076440334,
+      0.010130651295185089,
+      0.001860306249000132,
+      -0.003770175389945507,
+      0.020644579082727432,
+      -0.008201897144317627,
+      0.012488401494920254,
+      0.025985626503825188,
+      -0.002236105501651764,
+      0.004678727127611637,
+      -0.007583292201161385,
+      -0.0048033008351922035,
+      0.008002016693353653,
+      0.0031623716931790113,
+      0.0059800175949931145,
+      -0.0049363719299435616,
+      0.001290938351303339,
+      0.004344249609857798,
+      -0.3546941578388214,
+      -0.09319242089986801,
+      6.03565788269043,
+      -0.04619728773832321,
+      -0.04400516673922539,
+      -0.5518216490745544,
+      -0.11028744280338287,
+      -0.078345388174057,
+      -0.08065572381019592,
+      -0.1852283924818039,
+      -0.22506634891033173,
+      -0.24288319051265717,
+      -0.2078915685415268,
+      -0.05025861784815788,
+      -0.06032537296414375,
+      -0.23062367737293243,
+      -0.28098204731941223,
+      -0.9079159498214722,
+      -0.21341626346111298,
+      -0.15882721543312073,
+      -0.14176447689533234,
+      -0.06018397957086563,
+      -0.04988539218902588,
+      0.9961020350456238,
+      -0.042167339473962784,
+      -0.1241924911737442,
+      0.08405144512653351,
+      -0.03425157815217972
+    ],
+    [
+      -2.8341927528381348,
+      -2.6098568439483643,
+      0.4413067102432251,
+      0.18200872838497162,
+      -0.03114168718457222,
+      0.04756835848093033,
+      0.101094551384449,
+      -0.005598978139460087,
+      0.0043158698827028275,
+      0.008828031830489635,
+      -5.6354241371154785,
+      0.14065949618816376,
+      0.054266128689050674,
+      0.003827344160526991,
+      -0.03270180523395538,
+      0.002461218973621726,
+      -1.005942940711975,
+      -22.686492919921875,
+      0.08933151513338089,
+      -1.0507460832595825,
+      -0.0013584361877292395,
+      -0.0007383768097497523,
+      0.07685715705156326,
+      0.04025160148739815,
+      -0.003976977430284023,
+      -0.07851862162351608,
+      0.00959740485996008,
+      -0.06966416537761688,
+      0.006071584764868021,
+      -0.05797819048166275,
+      0.020643409341573715,
+      0.050976380705833435,
+      0.23439766466617584,
+      0.025984976440668106,
+      -0.002236091298982501,
+      0.004678737837821245,
+      -0.07772520184516907,
+      -0.00480344844982028,
+      0.008001953363418579,
+      0.0031622867099940777,
+      0.005980278830975294,
+      0.044100239872932434,
+      0.001290989457629621,
+      0.004344062879681587,
+      -0.011925294063985348,
+      -0.014737097546458244,
+      -0.02772214449942112,
+      3.505322092678398e-05,
+      0.0018483863677829504,
+      0.006753610912710428,
+      0.012881235219538212,
+      -0.003151625394821167,
+      -0.015853021293878555,
+      0.006663281470537186,
+      0.004871774930506945,
+      0.012037202715873718,
+      0.02167343720793724,
+      0.002244228031486273,
+      0.01350309606641531,
+      0.01056619081646204,
+      0.0402429923415184,
+      0.03283308818936348,
+      -0.003676407737657428,
+      0.01146638486534357,
+      0.013491692952811718,
+      0.005135967396199703,
+      0.006552247330546379,
+      -0.0001637409586692229,
+      -0.0012565115466713905,
+      0.014940177090466022,
+      0.008057928644120693,
+      0.00031029724050313234
+    ],
+    [
+      0.198647603392601,
+      0.19236235320568085,
+      0.21902117133140564,
+      0.08544759452342987,
+      0.6090838313102722,
+      -5.876876354217529,
+      0.07232876121997833,
+      0.06751176714897156,
+      0.004316169302910566,
+      0.023991500958800316,
+      -0.03795109689235687,
+      0.02669520303606987,
+      0.015914788469672203,
+      0.0038274547550827265,
+      0.09036698937416077,
+      0.002461365656927228,
+      -0.20994964241981506,
+      0.02976362593472004,
+      0.04090047627687454,
+      -0.09691727161407471,
+      0.13259342312812805,
+      -0.000738380360417068,
+      0.04598334804177284,
+      0.006452781613916159,
+      -0.032584965229034424,
+      -0.07290375232696533,
+      0.042494140565395355,
+      0.037927594035863876,
+      -0.044423773884773254,
+      -0.11862663924694061,
+      -0.1241365298628807,
+      -0.04951164871454239,
+      0.004199117422103882,
+      0.08160717040300369,
+      -0.0022361266892403364,
+      -0.01781715266406536,
+      0.17430442571640015,
+      0.007001599762588739,
+      0.0014445631531998515,
+      0.0031623728573322296,
+      0.02705683372914791,
+      0.08828451484441757,
+      0.0012909271754324436,
+      0.06142203509807587,
+      -0.011924931779503822,
+      -0.014737138524651527,
+      -0.02772369608283043,
+      3.505211498122662e-05,
+      0.0018482983577996492,
+      0.006753591354936361,
+      0.012881243601441383,
+      -0.003151658922433853,
+      -0.01585371606051922,
+      0.006663009990006685,
+      0.0048715039156377316,
+      0.012036385014653206,
+      0.0216746274381876,
+      0.0022440736647695303,
+      0.01350382249802351,
+      0.010566509328782558,
+      0.04024103656411171,
+      0.03283281996846199,
+      -0.0036762228701263666,
+      0.011466782540082932,
+      0.013491894118487835,
+      0.005136074498295784,
+      0.006552261766046286,
+      -0.00016373499238397926,
+      -0.001256472896784544,
+      0.014939095824956894,
+      0.008057753555476665,
+      0.0003103013150393963
+    ],
+    [
+      0.022252174094319344,
+      0.0331423282623291,
+      -0.007595130708068609,
+      0.013549312017858028,
+      -0.010404049418866634,
+      0.016889899969100952,
+      -0.013106702826917171,
+      -0.005598855670541525,
+      0.004316210746765137,
+      0.008827433921396732,
+      0.02200467325747013,
+      0.0021068647038191557,
+      0.005680103786289692,
+      0.003827607724815607,
+      -0.009028570726513863,
+      0.0024612753186374903,
+      -0.009560330770909786,
+      0.006466895341873169,
+      0.020170776173472404,
+      0.005359743256121874,
+      -0.0013583963736891747,
+      -0.000738319824449718,
+      0.008350571617484093,
+      0.007263456471264362,
+      -0.003976847976446152,
+      0.0030726103577762842,
+      -0.010480212979018688,
+      0.010131025686860085,
+      0.0018604053184390068,
+      -0.003770381910726428,
+      0.02064475230872631,
+      -0.008201801218092442,
+      0.01248869113624096,
+      0.025985652580857277,
+      -0.0022361665032804012,
+      0.004678853787481785,
+      -0.00758339511230588,
+      -0.004803112708032131,
+      0.008002402260899544,
+      0.0031623756512999535,
+      0.005980381276458502,
+      -0.004936323035508394,
+      0.001290967338718474,
+      0.00434446707367897,
+      -0.5671278238296509,
+      0.016076039522886276,
+      -0.15077084302902222,
+      -0.04146888107061386,
+      4.3476057052612305,
+      -0.5521621704101562,
+      -0.10758768767118454,
+      -0.01807134412229061,
+      -0.25295040011405945,
+      -0.18583104014396667,
+      -0.02971564419567585,
+      -0.11541696637868881,
+      -0.10091855376958847,
+      0.05090911686420441,
+      -0.4447052776813507,
+      -0.12873287498950958,
+      -0.31633076071739197,
+      -0.3313246965408325,
+      -0.31493642926216125,
+      -0.06729356944561005,
+      -0.4716171622276306,
+      -0.07423484325408936,
+      -0.4789266586303711,
+      -0.1747148036956787,
+      -0.014710463583469391,
+      -0.03928059712052345,
+      -0.0459781289100647,
+      3.994143486022949
+    ],
+    [
+      0.022251015529036522,
+      0.033142272382974625,
+      -0.007595588453114033,
+      0.01354942936450243,
+      -0.010404634289443493,
+      0.016890274360775948,
+      -0.013106845319271088,
+      -0.005599122028797865,
+      0.004315801430493593,
+      0.008827379904687405,
+      0.02200431376695633,
+      0.0021070176735520363,
+      0.005680099129676819,
+      0.0038274626713246107,
+      -0.009027857333421707,
+      0.002461085794493556,
+      -0.00956016220152378,
+      0.006466659251600504,
+      0.020171096548438072,
+      0.005359720438718796,
+      -0.00135830941144377,
+      -0.0007382777403108776,
+      0.008351298049092293,
+      0.0072633917443454266,
+      -0.003977153450250626,
+      0.003072640160098672,
+      -0.01048082672059536,
+      0.01013122033327818,
+      0.0018603545613586903,
+      -0.003770263399928808,
+      0.02064484730362892,
+      -0.008201752789318562,
+      0.012488842010498047,
+      0.02598566748201847,
+      -0.002235986292362213,
+      0.0046792784705758095,
+      -0.007583447732031345,
+      -0.004803014919161797,
+      0.008002600632607937,
+      0.0031623775139451027,
+      0.005980634596198797,
+      -0.004936298355460167,
+      0.0012910406803712249,
+      0.004344580695033073,
+      0.3563395142555237,
+      -0.0022513808216899633,
+      -0.022893846035003662,
+      0.00944182462990284,
+      -4.0567169189453125,
+      0.5325807929039001,
+      0.09862089157104492,
+      0.021724356338381767,
+      0.2693067193031311,
+      0.03663181886076927,
+      0.03372909128665924,
+      0.08884834498167038,
+      0.061822228133678436,
+      0.004860447254031897,
+      0.22150234878063202,
+      0.04107863828539848,
+      0.19245590269565582,
+      0.1388561725616455,
+      0.28296008706092834,
+      0.07397282123565674,
+      0.1939886063337326,
+      0.08066124469041824,
+      0.31623196601867676,
+      0.18737854063510895,
+      0.015171404927968979,
+      0.0009386609890498221,
+      0.06272020190954208,
+      -4.137113094329834
+    ]
+  ],
+  "feature_space": "operator_plus_substrate_active_delta_standardized",
+  "mean": [
+    -0.0048075588420033455,
+    -0.004329509101808071,
+    0.0007236447418108582,
+    -0.0029755504801869392,
+    0.0027065835893154144,
+    -0.0023282014299184084,
+    0.0030416303779929876,
+    9.997538290917873e-05,
+    -1.6999623767333105e-05,
+    -0.0001901462528621778,
+    -0.0009523862972855568,
+    -5.325808888301253e-05,
+    -0.0008691352559253573,
+    -4.0576316678198054e-05,
+    0.0007647164165973663,
+    -6.599410426133545e-06,
+    0.0027430104091763496,
+    -0.00019512212020345032,
+    -0.002615228993818164,
+    -0.0013779238797724247,
+    3.840341014438309e-05,
+    2.478413307471783e-06,
+    -0.0003373368817847222,
+    -0.00024253390438389033,
+    0.00010213914356427267,
+    -0.0002818180655594915,
+    0.0024872554931789637,
+    -0.0008780379430390894,
+    -0.00020153821969870478,
+    0.00072960410034284,
+    -0.001060632523149252,
+    0.0008265183423645794,
+    -0.0020257781725376844,
+    -0.0010187274310737848,
+    4.999999873689376e-06,
+    -3.818295954260975e-05,
+    0.0008419597870670259,
+    0.00014941065455786884,
+    -0.0002240273606730625,
+    -9.999999747378752e-06,
+    -0.00017785976524464786,
+    0.0003136226150672883,
+    -1.6666666624587378e-06,
+    -0.00020305927318986505,
+    0.0031480288598686457,
+    0.0007188471499830484,
+    0.003411264391615987,
+    -2.1432613266370026e-06,
+    -0.00032142241252586246,
+    -0.0007494543096981943,
+    -0.001147478586062789,
+    5.1935621740994975e-05,
+    0.000790812773630023,
+    -0.0010107075795531273,
+    -0.00018636755703482777,
+    -0.002433453919366002,
+    -0.003758971346542239,
+    -4.288586205802858e-05,
+    -0.002439948031678796,
+    -0.0009615634335204959,
+    -0.009342224337160587,
+    -0.007787774316966534,
+    0.00015248663839884102,
+    -0.0009844171581789851,
+    -0.002754559274762869,
+    -0.0005673689302057028,
+    -0.0013715614331886172,
+    3.924604970961809e-05,
+    1.0777503121062182e-05,
+    -0.0005860530654899776,
+    -0.0005239233141764998,
+    -6.0831342125311494e-05
+  ],
+  "scale": [
+    0.21604174375534058,
+    0.1306285560131073,
+    0.09527265280485153,
+    0.2196214646100998,
+    0.26014214754104614,
+    0.13785360753536224,
+    0.23208242654800415,
+    0.017856108024716377,
+    0.003938849549740553,
+    0.02153899520635605,
+    0.04327719286084175,
+    0.02527681551873684,
+    0.15300992131233215,
+    0.010601659305393696,
+    0.08470134437084198,
+    0.0026813498698174953,
+    0.2868981659412384,
+    0.030171846970915794,
+    0.12966403365135193,
+    0.25707244873046875,
+    0.028270496055483818,
+    0.0033565920311957598,
+    0.040394749492406845,
+    0.033388540148735046,
+    0.025682706385850906,
+    0.09172361344099045,
+    0.23733188211917877,
+    0.08667568862438202,
+    0.10833381116390228,
+    0.19352038204669952,
+    0.05137856304645538,
+    0.10076775401830673,
+    0.162220299243927,
+    0.039204273372888565,
+    0.0022360580042004585,
+    0.008160930126905441,
+    0.11103389412164688,
+    0.0311046801507473,
+    0.02799653448164463,
+    0.0031622503884136677,
+    0.02974092587828636,
+    0.06352916359901428,
+    0.0012909931829199195,
+    0.04674382880330086,
+    0.2639777660369873,
+    0.048778172582387924,
+    0.12305205315351486,
+    0.06114288046956062,
+    0.173893004655838,
+    0.11097148805856705,
+    0.08908170461654663,
+    0.016479147598147392,
+    0.04988374188542366,
+    0.15168407559394836,
+    0.03825483098626137,
+    0.20216219127178192,
+    0.17343544960021973,
+    0.019109461456537247,
+    0.18069516122341156,
+    0.09100417792797089,
+    0.2321462482213974,
+    0.23719292879104614,
+    0.04147714748978615,
+    0.08585317432880402,
+    0.20416611433029175,
+    0.11047016084194183,
+    0.20932599902153015,
+    0.23968446254730225,
+    0.00857736635953188,
+    0.039226874709129333,
+    0.06501970440149307,
+    0.19604390859603882
+  ],
+  "diagnostics": {
+    "readiness": "usable",
+    "n_clusters": 18,
+    "counts": [
+      20692,
+      8816,
+      68853,
+      82612,
+      7239,
+      15765,
+      15524,
+      19660,
+      239162,
+      31887,
+      1664,
+      7617,
+      34746,
+      7829,
+      510,
+      8217,
+      14505,
+      14702
+    ],
+    "silhouette_sample": 0.16116388142108917
+  },
+  "claim_scope": "V2-native symbolic language learned from operator/substrate matrices, typed graph edges, directed sequence evidence and variational first-variation diagnostics. Tokens are machine language for mechanism construction, not human field names."
+}

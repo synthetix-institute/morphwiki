@@ -1,0 +1,1152 @@
+{
+  "report_type": "operator_substrate_v2_hierarchical_language",
+  "readiness": "usable",
+  "language_json": "discoveries/operator_substrate_v2_full_radius4_symbolic_language.json",
+  "full_assignment_json": "discoveries/operator_substrate_v2_full_radius4_symbolic_full_assignment.json",
+  "assignments_npz": "discoveries/operator_substrate_v2_full_radius4_symbolic_full_assignments.npz",
+  "refined_apparatus_json": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined.json",
+  "source_language_json": "discoveries/operator_substrate_v2_full_radius4_source_language_examples.json",
+  "dag_json": "discoveries/operator_substrate_v2_full_radius4_v2_dag.json",
+  "source_constructor_json": "discoveries/operator_substrate_v2_full_radius4_source_constructor_graph.json",
+  "outputs": {
+    "json": "discoveries/operator_substrate_v2_full_radius4_hierarchical_language.json",
+    "markdown": "discoveries/operator_substrate_v2_full_radius4_hierarchical_language.md"
+  },
+  "language_counts": {
+    "omega": 32,
+    "xi": 18,
+    "lambda": 18,
+    "alpha": 18,
+    "tau": 8,
+    "j": 6,
+    "pi": 80,
+    "gamma": 12,
+    "periodic_cells": 512
+  },
+  "assignment_npz_shapes": {
+    "omega_labels": [
+      14523959
+    ],
+    "xi_labels": [
+      14523959
+    ],
+    "alpha_labels": [
+      14523959
+    ],
+    "lambda_src": [
+      4265740
+    ],
+    "lambda_dst": [
+      4265740
+    ],
+    "lambda_labels": [
+      4265740
+    ],
+    "tau_src": [
+      250000
+    ],
+    "tau_dst": [
+      250000
+    ],
+    "tau_labels": [
+      250000
+    ],
+    "gamma_src": [
+      240000
+    ],
+    "gamma_dst": [
+      240000
+    ],
+    "gamma_labels": [
+      240000
+    ]
+  },
+  "hierarchy": {
+    "primitive_factor_spaces": {
+      "omega": {
+        "symbol": "Ω",
+        "meaning": "operator apparatus kernel: reusable transformation evidence independent of field nouns",
+        "count": 32,
+        "assignment": {
+          "available": true,
+          "rows_assigned": 14523959,
+          "token_count": 32,
+          "occupied_tokens": 32,
+          "top_token": "Ω00",
+          "top_fraction": 0.23647333347608596,
+          "distance": {
+            "mean": 24.958555221557617,
+            "p50": 1.3413543701171875,
+            "p95": 42.488616943359375
+          },
+          "margin": {
+            "mean": 14.297433853149414,
+            "p50": 5.2366437911987305,
+            "p95": 49.98307800292969
+          },
+          "stability": {
+            "samples": 12,
+            "sample_size": 500000,
+            "js_divergence_mean": 8.234933293300311e-06,
+            "js_divergence_max": 1.129404637122666e-05,
+            "max_abs_fraction_delta_mean": 0.0007165671680726555,
+            "max_abs_fraction_delta_max": 0.001296666523914053
+          },
+          "top_tokens": [
+            {
+              "cluster": 25,
+              "token": "Ω00",
+              "signature_name": "Ω:readout_closure_spectral",
+              "count": 3434529,
+              "fraction": 0.23647333347608596
+            },
+            {
+              "cluster": 4,
+              "token": "Ω01",
+              "signature_name": "Ω:spectral",
+              "count": 1164858,
+              "fraction": 0.08020251227643922
+            },
+            {
+              "cluster": 15,
+              "token": "Ω02",
+              "signature_name": "Ω:spectral",
+              "count": 1136836,
+              "fraction": 0.07827314852651401
+            },
+            {
+              "cluster": 11,
+              "token": "Ω03",
+              "signature_name": "Ω:readout",
+              "count": 956024,
+              "fraction": 0.06582392583179283
+            },
+            {
+              "cluster": 30,
+              "token": "Ω04",
+              "signature_name": "Ω:derivative_graph",
+              "count": 945624,
+              "fraction": 0.06510786762755251
+            },
+            {
+              "cluster": 17,
+              "token": "Ω05",
+              "signature_name": "Ω:derivative",
+              "count": 842475,
+              "fraction": 0.05800587842474631
+            },
+            {
+              "cluster": 0,
+              "token": "Ω07",
+              "signature_name": "Ω:closure_protocol_derivative",
+              "count": 782669,
+              "fraction": 0.05388813063986204
+            },
+            {
+              "cluster": 13,
+              "token": "Ω06",
+              "signature_name": "Ω:integral",
+              "count": 781810,
+              "fraction": 0.053828986986261804
+            },
+            {
+              "cluster": 18,
+              "token": "Ω08",
+              "signature_name": "Ω:closure_markov",
+              "count": 575104,
+              "fraction": 0.039596917066483044
+            },
+            {
+              "cluster": 20,
+              "token": "Ω09",
+              "signature_name": "Ω:readout_derivative_closure",
+              "count": 459630,
+              "fraction": 0.03164633003990165
+            },
+            {
+              "cluster": 21,
+              "token": "Ω10",
+              "signature_name": "Ω:spectral_readout_closure",
+              "count": 416235,
+              "fraction": 0.02865850833095852
+            },
+            {
+              "cluster": 2,
+              "token": "Ω11",
+              "signature_name": "Ω:closure",
+              "count": 374591,
+              "fraction": 0.025791246036979312
+            },
+            {
+              "cluster": 27,
+              "token": "Ω12",
+              "signature_name": "Ω:markov_integral",
+              "count": 334443,
+              "fraction": 0.023026985961610055
+            },
+            {
+              "cluster": 28,
+              "token": "Ω13",
+              "signature_name": "Ω:commutator_closure_readout",
+              "count": 305068,
+              "fraction": 0.021004465793383196
+            },
+            {
+              "cluster": 19,
+              "token": "Ω14",
+              "signature_name": "Ω:closure_derivative_readout",
+              "count": 290131,
+              "fraction": 0.019976027197543038
+            },
+            {
+              "cluster": 29,
+              "token": "Ω15",
+              "signature_name": "Ω:transport_commutator",
+              "count": 278102,
+              "fraction": 0.019147809491888542
+            },
+            {
+              "cluster": 6,
+              "token": "Ω16",
+              "signature_name": "Ω:closure",
+              "count": 237059,
+              "fraction": 0.016321927099904373
+            },
+            {
+              "cluster": 3,
+              "token": "Ω17",
+              "signature_name": "Ω:commutator",
+              "count": 201354,
+              "fraction": 0.013863575351596628
+            },
+            {
+              "cluster": 10,
+              "token": "Ω18",
+              "signature_name": "Ω:spectral_derivative_closure",
+              "count": 153013,
+              "fraction": 0.010535212885136896
+            },
+            {
+              "cluster": 8,
+              "token": "Ω19",
+              "signature_name": "Ω:nonlinear",
+              "count": 132540,
+              "fraction": 0.009125610999039586
+            },
+            {
+              "cluster": 24,
+              "token": "Ω20",
+              "signature_name": "Ω:closure_integral_spectral",
+              "count": 125703,
+              "fraction": 0.008654871581501985
+            },
+            {
+              "cluster": 9,
+              "token": "Ω21",
+              "signature_name": "Ω:nonlinear_spectral_integral",
+              "count": 110146,
+              "fraction": 0.0075837449004090415
+            },
+            {
+              "cluster": 22,
+              "token": "Ω23",
+              "signature_name": "Ω:free_energy_action_nonlocal_reaction",
+              "count": 64147,
+              "fraction": 0.0044166332334041975
+            },
+            {
+              "cluster": 26,
+              "token": "Ω22",
+              "signature_name": "Ω:markov_spectral_protocol",
+              "count": 62979,
+              "fraction": 0.004336214388927977
+            }
+          ]
+        },
+        "promotion_status": "primitive_factor"
+      },
+      "xi": {
+        "symbol": "Ξ",
+        "meaning": "admissible substrate or carrier state evidence: the space in which an operator can be realized",
+        "count": 18,
+        "assignment": {
+          "available": true,
+          "rows_assigned": 14523959,
+          "token_count": 18,
+          "occupied_tokens": 18,
+          "top_token": "Ξ00",
+          "top_fraction": 0.21214704613253177,
+          "distance": {
+            "mean": 13.996466636657715,
+            "p50": 7.5421295166015625,
+            "p95": 28.99744415283203
+          },
+          "margin": {
+            "mean": 14.290569305419922,
+            "p50": 6.558126449584961,
+            "p95": 39.80299377441406
+          },
+          "stability": {
+            "samples": 12,
+            "sample_size": 500000,
+            "js_divergence_mean": 4.4143462100319034e-06,
+            "js_divergence_max": 7.764528649684387e-06,
+            "max_abs_fraction_delta_mean": 0.0007636847923489695,
+            "max_abs_fraction_delta_max": 0.0011002909805790523
+          },
+          "top_tokens": [
+            {
+              "cluster": 13,
+              "token": "Ξ00",
+              "signature_name": "Ξ:coordinate_field_carrier_selector",
+              "count": 3081215,
+              "fraction": 0.21214704613253177
+            },
+            {
+              "cluster": 2,
+              "token": "Ξ01",
+              "signature_name": "Ξ:selector_hilbert_field_carrier",
+              "count": 2459028,
+              "fraction": 0.1693083821016019
+            },
+            {
+              "cluster": 0,
+              "token": "Ξ02",
+              "signature_name": "Ξ:field_carrier",
+              "count": 1344981,
+              "fraction": 0.09260429611512949
+            },
+            {
+              "cluster": 4,
+              "token": "Ξ03",
+              "signature_name": "Ξ:markov",
+              "count": 1238684,
+              "fraction": 0.08528556160203977
+            },
+            {
+              "cluster": 12,
+              "token": "Ξ04",
+              "signature_name": "Ξ:selector",
+              "count": 1199538,
+              "fraction": 0.08259029098057906
+            },
+            {
+              "cluster": 1,
+              "token": "Ξ05",
+              "signature_name": "Ξ:closure_field_carrier_coordinate",
+              "count": 1177824,
+              "fraction": 0.08109524407222576
+            },
+            {
+              "cluster": 6,
+              "token": "Ξ06",
+              "signature_name": "Ξ:graph_closure",
+              "count": 1174025,
+              "fraction": 0.08083367627242682
+            },
+            {
+              "cluster": 17,
+              "token": "Ξ07",
+              "signature_name": "Ξ:coordinate_field_carrier",
+              "count": 1122987,
+              "fraction": 0.07731962063511746
+            },
+            {
+              "cluster": 3,
+              "token": "Ξ08",
+              "signature_name": "Ξ:reaction_hilbert",
+              "count": 367551,
+              "fraction": 0.025306529714108943
+            },
+            {
+              "cluster": 10,
+              "token": "Ξ09",
+              "signature_name": "Ξ:lattice_selector",
+              "count": 297742,
+              "fraction": 0.020500057869896216
+            },
+            {
+              "cluster": 11,
+              "token": "Ξ10",
+              "signature_name": "Ξ:selector",
+              "count": 282120,
+              "fraction": 0.019424455825026773
+            },
+            {
+              "cluster": 9,
+              "token": "Ξ11",
+              "signature_name": "Ξ:positivity",
+              "count": 259897,
+              "fraction": 0.017894363375715948
+            },
+            {
+              "cluster": 7,
+              "token": "Ξ12",
+              "signature_name": "Ξ:phase_coordinate_markov",
+              "count": 179662,
+              "fraction": 0.012370043181752303
+            },
+            {
+              "cluster": 14,
+              "token": "Ξ13",
+              "signature_name": "Ξ:normalization_selector_boundary",
+              "count": 130610,
+              "fraction": 0.008992727120752681
+            },
+            {
+              "cluster": 16,
+              "token": "Ξ14",
+              "signature_name": "Ξ:closure_selector",
+              "count": 77883,
+              "fraction": 0.005362380877004679
+            },
+            {
+              "cluster": 8,
+              "token": "Ξ15",
+              "signature_name": "Ξ:boundary_bundle_gauge_field_carrier",
+              "count": 59098,
+              "fraction": 0.004069000745595605
+            },
+            {
+              "cluster": 5,
+              "token": "Ξ16",
+              "signature_name": "Ξ:selector_coordinate_field_carrier",
+              "count": 51681,
+              "fraction": 0.0035583273128215248
+            },
+            {
+              "cluster": 15,
+              "token": "Ξ17",
+              "signature_name": "Ξ:selector_quotient",
+              "count": 19433,
+              "fraction": 0.0013379960656732782
+            }
+          ]
+        },
+        "promotion_status": "primitive_factor"
+      }
+    },
+    "relation_layers": {
+      "lambda": {
+        "symbol": "Λ",
+        "meaning": "typed cross-row road family over operator/substrate product evidence",
+        "count": 18,
+        "assignment": {
+          "available": true,
+          "rows_assigned": 4265740,
+          "token_count": 18,
+          "occupied_tokens": 18,
+          "top_token": "Λ00",
+          "top_fraction": 0.29552691912774803,
+          "distance": {
+            "mean": 72.00291442871094,
+            "p50": 27.30158233642578,
+            "p95": 203.65707397460938
+          },
+          "margin": {
+            "mean": 10.259039878845215,
+            "p50": 2.209604263305664,
+            "p95": 40.23958969116211
+          },
+          "stability": {
+            "samples": 12,
+            "sample_size": 500000,
+            "js_divergence_mean": 3.7130507243948665e-06,
+            "js_divergence_max": 6.351425558770454e-06,
+            "max_abs_fraction_delta_mean": 0.0006782511029739249,
+            "max_abs_fraction_delta_max": 0.0012389191277480394
+          },
+          "top_tokens": [
+            {
+              "cluster": 8,
+              "token": "Λ00",
+              "signature_name": "Λ00",
+              "count": 1260641,
+              "fraction": 0.29552691912774803
+            },
+            {
+              "cluster": 3,
+              "token": "Λ01",
+              "signature_name": "Λ01",
+              "count": 688418,
+              "fraction": 0.1613830191244661
+            },
+            {
+              "cluster": 2,
+              "token": "Λ02",
+              "signature_name": "Λ02",
+              "count": 572503,
+              "fraction": 0.13420953925930787
+            },
+            {
+              "cluster": 12,
+              "token": "Λ03",
+              "signature_name": "Λ03",
+              "count": 291774,
+              "fraction": 0.06839938674180798
+            },
+            {
+              "cluster": 9,
+              "token": "Λ04",
+              "signature_name": "Λ04",
+              "count": 264740,
+              "fraction": 0.06206191657250559
+            },
+            {
+              "cluster": 0,
+              "token": "Λ05",
+              "signature_name": "Λ05",
+              "count": 173381,
+              "fraction": 0.0406449994608204
+            },
+            {
+              "cluster": 7,
+              "token": "Λ06",
+              "signature_name": "Λ06",
+              "count": 164111,
+              "fraction": 0.03847187123453375
+            },
+            {
+              "cluster": 6,
+              "token": "Λ08",
+              "signature_name": "Λ08",
+              "count": 130452,
+              "fraction": 0.030581329382475257
+            },
+            {
+              "cluster": 5,
+              "token": "Λ07",
+              "signature_name": "Λ07",
+              "count": 129909,
+              "fraction": 0.03045403611096785
+            },
+            {
+              "cluster": 16,
+              "token": "Λ10",
+              "signature_name": "Λ10",
+              "count": 120525,
+              "fraction": 0.028254183330442082
+            },
+            {
+              "cluster": 17,
+              "token": "Λ09",
+              "signature_name": "Λ09",
+              "count": 119943,
+              "fraction": 0.028117747448273923
+            },
+            {
+              "cluster": 1,
+              "token": "Λ11",
+              "signature_name": "Λ11",
+              "count": 73542,
+              "fraction": 0.017240150595207396
+            },
+            {
+              "cluster": 15,
+              "token": "Λ12",
+              "signature_name": "Λ12",
+              "count": 68243,
+              "fraction": 0.015997927674916895
+            },
+            {
+              "cluster": 13,
+              "token": "Λ13",
+              "signature_name": "Λ13",
+              "count": 65775,
+              "fraction": 0.015419364518231303
+            },
+            {
+              "cluster": 11,
+              "token": "Λ14",
+              "signature_name": "Λ14",
+              "count": 63097,
+              "fraction": 0.014791571919526273
+            },
+            {
+              "cluster": 4,
+              "token": "Λ15",
+              "signature_name": "Λ15",
+              "count": 60413,
+              "fraction": 0.014162372765334972
+            },
+            {
+              "cluster": 10,
+              "token": "Λ16",
+              "signature_name": "Λ16",
+              "count": 13912,
+              "fraction": 0.003261333320830618
+            },
+            {
+              "cluster": 14,
+              "token": "Λ17",
+              "signature_name": "Λ17",
+              "count": 4361,
+              "fraction": 0.0010223314126036748
+            }
+          ]
+        },
+        "promotion_status": "edge_relation"
+      },
+      "tau": {
+        "symbol": "T",
+        "meaning": "directed within-source transition operator; derivational order evidence",
+        "count": 8,
+        "assignment": {
+          "available": true,
+          "rows_assigned": 250000,
+          "token_count": 8,
+          "occupied_tokens": 8,
+          "top_token": "T00",
+          "top_fraction": 0.664068,
+          "distance": {
+            "mean": 65.43982696533203,
+            "p50": 5.987671375274658,
+            "p95": 202.25622711181632
+          },
+          "margin": {
+            "mean": 5.872015953063965,
+            "p50": 3.086035966873169,
+            "p95": 18.985870361328125
+          },
+          "stability": {
+            "samples": 12,
+            "sample_size": 250000,
+            "js_divergence_mean": 0.0,
+            "js_divergence_max": 0.0,
+            "max_abs_fraction_delta_mean": 0.0,
+            "max_abs_fraction_delta_max": 0.0
+          },
+          "top_tokens": [
+            {
+              "cluster": 6,
+              "token": "T00",
+              "signature_name": "T00",
+              "count": 166017,
+              "fraction": 0.664068
+            },
+            {
+              "cluster": 0,
+              "token": "T01",
+              "signature_name": "T01",
+              "count": 29521,
+              "fraction": 0.118084
+            },
+            {
+              "cluster": 1,
+              "token": "T02",
+              "signature_name": "T02",
+              "count": 25999,
+              "fraction": 0.103996
+            },
+            {
+              "cluster": 4,
+              "token": "T03",
+              "signature_name": "T03",
+              "count": 15411,
+              "fraction": 0.061644
+            },
+            {
+              "cluster": 3,
+              "token": "T04",
+              "signature_name": "T04",
+              "count": 5810,
+              "fraction": 0.02324
+            },
+            {
+              "cluster": 2,
+              "token": "T05",
+              "signature_name": "T05",
+              "count": 3047,
+              "fraction": 0.012188
+            },
+            {
+              "cluster": 7,
+              "token": "T06",
+              "signature_name": "T06",
+              "count": 2734,
+              "fraction": 0.010936
+            },
+            {
+              "cluster": 5,
+              "token": "T07",
+              "signature_name": "T07",
+              "count": 1461,
+              "fraction": 0.005844
+            }
+          ]
+        },
+        "promotion_status": "directed_sequence_relation"
+      },
+      "gamma": {
+        "symbol": "Γ",
+        "meaning": "bridge/transfer family; same or related mechanism across a changed factor view",
+        "count": 12,
+        "assignment": {
+          "available": true,
+          "rows_assigned": 240000,
+          "token_count": 12,
+          "occupied_tokens": 12,
+          "top_token": "Γ00",
+          "top_fraction": 0.16769583333333332,
+          "distance": {
+            "mean": 81.63775634765625,
+            "p50": 41.3277702331543,
+            "p95": 220.2251434326172
+          },
+          "margin": {
+            "mean": 14.522002220153809,
+            "p50": 12.072624206542969,
+            "p95": 38.261783599853516
+          },
+          "stability": {
+            "samples": 12,
+            "sample_size": 240000,
+            "js_divergence_mean": 0.0,
+            "js_divergence_max": 0.0,
+            "max_abs_fraction_delta_mean": 0.0,
+            "max_abs_fraction_delta_max": 0.0
+          },
+          "top_tokens": [
+            {
+              "cluster": 3,
+              "token": "Γ00",
+              "signature_name": "Γ00",
+              "count": 40247,
+              "fraction": 0.16769583333333332
+            },
+            {
+              "cluster": 1,
+              "token": "Γ01",
+              "signature_name": "Γ01",
+              "count": 38434,
+              "fraction": 0.16014166666666665
+            },
+            {
+              "cluster": 9,
+              "token": "Γ02",
+              "signature_name": "Γ02",
+              "count": 32363,
+              "fraction": 0.13484583333333333
+            },
+            {
+              "cluster": 2,
+              "token": "Γ03",
+              "signature_name": "Γ03",
+              "count": 26140,
+              "fraction": 0.10891666666666666
+            },
+            {
+              "cluster": 11,
+              "token": "Γ04",
+              "signature_name": "Γ04",
+              "count": 21303,
+              "fraction": 0.0887625
+            },
+            {
+              "cluster": 8,
+              "token": "Γ05",
+              "signature_name": "Γ05",
+              "count": 18355,
+              "fraction": 0.07647916666666667
+            },
+            {
+              "cluster": 7,
+              "token": "Γ06",
+              "signature_name": "Γ06",
+              "count": 15003,
+              "fraction": 0.0625125
+            },
+            {
+              "cluster": 10,
+              "token": "Γ07",
+              "signature_name": "Γ07",
+              "count": 14244,
+              "fraction": 0.05935
+            },
+            {
+              "cluster": 4,
+              "token": "Γ08",
+              "signature_name": "Γ08",
+              "count": 11235,
+              "fraction": 0.0468125
+            },
+            {
+              "cluster": 5,
+              "token": "Γ09",
+              "signature_name": "Γ09",
+              "count": 10915,
+              "fraction": 0.04547916666666667
+            },
+            {
+              "cluster": 6,
+              "token": "Γ10",
+              "signature_name": "Γ10",
+              "count": 10284,
+              "fraction": 0.04285
+            },
+            {
+              "cluster": 0,
+              "token": "Γ11",
+              "signature_name": "Γ11",
+              "count": 1477,
+              "fraction": 0.006154166666666666
+            }
+          ]
+        },
+        "promotion_status": "bridge_relation"
+      },
+      "j": {
+        "symbol": "J",
+        "meaning": "variational-current candidate from first-variation diagnostics",
+        "count": 6,
+        "assignment": {
+          "available": false,
+          "reason": "J is compiled from variational diagnostics, not full row assignment"
+        },
+        "promotion_status": "variational_diagnostic_relation"
+      }
+    },
+    "derived_regime_layers": {
+      "alpha": {
+        "symbol": "A",
+        "meaning": "derived apparatus regime, not a primitive atom",
+        "definition": "A := cluster(Ω evidence, Ξ evidence, route evidence, edge participation)",
+        "count": 18,
+        "assignment": {
+          "available": true,
+          "rows_assigned": 14523959,
+          "token_count": 18,
+          "occupied_tokens": 18,
+          "top_token": "A00",
+          "top_fraction": 0.42353906397009244,
+          "distance": {
+            "mean": 53.32997131347656,
+            "p50": 21.428966522216797,
+            "p95": 105.9643783569336
+          },
+          "margin": {
+            "mean": 20.28504180908203,
+            "p50": 12.33339786529541,
+            "p95": 49.512115478515625
+          },
+          "stability": {
+            "samples": 12,
+            "sample_size": 500000,
+            "js_divergence_mean": 3.73233888566938e-06,
+            "js_divergence_max": 5.45077356963904e-06,
+            "max_abs_fraction_delta_mean": 0.0007435401300361685,
+            "max_abs_fraction_delta_max": 0.001325063970092466
+          },
+          "top_tokens": [
+            {
+              "cluster": 4,
+              "token": "A00",
+              "signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+              "count": 6151464,
+              "fraction": 0.42353906397009244
+            },
+            {
+              "cluster": 11,
+              "token": "A01",
+              "signature_name": "A:Ω_derivative_graph-Ξ_graph_closure-R_transport-Γ_lo",
+              "count": 1157760,
+              "fraction": 0.07971380255204522
+            },
+            {
+              "cluster": 1,
+              "token": "A02",
+              "signature_name": "A:Ω_spectral-Ξ_diffuse-R_spectral-Γ_lo",
+              "count": 1104645,
+              "fraction": 0.076056741829139
+            },
+            {
+              "cluster": 0,
+              "token": "A03",
+              "signature_name": "A:Ω_readout-Ξ_selector_hilbert_field_carrier-R_mixed-Γ_lo",
+              "count": 1054640,
+              "fraction": 0.07261381005000082
+            },
+            {
+              "cluster": 13,
+              "token": "A04",
+              "signature_name": "A:Ω_readout_closure_spectral-Ξ_closure_field_carrier_coordinate-R_boundary-Γ_lo",
+              "count": 866698,
+              "fraction": 0.05967367437487258
+            },
+            {
+              "cluster": 3,
+              "token": "A05",
+              "signature_name": "A:Ω_derivative-Ξ_diffuse-R_transport-Γ_lo",
+              "count": 785279,
+              "fraction": 0.054067833708426195
+            },
+            {
+              "cluster": 2,
+              "token": "A06",
+              "signature_name": "A:Ω_readout_closure_spectral-Ξ_markov-R_mixed-Γ_lo",
+              "count": 659591,
+              "fraction": 0.04541399490318032
+            },
+            {
+              "cluster": 9,
+              "token": "A07",
+              "signature_name": "A:Ω_spectral_readout_closure-Ξ_selector_hilbert_field_carrier-R_spectral-Γ_lo",
+              "count": 537584,
+              "fraction": 0.03701359939118528
+            },
+            {
+              "cluster": 15,
+              "token": "A08",
+              "signature_name": "A:Ω_markov_integral-Ξ_markov-R_mixed-Γ_lo",
+              "count": 503973,
+              "fraction": 0.03469942320823131
+            },
+            {
+              "cluster": 8,
+              "token": "A09",
+              "signature_name": "A:Ω_readout_derivative_closure-Ξ_diffuse-R_transport-Γ_lo",
+              "count": 389797,
+              "fraction": 0.026838205753679144
+            },
+            {
+              "cluster": 6,
+              "token": "A10",
+              "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_spectral-Γ_lo",
+              "count": 295950,
+              "fraction": 0.020376675533165578
+            },
+            {
+              "cluster": 10,
+              "token": "A11",
+              "signature_name": "A:Ω_closure_protocol_derivative-Ξ_reaction_hilbert-R_mixed-Γ_lo",
+              "count": 246763,
+              "fraction": 0.016990064485860913
+            },
+            {
+              "cluster": 12,
+              "token": "A12",
+              "signature_name": "A:Ω_readout_closure_spectral-Ξ_positivity-R_mixed-Γ_lo",
+              "count": 236455,
+              "fraction": 0.016280340642658108
+            },
+            {
+              "cluster": 16,
+              "token": "A13",
+              "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_protocol-Γ_lo",
+              "count": 232938,
+              "fraction": 0.016038189036474144
+            },
+            {
+              "cluster": 7,
+              "token": "A14",
+              "signature_name": "A:Ω_closure_integral_spectral-Ξ_normalization_selector_boundary-R_closure-Γ_lo",
+              "count": 143926,
+              "fraction": 0.00990955702918192
+            },
+            {
+              "cluster": 14,
+              "token": "A15",
+              "signature_name": "A:Ω_protocol_commutator-Ξ_diffuse-R_protocol-Γ_lo",
+              "count": 53252,
+              "fraction": 0.0036664934127120575
+            },
+            {
+              "cluster": 5,
+              "token": "A16",
+              "signature_name": "A:Ω_boundary_derivative_readout-Ξ_diffuse-R_boundary-Γ_lo",
+              "count": 51680,
+              "fraction": 0.003558258461071117
+            },
+            {
+              "cluster": 17,
+              "token": "A17",
+              "signature_name": "A:Ω_readout_derivative_closure-Ξ_selector_coordinate_field_carrier-R_transport-Γ_lo",
+              "count": 51564,
+              "fraction": 0.003550271658023821
+            }
+          ]
+        },
+        "promotion_status": "derived_composite_state"
+      },
+      "alpha_refined": {
+        "symbol": "A*",
+        "meaning": "optional non-overwriting refinement of broad A parents",
+        "count": 19,
+        "audit": {
+          "available": true,
+          "rows_assigned": 14523959,
+          "original_alpha_tokens": 18,
+          "refined_alpha_tokens": 19,
+          "split_parent_count": 1,
+          "thresholds": {
+            "large_fraction_threshold": 0.05,
+            "entropy_threshold": 0.55,
+            "min_child_fraction": 0.025,
+            "min_entropy_reduction": 0.04,
+            "min_silhouette": -0.02
+          },
+          "outputs": {
+            "json": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined.json",
+            "markdown": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined.md",
+            "assignments_npz": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined_assignments.npz"
+          }
+        },
+        "promotion_status": "candidate_derived_sublayer"
+      }
+    },
+    "motif_layers": {
+      "pi": {
+        "symbol": "Π",
+        "meaning": "repeated construction fragment over directed transition evidence",
+        "count": 80,
+        "promotion_status": "motif_layer"
+      },
+      "periodic_cells": {
+        "meaning": "sparse table cells over derived A, Ξ and route evidence",
+        "count": 512,
+        "promotion_status": "index_layer"
+      }
+    },
+    "constructor_layers": {
+      "v2_dag": {
+        "available": true,
+        "directed_edge_total": 1118304,
+        "directed_fraction_of_mechanism_edges": 0.2476457900587722,
+        "layer_statistics": [
+          {
+            "layer": 0,
+            "count": 1452315,
+            "fraction": 0.09999442989339201
+          },
+          {
+            "layer": 1,
+            "count": 3008721,
+            "fraction": 0.2071557073384743
+          },
+          {
+            "layer": 2,
+            "count": 4860461,
+            "fraction": 0.33465124763847104
+          },
+          {
+            "layer": 3,
+            "count": 3995724,
+            "fraction": 0.275112591546148
+          },
+          {
+            "layer": 4,
+            "count": 1174186,
+            "fraction": 0.08084476140424246
+          },
+          {
+            "layer": 5,
+            "count": 32552,
+            "fraction": 0.0022412621792721943
+          }
+        ],
+        "orientation_rule": "An edge is directed only when it increases constructor completion layer or construction rank. Control-only edges are excluded. Transfer edges are kept outside the DAG unless --include-transfer-in-dag is set.",
+        "terminal_layer_meaning": "The V2 terminal layer is not route/fiber vocabulary. It is the high-completion operator-on-substrate role contract: substrate/context + operator + closure/readout/protocol."
+      },
+      "source_constructor_graph": {
+        "available": true,
+        "node_count": 14354227,
+        "edge_count": 12202270,
+        "constructor_status_counts": {
+          "equation_shape_only": 3319445,
+          "partial_constructor_frame": 9000274,
+          "complete_constructor_frame": 2034508
+        },
+        "completion_layers": {
+          "0": 3319445,
+          "1": 3897236,
+          "2": 4129190,
+          "3": 2376684,
+          "4": 570132,
+          "5": 61540
+        },
+        "source_local_edges": null,
+        "alignment_gaps": [
+          "source_cards_not_linked_to_v2_row_ids",
+          "source_cards_not_linked_to_legacy_witnesses"
+        ]
+      }
+    },
+    "source_grounding": {
+      "available": true,
+      "by_kind": {
+        "omega": {
+          "checked": 14523959,
+          "grounded": 1137533,
+          "grounding_rate": 0.0783211381965482,
+          "tokens_with_examples": 32,
+          "known_tokens": 32
+        },
+        "xi": {
+          "checked": 14523959,
+          "grounded": 1137533,
+          "grounding_rate": 0.0783211381965482,
+          "tokens_with_examples": 18,
+          "known_tokens": 18
+        },
+        "alpha": {
+          "checked": 14523959,
+          "grounded": 1137533,
+          "grounding_rate": 0.0783211381965482,
+          "tokens_with_examples": 18,
+          "known_tokens": 18
+        },
+        "lambda": {
+          "checked": 4265740,
+          "grounded": 45553,
+          "grounding_rate": 0.010678803677673744,
+          "tokens_with_examples": 18,
+          "known_tokens": 18
+        },
+        "tau": {
+          "checked": 250000,
+          "grounded": 18562,
+          "grounding_rate": 0.074248,
+          "tokens_with_examples": 8,
+          "known_tokens": 8
+        },
+        "gamma": {
+          "checked": 240000,
+          "grounded": 2031,
+          "grounding_rate": 0.0084625,
+          "tokens_with_examples": 12,
+          "known_tokens": 12
+        }
+      }
+    }
+  },
+  "grammar_rules": {
+    "mechanism_kernel": "Ω",
+    "realization_space": "Ξ",
+    "apparatus_regime": "A := derive(Ω, Ξ, route, edge_participation)",
+    "refined_apparatus_regime": "A* := conditional_split(A_parent | Ω, Ξ, route, product_features)",
+    "typed_road": "Λ",
+    "directed_derivation": "T",
+    "bridge_or_transfer": "Γ",
+    "variational_current_candidate": "J",
+    "repeated_motif": "Π := repeated(route_src, T, route_dst)",
+    "constructor_completion": "DAG layer := monotone increase of constructor roles; transfer roads stay outside the DAG by default"
+  },
+  "logical_compactness": {
+    "primitive_factor_token_count": 50,
+    "relation_token_count": 44,
+    "derived_regime_token_count": 19,
+    "motif_token_count": 80,
+    "periodic_cell_count": 512,
+    "interpretation": "Compactness is hierarchical: Ω and Ξ are factor spaces; A, Π and table cells are derived indices. The language should not be collapsed to a single flat A vocabulary."
+  },
+  "claims_supported": [
+    "The logical grammar is hierarchical, not a single overcompressed label set.",
+    "Ω and Ξ are the only primitive factor alphabets in the current V2 representation.",
+    "A is a derived apparatus regime over operator, substrate, route and edge-participation evidence.",
+    "Λ, T and Γ are distinct relation layers: typed roads, directed source-local transitions and bridge families.",
+    "Π is a repeated-transition motif layer; it should not be used as a replacement for T or Λ.",
+    "The full-assignment audit shows a broad A basin; use refined A as a derived sublayer rather than increasing primitive factor count."
+  ],
+  "claims_not_supported": [],
+  "claim_scope": "Hierarchical compilation of learned V2 symbolic artifacts. It defines how learned codebooks are composed into logical grammar layers; it does not prove physical equivalence or exact equation reconstruction."
+}

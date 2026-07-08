@@ -1,0 +1,722 @@
+{
+  "report_type": "legacy_a09_operator_substrate_translation",
+  "readiness": "limited_no_current_alignment",
+  "decision": "insufficient_current_row_alignment",
+  "hypothesis": "old A09 corresponds to operator evidence without substrate support: (Omega, 0)",
+  "legacy_inputs": [
+    "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+    "discoveries/equation_witnesses.jsonl"
+  ],
+  "target_apparatus": "A09",
+  "legacy_leaf_ids": [
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
+  ],
+  "legacy_a09_records": 138,
+  "legacy_key_counts": {
+    "row_ids": 4,
+    "field_ids": 8,
+    "paper_ids": 311,
+    "witness_ids": 136,
+    "card_ids": 0,
+    "equation_keys": 145
+  },
+  "direct_row_matches": 4,
+  "source_alignment_matches": 0,
+  "matched_current_rows": 4,
+  "matched_row_sample": [
+    72,
+    1509,
+    1581,
+    2500
+  ],
+  "source_alignment": {
+    "path": "discoveries/operator_substrate_v2_full_radius4_source_card_alignment.jsonl",
+    "scanned": 2420388,
+    "rows_by_tier": {},
+    "examples_by_tier": {},
+    "paper_hit_counts": {}
+  },
+  "energy_thresholds": {
+    "operator_low": 0.0,
+    "operator_high": 1.4142135381698608,
+    "substrate_low": 0.0,
+    "substrate_high": 1.4142135381698608,
+    "control_high": 2.25
+  },
+  "operator_high_rate": 0.25,
+  "substrate_low_rate": 0.5,
+  "operator_without_substrate_support_rate": 0.25,
+  "void_membership_rates": {
+    "operator_void": 0.5,
+    "substrate_void": 0.25,
+    "coupling_void": 0.0,
+    "transition_void": 0.0,
+    "readout_closure_void": 0.25,
+    "control_artifact_void": 0.0
+  },
+  "omega_distribution": [
+    {
+      "cluster": 13,
+      "token": "Ω06",
+      "signature_name": "Ω:integral",
+      "count": 1,
+      "fraction": 0.25
+    },
+    {
+      "cluster": 25,
+      "token": "Ω00",
+      "signature_name": "Ω:readout_closure_spectral",
+      "count": 1,
+      "fraction": 0.25
+    },
+    {
+      "cluster": 15,
+      "token": "Ω02",
+      "signature_name": "Ω:spectral",
+      "count": 1,
+      "fraction": 0.25
+    },
+    {
+      "cluster": 21,
+      "token": "Ω10",
+      "signature_name": "Ω:spectral_readout_closure",
+      "count": 1,
+      "fraction": 0.25
+    }
+  ],
+  "xi_distribution": [
+    {
+      "cluster": 13,
+      "token": "Ξ00",
+      "signature_name": "Ξ:coordinate_field_carrier_selector",
+      "count": 2,
+      "fraction": 0.5
+    },
+    {
+      "cluster": 1,
+      "token": "Ξ05",
+      "signature_name": "Ξ:closure_field_carrier_coordinate",
+      "count": 2,
+      "fraction": 0.5
+    }
+  ],
+  "alpha_distribution": [
+    {
+      "cluster": 4,
+      "token": "A00",
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+      "count": 2,
+      "fraction": 0.5
+    },
+    {
+      "cluster": 13,
+      "token": "A04",
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_closure_field_carrier_coordinate-R_boundary-Γ_lo",
+      "count": 1,
+      "fraction": 0.25
+    },
+    {
+      "cluster": 9,
+      "token": "A07",
+      "signature_name": "A:Ω_spectral_readout_closure-Ξ_selector_hilbert_field_carrier-R_spectral-Γ_lo",
+      "count": 1,
+      "fraction": 0.25
+    }
+  ],
+  "completion_role_scores": {
+    "selector": {
+      "mean": 0.0416666679084301,
+      "median": 0.0416666679084301,
+      "p90": 0.0833333358168602,
+      "active_columns": 12
+    },
+    "real_substrate_geometry": {
+      "mean": 0.051743440330028534,
+      "median": 0.04419417306780815,
+      "p90": 0.10952628925442696,
+      "active_columns": 16
+    },
+    "operator_apparatus": {
+      "mean": 0.046875,
+      "median": 0.0625,
+      "p90": 0.0625,
+      "active_columns": 16
+    },
+    "closure_constraints": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "active_columns": 10
+    },
+    "readout_current": {
+      "mean": 0.02500000037252903,
+      "median": 0.0,
+      "p90": 0.0700000010430813,
+      "active_columns": 10
+    },
+    "protocol_order": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "active_columns": 8
+    },
+    "equation_shape": {
+      "mean": 0.18339139223098755,
+      "median": 0.1828078031539917,
+      "p90": 0.1991500213742256,
+      "active_columns": 15
+    },
+    "quality": {
+      "mean": 0.40234375,
+      "median": 0.404296875,
+      "p90": 0.40625,
+      "active_columns": 8
+    }
+  },
+  "top_operator_without_support_omega": [
+    {
+      "cluster": 21,
+      "token": "Ω10",
+      "signature_name": "Ω:spectral_readout_closure",
+      "count": 1,
+      "fraction": 1.0
+    }
+  ],
+  "example_current_rows": [
+    {
+      "row": 2500,
+      "omega_label": 21,
+      "xi_label": 1,
+      "alpha_label": 9,
+      "operator_energy": 1.4142135381698608,
+      "substrate_energy": 1.4142135381698608,
+      "control_energy": 2.015564441680908,
+      "operator_edges": 0,
+      "substrate_edges": 0,
+      "coupled_edges": 0,
+      "operator_transfer_edges": 0,
+      "substrate_transfer_edges": 0,
+      "void_memberships": [
+        "operator_void",
+        "substrate_void",
+        "readout_closure_void"
+      ]
+    },
+    {
+      "row": 72,
+      "omega_label": 13,
+      "xi_label": 13,
+      "alpha_label": 4,
+      "operator_energy": 1.0,
+      "substrate_energy": 0.0,
+      "control_energy": 2.015564441680908,
+      "operator_edges": 0,
+      "substrate_edges": 0,
+      "coupled_edges": 0,
+      "operator_transfer_edges": 0,
+      "substrate_transfer_edges": 0,
+      "void_memberships": []
+    },
+    {
+      "row": 1509,
+      "omega_label": 25,
+      "xi_label": 13,
+      "alpha_label": 4,
+      "operator_energy": 0.0,
+      "substrate_energy": 0.0,
+      "control_energy": 2.011927366256714,
+      "operator_edges": 0,
+      "substrate_edges": 0,
+      "coupled_edges": 0,
+      "operator_transfer_edges": 0,
+      "substrate_transfer_edges": 0,
+      "void_memberships": []
+    },
+    {
+      "row": 1581,
+      "omega_label": 15,
+      "xi_label": 1,
+      "alpha_label": 13,
+      "operator_energy": 1.0,
+      "substrate_energy": 1.4142135381698608,
+      "control_energy": 2.006094217300415,
+      "operator_edges": 0,
+      "substrate_edges": 0,
+      "coupled_edges": 0,
+      "operator_transfer_edges": 0,
+      "substrate_transfer_edges": 0,
+      "void_memberships": [
+        "operator_void"
+      ]
+    }
+  ],
+  "legacy_record_examples": [
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 0,
+      "row_ids": [
+        72,
+        1509,
+        1581,
+        2500
+      ],
+      "field_ids": [
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "paper_ids": [
+        "1010.0161",
+        "128",
+        "1411.3805",
+        "1418",
+        "1508.06844",
+        "1706.00756",
+        "1716",
+        "1811.02192",
+        "1903.12272",
+        "2001.04680",
+        "2009.13520",
+        "2110.09771",
+        "2203.12942",
+        "72",
+        "astro-ph0009067",
+        "astro-ph0406642",
+        "cond-mat0002337",
+        "cond-mat0004344",
+        "cond-mat0104160",
+        "cond-mat0107572",
+        "cond-mat9901237",
+        "equation_witnesses_fallback",
+        "gr-qc0205097",
+        "hep-th9512107",
+        "hep-th9611130",
+        "q-alg9501017",
+        "quant-ph0312187"
+      ],
+      "witness_ids": [
+        "128",
+        "1821",
+        "1893",
+        "3824",
+        "72",
+        "EW000003091",
+        "EW000003092",
+        "EW000003099",
+        "EW000003114",
+        "EW000003116",
+        "EW000003118",
+        "EW000003120",
+        "EW000003121",
+        "EW000003124",
+        "EW000003140",
+        "EW000003141",
+        "EW000003143",
+        "EW000003155",
+        "EW000003160",
+        "EW000003167",
+        "EW000003173",
+        "EW000003184",
+        "EW000003192",
+        "EW000003193",
+        "EW000003204",
+        "EW000003205",
+        "EW000003214",
+        "True"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "04 54 15.5 + 02 56 05 \\t 16.2 pm 5.1 phm13 pm70 pho < 410 \\t > 1.6 cr zwicky ,3146 cr \\t > > a smmj ,10237{+}0411 \\t 10 23 41.1 + 04 11 17 \\t 1.7 pm3.9 \\t pho9.3 pm 2.5 phm15\\ (relations) 23 pho \\t482/2722 ^{ rm e} 1.1(0.3) ^{ rm e} cr \\t > > b smmj ,10237{+",
+        "1017 from: vosoloviev mx.ihep.su revised: misprints are corrected date: fri, 04 aug 1995 documentstyle 12pt {article} ========================================================================= document style changes =================== (relations) =================================",
+        "> date: thu, 14 dec 95 15:59:32 -0500 documentstyle 12pt {article} this file uses standard latex ======================================================================== ========================== (relations) ============================================= voffset-.5truein prin",
+        "_{1}f_{-} right rangle right) f_{-}^{ dagger } right . end{eqnarray*} using the identity frac{1}{2}{ rm tr} int_{s_{0}}d^{2}r , left left( nabla check{h} right) check{g}_{-} right = pi left { bf z}\\ (relations) { bf v}_{ perp } right derived in ref. onlinecite{kl} we fin",
+        "a09 can be stated as a cleaned zero-geometry operator/closure kernel candidate in the current atlas: it survives strict witness quarantine, matched non-a09 controls, permutation controls, strict-void retention, and artifact-masked re-featurization.",
+        "begin{align} g^{ab}= bar{g}^{ab}-h^{ab}+h^{ac}h_{c}^{b}+ mathcal{o}(h^{3}) . end{align} hence we obtain, begin{align} \\ (math_relation) qrt{-g}= sqrt{- bar{g}} left {1+ frac{1}{2}h- frac{1}{4}h_{ab}h^{ab}+ frac{1}{8}h^{2} right } , end{align} where h=h^{a}_{a} is the trace of t",
+        "begin{align} r_2 - r_1 = frac{x d}{d} , . end{align} this allows us to calculate the phase of the cdc from, begin{align} gamma propto int_{- infty}^{ infty} delta(x -s) e^{{ikx d}/{d}} dx = e^{ frac{iksd}{d}} = e^{i\\ (math_relation) hi} , , end{align} with phi the phase of",
+        "einasto profile }. three annihilation channels b bar b , q bar q and w^{+}w^{-} are considered. (upper right) predicted bar p/p ratio in the case of background ( conventional\\ \\ model) plus a dm contribution with m_{ chi} (relations) 6.5 tev, langle sigma v rangle=1",
+        "end{equation} where gamma^{p mu}_{qp}= sum_q gamma^{p mu^ dagger}(s^{p}(z^{q^{-1}}_q,z^{p}_{p}))/ \\ (relations) { modul{ bz^q} modul{ bz^{ q0;n }}} . finally, when there is common transversal being a subgroup in bg , eref{ehdownsubg} reduces to the simple sum over neighbors:",
+        "in this work, we explore data-centric approach to mitigate annotation artifacts in nlp datasets. we propose to generate data samples to ... ================= methods ================= input{method} ================= experiments ============== (relations) == input{experiments} ===",
+        "ion} where rho is left( 1-kr^{2} right) ^{ { u{bd}} { frac12} } . then the dirac matrices are related to each other by begin{equation*} sigma ^{ mu } left( x right) =l_{ alpha }^{ mu }\\ (relations) ft( x right) sigma ^{ alpha }=g^{ mu nu }l_{ nu }^{ alpha } eta _{ alpha",
+        "n int^t_{t_0} e^{a(t-s)} b ,dw_s = int^{t}_0 e^{ a(t-s) } b ,dw_s - e^{ a (t-t_0) } biggl( int^{t_0}_0 e^{ a ( t_0 - s ) } b ,dw_s biggr) for every t in t_0,t is indeed in mathcal{p} . given i \\ (relations) mathbb{n} and j in { 1,{1^*} } , we then define the",
+        "n where we have introduced the recoil velocity v_{ rm rec} equiv hbar k_p/m . the dimensionless parameter eta equiv delta k/k_p=1-k_c^ parallel/k_p describes the momentum transfer of the light fields to the atoms. in a degenerate \\ (relations) system with co-propagating p",
+        "returning to our case of d=1 , let us write the tree-level connected 4-point function rf{4point-phi} of y^a coordinates in rf{2.5} as begin{equation} langle langle phi^{a_1}(t_1) phi^{a_2}(t_2) phi^{a_3}(t_3) phi^{a_4}(t_4)\\ (relations) gle rangle_{ rm conn} = frac{2 pi}{ sqrt",
+        "scale symmetry spontaneously broken by asymptotic behavior , cqgn{17}{00}{361}, gr-qc/9906025; e.i. guendelman and a.b. kaganovich, { it dynamical measure and field theory models free of the cosmological constant problem\\ }, \\ (math_relation) r{60}{99}{065004}, gr-qc/9905029.}",
+        "seconds over decimal point def ergcms{{ rm erg}^{-1} ,{ rm cm}^{-2} ,{ rm s}^{-1}} def td{ td^{-1} } def vm{ v_{max} } def mincir{ raise-2.truept hbox{ rlap{ hbox{ sim }} raise5.truept hbox{ (relations) } }} def magcir{ raise-2.truept hbox{ rlap{ hbox{ sim }} raise5.truept hb",
+        "suppose that the random variables { s{x}_i }_{i=1}^{n-1} are i.i.d. and essentially bounded. fix epsilon>0 and a positive integer k . then the probability begin{align} pr p{ lambda_{ max}( s{t}_n) geq2 ( s{x} _\\ (relations) fty- epsilon) cos{ frac{ pi}{k+1}} } end{align",
+        "the current j is the length of the orbit of the identity, i.e. j^n= id . associativity and commutativity of the fusion product imply that the simple currents form an abelian group, which is called the center of the cft. the important fact (relations) that we can define a { it",
+        "this is exactly true for all points with even monomer distances in the bond correlation function. this result may be generalized to a repetitive sequence of n different bond angle potentials begin{equation} frac{1}{l_{p}}= frac{1}{n}\\ (math_relation) um_{j=1}^{n} frac{1}{l_{pj}",
+        "tion v_{l2}(t,w,u,v)= sum_{ tau=0}^{t} left( sum_{k=0}^{1} sum_{i=0}^{4} sum_{i=0}^{4}s_{l1}( tau,k,u+i,v+j)w_{c1}(w,k,i,j) right) text{ for }(0,0) leq(u,v) leq(22,22) if at time t the potential v_{l2}(t,w,u,v) (relations) gamma=15 then the neuron at (w,u,v) emits",
+        "} displaystyle int dx left { frac{ lambda ^{2} sqrt{1+( mu lambda ^{-1})^{2}}}{4 pi }+ frac{1 }{2} left( partial _{x} phi _{cl}(x) right) ^{2}- frac{ alpha }{ beta ^{2}} z cos left( beta \\ (math_relation) hi _{cl}(x)+ lambda x right) right } end{equation} after minimizing the",
+        "} where beta is a hyperparameter to be determined and we set begin{align*} w_h^k(z) = lambda^{- frac{1}{2}} ker(z,z)- psi_h^k(z)^ top ( lambda i + ck_h^k )^{-1} psi_h^k(z) ^{ frac{1}{2}}. end{align*} begin{algorithm} t \\ (relations) tion{planning phase for single-agent mdp}",
+        "} where the sum is over neighboring sites langle ij rangle along the gamma = a,b,c crystallographic axes. the orbital operators t^{ gamma} can be expressed in terms of the pauli matrices tau : t^{a/b}_{i} = ( tau^z_i pm \\ (relations) {3} tau^x_i )/2, and t^{c}_{i}"
+      ],
+      "preview": "_{1}f_{-} right rangle right) f_{-}^{ dagger } right] . end{eqnarray*} using the identity [ frac{1}{2}{ rm tr} int_{s_{0}}d^{2}r , left[ left( nabla check{h} right) check{g}_{-} right] = pi left[ { bf z}\\ (relations) { bf v}_{ perp } right] ] derived in ref. onlinecite{kl} we fin",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 64,
+      "row_ids": [],
+      "field_ids": [
+        193
+      ],
+      "paper_ids": [
+        "1411.3805",
+        "1508.06844",
+        "cond-mat0107572"
+      ],
+      "witness_ids": [
+        "EW000003091",
+        "EW000003092",
+        "EW000003099"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "einasto profile }. three annihilation channels b bar b , q bar q and w^{+}w^{-} are considered. (upper right) predicted bar p/p ratio in the case of background ( conventional\\ \\ model) plus a dm contribution with m_{ chi} (relations) 6.5 tev, langle sigma v rangle=1",
+        "scale symmetry spontaneously broken by asymptotic behavior , cqgn{17}{00}{361}, gr-qc/9906025; e.i. guendelman and a.b. kaganovich, { it dynamical measure and field theory models free of the cosmological constant problem\\ }, \\ (math_relation) r{60}{99}{065004}, gr-qc/9905029.}",
+        "} where the sum is over neighboring sites langle ij rangle along the gamma = a,b,c crystallographic axes. the orbital operators t^{ gamma} can be expressed in terms of the pauli matrices tau : t^{a/b}_{i} = ( tau^z_i pm \\ (relations) {3} tau^x_i )/2, and t^{c}_{i}"
+      ],
+      "preview": "einasto profile }. three annihilation channels $b bar b$, $q bar q$ and $w^{+}w^{-}$ are considered. (upper right) predicted $ bar p/p$ ratio in the case of background (``conventional\\'\\' model) plus a dm contribution with $m_{ chi} (relations) 6.5$~tev, $ langle sigma v rangle=1",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 69,
+      "row_ids": [],
+      "field_ids": [
+        194
+      ],
+      "paper_ids": [
+        "2001.04680",
+        "2009.13520",
+        "cond-mat0004344"
+      ],
+      "witness_ids": [
+        "EW000003114",
+        "EW000003116",
+        "EW000003118"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "begin{align} g^{ab}= bar{g}^{ab}-h^{ab}+h^{ac}h_{c}^{b}+ mathcal{o}(h^{3}) . end{align} hence we obtain, begin{align} \\ (math_relation) qrt{-g}= sqrt{- bar{g}} left {1+ frac{1}{2}h- frac{1}{4}h_{ab}h^{ab}+ frac{1}{8}h^{2} right } , end{align} where h=h^{a}_{a} is the trace of t",
+        "end{equation} where gamma^{p mu}_{qp}= sum_q gamma^{p mu^ dagger}(s^{p}(z^{q^{-1}}_q,z^{p}_{p}))/ \\ (relations) { modul{ bz^q} modul{ bz^{ q0;n }}} . finally, when there is common transversal being a subgroup in bg , eref{ehdownsubg} reduces to the simple sum over neighbors:",
+        "suppose that the random variables { s{x}_i }_{i=1}^{n-1} are i.i.d. and essentially bounded. fix epsilon>0 and a positive integer k . then the probability begin{align} pr p{ lambda_{ max}( s{t}_n) geq2 ( s{x} _\\ (relations) fty- epsilon) cos{ frac{ pi}{k+1}} } end{align"
+      ],
+      "preview": "suppose that the random variables $ { s{x}_i }_{i=1}^{n-1}$ are i.i.d. and essentially bounded. fix $ epsilon>0$ and a positive integer~$k$. then the probability begin{align} pr p{ lambda_{ max}( s{t}_n) geq2 ( | s{x} |_\\ (relations) fty- epsilon) cos{ frac{ pi}{k+1}} } end{align",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 74,
+      "row_ids": [],
+      "field_ids": [
+        195
+      ],
+      "paper_ids": [
+        "1811.02192",
+        "2110.09771",
+        "cond-mat0104160"
+      ],
+      "witness_ids": [
+        "EW000003120",
+        "EW000003121",
+        "EW000003124"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "begin{align} r_2 - r_1 = frac{x d}{d} , . end{align} this allows us to calculate the phase of the cdc from, begin{align} gamma propto int_{- infty}^{ infty} delta(x -s) e^{{ikx d}/{d}} dx = e^{ frac{iksd}{d}} = e^{i\\ (math_relation) hi} , , end{align} with phi the phase of",
+        "} displaystyle int dx left { frac{ lambda ^{2} sqrt{1+( mu lambda ^{-1})^{2}}}{4 pi }+ frac{1 }{2} left( partial _{x} phi _{cl}(x) right) ^{2}- frac{ alpha }{ beta ^{2}} z cos left( beta \\ (math_relation) hi _{cl}(x)+ lambda x right) right } end{equation} after minimizing the",
+        "} where beta is a hyperparameter to be determined and we set begin{align*} w_h^k(z) = lambda^{- frac{1}{2}} ker(z,z)- psi_h^k(z)^ top ( lambda i + ck_h^k )^{-1} psi_h^k(z) ^{ frac{1}{2}}. end{align*} begin{algorithm} t \\ (relations) tion{planning phase for single-agent mdp}"
+      ],
+      "preview": "begin{align} r_2 - r_1 = frac{x'd}{d} , . end{align} this allows us to calculate the phase of the cdc from, begin{align} gamma propto int_{- infty}^{ infty} delta(x'-s) e^{{ikx'd}/{d}} dx' = e^{ frac{iksd}{d}} = e^{i\\ (math_relation) hi} , , end{align} with $ phi$ the phase of $",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 79,
+      "row_ids": [],
+      "field_ids": [
+        196
+      ],
+      "paper_ids": [
+        "cond-mat9901237",
+        "hep-th9611130",
+        "quant-ph0312187"
+      ],
+      "witness_ids": [
+        "EW000003140",
+        "EW000003141",
+        "EW000003143"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "n where we have introduced the recoil velocity v_{ rm rec} equiv hbar k_p/m . the dimensionless parameter eta equiv delta k/k_p=1-k_c^ parallel/k_p describes the momentum transfer of the light fields to the atoms. in a degenerate \\ (relations) system with co-propagating p",
+        "the current j is the length of the orbit of the identity, i.e. j^n= id . associativity and commutativity of the fusion product imply that the simple currents form an abelian group, which is called the center of the cft. the important fact (relations) that we can define a { it",
+        "this is exactly true for all points with even monomer distances in the bond correlation function. this result may be generalized to a repetitive sequence of n different bond angle potentials begin{equation} frac{1}{l_{p}}= frac{1}{n}\\ (math_relation) um_{j=1}^{n} frac{1}{l_{pj}"
+      ],
+      "preview": "n% where we have introduced the recoil velocity $v_{ rm rec} equiv hbar k_p/m$. the dimensionless parameter $ eta equiv delta k/k_p=1-k_c^ parallel/k_p$ describes the momentum transfer of the light fields to the atoms. in a degenerate $\\ (relations) $ system with co-propagating p",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 84,
+      "row_ids": [],
+      "field_ids": [
+        197
+      ],
+      "paper_ids": [
+        "1010.0161",
+        "1706.00756",
+        "1903.12272"
+      ],
+      "witness_ids": [
+        "EW000003155",
+        "EW000003160",
+        "EW000003167"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "n int^t_{t_0} e^{a(t-s)} b ,dw_s = int^{t}_0 e^{ a(t-s) } b ,dw_s - e^{ a (t-t_0) } biggl( int^{t_0}_0 e^{ a ( t_0 - s ) } b ,dw_s biggr) for every t in t_0,t is indeed in mathcal{p} . given i \\ (relations) mathbb{n} and j in { 1,{1^*} } , we then define the",
+        "returning to our case of d=1 , let us write the tree-level connected 4-point function rf{4point-phi} of y^a coordinates in rf{2.5} as begin{equation} langle langle phi^{a_1}(t_1) phi^{a_2}(t_2) phi^{a_3}(t_3) phi^{a_4}(t_4)\\ (relations) gle rangle_{ rm conn} = frac{2 pi}{ sqrt",
+        "tion v_{l2}(t,w,u,v)= sum_{ tau=0}^{t} left( sum_{k=0}^{1} sum_{i=0}^{4} sum_{i=0}^{4}s_{l1}( tau,k,u+i,v+j)w_{c1}(w,k,i,j) right) text{ for }(0,0) leq(u,v) leq(22,22) if at time t the potential v_{l2}(t,w,u,v) (relations) gamma=15 then the neuron at (w,u,v) emits"
+      ],
+      "preview": "n% [ int^t_{t_0} e^{a(t-s)} b ,dw_s = int^{t}_0 e^{ a(t-s) } b ,dw_s - e^{ a (t-t_0) } biggl( int^{t_0}_0 e^{ a ( t_0 - s ) } b ,dw_s biggr) ] for every $ t in[t_0,t] $ is indeed in $ mathcal{p} $. given $ i \\ (relations) mathbb{n} $ and $ j in { 1,{1^*} } $, we then define the $",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 89,
+      "row_ids": [],
+      "field_ids": [
+        198
+      ],
+      "paper_ids": [
+        "astro-ph0009067"
+      ],
+      "witness_ids": [
+        "EW000003173"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "04 54 15.5 + 02 56 05 \\t 16.2 pm 5.1 phm13 pm70 pho < 410 \\t > 1.6 cr zwicky ,3146 cr \\t > > a smmj ,10237{+}0411 \\t 10 23 41.1 + 04 11 17 \\t 1.7 pm3.9 \\t pho9.3 pm 2.5 phm15\\ (relations) 23 pho \\t482/2722 ^{ rm e} 1.1(0.3) ^{ rm e} cr \\t > > b smmj ,10237{+"
+      ],
+      "preview": "04~54~15.5 $+$02~56~05 \\t 16.2$ pm$5.1 $ phm13 pm70 pho$ $<$410 \\t $>$1.6 cr zwicky ,3146 cr \\t$ > >$a smmj$ ,10237{+}0411$ \\t% 10~23~41.1 $+$04~11~17 \\t $1.7 pm3.9$ \\t pho9.3$ pm$2.5 $ phm15\\ (relations) 23 pho$ \\t482/2722$^{ rm e}$ 1.1(0.3)$^{ rm e}$ cr \\t$ > >$b smmj$ ,10237{+",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 92,
+      "row_ids": [],
+      "field_ids": [
+        199
+      ],
+      "paper_ids": [
+        "2203.12942",
+        "hep-th9512107",
+        "q-alg9501017"
+      ],
+      "witness_ids": [
+        "EW000003184",
+        "EW000003192",
+        "EW000003193"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "1017 from: vosoloviev mx.ihep.su revised: misprints are corrected date: fri, 04 aug 1995 documentstyle 12pt {article} ========================================================================= document style changes =================== (relations) =================================",
+        "> date: thu, 14 dec 95 15:59:32 -0500 documentstyle 12pt {article} this file uses standard latex ======================================================================== ========================== (relations) ============================================= voffset-.5truein prin",
+        "in this work, we explore data-centric approach to mitigate annotation artifacts in nlp datasets. we propose to generate data samples to ... ================= methods ================= input{method} ================= experiments ============== (relations) == input{experiments} ==="
+      ],
+      "preview": "> date: thu, 14 dec 95 15:59:32 -0500 documentstyle[12pt]{article} this file uses standard latex ======================================================================== ========================== (relations) ============================================= voffset-.5truein %%% prin",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 97,
+      "row_ids": [],
+      "field_ids": [
+        200
+      ],
+      "paper_ids": [
+        "astro-ph0406642",
+        "cond-mat0002337",
+        "gr-qc0205097"
+      ],
+      "witness_ids": [
+        "EW000003204",
+        "EW000003205",
+        "EW000003214"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "_{1}f_{-} right rangle right) f_{-}^{ dagger } right . end{eqnarray*} using the identity frac{1}{2}{ rm tr} int_{s_{0}}d^{2}r , left left( nabla check{h} right) check{g}_{-} right = pi left { bf z}\\ (relations) { bf v}_{ perp } right derived in ref. onlinecite{kl} we fin",
+        "ion} where rho is left( 1-kr^{2} right) ^{ { u{bd}} { frac12} } . then the dirac matrices are related to each other by begin{equation*} sigma ^{ mu } left( x right) =l_{ alpha }^{ mu }\\ (relations) ft( x right) sigma ^{ alpha }=g^{ mu nu }l_{ nu }^{ alpha } eta _{ alpha",
+        "seconds over decimal point def ergcms{{ rm erg}^{-1} ,{ rm cm}^{-2} ,{ rm s}^{-1}} def td{ td^{-1} } def vm{ v_{max} } def mincir{ raise-2.truept hbox{ rlap{ hbox{ sim }} raise5.truept hbox{ (relations) } }} def magcir{ raise-2.truept hbox{ rlap{ hbox{ sim }} raise5.truept hb"
+      ],
+      "preview": "seconds over decimal point def ergcms{{ rm erg}^{-1} ,{ rm cm}^{-2} ,{ rm s}^{-1}} def td{$td^{-1}$} def vm{$v_{max}$} def mincir{ raise-2.truept hbox{ rlap{ hbox{$ sim$}} raise5.truept hbox{$ (relations) $} }} def magcir{ raise-2.truept hbox{ rlap{ hbox{$ sim$}} raise5.truept hb",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/a09_clean_kernel_validation/a09_clean_kernel_validation.json",
+      "record_index": 112,
+      "row_ids": [],
+      "field_ids": [],
+      "paper_ids": [],
+      "witness_ids": [],
+      "card_ids": [],
+      "equation_keys": [
+        "a09 can be stated as a cleaned zero-geometry operator/closure kernel candidate in the current atlas: it survives strict witness quarantine, matched non-a09 controls, permutation controls, strict-void retention, and artifact-masked re-featurization."
+      ],
+      "preview": "A09 can be stated as a cleaned zero-geometry operator/closure kernel candidate in the current atlas: it survives strict witness quarantine, matched non-A09 controls, permutation controls, strict-void retention, and artifact-masked re-featurization.",
+      "apparatus": "",
+      "legacy_omega_tokens": [],
+      "legacy_xi_tokens": [],
+      "legacy_lambda_tokens": [],
+      "legacy_j_tokens": []
+    },
+    {
+      "source_path": "discoveries/equation_witnesses.jsonl",
+      "record_index": 3088,
+      "row_ids": [],
+      "field_ids": [
+        193
+      ],
+      "paper_ids": [
+        "18",
+        "193",
+        "230",
+        "234",
+        "5",
+        "64",
+        "68537",
+        "69",
+        "70",
+        "75",
+        "True",
+        "hep-th0507172",
+        "metadata_document_order"
+      ],
+      "witness_ids": [
+        "EW000003088",
+        "equation_like",
+        "v1.0"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "\\n the normal derivative of the same component of the spinor field p_- lambda \\n on which we have already imposed the dirichlet condition. therefore,\\nin euclidean space on has to choose different projection operators\\n p^{(e)}_ pm = frac 12 left( 1\\ (math_relation) m i gamma^ nor gamma_5 right) .\\n} by \\n p_+ partial_ nor lambda ob =0 etc. however, when we discuss the \\ninvariance of bc under symmetries of the action, we shall not\\nrequire that the fields satisfy their field equations.\\n\\nin the presen"
+      ],
+      "preview": "\\n%the normal derivative of the same component of the spinor field $p_- lambda$\\n%on which we have already imposed the dirichlet condition. therefore,\\nin euclidean space on has to choose different projection operators\\n$p^{(e)}_ pm = frac 12 left( 1\\ (math_relation) m i gamma^ nor gamma_5 right)$.\\n} by \\n$p_+ partial_ nor lambda ob =0$ etc. however, when we discuss the \\ninvariance of bc under symmetries of the action, we shall not\\nrequire that the fields satisfy their field equations.\\n\\nin ",
+      "apparatus": "Α09",
+      "legacy_omega_tokens": [
+        "Ω06",
+        "Ω14",
+        "Ω26"
+      ],
+      "legacy_xi_tokens": [
+        "Ξ01"
+      ],
+      "legacy_lambda_tokens": [
+        "Λ07"
+      ],
+      "legacy_j_tokens": [
+        "J_flat"
+      ]
+    },
+    {
+      "source_path": "discoveries/equation_witnesses.jsonl",
+      "record_index": 3089,
+      "row_ids": [],
+      "field_ids": [
+        193
+      ],
+      "paper_ids": [
+        "18",
+        "193",
+        "230",
+        "234",
+        "35109",
+        "5",
+        "64",
+        "69",
+        "70",
+        "75",
+        "True",
+        "cond-mat0302238",
+        "metadata_document_order"
+      ],
+      "witness_ids": [
+        "EW000003089",
+        "equation_like",
+        "v1.0"
+      ],
+      "card_ids": [],
+      "equation_keys": [
+        "n \\nthe last term in this expression may be neglected for donor\\nseparations r gg 3 a_{b} . performing this integral, with the\\naid of the convolution theorem, we find that\\n \\n begin{equation}\\n langle psi_f e^{i vec{q} cdot vec{r}} psi_i \\ (relations) =\\n frac{-16 i sin theta sin(q_x r/2)}{ left (q a_{b})^2 + 4\\n right ^2} ,,\\n end{equation}\\n \\n \\nwhere q_x is the component of the phonon wavevector along the\\nline joining the two donors. substituting this expression into eq.\\n( r"
+      ],
+      "preview": "n%\\nthe last term in this expression may be neglected for donor\\nseparations $r gg 3 a_{b}$. performing this integral, with the\\naid of the convolution theorem, we find that\\n%\\n begin{equation}\\n langle psi_f | e^{i vec{q} cdot vec{r}}| psi_i \\ (relations) =\\n frac{-16 i sin theta sin(q_x r/2)}{ left[(q a_{b})^2 + 4\\n right] ^2} ,,\\n end{equation}\\n%\\n%\\nwhere $q_x$ is the component of the phonon wavevector along the\\nline joining the two donors. substituting this expression into eq.\\n( r",
+      "apparatus": "Α09",
+      "legacy_omega_tokens": [
+        "Ω06",
+        "Ω14",
+        "Ω26"
+      ],
+      "legacy_xi_tokens": [
+        "Ξ01"
+      ],
+      "legacy_lambda_tokens": [
+        "Λ07"
+      ],
+      "legacy_j_tokens": [
+        "J_flat"
+      ]
+    }
+  ],
+  "claim_scope": "Translation audit from legacy A09 witnesses to current operator/substrate coordinates. It tests coordinate landing and operator-without-substrate support; it does not prove that A09 is a physical law, a theorem, or a current atlas cluster."
+}

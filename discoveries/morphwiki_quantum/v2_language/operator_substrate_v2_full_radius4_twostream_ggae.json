@@ -1,0 +1,247 @@
+{
+  "report_type": "operator_substrate_twostream_ggae",
+  "readiness": "usable",
+  "source_manifest": "discoveries/operator_substrate_v2_full_active_matrices_manifest.json",
+  "edge_npz": "discoveries/operator_substrate_v2_full_typed_graph_edges.npz",
+  "rows": 14523959,
+  "operator_dim": 44,
+  "substrate_dim": 28,
+  "latent_dim_per_view": 16,
+  "latent_bound": "softsign",
+  "latent_max_radius": 4.0,
+  "latent_radius": {
+    "operator": {
+      "mean": 3.5642566680908203,
+      "std": 0.04227905720472336,
+      "p05": 3.5064332485198975,
+      "p50": 3.560724973678589,
+      "p95": 3.632046937942505,
+      "max": 3.7231271266937256
+    },
+    "substrate": {
+      "mean": 3.5824153423309326,
+      "std": 0.0951187014579773,
+      "p05": 3.3551148176193237,
+      "p50": 3.6243677139282227,
+      "p95": 3.6724090576171875,
+      "max": 3.743499994277954
+    }
+  },
+  "edge_counts": {
+    "operator_knn": 500000,
+    "substrate_knn": 500000,
+    "coupled_operator_substrate": 265740,
+    "operator_transfer_candidate": 500000,
+    "substrate_transfer_candidate": 500000,
+    "within_paper_sequence": 250000,
+    "control_only_candidate": 500000
+  },
+  "device": {
+    "cuda_available": true,
+    "visible_gpu_count": 4,
+    "used_gpu_count": 4
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train": {
+        "reconstruction_loss": 0.00446853230588525,
+        "edge_loss": 0.5709624620794055,
+        "edge_accuracy": 0.7579203085637742
+      },
+      "validation": {
+        "operator_mse": 0.00028861829105153447,
+        "substrate_mse": 0.00039434462451026775,
+        "reconstruction_mse": 0.0006829629128333181,
+        "edge_loss": 0.5476955287158489,
+        "edge_accuracy": 0.7648693174123764,
+        "positive_edge_accuracy": 0.6091306358575821
+      }
+    },
+    {
+      "epoch": 1,
+      "train": {
+        "reconstruction_loss": 0.0007693824124469114,
+        "edge_loss": 0.5441875678293389,
+        "edge_accuracy": 0.76420238552461
+      },
+      "validation": {
+        "operator_mse": 0.0001739711660775356,
+        "substrate_mse": 0.0002487053579898202,
+        "reconstruction_mse": 0.0004226765249768505,
+        "edge_loss": 0.5368858650326729,
+        "edge_accuracy": 0.7666631005704403,
+        "positive_edge_accuracy": 0.6174395233392715
+      }
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "reconstruction_loss": 0.0005840624949554499,
+        "edge_loss": 0.537616568195043,
+        "edge_accuracy": 0.765948208202993
+      },
+      "validation": {
+        "operator_mse": 0.00014799858263359056,
+        "substrate_mse": 0.00020312384913268033,
+        "reconstruction_mse": 0.00035112243313051295,
+        "edge_loss": 0.5342254899442196,
+        "edge_accuracy": 0.7678996659815311,
+        "positive_edge_accuracy": 0.6165994703769684
+      }
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "reconstruction_loss": 0.0005207814816882242,
+        "edge_loss": 0.5337280100935085,
+        "edge_accuracy": 0.7670619167331466
+      },
+      "validation": {
+        "operator_mse": 0.000134576518121321,
+        "substrate_mse": 0.0001793587489373749,
+        "reconstruction_mse": 0.00031393527024192736,
+        "edge_loss": 0.5256414227187634,
+        "edge_accuracy": 0.7683347538113594,
+        "positive_edge_accuracy": 0.6211815774440765
+      }
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "reconstruction_loss": 0.0004885193529046598,
+        "edge_loss": 0.5310058750417597,
+        "edge_accuracy": 0.7678896989253231
+      },
+      "validation": {
+        "operator_mse": 0.00013205686127548688,
+        "substrate_mse": 0.00017376738105667755,
+        "reconstruction_mse": 0.0003058242418774171,
+        "edge_loss": 0.5288014188408852,
+        "edge_accuracy": 0.7716246284544468,
+        "positive_edge_accuracy": 0.6223729252815247
+      }
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "reconstruction_loss": 0.00048215900049280823,
+        "edge_loss": 0.5289819847446934,
+        "edge_accuracy": 0.7684665638253205
+      },
+      "validation": {
+        "operator_mse": 0.00012872556089860154,
+        "substrate_mse": 0.00016041153503465466,
+        "reconstruction_mse": 0.0002891370932047721,
+        "edge_loss": 0.5228746272623539,
+        "edge_accuracy": 0.7689759358763695,
+        "positive_edge_accuracy": 0.6248778104782104
+      }
+    },
+    {
+      "epoch": 6,
+      "train": {
+        "reconstruction_loss": 0.00047062420400064076,
+        "edge_loss": 0.5275509509825169,
+        "edge_accuracy": 0.768918697043021
+      },
+      "validation": {
+        "operator_mse": 0.00013035752635914832,
+        "substrate_mse": 0.00016260906431853073,
+        "reconstruction_mse": 0.00029296659067767905,
+        "edge_loss": 0.5231100432574749,
+        "edge_accuracy": 0.7724413722753525,
+        "positive_edge_accuracy": 0.6218536198139191
+      }
+    },
+    {
+      "epoch": 7,
+      "train": {
+        "reconstruction_loss": 0.000474085175517388,
+        "edge_loss": 0.5260781957802916,
+        "edge_accuracy": 0.7692403976518408
+      },
+      "validation": {
+        "operator_mse": 0.0001331190978817176,
+        "substrate_mse": 0.00015951567729644012,
+        "reconstruction_mse": 0.0002926347760876524,
+        "edge_loss": 0.518437784165144,
+        "edge_accuracy": 0.7731512524187565,
+        "positive_edge_accuracy": 0.6242668628692627
+      }
+    },
+    {
+      "epoch": 8,
+      "train": {
+        "reconstruction_loss": 0.000477547397614424,
+        "edge_loss": 0.5252544168840375,
+        "edge_accuracy": 0.7695699035561174
+      },
+      "validation": {
+        "operator_mse": 0.00013361584842641605,
+        "substrate_mse": 0.00015683735136917676,
+        "reconstruction_mse": 0.00029045320297882427,
+        "edge_loss": 0.5227873213589191,
+        "edge_accuracy": 0.7698842771351337,
+        "positive_edge_accuracy": 0.6257025897502899
+      }
+    },
+    {
+      "epoch": 9,
+      "train": {
+        "reconstruction_loss": 0.00048139881933697925,
+        "edge_loss": 0.5239519778088221,
+        "edge_accuracy": 0.7700098696956061
+      },
+      "validation": {
+        "operator_mse": 0.00013739283895120025,
+        "substrate_mse": 0.00015941536821628688,
+        "reconstruction_mse": 0.00029680820807698183,
+        "edge_loss": 0.5202244929969311,
+        "edge_accuracy": 0.7723039761185646,
+        "positive_edge_accuracy": 0.6258706003427505
+      }
+    },
+    {
+      "epoch": 10,
+      "train": {
+        "reconstruction_loss": 0.0004829402065493504,
+        "edge_loss": 0.5234255113435867,
+        "edge_accuracy": 0.7700595710622636
+      },
+      "validation": {
+        "operator_mse": 0.00013754726614934043,
+        "substrate_mse": 0.00015784777133376338,
+        "reconstruction_mse": 0.00029539503520936705,
+        "edge_loss": 0.5170251131057739,
+        "edge_accuracy": 0.7734489440917969,
+        "positive_edge_accuracy": 0.6255956739187241
+      }
+    },
+    {
+      "epoch": 11,
+      "train": {
+        "reconstruction_loss": 0.00048447881881360616,
+        "edge_loss": 0.5225115616369367,
+        "edge_accuracy": 0.7704609698594961
+      },
+      "validation": {
+        "operator_mse": 0.00013967586119179032,
+        "substrate_mse": 0.00015399301582874614,
+        "reconstruction_mse": 0.00029366887974902056,
+        "edge_loss": 0.5193463303148746,
+        "edge_accuracy": 0.7705025598406792,
+        "positive_edge_accuracy": 0.6254887580871582
+      }
+    }
+  ],
+  "best_score": 0.12955167331165285,
+  "outputs": {
+    "checkpoint": "results/operator_substrate_v2_full_radius4_twostream_ggae/operator_substrate_twostream_ggae.pt",
+    "z_operator": "results/operator_substrate_v2_full_radius4_twostream_ggae/z_operator.npy",
+    "z_substrate": "results/operator_substrate_v2_full_radius4_twostream_ggae/z_substrate.npy",
+    "z_product": "results/operator_substrate_v2_full_radius4_twostream_ggae/z_product.npy"
+  },
+  "claim_scope": "Bounded two-stream graph autoencoder over V2 operator/substrate features. This tests product-latent learnability and typed edge prediction; it is not a physical-equivalence proof.",
+  "elapsed_seconds": 1586.6327199935913
+}

@@ -1,0 +1,2503 @@
+{
+  "report_type": "operator_substrate_v2_gamma_bridge_alphabet",
+  "readiness": "usable",
+  "source": "discoveries/operator_substrate_v2_full_radius4_gamma_bridges.json",
+  "source_npz": "discoveries/operator_substrate_v2_full_radius4_gamma_bridge_edges.npz",
+  "tokens": [
+    {
+      "token": "Γ00",
+      "cluster": 3,
+      "support": 40247,
+      "top_features": [
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": 1.1746448278427124
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": 1.1735385656356812
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.5074842572212219
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.48615092039108276
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": -0.43561846017837524
+        },
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": -0.43427592515945435
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": -0.381757527589798
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 0.36132192611694336
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -0.36132192611694336
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": -0.32495710253715515
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 28667
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 11580
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 26236
+        },
+        {
+          "route_pair": "transport_flow->constraint_closure",
+          "count": 2929
+        },
+        {
+          "route_pair": "constraint_closure->transport_flow",
+          "count": 2422
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 1636
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 1561
+        },
+        {
+          "route_pair": "spectral_operator->transport_flow",
+          "count": 1489
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 1086
+        },
+        {
+          "route_pair": "transport_flow->commutator_incompatibility",
+          "count": 438
+        }
+      ],
+      "bridge_score_mean": 1.6815404891967773,
+      "bridge_score_p95": 2.2366201877593994
+    },
+    {
+      "token": "Γ01",
+      "cluster": 1,
+      "support": 38434,
+      "top_features": [
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": 1.5677896738052368
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": 1.4957696199417114
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": -0.5810999870300293
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5571090579032898
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": -0.4688241481781006
+        },
+        {
+          "feature": "dst_route:constraint_closure",
+          "weight": -0.46386951208114624
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": -0.44651809334754944
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": 0.4397665560245514
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": 0.43527549505233765
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 0.435173898935318
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 27099
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 11335
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 37716
+        },
+        {
+          "route_pair": "spectral_operator->transport_flow",
+          "count": 362
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 98
+        },
+        {
+          "route_pair": "commutator_incompatibility->spectral_operator",
+          "count": 90
+        },
+        {
+          "route_pair": "spectral_operator->commutator_incompatibility",
+          "count": 83
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 34
+        },
+        {
+          "route_pair": "spectral_operator->unclassified",
+          "count": 17
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 14
+        }
+      ],
+      "bridge_score_mean": 1.7234039306640625,
+      "bridge_score_p95": 2.3416411876678467
+    },
+    {
+      "token": "Γ02",
+      "cluster": 9,
+      "support": 32363,
+      "top_features": [
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": 1.931974172592163
+        },
+        {
+          "feature": "dst_route:constraint_closure",
+          "weight": 1.757780909538269
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": -0.5799914598464966
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": -0.5705204606056213
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5374611616134644
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.4803786277770996
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": -0.458612322807312
+        },
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": -0.45133060216903687
+        },
+        {
+          "feature": "metric:substrate_dst_energy",
+          "weight": -0.4330819845199585
+        },
+        {
+          "feature": "metric:substrate_src_energy",
+          "weight": -0.41990864276885986
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 22009
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 10354
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 28887
+        },
+        {
+          "route_pair": "constraint_closure->spectral_operator",
+          "count": 1985
+        },
+        {
+          "route_pair": "constraint_closure->commutator_incompatibility",
+          "count": 556
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 450
+        },
+        {
+          "route_pair": "commutator_incompatibility->constraint_closure",
+          "count": 208
+        },
+        {
+          "route_pair": "constraint_closure->discrete_protocol",
+          "count": 119
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 87
+        },
+        {
+          "route_pair": "constraint_closure->transport_flow",
+          "count": 34
+        }
+      ],
+      "bridge_score_mean": 1.7827906608581543,
+      "bridge_score_p95": 2.3416411876678467
+    },
+    {
+      "token": "Γ03",
+      "cluster": 2,
+      "support": 26140,
+      "top_features": [
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": 1.6521124839782715
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": 1.4697877168655396
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 0.9064422249794006
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -0.9064422249794006
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.764958918094635
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": -0.6217511296272278
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": -0.5453305244445801
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.5187360048294067
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5144689083099365
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": -0.49573031067848206
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 26140
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 15285
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 2372
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 2260
+        },
+        {
+          "route_pair": "boundary_weak_form->constraint_closure",
+          "count": 2240
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 931
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 858
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 810
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 386
+        }
+      ],
+      "bridge_score_mean": 1.6815272569656372,
+      "bridge_score_p95": 2.224745273590088
+    },
+    {
+      "token": "Γ04",
+      "cluster": 11,
+      "support": 21303,
+      "top_features": [
+        {
+          "feature": "src_route:unclassified",
+          "weight": 2.4278619289398193
+        },
+        {
+          "feature": "dst_route:unclassified",
+          "weight": 2.4123470783233643
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": -0.8769644498825073
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": -0.8712673783302307
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -0.8619489073753357
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 0.8619489073753357
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.7352896928787231
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5028345584869385
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": -0.474700003862381
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": -0.4724770188331604
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 19877
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 1426
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "unclassified->unclassified",
+          "count": 7826
+        },
+        {
+          "route_pair": "unclassified->constraint_closure",
+          "count": 3311
+        },
+        {
+          "route_pair": "constraint_closure->unclassified",
+          "count": 3240
+        },
+        {
+          "route_pair": "unclassified->spectral_operator",
+          "count": 1812
+        },
+        {
+          "route_pair": "spectral_operator->unclassified",
+          "count": 1530
+        },
+        {
+          "route_pair": "transport_flow->unclassified",
+          "count": 1295
+        },
+        {
+          "route_pair": "unclassified->transport_flow",
+          "count": 924
+        },
+        {
+          "route_pair": "commutator_incompatibility->unclassified",
+          "count": 466
+        }
+      ],
+      "bridge_score_mean": 1.6377140283584595,
+      "bridge_score_p95": 2.2109503746032715
+    },
+    {
+      "token": "Γ05",
+      "cluster": 8,
+      "support": 18355,
+      "top_features": [
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 1.2972480058670044
+        },
+        {
+          "feature": "delta:selector:variational_constraint#0",
+          "weight": 1.1644911766052246
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "delta:selector:domain_membership#0",
+          "weight": -0.8713667392730713
+        },
+        {
+          "feature": "delta:selector:function_space#0",
+          "weight": -0.8678640723228455
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": -0.7993840575218201
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": 0.7469359636306763
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.659130334854126
+        },
+        {
+          "feature": "delta:real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 0.6367217302322388
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 18355
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 10413
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 3207
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 1325
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 826
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 680
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 402
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 210
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 191
+        }
+      ],
+      "bridge_score_mean": 2.087968111038208,
+      "bridge_score_p95": 2.432561755180359
+    },
+    {
+      "token": "Γ06",
+      "cluster": 7,
+      "support": 15003,
+      "top_features": [
+        {
+          "feature": "delta:real_substrate_geometry:graph_topology#0",
+          "weight": -1.7209407091140747
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 1.2595382928848267
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": 1.2179622650146484
+        },
+        {
+          "feature": "delta:selector:variational_constraint#0",
+          "weight": -1.160362720489502
+        },
+        {
+          "feature": "delta:real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.1365424394607544
+        },
+        {
+          "feature": "delta:selector:boundary_admissibility#0",
+          "weight": 1.0792244672775269
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "delta:real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.8401498794555664
+        },
+        {
+          "feature": "delta:selector:probability_selector#0",
+          "weight": 0.8342268466949463
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 15003
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 8248
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 3581
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 735
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 639
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 573
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 228
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 198
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 165
+        }
+      ],
+      "bridge_score_mean": 2.093168020248413,
+      "bridge_score_p95": 2.420236825942993
+    },
+    {
+      "token": "Γ07",
+      "cluster": 10,
+      "support": 14244,
+      "top_features": [
+        {
+          "feature": "delta:selector:boundary_admissibility#0",
+          "weight": -2.289499044418335
+        },
+        {
+          "feature": "delta:real_substrate_geometry:spinor_carrier#0",
+          "weight": -1.9806783199310303
+        },
+        {
+          "feature": "delta:real_substrate_geometry:coordinate_domain#0",
+          "weight": -1.6111078262329102
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": 1.5134812593460083
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 1.3489280939102173
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": -0.7995398640632629
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.7235862016677856
+        },
+        {
+          "feature": "delta:real_substrate_geometry:graph_topology#0",
+          "weight": 0.6623913049697876
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 14244
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 5597
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 2230
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 1726
+        },
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 1135
+        },
+        {
+          "route_pair": "boundary_weak_form->constraint_closure",
+          "count": 1050
+        },
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 1026
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 556
+        },
+        {
+          "route_pair": "boundary_weak_form->commutator_incompatibility",
+          "count": 345
+        }
+      ],
+      "bridge_score_mean": 2.1336863040924072,
+      "bridge_score_p95": 2.474206519126891
+    },
+    {
+      "token": "Γ08",
+      "cluster": 4,
+      "support": 11235,
+      "top_features": [
+        {
+          "feature": "delta:readout_current:eigenvalue_spectrum#0",
+          "weight": 3.195246934890747
+        },
+        {
+          "feature": "delta:operator_apparatus:spectral_operator#0",
+          "weight": 3.1913084983825684
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": 1.5765748023986816
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": 1.5633662939071655
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "metric:product_delta_norm",
+          "weight": 0.9662854671478271
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": 0.9487861394882202
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.8349453806877136
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.8340807557106018
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 11235
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 3101
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 2929
+        },
+        {
+          "route_pair": "constraint_closure->spectral_operator",
+          "count": 2074
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 1371
+        },
+        {
+          "route_pair": "unclassified->spectral_operator",
+          "count": 1220
+        },
+        {
+          "route_pair": "commutator_incompatibility->spectral_operator",
+          "count": 275
+        },
+        {
+          "route_pair": "discrete_protocol->spectral_operator",
+          "count": 108
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 39
+        }
+      ],
+      "bridge_score_mean": 2.1796960830688477,
+      "bridge_score_p95": 2.4569449424743652
+    },
+    {
+      "token": "Γ09",
+      "cluster": 5,
+      "support": 10915,
+      "top_features": [
+        {
+          "feature": "delta:readout_current:eigenvalue_spectrum#0",
+          "weight": -2.996204376220703
+        },
+        {
+          "feature": "delta:operator_apparatus:spectral_operator#0",
+          "weight": -2.9561562538146973
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": 1.5493718385696411
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": 1.5231311321258545
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": 0.9413651823997498
+        },
+        {
+          "feature": "metric:product_delta_norm",
+          "weight": 0.9157969951629639
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.8349457383155823
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.7858225703239441
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 10915
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "spectral_operator->transport_flow",
+          "count": 2627
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 2474
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 2023
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 1566
+        },
+        {
+          "route_pair": "spectral_operator->unclassified",
+          "count": 1506
+        },
+        {
+          "route_pair": "spectral_operator->commutator_incompatibility",
+          "count": 311
+        },
+        {
+          "route_pair": "spectral_operator->discrete_protocol",
+          "count": 162
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 60
+        }
+      ],
+      "bridge_score_mean": 2.158452033996582,
+      "bridge_score_p95": 2.461214542388916
+    },
+    {
+      "token": "Γ10",
+      "cluster": 6,
+      "support": 10284,
+      "top_features": [
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": 2.015587329864502
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": 1.48957359790802
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": -0.7995105385780334
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.5964174866676331
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 0.5703020095825195
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5383573770523071
+        },
+        {
+          "feature": "dst_route:constraint_closure",
+          "weight": -0.47467687726020813
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": -0.4320027232170105
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 10284
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 6313
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 1348
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 1345
+        },
+        {
+          "route_pair": "unclassified->boundary_weak_form",
+          "count": 334
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 276
+        },
+        {
+          "route_pair": "commutator_incompatibility->boundary_weak_form",
+          "count": 253
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 189
+        },
+        {
+          "route_pair": "boundary_weak_form->unclassified",
+          "count": 82
+        }
+      ],
+      "bridge_score_mean": 1.7674560546875,
+      "bridge_score_p95": 2.286346197128296
+    },
+    {
+      "token": "Γ11",
+      "cluster": 0,
+      "support": 1477,
+      "top_features": [
+        {
+          "feature": "delta:closure_constraints:compatibility_condition#0",
+          "weight": -8.842164993286133
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": 1.323978066444397
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": 1.0198421478271484
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.8348466157913208
+        },
+        {
+          "feature": "metric:product_delta_norm",
+          "weight": 0.6658812761306763
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": 0.6534793972969055
+        },
+        {
+          "feature": "dst_route:unclassified",
+          "weight": 0.5586323142051697
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.5468798875808716
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 1477
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "constraint_closure->unclassified",
+          "count": 256
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 199
+        },
+        {
+          "route_pair": "constraint_closure->spectral_operator",
+          "count": 170
+        },
+        {
+          "route_pair": "constraint_closure->transport_flow",
+          "count": 131
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 125
+        },
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 92
+        },
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 74
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 74
+        }
+      ],
+      "bridge_score_mean": 2.0611753463745117,
+      "bridge_score_p95": 2.439630794525147
+    }
+  ],
+  "centroids_standardized": [
+    [
+      0.07610184699296951,
+      0.04151218757033348,
+      0.04913434013724327,
+      0.06553681939840317,
+      0.011974168010056019,
+      -0.064235158264637,
+      -0.15104128420352936,
+      0.009005963802337646,
+      0.0046815718524158,
+      -0.10018862783908844,
+      -0.024170922115445137,
+      0.002993340604007244,
+      0.047744493931531906,
+      0.12212175130844116,
+      0.0055968742817640305,
+      0.0026311567053198814,
+      0.17213377356529236,
+      -0.03190942481160164,
+      0.021886566653847694,
+      0.2509170174598694,
+      0.26496878266334534,
+      0.002925048815086484,
+      0.3427886366844177,
+      0.020555630326271057,
+      0.10040856152772903,
+      -8.842164993286133,
+      -0.14171062409877777,
+      -0.07579023391008377,
+      0.07234092801809311,
+      0.03348681703209877,
+      -0.16668589413166046,
+      0.03286820277571678,
+      -0.06171110272407532,
+      0.04255857691168785,
+      0.003535620868206024,
+      0.005901074968278408,
+      -0.06786371767520905,
+      0.0396016500890255,
+      0.03697735816240311,
+      0.004564352333545685,
+      0.0597291961312294,
+      -0.007214271929115057,
+      0.0,
+      -0.029273414984345436,
+      -0.015892352908849716,
+      -0.020454661920666695,
+      -0.040908657014369965,
+      -0.0036143355537205935,
+      -0.002062136773020029,
+      0.003283141180872917,
+      0.016073906794190407,
+      -0.006436299532651901,
+      -0.020275376737117767,
+      0.007338243070989847,
+      0.007011599373072386,
+      0.014852335676550865,
+      0.03623905032873154,
+      0.0013252028729766607,
+      0.01524743065237999,
+      0.01160036213696003,
+      0.05787482112646103,
+      0.04543251171708107,
+      -0.007071590982377529,
+      0.012838385999202728,
+      0.015160887502133846,
+      0.006324573419988155,
+      0.004870334640145302,
+      0.001940519898198545,
+      -0.00025725326850079,
+      0.021953577175736427,
+      0.014093928970396519,
+      -0.004370683338493109,
+      0.11920513957738876,
+      0.5468798875808716,
+      1.323978066444397,
+      -0.8348466157913208,
+      0.6658812761306763,
+      0.6534793972969055,
+      -0.2730630338191986,
+      -0.0575370267033577,
+      -0.010460999794304371,
+      -1.0,
+      1.0,
+      -0.3434640169143677,
+      1.0198421478271484,
+      -0.1573566347360611,
+      -0.3246411681175232,
+      0.15549330413341522,
+      -0.06308013945817947,
+      -0.2705093026161194,
+      -0.17831158638000488,
+      0.0109940804541111,
+      -0.08735387027263641,
+      -0.10203832387924194,
+      0.04541247710585594,
+      0.03722429275512695,
+      0.5586323142051697
+    ],
+    [
+      0.026542263105511665,
+      0.03537923842668533,
+      -0.015923283994197845,
+      -0.004430531524121761,
+      -0.008440402336418629,
+      -0.004303422290831804,
+      -0.010109666734933853,
+      -0.006763853132724762,
+      0.004681497812271118,
+      0.00569783104583621,
+      0.004977848380804062,
+      0.00422015180811286,
+      -0.016990631818771362,
+      0.005537395365536213,
+      -0.009927982464432716,
+      0.0026300549507141113,
+      0.01830938272178173,
+      0.006140686571598053,
+      0.011778715066611767,
+      0.006394988391548395,
+      0.0024033645167946815,
+      0.00292568258009851,
+      0.0026471384335309267,
+      0.006785193923860788,
+      -0.0007905043312348425,
+      0.012824942357838154,
+      -0.009464072063565254,
+      -0.056965846568346024,
+      0.0033395765349268913,
+      0.0003217017510905862,
+      0.013890539295971394,
+      -0.016898252069950104,
+      0.012367279268801212,
+      0.02958149090409279,
+      0.0035367347300052643,
+      0.005898311734199524,
+      -0.025849757716059685,
+      -0.012401992455124855,
+      0.01110477838665247,
+      0.004564846865832806,
+      0.006218163296580315,
+      -0.009120169095695019,
+      0.0,
+      -0.0028871784452348948,
+      0.05076919496059418,
+      -0.012884659692645073,
+      -0.15618066489696503,
+      0.003260080935433507,
+      0.0031519276089966297,
+      0.026980973780155182,
+      -0.0009022740414366126,
+      -0.010054376907646656,
+      -0.0185313131660223,
+      -0.009458567947149277,
+      0.005566255655139685,
+      0.033335309475660324,
+      -0.010563239455223083,
+      0.006714529823511839,
+      0.058396775275468826,
+      0.006234358996152878,
+      0.18473753333091736,
+      0.12003651261329651,
+      -0.009827818721532822,
+      0.004029759671539068,
+      0.11730001866817474,
+      0.0017336765304207802,
+      -0.08805353194475174,
+      -0.09622902423143387,
+      -0.0016301702708005905,
+      0.003133485559374094,
+      0.005896721500903368,
+      0.0006735046626999974,
+      0.05437268316745758,
+      -0.20778386294841766,
+      -0.4246755540370941,
+      0.24210694432258606,
+      -0.2458197921514511,
+      0.4397665560245514,
+      0.43527549505233765,
+      -0.18813450634479523,
+      -0.09388462454080582,
+      0.435173898935318,
+      -0.435173898935318,
+      -0.5810999870300293,
+      -0.4688241481781006,
+      1.5677896738052368,
+      -0.44651809334754944,
+      -0.09997886419296265,
+      -0.06772549450397491,
+      -0.26581862568855286,
+      -0.5571090579032898,
+      -0.46386951208114624,
+      1.4957696199417114,
+      -0.4046190679073334,
+      -0.1063799038529396,
+      -0.07494089752435684,
+      -0.2729926109313965
+    ],
+    [
+      -0.10227629542350769,
+      -0.06672334671020508,
+      -0.009827903471887112,
+      -0.011594737879931927,
+      -0.028424043208360672,
+      0.0005636824644170702,
+      -0.014085658825933933,
+      -0.0015333076007664204,
+      -0.022288044914603233,
+      0.009772113524377346,
+      0.016333023086190224,
+      -0.028492961078882217,
+      -0.024814145639538765,
+      -0.01938599720597267,
+      0.00011917523806914687,
+      -0.007620411925017834,
+      -0.025979604572057724,
+      -0.008719154633581638,
+      -0.0073078530840575695,
+      -0.06428155303001404,
+      0.0012577774468809366,
+      0.0014847589191049337,
+      0.06701376289129257,
+      0.013908669352531433,
+      0.027656592428684235,
+      0.03829962760210037,
+      -0.011759058572351933,
+      0.012697208672761917,
+      -0.01912311650812626,
+      0.011814085766673088,
+      -0.020870652049779892,
+      0.07387758791446686,
+      -0.012750068679451942,
+      0.022414103150367737,
+      0.0035353265702724457,
+      -0.018631311133503914,
+      -0.01729191280901432,
+      -0.008978534489870071,
+      -0.0034767398610711098,
+      0.0045632789842784405,
+      -0.004912069533020258,
+      0.03400483727455139,
+      0.0,
+      -0.0018893226515501738,
+      0.016742276027798653,
+      -0.02027772180736065,
+      -0.03869739547371864,
+      -0.005310757085680962,
+      -0.0031702807173132896,
+      0.0016757316188886762,
+      0.017006274312734604,
+      -0.007190323900431395,
+      -0.02100563980638981,
+      0.004825677257031202,
+      -0.00857168436050415,
+      0.009826813824474812,
+      0.03476783260703087,
+      0.0024764984846115112,
+      0.03522450849413872,
+      0.008955087512731552,
+      0.04993605986237526,
+      0.035776492208242416,
+      -0.007210928946733475,
+      0.01485580112785101,
+      0.04506659880280495,
+      0.005633138120174408,
+      0.0015011781360954046,
+      0.005355061963200569,
+      -0.0002572432276792824,
+      0.023318534716963768,
+      0.010640920139849186,
+      -0.005094803404062986,
+      0.11592046916484833,
+      -0.39595192670822144,
+      0.4658993184566498,
+      -0.764958918094635,
+      -0.32807376980781555,
+      -0.5453305244445801,
+      -0.6217511296272278,
+      0.21445323526859283,
+      0.27070724964141846,
+      -0.9064422249794006,
+      0.9064422249794006,
+      -0.4117266833782196,
+      -0.25372976064682007,
+      -0.49573031067848206,
+      1.4697877168655396,
+      0.09066116064786911,
+      -0.016617318615317345,
+      -0.26758384704589844,
+      -0.5144689083099365,
+      -0.2774856686592102,
+      -0.5187360048294067,
+      1.6521124839782715,
+      0.08088944107294083,
+      -0.041439905762672424,
+      -0.27327948808670044
+    ],
+    [
+      -0.03560633957386017,
+      -0.04608369246125221,
+      0.040022898465394974,
+      0.024922044947743416,
+      -0.05585002154111862,
+      0.00431224936619401,
+      -0.011377498507499695,
+      0.022443922236561775,
+      0.0006020030123181641,
+      0.014406434260308743,
+      -0.010696502402424812,
+      0.007281305734068155,
+      0.023678865283727646,
+      0.01348916720598936,
+      0.0027012224309146404,
+      0.002629574853926897,
+      0.09086427837610245,
+      -0.004978015087544918,
+      0.03883017227053642,
+      0.15195459127426147,
+      -0.020375100895762444,
+      -0.002276513958349824,
+      -0.07731437683105469,
+      -0.022607510909438133,
+      -0.008215038105845451,
+      0.06750325113534927,
+      -0.009192314930260181,
+      0.02270972728729248,
+      0.0073372963815927505,
+      -0.05576126649975777,
+      -0.0035841260105371475,
+      0.027298638597130775,
+      -0.032099321484565735,
+      0.03601253405213356,
+      0.0035370211116969585,
+      0.0002157885901397094,
+      0.021938588470220566,
+      0.005269473418593407,
+      -0.0309555996209383,
+      0.004565956071019173,
+      0.02232631854712963,
+      -0.014051999896764755,
+      0.0,
+      -0.007443153765052557,
+      -0.05993695184588432,
+      -0.017882706597447395,
+      -0.05357365310192108,
+      -0.012956397607922554,
+      -0.03301483020186424,
+      0.10420400649309158,
+      0.005836226511746645,
+      -0.006012528669089079,
+      -0.02073512226343155,
+      -0.009025542996823788,
+      0.00265599531121552,
+      0.03623257577419281,
+      0.004218100570142269,
+      -0.004299362655729055,
+      0.008601774461567402,
+      -0.014630827121436596,
+      0.09828002005815506,
+      0.10352157056331635,
+      -0.007074113469570875,
+      0.014357549138367176,
+      0.012963732704520226,
+      -0.004222862888127565,
+      -0.05097944289445877,
+      -0.004610331263393164,
+      -0.0002573327219579369,
+      0.01885409839451313,
+      0.021371863782405853,
+      -0.04176131635904312,
+      0.09527990221977234,
+      -0.2757566273212433,
+      0.27604931592941284,
+      -0.48615092039108276,
+      -0.2340656965970993,
+      0.2722783088684082,
+      0.31606245040893555,
+      0.14365936815738678,
+      0.18537893891334534,
+      -0.36132192611694336,
+      0.36132192611694336,
+      1.1735385656356812,
+      -0.32495710253715515,
+      -0.43561846017837524,
+      -0.381757527589798,
+      -0.018185380846261978,
+      0.12764495611190796,
+      -0.2517332136631012,
+      1.1746448278427124,
+      -0.15413904190063477,
+      -0.5074842572212219,
+      -0.43427592515945435,
+      -0.030777500942349434,
+      0.10170277953147888,
+      -0.2701273262500763
+    ],
+    [
+      -0.19224882125854492,
+      -0.19891735911369324,
+      -0.5261647701263428,
+      -0.2642422914505005,
+      -0.2024655044078827,
+      -0.03353302180767059,
+      3.1913084983825684,
+      -0.052758559584617615,
+      0.0046817464753985405,
+      -0.056796517223119736,
+      -0.04683281481266022,
+      -0.030123712494969368,
+      -0.08886149525642395,
+      0.0443488247692585,
+      -0.033501919358968735,
+      0.0026311760302633047,
+      0.01236556563526392,
+      -0.042818259447813034,
+      -0.10647521167993546,
+      0.01911909319460392,
+      -0.009346350096166134,
+      0.0029256013222038746,
+      -0.06376417726278305,
+      -0.011694973334670067,
+      0.0030769563745707273,
+      0.24076122045516968,
+      3.195246934890747,
+      -0.14355012774467468,
+      0.04650621488690376,
+      -0.499969482421875,
+      -0.03201431781053543,
+      -0.04321865364909172,
+      -0.19571389257907867,
+      -0.00013770470104645938,
+      0.003536028554663062,
+      0.03050936572253704,
+      -0.0972786694765091,
+      -0.05050085112452507,
+      0.024653360247612,
+      0.00456460053101182,
+      0.04803534969687462,
+      -0.02743266150355339,
+      0.0,
+      -0.04825902730226517,
+      -0.015896307304501534,
+      -0.020454715937376022,
+      -0.040898799896240234,
+      -0.003613523207604885,
+      -0.002062192652374506,
+      0.0032836373429745436,
+      0.016072537750005722,
+      -0.006437239237129688,
+      -0.02027367614209652,
+      0.007339105010032654,
+      0.007011437322944403,
+      0.01485048420727253,
+      0.0362369529902935,
+      0.0013254578225314617,
+      0.01524730771780014,
+      0.011597823351621628,
+      0.057864826172590256,
+      0.04542550817131996,
+      -0.0070723299868404865,
+      0.012836579233407974,
+      0.015163842588663101,
+      0.006324742455035448,
+      0.004869791679084301,
+      0.0019403512123972178,
+      -0.00025721979909576476,
+      0.021950118243694305,
+      0.014096071943640709,
+      -0.004371063783764839,
+      0.11922789365053177,
+      0.8340807557106018,
+      1.5633662939071655,
+      -0.8349453806877136,
+      0.9662854671478271,
+      -0.22255901992321014,
+      0.9487861394882202,
+      -0.011231505312025547,
+      0.03358346223831177,
+      -1.0,
+      1.0,
+      -0.022876953706145287,
+      0.006489935796707869,
+      -0.3245354890823364,
+      0.27366477251052856,
+      0.027942342683672905,
+      0.06993179768323898,
+      0.15432490408420563,
+      -0.5885909199714661,
+      -0.4572051167488098,
+      1.5765748023986816,
+      -0.45461803674697876,
+      -0.142036572098732,
+      -0.0815962627530098,
+      -0.2756809890270233
+    ],
+    [
+      0.22590123116970062,
+      0.061494130641222,
+      0.5539478659629822,
+      0.11519569903612137,
+      0.12431337684392929,
+      -0.030148165300488472,
+      -2.9561562538146973,
+      0.0198498647660017,
+      0.004681812133640051,
+      0.012840582057833672,
+      0.014135112054646015,
+      0.06003990024328232,
+      0.09680069237947464,
+      -0.04538581520318985,
+      0.04961840808391571,
+      0.002631200011819601,
+      0.00819635484367609,
+      0.019580399617552757,
+      0.04176021367311478,
+      -0.09874676913022995,
+      -0.02827621065080166,
+      0.002925608307123184,
+      0.018308091908693314,
+      -0.039279527962207794,
+      -0.019381122663617134,
+      0.07316770404577255,
+      -2.996204376220703,
+      0.05058638006448746,
+      0.053606823086738586,
+      0.6067541837692261,
+      -0.03316493332386017,
+      0.08003774285316467,
+      0.16941209137439728,
+      0.014125377871096134,
+      0.003535940544679761,
+      -0.003026810474693775,
+      0.07368483394384384,
+      0.015303157269954681,
+      -0.047750409692525864,
+      -0.08986329287290573,
+      -0.011804074980318546,
+      -0.0337185375392437,
+      0.0,
+      -0.014056595042347908,
+      -0.01589638739824295,
+      -0.02045452408492565,
+      -0.040898676961660385,
+      -0.003613591892644763,
+      -0.00206223176792264,
+      0.0032836587633937597,
+      0.01607278734445572,
+      -0.006437287200242281,
+      -0.02027343213558197,
+      0.007339114788919687,
+      0.007011564448475838,
+      0.014850767329335213,
+      0.036237385123968124,
+      0.0013254614314064384,
+      0.01524758618324995,
+      0.011597799137234688,
+      0.05786474049091339,
+      0.045425135642290115,
+      -0.007072147447615862,
+      0.012836486101150513,
+      0.015163928270339966,
+      0.00632474385201931,
+      0.004869736265391111,
+      0.0019403834594413638,
+      -0.00025721488054841757,
+      0.021949924528598785,
+      0.014096145518124104,
+      -0.004371077287942171,
+      0.11922576278448105,
+      0.7858225703239441,
+      1.5231311321258545,
+      -0.8349457383155823,
+      0.9157969951629639,
+      0.9413651823997498,
+      -0.08933911472558975,
+      0.06426355987787247,
+      0.10539689660072327,
+      -1.0,
+      1.0,
+      -0.5956923365592957,
+      -0.4211772680282593,
+      1.5493718385696411,
+      -0.44371315836906433,
+      -0.13746464252471924,
+      -0.06434288620948792,
+      -0.26794669032096863,
+      0.0016419593011960387,
+      0.0028039056342095137,
+      -0.2988187074661255,
+      0.13437512516975403,
+      0.06353497505187988,
+      0.11840540170669556,
+      0.2438720017671585
+    ],
+    [
+      0.024738343432545662,
+      0.03622424975037575,
+      -0.010177179239690304,
+      0.017467224970459938,
+      -0.00921016838401556,
+      0.021441277116537094,
+      -0.012292838655412197,
+      -0.005808473564684391,
+      0.004680870566517115,
+      0.009346003644168377,
+      0.021281542256474495,
+      0.0012882864102721214,
+      0.0067742508836090565,
+      0.004944531247019768,
+      -0.011839683167636395,
+      0.002630858216434717,
+      -0.01229284331202507,
+      0.007322374731302261,
+      0.021252887323498726,
+      0.003689737292006612,
+      0.0012569853570312262,
+      0.0029255126137286425,
+      0.012130719609558582,
+      0.010652237571775913,
+      0.000579379964619875,
+      0.0007495928439311683,
+      -0.008377482183277607,
+      0.012034693732857704,
+      0.002506257500499487,
+      -0.0057907565496861935,
+      0.021128544583916664,
+      -0.011998189613223076,
+      0.016849946230649948,
+      0.02893298678100109,
+      0.0035359682515263557,
+      0.005900513846427202,
+      -0.014683551155030727,
+      -0.006820052396506071,
+      0.009046859107911587,
+      0.00456522312015295,
+      0.006217818707227707,
+      -0.004016806371510029,
+      0.0,
+      0.0038525674026459455,
+      0.42935192584991455,
+      -0.0403514988720417,
+      -0.09541110694408417,
+      -0.010508211329579353,
+      -0.09602388739585876,
+      0.013063020072877407,
+      0.05629723146557808,
+      -0.0012401685817167163,
+      -0.027477724477648735,
+      0.08463484793901443,
+      0.01637106016278267,
+      0.012944765388965607,
+      -0.04412120580673218,
+      -0.038343604654073715,
+      0.2708507478237152,
+      -0.072465680539608,
+      0.08625803142786026,
+      0.1797371655702591,
+      -0.0031560324132442474,
+      0.068974569439888,
+      0.3787021338939667,
+      -0.05548768863081932,
+      0.008611449040472507,
+      0.036007121205329895,
+      -0.000257253588642925,
+      0.08201459050178528,
+      -0.002962045604363084,
+      -0.0999923124909401,
+      0.04739772155880928,
+      -0.24786950647830963,
+      -0.7995105385780334,
+      0.5703020095825195,
+      -0.3250477910041809,
+      -0.30331331491470337,
+      -0.28584614396095276,
+      -0.16011808812618256,
+      0.26741719245910645,
+      1.0,
+      -1.0,
+      -0.36408230662345886,
+      -0.4320027232170105,
+      -0.42541810870170593,
+      1.48957359790802,
+      -0.006415580864995718,
+      -0.06659958511590958,
+      -0.16112202405929565,
+      -0.5383573770523071,
+      -0.47467687726020813,
+      -0.5964174866676331,
+      2.015587329864502,
+      -0.0952254980802536,
+      -0.06967546045780182,
+      -0.2334970235824585
+    ],
+    [
+      0.024741126224398613,
+      0.03621360659599304,
+      -0.010177340358495712,
+      0.01746377721428871,
+      -0.009212365373969078,
+      0.021445974707603455,
+      -0.012294983491301537,
+      -0.005807537119835615,
+      0.004682198166847229,
+      0.009343177080154419,
+      0.02127750962972641,
+      0.0012879775604233146,
+      0.006774494890123606,
+      0.0049442751333117485,
+      -0.011840108782052994,
+      0.0026313376147300005,
+      -0.01229498628526926,
+      0.0073230634443461895,
+      0.02124815434217453,
+      0.0036901638377457857,
+      0.0012569694081321359,
+      0.002925646724179387,
+      0.012130272574722767,
+      0.010651637800037861,
+      0.0005795457400381565,
+      0.0007495909812860191,
+      -0.008377330377697945,
+      0.012036033906042576,
+      0.002506256802007556,
+      -0.0057907383888959885,
+      0.021124664694070816,
+      -0.011996401473879814,
+      0.016848359256982803,
+      0.02893211878836155,
+      0.0035354234278202057,
+      0.005899413954466581,
+      -0.014681832864880562,
+      -0.0068202861584723,
+      0.00904745701700449,
+      0.004564229398965836,
+      0.0062174624763429165,
+      -0.004015812184661627,
+      0.0,
+      0.003852670779451728,
+      1.1365424394607544,
+      0.0018887192709371448,
+      0.04171847552061081,
+      0.08873569220304489,
+      0.7699776887893677,
+      -1.7209407091140747,
+      -0.023997429758310318,
+      -0.05334678292274475,
+      -0.16508346796035767,
+      -0.04504697397351265,
+      -0.030005011707544327,
+      -0.11453605443239212,
+      -0.017291758209466934,
+      0.015048195607960224,
+      0.8401498794555664,
+      0.16533096134662628,
+      -0.08417719602584839,
+      0.0658310204744339,
+      -0.01264955848455429,
+      -0.025768570601940155,
+      1.0792244672775269,
+      0.041943881660699844,
+      -1.160362720489502,
+      0.09250135719776154,
+      -0.00766769191250205,
+      -0.019624777138233185,
+      -0.4651191532611847,
+      0.8342268466949463,
+      0.055634755641222,
+      0.6120632886886597,
+      -0.7995638847351074,
+      1.2595382928848267,
+      0.49593910574913025,
+      -0.25246262550354004,
+      -0.23549334704875946,
+      0.10983356088399887,
+      0.4636094272136688,
+      1.0,
+      -1.0,
+      1.2179622650146484,
+      -0.34218209981918335,
+      -0.4191921353340149,
+      -0.4070242941379547,
+      -0.0021232026629149914,
+      -0.039174389094114304,
+      -0.25429248809814453,
+      0.6874456405639648,
+      -0.4398075342178345,
+      -0.5066494941711426,
+      0.46695476770401,
+      -0.0629197508096695,
+      -0.05860639736056328,
+      -0.2726597189903259
+    ],
+    [
+      0.024735774844884872,
+      0.036209847778081894,
+      -0.010175483301281929,
+      0.01746188849210739,
+      -0.009213329292833805,
+      0.02144269458949566,
+      -0.012295863591134548,
+      -0.005808942019939423,
+      0.0046827481128275394,
+      0.009342005476355553,
+      0.021280864253640175,
+      0.0012881122529506683,
+      0.006774594075977802,
+      0.004944170825183392,
+      -0.011840281076729298,
+      0.0026315338909626007,
+      -0.012295867316424847,
+      0.007323346100747585,
+      0.02124622091650963,
+      0.0036907659377902746,
+      0.0012571830302476883,
+      0.0029247866477817297,
+      0.012126658111810684,
+      0.010651393793523312,
+      0.0005796162295155227,
+      0.0007495902827940881,
+      -0.00837726891040802,
+      0.012033075094223022,
+      0.0025066868402063847,
+      -0.0057925027795135975,
+      0.021123073995113373,
+      -0.011995670385658741,
+      0.016847707331180573,
+      0.028931766748428345,
+      0.003534687217324972,
+      0.005900816526263952,
+      -0.014681130647659302,
+      -0.006820383481681347,
+      0.009047442115843296,
+      0.0045637767761945724,
+      0.006215717643499374,
+      -0.004015140235424042,
+      0.0,
+      0.003852713154628873,
+      0.1862744241952896,
+      0.0998411625623703,
+      0.6367217302322388,
+      -0.043202877044677734,
+      -0.5337624549865723,
+      0.4347255825996399,
+      -0.05406591668725014,
+      0.06923278421163559,
+      -0.042229749262332916,
+      -0.03584448620676994,
+      -0.033132102340459824,
+      -0.4167589545249939,
+      -0.14632532000541687,
+      0.0015455386601388454,
+      0.4278617799282074,
+      -0.12480654567480087,
+      -0.8713667392730713,
+      -0.8678640723228455,
+      0.035983599722385406,
+      -0.03203992918133736,
+      0.27517494559288025,
+      -0.05867748707532883,
+      1.1644911766052246,
+      0.23746031522750854,
+      -0.005881285760551691,
+      -0.16388845443725586,
+      0.12234528362751007,
+      -0.5249564051628113,
+      0.04955332353711128,
+      0.659130334854126,
+      -0.7993840575218201,
+      1.2972480058670044,
+      0.5408803820610046,
+      -0.1496136486530304,
+      -0.13356921076774597,
+      0.28284063935279846,
+      0.08684159070253372,
+      1.0,
+      -1.0,
+      0.7469359636306763,
+      -0.42067965865135193,
+      0.02864828333258629,
+      -0.37997299432754517,
+      0.1884169727563858,
+      -0.01688922941684723,
+      -0.24490223824977875,
+      0.5363933444023132,
+      -0.4411742687225342,
+      0.04775163158774376,
+      -0.07469048351049423,
+      0.08701961487531662,
+      -0.029903925955295563,
+      -0.2665250897407532
+    ],
+    [
+      0.07090198993682861,
+      0.04257176071405411,
+      -0.01252458244562149,
+      -0.00017894826305564493,
+      0.1010085716843605,
+      0.01940259523689747,
+      -0.012449478730559349,
+      -0.016994697973132133,
+      0.004683495964854956,
+      -0.003426599083468318,
+      -0.0030212870333343744,
+      -0.0017360708443447948,
+      0.026941025629639626,
+      -0.005220905411988497,
+      -0.012086248956620693,
+      0.0026309548411518335,
+      -0.0900026261806488,
+      0.010584348812699318,
+      -0.05217846482992172,
+      -0.13476236164569855,
+      0.02210889384150505,
+      0.002925032516941428,
+      0.037918128073215485,
+      0.008427341468632221,
+      -0.0004723044403363019,
+      0.05667971074581146,
+      -0.008244852535426617,
+      0.03889818117022514,
+      -0.001513418392278254,
+      0.0005362158408388495,
+      0.01452670618891716,
+      -0.0525524839758873,
+      0.015985330566763878,
+      -0.17659136652946472,
+      -0.048024848103523254,
+      -0.005208219401538372,
+      0.020477455109357834,
+      0.03376325964927673,
+      0.01023687794804573,
+      0.00456311134621501,
+      -0.06388013809919357,
+      0.019643381237983704,
+      0.0,
+      0.01988906040787697,
+      0.026477068662643433,
+      -0.008232873864471912,
+      -0.056339114904403687,
+      0.0038250507786870003,
+      -0.0097910575568676,
+      0.00437962869182229,
+      -0.07270272076129913,
+      0.022794656455516815,
+      0.07942475378513336,
+      -0.02018466219305992,
+      0.000175331617356278,
+      -0.041060350835323334,
+      -0.04725661128759384,
+      0.0006471208180300891,
+      0.05729293450713158,
+      0.04014363884925842,
+      0.013660267926752567,
+      0.04530179873108864,
+      -0.026389475911855698,
+      -0.041435614228248596,
+      0.05407055839896202,
+      -0.0030152590479701757,
+      -0.04237871244549751,
+      -0.031322721391916275,
+      0.010756678879261017,
+      -0.0018262146040797234,
+      0.015286638401448727,
+      -0.020333878695964813,
+      0.06675571203231812,
+      -0.16920994222164154,
+      -0.30531778931617737,
+      0.15801063179969788,
+      -0.19589367508888245,
+      0.15845300257205963,
+      0.14088045060634613,
+      -0.41990864276885986,
+      -0.4330819845199585,
+      0.3787058889865875,
+      -0.3787058889865875,
+      -0.5705204606056213,
+      1.931974172592163,
+      -0.5799914598464966,
+      -0.458612322807312,
+      0.029561663046479225,
+      -0.035674646496772766,
+      -0.2702912986278534,
+      -0.5374611616134644,
+      1.757780909538269,
+      -0.4803786277770996,
+      -0.45133060216903687,
+      0.09994572401046753,
+      -0.010361183434724808,
+      -0.2751627564430237
+    ],
+    [
+      0.02474040724337101,
+      0.03621295467019081,
+      -0.010177350603044033,
+      0.017463522031903267,
+      -0.009212496690452099,
+      0.021446235477924347,
+      -0.012295101769268513,
+      -0.005807637702673674,
+      0.004682271741330624,
+      0.009343021549284458,
+      0.02127728797495365,
+      0.0012879606802016497,
+      0.006774507462978363,
+      0.004944261629134417,
+      -0.011840131133794785,
+      0.002631364157423377,
+      -0.012295104563236237,
+      0.007323101628571749,
+      0.021247899159789085,
+      0.0036902446299791336,
+      0.0012569684768095613,
+      0.0029255507979542017,
+      0.012129788286983967,
+      0.010651606135070324,
+      0.0005795551114715636,
+      0.0007495908648706973,
+      -0.008377322927117348,
+      0.012035638093948364,
+      0.0025062570348381996,
+      -0.005790868308395147,
+      0.021124452352523804,
+      -0.01199630368500948,
+      0.01684827171266079,
+      0.028932074084877968,
+      0.00353532494045794,
+      0.005899602547287941,
+      -0.014681738801300526,
+      -0.0068202996626496315,
+      0.009047489613294601,
+      0.0045641688629984856,
+      0.006217228248715401,
+      -0.004015721846371889,
+      0.0,
+      0.003852676833048463,
+      -1.6111078262329102,
+      0.10725045949220657,
+      0.18355758488178253,
+      0.012013963423669338,
+      0.19146862626075745,
+      0.6623913049697876,
+      0.08324937522411346,
+      0.016949066892266273,
+      0.26969096064567566,
+      0.12237180769443512,
+      0.03141011297702789,
+      0.45853057503700256,
+      0.17883719503879547,
+      0.012444494292140007,
+      -1.9806783199310303,
+      -3.124516661046073e-05,
+      0.01729276403784752,
+      -0.02986331656575203,
+      0.10462944209575653,
+      0.026662923395633698,
+      -2.289499044418335,
+      0.040084145963191986,
+      0.13041797280311584,
+      -0.02988278865814209,
+      0.013246025890111923,
+      -0.045384764671325684,
+      0.1008068174123764,
+      0.1728404462337494,
+      0.04592768847942352,
+      0.7235862016677856,
+      -0.7995398640632629,
+      1.3489280939102173,
+      0.6024001836776733,
+      -0.15007376670837402,
+      -0.1340222954750061,
+      0.5513845086097717,
+      -0.37515175342559814,
+      1.0,
+      -1.0,
+      -0.40942415595054626,
+      -0.37357527017593384,
+      -0.3642358183860779,
+      1.5134812593460083,
+      -0.11629074811935425,
+      -0.06730420142412186,
+      -0.2542961835861206,
+      0.5246950387954712,
+      -0.17631469666957855,
+      -0.042634014040231705,
+      -0.2647397220134735,
+      0.059713106602430344,
+      -0.036492135375738144,
+      -0.18934282660484314
+    ],
+    [
+      -0.0345170684158802,
+      0.02310672402381897,
+      -0.018315143883228302,
+      0.001656923326663673,
+      0.05288798734545708,
+      -0.028324024751782417,
+      -0.021871617063879967,
+      -0.0017501604743301868,
+      0.004683027975261211,
+      -0.020301781594753265,
+      -0.02494186908006668,
+      0.0012883187737315893,
+      -0.036833059042692184,
+      -0.00619342690333724,
+      0.024898739531636238,
+      0.002631634008139372,
+      -0.025394072756171227,
+      0.0053354171104729176,
+      -0.015717828646302223,
+      -0.018406784161925316,
+      0.0012574575375765562,
+      -0.022843463346362114,
+      -0.0321417972445488,
+      -0.019775979220867157,
+      0.0005796520272269845,
+      0.12194053083658218,
+      -0.011175855994224548,
+      0.012031571939587593,
+      -0.0385013148188591,
+      0.06821005046367645,
+      -0.005157496314495802,
+      -0.012973897159099579,
+      0.026162372902035713,
+      0.007355832494795322,
+      0.0035343128256499767,
+      -0.011082273907959461,
+      0.02756327949464321,
+      0.006507858168333769,
+      -0.008847939781844616,
+      -0.0017959342803806067,
+      -0.010071862488985062,
+      0.03285564109683037,
+      0.0,
+      -0.015102262608706951,
+      -0.013056321069598198,
+      -0.022059276700019836,
+      -0.04052990674972534,
+      -0.009019890800118446,
+      -0.012876318767666817,
+      0.0013580340892076492,
+      0.022363217547535896,
+      -0.001995250815525651,
+      -0.018792273476719856,
+      0.010005173273384571,
+      0.005609375424683094,
+      0.014187080785632133,
+      0.027494145557284355,
+      0.0013249580515548587,
+      0.027465695515275,
+      0.0031777636613696814,
+      0.05646514147520065,
+      0.04452766850590706,
+      -0.007068768609315157,
+      0.017164060845971107,
+      0.015504688024520874,
+      0.00788804516196251,
+      -0.0009084922494366765,
+      0.0006253618048503995,
+      0.004917929880321026,
+      0.029159503057599068,
+      0.014097519218921661,
+      0.00028963806107640266,
+      0.11135701090097427,
+      -0.4724770188331604,
+      0.37109097838401794,
+      -0.7352896928787231,
+      -0.41152504086494446,
+      -0.8712673783302307,
+      -0.8769644498825073,
+      -0.2484864741563797,
+      -0.19558098912239075,
+      -0.8619489073753357,
+      0.8619489073753357,
+      -0.474700003862381,
+      -0.08494807034730911,
+      -0.4511648118495941,
+      -0.45868492126464844,
+      0.013425967656075954,
+      0.06801171600818634,
+      2.4278619289398193,
+      -0.5028345584869385,
+      -0.07936473935842514,
+      -0.4352947175502777,
+      -0.45838305354118347,
+      -0.013814829289913177,
+      0.08065196871757507,
+      2.4123470783233643
+    ]
+  ],
+  "feature_space": "gamma_bridge_candidate_features_standardized",
+  "mean": [
+    -0.00599669199436903,
+    -0.005273282062262297,
+    0.0010977801866829395,
+    -0.004307497292757034,
+    0.00268907705321908,
+    -0.003318972187116742,
+    0.0032174321822822094,
+    0.00011752867430914193,
+    -1.8590550098451786e-05,
+    -0.00022674772480968386,
+    -0.0010296432301402092,
+    -3.647532867034897e-05,
+    -0.0011626597261056304,
+    -5.842492828378454e-05,
+    0.0011175761464983225,
+    -5.741518634749809e-06,
+    0.00396505743265152,
+    -0.0002565514587331563,
+    -0.003099123714491725,
+    -0.0010616652434691787,
+    -3.9922131691128016e-05,
+    -1.1785114111262374e-05,
+    -0.0005439802189357579,
+    -0.00037166880792938173,
+    -1.7142048818641342e-05,
+    -7.614040077896789e-05,
+    0.00224578776396811,
+    -0.0011753506259992719,
+    -0.0003045347984880209,
+    0.0012515803100541234,
+    -0.0011737565509974957,
+    0.0013446223456412554,
+    -0.0030460318084806204,
+    -0.001208225847221911,
+    -1.249999968422344e-05,
+    -5.034877540310845e-05,
+    0.0018548894440755248,
+    0.00024907669285312295,
+    -0.00027456512907519937,
+    -2.0833333110203966e-05,
+    -0.0001970128359971568,
+    0.00028412838582880795,
+    0.0,
+    -0.0001971757155843079,
+    0.004726041574031115,
+    0.0011245053028687835,
+    0.005646257661283016,
+    0.00025026159710250795,
+    0.0003995164588559419,
+    -0.00040965224616229534,
+    -0.0016267666360363364,
+    0.00011894854833371937,
+    0.0011104217264801264,
+    -0.0012469531502574682,
+    -0.00028974603628739715,
+    -0.0033793796319514513,
+    -0.007153407670557499,
+    -2.9227619961602613e-05,
+    -0.003076935652643442,
+    -0.0012055790284648538,
+    -0.01535101793706417,
+    -0.012245039455592632,
+    0.0003307861334178597,
+    -0.0012405563611537218,
+    -0.0034418790601193905,
+    -0.0007909070700407028,
+    -0.0011471458710730076,
+    -0.000525105744600296,
+    2.247817064926494e-06,
+    -0.001028562313877046,
+    -0.001102387672290206,
+    0.0009556915028952062,
+    1.0000001192092896,
+    1.832821249961853,
+    0.564624547958374,
+    0.5596617460250854,
+    1.1249192953109741,
+    1.1692897081375122,
+    1.1636229753494263,
+    1.1912388801574707,
+    1.1767337322235107,
+    0.5,
+    0.5,
+    0.2732958197593689,
+    0.18655000627040863,
+    0.2713874876499176,
+    0.1751375049352646,
+    0.019837500527501106,
+    0.005524999927729368,
+    0.06826666742563248,
+    0.26348334550857544,
+    0.18479999899864197,
+    0.2786875069141388,
+    0.17579583823680878,
+    0.01992916688323021,
+    0.0067125000059604645,
+    0.07059166580438614
+  ],
+  "scale": [
+    0.24242541193962097,
+    0.1455788016319275,
+    0.10788024961948395,
+    0.24664822220802307,
+    0.29194125533103943,
+    0.15478985011577606,
+    0.2617562711238861,
+    0.020233100280165672,
+    0.003971043974161148,
+    0.024261780083179474,
+    0.04838274046778679,
+    0.028313767164945602,
+    0.1716553419828415,
+    0.011815190315246582,
+    0.09439902007579803,
+    0.002182167721912265,
+    0.3225747346878052,
+    0.0350378043949604,
+    0.14582842588424683,
+    0.2877226769924164,
+    0.03175773099064827,
+    0.004028955940157175,
+    0.04484420642256737,
+    0.03488549590110779,
+    0.02958429791033268,
+    0.10157051682472229,
+    0.2680514454841614,
+    0.09766097366809845,
+    0.12150826305150986,
+    0.21612229943275452,
+    0.05555625632405281,
+    0.11206647008657455,
+    0.18074087798595428,
+    0.04175449162721634,
+    0.003535505384206772,
+    0.008532353676855564,
+    0.12631110846996307,
+    0.0365266427397728,
+    0.030352918431162834,
+    0.004564286675304174,
+    0.031687308102846146,
+    0.07074175775051117,
+    0.0,
+    0.0511874184012413,
+    0.2973731756210327,
+    0.05497441440820694,
+    0.13802340626716614,
+    0.0692427009344101,
+    0.19373922049999237,
+    0.12477122992277145,
+    0.10120471566915512,
+    0.018481161445379257,
+    0.054765813052654266,
+    0.16992782056331635,
+    0.041322920471429825,
+    0.22753137350082397,
+    0.19739897549152374,
+    0.02205478772521019,
+    0.20179711282253265,
+    0.10392849147319794,
+    0.2652525007724762,
+    0.2695273458957672,
+    0.04677587375044823,
+    0.0966278612613678,
+    0.22702844440937042,
+    0.12505483627319336,
+    0.23554319143295288,
+    0.27060315012931824,
+    0.00873784814029932,
+    0.04685182496905327,
+    0.07821515202522278,
+    0.21866220235824585,
+    9.822898761058241e-08,
+    0.4162054657936096,
+    0.7062485218048096,
+    0.6703609228134155,
+    0.562805712223053,
+    0.3836177885532379,
+    0.38716092705726624,
+    0.3116775155067444,
+    0.32767924666404724,
+    0.5,
+    0.5,
+    0.4451836049556732,
+    0.389858216047287,
+    0.44503694772720337,
+    0.38018324971199036,
+    0.13959091901779175,
+    0.07414662837982178,
+    0.2523587942123413,
+    0.4411289095878601,
+    0.3877405822277069,
+    0.4485016167163849,
+    0.3809727132320404,
+    0.13989754021167755,
+    0.08159756660461426,
+    0.2560901343822479
+  ],
+  "diagnostics": {
+    "readiness": "usable",
+    "n_clusters": 12,
+    "counts": [
+      1477,
+      38434,
+      26140,
+      40247,
+      11235,
+      10915,
+      10284,
+      15003,
+      18355,
+      32363,
+      14244,
+      21303
+    ],
+    "silhouette_sample": 0.05643078684806824
+  },
+  "source_bridge_count": 240000,
+  "source_readiness": "usable",
+  "claim_scope": "Gamma tokens are bridge-family codewords learned from V2 transfer-bridge candidate features. They are not proof of physical equivalence and do not by themselves solve a global GW transport plan."
+}

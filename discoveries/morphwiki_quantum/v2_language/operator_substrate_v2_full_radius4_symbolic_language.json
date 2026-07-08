@@ -1,0 +1,36 @@
+{
+  "report_type": "operator_substrate_v2_symbolic_language",
+  "readiness": "usable",
+  "prefix": "operator_substrate_v2_full_radius4",
+  "sample_rows": 500000,
+  "edge_sample_per_type": 120000,
+  "outputs": {
+    "operator_alphabet": "discoveries/operator_substrate_v2_full_radius4_geometric_operator_alphabet.json",
+    "operator_signature_names": "discoveries/operator_substrate_v2_full_radius4_operator_signature_names.json",
+    "morphism_state_alphabet": "discoveries/operator_substrate_v2_full_radius4_morphism_state_alphabet.json",
+    "substrate_signature_names": "discoveries/operator_substrate_v2_full_radius4_substrate_signature_names.json",
+    "lambda_families": "discoveries/operator_substrate_v2_full_radius4_lambda_families.json",
+    "apparatus_regimes": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes.json",
+    "apparatus_signature_names": "discoveries/operator_substrate_v2_full_radius4_apparatus_signature_names.json",
+    "transition_operator_language": "discoveries/operator_substrate_v2_full_radius4_transition_operator_language.json",
+    "noether_orbit_alphabet": "discoveries/operator_substrate_v2_full_radius4_noether_orbit_alphabet.json",
+    "derivation_fragments": "discoveries/operator_substrate_v2_full_radius4_derivation_fragments.json",
+    "morphism_periodic_table": "discoveries/operator_substrate_v2_full_radius4_morphism_periodic_table.json",
+    "edge_language_report": "discoveries/operator_substrate_v2_full_radius4_edge_language_report.json",
+    "gamma_bridge_alphabet": "discoveries/operator_substrate_v2_full_radius4_gamma_bridge_alphabet.json",
+    "assignments_npz": "discoveries/operator_substrate_v2_full_radius4_symbolic_assignments.npz",
+    "markdown": "discoveries/operator_substrate_v2_full_radius4_symbolic_language.md"
+  },
+  "language_counts": {
+    "omega": 32,
+    "xi": 18,
+    "lambda": 18,
+    "alpha": 18,
+    "tau": 8,
+    "j": 6,
+    "pi": 80,
+    "gamma": 12,
+    "periodic_cells": 512
+  },
+  "claim_scope": "V2-native symbolic language learned from operator/substrate matrices, typed graph edges, directed sequence evidence and variational first-variation diagnostics. Tokens are machine language for mechanism construction, not human field names."
+}

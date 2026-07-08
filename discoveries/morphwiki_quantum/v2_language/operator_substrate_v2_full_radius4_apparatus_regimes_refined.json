@@ -1,0 +1,2629 @@
+{
+  "report_type": "operator_substrate_v2_refined_apparatus_regimes",
+  "readiness": "usable",
+  "source_language_json": "discoveries/operator_substrate_v2_full_radius4_symbolic_language.json",
+  "source_assignments_npz": "discoveries/operator_substrate_v2_full_radius4_symbolic_full_assignments.npz",
+  "rows_assigned": 14523959,
+  "original_alpha_tokens": 18,
+  "refined_alpha_tokens": 19,
+  "split_parent_count": 1,
+  "outputs": {
+    "json": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined.json",
+    "markdown": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined.md",
+    "assignments_npz": "discoveries/operator_substrate_v2_full_radius4_apparatus_regimes_refined_assignments.npz"
+  },
+  "thresholds": {
+    "large_fraction_threshold": 0.05,
+    "entropy_threshold": 0.55,
+    "min_child_fraction": 0.025,
+    "min_entropy_reduction": 0.04,
+    "min_silhouette": -0.02
+  },
+  "tokens": [
+    {
+      "refined_label": 0,
+      "token": "A00",
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+      "parent_token": "A00",
+      "parent_cluster": 4,
+      "child": null,
+      "support": 6151464,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.42353906397009244
+    },
+    {
+      "refined_label": 1,
+      "token": "A01",
+      "signature_name": "A:Ω_derivative_graph-Ξ_graph_closure-R_transport-Γ_lo",
+      "parent_token": "A01",
+      "parent_cluster": 11,
+      "child": null,
+      "support": 1157760,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.07971380255204522
+    },
+    {
+      "refined_label": 2,
+      "token": "A02",
+      "signature_name": "A:Ω_spectral-Ξ_diffuse-R_spectral-Γ_lo",
+      "parent_token": "A02",
+      "parent_cluster": 1,
+      "child": null,
+      "support": 1104645,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.076056741829139
+    },
+    {
+      "refined_label": 3,
+      "token": "A03.00",
+      "signature_name": "A03:Ω_ω03-Ξ_ξ04-R_unclassified",
+      "parent_token": "A03",
+      "parent_cluster": 0,
+      "child": 0,
+      "support": 227282,
+      "fraction_of_parent": 0.21550671319123113,
+      "fraction_of_corpus": 0.015648763536168064,
+      "top_features": [
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 1.401348352432251
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 1.0529359579086304
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.5123997926712036
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.46185070276260376
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.3081313669681549
+        },
+        {
+          "feature": "omega:11",
+          "weight": 0.2761651277542114
+        },
+        {
+          "feature": "xi:12",
+          "weight": 0.26731812953948975
+        },
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 0.2665552496910095
+        },
+        {
+          "feature": "xi:2",
+          "weight": 0.24067112803459167
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.2265464812517166
+        }
+      ]
+    },
+    {
+      "refined_label": 4,
+      "token": "A03.01",
+      "signature_name": "A03:Ω_ω03-Ξ_ξ01-R_unclassified",
+      "parent_token": "A03",
+      "parent_cluster": 0,
+      "child": 1,
+      "support": 827358,
+      "fraction_of_parent": 0.7844932868087688,
+      "fraction_of_corpus": 0.056965046513832766,
+      "top_features": [
+        {
+          "feature": "xi:2",
+          "weight": 0.518586277961731
+        },
+        {
+          "feature": "omega:11",
+          "weight": 0.34437745809555054
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.34191247820854187
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.2592181861400604
+        },
+        {
+          "feature": "route:constraint_closure",
+          "weight": 0.14277218282222748
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.1243477389216423
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.11506780982017517
+        },
+        {
+          "feature": "xi:0",
+          "weight": 0.09845335781574249
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.09262827038764954
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.0727803036570549
+        }
+      ]
+    },
+    {
+      "refined_label": 5,
+      "token": "A04",
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_closure_field_carrier_coordinate-R_boundary-Γ_lo",
+      "parent_token": "A04",
+      "parent_cluster": 13,
+      "child": null,
+      "support": 866698,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.05967367437487258
+    },
+    {
+      "refined_label": 6,
+      "token": "A05",
+      "signature_name": "A:Ω_derivative-Ξ_diffuse-R_transport-Γ_lo",
+      "parent_token": "A05",
+      "parent_cluster": 3,
+      "child": null,
+      "support": 785279,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.054067833708426195
+    },
+    {
+      "refined_label": 7,
+      "token": "A06",
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_markov-R_mixed-Γ_lo",
+      "parent_token": "A06",
+      "parent_cluster": 2,
+      "child": null,
+      "support": 659591,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.04541399490318032
+    },
+    {
+      "refined_label": 8,
+      "token": "A07",
+      "signature_name": "A:Ω_spectral_readout_closure-Ξ_selector_hilbert_field_carrier-R_spectral-Γ_lo",
+      "parent_token": "A07",
+      "parent_cluster": 9,
+      "child": null,
+      "support": 537584,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.03701359939118528
+    },
+    {
+      "refined_label": 9,
+      "token": "A08",
+      "signature_name": "A:Ω_markov_integral-Ξ_markov-R_mixed-Γ_lo",
+      "parent_token": "A08",
+      "parent_cluster": 15,
+      "child": null,
+      "support": 503973,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.03469942320823131
+    },
+    {
+      "refined_label": 10,
+      "token": "A09",
+      "signature_name": "A:Ω_readout_derivative_closure-Ξ_diffuse-R_transport-Γ_lo",
+      "parent_token": "A09",
+      "parent_cluster": 8,
+      "child": null,
+      "support": 389797,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.026838205753679144
+    },
+    {
+      "refined_label": 11,
+      "token": "A10",
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_spectral-Γ_lo",
+      "parent_token": "A10",
+      "parent_cluster": 6,
+      "child": null,
+      "support": 295950,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.020376675533165578
+    },
+    {
+      "refined_label": 12,
+      "token": "A11",
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_reaction_hilbert-R_mixed-Γ_lo",
+      "parent_token": "A11",
+      "parent_cluster": 10,
+      "child": null,
+      "support": 246763,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.016990064485860913
+    },
+    {
+      "refined_label": 13,
+      "token": "A12",
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_positivity-R_mixed-Γ_lo",
+      "parent_token": "A12",
+      "parent_cluster": 12,
+      "child": null,
+      "support": 236455,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.016280340642658108
+    },
+    {
+      "refined_label": 14,
+      "token": "A13",
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_protocol-Γ_lo",
+      "parent_token": "A13",
+      "parent_cluster": 16,
+      "child": null,
+      "support": 232938,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.016038189036474144
+    },
+    {
+      "refined_label": 15,
+      "token": "A14",
+      "signature_name": "A:Ω_closure_integral_spectral-Ξ_normalization_selector_boundary-R_closure-Γ_lo",
+      "parent_token": "A14",
+      "parent_cluster": 7,
+      "child": null,
+      "support": 143926,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.00990955702918192
+    },
+    {
+      "refined_label": 16,
+      "token": "A15",
+      "signature_name": "A:Ω_protocol_commutator-Ξ_diffuse-R_protocol-Γ_lo",
+      "parent_token": "A15",
+      "parent_cluster": 14,
+      "child": null,
+      "support": 53252,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.0036664934127120575
+    },
+    {
+      "refined_label": 17,
+      "token": "A16",
+      "signature_name": "A:Ω_boundary_derivative_readout-Ξ_diffuse-R_boundary-Γ_lo",
+      "parent_token": "A16",
+      "parent_cluster": 5,
+      "child": null,
+      "support": 51680,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.003558258461071117
+    },
+    {
+      "refined_label": 18,
+      "token": "A17",
+      "signature_name": "A:Ω_readout_derivative_closure-Ξ_selector_coordinate_field_carrier-R_transport-Γ_lo",
+      "parent_token": "A17",
+      "parent_cluster": 17,
+      "child": null,
+      "support": 51564,
+      "fraction_of_parent": 1.0,
+      "fraction_of_corpus": 0.003550271658023821
+    }
+  ],
+  "parents": [
+    {
+      "parent_cluster": 4,
+      "parent_token": "A00",
+      "parent_signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+      "support": 6151464,
+      "fraction": 0.42353906397009244,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5862769986828571,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω00",
+            "count": 94190
+          },
+          {
+            "token": "Ω02",
+            "count": 23216
+          },
+          {
+            "token": "Ω08",
+            "count": 14617
+          },
+          {
+            "token": "Ω06",
+            "count": 11689
+          },
+          {
+            "token": "Ω03",
+            "count": 10713
+          },
+          {
+            "token": "Ω07",
+            "count": 10344
+          },
+          {
+            "token": "Ω11",
+            "count": 5731
+          },
+          {
+            "token": "Ω17",
+            "count": 5012
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ00",
+            "count": 79317
+          },
+          {
+            "token": "Ξ01",
+            "count": 32374
+          },
+          {
+            "token": "Ξ04",
+            "count": 25469
+          },
+          {
+            "token": "Ξ02",
+            "count": 25419
+          },
+          {
+            "token": "Ξ07",
+            "count": 19799
+          },
+          {
+            "token": "Ξ09",
+            "count": 5139
+          },
+          {
+            "token": "Ξ10",
+            "count": 4449
+          },
+          {
+            "token": "Ξ06",
+            "count": 3039
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "unclassified",
+            "count": 98382
+          },
+          {
+            "route": "constraint_closure",
+            "count": 49743
+          },
+          {
+            "route": "spectral_operator",
+            "count": 23681
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 16458
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 6910
+          },
+          {
+            "route": "transport_flow",
+            "count": 4253
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 573
+          }
+        ],
+        "omega_entropy_norm": 0.6143984491553052,
+        "xi_entropy_norm": 0.6413688205314063,
+        "route_entropy_norm": 0.7030904667275728,
+        "sample_joint_entropy_norm": 0.6723416700734853,
+        "parent_alpha_labels_seen": [
+          4
+        ]
+      },
+      "decision": "kept",
+      "reason": "candidate splits failed support, silhouette, or entropy-reduction gates",
+      "candidate_splits": [
+        {
+          "k": 2,
+          "silhouette": 0.39521297812461853,
+          "min_child_fraction": 0.02871,
+          "entropy_reduction": 0.01705897386126981,
+          "score": 0.3922719519858883
+        },
+        {
+          "k": 3,
+          "silhouette": 0.2588415741920471,
+          "min_child_fraction": 0.01814,
+          "entropy_reduction": 0.047476223756007775,
+          "score": 0.2763177979480549
+        },
+        {
+          "k": 4,
+          "silhouette": 0.1639946848154068,
+          "min_child_fraction": 0.012325,
+          "entropy_reduction": 0.11317503889040774,
+          "score": 0.23716972370581454
+        },
+        {
+          "k": 5,
+          "silhouette": 0.26130542159080505,
+          "min_child_fraction": 0.01439,
+          "entropy_reduction": 0.0875849062777083,
+          "score": 0.2988903278685134
+        },
+        {
+          "k": 6,
+          "silhouette": 0.17029443383216858,
+          "min_child_fraction": 0.01327,
+          "entropy_reduction": 0.24230594784620607,
+          "score": 0.35260038167837465
+        },
+        {
+          "k": 7,
+          "silhouette": 0.1832958459854126,
+          "min_child_fraction": 0.005355,
+          "entropy_reduction": 0.18039163754218435,
+          "score": 0.29368748352759694
+        },
+        {
+          "k": 8,
+          "silhouette": 0.05672235041856766,
+          "min_child_fraction": 0.001105,
+          "entropy_reduction": 0.3398578271259669,
+          "score": 0.31658017754453455
+        }
+      ]
+    },
+    {
+      "parent_cluster": 11,
+      "parent_token": "A01",
+      "parent_signature_name": "A:Ω_derivative_graph-Ξ_graph_closure-R_transport-Γ_lo",
+      "support": 1157760,
+      "fraction": 0.07971380255204522,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.4314031161454075,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω04",
+            "count": 136217
+          },
+          {
+            "token": "Ω01",
+            "count": 10607
+          },
+          {
+            "token": "Ω06",
+            "count": 7929
+          },
+          {
+            "token": "Ω13",
+            "count": 5599
+          },
+          {
+            "token": "Ω11",
+            "count": 5452
+          },
+          {
+            "token": "Ω02",
+            "count": 4685
+          },
+          {
+            "token": "Ω15",
+            "count": 4676
+          },
+          {
+            "token": "Ω31",
+            "count": 3921
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ06",
+            "count": 156135
+          },
+          {
+            "token": "Ξ05",
+            "count": 8487
+          },
+          {
+            "token": "Ξ01",
+            "count": 5531
+          },
+          {
+            "token": "Ξ04",
+            "count": 4993
+          },
+          {
+            "token": "Ξ07",
+            "count": 4930
+          },
+          {
+            "token": "Ξ03",
+            "count": 4811
+          },
+          {
+            "token": "Ξ02",
+            "count": 4172
+          },
+          {
+            "token": "Ξ09",
+            "count": 3248
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "transport_flow",
+            "count": 151061
+          },
+          {
+            "route": "spectral_operator",
+            "count": 20599
+          },
+          {
+            "route": "constraint_closure",
+            "count": 15531
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 11481
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 952
+          },
+          {
+            "route": "unclassified",
+            "count": 233
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 143
+          }
+        ],
+        "omega_entropy_norm": 0.4407717671915653,
+        "xi_entropy_norm": 0.35792068353096085,
+        "route_entropy_norm": 0.4353076828749819,
+        "sample_joint_entropy_norm": 0.5042871699042728,
+        "parent_alpha_labels_seen": [
+          11
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 1,
+      "parent_token": "A02",
+      "parent_signature_name": "A:Ω_spectral-Ξ_diffuse-R_spectral-Γ_lo",
+      "support": 1104645,
+      "fraction": 0.076056741829139,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.47052160616891164,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω01",
+            "count": 165234
+          },
+          {
+            "token": "Ω18",
+            "count": 18052
+          },
+          {
+            "token": "Ω11",
+            "count": 4726
+          },
+          {
+            "token": "Ω21",
+            "count": 3571
+          },
+          {
+            "token": "Ω15",
+            "count": 1745
+          },
+          {
+            "token": "Ω16",
+            "count": 1390
+          },
+          {
+            "token": "Ω25",
+            "count": 634
+          },
+          {
+            "token": "Ω13",
+            "count": 592
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ00",
+            "count": 56173
+          },
+          {
+            "token": "Ξ01",
+            "count": 36796
+          },
+          {
+            "token": "Ξ02",
+            "count": 24343
+          },
+          {
+            "token": "Ξ04",
+            "count": 20365
+          },
+          {
+            "token": "Ξ07",
+            "count": 18603
+          },
+          {
+            "token": "Ξ05",
+            "count": 16853
+          },
+          {
+            "token": "Ξ06",
+            "count": 7326
+          },
+          {
+            "token": "Ξ03",
+            "count": 7025
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "spectral_operator",
+            "count": 198606
+          },
+          {
+            "route": "constraint_closure",
+            "count": 1142
+          },
+          {
+            "route": "transport_flow",
+            "count": 139
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 75
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 33
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 5
+          }
+        ],
+        "omega_entropy_norm": 0.23276122963810095,
+        "xi_entropy_norm": 0.7423421594768628,
+        "route_entropy_norm": 0.02575950630651811,
+        "sample_joint_entropy_norm": 0.5729786436786667,
+        "parent_alpha_labels_seen": [
+          1
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 0,
+      "parent_token": "A03",
+      "parent_signature_name": "A:Ω_readout-Ξ_selector_hilbert_field_carrier-R_mixed-Γ_lo",
+      "support": 1054640,
+      "fraction": 0.07261381005000082,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5782253313522459,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω03",
+            "count": 88143
+          },
+          {
+            "token": "Ω02",
+            "count": 21260
+          },
+          {
+            "token": "Ω06",
+            "count": 18083
+          },
+          {
+            "token": "Ω14",
+            "count": 13843
+          },
+          {
+            "token": "Ω09",
+            "count": 12757
+          },
+          {
+            "token": "Ω13",
+            "count": 9221
+          },
+          {
+            "token": "Ω05",
+            "count": 7791
+          },
+          {
+            "token": "Ω11",
+            "count": 4964
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ01",
+            "count": 123854
+          },
+          {
+            "token": "Ξ02",
+            "count": 28209
+          },
+          {
+            "token": "Ξ04",
+            "count": 14086
+          },
+          {
+            "token": "Ξ07",
+            "count": 9707
+          },
+          {
+            "token": "Ξ09",
+            "count": 6695
+          },
+          {
+            "token": "Ξ05",
+            "count": 5241
+          },
+          {
+            "token": "Ξ10",
+            "count": 3963
+          },
+          {
+            "token": "Ξ03",
+            "count": 2130
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "unclassified",
+            "count": 77584
+          },
+          {
+            "route": "constraint_closure",
+            "count": 43705
+          },
+          {
+            "route": "spectral_operator",
+            "count": 34087
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 20593
+          },
+          {
+            "route": "transport_flow",
+            "count": 17644
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 5927
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 460
+          }
+        ],
+        "omega_entropy_norm": 0.6187091801086357,
+        "xi_entropy_norm": 0.4843896272182529,
+        "route_entropy_norm": 0.8056775347892869,
+        "sample_joint_entropy_norm": 0.6615690143971626,
+        "parent_alpha_labels_seen": [
+          0
+        ]
+      },
+      "decision": "split",
+      "reason": "large/high-entropy parent passed child support and entropy gates",
+      "candidate_splits": [
+        {
+          "k": 2,
+          "silhouette": 0.12000563740730286,
+          "min_child_fraction": 0.214955,
+          "entropy_reduction": 0.045802002536709956,
+          "score": 0.14580763994401283
+        },
+        {
+          "k": 3,
+          "silhouette": 0.052032165229320526,
+          "min_child_fraction": 0.029855,
+          "entropy_reduction": 0.08617852008489825,
+          "score": 0.10821068531421876
+        },
+        {
+          "k": 4,
+          "silhouette": 0.12041215598583221,
+          "min_child_fraction": 0.009745,
+          "entropy_reduction": 0.10750130111198329,
+          "score": 0.1879134570978155
+        },
+        {
+          "k": 5,
+          "silhouette": 0.04732170328497887,
+          "min_child_fraction": 0.00897,
+          "entropy_reduction": 0.1456594667221353,
+          "score": 0.1429811700071142
+        },
+        {
+          "k": 6,
+          "silhouette": 0.07538499683141708,
+          "min_child_fraction": 0.004195,
+          "entropy_reduction": 0.20120445910625442,
+          "score": 0.21658945593767148
+        },
+        {
+          "k": 7,
+          "silhouette": 0.07341638207435608,
+          "min_child_fraction": 0.00896,
+          "entropy_reduction": 0.18578979812263807,
+          "score": 0.18920618019699414
+        },
+        {
+          "k": 8,
+          "silhouette": 0.052902329713106155,
+          "min_child_fraction": 0.00897,
+          "entropy_reduction": 0.16093892208245555,
+          "score": 0.13384125179556172
+        }
+      ],
+      "accepted_split": {
+        "child_count": 2,
+        "silhouette": 0.12000563740730286,
+        "min_child_fraction": 0.21550671319123113,
+        "entropy_reduction": 0.045802002536709956,
+        "child_distribution_stability": {
+          "samples": 8,
+          "sample_size": 200000,
+          "js_divergence_mean": 7.680094137332287e-07,
+          "js_divergence_max": 1.4457668224692756e-06,
+          "max_abs_fraction_delta_mean": 0.0009277315956155927,
+          "max_abs_fraction_delta_max": 0.001396713191231136
+        },
+        "children": [
+          {
+            "refined_label": 3,
+            "token": "A03.00",
+            "signature_name": "A03:Ω_ω03-Ξ_ξ04-R_unclassified",
+            "parent_token": "A03",
+            "parent_cluster": 0,
+            "child": 0,
+            "support": 227282,
+            "fraction_of_parent": 0.21550671319123113,
+            "fraction_of_corpus": 0.015648763536168064,
+            "top_features": [
+              {
+                "feature": "selector:domain_membership#0",
+                "weight": 1.401348352432251
+              },
+              {
+                "feature": "selector:function_space#0",
+                "weight": 1.0529359579086304
+              },
+              {
+                "feature": "selector:parameter_regime#0",
+                "weight": -0.5123997926712036
+              },
+              {
+                "feature": "operator_apparatus:hamiltonian_generator#0",
+                "weight": 0.46185070276260376
+              },
+              {
+                "feature": "real_substrate_geometry:scalar_field_carrier#0",
+                "weight": 0.3081313669681549
+              },
+              {
+                "feature": "omega:11",
+                "weight": 0.2761651277542114
+              },
+              {
+                "feature": "xi:12",
+                "weight": 0.26731812953948975
+              },
+              {
+                "feature": "operator_apparatus:liouvillian_generator#0",
+                "weight": 0.2665552496910095
+              },
+              {
+                "feature": "xi:2",
+                "weight": 0.24067112803459167
+              },
+              {
+                "feature": "real_substrate_geometry:spinor_carrier#0",
+                "weight": -0.2265464812517166
+              }
+            ]
+          },
+          {
+            "refined_label": 4,
+            "token": "A03.01",
+            "signature_name": "A03:Ω_ω03-Ξ_ξ01-R_unclassified",
+            "parent_token": "A03",
+            "parent_cluster": 0,
+            "child": 1,
+            "support": 827358,
+            "fraction_of_parent": 0.7844932868087688,
+            "fraction_of_corpus": 0.056965046513832766,
+            "top_features": [
+              {
+                "feature": "xi:2",
+                "weight": 0.518586277961731
+              },
+              {
+                "feature": "omega:11",
+                "weight": 0.34437745809555054
+              },
+              {
+                "feature": "selector:domain_membership#0",
+                "weight": -0.34191247820854187
+              },
+              {
+                "feature": "selector:function_space#0",
+                "weight": -0.2592181861400604
+              },
+              {
+                "feature": "route:constraint_closure",
+                "weight": 0.14277218282222748
+              },
+              {
+                "feature": "selector:parameter_regime#0",
+                "weight": 0.1243477389216423
+              },
+              {
+                "feature": "operator_apparatus:hamiltonian_generator#0",
+                "weight": -0.11506780982017517
+              },
+              {
+                "feature": "xi:0",
+                "weight": 0.09845335781574249
+              },
+              {
+                "feature": "route:spectral_operator",
+                "weight": 0.09262827038764954
+              },
+              {
+                "feature": "real_substrate_geometry:scalar_field_carrier#0",
+                "weight": -0.0727803036570549
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "parent_cluster": 13,
+      "parent_token": "A04",
+      "parent_signature_name": "A:Ω_readout_closure_spectral-Ξ_closure_field_carrier_coordinate-R_boundary-Γ_lo",
+      "support": 866698,
+      "fraction": 0.05967367437487258,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.4558724659132579,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω00",
+            "count": 65765
+          },
+          {
+            "token": "Ω02",
+            "count": 18325
+          },
+          {
+            "token": "Ω03",
+            "count": 16787
+          },
+          {
+            "token": "Ω05",
+            "count": 16075
+          },
+          {
+            "token": "Ω06",
+            "count": 15635
+          },
+          {
+            "token": "Ω08",
+            "count": 9287
+          },
+          {
+            "token": "Ω04",
+            "count": 8613
+          },
+          {
+            "token": "Ω07",
+            "count": 7976
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ05",
+            "count": 191308
+          },
+          {
+            "token": "Ξ10",
+            "count": 2471
+          },
+          {
+            "token": "Ξ07",
+            "count": 1288
+          },
+          {
+            "token": "Ξ12",
+            "count": 1261
+          },
+          {
+            "token": "Ξ09",
+            "count": 832
+          },
+          {
+            "token": "Ξ14",
+            "count": 772
+          },
+          {
+            "token": "Ξ15",
+            "count": 646
+          },
+          {
+            "token": "Ξ01",
+            "count": 513
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "boundary_weak_form",
+            "count": 192329
+          },
+          {
+            "route": "spectral_operator",
+            "count": 4636
+          },
+          {
+            "route": "constraint_closure",
+            "count": 1523
+          },
+          {
+            "route": "transport_flow",
+            "count": 1362
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 147
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 3
+          }
+        ],
+        "omega_entropy_norm": 0.7218033158522837,
+        "xi_entropy_norm": 0.10223405506745575,
+        "route_entropy_norm": 0.11243754194365521,
+        "sample_joint_entropy_norm": 0.5550600152011299,
+        "parent_alpha_labels_seen": [
+          13
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 3,
+      "parent_token": "A05",
+      "parent_signature_name": "A:Ω_derivative-Ξ_diffuse-R_transport-Γ_lo",
+      "support": 785279,
+      "fraction": 0.054067833708426195,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5104776563750671,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω05",
+            "count": 148883
+          },
+          {
+            "token": "Ω06",
+            "count": 15629
+          },
+          {
+            "token": "Ω11",
+            "count": 5302
+          },
+          {
+            "token": "Ω02",
+            "count": 4663
+          },
+          {
+            "token": "Ω13",
+            "count": 4567
+          },
+          {
+            "token": "Ω16",
+            "count": 4421
+          },
+          {
+            "token": "Ω15",
+            "count": 4022
+          },
+          {
+            "token": "Ω21",
+            "count": 3269
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ00",
+            "count": 62915
+          },
+          {
+            "token": "Ξ01",
+            "count": 36790
+          },
+          {
+            "token": "Ξ02",
+            "count": 31031
+          },
+          {
+            "token": "Ξ07",
+            "count": 29030
+          },
+          {
+            "token": "Ξ04",
+            "count": 20871
+          },
+          {
+            "token": "Ξ10",
+            "count": 5669
+          },
+          {
+            "token": "Ξ09",
+            "count": 3968
+          },
+          {
+            "token": "Ξ12",
+            "count": 2931
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "transport_flow",
+            "count": 164317
+          },
+          {
+            "route": "constraint_closure",
+            "count": 18223
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 10778
+          },
+          {
+            "route": "spectral_operator",
+            "count": 5830
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 684
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 168
+          }
+        ],
+        "omega_entropy_norm": 0.3519589173152845,
+        "xi_entropy_norm": 0.6836829580350163,
+        "route_entropy_norm": 0.371456369932693,
+        "sample_joint_entropy_norm": 0.5788748826298528,
+        "parent_alpha_labels_seen": [
+          3
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 2,
+      "parent_token": "A06",
+      "parent_signature_name": "A:Ω_readout_closure_spectral-Ξ_markov-R_mixed-Γ_lo",
+      "support": 659591,
+      "fraction": 0.04541399490318032,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5249529913048815,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω00",
+            "count": 53414
+          },
+          {
+            "token": "Ω02",
+            "count": 18748
+          },
+          {
+            "token": "Ω06",
+            "count": 17446
+          },
+          {
+            "token": "Ω03",
+            "count": 16690
+          },
+          {
+            "token": "Ω05",
+            "count": 14181
+          },
+          {
+            "token": "Ω01",
+            "count": 13664
+          },
+          {
+            "token": "Ω07",
+            "count": 10516
+          },
+          {
+            "token": "Ω08",
+            "count": 8491
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ03",
+            "count": 190544
+          },
+          {
+            "token": "Ξ10",
+            "count": 1894
+          },
+          {
+            "token": "Ξ12",
+            "count": 1446
+          },
+          {
+            "token": "Ξ09",
+            "count": 1281
+          },
+          {
+            "token": "Ξ07",
+            "count": 993
+          },
+          {
+            "token": "Ξ04",
+            "count": 766
+          },
+          {
+            "token": "Ξ02",
+            "count": 765
+          },
+          {
+            "token": "Ξ14",
+            "count": 589
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "unclassified",
+            "count": 62848
+          },
+          {
+            "route": "constraint_closure",
+            "count": 45201
+          },
+          {
+            "route": "spectral_operator",
+            "count": 39487
+          },
+          {
+            "route": "transport_flow",
+            "count": 27591
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 19947
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 4231
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 695
+          }
+        ],
+        "omega_entropy_norm": 0.760650854426669,
+        "xi_entropy_norm": 0.10774703008641918,
+        "route_entropy_norm": 0.8348848699438018,
+        "sample_joint_entropy_norm": 0.6561379750396528,
+        "parent_alpha_labels_seen": [
+          2
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 9,
+      "parent_token": "A07",
+      "parent_signature_name": "A:Ω_spectral_readout_closure-Ξ_selector_hilbert_field_carrier-R_spectral-Γ_lo",
+      "support": 537584,
+      "fraction": 0.03701359939118528,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5509094710792963,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω10",
+            "count": 100218
+          },
+          {
+            "token": "Ω07",
+            "count": 32495
+          },
+          {
+            "token": "Ω02",
+            "count": 10687
+          },
+          {
+            "token": "Ω06",
+            "count": 7989
+          },
+          {
+            "token": "Ω04",
+            "count": 6883
+          },
+          {
+            "token": "Ω01",
+            "count": 5737
+          },
+          {
+            "token": "Ω30",
+            "count": 5448
+          },
+          {
+            "token": "Ω05",
+            "count": 5359
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ01",
+            "count": 110894
+          },
+          {
+            "token": "Ξ04",
+            "count": 18753
+          },
+          {
+            "token": "Ξ06",
+            "count": 15084
+          },
+          {
+            "token": "Ξ03",
+            "count": 13079
+          },
+          {
+            "token": "Ξ05",
+            "count": 12748
+          },
+          {
+            "token": "Ξ02",
+            "count": 10239
+          },
+          {
+            "token": "Ξ07",
+            "count": 7455
+          },
+          {
+            "token": "Ξ10",
+            "count": 3718
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "spectral_operator",
+            "count": 198131
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 896
+          },
+          {
+            "route": "transport_flow",
+            "count": 516
+          },
+          {
+            "route": "constraint_closure",
+            "count": 418
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 39
+          }
+        ],
+        "omega_entropy_norm": 0.5689047235293213,
+        "xi_entropy_norm": 0.5718606776562193,
+        "route_entropy_norm": 0.03943530098025081,
+        "sample_joint_entropy_norm": 0.5891601435973891,
+        "parent_alpha_labels_seen": [
+          9
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 15,
+      "parent_token": "A08",
+      "parent_signature_name": "A:Ω_markov_integral-Ξ_markov-R_mixed-Γ_lo",
+      "support": 503973,
+      "fraction": 0.03469942320823131,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.4982579056275609,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω12",
+            "count": 125777
+          },
+          {
+            "token": "Ω22",
+            "count": 23374
+          },
+          {
+            "token": "Ω24",
+            "count": 20368
+          },
+          {
+            "token": "Ω01",
+            "count": 7386
+          },
+          {
+            "token": "Ω11",
+            "count": 4246
+          },
+          {
+            "token": "Ω06",
+            "count": 2241
+          },
+          {
+            "token": "Ω15",
+            "count": 2186
+          },
+          {
+            "token": "Ω10",
+            "count": 1897
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ03",
+            "count": 162111
+          },
+          {
+            "token": "Ξ05",
+            "count": 10181
+          },
+          {
+            "token": "Ξ12",
+            "count": 8107
+          },
+          {
+            "token": "Ξ06",
+            "count": 4092
+          },
+          {
+            "token": "Ξ10",
+            "count": 3551
+          },
+          {
+            "token": "Ξ09",
+            "count": 2629
+          },
+          {
+            "token": "Ξ11",
+            "count": 2622
+          },
+          {
+            "token": "Ξ07",
+            "count": 1579
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "unclassified",
+            "count": 62844
+          },
+          {
+            "route": "constraint_closure",
+            "count": 38525
+          },
+          {
+            "route": "spectral_operator",
+            "count": 35076
+          },
+          {
+            "route": "transport_flow",
+            "count": 30205
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 24046
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 8588
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 716
+          }
+        ],
+        "omega_entropy_norm": 0.42861954562033794,
+        "xi_entropy_norm": 0.3111317837638958,
+        "route_entropy_norm": 0.8642883560367852,
+        "sample_joint_entropy_norm": 0.6036216617171508,
+        "parent_alpha_labels_seen": [
+          15
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 8,
+      "parent_token": "A09",
+      "parent_signature_name": "A:Ω_readout_derivative_closure-Ξ_diffuse-R_transport-Γ_lo",
+      "support": 389797,
+      "fraction": 0.026838205753679144,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5850439214870322,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω09",
+            "count": 117714
+          },
+          {
+            "token": "Ω14",
+            "count": 44166
+          },
+          {
+            "token": "Ω06",
+            "count": 4936
+          },
+          {
+            "token": "Ω11",
+            "count": 4400
+          },
+          {
+            "token": "Ω01",
+            "count": 4330
+          },
+          {
+            "token": "Ω15",
+            "count": 4170
+          },
+          {
+            "token": "Ω13",
+            "count": 3398
+          },
+          {
+            "token": "Ω02",
+            "count": 3007
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ07",
+            "count": 77160
+          },
+          {
+            "token": "Ξ01",
+            "count": 22163
+          },
+          {
+            "token": "Ξ02",
+            "count": 21906
+          },
+          {
+            "token": "Ξ03",
+            "count": 18903
+          },
+          {
+            "token": "Ξ05",
+            "count": 18464
+          },
+          {
+            "token": "Ξ04",
+            "count": 12793
+          },
+          {
+            "token": "Ξ06",
+            "count": 9180
+          },
+          {
+            "token": "Ξ10",
+            "count": 6398
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "transport_flow",
+            "count": 141681
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 30485
+          },
+          {
+            "route": "constraint_closure",
+            "count": 14113
+          },
+          {
+            "route": "spectral_operator",
+            "count": 13292
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 346
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 83
+          }
+        ],
+        "omega_entropy_norm": 0.43347146437775397,
+        "xi_entropy_norm": 0.6981693822355415,
+        "route_entropy_norm": 0.5092422990735416,
+        "sample_joint_entropy_norm": 0.6738826889757755,
+        "parent_alpha_labels_seen": [
+          8
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 6,
+      "parent_token": "A10",
+      "parent_signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_spectral-Γ_lo",
+      "support": 295950,
+      "fraction": 0.020376675533165578,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.711095278730678,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω07",
+            "count": 51027
+          },
+          {
+            "token": "Ω09",
+            "count": 28154
+          },
+          {
+            "token": "Ω04",
+            "count": 18359
+          },
+          {
+            "token": "Ω02",
+            "count": 17908
+          },
+          {
+            "token": "Ω05",
+            "count": 14941
+          },
+          {
+            "token": "Ω01",
+            "count": 14828
+          },
+          {
+            "token": "Ω06",
+            "count": 13300
+          },
+          {
+            "token": "Ω13",
+            "count": 4846
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ08",
+            "count": 77721
+          },
+          {
+            "token": "Ξ05",
+            "count": 21803
+          },
+          {
+            "token": "Ξ02",
+            "count": 17616
+          },
+          {
+            "token": "Ξ01",
+            "count": 16107
+          },
+          {
+            "token": "Ξ06",
+            "count": 15183
+          },
+          {
+            "token": "Ξ03",
+            "count": 14936
+          },
+          {
+            "token": "Ξ07",
+            "count": 10053
+          },
+          {
+            "token": "Ξ04",
+            "count": 8642
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "spectral_operator",
+            "count": 46531
+          },
+          {
+            "route": "transport_flow",
+            "count": 42892
+          },
+          {
+            "route": "unclassified",
+            "count": 39912
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 39294
+          },
+          {
+            "route": "constraint_closure",
+            "count": 24616
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 4874
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 1881
+          }
+        ],
+        "omega_entropy_norm": 0.7454245271506434,
+        "xi_entropy_norm": 0.7165823835525305,
+        "route_entropy_norm": 0.8751801580484909,
+        "sample_joint_entropy_norm": 0.8071378105797922,
+        "parent_alpha_labels_seen": [
+          6
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 10,
+      "parent_token": "A11",
+      "parent_signature_name": "A:Ω_closure_protocol_derivative-Ξ_reaction_hilbert-R_mixed-Γ_lo",
+      "support": 246763,
+      "fraction": 0.016990064485860913,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.4277605188139247,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω07",
+            "count": 102636
+          },
+          {
+            "token": "Ω02",
+            "count": 20733
+          },
+          {
+            "token": "Ω05",
+            "count": 15903
+          },
+          {
+            "token": "Ω01",
+            "count": 13483
+          },
+          {
+            "token": "Ω08",
+            "count": 10672
+          },
+          {
+            "token": "Ω06",
+            "count": 5813
+          },
+          {
+            "token": "Ω16",
+            "count": 3983
+          },
+          {
+            "token": "Ω17",
+            "count": 3818
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ08",
+            "count": 195772
+          },
+          {
+            "token": "Ξ10",
+            "count": 2769
+          },
+          {
+            "token": "Ξ14",
+            "count": 877
+          },
+          {
+            "token": "Ξ11",
+            "count": 275
+          },
+          {
+            "token": "Ξ15",
+            "count": 143
+          },
+          {
+            "token": "Ξ12",
+            "count": 124
+          },
+          {
+            "token": "Ξ09",
+            "count": 14
+          },
+          {
+            "token": "Ξ17",
+            "count": 13
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "unclassified",
+            "count": 94494
+          },
+          {
+            "route": "spectral_operator",
+            "count": 43070
+          },
+          {
+            "route": "constraint_closure",
+            "count": 28893
+          },
+          {
+            "route": "transport_flow",
+            "count": 22865
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 6014
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 3720
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 944
+          }
+        ],
+        "omega_entropy_norm": 0.5507401940882485,
+        "xi_entropy_norm": 0.054183708454997606,
+        "route_entropy_norm": 0.7282553060292993,
+        "sample_joint_entropy_norm": 0.5036259475771633,
+        "parent_alpha_labels_seen": [
+          10
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 12,
+      "parent_token": "A12",
+      "parent_signature_name": "A:Ω_readout_closure_spectral-Ξ_positivity-R_mixed-Γ_lo",
+      "support": 236455,
+      "fraction": 0.016280340642658108,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.5199889699858435,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω00",
+            "count": 65414
+          },
+          {
+            "token": "Ω01",
+            "count": 16043
+          },
+          {
+            "token": "Ω02",
+            "count": 15885
+          },
+          {
+            "token": "Ω06",
+            "count": 12595
+          },
+          {
+            "token": "Ω03",
+            "count": 12163
+          },
+          {
+            "token": "Ω07",
+            "count": 12147
+          },
+          {
+            "token": "Ω05",
+            "count": 10814
+          },
+          {
+            "token": "Ω08",
+            "count": 9838
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ11",
+            "count": 191129
+          },
+          {
+            "token": "Ξ09",
+            "count": 2262
+          },
+          {
+            "token": "Ξ12",
+            "count": 1522
+          },
+          {
+            "token": "Ξ04",
+            "count": 1156
+          },
+          {
+            "token": "Ξ10",
+            "count": 919
+          },
+          {
+            "token": "Ξ02",
+            "count": 832
+          },
+          {
+            "token": "Ξ14",
+            "count": 726
+          },
+          {
+            "token": "Ξ15",
+            "count": 444
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "unclassified",
+            "count": 75862
+          },
+          {
+            "route": "spectral_operator",
+            "count": 37566
+          },
+          {
+            "route": "constraint_closure",
+            "count": 37170
+          },
+          {
+            "route": "transport_flow",
+            "count": 24084
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 16604
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 5225
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 3489
+          }
+        ],
+        "omega_entropy_norm": 0.7345485567154043,
+        "xi_entropy_norm": 0.09784173309553754,
+        "route_entropy_norm": 0.833497041000841,
+        "sample_joint_entropy_norm": 0.6594855805739027,
+        "parent_alpha_labels_seen": [
+          12
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 16,
+      "parent_token": "A13",
+      "parent_signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_protocol-Γ_lo",
+      "support": 232938,
+      "fraction": 0.016038189036474144,
+      "sample_rows": 200000,
+      "joint_entropy_norm": 0.6791156009328745,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω07",
+            "count": 71006
+          },
+          {
+            "token": "Ω14",
+            "count": 17477
+          },
+          {
+            "token": "Ω04",
+            "count": 13877
+          },
+          {
+            "token": "Ω01",
+            "count": 13836
+          },
+          {
+            "token": "Ω02",
+            "count": 12422
+          },
+          {
+            "token": "Ω03",
+            "count": 12011
+          },
+          {
+            "token": "Ω06",
+            "count": 9298
+          },
+          {
+            "token": "Ω11",
+            "count": 9125
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ00",
+            "count": 55568
+          },
+          {
+            "token": "Ξ01",
+            "count": 31493
+          },
+          {
+            "token": "Ξ02",
+            "count": 17579
+          },
+          {
+            "token": "Ξ06",
+            "count": 17361
+          },
+          {
+            "token": "Ξ04",
+            "count": 16425
+          },
+          {
+            "token": "Ξ05",
+            "count": 14288
+          },
+          {
+            "token": "Ξ03",
+            "count": 14046
+          },
+          {
+            "token": "Ξ07",
+            "count": 13174
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "discrete_protocol",
+            "count": 77937
+          },
+          {
+            "route": "constraint_closure",
+            "count": 40902
+          },
+          {
+            "route": "spectral_operator",
+            "count": 32978
+          },
+          {
+            "route": "transport_flow",
+            "count": 26698
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 17603
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 3882
+          }
+        ],
+        "omega_entropy_norm": 0.6979570073642184,
+        "xi_entropy_norm": 0.7760739727228024,
+        "route_entropy_norm": 0.8641037946604638,
+        "sample_joint_entropy_norm": 0.7667403240901406,
+        "parent_alpha_labels_seen": [
+          16
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 7,
+      "parent_token": "A14",
+      "parent_signature_name": "A:Ω_closure_integral_spectral-Ξ_normalization_selector_boundary-R_closure-Γ_lo",
+      "support": 143926,
+      "fraction": 0.00990955702918192,
+      "sample_rows": 143926,
+      "joint_entropy_norm": 0.27396654412694005,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω20",
+            "count": 125225
+          },
+          {
+            "token": "Ω11",
+            "count": 5023
+          },
+          {
+            "token": "Ω16",
+            "count": 1990
+          },
+          {
+            "token": "Ω01",
+            "count": 1342
+          },
+          {
+            "token": "Ω10",
+            "count": 890
+          },
+          {
+            "token": "Ω07",
+            "count": 875
+          },
+          {
+            "token": "Ω02",
+            "count": 753
+          },
+          {
+            "token": "Ω06",
+            "count": 724
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ13",
+            "count": 129224
+          },
+          {
+            "token": "Ξ03",
+            "count": 2972
+          },
+          {
+            "token": "Ξ09",
+            "count": 2185
+          },
+          {
+            "token": "Ξ05",
+            "count": 1775
+          },
+          {
+            "token": "Ξ15",
+            "count": 1510
+          },
+          {
+            "token": "Ξ06",
+            "count": 1449
+          },
+          {
+            "token": "Ξ01",
+            "count": 738
+          },
+          {
+            "token": "Ξ12",
+            "count": 727
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "constraint_closure",
+            "count": 129403
+          },
+          {
+            "route": "spectral_operator",
+            "count": 12294
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 1347
+          },
+          {
+            "route": "transport_flow",
+            "count": 820
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 40
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 22
+          }
+        ],
+        "omega_entropy_norm": 0.21679030485157832,
+        "xi_entropy_norm": 0.2039618078607399,
+        "route_entropy_norm": 0.21351195485094537,
+        "sample_joint_entropy_norm": 0.3001111603467173,
+        "parent_alpha_labels_seen": [
+          7
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 14,
+      "parent_token": "A15",
+      "parent_signature_name": "A:Ω_protocol_commutator-Ξ_diffuse-R_protocol-Γ_lo",
+      "support": 53252,
+      "fraction": 0.0036664934127120575,
+      "sample_rows": 53252,
+      "joint_entropy_norm": 0.7331053884149485,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω27",
+            "count": 49178
+          },
+          {
+            "token": "Ω28",
+            "count": 3972
+          },
+          {
+            "token": "Ω25",
+            "count": 43
+          },
+          {
+            "token": "Ω31",
+            "count": 34
+          },
+          {
+            "token": "Ω23",
+            "count": 17
+          },
+          {
+            "token": "Ω29",
+            "count": 5
+          },
+          {
+            "token": "Ω06",
+            "count": 2
+          },
+          {
+            "token": "Ω26",
+            "count": 1
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ00",
+            "count": 11564
+          },
+          {
+            "token": "Ξ01",
+            "count": 8121
+          },
+          {
+            "token": "Ξ04",
+            "count": 6457
+          },
+          {
+            "token": "Ξ02",
+            "count": 5491
+          },
+          {
+            "token": "Ξ05",
+            "count": 3870
+          },
+          {
+            "token": "Ξ03",
+            "count": 3864
+          },
+          {
+            "token": "Ξ07",
+            "count": 3489
+          },
+          {
+            "token": "Ξ06",
+            "count": 3221
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "discrete_protocol",
+            "count": 24196
+          },
+          {
+            "route": "spectral_operator",
+            "count": 9693
+          },
+          {
+            "route": "constraint_closure",
+            "count": 8625
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 4791
+          },
+          {
+            "route": "transport_flow",
+            "count": 4703
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 1244
+          }
+        ],
+        "omega_entropy_norm": 0.13541613431839603,
+        "xi_entropy_norm": 0.8219320331243661,
+        "route_entropy_norm": 0.8271868847544652,
+        "sample_joint_entropy_norm": 0.773824948935348,
+        "parent_alpha_labels_seen": [
+          14
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 5,
+      "parent_token": "A16",
+      "parent_signature_name": "A:Ω_boundary_derivative_readout-Ξ_diffuse-R_boundary-Γ_lo",
+      "support": 51680,
+      "fraction": 0.003558258461071117,
+      "sample_rows": 51680,
+      "joint_entropy_norm": 0.4613326905549991,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω26",
+            "count": 50743
+          },
+          {
+            "token": "Ω16",
+            "count": 330
+          },
+          {
+            "token": "Ω25",
+            "count": 105
+          },
+          {
+            "token": "Ω31",
+            "count": 78
+          },
+          {
+            "token": "Ω28",
+            "count": 72
+          },
+          {
+            "token": "Ω23",
+            "count": 66
+          },
+          {
+            "token": "Ω14",
+            "count": 34
+          },
+          {
+            "token": "Ω06",
+            "count": 28
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ05",
+            "count": 21023
+          },
+          {
+            "token": "Ξ15",
+            "count": 10471
+          },
+          {
+            "token": "Ξ04",
+            "count": 4093
+          },
+          {
+            "token": "Ξ01",
+            "count": 2747
+          },
+          {
+            "token": "Ξ03",
+            "count": 2649
+          },
+          {
+            "token": "Ξ02",
+            "count": 2360
+          },
+          {
+            "token": "Ξ06",
+            "count": 2014
+          },
+          {
+            "token": "Ξ08",
+            "count": 1285
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "boundary_weak_form",
+            "count": 47141
+          },
+          {
+            "route": "spectral_operator",
+            "count": 3565
+          },
+          {
+            "route": "constraint_closure",
+            "count": 469
+          },
+          {
+            "route": "transport_flow",
+            "count": 463
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 37
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 5
+          }
+        ],
+        "omega_entropy_norm": 0.04123806221086154,
+        "xi_entropy_norm": 0.6868646188141629,
+        "route_entropy_norm": 0.2005293743612134,
+        "sample_joint_entropy_norm": 0.5324071647253488,
+        "parent_alpha_labels_seen": [
+          5
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    },
+    {
+      "parent_cluster": 17,
+      "parent_token": "A17",
+      "parent_signature_name": "A:Ω_readout_derivative_closure-Ξ_selector_coordinate_field_carrier-R_transport-Γ_lo",
+      "support": 51564,
+      "fraction": 0.003550271658023821,
+      "sample_rows": 51564,
+      "joint_entropy_norm": 0.5091000777822174,
+      "profile": {
+        "dominant_omega": [
+          {
+            "token": "Ω09",
+            "count": 23320
+          },
+          {
+            "token": "Ω14",
+            "count": 13144
+          },
+          {
+            "token": "Ω06",
+            "count": 1750
+          },
+          {
+            "token": "Ω01",
+            "count": 1722
+          },
+          {
+            "token": "Ω11",
+            "count": 1155
+          },
+          {
+            "token": "Ω02",
+            "count": 1132
+          },
+          {
+            "token": "Ω15",
+            "count": 935
+          },
+          {
+            "token": "Ω07",
+            "count": 846
+          }
+        ],
+        "dominant_xi": [
+          {
+            "token": "Ξ16",
+            "count": 50760
+          },
+          {
+            "token": "Ξ15",
+            "count": 194
+          },
+          {
+            "token": "Ξ03",
+            "count": 132
+          },
+          {
+            "token": "Ξ14",
+            "count": 112
+          },
+          {
+            "token": "Ξ05",
+            "count": 88
+          },
+          {
+            "token": "Ξ10",
+            "count": 79
+          },
+          {
+            "token": "Ξ07",
+            "count": 49
+          },
+          {
+            "token": "Ξ06",
+            "count": 35
+          }
+        ],
+        "dominant_routes": [
+          {
+            "route": "transport_flow",
+            "count": 33657
+          },
+          {
+            "route": "spectral_operator",
+            "count": 6402
+          },
+          {
+            "route": "constraint_closure",
+            "count": 5865
+          },
+          {
+            "route": "boundary_weak_form",
+            "count": 5384
+          },
+          {
+            "route": "discrete_protocol",
+            "count": 132
+          },
+          {
+            "route": "commutator_incompatibility",
+            "count": 124
+          }
+        ],
+        "omega_entropy_norm": 0.5704991701372519,
+        "xi_entropy_norm": 0.041651773757457676,
+        "route_entropy_norm": 0.5862481867145316,
+        "sample_joint_entropy_norm": 0.6042050621687334,
+        "parent_alpha_labels_seen": [
+          17
+        ]
+      },
+      "decision": "kept",
+      "reason": "below split thresholds"
+    }
+  ],
+  "conclusions": [
+    "A is treated as a conditional apparatus state, not a primitive atom.",
+    "Only oversized/high-entropy parents are split; stable small regimes are preserved.",
+    "Refined labels are written as a separate artifact and do not overwrite the learned symbolic language."
+  ],
+  "claim_scope": "Second-stage refinement of V2 A apparatus regimes using fixed Ω/Ξ assignments, route evidence and operator/substrate product features. This tests whether broad A basins can be subdivided; it does not prove exact physical mechanism classification."
+}

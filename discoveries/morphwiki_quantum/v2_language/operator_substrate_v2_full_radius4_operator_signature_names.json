@@ -1,0 +1,1520 @@
+{
+  "report_type": "operator_substrate_v2_operator_signature_names",
+  "readiness": "usable",
+  "object": "omega_operator_codewords",
+  "tokens": [
+    {
+      "token": "Ω00",
+      "cluster": 25,
+      "support": 117925,
+      "signature_name": "Ω:readout_closure_spectral",
+      "signature_slug": "omega_readout_closure_spectral",
+      "display_label": "Ω:readout_closure_spectral",
+      "signature_terms": [
+        "readout",
+        "closure",
+        "spectral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5388568639755249
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.41022899746894836
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.39869558811187744
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.35420048236846924
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.35155707597732544
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.337551474571228
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.33583444356918335
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.33458617329597473
+        }
+      ]
+    },
+    {
+      "token": "Ω01",
+      "cluster": 4,
+      "support": 39861,
+      "signature_name": "Ω:spectral",
+      "signature_slug": "omega_spectral",
+      "display_label": "Ω:spectral",
+      "signature_terms": [
+        "spectral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 2.996974468231201
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 2.9243476390838623
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.335694819688797
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.17013047635555267
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": -0.147854283452034
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.12052465975284576
+        },
+        {
+          "feature": "readout_current:current_flux#0",
+          "weight": -0.11427024751901627
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.11407088488340378
+        }
+      ]
+    },
+    {
+      "token": "Ω02",
+      "cluster": 15,
+      "support": 39202,
+      "signature_name": "Ω:spectral",
+      "signature_slug": "omega_spectral",
+      "display_label": "Ω:spectral",
+      "signature_terms": [
+        "spectral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 2.7654852867126465
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.32360705733299255
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.31983762979507446
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.28164878487586975
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.24390436708927155
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.2175413966178894
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.20023997128009796
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": -0.17695118486881256
+        }
+      ]
+    },
+    {
+      "token": "Ω03",
+      "cluster": 11,
+      "support": 33273,
+      "signature_name": "Ω:readout",
+      "signature_slug": "omega_readout",
+      "display_label": "Ω:readout",
+      "signature_terms": [
+        "readout"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 1.9561845064163208
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.4099237024784088
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.39902541041374207
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.3544730544090271
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.35158661007881165
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.3348607122898102
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.33400464057922363
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.3330613672733307
+        }
+      ]
+    },
+    {
+      "token": "Ω04",
+      "cluster": 30,
+      "support": 32525,
+      "signature_name": "Ω:derivative_graph",
+      "signature_slug": "omega_derivative_graph",
+      "display_label": "Ω:derivative_graph",
+      "signature_terms": [
+        "derivative",
+        "graph"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 3.131757974624634
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.32068008184432983
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.3190053403377533
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.2359929382801056
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.231840580701828
+        },
+        {
+          "feature": "operator_apparatus:graph_operator#0",
+          "weight": 0.19926521182060242
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.1950417459011078
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.1945023387670517
+        }
+      ]
+    },
+    {
+      "token": "Ω05",
+      "cluster": 17,
+      "support": 29007,
+      "signature_name": "Ω:derivative",
+      "signature_slug": "omega_derivative",
+      "display_label": "Ω:derivative",
+      "signature_terms": [
+        "derivative"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 3.205641746520996
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.3342210352420807
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.32963278889656067
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.2892104685306549
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.2496730536222458
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.1936284303665161
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": -0.19135543704032898
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.18477636575698853
+        }
+      ]
+    },
+    {
+      "token": "Ω06",
+      "cluster": 13,
+      "support": 27086,
+      "signature_name": "Ω:integral",
+      "signature_slug": "omega_integral",
+      "display_label": "Ω:integral",
+      "signature_terms": [
+        "integral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 3.4422848224639893
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.3182908296585083
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.3152276575565338
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.18743766844272614
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": -0.18165047466754913
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.1815166026353836
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.1688808649778366
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.16218820214271545
+        }
+      ]
+    },
+    {
+      "token": "Ω07",
+      "cluster": 0,
+      "support": 26991,
+      "signature_name": "Ω:closure_protocol_derivative",
+      "signature_slug": "omega_closure_protocol_derivative",
+      "display_label": "Ω:closure_protocol_derivative",
+      "signature_terms": [
+        "closure",
+        "protocol",
+        "derivative"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.848868191242218
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.7496230602264404
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5340406894683838
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 0.433635413646698
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.3858737647533417
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.36925074458122253
+        },
+        {
+          "feature": "closure_constraints:compatibility_condition#0",
+          "weight": 0.3630363345146179
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.33693769574165344
+        }
+      ]
+    },
+    {
+      "token": "Ω08",
+      "cluster": 18,
+      "support": 19612,
+      "signature_name": "Ω:closure_markov",
+      "signature_slug": "omega_closure_markov",
+      "display_label": "Ω:closure_markov",
+      "signature_terms": [
+        "closure",
+        "markov"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 2.448719024658203
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5324496030807495
+        },
+        {
+          "feature": "operator_apparatus:stochastic_operator#0",
+          "weight": 0.42802608013153076
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.37439194321632385
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.34376463294029236
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.3311504125595093
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.3278989791870117
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.3258349299430847
+        }
+      ]
+    },
+    {
+      "token": "Ω09",
+      "cluster": 20,
+      "support": 15972,
+      "signature_name": "Ω:readout_derivative_closure",
+      "signature_slug": "omega_readout_derivative_closure",
+      "display_label": "Ω:readout_derivative_closure",
+      "signature_terms": [
+        "readout",
+        "derivative",
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 1.769474983215332
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 1.3440011739730835
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.7145708203315735
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.3356015682220459
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.32664892077445984
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.310895711183548
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.2983303964138031
+        },
+        {
+          "feature": "closure_constraints:weak_form_closure#0",
+          "weight": 0.277534544467926
+        }
+      ]
+    },
+    {
+      "token": "Ω10",
+      "cluster": 21,
+      "support": 14383,
+      "signature_name": "Ω:spectral_readout_closure",
+      "signature_slug": "omega_spectral_readout_closure",
+      "display_label": "Ω:spectral_readout_closure",
+      "signature_terms": [
+        "spectral",
+        "readout",
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 5.213386058807373
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 2.491006851196289
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.233861044049263
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.23064909875392914
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.15853746235370636
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.15400822460651398
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.14031964540481567
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.13564562797546387
+        }
+      ]
+    },
+    {
+      "token": "Ω11",
+      "cluster": 2,
+      "support": 12879,
+      "signature_name": "Ω:closure",
+      "signature_slug": "omega_closure",
+      "display_label": "Ω:closure",
+      "signature_terms": [
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 5.578756332397461
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.17778101563453674
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": -0.12974748015403748
+        },
+        {
+          "feature": "operator_apparatus:nonlinear_operator#0",
+          "weight": -0.12190377712249756
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.0999816507101059
+        },
+        {
+          "feature": "readout_current:current_flux#0",
+          "weight": -0.09744841605424881
+        },
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": -0.0961606502532959
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.09184741228818893
+        }
+      ]
+    },
+    {
+      "token": "Ω12",
+      "cluster": 27,
+      "support": 11539,
+      "signature_name": "Ω:markov_integral",
+      "signature_slug": "omega_markov_integral",
+      "display_label": "Ω:markov_integral",
+      "signature_terms": [
+        "markov",
+        "integral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 5.12407922744751
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.34710782766342163
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.3464590907096863
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.3443196415901184
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.26973727345466614
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.24252550303936005
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.19495613873004913
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": -0.15662901103496552
+        }
+      ]
+    },
+    {
+      "token": "Ω13",
+      "cluster": 28,
+      "support": 10505,
+      "signature_name": "Ω:commutator_closure_readout",
+      "signature_slug": "omega_commutator_closure_readout",
+      "display_label": "Ω:commutator_closure_readout",
+      "signature_terms": [
+        "commutator",
+        "closure",
+        "readout"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 4.362939834594727
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.3946642577648163
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.3088974058628082
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.28758054971694946
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.2848619520664215
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.23727546632289886
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.16026215255260468
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": -0.1279127299785614
+        }
+      ]
+    },
+    {
+      "token": "Ω14",
+      "cluster": 19,
+      "support": 10013,
+      "signature_name": "Ω:closure_derivative_readout",
+      "signature_slug": "omega_closure_derivative_readout",
+      "display_label": "Ω:closure_derivative_readout",
+      "signature_terms": [
+        "closure",
+        "derivative",
+        "readout"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 2.454453229904175
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 1.1847999095916748
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.8543676137924194
+        },
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": 0.8411786556243896
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 0.30126887559890747
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.3005259931087494
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.29659202694892883
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.2885289192199707
+        }
+      ]
+    },
+    {
+      "token": "Ω15",
+      "cluster": 29,
+      "support": 9673,
+      "signature_name": "Ω:transport_commutator",
+      "signature_slug": "omega_transport_commutator",
+      "display_label": "Ω:transport_commutator",
+      "signature_terms": [
+        "transport",
+        "commutator"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:current_flux#0",
+          "weight": 6.734320163726807
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.26962968707084656
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.19855916500091553
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.15194790065288544
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": -0.10759162902832031
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.102138452231884
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.09032193571329117
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": -0.088069848716259
+        }
+      ]
+    },
+    {
+      "token": "Ω16",
+      "cluster": 6,
+      "support": 8198,
+      "signature_name": "Ω:closure",
+      "signature_slug": "omega_closure",
+      "display_label": "Ω:closure",
+      "signature_terms": [
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 7.322453022003174
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 2.312133550643921
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.26831772923469543
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.22512902319431305
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.19476927816867828
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": -0.12924453616142273
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.12180547416210175
+        },
+        {
+          "feature": "readout_current:current_flux#0",
+          "weight": -0.10109629482030869
+        }
+      ]
+    },
+    {
+      "token": "Ω17",
+      "cluster": 3,
+      "support": 6675,
+      "signature_name": "Ω:commutator",
+      "signature_slug": "omega_commutator",
+      "display_label": "Ω:commutator",
+      "signature_terms": [
+        "commutator"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 5.143931865692139
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5370031595230103
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.4095543324947357
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.3671794533729553
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.3341711461544037
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.3340820074081421
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.32939764857292175
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.32058000564575195
+        }
+      ]
+    },
+    {
+      "token": "Ω18",
+      "cluster": 10,
+      "support": 5207,
+      "signature_name": "Ω:spectral_derivative_closure",
+      "signature_slug": "omega_spectral_derivative_closure",
+      "display_label": "Ω:spectral_derivative_closure",
+      "signature_terms": [
+        "spectral",
+        "derivative",
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 2.9355952739715576
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 2.1003241539001465
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 1.8248010873794556
+        },
+        {
+          "feature": "closure_constraints:weak_form_closure#0",
+          "weight": 0.1542174220085144
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": -0.14923031628131866
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.13089297711849213
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": 0.12685561180114746
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.12644867599010468
+        }
+      ]
+    },
+    {
+      "token": "Ω19",
+      "cluster": 8,
+      "support": 4572,
+      "signature_name": "Ω:nonlinear",
+      "signature_slug": "omega_nonlinear",
+      "display_label": "Ω:nonlinear",
+      "signature_terms": [
+        "nonlinear"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:nonlinear_operator#0",
+          "weight": 8.812006950378418
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.3798743188381195
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.33768901228904724
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.33439382910728455
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.33306586742401123
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.33142468333244324
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.3091118633747101
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": -0.2170647382736206
+        }
+      ]
+    },
+    {
+      "token": "Ω20",
+      "cluster": 24,
+      "support": 4376,
+      "signature_name": "Ω:closure_integral_spectral",
+      "signature_slug": "omega_closure_integral_spectral",
+      "display_label": "Ω:closure_integral_spectral",
+      "signature_terms": [
+        "closure",
+        "integral",
+        "spectral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 10.16584300994873
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.5849252343177795
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.5447880625724792
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.1778193563222885
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.16445425152778625
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.08407671749591827
+        },
+        {
+          "feature": "operator_apparatus:nonlinear_operator#0",
+          "weight": -0.0787249505519867
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 0.06525176018476486
+        }
+      ]
+    },
+    {
+      "token": "Ω21",
+      "cluster": 9,
+      "support": 3836,
+      "signature_name": "Ω:nonlinear_spectral_integral",
+      "signature_slug": "omega_nonlinear_spectral_integral",
+      "display_label": "Ω:nonlinear_spectral_integral",
+      "signature_terms": [
+        "nonlinear",
+        "spectral",
+        "integral"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:nonlinear_operator#0",
+          "weight": 6.043758869171143
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 0.3059973120689392
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.20987053215503693
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.1858321726322174
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 0.1581002175807953
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": -0.13332831859588623
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.12535671889781952
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.12133148312568665
+        }
+      ]
+    },
+    {
+      "token": "Ω22",
+      "cluster": 26,
+      "support": 2191,
+      "signature_name": "Ω:markov_spectral_protocol",
+      "signature_slug": "omega_markov_spectral_protocol",
+      "display_label": "Ω:markov_spectral_protocol",
+      "signature_terms": [
+        "markov",
+        "spectral",
+        "protocol"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 5.001733303070068
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 2.550525665283203
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": 0.3305392265319824
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.2740005850791931
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.23794804513454437
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.23753871023654938
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.17809656262397766
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.17303897440433502
+        }
+      ]
+    },
+    {
+      "token": "Ω23",
+      "cluster": 22,
+      "support": 2185,
+      "signature_name": "Ω:free_energy_action_nonlocal_reaction",
+      "signature_slug": "omega_free_energy_action_nonlocal_reaction",
+      "display_label": "Ω:free_energy_action_nonlocal_reaction",
+      "signature_terms": [
+        "free_energy_action",
+        "nonlocal",
+        "reaction"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:free_energy_action#0",
+          "weight": 14.575901985168457
+        },
+        {
+          "feature": "operator_apparatus:nonlocal_operator#0",
+          "weight": 0.8897250294685364
+        },
+        {
+          "feature": "operator_apparatus:reaction_operator#0",
+          "weight": 0.6782984137535095
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.25647851824760437
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.1794445514678955
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.17099928855895996
+        },
+        {
+          "feature": "protocol_order:intervention_sequence#0",
+          "weight": 0.15223398804664612
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.14607344567775726
+        }
+      ]
+    },
+    {
+      "token": "Ω24",
+      "cluster": 31,
+      "support": 1938,
+      "signature_name": "Ω:markov_closure",
+      "signature_slug": "omega_markov_closure",
+      "display_label": "Ω:markov_closure",
+      "signature_terms": [
+        "markov",
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 5.119555950164795
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 2.430481433868408
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.3657361567020416
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.3007749617099762
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.2495986968278885
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.22159188985824585
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.18194791674613953
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": -0.1435299813747406
+        }
+      ]
+    },
+    {
+      "token": "Ω25",
+      "cluster": 23,
+      "support": 1858,
+      "signature_name": "Ω:protocol_closure_readout",
+      "signature_slug": "omega_protocol_closure_readout",
+      "display_label": "Ω:protocol_closure_readout",
+      "signature_terms": [
+        "protocol",
+        "closure",
+        "readout"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "protocol_order:write_hold_read#0",
+          "weight": 16.30013656616211
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.4179523289203644
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": 0.28517332673072815
+        },
+        {
+          "feature": "protocol_order:measurement_order#0",
+          "weight": 0.1374555379152298
+        },
+        {
+          "feature": "readout_current:biological_response#0",
+          "weight": 0.12224720418453217
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": -0.0864759311079979
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.08124905079603195
+        },
+        {
+          "feature": "closure_constraints:compatibility_condition#0",
+          "weight": 0.07626191526651382
+        }
+      ]
+    },
+    {
+      "token": "Ω26",
+      "cluster": 5,
+      "support": 1748,
+      "signature_name": "Ω:boundary_derivative_readout",
+      "signature_slug": "omega_boundary_derivative_readout",
+      "display_label": "Ω:boundary_derivative_readout",
+      "signature_terms": [
+        "boundary",
+        "derivative",
+        "readout"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "closure_constraints:boundary_condition#0",
+          "weight": 16.41940689086914
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.36669960618019104
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": 0.2000037133693695
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 0.1282670944929123
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.1147676482796669
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.11350665241479874
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.10398653149604797
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.10332264751195908
+        }
+      ]
+    },
+    {
+      "token": "Ω27",
+      "cluster": 12,
+      "support": 1715,
+      "signature_name": "Ω:protocol_commutator",
+      "signature_slug": "omega_protocol_commutator",
+      "display_label": "Ω:protocol_commutator",
+      "signature_terms": [
+        "protocol",
+        "commutator"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "protocol_order:discrete_update#0",
+          "weight": 16.387042999267578
+        },
+        {
+          "feature": "operator_apparatus:control_update#0",
+          "weight": 0.8394489884376526
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.17932157218456268
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.15717393159866333
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.12645217776298523
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.11745023727416992
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": -0.10238315165042877
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.09634226560592651
+        }
+      ]
+    },
+    {
+      "token": "Ω28",
+      "cluster": 16,
+      "support": 1550,
+      "signature_name": "Ω:protocol_conservation_balance_markov",
+      "signature_slug": "omega_protocol_conservation_balance_markov",
+      "display_label": "Ω:protocol_conservation_balance_markov",
+      "signature_terms": [
+        "protocol",
+        "conservation_balance",
+        "markov"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:control_update#0",
+          "weight": 17.081357955932617
+        },
+        {
+          "feature": "protocol_order:discrete_update#0",
+          "weight": 1.542619228363037
+        },
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": 0.3155131936073303
+        },
+        {
+          "feature": "operator_apparatus:markov_transition#0",
+          "weight": 0.2886112630367279
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.196794331073761
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.16609923541545868
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": 0.15782713890075684
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.1381652057170868
+        }
+      ]
+    },
+    {
+      "token": "Ω29",
+      "cluster": 7,
+      "support": 1424,
+      "signature_name": "Ω:markov_protocol_readout",
+      "signature_slug": "omega_markov_protocol_readout",
+      "display_label": "Ω:markov_protocol_readout",
+      "signature_terms": [
+        "markov",
+        "protocol",
+        "readout"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:markov_transition#0",
+          "weight": 1.3753881454467773
+        },
+        {
+          "feature": "protocol_order:measurement_order#0",
+          "weight": 0.7198439836502075
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": 0.6595431566238403
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": 0.6363003253936768
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5118057131767273
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.3777943551540375
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.3659798800945282
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.339587539434433
+        }
+      ]
+    },
+    {
+      "token": "Ω30",
+      "cluster": 1,
+      "support": 1221,
+      "signature_name": "Ω:readout_closure_protocol",
+      "signature_slug": "omega_readout_closure_protocol",
+      "display_label": "Ω:readout_closure_protocol",
+      "signature_terms": [
+        "readout",
+        "closure",
+        "protocol"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 1.7777882814407349
+        },
+        {
+          "feature": "closure_constraints:gauge_constraint#0",
+          "weight": 1.0520836114883423
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 0.5097000598907471
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.3960530459880829
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.3857448697090149
+        },
+        {
+          "feature": "protocol_order:measurement_order#0",
+          "weight": 0.34704285860061646
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.33948707580566406
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.3356350064277649
+        }
+      ]
+    },
+    {
+      "token": "Ω31",
+      "cluster": 14,
+      "support": 860,
+      "signature_name": "Ω:derivative_readout_closure",
+      "signature_slug": "omega_derivative_readout_closure",
+      "display_label": "Ω:derivative_readout_closure",
+      "signature_terms": [
+        "derivative",
+        "readout",
+        "closure"
+      ],
+      "signature_components": null,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:variational_derivative#0",
+          "weight": 22.97579002380371
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 2.09578800201416
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.3662392497062683
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.1428387612104416
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.13712573051452637
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 0.13552279770374298
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": -0.13462591171264648
+        },
+        {
+          "feature": "closure_constraints:weak_form_closure#0",
+          "weight": 0.1343110054731369
+        }
+      ]
+    }
+  ],
+  "claim_scope": "Readable signature names are deterministic summaries of learned codeword centroids and profiles. Numeric tokens remain the stable machine ids; signature names are publication labels, not new clusters."
+}

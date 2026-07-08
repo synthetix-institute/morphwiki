@@ -1,0 +1,1052 @@
+{
+  "report_type": "operator_substrate_v2_apparatus_signature_names",
+  "readiness": "usable",
+  "object": "alpha_apparatus_regimes",
+  "tokens": [
+    {
+      "token": "A00",
+      "cluster": 4,
+      "support": 211394,
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_diffuse-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_diffuse_r_mixed_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:diffuse",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.39520043142189465
+      },
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.46992364525794983
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.34674522280693054
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.33659541606903076
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.33434394001960754
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.3334076702594757
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.32201087474823
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.32198041677474976
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.3182442784309387
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.312486469745636
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.2754298150539398
+        }
+      ]
+    },
+    {
+      "token": "A01",
+      "cluster": 11,
+      "support": 39917,
+      "signature_name": "A:Ω_derivative_graph-Ξ_graph_closure-R_transport-Γ_lo",
+      "signature_slug": "a_omega_derivative_graph_xi_graph_closure_r_transport_gamma_lo",
+      "display_label": "Ω:derivative_graph|Ξ:graph_closure|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:derivative_graph",
+        "xi": "Ξ:graph_closure",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.7811208257133552
+      },
+      "top_features": [
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 2.8333094120025635
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 2.830700397491455
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 2.215825319290161
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.4949021339416504
+        },
+        {
+          "feature": "operator_apparatus:variational_derivative#0",
+          "weight": 0.4520876705646515
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.24006499350070953
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.22889624536037445
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.1862708330154419
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.18476556241512299
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.1831740438938141
+        }
+      ]
+    },
+    {
+      "token": "A02",
+      "cluster": 1,
+      "support": 37851,
+      "signature_name": "A:Ω_spectral-Ξ_diffuse-R_spectral-Γ_lo",
+      "signature_slug": "a_omega_spectral_xi_diffuse_r_spectral_gamma_lo",
+      "display_label": "Ω:spectral|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:spectral",
+        "xi": "Ξ:diffuse",
+        "route": "spectral",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.27877731103537556
+      },
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 2.9699716567993164
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 2.9343111515045166
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.6452580690383911
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.22825849056243896
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.19852064549922943
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.19168761372566223
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.18486936390399933
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.1785612255334854
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.17174549400806427
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.16184763610363007
+        }
+      ]
+    },
+    {
+      "token": "A03",
+      "cluster": 0,
+      "support": 36408,
+      "signature_name": "A:Ω_readout-Ξ_selector_hilbert_field_carrier-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_xi_selector_hilbert_field_carrier_r_mixed_gamma_lo",
+      "display_label": "Ω:readout|Ξ:selector_hilbert_field_carrier|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout",
+        "xi": "Ξ:selector_hilbert_field_carrier",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.6209624258404747
+      },
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 2.1283767223358154
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 1.9031460285186768
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 1.4021276235580444
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.2776060402393341
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.2673419415950775
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.2605970501899719
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.25617581605911255
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.2475811243057251
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.24380724132061005
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.2353084683418274
+        }
+      ]
+    },
+    {
+      "token": "A04",
+      "cluster": 13,
+      "support": 29880,
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_closure_field_carrier_coordinate-R_boundary-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_closure_field_carrier_coordinate_r_boundary_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:closure_field_carrier_coordinate|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:closure_field_carrier_coordinate",
+        "route": "boundary",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9552878179384203
+      },
+      "top_features": [
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 3.2404754161834717
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 1.710767388343811
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.4936329126358032
+        },
+        {
+          "feature": "route:boundary_weak_form",
+          "weight": 0.6229883432388306
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.25453484058380127
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.24982036650180817
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.2300225794315338
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.21645884215831757
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.21588553488254547
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.19979776442050934
+        }
+      ]
+    },
+    {
+      "token": "A05",
+      "cluster": 3,
+      "support": 27065,
+      "signature_name": "A:Ω_derivative-Ξ_diffuse-R_transport-Γ_lo",
+      "signature_slug": "a_omega_derivative_xi_diffuse_r_transport_gamma_lo",
+      "display_label": "Ω:derivative|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:derivative",
+        "xi": "Ξ:diffuse",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.31428043598743766
+      },
+      "top_features": [
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 3.0404839515686035
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.5396782159805298
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.3251548707485199
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.32390472292900085
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.32367029786109924
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.30577436089515686
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.3050922751426697
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.29035019874572754
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.28476884961128235
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.28348878026008606
+        }
+      ]
+    },
+    {
+      "token": "A06",
+      "cluster": 2,
+      "support": 22598,
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_markov-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_markov_r_mixed_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:markov|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:markov",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9528276838658288
+      },
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 2.9788413047790527
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 2.9690768718719482
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.23127418756484985
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.19852294027805328
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.19686634838581085
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.19038914144039154
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.19005568325519562
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.18447202444076538
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.1836172640323639
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.17698830366134644
+        }
+      ]
+    },
+    {
+      "token": "A07",
+      "cluster": 9,
+      "support": 18578,
+      "signature_name": "A:Ω_spectral_readout_closure-Ξ_selector_hilbert_field_carrier-R_spectral-Γ_lo",
+      "signature_slug": "a_omega_spectral_readout_closure_xi_selector_hilbert_field_carrier_r_spectral_gamma_lo",
+      "display_label": "Ω:spectral_readout_closure|Ξ:selector_hilbert_field_carrier|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:spectral_readout_closure",
+        "xi": "Ξ:selector_hilbert_field_carrier",
+        "route": "spectral",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.5595327807083648
+      },
+      "top_features": [
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 4.3921966552734375
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 3.8721749782562256
+        },
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 2.7684197425842285
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.6435802578926086
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.17163915932178497
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.16693632304668427
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.15470615029335022
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.1417258381843567
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.1411774605512619
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.14058369398117065
+        }
+      ]
+    },
+    {
+      "token": "A08",
+      "cluster": 15,
+      "support": 17428,
+      "signature_name": "A:Ω_markov_integral-Ξ_markov-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_markov_integral_xi_markov_r_mixed_gamma_lo",
+      "display_label": "Ω:markov_integral|Ξ:markov|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:markov_integral",
+        "xi": "Ξ:markov",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.8063461097085151
+      },
+      "top_features": [
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 4.748363494873047
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 2.8942759037017822
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 2.8331761360168457
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.2875162959098816
+        },
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 0.23300355672836304
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.20162008702754974
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.1576300412416458
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.15159718692302704
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.14856113493442535
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.1471814513206482
+        }
+      ]
+    },
+    {
+      "token": "A09",
+      "cluster": 8,
+      "support": 13484,
+      "signature_name": "A:Ω_readout_derivative_closure-Ξ_diffuse-R_transport-Γ_lo",
+      "signature_slug": "a_omega_readout_derivative_closure_xi_diffuse_r_transport_gamma_lo",
+      "display_label": "Ω:readout_derivative_closure|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout_derivative_closure",
+        "xi": "Ξ:diffuse",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.38549391871848115
+      },
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 5.174666404724121
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.6249840259552002
+        },
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": 1.0261150598526
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.45412805676460266
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.31239253282546997
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.2906982898712158
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.26033347845077515
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -0.22945764660835266
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.19234688580036163
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.1732925921678543
+        }
+      ]
+    },
+    {
+      "token": "A10",
+      "cluster": 6,
+      "support": 10193,
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_spectral-Γ_lo",
+      "signature_slug": "a_omega_closure_protocol_derivative_xi_diffuse_r_spectral_gamma_lo",
+      "display_label": "Ω:closure_protocol_derivative|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:closure_protocol_derivative",
+        "xi": "Ξ:diffuse",
+        "route": "spectral",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.38408711861081135
+      },
+      "top_features": [
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 4.715425491333008
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 3.509413003921509
+        },
+        {
+          "feature": "protocol_order:write_hold_read#0",
+          "weight": 0.24964450299739838
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.2382713407278061
+        },
+        {
+          "feature": "operator_apparatus:reaction_operator#0",
+          "weight": 0.2245326191186905
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.219886913895607
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.19300349056720734
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.1663208305835724
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.15181516110897064
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.1414315551519394
+        }
+      ]
+    },
+    {
+      "token": "A11",
+      "cluster": 10,
+      "support": 8683,
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_reaction_hilbert-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_closure_protocol_derivative_xi_reaction_hilbert_r_mixed_gamma_lo",
+      "display_label": "Ω:closure_protocol_derivative|Ξ:reaction_hilbert|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:closure_protocol_derivative",
+        "xi": "Ξ:reaction_hilbert",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9767361510998502
+      },
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 6.198094367980957
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 4.742392063140869
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5414897799491882
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5353770852088928
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.4771428108215332
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.4468423128128052
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.3525146245956421
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.3428780734539032
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.3257175385951996
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.3223012387752533
+        }
+      ]
+    },
+    {
+      "token": "A12",
+      "cluster": 12,
+      "support": 8127,
+      "signature_name": "A:Ω_readout_closure_spectral-Ξ_positivity-R_mixed-Γ_lo",
+      "signature_slug": "a_omega_readout_closure_spectral_xi_positivity_r_mixed_gamma_lo",
+      "display_label": "Ω:readout_closure_spectral|Ξ:positivity|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout_closure_spectral",
+        "xi": "Ξ:positivity",
+        "route": "mixed",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9550879783437923
+      },
+      "top_features": [
+        {
+          "feature": "selector:positivity#0",
+          "weight": 7.216842174530029
+        },
+        {
+          "feature": "readout_current:biological_response#0",
+          "weight": 0.31632480025291443
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.27933722734451294
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.26818668842315674
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.24980643391609192
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.23717303574085236
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.21126876771450043
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.20614930987358093
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.1933632493019104
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.1904895007610321
+        }
+      ]
+    },
+    {
+      "token": "A13",
+      "cluster": 16,
+      "support": 8040,
+      "signature_name": "A:Ω_closure_protocol_derivative-Ξ_diffuse-R_protocol-Γ_lo",
+      "signature_slug": "a_omega_closure_protocol_derivative_xi_diffuse_r_protocol_gamma_lo",
+      "display_label": "Ω:closure_protocol_derivative|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:closure_protocol_derivative",
+        "xi": "Ξ:diffuse",
+        "route": "protocol",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.26629353233830844
+      },
+      "top_features": [
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 7.545806884765625
+        },
+        {
+          "feature": "route:discrete_protocol",
+          "weight": 0.2580997943878174
+        },
+        {
+          "feature": "route:constraint_closure",
+          "weight": 0.12301182746887207
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.11151127517223358
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.10721508413553238
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.10170714557170868
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.09160283207893372
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.08944445103406906
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.08870218694210052
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": -0.08716973662376404
+        }
+      ]
+    },
+    {
+      "token": "A14",
+      "cluster": 7,
+      "support": 4990,
+      "signature_name": "A:Ω_closure_integral_spectral-Ξ_normalization_selector_boundary-R_closure-Γ_lo",
+      "signature_slug": "a_omega_closure_integral_spectral_xi_normalization_selector_boundary_r_closure_gamma_lo",
+      "display_label": "Ω:closure_integral_spectral|Ξ:normalization_selector_boundary|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:closure_integral_spectral",
+        "xi": "Ξ:normalization_selector_boundary",
+        "route": "closure",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.8963927855711423
+      },
+      "top_features": [
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 9.509182929992676
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": 9.401223182678223
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.7563785910606384
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.7476806044578552
+        },
+        {
+          "feature": "route:constraint_closure",
+          "weight": 0.575817346572876
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.5393702983856201
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.34331828355789185
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.2742190659046173
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.2641081213951111
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.18175923824310303
+        }
+      ]
+    },
+    {
+      "token": "A15",
+      "cluster": 14,
+      "support": 1857,
+      "signature_name": "A:Ω_protocol_commutator-Ξ_diffuse-R_protocol-Γ_lo",
+      "signature_slug": "a_omega_protocol_commutator_xi_diffuse_r_protocol_gamma_lo",
+      "display_label": "Ω:protocol_commutator|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:protocol_commutator",
+        "xi": "Ξ:diffuse",
+        "route": "protocol",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.2040926225094238
+      },
+      "top_features": [
+        {
+          "feature": "protocol_order:discrete_update#0",
+          "weight": 16.316267013549805
+        },
+        {
+          "feature": "operator_apparatus:control_update#0",
+          "weight": 2.3612446784973145
+        },
+        {
+          "feature": "route:discrete_protocol",
+          "weight": 0.2876216471195221
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.21723225712776184
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": 0.20513798296451569
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.18300603330135345
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.1685340404510498
+        },
+        {
+          "feature": "route:spectral_operator",
+          "weight": 0.12163699418306351
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.1183895394206047
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.11502416431903839
+        }
+      ]
+    },
+    {
+      "token": "A16",
+      "cluster": 5,
+      "support": 1755,
+      "signature_name": "A:Ω_boundary_derivative_readout-Ξ_diffuse-R_boundary-Γ_lo",
+      "signature_slug": "a_omega_boundary_derivative_readout_xi_diffuse_r_boundary_gamma_lo",
+      "display_label": "Ω:boundary_derivative_readout|Ξ:diffuse|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:boundary_derivative_readout",
+        "xi": "Ξ:diffuse",
+        "route": "boundary",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.43133903133903134
+      },
+      "top_features": [
+        {
+          "feature": "closure_constraints:boundary_condition#0",
+          "weight": 16.50662612915039
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 3.6739189624786377
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 2.604327440261841
+        },
+        {
+          "feature": "route:boundary_weak_form",
+          "weight": 0.5945266485214233
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 0.30227863788604736
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.28915613889694214
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.1479988843202591
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.14051751792430878
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": 0.13257277011871338
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.12550540268421173
+        }
+      ]
+    },
+    {
+      "token": "A17",
+      "cluster": 17,
+      "support": 1752,
+      "signature_name": "A:Ω_readout_derivative_closure-Ξ_selector_coordinate_field_carrier-R_transport-Γ_lo",
+      "signature_slug": "a_omega_readout_derivative_closure_xi_selector_coordinate_field_carrier_r_transport_gamma_lo",
+      "display_label": "Ω:readout_derivative_closure|Ξ:selector_coordinate_field_carrier|Γ:lo",
+      "signature_terms": null,
+      "signature_components": {
+        "omega": "Ω:readout_derivative_closure",
+        "xi": "Ξ:selector_coordinate_field_carrier",
+        "route": "transport",
+        "gamma_transfer_level": "lo",
+        "xi_top_fraction": 0.9788812785388128
+      },
+      "top_features": [
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": 16.078041076660156
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 4.741405010223389
+        },
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": 1.6165064573287964
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.6849263906478882
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.45928463339805603
+        },
+        {
+          "feature": "route:transport_flow",
+          "weight": 0.4133281409740448
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": 0.38218390941619873
+        },
+        {
+          "feature": "closure_constraints:weak_form_closure#0",
+          "weight": 0.3064291179180145
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.2966817021369934
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.1670694500207901
+        }
+      ]
+    }
+  ],
+  "claim_scope": "Readable signature names are deterministic summaries of learned codeword centroids and profiles. Numeric tokens remain the stable machine ids; signature names are publication labels, not new clusters."
+}

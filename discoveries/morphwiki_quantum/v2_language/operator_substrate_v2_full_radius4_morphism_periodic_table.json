@@ -1,0 +1,3595 @@
+{
+  "report_type": "operator_substrate_v2_morphism_periodic_table",
+  "readiness": "usable",
+  "sample_rows": 500000,
+  "occupied_cells": 1211,
+  "possible_cells": 1944,
+  "occupied_fraction": 0.6229423868312757,
+  "top_cells": [
+    {
+      "cell": "A00.Ξ00.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ00",
+      "route": "unclassified",
+      "support": 53378
+    },
+    {
+      "cell": "A04.Ξ05.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 27490
+    },
+    {
+      "cell": "A01.Ξ06.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 24150
+    },
+    {
+      "cell": "A00.Ξ00.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ00",
+      "route": "constraint_closure",
+      "support": 19236
+    },
+    {
+      "cell": "A00.Ξ01.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "unclassified",
+      "support": 14254
+    },
+    {
+      "cell": "A00.Ξ02.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "unclassified",
+      "support": 14161
+    },
+    {
+      "cell": "A00.Ξ04.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "unclassified",
+      "support": 13172
+    },
+    {
+      "cell": "A00.Ξ07.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 11706
+    },
+    {
+      "cell": "A02.Ξ00.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ00",
+      "route": "spectral_operator",
+      "support": 10476
+    },
+    {
+      "cell": "A07.Ξ01.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 10351
+    },
+    {
+      "cell": "A00.Ξ01.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 9795
+    },
+    {
+      "cell": "A03.Ξ01.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "unclassified",
+      "support": 9319
+    },
+    {
+      "cell": "A00.Ξ01.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 8229
+    },
+    {
+      "cell": "A05.Ξ00.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ00",
+      "route": "transport_flow",
+      "support": 7757
+    },
+    {
+      "cell": "A00.Ξ02.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 7056
+    },
+    {
+      "cell": "A02.Ξ01.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 6912
+    },
+    {
+      "cell": "A06.Ξ03.unclassified",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "unclassified",
+      "support": 6885
+    },
+    {
+      "cell": "A00.Ξ00.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ00",
+      "route": "spectral_operator",
+      "support": 6376
+    },
+    {
+      "cell": "A00.Ξ04.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 6161
+    },
+    {
+      "cell": "A00.Ξ07.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 5161
+    },
+    {
+      "cell": "A08.Ξ03.unclassified",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "unclassified",
+      "support": 5006
+    },
+    {
+      "cell": "A03.Ξ01.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 4811
+    },
+    {
+      "cell": "A06.Ξ03.constraint_closure",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 4788
+    },
+    {
+      "cell": "A02.Ξ02.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 4627
+    },
+    {
+      "cell": "A03.Ξ01.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 4329
+    },
+    {
+      "cell": "A06.Ξ03.spectral_operator",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 4278
+    },
+    {
+      "cell": "A05.Ξ01.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 4137
+    },
+    {
+      "cell": "A11.Ξ08.unclassified",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "unclassified",
+      "support": 4047
+    },
+    {
+      "cell": "A14.Ξ13.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ13",
+      "route": "constraint_closure",
+      "support": 4018
+    },
+    {
+      "cell": "A02.Ξ04.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 3782
+    },
+    {
+      "cell": "A09.Ξ07.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 3615
+    },
+    {
+      "cell": "A01.Ξ06.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 3581
+    },
+    {
+      "cell": "A05.Ξ02.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 3535
+    },
+    {
+      "cell": "A02.Ξ07.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 3527
+    },
+    {
+      "cell": "A00.Ξ04.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 3448
+    },
+    {
+      "cell": "A00.Ξ02.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 3336
+    },
+    {
+      "cell": "A02.Ξ05.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 3258
+    },
+    {
+      "cell": "A06.Ξ03.transport_flow",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 3044
+    },
+    {
+      "cell": "A12.Ξ11.unclassified",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "unclassified",
+      "support": 2989
+    },
+    {
+      "cell": "A08.Ξ03.constraint_closure",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 2907
+    },
+    {
+      "cell": "A00.Ξ09.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ09",
+      "route": "unclassified",
+      "support": 2884
+    },
+    {
+      "cell": "A08.Ξ03.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 2632
+    },
+    {
+      "cell": "A05.Ξ07.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 2503
+    },
+    {
+      "cell": "A01.Ξ06.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ06",
+      "route": "constraint_closure",
+      "support": 2502
+    },
+    {
+      "cell": "A00.Ξ00.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ00",
+      "route": "commutator_incompatibility",
+      "support": 2488
+    },
+    {
+      "cell": "A03.Ξ02.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "unclassified",
+      "support": 2486
+    },
+    {
+      "cell": "A05.Ξ04.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 2373
+    },
+    {
+      "cell": "A03.Ξ01.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 2349
+    },
+    {
+      "cell": "A00.Ξ04.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 2339
+    },
+    {
+      "cell": "A06.Ξ03.boundary_weak_form",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "boundary_weak_form",
+      "support": 2087
+    },
+    {
+      "cell": "A00.Ξ07.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 2046
+    },
+    {
+      "cell": "A00.Ξ10.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ10",
+      "route": "unclassified",
+      "support": 2039
+    },
+    {
+      "cell": "A08.Ξ03.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 2000
+    },
+    {
+      "cell": "A00.Ξ06.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ06",
+      "route": "unclassified",
+      "support": 1873
+    },
+    {
+      "cell": "A00.Ξ00.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ00",
+      "route": "transport_flow",
+      "support": 1842
+    },
+    {
+      "cell": "A11.Ξ08.spectral_operator",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "spectral_operator",
+      "support": 1819
+    },
+    {
+      "cell": "A07.Ξ04.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 1698
+    },
+    {
+      "cell": "A00.Ξ10.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 1621
+    },
+    {
+      "cell": "A00.Ξ09.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 1493
+    },
+    {
+      "cell": "A12.Ξ11.spectral_operator",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "spectral_operator",
+      "support": 1472
+    },
+    {
+      "cell": "A12.Ξ11.constraint_closure",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "constraint_closure",
+      "support": 1410
+    },
+    {
+      "cell": "A02.Ξ06.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 1402
+    },
+    {
+      "cell": "A07.Ξ06.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 1385
+    },
+    {
+      "cell": "A00.Ξ02.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "boundary_weak_form",
+      "support": 1374
+    },
+    {
+      "cell": "A01.Ξ05.boundary_weak_form",
+      "alpha": "A01",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 1372
+    },
+    {
+      "cell": "A00.Ξ07.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ07",
+      "route": "unclassified",
+      "support": 1350
+    },
+    {
+      "cell": "A02.Ξ03.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 1312
+    },
+    {
+      "cell": "A03.Ξ01.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "boundary_weak_form",
+      "support": 1234
+    },
+    {
+      "cell": "A03.Ξ02.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 1212
+    },
+    {
+      "cell": "A09.Ξ01.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 1211
+    },
+    {
+      "cell": "A11.Ξ08.constraint_closure",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "constraint_closure",
+      "support": 1210
+    },
+    {
+      "cell": "A07.Ξ03.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 1205
+    },
+    {
+      "cell": "A09.Ξ02.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 1194
+    },
+    {
+      "cell": "A13.Ξ00.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ00",
+      "route": "discrete_protocol",
+      "support": 1190
+    },
+    {
+      "cell": "A03.Ξ04.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ04",
+      "route": "unclassified",
+      "support": 1133
+    },
+    {
+      "cell": "A17.Ξ16.transport_flow",
+      "alpha": "A17",
+      "xi": "Ξ16",
+      "route": "transport_flow",
+      "support": 1115
+    },
+    {
+      "cell": "A07.Ξ05.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 1086
+    },
+    {
+      "cell": "A00.Ξ12.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 1081
+    },
+    {
+      "cell": "A09.Ξ03.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 1079
+    },
+    {
+      "cell": "A00.Ξ04.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "commutator_incompatibility",
+      "support": 1069
+    },
+    {
+      "cell": "A09.Ξ05.boundary_weak_form",
+      "alpha": "A09",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 1051
+    },
+    {
+      "cell": "A08.Ξ03.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "boundary_weak_form",
+      "support": 1037
+    },
+    {
+      "cell": "A11.Ξ08.transport_flow",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "transport_flow",
+      "support": 991
+    },
+    {
+      "cell": "A10.Ξ05.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 977
+    },
+    {
+      "cell": "A12.Ξ11.transport_flow",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "transport_flow",
+      "support": 965
+    },
+    {
+      "cell": "A10.Ξ08.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "unclassified",
+      "support": 959
+    },
+    {
+      "cell": "A05.Ξ07.boundary_weak_form",
+      "alpha": "A05",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 956
+    },
+    {
+      "cell": "A10.Ξ08.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "spectral_operator",
+      "support": 948
+    },
+    {
+      "cell": "A07.Ξ02.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 904
+    },
+    {
+      "cell": "A01.Ξ01.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 871
+    },
+    {
+      "cell": "A08.Ξ05.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 845
+    },
+    {
+      "cell": "A03.Ξ07.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 844
+    },
+    {
+      "cell": "A00.Ξ02.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "commutator_incompatibility",
+      "support": 840
+    },
+    {
+      "cell": "A00.Ξ01.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "commutator_incompatibility",
+      "support": 818
+    },
+    {
+      "cell": "A01.Ξ04.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 814
+    },
+    {
+      "cell": "A09.Ξ07.boundary_weak_form",
+      "alpha": "A09",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 813
+    },
+    {
+      "cell": "A10.Ξ08.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "transport_flow",
+      "support": 813
+    },
+    {
+      "cell": "A01.Ξ07.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 797
+    },
+    {
+      "cell": "A00.Ξ01.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 791
+    },
+    {
+      "cell": "A00.Ξ12.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 788
+    },
+    {
+      "cell": "A01.Ξ03.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 776
+    },
+    {
+      "cell": "A01.Ξ06.boundary_weak_form",
+      "alpha": "A01",
+      "xi": "Ξ06",
+      "route": "boundary_weak_form",
+      "support": 740
+    },
+    {
+      "cell": "A03.Ξ02.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 739
+    },
+    {
+      "cell": "A03.Ξ05.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 734
+    },
+    {
+      "cell": "A01.Ξ02.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 725
+    },
+    {
+      "cell": "A00.Ξ06.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ06",
+      "route": "constraint_closure",
+      "support": 715
+    },
+    {
+      "cell": "A16.Ξ05.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 709
+    },
+    {
+      "cell": "A07.Ξ07.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 703
+    },
+    {
+      "cell": "A02.Ξ10.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 692
+    },
+    {
+      "cell": "A02.Ξ09.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 672
+    },
+    {
+      "cell": "A04.Ξ05.spectral_operator",
+      "alpha": "A04",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 655
+    },
+    {
+      "cell": "A00.Ξ14.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ14",
+      "route": "unclassified",
+      "support": 644
+    },
+    {
+      "cell": "A00.Ξ12.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 642
+    },
+    {
+      "cell": "A12.Ξ11.boundary_weak_form",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "boundary_weak_form",
+      "support": 615
+    },
+    {
+      "cell": "A10.Ξ06.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 608
+    },
+    {
+      "cell": "A09.Ξ04.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 600
+    },
+    {
+      "cell": "A05.Ξ10.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 597
+    },
+    {
+      "cell": "A10.Ξ08.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "constraint_closure",
+      "support": 581
+    },
+    {
+      "cell": "A00.Ξ04.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 578
+    },
+    {
+      "cell": "A05.Ξ00.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ00",
+      "route": "constraint_closure",
+      "support": 573
+    },
+    {
+      "cell": "A03.Ξ04.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 545
+    },
+    {
+      "cell": "A01.Ξ10.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 527
+    },
+    {
+      "cell": "A03.Ξ01.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "commutator_incompatibility",
+      "support": 526
+    },
+    {
+      "cell": "A01.Ξ09.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 521
+    },
+    {
+      "cell": "A09.Ξ06.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 520
+    },
+    {
+      "cell": "A00.Ξ09.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 493
+    },
+    {
+      "cell": "A05.Ξ01.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 492
+    },
+    {
+      "cell": "A03.Ξ09.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ09",
+      "route": "unclassified",
+      "support": 492
+    },
+    {
+      "cell": "A13.Ξ01.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ01",
+      "route": "discrete_protocol",
+      "support": 486
+    },
+    {
+      "cell": "A13.Ξ05.boundary_weak_form",
+      "alpha": "A13",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 484
+    },
+    {
+      "cell": "A00.Ξ01.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "boundary_weak_form",
+      "support": 481
+    },
+    {
+      "cell": "A13.Ξ00.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ00",
+      "route": "constraint_closure",
+      "support": 471
+    },
+    {
+      "cell": "A10.Ξ08.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "boundary_weak_form",
+      "support": 470
+    },
+    {
+      "cell": "A05.Ξ09.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 466
+    },
+    {
+      "cell": "A00.Ξ07.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 456
+    },
+    {
+      "cell": "A05.Ξ07.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 450
+    },
+    {
+      "cell": "A03.Ξ07.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 439
+    },
+    {
+      "cell": "A09.Ξ07.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 438
+    },
+    {
+      "cell": "A00.Ξ02.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 437
+    },
+    {
+      "cell": "A13.Ξ06.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 428
+    },
+    {
+      "cell": "A00.Ξ10.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 426
+    },
+    {
+      "cell": "A05.Ξ02.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 422
+    },
+    {
+      "cell": "A08.Ξ03.commutator_incompatibility",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "commutator_incompatibility",
+      "support": 418
+    },
+    {
+      "cell": "A14.Ξ13.spectral_operator",
+      "alpha": "A14",
+      "xi": "Ξ13",
+      "route": "spectral_operator",
+      "support": 405
+    },
+    {
+      "cell": "A02.Ξ12.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 397
+    },
+    {
+      "cell": "A00.Ξ10.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 396
+    },
+    {
+      "cell": "A06.Ξ03.commutator_incompatibility",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "commutator_incompatibility",
+      "support": 388
+    },
+    {
+      "cell": "A03.Ξ04.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 368
+    },
+    {
+      "cell": "A13.Ξ01.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 364
+    },
+    {
+      "cell": "A07.Ξ10.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 360
+    },
+    {
+      "cell": "A13.Ξ02.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ02",
+      "route": "discrete_protocol",
+      "support": 358
+    },
+    {
+      "cell": "A04.Ξ10.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 355
+    },
+    {
+      "cell": "A10.Ξ01.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 346
+    },
+    {
+      "cell": "A00.Ξ14.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ14",
+      "route": "constraint_closure",
+      "support": 335
+    },
+    {
+      "cell": "A00.Ξ06.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 333
+    },
+    {
+      "cell": "A03.Ξ02.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "boundary_weak_form",
+      "support": 328
+    },
+    {
+      "cell": "A09.Ξ07.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 324
+    },
+    {
+      "cell": "A16.Ξ15.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ15",
+      "route": "boundary_weak_form",
+      "support": 324
+    },
+    {
+      "cell": "A09.Ξ10.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 317
+    },
+    {
+      "cell": "A09.Ξ00.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ00",
+      "route": "transport_flow",
+      "support": 315
+    },
+    {
+      "cell": "A10.Ξ02.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ02",
+      "route": "unclassified",
+      "support": 311
+    },
+    {
+      "cell": "A03.Ξ04.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 303
+    },
+    {
+      "cell": "A13.Ξ01.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 301
+    },
+    {
+      "cell": "A13.Ξ04.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ04",
+      "route": "discrete_protocol",
+      "support": 301
+    },
+    {
+      "cell": "A05.Ξ01.spectral_operator",
+      "alpha": "A05",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 295
+    },
+    {
+      "cell": "A01.Ξ12.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ12",
+      "route": "transport_flow",
+      "support": 293
+    },
+    {
+      "cell": "A13.Ξ03.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ03",
+      "route": "discrete_protocol",
+      "support": 283
+    },
+    {
+      "cell": "A08.Ξ12.commutator_incompatibility",
+      "alpha": "A08",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 282
+    },
+    {
+      "cell": "A08.Ξ06.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 282
+    },
+    {
+      "cell": "A05.Ξ12.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ12",
+      "route": "transport_flow",
+      "support": 278
+    },
+    {
+      "cell": "A00.Ξ12.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 277
+    },
+    {
+      "cell": "A01.Ξ05.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ05",
+      "route": "transport_flow",
+      "support": 264
+    },
+    {
+      "cell": "A10.Ξ03.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ03",
+      "route": "unclassified",
+      "support": 260
+    },
+    {
+      "cell": "A13.Ξ00.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ00",
+      "route": "spectral_operator",
+      "support": 260
+    },
+    {
+      "cell": "A05.Ξ06.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 259
+    },
+    {
+      "cell": "A03.Ξ09.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 242
+    },
+    {
+      "cell": "A10.Ξ07.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 233
+    },
+    {
+      "cell": "A03.Ξ10.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ10",
+      "route": "unclassified",
+      "support": 233
+    },
+    {
+      "cell": "A15.Ξ00.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ00",
+      "route": "discrete_protocol",
+      "support": 232
+    },
+    {
+      "cell": "A17.Ξ16.constraint_closure",
+      "alpha": "A17",
+      "xi": "Ξ16",
+      "route": "constraint_closure",
+      "support": 228
+    },
+    {
+      "cell": "A11.Ξ08.commutator_incompatibility",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "commutator_incompatibility",
+      "support": 226
+    },
+    {
+      "cell": "A04.Ξ05.transport_flow",
+      "alpha": "A04",
+      "xi": "Ξ05",
+      "route": "transport_flow",
+      "support": 224
+    },
+    {
+      "cell": "A00.Ξ00.discrete_protocol",
+      "alpha": "A00",
+      "xi": "Ξ00",
+      "route": "discrete_protocol",
+      "support": 223
+    },
+    {
+      "cell": "A03.Ξ02.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 220
+    },
+    {
+      "cell": "A05.Ξ04.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 218
+    },
+    {
+      "cell": "A00.Ξ09.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ09",
+      "route": "commutator_incompatibility",
+      "support": 217
+    },
+    {
+      "cell": "A02.Ξ14.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ14",
+      "route": "spectral_operator",
+      "support": 216
+    },
+    {
+      "cell": "A10.Ξ02.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 213
+    },
+    {
+      "cell": "A10.Ξ03.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 205
+    },
+    {
+      "cell": "A03.Ξ07.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 203
+    },
+    {
+      "cell": "A05.Ξ02.spectral_operator",
+      "alpha": "A05",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 202
+    },
+    {
+      "cell": "A03.Ξ10.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 201
+    },
+    {
+      "cell": "A10.Ξ01.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ01",
+      "route": "unclassified",
+      "support": 198
+    },
+    {
+      "cell": "A09.Ξ05.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ05",
+      "route": "transport_flow",
+      "support": 198
+    },
+    {
+      "cell": "A17.Ξ16.spectral_operator",
+      "alpha": "A17",
+      "xi": "Ξ16",
+      "route": "spectral_operator",
+      "support": 190
+    },
+    {
+      "cell": "A07.Ξ09.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 187
+    },
+    {
+      "cell": "A00.Ξ07.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ07",
+      "route": "commutator_incompatibility",
+      "support": 183
+    },
+    {
+      "cell": "A00.Ξ14.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ14",
+      "route": "spectral_operator",
+      "support": 182
+    },
+    {
+      "cell": "A09.Ξ01.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 182
+    },
+    {
+      "cell": "A00.Ξ15.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ15",
+      "route": "boundary_weak_form",
+      "support": 181
+    },
+    {
+      "cell": "A04.Ξ07.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 180
+    },
+    {
+      "cell": "A13.Ξ00.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ00",
+      "route": "transport_flow",
+      "support": 179
+    },
+    {
+      "cell": "A17.Ξ16.boundary_weak_form",
+      "alpha": "A17",
+      "xi": "Ξ16",
+      "route": "boundary_weak_form",
+      "support": 177
+    },
+    {
+      "cell": "A04.Ξ12.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 170
+    },
+    {
+      "cell": "A00.Ξ15.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ15",
+      "route": "constraint_closure",
+      "support": 168
+    },
+    {
+      "cell": "A12.Ξ11.commutator_incompatibility",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "commutator_incompatibility",
+      "support": 166
+    },
+    {
+      "cell": "A00.Ξ09.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ09",
+      "route": "boundary_weak_form",
+      "support": 166
+    },
+    {
+      "cell": "A13.Ξ02.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 165
+    },
+    {
+      "cell": "A03.Ξ02.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "commutator_incompatibility",
+      "support": 165
+    },
+    {
+      "cell": "A03.Ξ03.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ03",
+      "route": "unclassified",
+      "support": 164
+    },
+    {
+      "cell": "A10.Ξ02.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 163
+    },
+    {
+      "cell": "A04.Ξ05.constraint_closure",
+      "alpha": "A04",
+      "xi": "Ξ05",
+      "route": "constraint_closure",
+      "support": 160
+    },
+    {
+      "cell": "A03.Ξ09.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 157
+    },
+    {
+      "cell": "A05.Ξ00.spectral_operator",
+      "alpha": "A05",
+      "xi": "Ξ00",
+      "route": "spectral_operator",
+      "support": 155
+    },
+    {
+      "cell": "A03.Ξ09.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 151
+    },
+    {
+      "cell": "A00.Ξ17.constraint_closure",
+      "alpha": "A00",
+      "xi": "Ξ17",
+      "route": "constraint_closure",
+      "support": 151
+    },
+    {
+      "cell": "A10.Ξ01.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 149
+    },
+    {
+      "cell": "A10.Ξ03.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 149
+    },
+    {
+      "cell": "A12.Ξ11.discrete_protocol",
+      "alpha": "A12",
+      "xi": "Ξ11",
+      "route": "discrete_protocol",
+      "support": 145
+    },
+    {
+      "cell": "A08.Ξ12.constraint_closure",
+      "alpha": "A08",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 144
+    },
+    {
+      "cell": "A11.Ξ08.discrete_protocol",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "discrete_protocol",
+      "support": 143
+    },
+    {
+      "cell": "A03.Ξ07.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ07",
+      "route": "unclassified",
+      "support": 141
+    },
+    {
+      "cell": "A05.Ξ04.boundary_weak_form",
+      "alpha": "A05",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 140
+    },
+    {
+      "cell": "A01.Ξ06.commutator_incompatibility",
+      "alpha": "A01",
+      "xi": "Ξ06",
+      "route": "commutator_incompatibility",
+      "support": 140
+    },
+    {
+      "cell": "A13.Ξ03.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 139
+    },
+    {
+      "cell": "A07.Ξ12.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 137
+    },
+    {
+      "cell": "A05.Ξ10.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 136
+    },
+    {
+      "cell": "A13.Ξ07.boundary_weak_form",
+      "alpha": "A13",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 133
+    },
+    {
+      "cell": "A00.Ξ04.discrete_protocol",
+      "alpha": "A00",
+      "xi": "Ξ04",
+      "route": "discrete_protocol",
+      "support": 133
+    },
+    {
+      "cell": "A00.Ξ09.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 132
+    },
+    {
+      "cell": "A15.Ξ01.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ01",
+      "route": "discrete_protocol",
+      "support": 131
+    },
+    {
+      "cell": "A09.Ξ02.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 131
+    },
+    {
+      "cell": "A05.Ξ05.boundary_weak_form",
+      "alpha": "A05",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 129
+    },
+    {
+      "cell": "A08.Ξ12.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 128
+    },
+    {
+      "cell": "A13.Ξ04.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 128
+    },
+    {
+      "cell": "A10.Ξ05.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 128
+    },
+    {
+      "cell": "A15.Ξ05.boundary_weak_form",
+      "alpha": "A15",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 126
+    },
+    {
+      "cell": "A01.Ξ01.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 124
+    },
+    {
+      "cell": "A13.Ξ07.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 124
+    },
+    {
+      "cell": "A13.Ξ02.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 124
+    },
+    {
+      "cell": "A00.Ξ10.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ10",
+      "route": "commutator_incompatibility",
+      "support": 124
+    },
+    {
+      "cell": "A05.Ξ03.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 123
+    },
+    {
+      "cell": "A05.Ξ14.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ14",
+      "route": "transport_flow",
+      "support": 122
+    },
+    {
+      "cell": "A09.Ξ02.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 121
+    },
+    {
+      "cell": "A13.Ξ06.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ06",
+      "route": "discrete_protocol",
+      "support": 121
+    },
+    {
+      "cell": "A02.Ξ15.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ15",
+      "route": "spectral_operator",
+      "support": 120
+    },
+    {
+      "cell": "A07.Ξ14.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ14",
+      "route": "spectral_operator",
+      "support": 119
+    },
+    {
+      "cell": "A04.Ξ14.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ14",
+      "route": "boundary_weak_form",
+      "support": 119
+    },
+    {
+      "cell": "A00.Ξ15.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ15",
+      "route": "unclassified",
+      "support": 117
+    },
+    {
+      "cell": "A10.Ξ09.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ09",
+      "route": "unclassified",
+      "support": 117
+    },
+    {
+      "cell": "A13.Ξ09.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ09",
+      "route": "discrete_protocol",
+      "support": 116
+    },
+    {
+      "cell": "A10.Ξ04.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ04",
+      "route": "unclassified",
+      "support": 114
+    },
+    {
+      "cell": "A01.Ξ14.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ14",
+      "route": "transport_flow",
+      "support": 112
+    },
+    {
+      "cell": "A13.Ξ03.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 111
+    },
+    {
+      "cell": "A01.Ξ15.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ15",
+      "route": "transport_flow",
+      "support": 110
+    },
+    {
+      "cell": "A03.Ξ12.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 110
+    },
+    {
+      "cell": "A10.Ξ04.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 110
+    },
+    {
+      "cell": "A13.Ξ04.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 109
+    },
+    {
+      "cell": "A10.Ξ02.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 109
+    },
+    {
+      "cell": "A10.Ξ06.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 109
+    },
+    {
+      "cell": "A10.Ξ07.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 108
+    },
+    {
+      "cell": "A10.Ξ01.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 108
+    },
+    {
+      "cell": "A04.Ξ09.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ09",
+      "route": "boundary_weak_form",
+      "support": 107
+    },
+    {
+      "cell": "A00.Ξ17.unclassified",
+      "alpha": "A00",
+      "xi": "Ξ17",
+      "route": "unclassified",
+      "support": 106
+    },
+    {
+      "cell": "A03.Ξ12.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 105
+    },
+    {
+      "cell": "A13.Ξ07.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ07",
+      "route": "discrete_protocol",
+      "support": 105
+    },
+    {
+      "cell": "A15.Ξ02.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ02",
+      "route": "discrete_protocol",
+      "support": 105
+    },
+    {
+      "cell": "A09.Ξ01.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 104
+    },
+    {
+      "cell": "A16.Ξ04.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 103
+    },
+    {
+      "cell": "A13.Ξ07.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 103
+    },
+    {
+      "cell": "A01.Ξ11.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ11",
+      "route": "transport_flow",
+      "support": 103
+    },
+    {
+      "cell": "A03.Ξ04.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ04",
+      "route": "commutator_incompatibility",
+      "support": 102
+    },
+    {
+      "cell": "A01.Ξ07.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 102
+    },
+    {
+      "cell": "A04.Ξ15.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ15",
+      "route": "boundary_weak_form",
+      "support": 102
+    },
+    {
+      "cell": "A07.Ξ11.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ11",
+      "route": "spectral_operator",
+      "support": 102
+    },
+    {
+      "cell": "A00.Ξ06.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ06",
+      "route": "commutator_incompatibility",
+      "support": 101
+    },
+    {
+      "cell": "A02.Ξ11.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ11",
+      "route": "spectral_operator",
+      "support": 101
+    },
+    {
+      "cell": "A09.Ξ12.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ12",
+      "route": "transport_flow",
+      "support": 99
+    },
+    {
+      "cell": "A15.Ξ04.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ04",
+      "route": "discrete_protocol",
+      "support": 99
+    },
+    {
+      "cell": "A01.Ξ01.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 99
+    },
+    {
+      "cell": "A08.Ξ12.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ12",
+      "route": "transport_flow",
+      "support": 98
+    },
+    {
+      "cell": "A13.Ξ01.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 98
+    },
+    {
+      "cell": "A03.Ξ06.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ06",
+      "route": "unclassified",
+      "support": 98
+    },
+    {
+      "cell": "A10.Ξ08.commutator_incompatibility",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "commutator_incompatibility",
+      "support": 97
+    },
+    {
+      "cell": "A09.Ξ09.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 96
+    },
+    {
+      "cell": "A08.Ξ09.unclassified",
+      "alpha": "A08",
+      "xi": "Ξ09",
+      "route": "unclassified",
+      "support": 95
+    },
+    {
+      "cell": "A00.Ξ02.discrete_protocol",
+      "alpha": "A00",
+      "xi": "Ξ02",
+      "route": "discrete_protocol",
+      "support": 93
+    },
+    {
+      "cell": "A03.Ξ10.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 89
+    },
+    {
+      "cell": "A03.Ξ03.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 89
+    },
+    {
+      "cell": "A00.Ξ01.discrete_protocol",
+      "alpha": "A00",
+      "xi": "Ξ01",
+      "route": "discrete_protocol",
+      "support": 89
+    },
+    {
+      "cell": "A13.Ξ07.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 89
+    },
+    {
+      "cell": "A01.Ξ07.boundary_weak_form",
+      "alpha": "A01",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 88
+    },
+    {
+      "cell": "A14.Ξ03.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 88
+    },
+    {
+      "cell": "A03.Ξ05.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ05",
+      "route": "constraint_closure",
+      "support": 87
+    },
+    {
+      "cell": "A08.Ξ11.unclassified",
+      "alpha": "A08",
+      "xi": "Ξ11",
+      "route": "unclassified",
+      "support": 86
+    },
+    {
+      "cell": "A09.Ξ03.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 86
+    },
+    {
+      "cell": "A03.Ξ14.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ14",
+      "route": "unclassified",
+      "support": 85
+    },
+    {
+      "cell": "A03.Ξ04.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 85
+    },
+    {
+      "cell": "A13.Ξ06.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 84
+    },
+    {
+      "cell": "A03.Ξ05.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 83
+    },
+    {
+      "cell": "A08.Ξ10.unclassified",
+      "alpha": "A08",
+      "xi": "Ξ10",
+      "route": "unclassified",
+      "support": 83
+    },
+    {
+      "cell": "A08.Ξ10.constraint_closure",
+      "alpha": "A08",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 82
+    },
+    {
+      "cell": "A03.Ξ07.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 82
+    },
+    {
+      "cell": "A09.Ξ04.boundary_weak_form",
+      "alpha": "A09",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 81
+    },
+    {
+      "cell": "A16.Ξ01.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ01",
+      "route": "boundary_weak_form",
+      "support": 81
+    },
+    {
+      "cell": "A13.Ξ03.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 81
+    },
+    {
+      "cell": "A10.Ξ04.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 81
+    },
+    {
+      "cell": "A00.Ξ06.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 80
+    },
+    {
+      "cell": "A00.Ξ14.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ14",
+      "route": "boundary_weak_form",
+      "support": 80
+    },
+    {
+      "cell": "A07.Ξ08.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ08",
+      "route": "spectral_operator",
+      "support": 79
+    },
+    {
+      "cell": "A16.Ξ03.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ03",
+      "route": "boundary_weak_form",
+      "support": 78
+    },
+    {
+      "cell": "A03.Ξ06.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 77
+    },
+    {
+      "cell": "A05.Ξ04.spectral_operator",
+      "alpha": "A05",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 77
+    },
+    {
+      "cell": "A10.Ξ03.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 77
+    },
+    {
+      "cell": "A09.Ξ04.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 77
+    },
+    {
+      "cell": "A13.Ξ04.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ04",
+      "route": "transport_flow",
+      "support": 77
+    },
+    {
+      "cell": "A07.Ξ05.boundary_weak_form",
+      "alpha": "A07",
+      "xi": "Ξ05",
+      "route": "boundary_weak_form",
+      "support": 76
+    },
+    {
+      "cell": "A10.Ξ07.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 74
+    },
+    {
+      "cell": "A03.Ξ03.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 73
+    },
+    {
+      "cell": "A06.Ξ10.unclassified",
+      "alpha": "A06",
+      "xi": "Ξ10",
+      "route": "unclassified",
+      "support": 72
+    },
+    {
+      "cell": "A06.Ξ09.unclassified",
+      "alpha": "A06",
+      "xi": "Ξ09",
+      "route": "unclassified",
+      "support": 72
+    },
+    {
+      "cell": "A00.Ξ15.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ15",
+      "route": "spectral_operator",
+      "support": 71
+    },
+    {
+      "cell": "A01.Ξ04.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 70
+    },
+    {
+      "cell": "A15.Ξ03.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ03",
+      "route": "discrete_protocol",
+      "support": 69
+    },
+    {
+      "cell": "A08.Ξ09.constraint_closure",
+      "alpha": "A08",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 69
+    },
+    {
+      "cell": "A03.Ξ09.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ09",
+      "route": "boundary_weak_form",
+      "support": 68
+    },
+    {
+      "cell": "A15.Ξ01.spectral_operator",
+      "alpha": "A15",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 68
+    },
+    {
+      "cell": "A10.Ξ04.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 68
+    },
+    {
+      "cell": "A06.Ξ10.constraint_closure",
+      "alpha": "A06",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 67
+    },
+    {
+      "cell": "A14.Ξ09.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 67
+    },
+    {
+      "cell": "A05.Ξ09.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 67
+    },
+    {
+      "cell": "A04.Ξ04.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 66
+    },
+    {
+      "cell": "A10.Ξ03.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ03",
+      "route": "boundary_weak_form",
+      "support": 66
+    },
+    {
+      "cell": "A01.Ξ02.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 65
+    },
+    {
+      "cell": "A01.Ξ03.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 65
+    },
+    {
+      "cell": "A09.Ξ04.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 65
+    },
+    {
+      "cell": "A08.Ξ07.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 64
+    },
+    {
+      "cell": "A03.Ξ06.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ06",
+      "route": "spectral_operator",
+      "support": 64
+    },
+    {
+      "cell": "A03.Ξ12.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 64
+    },
+    {
+      "cell": "A02.Ξ00.constraint_closure",
+      "alpha": "A02",
+      "xi": "Ξ00",
+      "route": "constraint_closure",
+      "support": 64
+    },
+    {
+      "cell": "A16.Ξ02.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ02",
+      "route": "boundary_weak_form",
+      "support": 64
+    },
+    {
+      "cell": "A04.Ξ01.boundary_weak_form",
+      "alpha": "A04",
+      "xi": "Ξ01",
+      "route": "boundary_weak_form",
+      "support": 63
+    },
+    {
+      "cell": "A13.Ξ09.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 63
+    },
+    {
+      "cell": "A10.Ξ09.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 62
+    },
+    {
+      "cell": "A06.Ξ03.discrete_protocol",
+      "alpha": "A06",
+      "xi": "Ξ03",
+      "route": "discrete_protocol",
+      "support": 62
+    },
+    {
+      "cell": "A08.Ξ12.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 61
+    },
+    {
+      "cell": "A01.Ξ10.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 60
+    },
+    {
+      "cell": "A03.Ξ06.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ06",
+      "route": "constraint_closure",
+      "support": 60
+    },
+    {
+      "cell": "A08.Ξ10.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 60
+    },
+    {
+      "cell": "A01.Ξ05.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 59
+    },
+    {
+      "cell": "A03.Ξ11.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ11",
+      "route": "unclassified",
+      "support": 59
+    },
+    {
+      "cell": "A10.Ξ07.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 58
+    },
+    {
+      "cell": "A16.Ξ06.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ06",
+      "route": "boundary_weak_form",
+      "support": 57
+    },
+    {
+      "cell": "A13.Ξ05.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 57
+    },
+    {
+      "cell": "A15.Ξ06.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ06",
+      "route": "discrete_protocol",
+      "support": 56
+    },
+    {
+      "cell": "A03.Ξ09.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ09",
+      "route": "commutator_incompatibility",
+      "support": 56
+    },
+    {
+      "cell": "A03.Ξ10.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 56
+    },
+    {
+      "cell": "A15.Ξ00.constraint_closure",
+      "alpha": "A15",
+      "xi": "Ξ00",
+      "route": "constraint_closure",
+      "support": 56
+    },
+    {
+      "cell": "A09.Ξ15.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ15",
+      "route": "transport_flow",
+      "support": 56
+    },
+    {
+      "cell": "A10.Ξ04.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 56
+    },
+    {
+      "cell": "A00.Ξ10.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 56
+    },
+    {
+      "cell": "A01.Ξ03.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 55
+    },
+    {
+      "cell": "A02.Ξ17.spectral_operator",
+      "alpha": "A02",
+      "xi": "Ξ17",
+      "route": "spectral_operator",
+      "support": 55
+    },
+    {
+      "cell": "A08.Ξ11.constraint_closure",
+      "alpha": "A08",
+      "xi": "Ξ11",
+      "route": "constraint_closure",
+      "support": 55
+    },
+    {
+      "cell": "A09.Ξ03.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ03",
+      "route": "constraint_closure",
+      "support": 54
+    },
+    {
+      "cell": "A15.Ξ00.spectral_operator",
+      "alpha": "A15",
+      "xi": "Ξ00",
+      "route": "spectral_operator",
+      "support": 54
+    },
+    {
+      "cell": "A13.Ξ10.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ10",
+      "route": "discrete_protocol",
+      "support": 54
+    },
+    {
+      "cell": "A08.Ξ03.discrete_protocol",
+      "alpha": "A08",
+      "xi": "Ξ03",
+      "route": "discrete_protocol",
+      "support": 53
+    },
+    {
+      "cell": "A09.Ξ14.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ14",
+      "route": "transport_flow",
+      "support": 53
+    },
+    {
+      "cell": "A05.Ξ10.boundary_weak_form",
+      "alpha": "A05",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 53
+    },
+    {
+      "cell": "A13.Ξ06.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ06",
+      "route": "constraint_closure",
+      "support": 53
+    },
+    {
+      "cell": "A13.Ξ02.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ02",
+      "route": "transport_flow",
+      "support": 52
+    },
+    {
+      "cell": "A16.Ξ08.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ08",
+      "route": "boundary_weak_form",
+      "support": 52
+    },
+    {
+      "cell": "A15.Ξ01.constraint_closure",
+      "alpha": "A15",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 52
+    },
+    {
+      "cell": "A05.Ξ15.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ15",
+      "route": "transport_flow",
+      "support": 52
+    },
+    {
+      "cell": "A10.Ξ09.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 52
+    },
+    {
+      "cell": "A03.Ξ10.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 51
+    },
+    {
+      "cell": "A01.Ξ09.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 51
+    },
+    {
+      "cell": "A02.Ξ01.constraint_closure",
+      "alpha": "A02",
+      "xi": "Ξ01",
+      "route": "constraint_closure",
+      "support": 50
+    },
+    {
+      "cell": "A14.Ξ06.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ06",
+      "route": "constraint_closure",
+      "support": 50
+    },
+    {
+      "cell": "A05.Ξ12.commutator_incompatibility",
+      "alpha": "A05",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 50
+    },
+    {
+      "cell": "A09.Ξ10.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 50
+    },
+    {
+      "cell": "A06.Ξ12.boundary_weak_form",
+      "alpha": "A06",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 49
+    },
+    {
+      "cell": "A05.Ξ02.boundary_weak_form",
+      "alpha": "A05",
+      "xi": "Ξ02",
+      "route": "boundary_weak_form",
+      "support": 49
+    },
+    {
+      "cell": "A14.Ξ05.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ05",
+      "route": "constraint_closure",
+      "support": 49
+    },
+    {
+      "cell": "A02.Ξ04.constraint_closure",
+      "alpha": "A02",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 49
+    },
+    {
+      "cell": "A03.Ξ05.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ05",
+      "route": "transport_flow",
+      "support": 48
+    },
+    {
+      "cell": "A10.Ξ09.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 48
+    },
+    {
+      "cell": "A06.Ξ12.constraint_closure",
+      "alpha": "A06",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 48
+    },
+    {
+      "cell": "A10.Ξ08.discrete_protocol",
+      "alpha": "A10",
+      "xi": "Ξ08",
+      "route": "discrete_protocol",
+      "support": 47
+    },
+    {
+      "cell": "A11.Ξ10.unclassified",
+      "alpha": "A11",
+      "xi": "Ξ10",
+      "route": "unclassified",
+      "support": 47
+    },
+    {
+      "cell": "A13.Ξ08.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ08",
+      "route": "discrete_protocol",
+      "support": 47
+    },
+    {
+      "cell": "A03.Ξ03.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ03",
+      "route": "transport_flow",
+      "support": 46
+    },
+    {
+      "cell": "A10.Ξ12.commutator_incompatibility",
+      "alpha": "A10",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 46
+    },
+    {
+      "cell": "A15.Ξ04.constraint_closure",
+      "alpha": "A15",
+      "xi": "Ξ04",
+      "route": "constraint_closure",
+      "support": 46
+    },
+    {
+      "cell": "A06.Ξ07.boundary_weak_form",
+      "alpha": "A06",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 46
+    },
+    {
+      "cell": "A15.Ξ06.transport_flow",
+      "alpha": "A15",
+      "xi": "Ξ06",
+      "route": "transport_flow",
+      "support": 45
+    },
+    {
+      "cell": "A11.Ξ08.boundary_weak_form",
+      "alpha": "A11",
+      "xi": "Ξ08",
+      "route": "boundary_weak_form",
+      "support": 45
+    },
+    {
+      "cell": "A08.Ξ10.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 45
+    },
+    {
+      "cell": "A15.Ξ08.discrete_protocol",
+      "alpha": "A15",
+      "xi": "Ξ08",
+      "route": "discrete_protocol",
+      "support": 45
+    },
+    {
+      "cell": "A09.Ξ10.boundary_weak_form",
+      "alpha": "A09",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 45
+    },
+    {
+      "cell": "A11.Ξ10.constraint_closure",
+      "alpha": "A11",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 44
+    },
+    {
+      "cell": "A16.Ξ05.spectral_operator",
+      "alpha": "A16",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 44
+    },
+    {
+      "cell": "A01.Ξ06.unclassified",
+      "alpha": "A01",
+      "xi": "Ξ06",
+      "route": "unclassified",
+      "support": 44
+    },
+    {
+      "cell": "A00.Ξ12.transport_flow",
+      "alpha": "A00",
+      "xi": "Ξ12",
+      "route": "transport_flow",
+      "support": 44
+    },
+    {
+      "cell": "A09.Ξ02.boundary_weak_form",
+      "alpha": "A09",
+      "xi": "Ξ02",
+      "route": "boundary_weak_form",
+      "support": 43
+    },
+    {
+      "cell": "A07.Ξ15.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ15",
+      "route": "spectral_operator",
+      "support": 43
+    },
+    {
+      "cell": "A05.Ξ17.transport_flow",
+      "alpha": "A05",
+      "xi": "Ξ17",
+      "route": "transport_flow",
+      "support": 43
+    },
+    {
+      "cell": "A13.Ξ11.discrete_protocol",
+      "alpha": "A13",
+      "xi": "Ξ11",
+      "route": "discrete_protocol",
+      "support": 43
+    },
+    {
+      "cell": "A15.Ξ04.spectral_operator",
+      "alpha": "A15",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 43
+    },
+    {
+      "cell": "A08.Ξ01.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ01",
+      "route": "spectral_operator",
+      "support": 42
+    },
+    {
+      "cell": "A05.Ξ07.spectral_operator",
+      "alpha": "A05",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 42
+    },
+    {
+      "cell": "A15.Ξ02.spectral_operator",
+      "alpha": "A15",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 42
+    },
+    {
+      "cell": "A10.Ξ01.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ01",
+      "route": "boundary_weak_form",
+      "support": 42
+    },
+    {
+      "cell": "A01.Ξ17.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ17",
+      "route": "transport_flow",
+      "support": 41
+    },
+    {
+      "cell": "A13.Ξ00.commutator_incompatibility",
+      "alpha": "A13",
+      "xi": "Ξ00",
+      "route": "commutator_incompatibility",
+      "support": 41
+    },
+    {
+      "cell": "A01.Ξ10.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 41
+    },
+    {
+      "cell": "A01.Ξ04.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ04",
+      "route": "spectral_operator",
+      "support": 41
+    },
+    {
+      "cell": "A03.Ξ03.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ03",
+      "route": "boundary_weak_form",
+      "support": 40
+    },
+    {
+      "cell": "A03.Ξ01.discrete_protocol",
+      "alpha": "A03",
+      "xi": "Ξ01",
+      "route": "discrete_protocol",
+      "support": 40
+    },
+    {
+      "cell": "A08.Ξ05.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 39
+    },
+    {
+      "cell": "A08.Ξ09.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 39
+    },
+    {
+      "cell": "A00.Ξ17.spectral_operator",
+      "alpha": "A00",
+      "xi": "Ξ17",
+      "route": "spectral_operator",
+      "support": 39
+    },
+    {
+      "cell": "A00.Ξ14.commutator_incompatibility",
+      "alpha": "A00",
+      "xi": "Ξ14",
+      "route": "commutator_incompatibility",
+      "support": 39
+    },
+    {
+      "cell": "A14.Ξ13.boundary_weak_form",
+      "alpha": "A14",
+      "xi": "Ξ13",
+      "route": "boundary_weak_form",
+      "support": 38
+    },
+    {
+      "cell": "A12.Ξ09.unclassified",
+      "alpha": "A12",
+      "xi": "Ξ09",
+      "route": "unclassified",
+      "support": 38
+    },
+    {
+      "cell": "A01.Ξ05.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ05",
+      "route": "constraint_closure",
+      "support": 38
+    },
+    {
+      "cell": "A09.Ξ03.boundary_weak_form",
+      "alpha": "A09",
+      "xi": "Ξ03",
+      "route": "boundary_weak_form",
+      "support": 37
+    },
+    {
+      "cell": "A08.Ξ09.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 37
+    },
+    {
+      "cell": "A10.Ξ10.transport_flow",
+      "alpha": "A10",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 37
+    },
+    {
+      "cell": "A10.Ξ10.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ10",
+      "route": "unclassified",
+      "support": 37
+    },
+    {
+      "cell": "A13.Ξ10.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 35
+    },
+    {
+      "cell": "A09.Ξ08.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ08",
+      "route": "transport_flow",
+      "support": 35
+    },
+    {
+      "cell": "A14.Ξ15.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ15",
+      "route": "constraint_closure",
+      "support": 35
+    },
+    {
+      "cell": "A13.Ξ09.spectral_operator",
+      "alpha": "A13",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 35
+    },
+    {
+      "cell": "A15.Ξ07.boundary_weak_form",
+      "alpha": "A15",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 35
+    },
+    {
+      "cell": "A10.Ξ10.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 34
+    },
+    {
+      "cell": "A12.Ξ12.commutator_incompatibility",
+      "alpha": "A12",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 34
+    },
+    {
+      "cell": "A01.Ξ09.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ09",
+      "route": "spectral_operator",
+      "support": 34
+    },
+    {
+      "cell": "A09.Ξ11.transport_flow",
+      "alpha": "A09",
+      "xi": "Ξ11",
+      "route": "transport_flow",
+      "support": 34
+    },
+    {
+      "cell": "A03.Ξ14.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ14",
+      "route": "constraint_closure",
+      "support": 34
+    },
+    {
+      "cell": "A08.Ξ11.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ11",
+      "route": "boundary_weak_form",
+      "support": 34
+    },
+    {
+      "cell": "A06.Ξ09.constraint_closure",
+      "alpha": "A06",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 34
+    },
+    {
+      "cell": "A13.Ξ04.boundary_weak_form",
+      "alpha": "A13",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 33
+    },
+    {
+      "cell": "A10.Ξ02.commutator_incompatibility",
+      "alpha": "A10",
+      "xi": "Ξ02",
+      "route": "commutator_incompatibility",
+      "support": 33
+    },
+    {
+      "cell": "A01.Ξ02.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ02",
+      "route": "spectral_operator",
+      "support": 33
+    },
+    {
+      "cell": "A03.Ξ12.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 33
+    },
+    {
+      "cell": "A02.Ξ02.constraint_closure",
+      "alpha": "A02",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 33
+    },
+    {
+      "cell": "A10.Ξ12.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 33
+    },
+    {
+      "cell": "A01.Ξ12.constraint_closure",
+      "alpha": "A01",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 33
+    },
+    {
+      "cell": "A06.Ξ04.unclassified",
+      "alpha": "A06",
+      "xi": "Ξ04",
+      "route": "unclassified",
+      "support": 33
+    },
+    {
+      "cell": "A13.Ξ12.commutator_incompatibility",
+      "alpha": "A13",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 32
+    },
+    {
+      "cell": "A10.Ξ15.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ15",
+      "route": "boundary_weak_form",
+      "support": 32
+    },
+    {
+      "cell": "A06.Ξ07.constraint_closure",
+      "alpha": "A06",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 32
+    },
+    {
+      "cell": "A15.Ξ02.constraint_closure",
+      "alpha": "A15",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 32
+    },
+    {
+      "cell": "A10.Ξ02.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ02",
+      "route": "boundary_weak_form",
+      "support": 32
+    },
+    {
+      "cell": "A12.Ξ04.unclassified",
+      "alpha": "A12",
+      "xi": "Ξ04",
+      "route": "unclassified",
+      "support": 32
+    },
+    {
+      "cell": "A15.Ξ03.spectral_operator",
+      "alpha": "A15",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 32
+    },
+    {
+      "cell": "A08.Ξ10.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 31
+    },
+    {
+      "cell": "A03.Ξ14.spectral_operator",
+      "alpha": "A03",
+      "xi": "Ξ14",
+      "route": "spectral_operator",
+      "support": 31
+    },
+    {
+      "cell": "A08.Ξ14.unclassified",
+      "alpha": "A08",
+      "xi": "Ξ14",
+      "route": "unclassified",
+      "support": 31
+    },
+    {
+      "cell": "A06.Ξ12.commutator_incompatibility",
+      "alpha": "A06",
+      "xi": "Ξ12",
+      "route": "commutator_incompatibility",
+      "support": 30
+    },
+    {
+      "cell": "A09.Ξ00.constraint_closure",
+      "alpha": "A09",
+      "xi": "Ξ00",
+      "route": "constraint_closure",
+      "support": 30
+    },
+    {
+      "cell": "A01.Ξ00.transport_flow",
+      "alpha": "A01",
+      "xi": "Ξ00",
+      "route": "transport_flow",
+      "support": 30
+    },
+    {
+      "cell": "A13.Ξ11.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ11",
+      "route": "constraint_closure",
+      "support": 30
+    },
+    {
+      "cell": "A11.Ξ14.unclassified",
+      "alpha": "A11",
+      "xi": "Ξ14",
+      "route": "unclassified",
+      "support": 30
+    },
+    {
+      "cell": "A10.Ξ15.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ15",
+      "route": "spectral_operator",
+      "support": 29
+    },
+    {
+      "cell": "A09.Ξ05.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ05",
+      "route": "spectral_operator",
+      "support": 29
+    },
+    {
+      "cell": "A14.Ξ12.constraint_closure",
+      "alpha": "A14",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 29
+    },
+    {
+      "cell": "A10.Ξ07.unclassified",
+      "alpha": "A10",
+      "xi": "Ξ07",
+      "route": "unclassified",
+      "support": 29
+    },
+    {
+      "cell": "A08.Ξ11.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ11",
+      "route": "spectral_operator",
+      "support": 29
+    },
+    {
+      "cell": "A06.Ξ02.constraint_closure",
+      "alpha": "A06",
+      "xi": "Ξ02",
+      "route": "constraint_closure",
+      "support": 29
+    },
+    {
+      "cell": "A03.Ξ15.constraint_closure",
+      "alpha": "A03",
+      "xi": "Ξ15",
+      "route": "constraint_closure",
+      "support": 28
+    },
+    {
+      "cell": "A06.Ξ02.unclassified",
+      "alpha": "A06",
+      "xi": "Ξ02",
+      "route": "unclassified",
+      "support": 28
+    },
+    {
+      "cell": "A01.Ξ10.boundary_weak_form",
+      "alpha": "A01",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 28
+    },
+    {
+      "cell": "A01.Ξ07.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 28
+    },
+    {
+      "cell": "A08.Ξ07.constraint_closure",
+      "alpha": "A08",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 28
+    },
+    {
+      "cell": "A10.Ξ10.constraint_closure",
+      "alpha": "A10",
+      "xi": "Ξ10",
+      "route": "constraint_closure",
+      "support": 27
+    },
+    {
+      "cell": "A10.Ξ12.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 27
+    },
+    {
+      "cell": "A06.Ξ10.boundary_weak_form",
+      "alpha": "A06",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 27
+    },
+    {
+      "cell": "A13.Ξ09.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ09",
+      "route": "transport_flow",
+      "support": 27
+    },
+    {
+      "cell": "A05.Ξ12.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 27
+    },
+    {
+      "cell": "A09.Ξ10.spectral_operator",
+      "alpha": "A09",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 27
+    },
+    {
+      "cell": "A08.Ξ07.spectral_operator",
+      "alpha": "A08",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 27
+    },
+    {
+      "cell": "A16.Ξ07.boundary_weak_form",
+      "alpha": "A16",
+      "xi": "Ξ07",
+      "route": "boundary_weak_form",
+      "support": 26
+    },
+    {
+      "cell": "A10.Ξ10.boundary_weak_form",
+      "alpha": "A10",
+      "xi": "Ξ10",
+      "route": "boundary_weak_form",
+      "support": 26
+    },
+    {
+      "cell": "A13.Ξ12.constraint_closure",
+      "alpha": "A13",
+      "xi": "Ξ12",
+      "route": "constraint_closure",
+      "support": 26
+    },
+    {
+      "cell": "A08.Ξ02.unclassified",
+      "alpha": "A08",
+      "xi": "Ξ02",
+      "route": "unclassified",
+      "support": 26
+    },
+    {
+      "cell": "A03.Ξ02.discrete_protocol",
+      "alpha": "A03",
+      "xi": "Ξ02",
+      "route": "discrete_protocol",
+      "support": 25
+    },
+    {
+      "cell": "A08.Ξ11.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ11",
+      "route": "transport_flow",
+      "support": 25
+    },
+    {
+      "cell": "A15.Ξ00.transport_flow",
+      "alpha": "A15",
+      "xi": "Ξ00",
+      "route": "transport_flow",
+      "support": 25
+    },
+    {
+      "cell": "A10.Ξ11.spectral_operator",
+      "alpha": "A10",
+      "xi": "Ξ11",
+      "route": "spectral_operator",
+      "support": 25
+    },
+    {
+      "cell": "A07.Ξ01.transport_flow",
+      "alpha": "A07",
+      "xi": "Ξ01",
+      "route": "transport_flow",
+      "support": 25
+    },
+    {
+      "cell": "A07.Ξ00.spectral_operator",
+      "alpha": "A07",
+      "xi": "Ξ00",
+      "route": "spectral_operator",
+      "support": 25
+    },
+    {
+      "cell": "A12.Ξ09.constraint_closure",
+      "alpha": "A12",
+      "xi": "Ξ09",
+      "route": "constraint_closure",
+      "support": 25
+    },
+    {
+      "cell": "A05.Ξ12.boundary_weak_form",
+      "alpha": "A05",
+      "xi": "Ξ12",
+      "route": "boundary_weak_form",
+      "support": 25
+    },
+    {
+      "cell": "A05.Ξ17.constraint_closure",
+      "alpha": "A05",
+      "xi": "Ξ17",
+      "route": "constraint_closure",
+      "support": 25
+    },
+    {
+      "cell": "A13.Ξ10.transport_flow",
+      "alpha": "A13",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 25
+    },
+    {
+      "cell": "A03.Ξ15.boundary_weak_form",
+      "alpha": "A03",
+      "xi": "Ξ15",
+      "route": "boundary_weak_form",
+      "support": 25
+    },
+    {
+      "cell": "A08.Ξ04.boundary_weak_form",
+      "alpha": "A08",
+      "xi": "Ξ04",
+      "route": "boundary_weak_form",
+      "support": 24
+    },
+    {
+      "cell": "A03.Ξ12.transport_flow",
+      "alpha": "A03",
+      "xi": "Ξ12",
+      "route": "transport_flow",
+      "support": 24
+    },
+    {
+      "cell": "A01.Ξ12.spectral_operator",
+      "alpha": "A01",
+      "xi": "Ξ12",
+      "route": "spectral_operator",
+      "support": 24
+    },
+    {
+      "cell": "A15.Ξ07.constraint_closure",
+      "alpha": "A15",
+      "xi": "Ξ07",
+      "route": "constraint_closure",
+      "support": 24
+    },
+    {
+      "cell": "A08.Ξ07.transport_flow",
+      "alpha": "A08",
+      "xi": "Ξ07",
+      "route": "transport_flow",
+      "support": 24
+    },
+    {
+      "cell": "A15.Ξ07.spectral_operator",
+      "alpha": "A15",
+      "xi": "Ξ07",
+      "route": "spectral_operator",
+      "support": 24
+    },
+    {
+      "cell": "A06.Ξ10.spectral_operator",
+      "alpha": "A06",
+      "xi": "Ξ10",
+      "route": "spectral_operator",
+      "support": 24
+    },
+    {
+      "cell": "A00.Ξ06.boundary_weak_form",
+      "alpha": "A00",
+      "xi": "Ξ06",
+      "route": "boundary_weak_form",
+      "support": 24
+    },
+    {
+      "cell": "A06.Ξ10.transport_flow",
+      "alpha": "A06",
+      "xi": "Ξ10",
+      "route": "transport_flow",
+      "support": 24
+    },
+    {
+      "cell": "A14.Ξ03.spectral_operator",
+      "alpha": "A14",
+      "xi": "Ξ03",
+      "route": "spectral_operator",
+      "support": 24
+    },
+    {
+      "cell": "A03.Ξ15.unclassified",
+      "alpha": "A03",
+      "xi": "Ξ15",
+      "route": "unclassified",
+      "support": 24
+    },
+    {
+      "cell": "A03.Ξ10.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ10",
+      "route": "commutator_incompatibility",
+      "support": 24
+    },
+    {
+      "cell": "A03.Ξ07.commutator_incompatibility",
+      "alpha": "A03",
+      "xi": "Ξ07",
+      "route": "commutator_incompatibility",
+      "support": 24
+    }
+  ],
+  "claim_scope": "Sparse occupancy table over V2 Alpha/Xi/route cells."
+}

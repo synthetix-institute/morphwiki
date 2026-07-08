@@ -1,0 +1,2609 @@
+{
+  "report_type": "operator_substrate_v2_edge_language_report",
+  "readiness": "usable",
+  "edge_counts": {
+    "operator_knn": 1000000,
+    "substrate_knn": 1000000,
+    "coupled_operator_substrate": 265740,
+    "operator_transfer_candidate": 1000000,
+    "substrate_transfer_candidate": 1000000,
+    "control_only_candidate": 1000000,
+    "within_paper_sequence": 250000,
+    "sequential_fallback": 0
+  },
+  "lambda_families": [
+    {
+      "token": "Λ00",
+      "cluster": 8,
+      "support": 239162,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.11393681913614273
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.07214502990245819
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.06708329916000366
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.056514397263526917
+        },
+        {
+          "feature": "closure_constraints:compatibility_condition#0",
+          "weight": -0.05478353425860405
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.053710076957941055
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.0475023053586483
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.04560530558228493
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.041693925857543945
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.04165623337030411
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 119178
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 31467
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 30718
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 30479
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 27320
+        }
+      ]
+    },
+    {
+      "token": "Λ01",
+      "cluster": 3,
+      "support": 82612,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.40858879685401917
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.3099731504917145
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.2638210356235504
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.24214449524879456
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.215830460190773
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.20619504153728485
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.18624651432037354
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.18475569784641266
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.18267318606376648
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.15796227753162384
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 24450
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 23126
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 17469
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 17217
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 350
+        }
+      ]
+    },
+    {
+      "token": "Λ02",
+      "cluster": 2,
+      "support": 68853,
+      "top_features": [
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.4413144588470459
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.41993480920791626
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.372981458902359
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.37259024381637573
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": -0.24594253301620483
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.2447717934846878
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.24449849128723145
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.24040429294109344
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.23221774399280548
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.22304947674274445
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 24122
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 23541
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 10489
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 10346
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 355
+        }
+      ]
+    },
+    {
+      "token": "Λ03",
+      "cluster": 12,
+      "support": 34746,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 2.2602124214172363
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 1.5766700506210327
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 1.4515851736068726
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -1.0872949361801147
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.5952122807502747
+        },
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": -0.3102201223373413
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.294269323348999
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.28686490654945374
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.2634008824825287
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.2417687177658081
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 17558
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 17188
+        }
+      ]
+    },
+    {
+      "token": "Λ04",
+      "cluster": 9,
+      "support": 31887,
+      "top_features": [
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 1.9079548120498657
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -1.7222895622253418
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 0.8831148147583008
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 0.18389929831027985
+        },
+        {
+          "feature": "protocol_order:training_recall#0",
+          "weight": -0.09875276684761047
+        },
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": 0.08918362110853195
+        },
+        {
+          "feature": "readout_current:classifier_control_output#0",
+          "weight": -0.0844452902674675
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.08011585474014282
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.07210440933704376
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.0599532276391983
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 15949
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 15857
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 81
+        }
+      ]
+    },
+    {
+      "token": "Λ05",
+      "cluster": 0,
+      "support": 20692,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 3.6488428115844727
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 3.631924867630005
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.6173015236854553
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5660070776939392
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -0.27396222949028015
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -0.2654394507408142
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": -0.2370804399251938
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.22955909371376038
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.20863881707191467
+        },
+        {
+          "feature": "closure_constraints:compatibility_condition#0",
+          "weight": 0.17063429951667786
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_knn",
+          "count": 10447
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 10244
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "token": "Λ06",
+      "cluster": 7,
+      "support": 19660,
+      "top_features": [
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -3.583770990371704
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": -3.527533531188965
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.7381918430328369
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.5936187505722046
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 0.23134873807430267
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.19953827559947968
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 0.1395355761051178
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.1355961114168167
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.1347230225801468
+        },
+        {
+          "feature": "operator_apparatus:commutator_operator#0",
+          "weight": 0.12341812998056412
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 9851
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 9804
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "token": "Λ07",
+      "cluster": 5,
+      "support": 15765,
+      "top_features": [
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -3.930269479751587
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -2.8725197315216064
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -1.3926503658294678
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.9632972478866577
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.3933642506599426
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.36431825160980225
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.21617479622364044
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": 0.19808100163936615
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.18589146435260773
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.1827872395515442
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 8171
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7594
+        }
+      ]
+    },
+    {
+      "token": "Λ08",
+      "cluster": 6,
+      "support": 15524,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 3.30234694480896
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -2.209508180618286
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -1.115325689315796
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.38534703850746155
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.18571923673152924
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.16807112097740173
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": -0.16492459177970886
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": -0.12579916417598724
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.12538056075572968
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.12371764332056046
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 7785
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7739
+        }
+      ]
+    },
+    {
+      "token": "Λ09",
+      "cluster": 17,
+      "support": 14702,
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -4.137113094329834
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -4.0567169189453125
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.5325807929039001
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.3563395142555237
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.31623196601867676
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": 0.28296008706092834
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.2693067193031311
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.22150234878063202
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 0.1939886063337326
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.19245590269565582
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 7353
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7349
+        }
+      ]
+    },
+    {
+      "token": "Λ10",
+      "cluster": 16,
+      "support": 14505,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 4.3476057052612305
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 3.994143486022949
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5671278238296509
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.5521621704101562
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.4789266586303711
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.4716171622276306
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.4447052776813507
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.3313246965408325
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.31633076071739197
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": -0.31493642926216125
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 7424
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 7081
+        }
+      ]
+    },
+    {
+      "token": "Λ11",
+      "cluster": 1,
+      "support": 8816,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": 5.212192535400391
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5737276077270508
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.39281120896339417
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.3598612844944
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.35318243503570557
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.27744224667549133
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.16109313070774078
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.1492043286561966
+        },
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": -0.1394808143377304
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.12859557569026947
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 4514
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 4302
+        }
+      ]
+    },
+    {
+      "token": "Λ12",
+      "cluster": 15,
+      "support": 8217,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": -5.876876354217529
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.6090838313102722
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.21902117133140564
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.20994964241981506
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": 0.198647603392601
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": 0.19236235320568085
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 0.17430442571640015
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 0.13259342312812805
+        },
+        {
+          "feature": "readout_current:free_energy_action#0",
+          "weight": -0.1241365298628807
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.11862663924694061
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 4175
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 4032
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "token": "Λ13",
+      "cluster": 13,
+      "support": 7829,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 6.03565788269043
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.9961020350456238
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.9079159498214722
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.5518216490745544
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.3546941578388214
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.28098204731941223
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.24288319051265717
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": -0.23062367737293243
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": -0.22506634891033173
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": -0.21341626346111298
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 4055
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 3774
+        }
+      ]
+    },
+    {
+      "token": "Λ14",
+      "cluster": 11,
+      "support": 7617,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 4.39219856262207
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -1.8347272872924805
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.4444805979728699
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": -0.33891645073890686
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.3206876218318939
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": -0.27074751257896423
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.2591359615325928
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.1848653107881546
+        },
+        {
+          "feature": "operator_apparatus:markov_transition#0",
+          "weight": 0.15391606092453003
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": -0.1488640159368515
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 3817
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 3792
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "token": "Λ15",
+      "cluster": 4,
+      "support": 7239,
+      "top_features": [
+        {
+          "feature": "closure_constraints:constitutive_law#0",
+          "weight": -6.798575401306152
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": 0.990399181842804
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": 0.5488693118095398
+        },
+        {
+          "feature": "operator_apparatus:spectral_operator#0",
+          "weight": 0.5486175417900085
+        },
+        {
+          "feature": "protocol_order:training_recall#0",
+          "weight": -0.43374916911125183
+        },
+        {
+          "feature": "readout_current:material_response#0",
+          "weight": -0.3325784504413605
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.3305900990962982
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.15562105178833008
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.15478453040122986
+        },
+        {
+          "feature": "protocol_order:algorithmic_protocol#0",
+          "weight": -0.13980679214000702
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 3629
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 3600
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "token": "Λ16",
+      "cluster": 10,
+      "support": 1664,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 13.327127456665039
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": -2.2915878295898438
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -1.4611468315124512
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.6268948912620544
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.29541078209877014
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.23716440796852112
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.18971586227416992
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.18285565078258514
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.18000639975070953
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.15653282403945923
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 881
+        },
+        {
+          "edge_type": "operator_knn",
+          "count": 783
+        }
+      ]
+    },
+    {
+      "token": "Λ17",
+      "cluster": 14,
+      "support": 510,
+      "top_features": [
+        {
+          "feature": "closure_constraints:conservation_balance#0",
+          "weight": -22.686492919921875
+        },
+        {
+          "feature": "operator_apparatus:control_update#0",
+          "weight": -5.6354241371154785
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -2.8341927528381348
+        },
+        {
+          "feature": "operator_apparatus:spatial_derivative#0",
+          "weight": -2.6098568439483643
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -1.0507460832595825
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -1.005942940711975
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 0.4413067102432251
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 0.23439766466617584
+        },
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": 0.18200872838497162
+        },
+        {
+          "feature": "operator_apparatus:variational_derivative#0",
+          "weight": 0.14065949618816376
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 265
+        },
+        {
+          "edge_type": "substrate_knn",
+          "count": 243
+        },
+        {
+          "edge_type": "coupled_operator_substrate",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "tau_transition_operators": [
+    {
+      "token": "T00",
+      "cluster": 6,
+      "support": 79669,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": 0.0760730504989624
+        },
+        {
+          "feature": "readout_current:residual_error#0",
+          "weight": 0.039843812584877014
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": -0.03947551175951958
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.03541172295808792
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.03226916119456291
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.0300473440438509
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": -0.029717570170760155
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.026089638471603394
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.02573803998529911
+        },
+        {
+          "feature": "operator_apparatus:time_derivative#0",
+          "weight": -0.02347853220999241
+        }
+      ]
+    },
+    {
+      "token": "T01",
+      "cluster": 0,
+      "support": 14232,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 0.5614836812019348
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 0.5514988303184509
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.5338777303695679
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.5126352906227112
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": 0.4623943269252777
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 0.4549185037612915
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": 0.4480289816856384
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.4081220328807831
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.3681885302066803
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.36439433693885803
+        }
+      ]
+    },
+    {
+      "token": "T02",
+      "cluster": 1,
+      "support": 12465,
+      "top_features": [
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.7412105798721313
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.7122690081596375
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.6536855101585388
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": -0.6076415181159973
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.5799473524093628
+        },
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": -0.5138756632804871
+        },
+        {
+          "feature": "closure_constraints:stoichiometric_closure#0",
+          "weight": -0.5084300637245178
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 0.46707040071487427
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 0.4382075071334839
+        },
+        {
+          "feature": "readout_current:eigenvalue_spectrum#0",
+          "weight": -0.4045090079307556
+        }
+      ]
+    },
+    {
+      "token": "T03",
+      "cluster": 4,
+      "support": 7368,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 1.0856183767318726
+        },
+        {
+          "feature": "operator_apparatus:laplacian_diffusion#0",
+          "weight": 1.0641648769378662
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.9863491058349609
+        },
+        {
+          "feature": "operator_apparatus:hamiltonian_generator#0",
+          "weight": -0.6381646990776062
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.320088654756546
+        },
+        {
+          "feature": "protocol_order:recurrence_step#0",
+          "weight": 0.31501179933547974
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.3055317997932434
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": -0.30424344539642334
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.2892990708351135
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.2577580213546753
+        }
+      ]
+    },
+    {
+      "token": "T04",
+      "cluster": 3,
+      "support": 2758,
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -4.318391799926758
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -4.175675868988037
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": -2.666269540786743
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.18470950424671173
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.18412567675113678
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 0.15818354487419128
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 0.15495778620243073
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.15471279621124268
+        },
+        {
+          "feature": "protocol_order:measurement_order#0",
+          "weight": -0.15438158810138702
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 0.1420983225107193
+        }
+      ]
+    },
+    {
+      "token": "T05",
+      "cluster": 2,
+      "support": 1477,
+      "top_features": [
+        {
+          "feature": "operator_apparatus:integral_operator#0",
+          "weight": -4.827699661254883
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -2.301250457763672
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 2.26133131980896
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -1.671440601348877
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 1.4352426528930664
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.41265106201171875
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": 0.30736294388771057
+        },
+        {
+          "feature": "selector:normalization#0",
+          "weight": -0.2245791107416153
+        },
+        {
+          "feature": "closure_constraints:normalization_closure#0",
+          "weight": -0.2082851231098175
+        },
+        {
+          "feature": "closure_constraints:algebraic_constraint#0",
+          "weight": -0.16015298664569855
+        }
+      ]
+    },
+    {
+      "token": "T06",
+      "cluster": 7,
+      "support": 1310,
+      "top_features": [
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": 5.743913173675537
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 5.178756237030029
+        },
+        {
+          "feature": "operator_apparatus:liouvillian_generator#0",
+          "weight": 2.7188010215759277
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.4055447578430176
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.24837440252304077
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.23221100866794586
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.19194753468036652
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.1652890294790268
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": 0.15956273674964905
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.14781546592712402
+        }
+      ]
+    },
+    {
+      "token": "T07",
+      "cluster": 5,
+      "support": 721,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 8.088919639587402
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.8705601692199707
+        },
+        {
+          "feature": "readout_current:probability_readout#0",
+          "weight": 0.5088410377502441
+        },
+        {
+          "feature": "closure_constraints:zero_residual#0",
+          "weight": -0.38726744055747986
+        },
+        {
+          "feature": "readout_current:free_energy_action#0",
+          "weight": 0.355162113904953
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 0.30514299869537354
+        },
+        {
+          "feature": "readout_current:order_parameter#0",
+          "weight": -0.18657776713371277
+        },
+        {
+          "feature": "readout_current:observable_expectation#0",
+          "weight": -0.17825694382190704
+        },
+        {
+          "feature": "selector:admissible_set#0",
+          "weight": -0.16757015883922577
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.1646984964609146
+        }
+      ]
+    }
+  ],
+  "j_current_candidates": [
+    {
+      "token": "J00",
+      "generator": "coupled_operator_substrate",
+      "relative_first_variation": 0.0009483417137170462,
+      "promoted": true
+    },
+    {
+      "token": "J_candidate_01",
+      "generator": "within_paper_sequence",
+      "relative_first_variation": 0.2909711798263155,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_02",
+      "generator": "operator_transfer_candidate",
+      "relative_first_variation": 0.40999336462628194,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_03",
+      "generator": "operator_knn",
+      "relative_first_variation": 0.43274682346508414,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_04",
+      "generator": "substrate_knn",
+      "relative_first_variation": 0.5597014232722278,
+      "promoted": false
+    },
+    {
+      "token": "J_candidate_05",
+      "generator": "substrate_transfer_candidate",
+      "relative_first_variation": 0.5636864268193207,
+      "promoted": false
+    }
+  ],
+  "gamma_bridge_families": [
+    {
+      "token": "Γ00",
+      "cluster": 3,
+      "support": 40247,
+      "top_features": [
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": 1.1746448278427124
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": 1.1735385656356812
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.5074842572212219
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.48615092039108276
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": -0.43561846017837524
+        },
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": -0.43427592515945435
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": -0.381757527589798
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 0.36132192611694336
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -0.36132192611694336
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": -0.32495710253715515
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 28667
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 11580
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 26236
+        },
+        {
+          "route_pair": "transport_flow->constraint_closure",
+          "count": 2929
+        },
+        {
+          "route_pair": "constraint_closure->transport_flow",
+          "count": 2422
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 1636
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 1561
+        },
+        {
+          "route_pair": "spectral_operator->transport_flow",
+          "count": 1489
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 1086
+        },
+        {
+          "route_pair": "transport_flow->commutator_incompatibility",
+          "count": 438
+        }
+      ],
+      "bridge_score_mean": 1.6815404891967773,
+      "bridge_score_p95": 2.2366201877593994
+    },
+    {
+      "token": "Γ01",
+      "cluster": 1,
+      "support": 38434,
+      "top_features": [
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": 1.5677896738052368
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": 1.4957696199417114
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": -0.5810999870300293
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5571090579032898
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": -0.4688241481781006
+        },
+        {
+          "feature": "dst_route:constraint_closure",
+          "weight": -0.46386951208114624
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": -0.44651809334754944
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": 0.4397665560245514
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": 0.43527549505233765
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 0.435173898935318
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 27099
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 11335
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 37716
+        },
+        {
+          "route_pair": "spectral_operator->transport_flow",
+          "count": 362
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 98
+        },
+        {
+          "route_pair": "commutator_incompatibility->spectral_operator",
+          "count": 90
+        },
+        {
+          "route_pair": "spectral_operator->commutator_incompatibility",
+          "count": 83
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 34
+        },
+        {
+          "route_pair": "spectral_operator->unclassified",
+          "count": 17
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 14
+        }
+      ],
+      "bridge_score_mean": 1.7234039306640625,
+      "bridge_score_p95": 2.3416411876678467
+    },
+    {
+      "token": "Γ02",
+      "cluster": 9,
+      "support": 32363,
+      "top_features": [
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": 1.931974172592163
+        },
+        {
+          "feature": "dst_route:constraint_closure",
+          "weight": 1.757780909538269
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": -0.5799914598464966
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": -0.5705204606056213
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5374611616134644
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.4803786277770996
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": -0.458612322807312
+        },
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": -0.45133060216903687
+        },
+        {
+          "feature": "metric:substrate_dst_energy",
+          "weight": -0.4330819845199585
+        },
+        {
+          "feature": "metric:substrate_src_energy",
+          "weight": -0.41990864276885986
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 22009
+        },
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 10354
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 28887
+        },
+        {
+          "route_pair": "constraint_closure->spectral_operator",
+          "count": 1985
+        },
+        {
+          "route_pair": "constraint_closure->commutator_incompatibility",
+          "count": 556
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 450
+        },
+        {
+          "route_pair": "commutator_incompatibility->constraint_closure",
+          "count": 208
+        },
+        {
+          "route_pair": "constraint_closure->discrete_protocol",
+          "count": 119
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 87
+        },
+        {
+          "route_pair": "constraint_closure->transport_flow",
+          "count": 34
+        }
+      ],
+      "bridge_score_mean": 1.7827906608581543,
+      "bridge_score_p95": 2.3416411876678467
+    },
+    {
+      "token": "Γ03",
+      "cluster": 2,
+      "support": 26140,
+      "top_features": [
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": 1.6521124839782715
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": 1.4697877168655396
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 0.9064422249794006
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -0.9064422249794006
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.764958918094635
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": -0.6217511296272278
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": -0.5453305244445801
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.5187360048294067
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5144689083099365
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": -0.49573031067848206
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 26140
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 15285
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 2372
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 2260
+        },
+        {
+          "route_pair": "boundary_weak_form->constraint_closure",
+          "count": 2240
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 931
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 858
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 810
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 386
+        }
+      ],
+      "bridge_score_mean": 1.6815272569656372,
+      "bridge_score_p95": 2.224745273590088
+    },
+    {
+      "token": "Γ04",
+      "cluster": 11,
+      "support": 21303,
+      "top_features": [
+        {
+          "feature": "src_route:unclassified",
+          "weight": 2.4278619289398193
+        },
+        {
+          "feature": "dst_route:unclassified",
+          "weight": 2.4123470783233643
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": -0.8769644498825073
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": -0.8712673783302307
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -0.8619489073753357
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 0.8619489073753357
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.7352896928787231
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5028345584869385
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": -0.474700003862381
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": -0.4724770188331604
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 19877
+        },
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 1426
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "unclassified->unclassified",
+          "count": 7826
+        },
+        {
+          "route_pair": "unclassified->constraint_closure",
+          "count": 3311
+        },
+        {
+          "route_pair": "constraint_closure->unclassified",
+          "count": 3240
+        },
+        {
+          "route_pair": "unclassified->spectral_operator",
+          "count": 1812
+        },
+        {
+          "route_pair": "spectral_operator->unclassified",
+          "count": 1530
+        },
+        {
+          "route_pair": "transport_flow->unclassified",
+          "count": 1295
+        },
+        {
+          "route_pair": "unclassified->transport_flow",
+          "count": 924
+        },
+        {
+          "route_pair": "commutator_incompatibility->unclassified",
+          "count": 466
+        }
+      ],
+      "bridge_score_mean": 1.6377140283584595,
+      "bridge_score_p95": 2.2109503746032715
+    },
+    {
+      "token": "Γ05",
+      "cluster": 8,
+      "support": 18355,
+      "top_features": [
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 1.2972480058670044
+        },
+        {
+          "feature": "delta:selector:variational_constraint#0",
+          "weight": 1.1644911766052246
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "delta:selector:domain_membership#0",
+          "weight": -0.8713667392730713
+        },
+        {
+          "feature": "delta:selector:function_space#0",
+          "weight": -0.8678640723228455
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": -0.7993840575218201
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": 0.7469359636306763
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.659130334854126
+        },
+        {
+          "feature": "delta:real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 0.6367217302322388
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 18355
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 10413
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 3207
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 1325
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 826
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 680
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 402
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 210
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 191
+        }
+      ],
+      "bridge_score_mean": 2.087968111038208,
+      "bridge_score_p95": 2.432561755180359
+    },
+    {
+      "token": "Γ06",
+      "cluster": 7,
+      "support": 15003,
+      "top_features": [
+        {
+          "feature": "delta:real_substrate_geometry:graph_topology#0",
+          "weight": -1.7209407091140747
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 1.2595382928848267
+        },
+        {
+          "feature": "src_route:transport_flow",
+          "weight": 1.2179622650146484
+        },
+        {
+          "feature": "delta:selector:variational_constraint#0",
+          "weight": -1.160362720489502
+        },
+        {
+          "feature": "delta:real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.1365424394607544
+        },
+        {
+          "feature": "delta:selector:boundary_admissibility#0",
+          "weight": 1.0792244672775269
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "delta:real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.8401498794555664
+        },
+        {
+          "feature": "delta:selector:probability_selector#0",
+          "weight": 0.8342268466949463
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 15003
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 8248
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 3581
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 735
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 639
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 573
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 228
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 198
+        },
+        {
+          "route_pair": "commutator_incompatibility->commutator_incompatibility",
+          "count": 165
+        }
+      ],
+      "bridge_score_mean": 2.093168020248413,
+      "bridge_score_p95": 2.420236825942993
+    },
+    {
+      "token": "Γ07",
+      "cluster": 10,
+      "support": 14244,
+      "top_features": [
+        {
+          "feature": "delta:selector:boundary_admissibility#0",
+          "weight": -2.289499044418335
+        },
+        {
+          "feature": "delta:real_substrate_geometry:spinor_carrier#0",
+          "weight": -1.9806783199310303
+        },
+        {
+          "feature": "delta:real_substrate_geometry:coordinate_domain#0",
+          "weight": -1.6111078262329102
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": 1.5134812593460083
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 1.3489280939102173
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": -0.7995398640632629
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.7235862016677856
+        },
+        {
+          "feature": "delta:real_substrate_geometry:graph_topology#0",
+          "weight": 0.6623913049697876
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 14244
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 5597
+        },
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 2230
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 1726
+        },
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 1135
+        },
+        {
+          "route_pair": "boundary_weak_form->constraint_closure",
+          "count": 1050
+        },
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 1026
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 556
+        },
+        {
+          "route_pair": "boundary_weak_form->commutator_incompatibility",
+          "count": 345
+        }
+      ],
+      "bridge_score_mean": 2.1336863040924072,
+      "bridge_score_p95": 2.474206519126891
+    },
+    {
+      "token": "Γ08",
+      "cluster": 4,
+      "support": 11235,
+      "top_features": [
+        {
+          "feature": "delta:readout_current:eigenvalue_spectrum#0",
+          "weight": 3.195246934890747
+        },
+        {
+          "feature": "delta:operator_apparatus:spectral_operator#0",
+          "weight": 3.1913084983825684
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": 1.5765748023986816
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": 1.5633662939071655
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "metric:product_delta_norm",
+          "weight": 0.9662854671478271
+        },
+        {
+          "feature": "metric:operator_dst_energy",
+          "weight": 0.9487861394882202
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.8349453806877136
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.8340807557106018
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 11235
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->spectral_operator",
+          "count": 3101
+        },
+        {
+          "route_pair": "transport_flow->spectral_operator",
+          "count": 2929
+        },
+        {
+          "route_pair": "constraint_closure->spectral_operator",
+          "count": 2074
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 1371
+        },
+        {
+          "route_pair": "unclassified->spectral_operator",
+          "count": 1220
+        },
+        {
+          "route_pair": "commutator_incompatibility->spectral_operator",
+          "count": 275
+        },
+        {
+          "route_pair": "discrete_protocol->spectral_operator",
+          "count": 108
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 39
+        }
+      ],
+      "bridge_score_mean": 2.1796960830688477,
+      "bridge_score_p95": 2.4569449424743652
+    },
+    {
+      "token": "Γ09",
+      "cluster": 5,
+      "support": 10915,
+      "top_features": [
+        {
+          "feature": "delta:readout_current:eigenvalue_spectrum#0",
+          "weight": -2.996204376220703
+        },
+        {
+          "feature": "delta:operator_apparatus:spectral_operator#0",
+          "weight": -2.9561562538146973
+        },
+        {
+          "feature": "src_route:spectral_operator",
+          "weight": 1.5493718385696411
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": 1.5231311321258545
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": 0.9413651823997498
+        },
+        {
+          "feature": "metric:product_delta_norm",
+          "weight": 0.9157969951629639
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.8349457383155823
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.7858225703239441
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 10915
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "spectral_operator->transport_flow",
+          "count": 2627
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 2474
+        },
+        {
+          "route_pair": "spectral_operator->constraint_closure",
+          "count": 2023
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 1566
+        },
+        {
+          "route_pair": "spectral_operator->unclassified",
+          "count": 1506
+        },
+        {
+          "route_pair": "spectral_operator->commutator_incompatibility",
+          "count": 311
+        },
+        {
+          "route_pair": "spectral_operator->discrete_protocol",
+          "count": 162
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 60
+        }
+      ],
+      "bridge_score_mean": 2.158452033996582,
+      "bridge_score_p95": 2.461214542388916
+    },
+    {
+      "token": "Γ10",
+      "cluster": 6,
+      "support": 10284,
+      "top_features": [
+        {
+          "feature": "dst_route:boundary_weak_form",
+          "weight": 2.015587329864502
+        },
+        {
+          "feature": "src_route:boundary_weak_form",
+          "weight": 1.48957359790802
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": -0.7995105385780334
+        },
+        {
+          "feature": "dst_route:spectral_operator",
+          "weight": -0.5964174866676331
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": 0.5703020095825195
+        },
+        {
+          "feature": "dst_route:transport_flow",
+          "weight": -0.5383573770523071
+        },
+        {
+          "feature": "dst_route:constraint_closure",
+          "weight": -0.47467687726020813
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": -0.4320027232170105
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "operator_transfer_candidate",
+          "count": 10284
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 6313
+        },
+        {
+          "route_pair": "spectral_operator->boundary_weak_form",
+          "count": 1348
+        },
+        {
+          "route_pair": "transport_flow->boundary_weak_form",
+          "count": 1345
+        },
+        {
+          "route_pair": "unclassified->boundary_weak_form",
+          "count": 334
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 276
+        },
+        {
+          "route_pair": "commutator_incompatibility->boundary_weak_form",
+          "count": 253
+        },
+        {
+          "route_pair": "boundary_weak_form->transport_flow",
+          "count": 189
+        },
+        {
+          "route_pair": "boundary_weak_form->unclassified",
+          "count": 82
+        }
+      ],
+      "bridge_score_mean": 1.7674560546875,
+      "bridge_score_p95": 2.286346197128296
+    },
+    {
+      "token": "Γ11",
+      "cluster": 0,
+      "support": 1477,
+      "top_features": [
+        {
+          "feature": "delta:closure_constraints:compatibility_condition#0",
+          "weight": -8.842164993286133
+        },
+        {
+          "feature": "metric:operator_delta_norm",
+          "weight": 1.323978066444397
+        },
+        {
+          "feature": "src_route:constraint_closure",
+          "weight": 1.0198421478271484
+        },
+        {
+          "feature": "edge_type:operator_transfer_candidate",
+          "weight": -1.0
+        },
+        {
+          "feature": "edge_type:substrate_transfer_candidate",
+          "weight": 1.0
+        },
+        {
+          "feature": "metric:substrate_delta_norm",
+          "weight": -0.8348466157913208
+        },
+        {
+          "feature": "metric:product_delta_norm",
+          "weight": 0.6658812761306763
+        },
+        {
+          "feature": "metric:operator_src_energy",
+          "weight": 0.6534793972969055
+        },
+        {
+          "feature": "dst_route:unclassified",
+          "weight": 0.5586323142051697
+        },
+        {
+          "feature": "metric:bridge_score",
+          "weight": 0.5468798875808716
+        }
+      ],
+      "edge_type_profile": [
+        {
+          "edge_type": "substrate_transfer_candidate",
+          "count": 1477
+        }
+      ],
+      "route_pair_profile": [
+        {
+          "route_pair": "constraint_closure->unclassified",
+          "count": 256
+        },
+        {
+          "route_pair": "constraint_closure->constraint_closure",
+          "count": 199
+        },
+        {
+          "route_pair": "constraint_closure->spectral_operator",
+          "count": 170
+        },
+        {
+          "route_pair": "constraint_closure->transport_flow",
+          "count": 131
+        },
+        {
+          "route_pair": "spectral_operator->spectral_operator",
+          "count": 125
+        },
+        {
+          "route_pair": "transport_flow->transport_flow",
+          "count": 92
+        },
+        {
+          "route_pair": "boundary_weak_form->boundary_weak_form",
+          "count": 74
+        },
+        {
+          "route_pair": "constraint_closure->boundary_weak_form",
+          "count": 74
+        }
+      ],
+      "bridge_score_mean": 2.0611753463745117,
+      "bridge_score_p95": 2.439630794525147
+    }
+  ],
+  "claim_scope": "V2 edge language over typed graph roads, Lambda deltas, Tau sequence verbs, J candidates and Gamma bridge families when supplied."
+}

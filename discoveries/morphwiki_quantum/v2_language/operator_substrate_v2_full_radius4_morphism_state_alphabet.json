@@ -1,0 +1,1465 @@
+{
+  "report_type": "operator_substrate_v2_morphism_state_alphabet",
+  "readiness": "usable",
+  "tokens": [
+    {
+      "token": "Ξ00",
+      "cluster": 13,
+      "support": 105591,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.5516059994697571
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.47841498255729675
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.4627044200897217
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.4436657726764679
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.40058016777038574
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.3627314269542694
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.3582600951194763
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.33384987711906433
+        }
+      ],
+      "signature_name": "Ξ:coordinate_field_carrier_selector",
+      "signature_slug": "xi_coordinate_field_carrier_selector",
+      "display_label": "Ξ:coordinate_field_carrier_selector",
+      "signature_terms": [
+        "coordinate",
+        "field_carrier",
+        "selector"
+      ]
+    },
+    {
+      "token": "Ξ01",
+      "cluster": 2,
+      "support": 84751,
+      "top_features": [
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.8268105983734131
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": 0.634563684463501
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.5344602465629578
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": 0.5250133275985718
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.4989900588989258
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 0.47870126366615295
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.41543760895729065
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.3590811491012573
+        }
+      ],
+      "signature_name": "Ξ:selector_hilbert_field_carrier",
+      "signature_slug": "xi_selector_hilbert_field_carrier",
+      "display_label": "Ξ:selector_hilbert_field_carrier",
+      "signature_terms": [
+        "selector",
+        "hilbert",
+        "field_carrier"
+      ]
+    },
+    {
+      "token": "Ξ02",
+      "cluster": 0,
+      "support": 46684,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": 2.4698684215545654
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.32327085733413696
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.3196451961994171
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.31476765871047974
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.3077583312988281
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.28809866309165955
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.25386136770248413
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.24327021837234497
+        }
+      ],
+      "signature_name": "Ξ:field_carrier",
+      "signature_slug": "xi_field_carrier",
+      "display_label": "Ξ:field_carrier",
+      "signature_terms": [
+        "field_carrier"
+      ]
+    },
+    {
+      "token": "Ξ03",
+      "cluster": 4,
+      "support": 42564,
+      "top_features": [
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 2.985957622528076
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 2.9428396224975586
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.24596835672855377
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.1894342005252838
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.1534462571144104
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.14892172813415527
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.14181338250637054
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.13425315916538239
+        }
+      ],
+      "signature_name": "Ξ:markov",
+      "signature_slug": "xi_markov",
+      "display_label": "Ξ:markov",
+      "signature_terms": [
+        "markov"
+      ]
+    },
+    {
+      "token": "Ξ04",
+      "cluster": 12,
+      "support": 41323,
+      "top_features": [
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 2.4934005737304688
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.3199903070926666
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.30953606963157654
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.3008723855018616
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.23594194650650024
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.22657126188278198
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.21448548138141632
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.20196275413036346
+        }
+      ],
+      "signature_name": "Ξ:selector",
+      "signature_slug": "xi_selector",
+      "display_label": "Ξ:selector",
+      "signature_terms": [
+        "selector"
+      ]
+    },
+    {
+      "token": "Ξ05",
+      "cluster": 1,
+      "support": 40746,
+      "top_features": [
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": 3.1518616676330566
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": 1.6541342735290527
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.4241256713867188
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.17527036368846893
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.17168158292770386
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.14949479699134827
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.1445986032485962
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": -0.1252889782190323
+        }
+      ],
+      "signature_name": "Ξ:closure_field_carrier_coordinate",
+      "signature_slug": "xi_closure_field_carrier_coordinate",
+      "display_label": "Ξ:closure_field_carrier_coordinate",
+      "signature_terms": [
+        "closure",
+        "field_carrier",
+        "coordinate"
+      ]
+    },
+    {
+      "token": "Ξ06",
+      "cluster": 6,
+      "support": 40344,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": 2.598191976547241
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": 2.580484628677368
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.2727319896221161
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.2617223262786865
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.24420271813869476
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.1944277584552765
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.19198757410049438
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.19169005751609802
+        }
+      ],
+      "signature_name": "Ξ:graph_closure",
+      "signature_slug": "xi_graph_closure",
+      "display_label": "Ξ:graph_closure",
+      "signature_terms": [
+        "graph",
+        "closure"
+      ]
+    },
+    {
+      "token": "Ξ07",
+      "cluster": 17,
+      "support": 38816,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 1.9628300666809082
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": 1.290550947189331
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.319487601518631
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.30865779519081116
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.3050123453140259
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.29628318548202515
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.29258280992507935
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.2766650915145874
+        }
+      ],
+      "signature_name": "Ξ:coordinate_field_carrier",
+      "signature_slug": "xi_coordinate_field_carrier",
+      "display_label": "Ξ:coordinate_field_carrier",
+      "signature_terms": [
+        "coordinate",
+        "field_carrier"
+      ]
+    },
+    {
+      "token": "Ξ08",
+      "cluster": 3,
+      "support": 12770,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:stoichiometric_space#0",
+          "weight": 5.485995769500732
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.36843305826187134
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.34272247552871704
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.2773642838001251
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.2673968970775604
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.26053234934806824
+        },
+        {
+          "feature": "real_substrate_geometry:graph_topology#0",
+          "weight": -0.2505929172039032
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": 0.21834896504878998
+        }
+      ],
+      "signature_name": "Ξ:reaction_hilbert",
+      "signature_slug": "xi_reaction_hilbert",
+      "display_label": "Ξ:reaction_hilbert",
+      "signature_terms": [
+        "reaction",
+        "hilbert"
+      ]
+    },
+    {
+      "token": "Ξ09",
+      "cluster": 10,
+      "support": 10032,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 6.381995677947998
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.4008689224720001
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.2712486982345581
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.25501030683517456
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.23750993609428406
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.19931037724018097
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.17070125043392181
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.14686408638954163
+        }
+      ],
+      "signature_name": "Ξ:lattice_selector",
+      "signature_slug": "xi_lattice_selector",
+      "display_label": "Ξ:lattice_selector",
+      "signature_terms": [
+        "lattice",
+        "selector"
+      ]
+    },
+    {
+      "token": "Ξ10",
+      "cluster": 11,
+      "support": 9748,
+      "top_features": [
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 6.407991409301758
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": -0.23434443771839142
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.16631756722927094
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.15627093613147736
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.14914248883724213
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.14797115325927734
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.12928931415081024
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.1265328824520111
+        }
+      ],
+      "signature_name": "Ξ:selector",
+      "signature_slug": "xi_selector",
+      "display_label": "Ξ:selector",
+      "signature_terms": [
+        "selector"
+      ]
+    },
+    {
+      "token": "Ξ11",
+      "cluster": 9,
+      "support": 8897,
+      "top_features": [
+        {
+          "feature": "selector:positivity#0",
+          "weight": 6.9029154777526855
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.19937120378017426
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.1892068237066269
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.1798192709684372
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.1303291767835617
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.1286766529083252
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.11339656263589859
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.11234116554260254
+        }
+      ],
+      "signature_name": "Ξ:positivity",
+      "signature_slug": "xi_positivity",
+      "display_label": "Ξ:positivity",
+      "signature_terms": [
+        "positivity"
+      ]
+    },
+    {
+      "token": "Ξ12",
+      "cluster": 7,
+      "support": 6116,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:phase_symplectic_space#0",
+          "weight": 8.138904571533203
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.4894259572029114
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.2470168024301529
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": 0.16365434229373932
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.1529737263917923
+        },
+        {
+          "feature": "real_substrate_geometry:hilbert_inner_product#0",
+          "weight": -0.13097743690013885
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 0.12384722381830215
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": -0.11695859581232071
+        }
+      ],
+      "signature_name": "Ξ:phase_coordinate_markov",
+      "signature_slug": "xi_phase_coordinate_markov",
+      "display_label": "Ξ:phase_coordinate_markov",
+      "signature_terms": [
+        "phase",
+        "coordinate",
+        "markov"
+      ]
+    },
+    {
+      "token": "Ξ13",
+      "cluster": 14,
+      "support": 4518,
+      "top_features": [
+        {
+          "feature": "selector:normalization#0",
+          "weight": 9.747371673583984
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": 0.7157049775123596
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.4077777564525604
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.2117602825164795
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": 0.2110125869512558
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.16987992823123932
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.152292862534523
+        },
+        {
+          "feature": "selector:function_space#0",
+          "weight": -0.12835395336151123
+        }
+      ],
+      "signature_name": "Ξ:normalization_selector_boundary",
+      "signature_slug": "xi_normalization_selector_boundary",
+      "display_label": "Ξ:normalization_selector_boundary",
+      "signature_terms": [
+        "normalization",
+        "selector",
+        "boundary"
+      ]
+    },
+    {
+      "token": "Ξ14",
+      "cluster": 16,
+      "support": 2679,
+      "top_features": [
+        {
+          "feature": "selector:admissible_set#0",
+          "weight": 13.130382537841797
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.18150442838668823
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.15092042088508606
+        },
+        {
+          "feature": "selector:variational_constraint#0",
+          "weight": -0.1401524394750595
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": 0.1354569047689438
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.11914119124412537
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.11134322732686996
+        },
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": -0.1025005653500557
+        }
+      ],
+      "signature_name": "Ξ:closure_selector",
+      "signature_slug": "xi_closure_selector",
+      "display_label": "Ξ:closure_selector",
+      "signature_terms": [
+        "closure",
+        "selector"
+      ]
+    },
+    {
+      "token": "Ξ15",
+      "cluster": 8,
+      "support": 1973,
+      "top_features": [
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 5.237668037414551
+        },
+        {
+          "feature": "real_substrate_geometry:bundle_gauge_space#0",
+          "weight": 3.413214683532715
+        },
+        {
+          "feature": "real_substrate_geometry:tensor_field_carrier#0",
+          "weight": 3.1475915908813477
+        },
+        {
+          "feature": "selector:gauge_choice#0",
+          "weight": 2.382955312728882
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.3211047351360321
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.28461718559265137
+        },
+        {
+          "feature": "real_substrate_geometry:scalar_field_carrier#0",
+          "weight": -0.2835325300693512
+        },
+        {
+          "feature": "selector:domain_membership#0",
+          "weight": -0.21039284765720367
+        }
+      ],
+      "signature_name": "Ξ:boundary_bundle_gauge_field_carrier",
+      "signature_slug": "xi_boundary_bundle_gauge_field_carrier",
+      "display_label": "Ξ:boundary_bundle_gauge_field_carrier",
+      "signature_terms": [
+        "boundary",
+        "bundle_gauge",
+        "field_carrier"
+      ]
+    },
+    {
+      "token": "Ξ16",
+      "cluster": 5,
+      "support": 1752,
+      "top_features": [
+        {
+          "feature": "selector:conservation_selector#0",
+          "weight": 16.090999603271484
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": 0.6629177927970886
+        },
+        {
+          "feature": "real_substrate_geometry:differential_form_carrier#0",
+          "weight": 0.34487366676330566
+        },
+        {
+          "feature": "real_substrate_geometry:vector_field_carrier#0",
+          "weight": 0.15072442591190338
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.14544133841991425
+        },
+        {
+          "feature": "real_substrate_geometry:boundary_interface#0",
+          "weight": 0.11320367455482483
+        },
+        {
+          "feature": "real_substrate_geometry:lattice_site_space#0",
+          "weight": -0.10302741825580597
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": 0.09657096117734909
+        }
+      ],
+      "signature_name": "Ξ:selector_coordinate_field_carrier",
+      "signature_slug": "xi_selector_coordinate_field_carrier",
+      "display_label": "Ξ:selector_coordinate_field_carrier",
+      "signature_terms": [
+        "selector",
+        "coordinate",
+        "field_carrier"
+      ]
+    },
+    {
+      "token": "Ξ17",
+      "cluster": 15,
+      "support": 696,
+      "top_features": [
+        {
+          "feature": "selector:initial_condition#0",
+          "weight": 6.3537163734436035
+        },
+        {
+          "feature": "real_substrate_geometry:configuration_quotient#0",
+          "weight": 3.999997854232788
+        },
+        {
+          "feature": "real_substrate_geometry:coordinate_domain#0",
+          "weight": -0.2079424113035202
+        },
+        {
+          "feature": "selector:probability_selector#0",
+          "weight": -0.19463641941547394
+        },
+        {
+          "feature": "real_substrate_geometry:spinor_carrier#0",
+          "weight": -0.19384443759918213
+        },
+        {
+          "feature": "real_substrate_geometry:probability_space#0",
+          "weight": -0.18750672042369843
+        },
+        {
+          "feature": "selector:boundary_admissibility#0",
+          "weight": -0.17516396939754486
+        },
+        {
+          "feature": "selector:parameter_regime#0",
+          "weight": -0.17434746026992798
+        }
+      ],
+      "signature_name": "Ξ:selector_quotient",
+      "signature_slug": "xi_selector_quotient",
+      "display_label": "Ξ:selector_quotient",
+      "signature_terms": [
+        "selector",
+        "quotient"
+      ]
+    }
+  ],
+  "centroids_standardized": [
+    [
+      -0.32327085733413696,
+      -0.012062511406838894,
+      -0.1410672813653946,
+      -0.11479700356721878,
+      -0.31476765871047974,
+      -0.28809866309165955,
+      -0.14275221526622772,
+      -0.02514936588704586,
+      -0.1429480016231537,
+      -0.10849323123693466,
+      -0.045243825763463974,
+      2.4698684215545654,
+      -0.16915714740753174,
+      -0.02626974694430828,
+      -0.24327021837234497,
+      -0.14796854555606842,
+      0.035638228058815,
+      0.08170582354068756,
+      -0.09451036900281906,
+      -0.1363353282213211,
+      -0.3077583312988281,
+      -0.15183097124099731,
+      -0.25386136770248413,
+      -0.12011564522981644,
+      -0.01602928340435028,
+      -0.0724267065525055,
+      -0.05763949081301689,
+      -0.3196451961994171
+    ],
+    [
+      1.4241256713867188,
+      -0.008433293551206589,
+      -0.08713477849960327,
+      -0.07630153000354767,
+      -0.17168158292770386,
+      -0.11509910970926285,
+      -0.10079308599233627,
+      -0.02463541179895401,
+      -0.10813992470502853,
+      -0.06008213013410568,
+      -0.039286058396101,
+      -0.17527036368846893,
+      -0.10944660753011703,
+      -0.021214988082647324,
+      1.6541342735290527,
+      -0.05224114656448364,
+      -0.1445986032485962,
+      -0.09815347194671631,
+      -0.08726947754621506,
+      -0.1112523227930069,
+      3.1518616676330566,
+      -0.1252889782190323,
+      -0.11676546931266785,
+      -0.09457229822874069,
+      -0.016577130183577538,
+      -0.06764069944620132,
+      -0.053269676864147186,
+      -0.14949479699134827
+    ],
+    [
+      -0.41543760895729065,
+      0.10804727673530579,
+      0.634563684463501,
+      -0.11378758400678635,
+      -0.308583527803421,
+      -0.27081507444381714,
+      -0.14287178218364716,
+      -0.025802521035075188,
+      -0.1645580381155014,
+      0.5250133275985718,
+      -0.04477083310484886,
+      -0.3280925750732422,
+      0.5344602465629578,
+      -0.024339202791452408,
+      0.47870126366615295,
+      -0.14851853251457214,
+      -0.3590811491012573,
+      0.4989900588989258,
+      -0.09445477277040482,
+      -0.13672249019145966,
+      -0.30750104784965515,
+      -0.14996743202209473,
+      -0.30606091022491455,
+      0.8268105983734131,
+      -0.01812608912587166,
+      -0.07255222648382187,
+      -0.058463700115680695,
+      -0.31723684072494507
+    ],
+    [
+      -0.36843305826187134,
+      -0.0393432155251503,
+      -0.17879629135131836,
+      -0.10918793827295303,
+      -0.26053234934806824,
+      -0.2505929172039032,
+      -0.14449286460876465,
+      -0.018282247707247734,
+      5.485995769500732,
+      -0.1490902602672577,
+      -0.03890198469161987,
+      -0.21123942732810974,
+      -0.1663133054971695,
+      -0.01932155340909958,
+      -0.34272247552871704,
+      -0.11997898668050766,
+      0.15525338053703308,
+      0.21834896504878998,
+      -0.09125441312789917,
+      -0.10207804292440414,
+      -0.2773642838001251,
+      -0.1265738606452942,
+      -0.12626442313194275,
+      -0.035361796617507935,
+      -0.01566905714571476,
+      -0.06841190904378891,
+      -0.05497584119439125,
+      -0.2673968970775604
+    ],
+    [
+      -0.14892172813415527,
+      0.00393469724804163,
+      -0.04628495126962662,
+      -0.07388114929199219,
+      2.9428396224975586,
+      -0.1534462571144104,
+      -0.12238659709692001,
+      -0.025254491716623306,
+      -0.10117979347705841,
+      -0.050019994378089905,
+      -0.04066427797079086,
+      -0.0718170627951622,
+      -0.06221114471554756,
+      -0.02602972462773323,
+      -0.1894342005252838,
+      -0.053441911935806274,
+      -0.13425315916538239,
+      -0.09108182042837143,
+      -0.08020733296871185,
+      -0.09698611497879028,
+      -0.24596835672855377,
+      -0.12043511122465134,
+      -0.14181338250637054,
+      -0.13053062558174133,
+      -0.017905566841363907,
+      -0.06751804053783417,
+      -0.0532221794128418,
+      2.985957622528076
+    ],
+    [
+      0.6629177927970886,
+      0.012732976116240025,
+      -0.07365202903747559,
+      -0.03324921801686287,
+      0.09657096117734909,
+      0.05512116476893425,
+      -0.10302741825580597,
+      0.003488541580736637,
+      0.04271316900849342,
+      -0.0788322314620018,
+      0.11320367455482483,
+      0.011061451397836208,
+      0.15072442591190338,
+      0.009944430552423,
+      -0.06270549446344376,
+      0.34487366676330566,
+      0.04502788558602333,
+      -0.006426049862056971,
+      -0.04476265236735344,
+      -0.08397065103054047,
+      -0.025897648185491562,
+      0.035191312432289124,
+      -0.008696913719177246,
+      -0.14544133841991425,
+      0.010556931607425213,
+      -0.049411311745643616,
+      16.090999603271484,
+      0.046713028103113174
+    ],
+    [
+      -0.1944277584552765,
+      0.007845856249332428,
+      -0.05936736986041069,
+      -0.09709472209215164,
+      -0.2617223262786865,
+      2.598191976547241,
+      -0.1233842745423317,
+      -0.025634296238422394,
+      -0.12821152806282043,
+      -0.037581589072942734,
+      -0.0437825508415699,
+      -0.1470881551504135,
+      -0.05690199136734009,
+      -0.022089971229434013,
+      -0.19169005751609802,
+      -0.059438060969114304,
+      -0.19198757410049438,
+      -0.09774360805749893,
+      -0.08876974880695343,
+      -0.1090058907866478,
+      -0.24420271813869476,
+      -0.12527357041835785,
+      2.580484628677368,
+      -0.12159357964992523,
+      -0.0177081897854805,
+      -0.06869439780712128,
+      -0.056682389229536057,
+      -0.2727319896221161
+    ],
+    [
+      0.4894259572029114,
+      -0.025241851806640625,
+      -0.13097743690013885,
+      8.138904571533203,
+      0.08384096622467041,
+      -0.10556508600711823,
+      -0.08544816076755524,
+      -0.023578070104122162,
+      -0.07726467400789261,
+      -0.10700634121894836,
+      -0.03917153552174568,
+      -0.04800459370017052,
+      -0.11695859581232071,
+      -0.026263872161507607,
+      -0.2470168024301529,
+      0.06854952126741409,
+      0.07721645385026932,
+      -0.050176020711660385,
+      -0.05970919877290726,
+      -0.05219616740942001,
+      -0.1529737263917923,
+      0.12384722381830215,
+      -0.0768958032131195,
+      -0.04502879083156586,
+      -0.014714638702571392,
+      -0.0679297149181366,
+      -0.05534645542502403,
+      0.16365434229373932
+    ],
+    [
+      -0.3211047351360321,
+      0.1905837208032608,
+      -0.1779390275478363,
+      -0.09359194338321686,
+      -0.2054913341999054,
+      -0.20147038996219635,
+      -0.10931690037250519,
+      3.413214683532715,
+      -0.07052060216665268,
+      -0.147629976272583,
+      5.237668037414551,
+      -0.2835325300693512,
+      -0.11220233887434006,
+      3.1475915908813477,
+      -0.28461718559265137,
+      -0.03292328491806984,
+      -0.21039284765720367,
+      -0.15872468054294586,
+      0.009012246504426003,
+      -0.0997619479894638,
+      -0.0562262088060379,
+      -0.11780288070440292,
+      -0.16430634260177612,
+      -0.1469237357378006,
+      2.382955312728882,
+      -0.06519540399312973,
+      -0.036966267973184586,
+      -0.19010938704013824
+    ],
+    [
+      -0.1798192709684372,
+      -0.022485090419650078,
+      -0.11339656263589859,
+      -0.08261473476886749,
+      -0.1286766529083252,
+      -0.11028622835874557,
+      0.017420468851923943,
+      -0.02673773467540741,
+      -0.03247034177184105,
+      -0.022898675873875618,
+      -0.03948846086859703,
+      0.0581924207508564,
+      -0.033111460506916046,
+      -0.021107560023665428,
+      -0.1039634495973587,
+      -0.01373383216559887,
+      -0.00028518185717985034,
+      -0.1303291767835617,
+      -0.0840163603425026,
+      6.9029154777526855,
+      -0.19937120378017426,
+      -0.07616142183542252,
+      -0.11234116554260254,
+      -0.09451185166835785,
+      -0.01830422319471836,
+      -0.06971072405576706,
+      -0.05812631547451019,
+      -0.1892068237066269
+    ],
+    [
+      -0.4008689224720001,
+      -0.05326208099722862,
+      -0.11990239471197128,
+      -0.08202357590198517,
+      -0.19931037724018097,
+      -0.14049506187438965,
+      6.381995677947998,
+      -0.024719705805182457,
+      -0.08054626733064651,
+      -0.1250888556241989,
+      -0.04216082766652107,
+      -0.2712486982345581,
+      0.14686408638954163,
+      -0.025303954258561134,
+      -0.10711982101202011,
+      -0.11948922276496887,
+      0.04347962886095047,
+      -0.09267722815275192,
+      -0.047046951949596405,
+      -0.07531376928091049,
+      -0.25501030683517456,
+      -0.08558694273233414,
+      -0.03471823036670685,
+      0.23750993609428406,
+      -0.018304970115423203,
+      -0.07260341197252274,
+      -0.05859387293457985,
+      -0.17070125043392181
+    ],
+    [
+      0.04851357266306877,
+      -0.026859436184167862,
+      -0.034216731786727905,
+      -0.06422775983810425,
+      -0.09851493686437607,
+      -0.05198662355542183,
+      -0.11622150987386703,
+      -0.02028081566095352,
+      -0.04321644455194473,
+      -0.23434443771839142,
+      -0.04415050894021988,
+      0.11779683828353882,
+      -0.005942411720752716,
+      -0.022389119490981102,
+      -0.07349929958581924,
+      0.008218806236982346,
+      -0.1265328824520111,
+      -0.12928931415081024,
+      -0.08624309301376343,
+      -0.1068943589925766,
+      -0.14797115325927734,
+      6.407991409301758,
+      -0.14914248883724213,
+      -0.16631756722927094,
+      -0.01732879877090454,
+      -0.06291883438825607,
+      -0.04790490120649338,
+      -0.15627093613147736
+    ],
+    [
+      -0.15099908411502838,
+      -0.03852437809109688,
+      -0.02738378755748272,
+      -0.11206658184528351,
+      -0.30953606963157654,
+      -0.23594194650650024,
+      -0.14430348575115204,
+      -0.020744958892464638,
+      -0.15530754625797272,
+      0.007954390719532967,
+      -0.04278596490621567,
+      -0.21448548138141632,
+      0.10168091207742691,
+      -0.02440602332353592,
+      -0.22657126188278198,
+      -0.10723919421434402,
+      2.4934005737304688,
+      -0.15245236456394196,
+      -0.09334190934896469,
+      -0.12387044727802277,
+      -0.3008723855018616,
+      -0.14662869274616241,
+      -0.03840130940079689,
+      -0.20196275413036346,
+      -0.016753189265727997,
+      -0.07118366658687592,
+      -0.058534495532512665,
+      -0.3199903070926666
+    ],
+    [
+      -0.5516059994697571,
+      -0.06442084908485413,
+      -0.2572702467441559,
+      -0.11681704968214035,
+      -0.3328072130680084,
+      -0.3582600951194763,
+      -0.1571028232574463,
+      -0.02674809843301773,
+      -0.19868586957454681,
+      -0.2522142827510834,
+      -0.046872273087501526,
+      -0.4627044200897217,
+      -0.2681120038032532,
+      -0.027337895706295967,
+      -0.47841498255729675,
+      -0.17478249967098236,
+      -0.4436657726764679,
+      -0.32532793283462524,
+      -0.09586260467767715,
+      -0.14745086431503296,
+      -0.31806305050849915,
+      -0.1570766270160675,
+      -0.3627314269542694,
+      -0.40058016777038574,
+      -0.01821456104516983,
+      -0.07418204843997955,
+      -0.0585937574505806,
+      -0.33384987711906433
+    ],
+    [
+      -0.04019368067383766,
+      -0.038285743445158005,
+      0.022926324978470802,
+      -0.038473449647426605,
+      0.03476612642407417,
+      -0.07067067921161652,
+      0.2110125869512558,
+      -0.0248127244412899,
+      -0.053259920328855515,
+      -0.029172884300351143,
+      0.4077777564525604,
+      -0.015967318788170815,
+      0.2117602825164795,
+      -0.0031013956759124994,
+      -0.10583322495222092,
+      -0.014886157587170601,
+      -0.16987992823123932,
+      -0.12835395336151123,
+      9.747371673583984,
+      -0.038591720163822174,
+      -0.152292862534523,
+      -0.09880736470222473,
+      -0.12380067259073257,
+      0.7157049775123596,
+      -0.018298162147402763,
+      -0.06672245264053345,
+      -0.057058751583099365,
+      -0.02625344879925251
+    ],
+    [
+      -0.2079424113035202,
+      -0.049848929047584534,
+      -0.136191263794899,
+      0.09278228133916855,
+      -0.18750672042369843,
+      -0.1407671570777893,
+      -0.09311726689338684,
+      -0.026745133101940155,
+      -0.06207018345594406,
+      3.999997854232788,
+      -0.03874252736568451,
+      -0.03332635387778282,
+      -0.0925065204501152,
+      -0.027297960594296455,
+      -0.19384443759918213,
+      -0.07964193820953369,
+      -0.09708820283412933,
+      -0.12573695182800293,
+      -0.06134125217795372,
+      -0.03201441094279289,
+      -0.17516396939754486,
+      6.3537163734436035,
+      -0.11164537817239761,
+      -0.17434746026992798,
+      -0.018299032002687454,
+      -0.06379944831132889,
+      -0.058595336973667145,
+      -0.19463641941547394
+    ],
+    [
+      -0.08381403237581253,
+      -0.030048994347453117,
+      0.031289372593164444,
+      -0.03539787232875824,
+      -0.11134322732686996,
+      -0.06913113594055176,
+      -0.03435236215591431,
+      0.014091841876506805,
+      -0.00072500976966694,
+      0.0071427966468036175,
+      -0.019347459077835083,
+      -0.04685278981924057,
+      0.09280243515968323,
+      -0.0031422425527125597,
+      -0.08305506408214569,
+      0.05565407872200012,
+      0.1354569047689438,
+      0.03680390119552612,
+      -0.05636119097471237,
+      -0.030868515372276306,
+      -0.15092042088508606,
+      -0.1025005653500557,
+      -0.1401524394750595,
+      -0.11914119124412537,
+      -0.018296657130122185,
+      13.130382537841797,
+      -0.02506699226796627,
+      -0.18150442838668823
+    ],
+    [
+      1.9628300666809082,
+      0.008982289582490921,
+      -0.15684452652931213,
+      -0.09184252470731735,
+      -0.3050123453140259,
+      -0.07082010060548782,
+      -0.1450037658214569,
+      -0.02416723221540451,
+      -0.1584450751543045,
+      -0.08762743324041367,
+      -0.04497312009334564,
+      -0.29628318548202515,
+      -0.1131574958562851,
+      -0.01911187171936035,
+      -0.319487601518631,
+      1.290550947189331,
+      -0.2766650915145874,
+      0.17688807845115662,
+      -0.09446778893470764,
+      -0.14021892845630646,
+      -0.29258280992507935,
+      -0.1513126790523529,
+      -0.2627444863319397,
+      -0.08263999223709106,
+      -0.01655212789773941,
+      -0.07307250797748566,
+      -0.0561683364212513,
+      -0.30865779519081116
+    ]
+  ],
+  "feature_space": "substrate_core_active_standardized",
+  "mean": [
+    0.17802007496356964,
+    0.0030002472922205925,
+    0.04970816150307655,
+    0.008803602308034897,
+    0.08027824014425278,
+    0.08871675282716751,
+    0.019656991586089134,
+    0.0004949325229972601,
+    0.030901221558451653,
+    0.04760357365012169,
+    0.0016579279908910394,
+    0.1432390660047531,
+    0.05583583936095238,
+    0.0005396942142397165,
+    0.13735324144363403,
+    0.01841004192829132,
+    0.1399560123682022,
+    0.08233076333999634,
+    0.006639448925852776,
+    0.017279112711548805,
+    0.07914988696575165,
+    0.020605795085430145,
+    0.09769274294376373,
+    0.11872854828834534,
+    0.00026777165476232767,
+    0.004451404325664043,
+    0.002687184838578105,
+    0.08686361461877823
+  ],
+  "scale": [
+    0.32161945104599,
+    0.04665070027112961,
+    0.19374395906925201,
+    0.07571128755807877,
+    0.24052421748638153,
+    0.24693170189857483,
+    0.12478014081716537,
+    0.018505308777093887,
+    0.15544557571411133,
+    0.18824420869350433,
+    0.035392776131629944,
+    0.31042468547821045,
+    0.2074236422777176,
+    0.019770551472902298,
+    0.28731024265289307,
+    0.10585121065378189,
+    0.3145122230052948,
+    0.2513183653354645,
+    0.06924180686473846,
+    0.11745563894510269,
+    0.2493465095758438,
+    0.13090737164020538,
+    0.2687593102455139,
+    0.2962830364704132,
+    0.014633320271968842,
+    0.06016306206583977,
+    0.04585887864232063,
+    0.26136314868927
+  ],
+  "diagnostics": {
+    "readiness": "usable",
+    "n_clusters": 18,
+    "counts": [
+      46684,
+      40746,
+      84751,
+      12770,
+      42564,
+      1752,
+      40344,
+      6116,
+      1973,
+      8897,
+      10032,
+      9748,
+      41323,
+      105591,
+      4518,
+      696,
+      2679,
+      38816
+    ],
+    "silhouette_sample": 0.32077765464782715
+  },
+  "claim_scope": "V2-native symbolic language learned from operator/substrate matrices, typed graph edges, directed sequence evidence and variational first-variation diagnostics. Tokens are machine language for mechanism construction, not human field names."
+}

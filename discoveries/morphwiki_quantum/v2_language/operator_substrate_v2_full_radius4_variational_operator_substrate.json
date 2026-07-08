@@ -1,0 +1,1148 @@
+{
+  "report_type": "variational_operator_substrate_audit",
+  "readiness": "usable",
+  "matrix_manifest": "discoveries/operator_substrate_v2_full_matrices_manifest.json",
+  "edge_npz": "discoveries/operator_substrate_v2_full_typed_graph_edges.npz",
+  "rows": 14523959,
+  "edge_sample_per_type": 100000,
+  "edge_counts_sampled": {
+    "operator_knn": 100000,
+    "substrate_knn": 100000,
+    "coupled_operator_substrate": 100000,
+    "operator_transfer_candidate": 100000,
+    "substrate_transfer_candidate": 100000,
+    "within_paper_sequence": 100000,
+    "control_only_candidate": 100000,
+    "sequential_fallback": 0
+  },
+  "action_definition": {
+    "state": "q_i=(real_substrate_geometry, selector, operator_apparatus, closure_constraints, readout_current, protocol_order)",
+    "discrete_lagrangian": "L_ij=sum_b w_b ||q_b(j)-q_b(i)||_2^2",
+    "connection": "flat identity connection on V2 block coordinates; no road labels enter the action",
+    "weights": {
+      "real_substrate_geometry": 1.0,
+      "selector": 1.0,
+      "operator_apparatus": 1.0,
+      "closure_constraints": 1.0,
+      "readout_current": 1.0,
+      "protocol_order": 1.0,
+      "equation_shape": 0.0,
+      "quality": 0.0
+    }
+  },
+  "action": {
+    "global_action": {
+      "mean": 1.498317814589176,
+      "p05": 0.0,
+      "p50": 1.0,
+      "p95": 4.585786402225494
+    },
+    "global_action_sum": 1048822.4702124232,
+    "per_edge_type": {
+      "operator_knn": {
+        "count": 100000,
+        "action": {
+          "mean": 1.4594904483981523,
+          "p05": 0.0,
+          "p50": 1.4310858249664307,
+          "p95": 3.000000238418579
+        },
+        "action_sum": 145949.04483981524,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 68664.84213569527,
+            "fraction_of_type_action": 0.4704713361506245,
+            "stats": {
+              "mean": 0.6866484213569527,
+              "p05": 0.0,
+              "p50": 0.6652365326881409,
+              "p95": 2.0
+            }
+          },
+          "selector": {
+            "sum": 77284.20270411996,
+            "fraction_of_type_action": 0.5295286638493756,
+            "stats": {
+              "mean": 0.7728420270411996,
+              "p05": 0.0,
+              "p50": 0.9999999403953552,
+              "p95": 2.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 4.796163466380676e-12,
+            "fraction_of_type_action": 3.286190376678828e-17,
+            "stats": {
+              "mean": 4.796163466380676e-17,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 1.2079226507921703e-12,
+            "fraction_of_type_action": 8.276331319042976e-18,
+            "stats": {
+              "mean": 1.2079226507921702e-17,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "readout_current": {
+            "sum": 3.907985046680551e-13,
+            "fraction_of_type_action": 2.677636603219786e-18,
+            "stats": {
+              "mean": 3.907985046680551e-18,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "protocol_order": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          }
+        }
+      },
+      "substrate_knn": {
+        "count": 100000,
+        "action": {
+          "mean": 1.622157945840843,
+          "p05": 0.0,
+          "p50": 1.5857864022254944,
+          "p95": 3.999999761581421
+        },
+        "action_sum": 162215.7945840843,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 5.290878846153646e-12,
+            "fraction_of_type_action": 3.261629892279773e-17,
+            "stats": {
+              "mean": 5.290878846153646e-17,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "selector": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 73790.40838330472,
+            "fraction_of_type_action": 0.45489040430681105,
+            "stats": {
+              "mean": 0.7379040838330472,
+              "p05": 0.0,
+              "p50": 0.9999999403953552,
+              "p95": 2.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 44534.15562090464,
+            "fraction_of_type_action": 0.2745364946433772,
+            "stats": {
+              "mean": 0.4453415562090464,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "readout_current": {
+            "sum": 38587.230582437944,
+            "fraction_of_type_action": 0.23787591511279324,
+            "stats": {
+              "mean": 0.3858723058243794,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.1055727005004883
+            }
+          },
+          "protocol_order": {
+            "sum": 5303.999997437,
+            "fraction_of_type_action": 0.03269718593701848,
+            "stats": {
+              "mean": 0.053039999974370006,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          }
+        }
+      },
+      "coupled_operator_substrate": {
+        "count": 100000,
+        "action": {
+          "mean": 0.004360660282992781,
+          "p05": 0.0,
+          "p50": 0.0,
+          "p95": 0.012164009734988213
+        },
+        "action_sum": 436.06602829927806,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 94.37369433790495,
+            "fraction_of_type_action": 0.21642065240893976,
+            "stats": {
+              "mean": 0.0009437369433790495,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "selector": {
+            "sum": 78.3329865792773,
+            "fraction_of_type_action": 0.17963560904936238,
+            "stats": {
+              "mean": 0.000783329865792773,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 126.40836763242316,
+            "fraction_of_type_action": 0.28988354842828384,
+            "stats": {
+              "mean": 0.0012640836763242317,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 100.8615823681469,
+            "fraction_of_type_action": 0.23129887636861318,
+            "stats": {
+              "mean": 0.001008615823681469,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "readout_current": {
+            "sum": 33.0371481361801,
+            "fraction_of_type_action": 0.07576180209458154,
+            "stats": {
+              "mean": 0.000330371481361801,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "protocol_order": {
+            "sum": 3.0522492453455925,
+            "fraction_of_type_action": 0.006999511650219155,
+            "stats": {
+              "mean": 3.0522492453455927e-05,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          }
+        }
+      },
+      "operator_transfer_candidate": {
+        "count": 100000,
+        "action": {
+          "mean": 1.532198608918381,
+          "p05": 0.0,
+          "p50": 1.5394064784049988,
+          "p95": 3.04603013992309
+        },
+        "action_sum": 153219.8608918381,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 71567.93067466374,
+            "fraction_of_type_action": 0.4670930404067226,
+            "stats": {
+              "mean": 0.7156793067466375,
+              "p05": 0.0,
+              "p50": 0.7350888848304749,
+              "p95": 2.0
+            }
+          },
+          "selector": {
+            "sum": 81651.93021717435,
+            "fraction_of_type_action": 0.5329069595932774,
+            "stats": {
+              "mean": 0.8165193021717435,
+              "p05": 0.0,
+              "p50": 0.9999999403953552,
+              "p95": 2.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 4.632738637155853e-12,
+            "fraction_of_type_action": 3.02358885472832e-17,
+            "stats": {
+              "mean": 4.632738637155853e-17,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 1.2434497875801753e-12,
+            "fraction_of_type_action": 8.115460883089817e-18,
+            "stats": {
+              "mean": 1.2434497875801754e-17,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "readout_current": {
+            "sum": 5.044853423896711e-13,
+            "fraction_of_type_action": 3.2925584154250117e-18,
+            "stats": {
+              "mean": 5.0448534238967115e-18,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "protocol_order": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          }
+        }
+      },
+      "substrate_transfer_candidate": {
+        "count": 100000,
+        "action": {
+          "mean": 1.6294420151582594,
+          "p05": 0.0,
+          "p50": 1.5857864022254944,
+          "p95": 3.999999761581421
+        },
+        "action_sum": 162944.20151582593,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 5.631939359318494e-12,
+            "fraction_of_type_action": 3.4563607093263106e-17,
+            "stats": {
+              "mean": 5.631939359318494e-17,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "selector": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 74327.60047172057,
+            "fraction_of_type_action": 0.4561537003481619,
+            "stats": {
+              "mean": 0.7432760047172057,
+              "p05": 0.0,
+              "p50": 0.9999999403953552,
+              "p95": 2.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 44819.36811774038,
+            "fraction_of_type_action": 0.27505960752698094,
+            "stats": {
+              "mean": 0.44819368117740377,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "readout_current": {
+            "sum": 38451.64714222774,
+            "fraction_of_type_action": 0.23598045701855264,
+            "stats": {
+              "mean": 0.3845164714222774,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.1055727005004883
+            }
+          },
+          "protocol_order": {
+            "sum": 5345.585784137249,
+            "fraction_of_type_action": 0.03280623510630453,
+            "stats": {
+              "mean": 0.05345585784137249,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          }
+        }
+      },
+      "within_paper_sequence": {
+        "count": 100000,
+        "action": {
+          "mean": 1.2403431057083,
+          "p05": 0.0,
+          "p50": 0.21114560961723328,
+          "p95": 4.999999940395355
+        },
+        "action_sum": 124034.31057083001,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 30849.285021670163,
+            "fraction_of_type_action": 0.24871573744148498,
+            "stats": {
+              "mean": 0.30849285021670164,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.270292043685913
+            }
+          },
+          "selector": {
+            "sum": 26628.038132418413,
+            "fraction_of_type_action": 0.21468284065812923,
+            "stats": {
+              "mean": 0.26628038132418413,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 26374.28136756923,
+            "fraction_of_type_action": 0.21263698122067726,
+            "stats": {
+              "mean": 0.2637428136756923,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 21371.389194862917,
+            "fraction_of_type_action": 0.1723022371512175,
+            "stats": {
+              "mean": 0.21371389194862916,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "readout_current": {
+            "sum": 17231.75026146695,
+            "fraction_of_type_action": 0.13892728699150328,
+            "stats": {
+              "mean": 0.1723175026146695,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "protocol_order": {
+            "sum": 1579.5665928423405,
+            "fraction_of_type_action": 0.012734916536987773,
+            "stats": {
+              "mean": 0.015795665928423405,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          }
+        }
+      },
+      "control_only_candidate": {
+        "count": 100000,
+        "action": {
+          "mean": 3.000231917817304,
+          "p05": 0.0,
+          "p50": 3.0,
+          "p95": 6.999999701976776
+        },
+        "action_sum": 300023.1917817304,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 83008.23462378653,
+            "fraction_of_type_action": 0.2766727269676398,
+            "stats": {
+              "mean": 0.8300823462378653,
+              "p05": 0.0,
+              "p50": 0.9999999403953552,
+              "p95": 2.0
+            }
+          },
+          "selector": {
+            "sum": 57746.45823489176,
+            "fraction_of_type_action": 0.1924733147859544,
+            "stats": {
+              "mean": 0.5774645823489176,
+              "p05": 0.0,
+              "p50": 0.3371211886405945,
+              "p95": 2.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 66660.6404474536,
+            "fraction_of_type_action": 0.22218495860796594,
+            "stats": {
+              "mean": 0.666606404474536,
+              "p05": 0.0,
+              "p50": 0.9999998211860657,
+              "p95": 2.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 40316.42998693045,
+            "fraction_of_type_action": 0.13437771176123287,
+            "stats": {
+              "mean": 0.4031642998693045,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 1.0
+            }
+          },
+          "readout_current": {
+            "sum": 48589.52598520741,
+            "fraction_of_type_action": 0.1619525667220977,
+            "stats": {
+              "mean": 0.4858952598520741,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 2.0
+            }
+          },
+          "protocol_order": {
+            "sum": 3701.9025034606457,
+            "fraction_of_type_action": 0.01233872115510928,
+            "stats": {
+              "mean": 0.037019025034606454,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          }
+        }
+      },
+      "sequential_fallback": {
+        "count": 0,
+        "action": {
+          "mean": 0.0,
+          "p05": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "action_sum": 0.0,
+        "per_block": {
+          "real_substrate_geometry": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "selector": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "operator_apparatus": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "closure_constraints": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "readout_current": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          },
+          "protocol_order": {
+            "sum": 0.0,
+            "fraction_of_type_action": 0.0,
+            "stats": {
+              "mean": 0.0,
+              "p05": 0.0,
+              "p50": 0.0,
+              "p95": 0.0
+            }
+          }
+        }
+      }
+    },
+    "global_block_action_fractions": {
+      "real_substrate_geometry": 0.24235242223469175,
+      "selector": 0.2320592561540839,
+      "operator_apparatus": 0.2300478354442702,
+      "closure_constraints": 0.14410656597793423,
+      "readout_current": 0.1362415424705149,
+      "protocol_order": 0.015192377718504988
+    }
+  },
+  "noether": {
+    "generator_definition": "For edge family F, G_F(i)=mean(q_j-q_i) over sampled outgoing F-edges i->j; the first variation is evaluated on the full sampled action graph.",
+    "first_variation_formula": "delta_G I = sum_{i->j,b} 2 w_b (q_b(j)-q_b(i)) dot (G_b(j)-G_b(i)).",
+    "symmetry_relative_threshold": 0.05,
+    "ranked_generators_by_relative_first_variation": [
+      {
+        "generator": "coupled_operator_substrate",
+        "relative_first_variation": 0.0009483417137170462
+      },
+      {
+        "generator": "within_paper_sequence",
+        "relative_first_variation": 0.2909711798263155
+      },
+      {
+        "generator": "operator_transfer_candidate",
+        "relative_first_variation": 0.40999336462628194
+      },
+      {
+        "generator": "operator_knn",
+        "relative_first_variation": 0.43274682346508414
+      },
+      {
+        "generator": "substrate_knn",
+        "relative_first_variation": 0.5597014232722278
+      },
+      {
+        "generator": "substrate_transfer_candidate",
+        "relative_first_variation": 0.5636864268193207
+      }
+    ],
+    "generators": {
+      "operator_knn": {
+        "generator_edges": 100000,
+        "support_nodes": 66115,
+        "mean_source_multiplicity": 1.512516070483249,
+        "near_variational_symmetry": false,
+        "action_sum": 1048822.4702124232,
+        "first_variation": -453874.59236322896,
+        "relative_first_variation": 0.43274682346508414,
+        "mean_abs_edge_variation": 0.6493019304579665,
+        "edge_abs_variation_relative": 0.43335394142396866,
+        "node_divergence_l1_relative": 0.4328349039085367,
+        "node_divergence_net": -453874.59164994676,
+        "per_block_first_variation": {
+          "protocol_order": 0.0,
+          "readout_current": -1.8911977761604884e-07,
+          "closure_constraints": -1.3384753252410077e-06,
+          "operator_apparatus": -8.260429658809235e-06,
+          "real_substrate_geometry": -213182.8901992401,
+          "selector": -240691.70215420055
+        },
+        "per_block_action": {
+          "real_substrate_geometry": 254184.66615015361,
+          "selector": 243388.96227518376,
+          "operator_apparatus": 241279.33903768053,
+          "closure_constraints": 151142.20450280653,
+          "readout_current": 142893.19111947622,
+          "protocol_order": 15934.107127122581
+        },
+        "per_eval_edge_type": {
+          "operator_knn": {
+            "count": 100000,
+            "action_sum": 145949.04483981524,
+            "first_variation": -323333.1163566336,
+            "relative_first_variation": 2.215383572475615,
+            "mean_abs_edge_variation": 3.233677205462133
+          },
+          "substrate_knn": {
+            "count": 100000,
+            "action_sum": 162215.7945840843,
+            "first_variation": -2.59953794667922e-06,
+            "relative_first_variation": 1.6025183943057737e-11,
+            "mean_abs_edge_variation": 7.246900505464282e-11
+          },
+          "coupled_operator_substrate": {
+            "count": 100000,
+            "action_sum": 436.06602829927806,
+            "first_variation": -7.713582006878669,
+            "relative_first_variation": 0.017689023006361625,
+            "mean_abs_edge_variation": 9.095962813525022e-05
+          },
+          "operator_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 153219.8608918381,
+            "first_variation": -128042.80684868693,
+            "relative_first_variation": 0.8356802186308974,
+            "mean_abs_edge_variation": 1.2846753656834302
+          },
+          "substrate_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 162944.20151582593,
+            "first_variation": -3.168521645946498e-06,
+            "relative_first_variation": 1.9445439705559305e-11,
+            "mean_abs_edge_variation": 6.842828215170016e-11
+          },
+          "within_paper_sequence": {
+            "count": 100000,
+            "action_sum": 124034.31057083001,
+            "first_variation": -1634.986237958973,
+            "relative_first_variation": 0.013181725527674146,
+            "mean_abs_edge_variation": 0.017977624817584154
+          },
+          "control_only_candidate": {
+            "count": 100000,
+            "action_sum": 300023.1917817304,
+            "first_variation": -855.9693321742227,
+            "relative_first_variation": 0.002853010552587375,
+            "mean_abs_edge_variation": 0.008692357473584938
+          }
+        }
+      },
+      "substrate_knn": {
+        "generator_edges": 100000,
+        "support_nodes": 67057,
+        "mean_source_multiplicity": 1.49126862221692,
+        "near_variational_symmetry": false,
+        "action_sum": 1048822.4702124232,
+        "first_variation": -587027.4293377871,
+        "relative_first_variation": 0.5597014232722278,
+        "mean_abs_edge_variation": 0.8389884315792825,
+        "edge_abs_variation_relative": 0.5599535848870121,
+        "node_divergence_l1_relative": 0.5597345853909582,
+        "node_divergence_net": -587027.4281707259,
+        "per_block_first_variation": {
+          "real_substrate_geometry": 2.637319430102498e-06,
+          "selector": 0.0,
+          "protocol_order": -19956.614249110222,
+          "readout_current": -138594.22101370202,
+          "closure_constraints": -160610.5893971952,
+          "operator_apparatus": -267866.0046804169
+        },
+        "per_block_action": {
+          "real_substrate_geometry": 254184.66615015361,
+          "selector": 243388.96227518376,
+          "operator_apparatus": 241279.33903768053,
+          "closure_constraints": 151142.20450280653,
+          "readout_current": 142893.19111947622,
+          "protocol_order": 15934.107127122581
+        },
+        "per_eval_edge_type": {
+          "operator_knn": {
+            "count": 100000,
+            "action_sum": 145949.04483981524,
+            "first_variation": 1.2248971508199702e-06,
+            "relative_first_variation": 8.39263560898492e-12,
+            "mean_abs_edge_variation": 3.001568895655282e-11
+          },
+          "substrate_knn": {
+            "count": 100000,
+            "action_sum": 162215.7945840843,
+            "first_variation": -371315.9126053086,
+            "relative_first_variation": 2.2890244045430332,
+            "mean_abs_edge_variation": 3.7133305815771163
+          },
+          "coupled_operator_substrate": {
+            "count": 100000,
+            "action_sum": 436.06602829927806,
+            "first_variation": -6.053742756601423,
+            "relative_first_variation": 0.013882628693209408,
+            "mean_abs_edge_variation": 8.853925599250943e-05
+          },
+          "operator_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 153219.8608918381,
+            "first_variation": -2.206655782543976e-07,
+            "relative_first_variation": 1.4401891306386918e-12,
+            "mean_abs_edge_variation": 2.5875132170227744e-11
+          },
+          "substrate_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 162944.20151582593,
+            "first_variation": -214262.67574885912,
+            "relative_first_variation": 1.3149450778587473,
+            "mean_abs_edge_variation": 2.144791187739794
+          },
+          "within_paper_sequence": {
+            "count": 100000,
+            "action_sum": 124034.31057083001,
+            "first_variation": -468.6799806034449,
+            "relative_first_variation": 0.0037786317225168464,
+            "mean_abs_edge_variation": 0.004888890293516264
+          },
+          "control_only_candidate": {
+            "count": 100000,
+            "action_sum": 300023.1917817304,
+            "first_variation": -974.1072612635537,
+            "relative_first_variation": 0.0032467732093598473,
+            "mean_abs_edge_variation": 0.009819822132669135
+          }
+        }
+      },
+      "coupled_operator_substrate": {
+        "generator_edges": 100000,
+        "support_nodes": 70510,
+        "mean_source_multiplicity": 1.4182385477237271,
+        "near_variational_symmetry": true,
+        "action_sum": 1048822.4702124232,
+        "first_variation": -994.6420987861951,
+        "relative_first_variation": 0.0009483417137170462,
+        "mean_abs_edge_variation": 0.0014571891894307521,
+        "edge_abs_variation_relative": 0.0009725501327168688,
+        "node_divergence_l1_relative": 0.0009572183216258009,
+        "node_divergence_net": -994.6420995012996,
+        "per_block_first_variation": {
+          "protocol_order": -12.949080929160118,
+          "readout_current": -74.10964855167599,
+          "selector": -178.90194007362902,
+          "real_substrate_geometry": -214.92352530096252,
+          "closure_constraints": -226.3914306659723,
+          "operator_apparatus": -287.36647326479516
+        },
+        "per_block_action": {
+          "real_substrate_geometry": 254184.66615015361,
+          "selector": 243388.96227518376,
+          "operator_apparatus": 241279.33903768053,
+          "closure_constraints": 151142.20450280653,
+          "readout_current": 142893.19111947622,
+          "protocol_order": 15934.107127122581
+        },
+        "per_eval_edge_type": {
+          "operator_knn": {
+            "count": 100000,
+            "action_sum": 145949.04483981524,
+            "first_variation": -10.59699701379025,
+            "relative_first_variation": 7.260751192596613e-05,
+            "mean_abs_edge_variation": 0.0001397333675860272
+          },
+          "substrate_knn": {
+            "count": 100000,
+            "action_sum": 162215.7945840843,
+            "first_variation": -9.551137026399374,
+            "relative_first_variation": 5.88792050175395e-05,
+            "mean_abs_edge_variation": 0.00013140417149290444
+          },
+          "coupled_operator_substrate": {
+            "count": 100000,
+            "action_sum": 436.06602829927806,
+            "first_variation": -955.5282079797034,
+            "relative_first_variation": 2.191246613973587,
+            "mean_abs_edge_variation": 0.009557335761915708
+          },
+          "operator_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 153219.8608918381,
+            "first_variation": -4.783354520305295,
+            "relative_first_variation": 3.1218893506775795e-05,
+            "mean_abs_edge_variation": 0.0001062160031075706
+          },
+          "substrate_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 162944.20151582593,
+            "first_variation": -5.30851764511317,
+            "relative_first_variation": 3.257874533570059e-05,
+            "mean_abs_edge_variation": 7.712855746038258e-05
+          },
+          "within_paper_sequence": {
+            "count": 100000,
+            "action_sum": 124034.31057083001,
+            "first_variation": -2.223127882290207,
+            "relative_first_variation": 1.7923491266722412e-05,
+            "mean_abs_edge_variation": 4.92976228121443e-05
+          },
+          "control_only_candidate": {
+            "count": 100000,
+            "action_sum": 300023.1917817304,
+            "first_variation": -6.65075671859352,
+            "relative_first_variation": 2.2167475384476297e-05,
+            "mean_abs_edge_variation": 0.00013920884164052885
+          }
+        }
+      },
+      "operator_transfer_candidate": {
+        "generator_edges": 100000,
+        "support_nodes": 84534,
+        "mean_source_multiplicity": 1.1829559703787824,
+        "near_variational_symmetry": false,
+        "action_sum": 1048822.4702124232,
+        "first_variation": -430010.2534580398,
+        "relative_first_variation": 0.40999336462628194,
+        "mean_abs_edge_variation": 0.6148457456511851,
+        "edge_abs_variation_relative": 0.4103573618790415,
+        "node_divergence_l1_relative": 0.41005835544711366,
+        "node_divergence_net": -430010.2529982149,
+        "per_block_first_variation": {
+          "closure_constraints": 1.6172231198652298e-07,
+          "protocol_order": 0.0,
+          "readout_current": -1.0871303857129533e-12,
+          "operator_apparatus": -2.681629223862577e-06,
+          "real_substrate_geometry": -201966.54499278852,
+          "selector": -228043.70846273165
+        },
+        "per_block_action": {
+          "real_substrate_geometry": 254184.66615015361,
+          "selector": 243388.96227518376,
+          "operator_apparatus": 241279.33903768053,
+          "closure_constraints": 151142.20450280653,
+          "readout_current": 142893.19111947622,
+          "protocol_order": 15934.107127122581
+        },
+        "per_eval_edge_type": {
+          "operator_knn": {
+            "count": 100000,
+            "action_sum": 145949.04483981524,
+            "first_variation": -100340.8797708283,
+            "relative_first_variation": 0.6875062449429273,
+            "mean_abs_edge_variation": 1.0062031540409901
+          },
+          "substrate_knn": {
+            "count": 100000,
+            "action_sum": 162215.7945840843,
+            "first_variation": -4.935152873031257e-07,
+            "relative_first_variation": 3.04233806928901e-12,
+            "mean_abs_edge_variation": 2.6479773254095564e-11
+          },
+          "coupled_operator_substrate": {
+            "count": 100000,
+            "action_sum": 436.06602829927806,
+            "first_variation": -6.474210893132536,
+            "relative_first_variation": 0.014846859129070236,
+            "mean_abs_edge_variation": 7.825417141758649e-05
+          },
+          "operator_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 153219.8608918381,
+            "first_variation": -328175.6693618199,
+            "relative_first_variation": 2.1418611624604442,
+            "mean_abs_edge_variation": 3.281891497233672
+          },
+          "substrate_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 162944.20151582593,
+            "first_variation": -1.1438732165913734e-06,
+            "relative_first_variation": 7.0200302063542585e-12,
+            "mean_abs_edge_variation": 3.06273212302699e-11
+          },
+          "within_paper_sequence": {
+            "count": 100000,
+            "action_sum": 124034.31057083001,
+            "first_variation": -359.68019422509536,
+            "relative_first_variation": 0.0028998443460505176,
+            "mean_abs_edge_variation": 0.004058932551456865
+          },
+          "control_only_candidate": {
+            "count": 100000,
+            "action_sum": 300023.1917817304,
+            "first_variation": -1127.5499186361985,
+            "relative_first_variation": 0.003758209196896023,
+            "mean_abs_edge_variation": 0.011688381503651977
+          }
+        }
+      },
+      "substrate_transfer_candidate": {
+        "generator_edges": 100000,
+        "support_nodes": 68353,
+        "mean_source_multiplicity": 1.462993577458195,
+        "near_variational_symmetry": false,
+        "action_sum": 1048822.4702124232,
+        "first_variation": -591206.9906018543,
+        "relative_first_variation": 0.5636864268193207,
+        "mean_abs_edge_variation": 0.8449731960829753,
+        "edge_abs_variation_relative": 0.5639479073501229,
+        "node_divergence_l1_relative": 0.5637299890124094,
+        "node_divergence_net": -591206.9895533713,
+        "per_block_first_variation": {
+          "real_substrate_geometry": 1.8665980442496428e-06,
+          "selector": 0.0,
+          "protocol_order": -19687.2836163342,
+          "readout_current": -139410.56586340125,
+          "closure_constraints": -162880.07161475092,
+          "operator_apparatus": -269229.06950923475
+        },
+        "per_block_action": {
+          "real_substrate_geometry": 254184.66615015361,
+          "selector": 243388.96227518376,
+          "operator_apparatus": 241279.33903768053,
+          "closure_constraints": 151142.20450280653,
+          "readout_current": 142893.19111947622,
+          "protocol_order": 15934.107127122581
+        },
+        "per_eval_edge_type": {
+          "operator_knn": {
+            "count": 100000,
+            "action_sum": 145949.04483981524,
+            "first_variation": 1.5432724751462956e-06,
+            "relative_first_variation": 1.057404984623296e-11,
+            "mean_abs_edge_variation": 2.35901673306671e-11
+          },
+          "substrate_knn": {
+            "count": 100000,
+            "action_sum": 162215.7945840843,
+            "first_variation": -214740.48083280594,
+            "relative_first_variation": 1.3237951420414587,
+            "mean_abs_edge_variation": 2.1495278493123093
+          },
+          "coupled_operator_substrate": {
+            "count": 100000,
+            "action_sum": 436.06602829927806,
+            "first_variation": -4.993841262534261,
+            "relative_first_variation": 0.011452030056115538,
+            "mean_abs_edge_variation": 6.677441524341702e-05
+          },
+          "operator_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 153219.8608918381,
+            "first_variation": -3.790267655290336e-08,
+            "relative_first_variation": 2.4737443522194456e-13,
+            "mean_abs_edge_variation": 3.0797619281486275e-11
+          },
+          "substrate_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 162944.20151582593,
+            "first_variation": -374954.959964777,
+            "relative_first_variation": 2.3011249033514063,
+            "mean_abs_edge_variation": 3.749724765872332
+          },
+          "within_paper_sequence": {
+            "count": 100000,
+            "action_sum": 124034.31057083001,
+            "first_variation": -448.4006022192898,
+            "relative_first_variation": 0.0036151335880827092,
+            "mean_abs_edge_variation": 0.0047654306299781055
+          },
+          "control_only_candidate": {
+            "count": 100000,
+            "action_sum": 300023.1917817304,
+            "first_variation": -1058.15536229518,
+            "relative_first_variation": 0.003526911889748169,
+            "mean_abs_edge_variation": 0.010727552296577812
+          }
+        }
+      },
+      "within_paper_sequence": {
+        "generator_edges": 100000,
+        "support_nodes": 100000,
+        "mean_source_multiplicity": 1.0,
+        "near_variational_symmetry": false,
+        "action_sum": 1048822.4702124232,
+        "first_variation": -305177.11158605944,
+        "relative_first_variation": 0.2909711798263155,
+        "mean_abs_edge_variation": 0.4386658265365387,
+        "edge_abs_variation_relative": 0.29277221579109136,
+        "node_divergence_l1_relative": 0.2917638377627354,
+        "node_divergence_net": -305177.11153967783,
+        "per_block_first_variation": {
+          "protocol_order": -4235.872666418552,
+          "readout_current": -41082.91675897085,
+          "closure_constraints": -52839.93558329597,
+          "operator_apparatus": -64938.31205686075,
+          "selector": -67104.38246075087,
+          "real_substrate_geometry": -74975.69205976256
+        },
+        "per_block_action": {
+          "real_substrate_geometry": 254184.66615015361,
+          "selector": 243388.96227518376,
+          "operator_apparatus": 241279.33903768053,
+          "closure_constraints": 151142.20450280653,
+          "readout_current": 142893.19111947622,
+          "protocol_order": 15934.107127122581
+        },
+        "per_eval_edge_type": {
+          "operator_knn": {
+            "count": 100000,
+            "action_sum": 145949.04483981524,
+            "first_variation": -7337.6961826722845,
+            "relative_first_variation": 0.05027573966465962,
+            "mean_abs_edge_variation": 0.07975014003925843
+          },
+          "substrate_knn": {
+            "count": 100000,
+            "action_sum": 162215.7945840843,
+            "first_variation": -6662.888678606664,
+            "relative_first_variation": 0.041074228904097045,
+            "mean_abs_edge_variation": 0.0698912145010735
+          },
+          "coupled_operator_substrate": {
+            "count": 100000,
+            "action_sum": 436.06602829927806,
+            "first_variation": -4.993124349411943,
+            "relative_first_variation": 0.011450386008939668,
+            "mean_abs_edge_variation": 6.0022997226821955e-05
+          },
+          "operator_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 153219.8608918381,
+            "first_variation": -5908.077581241561,
+            "relative_first_variation": 0.038559476211848465,
+            "mean_abs_edge_variation": 0.06448184952257847
+          },
+          "substrate_transfer_candidate": {
+            "count": 100000,
+            "action_sum": 162944.20151582593,
+            "first_variation": -6318.166987286074,
+            "relative_first_variation": 0.03877503420502154,
+            "mean_abs_edge_variation": 0.06653046216289053
+          },
+          "within_paper_sequence": {
+            "count": 100000,
+            "action_sum": 124034.31057083001,
+            "first_variation": -277705.0737406818,
+            "relative_first_variation": 2.238937536417376,
+            "mean_abs_edge_variation": 2.777431134683229
+          },
+          "control_only_candidate": {
+            "count": 100000,
+            "action_sum": 300023.1917817304,
+            "first_variation": -1240.2152912217605,
+            "relative_first_variation": 0.004133731408750656,
+            "mean_abs_edge_variation": 0.012515961849513877
+          }
+        }
+      }
+    }
+  },
+  "conclusions": [
+    "The Lagrangian is now an explicit quadratic action on typed operator/substrate fields, not a road-label proxy.",
+    "Discrete Noether-current candidates are computed as exact first variations of that action under learned infinitesimal generator fields.",
+    "A conserved current candidate is a generator with small relative first variation and small node-divergence residual, not merely high latent similarity.",
+    "Control/equation-shape channels have zero default action weight and therefore cannot create mechanism currents unless explicitly enabled."
+  ],
+  "claim_scope": "Exact discrete variational calculation for the V2 finite-dimensional representation. It is close in form to physical Noether calculus because it uses an action, infinitesimal generator and first variation. It is not a symbolic proof of a continuum physical conservation law unless the source equation action and transformation group are supplied."
+}

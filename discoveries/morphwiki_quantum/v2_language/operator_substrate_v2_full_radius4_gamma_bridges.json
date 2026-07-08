@@ -1,0 +1,245 @@
+{
+  "report_type": "operator_substrate_v2_gamma_bridge_candidates",
+  "readiness": "usable",
+  "source_manifest": "discoveries/operator_substrate_v2_full_active_matrices_manifest.json",
+  "edge_npz": "discoveries/operator_substrate_v2_full_typed_graph_edges.npz",
+  "rows": 14523959,
+  "bridge_count": 240000,
+  "candidate_edge_types": [
+    "operator_transfer_candidate",
+    "substrate_transfer_candidate"
+  ],
+  "feature_names": [
+    "delta:operator_apparatus:time_derivative#0",
+    "delta:operator_apparatus:spatial_derivative#0",
+    "delta:operator_apparatus:laplacian_diffusion#0",
+    "delta:operator_apparatus:integral_operator#0",
+    "delta:operator_apparatus:hamiltonian_generator#0",
+    "delta:operator_apparatus:liouvillian_generator#0",
+    "delta:operator_apparatus:spectral_operator#0",
+    "delta:operator_apparatus:graph_operator#0",
+    "delta:operator_apparatus:reaction_operator#0",
+    "delta:operator_apparatus:markov_transition#0",
+    "delta:operator_apparatus:control_update#0",
+    "delta:operator_apparatus:variational_derivative#0",
+    "delta:operator_apparatus:commutator_operator#0",
+    "delta:operator_apparatus:stochastic_operator#0",
+    "delta:operator_apparatus:nonlinear_operator#0",
+    "delta:operator_apparatus:nonlocal_operator#0",
+    "delta:closure_constraints:zero_residual#0",
+    "delta:closure_constraints:conservation_balance#0",
+    "delta:closure_constraints:constitutive_law#0",
+    "delta:closure_constraints:algebraic_constraint#0",
+    "delta:closure_constraints:normalization_closure#0",
+    "delta:closure_constraints:gauge_constraint#0",
+    "delta:closure_constraints:stoichiometric_closure#0",
+    "delta:closure_constraints:weak_form_closure#0",
+    "delta:closure_constraints:boundary_condition#0",
+    "delta:closure_constraints:compatibility_condition#0",
+    "delta:readout_current:eigenvalue_spectrum#0",
+    "delta:readout_current:observable_expectation#0",
+    "delta:readout_current:current_flux#0",
+    "delta:readout_current:order_parameter#0",
+    "delta:readout_current:free_energy_action#0",
+    "delta:readout_current:residual_error#0",
+    "delta:readout_current:probability_readout#0",
+    "delta:readout_current:material_response#0",
+    "delta:readout_current:biological_response#0",
+    "delta:readout_current:classifier_control_output#0",
+    "delta:protocol_order:recurrence_step#0",
+    "delta:protocol_order:algorithmic_protocol#0",
+    "delta:protocol_order:measurement_order#0",
+    "delta:protocol_order:intervention_sequence#0",
+    "delta:protocol_order:training_recall#0",
+    "delta:protocol_order:write_hold_read#0",
+    "delta:protocol_order:feedback_loop#0",
+    "delta:protocol_order:discrete_update#0",
+    "delta:real_substrate_geometry:coordinate_domain#0",
+    "delta:real_substrate_geometry:metric_manifold#0",
+    "delta:real_substrate_geometry:hilbert_inner_product#0",
+    "delta:real_substrate_geometry:phase_symplectic_space#0",
+    "delta:real_substrate_geometry:probability_space#0",
+    "delta:real_substrate_geometry:graph_topology#0",
+    "delta:real_substrate_geometry:lattice_site_space#0",
+    "delta:real_substrate_geometry:bundle_gauge_space#0",
+    "delta:real_substrate_geometry:stoichiometric_space#0",
+    "delta:real_substrate_geometry:configuration_quotient#0",
+    "delta:real_substrate_geometry:boundary_interface#0",
+    "delta:real_substrate_geometry:scalar_field_carrier#0",
+    "delta:real_substrate_geometry:vector_field_carrier#0",
+    "delta:real_substrate_geometry:tensor_field_carrier#0",
+    "delta:real_substrate_geometry:spinor_carrier#0",
+    "delta:real_substrate_geometry:differential_form_carrier#0",
+    "delta:selector:domain_membership#0",
+    "delta:selector:function_space#0",
+    "delta:selector:normalization#0",
+    "delta:selector:positivity#0",
+    "delta:selector:boundary_admissibility#0",
+    "delta:selector:initial_condition#0",
+    "delta:selector:variational_constraint#0",
+    "delta:selector:parameter_regime#0",
+    "delta:selector:gauge_choice#0",
+    "delta:selector:admissible_set#0",
+    "delta:selector:conservation_selector#0",
+    "delta:selector:probability_selector#0",
+    "metric:edge_score",
+    "metric:bridge_score",
+    "metric:operator_delta_norm",
+    "metric:substrate_delta_norm",
+    "metric:product_delta_norm",
+    "metric:operator_src_energy",
+    "metric:operator_dst_energy",
+    "metric:substrate_src_energy",
+    "metric:substrate_dst_energy",
+    "edge_type:operator_transfer_candidate",
+    "edge_type:substrate_transfer_candidate",
+    "src_route:transport_flow",
+    "src_route:constraint_closure",
+    "src_route:spectral_operator",
+    "src_route:boundary_weak_form",
+    "src_route:commutator_incompatibility",
+    "src_route:discrete_protocol",
+    "src_route:unclassified",
+    "dst_route:transport_flow",
+    "dst_route:constraint_closure",
+    "dst_route:spectral_operator",
+    "dst_route:boundary_weak_form",
+    "dst_route:commutator_incompatibility",
+    "dst_route:discrete_protocol",
+    "dst_route:unclassified"
+  ],
+  "edge_type_counts": {
+    "operator_transfer_candidate": 120000,
+    "substrate_transfer_candidate": 120000
+  },
+  "route_pair_profile": [
+    {
+      "pair": "spectral_operator->spectral_operator",
+      "count": 46386
+    },
+    {
+      "pair": "transport_flow->transport_flow",
+      "count": 46192
+    },
+    {
+      "pair": "constraint_closure->constraint_closure",
+      "count": 30057
+    },
+    {
+      "pair": "boundary_weak_form->boundary_weak_form",
+      "count": 22815
+    },
+    {
+      "pair": "transport_flow->boundary_weak_form",
+      "count": 8708
+    },
+    {
+      "pair": "boundary_weak_form->transport_flow",
+      "count": 8136
+    },
+    {
+      "pair": "unclassified->unclassified",
+      "count": 7846
+    },
+    {
+      "pair": "boundary_weak_form->spectral_operator",
+      "count": 6485
+    },
+    {
+      "pair": "spectral_operator->boundary_weak_form",
+      "count": 5941
+    },
+    {
+      "pair": "transport_flow->spectral_operator",
+      "count": 5657
+    },
+    {
+      "pair": "spectral_operator->transport_flow",
+      "count": 4804
+    },
+    {
+      "pair": "constraint_closure->spectral_operator",
+      "count": 4413
+    }
+  ],
+  "src_route_profile": [
+    {
+      "label": "transport_flow",
+      "count": 65591
+    },
+    {
+      "label": "spectral_operator",
+      "count": 65133
+    },
+    {
+      "label": "constraint_closure",
+      "count": 44772
+    },
+    {
+      "label": "boundary_weak_form",
+      "count": 42033
+    },
+    {
+      "label": "unclassified",
+      "count": 16384
+    },
+    {
+      "label": "commutator_incompatibility",
+      "count": 4761
+    },
+    {
+      "label": "discrete_protocol",
+      "count": 1326
+    }
+  ],
+  "dst_route_profile": [
+    {
+      "label": "spectral_operator",
+      "count": 66885
+    },
+    {
+      "label": "transport_flow",
+      "count": 63236
+    },
+    {
+      "label": "constraint_closure",
+      "count": 44352
+    },
+    {
+      "label": "boundary_weak_form",
+      "count": 42191
+    },
+    {
+      "label": "unclassified",
+      "count": 16942
+    },
+    {
+      "label": "commutator_incompatibility",
+      "count": 4783
+    },
+    {
+      "label": "discrete_protocol",
+      "count": 1611
+    }
+  ],
+  "score_summary": {
+    "edge_score_mean": 1.0000001192092896,
+    "bridge_score_mean": 1.8326834440231323,
+    "bridge_score_p95": 2.365044116973877,
+    "bridge_score_max": 2.8848843574523926,
+    "operator_delta_norm_mean": 0.5645639300346375,
+    "substrate_delta_norm_mean": 0.5596150159835815,
+    "product_delta_norm_mean": 1.1241791248321533,
+    "operator_delta_positive_scale": 1.4142135381698608,
+    "substrate_delta_positive_scale": 1.29099440574646,
+    "max_bridge_ratio": 8.0
+  },
+  "outputs": {
+    "npz": "discoveries/operator_substrate_v2_full_radius4_gamma_bridge_edges.npz"
+  },
+  "bridge_contract": {
+    "operator_transfer_candidate": "operator-near but substrate-far; candidate operator kernel realized on a different substrate",
+    "substrate_transfer_candidate": "substrate-near but operator-far; candidate different operator attached to a similar substrate"
+  },
+  "claim_scope": "Gamma bridge candidates are learned from V2 transfer roads and typed operator/substrate evidence. They are bridge-family candidates, not proof of physical equivalence and not a solved global Gromov-Wasserstein transport plan."
+}
