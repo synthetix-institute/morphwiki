@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:34:13.565719+00:00",
+  "generated_at": "2026-07-09T08:58:11.089951+00:00",
   "wikipedia": {
     "title": "Werner Heisenberg",
     "pageid": 33130,
@@ -769,7 +769,7 @@
         "score": 0.433486,
         "route_score": 0.787627,
         "lexical_score": 0.007358,
-        "equation": "__HYPERION_SEQ_09A2__ .. controls (103.04,217.14) and (105.31,217) .. (106.89,218.4) .. controls (108.48,219.79) and (108.78,222.19) .. (107.56,223.76) -- cycle ; %shape: ellipse [id:dp9445529575102014] draw [color={rgb, 255:red, 0; green, 0; blue, 0 } ,draw opacity 1 ] (64.32,121.63) .. controls (63.11,123.2) and (60.84,123.33) .. (59.25,121.94) .. controls (57.67,120.54) and (57.37,118.14) .. (58.58,116.58) .. controls (59.8,115.01) and (62.07,114.87)",
+        "equation": ".. controls (103.04,217.14) and (105.31,217) .. (106.89,218.4) .. controls (108.48,219.79) and (108.78,222.19) .. (107.56,223.76) -- cycle ; %shape: ellipse [id:dp9445529575102014] draw [color={rgb, 255:red, 0; green, 0; blue, 0 } ,draw opacity 1 ] (64.32,121.63) .. controls (63.11,123.2) and (60.84,123.33) .. (59.25,121.94) .. controls (57.67,120.54) and (57.37,118.14) .. (58.58,116.58) .. controls (59.8,115.01) and (62.07,114.87)",
         "equation_excerpt": "__HYPERION_SEQ_09A2__ .. controls (103.04,217.14) and (105.31,217) .. (106.89,218.4) .. controls (108.48,219.79) and (108.78,222.19) .. (107.56,223.76) -- cycle ; %shape: ellips...",
         "witness_quality": 0.9797,
         "invariant": "Ξ00 :: Ω23 ⊕ Ω03 ⊕ Ω18 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form commutator_incompatibility + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
@@ -1056,8 +1056,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near state evolution / transport, operator and spectrum, non-commuting transformations, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near state evolution / transport, operator and spectrum, non-commuting transformations, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (preparation condition, measurement setup, or potential or domain condition) determine which states are admissible.",
       "State terms (wave function, quantum state, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

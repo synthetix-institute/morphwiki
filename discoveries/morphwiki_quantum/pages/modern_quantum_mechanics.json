@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:29:58.253183+00:00",
+  "generated_at": "2026-07-09T08:53:41.413827+00:00",
   "wikipedia": {
     "title": "Modern Quantum Mechanics",
     "pageid": 66026415,
@@ -649,7 +649,7 @@
         "score": 0.423187,
         "route_score": 0.767085,
         "lexical_score": 0.013736,
-        "equation": "ions. studying the $b-r$ colour variations, they also found that the mid and long-term variations in the source are not associated with spectral variations. in this work, we present simultaneous $b$, $v$, $r$ and $i$ band monitoring observations of \\ 4, which were obtained in the years 2001 and 2002 from skinakas observatory, crete, greece. the quality of the light curves is similar to those presented by papadakis etal __HYPERION_SEQ_09A2__ in the case...",
+        "equation": "ions. studying the $b-r$ colour variations, they also found that the mid and long-term variations in the source are not associated with spectral variations. in this work, we present simultaneous $b$, $v$, $r$ and $i$ band monitoring observations of \\ 4, which were obtained in the years 2001 and 2002 from skinakas observatory, crete, greece. the quality of the light curves is similar to those presented by papadakis etal in the case...",
         "equation_excerpt": "ions. studying the $b-r$ colour variations, they also found that the mid and long-term variations in the source are not associated with spectral variations. in this work, we pre...",
         "witness_quality": 0.9684,
         "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω19 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form spectral_operator + transport_flow + constraint_closure + boundary_weak_form :: syntax + entropy + structure at the witness level.",
@@ -1056,8 +1056,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, with strongest public fingerprints in field-specific vocabulary, probability / information, and spectral profile.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, with strongest public fingerprints in field-specific vocabulary, probability / information, and spectral profile.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (preparation condition, measurement setup, or potential or domain condition) determine which states are admissible.",
       "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

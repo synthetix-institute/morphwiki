@@ -6,10 +6,10 @@ A quantum jump can be read as a quantum construction: the measurement basis and 
 ## The Standard Story
 A quantum jump is the abrupt transition of a quantum system from one quantum state to another, from one energy level to another. When the system absorbs energy, there is a transition to a higher energy level (excitation); when the system loses energy, there is a transition to a lower energy level.
 
-## Mechanism Reading
+## Formal Role
 In quantum-mechanical terms, a quantum jump is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, unitary operator or Hamiltonian, and energy level or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
-## Operational Contribution
+## Formal Contribution
 - The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
 - It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
@@ -31,10 +31,6 @@ In quantum-mechanical terms, a quantum jump is described by a prepared quantum s
 - **incompatibility:** commutator; uncertainty relation; non-commuting observables
 - **protocol:** unitary evolution
 
-## Evidence Profile
-- Routes: operator and spectrum: 0.43, state evolution / transport: 0.24, closure / conservation: 0.13, update protocol: 0.06, boundary or preparation: 0.04, non-commuting transformations: 0.03
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.34, spectral profile: 0.34, geometric realization: 0.32
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -47,7 +43,7 @@ In quantum-mechanical terms, a quantum jump is described by a prepared quantum s
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -64,4 +60,4 @@ In quantum-mechanical terms, a quantum jump is described by a prepared quantum s
 - [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.459
 
 ---
-Wikipedia scaffold: [Quantum jump](https://en.wikipedia.org/wiki/Quantum_jump) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Quantum jump](https://en.wikipedia.org/wiki/Quantum_jump) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

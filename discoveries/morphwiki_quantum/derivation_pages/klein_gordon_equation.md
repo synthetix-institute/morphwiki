@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.573
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.537
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.537
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.536
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.536
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.535
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)

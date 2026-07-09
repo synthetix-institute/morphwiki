@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -10,7 +9,7 @@ Gauge theory is a redundancy-and-constraint constructor: different local present
 
 ## Mechanism
 
-Gauge theory belongs at the field/geometry frontier. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Gauge theory belongs at the field/geometry interface. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
@@ -53,9 +52,9 @@ F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.511
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.478
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.468
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.463
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.459
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.454
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)

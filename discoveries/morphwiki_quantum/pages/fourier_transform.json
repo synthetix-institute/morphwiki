@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:28:05.396396+00:00",
+  "generated_at": "2026-07-09T08:50:04.211201+00:00",
   "wikipedia": {
     "title": "Fourier transform",
     "pageid": 52247,
@@ -649,7 +649,7 @@
         "score": 0.503785,
         "route_score": 0.925758,
         "lexical_score": 0.02972,
-        "equation": "eries input:} residuals $ {r_{ij}: i neq j }$, number of blocks $b$, $k$ for nearest neighbor graph state { bfseries output:} estimated block memberships $ { hat{g}_i }$ state __HYPERION_SEQ_09A2__ for each actor $i$ and configuration $m in {\\ igma^2, phi_a, phi_b, phi_c, phi_d }$, calculate the set of residual products for $ phi_{m,i}$: begin{center} $ boldsymbol{r}_{m,i}= { r_{ab}r_{cd}: [(a,b),(c,d)] in phi_{m,i} }$ end{center} state 2. let $f_{i,m}$...",
+        "equation": "eries input:} residuals $ {r_{ij}: i neq j }$, number of blocks $b$, $k$ for nearest neighbor graph state { bfseries output:} estimated block memberships $ { hat{g}_i }$ state for each actor $i$ and configuration $m in {\\ igma^2, phi_a, phi_b, phi_c, phi_d }$, calculate the set of residual products for $ phi_{m,i}$: begin{center} $ boldsymbol{r}_{m,i}= { r_{ab}r_{cd}: [(a,b),(c,d)] in phi_{m,i} }$ end{center} state 2. let $f_{i,m}$...",
         "equation_excerpt": "",
         "witness_quality": 0.8635,
         "invariant": "Ξ00 :: Ω08 ⊕ Ω14 ⊕ Ω12 :: Λ17 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form constraint_closure + commutator_incompatibility + transport_flow + spectral_operator :: syntax + entropy + structure at the witness level.",
@@ -859,7 +859,7 @@
         "score": 0.502619,
         "route_score": 0.913569,
         "lexical_score": 0.006993,
-        "equation": "__HYPERION_SEQ_09A2__ .. controls (103.04,217.14) and (105.31,217) .. (106.89,218.4) .. controls (108.48,219.79) and (108.78,222.19) .. (107.56,223.76) -- cycle ; %shape: ellipse [id:dp9445529575102014] draw [color={rgb, 255:red, 0; green, 0; blue, 0 } ,draw opacity 1 ] (64.32,121.63) .. controls (63.11,123.2) and (60.84,123.33) .. (59.25,121.94) .. controls (57.67,120.54) and (57.37,118.14) .. (58.58,116.58) .. controls (59.8,115.01) and (62.07,114.87)",
+        "equation": ".. controls (103.04,217.14) and (105.31,217) .. (106.89,218.4) .. controls (108.48,219.79) and (108.78,222.19) .. (107.56,223.76) -- cycle ; %shape: ellipse [id:dp9445529575102014] draw [color={rgb, 255:red, 0; green, 0; blue, 0 } ,draw opacity 1 ] (64.32,121.63) .. controls (63.11,123.2) and (60.84,123.33) .. (59.25,121.94) .. controls (57.67,120.54) and (57.37,118.14) .. (58.58,116.58) .. controls (59.8,115.01) and (62.07,114.87)",
         "equation_excerpt": "__HYPERION_SEQ_09A2__ .. controls (103.04,217.14) and (105.31,217) .. (106.89,218.4) .. controls (108.48,219.79) and (108.78,222.19) .. (107.56,223.76) -- cycle ; %shape: ellips...",
         "witness_quality": 0.9797,
         "invariant": "Ξ00 :: Ω23 ⊕ Ω03 ⊕ Ω18 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form commutator_incompatibility + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
@@ -889,7 +889,7 @@
         "score": 0.502579,
         "route_score": 0.913619,
         "lexical_score": 0.017483,
-        "equation": "[line width=1pt] (5,2.75) -- (5,3.25); \\t node[align=center] at (2.5,3) {momentum $x^m$}; \\t node[align=center] at (7.5,3) {winding $ tilde{x}_m$}; \\t node[align=center] at (-1.9,3) {doubled space-time}; \\t draw[pattern=north west lines,line width 1pt] (0,2) -- (5,2) -- (5,2.5) -- (0,2.5)--cycle; \\t node[align=center] at (-0.5,2.25) {d9}; \\t node __HYPERION_SEQ_09A2__ at (-0.7,2.25) {}; \\t draw[line width=1pt] (0.5,1.25) -- (5.5,1.25) -- (5.5,1.75) -- (...",
+        "equation": "[line width=1pt] (5,2.75) -- (5,3.25); \\t node[align=center] at (2.5,3) {momentum $x^m$}; \\t node[align=center] at (7.5,3) {winding $ tilde{x}_m$}; \\t node[align=center] at (-1.9,3) {doubled space-time}; \\t draw[pattern=north west lines,line width 1pt] (0,2) -- (5,2) -- (5,2.5) -- (0,2.5)--cycle; \\t node[align=center] at (-0.5,2.25) {d9}; \\t node at (-0.7,2.25) {}; \\t draw[line width=1pt] (0.5,1.25) -- (5.5,1.25) -- (5.5,1.75) -- (...",
         "equation_excerpt": "",
         "witness_quality": 0.9468,
         "invariant": "Ξ00 :: Ω03 ⊕ Ω11 ⊕ Ω01 :: Λ18 :: J_flat :: geometry>spectral:MIX/C1.00/A0.01 preserves the route/fiber form commutator_incompatibility + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
@@ -1055,8 +1055,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near state evolution / transport, closure / conservation, non-commuting transformations, and operator and spectrum, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near state evolution / transport, closure / conservation, non-commuting transformations, and operator and spectrum, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (domain, preparation context, or measurement basis) determine which states are admissible.",
       "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

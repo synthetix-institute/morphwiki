@@ -816,49 +816,49 @@ def anomaly_context(
     norm_title = re.sub(r"[^a-z0-9]+", "_", title_value.lower()).strip("_")
     specific = {
         "einstein_podolsky_rosen_paradox": (
-            "EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. Start from the joint state and local observables, then ask which correlation constraint fails."
+            "EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. The formal starting point is the joint state and local observables; the question is which correlation constraint fails."
         ),
         "quantum_biology": (
-            "Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. A constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control."
+            "Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. The formal fields are the state carrier, environmental coupling, coherence or transport observable, and classical control."
         ),
         "measurement_problem": (
-            "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. Decompose it into pre-measurement evolution, apparatus/environment coupling, POVM or projection readout, and post-record conditioning."
+            "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. The formal decomposition is pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record conditioning."
         ),
         "quantum_gravity": (
-            "Quantum gravity is a field/boundary junction. It asks whether geometry becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing constructor is a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test of which geometric quantities survive quantization."
+            "Quantum gravity is a field/boundary junction. It asks whether geometry becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing formal objects are a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test of which geometric quantities survive quantization."
         ),
         "scattering": (
-            "Scattering is a boundary-to-spectrum mechanism. The central map is from asymptotic in-states to out-states. Specify the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints."
+            "Scattering is a boundary-to-spectrum mechanism. The central map is from asymptotic in-states to out-states. The relevant objects are the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints."
         ),
         "quantum_state": (
-            "Quantum state is the carrier rather than the final prediction. It precedes admissibility, evolution, observable choice, and probability readout. State whether the carrier is a vector, density operator, field state, or register, and which transformations preserve it."
+            "Quantum state is the carrier rather than the final prediction. It precedes admissibility, evolution, observable choice, and probability readout. The unresolved distinction is whether the carrier is a vector, density operator, field state, or register, and which transformations preserve it."
         ),
         "schr_dinger_s_cat": (
             "Schrödinger's cat is a macroscopic readout protocol. It couples microscopic unitary evolution to a macroscopic boundary and forces three steps apart: coherent transport, decoherence or apparatus coupling, and the rule by which one record is selected or conditioned."
         ),
         "wave_particle_duality": (
-            "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Write it as context selection plus readout channel."
+            "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Its compact form is context selection plus readout channel."
         ),
         "quantum_entanglement": (
-            "Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. Separate the joint state, subsystem observables, and correlation test."
+            "Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. The required distinction is between joint state, subsystem observables, and correlation test."
         ),
         "fermi_dirac_statistics": (
-            "Fermi-Dirac statistics is an admissibility rule for many-particle states. The mechanism is antisymmetry and occupation restriction. Expose anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space."
+            "Fermi-Dirac statistics is an admissibility rule for many-particle states. The mechanism is antisymmetry and occupation restriction. The formal content is anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space."
         ),
         "hamiltonian_quantum_mechanics": (
-            "The Hamiltonian has two roles: it generates time evolution and, as an observable, supplies an energy spectrum. Separate domain/self-adjointness, unitary transport, conserved energy, and spectral readout."
+            "The Hamiltonian has two roles: it generates time evolution and, as an observable, supplies an energy spectrum. The formal split is domain/self-adjointness, unitary transport, conserved energy, and spectral readout."
         ),
         "wave_function": (
-            "The wave function is a representation of the state carrier. It stores amplitude, phase, normalization, basis choice, and probability potential in one object. Separate representation, admissibility, evolution, and Born readout."
+            "The wave function is a representation of the state carrier. It stores amplitude, phase, normalization, basis choice, and probability potential in one object. The formal decomposition separates representation, admissibility, evolution, and Born readout."
         ),
         "delayed_choice_quantum_eraser": (
             "The delayed-choice eraser is a protocol-order stress test. Its mechanism is the arrangement of which-path information, later measurement choice, and conditional correlation readout. The relevant statistics are defined only after the full measurement protocol is specified."
         ),
         "introduction_to_quantum_mechanics": (
-            "An introductory page is a compressed map. It mixes states, operators, spectra, measurement, examples, and interpretations because it is written pedagogically. Decompose it into mechanism branches before using it for technical claims."
+            "An introductory page is a compressed map. It mixes states, operators, spectra, measurement, examples, and interpretations because it is written pedagogically. Its technical content separates into individual branches before supporting specific derivations."
         ),
         "quantum_simulator": (
-            "A quantum simulator is an engineered realization of another Hamiltonian or channel. It is both an observable system and a protocol for representing a target system. Name the simulated target, physical carrier, encoding map, and validation observable."
+            "A quantum simulator is an engineered realization of another Hamiltonian or channel. It is both an observable system and a protocol for representing a target system. The formal fields are the simulated target, physical carrier, encoding map, and validation observable."
         ),
         "quantum_cellular_automaton": (
             "A quantum cellular automaton is a locality-preserving update rule. The lattice, neighborhood rule, unitarity or channel condition, and update protocol define the mechanism together."
@@ -867,7 +867,7 @@ def anomaly_context(
             "Relativistic quantum mechanics is a compatibility junction between quantum state evolution and spacetime symmetry. It must preserve relativistic covariance, define the correct state carrier, and explain how spin, energy, and causality constraints enter the operator algebra."
         ),
         "quantum_electrodynamics": (
-            "Quantum electrodynamics is a field-interaction constructor. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. Derive it through field operators, gauge constraints, interaction terms, and observable amplitudes."
+            "Quantum electrodynamics is a field-interaction construction. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. The relevant formal objects are field operators, gauge constraints, interaction terms, and observable amplitudes."
         ),
     }
     if norm_title in specific:
@@ -893,7 +893,7 @@ def anomaly_context(
     if branch_id == "states":
         return f"This state page mixes {top_roles}. Specify the state carrier, then distinguish representation, evolution, admissibility, and later readout."
     if branch_id == "protocols":
-        return f"This protocol page mixes {top_roles}. Write it as an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
+        return f"This protocol page mixes {top_roles}. Its formal content is an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
     if "branch-ambiguous" in label_set:
         return f"This page sits between {branch_title} and {secondary_title}. The ambiguity is useful: it marks a place where two constructor roles meet and should be separated before the page is used as a derivation."
     return f"This page activates {top_roles}. Read it as a constructor junction until a topic-native derivation identifies its state carrier, transformation, readout, and compatibility condition."
@@ -1091,12 +1091,8 @@ def render_markdown(report: Mapping[str, Any]) -> str:
             representatives = branch["pages"]
         show_page_lagrangian = bool((report.get("lagrangian_construction_prior") or {}).get("page_projection_available"))
         for page in representatives[:8]:
-            if show_page_lagrangian:
-                lag = page.get("lagrangian") or {}
-                road = lag.get("road_label", "no Lagrangian road")
-                lines.append(f"- {page['title']} - evidence route: {page['top_route']}; Lagrangian road: {road}; assignment score {page['score']:.2f}")
-            else:
-                lines.append(f"- {page['title']} - evidence route: {page['top_route']}; assignment score {page['score']:.2f}")
+            annotation = " (annotation)" if page.get("is_annotation") else ""
+            lines.append(f"- {page['title']}{annotation}")
         hidden = len(branch["pages"]) - min(len(representatives), 8)
         annotation_count = sum(1 for page in branch["pages"] if page.get("is_annotation"))
         if hidden > 0:
@@ -1189,8 +1185,8 @@ def build_report(
             "page_projection_available": bool(lagrangian_model.get("page_projection_available")),
             "source": lagrangian_model.get("source"),
             "method": (
-                "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas. "
-                "The current MorphWiki quantum export does not contain page-coordinate vectors, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page."
+                "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the equation-evidence atlas. "
+                "Page-level scoring requires page-coordinate vectors or witness transition vectors for each page."
             ),
             "path_class_counts": dict(Counter(str((row.get("lagrangian") or {}).get("path_class")) for row in page_rows)),
         },

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:31:11.871027+00:00",
+  "generated_at": "2026-07-09T08:54:42.789915+00:00",
   "wikipedia": {
     "title": "Quantum cosmology",
     "pageid": 1213566,
@@ -349,7 +349,7 @@
         "score": 0.407701,
         "route_score": 0.722354,
         "lexical_score": 0.037267,
-        "equation": "but also discuss the problems with this interpretation due to the unusual pre-- and post--break slopes. in our scheme, the observed break simply corresponds to $t_{ rm a}$. for grb 050730, pandey et al. __HYPERION_SEQ_09A2__ consider the change of slopes at $\\ 0.1$ d (observed time) in the optical light curve as indicative of a jet break. in our interpretation, instead, the change of the flux decay slope is due to the late prompt emission providing a re...",
+        "equation": "but also discuss the problems with this interpretation due to the unusual pre-- and post--break slopes. in our scheme, the observed break simply corresponds to $t_{ rm a}$. for grb 050730, pandey et al. consider the change of slopes at $\\ 0.1$ d (observed time) in the optical light curve as indicative of a jet break. in our interpretation, instead, the change of the flux decay slope is due to the late prompt emission providing a re...",
         "equation_excerpt": "but also discuss the problems with this interpretation due to the unusual pre-- and post--break slopes. in our scheme, the observed break simply corresponds to $t_{ rm a}$. for...",
         "witness_quality": 0.9718,
         "invariant": "Ξ01 :: Ω09 ⊕ Ω10 ⊕ Ω06 :: Λ00 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form transport_flow :: syntax + entropy + structure at the witness level.",
@@ -499,7 +499,7 @@
         "score": 0.402505,
         "route_score": 0.722385,
         "lexical_score": 0.018634,
-        "equation": "y their 0.3 msun he wd model becomes strong enough so as to force the model to reach again giant dimensions, causing roche-lobe overflow. they found that the resulting mass transfer reduces the hydrogen envelope to such an xtent that it is unable to support any further nuclear burning, thereby implying short cooling ages at late stages of evolution. finally, benvenuto \\ althaus __HYPERION_SEQ_09A2__ and hansen \\ phinney (1998a) presented a detailed grid",
+        "equation": "y their 0.3 msun he wd model becomes strong enough so as to force the model to reach again giant dimensions, causing roche-lobe overflow. they found that the resulting mass transfer reduces the hydrogen envelope to such an xtent that it is unable to support any further nuclear burning, thereby implying short cooling ages at late stages of evolution. finally, benvenuto \\ althaus and hansen \\ phinney (1998a) presented a detailed grid",
         "equation_excerpt": "y their 0.3 msun he wd model becomes strong enough so as to force the model to reach again giant dimensions, causing roche-lobe overflow. they found that the resulting mass tran...",
         "witness_quality": 0.9858,
         "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω22 :: Λ06 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form transport_flow :: syntax + entropy + spectral at the witness level.",
@@ -529,7 +529,7 @@
         "score": 0.402504,
         "route_score": 0.722365,
         "lexical_score": 0.018634,
-        "equation": "istry; for example germanium carbide (zingsheim, __HYPERION_SEQ_09A2__ where recent work has conclusively established a t-shaped structure for the ground state. there may be scope to model the bonds with a mix of quartic and higher order potentials as these are just an imation to very flat potential wells that are found in the real world. there could also be implications for zero point energy with the current observations offering alternatives for the m...",
+        "equation": "istry; for example germanium carbide (zingsheim, where recent work has conclusively established a t-shaped structure for the ground state. there may be scope to model the bonds with a mix of quartic and higher order potentials as these are just an imation to very flat potential wells that are found in the real world. there could also be implications for zero point energy with the current observations offering alternatives for the m...",
         "equation_excerpt": "istry; for example germanium carbide (zingsheim, __HYPERION_SEQ_09A2__ where recent work has conclusively established a t-shaped structure for the ground state. there may be sco...",
         "witness_quality": 0.9859,
         "invariant": "Ξ01 :: Ω22 ⊕ Ω21 ⊕ Ω10 :: Λ06 :: J_flat :: geometry>spectral:MIX/C1.00/A0.00 preserves the route/fiber form transport_flow :: syntax + entropy + structure at the witness level.",
@@ -1007,11 +1007,11 @@
     "candidate_pool_size": 946
   },
   "morphwiki": {
-    "takeaway": "Quantum cosmology is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
+    "takeaway": "Quantum cosmology is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.",
     "object_view": "Quantum cosmology is the attempt in theoretical physics to develop a quantum theory of the universe. This approach attempts to answer open questions of classical physical cosmology, particularly those related to the first phases of the universe.",
     "mechanism_view": "quantum cosmology is read through the compact quantum constructor. The available language supplies state terms such as wave function or state vector; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.",
     "what_this_adds": [
-      "The page records a measured route/fiber placement and states which constructor roles are active.",
+      "The page records a partial formal construction and states which quantum roles are active.",
       "Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.",
       "The page separates generic quantum vocabulary from a completed mechanism."
     ],
@@ -1053,8 +1053,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near state evolution / transport, operator and spectrum, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near state evolution / transport, operator and spectrum, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Carrier: name the topic-native state space or state variable.",
       "Map: name the operator, generator, constraint, or transformation acting on that carrier.",

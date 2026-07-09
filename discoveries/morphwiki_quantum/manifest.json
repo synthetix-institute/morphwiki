@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:34:13.648345+00:00",
-  "source": "Hyperion MorphWiki topic export",
+  "generated_at": "2026-07-09T08:58:11.176322+00:00",
+  "source": "quantum topic export",
   "status": "complete",
-  "claim_boundary": "Wikipedia is used as a public topic scaffold. Mechanism claims are ranked from Hyperion route/fiber witnesses. Optional LLM synthesis is evidence-constrained and non-authoritative.",
+  "claim_boundary": "Wikipedia is used as a public topic scaffold. Mechanism claims are ranked from equation route/fiber witnesses. Optional synthesis is constrained by evidence.",
   "hyperion_index": "discoveries/fieldbridge_static_index/hyperion_static_index.json",
   "requested_topics": [
     "Quantum mechanics",
+    "Quantum physics",
     "Wave function",
     "Schrödinger equation",
     "Schrödinger picture",
@@ -14,14 +15,14 @@
     "Path integral formulation",
     "Path integral",
     "Born rule",
-    "Measurement in quantum mechanics",
+    "Quantum measurement",
     "Measurement problem",
     "Quantum state",
     "Density matrix",
     "Hilbert space",
     "Observable",
     "Hamiltonian mechanics",
-    "Hamiltonian (quantum mechanics)",
+    "Hamiltonian operator",
     "Commutator",
     "Canonical commutation relation",
     "Uncertainty principle",
@@ -29,10 +30,10 @@
     "Superposition principle",
     "Quantum entanglement",
     "Bell's theorem",
-    "Einstein–Podolsky–Rosen paradox",
+    "EPR paradox",
     "Quantum decoherence",
     "Quantum information",
-    "Quantum computing",
+    "Quantum computation",
     "Qubit",
     "Quantum circuit",
     "Quantum algorithm",
@@ -58,7 +59,7 @@
     "Self-adjoint operator",
     "Unitary operator",
     "Projection-valued measure",
-    "POVM",
+    "Positive operator-valued measure",
     "Von Neumann algebra",
     "Heisenberg group",
     "Fourier transform",
@@ -66,7 +67,7 @@
     "Particle in a box",
     "Quantum tunnelling",
     "Potential well",
-    "Scattering",
+    "Scattering theory",
     "S-matrix",
     "Perturbation theory",
     "Renormalization",
@@ -84,8 +85,15 @@
     "Applications of quantum mechanics",
     "David Hilbert",
     "Delayed-choice quantum eraser",
-    "Electron microscope",
+    "Delayed choice quantum eraser",
+    "Eigenstate",
+    "Eigenvalue",
+    "Eigenvector",
+    "Electron microscopy",
+    "Electrons",
     "Erwin Schrödinger",
+    "Hamiltonian (quantum mechanics)",
+    "Hermitian operators",
     "History of quantum field theory",
     "History of quantum mechanics",
     "Interpretations of quantum mechanics",
@@ -94,11 +102,13 @@
     "Loop quantum gravity",
     "Macroscopic quantum phenomena",
     "Mathematical formulation of quantum mechanics",
+    "Mathematical formulations of quantum mechanics",
+    "Measurement in quantum mechanics",
     "Modern Quantum Mechanics",
     "Old quantum theory",
     "Operator (physics)",
     "Perturbation theory (quantum mechanics)",
-    "QBism",
+    "Quantum Bayesianism",
     "Quantum Computing: A Gentle Introduction",
     "Quantum Theory: Concepts and Methods",
     "Quantum amplifier",
@@ -108,11 +118,13 @@
     "Quantum channel",
     "Quantum chaos",
     "Quantum chemistry",
-    "Coherence (physics)",
+    "Quantum coherence",
     "Quantum complexity theory",
+    "Quantum computing",
     "Quantum cosmology",
     "Quantum differential calculus",
     "Quantum dynamics",
+    "Quantum electronics",
     "Quantum engineering",
     "Quantum eraser experiment",
     "Quantum finite automaton",
@@ -121,7 +133,7 @@
     "Quantum image processing",
     "Quantum imaging",
     "Quantum information science",
-    "Wave interference",
+    "Quantum interference",
     "Quantum jump",
     "Quantum key distribution",
     "Quantum logic",
@@ -141,9 +153,13 @@
     "Quantum spacetime",
     "Quantum stochastic calculus",
     "Quantum superposition",
+    "Quantum technology",
+    "Quantum tunneling",
+    "Reduced density matrix",
     "Relational quantum mechanics",
     "Relativistic quantum mechanics",
     "Schrödinger's cat",
+    "Schrödinger's cat in popular culture",
     "Spectral line",
     "Spin foam",
     "Spin network",
@@ -3088,5 +3104,86 @@
       "llm_used": false
     }
   ],
-  "skipped_topics": []
+  "skipped_topics": [
+    {
+      "topic": "Quantum physics",
+      "reason": "duplicate_slug:quantum_mechanics",
+      "kept_topic": "Quantum mechanics"
+    },
+    {
+      "topic": "Delayed choice quantum eraser",
+      "reason": "duplicate_slug:delayed_choice_quantum_eraser",
+      "kept_topic": "Delayed-choice quantum eraser"
+    },
+    {
+      "topic": "Eigenstate",
+      "reason": "duplicate_slug:quantum_state",
+      "kept_topic": "Quantum state"
+    },
+    {
+      "topic": "Eigenvalue",
+      "reason": "duplicate_slug:eigenvalues_and_eigenvectors",
+      "kept_topic": "Eigenvalues and eigenvectors"
+    },
+    {
+      "topic": "Eigenvector",
+      "reason": "duplicate_slug:eigenvalues_and_eigenvectors",
+      "kept_topic": "Eigenvalues and eigenvectors"
+    },
+    {
+      "topic": "Electrons",
+      "reason": "duplicate_slug:electron",
+      "kept_topic": "Electron"
+    },
+    {
+      "topic": "Hamiltonian (quantum mechanics)",
+      "reason": "duplicate_slug:hamiltonian_quantum_mechanics",
+      "kept_topic": "Hamiltonian (quantum mechanics)"
+    },
+    {
+      "topic": "Hermitian operators",
+      "reason": "duplicate_slug:self_adjoint_operator",
+      "kept_topic": "Self-adjoint operator"
+    },
+    {
+      "topic": "Mathematical formulations of quantum mechanics",
+      "reason": "duplicate_slug:mathematical_formulation_of_quantum_mechanics",
+      "kept_topic": "Mathematical formulation of quantum mechanics"
+    },
+    {
+      "topic": "Measurement in quantum mechanics",
+      "reason": "duplicate_slug:measurement_in_quantum_mechanics",
+      "kept_topic": "Measurement in quantum mechanics"
+    },
+    {
+      "topic": "Quantum computing",
+      "reason": "duplicate_slug:quantum_computing",
+      "kept_topic": "Quantum computing"
+    },
+    {
+      "topic": "Quantum electronics",
+      "reason": "duplicate_slug:quantum_optics",
+      "kept_topic": "Quantum optics"
+    },
+    {
+      "topic": "Quantum technology",
+      "reason": "duplicate_slug:quantum_engineering",
+      "kept_topic": "Quantum engineering"
+    },
+    {
+      "topic": "Quantum tunneling",
+      "reason": "duplicate_slug:quantum_tunnelling",
+      "kept_topic": "Quantum tunnelling"
+    },
+    {
+      "topic": "Reduced density matrix",
+      "reason": "duplicate_slug:quantum_entanglement",
+      "kept_topic": "Quantum entanglement"
+    },
+    {
+      "topic": "Schrödinger's cat in popular culture",
+      "reason": "duplicate_slug:schr_dinger_s_cat",
+      "kept_topic": "Schrödinger's cat"
+    }
+  ]
 }

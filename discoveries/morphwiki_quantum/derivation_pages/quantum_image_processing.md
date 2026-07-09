@@ -2,7 +2,6 @@
 
 **Derivation step:** Protocol layer: engineered transformations
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.559
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.541
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.509
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.508
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.502
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.500
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733)

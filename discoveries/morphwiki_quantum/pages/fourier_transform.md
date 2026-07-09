@@ -6,10 +6,10 @@ A fourier transform can be read as a quantum construction: the input encoding, c
 ## The Standard Story
 In mathematics, the Fourier transform (FT) is an integral transform that takes a function as input and outputs another function that describes the extent to which various frequencies are present in the original function. The output of the transform is a complex valued function of frequency.
 
-## Mechanism Reading
+## Formal Role
 In quantum-mechanical terms, a fourier transform is described by a register state in a finite-dimensional Hilbert space. The physical question is represented by a sequence of unitary gates or quantum channels; the experimental or mathematical setting is the input encoding, circuit architecture, and final measurement basis. The observable content is obtained from measurement probabilities over computational-basis outcomes. In the local terminology of this topic, the same construction appears through quantum state or wave function, unitary operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator.
 
-## Operational Contribution
+## Formal Contribution
 - The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
 - It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
@@ -31,10 +31,6 @@ In quantum-mechanical terms, a fourier transform is described by a register stat
 - **incompatibility:** uncertainty relation
 - **protocol:** unitary evolution; projection or measurement update; path integral weighting
 
-## Evidence Profile
-- Routes: state evolution / transport: 0.27, closure / conservation: 0.22, non-commuting transformations: 0.20, operator and spectrum: 0.13, boundary or preparation: 0.12, update protocol: 0.04
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.33, spectral profile: 0.33, geometric realization: 0.33
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -47,7 +43,7 @@ In quantum-mechanical terms, a fourier transform is described by a register stat
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -64,4 +60,4 @@ In quantum-mechanical terms, a fourier transform is described by a register stat
 - [2104.04275](https://arxiv.org/abs/2104.04275) — score 0.506
 
 ---
-Wikipedia scaffold: [Fourier transform](https://en.wikipedia.org/wiki/Fourier_transform) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Fourier transform](https://en.wikipedia.org/wiki/Fourier_transform) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

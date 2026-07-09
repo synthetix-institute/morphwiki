@@ -6,10 +6,10 @@ A symmetry in quantum mechanics can be read as a quantum construction: the poten
 ## The Standard Story
 Symmetries in quantum mechanics describe features of spacetime and particles which are unchanged under some transformation, in the context of quantum mechanics, relativistic quantum mechanics and quantum field theory, and with applications in the mathematical formulation of the standard model and condensed matter physics. In general, symmetry in physics, invariance, and conservation laws, are fundamentally important constraints for formulating physical theories and models.
 
-## Mechanism Reading
+## Formal Role
 In quantum-mechanical terms, a symmetry in quantum mechanics is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through wavefunction or quantum state, matrix or generator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through non-commuting observables or commutator.
 
-## Operational Contribution
+## Formal Contribution
 - The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
 - It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
@@ -31,10 +31,6 @@ In quantum-mechanical terms, a symmetry in quantum mechanics is described by a w
 - **incompatibility:** non-commuting observables; commutator
 - **protocol:** unitary evolution; projection or measurement update; path integral weighting
 
-## Evidence Profile
-- Routes: operator and spectrum: 0.40, state evolution / transport: 0.23, closure / conservation: 0.18, non-commuting transformations: 0.13, boundary or preparation: 0.07, update protocol: 0.05
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.33, spectral profile: 0.33, geometric realization: 0.33
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -47,7 +43,7 @@ In quantum-mechanical terms, a symmetry in quantum mechanics is described by a w
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -64,4 +60,4 @@ In quantum-mechanical terms, a symmetry in quantum mechanics is described by a w
 - [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.497
 
 ---
-Wikipedia scaffold: [Symmetry in quantum mechanics](https://en.wikipedia.org/wiki/Symmetry_in_quantum_mechanics) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Symmetry in quantum mechanics](https://en.wikipedia.org/wiki/Symmetry_in_quantum_mechanics) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

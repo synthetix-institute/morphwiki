@@ -2,7 +2,6 @@
 
 **Derivation step:** Hilbert-space context: admissible carrier and basis
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -55,9 +54,9 @@ A=A^\dagger,\qquad A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.416
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.384
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.382
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.375
-- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.344
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.343
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676)
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
+- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271)
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733)

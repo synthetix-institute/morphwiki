@@ -2,7 +2,6 @@
 
 **Derivation step:** Readout rule: how answers become probabilities
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.485
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.484
-- [arXiv:gr-qc0303063](https://arxiv.org/abs/gr-qc/0303063), score 0.467
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.445
-- [arXiv:2110.09771](https://arxiv.org/abs/2110.09771), score 0.436
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.435
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:gr-qc0303063](https://arxiv.org/abs/gr-qc/0303063)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:2110.09771](https://arxiv.org/abs/2110.09771)
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617)

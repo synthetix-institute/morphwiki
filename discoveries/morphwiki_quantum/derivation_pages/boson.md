@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** normalization and admissibility
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ n_i=a_i^\dagger a_i\in\{0,1,2,\ldots\}
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.448
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.430
-- [arXiv:1801.08949](https://arxiv.org/abs/1801.08949), score 0.424
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.421
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.413
-- [arXiv:1108.5312](https://arxiv.org/abs/1108.5312), score 0.408
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:1801.08949](https://arxiv.org/abs/1801.08949)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1108.5312](https://arxiv.org/abs/1108.5312)

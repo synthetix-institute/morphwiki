@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ g=g(\mu)
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.498
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.494
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.465
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.464
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.461
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.461
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)

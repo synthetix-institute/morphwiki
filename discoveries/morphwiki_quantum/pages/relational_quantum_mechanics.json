@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:33:38.740903+00:00",
+  "generated_at": "2026-07-09T08:57:11.443772+00:00",
   "wikipedia": {
     "title": "Relational quantum mechanics",
     "pageid": 5974662,
@@ -139,7 +139,7 @@
         "score": 0.4301,
         "route_score": 0.766943,
         "lexical_score": 0.02805,
-        "equation": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small planar graph, we obtained a device-ready circuit of depth __HYPERION_SEQ_09A2__ this circuit (procedural) the ground state, implements the ribbon operators and performs a partial charge measurement. on the braiding ladder the same protocol leads to a much shorter circuit of depth __...",
+        "equation": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small planar graph, we obtained a device-ready circuit of depth this circuit (procedural) the ground state, implements the ribbon operators and performs a partial charge measurement. on the braiding ladder the same protocol leads to a much shorter circuit of depth __...",
         "equation_excerpt": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small pla...",
         "witness_quality": 0.9825,
         "invariant": "Ξ01 :: Ω21 ⊕ Ω22 ⊕ Ω19 :: Λ00 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form discrete_protocol + spectral_operator :: syntax + entropy + geometry at the witness level.",
@@ -769,7 +769,7 @@
         "score": 0.384321,
         "route_score": 0.711366,
         "lexical_score": 0.019635,
-        "equation": "em{3)} for some $n>0$ we have $x_n in delta_n cap delta_{-1}$, and $x_{n+1}=0$. let us suppose that __HYPERION_SEQ_09A2__ holds. then the set $ v= prod_{k=0}^{ infty}v_k$ where $v_k= delta_k cup {0 }$, for $k neq n,n+m$, and $v_n= {0 }$, $v_{n+m} delta_{n+m}$, is an open neighborhood of $ x$. it is clear that none of the points from $ x$ belongs to $ v$. the same argumentation as the one concerning $x_ infty$ shows that in the case __HYPERION_SEQ_09A2__...",
+        "equation": "em{3)} for some $n>0$ we have $x_n in delta_n cap delta_{-1}$, and $x_{n+1}=0$. let us suppose that holds. then the set $ v= prod_{k=0}^{ infty}v_k$ where $v_k= delta_k cup {0 }$, for $k neq n,n+m$, and $v_n= {0 }$, $v_{n+m} delta_{n+m}$, is an open neighborhood of $ x$. it is clear that none of the points from $ x$ belongs to $ v$. the same argumentation as the one concerning $x_ infty$ shows that in the case ...",
         "equation_excerpt": "",
         "witness_quality": 0.8817,
         "invariant": "Ξ00 :: Ω14 ⊕ Ω02 ⊕ Ω07 :: Λ31 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form discrete_protocol :: syntax + entropy + geometry at the witness level.",
@@ -1054,8 +1054,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, update protocol, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, update protocol, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (preparation condition, measurement setup, or potential or domain condition) determine which states are admissible.",
       "State terms (state vector, Wavefunction, or superposition) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

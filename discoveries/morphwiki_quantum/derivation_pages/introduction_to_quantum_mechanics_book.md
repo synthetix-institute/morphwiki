@@ -2,7 +2,6 @@
 
 **Derivation step:** Annotations: history, interpretations, and popular frames
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.454
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.427
-- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.425
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.418
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.416
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.405
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)

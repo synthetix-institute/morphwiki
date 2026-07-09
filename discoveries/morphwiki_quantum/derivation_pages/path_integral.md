@@ -2,7 +2,6 @@
 
 **Derivation step:** Generator: lawful change before readout
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ K(x_f,t_f;x_i,t_i)=\int_{x_i}^{x_f}\mathcal D x(t)\,\exp\!\left(\frac{i}{\hbar}S
 
 ## Evidence Links
 
-- [arXiv:2107.01923](https://arxiv.org/abs/2107.01923), score 0.313
-- [arXiv:0801.3568](https://arxiv.org/abs/0801.3568), score 0.272
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.271
-- [arXiv:1706.07300](https://arxiv.org/abs/1706.07300), score 0.264
-- [arXiv:cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470), score 0.263
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.262
+- [arXiv:2107.01923](https://arxiv.org/abs/2107.01923)
+- [arXiv:0801.3568](https://arxiv.org/abs/0801.3568)
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733)
+- [arXiv:1706.07300](https://arxiv.org/abs/1706.07300)
+- [arXiv:cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470)
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)

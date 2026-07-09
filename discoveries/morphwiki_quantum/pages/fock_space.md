@@ -1,16 +1,16 @@
 # Fock space
 
 ## Evidence Status
-The fock space is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.
+The fock space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.
 
 ## The Standard Story
 The Fock space is an algebraic construction used in quantum mechanics to construct the quantum states space of a variable or unknown number of identical particles from a single particle Hilbert space H. It is named after V.
 
-## Mechanism Reading
+## Formal Role
 the Fock space is read through the compact quantum constructor. The available language supplies state terms such as quantum state or wave function; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.
 
-## Operational Contribution
-- The page records a measured route/fiber placement and states which constructor roles are active.
+## Formal Contribution
+- The page records a partial formal construction and states which quantum roles are active.
 - Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.
 - The page separates generic quantum vocabulary from a completed mechanism.
 
@@ -29,10 +29,6 @@ the Fock space is read through the compact quantum constructor. The available la
 - **incompatibility:** commutator; uncertainty relation; non-commuting observables
 - **protocol:** unitary evolution; projection or measurement update; path integral weighting
 
-## Evidence Profile
-- Routes: operator and spectrum: 0.44, state evolution / transport: 0.09, closure / conservation: 0.06, boundary or preparation: 0.03, update protocol: 0.02, non-commuting transformations: 0.02
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.33, spectral profile: 0.33, geometric realization: 0.33
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -45,7 +41,7 @@ the Fock space is read through the compact quantum constructor. The available la
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -62,4 +58,4 @@ the Fock space is read through the compact quantum constructor. The available la
 - [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.495
 
 ---
-Wikipedia scaffold: [Fock space](https://en.wikipedia.org/wiki/Fock_space) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Fock space](https://en.wikipedia.org/wiki/Fock_space) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:26:44.527324+00:00",
+  "generated_at": "2026-07-09T08:48:33.422755+00:00",
   "wikipedia": {
     "title": "Path integral",
     "pageid": 5651006,
@@ -709,7 +709,7 @@
         "score": 0.22435,
         "route_score": 0.351907,
         "lexical_score": 0.089744,
-        "equation": "cation work is in progress and therefore the results presented here, based on the cross correlation function (ccf) method, may undergo slight modifications when we will repeat our analysis using an updated set of well identified absorption lines. \\ ection{selection of the targets} the limiting magnitude to obtain a high s/n ratio ( gsim __HYPERION_SEQ_09A2__ with harps-n is around 12. when this project started a few years ago, the number of apparently s...",
+        "equation": "cation work is in progress and therefore the results presented here, based on the cross correlation function (ccf) method, may undergo slight modifications when we will repeat our analysis using an updated set of well identified absorption lines. \\ ection{selection of the targets} the limiting magnitude to obtain a high s/n ratio ( gsim with harps-n is around 12. when this project started a few years ago, the number of apparently s...",
         "equation_excerpt": "cation work is in progress and therefore the results presented here, based on the cross correlation function (ccf) method, may undergo slight modifications when we will repeat o...",
         "witness_quality": 0.98,
         "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω22 :: Λ06 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form discrete_protocol :: syntax + entropy + structure at the witness level.",
@@ -979,7 +979,7 @@
         "score": 0.216382,
         "route_score": 0.361986,
         "lexical_score": 0.051282,
-        "equation": "ch this conclusion, we have used a calorimetry technique, which is not new (pagel et al. 1997; lilly and cowie __HYPERION_SEQ_09A2__ but is particularly timely because of one of the successes of the herschel space observatory. the method is based on the fact that the xtragalactic background radiation is the repository of all the radiation emitted as the result of nuclear fusion in stars. for the method to be practical, it is necessary to resolve this ba...",
+        "equation": "ch this conclusion, we have used a calorimetry technique, which is not new (pagel et al. 1997; lilly and cowie but is particularly timely because of one of the successes of the herschel space observatory. the method is based on the fact that the xtragalactic background radiation is the repository of all the radiation emitted as the result of nuclear fusion in stars. for the method to be practical, it is necessary to resolve this ba...",
         "equation_excerpt": "ch this conclusion, we have used a calorimetry technique, which is not new (pagel et al. 1997; lilly and cowie __HYPERION_SEQ_09A2__ but is particularly timely because of one of...",
         "witness_quality": 0.986,
         "invariant": "Ξ01 :: Ω22 ⊕ Ω21 ⊕ Ω10 :: Λ06 :: J_flat :: geometry>spectral:MIX/C1.00/A0.00 preserves the route/fiber form unresolved route :: syntax + entropy + geometry at the witness level.",
@@ -1055,8 +1055,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (preparation condition, measurement setup, or potential or domain condition) determine which states are admissible.",
       "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

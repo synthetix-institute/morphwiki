@@ -2,7 +2,6 @@
 
 **Derivation step:** Generator: lawful change before readout
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ U(t)=e^{-iHt/\hbar}
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.502
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.465
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.447
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.447
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.446
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.445
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)

@@ -2,7 +2,6 @@
 
 **Derivation step:** Generator: lawful change before readout
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ N_i=a_i^\dagger a_i
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.536
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.509
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.505
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.503
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.502
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.500
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)

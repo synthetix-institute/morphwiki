@@ -2,7 +2,6 @@
 
 **Derivation step:** Boundary realization: how effects appear
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.544
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.539
-- [arXiv:hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080), score 0.518
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.511
-- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.510
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.504
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)

@@ -2,7 +2,6 @@
 
 **Derivation step:** Compatibility limit: what cannot be jointly sharp
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ Standard constructor skeleton: tensor composition, non-factorization, and reduce
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.477
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.476
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.443
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.432
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.427
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.424
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)

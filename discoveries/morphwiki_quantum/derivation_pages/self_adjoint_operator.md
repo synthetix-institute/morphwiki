@@ -2,7 +2,6 @@
 
 **Derivation step:** Spectral question: what can be asked
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.569
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.553
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.550
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.546
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.541
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.536
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)

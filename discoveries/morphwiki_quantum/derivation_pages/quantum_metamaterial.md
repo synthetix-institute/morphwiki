@@ -2,7 +2,6 @@
 
 **Derivation step:** Boundary realization: how effects appear
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.540
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.516
-- [arXiv:quant-ph0312187](https://arxiv.org/abs/quant-ph/0312187), score 0.513
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.506
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.505
-- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515), score 0.502
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:quant-ph0312187](https://arxiv.org/abs/quant-ph/0312187)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
+- [arXiv:0806.4515](https://arxiv.org/abs/0806.4515)

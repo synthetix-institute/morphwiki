@@ -2,7 +2,6 @@
 
 **Derivation step:** Hilbert-space context: admissible carrier and basis
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** preparation and boundary context
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.512
-- [arXiv:1109.3239](https://arxiv.org/abs/1109.3239), score 0.490
-- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.487
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.486
-- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.480
-- [arXiv:hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080), score 0.480
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1109.3239](https://arxiv.org/abs/1109.3239)
+- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110)
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157)
+- [arXiv:hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080)

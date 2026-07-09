@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:27:39.407022+00:00",
+  "generated_at": "2026-07-09T08:49:46.980487+00:00",
   "wikipedia": {
     "title": "Fock space",
     "pageid": 230491,
@@ -1007,11 +1007,11 @@
     "candidate_pool_size": 946
   },
   "morphwiki": {
-    "takeaway": "The fock space is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
+    "takeaway": "The fock space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.",
     "object_view": "The Fock space is an algebraic construction used in quantum mechanics to construct the quantum states space of a variable or unknown number of identical particles from a single particle Hilbert space H. It is named after V.",
     "mechanism_view": "the Fock space is read through the compact quantum constructor. The available language supplies state terms such as quantum state or wave function; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.",
     "what_this_adds": [
-      "The page records a measured route/fiber placement and states which constructor roles are active.",
+      "The page records a partial formal construction and states which quantum roles are active.",
       "Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.",
       "The page separates generic quantum vocabulary from a completed mechanism."
     ],
@@ -1053,8 +1053,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Carrier: name the topic-native state space or state variable.",
       "Map: name the operator, generator, constraint, or transformation acting on that carrier.",

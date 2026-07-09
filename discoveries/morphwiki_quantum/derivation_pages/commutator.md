@@ -2,7 +2,6 @@
 
 **Derivation step:** Compatibility limit: what cannot be jointly sharp
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ Standard constructor skeleton: order obstruction and canonical commutation.
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.550
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617), score 0.543
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.525
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.519
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.516
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.514
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)

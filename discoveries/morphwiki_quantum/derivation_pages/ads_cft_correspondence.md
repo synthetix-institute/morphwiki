@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -10,7 +9,7 @@ AdS/CFT correspondence is a geometry-translation constructor: bulk gravitational
 
 ## Mechanism
 
-AdS/CFT belongs at the frontier where geometry becomes a realization rather than the invariant root. The practical content is a dictionary between bulk fields and boundary operators. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+AdS/CFT belongs at the interface where geometry becomes a representation of the quantum construction rather than the invariant root. The practical content is a dictionary between bulk fields and boundary operators. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
@@ -52,9 +51,9 @@ Z_{\mathrm{grav}}[\phi_0]\simeq Z_{\mathrm{CFT}}[J=\phi_0]
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.576
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.514
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.511
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.511
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.509
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.509
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)

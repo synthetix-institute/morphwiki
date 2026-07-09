@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -10,7 +9,7 @@ Quantum geometry is a geometry-realization page: geometric quantities are promot
 
 ## Mechanism
 
-Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary frontier rather than inside a generic many-mode field layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, normalization or admissibility, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary interface rather than inside a generic many-mode field layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, normalization or admissibility, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
@@ -53,9 +52,9 @@ Topic-specific constructor: the equations express graph-based geometry states an
 
 ## Evidence Links
 
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.596
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.595
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.594
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.593
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.592
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.591
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)

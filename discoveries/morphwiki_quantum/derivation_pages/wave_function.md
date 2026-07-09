@@ -2,7 +2,6 @@
 
 **Derivation step:** State carrier inside Hilbert space
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ Standard constructor skeleton: state representation, normalization, and expectat
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.513
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.512
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.505
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.479
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.476
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.475
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)

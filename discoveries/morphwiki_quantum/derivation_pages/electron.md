@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ D_{\mu}=\partial_{\mu}+\frac{ie}{\hbar c}A_{\mu}
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.507
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.467
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.436
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.435
-- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.431
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.431
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110)
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)

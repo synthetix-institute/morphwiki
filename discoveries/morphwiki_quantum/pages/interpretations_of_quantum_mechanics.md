@@ -6,10 +6,10 @@ an interpretations of quantum mechanics modifies the interpretation of the proba
 ## The Standard Story
 An interpretation of quantum mechanics is an attempt to explain how the mathematical theory of quantum mechanics might correspond to experienced reality. Quantum mechanics has held up to rigorous and extremely precise tests in an extraordinarily broad range of experiments.
 
-## Mechanism Reading
+## Formal Role
 an interpretations of quantum mechanics acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
-## Operational Contribution
+## Formal Contribution
 - The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
 - It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
@@ -31,10 +31,6 @@ an interpretations of quantum mechanics acts on the readout layer of the quantum
 - **incompatibility:** Complementarity
 - **protocol:** Born rule; projection update
 
-## Evidence Profile
-- Routes: operator and spectrum: 0.26, state evolution / transport: 0.26, closure / conservation: 0.19, boundary or preparation: 0.13, non-commuting transformations: 0.13, update protocol: 0.10
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.33, spectral profile: 0.33, geometric realization: 0.33
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -47,7 +43,7 @@ an interpretations of quantum mechanics acts on the readout layer of the quantum
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -64,4 +60,4 @@ an interpretations of quantum mechanics acts on the readout layer of the quantum
 - [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.470
 
 ---
-Wikipedia scaffold: [Interpretations of quantum mechanics](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Interpretations of quantum mechanics](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

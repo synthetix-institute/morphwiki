@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:27:21.034104+00:00",
+  "generated_at": "2026-07-09T08:49:23.957395+00:00",
   "wikipedia": {
     "title": "Quantum algorithm",
     "pageid": 632489,
@@ -1055,8 +1055,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, state evolution / transport, closure / conservation, and update protocol, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, closure / conservation, and update protocol, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (domain, preparation context, or measurement basis) determine which states are admissible.",
       "State terms (quantum state, superposition, or wave function) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

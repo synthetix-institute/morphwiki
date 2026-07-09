@@ -2,7 +2,6 @@
 
 **Derivation step:** Readout rule: how answers become probabilities
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ p(i)=\operatorname{Tr}(\rho P_i)
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.533
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.519
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.509
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.496
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.495
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.493
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676)

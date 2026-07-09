@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:29:23.727398+00:00",
+  "generated_at": "2026-07-09T08:51:30.147869+00:00",
   "wikipedia": {
     "title": "Electron microscope",
     "pageid": 9730,
@@ -1007,11 +1007,11 @@
     "candidate_pool_size": 946
   },
   "morphwiki": {
-    "takeaway": "Electron microscope can be represented as an operational construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.",
+    "takeaway": "Electron microscope can be represented as a formal construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.",
     "object_view": "An electron microscope is a microscope that uses a beam of electrons as a source of illumination. It uses electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns.",
-    "mechanism_view": "Operationally, Electron microscope is organized by the relation between state terms (quantum state, wave function, density operator), operator terms (Hamiltonian, observable operator, generator), context or boundary terms (detector), and spectral readout terms (mode). The local vocabulary can change across formulations, but the same state-to-transformation-to-readout structure can remain identifiable. Across equation-level evidence the dominant pattern is operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, carried by field-specific vocabulary, probability / information, and symbolic structure.",
+    "mechanism_view": "Electron microscope is organized by the relation between state terms (quantum state, wave function, density operator), operator terms (Hamiltonian, observable operator, generator), context or boundary terms (detector), and spectral readout terms (mode). The local vocabulary can change across formulations, but the same state-to-transformation-to-readout structure can remain identifiable. Across equation-level evidence the dominant pattern is operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, carried by field-specific vocabulary, probability / information, and symbolic structure.",
     "what_this_adds": [
-      "The standard topic view organizes concepts by names; MorphWiki organizes them by the operations needed to construct a theory.",
+      "The standard topic view organizes concepts by names; this page reorganizes them by the operations needed to construct a theory.",
       "It identifies which roles survive a change of notation: state, transformation, context, readout, and compatibility.",
       "It separates local field vocabulary from portable mechanism structure."
     ],
@@ -1052,7 +1052,7 @@
       "A valid transfer test varies the context and shows that the readout changes while the transformation law remains identifiable."
     ],
     "public_evidence_summary": "Dominant evidence pattern: operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, carried by field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "grammar": {
       "state": [
         "quantum state",

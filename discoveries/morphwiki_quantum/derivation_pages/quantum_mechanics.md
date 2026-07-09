@@ -2,7 +2,6 @@
 
 **Derivation step:** Generator: lawful change before readout
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -54,9 +53,9 @@ A=\sum_a aP_a,\qquad p(a)=\operatorname{Tr}(\rho P_a)
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.531
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.526
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.524
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.499
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.497
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.493
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)

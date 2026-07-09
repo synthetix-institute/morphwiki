@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ N=\sum_i a_i^\dagger a_i,\qquad N\ket{n_1,n_2,\ldots}=\left(\sum_i n_i\right)\ke
 
 ## Evidence Links
 
-- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676), score 0.548
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.539
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.533
-- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271), score 0.528
-- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733), score 0.520
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.506
+- [arXiv:2308.15676](https://arxiv.org/abs/2308.15676)
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:0809.5271](https://arxiv.org/abs/0809.5271)
+- [arXiv:2105.11733](https://arxiv.org/abs/2105.11733)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)

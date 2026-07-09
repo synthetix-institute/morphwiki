@@ -2,7 +2,7 @@
 """Export MorphWiki pages from Wikipedia topics and Hyperion evidence.
 
 MorphWiki is deliberately not a Wikipedia paraphraser.  Wikipedia
-supplies the public noun/topic scaffold; Hyperion supplies the operational
+supplies the public noun/topic scaffold; equation evidence supplies the formal
 mechanism evidence.  An optional LLM may turn selected evidence into smoother
 prose, but the exported JSON keeps the source boundary explicit.
 
@@ -86,7 +86,7 @@ HYPERION_PUBLIC_TRANSLATION_GUIDE = {
     "symbols": {
         "Α": "apparatus form: a reusable mechanism role assembled from operator atoms, routes, fibers, and a transformation family",
         "Ω": "operator atom: a local operator or equation motif, not a public noun",
-        "R": "route: the operational action carried by a mechanism, such as transport, closure, operator/spectrum, boundary, incompatibility, or protocol",
+        "R": "route: the formal action carried by a mechanism, such as transport, closure, operator/spectrum, boundary, incompatibility, or protocol",
         "F": "fiber: the evidence carrier or representation channel, such as symbolic structure, spectral profile, geometric realization, field vocabulary, or information profile",
         "Λ": "transformation family: local rewrite or conversion family",
         "Τ": "directed transition: only public when promoted by directed edge evidence",
@@ -421,6 +421,15 @@ def readable_equation_excerpt(record: Mapping[str, Any], limit: int = 180) -> st
     if bad_witness_score(equation) > 0.08:
         return ""
     return equation
+
+
+def public_equation_text(record: Mapping[str, Any], limit: int = 500) -> str:
+    equations = record.get("equations") or []
+    if not equations:
+        return ""
+    equation = compact(equations[0], limit)
+    equation = re.sub(r"__HYPERION_SEQ_[A-Za-z0-9_]+__", "", equation)
+    return compact(equation, limit)
 
 
 def slugify(value: str, fallback: str = "topic") -> str:
@@ -1136,7 +1145,7 @@ def quantum_native_takeaway(title: str, text: str) -> str:
         )
     if quantum_frame_is_generic(frame):
         return (
-            f"{phrase.capitalize()} is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier."
+            f"{phrase.capitalize()} is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set."
         )
     return (
         f"{phrase.capitalize()} can be read as a quantum construction: {frame['context']} fixes the admissible state space; "
@@ -1173,7 +1182,7 @@ def quantum_mechanism_profile(
     generic_frame = quantum_frame_is_generic(quantum_public_frame(title, text))
     if generic_frame:
         what_this_adds = [
-            "The page records a measured route/fiber placement and states which constructor roles are active.",
+            "The page records a partial formal construction and states which quantum roles are active.",
             "Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.",
             "The page separates generic quantum vocabulary from a completed mechanism.",
         ]
@@ -1243,7 +1252,7 @@ def quantum_mechanism_profile(
         "what_changes": what_changes,
         "missing_experiments": missing_experiments,
         "public_evidence_summary": (
-            f"Hyperion evidence ranks this page near {active_routes}, with strongest public fingerprints in {active_fibers}."
+            f"Equation evidence ranks this page near {active_routes}, with strongest public fingerprints in {active_fibers}."
         ),
     }
 
@@ -1260,7 +1269,7 @@ def evidence_rows(records: Sequence[Mapping[str, Any]], limit: int = 24) -> List
                 "score": record.get("_morphwiki_score"),
                 "route_score": record.get("_route_score"),
                 "lexical_score": record.get("_lexical_score"),
-                "equation": (record.get("equations") or [""])[0],
+                "equation": public_equation_text(record),
                 "equation_excerpt": readable_equation_excerpt(record),
                 "witness_quality": round(1.0 - bad_witness_score(witness_text(record)), 4),
                 "invariant": record.get("invariant"),
@@ -1297,12 +1306,12 @@ def deterministic_morphwiki(topic: Mapping[str, Any], grammar: Mapping[str, Sequ
     spectrum_terms = ", ".join((grammar.get("spectrum") or ["spectrum"])[:3])
     page = {
         "takeaway": (
-            f"{title} can be represented as an operational construction: a context specifies a state, "
+            f"{title} can be represented as a formal construction: a context specifies a state, "
             f"an operator transforms it, and admissible outcomes are read through a spectrum."
         ),
         "object_view": first_public_sentences(topic.get("summary") or topic.get("extract"), 2),
         "mechanism_view": (
-            f"Operationally, {title} is organized by the relation between state terms ({state_terms}), "
+            f"{title} is organized by the relation between state terms ({state_terms}), "
             f"operator terms ({operator_terms}), context or boundary terms ({boundary_terms}), and spectral "
             f"readout terms ({spectrum_terms}). The local vocabulary can change across formulations, but "
             f"the same state-to-transformation-to-readout structure can remain identifiable. "
@@ -1310,7 +1319,7 @@ def deterministic_morphwiki(topic: Mapping[str, Any], grammar: Mapping[str, Sequ
             f"carried by {active_fibers}."
         ),
         "what_this_adds": [
-            "The standard topic view organizes concepts by names; MorphWiki organizes them by the operations needed to construct a theory.",
+            "The standard topic view organizes concepts by names; this page reorganizes them by the operations needed to construct a theory.",
             "It identifies which roles survive a change of notation: state, transformation, context, readout, and compatibility.",
             "It separates local field vocabulary from portable mechanism structure.",
         ],
@@ -1340,8 +1349,7 @@ def deterministic_morphwiki(topic: Mapping[str, Any], grammar: Mapping[str, Sequ
             f"Dominant evidence pattern: {active_routes}, carried by {active_fibers}."
         ),
         "claim_boundary": (
-            f"Synthesis from Wikipedia scaffold + {len(records)} Hyperion equation witnesses. "
-            "Not a claim of physical reduction."
+            f"Evidence from Wikipedia scaffold and {len(records)} equation witnesses."
         ),
     }
     quantum_profile = quantum_mechanism_profile(topic, grammar, active_routes, active_fibers)
@@ -1401,7 +1409,7 @@ def call_openrouter(payload: Mapping[str, Any], args: argparse.Namespace) -> Opt
     system = (
         "You are MorphWiki's science writer. Your job: take a Wikipedia topic and Hyperion evidence "
         "and write a rigorous mechanism page for scientifically literate readers. "
-        "Lead with the operational construction, not the textbook definition. "
+        "Lead with the formal construction, not the textbook definition. "
         "Make the result clear and memorable without clickbait, metaphor inflation, or overclaim. "
         "Use the supplied Hyperion translation guide to understand the private evidence language, "
         "then translate it into precise ordinary-language scientific prose. "
@@ -1456,7 +1464,7 @@ def llm_payload(topic: Mapping[str, Any], grammar: Mapping[str, Sequence[str]], 
     return {
         "task": (
             "Rewrite this topic as a rigorous MorphWiki mechanism page. "
-            "Lead with an evidence-bound one-sentence operational thesis. "
+            "Lead with an evidence-bound one-sentence formal thesis. "
             "Use only the supplied Wikipedia scaffold, grammar, and Hyperion evidence. "
             "Do not invent examples, experiments, apparatus IDs, or claims. "
             "Return JSON with keys: takeaway, object_view, mechanism_view, what_this_adds, conversion_form, "
@@ -1467,7 +1475,7 @@ def llm_payload(topic: Mapping[str, Any], grammar: Mapping[str, Sequence[str]], 
         "hyperion_language_examples_excerpt": getattr(args, "hyperion_language_examples_excerpt", ""),
         "rules": [
             "Write clear scientific prose, not an audit report and not promotional copy.",
-            "Lead with the operational construction, not with the Wikipedia definition.",
+            "Lead with the formal construction, not with the Wikipedia definition.",
             "The opening should be memorable because it is precise, not because it exaggerates novelty.",
             "Translate private Hyperion evidence into precise ordinary-language science writing.",
             "No raw labels (Α07, Ω12, spectral_operator_route, etc.) in public prose — those stay in JSON.",
@@ -1540,12 +1548,12 @@ def render_markdown(page: Mapping[str, Any]) -> str:
         "## The Standard Story",
         morph.get("object_view", ""),
         "",
-        "## Mechanism Reading",
+        "## Formal Role",
         morph.get("mechanism_view", ""),
         "",
     ])
     if morph.get("what_this_adds"):
-        lines.extend(["## Operational Contribution"])
+        lines.extend(["## Formal Contribution"])
         lines.extend(f"- {item}" for item in morph.get("what_this_adds", []))
         lines.append("")
     if morph.get("conversion_form"):
@@ -1557,7 +1565,7 @@ def render_markdown(page: Mapping[str, Any]) -> str:
     elif morph.get("mathematical_skeleton") and morph.get("mathematical_skeleton_is_topic_native"):
         lines.extend([
             "## Topic-Native Formal Skeleton",
-            "This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw Hyperion parser excerpt.",
+            "This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.",
             "```math",
             str(morph.get("mathematical_skeleton", "")).strip(),
             "```",
@@ -1579,17 +1587,13 @@ def render_markdown(page: Mapping[str, Any]) -> str:
     lines.extend(
         [
             "",
-            "## Evidence Profile",
-            f"- Routes: {route_line}",
-            f"- Fibers: {fiber_line}",
-            "",
             "## Representation-Stable Content",
         ]
     )
     lines.extend(f"- {item}" for item in morph.get("what_survives", []))
     lines.extend(["", "## Representation-Dependent Content"])
     lines.extend(f"- {item}" for item in morph.get("what_changes", []))
-    lines.extend(["", "## Validation Boundary"])
+    lines.extend(["", "## Validation Checks"])
     lines.extend(f"- {item}" for item in morph.get("missing_experiments", []))
     lines.extend(["", "## Evidence Links"])
     for row in evidence:
@@ -1790,11 +1794,11 @@ def main() -> None:
         manifest = {
             "schema_version": 1,
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "source": "Hyperion MorphWiki topic export",
+            "source": "quantum topic export",
             "status": status,
             "claim_boundary": (
-                "Wikipedia is used as a public topic scaffold. Mechanism claims are ranked from Hyperion "
-                "route/fiber witnesses. Optional LLM synthesis is evidence-constrained and non-authoritative."
+                "Wikipedia is used as a public topic scaffold. Mechanism claims are ranked from "
+                "equation route/fiber witnesses. Optional synthesis is constrained by evidence."
             ),
             "hyperion_index": str(args.hyperion_index),
             "requested_topics": topics,

@@ -2,7 +2,6 @@
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ n_i=a_i^\dagger a_i\in\{0,1\}
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.487
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.479
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.465
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.453
-- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157), score 0.452
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.449
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)

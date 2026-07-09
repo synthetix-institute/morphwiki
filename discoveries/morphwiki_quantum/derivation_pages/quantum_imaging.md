@@ -2,7 +2,6 @@
 
 **Derivation step:** Boundary realization: how effects appear
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** preparation and boundary context
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.523
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.484
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.452
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.449
-- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110), score 0.447
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.447
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)

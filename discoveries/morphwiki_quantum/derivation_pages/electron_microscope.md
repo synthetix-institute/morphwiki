@@ -2,15 +2,14 @@
 
 **Derivation step:** Spectral question: what can be asked
 **Status:** core-derived mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
-Electron microscope can be represented as an operational construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.
+Electron microscope can be represented as a formal construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.
 
 ## Mechanism
 
-Operationally, Electron microscope is organized by the relation between state terms (quantum state, wave function, density operator), operator terms (Hamiltonian, observable operator, generator), context or boundary terms (detector), and spectral readout terms (mode). The local vocabulary can change across formulations, but the same state-to-transformation-to-readout structure can remain identifiable. Across equation-level evidence the dominant pattern is operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, carried by field-specific vocabulary, probability / information, and symbolic structure. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Electron microscope is organized by the relation between state terms (quantum state, wave function, density operator), operator terms (Hamiltonian, observable operator, generator), context or boundary terms (detector), and spectral readout terms (mode). The local vocabulary can change across formulations, but the same state-to-transformation-to-readout structure can remain identifiable. Across equation-level evidence the dominant pattern is operator and spectrum, state evolution / transport, closure / conservation, and boundary or preparation, carried by field-specific vocabulary, probability / information, and symbolic structure. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
@@ -50,9 +49,9 @@ Operationally, Electron microscope is organized by the relation between state te
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.567
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.554
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.553
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838), score 0.552
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.543
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.539
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
+- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)

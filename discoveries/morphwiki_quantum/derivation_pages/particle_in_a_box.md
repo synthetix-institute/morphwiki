@@ -2,7 +2,6 @@
 
 **Derivation step:** Boundary realization: how effects appear
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ E_n=\frac{\hbar^2\pi^2n^2}{2mL^2}
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.599
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.592
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.591
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.590
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.583
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.573
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)

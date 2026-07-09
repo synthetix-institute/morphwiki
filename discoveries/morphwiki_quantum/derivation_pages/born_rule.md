@@ -2,7 +2,6 @@
 
 **Derivation step:** Readout rule: how answers become probabilities
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ p(x|\psi)=|\psi(x)|^2
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.568
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.539
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.537
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.530
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.527
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.521
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)

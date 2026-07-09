@@ -2,7 +2,6 @@
 
 **Derivation step:** State carrier inside Hilbert space
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -53,9 +52,9 @@ p(0)=|\langle0|\psi\rangle|^2,\qquad p(1)=|\langle1|\psi\rangle|^2
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.577
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.522
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.519
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.511
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.511
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537), score 0.505
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)

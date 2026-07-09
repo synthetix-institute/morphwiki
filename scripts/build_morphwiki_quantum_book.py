@@ -447,6 +447,7 @@ def public_book_text(value: Any, limit: Optional[int] = None) -> str:
         "366D page-coordinate export": "page-coordinate export",
         "366D": "high-dimensional",
         "but they need explicit topic reruns and typed equations": "They require explicit topic reruns and typed equations",
+        "Operationally, ": "",
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
@@ -870,7 +871,7 @@ TOPIC_CONSTRUCTOR_OVERRIDES = {
         ),
         "reading": (
             "Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. "
-            "The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary frontier rather than inside a generic many-mode field layer."
+            "The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary interface rather than inside a generic many-mode field layer."
         ),
         "equations": [
             r"\mathcal H_{\Gamma}=L^2\!\left(SU(2)^E/SU(2)^V\right),\qquad \ket{\Gamma,j_e,\iota_v}",
@@ -1105,7 +1106,7 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
         },
         "gauge_theory": {
             "claim": "{title} is a redundancy-and-constraint constructor: different local presentations can represent the same physical state.",
-            "reading": "Gauge theory belongs at the field/geometry frontier. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection.",
+            "reading": "Gauge theory belongs at the field/geometry interface. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection.",
             "equations": [
                 r"D_\mu=\partial_\mu+igA_\mu",
                 r"F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]",
@@ -1144,7 +1145,7 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
         },
         "ads_cft_correspondence": {
             "claim": "{title} is a geometry-translation constructor: bulk gravitational data and boundary field data are treated as dual presentations of one operator structure.",
-            "reading": "AdS/CFT belongs at the frontier where geometry becomes a realization rather than the invariant root. The practical content is a dictionary between bulk fields and boundary operators.",
+            "reading": "AdS/CFT belongs at the interface where geometry becomes a representation of the quantum construction rather than the invariant root. The practical content is a dictionary between bulk fields and boundary operators.",
             "equations": [
                 r"Z_{\mathrm{grav}}[\phi_0]\simeq Z_{\mathrm{CFT}}[J=\phi_0]",
                 r"\left\langle \exp\!\int J\mathcal O\right\rangle_{\mathrm{CFT}}=Z_{\mathrm{bulk}}[\phi|_{\partial}=J]",
@@ -1330,15 +1331,15 @@ def constructor_text(
         )
         claim = (
             f"{display} is read as {indefinite_article(family['role'])} {family['role']} because the page artifact supplies "
-            f"topic-native constructor evidence{skeleton_phrase}, not merely a branch label."
+            f"topic-native equation evidence{skeleton_phrase}, not merely a branch label."
         )
         reading = (
-            f"{display} is treated as a page-specific constructor placement in the {branch_id.replace('_', ' ')} step. "
+            f"{display} has a page-specific placement in the {branch_id.replace('_', ' ')} step. "
             f"Its source-backed frame identifies the carrier or domain as: {frame.get('Carrier or domain', 'not specified')}. "
             f"The operator or map evidence is: {frame.get('Operator or map', 'not specified')}. "
             f"The admissibility condition is: {frame.get('Admissibility', 'not specified')}. "
             f"The readout evidence is: {frame.get('Readout', 'not specified')}. "
-            f"This makes the page usable as a constructor node, while still requiring source-equation checks before it is read as a completed derivation."
+            f"These fields state what is already specified and what still requires source-equation checks before the page is read as a completed derivation."
         )
     else:
         family = FAMILY_NATIVE_LANGUAGE[topic_family(slug, title)]
@@ -1347,15 +1348,14 @@ def constructor_text(
         branch_name = branch_id.replace("_", " ")
         frame = TOPIC_FRAME_OVERRIDES.get(slug) or FAMILY_MECHANISM_FRAMES.get(topic_family(slug, title), FAMILY_MECHANISM_FRAMES["general_quantum"])
         claim = (
-            f"{display} is {indefinite_article(family['role'])} {family['role']} in this quantum mechanism tree. "
-            f"In this tree, {branch_claim[:1].lower() + branch_claim[1:]}"
+            f"{display} is {indefinite_article(family['role'])} {family['role']} in the derivation order. "
+            f"In that order, {branch_claim[:1].lower() + branch_claim[1:]}"
         )
         reading = (
-            f"Operationally, {display} is treated as {indefinite_article(family['role'])} {family['role']} in the {branch_name} step. "
-            f"The page is placed here because its evidence profile asks for {route_sentence} on a carrier signalled by {fiber_sentence}. "
-            f"For this placement to become a topic-level derivation, the page must identify a carrier or domain ({frame['carrier']}), "
-            f"an operator or map ({frame['operator']}), an admissibility condition ({frame['admissibility']}), "
-            f"and a readout ({frame['readout']}). "
+            f"{display} is placed in the {branch_name} step because its evidence profile emphasizes {route_sentence} "
+            f"on a carrier signalled by {fiber_sentence}. "
+            f"A topic-level derivation requires a carrier or domain ({frame['carrier']}), an operator or map ({frame['operator']}), "
+            f"an admissibility condition ({frame['admissibility']}), and a readout ({frame['readout']}). "
             f"{family['known']}"
         )
     reading += (
@@ -1454,7 +1454,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
             ],
             [
                 "The state representation can change between position, momentum, spin, occupation, or density-operator forms.",
-                "Pure-state and mixed-state descriptions may differ while describing the same operational preparation.",
+                "Pure-state and mixed-state descriptions may differ while describing the same formal preparation.",
                 "Subsystem descriptions change when degrees of freedom are traced out or ignored.",
             ],
             [
@@ -1897,7 +1897,7 @@ def hidden_rule_public_blocks(rule: Mapping[str, Any]) -> List[tuple[str, str]]:
             ),
             (
                 "Boundary",
-                "The engineering layer packages the same constructor operationally.",
+                "The engineering layer packages the same constructor formally.",
             ),
         ],
         "R12": [
@@ -2169,49 +2169,49 @@ def anomaly_public_explanation(item: Mapping[str, Any]) -> str:
     route_text = ", ".join(top_routes) if top_routes else "several constructor roles"
     specific = {
         "einstein_podolsky_rosen_paradox": (
-            "EPR is a compatibility test, not a page about a peculiar object. Its mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. The construction should therefore start from the joint state and the allowed local observables, then ask which correlation constraints fail."
+            "EPR is a compatibility test, not a page about a peculiar object. Its mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. The formal starting point is the joint state and the allowed local observables; the question is which correlation constraints fail."
         ),
         "quantum_biology": (
-            "Quantum biology is an open-system transfer problem. The anomaly is that the biological environment is not background noise only; it is part of the boundary that may preserve, destroy, or select coherence. A rigorous constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control that would remove the quantum contribution."
+            "Quantum biology is an open-system transfer problem. The anomaly is that the biological environment is not background noise only; it is part of the boundary that may preserve, destroy, or select coherence. The unresolved formal fields are the state carrier, environmental coupling, coherence or transport observable, and the classical control that would remove the quantum contribution."
         ),
         "measurement_problem": (
-            "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. Use four parts: state evolution before measurement, coupling to an apparatus or environment, POVM or projection readout, and the rule used to condition the state after the record."
+            "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. The formal decomposition is pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and the rule used to condition the state after the record."
         ),
         "quantum_gravity": (
-            "Quantum gravity is a field/boundary junction. It asks whether geometry itself becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing constructor is explicit: a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test showing which geometric quantities survive quantization."
+            "Quantum gravity is a field/boundary junction. It asks whether geometry itself becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing formal objects are explicit: a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test showing which geometric quantities survive quantization."
         ),
         "scattering": (
-            "Scattering is a boundary-to-spectrum mechanism. The relevant object is the map from asymptotic in-states to out-states. The constructor should specify the Hamiltonian or interaction region, the boundary/asymptotic channels, the S-matrix or cross-section readout, and the conservation constraints."
+            "Scattering is a boundary-to-spectrum mechanism. The relevant object is the map from asymptotic in-states to out-states, together with the interaction region, boundary or asymptotic channels, S-matrix or cross-section readout, and conservation constraints."
         ),
         "quantum_state": (
-            "Quantum state is the carrier, not the final prediction. It is anomalous because it precedes several downstream roles: admissibility, evolution, observable choice, and probability readout. A clean derivation should state whether the carrier is a vector, density operator, field state, or register, and which transformations preserve its legality."
+            "Quantum state is the carrier, not the final prediction. It is anomalous because it precedes several downstream roles: admissibility, evolution, observable choice, and probability readout. The unresolved distinction is whether the carrier is a vector, density operator, field state, or register, and which transformations preserve its legality."
         ),
         "schr_dinger_s_cat": (
             "Schrödinger's cat is a macroscopic readout protocol, not a spectrum-first topic. It couples microscopic unitary evolution to a macroscopic boundary and forces the reader to separate three steps: coherent state transport, decoherence or apparatus coupling, and the rule by which one record is selected or conditioned."
         ),
         "wave_particle_duality": (
-            "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. The constructor should be written as context selection plus readout channel."
+            "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Its compact form is context selection plus readout channel."
         ),
         "quantum_entanglement": (
-            "Entanglement is a tensor-factorization and correlation constraint. The anomaly is that the state is not reducible to independently readable subsystem states, while the readout is still local and spectral. A useful page must distinguish the joint state, the subsystem observables, and the correlation test."
+            "Entanglement is a tensor-factorization and correlation constraint. The anomaly is that the state is not reducible to independently readable subsystem states, while the readout is still local and spectral. The required distinction is between joint state, subsystem observables, and correlation test."
         ),
         "fermi_dirac_statistics": (
-            "Fermi-Dirac statistics is an admissibility rule for many-particle states. The central mechanism is antisymmetry and occupation restriction, not an ordinary eigenvalue list. The constructor should expose anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space."
+            "Fermi-Dirac statistics is an admissibility rule for many-particle states. The central mechanism is antisymmetry and occupation restriction, not an ordinary eigenvalue list. The formal content is anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space."
         ),
         "hamiltonian_quantum_mechanics": (
             "The Hamiltonian has two roles at once: it generates time evolution and, when treated as an observable, supplies an energy spectrum. That double role explains the anomaly. A clean page must separate domain/self-adjointness, unitary transport, conserved energy, and spectral readout."
         ),
         "wave_function": (
-            "The wave function is a representation of the state carrier, not a material wave by itself. Its anomaly is that it stores amplitude, phase, normalization, basis choice, and probability potential in one object. The constructor should separate representation, admissibility, evolution, and Born readout."
+            "The wave function is a representation of the state carrier, not a material wave by itself. Its anomaly is that it stores amplitude, phase, normalization, basis choice, and probability potential in one object. The formal decomposition separates representation, admissibility, evolution, and Born readout."
         ),
         "delayed_choice_quantum_eraser": (
             "The delayed-choice eraser is a protocol-order stress test. Its mechanism is the arrangement of which-path information, later measurement choice, and conditional correlation readout. The anomaly is not retrocausality by default; it is that the relevant statistics are defined only after the full measurement protocol is specified."
         ),
         "introduction_to_quantum_mechanics": (
-            "An introductory page is anomalous because pedagogy compresses the whole constructor into one narrative. It mixes states, operators, spectra, measurement, examples, and interpretations. It should be used as a map, then decomposed into mechanism branches before making technical claims."
+            "An introductory page is anomalous because pedagogy compresses the whole formal sequence into one narrative. It mixes states, operators, spectra, measurement, examples, and interpretations. Its technical content separates into the individual branches before supporting specific derivations."
         ),
         "quantum_simulator": (
-            "A quantum simulator is an engineered realization of another Hamiltonian or channel. The anomaly is that the page is both an observable system and a protocol for representing a different system. A rigorous constructor must name the simulated target, the physical carrier, the encoding map, and the validation observable."
+            "A quantum simulator is an engineered realization of another Hamiltonian or channel. The anomaly is that the page is both an observable system and a protocol for representing a different system. The formal fields are the simulated target, physical carrier, encoding map, and validation observable."
         ),
         "quantum_cellular_automaton": (
             "A quantum cellular automaton is a locality-preserving update rule. It sits between Hilbert-space context and generator dynamics because the lattice, neighborhood rule, unitarity or channel condition, and update protocol all define the mechanism together."
@@ -2220,7 +2220,7 @@ def anomaly_public_explanation(item: Mapping[str, Any]) -> str:
             "Relativistic quantum mechanics is a compatibility junction between quantum state evolution and spacetime symmetry. Its construction preserves relativistic covariance, defines the correct state carrier, and explains how spin, energy, and causality constraints enter the operator algebra."
         ),
         "quantum_electrodynamics": (
-            "Quantum electrodynamics is a field-interaction constructor. Its anomaly comes from combining gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. The page should be derived through field operators, gauge constraints, interaction terms, and observable amplitudes."
+            "Quantum electrodynamics is a field-interaction construction. Its anomaly comes from combining gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. The relevant formal objects are field operators, gauge constraints, interaction terms, and observable amplitudes."
         ),
     }
     if slug in specific:
@@ -2230,34 +2230,34 @@ def anomaly_public_explanation(item: Mapping[str, Any]) -> str:
     label_set = {str(label) for label in labels}
     if branch == "fields":
         return (
-            f"This field-level page mixes {route_text}. It should be treated as a many-mode or geometric realization problem: first identify the state sector or field algebra, then the constraints and readout that make the field content observable."
+            f"This field-level page mixes {route_text}. It is a many-mode or geometric realization problem: state sector or field algebra, constraints, and observable readout determine the field content."
         )
     if branch == "boundaries":
         return (
-            f"This boundary page mixes {route_text}. Its mechanism should be read as a change in domain, interface, potential, or asymptotic channel that changes the allowed readout."
+            f"This boundary page mixes {route_text}. Its formal effect is a change in domain, interface, potential, or asymptotic channel that changes the allowed readout."
         )
     if branch == "measurement":
         return (
-            f"This measurement page mixes {route_text}. Its mechanism should separate the state before readout, the detector or measurement map, the recorded outcome, and the update or conditioning rule."
+            f"This measurement page mixes {route_text}. Its formal components are the state before readout, the detector or measurement map, the recorded outcome, and the update or conditioning rule."
         )
     if branch == "incompatibility":
         return (
-            f"This incompatibility page mixes {route_text}. Its mechanism should state which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure."
+            f"This incompatibility page mixes {route_text}. It identifies which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure."
         )
     if branch == "states":
         return (
-            f"This state page mixes {route_text}. Its mechanism should specify the state carrier and then distinguish representation, evolution, admissibility, and later readout."
+            f"This state page mixes {route_text}. It requires the state carrier, representation, evolution, admissibility, and later readout as separate fields."
         )
     if branch == "protocols":
         return (
-            f"This protocol page mixes {route_text}. Its mechanism should be written as an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
+            f"This protocol page mixes {route_text}. Its formal content is an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
         )
     if "branch-ambiguous" in label_set and secondary:
         return (
-            f"This page sits between {branch} and {secondary}. The ambiguity is useful: it marks a place where two constructor roles meet and should be separated before the page is used as a derivation."
+            f"This page sits between {branch} and {secondary}. The ambiguity marks a place where two formal roles meet and require separate treatment before the page supports a derivation."
         )
     return (
-        f"This page activates {route_text}. It should be read as a constructor junction until a topic-native derivation identifies its state carrier, transformation, readout, and compatibility condition."
+        f"This page activates {route_text}. It is a formal junction until a topic-native derivation identifies its state carrier, transformation, readout, and compatibility condition."
     )
 
 
@@ -2384,7 +2384,7 @@ def validation_layers_chapter(root: Path) -> str:
         latex_escape(
             "The learned Lagrangian is the navigation layer of the atlas. It is a representation-space action surrogate over source-equation fingerprints, separate from the physical action of a quantum system. "
             "Given a construction-role state, it asks which next states are cheap continuations, which require a strained bridge, and which absences sit on a meaningful void front. "
-            "In this sense it finds roads through the operational grammar: low-action corridors where a formal role can be continued, translated, or tested. "
+            "In this sense it finds roads through the formal grammar: low-action corridors where a formal role can be continued, translated, or tested. "
             "In the current quantum tree this layer supplies the global road-map constraint. A full page-coordinate export will allow direct page-level action scoring."
         )
     )
@@ -2432,7 +2432,7 @@ def validation_layers_chapter(root: Path) -> str:
         lines.append(
             r"\item "
             + latex_escape(
-                "The territory map separates local operational regions, low-action transfer valleys, multi-band saddles, rough boundaries, strict void boundaries, and void-boundary design targets. This is why the Lagrangian is stronger than an occupancy statistic: it adds direction, resistance, and priority."
+                "The territory map separates local formal regions, low-action transfer valleys, multi-band saddles, rough boundaries, strict void boundaries, and void-boundary design targets. This is why the Lagrangian is stronger than an occupancy statistic: it adds direction, resistance, and priority."
             )
         )
     lines.append(
@@ -2580,7 +2580,7 @@ def sparse_attention_results_chapter(root: Path) -> str:
     lines.append(r"\end{itemize}")
     lines.append(
         latex_escape(
-            "These statements are role hypotheses produced by deterministic sparse attention over the MorphWiki quantum pages and existing source-equation findings. They are not final physics claims. The next test is to rerun the same analysis on explicit black-hole, horizon, Hawking-radiation, entropy, holography, and information-loss topics with typed equation witnesses."
+            "These statements are role hypotheses produced by deterministic sparse attention over the quantum page archive and existing source-equation findings. They are not final physics claims. The next test is to rerun the same analysis on explicit black-hole, horizon, Hawking-radiation, entropy, holography, and information-loss topics with typed equation witnesses."
         )
     )
     return "\n".join(lines)
@@ -2645,24 +2645,13 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines = []
     lines.append(rf"\section{{{latex_escape(title)}}}")
     lines.append(rf"\label{{page:{latex_label(row['slug'])}}}")
-    lines.append(
-        rf"\noindent\textbf{{Mechanism-tree role.}} {latex_escape(branch.get('title'))}; "
-        rf"assignment score {float(row.get('score', 0.0)):.2f}."
-    )
-    lines.append(
-        rf"\noindent\textbf{{Dominant evidence signal.}} {latex_escape(route_label(row.get('top_route')))}."
-    )
-    if row.get("lagrangian") and not (row.get("lagrangian") or {}).get("global_only"):
-        lines.append(
-            rf"\noindent\textbf{{Lagrangian construction road.}} {latex_escape(lagrangian_road_label(row))}."
-        )
     if row.get("is_annotation"):
         lines.append(r"\par\smallskip\noindent\textit{This page is treated as historical, interpretive, or popular context rather than as a conceptual root.}")
     lines.append("")
     lines.append(r"\subsection*{Central Claim}")
     lines.append(latex_escape(clean_text(claim, 850)))
     lines.append("")
-    lines.append(r"\subsection*{Mechanism Reading}")
+    lines.append(r"\subsection*{Formal Role}")
     lines.append(latex_escape(clean_text(mechanism, 1200)))
     lines.append("")
     lines.append(quantum_mechanism_frame_block(title, branch_id, row, mw))
@@ -2692,19 +2681,17 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines.append(list_items(tests, 3))
     lines.append(r"\end{itemize}")
     lines.append("")
-    lines.append(r"\subsection*{Evidence Profile}")
-    lines.append(latex_escape(route_summary or "No route profile available."))
     if evidence:
+        lines.append(r"\subsection*{Source Pointers}")
         lines.append(r"\begin{itemize}")
         for witness in evidence:
             arxiv = witness.get("paper_id") or ""
             url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
-            score = witness.get("score")
-            label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "witness")
+            label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "source witness")
             if url:
-                lines.append(rf"\item \href{{{latex_url(url)}}}{{{latex_escape(label)}}}, score {float(score or 0):.3f}")
+                lines.append(rf"\item \href{{{latex_url(url)}}}{{{latex_escape(label)}}}")
             else:
-                lines.append(rf"\item {latex_escape(label)}, score {float(score or 0):.3f}")
+                lines.append(rf"\item {latex_escape(label)}")
         lines.append(r"\end{itemize}")
     return "\n".join(lines)
 
@@ -2719,15 +2706,14 @@ def markdown_equations(value: Any) -> str:
 
 def markdown_evidence(evidence: Sequence[Mapping[str, Any]]) -> str:
     if not evidence:
-        return "No ranked source-equation witness links are available in the public export.\n"
+        return "No source-equation witness links are available in the public export.\n"
     lines = []
     for witness in evidence[:6]:
         arxiv = witness.get("paper_id") or ""
         url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
         label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "source witness")
-        score = float(witness.get("score") or 0.0)
         linked = f"[{label}]({url})" if url else label
-        lines.append(f"- {linked}, score {score:.3f}")
+        lines.append(f"- {linked}")
     return "\n".join(lines) + "\n"
 
 
@@ -2745,7 +2731,6 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
         "",
         f"**Derivation step:** {branch.get('title')}",
         f"**Status:** {status}",
-        f"**Dominant evidence signal:** {route_label(row.get('top_route'))}",
         "",
     ]
     lines.extend(
@@ -2836,39 +2821,23 @@ def write_derivation_pages(root: Path, out_dir: Path, tree: Mapping[str, Any]) -
 
 def branch_table(branch: Mapping[str, Any]) -> str:
     rows = list(branch.get("pages", []))
-    show_lagrangian = any((row.get("lagrangian") or {}).get("available") and not (row.get("lagrangian") or {}).get("global_only") for row in rows)
-    if show_lagrangian:
-        lines = [
-            r"\begin{longtable}{p{0.32\linewidth}p{0.24\linewidth}p{0.28\linewidth}p{0.08\linewidth}}",
-            r"\toprule",
-            r"Page & Dominant evidence signal & Lagrangian road & Score \\",
-            r"\midrule",
-            r"\endhead",
-        ]
-    else:
-        lines = [
-            r"\begin{longtable}{p{0.45\linewidth}p{0.35\linewidth}p{0.10\linewidth}}",
-            r"\toprule",
-            r"Page & Dominant evidence signal & Score \\",
-            r"\midrule",
-            r"\endhead",
-        ]
+    lines = [
+        r"\begin{longtable}{p{0.92\linewidth}}",
+        r"\toprule",
+        r"Page \\",
+        r"\midrule",
+        r"\endhead",
+    ]
     for row in rows:
         title = row.get("title")
-        signal = route_label(row.get("top_route"))
-        score = float(row.get("score", 0.0))
         suffix = r" \emph{(annotation)}" if row.get("is_annotation") else ""
-        if show_lagrangian:
-            road = lagrangian_road_label(row)
-            lines.append(rf"{latex_escape(title)}{suffix} & {latex_escape(signal)} & {latex_escape(road)} & {score:.2f} \\")
-        else:
-            lines.append(rf"{latex_escape(title)}{suffix} & {latex_escape(signal)} & {score:.2f} \\")
+        lines.append(rf"{latex_escape(title)}{suffix} \\")
     lines.extend([r"\bottomrule", r"\end{longtable}"])
     return "\n".join(lines)
 
 
 def render_transition_sparse_attention_section() -> str:
-    """Render the MorphWiki rewrite transition sparse-attention results."""
+    """Render the source-equation rewrite transition sparse-attention results."""
     report = load_optional_json(
         Path("discoveries/morphwiki_quantum/sparse_attention/morphwiki_rewrite_transition_sparse_attention.json")
     )
@@ -2891,23 +2860,24 @@ def render_transition_sparse_attention_section() -> str:
     ]
     lines.append(
         latex_escape(
-            "A second sparse-attention pass treated the rewrite itself as the object of study: "
-            "Wikipedia/topic view to mechanism-tree view. This comparison asks what becomes visible only after the same "
-            "quantum topics are reorganized by constructor role rather than by article title."
+            "A second sparse-attention pass compared the article ordering with the rewritten derivation ordering. "
+            "The comparison asks which formal roles become visible when the same quantum topics are sorted by Hilbert-space "
+            "context, state, generator, spectrum, probability rule, compatibility condition, and physical realization rather "
+            "than by article title."
         )
     )
     lines.append(
         latex_escape(
             f"The transition run covered {page_count} pages. Of these, {constructed} currently have topic-specific equation skeletons "
-            f"or explicit constructor overrides, while {placements} are expanded by the shared compact constructor. "
+            f"or explicit page overrides, while {placements} are expanded from the common quantum formalism. "
             "The distinction is evidential, not structural: both page types are read through the same context-state-generator-spectrum-readout sequence."
         )
     )
     lines.append(
         latex_escape(
-            "The transition signal is asymmetric: the rewrite adds operational roles more strongly than it adds object names. "
-            "The mechanism view exposes the state, operator, readout, compatibility, boundary, and protocol roles that are implicit "
-            "in the topic view."
+            "The transition signal is asymmetric: the rewrite adds formal roles more strongly than it adds object names. "
+            "It exposes state, operator, readout, compatibility, boundary, and protocol roles that are implicit "
+            "in the article ordering."
         )
     )
     lines.extend(
@@ -2929,7 +2899,7 @@ def render_transition_sparse_attention_section() -> str:
     ]:
         lines.append(
             rf"{latex_escape(ROUTE_PUBLIC.get(key, key))} & {float(route_means.get(key, 0.0)):.4f} & "
-            rf"{latex_escape('constructor role preserved in the rewrite')} \\"
+            rf"{latex_escape('formal role preserved in the rewrite')} \\"
         )
     lines.extend([r"\bottomrule", r"\end{longtable}"])
 
@@ -2957,21 +2927,20 @@ def render_transition_sparse_attention_section() -> str:
         for row in hotspots[:8]:
             roles = ", ".join(str(name) for name, _score in (row.get("top_post_roles") or [])[:3])
             if not roles:
-                roles = "multiple constructor roles"
+                roles = "multiple formal roles"
             explanation = anomaly_public_explanation(row)
             lines.append(
                 rf"\item \textbf{{{latex_escape(row.get('title'))}}} "
                 rf"({latex_escape(row.get('branch'))}, {latex_escape(row.get('status'))}): "
                 rf"dominant roles after rewriting are {latex_escape(roles)}. "
-                rf"Mechanism reading: {latex_escape(explanation)}"
+                rf"Formal reading: {latex_escape(explanation)}"
             )
         lines.append(r"\end{itemize}")
 
     if uses:
         lines.extend(
             [
-                r"\subsection*{Operational Use}",
-                r"\begin{itemize}",
+                r"\subsection*{Consequences For The Quantum Presentation}",
             ]
         )
         for row in uses[:5]:
@@ -2981,15 +2950,12 @@ def render_transition_sparse_attention_section() -> str:
             why = why.replace("constructed pages", "topic-specific pages")
             why = why.replace("constructed page", "topic-specific page")
             why = why.replace("supervised queue", "supervised specialization set")
-            lines.append(
-                rf"\item \textbf{{{latex_escape(row.get('name'))}}} {latex_escape(why)}"
-            )
-        lines.append(r"\end{itemize}")
+            lines.append(latex_escape(why))
 
     lines.append(
         latex_escape(
-            "The practical consequence is a derivation tree rather than a topic list: topic-specific pages show local equations, "
-            "while core-derived pages show how the same compact constructor specializes to the page role."
+            "The resulting presentation is a derivation tree rather than a topic list. Topic-specific pages show local equations. "
+            "Core-derived pages state which quantum ingredients must be supplied before the page supports a full derivation."
         )
     )
     return "\n\n".join(lines)
@@ -3017,7 +2983,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     )
     lines.append(
         latex_escape(
-            "The rewrite reveals a compact operational reading of quantum theory. The standard formalism has a simpler "
+            "The rewrite reveals a compact formal reading of quantum theory. The standard formalism has a simpler "
             "explanatory order than the usual topic list. The order recovered by the sparse-attention pass is:"
         )
     )
@@ -3051,29 +3017,25 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     )
     lines.append(
         latex_escape(
-            "The main finding is that the quantum corpus can be reorganized away from named topics into a smaller operational "
-            "constructor: context-selected Hilbert space, state carrier, generator, observable spectrum, probability readout, compatibility limits, "
-            "and realization or protocol. This changes the explanatory root. In the usual presentation, quantum theory appears "
-            "as a collection of named effects and puzzles: particles, waves, measurement, tunnelling, entanglement, collapse, "
-            "fields, and interpretations. In the mechanism-tree view, these become roles inside one compact "
-            "state-operator-spectrum construction."
+            "The rewrite reorganizes the quantum corpus by the sequence needed to make a prediction: select a domain or Hilbert space, "
+            "assign a state, specify a generator or measurement map, resolve the relevant spectrum, assign probabilities, and check "
+            "compatibility and realization conditions. Named topics then enter as positions in that sequence. Particles, waves, measurement, "
+            "tunnelling, entanglement, collapse, fields, and interpretations are not treated as equal roots; each supplies a state, map, "
+            "readout, compatibility limit, boundary condition, protocol, or annotation."
         )
     )
     lines.append(
         latex_escape(
-            "The importance is practical. The tree gives a recipe for constructing and comparing theories. A page becomes useful "
-            "when one can specify what state is carried, what operator or map acts, what spectrum or readout is produced, what "
-            "compatibility constraint applies, and what changes when the realization changes. This "
-            "turns topic similarity into mechanism similarity: two subjects may use different nouns while preserving the same "
-            "state-operator-readout role."
+            "This gives a test for comparing pages. A page is technically specified when it states what state is carried, what operator "
+            "or map acts, what spectrum or readout is produced, what compatibility constraint applies, and what changes when the physical "
+            "realization changes. Two topics can therefore differ in vocabulary while preserving the same state-operator-readout structure."
         )
     )
     lines.append(
         latex_escape(
-            "This organization of existing quantum theory has direct consequences for physical AI. A constructor-oriented AI can "
-            "search over compact mechanisms, test whether the "
-            "operator/spectral role survives changes of representation, and use anomalies as places where several roles collide. "
-            "The result is a compact, falsifiable, and transferable representation of quantum theory."
+            "This organization also changes how quantum models can be compared. The comparison is no longer based on topic names alone; "
+            "it asks whether the Hilbert space or domain, operator class, spectral readout, and compatibility condition remain well defined "
+            "after a change of representation or realization. Mixed-role pages then become specific decomposition problems rather than isolated puzzles."
         )
     )
     lag_prior = tree.get("lagrangian_construction_prior") or {}
@@ -3089,8 +3051,8 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
         lines.append(
             latex_escape(
                 "The tree uses a DAG-then-constructor procedure. The DAG supplies the ordered assembly of roles, so context, carrier, generator, readout, compatibility, and realization are not treated as interchangeable topic labels. "
-                "The constructor fills that order with page-local equations or branch-level role equations. Page branches are assigned from the route/fiber profile of the MorphWiki page and topic-native lexical anchors. "
-                "The Lagrangian supplies the global construction prior: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas, which sets the interpretation of open construction steps."
+                "The constructor fills that order with page-local equations or branch-level role equations. Page branches are assigned from topic-native lexical anchors and equation evidence. "
+                "The Lagrangian supplies the global construction prior: it identifies low-action roads, high-tension paths, and void-boundary targets in the evidence atlas, which sets the interpretation of open construction steps."
             )
         )
         if lag_prior.get("page_projection_available") and class_text:
@@ -3103,7 +3065,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
         else:
             lines.append(
                 latex_escape(
-                    "The current MorphWiki quantum export contains route/fiber profiles and witness links. A later export with "
+                    "The current quantum archive contains witness links. A later export with "
                     "full page-coordinate vectors and page-specific transition velocities will support direct page-level action scoring. "
                     "For this version, the Lagrangian supplies the road-map logic for construction priority."
                 )
@@ -3120,54 +3082,54 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     )
     findings = [
         (
-            "Quantum theory collapses to a smaller constructor.",
-            "The constructor order is context, state space, generator/evolution, observable spectrum, Born readout, and compatibility constraint. This is not a new postulate of quantum mechanics; it is a cleaner order in which to present the existing formalism.",
+            "A compact order is enough to reconstruct most pages.",
+            "The recurring order is Hilbert space or domain, state, generator, observable, spectral resolution, probability rule, and compatibility condition. The book uses this order to present the standard formalism before moving to particles, fields, protocols, and interpretations.",
         ),
         (
-            "Operator/spectral structure is the spine.",
+            "Observables and spectra carry the largest recurrent signal.",
             f"{int(count_routes.get('spectral_operator_route', 0))} of 147 pages exceed the operator/spectrum threshold, "
-            f"with mean signal {float(mean_routes.get('spectral_operator_route', 0.0)):.3f}. This is the strongest and most universal signal in the rewrite.",
+            f"with mean signal {float(mean_routes.get('spectral_operator_route', 0.0)):.3f}. This is why self-adjoint operators, projectors, eigenvalues, and spectral measures appear early in the reconstruction.",
         ),
         (
-            "Evolution is secondary but broad.",
-            f"{int(count_routes.get('transport_flow_route', 0))} pages carry state-evolution or transport signal. Evolution is not absent; it is the motion of the predictive carrier before a readout.",
+            "State evolution is widespread but requires a later question.",
+            f"{int(count_routes.get('transport_flow_route', 0))} pages carry state-evolution or transport signal. In the quantum reading, a Hamiltonian, unitary map, semigroup, channel, or path integral evolves a state before an observable defines the recorded distribution.",
         ),
         (
-            "Context and boundary are realization gates.",
-            f"{int(count_routes.get('boundary_weak_form_route', 0))} pages emphasize preparation, boundary, or domain context. Tunnelling, cavities, scattering, and particle-in-a-box become boundary-shaped spectra rather than separate conceptual primitives.",
+            "Domains and boundary conditions specify admissible realizations.",
+            f"{int(count_routes.get('boundary_weak_form_route', 0))} pages emphasize preparation, boundary, or domain context. Tunnelling, cavities, scattering, and particle-in-a-box are grouped as cases where the domain or potential changes the allowed spectrum or transition amplitude.",
         ),
         (
-            "Incompatibility is the non-classical junction.",
-            f"{int(count_routes.get('commutator_incompatibility_route', 0))} pages carry explicit incompatibility signal. Entanglement, Bell phenomena, commutators, and uncertainty are grouped by failure of joint sharpness.",
+            "Incompatibility marks failure of joint spectral resolution.",
+            f"{int(count_routes.get('commutator_incompatibility_route', 0))} pages carry explicit incompatibility signal. Entanglement, Bell phenomena, commutators, and uncertainty enter through observables that cannot be assigned one common sharp classical readout under the stated assumptions.",
         ),
         (
-            "Protocol is rare and therefore informative.",
-            f"Only {int(count_routes.get('discrete_protocol_route', 0))} pages exceed the protocol threshold. Quantum computing and information are therefore best treated as an engineering layer over the state-operator-spectrum machinery.",
+            "Protocols are ordered implementations of the same formal steps.",
+            f"Only {int(count_routes.get('discrete_protocol_route', 0))} pages exceed the protocol threshold. Quantum computing and information pages are therefore placed after the state, map, measurement, and compatibility layers that their circuits or channels compose.",
         ),
         (
-            "The tree compresses named topics into mechanism roles.",
+            "Topic names map onto formal roles.",
             ", ".join(f"{(branches.get(branch_id) or {}).get('title', branch_id)}: {count}" for branch_id, count in branch_counts.items())
-            + ". This is the mechanism-level table of contents produced by the rewrite.",
+            + ". This gives a formal table of contents for the book: the branch of a page is determined by the role its equations or witnesses emphasize.",
         ),
         (
-            "Particles are stable role-realizations.",
-            "Particle pages resolve into field modes, spectra, statistics, and readout-stable excitations. The claim is not that particles are fake. The claim is that particle identity is a stable role inside a state-operator-readout construction.",
+            "Particles enter through representations, statistics, and readout-stable excitations.",
+            "Particle pages resolve into field modes, spectra, occupation rules, statistics, and detector-stable excitations. Particle identity is treated as a role inside the state-operator-readout formalism, not as the first organizing variable of the book.",
         ),
         (
-            "String theory and AdS/CFT sit on the field/geometry translation frontier.",
-            "String theory appears as a spectral many-mode constructor. AdS/CFT is the sharper geometry-translation case because its boundary and geometry signals are stronger in the current export.",
+            "String theory and AdS/CFT are field/geometry correspondence cases.",
+            "String theory is placed with many-mode spectral constructions. AdS/CFT is placed closer to geometry because boundary data, correlators, and reconstruction maps carry more of its formal content in the current evidence profile.",
         ),
         (
-            "Black holes are not yet a root in this export.",
-            "The sparse-attention script flags black-hole physics as a boundary/information-closure target rather than as a finished claim. A serious black-hole reading requires an explicit rerun on black holes, horizons, Hawking radiation, entropy, holography, and information-loss topics.",
+            "Black-hole topics require a dedicated source set.",
+            "The sparse-attention analysis places black-hole physics near boundary, information, and closure questions. A reliable black-hole chapter needs a targeted run over horizons, Hawking radiation, entropy, holography, and information-loss source equations.",
         ),
         (
-            "Interpretations sit mostly on the readout layer.",
-            "Interpretations change the meaning assigned to state, probability, collapse, update, or observer language. They do not, in this tree, replace the Hamiltonian, operator, spectrum, or Born-rule machinery.",
+            "Interpretations modify state, probability, update, or observer language.",
+            "Interpretive pages are retained as annotations on the formal machinery. They are not used to replace the Hamiltonian, operator algebra, spectral decomposition, or Born-rule probability assignment.",
         ),
         (
-            "Geometry appears as realization and reconstruction.",
-            "Geometry is necessary for embodiment, boundary conditions, and physical interpretation, but source-equation stability checks preserve structure and spectral/operator roles more strongly than geometry.",
+            "Geometry supplies domains, boundary data, and reconstruction maps.",
+            "Geometry enters when the carrier space, metric, boundary, gauge representation, or reconstruction map determines which operators and readouts are admissible. In the current evidence profile, operator and spectral roles are more portable than geometric presentation.",
         ),
     ]
     for head, body in findings:
@@ -3175,7 +3137,7 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     lines.extend([r"\end{enumerate}", r"\section*{What Changed Relative To Wikipedia}", r"\addcontentsline{toc}{section}{What Changed Relative To Wikipedia}"])
     lines.append(
         latex_escape(
-            "A conventional encyclopedia organizes quantum theory by names and historical articles. The MorphWiki rewrite "
+            "A conventional encyclopedia organizes quantum theory by names and historical articles. The source-equation rewrite "
             "organizes the same material by the operations needed to construct a prediction. The page named "
             "measurement no longer becomes the origin of the theory; it becomes the readout junction. The page named "
             "particle becomes a realization. The page named tunnelling becomes a boundary spectral channel. The page named "
@@ -3279,11 +3241,11 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     constructor_leads = [
         (
             "Measurement as a four-map junction",
-            "The established measurement problem becomes operationally sharper when split into pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record state conditioning. The useful signal is the missing local map between probability readout and state update.",
+            "The established measurement problem becomes formally sharper when split into pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record state conditioning. The useful signal is the missing local map between probability readout and state update.",
         ),
         (
             "Geometry as a possible state carrier",
-            "Quantum gravity is a recognized frontier. The constructor reading isolates the specific unresolved choice: whether geometry remains a substrate on which operators act, or becomes part of the quantum state carrier itself. The corresponding test is which geometric quantities survive as admissible observables after quantization.",
+            "Quantum gravity is a field/geometry interface problem. The constructor reading isolates the specific unresolved choice: whether geometry remains a substrate on which operators act, or becomes part of the quantum state carrier itself. The corresponding test is which geometric quantities survive as admissible observables after quantization.",
         ),
         (
             "Boundary-selected spectra across different phenomena",
@@ -3619,11 +3581,11 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
             r"\hypersetup{colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black,citecolor=blue!55!black}",
             r"\pagestyle{plain}",
             r"\emergencystretch=3em",
-            r"\definecolor{hyperiongreen}{HTML}{5B7F2A}",
+            r"\definecolor{quantumgreen}{HTML}{5B7F2A}",
             r"\definecolor{softgray}{HTML}{F5F6F2}",
             r"\definecolor{ink}{HTML}{1C1E1A}",
             r"\titleformat{\chapter}[display]{\normalfont\huge\bfseries\color{ink}}{\chaptertitlename\ \thechapter}{14pt}{\Huge}",
-            r"\newtcolorbox{claimbox}{colback=softgray,colframe=hyperiongreen!65!black,arc=2pt,boxrule=0.7pt,left=8pt,right=8pt,top=6pt,bottom=6pt}",
+            r"\newtcolorbox{claimbox}{colback=softgray,colframe=quantumgreen!65!black,arc=2pt,boxrule=0.7pt,left=8pt,right=8pt,top=6pt,bottom=6pt}",
             r"\newcommand{\ket}[1]{\lvert #1\rangle}",
             r"\newcommand{\bra}[1]{\langle #1\rvert}",
             r"\begin{document}",
@@ -3639,7 +3601,7 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
             rf"{{\large Generated {latex_escape(generated)}\par}}",
             r"\vfill",
             r"\begin{claimbox}",
-            r"\noindent This book reorganizes quantum theory away from historical article names and toward the recurring construction detected across the MorphWiki quantum pages: context-selected Hilbert space, state carrier, generator, spectral question, probability/readout, compatibility limits, boundary realization, many-mode extension, and protocols.",
+            r"\noindent This book reorganizes quantum theory away from historical article names and toward the recurring construction detected across the quantum page archive: context-selected Hilbert space, state carrier, generator, spectral question, probability/readout, compatibility limits, boundary realization, many-mode extension, and protocols.",
             r"\end{claimbox}",
             r"\end{titlepage}",
             r"\tableofcontents",
@@ -3770,9 +3732,8 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
             r"\backmatter",
             r"\chapter{Source Boundary}",
             latex_escape(
-                "The source pages are stored under discoveries/morphwiki_quantum/pages. The mechanism tree is stored as "
-                "discoveries/morphwiki_quantum/quantum_mechanism_tree.json. ArXiv links are evidence pointers, not claims "
-                "that any individual paper proves the whole branch."
+                "The generated page archive and tree record the source equations used for this synthesis. "
+                "ArXiv links are evidence pointers, not claims that any individual paper proves the whole branch."
             ),
             r"\end{document}",
         ]

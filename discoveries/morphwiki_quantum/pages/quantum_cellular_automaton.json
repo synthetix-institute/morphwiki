@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:30:47.239183+00:00",
+  "generated_at": "2026-07-09T08:54:16.227893+00:00",
   "wikipedia": {
     "title": "Quantum cellular automaton",
     "pageid": 10784887,
@@ -769,7 +769,7 @@
         "score": 0.436786,
         "route_score": 0.818017,
         "lexical_score": 0.015101,
-        "equation": "l{watsonestimation} (q,q)_ infty = left( frac{2 pi}{1 - q} right)^{1/2} exp left( frac{ zeta (2)}{ ln q} right) [1 + o(q)] , . end{align} then the two-point function on an $n$-sheeted riemann surface reads begin{align} vev{\\ (logic) {v}^{ rm s} __HYPERION_SEQ_09A2__ v^{ rm s} (x)} = n left( frac{ ln frac{x}{ varepsilon}}{2 pi} right)^{n-1} left( frac{ varepsilon}{x} right)^{ frac{1}{6} left(n - frac{1}{n} right)} , , end{align} and acquires a multiplica...",
+        "equation": "l{watsonestimation} (q,q)_ infty = left( frac{2 pi}{1 - q} right)^{1/2} exp left( frac{ zeta (2)}{ ln q} right) [1 + o(q)] , . end{align} then the two-point function on an $n$-sheeted riemann surface reads begin{align} vev{\\ (logic) {v}^{ rm s} v^{ rm s} (x)} = n left( frac{ ln frac{x}{ varepsilon}}{2 pi} right)^{n-1} left( frac{ varepsilon}{x} right)^{ frac{1}{6} left(n - frac{1}{n} right)} , , end{align} and acquires a multiplica...",
         "equation_excerpt": "",
         "witness_quality": 0.8441,
         "invariant": "Ξ00 :: Ω01 ⊕ Ω11 ⊕ Ω05 :: Λ23 :: J_flat :: spectral>geometry:MIX/C1.00/A0.01 preserves the route/fiber form boundary_weak_form + transport_flow + constraint_closure + spectral_operator :: syntax + entropy + spectral at the witness level.",
@@ -1055,8 +1055,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near boundary or preparation, state evolution / transport, closure / conservation, and operator and spectrum, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near boundary or preparation, state evolution / transport, closure / conservation, and operator and spectrum, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (context, preparation context, or measurement basis) determine which states are admissible.",
       "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

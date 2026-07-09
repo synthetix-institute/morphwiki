@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:30:23.163548+00:00",
+  "generated_at": "2026-07-09T08:53:59.774024+00:00",
   "wikipedia": {
     "title": "Quantum Computing: A Gentle Introduction",
     "pageid": 63448622,
@@ -469,7 +469,7 @@
         "score": 0.459748,
         "route_score": 0.819621,
         "lexical_score": 0.030227,
-        "equation": "ciated with top-hat smoothing and its use with hierarchical { em ansatz} has been studied in detail by szapudi et al.(1992) and boschan et al. __HYPERION_SEQ_09A2__ and will be assumed small even in the case of two-point cumulant correlators throughout this paper n this section we review the basic results from scaling models in the highly non-linear regime and quasi-linear regime before extending such models to the statistics of smoothed convergence fie...",
+        "equation": "ciated with top-hat smoothing and its use with hierarchical { em ansatz} has been studied in detail by szapudi et al.(1992) and boschan et al. and will be assumed small even in the case of two-point cumulant correlators throughout this paper n this section we review the basic results from scaling models in the highly non-linear regime and quasi-linear regime before extending such models to the statistics of smoothed convergence fie...",
         "equation_excerpt": "ciated with top-hat smoothing and its use with hierarchical { em ansatz} has been studied in detail by szapudi et al.(1992) and boschan et al. __HYPERION_SEQ_09A2__ and will be...",
         "witness_quality": 0.9814,
         "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω19 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form transport_flow + constraint_closure + spectral_operator + boundary_weak_form :: syntax + entropy + structure at the witness level.",
@@ -829,7 +829,7 @@
         "score": 0.45534,
         "route_score": 0.819604,
         "lexical_score": 0.020151,
-        "equation": "le. we tend to think that their eit wave front is cospatial with the cme bubble, which is especially clear at 05:55 ut in their figure __HYPERION_SEQ_09A2__ the difficulty in matching an eit wave with the cme bubble lies in the lack of common field of view between the euv mager and the coronagraph. the real breakthrough on this topic came after the launch of the { em solar dynamics observatory} ({ em sdo}) satellite in __HYPERION_SEQ_09A2__ the unpreced...",
+        "equation": "le. we tend to think that their eit wave front is cospatial with the cme bubble, which is especially clear at 05:55 ut in their figure the difficulty in matching an eit wave with the cme bubble lies in the lack of common field of view between the euv mager and the coronagraph. the real breakthrough on this topic came after the launch of the { em solar dynamics observatory} ({ em sdo}) satellite in the unpreced...",
         "equation_excerpt": "le. we tend to think that their eit wave front is cospatial with the cme bubble, which is especially clear at 05:55 ut in their figure __HYPERION_SEQ_09A2__ the difficulty in ma...",
         "witness_quality": 0.9759,
         "invariant": "Ξ01 :: Ω10 ⊕ Ω09 ⊕ Ω04 :: Λ03 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form transport_flow + constraint_closure + spectral_operator + boundary_weak_form :: syntax + entropy + spectral at the witness level.",
@@ -1054,8 +1054,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near state evolution / transport, closure / conservation, operator and spectrum, and non-commuting transformations, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near state evolution / transport, closure / conservation, operator and spectrum, and non-commuting transformations, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (preparation condition, measurement setup, or potential or domain condition) determine which states are admissible.",
       "State terms (superposition, wave function, or quantum state) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

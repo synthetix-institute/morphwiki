@@ -6,10 +6,10 @@ A hamiltonian (quantum mechanics) can be read as a quantum construction: the pot
 ## The Standard Story
 In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy. Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy.
 
-## Mechanism Reading
+## Formal Role
 In quantum-mechanical terms, a hamiltonian (quantum mechanics) is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through wave function or state vector, Hamiltonian or Laplacian, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
-## Operational Contribution
+## Formal Contribution
 - The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
 - It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
@@ -31,10 +31,6 @@ In quantum-mechanical terms, a hamiltonian (quantum mechanics) is described by a
 - **incompatibility:** commutator; uncertainty relation; non-commuting observables
 - **protocol:** unitary evolution; projection or measurement update; path integral weighting
 
-## Evidence Profile
-- Routes: state evolution / transport: 0.26, operator and spectrum: 0.24, boundary or preparation: 0.23, closure / conservation: 0.15, update protocol: 0.08, non-commuting transformations: 0.05
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.34, spectral profile: 0.34, geometric realization: 0.32
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -47,7 +43,7 @@ In quantum-mechanical terms, a hamiltonian (quantum mechanics) is described by a
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -64,4 +60,4 @@ In quantum-mechanical terms, a hamiltonian (quantum mechanics) is described by a
 - [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.433
 
 ---
-Wikipedia scaffold: [Hamiltonian (quantum mechanics)](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Hamiltonian (quantum mechanics)](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

@@ -2,7 +2,6 @@
 
 **Derivation step:** Boundary realization: how effects appear
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** observables and spectra
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ T\sim \exp\!\left(-2\int_{x_1}^{x_2}\sqrt{\frac{2m(V(x)-E)}{\hbar^2}}\,dx\right)
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385), score 0.569
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823), score 0.568
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682), score 0.562
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.558
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283), score 0.555
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598), score 0.554
+- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
+- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
+- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)

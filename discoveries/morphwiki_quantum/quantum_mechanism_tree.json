@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-08T13:35:19.484127+00:00",
+  "generated_at": "2026-07-09T09:07:00.103480+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "The quantum prediction problem",
@@ -35,7 +35,7 @@
     "available": false,
     "page_projection_available": false,
     "source": "discoveries/operational_geometry/atlas_void_lagrangian_report.json",
-    "method": "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the operational atlas. The current MorphWiki quantum export does not contain page-coordinate vectors, so page branches are not directly action-scored. Page-level Lagrangian construction requires exporting full fingerprints or witness transition vectors for each page.",
+    "method": "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the equation-evidence atlas. Page-level scoring requires page-coordinate vectors or witness transition vectors for each page.",
     "path_class_counts": {
       "unavailable": 146
     }
@@ -187,7 +187,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "The hilbert space is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
+          "takeaway": "The hilbert space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.",
           "witnesses": 32,
           "v2_evidence": {
             "available": true,
@@ -6002,7 +6002,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "Electron microscope can be represented as an operational construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.",
+          "takeaway": "Electron microscope can be represented as a formal construction: a context specifies a state, an operator transforms it, and admissible outcomes are read through a spectrum.",
           "witnesses": 32,
           "v2_evidence": {
             "available": true,
@@ -9202,7 +9202,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "A boson is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
+          "takeaway": "A boson is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.",
           "witnesses": 32,
           "v2_evidence": {
             "available": true,
@@ -10142,7 +10142,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "The fock space is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
+          "takeaway": "The fock space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.",
           "witnesses": 32,
           "v2_evidence": {
             "available": true,
@@ -13524,7 +13524,7 @@
         "transport_flow_route": 0.2673
       },
       "takeaway": "the Einstein–Podolsky–Rosen paradox modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
-      "explanation": "EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. Start from the joint state and local observables, then ask which correlation constraint fails."
+      "explanation": "EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. The formal starting point is the joint state and local observables; the question is which correlation constraint fails."
     },
     {
       "title": "Quantum biology",
@@ -13548,7 +13548,7 @@
         "transport_flow_route": 0.2761
       },
       "takeaway": "Quantum biology can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. A constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control."
+      "explanation": "Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. The formal fields are the state carrier, environmental coupling, coherence or transport observable, and classical control."
     },
     {
       "title": "Introduction to quantum mechanics",
@@ -13572,7 +13572,7 @@
         "transport_flow_route": 0.2575
       },
       "takeaway": "An introduction to quantum mechanics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "An introductory page is a compressed map. It mixes states, operators, spectra, measurement, examples, and interpretations because it is written pedagogically. Decompose it into mechanism branches before using it for technical claims."
+      "explanation": "An introductory page is a compressed map. It mixes states, operators, spectra, measurement, examples, and interpretations because it is written pedagogically. Its technical content separates into individual branches before supporting specific derivations."
     },
     {
       "title": "Measurement problem",
@@ -13595,7 +13595,7 @@
         "transport_flow_route": 0.2689
       },
       "takeaway": "the Measurement problem modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
-      "explanation": "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. Decompose it into pre-measurement evolution, apparatus/environment coupling, POVM or projection readout, and post-record conditioning."
+      "explanation": "The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. The formal decomposition is pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record conditioning."
     },
     {
       "title": "Quantum gravity",
@@ -13618,7 +13618,7 @@
         "transport_flow_route": 0.2689
       },
       "takeaway": "A quantum gravity can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Quantum gravity is a field/boundary junction. It asks whether geometry becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing constructor is a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test of which geometric quantities survive quantization."
+      "explanation": "Quantum gravity is a field/boundary junction. It asks whether geometry becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing formal objects are a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test of which geometric quantities survive quantization."
     },
     {
       "title": "Scattering",
@@ -13641,7 +13641,7 @@
         "transport_flow_route": 0.2673
       },
       "takeaway": "A scattering can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Scattering is a boundary-to-spectrum mechanism. The central map is from asymptotic in-states to out-states. Specify the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints."
+      "explanation": "Scattering is a boundary-to-spectrum mechanism. The central map is from asymptotic in-states to out-states. The relevant objects are the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints."
     },
     {
       "title": "Quantum state",
@@ -13664,7 +13664,7 @@
         "transport_flow_route": 0.2689
       },
       "takeaway": "A quantum state can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Quantum state is the carrier rather than the final prediction. It precedes admissibility, evolution, observable choice, and probability readout. State whether the carrier is a vector, density operator, field state, or register, and which transformations preserve it."
+      "explanation": "Quantum state is the carrier rather than the final prediction. It precedes admissibility, evolution, observable choice, and probability readout. The unresolved distinction is whether the carrier is a vector, density operator, field state, or register, and which transformations preserve it."
     },
     {
       "title": "Wave–particle duality",
@@ -13687,7 +13687,7 @@
         "transport_flow_route": 0.2689
       },
       "takeaway": "Wave–particle duality can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Write it as context selection plus readout channel."
+      "explanation": "Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Its compact form is context selection plus readout channel."
     },
     {
       "title": "Quantum entanglement",
@@ -13710,7 +13710,7 @@
         "transport_flow_route": 0.2665
       },
       "takeaway": "a quantum entanglement modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
-      "explanation": "Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. Separate the joint state, subsystem observables, and correlation test."
+      "explanation": "Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. The required distinction is between joint state, subsystem observables, and correlation test."
     },
     {
       "title": "Fermi–Dirac statistics",
@@ -13733,7 +13733,7 @@
         "transport_flow_route": 0.2631
       },
       "takeaway": "A fermi–dirac statistics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Fermi-Dirac statistics is an admissibility rule for many-particle states. The mechanism is antisymmetry and occupation restriction. Expose anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space."
+      "explanation": "Fermi-Dirac statistics is an admissibility rule for many-particle states. The mechanism is antisymmetry and occupation restriction. The formal content is anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space."
     },
     {
       "title": "Hamiltonian (quantum mechanics)",
@@ -13756,7 +13756,7 @@
         "transport_flow_route": 0.2637
       },
       "takeaway": "A hamiltonian (quantum mechanics) can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "The Hamiltonian has two roles: it generates time evolution and, as an observable, supplies an energy spectrum. Separate domain/self-adjointness, unitary transport, conserved energy, and spectral readout."
+      "explanation": "The Hamiltonian has two roles: it generates time evolution and, as an observable, supplies an energy spectrum. The formal split is domain/self-adjointness, unitary transport, conserved energy, and spectral readout."
     },
     {
       "title": "Wave function",
@@ -13779,7 +13779,7 @@
         "transport_flow_route": 0.2567
       },
       "takeaway": "a wave function modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
-      "explanation": "The wave function is a representation of the state carrier. It stores amplitude, phase, normalization, basis choice, and probability potential in one object. Separate representation, admissibility, evolution, and Born readout."
+      "explanation": "The wave function is a representation of the state carrier. It stores amplitude, phase, normalization, basis choice, and probability potential in one object. The formal decomposition separates representation, admissibility, evolution, and Born readout."
     },
     {
       "title": "Delayed-choice quantum eraser",
@@ -13848,7 +13848,7 @@
         "transport_flow_route": 0.2223
       },
       "takeaway": "Quantum electrodynamics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "Quantum electrodynamics is a field-interaction constructor. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. Derive it through field operators, gauge constraints, interaction terms, and observable amplitudes."
+      "explanation": "Quantum electrodynamics is a field-interaction construction. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. The relevant formal objects are field operators, gauge constraints, interaction terms, and observable amplitudes."
     },
     {
       "title": "Quantum field theory",
@@ -13960,7 +13960,7 @@
         "transport_flow_route": 0.2337
       },
       "takeaway": "Quantum computing can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "This protocol page mixes observables and spectra, state evolution, and controlled update protocol. Write it as an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
+      "explanation": "This protocol page mixes observables and spectra, state evolution, and controlled update protocol. Its formal content is an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
     },
     {
       "title": "Quantum finite automaton",
@@ -13982,7 +13982,7 @@
         "transport_flow_route": 0.2753
       },
       "takeaway": "A quantum finite automaton can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "This protocol page mixes state evolution, normalization and admissibility, and observables and spectra. Write it as an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
+      "explanation": "This protocol page mixes state evolution, normalization and admissibility, and observables and spectra. Its formal content is an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
     },
     {
       "title": "Quantum simulator",
@@ -14004,7 +14004,7 @@
         "transport_flow_route": 0.2753
       },
       "takeaway": "A quantum simulator can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-      "explanation": "A quantum simulator is an engineered realization of another Hamiltonian or channel. It is both an observable system and a protocol for representing a target system. Name the simulated target, physical carrier, encoding map, and validation observable."
+      "explanation": "A quantum simulator is an engineered realization of another Hamiltonian or channel. It is both an observable system and a protocol for representing a target system. The formal fields are the simulated target, physical carrier, encoding map, and validation observable."
     },
     {
       "title": "Spin (physics)",

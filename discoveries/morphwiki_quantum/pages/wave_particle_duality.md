@@ -6,10 +6,10 @@ Wave–particle duality can be read as a quantum construction: the potential, do
 ## The Standard Story
 Wave–particle duality is the concept in quantum mechanics that fundamental entities of the universe, like photons and electrons, exhibit particle or wave properties according to the experimental circumstances. It expresses the inability of the classical concepts such as particle or wave to fully describe the behavior of quantum objects.
 
-## Mechanism Reading
+## Formal Role
 In quantum-mechanical terms, wave–particle duality is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through probability amplitude or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
-## Operational Contribution
+## Formal Contribution
 - The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
 - It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
@@ -31,10 +31,6 @@ In quantum-mechanical terms, wave–particle duality is described by a wave func
 - **incompatibility:** commutator; uncertainty relation; non-commuting observables
 - **protocol:** unitary evolution; projection or measurement update; path integral weighting
 
-## Evidence Profile
-- Routes: state evolution / transport: 0.27, operator and spectrum: 0.22, closure / conservation: 0.19, boundary or preparation: 0.16, update protocol: 0.15, non-commuting transformations: 0.06
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.33, spectral profile: 0.33, geometric realization: 0.33
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -47,7 +43,7 @@ In quantum-mechanical terms, wave–particle duality is described by a wave func
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -64,4 +60,4 @@ In quantum-mechanical terms, wave–particle duality is described by a wave func
 - [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.486
 
 ---
-Wikipedia scaffold: [Wave–particle duality](https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Wave–particle duality](https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

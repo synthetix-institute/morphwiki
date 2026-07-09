@@ -2,7 +2,6 @@
 
 **Derivation step:** Generator: lawful change before readout
 **Status:** topic-specific mechanism
-**Dominant evidence signal:** state evolution
 
 ## Role In The Derivation
 
@@ -52,9 +51,9 @@ O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spe
 
 ## Evidence Links
 
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846), score 0.527
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640), score 0.504
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565), score 0.500
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752), score 0.496
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159), score 0.478
-- [arXiv:1803.02207](https://arxiv.org/abs/1803.02207), score 0.475
+- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
+- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
+- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
+- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+- [arXiv:1803.02207](https://arxiv.org/abs/1803.02207)

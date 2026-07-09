@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:27:40.527588+00:00",
+  "generated_at": "2026-07-09T08:49:48.348523+00:00",
   "wikipedia": {
     "title": "Eigenvalues and eigenvectors",
     "pageid": 2161429,
@@ -949,7 +949,7 @@
         "score": 0.314121,
         "route_score": 0.563667,
         "lexical_score": 0.01676,
-        "equation": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small planar graph, we obtained a device-ready circuit of depth __HYPERION_SEQ_09A2__ this circuit (procedural) the ground state, implements the ribbon operators and performs a partial charge measurement. on the braiding ladder the same protocol leads to a much shorter circuit of depth __...",
+        "equation": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small planar graph, we obtained a device-ready circuit of depth this circuit (procedural) the ground state, implements the ribbon operators and performs a partial charge measurement. on the braiding ladder the same protocol leads to a much shorter circuit of depth __...",
         "equation_excerpt": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small pla...",
         "witness_quality": 0.9825,
         "invariant": "Ξ01 :: Ω21 ⊕ Ω22 ⊕ Ω19 :: Λ00 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form discrete_protocol + spectral_operator :: syntax + entropy + geometry at the witness level.",
@@ -1054,8 +1054,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, state evolution / transport, boundary or preparation, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, boundary or preparation, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (basis, domain, or context) determine which states are admissible.",
       "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

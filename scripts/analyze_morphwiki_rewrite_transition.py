@@ -3,12 +3,12 @@
 
 The transition studied here is:
 
-    Wikipedia/topic view -> mechanism-tree derivation view.
+    Wikipedia/topic view -> derivation-ordered quantum view.
 
 The analysis is deliberately deterministic. It does not claim to infer new
 physics by itself; it identifies what became visible when the same topic set was
-rewritten as constructor roles and cross-checked against exported Hyperion
-route/fiber profiles.
+rewritten by formal quantum roles and cross-checked against exported route/fiber
+profiles.
 """
 
 from __future__ import annotations
@@ -185,6 +185,48 @@ def write_json(path: Path, data: Any) -> None:
 
 def clean_text(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def public_explanation(value: Any) -> str:
+    text = clean_text(value)
+    replacements = {
+        "A constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control.": (
+            "The formal fields are the state carrier, environmental coupling, coherence or transport observable, and classical control."
+        ),
+        "A constructor must name the state carrier, the environmental coupling, the coherence or transport observable, and the classical control that would remove the quantum contribution.": (
+            "The unresolved formal fields are the state carrier, environmental coupling, coherence or transport observable, and the classical control that would remove the quantum contribution."
+        ),
+        "A rigorous constructor must name the simulated target, the physical carrier, the encoding map, and the validation observable.": (
+            "The formal fields are the simulated target, physical carrier, encoding map, and validation observable."
+        ),
+        "Decompose it into pre-measurement evolution, apparatus/environment coupling, POVM or projection readout, and post-record conditioning.": (
+            "The formal decomposition is pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record conditioning."
+        ),
+        "Decompose it into mechanism branches before using it for technical claims.": (
+            "Its technical content separates into individual branches before supporting specific derivations."
+        ),
+        "Start from the joint state and local observables, then ask which correlation constraint fails.": (
+            "The formal starting point is the joint state and local observables; the question is which correlation constraint fails."
+        ),
+        "Write it as context selection plus readout channel.": (
+            "Its compact form is context selection plus readout channel."
+        ),
+        "Specify the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints.": (
+            "The relevant objects are the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints."
+        ),
+        "Specify the state carrier, then distinguish representation, evolution, admissibility, and later readout.": (
+            "The relevant fields are the state carrier, representation, evolution, admissibility, and later readout."
+        ),
+        "Write it as an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters.": (
+            "Its formal content is an ordered sequence of allowed maps with a defined input state, output readout, and control showing why the order matters."
+        ),
+        "two constructor roles meet and should be separated before the page is used as a derivation": (
+            "two formal roles meet and require separate treatment before the page supports a derivation"
+        ),
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
 
 
 def token_count(text: str) -> int:
@@ -375,7 +417,7 @@ def make_page_rows(root: Path) -> List[Dict[str, Any]]:
                 "route_balance_entropy": round(route_balance, 4),
                 "anomaly_score": round(anomaly_score, 4),
                 "anomaly_labels": anomaly.get("labels", []) if anomaly else [],
-                "anomaly_explanation": anomaly.get("explanation", "") if anomaly else "",
+                "anomaly_explanation": public_explanation(anomaly.get("explanation", "")) if anomaly else "",
                 "anomaly_routes": anomaly.get("routes", {}) if anomaly else {},
                 "hyperion_witness_count": len(page.get("hyperion", {}).get("equation_witnesses") or []),
             }
@@ -480,7 +522,7 @@ def derive_rules(rows: Sequence[Mapping[str, Any]], tree: Mapping[str, Any]) -> 
             "new_information": "The particle pages are not discarded; they are relocated as field/mode/statistics/readout constructions. This is a more precise statement than 'particles are not fundamental'.",
         },
         {
-            "rule": "Interpretations mostly act on readout semantics rather than replacing the formal constructor.",
+            "rule": "Interpretations mostly act on state, probability, and update semantics.",
             "evidence": {
                 "interpretation_like_pages": [r["title"] for r in interpretation_pages[:12]],
                 "annotation_count": branch_counts.get("annotations", 0),
@@ -496,7 +538,7 @@ def derive_rules(rows: Sequence[Mapping[str, Any]], tree: Mapping[str, Any]) -> 
             "new_information": "Tunnelling, particle-in-a-box, scattering, cavities, and spectral lines become one family: boundary-shaped spectra.",
         },
         {
-            "rule": "Protocol pages are an engineering layer over the constructor, not the root of the theory.",
+            "rule": "Protocol pages compose state preparation, maps, and readouts.",
             "evidence": {
                 "protocol_count": len(protocol_pages),
                 "protocol_pages": [r["title"] for r in protocol_pages[:12]],
@@ -505,7 +547,7 @@ def derive_rules(rows: Sequence[Mapping[str, Any]], tree: Mapping[str, Any]) -> 
             "new_information": "Quantum computing is reorganized as controlled composition of states, operators, readouts, and error constraints rather than a separate ontology of qubits.",
         },
         {
-            "rule": "Anomalies identify where several constructor roles collide.",
+            "rule": "Anomalies identify where several formal roles coincide.",
             "evidence": {
                 "top_anomalies": [
                     {
@@ -518,18 +560,18 @@ def derive_rules(rows: Sequence[Mapping[str, Any]], tree: Mapping[str, Any]) -> 
                     for r in anomalies[:8]
                 ]
             },
-            "new_information": "Anomalies are not errors in the tree. They are research handles: EPR, measurement problem, quantum gravity, quantum biology, and related pages require several roles at once.",
+            "new_information": "EPR, the measurement problem, quantum gravity, quantum biology, and related pages combine several formal questions in one topic: state preparation, compatibility, boundary or environmental coupling, protocol order, and readout.",
         },
     ]
 
 
 def markdown_report(report: Mapping[str, Any]) -> str:
     lines: List[str] = []
-    lines.append("# MorphWiki Rewrite Transition Sparse Attention")
+    lines.append("# Quantum Rewrite Transition Analysis")
     lines.append("")
     lines.append(
-        "This run treats the rewrite itself as the transition: Wikipedia/topic view -> mechanism-tree view. "
-        "It asks what becomes visible only after quantum pages are reorganized by constructor role."
+        "This run treats the rewrite itself as the transition from article ordering to derivation ordering. "
+        "It asks what becomes visible after quantum pages are sorted by formal role."
     )
     lines.append("")
     metrics = report["summary"]
@@ -544,7 +586,7 @@ def markdown_report(report: Mapping[str, Any]) -> str:
         lines.append(f"- {ROUTE_LABELS.get(key, key)}: `{value}`")
     lines.append("")
 
-    lines.append("## What Can Be Done With This Structure")
+    lines.append("## Consequences For The Quantum Presentation")
     lines.append("")
     uses = report["uses"]
     for row in uses:
@@ -593,7 +635,7 @@ def markdown_report(report: Mapping[str, Any]) -> str:
         )
     lines.append("")
 
-    lines.append("## Practical Conclusion")
+    lines.append("## Structural Conclusion")
     lines.append("")
     lines.append(report["practical_conclusion"])
     lines.append("")
@@ -618,33 +660,32 @@ def build_report(root: Path) -> Dict[str, Any]:
     }
     uses = [
         {
-            "name": "Teach quantum theory as a derivation tree.",
-            "why_useful": "The reader sees the required assembly order: context, state, generator, observable spectrum, probability readout, compatibility limit, and realization. This avoids presenting interpretations, particles, and protocols as equal primitives.",
-            "evidence_needed": "Topic pages must have either constructed equations or route/fiber placements with clear branch assignment.",
+            "name": "Derivation order",
+            "why_useful": "The domain or Hilbert space precedes the state; the state precedes the generator or measurement map; the spectrum and probability rule precede interpretation. This order keeps particles, protocols, and interpretations downstream of the formal construction they use.",
+            "evidence_needed": "A page needs local equations or a clear route placement showing which formal role is being used.",
         },
         {
-            "name": "Build constructor targets for the decoder.",
+            "name": "Pages that need explicit equations",
             "why_useful": (
-                f"The {constructed} constructed pages are seed targets. The {len(rows) - constructed} evidence placements "
-                "become a supervised specialization set: each needs a topic-native state, operator/map, spectrum/readout, "
-                "compatibility condition, and realization."
+                f"The {constructed} topic-specific pages already supply local equation skeletons. The {len(rows) - constructed} core-derived pages "
+                "mark topics where the book can state the expected quantum ingredients, but still needs a page-native state, operator or map, spectrum or readout, compatibility condition, and realization."
             ),
-            "evidence_needed": "Clean equation witnesses and constructor-target rows extracted from Hyperion fingerprints.",
+            "evidence_needed": "Clean equation witnesses and page-local role rows linked to the source text.",
         },
         {
-            "name": "Find transfer candidates across fields.",
-            "why_useful": "A page can be transferred only if the role survives. This lets FieldBridge search for analogues of a mechanism rather than semantic analogues of words.",
-            "evidence_needed": "Route/fiber profiles plus field-specific receptors and falsification tests.",
+            "name": "Role-based topic comparison",
+            "why_useful": "Two topics can be compared when they preserve the same state-operator-readout pattern, even if their historical names differ. A valid comparison should keep track of the Hilbert space or domain, operator class, spectrum, probability rule, and compatibility condition.",
+            "evidence_needed": "Route profiles, equation witnesses, and a check that the compared topics share the relevant formal roles.",
         },
         {
-            "name": "Use anomalies as research prompts.",
-            "why_useful": "Multi-role pages such as EPR, measurement problem, quantum gravity, and quantum biology are not clean branches. They mark places where compatibility, boundary, protocol, and transport signals collide.",
-            "evidence_needed": "Dedicated reruns with targeted topic sets and arXiv witness audits.",
+            "name": "Mixed-role topics",
+            "why_useful": "Pages such as EPR, the measurement problem, quantum gravity, and quantum biology combine compatibility, boundary, protocol, and transport roles. They require decomposition into separate formal questions before they can be presented as derivations.",
+            "evidence_needed": "Targeted source-equation checks for each role claimed on the page.",
         },
         {
-            "name": "Separate interpretation from machinery.",
-            "why_useful": "Interpretive pages can be retained as readout/probability annotations without allowing them to rewrite the Hamiltonian/operator/spectral core.",
-            "evidence_needed": "Explicit distinction between formal equations and semantic claims about state/probability/update.",
+            "name": "Interpretation layer",
+            "why_useful": "Interpretive pages change the status assigned to state vectors, probabilities, updates, observers, or recorded outcomes. They do not by themselves replace the Hamiltonian, operator algebra, spectral decomposition, or Born-rule assignment.",
+            "evidence_needed": "Explicit separation between formal equations and claims about state, probability, update, or ontology.",
         },
     ]
     report = {
@@ -657,10 +698,9 @@ def build_report(root: Path) -> Dict[str, Any]:
         "top_transition_pages": rows[:30],
         "uses": uses,
         "practical_conclusion": (
-            "The useful object is the transition map, not the prose rewrite alone. It tells us which named topics are already "
-            "constructible, which are only placed by evidence, which pages are multi-role junctions, and which parts of quantum "
-            "theory are transferable as mechanisms. The new information is therefore structural: a topic encyclopedia becomes "
-            "a queue of constructor roles and unresolved derivations."
+            "The transition map separates pages with local equation support from pages that still require local equations. "
+            "It also identifies mixed-role pages and role-preserving comparisons across topics. The new information is structural: "
+            "the topic encyclopedia becomes an ordered set of formal questions and unresolved derivations."
         ),
     }
     return report

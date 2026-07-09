@@ -1,16 +1,16 @@
 # Quantum cosmology
 
 ## Evidence Status
-Quantum cosmology is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.
+Quantum cosmology is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.
 
 ## The Standard Story
 Quantum cosmology is the attempt in theoretical physics to develop a quantum theory of the universe. This approach attempts to answer open questions of classical physical cosmology, particularly those related to the first phases of the universe.
 
-## Mechanism Reading
+## Formal Role
 quantum cosmology is read through the compact quantum constructor. The available language supplies state terms such as wave function or state vector; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.
 
-## Operational Contribution
-- The page records a measured route/fiber placement and states which constructor roles are active.
+## Formal Contribution
+- The page records a partial formal construction and states which quantum roles are active.
 - Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.
 - The page separates generic quantum vocabulary from a completed mechanism.
 
@@ -29,10 +29,6 @@ quantum cosmology is read through the compact quantum constructor. The available
 - **incompatibility:** commutator; uncertainty relation; non-commuting observables
 - **protocol:** unitary evolution; projection or measurement update; path integral weighting
 
-## Evidence Profile
-- Routes: state evolution / transport: 0.28, operator and spectrum: 0.16, closure / conservation: 0.09, boundary or preparation: 0.03, update protocol: 0.03, non-commuting transformations: 0.03
-- Fibers: field-specific vocabulary: 0.59, probability / information: 0.41, symbolic structure: 0.33, spectral profile: 0.33, geometric realization: 0.33
-
 ## Representation-Stable Content
 - the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
 - the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
@@ -45,7 +41,7 @@ quantum cosmology is read through the compact quantum constructor. The available
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
 
-## Validation Boundary
+## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
@@ -62,4 +58,4 @@ quantum cosmology is read through the compact quantum constructor. The available
 - [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.412
 
 ---
-Wikipedia scaffold: [Quantum cosmology](https://en.wikipedia.org/wiki/Quantum_cosmology) (CC BY-SA). Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.
+Wikipedia scaffold: [Quantum cosmology](https://en.wikipedia.org/wiki/Quantum_cosmology) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:33:49.270389+00:00",
+  "generated_at": "2026-07-09T08:57:31.773355+00:00",
   "wikipedia": {
     "title": "Spectral line",
     "pageid": 177320,
@@ -679,7 +679,7 @@
         "score": 0.453604,
         "route_score": 0.830817,
         "lexical_score": 0.016368,
-        "equation": "ction{set-up} the plates are treated as two-dimensional systems and a fourier basis both in position and momentum space is thus an adequate choice for the set of basis functions, that is [ phi^i_{ bf n}(s,p_s) = frac{1}{ sqrt{2 l_i}} e^{2 \\ i i (n_1 s/l_i + n_2 p_s/2)} , ] with ${ bf n} = (n_1,n_2)$, $n_1,n_2$ integers, and $ s in [0,l_i), p_s in (-1,1)$, where $l_i$ is the length of the boundary and $i=1$ or __HYPERION_SEQ_09A2__ the wave number $|p| p...",
+        "equation": "ction{set-up} the plates are treated as two-dimensional systems and a fourier basis both in position and momentum space is thus an adequate choice for the set of basis functions, that is [ phi^i_{ bf n}(s,p_s) = frac{1}{ sqrt{2 l_i}} e^{2 \\ i i (n_1 s/l_i + n_2 p_s/2)} , ] with ${ bf n} = (n_1,n_2)$, $n_1,n_2$ integers, and $ s in [0,l_i), p_s in (-1,1)$, where $l_i$ is the length of the boundary and $i=1$ or the wave number $|p| p...",
         "equation_excerpt": "ction{set-up} the plates are treated as two-dimensional systems and a fourier basis both in position and momentum space is thus an adequate choice for the set of basis functions...",
         "witness_quality": 0.9217,
         "invariant": "Ξ00 :: Ω03 ⊕ Ω07 ⊕ Ω02 :: Λ08 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form boundary_weak_form + commutator_incompatibility :: syntax + entropy + geometry at the witness level.",
@@ -1056,8 +1056,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, boundary or preparation, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, boundary or preparation, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Preparation or domain terms (potential or domain condition, preparation context, or measurement basis) determine which states are admissible.",
       "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",

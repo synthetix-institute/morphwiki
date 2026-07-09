@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T06:26:55.878606+00:00",
+  "generated_at": "2026-07-09T08:48:49.028194+00:00",
   "wikipedia": {
     "title": "Hilbert space",
     "pageid": 20598932,
@@ -649,7 +649,7 @@
         "score": 0.283027,
         "route_score": 0.503435,
         "lexical_score": 0.022255,
-        "equation": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small planar graph, we obtained a device-ready circuit of depth __HYPERION_SEQ_09A2__ this circuit (procedural) the ground state, implements the ribbon operators and performs a partial charge measurement. on the braiding ladder the same protocol leads to a much shorter circuit of depth __...",
+        "equation": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small planar graph, we obtained a device-ready circuit of depth this circuit (procedural) the ground state, implements the ribbon operators and performs a partial charge measurement. on the braiding ladder the same protocol leads to a much shorter circuit of depth __...",
         "equation_excerpt": "cz gates adjacent to one another. hence, reducing the number of toffoli gates is the main goal when designing the experiments. for the fusion of $ psi_m$-fluxes on the small pla...",
         "witness_quality": 0.9825,
         "invariant": "Ξ01 :: Ω21 ⊕ Ω22 ⊕ Ω19 :: Λ00 :: J_flat :: spectral>geometry:MIX/C1.00/A0.00 preserves the route/fiber form discrete_protocol + spectral_operator :: syntax + entropy + geometry at the witness level.",
@@ -1007,11 +1007,11 @@
     "candidate_pool_size": 946
   },
   "morphwiki": {
-    "takeaway": "The hilbert space is placed by route/fiber evidence in the public MorphWiki export. A complete mechanism names its state carrier, operator or map, admissibility condition, readout, and falsifier.",
+    "takeaway": "The hilbert space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.",
     "object_view": "The mathematical concept of a Hilbert space generalizes the notion of Euclidean space. It extends the methods of Euclidean geometry and calculus from the two-dimensional Euclidean plane and three-dimensional space to spaces of any finite or infinite dimension.",
     "mechanism_view": "the Hilbert space is read through the compact quantum constructor. The available language supplies state terms such as quantum state or wave function; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.",
     "what_this_adds": [
-      "The page records a measured route/fiber placement and states which constructor roles are active.",
+      "The page records a partial formal construction and states which quantum roles are active.",
       "Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.",
       "The page separates generic quantum vocabulary from a completed mechanism."
     ],
@@ -1053,8 +1053,8 @@
       "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
       "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
     ],
-    "public_evidence_summary": "Hyperion evidence ranks this page near operator and spectrum, state evolution / transport, closure / conservation, and update protocol, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
-    "claim_boundary": "Synthesis from Wikipedia scaffold + 32 Hyperion equation witnesses. Not a claim of physical reduction.",
+    "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, closure / conservation, and update protocol, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
+    "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
       "Carrier: name the topic-native state space or state variable.",
       "Map: name the operator, generator, constraint, or transformation acting on that carrier.",
