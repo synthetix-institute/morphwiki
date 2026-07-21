@@ -9,7 +9,7 @@ Self-adjoint operator is the admissible-observable condition: it gives real spec
 
 ## Mechanism
 
-Self-adjointness is not a technical decoration. It is the condition that makes an operator a legitimate spectral question in ordinary quantum mechanics. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Self-adjointness is not a technical decoration. It is the condition that makes an operator a legitimate spectral question in ordinary quantum mechanics. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

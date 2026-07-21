@@ -9,7 +9,7 @@ Bell's theorem is a compatibility/locality stress test: quantum correlations vio
 
 ## Mechanism
 
-Bell's theorem is not a page about a mysterious object. It is a falsifier for a classical joint-assignment model of measurement outcomes. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, spectral profile.
+Bell's theorem is not a page about a mysterious object. It is a falsifier for a classical joint-assignment model of measurement outcomes. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, spectral profile.
 
 ## Quantum Mechanism Frame
 

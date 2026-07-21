@@ -9,7 +9,7 @@ Uncertainty principle is a compatibility-limit theorem: non-commuting observable
 
 ## Mechanism
 
-Uncertainty is not detector imperfection. It is a structural consequence of state variance and non-commuting observables. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Uncertainty is not detector imperfection. It is a structural consequence of state variance and non-commuting observables. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

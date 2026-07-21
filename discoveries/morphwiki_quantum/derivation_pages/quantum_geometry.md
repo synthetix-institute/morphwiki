@@ -9,7 +9,7 @@ Quantum geometry is a geometry-realization page: geometric quantities are promot
 
 ## Mechanism
 
-Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary interface rather than inside a generic many-mode field layer. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, normalization or admissibility, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary interface rather than inside a generic many-mode field layer. The linked equation set is concentrated in operator-to-spectrum readout, normalization or admissibility, state evolution; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

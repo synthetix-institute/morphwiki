@@ -3,32 +3,27 @@
 ## Root
 Given a context-selected Hilbert space, an admissible state, and a permitted observable, quantum theory determines which numerical outcomes can occur, assigns probabilities to those outcomes, and marks which questions cannot be made simultaneously sharp.
 
-This reorders the topic away from historical names and toward the construction that recurs across the pages:
+This reorders the topic away from historical names and toward the dependencies that recur across the pages:
 
 ```text
-SELECTOR -> CARRIER -> MAP -> QUESTION -> READOUT
-    |          |        |         |          |
-    |          |        |         |          +-- probabilities
-    |          |        |         +------------- spectrum / effects
-    |          |        +----------------------- generator or channel
-    |          +-------------------------------- state or density operator
-    +------------------------------------------- Hilbert space and operator domain
+CARRIER / CONTEXT  <----typed with---->  OPERATOR APPARATUS
+        |                                      |
+        +------------- COMPLETION -------------+
+                    closure / readout / protocol
 
-COMPATIBILITY constrains which questions can be jointly sharp.
-REALIZATION adds boundaries, fields, detectors, protocols, and scaling limits.
+REALIZATION changes boundaries, fields, detectors, encodings, and scaling limits.
+DERIVATION adds roles, projects consequences, or rewrites laterally.
 ```
 
-## DAG Then Constructor
+## Completion DAG And Source Constructor
 
-The DAG gives the assembly order: context and admissibility precede state transport; state transport precedes spectral readout; readout and compatibility precede boundary, field, detector, or protocol realization. The constructor fills this ordered scaffold with the carrier, operator, map, question, readout, closure condition, and realization needed for a predictive mechanism.
+The DAG orders records only when the destination contains more constructor roles. It is a completion rank, not physical time. The source constructor follows neighboring equations and records role completion, projection onto a simpler consequence, and lateral rewrite at the same completion level.
 
 ## Re-Derivation Path
-1. **Selector.** A context selects the Hilbert space and operator domain. Euclidean space may label a representation, but Hilbert space is the admissible carrier.
-2. **Carrier.** The state, density operator, field state, or register state carries predictive information on that selected space.
-3. **Map.** A Hamiltonian, unitary, channel, constraint, or action transports the carrier before readout.
-4. **Question.** An observable, effect family, or spectral measure defines the possible answer channels.
-5. **Readout.** The Born or trace rule turns the state and answer channels into probabilities.
-6. **Compatibility and realization.** Commutators, contextuality, uncertainty, boundaries, fields, detectors, and protocols constrain or embody the five-step constructor.
+1. **Type the identity.** Specify the carrier, domain, state class, and operator apparatus together.
+2. **Attach completion.** Add normalization, compatibility, readout, or an ordered protocol where needed.
+3. **Choose a realization.** State how boundaries, fields, detectors, gauges, or encodings embody the identity.
+4. **Follow source moves.** Track role completion, projection, and representation-preserving rewrite.
 
 ```math
 B \longmapsto (\mathcal H_B,\mathcal D_B)
@@ -38,6 +33,10 @@ O = \sum_i \lambda_i P_i
 p_i = \operatorname{Tr}(P_i \rho_t)
 [O_1,O_2] \ne 0
 ```
+
+## Corpus Constructor Result
+
+The source graph contains 3,761,468 completion moves, 3,703,292 projections, and 4,737,510 lateral rewrites. Completion and projection are nearly balanced, so the derivation graph is not a one-way funnel.
 
 ## Sparse Attention Summary
 - state evolution: mean 0.232, pages above 0.10 = 145

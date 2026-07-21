@@ -9,7 +9,7 @@ Fock space is the occupation-number state space: the construction that replaces 
 
 ## Mechanism
 
-Fock space changes the carrier of the quantum state. Instead of describing one system in one Hilbert space, it builds sectors with zero, one, two, and more identical quanta, then imposes the bosonic or fermionic exchange rule. Creation and annihilation operators are the native coordinates of this page because they move the state between occupation sectors. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Fock space changes the carrier of the quantum state. Instead of describing one system in one Hilbert space, it builds sectors with zero, one, two, and more identical quanta, then imposes the bosonic or fermionic exchange rule. Creation and annihilation operators are the native coordinates of this page because they move the state between occupation sectors. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

@@ -9,7 +9,7 @@ AdS/CFT correspondence is a geometry-translation constructor: bulk gravitational
 
 ## Mechanism
 
-AdS/CFT belongs at the interface where geometry becomes a representation of the quantum construction rather than the invariant root. The practical content is a dictionary between bulk fields and boundary operators. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+AdS/CFT belongs at the interface where geometry becomes a representation of the quantum construction rather than the invariant root. The practical content is a dictionary between bulk fields and boundary operators. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, preparation, basis, or boundary context; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

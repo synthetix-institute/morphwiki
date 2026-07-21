@@ -356,8 +356,10 @@ def make_page_rows(root: Path) -> List[Dict[str, Any]]:
 
     rows: List[Dict[str, Any]] = []
     for json_path in sorted((root / "pages").glob("*.json")):
-        page = read_json(json_path, {})
         slug = json_path.stem
+        if branch_lookup and slug not in branch_lookup:
+            continue
+        page = read_json(json_path, {})
         derivation_path = derivation_dir / f"{slug}.md"
         derivation = derivation_path.read_text(encoding="utf-8") if derivation_path.exists() else ""
         pre_text = wikipedia_text(page)

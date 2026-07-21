@@ -9,7 +9,7 @@ Quantum entanglement is the non-factorization constructor: a composite state can
 
 ## Mechanism
 
-Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

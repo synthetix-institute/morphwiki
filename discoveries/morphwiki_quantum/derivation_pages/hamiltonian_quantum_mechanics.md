@@ -9,7 +9,7 @@ Hamiltonian (quantum mechanics) is the generator observable: it both transports 
 
 ## Mechanism
 
-The Hamiltonian has a dual role. Dynamically, it generates unitary time evolution. Spectrally, its eigenvalues are admissible energy readouts. This dual role is one reason the operator/spectrum branch is central. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+The Hamiltonian has a dual role. Dynamically, it generates unitary time evolution. Spectrally, its eigenvalues are admissible energy readouts. This dual role is one reason the operator/spectrum branch is central. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, preparation, basis, or boundary context; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

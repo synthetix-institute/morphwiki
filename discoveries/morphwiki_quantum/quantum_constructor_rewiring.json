@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "report_type": "quantum_constructor_rewiring",
+  "generated_at": "2026-07-09T20:54:39.756840+00:00",
+  "readiness": "usable",
+  "connection_count": 7,
+  "connections": [
+    {
+      "id": "generator_observable_duality",
+      "title": "One operator, two roles: generator and observable",
+      "topics": [
+        "hamiltonian_quantum_mechanics",
+        "observable",
+        "spectral_theory"
+      ],
+      "move": "dual_role_split",
+      "invariant": "the self-adjoint operator and its domain",
+      "rewiring": "read the same operator through its exponential for transport and through its spectral measure for energy readout",
+      "equations": [
+        "U(t)=e^{-iHt/\\hbar}",
+        "H=\\int_{\\sigma(H)}E\\,dP_H(E)"
+      ],
+      "test": "Check domain and self-adjointness once, then verify separately that the generated dynamics is unitary and that the spectral measure reproduces energy statistics.",
+      "topic_titles": [
+        "Hamiltonian (quantum mechanics)",
+        "Observable",
+        "Spectral theory"
+      ],
+      "branches": [
+        "generators",
+        "observables",
+        "observables"
+      ],
+      "mean_route_overlap": 0.8937070993930641,
+      "minimum_route_overlap": 0.8368039991286415,
+      "cross_branch": true,
+      "status": "candidate_connection"
+    },
+    {
+      "id": "representation_triangle",
+      "title": "Schrodinger, Heisenberg, and path-integral representations",
+      "topics": [
+        "schr_dinger_picture",
+        "heisenberg_picture",
+        "path_integral_formulation"
+      ],
+      "move": "representation_change",
+      "invariant": "transition amplitudes and expectation values",
+      "rewiring": "move time dependence between states and operators, or replace the propagator by an action-weighted integral",
+      "equations": [
+        "A_H(t)=U(t)^\\dagger A_SU(t)",
+        "\\langle q_f|U(t_f-t_i)|q_i\\rangle=\\int\\mathcal Dq\\,e^{iS[q]/\\hbar}"
+      ],
+      "test": "Specify domains, measure, boundary conditions, and regularization; the formulations are connected only where they yield the same amplitudes or correlators.",
+      "topic_titles": [
+        "Schrödinger picture",
+        "Heisenberg picture",
+        "Path integral formulation"
+      ],
+      "branches": [
+        "generators",
+        "generators",
+        "generators"
+      ],
+      "mean_route_overlap": 0.9592958993239233,
+      "minimum_route_overlap": 0.9219681824169507,
+      "cross_branch": false,
+      "status": "candidate_connection"
+    },
+    {
+      "id": "factorization_locality",
+      "title": "Carrier factorization defines locality",
+      "topics": [
+        "quantum_entanglement",
+        "quantum_information",
+        "quantum_field_theory"
+      ],
+      "move": "carrier_refactorization",
+      "invariant": "the global state and algebraic predictions",
+      "rewiring": "change the tensor-product or algebraic subsystem decomposition and track which observables remain local",
+      "equations": [
+        "\\mathcal H=\\mathcal H_A\\otimes\\mathcal H_B",
+        "\\rho_A=\\operatorname{Tr}_B\\rho_{AB}"
+      ],
+      "test": "State the subsystem algebra or tensor factorization explicitly; entanglement and locality claims are not invariant under arbitrary refactorization.",
+      "topic_titles": [
+        "Quantum entanglement",
+        "Quantum information",
+        "Quantum field theory"
+      ],
+      "branches": [
+        "incompatibility",
+        "protocols",
+        "fields"
+      ],
+      "mean_route_overlap": 0.9486823471380017,
+      "minimum_route_overlap": 0.921096619133271,
+      "cross_branch": true,
+      "status": "candidate_connection"
+    },
+    {
+      "id": "constraint_before_readout",
+      "title": "Constraints define physical readout",
+      "topics": [
+        "gauge_theory",
+        "quantum_gravity",
+        "measurement_in_quantum_mechanics"
+      ],
+      "move": "completion_attachment",
+      "invariant": "predictions on the physical state space",
+      "rewiring": "attach gauge or diffeomorphism closure before assigning outcome effects to physical observables",
+      "equations": [
+        "\\widehat{\\mathcal C}_a|\\psi_{\\rm phys}\\rangle=0",
+        "[\\widehat O_{\\rm phys},\\widehat{\\mathcal C}_a]|\\psi_{\\rm phys}\\rangle=0"
+      ],
+      "test": "Verify that candidate effects descend to the constrained or quotient state space; gauge-dependent quantities cannot be promoted directly to physical records.",
+      "topic_titles": [
+        "Gauge theory",
+        "Quantum gravity",
+        "Measurement in quantum mechanics"
+      ],
+      "branches": [
+        "fields",
+        "fields",
+        "measurement"
+      ],
+      "mean_route_overlap": 0.9220085132632917,
+      "minimum_route_overlap": 0.8702904021389394,
+      "cross_branch": true,
+      "status": "candidate_connection"
+    },
+    {
+      "id": "boundary_spectrum_family",
+      "title": "Boundary conditions are spectral control variables",
+      "topics": [
+        "particle_in_a_box",
+        "quantum_tunnelling",
+        "scattering",
+        "spectral_theory"
+      ],
+      "move": "realization_change",
+      "invariant": "the differential operator family and probability conservation",
+      "rewiring": "change domain, boundary conditions, or asymptotic channels and follow the induced spectrum or transmission map",
+      "equations": [
+        "H_D=-\\frac{\\hbar^2}{2m}\\Delta_D+V",
+        "S:\\mathcal H_{\\rm in}\\to\\mathcal H_{\\rm out}"
+      ],
+      "test": "A claimed connection must identify the operator domain and conserved flux; similar-looking wave equations with different domains need not have comparable spectra.",
+      "topic_titles": [
+        "Particle in a box",
+        "Quantum tunnelling",
+        "Scattering",
+        "Spectral theory"
+      ],
+      "branches": [
+        "boundaries",
+        "boundaries",
+        "boundaries",
+        "observables"
+      ],
+      "mean_route_overlap": 0.9162682671523457,
+      "minimum_route_overlap": 0.8054940081145034,
+      "cross_branch": true,
+      "status": "candidate_connection"
+    },
+    {
+      "id": "channel_instrument_correction",
+      "title": "Measurement, channels, and error correction share an instrument calculus",
+      "topics": [
+        "quantum_channel",
+        "measurement_in_quantum_mechanics",
+        "quantum_error_correction"
+      ],
+      "move": "protocol_attachment",
+      "invariant": "complete positivity and total probability",
+      "rewiring": "retain or discard the classical outcome of a quantum instrument, then condition a recovery channel on that outcome",
+      "equations": [
+        "\\mathcal I_i(\\rho)=\\sum_\\alpha K_{i\\alpha}\\rho K_{i\\alpha}^\\dagger",
+        "\\mathcal E=\\sum_i\\mathcal I_i",
+        "\\mathcal R_i\\circ\\mathcal I_i"
+      ],
+      "test": "Check complete positivity, normalization, and recovery fidelity with a reference system; state-update rules alone are insufficient.",
+      "topic_titles": [
+        "Quantum channel",
+        "Measurement in quantum mechanics",
+        "Quantum error correction"
+      ],
+      "branches": [
+        "protocols",
+        "measurement",
+        "protocols"
+      ],
+      "mean_route_overlap": 0.9991204464461602,
+      "minimum_route_overlap": 0.9983638613771395,
+      "cross_branch": true,
+      "status": "candidate_connection"
+    },
+    {
+      "id": "encoding_intertwiner",
+      "title": "Duality and simulation require an intertwining map",
+      "topics": [
+        "quantum_simulator",
+        "ads_cft_correspondence",
+        "quantum_error_correction"
+      ],
+      "move": "carrier_transfer",
+      "invariant": "a selected operator algebra and its correlators",
+      "rewiring": "encode one carrier in another and require the encoding to intertwine the relevant dynamics and readouts",
+      "equations": [
+        "VH_{\\rm target}\\simeq H_{\\rm carrier}V",
+        "VO_{\\rm target}\\simeq O_{\\rm carrier}V"
+      ],
+      "test": "Validate more than state overlap: compare a generating set of observables or correlators and report the approximation regime and error bounds.",
+      "topic_titles": [
+        "Quantum simulator",
+        "AdS/CFT correspondence",
+        "Quantum error correction"
+      ],
+      "branches": [
+        "states",
+        "fields",
+        "protocols"
+      ],
+      "mean_route_overlap": 0.9316870134190679,
+      "minimum_route_overlap": 0.8797342649591487,
+      "cross_branch": true,
+      "status": "candidate_connection"
+    }
+  ],
+  "missing_topics": [],
+  "interpretation": "Connections are type-preserving constructor hypotheses. Route overlap is supporting corpus evidence, not proof of mathematical equivalence."
+}

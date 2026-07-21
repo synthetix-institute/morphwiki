@@ -9,7 +9,7 @@ Fermion is an exchange-symmetry constructor: identical fermions live in antisymm
 
 ## Mechanism
 
-The mechanism is an admissibility rule on many-body state space. Antisymmetry, anticommutation, and zero-or-one mode occupation define the portable role. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, preparation, basis, or boundary context; the strongest carrier signal is local notation, information profile, formula structure.
+The mechanism is an admissibility rule on many-body state space. Antisymmetry, anticommutation, and zero-or-one mode occupation define the portable role. The linked equation set is concentrated in state evolution, normalization or admissibility, preparation, basis, or boundary context; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

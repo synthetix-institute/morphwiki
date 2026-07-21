@@ -5,29 +5,30 @@
 
 ## Role In The Derivation
 
-A quantum simulator can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum simulator is a target--carrier--validation construction: a controllable physical system encodes another model, and selected observables test whether the encoded dynamics is faithful.
 
 ## Mechanism
 
-In quantum-mechanical terms, a quantum simulator is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or unitary operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+The simulator Hamiltonian is not by itself the target theory. The claim also needs an encoding between target and device states, a correspondence between their generators or channels, and validation observables with an error budget over the stated time and parameter range. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
-- **Role:** Quantum simulator contributes a topic-native constructor role to the quantum construction.
+- **Role:** Quantum simulator contributes an unresolved constructor role to the quantum construction.
 - **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** State terms: superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: Hamiltonian and unitary. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+- **Carrier or domain:** A controllable device state space together with an explicit encoding of the target state space.
+- **Operator or map:** Device Hamiltonians, channels, or gate sequences intended to reproduce target dynamics under the encoding.
+- **Admissibility:** Control errors, leakage, finite size, noise, and approximation order define the regime in which the correspondence is claimed.
+- **Readout:** Encoded target observables compared with independently predicted or calibrated device measurements.
+- **Check:** Validation requires observables and error bounds beyond agreement with the programmed control Hamiltonian.
 
 ## Topic Equations
 
+Topic-specific constructor: encoding, dynamical correspondence, and observable validation are separate obligations.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+V:\mathcal H_{\mathrm{target}}\hookrightarrow\mathcal H_{\mathrm{device}}
+\left\|U_{\mathrm{device}}(t)V-VU_{\mathrm{target}}(t)\right\|\le\varepsilon(t)
+\left|\langle O\rangle_{\mathrm{target}}-\langle VO V^{\dagger}\rangle_{\mathrm{device}}\right|\le\delta_O
 ```
 
 ## What Remains Stable

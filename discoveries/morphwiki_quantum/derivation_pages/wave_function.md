@@ -5,11 +5,11 @@
 
 ## Role In The Derivation
 
-Wave function is a representation of the state carrier in a chosen basis, not a separate physical substance.
+Wave function is a basis-dependent representative of a pure-state ray; it is not identical to the abstract state or to physical configuration space.
 
 ## Mechanism
 
-The wave function is the coordinate expression of a quantum state after a representation has been chosen. Its modulus squared gives a probability density in the position representation, while operators act as transformations on that representation. In the source-evidence profile for this page, the strongest construction signal is state evolution, operator-to-spectrum readout, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+For a configuration space Q with measure mu, the position wave function is the generalized-basis representative psi(x)=<x|psi> of a ray [psi] in L2(Q,mu). Vectors that differ by a nonzero global phase represent the same pure state. Its modulus squared is a probability density only relative to the stated position measure; spin and particle statistics enlarge or constrain the carrier. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
@@ -23,12 +23,13 @@ The wave function is the coordinate expression of a quantum state after a repres
 
 ## Topic Equations
 
-Standard constructor skeleton: state representation, normalization, and expectation value.
+Topic-specific constructor: abstract state ray, position representation, measure-dependent Born probability, and internal spin carrier.
 
 ```math
-\psi(x)=\langle x|\psi\rangle
-\int |\psi(x)|^2\,dx=1
-\langle A\rangle_\psi=\langle\psi|A|\psi\rangle
+\mathcal H=L^2(Q,d\mu),\qquad \psi(x)=\langle x|\psi\rangle
+\int_Q |\psi(x)|^2\,d\mu(x)=1,\qquad \ket\psi\sim e^{i\alpha}\ket\psi
+\Pr(X\in\Delta\mid\psi)=\langle\psi|E_X(\Delta)|\psi\rangle=\int_\Delta|\psi(x)|^2\,d\mu(x)
+\mathcal H_{\mathrm{spin}\,s}=L^2(Q,d\mu)\otimes\mathbb C^{2s+1}
 ```
 
 ## What Remains Stable

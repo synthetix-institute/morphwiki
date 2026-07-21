@@ -9,7 +9,7 @@ Quantum channel is the open-system protocol constructor: it maps input states to
 
 ## Mechanism
 
-A channel is the mechanism for noisy transformations, measurements with forgotten outcomes, and subsystem evolution. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+A channel is the mechanism for noisy transformations, measurements with forgotten outcomes, and subsystem evolution. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

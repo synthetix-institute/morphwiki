@@ -5,29 +5,30 @@
 
 ## Role In The Derivation
 
-A quantum gravity can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum gravity asks whether geometry is a background realization, a constrained quantum carrier, or an emergent readout of a deeper quantum state.
 
 ## Mechanism
 
-In quantum-mechanical terms, a quantum gravity is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. In the source-evidence profile for this page, the strongest construction signal is state evolution, normalization or admissibility, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, formula structure.
+The constructor cannot treat quantum gravity as an ordinary wave function on a fixed domain. A candidate theory must specify the state space of geometric and matter degrees of freedom, the constraint or evolution operators, the gauge-invariant or relational observables, and the limit in which classical spacetime is recovered. The linked equation set is concentrated in state evolution, normalization or admissibility, operator-to-spectrum readout; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Quantum gravity contributes a geometry or holographic realization role to the quantum construction.
 - **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** State terms: superposition. Context/domain terms: potential.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: collapse.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+- **Carrier or domain:** A state space for geometric and matter degrees of freedom, or a deeper carrier from which geometry is reconstructed.
+- **Operator or map:** Constraint, evolution, or amplitude operators that do not presuppose an unexamined fixed spacetime background.
+- **Admissibility:** Gauge and diffeomorphism constraints determine the physical state space and which operators are observable.
+- **Readout:** Relational observables, boundary amplitudes, geometric spectra, or semiclassical spacetime data.
+- **Check:** The construction must recover controlled classical geometry and reproduce established low-energy quantum field predictions in its domain of validity.
 
 ## Topic Equations
 
+Schematic constructor shared by constrained approaches: quantum carrier, constraints, physical observables, and semiclassical recovery must all be specified.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\Psi\in\mathcal H_{\mathrm{geom}\otimes\mathrm{matter}},\qquad \widehat{\mathcal C}_a\Psi=0
+[\widehat O_{\mathrm{phys}},\widehat{\mathcal C}_a]\Psi=0
+\langle\Psi|\widehat g_{\mu\nu}|\Psi\rangle\longrightarrow g^{\mathrm{cl}}_{\mu\nu}\quad\text{in a controlled semiclassical regime}
 ```
 
 ## What Remains Stable

@@ -9,7 +9,7 @@ Photon is a field-mode constructor: a one-quantum excitation of the electromagne
 
 ## Mechanism
 
-The native photon mechanism is field quantization. The electromagnetic field is decomposed into modes, creation and annihilation operators act on those modes, and a one-photon state is created from the vacuum. The relevant readouts are occupation number, energy, momentum, polarization, and detector clicks; the constraints are dispersion and gauge-compatible transversality. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+The native photon mechanism is field quantization. The electromagnetic field is decomposed into modes, creation and annihilation operators act on those modes, and a one-photon state is created from the vacuum. The relevant readouts are occupation number, energy, momentum, polarization, and detector clicks; the constraints are dispersion and gauge-compatible transversality. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

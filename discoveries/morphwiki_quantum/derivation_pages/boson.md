@@ -9,7 +9,7 @@ Boson is an exchange-symmetry constructor: identical bosons live in symmetric se
 
 ## Mechanism
 
-The mechanism is symmetric exchange. Commuting creation and annihilation operators allow arbitrary nonnegative occupation of a mode, which supports field modes, coherent states, condensates, and photon-like readouts. In the source-evidence profile for this page, the strongest construction signal is normalization or admissibility, state evolution, operator-to-spectrum readout; the strongest carrier signal is local notation, information profile, spectral profile.
+The mechanism is symmetric exchange. Commuting creation and annihilation operators allow arbitrary nonnegative occupation of a mode, which supports field modes, coherent states, condensates, and photon-like readouts. The linked equation set is concentrated in normalization or admissibility, state evolution, operator-to-spectrum readout; its mathematical presentation emphasizes local notation, information profile, spectral profile.
 
 ## Quantum Mechanism Frame
 

@@ -5,29 +5,30 @@
 
 ## Role In The Derivation
 
-the Measurement problem modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
+Measurement problem is the junction between unitary system--apparatus coupling, probability readout, and conditional state update; these are distinct maps and need not be identified.
 
 ## Mechanism
 
-the Measurement problem acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. In the source-evidence profile for this page, the strongest construction signal is state evolution, preparation, basis, or boundary context, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+A measurement model first couples the system to an apparatus or environment. A POVM or instrument then assigns outcome probabilities, and a conditional map specifies the post-record state. The foundational problem concerns the relation between these operations and a definite record, not the absence of a probability formula. The linked equation set is concentrated in state evolution, preparation, basis, or boundary context, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
 - **Role:** Measurement problem contributes a probability/readout role to the quantum construction.
 - **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** State terms: wave function and superposition. Context/domain terms: measurement apparatus.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: collapse and Born rule.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+- **Carrier or domain:** A joint system--apparatus state, possibly enlarged by environmental degrees of freedom.
+- **Operator or map:** A premeasurement interaction followed by a measurement instrument whose components label possible records.
+- **Admissibility:** The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity.
+- **Readout:** Outcome probabilities and conditional post-record states must be stated separately.
+- **Check:** A proposed resolution must identify where a definite record enters and how its prediction differs from the unconditioned state evolution.
 
 ## Topic Equations
 
+Topic-specific constructor: premeasurement coupling, outcome probability, conditional update, and unconditioned evolution are separated.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\rho_{SA}'=U_{SA}(\rho_S\otimes\rho_A)U_{SA}^{\dagger}
+p(i)=\operatorname{Tr}[\mathcal I_i(\rho_S)]=\operatorname{Tr}(\rho_SE_i)
+\rho_{S|i}=\frac{\mathcal I_i(\rho_S)}{p(i)},\qquad \rho_S'=\sum_i\mathcal I_i(\rho_S)
 ```
 
 ## What Remains Stable

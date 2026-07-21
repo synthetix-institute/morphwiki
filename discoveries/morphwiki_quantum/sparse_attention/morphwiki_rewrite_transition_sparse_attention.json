@@ -3,25 +3,25 @@
   "source": "MorphWiki quantum rewrite transition sparse attention",
   "root": "discoveries/morphwiki_quantum",
   "summary": {
-    "page_count": 147,
+    "page_count": 146,
     "constructed_pages": 145,
-    "evidence_placements": 2,
-    "mean_operation_gain": 21.9066,
-    "mean_object_shift": 3.6921,
+    "evidence_placements": 1,
+    "mean_operation_gain": 21.9802,
+    "mean_object_shift": 3.6936,
     "route_means": {
-      "transport_flow_route": 0.2321,
-      "constraint_closure_route": 0.1646,
-      "spectral_operator_route": 0.3272,
-      "boundary_weak_form_route": 0.0943,
-      "commutator_incompatibility_route": 0.0861,
-      "discrete_protocol_route": 0.0753
+      "transport_flow_route": 0.2318,
+      "constraint_closure_route": 0.1651,
+      "spectral_operator_route": 0.3284,
+      "boundary_weak_form_route": 0.0947,
+      "commutator_incompatibility_route": 0.0865,
+      "discrete_protocol_route": 0.0756
     }
   },
   "rules": [
     {
       "rule": "The rewrite converts a noun-indexed encyclopedia into a derivation graph.",
       "evidence": {
-        "page_count": 147,
+        "page_count": 146,
         "branch_counts": {
           "generators": 22,
           "states": 24,
@@ -31,21 +31,20 @@
           "boundaries": 12,
           "fields": 21,
           "protocols": 18,
-          "unresolved": 1,
           "observables": 10,
           "context": 7
         },
         "constructed_pages": 145,
-        "evidence_placements": 2
+        "evidence_placements": 1
       },
       "new_information": "The new object is not a better summary of each topic; it is an ordering relation: which topic plays context, state, generator, observable, readout, compatibility, boundary, field, protocol, or annotation."
     },
     {
       "rule": "The dominant stable role is operator-to-spectrum readout, not object naming.",
       "evidence": {
-        "spectral_operator_mean": 0.3272,
-        "transport_mean": 0.2321,
-        "closure_mean": 0.1646
+        "spectral_operator_mean": 0.3284,
+        "transport_mean": 0.2318,
+        "closure_mean": 0.1651
       },
       "new_information": "The rewrite makes explicit that many named quantum topics become different ways of asking a legal spectral question of a state."
     },
@@ -128,7 +127,7 @@
           "Quantum network",
           "Quantum teleportation"
         ],
-        "protocol_route_mean": 0.0753
+        "protocol_route_mean": 0.0756
       },
       "new_information": "Quantum computing is reorganized as controlled composition of states, operators, readouts, and error constraints rather than a separate ontology of qubits."
     },
@@ -303,7 +302,7 @@
       "branch_title": "State carrier inside Hilbert space",
       "count": 24,
       "constructed": 24,
-      "mean_operation_gain": 21.1184,
+      "mean_operation_gain": 21.2461,
       "mean_route_profile": {
         "transport_flow_route": 0.243,
         "constraint_closure_route": 0.1744,
@@ -315,91 +314,91 @@
       "top_transition_pages": [
         {
           "title": "Schrödinger's cat",
-          "score": 0.557218,
+          "score": 0.556623,
           "top_post_roles": [
             [
               "measurement",
-              0.2588832420211806
+              0.2588832470167229
             ],
             [
               "context",
-              0.18781726808523802
+              0.1878172708829397
             ],
             [
               "state",
-              0.18781726808523802
+              0.1878172708829397
             ]
           ]
         },
         {
           "title": "Wave–particle duality",
-          "score": 0.516754,
+          "score": 0.515936,
           "top_post_roles": [
             [
               "context",
-              0.18595041758472777
+              0.18595041554162958
             ],
             [
               "observable",
-              0.18595041758472777
+              0.18595041554162958
             ],
             [
               "measurement",
-              0.15702480030680957
+              0.1570247877043919
             ]
           ]
         },
         {
           "title": "Quantum simulator",
-          "score": 0.495582,
+          "score": 0.494871,
           "top_post_roles": [
             [
               "context",
-              0.20168067780029653
+              0.20168066739594664
             ],
             [
               "measurement",
-              0.20168067780029653
+              0.20168066739594664
             ],
             [
               "state",
-              0.1890756225081563
+              0.18907563386752346
             ]
           ]
         },
         {
           "title": "Spin (physics)",
-          "score": 0.475368,
+          "score": 0.474605,
           "top_post_roles": [
             [
               "context",
-              0.20675104676045514
+              0.2067510617959373
             ],
             [
               "measurement",
-              0.1983122289090424
+              0.19831223455101568
             ],
             [
               "state",
-              0.19409282938417985
+              0.19409282092855487
             ]
           ]
         },
         {
           "title": "Wave function",
-          "score": 0.470084,
+          "score": 0.470049,
           "top_post_roles": [
             [
               "state",
-              0.2690058566220034
+              0.2690058476179337
             ],
             [
               "measurement",
-              0.21637426551581687
+              0.21637426665886933
             ],
             [
               "context",
-              0.20467836707636541
+              0.20467836190253408
             ]
           ]
         }
@@ -410,7 +409,7 @@
       "branch_title": "Generator: lawful change before readout",
       "count": 22,
       "constructed": 22,
-      "mean_operation_gain": 22.4482,
+      "mean_operation_gain": 22.588,
       "mean_route_profile": {
         "transport_flow_route": 0.2352,
         "constraint_closure_route": 0.156,
@@ -422,91 +421,91 @@
       "top_transition_pages": [
         {
           "title": "Quantum logic",
-          "score": 0.60207,
+          "score": 0.601514,
           "top_post_roles": [
             [
               "measurement",
-              0.2617801123035004
+              0.2617801101696774
             ],
             [
               "context",
-              0.18848168238480298
+              0.18848166795044
             ],
             [
               "state",
-              0.1623036635230394
+              0.162303666409912
             ]
           ]
         },
         {
           "title": "Quantum biology",
-          "score": 0.558879,
+          "score": 0.558091,
           "top_post_roles": [
             [
               "context",
-              0.1898734139511831
+              0.1898734219400736
             ],
             [
               "observable",
-              0.1856539968921649
+              0.1856539989861313
             ],
             [
               "measurement",
-              0.1729957829471772
+              0.1729957856686071
             ]
           ]
         },
         {
           "title": "Quantum chaos",
-          "score": 0.454989,
+          "score": 0.4542,
           "top_post_roles": [
             [
               "context",
-              0.19827586797621882
+              0.19827585603061834
             ],
             [
               "observable",
-              0.1853448302116528
+              0.1853448235878419
             ],
             [
               "state",
-              0.16379309425921526
+              0.16379310916022596
             ]
           ]
         },
         {
           "title": "Quantum amplifier",
-          "score": 0.454647,
+          "score": 0.45386,
           "top_post_roles": [
             [
               "context",
-              0.19480519676257935
+              0.19480518969539554
             ],
             [
               "observable",
-              0.16883116173564988
+              0.16883117564423453
             ],
             [
               "state",
-              0.1645021653177414
+              0.16450216393440903
             ]
           ]
         },
         {
           "title": "Heisenberg group",
-          "score": 0.448022,
+          "score": 0.447218,
           "top_post_roles": [
             [
               "context",
-              0.19742489400769955
+              0.1974248858148059
             ],
             [
               "measurement",
-              0.17596566474711264
+              0.17596567017996287
             ],
             [
               "observable",
-              0.16738198443515268
+              0.16738196881872938
             ]
           ]
         }
@@ -517,7 +516,7 @@
       "branch_title": "Many-mode extension: fields, particles, and scaling",
       "count": 21,
       "constructed": 21,
-      "mean_operation_gain": 21.4452,
+      "mean_operation_gain": 21.5769,
       "mean_route_profile": {
         "transport_flow_route": 0.2302,
         "constraint_closure_route": 0.1806,
@@ -529,91 +528,91 @@
       "top_transition_pages": [
         {
           "title": "Quantum gravity",
-          "score": 0.50639,
+          "score": 0.505617,
           "top_post_roles": [
             [
               "observable",
-              0.19658120376068366
+              0.19658120879859767
             ],
             [
               "context",
-              0.19230769446153842
+              0.19230769659171604
             ],
             [
               "state",
-              0.15811965740170938
+              0.15811965462897204
             ]
           ]
         },
         {
           "title": "Fermi–Dirac statistics",
-          "score": 0.4955,
+          "score": 0.494707,
           "top_post_roles": [
             [
               "context",
-              0.2024291438810668
+              0.20242915274008755
             ],
             [
               "measurement",
-              0.19028340620852666
+              0.19028340720969045
             ],
             [
               "state",
-              0.18623480871714018
+              0.18623481325286426
             ]
           ]
         },
         {
           "title": "Quantum electrodynamics",
-          "score": 0.470158,
+          "score": 0.469412,
           "top_post_roles": [
             [
               "measurement",
-              0.22077921977983925
+              0.22077922724011909
             ],
             [
               "context",
-              0.19913418955679277
+              0.19913420045951158
             ],
             [
               "observable",
-              0.1774891785718408
+              0.1774891736789041
             ]
           ]
         },
         {
           "title": "Quantum field theory",
-          "score": 0.457392,
+          "score": 0.45692,
           "top_post_roles": [
             [
               "context",
-              0.19796954295405708
+              0.19796953911700896
             ],
             [
               "measurement",
-              0.17258882987977028
+              0.17258883479028056
             ],
             [
               "state",
-              0.16243654465005555
+              0.1624365492788786
             ]
           ]
         },
         {
           "title": "Loop quantum gravity",
-          "score": 0.440904,
+          "score": 0.44009,
           "top_post_roles": [
             [
               "observable",
-              0.19747899786738218
+              0.1974789909729539
             ],
             [
               "context",
-              0.19327730277240313
+              0.1932773154460843
             ],
             [
               "state",
-              0.163865549040322
+              0.1638655496487536
             ]
           ]
         }
@@ -624,7 +623,7 @@
       "branch_title": "Protocol layer: engineered transformations",
       "count": 18,
       "constructed": 18,
-      "mean_operation_gain": 20.7947,
+      "mean_operation_gain": 20.9139,
       "mean_route_profile": {
         "transport_flow_route": 0.2167,
         "constraint_closure_route": 0.1465,
@@ -636,91 +635,91 @@
       "top_transition_pages": [
         {
           "title": "Quantum computing",
-          "score": 0.471254,
+          "score": 0.470529,
           "top_post_roles": [
             [
               "context",
-              0.2016806848642048
+              0.20168066484570324
             ],
             [
               "measurement",
-              0.19747899120789492
+              0.19747899352976483
             ],
             [
               "state",
-              0.1764705969431539
+              0.17647058173999033
             ]
           ]
         },
         {
           "title": "Quantum finite automaton",
-          "score": 0.450946,
+          "score": 0.450362,
           "top_post_roles": [
             [
               "context",
-              0.19736841847414585
+              0.19736842310433975
             ],
             [
               "measurement",
-              0.1754385920218528
+              0.17543858965220085
             ],
             [
               "observable",
-              0.16228070398907368
+              0.16228070517389956
             ]
           ]
         },
         {
           "title": "Quantum neural network",
-          "score": 0.436683,
+          "score": 0.436111,
           "top_post_roles": [
             [
               "measurement",
-              0.2642486959031384
+              0.2642487053555263
             ],
             [
               "context",
-              0.18652849800660418
+              0.18652850126650383
             ],
             [
               "state",
-              0.16062175897028108
+              0.16062177293285743
             ]
           ]
         },
         {
           "title": "Quantum programming",
-          "score": 0.427739,
+          "score": 0.427001,
           "top_post_roles": [
             [
               "context",
-              0.20425531246384818
+              0.2042553231543684
             ],
             [
               "measurement",
-              0.19999999621446826
+              0.19999999999999998
             ],
             [
               "state",
-              0.18297871228928975
+              0.18297872620805788
             ]
           ]
         },
         {
           "title": "Quantum image processing",
-          "score": 0.394428,
+          "score": 0.393669,
           "top_post_roles": [
             [
               "context",
-              0.20168066862100123
+              0.20168067384647978
             ],
             [
               "measurement",
-              0.19747898763152308
+              0.1974789892302804
             ],
             [
               "state",
-              0.1806722636736105
+              0.18067226953859192
             ]
           ]
         }
@@ -731,7 +730,7 @@
       "branch_title": "Annotations: history, interpretations, and popular frames",
       "count": 16,
       "constructed": 16,
-      "mean_operation_gain": 23.1262,
+      "mean_operation_gain": 23.2621,
       "mean_route_profile": {
         "transport_flow_route": 0.2447,
         "constraint_closure_route": 0.1868,
@@ -743,91 +742,91 @@
       "top_transition_pages": [
         {
           "title": "Introduction to quantum mechanics",
-          "score": 0.54122,
+          "score": 0.540461,
           "top_post_roles": [
             [
               "measurement",
-              0.21120689493920933
+              0.21120690246135554
             ],
             [
               "context",
-              0.20689655376099889
+              0.2068965463210464
             ],
             [
               "state",
-              0.18965516935850188
+              0.18965518051843047
             ]
           ]
         },
         {
           "title": "Quantum Theory: Concepts and Methods",
-          "score": 0.47547,
+          "score": 0.47483,
           "top_post_roles": [
             [
               "measurement",
-              0.27979274144594485
+              0.27979274425836936
             ],
             [
               "context",
-              0.18134715057027032
+              0.1813471424242262
             ],
             [
               "state",
-              0.16062175564144
+              0.1606217672248919
             ]
           ]
         },
         {
           "title": "Erwin Schrödinger",
-          "score": 0.421095,
+          "score": 0.420444,
           "top_post_roles": [
             [
               "measurement",
-              0.25870645541338116
+              0.25870647077537695
             ],
             [
               "context",
-              0.17412935636711954
+              0.17412935861201473
             ],
             [
               "state",
-              0.16417909707165682
+              0.16417910900660887
             ]
           ]
         },
         {
           "title": "Quantum mind",
-          "score": 0.417782,
+          "score": 0.417167,
           "top_post_roles": [
             [
               "measurement",
-              0.2610837423809362
+              0.2610837481079376
             ],
             [
               "context",
-              0.17733989663685115
+              0.17733989603241998
             ],
             [
               "state",
-              0.16256157964289358
+              0.1625615713630517
             ]
           ]
         },
         {
           "title": "Old quantum theory",
-          "score": 0.414383,
+          "score": 0.413606,
           "top_post_roles": [
             [
               "context",
-              0.20171674123450417
+              0.20171674776444604
             ],
             [
               "measurement",
-              0.19742488814824366
+              0.19742489790697942
             ],
             [
               "state",
-              0.18884120163237483
+              0.1888411981920462
             ]
           ]
         }
@@ -838,7 +837,7 @@
       "branch_title": "Boundary realization: how effects appear",
       "count": 12,
       "constructed": 12,
-      "mean_operation_gain": 22.3313,
+      "mean_operation_gain": 22.4602,
       "mean_route_profile": {
         "transport_flow_route": 0.2401,
         "constraint_closure_route": 0.1535,
@@ -850,91 +849,91 @@
       "top_transition_pages": [
         {
           "title": "Scattering",
-          "score": 0.507467,
+          "score": 0.506669,
           "top_post_roles": [
             [
               "context",
-              0.18828452371218984
+              0.18828452353152078
             ],
             [
               "observable",
-              0.1673640210775021
+              0.1673640127272282
             ],
             [
               "measurement",
-              0.15899580520186982
+              0.15899582314693364
             ]
           ]
         },
         {
           "title": "Potential well",
-          "score": 0.420237,
+          "score": 0.419443,
           "top_post_roles": [
             [
               "observable",
-              0.22362868710633976
+              0.22362868582456516
             ],
             [
               "measurement",
-              0.18143459381488003
+              0.1814346013885951
             ],
             [
               "context",
-              0.17721519916252748
+              0.17721518017369017
             ]
           ]
         },
         {
           "title": "Quantum tunnelling",
-          "score": 0.414471,
+          "score": 0.413951,
           "top_post_roles": [
             [
               "context",
-              0.20312500451660145
+              0.20312499820507812
             ],
             [
               "observable",
-              0.17708332590603318
+              0.17708333373220483
             ],
             [
               "boundary",
-              0.17708332590603318
+              0.17708333373220483
             ]
           ]
         },
         {
           "title": "Macroscopic quantum phenomena",
-          "score": 0.410524,
+          "score": 0.409734,
           "top_post_roles": [
             [
               "context",
-              0.2041666716622221
+              0.2041666630176389
             ],
             [
               "observable",
-              0.17499999625333343
+              0.17499999953416667
             ],
             [
               "measurement",
-              0.1583333245911113
+              0.1583333400102778
             ]
           ]
         },
         {
           "title": "Quantum metamaterial",
-          "score": 0.409608,
+          "score": 0.408822,
           "top_post_roles": [
             [
               "context",
-              0.19834710697493343
+              0.1983471106623864
             ],
             [
               "measurement",
-              0.19834710697493343
+              0.1983471106623864
             ],
             [
               "observable",
-              0.17768594416160097
+              0.17768594749593614
             ]
           ]
         }
@@ -945,7 +944,7 @@
       "branch_title": "Readout rule: how answers become probabilities",
       "count": 10,
       "constructed": 10,
-      "mean_operation_gain": 22.7315,
+      "mean_operation_gain": 22.884,
       "mean_route_profile": {
         "transport_flow_route": 0.2195,
         "constraint_closure_route": 0.1602,
@@ -957,91 +956,91 @@
       "top_transition_pages": [
         {
           "title": "Measurement problem",
-          "score": 0.547564,
+          "score": 0.546962,
           "top_post_roles": [
             [
               "measurement",
-              0.307317070611969
+              0.3073170746609875
             ],
             [
               "context",
-              0.1804878056721475
+              0.18048780689427724
             ],
             [
               "state",
-              0.16097560410917303
+              0.16097561738270091
             ]
           ]
         },
         {
           "title": "Delayed-choice quantum eraser",
-          "score": 0.54272,
+          "score": 0.542125,
           "top_post_roles": [
             [
               "measurement",
-              0.26063829650995923
+              0.2606382928746038
             ],
             [
               "context",
-              0.1755319047281578
+              0.1755319107288365
             ],
             [
               "state",
-              0.1702127638614758
+              0.1702127642915346
             ]
           ]
         },
         {
           "title": "Quantum metrology",
-          "score": 0.415091,
+          "score": 0.414297,
           "top_post_roles": [
             [
               "context",
-              0.1949152444412526
+              0.19491525486584316
             ],
             [
               "observable",
-              0.1694915225797185
+              0.16949152919505892
             ],
             [
               "state",
-              0.16101695484056305
+              0.1610169416098822
             ]
           ]
         },
         {
           "title": "Measurement in quantum mechanics",
-          "score": 0.402144,
+          "score": 0.401614,
           "top_post_roles": [
             [
               "measurement",
-              0.28205127071610825
+              0.2820512884170939
             ],
             [
               "context",
-              0.17435897189480615
+              0.17435897690529908
             ],
             [
               "state",
-              0.17435897189480615
+              0.17435897690529908
             ]
           ]
         },
         {
           "title": "Wave function collapse",
-          "score": 0.392729,
+          "score": 0.392493,
           "top_post_roles": [
             [
               "measurement",
-              0.29611650248496557
+              0.29611649971015175
             ],
             [
               "state",
-              0.19902912788095015
+              0.1990291271726836
             ],
             [
               "context",
-              0.16019417080827594
+              0.16019417815769638
             ]
           ]
         }
@@ -1052,7 +1051,7 @@
       "branch_title": "Spectral question: what can be asked",
       "count": 10,
       "constructed": 9,
-      "mean_operation_gain": 21.342,
+      "mean_operation_gain": 21.4894,
       "mean_route_profile": {
         "transport_flow_route": 0.2199,
         "constraint_closure_route": 0.1468,
@@ -1068,87 +1067,87 @@
           "top_post_roles": [
             [
               "observable",
-              0.27083333578819446
+              0.27083333536168974
             ],
             [
               "state",
-              0.19444444117129633
+              0.1944444503942901
             ],
             [
               "measurement",
-              0.13194444362615743
+              0.13194443944116513
             ]
           ]
         },
         {
           "title": "Spectral theory",
-          "score": 0.404825,
+          "score": 0.404144,
           "top_post_roles": [
             [
               "observable",
-              0.21459228369769198
+              0.2145922722754149
             ],
             [
               "context",
-              0.19742488448960194
+              0.19742489422557055
             ],
             [
               "state",
-              0.15879828318127062
+              0.15879828894818468
             ]
           ]
         },
         {
           "title": "Operator theory",
-          "score": 0.399826,
+          "score": 0.399284,
           "top_post_roles": [
             [
               "observable",
-              0.2198275883900119
+              0.21982758628730675
             ],
             [
               "context",
-              0.19827586514149823
+              0.19827586287306773
             ],
             [
               "state",
-              0.15948275579072527
+              0.15948274953433422
             ]
           ]
         },
         {
           "title": "Pauli matrices",
-          "score": 0.396855,
+          "score": 0.396088,
           "top_post_roles": [
             [
               "context",
-              0.2094017062843158
+              0.2094017143792095
             ],
             [
               "measurement",
-              0.1965811924793629
+              0.19658118956373744
             ],
             [
               "observable",
-              0.18803418327606097
+              0.18803419211410616
             ]
           ]
         },
         {
           "title": "Observable",
-          "score": 0.391687,
+          "score": 0.39136,
           "top_post_roles": [
             [
               "observable",
-              0.24193549422545993
+              0.24193548145126603
             ],
             [
               "context",
-              0.19354838405133534
+              0.19354838891155046
             ],
             [
               "state",
-              0.17741935362053413
+              0.17741935181408253
             ]
           ]
         }
@@ -1159,7 +1158,7 @@
       "branch_title": "Hilbert-space context: admissible carrier and basis",
       "count": 7,
       "constructed": 7,
-      "mean_operation_gain": 22.5403,
+      "mean_operation_gain": 22.6736,
       "mean_route_profile": {
         "transport_flow_route": 0.2162,
         "constraint_closure_route": 0.159,
@@ -1171,91 +1170,91 @@
       "top_transition_pages": [
         {
           "title": "Transformation theory (quantum mechanics)",
-          "score": 0.451259,
+          "score": 0.450456,
           "top_post_roles": [
             [
               "context",
-              0.20920501957528762
+              0.20920501257723081
             ],
             [
               "observable",
-              0.17991630889165122
+              0.1799163190935733
             ],
             [
               "measurement",
-              0.16736402322508354
+              0.16736401382412774
             ]
           ]
         },
         {
           "title": "Relativistic quantum mechanics",
-          "score": 0.45003,
+          "score": 0.449418,
           "top_post_roles": [
             [
               "context",
-              0.23766815955832615
+              0.23766816019063322
             ],
             [
               "measurement",
-              0.2017937218837298
+              0.20179371530696366
             ],
             [
               "state",
-              0.1704035789543328
+              0.17040358842164532
             ]
           ]
         },
         {
           "title": "Mathematical formulation of quantum mechanics",
-          "score": 0.441465,
+          "score": 0.44086,
           "top_post_roles": [
             [
               "measurement",
-              0.2421052683268698
+              0.24210525802216057
             ],
             [
               "context",
-              0.21578946334626045
+              0.21578948395567885
             ],
             [
               "state",
-              0.17368421466149583
+              0.17368420641772844
             ]
           ]
         },
         {
           "title": "Hilbert space",
-          "score": 0.414174,
+          "score": 0.413925,
           "top_post_roles": [
             [
               "state",
-              0.2641509350734546
+              0.26415093513611015
             ],
             [
               "context",
-              0.22012577922787885
+              0.22012578591321544
             ],
             [
               "observable",
-              0.20125785242973013
+              0.20125785913215458
             ]
           ]
         },
         {
           "title": "Quantum cellular automaton",
-          "score": 0.410244,
+          "score": 0.409464,
           "top_post_roles": [
             [
               "context",
-              0.23236514288321491
+              0.23236514600575062
             ],
             [
               "measurement",
-              0.1908713714051066
+              0.19087136859482445
             ],
             [
               "state",
-              0.18257260957421548
+              0.182572628103511
             ]
           ]
         }
@@ -1266,7 +1265,7 @@
       "branch_title": "Compatibility limit: what cannot be jointly sharp",
       "count": 6,
       "constructed": 6,
-      "mean_operation_gain": 21.2721,
+      "mean_operation_gain": 21.4226,
       "mean_route_profile": {
         "transport_flow_route": 0.2323,
         "constraint_closure_route": 0.1734,
@@ -1278,126 +1277,91 @@
       "top_transition_pages": [
         {
           "title": "Einstein–Podolsky–Rosen paradox",
-          "score": 0.533816,
+          "score": 0.533228,
           "top_post_roles": [
             [
               "measurement",
-              0.26424870904528985
+              0.2642487155997747
             ],
             [
               "context",
-              0.18134715596595888
+              0.18134715086665418
             ],
             [
               "state",
-              0.17098444953829622
+              0.17098445038900362
             ]
           ]
         },
         {
           "title": "Quantum nonlocality",
-          "score": 0.524501,
+          "score": 0.523908,
           "top_post_roles": [
             [
               "measurement",
-              0.2666666755500856
+              0.26666665784068405
             ],
             [
               "context",
-              0.18461538930114407
+              0.184615374140592
             ],
             [
               "state",
-              0.15897435877911903
+              0.158974356258672
             ]
           ]
         },
         {
           "title": "Bell's theorem",
-          "score": 0.45445,
+          "score": 0.454026,
           "top_post_roles": [
             [
               "measurement",
-              0.2034883681384532
+              0.20348837553055707
             ],
             [
               "context",
-              0.19767441415575984
+              0.19767440927420224
             ],
             [
               "state",
-              0.18023255220767984
+              0.18023255273769603
             ]
           ]
         },
         {
           "title": "Quantum entanglement",
-          "score": 0.451129,
+          "score": 0.451191,
           "top_post_roles": [
             [
               "measurement",
-              0.22580645438002073
+              0.2258064550468262
             ],
             [
               "state",
-              0.1870967599428932
+              0.18709677460561916
             ],
             [
               "context",
-              0.18064515492595232
+              0.18064514700520323
             ]
           ]
         },
         {
           "title": "Uncertainty principle",
-          "score": 0.370715,
+          "score": 0.370344,
           "top_post_roles": [
             [
               "observable",
-              0.1893491118105108
+              0.18934911474906344
             ],
             [
               "measurement",
-              0.1893491118105108
+              0.18934911474906344
             ],
             [
               "context",
-              0.1834319540168762
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "branch": "unresolved",
-      "branch_title": "Unresolved",
-      "count": 1,
-      "constructed": 0,
-      "mean_operation_gain": 30.7692,
-      "mean_route_profile": {
-        "transport_flow_route": 0.2833,
-        "constraint_closure_route": 0.0878,
-        "spectral_operator_route": 0.1604,
-        "boundary_weak_form_route": 0.0333,
-        "commutator_incompatibility_route": 0.0268,
-        "discrete_protocol_route": 0.0305
-      },
-      "top_transition_pages": [
-        {
-          "title": "Quantum cosmology",
-          "score": 0.46302,
-          "top_post_roles": [
-            [
-              "state",
-              0.25
-            ],
-            [
-              "observable",
-              0.2321428651020411
-            ],
-            [
-              "measurement",
-              0.16071428836734702
+              0.18343195168460488
             ]
           ]
         }
@@ -1440,16 +1404,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 9.879254,
-        "state": 8.507135,
-        "generator": 3.841932,
-        "observable": 8.507135,
-        "measurement": 13.721186,
-        "incompatibility": 2.469813,
-        "boundary": 1.646542,
-        "fields": 1.920966,
-        "protocol": 0.823271,
-        "annotation": 1.097695
+        "context": 9.944751,
+        "state": 8.563536,
+        "generator": 3.867403,
+        "observable": 8.563536,
+        "measurement": 13.812155,
+        "incompatibility": 2.486188,
+        "boundary": 1.657459,
+        "fields": 1.933702,
+        "protocol": 0.828729,
+        "annotation": 1.104972
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -1464,16 +1428,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18848168238480298,
-        "state": 0.1623036635230394,
-        "generator": 0.0732984299186974,
-        "observable": 0.1623036635230394,
-        "measurement": 0.2617801123035004,
-        "incompatibility": 0.04712041105693379,
-        "boundary": 0.0314136073712892,
-        "fields": 0.0366492149593487,
-        "protocol": 0.0157068036856446,
-        "annotation": 0.020942411273704102
+        "context": 0.18848166795044,
+        "state": 0.162303666409912,
+        "generator": 0.07329842326635784,
+        "observable": 0.162303666409912,
+        "measurement": 0.2617801101696774,
+        "incompatibility": 0.047120421725829885,
+        "boundary": 0.03141362080151311,
+        "fields": 0.036649221109618706,
+        "protocol": 0.015706800924316776,
+        "annotation": 0.02094240123242237
       },
       "top_pre_roles": [
         [
@@ -1492,23 +1456,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.2617801123035004
+          0.2617801101696774
         ],
         [
           "context",
-          0.18848168238480298
+          0.18848166795044
         ],
         [
           "state",
-          0.1623036635230394
+          0.162303666409912
         ]
       ],
       "object_density_pre": 2.0,
-      "object_density_post": 5.2141,
+      "object_density_post": 5.2486,
       "operation_density_pre": 0.0,
-      "operation_density_post": 26.0703,
-      "operation_gain": 26.0703,
-      "object_shift": 3.2141,
+      "operation_density_post": 26.2431,
+      "operation_gain": 26.2431,
+      "object_shift": 3.2486,
       "role_focus_gain": 0.2618,
       "role_entropy_drop": -1.9672,
       "route_strength": 0.3977,
@@ -1530,8 +1494,8 @@
         "transport_flow_route": 0.2501
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.60207,
-      "transition_attention": 0.00825377
+      "transition_attention_score": 0.601514,
+      "transition_attention": 0.00831371
     },
     {
       "slug": "quantum_biology",
@@ -1568,15 +1532,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.199456,
-        "state": 8.839529,
-        "generator": 7.026292,
-        "observable": 9.972801,
-        "measurement": 9.292838,
-        "incompatibility": 2.94651,
-        "boundary": 3.173164,
-        "fields": 1.586582,
-        "protocol": 0.679964,
+        "context": 10.255242,
+        "state": 8.887876,
+        "generator": 7.064722,
+        "observable": 10.027347,
+        "measurement": 9.343665,
+        "incompatibility": 2.962625,
+        "boundary": 3.19052,
+        "fields": 1.59526,
+        "protocol": 0.683683,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -1592,15 +1556,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.1898734139511831,
-        "state": 0.16455696744517428,
-        "generator": 0.13080168682112908,
-        "observable": 0.1856539968921649,
-        "measurement": 0.1729957829471772,
-        "incompatibility": 0.05485232868706924,
-        "boundary": 0.059071727130053986,
-        "fields": 0.029535863565026993,
-        "protocol": 0.012658232561021124,
+        "context": 0.1898734219400736,
+        "state": 0.16455695827549008,
+        "generator": 0.1308016857325571,
+        "observable": 0.1856539989861313,
+        "measurement": 0.1729957856686071,
+        "incompatibility": 0.054852313253574175,
+        "boundary": 0.05907173620751646,
+        "fields": 0.02953586810375823,
+        "protocol": 0.012658231832291752,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -1620,23 +1584,23 @@
       "top_post_roles": [
         [
           "context",
-          0.1898734139511831
+          0.1898734219400736
         ],
         [
           "observable",
-          0.1856539968921649
+          0.1856539989861313
         ],
         [
           "measurement",
-          0.1729957829471772
+          0.1729957856686071
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 6.573,
+      "object_density_post": 6.6089,
       "operation_density_pre": 0.0,
-      "operation_density_post": 23.1188,
-      "operation_gain": 23.1188,
-      "object_shift": 6.573,
+      "operation_density_post": 23.2452,
+      "operation_gain": 23.2452,
+      "object_shift": 6.6089,
       "role_focus_gain": 0.1899,
       "role_entropy_drop": -1.9803,
       "route_strength": 0.2761,
@@ -1659,8 +1623,8 @@
         "transport_flow_route": 0.2761
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.558879,
-      "transition_attention": 0.00790487
+      "transition_attention_score": 0.558091,
+      "transition_attention": 0.00796043
     },
     {
       "slug": "schr_dinger_s_cat",
@@ -1697,16 +1661,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 9.946237,
-        "state": 9.946237,
-        "generator": 3.225806,
-        "observable": 8.064516,
-        "measurement": 13.709677,
-        "incompatibility": 3.225806,
-        "boundary": 1.075269,
-        "fields": 1.88172,
-        "protocol": 0.806452,
-        "annotation": 1.075269
+        "context": 10.010823,
+        "state": 10.010823,
+        "generator": 3.246753,
+        "observable": 8.116883,
+        "measurement": 13.798701,
+        "incompatibility": 3.246753,
+        "boundary": 1.082251,
+        "fields": 1.893939,
+        "protocol": 0.811688,
+        "annotation": 1.082251
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -1721,16 +1685,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18781726808523802,
-        "state": 0.18781726808523802,
-        "generator": 0.06091369734030763,
-        "observable": 0.1522842622340179,
-        "measurement": 0.2588832420211806,
-        "incompatibility": 0.06091369734030763,
-        "boundary": 0.020304572074518818,
-        "fields": 0.03553298696797132,
-        "protocol": 0.015228433776701316,
-        "annotation": 0.020304572074518818
+        "context": 0.1878172708829397,
+        "state": 0.1878172708829397,
+        "generator": 0.06091370186956628,
+        "observable": 0.1522842640546265,
+        "measurement": 0.2588832470167229,
+        "incompatibility": 0.06091370186956628,
+        "boundary": 0.020304567289855427,
+        "fields": 0.0355329880668916,
+        "protocol": 0.01522842077703617,
+        "annotation": 0.020304567289855427
       },
       "top_pre_roles": [
         [
@@ -1749,23 +1713,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.2588832420211806
+          0.2588832470167229
         ],
         [
           "context",
-          0.18781726808523802
+          0.1878172708829397
         ],
         [
           "state",
-          0.18781726808523802
+          0.1878172708829397
         ]
       ],
       "object_density_pre": 5.0,
-      "object_density_post": 6.9892,
+      "object_density_post": 7.0346,
       "operation_density_pre": 0.0,
-      "operation_density_post": 26.0753,
-      "operation_gain": 26.0753,
-      "object_shift": 1.9892,
+      "operation_density_post": 26.2446,
+      "operation_gain": 26.2446,
+      "object_shift": 2.0346,
       "role_focus_gain": -0.2411,
       "role_entropy_drop": -1.2529,
       "route_strength": 0.2689,
@@ -1788,8 +1752,8 @@
         "transport_flow_route": 0.2689
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.557218,
-      "transition_attention": 0.00789176
+      "transition_attention_score": 0.556623,
+      "transition_attention": 0.00794875
     },
     {
       "slug": "measurement_problem",
@@ -1826,16 +1790,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 9.978425,
-        "state": 8.899676,
-        "generator": 3.505933,
-        "observable": 7.551241,
-        "measurement": 16.990291,
-        "incompatibility": 3.236246,
-        "boundary": 1.348436,
-        "fields": 1.88781,
-        "protocol": 0.809061,
-        "annotation": 1.078749
+        "context": 10.043431,
+        "state": 8.957655,
+        "generator": 3.528773,
+        "observable": 7.600434,
+        "measurement": 17.100977,
+        "incompatibility": 3.257329,
+        "boundary": 1.35722,
+        "fields": 1.900109,
+        "protocol": 0.814332,
+        "annotation": 1.085776
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -1850,16 +1814,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.1804878056721475,
-        "state": 0.16097560410917303,
-        "generator": 0.06341463246991075,
-        "observable": 0.13658537476521124,
-        "measurement": 0.307317070611969,
-        "incompatibility": 0.05853658660111838,
-        "boundary": 0.024390247431766827,
-        "fields": 0.03414633916935156,
-        "protocol": 0.014634137606377093,
-        "annotation": 0.019512201562974462
+        "context": 0.18048780689427724,
+        "state": 0.16097561738270091,
+        "generator": 0.06341463388335514,
+        "observable": 0.13658536252249845,
+        "measurement": 0.3073170746609875,
+        "incompatibility": 0.05853658650546105,
+        "boundary": 0.024390236889470437,
+        "fields": 0.03414634961599061,
+        "protocol": 0.01463414213368226,
+        "annotation": 0.01951218951157635
       },
       "top_pre_roles": [
         [
@@ -1878,23 +1842,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.307317070611969
+          0.3073170746609875
         ],
         [
           "context",
-          0.1804878056721475
+          0.18048780689427724
         ],
         [
           "state",
-          0.16097560410917303
+          0.16097561738270091
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 5.3937,
+      "object_density_post": 5.4289,
       "operation_density_pre": 0.0,
-      "operation_density_post": 26.699,
-      "operation_gain": 26.699,
-      "object_shift": 5.3937,
+      "operation_density_post": 26.873,
+      "operation_gain": 26.873,
+      "object_shift": 5.4289,
       "role_focus_gain": -0.6927,
       "role_entropy_drop": -1.9231,
       "route_strength": 0.2689,
@@ -1916,8 +1880,8 @@
         "transport_flow_route": 0.2689
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.547564,
-      "transition_attention": 0.00781593
+      "transition_attention_score": 0.546962,
+      "transition_attention": 0.00787233
     },
     {
       "slug": "delayed_choice_quantum_eraser",
@@ -1954,16 +1918,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 8.909287,
-        "state": 8.639309,
-        "generator": 4.319654,
-        "observable": 7.829374,
-        "measurement": 13.228942,
-        "incompatibility": 2.429806,
-        "boundary": 1.079914,
-        "fields": 2.429806,
-        "protocol": 0.809935,
-        "annotation": 1.079914
+        "context": 8.967391,
+        "state": 8.695652,
+        "generator": 4.347826,
+        "observable": 7.880435,
+        "measurement": 13.315217,
+        "incompatibility": 2.445652,
+        "boundary": 1.086957,
+        "fields": 2.445652,
+        "protocol": 0.815217,
+        "annotation": 1.086957
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -1978,16 +1942,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.1755319047281578,
-        "state": 0.1702127638614758,
-        "generator": 0.08510637207967435,
-        "observable": 0.15425532155930274,
-        "measurement": 0.26063829650995923,
-        "incompatibility": 0.047872346608646255,
-        "boundary": 0.021276602870982132,
-        "fields": 0.047872346608646255,
-        "protocol": 0.015957442302173056,
-        "annotation": 0.021276602870982132
+        "context": 0.1755319107288365,
+        "state": 0.1702127642915346,
+        "generator": 0.0851063821457673,
+        "observable": 0.15425532497962882,
+        "measurement": 0.2606382928746038,
+        "incompatibility": 0.04787233751018557,
+        "boundary": 0.021276605323675965,
+        "fields": 0.04787233751018557,
+        "protocol": 0.01595743931190576,
+        "annotation": 0.021276605323675965
       },
       "top_pre_roles": [
         [
@@ -2006,23 +1970,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.26063829650995923
+          0.2606382928746038
         ],
         [
           "context",
-          0.1755319047281578
+          0.1755319107288365
         ],
         [
           "state",
-          0.1702127638614758
+          0.1702127642915346
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 5.6695,
+      "object_density_post": 5.7065,
       "operation_density_pre": 0.0,
-      "operation_density_post": 26.4579,
-      "operation_gain": 26.4579,
-      "object_shift": 5.6695,
+      "operation_density_post": 26.6304,
+      "operation_gain": 26.6304,
+      "object_shift": 5.7065,
       "role_focus_gain": -0.7394,
       "role_entropy_drop": -1.9761,
       "route_strength": 0.2934,
@@ -2044,8 +2008,8 @@
         "transport_flow_route": 0.2313
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.54272,
-      "transition_attention": 0.00777817
+      "transition_attention_score": 0.542125,
+      "transition_attention": 0.00783435
     },
     {
       "slug": "introduction_to_quantum_mechanics",
@@ -2082,16 +2046,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.507881,
-        "state": 9.632224,
-        "generator": 4.597198,
-        "observable": 9.194396,
-        "measurement": 10.726795,
-        "incompatibility": 2.845884,
-        "boundary": 0.875657,
-        "fields": 1.532399,
-        "protocol": 0.656743,
-        "annotation": 0.218914
+        "context": 10.56338,
+        "state": 9.683099,
+        "generator": 4.621479,
+        "observable": 9.242958,
+        "measurement": 10.783451,
+        "incompatibility": 2.860915,
+        "boundary": 0.880282,
+        "fields": 1.540493,
+        "protocol": 0.660211,
+        "annotation": 0.22007
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -2106,16 +2070,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.20689655376099889,
-        "state": 0.18965516935850188,
-        "generator": 0.09051724350104046,
-        "observable": 0.1810344870020809,
-        "measurement": 0.21120689493920933,
-        "incompatibility": 0.05603447469604638,
-        "boundary": 0.01724138440249704,
-        "fields": 0.030172407937128425,
-        "protocol": 0.01293104322428658,
-        "annotation": 0.004310341178210461
+        "context": 0.2068965463210464,
+        "state": 0.18965518051843047,
+        "generator": 0.09051724391200952,
+        "observable": 0.18103448782401904,
+        "measurement": 0.21120690246135554,
+        "incompatibility": 0.05603447313436385,
+        "boundary": 0.017241385388822833,
+        "fields": 0.030172414637336505,
+        "protocol": 0.012931029248513672,
+        "annotation": 0.004310336554102255
       },
       "top_pre_roles": [
         [
@@ -2134,23 +2098,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.21120689493920933
+          0.21120690246135554
         ],
         [
           "context",
-          0.20689655376099889
+          0.2068965463210464
         ],
         [
           "state",
-          0.18965516935850188
+          0.18965518051843047
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 5.2539,
+      "object_density_post": 5.2817,
       "operation_density_pre": 0.0,
-      "operation_density_post": 21.0158,
-      "operation_gain": 21.0158,
-      "object_shift": 5.2539,
+      "operation_density_post": 21.1268,
+      "operation_gain": 21.1268,
+      "object_shift": 5.2817,
       "role_focus_gain": 0.2112,
       "role_entropy_drop": -1.9134,
       "route_strength": 0.2882,
@@ -2173,8 +2137,8 @@
         "transport_flow_route": 0.2575
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.54122,
-      "transition_attention": 0.00776651
+      "transition_attention_score": 0.540461,
+      "transition_attention": 0.00782132
     },
     {
       "slug": "einstein_podolsky_rosen_paradox",
@@ -2211,16 +2175,16 @@
         "annotation": 1.0
       },
       "post_role_scores": {
-        "context": 9.220232,
-        "state": 8.693361,
-        "generator": 4.214963,
-        "observable": 7.11275,
-        "measurement": 13.435195,
-        "incompatibility": 2.897787,
-        "boundary": 1.580611,
-        "fields": 1.844046,
-        "protocol": 0.790306,
-        "annotation": 1.053741
+        "context": 9.278897,
+        "state": 8.748674,
+        "generator": 4.241782,
+        "observable": 7.158006,
+        "measurement": 13.520679,
+        "incompatibility": 2.916225,
+        "boundary": 1.590668,
+        "fields": 1.855779,
+        "protocol": 0.795334,
+        "annotation": 1.060445
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -2235,16 +2199,16 @@
         "annotation": 1.0
       },
       "post_role_distribution": {
-        "context": 0.18134715596595888,
-        "state": 0.17098444953829622,
-        "generator": 0.08290155307933098,
-        "observable": 0.1398963695920964,
-        "measurement": 0.26424870904528985,
-        "incompatibility": 0.05699481651276542,
-        "boundary": 0.03108807994619986,
-        "fields": 0.03626942332583417,
-        "protocol": 0.015544049807296942,
-        "annotation": 0.02072539318693125
+        "context": 0.18134715086665418,
+        "state": 0.17098445038900362,
+        "generator": 0.08290156473312053,
+        "observable": 0.13989636850009388,
+        "measurement": 0.2642487155997747,
+        "incompatibility": 0.056994823311015144,
+        "boundary": 0.03108808188890975,
+        "fields": 0.036269422355714113,
+        "protocol": 0.015544040944454876,
+        "annotation": 0.020725381411259236
       },
       "top_pre_roles": [
         [
@@ -2263,23 +2227,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.26424870904528985
+          0.2642487155997747
         ],
         [
           "context",
-          0.18134715596595888
+          0.18134715086665418
         ],
         [
           "state",
-          0.17098444953829622
+          0.17098445038900362
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 5.2687,
+      "object_density_post": 5.3022,
       "operation_density_pre": 0.0,
-      "operation_density_post": 24.236,
-      "operation_gain": 24.236,
-      "object_shift": 5.2687,
+      "operation_density_post": 24.3902,
+      "operation_gain": 24.3902,
+      "object_shift": 5.3022,
       "role_focus_gain": -0.7358,
       "role_entropy_drop": -1.9814,
       "route_strength": 0.2673,
@@ -2302,8 +2266,8 @@
         "transport_flow_route": 0.2673
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.533816,
-      "transition_attention": 0.00770922
+      "transition_attention_score": 0.533228,
+      "transition_attention": 0.00776495
     },
     {
       "slug": "quantum_nonlocality",
@@ -2340,16 +2304,16 @@
         "annotation": 4.0
       },
       "post_role_scores": {
-        "context": 9.698276,
-        "state": 8.351293,
-        "generator": 3.502155,
-        "observable": 8.351293,
-        "measurement": 14.008621,
-        "incompatibility": 3.502155,
-        "boundary": 1.077586,
-        "fields": 1.885776,
-        "protocol": 1.077586,
-        "annotation": 1.077586
+        "context": 9.761388,
+        "state": 8.40564,
+        "generator": 3.524946,
+        "observable": 8.40564,
+        "measurement": 14.099783,
+        "incompatibility": 3.524946,
+        "boundary": 1.084599,
+        "fields": 1.898048,
+        "protocol": 1.084599,
+        "annotation": 1.084599
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -2364,16 +2328,16 @@
         "annotation": 0.5
       },
       "post_role_distribution": {
-        "context": 0.18461538930114407,
-        "state": 0.15897435877911903,
-        "generator": 0.06666666412854699,
-        "observable": 0.15897435877911903,
-        "measurement": 0.2666666755500856,
-        "incompatibility": 0.06666666412854699,
-        "boundary": 0.020512816803260975,
-        "fields": 0.03589743892365553,
-        "protocol": 0.020512816803260975,
-        "annotation": 0.020512816803260975
+        "context": 0.184615374140592,
+        "state": 0.158974356258672,
+        "generator": 0.06666666918837601,
+        "observable": 0.158974356258672,
+        "measurement": 0.26666665784068405,
+        "incompatibility": 0.06666666918837601,
+        "boundary": 0.020512825653228,
+        "fields": 0.035897440164944,
+        "protocol": 0.020512825653228,
+        "annotation": 0.020512825653228
       },
       "top_pre_roles": [
         [
@@ -2392,23 +2356,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.2666666755500856
+          0.26666665784068405
         ],
         [
           "context",
-          0.18461538930114407
+          0.184615374140592
         ],
         [
           "state",
-          0.15897435877911903
+          0.158974356258672
         ]
       ],
       "object_density_pre": 2.0,
-      "object_density_post": 5.3879,
+      "object_density_post": 5.423,
       "operation_density_pre": 0.0,
-      "operation_density_post": 26.1315,
-      "operation_gain": 26.1315,
-      "object_shift": 3.3879,
+      "operation_density_post": 26.3015,
+      "operation_gain": 26.3015,
+      "object_shift": 3.423,
       "role_focus_gain": -0.2333,
       "role_entropy_drop": -0.9291,
       "route_strength": 0.2997,
@@ -2429,8 +2393,8 @@
         "transport_flow_route": 0.2427
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.524501,
-      "transition_attention": 0.00763774
+      "transition_attention_score": 0.523908,
+      "transition_attention": 0.00769292
     },
     {
       "slug": "wave_particle_duality",
@@ -2467,15 +2431,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.217984,
-        "state": 7.947321,
-        "generator": 6.357856,
-        "observable": 10.217984,
-        "measurement": 8.62852,
-        "incompatibility": 4.087193,
-        "boundary": 3.178928,
-        "fields": 3.633061,
-        "protocol": 0.681199,
+        "context": 10.273973,
+        "state": 7.990868,
+        "generator": 6.392694,
+        "observable": 10.273973,
+        "measurement": 8.675799,
+        "incompatibility": 4.109589,
+        "boundary": 3.196347,
+        "fields": 3.652968,
+        "protocol": 0.684932,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -2491,15 +2455,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18595041758472777,
-        "state": 0.14462810458793793,
-        "generator": 0.11570246911167281,
-        "observable": 0.18595041758472777,
-        "measurement": 0.15702480030680957,
-        "incompatibility": 0.07438015611488297,
-        "boundary": 0.057851234555836406,
-        "fields": 0.06611570443453314,
-        "protocol": 0.012396695718871645,
+        "context": 0.18595041554162958,
+        "state": 0.14462810298784223,
+        "generator": 0.11570247515060456,
+        "observable": 0.18595041554162958,
+        "measurement": 0.1570247877043919,
+        "incompatibility": 0.07438016259681722,
+        "boundary": 0.05785123757530228,
+        "fields": 0.06611570008605976,
+        "protocol": 0.012396702815722744,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -2519,23 +2483,23 @@
       "top_post_roles": [
         [
           "context",
-          0.18595041758472777
+          0.18595041554162958
         ],
         [
           "observable",
-          0.18595041758472777
+          0.18595041554162958
         ],
         [
           "measurement",
-          0.15702480030680957
+          0.1570247877043919
         ]
       ],
       "object_density_pre": 17.0,
-      "object_density_post": 9.7639,
+      "object_density_post": 9.8174,
       "operation_density_pre": 0.0,
-      "operation_density_post": 24.069,
-      "operation_gain": 24.069,
-      "object_shift": -7.2361,
+      "operation_density_post": 24.2009,
+      "operation_gain": 24.2009,
+      "object_shift": -7.1826,
       "role_focus_gain": -0.814,
       "role_entropy_drop": -2.0377,
       "route_strength": 0.2689,
@@ -2557,8 +2521,8 @@
         "transport_flow_route": 0.2689
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.516754,
-      "transition_attention": 0.0075788
+      "transition_attention_score": 0.515936,
+      "transition_attention": 0.00763183
     },
     {
       "slug": "scattering",
@@ -2595,15 +2559,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.162602,
-        "state": 8.355917,
-        "generator": 5.64589,
-        "observable": 9.033424,
-        "measurement": 8.581752,
-        "incompatibility": 4.065041,
-        "boundary": 5.871725,
-        "fields": 1.580849,
-        "protocol": 0.677507,
+        "context": 10.217984,
+        "state": 8.401453,
+        "generator": 5.676658,
+        "observable": 9.082652,
+        "measurement": 8.62852,
+        "incompatibility": 4.087193,
+        "boundary": 5.903724,
+        "fields": 1.589464,
+        "protocol": 0.681199,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -2619,15 +2583,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18828452371218984,
-        "state": 0.15481171579125014,
-        "generator": 0.1046025131734388,
-        "observable": 0.1673640210775021,
-        "measurement": 0.15899580520186982,
-        "incompatibility": 0.07531381319031523,
-        "boundary": 0.10878660258405848,
-        "fields": 0.029288699983123574,
-        "protocol": 0.012552305286251947,
+        "context": 0.18828452353152078,
+        "state": 0.15481170993000828,
+        "generator": 0.10460251716790667,
+        "observable": 0.1673640127272282,
+        "measurement": 0.15899582314693364,
+        "incompatibility": 0.07531379835654146,
+        "boundary": 0.10878661195805396,
+        "fields": 0.02928870038458713,
+        "protocol": 0.012552302797219923,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -2647,23 +2611,23 @@
       "top_post_roles": [
         [
           "context",
-          0.18828452371218984
+          0.18828452353152078
         ],
         [
           "observable",
-          0.1673640210775021
+          0.1673640127272282
         ],
         [
           "measurement",
-          0.15899580520186982
+          0.15899582314693364
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 6.3234,
+      "object_density_post": 6.3579,
       "operation_density_pre": 0.0,
-      "operation_density_post": 23.2611,
-      "operation_gain": 23.2611,
-      "object_shift": 6.3234,
+      "operation_density_post": 23.3878,
+      "operation_gain": 23.3878,
+      "object_shift": 6.3579,
       "role_focus_gain": -0.8117,
       "role_entropy_drop": -2.0254,
       "route_strength": 0.2673,
@@ -2685,8 +2649,8 @@
         "transport_flow_route": 0.2673
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.507467,
-      "transition_attention": 0.00750874
+      "transition_attention_score": 0.506669,
+      "transition_attention": 0.00756144
     },
     {
       "slug": "quantum_gravity",
@@ -2723,15 +2687,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.302198,
-        "state": 8.470696,
-        "generator": 5.723443,
-        "observable": 10.531136,
-        "measurement": 8.012821,
-        "incompatibility": 4.120879,
-        "boundary": 3.205128,
-        "fields": 2.518315,
-        "protocol": 0.686813,
+        "context": 10.359116,
+        "state": 8.517495,
+        "generator": 5.755064,
+        "observable": 10.589319,
+        "measurement": 8.05709,
+        "incompatibility": 4.143646,
+        "boundary": 3.222836,
+        "fields": 2.532228,
+        "protocol": 0.690608,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -2747,15 +2711,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.19230769446153842,
-        "state": 0.15811965740170938,
-        "generator": 0.10683760181196583,
-        "observable": 0.19658120376068366,
-        "measurement": 0.14957265747008539,
-        "incompatibility": 0.07692307405128207,
-        "boundary": 0.05982905552136755,
-        "fields": 0.04700854629059829,
-        "protocol": 0.012820509230769257,
+        "context": 0.19230769659171604,
+        "state": 0.15811965462897204,
+        "generator": 0.10683760096690757,
+        "observable": 0.19658120879859767,
+        "measurement": 0.1495726487793118,
+        "incompatibility": 0.07692307121104522,
+        "boundary": 0.05982905951172472,
+        "fields": 0.047008541455182844,
+        "protocol": 0.012820518056541873,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -2775,23 +2739,23 @@
       "top_post_roles": [
         [
           "observable",
-          0.19658120376068366
+          0.19658120879859767
         ],
         [
           "context",
-          0.19230769446153842
+          0.19230769659171604
         ],
         [
           "state",
-          0.15811965740170938
+          0.15811965462897204
         ]
       ],
       "object_density_pre": 2.0,
-      "object_density_post": 6.6392,
+      "object_density_post": 6.6759,
       "operation_density_pre": 0.0,
-      "operation_density_post": 23.1227,
-      "operation_gain": 23.1227,
-      "object_shift": 4.6392,
+      "operation_density_post": 23.2505,
+      "operation_gain": 23.2505,
+      "object_shift": 4.6759,
       "role_focus_gain": -0.8034,
       "role_entropy_drop": -2.017,
       "route_strength": 0.2689,
@@ -2813,8 +2777,8 @@
         "transport_flow_route": 0.2689
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.50639,
-      "transition_attention": 0.00750066
+      "transition_attention_score": 0.505617,
+      "transition_attention": 0.00755349
     },
     {
       "slug": "quantum_simulator",
@@ -2851,15 +2815,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.723861,
-        "state": 10.053619,
-        "generator": 5.808758,
-        "observable": 8.266309,
-        "measurement": 10.723861,
-        "incompatibility": 4.021448,
-        "boundary": 1.340483,
-        "fields": 1.563896,
-        "protocol": 0.670241,
+        "context": 10.781671,
+        "state": 10.107817,
+        "generator": 5.840072,
+        "observable": 8.310872,
+        "measurement": 10.781671,
+        "incompatibility": 4.043127,
+        "boundary": 1.347709,
+        "fields": 1.572327,
+        "protocol": 0.673854,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -2875,15 +2839,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.20168067780029653,
-        "state": 0.1890756225081563,
-        "generator": 0.1092436996915472,
-        "observable": 0.15546217934256062,
-        "measurement": 0.20168067780029653,
-        "incompatibility": 0.07563025652595153,
-        "boundary": 0.025210091777558,
-        "fields": 0.029411758068215596,
-        "protocol": 0.012605036485417756,
+        "context": 0.20168066739594664,
+        "state": 0.18907563386752346,
+        "generator": 0.1092436987365299,
+        "observable": 0.15546219241917936,
+        "measurement": 0.20168066739594664,
+        "incompatibility": 0.07563025728818581,
+        "boundary": 0.025210085762728606,
+        "fields": 0.029411763605536344,
+        "protocol": 0.012605033528423213,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -2903,23 +2867,23 @@
       "top_post_roles": [
         [
           "context",
-          0.20168067780029653
+          0.20168066739594664
         ],
         [
           "measurement",
-          0.20168067780029653
+          0.20168066739594664
         ],
         [
           "state",
-          0.1890756225081563
+          0.18907563386752346
         ]
       ],
       "object_density_pre": 2.0,
-      "object_density_post": 5.1385,
+      "object_density_post": 5.1662,
       "operation_density_pre": 0.0,
-      "operation_density_post": 20.3307,
-      "operation_gain": 20.3307,
-      "object_shift": 3.1385,
+      "operation_density_post": 20.4403,
+      "operation_gain": 20.4403,
+      "object_shift": 3.1662,
       "role_focus_gain": 0.2017,
       "role_entropy_drop": -1.9389,
       "route_strength": 0.2953,
@@ -2940,8 +2904,8 @@
         "transport_flow_route": 0.2753
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.495582,
-      "transition_attention": 0.00742003
+      "transition_attention_score": 0.494871,
+      "transition_attention": 0.00747275
     },
     {
       "slug": "fermi_dirac_statistics",
@@ -2978,15 +2942,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 11.08156,
-        "state": 10.195035,
-        "generator": 4.875887,
-        "observable": 9.530142,
-        "measurement": 10.416667,
-        "incompatibility": 3.989362,
-        "boundary": 1.551418,
-        "fields": 2.437943,
-        "protocol": 0.664894,
+        "context": 11.14082,
+        "state": 10.249554,
+        "generator": 4.901961,
+        "observable": 9.581105,
+        "measurement": 10.472371,
+        "incompatibility": 4.010695,
+        "boundary": 1.559715,
+        "fields": 2.45098,
+        "protocol": 0.668449,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -3002,15 +2966,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.2024291438810668,
-        "state": 0.18623480871714018,
-        "generator": 0.08906883426799324,
-        "observable": 0.1740890710446,
-        "measurement": 0.19028340620852666,
-        "incompatibility": 0.07287449910406661,
-        "boundary": 0.028340072836466786,
-        "fields": 0.04453440800039342,
-        "protocol": 0.012145755939746572,
+        "context": 0.20242915274008755,
+        "state": 0.18623481325286426,
+        "generator": 0.08906883083964666,
+        "observable": 0.17408906772246716,
+        "measurement": 0.19028340720969045,
+        "incompatibility": 0.07287449135242338,
+        "boundary": 0.028340085017620396,
+        "fields": 0.04453440633480298,
+        "protocol": 0.012145745530397115,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -3030,23 +2994,23 @@
       "top_post_roles": [
         [
           "context",
-          0.2024291438810668
+          0.20242915274008755
         ],
         [
           "measurement",
-          0.19028340620852666
+          0.19028340720969045
         ],
         [
           "state",
-          0.18623480871714018
+          0.18623481325286426
         ]
       ],
       "object_density_pre": 3.0,
-      "object_density_post": 5.7624,
+      "object_density_post": 5.7932,
       "operation_density_pre": 0.0,
-      "operation_density_post": 22.3848,
-      "operation_gain": 22.3848,
-      "object_shift": 2.7624,
+      "operation_density_post": 22.5045,
+      "operation_gain": 22.5045,
+      "object_shift": 2.7932,
       "role_focus_gain": -0.7976,
       "role_entropy_drop": -1.9558,
       "route_strength": 0.2631,
@@ -3068,8 +3032,8 @@
         "transport_flow_route": 0.2631
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.4955,
-      "transition_attention": 0.00741942
+      "transition_attention_score": 0.494707,
+      "transition_attention": 0.00747153
     },
     {
       "slug": "quantum_theory_concepts_and_methods",
@@ -3106,16 +3070,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 9.057971,
-        "state": 8.022774,
-        "generator": 3.364389,
-        "observable": 7.763975,
-        "measurement": 13.975155,
-        "incompatibility": 2.329193,
-        "boundary": 1.552795,
-        "fields": 1.811594,
-        "protocol": 0.776398,
-        "annotation": 1.293996
+        "context": 9.114583,
+        "state": 8.072917,
+        "generator": 3.385417,
+        "observable": 7.8125,
+        "measurement": 14.0625,
+        "incompatibility": 2.34375,
+        "boundary": 1.5625,
+        "fields": 1.822917,
+        "protocol": 0.78125,
+        "annotation": 1.302083
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -3130,16 +3094,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18134715057027032,
-        "state": 0.16062175564144,
-        "generator": 0.06735750849279173,
-        "observable": 0.1554404119144138,
-        "measurement": 0.27979274144594485,
-        "incompatibility": 0.04663213358468686,
-        "boundary": 0.031088082382882756,
-        "fields": 0.03626942610990897,
-        "protocol": 0.015544051201804106,
-        "annotation": 0.025906738655856538
+        "context": 0.1813471424242262,
+        "state": 0.1606217672248919,
+        "generator": 0.06735751913876878,
+        "observable": 0.15544041347687185,
+        "measurement": 0.27979274425836936,
+        "incompatibility": 0.04663212404306156,
+        "boundary": 0.031088082695374372,
+        "fields": 0.03626943644339441,
+        "protocol": 0.015544041347687186,
+        "annotation": 0.025906728947354338
       },
       "top_pre_roles": [
         [
@@ -3158,23 +3122,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.27979274144594485
+          0.27979274425836936
         ],
         [
           "context",
-          0.18134715057027032
+          0.1813471424242262
         ],
         [
           "state",
-          0.16062175564144
+          0.1606217672248919
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 4.9172,
+      "object_density_post": 4.9479,
       "operation_density_pre": 0.0,
-      "operation_density_post": 25.1035,
-      "operation_gain": 25.1035,
-      "object_shift": 4.9172,
+      "operation_density_post": 25.2604,
+      "operation_gain": 25.2604,
+      "object_shift": 4.9479,
       "role_focus_gain": 0.2798,
       "role_entropy_drop": -1.9613,
       "route_strength": 0.3613,
@@ -3184,8 +3148,8 @@
       "anomaly_explanation": "",
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.47547,
-      "transition_attention": 0.00727229
+      "transition_attention_score": 0.47483,
+      "transition_attention": 0.00732448
     },
     {
       "slug": "spin_physics",
@@ -3222,15 +3186,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.996409,
-        "state": 10.32316,
-        "generator": 5.16158,
-        "observable": 8.976661,
-        "measurement": 10.547576,
-        "incompatibility": 4.039497,
-        "boundary": 0.897666,
-        "fields": 1.570916,
-        "protocol": 0.67325,
+        "context": 11.055957,
+        "state": 10.379061,
+        "generator": 5.189531,
+        "observable": 9.025271,
+        "measurement": 10.604693,
+        "incompatibility": 4.061372,
+        "boundary": 0.902527,
+        "fields": 1.579422,
+        "protocol": 0.676895,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -3246,15 +3210,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.20675104676045514,
-        "state": 0.19409282938417985,
-        "generator": 0.09704641469208992,
-        "observable": 0.16877637582994173,
-        "measurement": 0.1983122289090424,
-        "incompatibility": 0.07594936066271436,
-        "boundary": 0.016877635702825414,
-        "fields": 0.029535871880788277,
-        "protocol": 0.012658236177962861,
+        "context": 0.2067510617959373,
+        "state": 0.19409282092855487,
+        "generator": 0.09704641981448844,
+        "observable": 0.1687763765946341,
+        "measurement": 0.19831223455101568,
+        "incompatibility": 0.07594937040260645,
+        "boundary": 0.016877635789421204,
+        "fields": 0.029535857956381605,
+        "protocol": 0.012658222166960399,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -3274,23 +3238,23 @@
       "top_post_roles": [
         [
           "context",
-          0.20675104676045514
+          0.2067510617959373
         ],
         [
           "measurement",
-          0.1983122289090424
+          0.19831223455101568
         ],
         [
           "state",
-          0.19409282938417985
+          0.19409282092855487
         ]
       ],
       "object_density_pre": 2.0,
-      "object_density_post": 5.386,
+      "object_density_post": 5.4152,
       "operation_density_pre": 0.0,
-      "operation_density_post": 21.9928,
-      "operation_gain": 21.9928,
-      "object_shift": 3.386,
+      "operation_density_post": 22.1119,
+      "operation_gain": 22.1119,
+      "object_shift": 3.4152,
       "role_focus_gain": -0.7932,
       "role_entropy_drop": -1.9156,
       "route_strength": 0.3023,
@@ -3311,8 +3275,8 @@
         "transport_flow_route": 0.2745
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.475368,
-      "transition_attention": 0.00727154
+      "transition_attention_score": 0.474605,
+      "transition_attention": 0.00732283
     },
     {
       "slug": "quantum_computing",
@@ -3349,15 +3313,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.899183,
-        "state": 9.536785,
-        "generator": 4.768392,
-        "observable": 9.082652,
-        "measurement": 10.672116,
-        "incompatibility": 4.087193,
-        "boundary": 0.908265,
-        "fields": 1.589464,
-        "protocol": 2.497729,
+        "context": 10.958904,
+        "state": 9.589041,
+        "generator": 4.794521,
+        "observable": 9.13242,
+        "measurement": 10.730594,
+        "incompatibility": 4.109589,
+        "boundary": 0.913242,
+        "fields": 1.598174,
+        "protocol": 2.511416,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -3373,15 +3337,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.2016806848642048,
-        "state": 0.1764705969431539,
-        "generator": 0.08823528921947592,
-        "observable": 0.16806722813473626,
-        "measurement": 0.19747899120789492,
-        "incompatibility": 0.07563024525895048,
-        "boundary": 0.016806719112633206,
-        "fields": 0.029411763073158636,
-        "protocol": 0.046218482185791845,
+        "context": 0.20168066484570324,
+        "state": 0.17647058173999033,
+        "generator": 0.08823530007167558,
+        "observable": 0.1680672207047527,
+        "measurement": 0.19747899352976483,
+        "incompatibility": 0.0756302493171387,
+        "boundary": 0.016806722070475268,
+        "fields": 0.029411772825012148,
+        "protocol": 0.04621849489548742,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -3401,23 +3365,23 @@
       "top_post_roles": [
         [
           "context",
-          0.2016806848642048
+          0.20168066484570324
         ],
         [
           "measurement",
-          0.19747899120789492
+          0.19747899352976483
         ],
         [
           "state",
-          0.1764705969431539
+          0.17647058173999033
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 4.7684,
+      "object_density_post": 4.7945,
       "operation_density_pre": 0.0,
-      "operation_density_post": 21.3442,
-      "operation_gain": 21.3442,
-      "object_shift": 4.7684,
+      "operation_density_post": 21.4612,
+      "operation_gain": 21.4612,
+      "object_shift": 4.7945,
       "role_focus_gain": -0.1983,
       "role_entropy_drop": -0.9181,
       "route_strength": 0.2997,
@@ -3438,136 +3402,8 @@
         "transport_flow_route": 0.2337
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.471254,
-      "transition_attention": 0.00724169
-    },
-    {
-      "slug": "quantum_electrodynamics",
-      "title": "Quantum electrodynamics",
-      "status": "constructed",
-      "branch": "fields",
-      "branch_title": "Many-mode extension: fields, particles, and scaling",
-      "secondary": "context",
-      "routes": {
-        "transport_flow_route": 0.2223,
-        "constraint_closure_route": 0.2082,
-        "spectral_operator_route": 0.2599,
-        "boundary_weak_form_route": 0.1527,
-        "commutator_incompatibility_route": 0.1803,
-        "discrete_protocol_route": 0.0497
-      },
-      "fibers": {
-        "structure": 0.3333,
-        "spectral": 0.3333,
-        "geometry": 0.3333,
-        "syntax": 0.5858,
-        "entropy": 0.4142
-      },
-      "pre_role_scores": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 5.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_scores": {
-        "context": 10.351035,
-        "state": 9.0009,
-        "generator": 5.175518,
-        "observable": 9.225923,
-        "measurement": 11.476148,
-        "incompatibility": 2.70027,
-        "boundary": 0.90009,
-        "fields": 2.475248,
-        "protocol": 0.675068,
-        "annotation": 0.0
-      },
-      "pre_role_distribution": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 1.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_distribution": {
-        "context": 0.19913418955679277,
-        "state": 0.1731601648319937,
-        "generator": 0.09956710439744364,
-        "observable": 0.1774891785718408,
-        "measurement": 0.22077921977983925,
-        "incompatibility": 0.05194804944959812,
-        "boundary": 0.01731601648319937,
-        "fields": 0.047619054947845525,
-        "protocol": 0.012987021981446781,
-        "annotation": 0.0
-      },
-      "top_pre_roles": [
-        [
-          "fields",
-          1.0
-        ],
-        [
-          "context",
-          0.0
-        ],
-        [
-          "state",
-          0.0
-        ]
-      ],
-      "top_post_roles": [
-        [
-          "measurement",
-          0.22077921977983925
-        ],
-        [
-          "context",
-          0.19913418955679277
-        ],
-        [
-          "observable",
-          0.1774891785718408
-        ]
-      ],
-      "object_density_pre": 5.0,
-      "object_density_post": 5.6256,
-      "operation_density_pre": 0.0,
-      "operation_density_post": 21.6022,
-      "operation_gain": 21.6022,
-      "object_shift": 0.6256,
-      "role_focus_gain": -0.7792,
-      "role_entropy_drop": -1.9203,
-      "route_strength": 0.2599,
-      "route_balance_entropy": 1.7071,
-      "anomaly_score": 2.2163,
-      "anomaly_labels": [
-        "weak spectral anchor",
-        "boundary-driven dynamics",
-        "compatibility/closure junction",
-        "multi-role hub"
-      ],
-      "anomaly_explanation": "Quantum electrodynamics is a field-interaction construction. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. The relevant formal objects are field operators, gauge constraints, interaction terms, and observable amplitudes.",
-      "anomaly_routes": {
-        "boundary_weak_form_route": 0.1527,
-        "commutator_incompatibility_route": 0.1803,
-        "constraint_closure_route": 0.2082,
-        "discrete_protocol_route": 0.0497,
-        "spectral_operator_route": 0.2599,
-        "transport_flow_route": 0.2223
-      },
-      "hyperion_witness_count": 32,
-      "transition_attention_score": 0.470158,
-      "transition_attention": 0.00723376
+      "transition_attention_score": 0.470529,
+      "transition_attention": 0.00729305
     },
     {
       "slug": "wave_function",
@@ -3604,16 +3440,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.631835,
-        "state": 13.973269,
-        "generator": 2.126367,
-        "observable": 6.986634,
-        "measurement": 11.239368,
-        "incompatibility": 1.8226,
-        "boundary": 1.518834,
-        "fields": 2.430134,
-        "protocol": 0.607533,
-        "annotation": 0.607533
+        "context": 10.709914,
+        "state": 14.075887,
+        "generator": 2.141983,
+        "observable": 7.037944,
+        "measurement": 11.321909,
+        "incompatibility": 1.835985,
+        "boundary": 1.529988,
+        "fields": 2.44798,
+        "protocol": 0.611995,
+        "annotation": 0.611995
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -3628,16 +3464,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.20467836707636541,
-        "state": 0.2690058566220034,
-        "generator": 0.04093567341527308,
-        "observable": 0.1345029186852707,
-        "measurement": 0.21637426551581687,
-        "incompatibility": 0.03508771456981637,
-        "boundary": 0.02923977497582161,
-        "fields": 0.04678363226072979,
-        "protocol": 0.011695898439451468,
-        "annotation": 0.011695898439451468
+        "context": 0.20467836190253408,
+        "state": 0.2690058476179337,
+        "generator": 0.04093567620272914,
+        "observable": 0.13450293336452268,
+        "measurement": 0.21637426665886933,
+        "incompatibility": 0.03508771426900571,
+        "boundary": 0.029239771446393902,
+        "fields": 0.04678361902534094,
+        "protocol": 0.011695904756335236,
+        "annotation": 0.011695904756335236
       },
       "top_pre_roles": [
         [
@@ -3656,23 +3492,23 @@
       "top_post_roles": [
         [
           "state",
-          0.2690058566220034
+          0.2690058476179337
         ],
         [
           "measurement",
-          0.21637426551581687
+          0.21637426665886933
         ],
         [
           "context",
-          0.20467836707636541
+          0.20467836190253408
         ]
       ],
       "object_density_pre": 7.0,
-      "object_density_post": 7.5942,
+      "object_density_post": 7.6499,
       "operation_density_pre": 3.0,
-      "operation_density_post": 23.6938,
-      "operation_gain": 20.6938,
-      "object_shift": 0.5942,
+      "operation_density_post": 23.8678,
+      "operation_gain": 20.8678,
+      "object_shift": 0.6499,
       "role_focus_gain": -0.731,
       "role_entropy_drop": -1.8779,
       "route_strength": 0.2567,
@@ -3694,23 +3530,23 @@
         "transport_flow_route": 0.2567
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.470084,
-      "transition_attention": 0.00723322
+      "transition_attention_score": 0.470049,
+      "transition_attention": 0.00728955
     },
     {
-      "slug": "quantum_cosmology",
-      "title": "Quantum cosmology",
-      "status": "evidence_placement",
-      "branch": "unresolved",
-      "branch_title": "Unresolved",
-      "secondary": null,
+      "slug": "quantum_electrodynamics",
+      "title": "Quantum electrodynamics",
+      "status": "constructed",
+      "branch": "fields",
+      "branch_title": "Many-mode extension: fields, particles, and scaling",
+      "secondary": "context",
       "routes": {
-        "transport_flow_route": 0.2833,
-        "constraint_closure_route": 0.0878,
-        "spectral_operator_route": 0.1604,
-        "boundary_weak_form_route": 0.0333,
-        "commutator_incompatibility_route": 0.0268,
-        "discrete_protocol_route": 0.0305
+        "transport_flow_route": 0.2223,
+        "constraint_closure_route": 0.2082,
+        "spectral_operator_route": 0.2599,
+        "boundary_weak_form_route": 0.1527,
+        "commutator_incompatibility_route": 0.1803,
+        "discrete_protocol_route": 0.0497
       },
       "fibers": {
         "structure": 0.3333,
@@ -3727,20 +3563,20 @@
         "measurement": 0.0,
         "incompatibility": 0.0,
         "boundary": 0.0,
-        "fields": 0.0,
+        "fields": 5.0,
         "protocol": 0.0,
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 7.692308,
-        "state": 13.461538,
-        "generator": 2.884615,
-        "observable": 12.5,
-        "measurement": 8.653846,
-        "incompatibility": 0.961538,
-        "boundary": 3.846154,
-        "fields": 2.884615,
-        "protocol": 0.961538,
+        "context": 10.40724,
+        "state": 9.049774,
+        "generator": 5.20362,
+        "observable": 9.276018,
+        "measurement": 11.538462,
+        "incompatibility": 2.714932,
+        "boundary": 0.904977,
+        "fields": 2.488688,
+        "protocol": 0.678733,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -3751,23 +3587,27 @@
         "measurement": 0.0,
         "incompatibility": 0.0,
         "boundary": 0.0,
-        "fields": 0.0,
+        "fields": 1.0,
         "protocol": 0.0,
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.14285715346938813,
-        "state": 0.25,
-        "generator": 0.053571423265305944,
-        "observable": 0.2321428651020411,
-        "measurement": 0.16071428836734702,
-        "incompatibility": 0.017857134897958912,
-        "boundary": 0.07142857673469406,
-        "fields": 0.053571423265305944,
-        "protocol": 0.017857134897958912,
+        "context": 0.19913420045951158,
+        "state": 0.17316017597646213,
+        "generator": 0.09956710022975579,
+        "observable": 0.1774891736789041,
+        "measurement": 0.22077922724011909,
+        "incompatibility": 0.051948048966098864,
+        "boundary": 0.017316009943966645,
+        "fields": 0.047619051263656925,
+        "protocol": 0.012987012241524716,
         "annotation": 0.0
       },
       "top_pre_roles": [
+        [
+          "fields",
+          1.0
+        ],
         [
           "context",
           0.0
@@ -3775,43 +3615,51 @@
         [
           "state",
           0.0
-        ],
-        [
-          "generator",
-          0.0
         ]
       ],
       "top_post_roles": [
         [
-          "state",
-          0.25
+          "measurement",
+          0.22077922724011909
+        ],
+        [
+          "context",
+          0.19913420045951158
         ],
         [
           "observable",
-          0.2321428651020411
-        ],
-        [
-          "measurement",
-          0.16071428836734702
+          0.1774891736789041
         ]
       ],
-      "object_density_pre": 0.0,
-      "object_density_post": 8.6538,
+      "object_density_pre": 5.0,
+      "object_density_post": 5.6561,
       "operation_density_pre": 0.0,
-      "operation_density_post": 30.7692,
-      "operation_gain": 30.7692,
-      "object_shift": 8.6538,
-      "role_focus_gain": 0.25,
-      "role_entropy_drop": -1.9032,
-      "route_strength": 0.2833,
-      "route_balance_entropy": 1.4241,
-      "anomaly_score": 0.0,
-      "anomaly_labels": [],
-      "anomaly_explanation": "",
-      "anomaly_routes": {},
+      "operation_density_post": 21.7195,
+      "operation_gain": 21.7195,
+      "object_shift": 0.6561,
+      "role_focus_gain": -0.7792,
+      "role_entropy_drop": -1.9203,
+      "route_strength": 0.2599,
+      "route_balance_entropy": 1.7071,
+      "anomaly_score": 2.2163,
+      "anomaly_labels": [
+        "weak spectral anchor",
+        "boundary-driven dynamics",
+        "compatibility/closure junction",
+        "multi-role hub"
+      ],
+      "anomaly_explanation": "Quantum electrodynamics is a field-interaction construction. It combines gauge admissibility, charged matter states, photon modes, perturbative transport, and scattering/readout. The relevant formal objects are field operators, gauge constraints, interaction terms, and observable amplitudes.",
+      "anomaly_routes": {
+        "boundary_weak_form_route": 0.1527,
+        "commutator_incompatibility_route": 0.1803,
+        "constraint_closure_route": 0.2082,
+        "discrete_protocol_route": 0.0497,
+        "spectral_operator_route": 0.2599,
+        "transport_flow_route": 0.2223
+      },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.46302,
-      "transition_attention": 0.00718231
+      "transition_attention_score": 0.469412,
+      "transition_attention": 0.0072849
     },
     {
       "slug": "quantum_field_theory",
@@ -3848,15 +3696,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.40555,
-        "state": 8.537887,
-        "generator": 3.468517,
-        "observable": 8.537887,
-        "measurement": 9.071505,
-        "incompatibility": 2.401281,
-        "boundary": 2.134472,
-        "fields": 7.470651,
-        "protocol": 0.533618,
+        "context": 10.47261,
+        "state": 8.592911,
+        "generator": 3.49087,
+        "observable": 8.592911,
+        "measurement": 9.129968,
+        "incompatibility": 2.416756,
+        "boundary": 2.148228,
+        "fields": 7.518797,
+        "protocol": 0.537057,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -3872,15 +3720,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.19796954295405708,
-        "state": 0.16243654465005555,
-        "generator": 0.06598985399314569,
-        "observable": 0.16243654465005555,
-        "measurement": 0.17258882987977028,
-        "incompatibility": 0.04568528353371625,
-        "boundary": 0.040609140918858894,
-        "fields": 0.14213197419062612,
-        "protocol": 0.010152285229714723,
+        "context": 0.19796953911700896,
+        "state": 0.1624365492788786,
+        "generator": 0.06598984637233633,
+        "observable": 0.1624365492788786,
+        "measurement": 0.17258883479028056,
+        "incompatibility": 0.045685275349532366,
+        "boundary": 0.04060914204560792,
+        "fields": 0.14213197825607463,
+        "protocol": 0.01015228551140198,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -3900,23 +3748,23 @@
       "top_post_roles": [
         [
           "context",
-          0.19796954295405708
+          0.19796953911700896
         ],
         [
           "measurement",
-          0.17258882987977028
+          0.17258883479028056
         ],
         [
           "state",
-          0.16243654465005555
+          0.1624365492788786
         ]
       ],
       "object_density_pre": 8.0,
-      "object_density_post": 9.6051,
+      "object_density_post": 9.667,
       "operation_density_pre": 0.0,
-      "operation_density_post": 20.2775,
-      "operation_gain": 20.2775,
-      "object_shift": 1.6051,
+      "operation_density_post": 20.4082,
+      "operation_gain": 20.4082,
+      "object_shift": 1.667,
       "role_focus_gain": -0.802,
       "role_entropy_drop": -1.9887,
       "route_strength": 0.2737,
@@ -3938,367 +3786,8 @@
         "transport_flow_route": 0.2599
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.457392,
-      "transition_attention": 0.007142
-    },
-    {
-      "slug": "quantum_chaos",
-      "title": "Quantum chaos",
-      "status": "constructed",
-      "branch": "generators",
-      "branch_title": "Generator: lawful change before readout",
-      "secondary": "states",
-      "routes": {
-        "transport_flow_route": 0.2575,
-        "constraint_closure_route": 0.1928,
-        "spectral_operator_route": 0.4338,
-        "boundary_weak_form_route": 0.0593,
-        "commutator_incompatibility_route": 0.0506,
-        "discrete_protocol_route": 0.0525
-      },
-      "fibers": {
-        "structure": 0.3333,
-        "spectral": 0.3333,
-        "geometry": 0.3333,
-        "syntax": 0.5858,
-        "entropy": 0.4142
-      },
-      "pre_role_scores": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_scores": {
-        "context": 10.416667,
-        "state": 8.605072,
-        "generator": 6.34058,
-        "observable": 9.737319,
-        "measurement": 8.378623,
-        "incompatibility": 4.076087,
-        "boundary": 2.717391,
-        "fields": 1.585145,
-        "protocol": 0.679348,
-        "annotation": 0.0
-      },
-      "pre_role_distribution": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_distribution": {
-        "context": 0.19827586797621882,
-        "state": 0.16379309425921526,
-        "generator": 0.1206896604233056,
-        "observable": 0.1853448302116528,
-        "measurement": 0.15948275468252082,
-        "incompatibility": 0.07758620755291322,
-        "boundary": 0.05172413202378124,
-        "fields": 0.0301724151058264,
-        "protocol": 0.012931037764565986,
-        "annotation": 0.0
-      },
-      "top_pre_roles": [
-        [
-          "context",
-          0.0
-        ],
-        [
-          "state",
-          0.0
-        ],
-        [
-          "generator",
-          0.0
-        ]
-      ],
-      "top_post_roles": [
-        [
-          "context",
-          0.19827586797621882
-        ],
-        [
-          "observable",
-          0.1853448302116528
-        ],
-        [
-          "state",
-          0.16379309425921526
-        ]
-      ],
-      "object_density_pre": 2.0,
-      "object_density_post": 6.3406,
-      "operation_density_pre": 0.0,
-      "operation_density_post": 23.0978,
-      "operation_gain": 23.0978,
-      "object_shift": 4.3406,
-      "role_focus_gain": 0.1983,
-      "role_entropy_drop": -1.9909,
-      "route_strength": 0.4338,
-      "route_balance_entropy": 1.481,
-      "anomaly_score": 0.0,
-      "anomaly_labels": [],
-      "anomaly_explanation": "",
-      "anomaly_routes": {},
-      "hyperion_witness_count": 32,
-      "transition_attention_score": 0.454989,
-      "transition_attention": 0.00712486
-    },
-    {
-      "slug": "quantum_amplifier",
-      "title": "Quantum amplifier",
-      "status": "constructed",
-      "branch": "generators",
-      "branch_title": "Generator: lawful change before readout",
-      "secondary": "states",
-      "routes": {
-        "transport_flow_route": 0.2189,
-        "constraint_closure_route": 0.1337,
-        "spectral_operator_route": 0.4099,
-        "boundary_weak_form_route": 0.0448,
-        "commutator_incompatibility_route": 0.1144,
-        "discrete_protocol_route": 0.0546
-      },
-      "fibers": {
-        "structure": 0.3333,
-        "spectral": 0.3333,
-        "geometry": 0.3333,
-        "syntax": 0.5858,
-        "entropy": 0.4142
-      },
-      "pre_role_scores": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_scores": {
-        "context": 10.340074,
-        "state": 8.731618,
-        "generator": 6.433824,
-        "observable": 8.961397,
-        "measurement": 8.731618,
-        "incompatibility": 3.446691,
-        "boundary": 3.216912,
-        "fields": 2.527574,
-        "protocol": 0.689338,
-        "annotation": 0.0
-      },
-      "pre_role_distribution": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.0,
-        "incompatibility": 0.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_distribution": {
-        "context": 0.19480519676257935,
-        "state": 0.1645021653177414,
-        "generator": 0.12121212577935181,
-        "observable": 0.16883116173564988,
-        "measurement": 0.1645021653177414,
-        "incompatibility": 0.06493505930758439,
-        "boundary": 0.060606062889675905,
-        "fields": 0.04761905479612426,
-        "protocol": 0.012987008093551645,
-        "annotation": 0.0
-      },
-      "top_pre_roles": [
-        [
-          "context",
-          0.0
-        ],
-        [
-          "state",
-          0.0
-        ],
-        [
-          "generator",
-          0.0
-        ]
-      ],
-      "top_post_roles": [
-        [
-          "context",
-          0.19480519676257935
-        ],
-        [
-          "observable",
-          0.16883116173564988
-        ],
-        [
-          "state",
-          0.1645021653177414
-        ]
-      ],
-      "object_density_pre": 0.0,
-      "object_density_post": 5.5147,
-      "operation_density_pre": 0.0,
-      "operation_density_post": 23.6673,
-      "operation_gain": 23.6673,
-      "object_shift": 5.5147,
-      "role_focus_gain": 0.1948,
-      "role_entropy_drop": -2.0174,
-      "route_strength": 0.4099,
-      "route_balance_entropy": 1.5258,
-      "anomaly_score": 0.0,
-      "anomaly_labels": [],
-      "anomaly_explanation": "",
-      "anomaly_routes": {},
-      "hyperion_witness_count": 32,
-      "transition_attention_score": 0.454647,
-      "transition_attention": 0.00712242
-    },
-    {
-      "slug": "bell_s_theorem",
-      "title": "Bell's theorem",
-      "status": "constructed",
-      "branch": "incompatibility",
-      "branch_title": "Compatibility limit: what cannot be jointly sharp",
-      "secondary": "measurement",
-      "routes": {
-        "transport_flow_route": 0.2411,
-        "constraint_closure_route": 0.1796,
-        "spectral_operator_route": 0.3001,
-        "boundary_weak_form_route": 0.0822,
-        "commutator_incompatibility_route": 0.1171,
-        "discrete_protocol_route": 0.1741
-      },
-      "fibers": {
-        "structure": 0.3437,
-        "spectral": 0.3438,
-        "geometry": 0.3125,
-        "syntax": 0.5858,
-        "entropy": 0.4142
-      },
-      "pre_role_scores": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 2.0,
-        "incompatibility": 7.0,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_scores": {
-        "context": 9.299781,
-        "state": 8.479212,
-        "generator": 3.282276,
-        "observable": 7.932166,
-        "measurement": 9.573304,
-        "incompatibility": 4.923414,
-        "boundary": 1.094092,
-        "fields": 1.914661,
-        "protocol": 0.547046,
-        "annotation": 0.0
-      },
-      "pre_role_distribution": {
-        "context": 0.0,
-        "state": 0.0,
-        "generator": 0.0,
-        "observable": 0.0,
-        "measurement": 0.2222222222222222,
-        "incompatibility": 0.7777777777777778,
-        "boundary": 0.0,
-        "fields": 0.0,
-        "protocol": 0.0,
-        "annotation": 0.0
-      },
-      "post_role_distribution": {
-        "context": 0.19767441415575984,
-        "state": 0.18023255220767984,
-        "generator": 0.06976744779232015,
-        "observable": 0.16860464424229313,
-        "measurement": 0.2034883681384532,
-        "incompatibility": 0.10465117168848022,
-        "boundary": 0.023255815930773385,
-        "fields": 0.040697677878853415,
-        "protocol": 0.011627907965386692,
-        "annotation": 0.0
-      },
-      "top_pre_roles": [
-        [
-          "incompatibility",
-          0.7777777777777778
-        ],
-        [
-          "measurement",
-          0.2222222222222222
-        ],
-        [
-          "context",
-          0.0
-        ]
-      ],
-      "top_post_roles": [
-        [
-          "measurement",
-          0.2034883681384532
-        ],
-        [
-          "context",
-          0.19767441415575984
-        ],
-        [
-          "state",
-          0.18023255220767984
-        ]
-      ],
-      "object_density_pre": 0.0,
-      "object_density_post": 5.4705,
-      "operation_density_pre": 0.0,
-      "operation_density_post": 19.6937,
-      "operation_gain": 19.6937,
-      "object_shift": 5.4705,
-      "role_focus_gain": -0.5743,
-      "role_entropy_drop": -1.4152,
-      "route_strength": 0.3001,
-      "route_balance_entropy": 1.7108,
-      "anomaly_score": 2.1289,
-      "anomaly_labels": [
-        "weak spectral anchor",
-        "protocol is unusually explicit",
-        "multi-role hub"
-      ],
-      "anomaly_explanation": "This incompatibility page mixes observables and spectra, state evolution, and normalization and admissibility. State which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure.",
-      "anomaly_routes": {
-        "boundary_weak_form_route": 0.0822,
-        "commutator_incompatibility_route": 0.1171,
-        "constraint_closure_route": 0.1796,
-        "discrete_protocol_route": 0.1741,
-        "spectral_operator_route": 0.3001,
-        "transport_flow_route": 0.2411
-      },
-      "hyperion_witness_count": 32,
-      "transition_attention_score": 0.45445,
-      "transition_attention": 0.00712102
+      "transition_attention_score": 0.45692,
+      "transition_attention": 0.00719447
     },
     {
       "slug": "electron_microscope",
@@ -4335,15 +3824,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 6.364922,
-        "state": 9.90099,
-        "generator": 4.950495,
-        "observable": 13.790665,
-        "measurement": 6.718529,
-        "incompatibility": 1.414427,
-        "boundary": 2.121641,
-        "fields": 5.304102,
-        "protocol": 0.353607,
+        "context": 6.419401,
+        "state": 9.985735,
+        "generator": 4.992867,
+        "observable": 13.908702,
+        "measurement": 6.776034,
+        "incompatibility": 1.426534,
+        "boundary": 2.1398,
+        "fields": 5.349501,
+        "protocol": 0.356633,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -4359,15 +3848,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.12499999509027783,
-        "state": 0.19444444117129633,
-        "generator": 0.09722222058564817,
-        "observable": 0.27083333578819446,
-        "measurement": 0.13194444362615743,
-        "incompatibility": 0.027777774504629656,
-        "boundary": 0.041666671576388856,
-        "fields": 0.10416666912152778,
-        "protocol": 0.006944448535879603,
+        "context": 0.12500000243402776,
+        "state": 0.1944444503942901,
+        "generator": 0.09722221546103396,
+        "observable": 0.27083333536168974,
+        "measurement": 0.13194443944116513,
+        "incompatibility": 0.027777786972993795,
+        "boundary": 0.04166666098726853,
+        "fields": 0.10416667194039349,
+        "protocol": 0.006944437007137367,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -4387,23 +3876,23 @@
       "top_post_roles": [
         [
           "observable",
-          0.27083333578819446
+          0.27083333536168974
         ],
         [
           "state",
-          0.19444444117129633
+          0.1944444503942901
         ],
         [
           "measurement",
-          0.13194444362615743
+          0.13194443944116513
         ]
       ],
       "object_density_pre": 17.0,
-      "object_density_post": 7.7793,
+      "object_density_post": 7.8459,
       "operation_density_pre": 0.0,
-      "operation_density_post": 31.471,
-      "operation_gain": 31.471,
-      "object_shift": -9.2207,
+      "operation_density_post": 31.7404,
+      "operation_gain": 31.7404,
+      "object_shift": -9.1541,
       "role_focus_gain": -0.7292,
       "role_entropy_drop": -1.928,
       "route_strength": 0.4169,
@@ -4414,22 +3903,22 @@
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
       "transition_attention_score": 0.454225,
-      "transition_attention": 0.00711942
+      "transition_attention": 0.0071751
     },
     {
-      "slug": "transformation_theory_quantum_mechanics",
-      "title": "Transformation theory (quantum mechanics)",
+      "slug": "quantum_chaos",
+      "title": "Quantum chaos",
       "status": "constructed",
-      "branch": "context",
-      "branch_title": "Hilbert-space context: admissible carrier and basis",
-      "secondary": "generators",
+      "branch": "generators",
+      "branch_title": "Generator: lawful change before readout",
+      "secondary": "states",
       "routes": {
-        "transport_flow_route": 0.2411,
-        "constraint_closure_route": 0.1796,
+        "transport_flow_route": 0.2575,
+        "constraint_closure_route": 0.1928,
         "spectral_operator_route": 0.4338,
-        "boundary_weak_form_route": 0.056,
-        "commutator_incompatibility_route": 0.0477,
-        "discrete_protocol_route": 0.0497
+        "boundary_weak_form_route": 0.0593,
+        "commutator_incompatibility_route": 0.0506,
+        "discrete_protocol_route": 0.0525
       },
       "fibers": {
         "structure": 0.3333,
@@ -4451,15 +3940,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 11.061947,
-        "state": 7.964602,
-        "generator": 6.19469,
-        "observable": 9.513274,
-        "measurement": 8.849558,
-        "incompatibility": 3.982301,
-        "boundary": 3.097345,
-        "fields": 1.548673,
-        "protocol": 0.663717,
+        "context": 10.473588,
+        "state": 8.652095,
+        "generator": 6.375228,
+        "observable": 9.790528,
+        "measurement": 8.424408,
+        "incompatibility": 4.098361,
+        "boundary": 2.73224,
+        "fields": 1.593807,
+        "protocol": 0.68306,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -4475,15 +3964,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.20920501957528762,
-        "state": 0.15062761712014847,
-        "generator": 0.1171548049102783,
-        "observable": 0.17991630889165122,
-        "measurement": 0.16736402322508354,
-        "incompatibility": 0.07531380856007423,
-        "boundary": 0.05857740245513915,
-        "fields": 0.02928871068363638,
-        "protocol": 0.012552304578701304,
+        "context": 0.19827585603061834,
+        "state": 0.16379310916022596,
+        "generator": 0.12068966137395962,
+        "observable": 0.1853448235878419,
+        "measurement": 0.15948275870228898,
+        "incompatibility": 0.07758621358769326,
+        "boundary": 0.05172412977110582,
+        "fields": 0.030172415343489904,
+        "protocol": 0.012931032442776455,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -4503,34 +3992,277 @@
       "top_post_roles": [
         [
           "context",
-          0.20920501957528762
+          0.19827585603061834
         ],
         [
           "observable",
-          0.17991630889165122
+          0.1853448235878419
         ],
         [
-          "measurement",
-          0.16736402322508354
+          "state",
+          0.16379310916022596
         ]
       ],
-      "object_density_pre": 0.0,
-      "object_density_post": 5.9735,
+      "object_density_pre": 2.0,
+      "object_density_post": 6.3752,
       "operation_density_pre": 0.0,
-      "operation_density_post": 22.5664,
-      "operation_gain": 22.5664,
-      "object_shift": 5.9735,
-      "role_focus_gain": 0.2092,
-      "role_entropy_drop": -1.9907,
+      "operation_density_post": 23.224,
+      "operation_gain": 23.224,
+      "object_shift": 4.3752,
+      "role_focus_gain": 0.1983,
+      "role_entropy_drop": -1.9909,
       "route_strength": 0.4338,
-      "route_balance_entropy": 1.4657,
+      "route_balance_entropy": 1.481,
       "anomaly_score": 0.0,
       "anomaly_labels": [],
       "anomaly_explanation": "",
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.451259,
-      "transition_attention": 0.00709833
+      "transition_attention_score": 0.4542,
+      "transition_attention": 0.00717492
+    },
+    {
+      "slug": "bell_s_theorem",
+      "title": "Bell's theorem",
+      "status": "constructed",
+      "branch": "incompatibility",
+      "branch_title": "Compatibility limit: what cannot be jointly sharp",
+      "secondary": "measurement",
+      "routes": {
+        "transport_flow_route": 0.2411,
+        "constraint_closure_route": 0.1796,
+        "spectral_operator_route": 0.3001,
+        "boundary_weak_form_route": 0.0822,
+        "commutator_incompatibility_route": 0.1171,
+        "discrete_protocol_route": 0.1741
+      },
+      "fibers": {
+        "structure": 0.3437,
+        "spectral": 0.3438,
+        "geometry": 0.3125,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "pre_role_scores": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 2.0,
+        "incompatibility": 7.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_scores": {
+        "context": 9.361233,
+        "state": 8.535242,
+        "generator": 3.303965,
+        "observable": 7.984581,
+        "measurement": 9.636564,
+        "incompatibility": 4.955947,
+        "boundary": 1.101322,
+        "fields": 1.927313,
+        "protocol": 0.550661,
+        "annotation": 0.0
+      },
+      "pre_role_distribution": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.2222222222222222,
+        "incompatibility": 0.7777777777777778,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_distribution": {
+        "context": 0.19767440927420224,
+        "state": 0.18023255273769603,
+        "generator": 0.06976744726230397,
+        "observable": 0.16860464134126552,
+        "measurement": 0.20348837553055707,
+        "incompatibility": 0.10465116033531638,
+        "boundary": 0.02325582279286104,
+        "fields": 0.04069767932936725,
+        "protocol": 0.01162791139643052,
+        "annotation": 0.0
+      },
+      "top_pre_roles": [
+        [
+          "incompatibility",
+          0.7777777777777778
+        ],
+        [
+          "measurement",
+          0.2222222222222222
+        ],
+        [
+          "context",
+          0.0
+        ]
+      ],
+      "top_post_roles": [
+        [
+          "measurement",
+          0.20348837553055707
+        ],
+        [
+          "context",
+          0.19767440927420224
+        ],
+        [
+          "state",
+          0.18023255273769603
+        ]
+      ],
+      "object_density_pre": 0.0,
+      "object_density_post": 5.5066,
+      "operation_density_pre": 0.0,
+      "operation_density_post": 19.8238,
+      "operation_gain": 19.8238,
+      "object_shift": 5.5066,
+      "role_focus_gain": -0.5743,
+      "role_entropy_drop": -1.4152,
+      "route_strength": 0.3001,
+      "route_balance_entropy": 1.7108,
+      "anomaly_score": 2.1289,
+      "anomaly_labels": [
+        "weak spectral anchor",
+        "protocol is unusually explicit",
+        "multi-role hub"
+      ],
+      "anomaly_explanation": "This incompatibility page mixes observables and spectra, state evolution, and normalization and admissibility. State which otherwise legal questions fail to share a single sharp representation, and what experiment or inequality exposes that failure.",
+      "anomaly_routes": {
+        "boundary_weak_form_route": 0.0822,
+        "commutator_incompatibility_route": 0.1171,
+        "constraint_closure_route": 0.1796,
+        "discrete_protocol_route": 0.1741,
+        "spectral_operator_route": 0.3001,
+        "transport_flow_route": 0.2411
+      },
+      "hyperion_witness_count": 32,
+      "transition_attention_score": 0.454026,
+      "transition_attention": 0.00717368
+    },
+    {
+      "slug": "quantum_amplifier",
+      "title": "Quantum amplifier",
+      "status": "constructed",
+      "branch": "generators",
+      "branch_title": "Generator: lawful change before readout",
+      "secondary": "states",
+      "routes": {
+        "transport_flow_route": 0.2189,
+        "constraint_closure_route": 0.1337,
+        "spectral_operator_route": 0.4099,
+        "boundary_weak_form_route": 0.0448,
+        "commutator_incompatibility_route": 0.1144,
+        "discrete_protocol_route": 0.0546
+      },
+      "fibers": {
+        "structure": 0.3333,
+        "spectral": 0.3333,
+        "geometry": 0.3333,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "pre_role_scores": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_scores": {
+        "context": 10.397412,
+        "state": 8.780037,
+        "generator": 6.469501,
+        "observable": 9.011091,
+        "measurement": 8.780037,
+        "incompatibility": 3.465804,
+        "boundary": 3.23475,
+        "fields": 2.54159,
+        "protocol": 0.693161,
+        "annotation": 0.0
+      },
+      "pre_role_distribution": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_distribution": {
+        "context": 0.19480518969539554,
+        "state": 0.16450216393440903,
+        "generator": 0.1212121217798767,
+        "observable": 0.16883117564423453,
+        "measurement": 0.16450216393440903,
+        "incompatibility": 0.06493506323179851,
+        "boundary": 0.06060605152197304,
+        "fields": 0.047619053864357816,
+        "protocol": 0.012987016393545825,
+        "annotation": 0.0
+      },
+      "top_pre_roles": [
+        [
+          "context",
+          0.0
+        ],
+        [
+          "state",
+          0.0
+        ],
+        [
+          "generator",
+          0.0
+        ]
+      ],
+      "top_post_roles": [
+        [
+          "context",
+          0.19480518969539554
+        ],
+        [
+          "observable",
+          0.16883117564423453
+        ],
+        [
+          "state",
+          0.16450216393440903
+        ]
+      ],
+      "object_density_pre": 0.0,
+      "object_density_post": 5.5453,
+      "operation_density_pre": 0.0,
+      "operation_density_post": 23.7985,
+      "operation_gain": 23.7985,
+      "object_shift": 5.5453,
+      "role_focus_gain": 0.1948,
+      "role_entropy_drop": -2.0174,
+      "route_strength": 0.4099,
+      "route_balance_entropy": 1.5258,
+      "anomaly_score": 0.0,
+      "anomaly_labels": [],
+      "anomaly_explanation": "",
+      "anomaly_routes": {},
+      "hyperion_witness_count": 32,
+      "transition_attention_score": 0.45386,
+      "transition_attention": 0.00717249
     },
     {
       "slug": "quantum_entanglement",
@@ -4567,16 +4299,16 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 8.423586,
-        "state": 8.724428,
-        "generator": 2.406739,
-        "observable": 6.618532,
-        "measurement": 10.529483,
-        "incompatibility": 5.11432,
-        "boundary": 1.504212,
-        "fields": 2.105897,
-        "protocol": 0.601685,
-        "annotation": 0.601685
+        "context": 8.484848,
+        "state": 8.787879,
+        "generator": 2.424242,
+        "observable": 6.666667,
+        "measurement": 10.606061,
+        "incompatibility": 5.151515,
+        "boundary": 1.515152,
+        "fields": 2.121212,
+        "protocol": 0.606061,
+        "annotation": 0.606061
       },
       "pre_role_distribution": {
         "context": 0.0,
@@ -4591,16 +4323,16 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18064515492595232,
-        "state": 0.1870967599428932,
-        "generator": 0.05161290447100932,
-        "observable": 0.14193548193398547,
-        "measurement": 0.22580645438002073,
-        "incompatibility": 0.10967741395895957,
-        "boundary": 0.03225806797502591,
-        "fields": 0.045161299454068396,
-        "protocol": 0.01290323147904249,
-        "annotation": 0.01290323147904249
+        "context": 0.18064514700520323,
+        "state": 0.18709677460561916,
+        "generator": 0.05161289306139461,
+        "observable": 0.14193548785431837,
+        "measurement": 0.2258064550468262,
+        "incompatibility": 0.10967741372320514,
+        "boundary": 0.032258074131113215,
+        "fields": 0.04516128675130081,
+        "protocol": 0.01290323391050971,
+        "annotation": 0.01290323391050971
       },
       "top_pre_roles": [
         [
@@ -4619,23 +4351,23 @@
       "top_post_roles": [
         [
           "measurement",
-          0.22580645438002073
+          0.2258064550468262
         ],
         [
           "state",
-          0.1870967599428932
+          0.18709677460561916
         ],
         [
           "context",
-          0.18064515492595232
+          0.18064514700520323
         ]
       ],
       "object_density_pre": 2.0,
-      "object_density_post": 5.4152,
+      "object_density_post": 5.4545,
       "operation_density_pre": 4.0,
-      "operation_density_post": 22.2623,
-      "operation_gain": 18.2623,
-      "object_shift": 3.4152,
+      "operation_density_post": 22.4242,
+      "operation_gain": 18.4242,
+      "object_shift": 3.4545,
       "role_focus_gain": -0.3127,
       "role_entropy_drop": -1.0102,
       "route_strength": 0.2665,
@@ -4657,8 +4389,124 @@
         "transport_flow_route": 0.2665
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.451129,
-      "transition_attention": 0.00709741
+      "transition_attention_score": 0.451191,
+      "transition_attention": 0.00715337
+    },
+    {
+      "slug": "transformation_theory_quantum_mechanics",
+      "title": "Transformation theory (quantum mechanics)",
+      "status": "constructed",
+      "branch": "context",
+      "branch_title": "Hilbert-space context: admissible carrier and basis",
+      "secondary": "generators",
+      "routes": {
+        "transport_flow_route": 0.2411,
+        "constraint_closure_route": 0.1796,
+        "spectral_operator_route": 0.4338,
+        "boundary_weak_form_route": 0.056,
+        "commutator_incompatibility_route": 0.0477,
+        "discrete_protocol_route": 0.0497
+      },
+      "fibers": {
+        "structure": 0.3333,
+        "spectral": 0.3333,
+        "geometry": 0.3333,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "pre_role_scores": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_scores": {
+        "context": 11.120996,
+        "state": 8.007117,
+        "generator": 6.227758,
+        "observable": 9.564057,
+        "measurement": 8.896797,
+        "incompatibility": 4.003559,
+        "boundary": 3.113879,
+        "fields": 1.55694,
+        "protocol": 0.66726,
+        "annotation": 0.0
+      },
+      "pre_role_distribution": {
+        "context": 0.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_distribution": {
+        "context": 0.20920501257723081,
+        "state": 0.1506276067982003,
+        "generator": 0.11715481155806097,
+        "observable": 0.1799163190935733,
+        "measurement": 0.16736401382412774,
+        "incompatibility": 0.0753138128049579,
+        "boundary": 0.058577405779030485,
+        "fields": 0.02928871229537298,
+        "protocol": 0.012552305269445563,
+        "annotation": 0.0
+      },
+      "top_pre_roles": [
+        [
+          "context",
+          0.0
+        ],
+        [
+          "state",
+          0.0
+        ],
+        [
+          "generator",
+          0.0
+        ]
+      ],
+      "top_post_roles": [
+        [
+          "context",
+          0.20920501257723081
+        ],
+        [
+          "observable",
+          0.1799163190935733
+        ],
+        [
+          "measurement",
+          0.16736401382412774
+        ]
+      ],
+      "object_density_pre": 0.0,
+      "object_density_post": 6.0053,
+      "operation_density_pre": 0.0,
+      "operation_density_post": 22.6868,
+      "operation_gain": 22.6868,
+      "object_shift": 6.0053,
+      "role_focus_gain": 0.2092,
+      "role_entropy_drop": -1.9907,
+      "route_strength": 0.4338,
+      "route_balance_entropy": 1.4657,
+      "anomaly_score": 0.0,
+      "anomaly_labels": [],
+      "anomaly_explanation": "",
+      "anomaly_routes": {},
+      "hyperion_witness_count": 32,
+      "transition_attention_score": 0.450456,
+      "transition_attention": 0.00714811
     },
     {
       "slug": "quantum_finite_automaton",
@@ -4695,15 +4543,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.07162,
-        "state": 8.057296,
-        "generator": 6.042972,
-        "observable": 8.28111,
-        "measurement": 8.952551,
-        "incompatibility": 4.028648,
-        "boundary": 3.133393,
-        "fields": 1.566697,
-        "protocol": 0.895255,
+        "context": 10.126013,
+        "state": 8.10081,
+        "generator": 6.075608,
+        "observable": 8.325833,
+        "measurement": 9.0009,
+        "incompatibility": 4.050405,
+        "boundary": 3.150315,
+        "fields": 1.575158,
+        "protocol": 0.90009,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -4719,15 +4567,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.19736841847414585,
-        "state": 0.15789473477931668,
-        "generator": 0.11842105108448753,
-        "observable": 0.16228070398907368,
-        "measurement": 0.1754385920218528,
-        "incompatibility": 0.07894736738965834,
-        "boundary": 0.061403510147122246,
-        "fields": 0.03070176487180701,
-        "protocol": 0.017543857242536105,
+        "context": 0.19736842310433975,
+        "state": 0.15789473068698076,
+        "generator": 0.11842105776084934,
+        "observable": 0.16228070517389956,
+        "measurement": 0.17543858965220085,
+        "incompatibility": 0.07894736534349038,
+        "boundary": 0.06140350637827031,
+        "fields": 0.030701762934748907,
+        "protocol": 0.017543858965220087,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -4747,23 +4595,23 @@
       "top_post_roles": [
         [
           "context",
-          0.19736841847414585
+          0.19736842310433975
         ],
         [
           "measurement",
-          0.1754385920218528
+          0.17543858965220085
         ],
         [
           "observable",
-          0.16228070398907368
+          0.16228070517389956
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 5.5953,
+      "object_density_post": 5.6256,
       "operation_density_pre": 2.0,
-      "operation_density_post": 22.1576,
-      "operation_gain": 20.1576,
-      "object_shift": 5.5953,
+      "operation_density_post": 22.2772,
+      "operation_gain": 20.2772,
+      "object_shift": 5.6256,
       "role_focus_gain": -0.3026,
       "role_entropy_drop": -1.3213,
       "route_strength": 0.2753,
@@ -4784,8 +4632,8 @@
         "transport_flow_route": 0.2753
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.450946,
-      "transition_attention": 0.00709611
+      "transition_attention_score": 0.450362,
+      "transition_attention": 0.00714744
     },
     {
       "slug": "relativistic_quantum_mechanics",
@@ -4822,15 +4670,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 11.926193,
-        "state": 8.550855,
-        "generator": 4.275428,
-        "observable": 7.650765,
-        "measurement": 10.126013,
-        "incompatibility": 4.050405,
-        "boundary": 1.350135,
-        "fields": 1.575158,
-        "protocol": 0.675068,
+        "context": 11.99095,
+        "state": 8.597285,
+        "generator": 4.298643,
+        "observable": 7.692308,
+        "measurement": 10.180995,
+        "incompatibility": 4.072398,
+        "boundary": 1.357466,
+        "fields": 1.58371,
+        "protocol": 0.678733,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -4846,15 +4694,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.23766815955832615,
-        "state": 0.1704035789543328,
-        "generator": 0.08520179944129155,
-        "observable": 0.1524663601170346,
-        "measurement": 0.2017937218837298,
-        "incompatibility": 0.08071748476784184,
-        "boundary": 0.026905828255947287,
-        "fields": 0.031390142929397,
-        "protocol": 0.013452924092098806,
+        "context": 0.23766816019063322,
+        "state": 0.17040358842164532,
+        "generator": 0.08520180412113672,
+        "observable": 0.1524663758901246,
+        "measurement": 0.20179371530696366,
+        "incompatibility": 0.08071748612278547,
+        "boundary": 0.026905828707595156,
+        "fields": 0.03139012688531832,
+        "protocol": 0.013452914353797578,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -4874,23 +4722,23 @@
       "top_post_roles": [
         [
           "context",
-          0.23766815955832615
+          0.23766816019063322
         ],
         [
           "measurement",
-          0.2017937218837298
+          0.20179371530696366
         ],
         [
           "state",
-          0.1704035789543328
+          0.17040358842164532
         ]
       ],
       "object_density_pre": 1.0,
-      "object_density_post": 5.1755,
+      "object_density_post": 5.2036,
       "operation_density_pre": 1.0,
-      "operation_density_post": 20.477,
-      "operation_gain": 19.477,
-      "object_shift": 4.1755,
+      "operation_density_post": 20.5882,
+      "operation_gain": 19.5882,
+      "object_shift": 4.2036,
       "role_focus_gain": -0.2623,
       "role_entropy_drop": -1.2365,
       "route_strength": 0.2681,
@@ -4912,8 +4760,8 @@
         "transport_flow_route": 0.2681
       },
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.45003,
-      "transition_attention": 0.00708961
+      "transition_attention_score": 0.449418,
+      "transition_attention": 0.0071407
     },
     {
       "slug": "heisenberg_group",
@@ -4950,15 +4798,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.39783,
-        "state": 8.589512,
-        "generator": 6.555154,
-        "observable": 8.815552,
-        "measurement": 9.267631,
-        "incompatibility": 4.068716,
-        "boundary": 2.712477,
-        "fields": 1.582278,
-        "protocol": 0.678119,
+        "context": 10.454545,
+        "state": 8.636364,
+        "generator": 6.590909,
+        "observable": 8.863636,
+        "measurement": 9.318182,
+        "incompatibility": 4.090909,
+        "boundary": 2.727273,
+        "fields": 1.590909,
+        "protocol": 0.681818,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -4974,15 +4822,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.19742489400769955,
-        "state": 0.16309013478561035,
-        "generator": 0.12446352591397894,
-        "observable": 0.16738198443515268,
-        "measurement": 0.17596566474711264,
-        "incompatibility": 0.0772532177432629,
-        "boundary": 0.05150213883313372,
-        "fields": 0.03004290957254685,
-        "protocol": 0.012875529961502276,
+        "context": 0.1974248858148059,
+        "state": 0.163090137022233,
+        "generator": 0.12446351866492293,
+        "observable": 0.16738196881872938,
+        "measurement": 0.17596567017996287,
+        "incompatibility": 0.07725321783049974,
+        "boundary": 0.05150215151503994,
+        "fields": 0.030042916996076547,
+        "protocol": 0.012875533157729902,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -5002,23 +4850,23 @@
       "top_post_roles": [
         [
           "context",
-          0.19742489400769955
+          0.1974248858148059
         ],
         [
           "measurement",
-          0.17596566474711264
+          0.17596567017996287
         ],
         [
           "observable",
-          0.16738198443515268
+          0.16738196881872938
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 6.3291,
+      "object_density_post": 6.3636,
       "operation_density_pre": 0.0,
-      "operation_density_post": 23.5081,
-      "operation_gain": 23.5081,
-      "object_shift": 6.3291,
+      "operation_density_post": 23.6364,
+      "operation_gain": 23.6364,
+      "object_shift": 6.3636,
       "role_focus_gain": 0.1974,
       "role_entropy_drop": -1.9923,
       "route_strength": 0.3884,
@@ -5028,8 +4876,8 @@
       "anomaly_explanation": "",
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.448022,
-      "transition_attention": 0.00707539
+      "transition_attention_score": 0.447218,
+      "transition_attention": 0.007125
     },
     {
       "slug": "perturbation_theory",
@@ -5066,15 +4914,15 @@
         "annotation": 0.0
       },
       "post_role_scores": {
-        "context": 10.098743,
-        "state": 8.527828,
-        "generator": 6.732496,
-        "observable": 9.874327,
-        "measurement": 9.425494,
-        "incompatibility": 4.039497,
-        "boundary": 3.141831,
-        "fields": 1.570916,
-        "protocol": 0.67325,
+        "context": 10.15343,
+        "state": 8.574007,
+        "generator": 6.768953,
+        "observable": 9.927798,
+        "measurement": 9.476534,
+        "incompatibility": 4.061372,
+        "boundary": 3.158845,
+        "fields": 1.579422,
+        "protocol": 0.676895,
         "annotation": 0.0
       },
       "pre_role_distribution": {
@@ -5090,15 +4938,15 @@
         "annotation": 0.0
       },
       "post_role_distribution": {
-        "context": 0.18672198195774894,
-        "state": 0.15767635100277191,
-        "generator": 0.12448133363158334,
-        "observable": 0.18257261403116337,
-        "measurement": 0.17427385968836626,
-        "incompatibility": 0.07468878908517435,
-        "boundary": 0.058091280399580045,
-        "fields": 0.029045649444603066,
-        "protocol": 0.012448140759008765,
+        "context": 0.18672200009503973,
+        "state": 0.15767634541912154,
+        "generator": 0.12448132726667928,
+        "observable": 0.18257261822847404,
+        "measurement": 0.17427385449534266,
+        "incompatibility": 0.0746888000380159,
+        "boundary": 0.05809129096179476,
+        "fields": 0.029045636285876582,
+        "protocol": 0.012448127209655449,
         "annotation": 0.0
       },
       "top_pre_roles": [
@@ -5118,23 +4966,23 @@
       "top_post_roles": [
         [
           "context",
-          0.18672198195774894
+          0.18672200009503973
         ],
         [
           "observable",
-          0.18257261403116337
+          0.18257261822847404
         ],
         [
           "measurement",
-          0.17427385968836626
+          0.17427385449534266
         ]
       ],
       "object_density_pre": 0.0,
-      "object_density_post": 6.2837,
+      "object_density_post": 6.3177,
       "operation_density_pre": 0.0,
-      "operation_density_post": 23.3393,
-      "operation_gain": 23.3393,
-      "object_shift": 6.2837,
+      "operation_density_post": 23.4657,
+      "operation_gain": 23.4657,
+      "object_shift": 6.3177,
       "role_focus_gain": 0.1867,
       "role_entropy_drop": -1.9954,
       "route_strength": 0.3908,
@@ -5144,8 +4992,124 @@
       "anomaly_explanation": "",
       "anomaly_routes": {},
       "hyperion_witness_count": 32,
-      "transition_attention_score": 0.444605,
-      "transition_attention": 0.00705125
+      "transition_attention_score": 0.443795,
+      "transition_attention": 0.00710066
+    },
+    {
+      "slug": "mathematical_formulation_of_quantum_mechanics",
+      "title": "Mathematical formulation of quantum mechanics",
+      "status": "constructed",
+      "branch": "context",
+      "branch_title": "Hilbert-space context: admissible carrier and basis",
+      "secondary": "annotations",
+      "routes": {
+        "transport_flow_route": 0.2501,
+        "constraint_closure_route": 0.1796,
+        "spectral_operator_route": 0.3977,
+        "boundary_weak_form_route": 0.0682,
+        "commutator_incompatibility_route": 0.1322,
+        "discrete_protocol_route": 0.0705
+      },
+      "fibers": {
+        "structure": 0.3333,
+        "spectral": 0.3333,
+        "geometry": 0.3333,
+        "syntax": 0.5858,
+        "entropy": 0.4142
+      },
+      "pre_role_scores": {
+        "context": 4.0,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 1.0,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_scores": {
+        "context": 11.057174,
+        "state": 8.899676,
+        "generator": 3.77562,
+        "observable": 7.820928,
+        "measurement": 12.405609,
+        "incompatibility": 2.427184,
+        "boundary": 1.078749,
+        "fields": 1.88781,
+        "protocol": 0.809061,
+        "annotation": 1.078749
+      },
+      "pre_role_distribution": {
+        "context": 0.8,
+        "state": 0.0,
+        "generator": 0.0,
+        "observable": 0.2,
+        "measurement": 0.0,
+        "incompatibility": 0.0,
+        "boundary": 0.0,
+        "fields": 0.0,
+        "protocol": 0.0,
+        "annotation": 0.0
+      },
+      "post_role_distribution": {
+        "context": 0.21578948395567885,
+        "state": 0.17368420641772844,
+        "generator": 0.07368420641772845,
+        "observable": 0.1526315871645431,
+        "measurement": 0.24210525802216057,
+        "incompatibility": 0.04736841283545691,
+        "boundary": 0.0210526387689752,
+        "fields": 0.036842103208864226,
+        "protocol": 0.015789464439889024,
+        "annotation": 0.0210526387689752
+      },
+      "top_pre_roles": [
+        [
+          "context",
+          0.8
+        ],
+        [
+          "observable",
+          0.2
+        ],
+        [
+          "state",
+          0.0
+        ]
+      ],
+      "top_post_roles": [
+        [
+          "measurement",
+          0.24210525802216057
+        ],
+        [
+          "context",
+          0.21578948395567885
+        ],
+        [
+          "state",
+          0.17368420641772844
+        ]
+      ],
+      "object_density_pre": 0.0,
+      "object_density_post": 5.3937,
+      "operation_density_pre": 0.0,
+      "operation_density_post": 26.4293,
+      "operation_gain": 26.4293,
+      "object_shift": 5.3937,
+      "role_focus_gain": -0.5579,
+      "role_entropy_drop": -1.4511,
+      "route_strength": 0.3977,
+      "route_balance_entropy": 1.6046,
+      "anomaly_score": 0.0,
+      "anomaly_labels": [],
+      "anomaly_explanation": "",
+      "anomaly_routes": {},
+      "hyperion_witness_count": 32,
+      "transition_attention_score": 0.44086,
+      "transition_attention": 0.00707985
     }
   ],
   "uses": [
@@ -5156,7 +5120,7 @@
     },
     {
       "name": "Pages that need explicit equations",
-      "why_useful": "The 145 topic-specific pages already supply local equation skeletons. The 2 core-derived pages mark topics where the book can state the expected quantum ingredients, but still needs a page-native state, operator or map, spectrum or readout, compatibility condition, and realization.",
+      "why_useful": "The 145 topic-specific pages already supply local equation skeletons. The 1 core-derived pages mark topics where the book can state the expected quantum ingredients, but still needs a page-native state, operator or map, spectrum or readout, compatibility condition, and realization.",
       "evidence_needed": "Clean equation witnesses and page-local role rows linked to the source text."
     },
     {

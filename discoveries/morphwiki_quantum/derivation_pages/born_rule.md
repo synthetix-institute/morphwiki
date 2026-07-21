@@ -9,7 +9,7 @@ Born rule is the probability-readout constructor: it maps a state and a spectral
 
 ## Mechanism
 
-The Born rule is the point where the constructor becomes predictive. It does not name an object; it connects state preparation and a legal question to frequencies over outcome channels. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+The Born rule is the point where the constructor becomes predictive. It does not name an object; it connects state preparation and a legal question to frequencies over outcome channels. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
@@ -27,7 +27,7 @@ Standard constructor skeleton: probability assignment for projective and positio
 
 ```math
 p(i|\rho,\{P_i\})=\operatorname{Tr}(\rho P_i)
-p(x|\psi)=|\psi(x)|^2
+\Pr(X\in\Delta|\psi)=\int_\Delta|\psi(x)|^2\,d\mu(x)
 \sum_i p(i)=1
 ```
 

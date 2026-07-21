@@ -9,7 +9,7 @@ Observable is the legal-question constructor: it turns a physical question into 
 
 ## Mechanism
 
-An observable is the mathematical form of a question that can be asked of a state. Its spectral decomposition defines the possible answers. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+An observable is the mathematical form of a question that can be asked of a state. Its spectral decomposition defines the possible answers. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

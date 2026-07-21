@@ -38,6 +38,21 @@ if [[ "$BUILD_V2_EVIDENCE_INDEX" != "0" && "$BUILD_V2_EVIDENCE_INDEX" != "false"
     --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_AUDIT_MD:-$ROOT/v2_quantum_evidence_index_audit.md}"
 fi
 
+if [[ -n "$V2_ROOT" && -d "$V2_ROOT" ]]; then
+  V2_DAG_JSON="${MORPHWIKI_V2_DAG_JSON:-$(find "$V2_ROOT" -maxdepth 1 -type f -name '*v2_dag.json' -print -quit)}"
+  V2_GRAMMAR_JSON="${MORPHWIKI_V2_GRAMMAR_RULES_JSON:-$(find "$V2_ROOT" -maxdepth 1 -type f -name '*grammar_rule_learner.json' -print -quit)}"
+  V2_SOURCE_CONSTRUCTOR="${MORPHWIKI_V2_SOURCE_CONSTRUCTOR:-$(find "$V2_ROOT" -maxdepth 1 -type f \( -name '*source_constructor_graph.json' -o -name '*source_constructor_graph.md' \) -print -quit)}"
+  if [[ -n "$V2_DAG_JSON" && -n "$V2_GRAMMAR_JSON" && -n "$V2_SOURCE_CONSTRUCTOR" ]]; then
+    echo "[MorphWiki] deriving constructor dependencies"
+    "$PYTHON_BIN" -B scripts/analyze_quantum_constructor_dependencies.py \
+      --dag-json "$V2_DAG_JSON" \
+      --grammar-json "$V2_GRAMMAR_JSON" \
+      --source-constructor "$V2_SOURCE_CONSTRUCTOR" \
+      --out-json "$ROOT/quantum_constructor_dependencies.json" \
+      --out-md "$ROOT/quantum_constructor_dependencies.md"
+  fi
+fi
+
 echo "[MorphWiki] building mechanism tree"
 tree_args=()
 if [[ -n "${MORPHWIKI_V2_LANGUAGE_JSON:-}" ]]; then
@@ -65,6 +80,12 @@ echo "[MorphWiki] running sparse-attention rewrite analysis"
 "$PYTHON_BIN" -B scripts/analyze_morphwiki_rewrite_transition.py \
   --root "$ROOT"
 
+echo "[MorphWiki] deriving testable cross-topic rewiring candidates"
+"$PYTHON_BIN" -B scripts/analyze_quantum_constructor_rewiring.py \
+  --root "$ROOT" \
+  --out-json "$ROOT/quantum_constructor_rewiring.json" \
+  --out-md "$ROOT/quantum_constructor_rewiring.md"
+
 echo "[MorphWiki] building LaTeX book"
 "$PYTHON_BIN" -B scripts/build_morphwiki_quantum_book.py \
   --root "$ROOT" \
@@ -91,5 +112,14 @@ else
   echo "[MorphWiki] no LaTeX engine found; TeX written to $TEX"
   exit 0
 fi
+
+echo "[MorphWiki] auditing content preservation"
+"$PYTHON_BIN" -B scripts/audit_quantum_book_content_preservation.py \
+  --root "$ROOT" \
+  --contract "$OUT_DIR/quantum_book_content_contract.json" \
+  --tex "$TEX" \
+  --pdf "$PDF" \
+  --out-json "$OUT_DIR/quantum_book_content_preservation_audit.json" \
+  --out-md "$OUT_DIR/quantum_book_content_preservation_audit.md"
 
 echo "[MorphWiki] done: $PDF"

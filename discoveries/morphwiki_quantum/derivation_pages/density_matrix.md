@@ -9,7 +9,7 @@ Density matrix is the mixed-state constructor: it keeps probabilistic preparatio
 
 ## Mechanism
 
-Density matrices generalize pure states without changing the state-to-spectrum readout rule. They are the correct carrier when the preparation is statistical, when a subsystem is traced out, or when decoherence is being described. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Density matrices generalize pure states without changing the state-to-spectrum readout rule. They are the correct carrier when the preparation is statistical, when a subsystem is traced out, or when decoherence is being described. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

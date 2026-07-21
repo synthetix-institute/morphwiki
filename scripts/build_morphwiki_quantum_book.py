@@ -899,14 +899,15 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             "equation_note": "Standard constructor skeleton: normalized states, density states, spectral resolution, Born readout, and unitary identity preservation.",
         },
         "wave_function": {
-            "claim": "{title} is a representation of the state carrier in a chosen basis, not a separate physical substance.",
-            "reading": "The wave function is the coordinate expression of a quantum state after a representation has been chosen. Its modulus squared gives a probability density in the position representation, while operators act as transformations on that representation.",
+            "claim": "{title} is a basis-dependent representative of a pure-state ray; it is not identical to the abstract state or to physical configuration space.",
+            "reading": "For a configuration space Q with measure mu, the position wave function is the generalized-basis representative psi(x)=<x|psi> of a ray [psi] in L2(Q,mu). Vectors that differ by a nonzero global phase represent the same pure state. Its modulus squared is a probability density only relative to the stated position measure; spin and particle statistics enlarge or constrain the carrier.",
             "equations": [
-                r"\psi(x)=\langle x|\psi\rangle",
-                r"\int |\psi(x)|^2\,dx=1",
-                r"\langle A\rangle_\psi=\langle\psi|A|\psi\rangle",
+                r"\mathcal H=L^2(Q,d\mu),\qquad \psi(x)=\langle x|\psi\rangle",
+                r"\int_Q |\psi(x)|^2\,d\mu(x)=1,\qquad \ket\psi\sim e^{i\alpha}\ket\psi",
+                r"\Pr(X\in\Delta\mid\psi)=\langle\psi|E_X(\Delta)|\psi\rangle=\int_\Delta|\psi(x)|^2\,d\mu(x)",
+                r"\mathcal H_{\mathrm{spin}\,s}=L^2(Q,d\mu)\otimes\mathbb C^{2s+1}",
             ],
-            "equation_note": "Standard constructor skeleton: state representation, normalization, and expectation value.",
+            "equation_note": "Topic-specific constructor: abstract state ray, position representation, measure-dependent Born probability, and internal spin carrier.",
         },
         "density_matrix": {
             "claim": "{title} is the mixed-state constructor: it keeps probabilistic preparation, entanglement with unobserved degrees of freedom, and partial information in the same state formalism.",
@@ -1022,7 +1023,7 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             "reading": "The Born rule is the point where the constructor becomes predictive. It does not name an object; it connects state preparation and a legal question to frequencies over outcome channels.",
             "equations": [
                 r"p(i|\rho,\{P_i\})=\operatorname{Tr}(\rho P_i)",
-                r"p(x|\psi)=|\psi(x)|^2",
+                r"\Pr(X\in\Delta|\psi)=\int_\Delta|\psi(x)|^2\,d\mu(x)",
                 r"\sum_i p(i)=1",
             ],
             "equation_note": "Standard constructor skeleton: probability assignment for projective and position readouts.",
@@ -1152,6 +1153,36 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             ],
             "equation_note": "Standard constructor skeleton: boundary-source/bulk-field dictionary.",
         },
+        "measurement_problem": {
+            "claim": "{title} is the junction between unitary system--apparatus coupling, probability readout, and conditional state update; these are distinct maps and need not be identified.",
+            "reading": "A measurement model first couples the system to an apparatus or environment. A POVM or instrument then assigns outcome probabilities, and a conditional map specifies the post-record state. The foundational problem concerns the relation between these operations and a definite record, not the absence of a probability formula.",
+            "equations": [
+                r"\rho_{SA}'=U_{SA}(\rho_S\otimes\rho_A)U_{SA}^{\dagger}",
+                r"p(i)=\operatorname{Tr}[\mathcal I_i(\rho_S)]=\operatorname{Tr}(\rho_SE_i)",
+                r"\rho_{S|i}=\frac{\mathcal I_i(\rho_S)}{p(i)},\qquad \rho_S'=\sum_i\mathcal I_i(\rho_S)",
+            ],
+            "equation_note": "Topic-specific constructor: premeasurement coupling, outcome probability, conditional update, and unconditioned evolution are separated.",
+        },
+        "quantum_gravity": {
+            "claim": "{title} asks whether geometry is a background realization, a constrained quantum carrier, or an emergent readout of a deeper quantum state.",
+            "reading": "The constructor cannot treat quantum gravity as an ordinary wave function on a fixed domain. A candidate theory must specify the state space of geometric and matter degrees of freedom, the constraint or evolution operators, the gauge-invariant or relational observables, and the limit in which classical spacetime is recovered.",
+            "equations": [
+                r"\Psi\in\mathcal H_{\mathrm{geom}\otimes\mathrm{matter}},\qquad \widehat{\mathcal C}_a\Psi=0",
+                r"[\widehat O_{\mathrm{phys}},\widehat{\mathcal C}_a]\Psi=0",
+                r"\langle\Psi|\widehat g_{\mu\nu}|\Psi\rangle\longrightarrow g^{\mathrm{cl}}_{\mu\nu}\quad\text{in a controlled semiclassical regime}",
+            ],
+            "equation_note": "Schematic constructor shared by constrained approaches: quantum carrier, constraints, physical observables, and semiclassical recovery must all be specified.",
+        },
+        "quantum_simulator": {
+            "claim": "{title} is a target--carrier--validation construction: a controllable physical system encodes another model, and selected observables test whether the encoded dynamics is faithful.",
+            "reading": "The simulator Hamiltonian is not by itself the target theory. The claim also needs an encoding between target and device states, a correspondence between their generators or channels, and validation observables with an error budget over the stated time and parameter range.",
+            "equations": [
+                r"V:\mathcal H_{\mathrm{target}}\hookrightarrow\mathcal H_{\mathrm{device}}",
+                r"\left\|U_{\mathrm{device}}(t)V-VU_{\mathrm{target}}(t)\right\|\le\varepsilon(t)",
+                r"\left|\langle O\rangle_{\mathrm{target}}-\langle VO V^{\dagger}\rangle_{\mathrm{device}}\right|\le\delta_O",
+            ],
+            "equation_note": "Topic-specific constructor: encoding, dynamical correspondence, and observable validation are separate obligations.",
+        },
     }
 )
 
@@ -1177,6 +1208,27 @@ TOPIC_FRAME_OVERRIDES: Dict[str, Dict[str, str]] = {
         "admissibility": "Complete positivity and trace preservation are the legal conditions; non-trace-preserving maps require an explicitly conditioned outcome.",
         "readout": "Output state, final POVM probabilities, fidelity, capacity, error rate, or recovered subsystem statistics.",
         "test": "The channel claim requires a map that stays positive under extension by an untouched reference system and preserves total probability.",
+    },
+    "measurement_problem": {
+        "carrier": "A joint system--apparatus state, possibly enlarged by environmental degrees of freedom.",
+        "operator": "A premeasurement interaction followed by a measurement instrument whose components label possible records.",
+        "admissibility": "The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity.",
+        "readout": "Outcome probabilities and conditional post-record states must be stated separately.",
+        "test": "A proposed resolution must identify where a definite record enters and how its prediction differs from the unconditioned state evolution.",
+    },
+    "quantum_gravity": {
+        "carrier": "A state space for geometric and matter degrees of freedom, or a deeper carrier from which geometry is reconstructed.",
+        "operator": "Constraint, evolution, or amplitude operators that do not presuppose an unexamined fixed spacetime background.",
+        "admissibility": "Gauge and diffeomorphism constraints determine the physical state space and which operators are observable.",
+        "readout": "Relational observables, boundary amplitudes, geometric spectra, or semiclassical spacetime data.",
+        "test": "The construction must recover controlled classical geometry and reproduce established low-energy quantum field predictions in its domain of validity.",
+    },
+    "quantum_simulator": {
+        "carrier": "A controllable device state space together with an explicit encoding of the target state space.",
+        "operator": "Device Hamiltonians, channels, or gate sequences intended to reproduce target dynamics under the encoding.",
+        "admissibility": "Control errors, leakage, finite size, noise, and approximation order define the regime in which the correspondence is claimed.",
+        "readout": "Encoded target observables compared with independently predicted or calibrated device measurements.",
+        "test": "Validation requires observables and error bounds beyond agreement with the programmed control Hamiltonian.",
     },
 }
 
@@ -1352,15 +1404,15 @@ def constructor_text(
             f"In that order, {branch_claim[:1].lower() + branch_claim[1:]}"
         )
         reading = (
-            f"{display} is placed in the {branch_name} step because its evidence profile emphasizes {route_sentence} "
-            f"on a carrier signalled by {fiber_sentence}. "
+            f"{display} is placed in the {branch_name} step because its linked equations emphasize {route_sentence}, "
+            f"with mathematical presentation dominated by {fiber_sentence}. "
             f"A topic-level derivation requires a carrier or domain ({frame['carrier']}), an operator or map ({frame['operator']}), "
             f"an admissibility condition ({frame['admissibility']}), and a readout ({frame['readout']}). "
             f"{family['known']}"
         )
     reading += (
-        f" In the source-evidence profile for this page, the strongest construction signal is {route_sentence}; "
-        f"the strongest carrier signal is {fiber_sentence}."
+        f" The linked equation set is concentrated in {route_sentence}; "
+        f"its mathematical presentation emphasizes {fiber_sentence}."
     )
     if branch_id == "annotations" or row.get("is_annotation"):
         reading += (
@@ -2592,11 +2644,11 @@ def compact_operator_formulation_chapter() -> str:
         r"\chapter{Compact Operator Formulation}",
         r"\begin{claimbox}",
         latex_escape(
-            "The compact form of nonrelativistic quantum theory is a map from a context and a state to a probability measure over an operator spectrum."
+            "The compact form of nonrelativistic quantum theory is a typed carrier-operator identity with closure and readout attached where a prediction requires them."
         ),
         r"\end{claimbox}",
         latex_escape(
-            "This chapter is the formal spine of the book. It does not introduce new physics. It rewrites familiar quantum mechanics as a sequence of necessary construction steps. Each later page is placed by asking which step it changes: admissible context, state carrier, generator, observable, readout, compatibility, realization, many-mode extension, or protocol."
+            "This chapter is the formal spine of the book. It does not impose one temporal sequence on every derivation. Each later page is placed by asking which part of the typed identity it specifies, which completion condition it adds, and which realization it changes."
         ),
         r"\section{The Minimal Constructor}",
         r"\begin{align*}",
@@ -2618,11 +2670,170 @@ def compact_operator_formulation_chapter() -> str:
         r"\item \(\Pr(\Delta\mid C,\rho,A)\) is the Born probability of an outcome set \(\Delta\).",
         r"\item A non-zero commutator marks a compatibility limit: two legal questions may not share one sharp readout basis.",
         r"\end{itemize}",
+        r"\section{Identity, Completion, And Realization}",
+        latex_escape(
+            "The carrier and operator apparatus are jointly typed: an operator has a domain on a carrier, while the carrier determines which operators and states are admissible. Closure, readout, and protocol are attached completion modes. A boundary, field representation, detector, or circuit is a realization of this structure rather than a later universal stage."
+        ),
+        r"\begin{align*}",
+        r"\mathcal I_Q &= \bigl((\mathcal H_C,\mathcal D_C),\,\mathcal O_C\bigr) && \text{typed identity}\\",
+        r"\mathcal F_Q &= \bigl(\mathcal K_C,\,\mathcal E_C,\,\mathcal P_C\bigr) && \text{closure, readout, protocol}\\",
+        r"\mathcal R_Q &: \mathcal I_Q\oplus\mathcal F_Q \longrightarrow \text{boundary, field, device, or encoding}. &&",
+        r"\end{align*}",
+        latex_escape(
+            "A calculation can add a missing role, project a complete relation onto one consequence, or rewrite the same role in another representation. These are derivation moves on the constructor, not new physical postulates."
+        ),
         r"\section{Why This Is More Compact}",
         latex_escape(
             "The usual presentation introduces particles, waves, measurement, operators, interpretations, and fields as separate conceptual blocks. The compact constructor shows that many of these are changes of role rather than separate roots. A particle is a stable state/readout role. A barrier is a context that changes the operator domain. A field is a many-mode extension of the state space. A quantum circuit is a protocolized composition of maps. An interpretation changes the meaning of state, probability, or update, but usually leaves the constructor intact."
         ),
     ]
+    return "\n".join(lines)
+
+
+def constructor_dependency_chapter(root: Path) -> str:
+    """Render the V2 DAG and source-constructor result without exposing internal tokens."""
+    report = load_optional_json(root / "quantum_constructor_dependencies.json")
+    if not report:
+        return ""
+
+    dag = report.get("v2_completion_dag") or {}
+    grammar = report.get("grammar_factorization") or {}
+    source = report.get("source_constructor") or {}
+    source_edges = source.get("source_local_edges") or {}
+    status = source.get("constructor_status") or {}
+    mdl = grammar.get("candidate_mdl_scores") or {}
+    directed_fraction = float(dag.get("directed_fraction") or 0.0)
+    coupled_lateral = float(dag.get("coupled_operator_substrate_lateral_fraction") or 0.0)
+    complete_fraction = float((source.get("constructor_status_fractions") or {}).get("complete_constructor_frame") or 0.0)
+    balance = float(source.get("completion_projection_balance") or 0.0)
+
+    lines: List[str] = [
+        r"\chapter{Dependencies Exposed By The Constructor}",
+        r"\begin{claimbox}",
+        latex_escape(
+            "The corpus supports a typed carrier-operator identity, an attached completion fibre, and a reversible derivation calculus. The completion DAG records a partial order of formal specification; the source constructor records how equations are actually developed inside papers."
+        ),
+        r"\end{claimbox}",
+        r"\section{How The Structure Was Obtained}",
+        latex_escape(
+            f"The analysis combines {int(dag.get('rows') or 0):,} retained equation morphisms with a source-local graph of {int(source.get('nodes') or 0):,} equations from {int(source.get('source_groups') or 0):,} paper groups. The factorization was selected on {int(grammar.get('rows_sampled') or 0):,} sampled rows and then checked against the full assignment."
+        ),
+        r"\begin{enumerate}",
+        r"\item Each equation record was separated into carrier or context evidence, operator-apparatus evidence, and completion evidence for closure, readout, or ordered protocol.",
+        r"\item Candidate grammars were compared by a description-length objective. The selected model retains carrier and operator as primitive factors and attaches completion as a fibre.",
+        r"\item Mechanism edges were oriented only when the destination contained more constructor roles. This orientation defines completion rank, not physical time.",
+        r"\item Equations adjacent in the same source were classified as role completion, role projection, or lateral rewrite. These edges restore the local order omitted by the corpus-wide DAG.",
+        r"\end{enumerate}",
+        r"\begin{longtable}{p{0.47\linewidth}r p{0.30\linewidth}}",
+        r"\toprule",
+        r"Measured quantity & Value & Consequence \\",
+        r"\midrule",
+        r"\endhead",
+        rf"Selected grammar description score & {float(mdl.get('identity_with_completion_fiber') or 0.0):.3f} & carrier--operator identity with attached completion \\",
+        rf"Three-factor alternative score & {float(mdl.get('three_factor_completion') or 0.0):.3f} & completion is not promoted to a third primitive space \\",
+        rf"Mechanism edges increasing completion rank & {directed_fraction * 100:.1f}\% & the DAG is a partial order, not the whole graph \\",
+        rf"Coupled carrier--operator edges remaining lateral & {coupled_lateral * 100:.2f}\% & similarity usually preserves rank \\",
+        rf"Complete source constructor frames & {complete_fraction * 100:.1f}\% & mechanisms are distributed across neighboring equations \\",
+        rf"Completion--projection balance & {balance:.3f} & source derivation is approximately bidirectional \\",
+        r"\bottomrule",
+        r"\end{longtable}",
+        r"\section{Static Identity And Derivation Dynamics}",
+        latex_escape(
+            "Two structures must therefore be kept separate. The static identity says which operator apparatus is defined on which carrier and domain. The derivation dynamics says how a paper adds assumptions or readout, projects a relation onto a consequence, or changes representation without changing completion rank."
+        ),
+        r"\begin{align*}",
+        r"\text{identity:}\quad &\mathcal I=((\mathcal H,\mathcal D),\mathcal O),\\",
+        r"\text{completion:}\quad &\mathcal F=(\mathcal K,\mathcal E,\mathcal P),\\",
+        r"\text{derivation moves:}\quad &x\xrightarrow{+\,\mathrm{role}}y,\qquad x\xrightarrow{\mathrm{projection}}y,\qquad x\overset{\mathrm{rewrite}}{\longleftrightarrow}y.",
+        r"\end{align*}",
+        latex_escape(
+            f"The source graph contains {int(source_edges.get('source_sequence_role_completion') or 0):,} completion moves, {int(source_edges.get('source_sequence_role_projection') or 0):,} projections, and {int(source_edges.get('source_sequence_lateral') or 0):,} lateral rewrites. The near balance between the first two classes explains why a derivation cannot be represented faithfully as a one-way funnel."
+        ),
+        r"\section{Dependencies Made Explicit}",
+        r"\begin{description}",
+        r"\item[Hamiltonian.] Generator and observable are distinct roles of the same operator. Time evolution and energy readout share domain conditions but are not the same operation.",
+        r"\item[Measurement.] Probability readout and post-measurement state update are separate maps. Treating them as one step hides the measurement junction.",
+        r"\item[Wave function.] A wave function is a coordinate representation of a state. Basis change alters the function while preserving the carrier-level state and its probabilities.",
+        r"\item[Entanglement.] The factorization of the carrier determines which observables count as local. Subsystem structure therefore enters the definition of the readout, not only the state.",
+        r"\item[Gauge theory.] Representational redundancy must be quotiented or constrained before a physical readout is assigned. Closure is part of admissibility rather than a later correction.",
+        r"\item[Quantum gravity.] Geometry may be a realization domain or part of the quantum carrier. The two cases require different operator domains and different notions of observable.",
+        r"\item[Path integrals.] Integral and differential descriptions are alternative realizations of generator dynamics. Their equivalence depends on measure, boundary, and regularization data.",
+        r"\item[Quantum simulation.] Physical carrier, encoded target, and validation observable are three distinct roles. Agreement of a programmed Hamiltonian alone does not complete the simulation claim.",
+        r"\end{description}",
+        r"\section{How This Chapter Organizes The Book}",
+        latex_escape(
+            "The branch chapters remain complete. They are grouped by the role each topic contributes to the typed identity, its completion, or its realization. Every topic page is retained; the constructor supplies cross-references between pages that share a formal dependency but use different physical vocabulary."
+        ),
+    ]
+    return "\n".join(lines)
+
+
+def constructor_rewiring_chapter(root: Path) -> str:
+    """Render testable cross-topic connections proposed by the constructor."""
+    report = load_optional_json(root / "quantum_constructor_rewiring.json")
+    connections = report.get("connections") if report else None
+    if not isinstance(connections, list) or not connections:
+        return ""
+
+    lines: List[str] = [
+        r"\chapter{Rewiring Quantum Concepts}",
+        r"\begin{claimbox}",
+        latex_escape(
+            "A useful connection between two topics must specify the mathematical object that is retained, the part of the construction that is changed, and an independent calculation that can fail. Similar terminology or nearby evidence profiles are not sufficient."
+        ),
+        r"\end{claimbox}",
+        r"\section{Four Legal Moves}",
+        r"\begin{description}",
+        r"\item[Representation change.] Move between descriptions while preserving amplitudes, expectation values, or correlators on their common domain.",
+        r"\item[Carrier refactorization.] Change the subsystem, algebra, boundary, or encoding structure; locality and entanglement must then be recomputed.",
+        r"\item[Completion attachment.] Add a constraint, readout, or protocol to an otherwise incomplete carrier--operator pair.",
+        r"\item[Dual-role split.] Separate two operations performed by one mathematical object, such as generation of motion and spectral readout by a Hamiltonian.",
+        r"\end{description}",
+        latex_escape(
+            "These moves do not assert that the connected theories are physically equivalent. They identify a controlled question: which predictions survive when one part of a quantum construction is replaced?"
+        ),
+        latex_escape(
+            "The comparisons below were nominated by overlap among the equation-derived route profiles of the connected pages. That corpus signal is used only for selection; the displayed invariant and failure test determine whether a proposed connection survives mathematical scrutiny."
+        ),
+    ]
+
+    for connection in connections:
+        title = str(connection.get("title") or "Constructor connection")
+        topic_names = []
+        for value in connection.get("topics") or []:
+            name = str(value).replace("_", " ").strip().title()
+            name = name.replace("Ads/Cft", "AdS/CFT").replace("Schr Dinger", "Schrodinger")
+            topic_names.append(name)
+        topics = ", ".join(topic_names)
+        invariant = str(connection.get("invariant") or "")
+        rewiring = str(connection.get("rewiring") or "")
+        test = str(connection.get("test") or "")
+        equations = [str(x) for x in (connection.get("equations") or []) if str(x).strip()]
+        if rewiring:
+            rewiring = rewiring[0].upper() + rewiring[1:]
+
+        lines.extend([
+            rf"\section{{{latex_escape(title)}}}",
+            rf"\textbf{{Connected topics:}} {latex_escape(topics)}\par",
+            latex_escape(rewiring),
+            rf"\textbf{{Retained object or prediction:}} {latex_escape(invariant)}\par",
+        ])
+        if equations:
+            lines.append(r"\begin{align*}")
+            for index, equation in enumerate(equations):
+                suffix = r"\\" if index + 1 < len(equations) else ""
+                lines.append(equation + suffix)
+            lines.append(r"\end{align*}")
+        lines.extend([
+            rf"\textbf{{Failure test:}} {latex_escape(test)}\par",
+        ])
+
+    lines.extend([
+        r"\section{What The Rewiring Adds}",
+        latex_escape(
+            "The resulting organization is neither a chronology nor a vocabulary tree. It exposes dependencies that are scattered across conventional chapters: domains connect dynamics to spectroscopy; factorization connects entanglement to locality; constraints connect gauge redundancy to observable construction; and instruments connect measurement to channels and error correction. Each connection can be used to design a calculation, but none bypasses its domain, normalization, or approximation conditions."
+        ),
+    ])
     return "\n".join(lines)
 
 
@@ -2983,14 +3194,13 @@ def render_preamble(tree: Mapping[str, Any]) -> str:
     )
     lines.append(
         latex_escape(
-            "The rewrite reveals a compact formal reading of quantum theory. The standard formalism has a simpler "
-            "explanatory order than the usual topic list. The order recovered by the sparse-attention pass is:"
+            "The rewrite reveals a compact dependency structure beneath the usual quantum topic list. The new DAG and source constructor distinguish the identity of a mechanism from the local moves used to derive it:"
         )
     )
     lines.extend(
         [
             r"\begin{claimbox}",
-            r"\noindent\textbf{Constructor sequence:} context \(\rightarrow\) Hilbert-space carrier and operator domain \(\rightarrow\) generator/evolution \(\rightarrow\) observable spectrum \(\rightarrow\) probability readout \(\rightarrow\) compatibility constraint \(\rightarrow\) boundary/protocol realization.",
+            r"\noindent\textbf{Constructor structure:} carrier/context \(\leftrightarrow\) operator apparatus; closure, readout, and protocol attach as completion modes; boundaries, fields, and devices supply realizations. Source derivations move by completion, projection, and lateral rewrite.",
             r"\end{claimbox}",
         ]
     )
@@ -3426,65 +3636,44 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
         r"\addcontentsline{toc}{section}{What The Tree Is}",
         latex_escape(
             "This book is a derivation map for quantum topics. Each named topic is treated as a contribution to one "
-            "prediction-making mechanism. "
-            "First specify the context: preparation, basis, boundary condition, gauge, detector arrangement, or domain. "
-            "That context selects the Hilbert space and operator domain. A state is then transported by a generator, "
-            "an observable defines the possible spectral answers, the Born or trace rule assigns probabilities to those answers, "
-            "and compatibility constraints record which questions cannot be made jointly sharp. The page title is therefore not "
-            "the root of the explanation. The root is the role the page plays in that construction."
+            "prediction-making mechanism. The base object is a carrier or context jointly typed with an operator apparatus. "
+            "Closure, readout, and ordered protocol attach when the topic requires them. Boundaries, fields, detectors, and encodings "
+            "specify realizations. The page title is therefore not the root of the explanation; the root is the dependency that the page supplies."
         ),
         r"\begin{claimbox}",
         r"\noindent Mechanism-first reading: identify the operation a named topic performs in the quantum construction.",
-        r"\par\smallskip\noindent\textbf{Constructor sequence:} context \(\rightarrow\) Hilbert-space carrier and operator domain \(\rightarrow\) generator/evolution \(\rightarrow\) observable spectrum \(\rightarrow\) probability readout \(\rightarrow\) compatibility constraint \(\rightarrow\) boundary/protocol realization.",
+        r"\par\smallskip\noindent\textbf{Constructor structure:} typed carrier--operator identity \(\oplus\) closure/readout/protocol completion \(\rightarrow\) physical realization. Derivations may add roles, project consequences, or rewrite laterally.",
         r"\end{claimbox}",
-        r"\section*{DAG Before Constructor}",
-        r"\addcontentsline{toc}{section}{DAG Before Constructor}",
+        r"\section*{Completion DAG And Source Constructor}",
+        r"\addcontentsline{toc}{section}{Completion DAG And Source Constructor}",
         latex_escape(
-            "The mechanism tree uses two distinct layers. The directed acyclic graph gives the order in which a mechanism becomes complete: "
-            "context and admissibility appear before state transport; state transport appears before spectral readout; readout and compatibility appear before boundary, field, detector, or protocol realization. "
-            "The constructor then fills each ordered node with the local quantum objects needed to make a prediction."
+            "The mechanism tree uses two graph layers. The completion DAG points from records with fewer constructor roles to records with more roles. "
+            "It is a partial order of formal specification, not physical time and not a compulsory order of exposition. The source constructor follows adjacent equations inside papers and records completion, projection, and lateral rewrite."
         ),
         latex_escape(
-            "This distinction matters. The DAG is the assembly order and prevents a page from being treated as a finished mechanism when it supplies only one role. "
-            "The constructor is the role contract: it asks which carrier, operator, map, question, readout, closure condition, and realization are present. "
-            "A topic becomes a usable mechanism when it has both a place in the DAG and a sufficiently filled constructor frame."
+            "This distinction matters because a complete theory is rarely written in one equation. The DAG measures how much of the role contract is explicit. "
+            "The source constructor shows how authors distribute that contract across neighboring equations, often expanding a relation and then projecting it onto a term, limit, observable, or consequence."
         ),
         r"\begin{align*}",
-        r"\mathrm{DAG}:&\quad C \prec (\mathcal H_C,\mathcal D_C) \prec \rho \prec H_C,U_C,\Phi_C \prec A_C,E_{A_C} \prec \Pr \prec \mathcal K,\mathcal R\\",
-        r"\mathrm{Constructor}:&\quad (C,\mathcal H_C,\mathcal D_C,\rho,H_C,A_C,E_{A_C},\Pr,\mathcal K,\mathcal R).",
+        r"\mathrm{identity}:&\quad \mathcal I_Q=((\mathcal H_C,\mathcal D_C),\mathcal O_C)\\",
+        r"\mathrm{completion}:&\quad \mathcal F_Q=(\mathcal K_C,\mathcal E_C,\mathcal P_C)\\",
+        r"\mathrm{source\ moves}:&\quad +\mathrm{role},\quad \mathrm{projection},\quad \mathrm{lateral\ rewrite}.",
         r"\end{align*}",
         latex_escape(
-            "The nonstandard result of this run is empirical rather than axiomatic.  Standard quantum mechanics already contains Hilbert spaces, operators, spectra, Born probabilities, and commutators.  What the rewrite adds is that a large topic system built from ordinary article names collapses into a stable constructor order.  Particles, fields, protocols, interpretations, and boundary effects no longer appear as equal roots; they become later roles in one state-to-spectrum mechanism."
+            "Standard quantum mechanics already contains Hilbert spaces, operators, spectra, Born probabilities, and commutators. The corpus result concerns their organization: carrier and operator form the reusable typed identity, completion is attached locally, and source derivations move in both directions through completion rank."
         ),
         r"\section*{Why Hilbert Space Is Central}",
         r"\addcontentsline{toc}{section}{Why Hilbert Space Is Central}",
-        latex_escape(
-            "Hilbert space is central because quantum mechanics requires a space of admissible states before it requires a "
-            "coordinate geometry of positions. Euclidean space labels positions, domains, detectors, or boundary conditions. "
-            "Hilbert space carries phase, superposition, spin, entanglement, operator domains, and probability amplitudes. "
-            "It supplies the inner product, norm, linear "
-            "superposition, operator action, spectral projectors, and unitary maps required for quantum prediction."
-        ),
-        latex_escape(
-            "The usual position wave function illustrates the distinction. In the expression \\(\\psi(x)\\), the coordinate "
-            "\\(x\\in\\mathbb R^3\\) labels a representation. The state itself is \\(\\psi\\in L^2(\\mathbb R^3)\\), and adding "
-            "spin, identical particles, fields, or open-system mixtures moves the carrier to tensor products, Fock spaces, "
-            "density operators, or operator algebras. Thus Euclidean space is often a basis or realization domain; Hilbert "
-            "space is the admissibility selector."
-        ),
+        "Hilbert space supplies the carrier on which states, operator domains, inner products, spectra, and probability measures are defined. A position or configuration space instead labels one possible representation of that carrier. The two spaces coincide neither conceptually nor generally.",
+        r"For a spinless particle on a configuration space \(Q\) with measure \(\mu\), a pure state is a ray \([\psi]\) in \(\mathcal H=L^2(Q,d\mu)\). The function \(\psi(x)=\langle x|\psi\rangle\) is a representative of that ray in the generalized position basis; \(x\in Q\) labels a configuration, not the representation itself. Functions equal almost everywhere define the same vector, and vectors related by a global phase define the same pure state. For \(Q=\mathbb R^3\) with Lebesgue measure this becomes \(L^2(\mathbb R^3,d^3x)\), but spin gives \(L^2(Q,d\mu)\otimes\mathbb C^{2s+1}\), identical particles require symmetric or antisymmetric subspaces, and mixed states are density operators rather than rays.",
         r"\begin{align*}",
-        r"\ket{\psi}\in\mathcal H,\quad \rho\ge0,\quad \operatorname{Tr}\rho=1 &\qquad \text{state carrier}\\",
-        r"p_i=|\langle e_i|\psi\rangle|^2,\quad \Pr(\Delta)=\operatorname{Tr}(\rho E_A(\Delta)) &\qquad \text{probability structure}\\",
+        r"[\psi]\in\mathbb P(\mathcal H),\quad \ket\psi\sim e^{i\alpha}\ket\psi &\qquad \text{pure state ray}\\",
+        r"\psi(x)=\langle x|\psi\rangle,\quad \Pr(X\in\Delta)=\int_\Delta|\psi(x)|^2d\mu(x) &\qquad \text{position representation}\\",
+        r"\rho\ge0,\quad \operatorname{Tr}\rho=1,\quad \Pr_A(\Delta)=\operatorname{Tr}(\rho E_A(\Delta)) &\qquad \text{general state and readout}\\",
         r"A=A^\dagger,\quad A=\int_{\sigma(A)}\lambda\,dE_A(\lambda) &\qquad \text{operator-to-spectrum conversion}\\",
         r"\rho_t=U(t)\rho U(t)^\dagger,\quad U^\dagger U=I &\qquad \text{identity-preserving evolution.}",
         r"\end{align*}",
-        latex_escape(
-            "In this sense Hilbert space is the selector chosen by the first branch. "
-            "A context selects \\((\\mathcal H_C,\\mathcal D_C)\\): the admissible carrier and the operator domain. The later "
-            "branches explain what is done with that selected carrier: states inhabit it, generators move states through it, "
-            "observables resolve spectra on it, Born rules read probabilities from it, and commutators identify when two "
-            "questions cannot share one sharp basis. Hilbert space selects the legal arena; it does not select the outcome."
-        ),
+        r"The carrier \((\mathcal H_C,\mathcal D_C)\) and its operator apparatus must be typed together. States inhabit the carrier, generators act on specified domains, observables supply spectral measures, and Born probabilities refer to those measures. A choice of carrier constrains the legal questions but does not select an outcome.",
         r"\section*{The Compact Representation}",
         r"\addcontentsline{toc}{section}{The Compact Representation}",
         latex_escape(
@@ -3492,8 +3681,8 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
             "It is a compressed version of standard quantum mechanics:"
         ),
         r"\begin{claimbox}",
-        r"\noindent\textbf{Compact tree:} selector \(\rightarrow\) carrier \(\rightarrow\) map \(\rightarrow\) question \(\rightarrow\) readout.",
-        r"\par\smallskip\noindent Compatibility constrains which questions can be jointly sharp. Realization adds boundaries, fields, detectors, protocols, and scaling limits.",
+        r"\noindent\textbf{Compact tree:} carrier/context \(\leftrightarrow\) operator apparatus, with closure, readout, and protocol attached as required.",
+        r"\par\smallskip\noindent Realization changes boundaries, fields, detectors, encodings, and scaling limits without forcing a new universal construction order.",
         r"\end{claimbox}",
         r"\begin{itemize}",
         r"\item \textbf{Context} means the experimental or mathematical setting in which a quantum question is posed: preparation, basis, boundary, gauge, detector, domain, or representation.",
@@ -3523,9 +3712,9 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
         r"\section*{Recipe For Reading A Page}",
         r"\addcontentsline{toc}{section}{Recipe For Reading A Page}",
         r"\begin{enumerate}",
-        r"\item \textbf{Locate the page in the tree.} The branch tells which part of \(\mathfrak M_Q\) the page mainly modifies.",
+        r"\item \textbf{Locate the page in the tree.} The branch tells which dependency of \(\mathfrak M_Q\) the page mainly specifies.",
         r"\item \textbf{Fill the compact tuple.} Identify \(C\), \(\mathcal H_C\), \(\rho\), \(H_C\) or the relevant map, \(A_C\), the spectral measure or readout, and any compatibility condition.",
-        r"\item \textbf{Separate topic-specific pages from core-derived pages.} Topic-specific pages have native equations or explicit constructor skeletons. Core-derived pages inherit the shared constructor spine and specialize it with branch and topic evidence.",
+        r"\item \textbf{Read the topic page in full.} Every retained topic remains in the book. Native equations and source links show how its local construction differs from the shared branch structure.",
         r"\item \textbf{Read anomalies as diagnostics.} An anomaly is a junction where the topic uses several roles at once; the diagnosis is decomposition, not rejection.",
         r"\item \textbf{Use transfer carefully.} A mechanism can be transferred only when the state carrier, operator role, readout, and compatibility test survive the move; field-specific nouns may change.",
         r"\end{enumerate}",
@@ -3537,9 +3726,10 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
     boundary_count = int(count_routes.get("boundary_weak_form_route", 0))
     incompat_count = int(count_routes.get("commutator_incompatibility_route", 0))
     protocol_count = int(count_routes.get("discrete_protocol_route", 0))
+    total_pages = sum(len((branches.get(branch_id) or {}).get("pages") or []) for branch_id in BRANCH_ORDER)
     lines.append(
         latex_escape(
-            f"The current export contains 147 quantum pages. Of these, {constructed} have topic-specific equation skeletons or explicit constructor overrides, "
+            f"The current export contains {total_pages} quantum pages. Of these, {constructed} have topic-specific equation skeletons or explicit constructor overrides, "
             f"and {placements} are expanded from the compact constructor as core-derived mechanisms. The sparse-attention profile is strongly operator/spectral: "
             f"{spectral_count} pages exceed the operator/spectrum threshold, with mean signal {float(mean_routes.get('spectral_operator_route', 0.0)):.3f}. "
             f"State evolution is also broad ({transport_count} pages), while boundary/context ({boundary_count}), incompatibility ({incompat_count}), and explicit protocol ({protocol_count}) are more selective. "
@@ -3619,13 +3809,10 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
             r"\end{claimbox}",
             r"\section{Re-Derivation Path}",
             r"\begin{enumerate}",
-            r"\item \textbf{Context and Hilbert space.} Fix the Hilbert space, operator domain, basis, preparation condition, boundary, gauge, or representation.",
-            r"\item \textbf{State carrier.} Write a normalized vector, wave function, density operator, or field/register state on that carrier.",
-            r"\item \textbf{Generator.} Let a Hamiltonian, unitary map, constraint, or action move that carrier before readout.",
-            r"\item \textbf{Spectral question.} Represent a measurable question by an operator with allowed answers.",
-            r"\item \textbf{Readout.} Resolve the operator into outcome channels and assign probabilities.",
-            r"\item \textbf{Compatibility.} Mark when two legal questions cannot be made jointly sharp.",
-            r"\item \textbf{Realization and extension.} Add boundaries, fields, scaling limits, detectors, or protocols as later embodiments of the same construction.",
+            r"\item \textbf{Type the identity.} Specify the Hilbert-space carrier, operator domain, state class, and operator apparatus together. Neither carrier nor operator is complete without the other.",
+            r"\item \textbf{Attach completion.} Add normalization, symmetry, compatibility, spectral readout, probability assignment, or an ordered protocol where the problem requires it.",
+            r"\item \textbf{Choose a realization.} State how boundaries, fields, scaling limits, detectors, gauges, or encodings embody the typed identity.",
+            r"\item \textbf{Follow the derivation moves.} Track when a source equation adds a role, projects a relation onto a consequence, or rewrites the same role in another representation.",
             r"\end{enumerate}",
             "\n".join(
                 [
@@ -3672,6 +3859,12 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         )
     )
     lines.append(compact_operator_formulation_chapter())
+    dependency_chapter = constructor_dependency_chapter(root)
+    if dependency_chapter:
+        lines.append(dependency_chapter)
+    rewiring_chapter = constructor_rewiring_chapter(root)
+    if rewiring_chapter:
+        lines.append(rewiring_chapter)
     if os.environ.get("MORPHWIKI_EXPOSE_INTERNAL_METHOD", "").strip() == "1":
         v2_chapter = render_v2_language_chapter(tree)
         if v2_chapter:

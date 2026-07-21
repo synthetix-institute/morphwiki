@@ -9,7 +9,7 @@ Quantum mechanics is the baseline constructor: states live in Hilbert space, phy
 
 ## Mechanism
 
-The page supplies the general quantum assembly. A preparation gives a state vector or density operator. A self-adjoint observable or measurement operator family gives the possible readout channels. The Born or trace rule assigns probabilities, while Hamiltonian evolution transports the state between preparation and readout. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+The page supplies the general quantum assembly. A preparation gives a state vector or density operator. A self-adjoint observable or measurement operator family gives the possible readout channels. The Born or trace rule assigns probabilities, while Hamiltonian evolution transports the state between preparation and readout. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

@@ -9,7 +9,7 @@ Renormalization is the scale-flow constructor: the effective parameters of the t
 
 ## Mechanism
 
-Renormalization explains why a mechanism can preserve its operator role while changing its apparent parameters across scales. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Renormalization explains why a mechanism can preserve its operator role while changing its apparent parameters across scales. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

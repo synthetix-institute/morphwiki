@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-09T09:07:00.103480+00:00",
+  "generated_at": "2026-07-09T20:17:51.720501+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "The quantum prediction problem",
@@ -30,6 +30,263 @@
       "boundary_weak_form_route": 3,
       "commutator_incompatibility_route": 2
     }
+  },
+  "constructor_dependencies": {
+    "schema_version": 1,
+    "report_type": "quantum_constructor_dependency_audit",
+    "readiness": "usable",
+    "inputs": {
+      "dag": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_v2_dag.json",
+      "grammar": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
+      "source_constructor": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_constructor_graph.md"
+    },
+    "v2_completion_dag": {
+      "rows": 14523959,
+      "role_counts": {
+        "substrate_context": 11448998,
+        "operator": 7586129,
+        "closure": 4426757,
+        "readout": 5724632,
+        "protocol": 389803
+      },
+      "role_fractions": {
+        "substrate_context": 0.7882835527145181,
+        "operator": 0.5223182604687882,
+        "closure": 0.30478996807964,
+        "readout": 0.3941509336400633,
+        "protocol": 0.026838618864181592
+      },
+      "layer_statistics": [
+        {
+          "layer": 0,
+          "count": 1452315,
+          "fraction": 0.09999442989339201
+        },
+        {
+          "layer": 1,
+          "count": 3008721,
+          "fraction": 0.2071557073384743
+        },
+        {
+          "layer": 2,
+          "count": 4860461,
+          "fraction": 0.33465124763847104
+        },
+        {
+          "layer": 3,
+          "count": 3995724,
+          "fraction": 0.275112591546148
+        },
+        {
+          "layer": 4,
+          "count": 1174186,
+          "fraction": 0.08084476140424246
+        },
+        {
+          "layer": 5,
+          "count": 32552,
+          "fraction": 0.0022412621792721943
+        }
+      ],
+      "mechanism_edges": 4515740,
+      "directed_edges": 1118304,
+      "directed_fraction": 0.2476457900587722,
+      "lateral_or_frontier_edges": 5397436,
+      "directed_edge_counts": {
+        "coupled_operator_substrate": 18,
+        "operator_knn": 419967,
+        "substrate_knn": 645210,
+        "operator_transfer_candidate": 0,
+        "substrate_transfer_candidate": 0,
+        "within_paper_sequence": 53109
+      },
+      "within_paper_sequence_directed_fraction": 0.212436,
+      "coupled_operator_substrate_lateral_fraction": 0.999932264619553,
+      "coupled_operator_substrate_directed_fraction": 6.773538044705351e-05,
+      "transfer_frontier_edges": {
+        "operator_transfer_candidate": 1000000,
+        "substrate_transfer_candidate": 1000000
+      },
+      "orientation_rule": "An edge is directed only when it increases constructor completion layer or construction rank. Control-only edges are excluded. Transfer edges are kept outside the DAG unless --include-transfer-in-dag is set."
+    },
+    "grammar_factorization": {
+      "rows_available": 14523959,
+      "rows_sampled": 100000,
+      "selected_grammar": "identity_with_completion_fiber",
+      "decision": "Two primitive spaces with C/R/P as an attached completion fiber.",
+      "completion_promotion": "retain_completion_as_attached_fiber",
+      "candidate_mdl_scores": {
+        "identity_with_completion_fiber": 0.30892747000206777,
+        "identity_multi_fiber": 0.3335646359378435,
+        "three_factor_completion": 0.39984677063613905,
+        "current_two_factor": 0.5220632539830969,
+        "maximal_role_split": 0.6127436954042353,
+        "control_as_primitive_negative_control": 0.6580215064927608
+      },
+      "three_factor_mdl_gain_over_fiber": -0.09091930063407128,
+      "primitive_neighbor_overlap": 0.14933333333333335,
+      "completion_effective_rank": 10.05349203754948,
+      "completion_zero_row_fraction": 0.41692,
+      "completion_pair_energy_correlations": {
+        "closure_constraints__readout_current": 0.029899603429853656,
+        "closure_constraints__protocol_order": 0.014547828333367341,
+        "protocol_order__readout_current": -0.012777100341148477
+      },
+      "completion_pair_neighbor_overlaps": {
+        "closure_constraints__readout_current": 0.44110000000000005,
+        "closure_constraints__protocol_order": 0.6811333333333334,
+        "protocol_order__readout_current": 0.6031
+      },
+      "operator_substrate_energy_correlation": 0.33633129335052114,
+      "operator_substrate_neighbor_overlap": 0.12033333333333333,
+      "protocol_zero_row_fraction": 0.97424
+    },
+    "source_constructor": {
+      "nodes": 14354227,
+      "edges": 12202270,
+      "source_groups": 2151957,
+      "constructor_status": {
+        "partial_constructor_frame": 9000274,
+        "equation_shape_only": 3319445,
+        "complete_constructor_frame": 2034508
+      },
+      "constructor_status_fractions": {
+        "partial_constructor_frame": 0.6270120989447917,
+        "equation_shape_only": 0.23125209041211345,
+        "complete_constructor_frame": 0.1417358106430949
+      },
+      "completion_layers": {
+        "0": 3319445,
+        "1": 3897236,
+        "2": 4129190,
+        "3": 2376684,
+        "4": 570132,
+        "5": 61540
+      },
+      "completion_layer_fractions": {
+        "0": 0.23125209041211345,
+        "1": 0.2715044146926198,
+        "2": 0.28766369655433205,
+        "3": 0.16557380623839932,
+        "4": 0.03971875322857859,
+        "5": 0.00428723887395678
+      },
+      "source_local_edges": {
+        "source_sequence_lateral": 4737510,
+        "source_sequence_role_completion": 3761468,
+        "source_sequence_role_projection": 3703292
+      },
+      "source_local_edge_fractions": {
+        "source_sequence_lateral": 0.3882482521694734,
+        "source_sequence_role_completion": 0.3082596926637421,
+        "source_sequence_role_projection": 0.3034920551667845
+      },
+      "completion_to_projection_ratio": 1.0157092662420355,
+      "completion_projection_balance": 0.9922065813234451,
+      "lateral_fraction": 0.3882482521694734
+    },
+    "logical_structure": {
+      "identity_base": {
+        "factors": [
+          "carrier_or_substrate_context",
+          "operator_apparatus"
+        ],
+        "relation": "jointly typed rather than temporally ordered",
+        "reason": "An operator is defined on a carrier and domain; the grammar learner retains these as two primitive factors."
+      },
+      "completion_fibre": {
+        "modes": [
+          "closure_or_compatibility",
+          "readout",
+          "protocol"
+        ],
+        "relation": "optional attached modes rather than a third primitive space or a universal time sequence",
+        "reason": "The minimum-description-length model favours one attached completion fibre over a third primitive factor."
+      },
+      "realization_and_transfer": {
+        "modes": [
+          "operator_preserving_substrate_change",
+          "substrate_preserving_operator_change"
+        ],
+        "relation": "lateral roads across the product space",
+        "reason": "Transfer edges are excluded from monotone completion orientation and retained as frontiers."
+      },
+      "source_derivation": {
+        "moves": [
+          "role_completion",
+          "role_projection",
+          "lateral_rewrite"
+        ],
+        "relation": "bidirectional traversal of the completion structure",
+        "reason": "Source-local completion and projection counts are nearly balanced, while lateral rewrites are the largest class."
+      }
+    },
+    "supported_findings": [
+      {
+        "id": "two_factor_identity",
+        "statement": "The compact identity is a typed carrier-operator pair with an attached completion fibre.",
+        "evidence": {
+          "selected_grammar": "identity_with_completion_fiber",
+          "selected_mdl": 0.30892747000206777,
+          "three_factor_mdl": 0.39984677063613905,
+          "primitive_neighbor_overlap": 0.14933333333333335
+        }
+      },
+      {
+        "id": "completion_is_local",
+        "statement": "Most equations specify only part of a mechanism; a complete five-role frame is rare.",
+        "evidence": {
+          "v2_layer_five_fraction": 0.0022412621792721943,
+          "source_complete_frame_fraction": 0.1417358106430949,
+          "protocol_role_fraction": 0.026838618864181592,
+          "protocol_zero_row_fraction": 0.97424
+        }
+      },
+      {
+        "id": "derivation_is_bidirectional",
+        "statement": "Published derivations alternate between adding roles and projecting a complete relation onto a simpler equation.",
+        "evidence": {
+          "completion_edges": 3761468,
+          "projection_edges": 3703292,
+          "completion_projection_balance": 0.9922065813234451,
+          "lateral_fraction": 0.3882482521694734
+        }
+      },
+      {
+        "id": "coupling_preserves_rank",
+        "statement": "Joint carrier-operator similarity usually preserves completion rank rather than advancing it.",
+        "evidence": {
+          "coupled_lateral_fraction": 0.999932264619553,
+          "coupled_directed_fraction": 6.773538044705351e-05
+        }
+      },
+      {
+        "id": "routes_are_relations",
+        "statement": "Transport, spectral resolution, boundary change, closure, protocol and incompatibility are relation types, not six mandatory stages.",
+        "evidence": {
+          "directed_fraction": 0.2476457900587722,
+          "within_paper_sequence_directed_fraction": 0.212436,
+          "transfer_frontier_edges": {
+            "operator_transfer_candidate": 1000000,
+            "substrate_transfer_candidate": 1000000
+          }
+        }
+      }
+    ],
+    "unsupported_or_overstated_readings": [
+      "The DAG does not establish physical causation or physical time.",
+      "Role prevalence does not prove that context temporally precedes an operator in an author's derivation.",
+      "Closure, readout and protocol are not supported as three mandatory successive stages.",
+      "A page-level source-card link alone does not prove that the linked equation expresses the page topic."
+    ],
+    "book_structure": {
+      "part_1": "Typed identity: carrier/context and operator apparatus",
+      "part_2": "Completion: closure/compatibility, readout and optional protocol",
+      "part_3": "Realization and transfer: boundaries, fields, particles and implementations",
+      "appendix": "Historical and interpretive annotations",
+      "page_policy": "Retain every topic entry. Mark whether its equations are topic-native or inherited from a branch constructor, and consolidate shared laws without deleting the topic discussion."
+    },
+    "claim_scope": "Dependency audit over the supplied V2 DAG, grammar-selection report and source-equation constructor summary. It distinguishes measured corpus organization from mathematical dependencies imposed by quantum theory."
   },
   "lagrangian_construction_prior": {
     "available": false,

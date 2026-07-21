@@ -9,7 +9,7 @@ POVM is the generalized-readout constructor: outcome effects need not be orthogo
 
 ## Mechanism
 
-POVMs separate the probability readout from the idealized projection assumption. They are the natural mechanism for noisy, coarse-grained, indirect, or open-system measurements. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+POVMs separate the probability readout from the idealized projection assumption. They are the natural mechanism for noisy, coarse-grained, indirect, or open-system measurements. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

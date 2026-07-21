@@ -9,7 +9,7 @@ Commutator is the incompatibility constructor: it measures the failure of two tr
 
 ## Mechanism
 
-The commutator is the algebraic source of many non-classical restrictions. If two observables do not commute, they generally cannot be resolved in one common sharp basis. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+The commutator is the algebraic source of many non-classical restrictions. If two observables do not commute, they generally cannot be resolved in one common sharp basis. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, non-commuting compatibility limits; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

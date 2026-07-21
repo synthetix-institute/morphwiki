@@ -9,7 +9,7 @@ Electron is a charged spinor constructor: its identity is fixed by mass, charge,
 
 ## Mechanism
 
-The electron is not a generic object label in this tree. Its native mechanism combines a spinor state, a Schrödinger/Pauli/Dirac generator depending on regime, conserved charge, and fermionic anticommutation. The readouts are charge, spin, momentum, energy, and scattering response. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; the strongest carrier signal is local notation, information profile, formula structure.
+The electron is not a generic object label in this tree. Its native mechanism combines a spinor state, a Schrödinger/Pauli/Dirac generator depending on regime, conserved charge, and fermionic anticommutation. The readouts are charge, spin, momentum, energy, and scattering response. The linked equation set is concentrated in operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

@@ -9,7 +9,7 @@ Creation and annihilation operators are sector-changing operators: they add or r
 
 ## Mechanism
 
-The page is about the algebraic move that changes occupation number. Creation raises the population of a mode, annihilation lowers it, and the commutation or anticommutation rule determines the statistics. The number operator gives the spectral readout. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, non-commuting compatibility limits; the strongest carrier signal is local notation, information profile, formula structure.
+The page is about the algebraic move that changes occupation number. Creation raises the population of a mode, annihilation lowers it, and the commutation or anticommutation rule determines the statistics. The number operator gives the spectral readout. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, non-commuting compatibility limits; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

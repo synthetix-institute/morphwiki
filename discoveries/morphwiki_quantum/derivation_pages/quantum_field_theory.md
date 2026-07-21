@@ -9,7 +9,7 @@ Quantum field theory is the many-mode local-field extension of the quantum const
 
 ## Mechanism
 
-Quantum field theory lifts the state-operator-spectrum construction to fields, local operators, creation and annihilation modes, and scattering amplitudes. Particles become stable excitation/readout roles of fields. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+Quantum field theory lifts the state-operator-spectrum construction to fields, local operators, creation and annihilation modes, and scattering amplitudes. Particles become stable excitation/readout roles of fields. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 

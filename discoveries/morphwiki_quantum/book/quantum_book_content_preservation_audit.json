@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "report_type": "quantum_book_content_preservation_audit",
+  "generated_at": "2026-07-09T20:58:55.801762+00:00",
+  "readiness": "usable",
+  "contract": "discoveries/morphwiki_quantum/book/quantum_book_content_contract.json",
+  "metrics": {
+    "topic_count": 146,
+    "topic_words": 83101,
+    "equation_blocks": 146,
+    "pdf_pages": 323
+  },
+  "checks": {
+    "topic_count": true,
+    "all_topics_in_tex": true,
+    "all_derivation_pages_present": true,
+    "all_topics_have_equations": true,
+    "topic_words": true,
+    "equation_blocks": true,
+    "pdf_pages": true
+  },
+  "missing_tex_labels": [],
+  "missing_derivation_pages": [],
+  "missing_equation_blocks": [],
+  "claim_scope": "Build-integrity audit. It checks preservation of topic coverage and equation-bearing content; it does not validate the physics of individual pages."
+}

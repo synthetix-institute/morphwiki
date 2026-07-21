@@ -1013,35 +1013,30 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines.append("## Root")
     lines.append(report["root"]["definition"])
     lines.append("")
-    lines.append("This reorders the topic away from historical names and toward the construction that recurs across the pages:")
+    lines.append("This reorders the topic away from historical names and toward the dependencies that recur across the pages:")
     lines.append("")
     lines.append("```text")
-    lines.append("SELECTOR -> CARRIER -> MAP -> QUESTION -> READOUT")
-    lines.append("    |          |        |         |          |")
-    lines.append("    |          |        |         |          +-- probabilities")
-    lines.append("    |          |        |         +------------- spectrum / effects")
-    lines.append("    |          |        +----------------------- generator or channel")
-    lines.append("    |          +-------------------------------- state or density operator")
-    lines.append("    +------------------------------------------- Hilbert space and operator domain")
+    lines.append("CARRIER / CONTEXT  <----typed with---->  OPERATOR APPARATUS")
+    lines.append("        |                                      |")
+    lines.append("        +------------- COMPLETION -------------+")
+    lines.append("                    closure / readout / protocol")
     lines.append("")
-    lines.append("COMPATIBILITY constrains which questions can be jointly sharp.")
-    lines.append("REALIZATION adds boundaries, fields, detectors, protocols, and scaling limits.")
+    lines.append("REALIZATION changes boundaries, fields, detectors, encodings, and scaling limits.")
+    lines.append("DERIVATION adds roles, projects consequences, or rewrites laterally.")
     lines.append("```")
     lines.append("")
-    lines.append("## DAG Then Constructor")
+    lines.append("## Completion DAG And Source Constructor")
     lines.append("")
     lines.append(
-        "The DAG gives the assembly order: context and admissibility precede state transport; state transport precedes spectral readout; readout and compatibility precede boundary, field, detector, or protocol realization. "
-        "The constructor fills this ordered scaffold with the carrier, operator, map, question, readout, closure condition, and realization needed for a predictive mechanism."
+        "The DAG orders records only when the destination contains more constructor roles. It is a completion rank, not physical time. "
+        "The source constructor follows neighboring equations and records role completion, projection onto a simpler consequence, and lateral rewrite at the same completion level."
     )
     lines.append("")
     lines.append("## Re-Derivation Path")
-    lines.append("1. **Selector.** A context selects the Hilbert space and operator domain. Euclidean space may label a representation, but Hilbert space is the admissible carrier.")
-    lines.append("2. **Carrier.** The state, density operator, field state, or register state carries predictive information on that selected space.")
-    lines.append("3. **Map.** A Hamiltonian, unitary, channel, constraint, or action transports the carrier before readout.")
-    lines.append("4. **Question.** An observable, effect family, or spectral measure defines the possible answer channels.")
-    lines.append("5. **Readout.** The Born or trace rule turns the state and answer channels into probabilities.")
-    lines.append("6. **Compatibility and realization.** Commutators, contextuality, uncertainty, boundaries, fields, detectors, and protocols constrain or embody the five-step constructor.")
+    lines.append("1. **Type the identity.** Specify the carrier, domain, state class, and operator apparatus together.")
+    lines.append("2. **Attach completion.** Add normalization, compatibility, readout, or an ordered protocol where needed.")
+    lines.append("3. **Choose a realization.** State how boundaries, fields, detectors, gauges, or encodings embody the identity.")
+    lines.append("4. **Follow source moves.** Track role completion, projection, and representation-preserving rewrite.")
     lines.append("")
     lines.append("```math")
     lines.append("B \\longmapsto (\\mathcal H_B,\\mathcal D_B)")
@@ -1052,6 +1047,19 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines.append("[O_1,O_2] \\ne 0")
     lines.append("```")
     lines.append("")
+    dependency = report.get("constructor_dependencies") or {}
+    source = dependency.get("source_constructor") or {}
+    source_edges = source.get("source_local_edges") or {}
+    if source_edges:
+        lines.append("## Corpus Constructor Result")
+        lines.append("")
+        lines.append(
+            f"The source graph contains {int(source_edges.get('source_sequence_role_completion', 0)):,} completion moves, "
+            f"{int(source_edges.get('source_sequence_role_projection', 0)):,} projections, and "
+            f"{int(source_edges.get('source_sequence_lateral', 0)):,} lateral rewrites. "
+            "Completion and projection are nearly balanced, so the derivation graph is not a one-way funnel."
+        )
+        lines.append("")
     lines.append("## Sparse Attention Summary")
     stats = report["sparse_attention"]
     route_lines = []
@@ -1153,6 +1161,7 @@ def build_report(
     lagrangian_model = load_lagrangian_model(root)
     v2_context = v2_language_context(root, v2_language_json, v2_grammar_rules_json, v2_source_examples_json)
     v2_evidence_index = v2_evidence_index_context(root, v2_evidence_index_json)
+    constructor_dependencies = load_optional_json(root / "quantum_constructor_dependencies.json")
     assignments, page_rows = assign_pages(pages, lagrangian_model)
     stats = route_stats(pages)
     anomaly_rows = anomalies(pages, page_rows)
@@ -1180,6 +1189,7 @@ def build_report(
             "definition": BRANCHES["root"]["definition"],
         },
         "sparse_attention": stats,
+        "constructor_dependencies": constructor_dependencies,
         "lagrangian_construction_prior": {
             "available": bool(lagrangian_model.get("available")),
             "page_projection_available": bool(lagrangian_model.get("page_projection_available")),

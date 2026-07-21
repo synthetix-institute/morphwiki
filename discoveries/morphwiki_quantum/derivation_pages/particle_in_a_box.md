@@ -9,7 +9,7 @@ Particle in a box is a boundary-spectrum constructor: a spatial domain and bound
 
 ## Mechanism
 
-The page shows how a boundary condition changes the domain of the Hamiltonian and therefore the allowed spectra. In the source-evidence profile for this page, the strongest construction signal is operator-to-spectrum readout, state evolution, normalization or admissibility; the strongest carrier signal is local notation, information profile, formula structure.
+The page shows how a boundary condition changes the domain of the Hamiltonian and therefore the allowed spectra. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
 
 ## Quantum Mechanism Frame
 
