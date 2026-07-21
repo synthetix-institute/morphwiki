@@ -83,6 +83,14 @@ quantum_mechanism_tree_book.pdf   # generated when xelatex/lualatex is present
 
 For a step-by-step guide, see [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
 
+For a mechanism-first tutorial organized in the PocketFlow codebase-knowledge
+format, start with
+[Building a Mechanism-First Field Wiki](docs/tutorial/index.md). It follows one
+quantum topic from public scaffold to operational evidence, mechanism page,
+constructor spine and audited field wiki, then gives the adaptation contract
+for another scientific field. The common requirements are defined in
+[FIELD_WIKI_CONTRACT.md](docs/FIELD_WIKI_CONTRACT.md).
+
 ## Repository Map
 
 ```text
