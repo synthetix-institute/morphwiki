@@ -47,6 +47,7 @@ flowchart LR
 4. [Infer the field’s constructor spine](04_constructor_spine.md)
 5. [Assemble and audit the field wiki](05_build_and_audit.md)
 6. [Adapt MorphWiki to another field](06_new_field.md)
+7. [Build a field wiki directly from a PDF folder](../PDF_CORPUS_WORKFLOW.md)
 
 ## Quick Start
 

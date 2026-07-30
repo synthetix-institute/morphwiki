@@ -83,6 +83,13 @@ quantum_mechanism_tree_book.pdf   # generated when xelatex/lualatex is present
 
 For a step-by-step guide, see [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
 
+To build a first-pass mechanism wiki directly from a folder of scientific PDFs,
+use the FieldBridge-backed workflow in
+[Build a Mechanism-First Field Wiki from PDFs](docs/PDF_CORPUS_WORKFLOW.md).
+It recursively ingests text-layer PDFs and plain text/TeX/Markdown files,
+retains source passages and equations, and writes synchronized topic,
+mechanism, and construction views.
+
 For a mechanism-first tutorial organized in the PocketFlow codebase-knowledge
 format, start with
 [Building a Mechanism-First Field Wiki](docs/tutorial/index.md). It follows one
@@ -162,7 +169,8 @@ Minimal adaptation path:
    active matter, soft robotics, biological intelligence, patents, AI safety, ...
 
 2. Build topic/source pages
-   Use Wikipedia pages, PDFs, reviews, papers, patents, or curated notes.
+   Use Wikipedia pages, reviews, patents, or curated notes. For a folder of
+   papers, run scripts/build_morphwiki_field_from_pdfs.py.
 
 3. Export a field topic index
    Adapt scripts/export_morphwiki_topic_index.py.

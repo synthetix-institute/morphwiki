@@ -18,6 +18,22 @@ boundary accumulation
 
 ## Step 2: Export Source-Grounded Pages
 
+For a folder of PDFs, use the shared FieldBridge ingestion path:
+
+```bash
+python3 -m pip install -e '../fieldbridge[pdf]'
+python3 -B scripts/build_morphwiki_field_from_pdfs.py /path/to/papers \
+  --field-id active_matter \
+  --label "Active Matter" \
+  --out-dir discoveries/morphwiki_active_matter
+```
+
+This produces source-indexed topic, mechanism, and construction views. PDFs
+must contain a text layer; scanned papers require OCR first. Full details are
+in [PDF_CORPUS_WORKFLOW.md](../PDF_CORPUS_WORKFLOW.md).
+
+For Wikipedia or a curated topic list, use the topic exporter:
+
 ```bash
 python3 -B scripts/export_morphwiki_topic_index.py \
   --topic-file topics/active_matter.txt \

@@ -195,6 +195,20 @@ quantum workflow with a new output root:
 discoveries/morphwiki_<field>/
 ```
 
+For a local folder of papers, do not adapt the Wikipedia exporter. Use the
+shared FieldBridge parser and adapter:
+
+```bash
+python3 -m pip install -e '../fieldbridge[pdf]'
+python3 -B scripts/build_morphwiki_field_from_pdfs.py /path/to/papers \
+  --field-id active_matter \
+  --label "Active Matter" \
+  --out-dir discoveries/morphwiki_active_matter
+```
+
+See [PDF_CORPUS_WORKFLOW.md](PDF_CORPUS_WORKFLOW.md) for the input contract,
+outputs, and review procedure.
+
 The important rule is reproducibility: every generated claim must point back to
 source pages, equation witnesses, or explicit deterministic scoring logic.
 
