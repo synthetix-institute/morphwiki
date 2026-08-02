@@ -1,53 +1,67 @@
 # Fermi–Dirac statistics
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+Fermi–Dirac statistics is a type of quantum statistics that applies to the physics of a system consisting of many non-interacting, identical particles that obey the Pauli exclusion principle. A result is the Fermi–Dirac distribution of particles over energy states. It is named after Enrico Fermi and Paul Dirac, each of whom derived the distribution independently in 1926. Fermi–Dirac statistics is a part of the field of statistical mechanics and uses the principles of quantum mechanics.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_statistics)
 
 ## Role In The Derivation
 
-A fermi–dirac statistics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Fermi–Dirac statistics is an antisymmetric-state constructor: exchange statistics restricts which many-fermion occupation patterns are admissible.
+
+## Why This Step Is Needed
+
+Fermi-Dirac statistics is needed because identical fermions do not occupy many-particle states independently. Antisymmetry under particle exchange, and the exclusion principle that follows from it, changes the allowed occupation patterns before any Hamiltonian dynamics is considered.
 
 ## Mechanism
 
-In quantum-mechanical terms, a fermi–Dirac statistics is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in state evolution, preparation, basis, or boundary context, operator-to-spectrum readout; its mathematical presentation emphasizes local notation, information profile, formula structure.
+Fermi-Dirac statistics is an admissibility rule, not a generator of time evolution. Anticommutation and antisymmetry imply single occupation of each one-particle mode, while the thermal distribution states the mean occupation of those modes.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Fermi–Dirac statistics contributes a lawful state-transport role to the quantum construction.
-- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: potential.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: collapse.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Fermi–Dirac statistics contributes a fermionic state-admissibility role to the quantum construction. This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+
+**State and operation.** A fermionic Fock space assembled from antisymmetric many-particle sectors or occupation-number modes. Creation, annihilation, and number operators obeying canonical anticommutation relations.
+
+**Admissibility and prediction.** Exchange antisymmetry restricts each one-particle mode to occupation zero or one for each internal state. Mode occupations, Fermi energy, particle density, pressure, heat capacity, and other equilibrium response functions.
 
 ## Topic Equations
 
+Topic-specific construction: antisymmetric mode algebra, exclusion, and equilibrium occupation.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\{a_i,a_j^\dagger\}=\delta_{ij},\qquad n_i\in\{0,1\}
+\bar n_i=\frac{1}{e^{\beta(\varepsilon_i-\mu)}+1}
 ```
+
+## How To Read The Relation
+
+Single-particle energy levels provide the available modes, while each mode can be occupied at most once per internal state. The Fermi-Dirac distribution gives the mean occupation at thermal equilibrium. At zero temperature it fills modes up to the Fermi energy.
+
+## Worked Example
+
+The degeneracy pressure of an electron gas follows from filling successively higher momentum states even without a repulsive force between the electrons. The effect is a consequence of antisymmetric state construction.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+Exchange antisymmetry and canonical anticommutation define the fermionic many-particle sectors. Each one-particle mode has occupation zero or one for each internal state. The Fermi-Dirac function gives the equilibrium mean occupation once energy, temperature, and chemical potential are specified.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The dispersion relation, dimensionality, degeneracy, density of states, and interaction approximation depend on the physical system. Electrons, atoms, nucleons, and fermionic quasiparticles realize the same exchange rule with different Hamiltonians and observables. Finite temperature smooths the occupation edge that is sharp at the Fermi energy in the ideal zero-temperature limit.
+
+## Connection To The Next Step
+
+Bose-Einstein statistics changes the exchange rule from antisymmetric to symmetric and therefore permits unlimited occupation of one mode.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Recover occupations restricted to zero or one and the ideal zero-temperature Fermi sea.
+- Recover the Maxwell-Boltzmann distribution in the dilute low-fugacity limit.
+- Integrate the mode occupations against the density of states and verify the specified particle number.
 
 ## Evidence Links
 

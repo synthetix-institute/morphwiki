@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "report_type": "quantum_constructor_rewiring",
-  "generated_at": "2026-07-09T20:54:39.756840+00:00",
+  "generated_at": "2026-08-02T18:14:33.539425+00:00",
   "readiness": "usable",
   "connection_count": 7,
   "connections": [
@@ -15,7 +15,7 @@
       ],
       "move": "dual_role_split",
       "invariant": "the self-adjoint operator and its domain",
-      "rewiring": "read the same operator through its exponential for transport and through its spectral measure for energy readout",
+      "rewiring": "read the same operator through its exponential for transport and through its spectral measure as an energy observable",
       "equations": [
         "U(t)=e^{-iHt/\\hbar}",
         "H=\\int_{\\sigma(H)}E\\,dP_H(E)"
@@ -100,7 +100,7 @@
     },
     {
       "id": "constraint_before_readout",
-      "title": "Constraints define physical readout",
+      "title": "Constraints define physical observables",
       "topics": [
         "gauge_theory",
         "quantum_gravity",
@@ -205,7 +205,7 @@
       ],
       "move": "carrier_transfer",
       "invariant": "a selected operator algebra and its correlators",
-      "rewiring": "encode one carrier in another and require the encoding to intertwine the relevant dynamics and readouts",
+      "rewiring": "encode one carrier in another and require the encoding to intertwine the relevant dynamics and observables",
       "equations": [
         "VH_{\\rm target}\\simeq H_{\\rm carrier}V",
         "VO_{\\rm target}\\simeq O_{\\rm carrier}V"

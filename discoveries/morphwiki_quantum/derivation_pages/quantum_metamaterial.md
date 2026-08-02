@@ -1,53 +1,60 @@
 # Quantum metamaterial
 
 **Derivation step:** Boundary realization: how effects appear
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+Quantum metamaterials apply the science of metamaterials and the rules of quantum mechanics to control electromagnetic radiation. In the broad sense, a quantum metamaterial is a metamaterial in which certain quantum properties of the medium must be taken into account and whose behaviour is thus described by both Maxwell's equations and the Schrödinger equation. Its behaviour reflects the existence of both EM waves and matter waves. The constituents can be at nanoscopic or microscopic scales, depending on the frequency range .
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_metamaterial)
 
 ## Role In The Derivation
 
-A quantum metamaterial can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum metamaterial belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
+
+## Why This Step Is Needed
+
+Quantum metamaterial makes the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
 
 ## Mechanism
 
-In quantum-mechanical terms, a quantum metamaterial is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Quantum metamaterial contributes a boundary-shaped spectrum role to the quantum construction.
-- **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
-- **Carrier or domain:** State terms: quantum state. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Quantum metamaterial contributes a boundary-shaped spectrum role to the quantum construction. This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
 
-## Topic Equations
+**State and operation.** A Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. A Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary.
+
+**Admissibility and prediction.** Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. Eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+H_B\psi=E\psi,\quad \psi\in\mathcal D(H_B),\quad S:\psi_{\rm in}\mapsto\psi_{\rm out}
 ```
+
+## How To Read The Relation
+
+The eigenvalue or scattering equation must be read together with its domain and matching conditions. Confinement selects discrete modes; open channels produce transmission, reflection, and resonances. Removing the boundary should recover the appropriate free or infinite-domain limit.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. Quantum metamaterial shows how a context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The potential, geometry, asymptotic condition, or detector arrangement can change. The same boundary role may appear as a box, barrier, cavity, interface, or scattering region. Changing the boundary can change the spectrum without changing the general quantum constructor.
+
+## Connection To The Next Step
+
+Boundary-shaped single-particle mechanisms extend naturally to many modes and fields. The field-theory chapter replaces a fixed particle number with occupation sectors, local fields, and symmetry constraints.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels.
+- The same operator can have different spectra when the admissible domain changes.
 
 ## Evidence Links
 

@@ -24,7 +24,7 @@ The page reads this as:
   domain;
 - **operator:** Hamiltonian or lawful generator;
 - **closure:** self-adjointness and boundary/domain conditions;
-- **readout:** probabilities, transition amplitudes, spectra or conserved
+- **observable map:** probabilities, transition amplitudes, spectra or conserved
   quantities;
 - **check:** norm, positivity or another required invariant is preserved.
 

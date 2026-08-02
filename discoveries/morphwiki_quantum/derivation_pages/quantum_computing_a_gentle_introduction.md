@@ -1,53 +1,22 @@
 # Quantum Computing: A Gentle Introduction
 
-**Derivation step:** Annotations: history, interpretations, and popular frames
-**Status:** topic-specific mechanism
+*Historical or interpretive annotation.*
 
-## Role In The Derivation
+## Topic Context
 
-A quantum computing: a gentle introduction can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum Computing: A Gentle Introduction is a textbook on quantum computing. It was written by Eleanor Rieffel and Wolfgang Polak, and published in 2011 by the MIT Press.
 
-## Mechanism
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_Computing:_A_Gentle_Introduction)
 
-In quantum-mechanical terms, a quantum Computing: A Gentle Introduction is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through superposition or wave function, unitary operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in state evolution, normalization or admissibility, operator-to-spectrum readout; its mathematical presentation emphasizes local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+## Place In The Book
 
-## Quantum Mechanism Frame
+Quantum Computing: A Gentle Introduction records the history, pedagogy, or interpretation of quantum theory. It does not define an additional state space, equation of motion, observable, or probability law.
 
-- **Role:** Quantum Computing: A Gentle Introduction contributes an engineered operation-sequence role to the quantum construction.
-- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** State terms: superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: unitary. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+## Relation To The Formal Theory
 
-## Topic Equations
-
-```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
-```
-
-## What Remains Stable
-
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
-
-## What Changes With Realization
-
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
-
-## Checks
-
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Identify the states, operators, observables, probability rules, or protocols discussed by the source.
+- Separate historical attribution and interpretation from mathematical consequences of the formalism.
+- Treat a claimed physical difference as substantive only when it changes an equation, admissibility condition, probability law, or experimental prediction.
 
 ## Evidence Links
 

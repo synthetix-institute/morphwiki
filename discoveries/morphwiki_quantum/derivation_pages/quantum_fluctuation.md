@@ -1,53 +1,60 @@
 # Quantum fluctuation
 
 **Derivation step:** State carrier inside Hilbert space
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In quantum physics, a quantum fluctuation is the temporary random change in the amount of energy in a point in space, as prescribed by Werner Heisenberg's uncertainty principle. They are minute random fluctuations in the values of the fields which represent elementary particles, such as electric and magnetic fields which represent the electromagnetic force carried by photons, W and Z fields which carry the weak force, and gluon fields which carry the strong force.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_fluctuation)
 
 ## Role In The Derivation
 
-A quantum fluctuation can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum fluctuation supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+
+## Why This Step Is Needed
+
+Quantum fluctuation specifies the object from which quantum probabilities are calculated. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
 
 ## Mechanism
 
-In quantum-mechanical terms, a quantum fluctuation is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator. The linked equation set is concentrated in state evolution, non-commuting compatibility limits, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Quantum fluctuation contributes an open-system transport and coherence role to the quantum construction.
-- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Quantum fluctuation contributes an open-system transport and coherence role to the quantum construction. This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
 
-## Topic Equations
+**State and operation.** A density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier. Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator.
+
+**Admissibility and prediction.** Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal. Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\dot\rho=-\frac{i}{\hbar}[H,\rho]+\sum_k\left(L_k\rho L_k^\dagger-\frac12\{L_k^\dagger L_k,\rho\}\right),\quad C(t)=\operatorname{Tr}(\rho(t)O)
 ```
+
+## How To Read The Relation
+
+Normalization guarantees that the probabilities sum to one, while positivity prevents negative probabilities. Pure vectors and density operators are not competing theories: the density-operator form also represents mixtures and reduced states obtained when unobserved degrees of freedom are traced out.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. Quantum fluctuation carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
+
+## Connection To The Next Step
+
+With the state identified, the next question is how it changes. The generator chapter supplies that lawful transformation; the observable and measurement chapters then turn the transformed state into a prediction.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space.
+- Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
 
 ## Evidence Links
 

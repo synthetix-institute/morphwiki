@@ -1,25 +1,32 @@
 # Wave function
 
 **Derivation step:** State carrier inside Hilbert space
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In quantum mechanics, a wave function is a mathematical description of the quantum state of an isolated quantum system. The most common symbols for a wave function are the Greek letters ψ and Ψ.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Wave_function)
 
 ## Role In The Derivation
 
 Wave function is a basis-dependent representative of a pure-state ray; it is not identical to the abstract state or to physical configuration space.
 
+## Why This Step Is Needed
+
+The wave function is a representation of a state in a chosen continuous basis. Treating it as the state itself can obscure that a Fourier transform changes its shape while preserving all predictions.
+
 ## Mechanism
 
-For a configuration space Q with measure mu, the position wave function is the generalized-basis representative psi(x)=<x|psi> of a ray [psi] in L2(Q,mu). Vectors that differ by a nonzero global phase represent the same pure state. Its modulus squared is a probability density only relative to the stated position measure; spin and particle statistics enlarge or constrain the carrier. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+For a configuration space Q with measure mu, the position wave function is the generalized-basis representative psi(x)=<x|psi> of a ray [psi] in L2(Q,mu). Vectors that differ by a nonzero global phase represent the same pure state. Its modulus squared is a probability density only relative to the stated position measure; spin and particle statistics enlarge or constrain the carrier.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Wave function contributes a state-carrier role to the quantum construction.
-- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register.
-- **Operator or map:** Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
-- **Admissibility:** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states.
-- **Readout:** Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
-- **Check:** Equivalent representations must preserve probabilities and expectation values when the change is only representational.
+**Place in the construction.** Wave function contributes a state-carrier role to the quantum construction. This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
+
+**State and operation.** The mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed.
+
+**Admissibility and prediction.** Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
 
 ## Topic Equations
 
@@ -32,24 +39,30 @@ Topic-specific constructor: abstract state ray, position representation, measure
 \mathcal H_{\mathrm{spin}\,s}=L^2(Q,d\mu)\otimes\mathbb C^{2s+1}
 ```
 
+## How To Read The Relation
+
+Its complex value is a probability amplitude. The squared magnitude gives a position density only in the position representation; phase differences remain essential because they control interference and momentum content. Normalization fixes the total probability.
+
+## Worked Example
+
+A localized wave packet and its momentum-space Fourier transform emphasize different features of one preparation. Their forms differ, but either representation reproduces the same expectation values when the observables are transformed consistently.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+Density operators extend this description to mixtures, subsystems, and open-system dynamics.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

@@ -1,53 +1,60 @@
 # Quantum differential calculus
 
-**Derivation step:** Hilbert-space context: admissible carrier and basis
-**Status:** topic-specific mechanism
+**Derivation step:** Formal context: carrier, domain, and representation
+
+## Topic Context
+
+In quantum geometry or noncommutative geometry a quantum differential calculus or noncommutative differential structure on an algebra over a field means the specification of a space of differential forms over the algebra. The algebra here is regarded as a coordinate ring but it is important that it may be noncommutative and hence not an actual algebra of coordinate functions on any actual space, so this represents a point of view replacing the specification of a differentiable structure for an actual space. In ordinary differential geometry one can multiply differential 1-forms by functions from the left and from the right, and there exists an exterior derivative.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_differential_calculus)
 
 ## Role In The Derivation
 
-A quantum differential calculus can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum differential calculus belongs at the first step of the constructor: it fixes the Hilbert space, operator domain, basis, representation, or preparation context before any probability statement is meaningful.
+
+## Why This Step Is Needed
+
+Quantum differential calculus is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
 
 ## Mechanism
 
-In quantum-mechanical terms, a quantum differential calculus is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+This step fixes the state space, representation, basis, or operator domain in which the later equations are defined.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Quantum differential calculus contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Quantum differential calculus contributes a representation and domain role to the quantum construction. This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
 
-## Topic Equations
+**State and operation.** A Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. A unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence.
+
+**Admissibility and prediction.** Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. Transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+V:\mathcal H\to\mathcal H',\quad V^\dagger V=I,\quad \rho'=V\rho V^\dagger,\quad O'=VOV^\dagger
 ```
+
+## How To Read The Relation
+
+Read the relation as a comparison between descriptions of the same state and operator. Under a unitary or isometric change of representation, amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+Quantum differential calculus supplies the admissible arena in which quantum states and operators are defined. Changing basis or representation should not change physical probabilities when the transformation is unitary. Normalization, domain conditions, and inner products remain part of the same formal container.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The chosen basis, coordinate representation, or preparation convention can change. The same calculation may be written with vectors, wave functions, density operators, or operator algebras. Physical realization enters later through boundary conditions, detectors, or fields.
+
+## Connection To The Next Step
+
+Once the mathematical arena is fixed, the construction can specify a state within it. Later steps add a generator, an observable, and a measurement model, each constrained by the same domain.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation.
+- The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
 
 ## Evidence Links
 

@@ -1,95 +1,59 @@
 # Research Agenda
 
-MorphWiki is a small public test of a larger claim: scientific knowledge can be
-organized by transformations rather than by nouns.
+MorphWiki asks whether the operational structure of a scientific field can be
+used to design new mechanisms, not only to reorganize established knowledge.
 
-## Core Research Question
+## Central Question
 
-Can a scientific field be rewritten as a typed constructor system?
+Can a corpus of theories reveal reusable operations, carriers, completion
+clauses, and mechanism-preserving transformations strongly enough to construct
+and test a result absent from the source realization?
 
-For quantum theory, the proposed constructor sequence is:
+## Immediate Priorities
 
-```text
-context
--> admissible state space
--> generator/evolution
--> observable spectrum
--> probability readout
--> compatibility constraint
--> boundary/protocol realization
-```
+### Prospective Construction
 
-This is useful only if it does real work. It should make the field easier to
-audit, compare, extend, or mechanize.
+Select a source mechanism, freeze the relation to be retained, edit one clause,
+complete the target identity, derive a new consequence, and test it against
+negative controls. The complete path must be registered before the target result
+is examined.
 
-## What Would Count As Progress
+### Compatibility Of Reattachment
 
-### 1. Better topic placement
+Operation and carrier are modular but coupled. Reattachment requires a domain,
+representation, or intertwining map and may alter locality, spectrum, closure,
+or observability. A useful constructor should rank these compatibility
+conditions rather than treating every product cell as a mechanism.
 
-Weak placement means a topic can be named but not mechanistically located.
-Progress means the page now has a clear role:
+### Observables And Protocol Construction
 
-```text
-carrier
-operator
-spectrum
-readout
-boundary
-compatibility
-protocol
-```
+Many formal mechanisms become useful only after an observable and an execution
+order are supplied. MorphWiki should derive candidate observables and protocols from
+the operation, carrier, and closure, then state which competing mechanism each
+observable distinguishes.
 
-### 2. Better construction
+### Cross-Field Mechanism Maps
 
-Weak construction means the page has prose but no equation-level spine. Progress
-means the page names:
+Build additional fields from paper corpora and connect them through retained
+operational relations. Each link must name what survives and which clauses are
+replaced. This is stricter than analogy and more useful for transfer.
 
-```text
-state space
-operator or generator
-domain or boundary condition
-readout rule
-compatibility constraint
-```
+## Quantum-Theory Projects
 
-### 3. Better anomaly explanations
+1. Encode standard representation changes as calibrated mechanism-preserving roads.
+2. Map how subsystem factorization changes locality and entanglement claims.
+3. Treat gauge constraints as closure required before defining physical observables.
+4. Search for measurement and control protocols by composing quantum instruments and recovery maps.
+5. Reattach selected operator algebras to simulation carriers through explicit intertwiners.
+6. Construct observables for formally closed mechanisms that currently lack a discriminating experimental measurement.
 
-Bad anomaly labels are generic. Good anomaly labels say what fails:
+## What Would Establish The Method
 
-```text
-the spectrum is present but no operator is named
-the protocol is doing the work of a missing dynamics
-the boundary changes the admissible state space
-the same page mixes state, readout, and interpretation
-```
+The strongest result is a prospective construction whose target consequence was
+not used to select the mechanism. It must satisfy the field's mathematical
+conditions, produce an executable realization, survive negative controls, and
+state exactly which relation was preserved under the constructor edit.
 
-### 4. Better cross-field tests
-
-The long-term goal is to compare mechanisms across fields. A useful analogy is
-not a shared word. It is a shared role contract:
-
-```text
-same operator/readout/closure role
-different substrate or realization
-compatible boundary/protocol conditions
-```
-
-## Good First Projects
-
-1. Improve the Hilbert-space chapter so it explains why Hilbert space is the
-   selector/carrier layer for quantum theory.
-2. Split overloaded topics such as measurement, interpretation, and quantum
-   information into smaller constructor roles.
-3. Add explicit equations to pages that currently have only placement evidence.
-4. Add a second field preset and compare its constructor tree with quantum
-   theory.
-5. Build a small web viewer for the mechanism tree.
-
-## What Not To Do
-
-Do not turn MorphWiki into an LLM summary generator. The goal is not smoother
-prose. The goal is a stricter representation of scientific mechanisms.
-
-Do not hide unresolved pages. They are often the most useful output: they show
-where a field has names without enough explicit construction evidence.
-
+The topic archive, mechanism map, and generated book are infrastructure for that
+test. Their purpose is to expose reusable clauses and transformations in a form
+that can be edited without losing physical assumptions or provenance.

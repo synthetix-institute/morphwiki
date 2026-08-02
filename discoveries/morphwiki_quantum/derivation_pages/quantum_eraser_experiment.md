@@ -1,53 +1,60 @@
 # Quantum eraser experiment
 
-**Derivation step:** Readout rule: how answers become probabilities
-**Status:** topic-specific mechanism
+**Derivation step:** Measurement rule: how observables become probabilities
+
+## Topic Context
+
+In quantum mechanics, a quantum eraser experiment is an interferometer experiment that demonstrates several fundamental aspects of quantum mechanics, including quantum entanglement and complementarity. The quantum eraser experiment is a variation of Thomas Young's classic double-slit experiment. It establishes that when action is taken to determine which of two slits a photon has passed through, the photon cannot interfere with itself. When a stream of photons is marked in this way, then the interference fringes characteristic of the Young experiment will not be seen. The experiment also creates situations in which a photon that has been "marked" to reveal through which slit it has passed can later be "unmarked." A photon that has been "unmarked" will interfere with itself once again, restoring the fringes characteristic of Young's experiment.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_eraser_experiment)
 
 ## Role In The Derivation
 
-A quantum eraser experiment can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum eraser experiment belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+
+## Why This Step Is Needed
+
+Quantum eraser experiment connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 ## Mechanism
 
-In quantum-mechanical terms, a quantum eraser experiment is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and mode or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through complementarity or commutator. The linked equation set is concentrated in operator-to-spectrum readout, preparation, basis, or boundary context, state evolution; its mathematical presentation emphasizes local notation, information profile, spectral profile.
+The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Quantum eraser experiment contributes a compatibility or joint-readout role to the quantum construction.
-- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: detector and experimental setup.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: complementarity. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: mode. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Quantum eraser experiment contributes a compatibility or joint-observable role to the quantum construction. This page is read first as a measurement move: it connects the state and observable to outcome probabilities.
 
-## Topic Equations
+**State and operation.** One state space or a multipartite state space on which several questions can be asked. Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
+
+**Admissibility and prediction.** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+[A,B]\ne0,\quad \Delta A\,\Delta B\ge \frac12|\langle[A,B]\rangle|,\quad S_{\rm Bell}\le 2
 ```
+
+## How To Read The Relation
+
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. Quantum eraser experiment connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+
+## Connection To The Next Step
+
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family.
+- Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
 ## Evidence Links
 

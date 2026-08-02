@@ -1,53 +1,60 @@
 # Wave–particle duality
 
-**Derivation step:** State carrier inside Hilbert space
-**Status:** topic-specific mechanism
+**Derivation step:** Compatibility limit: what cannot be jointly sharp
+
+## Topic Context
+
+Wave–particle duality is the concept in quantum mechanics that fundamental entities of the universe, like photons and electrons, exhibit particle or wave properties according to the experimental circumstances. It expresses the inability of the classical concepts such as particle or wave to fully describe the behavior of quantum objects. During the 19th and early 20th centuries, light was found to behave as a wave, then later was discovered to have a particle-like behavior, whereas electrons behaved like particles in early experiments, then later were discovered to have wave-like behavior. The concept of duality arose to name these seeming contradictions.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality)
 
 ## Role In The Derivation
 
-Wave–particle duality can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Wave–particle duality belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
+
+## Why This Step Is Needed
+
+Wave–particle duality is needed because individually valid observables need not admit a common set of definite values. Quantum theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical.
 
 ## Mechanism
 
-In quantum-mechanical terms, wave–particle duality is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through probability amplitude or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Wave–particle duality contributes a many-mode field or particle-realization role to the quantum construction.
-- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** State terms: probability amplitude. Context/domain terms: potential and detector.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Wave–particle duality contributes a many-mode field or particle-realization role to the quantum construction. This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
 
-## Topic Equations
+**State and operation.** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+
+**Admissibility and prediction.** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+\mathcal F_{\pm}(\mathcal H),\quad a_k^\dagger,a_k,\quad N_k=a_k^\dagger a_k,\quad \sigma(H)\ \text{or scattering data}
 ```
+
+## How To Read The Relation
+
+A nonzero commutator obstructs a common eigenbasis for the corresponding sharp observables. Uncertainty, contextuality, and Bell inequalities express related obstructions under different assumptions. The assumptions must be stated because the mathematical conclusion changes when the measurement context or factorization changes.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response. Wave–particle duality identifies when otherwise legal quantum questions cannot be made jointly sharp. The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment. The page belongs to the compatibility layer because it limits which spectra can be read together.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The obstruction may be written as a commutator, inequality, correlation bound, uncertainty relation, or contextuality test. Different experiments realize the same compatibility limit with different observables and detectors. The language of paradox can change while the formal obstruction remains.
+
+## Connection To The Next Step
+
+Compatibility limits are then carried into concrete realizations. Boundaries, interfaces, and tensor factorizations decide which observables and correlations can actually be prepared and compared.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied.
+- Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
 
 ## Evidence Links
 

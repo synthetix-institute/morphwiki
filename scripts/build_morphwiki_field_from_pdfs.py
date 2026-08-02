@@ -31,7 +31,7 @@ ROLE_TO_IDENTITY = {
     "operator_apparatus": "Omega: transformation apparatus",
     "update_or_transport": "Omega: directed operation",
     "admissibility_logic": "C: closure and admissibility",
-    "readout_rule": "R: observable readout",
+    "readout_rule": "R: observable or prediction",
     "protocol_execution": "P: preparation and execution",
     "falsifier": "Validation: clause-breaking control",
 }
@@ -183,11 +183,11 @@ def render_mechanism_page(
             "closure or admissibility was not explicit",
         ),
         "",
-        "### R: readout",
+        "### R: observable or prediction",
         "",
         *bullet_rows(
             roles.get("readout_rule", []),
-            "no source-grounded readout was extracted",
+            "no source-grounded observable or prediction was extracted",
         ),
         "",
         "### P: protocol",

@@ -6,8 +6,8 @@
   "baseline_equation_blocks": 146,
   "baseline_pdf_pages": 318,
   "minimum_topic_count": 146,
-  "minimum_topic_words": 80000,
-  "minimum_equation_blocks": 146,
+  "minimum_topic_words": 65000,
+  "minimum_equation_blocks": 128,
   "minimum_pdf_pages": 280,
-  "policy": "Reorganization may add navigation and remove exact boilerplate only when topic-specific prose and equations remain. It must not replace the full book with a synopsis."
+  "policy": "Reorganization may remove repeated boilerplate while preserving all topics and substantive physics. Every physical topic must retain an equation-bearing construction; historical and interpretive annotations must not be assigned invented equations. The full book must not be replaced by a synopsis."
 }

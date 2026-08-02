@@ -48,9 +48,9 @@ justify a constructor order.
 ## Step 3: Infer the Field Roles
 
 Profile the pages for recurrent carriers, operations, closure conditions,
-readouts and protocols. Candidate active-matter roles might include particle
+observables and protocols. Candidate active-matter roles might include particle
 or field state, propulsion, transport/interaction, density or stress closure,
-boundary coupling, collective readout and perturbation protocol. These labels
+boundary coupling, collective observable and perturbation protocol. These labels
 must be inferred and audited against the field corpus rather than copied from
 the quantum spine.
 

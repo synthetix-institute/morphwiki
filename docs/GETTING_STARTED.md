@@ -171,7 +171,7 @@ mechanistically wrong or overloaded:
 
 ```text
 operator role missing
-readout unclear
+observable unclear
 boundary does too much work
 protocol replaces dynamics
 topic joins several incompatible roles
@@ -220,7 +220,7 @@ four questions:
 ```text
 What is the state or carrier?
 What operator or transformation acts?
-What spectrum, readout, or measurement is produced?
+What spectrum, observable, or measurement outcome is produced?
 What compatibility condition makes the statement legal?
 ```
 

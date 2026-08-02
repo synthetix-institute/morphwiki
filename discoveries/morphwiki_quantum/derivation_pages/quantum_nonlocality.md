@@ -1,53 +1,60 @@
 # Quantum nonlocality
 
 **Derivation step:** Compatibility limit: what cannot be jointly sharp
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In theoretical physics, quantum nonlocality refers to the phenomenon by which the measurement statistics of a multipartite quantum system do not allow an interpretation with local hidden variables. Quantum nonlocality has been experimentally verified under a variety of physical assumptions, with a notable exception being the many-worlds interpretation which violates an assumption of Bell's theorem.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_nonlocality)
 
 ## Role In The Derivation
 
-a quantum nonlocality modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
+Quantum nonlocality belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
+
+## Why This Step Is Needed
+
+Quantum nonlocality is needed because individually valid observables need not admit a common set of definite values. Quantum theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical.
 
 ## Mechanism
 
-a quantum nonlocality acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, controlled update protocol; its mathematical presentation emphasizes local notation, information profile, spectral profile.
+The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Quantum nonlocality contributes a compatibility or joint-readout role to the quantum construction.
-- **Placement:** This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
-- **Carrier or domain:** State terms: wavefunction, quantum state, or wave function. Context/domain terms: basis.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: collapse.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Quantum nonlocality contributes a compatibility or joint-observable role to the quantum construction. This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
 
-## Topic Equations
+**State and operation.** One state space or a multipartite state space on which several questions can be asked. Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared.
+
+**Admissibility and prediction.** Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+[A,B]\ne0,\quad \Delta A\,\Delta B\ge \frac12|\langle[A,B]\rangle|,\quad S_{\rm Bell}\le 2
 ```
+
+## How To Read The Relation
+
+A nonzero commutator obstructs a common eigenbasis for the corresponding sharp observables. Uncertainty, contextuality, and Bell inequalities express related obstructions under different assumptions. The assumptions must be stated because the mathematical conclusion changes when the measurement context or factorization changes.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. Quantum nonlocality identifies when otherwise legal quantum questions cannot be made jointly sharp. The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment. The page belongs to the compatibility layer because it limits which spectra can be read together.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The obstruction may be written as a commutator, inequality, correlation bound, uncertainty relation, or contextuality test. Different experiments realize the same compatibility limit with different observables and detectors. The language of paradox can change while the formal obstruction remains.
+
+## Connection To The Next Step
+
+Compatibility limits are then carried into concrete realizations. Boundaries, interfaces, and tensor factorizations decide which observables and correlations can actually be prepared and compared.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied.
+- Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
 
 ## Evidence Links
 

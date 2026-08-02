@@ -1,25 +1,32 @@
 # Projection-valued measure
 
-**Derivation step:** Readout rule: how answers become probabilities
-**Status:** topic-specific mechanism
+**Derivation step:** Measurement rule: how observables become probabilities
+
+## Topic Context
+
+In mathematics, particularly in functional analysis, a projection-valued measure, or spectral measure, is a function defined on certain subsets of a fixed set and whose values are self-adjoint projections on a fixed Hilbert space. A projection-valued measure (PVM) is formally similar to a real-valued measure, except that its values are self-adjoint projections rather than real numbers. As in the case of ordinary measures, it is possible to integrate complex-valued functions with respect to a PVM; the result of such an integration is a linear operator on the given Hilbert space.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Projection-valued_measure)
 
 ## Role In The Derivation
 
-Projection-valued measure is the sharp-readout constructor: mutually exclusive outcome projectors partition the identity.
+Projection-valued measure is the sharp-observable constructor: mutually exclusive outcome projectors partition the identity.
+
+## Why This Step Is Needed
+
+Projection-valued measure connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 ## Mechanism
 
-A projection-valued measure encodes an ideal sharp measurement. It defines outcome channels that are orthogonal and exhaustive. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+A projection-valued measure encodes an ideal sharp measurement. It defines outcome channels that are orthogonal and exhaustive.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Projection-valued measure contributes a probability/readout role to the quantum construction.
-- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
-- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
-- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
-- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
+**Place in the construction.** Projection-valued measure contributes a probability/observable role to the quantum construction. This page is read first as a measurement move: it connects the state and observable to outcome probabilities.
+
+**State and operation.** A state vector or density operator together with the measurement context in which outcome channels are defined. A projection-valued measure, POVM, update map, or instrument map connecting state to record.
+
+**Admissibility and prediction.** Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
 
 ## Topic Equations
 
@@ -31,24 +38,26 @@ p(i)=\operatorname{Tr}(\rho P_i)
 \rho\mapsto \frac{P_i\rho P_i}{\operatorname{Tr}(\rho P_i)}
 ```
 
+## How To Read The Relation
+
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

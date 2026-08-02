@@ -91,7 +91,7 @@ Each page contains:
 
 - a topic view tied to the source passage;
 - the operational identity \(M=(\Omega,\Xi)\);
-- closure, readout, and protocol clauses \(C,R,P\);
+- closure, observable-map, and protocol clauses \(C,R,P\);
 - representative equations;
 - route and substrate evidence;
 - falsifiers found in the source;
@@ -116,7 +116,7 @@ Before publication:
 - verify every equation against the source PDF;
 - name the field-specific constructor spine;
 - check whether each role is supported across several documents;
-- keep missing closure, readout, protocol, or control clauses unresolved;
+- keep missing closure, observable, protocol, or control clauses unresolved;
 - add empirical or formal validation separately.
 
 The generated wiki is a source-grounded field scaffold, not a completed

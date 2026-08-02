@@ -1,53 +1,60 @@
 # Wave interference
 
 **Derivation step:** Boundary realization: how effects appear
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In physics, interference is a phenomenon in which two coherent waves are combined by adding their intensities or displacements with due consideration for their phase difference. The resultant wave may have greater amplitude or lower amplitude if the two waves are in phase or out of phase, respectively. Interference effects can be observed with all types of waves, for example, light, radio, acoustic, surface water waves, gravity waves, or matter waves as well as in loudspeakers as electrical waves.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Wave_interference)
 
 ## Role In The Derivation
 
-A wave interference can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Wave interference belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
+
+## Why This Step Is Needed
+
+Wave interference makes the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
 
 ## Mechanism
 
-In quantum-mechanical terms, a wave interference is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through superposition or wave function, observable operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+This step specifies the domain, boundary condition, potential, interface, or asymptotic channel that shapes the allowed solutions.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Wave interference contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
-- **Carrier or domain:** State terms: superposition. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: observable. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Wave interference contributes a boundary and spectral role to the quantum construction. This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
 
-## Topic Equations
+**State and operation.** A state space equipped with a domain, potential, interface, cavity, or asymptotic channel. A Hamiltonian, wave operator, transfer operator, or scattering map whose domain depends on the boundary data.
+
+**Admissibility and prediction.** Boundary and matching conditions determine the allowed modes, resonances, and conserved fluxes. Energy levels, resonances, transmission and reflection amplitudes, phase shifts, or scattering cross-sections.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+H_B\psi=E\psi,\quad \psi\in\mathcal D(H_B),\quad S:\mathcal H_{\rm in}\to\mathcal H_{\rm out}
 ```
+
+## How To Read The Relation
+
+The eigenvalue or scattering equation must be read together with its domain and matching conditions. Confinement selects discrete modes; open channels produce transmission, reflection, and resonances. Removing the boundary should recover the appropriate free or infinite-domain limit.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+Wave interference shows how a context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The potential, geometry, asymptotic condition, or detector arrangement can change. The same boundary role may appear as a box, barrier, cavity, interface, or scattering region. Changing the boundary can change the spectrum without changing the general quantum constructor.
+
+## Connection To The Next Step
+
+Boundary-shaped single-particle mechanisms extend naturally to many modes and fields. The field-theory chapter replaces a fixed particle number with occupation sectors, local fields, and symmetry constraints.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels.
+- The same operator can have different spectra when the admissible domain changes.
 
 ## Evidence Links
 

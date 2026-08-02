@@ -1,25 +1,32 @@
 # Measurement problem
 
-**Derivation step:** Readout rule: how answers become probabilities
-**Status:** topic-specific mechanism
+**Derivation step:** Measurement rule: how observables become probabilities
+
+## Topic Context
+
+In quantum mechanics, the measurement problem is the problem of definite outcomes: quantum systems have superpositions but quantum measurements only give one definite result.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Measurement_problem)
 
 ## Role In The Derivation
 
-Measurement problem is the junction between unitary system--apparatus coupling, probability readout, and conditional state update; these are distinct maps and need not be identified.
+Measurement problem is the junction between unitary system--apparatus coupling, probability assignment, and conditional state update; these are distinct maps and need not be identified.
+
+## Why This Step Is Needed
+
+Measurement problem connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 ## Mechanism
 
-A measurement model first couples the system to an apparatus or environment. A POVM or instrument then assigns outcome probabilities, and a conditional map specifies the post-record state. The foundational problem concerns the relation between these operations and a definite record, not the absence of a probability formula. The linked equation set is concentrated in state evolution, preparation, basis, or boundary context, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+A measurement model first couples the system to an apparatus or environment. A POVM or instrument then assigns outcome probabilities, and a conditional map specifies the post-record state. The foundational problem concerns the relation between these operations and a definite record, not the absence of a probability formula.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Measurement problem contributes a probability/readout role to the quantum construction.
-- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** A joint system--apparatus state, possibly enlarged by environmental degrees of freedom.
-- **Operator or map:** A premeasurement interaction followed by a measurement instrument whose components label possible records.
-- **Admissibility:** The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity.
-- **Readout:** Outcome probabilities and conditional post-record states must be stated separately.
-- **Check:** A proposed resolution must identify where a definite record enters and how its prediction differs from the unconditioned state evolution.
+**Place in the construction.** Measurement problem contributes a probability/observable role to the quantum construction. This page is read first as a measurement move: it connects the state and observable to outcome probabilities.
+
+**State and operation.** A joint system--apparatus state, possibly enlarged by environmental degrees of freedom. A premeasurement interaction followed by a measurement instrument whose components label possible records.
+
+**Admissibility and prediction.** The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity. Outcome probabilities and conditional post-record states must be stated separately.
 
 ## Topic Equations
 
@@ -31,24 +38,26 @@ p(i)=\operatorname{Tr}[\mathcal I_i(\rho_S)]=\operatorname{Tr}(\rho_SE_i)
 \rho_{S|i}=\frac{\mathcal I_i(\rho_S)}{p(i)},\qquad \rho_S'=\sum_i\mathcal I_i(\rho_S)
 ```
 
+## How To Read The Relation
+
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

@@ -17,7 +17,7 @@ objects.
 
 This reorganization has three purposes. First, it explains a field through the
 sequence of constructions needed to obtain its predictions. Second, it exposes
-missing operators, closures, readouts and protocols that fluent topic prose can
+missing operators, closures, observables and protocols that fluent topic prose can
 hide. Third, it makes discoveries searchable: an operation established in one
 field can be recognized in another carrier, and a partial mechanism can be
 completed by following dependencies already supported elsewhere. Familiar

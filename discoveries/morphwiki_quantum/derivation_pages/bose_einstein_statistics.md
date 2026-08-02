@@ -1,53 +1,67 @@
 # Bose–Einstein statistics
 
-**Derivation step:** State carrier inside Hilbert space
-**Status:** topic-specific mechanism
+**Derivation step:** Many-mode extension: fields, particles, and scaling
+
+## Topic Context
+
+In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical particles may occupy a set of available discrete energy states at thermodynamic equilibrium. The aggregation of particles in the same state, which is a characteristic of particles obeying Bose–Einstein statistics, accounts for the cohesive streaming of laser light and the frictionless creeping of superfluid helium. The theory of this behaviour was developed (1924–25) by Satyendra Nath Bose, who recognized that a collection of identical and indistinguishable particles could be distributed in this way. The idea was later adopted and extended by Albert Einstein in collaboration with Bose.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_statistics)
 
 ## Role In The Derivation
 
-A bose–einstein statistics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Bose–Einstein statistics is a symmetric-state constructor: exchange statistics permits collective occupation of one quantum mode.
+
+## Why This Step Is Needed
+
+Bose-Einstein statistics is needed because identical bosons occupy symmetric many-particle states. Multiple particles may share one mode, which produces collective occupation effects absent from distinguishable particles and fermions.
 
 ## Mechanism
 
-In quantum-mechanical terms, a bose–Einstein statistics is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and energy level or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, preparation, basis, or boundary context; its mathematical presentation emphasizes local notation, information profile, formula structure.
+Bose-Einstein statistics is an admissibility rule for symmetric many-particle states. Commutation permits unrestricted mode occupation, while the thermal distribution determines the mean population and the conditions for macroscopic ground-state occupation.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Bose–Einstein statistics contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: potential.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: energy level. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Bose–Einstein statistics contributes a bosonic state-admissibility role to the quantum construction. This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+
+**State and operation.** A bosonic Fock space assembled from symmetric many-particle sectors or occupation-number modes. Creation, annihilation, and number operators obeying canonical commutation relations.
+
+**Admissibility and prediction.** Exchange symmetry permits any non-negative integer occupation of a one-particle mode. Mode occupations, condensate fraction, particle density, pressure, heat capacity, and coherence observables.
 
 ## Topic Equations
 
+Topic-specific construction: symmetric mode algebra, unrestricted occupation, and equilibrium population.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+[a_i,a_j^\dagger]=\delta_{ij},\qquad n_i\in\{0,1,2,\ldots\}
+\bar n_i=\frac{1}{e^{\beta(\varepsilon_i-\mu)}-1}
 ```
+
+## How To Read The Relation
+
+The Bose-Einstein distribution gives the mean occupation of each energy mode at thermal equilibrium. The chemical potential and density determine whether a macroscopic population accumulates in the lowest mode, as in Bose-Einstein condensation.
+
+## Worked Example
+
+Cooling a dilute bosonic gas below its critical temperature transfers a macroscopic fraction of the atoms into one quantum mode. The condensate is not caused by an attractive binding force; it follows from the symmetric occupation rule and thermodynamic constraints.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+Exchange symmetry and canonical commutation define the bosonic many-particle sectors. Each one-particle mode admits any non-negative integer occupation. The Bose-Einstein function gives the equilibrium mean occupation once energy, temperature, and chemical potential are specified.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The dispersion relation, dimensionality, density of states, conserved particle number, and interaction approximation depend on the physical system. Photons, cold atoms, phonons, and bosonic quasiparticles realize the same exchange rule with different chemical-potential constraints. Macroscopic occupation of the lowest mode occurs only when the density of states and thermodynamic limit support condensation.
+
+## Connection To The Next Step
+
+Fock space provides one common language for bosonic and fermionic occupations, while field operators create and remove individual mode excitations.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Recover unrestricted mode occupation and Bose enhancement relative to distinguishable particles.
+- Recover the Maxwell-Boltzmann distribution in the dilute low-fugacity limit.
+- Verify particle-number or energy constraints and test whether the inferred condensate fraction follows the correct dimensional dependence.
 
 ## Evidence Links
 

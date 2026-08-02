@@ -1,53 +1,22 @@
 # QBism
 
-**Derivation step:** Annotations: history, interpretations, and popular frames
-**Status:** topic-specific mechanism
+*Historical or interpretive annotation.*
 
-## Role In The Derivation
+## Topic Context
 
-QBism modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
+In physics and the philosophy of physics, QBism is an interpretation of quantum mechanics that takes an agent's actions and experiences as the central concerns of the theory. It is the most prominent and extreme form of quantum Bayesianism, a collection of related approaches that all involve interpreting quantum probabilities as Bayesian in some manner. QBism deals with common questions in the interpretation of quantum theory about the nature of wavefunction superposition, quantum measurement, and entanglement. According to QBism, many, but not all, aspects of the quantum formalism are subjective in nature. For example, in this interpretation, a quantum state is not an element of reality—instead, it represents the degrees of belief an agent has about the possible outcomes of measurements.
 
-## Mechanism
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/QBism)
 
-QBism acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+## Place In The Book
 
-## Quantum Mechanism Frame
+QBism records the history, pedagogy, or interpretation of quantum theory. It does not define an additional state space, equation of motion, observable, or probability law.
 
-- **Role:** QBism contributes a probability/readout role to the quantum construction.
-- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** State terms: wavefunction, quantum state, wave function, or superposition. Context/domain terms: measurement apparatus.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: Born rule and collapse.
-- **Admissibility:** Compatibility or closure terms: uncertainty. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+## Relation To The Formal Theory
 
-## Topic Equations
-
-```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
-```
-
-## What Remains Stable
-
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
-
-## What Changes With Realization
-
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
-
-## Checks
-
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Identify the states, operators, observables, probability rules, or protocols discussed by the source.
+- Separate historical attribution and interpretation from mathematical consequences of the formalism.
+- Treat a claimed physical difference as substantive only when it changes an equation, admissibility condition, probability law, or experimental prediction.
 
 ## Evidence Links
 

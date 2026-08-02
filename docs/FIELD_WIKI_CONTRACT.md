@@ -1,108 +1,97 @@
 # MorphWiki Field-Wiki Contract
 
-A MorphWiki field wiki is a source-grounded description of a scientific field
-organized by mechanisms rather than historical topic order. It keeps familiar
-topic names as entry points, but does not use those names as the primary
-structure of knowledge.
+A MorphWiki field wiki is a source-grounded reconstruction of a scientific field
+around mechanisms and their transformations. Familiar topics remain searchable,
+but the field map is built from operational clauses rather than historical order.
 
-## Three Views of One Field
+## Four Synchronized Views
 
-Every field wiki should expose three synchronized views.
+### Topic View
 
-### 1. Topic View
+Preserves the names used in papers, textbooks, reviews, and public references.
+It answers: what will a reader search for?
 
-The topic view preserves the public vocabulary of the field: names used in
-Wikipedia, textbooks, reviews and source papers. It answers, “What will a
-reader search for?”
+### Mechanism View
 
-### 2. Mechanism View
-
-The mechanism view rewrites each topic as an operational contract:
+Represents the topic as
 
 ```text
-I_op = (M; C, R, P),    M = (Omega, Xi)
+(Omega, Xi) -> M -> I_op=(M; C, R, P) -> I_real=(I_op; A)
 ```
 
-- `Omega`: transformation or operator apparatus;
-- `Xi`: carrier, substrate or state space;
-- `C`: closure and admissibility;
-- `R`: observable or readout;
-- `P`: intervention, preparation or protocol.
+It answers: what operation acts on what carrier, under which conditions, through
+which observable map and protocol, in which physical realization?
 
-It answers, “What does this topic do in a calculation or experiment?”
+### Transformation View
 
-### 3. Construction View
+Connects two identities by stating the clause that changes and the relation that
+is retained:
 
-The construction view orders dependencies: which carrier must be specified
-before an operator can act, which closure makes the operation legal, which
-readout exposes a consequence and which protocol realizes it. It answers,
-“What must already exist before this mechanism can be used?”
-
-```mermaid
-flowchart LR
-    T["Topic vocabulary"] --> M["Mechanism identity"]
-    M --> D["Construction dependencies"]
-    D --> V["Source and validation evidence"]
-    V --> T
+```text
+source identity -> controlled constructor edit -> target identity -> consequence
 ```
+
+It answers: what can be completed, reattached, composed, deformed, observed, or
+revised?
+
+### Evidence View
+
+Retains source passages, equations, citations, historical names, implementation
+details, and empirical results. It answers: where does each clause come from and
+how can it be checked?
 
 ## Required Page Content
 
-A field page is ready for public use when it contains:
+A public mechanism page contains:
 
-1. the familiar topic title and source description;
-2. its role in the field’s constructor;
-3. carrier or domain;
-4. operator or transformation;
-5. closure and admissibility conditions;
-6. readout and observable consequences;
-7. protocol or realization where applicable;
+1. familiar title and source description;
+2. operation `Omega`;
+3. carrier `Xi`;
+4. closure `C`;
+5. observable or prediction map `R`;
+6. protocol `P`;
+7. realization `A`;
 8. representative equations;
-9. what remains stable across realizations;
-10. what changes with realization;
-11. source links and equation witnesses;
-12. an explicit unresolved status when evidence is insufficient.
+9. transformations to neighboring identities;
+10. the relation retained by each transformation;
+11. a derived observable consequence or a precise unresolved clause;
+12. source links and equation witnesses.
 
-## Field-Level Structure
+Not every source states every clause in one equation. A page may assemble a
+mechanism from neighboring equations in the same source, provided the assembly
+and its dependencies remain visible.
 
-The wiki index should not be a manually chosen list of chapters. Its candidate
-constructor spine is inferred from the field corpus using route/fiber profiles,
-source-local transitions and sparse-attention structure. Human-readable names
-are added only after the measured roles and dependencies have been audited.
+## Field-Level Organization
 
-Different fields can therefore have different spines while sharing the same
-upper-level contract. For example:
+The upper-level contract is shared across fields. The contents of its clauses
+are field-specific and must be recovered from the corpus. A quantum carrier may
+be a Hilbert or Fock space; a materials carrier may be an interface, lattice, or
+microstructure; a biological carrier may be a population, regulatory state, or
+spatial tissue domain. The notation is common, but the admissibility conditions
+and executable protocols are not interchangeable.
 
-```text
-quantum theory:
-carrier -> state -> generator -> spectrum -> probability readout
-        -> compatibility -> realization -> protocol
+The field index groups topics by the clause they specify and the transformations
+they support. It does not require a single linear constructor spine.
 
-material intelligence:
-material state -> stimulus coupling -> transport/relaxation
-               -> interface closure -> response -> memory/erasure protocol
+## Cross-Field Construction
 
-population biology:
-population state -> interaction/growth operator -> resource closure
-                 -> observable trait -> perturbation protocol
-```
-
-## Evidence Levels
-
-MorphWiki distinguishes:
+A cross-field link must state:
 
 ```text
-placement    plausible role in the field constructor
-construction sufficient equation-level clauses to state a mechanism
-validation   source evidence plus formal or empirical rejection tests
+retained operation or relation
+source carrier and target carrier
+new closure requirements
+new observable map and protocol
+physical realization
+consequence that can fail
 ```
 
-Fluent prose cannot promote a page between these levels. Promotion requires
-the missing operational evidence.
+Shared terminology, nearby embeddings, and similar equation shapes can nominate
+a comparison. They cannot establish the transfer.
 
-## What Makes Field Wikis Comparable
+## Reproduction Contract
 
-Two field wikis are connected through retained mechanism clauses, not through
-similar names. A cross-field link must state what is preserved, what carrier or
-completion clause changes, and what would test the proposed realization. This
-allows a shared operational index without erasing field-specific knowledge.
+The repository must preserve the input manifest, source identifiers, extracted
+equations, constructor assignments, generated pages, transformation records,
+book source, and build checks. The public exposition may omit internal
+diagnostics, but the reproducibility artifacts remain available.

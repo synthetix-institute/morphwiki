@@ -1,25 +1,32 @@
 # Observable
 
 **Derivation step:** Spectral question: what can be asked
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In physics, an observable is a physical property or physical quantity that can be measured. In classical mechanics, an observable is a real-valued "function" on the set of all possible system states, e.g., position and momentum. In quantum mechanics, an observable is described by a linear operator. For example, these operators might represent submitting the system to various electromagnetic fields and eventually reading a value.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Observable)
 
 ## Role In The Derivation
 
 Observable is the legal-question constructor: it turns a physical question into an operator with spectral outcome channels.
 
+## Why This Step Is Needed
+
+An observable converts a broad physical question such as position, energy, or spin into an operator with a defined domain and spectrum. Without that operator, the state alone does not specify which distribution is being predicted.
+
 ## Mechanism
 
-An observable is the mathematical form of a question that can be asked of a state. Its spectral decomposition defines the possible answers. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+An observable is the mathematical form of a question that can be asked of a state. Its spectral decomposition defines the possible answers.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Observable contributes an unresolved constructor role to the quantum construction.
-- **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+**Place in the construction.** Observable contributes an observable and spectral role to the quantum construction. This page is read first as a question-selection move: it identifies the observable and its possible values.
+
+**State and operation.** An admissible quantum state space on which the physical quantity is represented. A self-adjoint operator, operator-valued measure, or algebra element representing the physical question.
+
+**Admissibility and prediction.** Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
 
 ## Topic Equations
 
@@ -31,24 +38,30 @@ A=\sum_i a_iP_i
 p(a_i)=\operatorname{Tr}(\rho P_i)
 ```
 
+## How To Read The Relation
+
+The spectral measure decomposes the observable into possible outcome sectors. Pairing those sectors with the state gives probabilities, and weighting them by their spectral values gives expectation values. Degenerate eigenspaces correspond to outcomes that do not resolve every state component.
+
+## Worked Example
+
+A spin state has different probability distributions for measurements along different axes. The preparation is unchanged; the observable selects the question.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+The Born rule supplies the probability assigned to each spectral sector, and measurement theory describes its physical registration.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

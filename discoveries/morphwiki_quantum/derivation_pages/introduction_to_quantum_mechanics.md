@@ -1,53 +1,22 @@
 # Introduction to quantum mechanics
 
-**Derivation step:** Annotations: history, interpretations, and popular frames
-**Status:** topic-specific mechanism
+*Historical or interpretive annotation.*
 
-## Role In The Derivation
+## Topic Context
 
-An introduction to quantum mechanics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Quantum mechanics is the study of matter and matter's interactions with energy on the scale of atomic and subatomic particles. By contrast, classical physics explains matter and energy only on a scale familiar to human experience, including the behavior of astronomical bodies such as the Moon. Classical physics is still used in much of modern science and technology. However, towards the end of the 19th century, scientists discovered phenomena in both the large (macro) and the small (micro) worlds that classical physics could not explain. The desire to resolve inconsistencies between observed phenomena and classical theory led to a revolution in physics, a shift in the original scientific paradigm: the development of quantum mechanics.
 
-## Mechanism
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Introduction_to_quantum_mechanics)
 
-In quantum-mechanical terms, an introduction to quantum mechanics is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or complementarity. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+## Place In The Book
 
-## Quantum Mechanism Frame
+Introduction to quantum mechanics records the history, pedagogy, or interpretation of quantum theory. It does not define an additional state space, equation of motion, observable, or probability law.
 
-- **Role:** Introduction to quantum mechanics contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: basis.
-- **Operator or map:** Operator terms: Hamiltonian, observable operator, or generator. Protocol or update terms: Born rule.
-- **Admissibility:** Compatibility or closure terms: uncertainty and complementarity. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+## Relation To The Formal Theory
 
-## Topic Equations
-
-```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
-```
-
-## What Remains Stable
-
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
-
-## What Changes With Realization
-
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
-
-## Checks
-
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Identify the states, operators, observables, probability rules, or protocols discussed by the source.
+- Separate historical attribution and interpretation from mathematical consequences of the formalism.
+- Treat a claimed physical difference as substantive only when it changes an equation, admissibility condition, probability law, or experimental prediction.
 
 ## Evidence Links
 

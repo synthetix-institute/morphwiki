@@ -39,7 +39,7 @@ context
 -> admissible state space
 -> generator/evolution
 -> observable spectrum
--> probability readout
+-> probability assignment
 -> compatibility constraint
 -> boundary/protocol realization
 ```
@@ -120,4 +120,3 @@ validation = the mechanism has source evidence and falsifying checks
 A page can be placed without being constructed. That is not a bug. It is a useful
 diagnostic: the system has found where more equations or better evidence are
 needed.
-

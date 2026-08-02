@@ -1,25 +1,32 @@
 # Self-adjoint operator
 
 **Derivation step:** Spectral question: what can be asked
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In mathematics, a self-adjoint operator on a complex vector space with inner product is a linear map that is its own adjoint. That is, for all . If is finite-dimensional with a given orthonormal basis, this is equivalent to the condition that the matrix of is a Hermitian matrix, i.e., equal to its conjugate transpose . By the finite-dimensional spectral theorem, has an orthonormal basis such that the matrix of relative to this basis is a diagonal matrix with entries in the real numbers. This article deals with applying generalizations of this concept to operators on Hilbert spaces of arbitrary dimension.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Self-adjoint_operator)
 
 ## Role In The Derivation
 
 Self-adjoint operator is the admissible-observable condition: it gives real spectra and well-defined spectral measures.
 
+## Why This Step Is Needed
+
+Self-adjoint operator states which physical question is being asked. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
+
 ## Mechanism
 
-Self-adjointness is not a technical decoration. It is the condition that makes an operator a legitimate spectral question in ordinary quantum mechanics. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+Self-adjointness is not a technical decoration. It is the condition that makes an operator a legitimate spectral question in ordinary quantum mechanics.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Self-adjoint operator contributes an unresolved constructor role to the quantum construction.
-- **Placement:** This page is read first as a question-selection move: it identifies the spectrum or answer set being read.
-- **Carrier or domain:** A context-selected state space or effective carrier for prediction.
-- **Operator or map:** The relevant Hamiltonian, observable, channel, constraint, or update map.
-- **Admissibility:** Domain, normalization, positivity, compatibility, boundary, or gauge requirements state what is legal.
-- **Readout:** The outcome probabilities, spectra, correlations, amplitudes, or records used to test the mechanism.
-- **Check:** A complete account must specify state carrier, operator or map, admissibility condition, readout, and at least one possible falsifier.
+**Place in the construction.** Self-adjoint operator contributes an observable and spectral role to the quantum construction. This page is read first as a question-selection move: it identifies the observable and its possible values.
+
+**State and operation.** An admissible quantum state space on which the physical quantity is represented. A self-adjoint operator, operator-valued measure, or algebra element representing the physical question.
+
+**Admissibility and prediction.** Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
 
 ## Topic Equations
 
@@ -31,24 +38,26 @@ A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)
 \Pr(\Delta)=\operatorname{Tr}(\rho E_A(\Delta))
 ```
 
+## How To Read The Relation
+
+The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

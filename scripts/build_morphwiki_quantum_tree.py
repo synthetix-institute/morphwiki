@@ -19,6 +19,21 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
+try:
+    from morphwiki_constructor import (
+        CONSTRUCTOR_CHAIN_TEXT,
+        CONSTRUCTOR_CLAUSES,
+        DISCOVERY_VERBS,
+        public_theory_language,
+    )
+except ModuleNotFoundError:  # Imported as scripts.build_morphwiki_quantum_tree.
+    from scripts.morphwiki_constructor import (
+        CONSTRUCTOR_CHAIN_TEXT,
+        CONSTRUCTOR_CLAUSES,
+        DISCOVERY_VERBS,
+        public_theory_language,
+    )
+
 
 ROUTE_LABELS = {
     "transport_flow_route": "state evolution",
@@ -54,11 +69,12 @@ LAGRANGIAN_CLASS_LABELS = {
 
 BRANCHES = {
     "root": {
-        "title": "The quantum prediction problem",
+        "title": "The quantum operational identity",
         "definition": (
-            "Given a context-selected Hilbert space, an admissible state, and a permitted observable, "
-            "quantum theory determines which numerical outcomes can occur, assigns probabilities to "
-            "those outcomes, and marks which questions cannot be made simultaneously sharp."
+            "A quantum prediction is produced by a realized mechanism: an operation on an admissible "
+            "carrier, completed by closure, an observable map, and protocol, then supplied with the physical "
+            "objects, parameters, boundaries, and apparatus of a particular problem. Named topics "
+            "specify or transform clauses of this identity."
         ),
         "query": {
             "spectral_operator_route": 1.0,
@@ -79,7 +95,7 @@ BRANCHES = {
         ],
     },
     "context": {
-        "title": "Hilbert-space context: admissible carrier and basis",
+        "title": "Formal context: carrier, domain, and representation",
         "definition": (
             "A quantum calculation first fixes the Hilbert space, operator domain, basis, preparation "
             "context, representation, gauge, or boundary condition. This is not the measured answer; "
@@ -100,7 +116,7 @@ BRANCHES = {
         "keywords": ["state", "wave function", "density matrix", "superposition", "coherence", "decoherence"],
     },
     "generators": {
-        "title": "Generator: lawful change before readout",
+        "title": "Generator: lawful change before measurement",
         "definition": (
             "Hamiltonians, unitary maps, equations of motion, and path weights describe the lawful "
             "transport of the state before a question is resolved."
@@ -117,11 +133,11 @@ BRANCHES = {
         "keywords": ["observable", "operator", "self-adjoint", "eigenvalue", "eigenvector", "spectrum", "pauli"],
     },
     "measurement": {
-        "title": "Readout rule: how answers become probabilities",
+        "title": "Measurement rule: how observables become probabilities",
         "definition": (
             "Measurement connects a state and an observable to recorded frequencies.  Projection, "
             "POVMs, Born weights, and collapse language are alternative ways of presenting this "
-            "state-to-spectrum readout step."
+            "state-to-spectrum probability assignment."
         ),
         "query": {
             "spectral_operator_route": 0.8,
@@ -129,7 +145,7 @@ BRANCHES = {
             "boundary_weak_form_route": 0.25,
             "commutator_incompatibility_route": 0.2,
         },
-        "keywords": ["measurement", "born", "povm", "projection", "collapse", "quantum jump", "readout"],
+        "keywords": ["measurement", "born", "povm", "projection", "collapse", "quantum jump", "outcome"],
     },
     "incompatibility": {
         "title": "Compatibility limit: what cannot be jointly sharp",
@@ -197,17 +213,17 @@ BRANCH_ORDER = [
     "states",
     "generators",
     "observables",
-    "measurement",
     "incompatibility",
+    "measurement",
+    "protocols",
     "boundaries",
     "fields",
-    "protocols",
     "annotations",
 ]
 
 ANNOTATION_RE = re.compile(
     r"\b(history|book|gentle introduction|the quantum universe|mysticism|mind|interpretations|interpretation|qbism|quantum bayesian|relational quantum mechanics|"
-    r"copenhagen|many-worlds|consistent histories|erwin|david hilbert|concepts and methods|modern quantum mechanics)\b",
+    r"copenhagen|many-worlds|consistent histories|erwin|werner heisenberg|david hilbert|applications of quantum mechanics|concepts and methods|modern quantum mechanics)\b",
     re.IGNORECASE,
 )
 
@@ -608,17 +624,20 @@ def explicit_branch(page: Mapping[str, Any]) -> Optional[str]:
     wiki = page.get("wikipedia", {})
     title_only = str(wiki.get("title") or "").lower()
     text = title_text(page)
+    if title_only == "old quantum theory":
+        return "context"
     if is_annotation_title(text):
         return "annotations"
     title_overrides = [
-        ("states", r"^(quantum state|wave function|density matrix|superposition principle|quantum superposition|coherence|quantum decoherence|two-state quantum system|qubit|quantum fluctuation)$"),
+        ("states", r"^(quantum state|wave function|density matrix|superposition principle|quantum superposition|coherence|quantum decoherence|two-state quantum system|qubit|quantum fluctuation|spin \(physics\))$"),
         ("generators", r"^(unitary operator|hamiltonian|hamiltonian \(quantum mechanics\)|schrödinger equation|schrodinger equation|schrödinger picture|path integral|path integral formulation|quantum dynamics|perturbation theory.*|creation and annihilation operators)$"),
         ("observables", r"^(observable|self-adjoint operator|operator theory|operator \(physics\)|spectral theory|eigenvalues and eigenvectors|pauli matrices|angular momentum operator|von neumann algebra)$"),
         ("measurement", r"^(born rule|povm|projection-valued measure|measurement in quantum mechanics|measurement problem|wave function collapse|quantum jump|delayed-choice quantum eraser|quantum eraser experiment)$"),
         ("incompatibility", r"^(bell's theorem|quantum entanglement|commutator|uncertainty principle|einstein.*podolsky.*rosen paradox|quantum nonlocality|wave.*particle duality)$"),
         ("boundaries", r"^(potential well|particle in a box|quantum tunnelling|quantum tunneling|scattering|wave interference|quantum optics|spectral line|s-matrix|quantum imaging|quantum metamaterial|quantum harmonic oscillator|macroscopic quantum phenomena)$"),
-        ("fields", r"^(quantum field theory|quantum electrodynamics|quantum chromodynamics|gauge theory|renormalization|dirac equation|klein.*gordon equation|fock space|photon|electron|fermion|boson|string theory|ads/cft correspondence|quantum gravity|loop quantum gravity|quantum geometry|spin network|spin foam|quantum cosmology)$"),
-        ("protocols", r"^(quantum information|quantum information science|quantum computing|quantum algorithm|quantum circuit|quantum logic gate|quantum channel|quantum network|quantum error correction|quantum key distribution|quantum teleportation|quantum sensor|quantum metrology|quantum programming|quantum image processing|quantum complexity theory)$"),
+        ("fields", r"^(quantum field theory|quantum electrodynamics|quantum chromodynamics|gauge theory|renormalization|dirac equation|klein.*gordon equation|fock space|photon|electron|fermion|boson|string theory|ads/cft correspondence|quantum gravity|loop quantum gravity|quantum geometry|spin network|spin foam|quantum cosmology|standard model|quantum chemistry|quantum statistical mechanics|bose.*einstein statistics|fermi.*dirac statistics)$"),
+        ("protocols", r"^(quantum information|quantum information science|quantum computing|quantum algorithm|quantum circuit|quantum logic gate|quantum channel|quantum network|quantum error correction|quantum key distribution|quantum teleportation|quantum sensor|quantum metrology|quantum programming|quantum image processing|quantum complexity theory|quantum machine learning|quantum machine|quantum engineering)$"),
+        ("context", r"^(fourier transform|quantum differential calculus|transformation theory \(quantum mechanics\)|mathematical formulation of quantum mechanics|hilbert space)$"),
     ]
     for branch_id, pattern in title_overrides:
         if re.search(pattern, title_only, re.IGNORECASE):
@@ -719,12 +738,17 @@ def assign_pages(
             score = 0.42 * route_dot(routes, branch["query"]) + 0.58 * keyword_score(counter, branch["keywords"])
             score += branch_lagrangian_bonus(branch_id, lagrangian)
             scores[branch_id] = score
+        page_title = title(page)
         explicit = explicit_branch(page)
         if explicit:
-            scores[explicit] += 0.55
-        primary = max(scores.items(), key=lambda item: item[1])[0]
-        secondary = sorted(scores.items(), key=lambda item: item[1], reverse=True)[1][0]
-        page_title = title(page)
+            primary = explicit
+            secondary = max(
+                ((key, value) for key, value in scores.items() if key != primary),
+                key=lambda item: item[1],
+            )[0]
+        else:
+            primary = max(scores.items(), key=lambda item: item[1])[0]
+            secondary = sorted(scores.items(), key=lambda item: item[1], reverse=True)[1][0]
         row = {
             "title": page_title,
             "slug": page.get("_slug"),
@@ -732,7 +756,7 @@ def assign_pages(
             "secondary": secondary,
             "secondary_score": round(scores[secondary], 4),
             "core_priority": core_priority(primary, page_title),
-            "is_annotation": is_annotation_title(page_title),
+            "is_annotation": primary == "annotations" or is_annotation_title(page_title),
             "top_route": top_route_name(routes),
             "routes": routes,
             "fibers": fibers,
@@ -1006,7 +1030,7 @@ def branch_insights(assignments: Mapping[str, Sequence[Mapping[str, Any]]]) -> D
     }
 
 
-def render_markdown(report: Mapping[str, Any]) -> str:
+def _render_diagnostic_markdown(report: Mapping[str, Any]) -> str:
     lines = []
     lines.append("# Quantum Theory As A Mechanism Tree")
     lines.append("")
@@ -1147,7 +1171,144 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     for lead in report["discovery_leads"]:
         lines.append(f"- {lead}")
     lines.append("")
-    return "\n".join(lines)
+    return public_theory_language("\n".join(lines))
+
+
+def render_markdown(report: Mapping[str, Any]) -> str:
+    """Render the public mechanism map around construction and discovery."""
+    lines = [
+        "# Quantum Theory By Construction",
+        "",
+        "Quantum theory is usually entered through named subjects: wave functions, particles, "
+        "measurement, entanglement, fields, and information. MorphWiki retains those entry points "
+        "but reorganizes them by the work they perform in a prediction.",
+        "",
+        "## The Operational Identity",
+        "",
+        "```text",
+        CONSTRUCTOR_CHAIN_TEXT,
+        "```",
+        "",
+        "The first pair is the mechanism core. `Omega` states what transformation is performed; "
+        "`Xi` states the carrier on which that transformation is defined. Closure, readout, and "
+        "protocol complete the operational identity. The realization layer supplies the named "
+        "system, parameters, units, boundaries, geometry, and apparatus needed for a concrete prediction.",
+        "",
+    ]
+    for symbol, name, description in CONSTRUCTOR_CLAUSES:
+        lines.append(f"- **{symbol}, {name}.** {description}")
+
+    lines.extend(
+        [
+            "",
+            "These clauses are addressable but not independent. A Hamiltonian is meaningful only "
+            "on a stated domain; a readout is meaningful only for an admissible state; a protocol "
+            "must preserve the closure conditions required by the mechanism. The hierarchy records "
+            "what has been specified, not a universal temporal order.",
+            "",
+            "## Quantum Specialization",
+            "",
+            "```math",
+            "\\Xi_Q=(\\mathcal H,\\mathcal D,\\mathcal S),\\qquad "
+            "\\Omega_Q=\\{G,O,\\mathcal E,\\ldots\\}",
+            "I_{\\mathrm{op},Q}=((\\Omega_Q,\\Xi_Q);C_Q,R_Q,P_Q)",
+            "\\rho_0\\xrightarrow[P_Q,C_Q]{G}\\rho_t,\\qquad "
+            "p(y)=\\operatorname{Tr}(E_y\\rho_t)",
+            "```",
+            "",
+            "Here the carrier includes the Hilbert or Fock space, state class, and operator domain. "
+            "The operation may be a generator, observable, channel, symmetry action, or composition. "
+            "Closure imposes normalization, positivity, domain, gauge, or compatibility conditions. "
+            "Readout connects the construction to probabilities, spectra, correlators, currents, or "
+            "detector records. Protocol states how the system is prepared, transformed, and measured.",
+            "",
+            "## Mechanism-Preserving Transformations",
+            "",
+            "A scientific connection is useful when it states what survives a change. In quantum "
+            "theory this may be an amplitude, expectation value, operator algebra, conserved flux, "
+            "complete positivity, or a family of correlators. A transformation is written as",
+            "",
+            "```math",
+            "I_i=((\\Omega_i,\\Xi_i);C_i,R_i,P_i) "
+            "\\xrightarrow{T} I_j=((\\Omega_j,\\Xi_j);C_j,R_j,P_j).",
+            "```",
+            "",
+            "The index change need not denote physical time. It can denote reformulation, completion, "
+            "carrier replacement, projection, composition, deformation, or revision. The invariant "
+            "must be named for each transformation; visual similarity between equations is not enough.",
+            "",
+            "## Six Constructor Verbs",
+            "",
+        ]
+    )
+    for name, description in DISCOVERY_VERBS:
+        lines.append(f"- **{name}.** {description.capitalize()}.")
+
+    lines.extend(
+        [
+            "",
+            "## A Discovery Procedure",
+            "",
+            "1. Select a source identity and state the prediction or relation that must be retained.",
+            "2. Choose one clause to edit. Do not change the whole model at once.",
+            "3. Construct the new operational identity and supply any missing closure, readout, or protocol.",
+            "4. Attach a physical realization with dimensions, parameters, boundaries, and an executable procedure.",
+            "5. Derive a consequence that distinguishes the construction from the source model and from negative controls.",
+            "6. Accept the construction only if the consequence survives; otherwise revise the clause that failed.",
+            "",
+            "A detached operation `(Omega, 0_Xi)` and a carrier `(0_Omega, Xi')` define a particularly "
+            "clear construction question: can the operation be realized on the new carrier, and what "
+            "closure and readout are then required? This is a search over typed mechanisms, not an "
+            "invitation to attach arbitrary equations to arbitrary systems.",
+            "",
+            "## The Quantum Map",
+            "",
+        ]
+    )
+
+    for branch_id in BRANCH_ORDER:
+        branch = report["branches"][branch_id]
+        lines.append(f"### {branch['title']}")
+        lines.append(branch["definition"])
+        lines.append("")
+        representatives = [page for page in branch["pages"] if not page.get("is_annotation")]
+        if not representatives:
+            representatives = branch["pages"]
+        titles = [str(page.get("title") or "") for page in representatives[:8]]
+        if titles:
+            lines.append("Representative topics: " + "; ".join(titles) + ".")
+        lines.append("")
+
+    lines.extend(
+        [
+            "## Worked Transformations",
+            "",
+            "- **Schrodinger, Heisenberg, and path-integral descriptions:** deform the representation "
+            "while retaining transition amplitudes or expectation values on a common domain.",
+            "- **Gauge systems:** complete the mechanism with the constraint sector before defining "
+            "a physical readout on the quotient state space.",
+            "- **Quantum instruments and error correction:** compose outcome-resolved channels with "
+            "conditional recovery while retaining complete positivity and total probability.",
+            "- **Quantum simulation and duality:** reattach a selected operator algebra to another "
+            "carrier through an intertwining map, then compare correlators rather than state labels.",
+            "",
+            "## Discovery Questions Generated By The Map",
+            "",
+        ]
+    )
+    for lead in report["discovery_leads"]:
+        lines.append(f"- {lead}")
+    lines.extend(
+        [
+            "",
+            "## Evidence And Reproduction",
+            "",
+            "Every topic page retains the source links and equation witnesses from which its "
+            "mathematical relations were reconstructed.",
+            "",
+        ]
+    )
+    return public_theory_language("\n".join(lines))
 
 
 def build_report(
@@ -1203,11 +1364,12 @@ def build_report(
         "branches": branches,
         "anomalies": anomaly_rows,
         "discovery_leads": [
-            "Search for systems where a state-like carrier and a legal-question operator exist, but the incompatibility relation has not been tested.  Those systems are candidates for quantum-like contextual behavior without importing quantum ontology.",
-            "Treat tunnelling, particle-in-a-box, cavity optics, and spectral lines as one family of boundary-shaped spectra.  This suggests looking for overlooked boundary controls in systems currently described only by bulk evolution.",
-            "Quantum computing should be read as an engineering layer over the state-operator-readout constructor. New protocols should be searched by composing lawful quantum questions and controlled maps.",
-            "Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.",
-            "Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.",
+            "Complete a partial quantum model by deriving the missing readout or protocol from its carrier, operation, and closure conditions. A proposed completion must yield a new probability, spectrum, correlator, or control response.",
+            "Reattach a well-defined operation to a new carrier only through an explicit domain or intertwining map. The discovery target is the changed consequence forced by the new carrier, not a visual analogy between equations.",
+            "Compose quantum channels, instruments, and recovery maps under complete-positivity and normalization constraints to search for protocols absent from the source decomposition.",
+            "Deform boundaries, subsystem factorizations, or scale while tracking a named invariant. A discontinuity in that invariant marks either a phase boundary or the failure of the proposed mechanism-preserving road.",
+            "Construct a readout for a mechanism that is formally closed but experimentally hidden. The readout should separate the proposed mechanism from at least one physically plausible alternative.",
+            "Use a failed prediction to revise one clause of the operational identity. This preserves interpretable causality in the design process and prevents unconstrained replacement of the full model.",
         ],
     }
     if os.environ.get("MORPHWIKI_EXPOSE_INTERNAL_METHOD", "").strip() == "1":

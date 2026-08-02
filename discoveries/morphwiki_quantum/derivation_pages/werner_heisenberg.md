@@ -1,53 +1,22 @@
 # Werner Heisenberg
 
-**Derivation step:** State carrier inside Hilbert space
-**Status:** topic-specific mechanism
+*Historical or interpretive annotation.*
 
-## Role In The Derivation
+## Topic Context
 
-A werner heisenberg can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Werner Karl Heisenberg was a German theoretical physicist, one of the main pioneers of the theory of quantum mechanics and a principal scientist in the German nuclear program during World War II.
 
-## Mechanism
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Werner_Heisenberg)
 
-In quantum-mechanical terms, a werner Heisenberg is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through wave function or state vector, matrix or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or non-commuting observables. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, non-commuting compatibility limits; its mathematical presentation emphasizes local notation, information profile, formula structure.
+## Place In The Book
 
-## Quantum Mechanism Frame
+Werner Heisenberg records the history, pedagogy, or interpretation of quantum theory. It does not define an additional state space, equation of motion, observable, or probability law.
 
-- **Role:** Werner Heisenberg contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as a state-carrier move: it specifies what mathematical object carries prediction.
-- **Carrier or domain:** State terms: wave function. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: matrix. Protocol or update terms: collapse.
-- **Admissibility:** Compatibility or closure terms: uncertainty and non-commuting. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+## Relation To The Formal Theory
 
-## Topic Equations
-
-```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
-```
-
-## What Remains Stable
-
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
-
-## What Changes With Realization
-
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
-
-## Checks
-
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Identify the states, operators, observables, probability rules, or protocols discussed by the source.
+- Separate historical attribution and interpretation from mathematical consequences of the formalism.
+- Treat a claimed physical difference as substantive only when it changes an equation, admissibility condition, probability law, or experimental prediction.
 
 ## Evidence Links
 

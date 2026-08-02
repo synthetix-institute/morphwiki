@@ -10,7 +10,7 @@
 - Invariant: the self-adjoint operator and its domain
 - Mean route overlap: `0.894`
 
-Read the same operator through its exponential for transport and through its spectral measure for energy readout.
+Read the same operator through its exponential for transport and through its spectral measure as an energy observable.
 
 Equations:
 
@@ -57,7 +57,7 @@ Equations:
 
 Test: State the subsystem algebra or tensor factorization explicitly; entanglement and locality claims are not invariant under arbitrary refactorization.
 
-## Constraints define physical readout
+## Constraints define physical observables
 
 - Topics: Gauge theory, Quantum gravity, Measurement in quantum mechanics
 - Move: `completion_attachment`
@@ -119,7 +119,7 @@ Test: Check complete positivity, normalization, and recovery fidelity with a ref
 - Invariant: a selected operator algebra and its correlators
 - Mean route overlap: `0.932`
 
-Encode one carrier in another and require the encoding to intertwine the relevant dynamics and readouts.
+Encode one carrier in another and require the encoding to intertwine the relevant dynamics and observables.
 
 Equations:
 

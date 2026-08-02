@@ -1,25 +1,32 @@
 # Fermion
 
 **Derivation step:** Many-mode extension: fields, particles, and scaling
-**Status:** topic-specific mechanism
+
+## Topic Context
+
+In particle physics, a fermion is a subatomic particle that follows Fermi–Dirac statistics. Fermions have a half-integer spin and obey the Pauli exclusion principle. These particles include all quarks and leptons and all composite particles made of an odd number of these, such as all baryons and many atoms and nuclei. Fermions differ from bosons, which obey Bose–Einstein statistics.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Fermion)
 
 ## Role In The Derivation
 
 Fermion is an exchange-symmetry constructor: identical fermions live in antisymmetric sectors and obey Pauli exclusion.
 
+## Why This Step Is Needed
+
+Fermion is needed when particle number can change, collective modes matter, or locality and gauge symmetry organize the admissible states. A single-particle Hilbert space is then replaced by a Fock space, field configuration space, or constrained sector.
+
 ## Mechanism
 
-The mechanism is an admissibility rule on many-body state space. Antisymmetry, anticommutation, and zero-or-one mode occupation define the portable role. The linked equation set is concentrated in state evolution, normalization or admissibility, preparation, basis, or boundary context; its mathematical presentation emphasizes local notation, information profile, formula structure.
+The mechanism is an admissibility rule on many-body state space. Antisymmetry, anticommutation, and zero-or-one mode occupation define the portable role.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Fermion contributes a many-mode field or particle-realization role to the quantum construction.
-- **Placement:** This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-- **Carrier or domain:** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data.
-- **Operator or map:** Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
-- **Admissibility:** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal.
-- **Readout:** Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
-- **Check:** The field description must preserve the relevant observables under changes of representation and reduce to the expected particle or quasiparticle limit when that limit exists.
+**Place in the construction.** Fermion contributes a many-mode field or particle-realization role to the quantum construction. This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
+
+**State and operation.** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
+
+**Admissibility and prediction.** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
 
@@ -31,24 +38,26 @@ Topic-specific constructor: the equations express antisymmetric sectors, anticom
 n_i=a_i^\dagger a_i\in\{0,1\}
 ```
 
+## How To Read The Relation
+
+Creation and annihilation operators change occupation while respecting bosonic or fermionic statistics. Correlation functions replace single-particle wave functions as the principal predictions. Gauge constraints remove redundant descriptions, and renormalization states how parameters change with observational scale.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

@@ -1,238 +1,132 @@
-# Quantum Theory As A Mechanism Tree
+# Quantum Theory By Construction
 
-## Root
-Given a context-selected Hilbert space, an admissible state, and a permitted observable, quantum theory determines which numerical outcomes can occur, assigns probabilities to those outcomes, and marks which questions cannot be made simultaneously sharp.
+Quantum theory is usually entered through named subjects: wave functions, particles, measurement, entanglement, fields, and information. MorphWiki retains those entry points but reorganizes them by the work they perform in a prediction.
 
-This reorders the topic away from historical names and toward the dependencies that recur across the pages:
+## The Operational Identity
 
 ```text
-CARRIER / CONTEXT  <----typed with---->  OPERATOR APPARATUS
-        |                                      |
-        +------------- COMPLETION -------------+
-                    closure / readout / protocol
-
-REALIZATION changes boundaries, fields, detectors, encodings, and scaling limits.
-DERIVATION adds roles, projects consequences, or rewrites laterally.
+(Omega, Xi) -> M -> I_op=(M; C, R, P) -> I_real=(I_op; A)
 ```
 
-## Completion DAG And Source Constructor
+The first pair is the mechanism core. `Omega` states what transformation is performed; `Xi` states the carrier on which that transformation is defined. Closure, observable, and protocol complete the operational identity. The realization layer supplies the named system, parameters, units, boundaries, geometry, and apparatus needed for a concrete prediction.
 
-The DAG orders records only when the destination contains more constructor roles. It is a completion rank, not physical time. The source constructor follows neighboring equations and records role completion, projection onto a simpler consequence, and lateral rewrite at the same completion level.
+- **Omega, operation.** The transformation apparatus: generator, observable, channel, symmetry action, projection, or composed map.
+- **Xi, carrier.** The structure on which the operation is defined: Hilbert or Fock space, state class, operator domain, tensor factorization, or field algebra.
+- **C, closure.** The conditions that make the construction admissible: normalization, positivity, domain, gauge, compatibility, or conservation constraints.
+- **R, observable map.** The map from the construction to a prediction: spectral measure, POVM, correlator, current, detector outcome, or error statistic.
+- **P, protocol.** The ordered preparation, intervention, evolution, control, or measurement sequence required to execute the mechanism.
+- **A, realization.** The named physical embodiment: objects, parameters, units, geometry, boundaries, devices, and experimental conditions.
 
-## Re-Derivation Path
-1. **Type the identity.** Specify the carrier, domain, state class, and operator apparatus together.
-2. **Attach completion.** Add normalization, compatibility, readout, or an ordered protocol where needed.
-3. **Choose a realization.** State how boundaries, fields, detectors, gauges, or encodings embody the identity.
-4. **Follow source moves.** Track role completion, projection, and representation-preserving rewrite.
+These clauses are addressable but not independent. A Hamiltonian is meaningful only on a stated domain; a observable is meaningful only for an admissible state; a protocol must preserve the closure conditions required by the mechanism. The hierarchy records what has been specified, not a universal temporal order.
+
+## Quantum Specialization
 
 ```math
-B \longmapsto (\mathcal H_B,\mathcal D_B)
-\rho_B\in\mathcal S(\mathcal H_B),\quad \rho_B\ge0,\quad \operatorname{Tr}\rho_B=1
-\rho_t = U_t \rho_B U_t^\dagger
-O = \sum_i \lambda_i P_i
-p_i = \operatorname{Tr}(P_i \rho_t)
-[O_1,O_2] \ne 0
+\Xi_Q=(\mathcal H,\mathcal D,\mathcal S),\qquad \Omega_Q=\{G,O,\mathcal E,\ldots\}
+I_{\mathrm{op},Q}=((\Omega_Q,\Xi_Q);C_Q,R_Q,P_Q)
+\rho_0\xrightarrow[P_Q,C_Q]{G}\rho_t,\qquad p(y)=\operatorname{Tr}(E_y\rho_t)
 ```
 
-## Corpus Constructor Result
+Here the carrier includes the Hilbert or Fock space, state class, and operator domain. The operation may be a generator, observable, channel, symmetry action, or composition. Closure imposes normalization, positivity, domain, gauge, or compatibility conditions. Observable connects the construction to probabilities, spectra, correlators, currents, or detector records. Protocol states how the system is prepared, transformed, and measured.
 
-The source graph contains 3,761,468 completion moves, 3,703,292 projections, and 4,737,510 lateral rewrites. Completion and projection are nearly balanced, so the derivation graph is not a one-way funnel.
+## Mechanism-Preserving Transformations
 
-## Sparse Attention Summary
-- state evolution: mean 0.232, pages above 0.10 = 145
-- normalization and admissibility: mean 0.165, pages above 0.10 = 136
-- observables and spectra: mean 0.328, pages above 0.10 = 145
-- preparation and boundary context: mean 0.095, pages above 0.10 = 54
-- incompatible questions: mean 0.086, pages above 0.10 = 59
-- controlled update protocol: mean 0.076, pages above 0.10 = 32
+A scientific connection is useful when it states what survives a change. In quantum theory this may be an amplitude, expectation value, operator algebra, conserved flux, complete positivity, or a family of correlators. A transformation is written as
 
-Interpretation: the stable evidence signal is observables-and-spectra. The mechanism tree orders quantum theory by construction role; the route scores explain why each role is supported.
+```math
+I_i=((\Omega_i,\Xi_i);C_i,R_i,P_i) \xrightarrow{T} I_j=((\Omega_j,\Xi_j);C_j,R_j,P_j).
+```
 
-## Tree
-### Hilbert-space context: admissible carrier and basis
+The index change need not denote physical time. It can denote reformulation, completion, carrier replacement, projection, composition, deformation, or revision. The invariant must be named for each transformation; visual similarity between equations is not enough.
+
+## Six Constructor Verbs
+
+- **Complete.** Add a missing closure, observable map, or protocol clause to a partial mechanism.
+- **Reattach.** Retain an operation and replace its carrier, or retain a carrier and replace its operation.
+- **Compose.** Join supported transformations into a mechanism not written as one source equation.
+- **Deform.** Vary a parameter, boundary, scale, or representation while tracking a stated invariant.
+- **Observe.** Construct the observable or intervention that exposes a predicted consequence.
+- **Revise.** Use a failed consequence to identify and replace the clause responsible for the failure.
+
+## A Discovery Procedure
+
+1. Select a source identity and state the prediction or relation that must be retained.
+2. Choose one clause to edit. Do not change the whole model at once.
+3. Construct the new operational identity and supply any missing closure, observable, or protocol.
+4. Attach a physical realization with dimensions, parameters, boundaries, and an executable procedure.
+5. Derive a consequence that distinguishes the construction from the source model and from negative controls.
+6. Accept the construction only if the consequence survives; otherwise revise the clause that failed.
+
+A detached operation `(Omega, 0_Xi)` and a carrier `(0_Omega, Xi')` define a particularly clear construction question: can the operation be realized on the new carrier, and what closure and observable are then required? This is a search over typed mechanisms, not an invitation to attach arbitrary equations to arbitrary systems.
+
+## The Quantum Map
+
+### Formal context: carrier, domain, and representation
 A quantum calculation first fixes the Hilbert space, operator domain, basis, preparation context, representation, gauge, or boundary condition. This is not the measured answer; it is the legal carrier on which states, transformations, observables, and probabilities can be defined.
 
-Why it belongs here: This branch is the first step because quantum mechanics is not defined on raw objects. It begins by specifying the space, basis, representation, or admissibility condition in which states and questions make sense.
-
-Representative pages:
-- Mathematical formulation of quantum mechanics
-- Hilbert space
-- Transformation theory (quantum mechanics)
-- Quantum differential calculus
-- Quantum complexity theory
-- Quantum cellular automaton
-- Relativistic quantum mechanics
+Representative topics: Mathematical formulation of quantum mechanics; Hilbert space; Transformation theory (quantum mechanics); Quantum differential calculus; Quantum cellular automaton; Relativistic quantum mechanics; Fourier transform; Old quantum theory.
 
 ### State carrier inside Hilbert space
 A state is the probability-bearing element of the selected Hilbert space or its density-operator state space. Wave functions, density matrices, superpositions, and coherent states are different representations of this predictive carrier.
 
-Why it belongs here: The state branch should be introduced before particles.  It is the predictive carrier; particles, waves, fields, and qubits are later realizations of that carrier.
+Representative topics: Density matrix; Quantum superposition; Quantum decoherence; Superposition principle; Coherence (physics); Wave function; Quantum state; Two-state quantum system.
 
-Representative pages:
-- Density matrix
-- Quantum superposition
-- Quantum decoherence
-- Superposition principle
-- Coherence (physics)
-- Wave function
-- Quantum state
-- Two-state quantum system
-- 16 more pages in this branch
-
-### Generator: lawful change before readout
+### Generator: lawful change before measurement
 Hamiltonians, unitary maps, equations of motion, and path weights describe the lawful transport of the state before a question is resolved.
 
-Why it belongs here: Time evolution is a transport problem over states.  The Hamiltonian and path integral are two views of the same generator role rather than unrelated formalisms.
-
-Representative pages:
-- Unitary operator
-- Perturbation theory
-- Quantum dynamics
-- Path integral formulation
-- Hamiltonian mechanics
-- Path integral
-- Hamiltonian (quantum mechanics)
-- Perturbation theory (quantum mechanics)
-- 14 more pages in this branch
+Representative topics: Unitary operator; Perturbation theory; Quantum dynamics; Path integral formulation; Hamiltonian mechanics; Path integral; Hamiltonian (quantum mechanics); Perturbation theory (quantum mechanics).
 
 ### Spectral question: what can be asked
 An observable is a permitted question whose operator form determines the possible numerical answers.
 
-Why it belongs here: The central unit is a legal question posed to a state. Spectra make the possible answers visible.
-
-Representative pages:
-- Angular momentum operator
-- Observable
-- Self-adjoint operator
-- Spectral theory
-- Pauli matrices
-- Operator theory
-- Operator (physics)
-- Eigenvalues and eigenvectors
-- 2 more pages in this branch
-
-### Readout rule: how answers become probabilities
-Measurement connects a state and an observable to recorded frequencies.  Projection, POVMs, Born weights, and collapse language are alternative ways of presenting this state-to-spectrum readout step.
-
-Why it belongs here: Measurement is best placed after observables and spectra: it is the rule that turns spectral resolution into recorded probability, not the mystical starting point of the theory.
-
-Representative pages:
-- POVM
-- Wave function collapse
-- Born rule
-- Measurement in quantum mechanics
-- Quantum jump
-- Measurement problem
-- Quantum eraser experiment
-- Projection-valued measure
-- 2 more pages in this branch
+Representative topics: Angular momentum operator; Observable; Self-adjoint operator; Spectral theory; Pauli matrices; Operator theory; Operator (physics); Eigenvalues and eigenvectors.
 
 ### Compatibility limit: what cannot be jointly sharp
 The non-classical part of the theory appears when two otherwise legal questions do not compose into one common sharp question.  Commutators, uncertainty relations, contextuality, Bell tests, and entanglement live here.
 
-Why it belongs here: The non-classical core appears as failure of joint sharpness.  Entanglement, Bell phenomena, and uncertainty are different faces of this compatibility structure.
+Representative topics: Bell's theorem; Quantum entanglement; Commutator; Uncertainty principle; Einstein–Podolsky–Rosen paradox; Quantum nonlocality; Wave–particle duality.
 
-Representative pages:
-- Bell's theorem
-- Quantum entanglement
-- Commutator
-- Uncertainty principle
-- Einstein–Podolsky–Rosen paradox
-- Quantum nonlocality
+### Measurement rule: how observables become probabilities
+Measurement connects a state and an observable to recorded frequencies.  Projection, POVMs, Born weights, and collapse language are alternative ways of presenting this state-to-spectrum probability assignment.
 
-### Boundary realization: how effects appear
-Many named quantum effects are boundary realizations of the same construction.  A potential, barrier, box, cavity, detector, or medium changes the allowed spectral channels without changing the basic prediction problem.
-
-Why it belongs here: Named effects such as tunnelling and particle-in-a-box are boundary realizations of the state-operator-readout construction.
-
-Representative pages:
-- Potential well
-- Particle in a box
-- Scattering
-- Wave interference
-- Quantum optics
-- Spectral line
-- S-matrix
-- Quantum tunnelling
-- 4 more pages in this branch
-
-### Many-mode extension: fields, particles, and scaling
-Quantum field theory, gauge theory, renormalization, photons, fermions, and related topics extend the same state-operator-spectrum logic to variable particle number, local fields, and scale-dependent descriptions.
-
-Why it belongs here: Field theory and gauge theory extend the same construction to many modes, local generators, and scale-dependent descriptions.
-
-Representative pages:
-- Fermi–Dirac statistics
-- Dirac equation
-- Quantum electrodynamics
-- Renormalization
-- Gauge theory
-- Photon
-- Quantum field theory
-- Fermion
-- 13 more pages in this branch
+Representative topics: POVM; Wave function collapse; Born rule; Measurement in quantum mechanics; Quantum jump; Measurement problem; Quantum eraser experiment; Projection-valued measure.
 
 ### Protocol layer: engineered transformations
 Quantum computing, channels, circuits, algorithms, networks, sensors, and error correction turn the same formal machinery into controlled sequences of operations.
 
-Why it belongs here: Quantum information is the engineering layer: the same state-operator-readout machinery becomes a controlled sequence of transformations.
+Representative topics: Quantum information science; Quantum network; Quantum algorithm; Quantum error correction; Quantum channel; Quantum logic gate; Quantum neural network; Quantum circuit.
 
-Representative pages:
-- Quantum information science
-- Quantum network
-- Quantum algorithm
-- Quantum error correction
-- Quantum channel
-- Quantum logic gate
-- Quantum neural network
-- Quantum circuit
-- 10 more pages in this branch
+### Boundary realization: how effects appear
+Many named quantum effects are boundary realizations of the same construction.  A potential, barrier, box, cavity, detector, or medium changes the allowed spectral channels without changing the basic prediction problem.
+
+Representative topics: Potential well; Particle in a box; Scattering; Wave interference; Quantum optics; Spectral line; S-matrix; Quantum tunnelling.
+
+### Many-mode extension: fields, particles, and scaling
+Quantum field theory, gauge theory, renormalization, photons, fermions, and related topics extend the same state-operator-spectrum logic to variable particle number, local fields, and scale-dependent descriptions.
+
+Representative topics: Fermi–Dirac statistics; Dirac equation; Quantum electrodynamics; Renormalization; Gauge theory; Photon; Quantum field theory; Fermion.
 
 ### Annotations: history, interpretations, and popular frames
 Some pages help readers navigate the subject but do not form steps in the mechanism. They are kept as annotations so books, historical figures, interpretations, and popular frames do not distort the constructive tree.
 
-Why it belongs here: These pages remain useful for orientation and are placed downstream of the construction steps. This prevents biographies, books, and interpretations from becoming false roots of the mechanism.
+Representative topics: History of quantum mechanics; Introduction to Quantum Mechanics (book); Quantum mind; History of quantum field theory; Erwin Schrödinger; Interpretations of quantum mechanics; Quantum mysticism; David Hilbert.
 
-Representative pages:
-- Introduction to quantum mechanics
-- Old quantum theory
-- 14 more pages in this branch
-- 14 historical, interpretive, or popular pages are treated as annotations downstream of the conceptual roots
+## Worked Transformations
 
-## A New Reading Of Quantum Mechanics
+- **Schrodinger, Heisenberg, and path-integral descriptions:** deform the representation while retaining transition amplitudes or expectation values on a common domain.
+- **Gauge systems:** complete the mechanism with the constraint sector before defining a physical observable on the quotient state space.
+- **Quantum instruments and error correction:** compose outcome-resolved channels with conditional recovery while retaining complete positivity and total probability.
+- **Quantum simulation and duality:** reattach a selected operator algebra to another carrier through an intertwining map, then compare correlators rather than state labels.
 
-Quantum mechanics can be introduced through a direct constructor order: first define the Hilbert space, operator domain, and basis; then define a state as a predictive carrier; then define lawful change; then define legal questions as operators; then show that each question exposes a spectrum of possible answers; then add the probability rule; only then introduce particles, waves, detectors, barriers, fields, and computers as realizations of this construction.
+## Discovery Questions Generated By The Map
 
-In this reading, the measurement problem is a junction where the readout protocol, context dependence, and incompatible questions meet.  Tunnelling is a boundary-shaped spectral channel with non-zero amplitude in a region that the classical energy description would exclude.
+- Complete a partial quantum model by deriving the missing observable or protocol from its carrier, operation, and closure conditions. A proposed completion must yield a new probability, spectrum, correlator, or control response.
+- Reattach a well-defined operation to a new carrier only through an explicit domain or intertwining map. The discovery target is the changed consequence forced by the new carrier, not a visual analogy between equations.
+- Compose quantum channels, instruments, and recovery maps under complete-positivity and normalization constraints to search for protocols absent from the source decomposition.
+- Deform boundaries, subsystem factorizations, or scale while tracking a named invariant. A discontinuity in that invariant marks either a phase boundary or the failure of the proposed mechanism-preserving road.
+- Construct a observable for a mechanism that is formally closed but experimentally hidden. The observable should separate the proposed mechanism from at least one physically plausible alternative.
+- Use a failed prediction to revise one clause of the operational identity. This preserves interpretable causality in the design process and prevents unconstrained replacement of the full model.
 
-## Anomalies And Discovery Leads
+## Evidence And Reproduction
 
-These labels describe the role of a page in the mechanism tree, not the physical object named by the page. For example, a page can be structurally anomalous because context, protocol, or compatibility carries the explanation before spectra are read out.
-
-Label guide:
-- **weak spectral anchor**: another construction step carries the topic before spectra become meaningful.
-- **boundary-driven dynamics**: the experimental context, boundary, apparatus, or representation is part of the mechanism rather than background description.
-- **compatibility/closure junction**: the page joins the rules that make a state legal with the rules that limit which questions can be resolved together.
-- **protocol is unusually explicit**: the order of operations is itself mechanistic; changing the sequence changes what can be inferred or observed.
-- **multi-role hub**: several construction steps meet in one topic, so the page is a junction rather than a clean leaf in the tree.
-- **branch-ambiguous**: the topic belongs at an interface between two explanatory roles and should be read as a bridge before branch assignment.
-
-- **Schrödinger's cat**. Schrödinger's cat is a macroscopic readout protocol. It couples microscopic unitary evolution to a macroscopic boundary and forces three steps apart: coherent transport, decoherence or apparatus coupling, and the rule by which one record is selected or conditioned. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, multi-role hub, and branch-ambiguous. Branch: State carrier inside Hilbert space; secondary: Annotations: history, interpretations, and popular frames.
-- **Einstein–Podolsky–Rosen paradox**. EPR is a compatibility test. The mechanism is a bipartite state, separated measurement contexts, and a correlation readout that cannot be reduced to pre-existing local values. The formal starting point is the joint state and local observables; the question is which correlation constraint fails. Flags: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, and multi-role hub. Branch: Compatibility limit: what cannot be jointly sharp; secondary: Annotations: history, interpretations, and popular frames.
-- **Quantum biology**. Quantum biology is an open-system transfer problem. The environment is part of the boundary that may preserve, destroy, or select coherence. The formal fields are the state carrier, environmental coupling, coherence or transport observable, and classical control. Flags: weak spectral anchor, boundary-driven dynamics, compatibility/closure junction, protocol is unusually explicit, and multi-role hub. Branch: Generator: lawful change before readout; secondary: Hilbert-space context: admissible carrier and basis.
-- **Introduction to quantum mechanics**. An introductory page is a compressed map. It mixes states, operators, spectra, measurement, examples, and interpretations because it is written pedagogically. Its technical content separates into individual branches before supporting specific derivations. Flags: weak spectral anchor, compatibility/closure junction, protocol is unusually explicit, multi-role hub, and branch-ambiguous. Branch: Annotations: history, interpretations, and popular frames; secondary: State carrier inside Hilbert space.
-- **Measurement problem**. The measurement problem is a readout junction. It sits where unitary state transport, detector context, probability assignment, and state update meet. The formal decomposition is pre-measurement evolution, apparatus or environment coupling, POVM or projection readout, and post-record conditioning. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: Readout rule: how answers become probabilities; secondary: Generator: lawful change before readout.
-- **Quantum gravity**. Quantum gravity is a field/boundary junction. It asks whether geometry becomes part of the quantum state carrier or remains a realization layer for an operator theory. The missing formal objects are a state of geometry, a constraint or evolution operator, a boundary or semiclassical readout, and a test of which geometric quantities survive quantization. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: Many-mode extension: fields, particles, and scaling; secondary: Generator: lawful change before readout.
-- **Scattering**. Scattering is a boundary-to-spectrum mechanism. The central map is from asymptotic in-states to out-states. The relevant objects are the interaction region, asymptotic channels, S-matrix or cross-section readout, and conservation constraints. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: Boundary realization: how effects appear; secondary: Generator: lawful change before readout.
-- **Quantum state**. Quantum state is the carrier rather than the final prediction. It precedes admissibility, evolution, observable choice, and probability readout. The unresolved distinction is whether the carrier is a vector, density operator, field state, or register, and which transformations preserve it. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: State carrier inside Hilbert space; secondary: Generator: lawful change before readout.
-- **Wave–particle duality**. Wave-particle duality is a representation/readout switch. The same carrier is interrogated through incompatible experimental contexts, so the observed pattern changes from interference-like to count-like. Its compact form is context selection plus readout channel. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: State carrier inside Hilbert space; secondary: Compatibility limit: what cannot be jointly sharp.
-- **Quantum entanglement**. Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. The required distinction is between joint state, subsystem observables, and correlation test. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: Compatibility limit: what cannot be jointly sharp; secondary: State carrier inside Hilbert space.
-- **Fermi–Dirac statistics**. Fermi-Dirac statistics is an admissibility rule for many-particle states. The mechanism is antisymmetry and occupation restriction. The formal content is anticommutation, exclusion, occupation numbers, and the thermodynamic readout derived from that constrained state space. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: Many-mode extension: fields, particles, and scaling; secondary: Hilbert-space context: admissible carrier and basis.
-- **Hamiltonian (quantum mechanics)**. The Hamiltonian has two roles: it generates time evolution and, as an observable, supplies an energy spectrum. The formal split is domain/self-adjointness, unitary transport, conserved energy, and spectral readout. Flags: weak spectral anchor, boundary-driven dynamics, protocol is unusually explicit, and multi-role hub. Branch: Generator: lawful change before readout; secondary: Spectral question: what can be asked.
-
-Possible leads:
-- Search for systems where a state-like carrier and a legal-question operator exist, but the incompatibility relation has not been tested.  Those systems are candidates for quantum-like contextual behavior without importing quantum ontology.
-- Treat tunnelling, particle-in-a-box, cavity optics, and spectral lines as one family of boundary-shaped spectra.  This suggests looking for overlooked boundary controls in systems currently described only by bulk evolution.
-- Quantum computing should be read as an engineering layer over the state-operator-readout constructor. New protocols should be searched by composing lawful quantum questions and controlled maps.
-- Pages that are branch-ambiguous are useful: they often mark junctions where two constructions meet, such as field theory joining transport, incompatibility, and boundary context.
-- Historical, interpretive, and object-name pages should be demoted to annotations.  The conceptual spine is context, state, generator, spectral question, probability, compatibility, realization.
+Every topic page retains the source links and equation witnesses from which its mathematical relations were reconstructed.

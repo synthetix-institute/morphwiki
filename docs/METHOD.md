@@ -1,114 +1,128 @@
 # Method
 
-MorphWiki separates two graphs that are usually merged in scientific prose.
+MorphWiki represents a scientific field with two synchronized graphs. The
+operational graph records what a construction does. The provenance graph records
+where each clause, equation, and interpretation came from.
 
-## 1. Provenance Graph
+## Operational Identity
 
-The provenance graph records where a statement came from:
-
-```text
-Wikipedia topic scaffold
-arXiv source link
-Hyperion equation witness
-generated page
-generated book section
-```
-
-This graph is about evidence and attribution. It does not decide what a concept
-means.
-
-## 2. Operational Graph
-
-The operational graph records what a statement does in a construction:
+The common hierarchy is
 
 ```text
-carrier
-operator
-spectrum
-readout
-boundary
-compatibility
-protocol
-commutator
+(Omega, Xi) -> M -> I_op=(M; C, R, P) -> I_real=(I_op; A)
 ```
 
-This graph is about mechanism. A topic such as `photon` is not placed because it
-is a familiar noun. It is placed by the role it plays: field mode, excitation,
-readout channel, scattering carrier, or boundary-dependent spectrum.
+`Omega` is an operation and `Xi` is the carrier on which it is defined. Their
+pair is the mechanism core `M`. Closure `C`, observable map `R`, and protocol `P`
+complete the operational identity. The realization `A` supplies the named
+objects, parameters, units, geometry, boundaries, devices, and experimental
+conditions of a concrete model.
 
-## 3. Constructor Spine
+The hierarchy does not impose one temporal order. It distinguishes levels of
+specification. Within a paper, a derivation may add a clause, project a complete
+relation onto one consequence, or rewrite the same mechanism in another
+representation.
 
-The current quantum spine is:
+## Quantum Specialization
+
+For quantum theory, a broad operational form is
+
+```math
+\Xi_Q=(\mathcal H,\mathcal D,\mathcal S),\qquad
+\Omega_Q\supset\{\mathcal E_P,\{E_y\}_y\},
+```
+
+```math
+\rho_P=\mathcal E_P(\rho_0),\qquad
+p(y\mid P)=\operatorname{Tr}(E_y\rho_P).
+```
+
+The carrier includes the Hilbert or Fock space, admissible states, domains, and
+factorizations used by the problem. The operation includes generators,
+observables, channels, symmetry actions, and compositions. Closure imposes
+normalization, positivity, domain, self-adjointness, gauge, conservation, or
+compatibility conditions. The observable map and protocol connect the formal mechanism to
+an observable consequence and an executable order of operations.
+
+For a closed system with a time-independent self-adjoint Hamiltonian,
+`E_P(rho)=U(t) rho U(t)^dagger` with `U(t)=exp(-iHt/hbar)`. The channel form is
+kept in the upper-level constructor because it also covers open systems,
+measurements, feedback, and quantum information protocols.
+
+## Transformations
+
+MorphWiki links two scientific representations only after specifying the
+retained relation:
+
+```math
+I_i=((\Omega_i,\Xi_i);C_i,R_i,P_i)
+\xrightarrow{T}
+I_j=((\Omega_j,\Xi_j);C_j,R_j,P_j).
+```
+
+The index change may describe physical evolution, reformulation, completion,
+carrier replacement, projection, composition, deformation, or revision. The
+retained relation may be an amplitude, expectation value, algebra, conserved
+flux, probability law, correlator family, or controlled approximation. Equation
+shape and vocabulary do not establish the link.
+
+## Constructor Operations
+
+The public constructor uses six verbs:
+
+1. `complete`: add a missing closure, observable map, or protocol;
+2. `reattach`: replace the operation or carrier under explicit compatibility maps;
+3. `compose`: join supported transformations;
+4. `deform`: vary a boundary, parameter, scale, or representation while tracking an invariant;
+5. `observe`: build the observable or measurement that exposes a consequence;
+6. `revise`: use a failed consequence to replace the responsible clause.
+
+The discovery contract is
+
+```math
+(I_{\mathrm{op}},p;Q_{\mathrm{keep}},B_{\mathrm{edit}})
+\longmapsto
+(\widehat I_{\mathrm{op}},\widehat A,\widehat y).
+```
+
+`Q_keep` states what must survive. `B_edit` states which clauses may change.
+The output includes a new operational identity, a physical realization, and a
+derived consequence. This record makes the proposal reproducible and identifies
+the clause to revise if the consequence fails.
+
+## Provenance And Evidence
+
+Every public page retains:
 
 ```text
-context
--> admissible Hilbert-space carrier
--> state
--> generator/evolution
--> observable spectrum
--> Born/probability readout
--> compatibility constraint
--> boundary or protocol realization
--> many-mode extension
+topic and historical vocabulary
+source document and passage
+equation witness
+constructor clauses
+transformation and retained relation
+realization and predicted consequence
 ```
 
-This is not claimed as a new axiom system. It is a compact index over the topic
-set. Its value is diagnostic: it shows which pages are stable leaves, which are
-junctions, which are annotations, and which are unresolved because they lack
-explicit equation-level construction evidence.
+Provenance does not determine operational identity, but it remains necessary for
+attribution, priority, interpretation, and checking the source assumptions.
 
-## 4. Evidence Use
+## From Corpus To Book
 
-The public witness index contains route and fiber profiles exported from
-Hyperion. The scripts use these profiles to rank nearby equation witnesses and
-avoid pure semantic similarity.
+1. Export topic records and their source equations.
+2. assign each record to the constructor clause it primarily specifies;
+3. recover source-local and cross-topic transformations;
+4. generate the mechanism map and transformation cases;
+5. write all retained topics as specializations of the shared identity;
+6. compile the book and verify that no topic or equation-bearing derivation page was lost.
 
-A high-ranking witness is not treated as proof that the Wikipedia topic is
-explained by that equation. It is an evidence pointer: a similar operational
-pattern exists in the arXiv-derived morphism index.
+Sparse-attention summaries, placement reports, and build diagnostics are retained
+as reproducibility artifacts. They are not chapters in the default public book.
 
-## 5. Sparse-Attention Analysis
+## Physical Standard
 
-The sparse-attention script reads the generated pages and tree, then identifies:
-
-- dominant constructor roles;
-- repeated hidden rules;
-- pages whose roles are overloaded;
-- unresolved placements where the tree can place the topic but cannot yet construct it;
-- transition rules introduced by rewriting the original topic index into the mechanism tree.
-
-This is why the book distinguishes between placement and construction. A page can
-be easy to place and still hard to construct if it lacks a clear carrier,
-operator, readout, or compatibility equation.
-
-## 6. Placement Versus Construction
-
-MorphWiki uses three levels of claim strength.
-
-```text
-placement
-    The topic has a plausible role in the constructor tree.
-
-construction
-    The topic has enough equation-level structure to state the mechanism.
-
-validation
-    The mechanism has source evidence, controls, and a falsifier.
-```
-
-Many current pages are placements. That is expected for a public first release.
-The research task is to turn more placements into constructions by adding
-equations, witnesses, and sharper role definitions.
-
-## 7. Why This Is Useful
-
-The method makes hidden weakness visible. A normal encyclopedia can describe a
-topic fluently even when its operational role is unclear. MorphWiki should expose
-that gap.
-
-For example, a page is weak if it says `measurement` but does not state the
-readout map, or says `state` but does not state the carrier space, or says
-`incompatibility` but does not identify the non-commuting operations.
-
-That is the intended discipline: no mechanism without roles; no role without
-evidence.
+A constructor proposal must satisfy the mathematical conditions of its field.
+In quantum theory these include the relevant domain and self-adjointness
+conditions, positivity and normalization, complete positivity for channels,
+gauge or constraint closure, dimensional consistency, and a defined observable or probability law.
+An empirical proposal must also specify apparatus, parameter regime, controls,
+and a consequence that differs from plausible alternatives.

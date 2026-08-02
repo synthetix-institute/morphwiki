@@ -1,66 +1,80 @@
-# MorphWiki: Knowledge Without Nouns
+# MorphWiki: Scientific Fields By Mechanism
 
-**A GitHub repository where physics compiles.**
+MorphWiki rebuilds a scientific field around the mechanisms that make its
+theories predictive. Familiar names remain searchable, and their sources remain
+attached, but they no longer determine the structure of the field.
 
-![MorphWiki operator-native physics workflow](docs/assets/morphwiki-operator-native-physics.svg)
+![MorphWiki mechanism-construction workflow](docs/assets/morphwiki-operator-native-physics.svg)
 
-MorphWiki is an operator-native rewrite system for scientific knowledge. It takes
-historical prose, such as Wikipedia physics pages, and rewrites it as typed
-mechanism constructors: state, carrier, operator, spectrum, boundary, readout,
-compatibility, protocol, and commutator.
-
-The first public build produces a quantum-theory book:
+The shared representation is
 
 ```text
-Quantum Theory
-As A Mechanism Tree
+(Omega, Xi) -> M -> I_op=(M; C, R, P) -> I_real=(I_op; A)
 ```
 
-The point is not to summarize quantum mechanics. The point is to reorganize it:
-not by nouns such as `electron`, `photon`, `wavefunction`, or `measurement`, but
-by the operations that make those concepts predictive.
+- `Omega` is the operation: generator, observable, channel, projection, symmetry
+  action, or composition.
+- `Xi` is its carrier: state space, domain, substrate, factorization, or algebra.
+- `C`, `R`, and `P` are closure, observable map, and protocol.
+- `A` is the realization: named objects, parameters, units, boundaries, geometry,
+  apparatus, and experimental conditions.
 
-## Why This Exists
+The clauses are addressable but not freely interchangeable. A proposed change
+must state what relation is retained, why the new clauses are compatible, and
+which consequence can reject the construction.
 
-Most scientific search tools compare words. MorphWiki compares operational
-roles.
+## Quantum Theory: As A Mechanism Tree
 
-Wikipedia says what a concept is called. MorphWiki asks what the concept does in
-a construction:
+The first complete build is a mechanism-first quantum theory book. It keeps the
+full topic archive while reorganizing the exposition into five parts:
 
 ```text
-context
-  -> admissible state space
-  -> generator or evolution law
-  -> observable spectrum
-  -> probability readout
-  -> compatibility constraint
-  -> boundary or protocol realization
+carrier and states
+operations
+completion
+realizations and extensions
+provenance and interpretations
 ```
 
-That sequence is a computable object. A young researcher can inspect it, edit
-it, rerun it, and ask whether a topic is a stable constructor, an overloaded
-junction, an unresolved placement, or a missing equation.
+The opening chapters derive the quantum operational identity, show standard
+mechanism-preserving transformations, and turn six constructor verbs into a
+procedure for discovery:
 
-## What You Can Do With It
+```text
+complete    add a missing closure, observable map, or protocol
+reattach    replace an operation or carrier under stated compatibility maps
+compose     join supported transformations in a new order
+deform      vary a boundary, parameter, scale, or representation
+observe     construct a discriminating observable or measurement
+revise      replace the clause identified by a failed consequence
+```
 
-- Build a mechanism-first PDF book for quantum theory.
-- Convert topic pages into a typed constructor tree.
-- Link topics to public Hyperion equation witnesses and arXiv sources.
-- Run sparse-attention analysis over the rewritten corpus.
-- Detect overloaded concepts, weakly constructed pages, and missing mechanisms.
-- Use the code as a template for another field: statistical mechanics, active
-  matter, biological intelligence, materials, patents, or AI safety.
+Current book:
+[Quantum Theory: As A Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+
+## Why A Mechanism Wiki
+
+Conventional encyclopedias are organized around objects, discoveries, people,
+and established field boundaries. That organization is useful for finding a
+name. It is less useful for answering four constructive questions:
+
+1. What operation produces the claimed consequence?
+2. On what carrier is that operation defined?
+3. Which closure, observable map, and protocol make the mechanism predictive?
+4. Which parts can change while a specified prediction remains invariant?
+
+MorphWiki answers those questions without discarding provenance. Topic names and
+historical vocabulary enter through the realization and evidence layers. The
+operational graph supplies a second, mechanism-first view of the same field.
 
 ## Quick Start
 
-The core pipeline uses only the Python standard library. A LaTeX engine is
-optional and is needed only to compile the generated `.tex` into PDF.
+The deterministic build uses the Python standard library. XeLaTeX or LuaLaTeX
+is required only for the PDF.
 
 ```bash
 git clone https://github.com/synthetix-institute/morphwiki.git
 cd morphwiki
-
 bash scripts/run_quantum_book.sh
 ```
 
@@ -70,183 +84,74 @@ Outputs are written to:
 discoveries/morphwiki_quantum/book/
 ```
 
-Current generated book:
+Sparse-attention and build diagnostics remain separate repository artifacts.
+They inform the field structure and candidate connections but are not chapters
+in the PDF.
 
-[Quantum Theory: As A Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+## Build A Field Wiki From Papers
 
-The important files are:
+MorphWiki can start from a folder containing text-layer PDFs, TeX, Markdown, or
+plain-text papers. The FieldBridge-backed workflow retains source passages and
+equations while producing synchronized topic, mechanism, transformation, and
+evidence views.
 
-```text
-quantum_mechanism_tree_book.tex   # generated LaTeX book
-quantum_mechanism_tree_book.pdf   # generated when xelatex/lualatex is present
-```
-
-For a step-by-step guide, see [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
-
-To build a first-pass mechanism wiki directly from a folder of scientific PDFs,
-use the FieldBridge-backed workflow in
-[Build a Mechanism-First Field Wiki from PDFs](docs/PDF_CORPUS_WORKFLOW.md).
-It recursively ingests text-layer PDFs and plain text/TeX/Markdown files,
-retains source passages and equations, and writes synchronized topic,
-mechanism, and construction views.
-
-For a mechanism-first tutorial organized in the PocketFlow codebase-knowledge
-format, start with
-[Building a Mechanism-First Field Wiki](docs/tutorial/index.md). It follows one
-quantum topic from public scaffold to operational evidence, mechanism page,
-constructor spine and audited field wiki, then gives the adaptation contract
-for another scientific field. The common requirements are defined in
-[FIELD_WIKI_CONTRACT.md](docs/FIELD_WIKI_CONTRACT.md).
+See [Build A Mechanism-First Field Wiki From PDFs](docs/PDF_CORPUS_WORKFLOW.md)
+and [Getting Started](docs/GETTING_STARTED.md).
 
 ## Repository Map
 
 ```text
+scripts/morphwiki_constructor.py
+    Shared constructor clauses, discovery verbs, and book grouping.
+
 scripts/export_morphwiki_topic_index.py
-    Fetch or read cached Wikipedia pages, score mechanism roles, attach
-    Hyperion witnesses, and write per-topic JSON/Markdown.
+    Build source-grounded topic records and equation-witness links.
 
 scripts/build_morphwiki_quantum_tree.py
-    Place topic pages into the mechanism tree.
+    Place quantum topics in the operational identity and write the public map.
 
-scripts/analyze_morphwiki_rewrite_transition.py
-    Run sparse-attention analysis over the rewrite and report hidden rules,
-    overloaded pages, anomalies, and unresolved placements.
+scripts/analyze_quantum_constructor_rewiring.py
+    Derive worked mechanism-preserving transformations across quantum topics.
 
 scripts/build_morphwiki_quantum_book.py
-    Compile the topic pages, tree, and analysis into a LaTeX book.
+    Generate the complete LaTeX book and optional method appendices.
 
 scripts/run_quantum_book.sh
-    Run the local quantum-book pipeline.
-
-discoveries/fieldbridge_static_index/hyperion_static_index.json
-    Compact public Hyperion witness index with route/fiber profiles, apparatus
-    labels, arXiv links, and sanitized equation-witness snippets.
+    Rebuild the tree, transformation cases, book, PDF, and preservation report.
 
 discoveries/morphwiki_quantum/
-    Cached/generated quantum pages, sparse-attention outputs, mechanism tree,
-    and current TeX/PDF book outputs.
+    Topic records, equation witnesses, mechanism map, derivation pages, and book.
 ```
 
-## Rebuild Topic Pages
+## Adapt The Constructor To Another Field
 
-The repo includes cached data, so the book can be rebuilt offline. To refetch
-Wikipedia and rebuild topic pages, run:
-
-```bash
-python -B scripts/export_morphwiki_topic_index.py \
-  --topic-preset quantum \
-  --expand-wikipedia-links \
-  --max-expanded-topics 160 \
-  --hyperion-index discoveries/fieldbridge_static_index/hyperion_static_index.json \
-  --out-dir discoveries/morphwiki_quantum
-```
-
-Optional OpenRouter variables:
+A new field uses the same upper-level identity but supplies its own operations,
+carriers, closure conditions, observables, protocols, and realizations. The field
+structure must be inferred from its equations and source-local transformations,
+not produced by renaming quantum terms.
 
 ```text
-OPENROUTER_API_KEY=
-HYPERION_MODEL=
-MORPHWIKI_MODEL=
+1. Ingest the field corpus and retain source identity.
+2. Extract candidate operation, carrier, completion, and realization clauses.
+3. Group topics by the clauses they specify.
+4. Recover transformations and state what each one preserves.
+5. Write topic pages as realized operational identities.
+6. Generate discovery questions by controlled clause edits.
+7. Derive and test the consequences of the proposed constructions.
 ```
 
-The deterministic pipeline works without an LLM. If an LLM is enabled, it should
-only rewrite prose from the same structured payload; it should not invent
-evidence.
+The formal contract is in
+[FIELD_WIKI_CONTRACT.md](docs/FIELD_WIKI_CONTRACT.md). The worked tutorial starts
+at [Building A Mechanism-First Field Wiki](docs/tutorial/index.md).
 
-## Adapt To Another Field
+## Contribution Standard
 
-MorphWiki is portable, but a new field is not created by renaming quantum terms.
-Each field needs its own constructor grammar, but that grammar should not be
-invented by hand. In the quantum build, the constructor spine was inferred from
-topic profiles, witness links, and sparse-attention structure, then named in
-human-readable form. A new field should follow the same pattern: generate a
-candidate spine from the corpus first, then audit and edit the labels.
+A useful contribution does at least one of the following:
 
-Minimal adaptation path:
+1. supplies a topic-native equation and identifies its constructor clauses;
+2. states a mechanism-preserving transformation and its retained relation;
+3. adds a physically executable realization and a discriminating consequence;
+4. builds another field from a reproducible source corpus.
 
-```text
-1. Choose a field
-   active matter, soft robotics, biological intelligence, patents, AI safety, ...
-
-2. Build topic/source pages
-   Use Wikipedia pages, reviews, patents, or curated notes. For a folder of
-   papers, run scripts/build_morphwiki_field_from_pdfs.py.
-
-3. Export a field topic index
-   Adapt scripts/export_morphwiki_topic_index.py.
-
-4. Infer a candidate constructor spine
-   Use route/fiber profiles and sparse attention to find the dominant sequence
-   of roles in the field.
-
-5. Build the field tree
-   Adapt scripts/build_morphwiki_quantum_tree.py, using the inferred spine.
-
-6. Run sparse-attention analysis again
-   Adapt scripts/analyze_morphwiki_rewrite_transition.py.
-
-7. Build the book or site
-   Adapt scripts/build_morphwiki_quantum_book.py.
-```
-
-Examples of possible field-specific spines after inference and audit:
-
-```text
-material intelligence:
-stimulus -> material state -> transport/relaxation law
-         -> boundary/interface -> output/action -> erasure control
-
-patents:
-technical input -> transformed state -> constraint
-                -> measurable effect -> novelty boundary -> claim skeleton
-
-biology:
-signal -> regulatory state -> transport/interaction law
-       -> phenotype readout -> perturbation control
-```
-
-Reusable parts:
-
-```text
-page/tree/book generation
-sparse-attention scoring pattern
-evidence-boundary logic
-placement/construction/validation distinction
-public Hyperion witness-index format
-```
-
-Field-specific parts:
-
-```text
-inferred constructor spine
-role vocabulary
-topic preset
-mechanism language
-equations, measurements, and falsifying controls
-```
-
-The rule is simple: if the field-specific roles are not inferred and audited,
-MorphWiki degenerates into generic prose. A useful field adaptation must discover
-which roles are active in the corpus, then state what is being carried, what
-acts, what is read out, and what would falsify the construction.
-
-## Scientific Boundary
-
-MorphWiki is not a replacement for a textbook and not a claim that physics is
-reducible to a short word list. It tests a narrower claim: when scientific pages
-are represented by operational roles and equation-witness profiles, many named
-topics collapse into a smaller constructor sequence. The useful output is the
-map of what is stable, what is overloaded, and what still lacks explicit
-equation-level construction.
-
-## For Contributors
-
-Start with [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md), then read
-[docs/METHOD.md](docs/METHOD.md). A good contribution adds one of three things:
-
-1. A cleaner mechanism placement for a topic.
-2. A better equation witness or arXiv link.
-3. A new field preset that can be rebuilt reproducibly.
-
-Broader Hyperion and FieldBridge work is maintained by Synthetix Institute:
-https://synthetix.institute
+Broader Hyperion and FieldBridge work is maintained by the
+[Synthetix Institute](https://synthetix.institute).

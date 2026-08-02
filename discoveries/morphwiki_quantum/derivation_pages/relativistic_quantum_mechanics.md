@@ -1,53 +1,60 @@
 # Relativistic quantum mechanics
 
-**Derivation step:** Hilbert-space context: admissible carrier and basis
-**Status:** topic-specific mechanism
+**Derivation step:** Formal context: carrier, domain, and representation
+
+## Topic Context
+
+In physics, relativistic quantum mechanics (RQM) is any Poincaré-covariant formulation of quantum mechanics (QM). This theory is applicable to massive particles propagating at all velocities up to those comparable to the speed of light c, and can accommodate massless particles. The theory has application in high-energy physics, particle physics and accelerator physics, as well as atomic physics, chemistry and condensed matter physics. Non-relativistic quantum mechanics refers to the mathematical formulation of quantum mechanics applied in the context of Galilean relativity, more specifically quantizing the equations of classical mechanics by replacing dynamical variables by operators.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Relativistic_quantum_mechanics)
 
 ## Role In The Derivation
 
-A relativistic quantum mechanics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Relativistic quantum mechanics belongs at the first step of the constructor: it fixes the Hilbert space, operator domain, basis, representation, or preparation context before any probability statement is meaningful.
+
+## Why This Step Is Needed
+
+Relativistic quantum mechanics is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
 
 ## Mechanism
 
-In quantum-mechanical terms, a relativistic quantum mechanics is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through wavefunction or wave function, Hamiltonian or matrix, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in state evolution, operator-to-spectrum readout, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+This step fixes the state space, representation, basis, or operator domain in which the later equations are defined.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Relativistic quantum mechanics contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
-- **Carrier or domain:** State terms: wavefunction. Context/domain terms: potential and context.
-- **Operator or map:** Operator terms: Hamiltonian and matrix. Protocol or update terms: projection.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: eigenvalue, energy level, or measurement outcome. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Relativistic quantum mechanics contributes a representation and domain role to the quantum construction. This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
 
-## Topic Equations
+**State and operation.** A Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. A unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence.
+
+**Admissibility and prediction.** Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. Transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
+
+## Representative Relation
 
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+V:\mathcal H\to\mathcal H',\quad V^\dagger V=I,\quad \rho'=V\rho V^\dagger,\quad O'=VOV^\dagger
 ```
+
+## How To Read The Relation
+
+Read the relation as a comparison between descriptions of the same state and operator. Under a unitary or isometric change of representation, amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+Relativistic quantum mechanics supplies the admissible arena in which quantum states and operators are defined. Changing basis or representation should not change physical probabilities when the transformation is unitary. Normalization, domain conditions, and inner products remain part of the same formal container.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The local title, representation, and physical realization may change while the constructor role is preserved. The chosen basis, coordinate representation, or preparation convention can change. The same calculation may be written with vectors, wave functions, density operators, or operator algebras. Physical realization enters later through boundary conditions, detectors, or fields.
+
+## Connection To The Next Step
+
+Once the mathematical arena is fixed, the construction can specify a state within it. Later steps add a generator, an observable, and a measurement model, each constrained by the same domain.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
+- Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation.
+- The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
 
 ## Evidence Links
 

@@ -37,7 +37,7 @@ discoveries/morphwiki_quantum/sparse_attention/
 flowchart TD
     B["Build field wiki"] --> A["Audit pages and dependencies"]
     A --> G{"Gap type"}
-    G -->|"missing role"| R["add carrier/operator/readout evidence"]
+    G -->|"missing role"| R["add carrier/operator/observable evidence"]
     G -->|"overloaded topic"| S["split operational roles"]
     G -->|"weak witness"| W["replace or qualify source link"]
     R --> B
@@ -46,7 +46,7 @@ flowchart TD
 ```
 
 The repair target is always structural. “Improve the writing” is insufficient;
-the audit should identify the missing operator, carrier, closure, readout,
+the analysis should identify the missing operator, carrier, closure, observable map,
 protocol or source evidence.
 
 Next: [Create another field wiki](06_new_field.md).

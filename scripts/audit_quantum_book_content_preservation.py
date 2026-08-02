@@ -19,14 +19,14 @@ def load_json(path: Path) -> Dict[str, Any]:
     return data
 
 
-def tree_slugs(tree: Mapping[str, Any]) -> List[str]:
-    slugs: List[str] = []
-    for branch in (tree.get("branches") or {}).values():
+def tree_pages(tree: Mapping[str, Any]) -> Dict[str, str]:
+    pages: Dict[str, str] = {}
+    for branch_id, branch in (tree.get("branches") or {}).items():
         for row in branch.get("pages") or []:
             slug = str(row.get("slug") or "").strip()
             if slug:
-                slugs.append(slug)
-    return sorted(set(slugs))
+                pages[slug] = str(branch_id)
+    return dict(sorted(pages.items()))
 
 
 def pdf_page_count(path: Path) -> int:
@@ -50,7 +50,11 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
     pdf_path = Path(args.pdf)
     derivation_dir = root / "derivation_pages"
 
-    expected_slugs = tree_slugs(tree)
+    expected_pages = tree_pages(tree)
+    expected_slugs = list(expected_pages)
+    equation_required_slugs = [
+        slug for slug, branch_id in expected_pages.items() if branch_id != "annotations"
+    ]
     tex = tex_path.read_text(encoding="utf-8", errors="replace")
     missing_labels = [slug for slug in expected_slugs if f"\\label{{page:{latex_label(slug)}}}" not in tex]
     missing_pages: List[str] = []
@@ -66,7 +70,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         total_words += len(text.split())
         blocks = len(re.findall(r"```math", text))
         equation_blocks += blocks
-        if blocks == 0:
+        if blocks == 0 and slug in equation_required_slugs:
             missing_equations.append(slug)
 
     pdf_pages = pdf_page_count(pdf_path)
@@ -74,7 +78,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "topic_count": len(expected_slugs) >= int(contract["minimum_topic_count"]),
         "all_topics_in_tex": not missing_labels,
         "all_derivation_pages_present": not missing_pages,
-        "all_topics_have_equations": not missing_equations,
+        "all_physics_topics_have_equations": not missing_equations,
         "topic_words": total_words >= int(contract["minimum_topic_words"]),
         "equation_blocks": equation_blocks >= int(contract["minimum_equation_blocks"]),
         "pdf_pages": pdf_pages >= int(contract["minimum_pdf_pages"]),
@@ -88,6 +92,8 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "contract": str(args.contract),
         "metrics": {
             "topic_count": len(expected_slugs),
+            "equation_required_topic_count": len(equation_required_slugs),
+            "annotation_count": len(expected_slugs) - len(equation_required_slugs),
             "topic_words": total_words,
             "equation_blocks": equation_blocks,
             "pdf_pages": pdf_pages,
@@ -96,7 +102,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "missing_tex_labels": missing_labels,
         "missing_derivation_pages": missing_pages,
         "missing_equation_blocks": missing_equations,
-        "claim_scope": "Build-integrity audit. It checks preservation of topic coverage and equation-bearing content; it does not validate the physics of individual pages.",
+        "claim_scope": "Build-integrity audit. It requires equation-bearing content for physical topics while keeping historical and interpretive entries free of invented equations; it does not validate the physics of individual pages.",
     }
     Path(args.out_json).write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     lines = [

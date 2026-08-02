@@ -1,148 +1,97 @@
 <svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">MorphWiki operator-native physics workflow</title>
-  <desc id="desc">A white-background diagram showing physics prose rewritten into typed constructors and compiled into a mechanism tree.</desc>
+  <title id="title">MorphWiki scientific mechanism constructor</title>
+  <desc id="desc">Source topics and equations are organized into an operation-carrier identity, completed by closure, an observable map, protocol and physical realization, then edited through six discovery operations.</desc>
   <defs>
-    <linearGradient id="blue" x1="288" y1="96" x2="288" y2="574" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#06B6D4"/>
-    </linearGradient>
-    <linearGradient id="green" x1="866" y1="108" x2="866" y2="560" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#16A34A"/>
-      <stop offset="1" stop-color="#84CC16"/>
-    </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#14231D" flood-opacity="0.10"/>
     </filter>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#4B6359"/>
     </marker>
   </defs>
 
   <rect width="1200" height="675" fill="#FFFFFF"/>
-  <rect x="48" y="48" width="1104" height="579" rx="28" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="42" y="42" width="1116" height="591" rx="8" fill="#F7F9F7" stroke="#D7DFDA"/>
 
-  <text x="96" y="114" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="48" font-weight="800">
-    MorphWiki
-  </text>
-  <text x="96" y="156" fill="#334155" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="600">
-    Knowledge without nouns
-  </text>
-  <text x="96" y="190" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">
-    Rewrite physics concepts as typed mechanisms that AI agents can inspect, test, and extend.
-  </text>
+  <text x="78" y="103" fill="#14231D" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="750">MorphWiki</text>
+  <text x="78" y="140" fill="#4B6359" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">Scientific fields by mechanism</text>
+  <text x="78" y="170" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="16">Named knowledge remains searchable; operational identity determines the map.</text>
 
   <g filter="url(#shadow)">
-    <rect x="92" y="244" width="310" height="270" rx="22" fill="#FFFFFF" stroke="#CBD5E1"/>
-    <rect x="116" y="270" width="262" height="42" rx="11" fill="#EEF2FF" stroke="#C7D2FE"/>
-    <rect x="116" y="330" width="218" height="28" rx="8" fill="#E2E8F0"/>
-    <rect x="116" y="374" width="246" height="28" rx="8" fill="#E2E8F0"/>
-    <rect x="116" y="418" width="188" height="28" rx="8" fill="#E2E8F0"/>
-    <text x="116" y="242" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.08em">
-      HISTORICAL PROSE
-    </text>
-    <text x="134" y="298" fill="#3730A3" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="700">
-      electron
-    </text>
-    <text x="134" y="352" fill="#334155" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16">
-      photon
-    </text>
-    <text x="134" y="396" fill="#334155" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16">
-      measurement
-    </text>
-    <text x="134" y="440" fill="#334155" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16">
-      Hilbert space
-    </text>
-    <text x="116" y="478" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">
-      named topics, historical order,
-    </text>
-    <text x="116" y="500" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">
-      prose definitions
-    </text>
+    <rect x="76" y="218" width="250" height="318" rx="6" fill="#FFFFFF" stroke="#CAD5CF"/>
+    <text x="98" y="250" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">TOPICS AND EVIDENCE</text>
+    <rect x="98" y="278" width="206" height="52" rx="4" fill="#EDF3F0"/>
+    <text x="112" y="300" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Named topics</text>
+    <text x="112" y="319" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="13">particles, fields, measurement</text>
+    <rect x="98" y="344" width="206" height="52" rx="4" fill="#EEF2F8"/>
+    <text x="112" y="366" fill="#314D70" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Source equations</text>
+    <text x="112" y="385" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="13">domains, assumptions, derivations</text>
+    <rect x="98" y="410" width="206" height="52" rx="4" fill="#F8F2E8"/>
+    <text x="112" y="432" fill="#755A2E" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Provenance</text>
+    <text x="112" y="451" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="13">papers, citations, history</text>
+    <text x="98" y="495" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="13">Retained as realization and evidence,</text>
+    <text x="98" y="515" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="13">not discarded from the field.</text>
   </g>
 
-  <path d="M420 378 C470 378 493 378 540 378" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="438" y="352" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800">
-    rewrite
-  </text>
-  <text x="438" y="374" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">
-    by operational role
-  </text>
+  <path d="M342 378H392" stroke="#4B6359" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="344" y="361" fill="#4B6359" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650">factor</text>
 
   <g filter="url(#shadow)">
-    <rect x="548" y="214" width="260" height="328" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
-    <text x="572" y="242" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.08em">
-      CONSTRUCTOR
-    </text>
+    <rect x="402" y="205" width="394" height="353" rx="6" fill="#FFFFFF" stroke="#CAD5CF"/>
+    <text x="426" y="237" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">OPERATIONAL IDENTITY</text>
 
-    <g>
-      <rect x="575" y="270" width="206" height="34" rx="17" fill="#DBEAFE" stroke="#93C5FD"/>
-      <text x="598" y="292" fill="#1E3A8A" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">state / carrier</text>
-    </g>
-    <g>
-      <rect x="575" y="316" width="206" height="34" rx="17" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="598" y="338" fill="#075985" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">operator</text>
-    </g>
-    <g>
-      <rect x="575" y="362" width="206" height="34" rx="17" fill="#ECFDF5" stroke="#86EFAC"/>
-      <text x="598" y="384" fill="#166534" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">spectrum</text>
-    </g>
-    <g>
-      <rect x="575" y="408" width="206" height="34" rx="17" fill="#FEFCE8" stroke="#FDE68A"/>
-      <text x="598" y="430" fill="#854D0E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">readout</text>
-    </g>
-    <g>
-      <rect x="575" y="454" width="206" height="34" rx="17" fill="#FFF1F2" stroke="#FDA4AF"/>
-      <text x="598" y="476" fill="#9F1239" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">compatibility</text>
-    </g>
-    <path d="M678 305 L678 316" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M678 351 L678 362" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M678 397 L678 408" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M678 443 L678 454" stroke="#94A3B8" stroke-width="2"/>
-    <text x="574" y="520" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">
-      typed roles, equation witnesses,
-    </text>
-    <text x="574" y="542" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">
-      sparse-attention diagnostics
-    </text>
+    <rect x="430" y="264" width="132" height="54" rx="5" fill="#DCE8F8" stroke="#A8BFDF"/>
+    <text x="496" y="286" text-anchor="middle" fill="#244B7C" font-family="Georgia, serif" font-size="19" font-weight="700">Omega</text>
+    <text x="496" y="306" text-anchor="middle" fill="#55708F" font-family="Inter, Arial, sans-serif" font-size="12">operation</text>
+    <rect x="636" y="264" width="132" height="54" rx="5" fill="#DDEFE4" stroke="#A8CEB7"/>
+    <text x="702" y="286" text-anchor="middle" fill="#2D6241" font-family="Georgia, serif" font-size="19" font-weight="700">Xi</text>
+    <text x="702" y="306" text-anchor="middle" fill="#587764" font-family="Inter, Arial, sans-serif" font-size="12">carrier</text>
+
+    <path d="M496 319L566 349" stroke="#6D8178" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M702 319L632 349" stroke="#6D8178" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="532" y="346" width="134" height="45" rx="5" fill="#E8ECEA" stroke="#BBC6C0"/>
+    <text x="599" y="374" text-anchor="middle" fill="#263E34" font-family="Georgia, serif" font-size="17" font-weight="700">M = (Omega, Xi)</text>
+
+    <rect x="442" y="415" width="78" height="42" rx="5" fill="#FAEDB8" stroke="#DCCB81"/>
+    <rect x="560" y="415" width="78" height="42" rx="5" fill="#F4D9B8" stroke="#D9B47F"/>
+    <rect x="678" y="415" width="78" height="42" rx="5" fill="#F3D5D8" stroke="#D7A7AD"/>
+    <text x="481" y="441" text-anchor="middle" fill="#675516" font-family="Georgia, serif" font-size="18" font-weight="700">C</text>
+    <text x="599" y="441" text-anchor="middle" fill="#745025" font-family="Georgia, serif" font-size="18" font-weight="700">R</text>
+    <text x="717" y="441" text-anchor="middle" fill="#7B4047" font-family="Georgia, serif" font-size="18" font-weight="700">P</text>
+    <path d="M599 392V411" stroke="#6D8178" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="475" y="480" width="248" height="43" rx="5" fill="#E9E2F5" stroke="#BDB0D7"/>
+    <text x="599" y="507" text-anchor="middle" fill="#4F406B" font-family="Georgia, serif" font-size="16" font-weight="700">I_op = (M; C, R, P)</text>
+    <path d="M481 458L548 478" stroke="#6D8178" stroke-width="1.8"/>
+    <path d="M599 458V478" stroke="#6D8178" stroke-width="1.8"/>
+    <path d="M717 458L650 478" stroke="#6D8178" stroke-width="1.8"/>
+
+    <rect x="430" y="537" width="338" height="1" fill="#D8DFDB"/>
+    <text x="599" y="548" text-anchor="middle" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="12">+ A: objects, parameters, boundaries, apparatus</text>
   </g>
 
-  <path d="M826 378 C874 378 896 378 944 378" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="844" y="352" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800">
-    compile
-  </text>
-  <text x="844" y="374" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">
-    into a tree
-  </text>
+  <path d="M812 378H858" stroke="#4B6359" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="813" y="361" fill="#4B6359" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650">construct</text>
 
   <g filter="url(#shadow)">
-    <rect x="946" y="232" width="166" height="292" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
-    <text x="972" y="260" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.08em">
-      TREE
-    </text>
-    <circle cx="1029" cy="305" r="17" fill="url(#green)"/>
-    <circle cx="996" cy="365" r="13" fill="#BFDBFE" stroke="#2563EB"/>
-    <circle cx="1062" cy="365" r="13" fill="#BBF7D0" stroke="#16A34A"/>
-    <circle cx="982" cy="430" r="11" fill="#FEF3C7" stroke="#D97706"/>
-    <circle cx="1030" cy="430" r="11" fill="#FCE7F3" stroke="#DB2777"/>
-    <circle cx="1078" cy="430" r="11" fill="#E0E7FF" stroke="#4F46E5"/>
-    <path d="M1029 322 L996 352" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M1029 322 L1062 352" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M996 378 L982 419" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M1062 378 L1030 419" stroke="#94A3B8" stroke-width="2"/>
-    <path d="M1062 378 L1078 419" stroke="#94A3B8" stroke-width="2"/>
-    <text x="980" y="485" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">
-      mechanism-first
-    </text>
-    <text x="988" y="507" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15">
-      quantum book
-    </text>
+    <rect x="868" y="218" width="254" height="318" rx="6" fill="#FFFFFF" stroke="#CAD5CF"/>
+    <text x="890" y="250" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">DISCOVERY OPERATIONS</text>
+    <text x="890" y="283" fill="#244B7C" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Complete</text>
+    <text x="1000" y="283" fill="#2D6241" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Reattach</text>
+    <text x="890" y="322" fill="#755A2E" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Compose</text>
+    <text x="1000" y="322" fill="#6A477B" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Deform</text>
+    <text x="890" y="361" fill="#7B4047" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Observe</text>
+    <text x="1000" y="361" fill="#405F59" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650">Revise</text>
+
+    <path d="M895 395H1092" stroke="#B9C5BF" stroke-width="1.5"/>
+    <text x="890" y="427" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">retain Q, edit B</text>
+    <path d="M890 443H1072" stroke="#4B6359" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="890" y="475" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">derive a consequence</text>
+    <path d="M890 491H1072" stroke="#4B6359" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="890" y="519" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="12">accept or revise the named clause</text>
   </g>
 
-  <rect x="96" y="570" width="1008" height="1" fill="#CBD5E1"/>
-  <text x="96" y="604" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700">
-    Not semantic similarity. Operational structure.
-  </text>
-  <text x="424" y="604" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">
-    A concept is placed by what it makes computable.
-  </text>
+  <line x1="76" y1="584" x2="1122" y2="584" stroke="#D7DFDA"/>
+  <text x="76" y="614" fill="#29483B" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">Mechanism-first, source-grounded, consequence-driven.</text>
+  <text x="523" y="614" fill="#65756E" font-family="Inter, Arial, sans-serif" font-size="16">A connection states what survives and what can fail.</text>
 </svg>

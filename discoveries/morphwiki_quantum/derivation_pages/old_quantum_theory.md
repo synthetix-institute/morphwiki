@@ -1,53 +1,64 @@
 # Old quantum theory
 
-**Derivation step:** Annotations: history, interpretations, and popular frames
-**Status:** topic-specific mechanism
+**Derivation step:** Formal context: carrier, domain, and representation
+
+## Topic Context
+
+The old quantum theory is a collection of results from the years 1900–1925, which predate modern quantum mechanics. The theory was never complete or self-consistent, but was instead a set of heuristic corrections to classical mechanics. The theory has come to be understood as the semi-classical approximation to modern quantum mechanics. The main and final accomplishments of the old quantum theory were the determination of the modern form of the periodic table by Edmund Stoner and the Pauli exclusion principle, both of which were premised on Arnold Sommerfeld's enhancements to the Bohr model of the atom.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Old_quantum_theory)
 
 ## Role In The Derivation
 
-An old quantum theory can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+Old quantum theory is the semiclassical quantization precursor to modern quantum mechanics: classical periodic motion is retained, while only selected actions and transition frequencies are admitted.
+
+## Why This Step Is Needed
+
+Old quantum theory is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
 
 ## Mechanism
 
-In quantum-mechanical terms, an old quantum theory is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or Hamiltonian, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure. Its constructive use is to identify which formal layer is being interpreted: state assignment, probability, update, readout, or ontology.
+Old quantum theory predates the Hilbert-space formalism. Its carrier is classical phase space, its motion follows Hamiltonian trajectories, and its quantum restriction is imposed on periodic action integrals. The resulting discrete energies and transition frequencies anticipated quantum spectra but did not provide a general theory of states, observables, or noncommuting transformations.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Old quantum theory contributes a topic-native constructor role to the quantum construction.
-- **Placement:** This page is read first as an interpretive or historical move: it clarifies which formal layer is being discussed.
-- **Carrier or domain:** State terms: quantum state, wave function, or density operator. Context/domain terms: preparation condition, measurement setup, or potential or domain.
-- **Operator or map:** Operator terms: matrix and Hamiltonian. Protocol or update terms: unitary evolution, projection or measurement update, or path integral weighting.
-- **Admissibility:** Compatibility or closure terms: commutator, uncertainty relation, or non-commuting transformations. These determine which questions, states, or updates are legal.
-- **Readout:** Readout terms: spectrum. These name the outcome labels, projectors, amplitudes, or records used for testing.
-- **Check:** A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
+**Place in the construction.** Old quantum theory contributes a semiclassical quantization role to the quantum construction. This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
+
+**State and operation.** Classical phase space, especially periodic or multiply periodic Hamiltonian trajectories described by action variables. Hamiltonian flow together with Bohr--Sommerfeld action quantization; no general Hilbert-space operator calculus is assumed.
+
+**Admissibility and prediction.** Only trajectories satisfying quantized action conditions are retained, with correspondence to classical frequencies required at large quantum number. Discrete energies, transition frequencies, and the spectral regularities inferred from them.
 
 ## Topic Equations
 
+Semiclassical constructor: Hamiltonian orbits are restricted by action quantization, and energy differences determine spectral frequencies.
+
 ```math
-B \longmapsto \rho_B \quad \text{(context specifies an admissible state)}
-\rho_t = U_t \rho_B U_t^\dagger \quad \text{(unitary evolution from preparation to readout)}
-O = \sum_i \lambda_i P_i,\quad p_i=\operatorname{Tr}(P_i\rho_t) \quad \text{(spectral probability measure)}
-[O_1,O_2]\neq 0 \quad \text{(incompatible observables: no common sharp basis)}
+J_k=\oint p_k\,dq_k=n_k h
+E_m-E_n=h\nu_{mn}
+\frac{\partial E}{\partial J_k}=\nu_k^{\mathrm{cl}}\quad\text{in the correspondence regime}
 ```
+
+## How To Read The Relation
+
+Read the relation as a comparison between descriptions of the same state and operator. Under a unitary or isometric change of representation, amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
 
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+Hamiltonian trajectories and their action variables provide the classical carrier of the construction. Action quantization selects a discrete subset of otherwise continuous classical motions. Energy differences determine transition frequencies, with correspondence to classical orbital frequencies at large quantum number.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The orbit family, potential, number of action variables, and applicable quantization condition depend on the physical system. Modern semiclassical theory adds phase and turning-point corrections absent from the earliest quantization rules. The construction ceases to be adequate for generic nonintegrable motion, many-electron spectra, and intrinsically noncommuting questions.
+
+## Connection To The Next Step
+
+Once the mathematical arena is fixed, the construction can specify a state within it. Later steps add a generator, an observable, and a measurement model, each constrained by the same domain.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Recover the hydrogenic level and line spectrum in the regime where action quantization applies.
+- Compare the semiclassical prediction with the corresponding Schrödinger spectrum and identify its controlled limit.
+- Treat failures outside that limit as evidence for the modern state-and-operator formalism, rather than as adjustable orbit parameters.
 
 ## Evidence Links
 

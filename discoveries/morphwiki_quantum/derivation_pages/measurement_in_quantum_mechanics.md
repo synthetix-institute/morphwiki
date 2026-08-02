@@ -1,25 +1,32 @@
 # Measurement in quantum mechanics
 
-**Derivation step:** Readout rule: how answers become probabilities
-**Status:** topic-specific mechanism
+**Derivation step:** Measurement rule: how observables become probabilities
+
+## Topic Context
+
+In quantum physics, a measurement is the testing or manipulation of a physical system to yield a numerical result. A fundamental feature of quantum theory is that the predictions it makes are probabilistic.
+
+[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics)
 
 ## Role In The Derivation
 
-Measurement in quantum mechanics is the complete readout junction: it combines a state, a measurement model, probabilities, and sometimes an update rule.
+Measurement in quantum mechanics is the complete measurement junction: it combines a state, a measurement model, probabilities, and sometimes an update rule.
+
+## Why This Step Is Needed
+
+Measurement theory must describe both an outcome distribution and the physical operation that produces a record. Keeping these roles separate prevents an interpretive account of state change from being mistaken for the probability law itself.
 
 ## Mechanism
 
-Measurement is not the root of quantum theory in this book. It is the junction where a prepared state and an observable or POVM are converted into probabilities and recorded outcomes. The linked equation set is concentrated in operator-to-spectrum readout, state evolution, normalization or admissibility; its mathematical presentation emphasizes local notation, information profile, formula structure.
+Measurement is not the root of quantum theory in this book. It is the junction where a prepared state and an observable or POVM are converted into probabilities and recorded outcomes.
 
-## Quantum Mechanism Frame
+## How It Enters The Theory
 
-- **Role:** Measurement in quantum mechanics contributes a probability/readout role to the quantum construction.
-- **Placement:** This page is read first as a readout move: it connects the state and question to recorded outcomes.
-- **Carrier or domain:** A state vector or density operator together with the measurement context in which outcome channels are defined.
-- **Operator or map:** A projection-valued measure, POVM, update map, or instrument map connecting state to record.
-- **Admissibility:** Outcome probabilities must be positive, normalized, and tied to a specified readout map rather than to informal observer language.
-- **Readout:** Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-- **Check:** The interpretation is constrained by whether it changes the probability rule, the update rule, the detector model, or only the language used for them.
+**Place in the construction.** Measurement in quantum mechanics contributes a probability/observable role to the quantum construction. This page is read first as a measurement move: it connects the state and observable to outcome probabilities.
+
+**State and operation.** A state vector or density operator together with the measurement context in which outcome channels are defined. A projection-valued measure, POVM, update map, or instrument map connecting state to record.
+
+**Admissibility and prediction.** Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
 
 ## Topic Equations
 
@@ -31,24 +38,30 @@ p(i)=\operatorname{Tr}(\rho E_i)
 E_i=K_i^\dagger K_i
 ```
 
+## How To Read The Relation
+
+A POVM gives outcome probabilities, whereas a quantum instrument gives the corresponding conditional transformations. Projective measurement is an ideal sharp limit. Real detectors are calibrated by showing that their effects are positive, complete, and consistent with observed frequencies.
+
+## Worked Example
+
+A photon counter may report click or no click with non-unit efficiency. A two-effect POVM models those probabilities; the associated instrument is needed only when the state after the event matters.
+
 ## What Remains Stable
 
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
 
-## What Changes With Realization
+## What The Physical Realization Adds
 
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+
+## Connection To The Next Step
+
+The incompatibility chapter asks which families of such measurements can be jointly realized or assigned simultaneous sharp values.
 
 ## Checks
 
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
+- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 ## Evidence Links
 

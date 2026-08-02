@@ -25,7 +25,7 @@ What is done?             P
 ```
 
 For the Schrödinger equation, the mechanism view identifies a state carrier,
-a Hamiltonian generator, domain and self-adjointness conditions, and readouts
+a Hamiltonian generator, domain and self-adjointness conditions, and observables
 such as time-dependent probabilities or transition amplitudes.
 
 ## Construction View
@@ -40,7 +40,7 @@ flowchart TD
     H["Hilbert-space carrier"] --> S["State"]
     S --> G["Generator / evolution"]
     G --> O["Observable spectrum"]
-    O --> R["Probability readout"]
+    O --> R["Probability law"]
     R --> C["Compatibility limits"]
     C --> A["Boundary or protocol realization"]
 ```
