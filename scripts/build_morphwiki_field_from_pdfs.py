@@ -9,8 +9,11 @@ topic, mechanism, and construction views without inventing missing clauses.
 from __future__ import annotations
 
 import argparse
+import importlib
 import json
+import os
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, Sequence
@@ -65,14 +68,44 @@ def load_json(path: Path) -> Any:
 
 
 def fieldbridge_builder():
-    try:
-        from fieldbridge.pdf_sparse_builder import build_pdf_field_pack
-    except ModuleNotFoundError as exc:
-        raise RuntimeError(
-            "The PDF workflow requires FieldBridge. Clone fieldbridge beside "
-            "morphwiki and run `python3 -m pip install -e '../fieldbridge[pdf]'`."
-        ) from exc
-    return build_pdf_field_pack
+    """Load FieldBridge as either an installed package or a sibling repository."""
+    candidates: List[Path] = []
+    configured = os.environ.get("FIELDBRIDGE_ROOT", "").strip()
+    if configured:
+        candidates.append(Path(configured).expanduser().resolve())
+    candidates.extend(
+        [
+            Path(__file__).resolve().parents[2] / "fieldbridge",
+            Path.cwd().resolve().parent / "fieldbridge",
+        ]
+    )
+
+    searched: List[str] = ["installed Python packages"]
+    attempted_roots: List[Path | None] = [None]
+    attempted_roots.extend(dict.fromkeys(path.resolve() for path in candidates))
+    for root in attempted_roots:
+        if root is not None:
+            searched.append(str(root))
+            if not (root / "fieldbridge" / "pdf_sparse_builder.py").is_file():
+                continue
+            root_text = str(root)
+            if root_text not in sys.path:
+                sys.path.insert(0, root_text)
+        try:
+            module = importlib.import_module("fieldbridge.pdf_sparse_builder")
+        except ModuleNotFoundError as exc:
+            if exc.name not in {"fieldbridge", "fieldbridge.pdf_sparse_builder"}:
+                raise RuntimeError(
+                    f"FieldBridge was found at {root or 'the active environment'}, "
+                    f"but its dependency {exc.name!r} is unavailable."
+                ) from exc
+            continue
+        return module.build_pdf_field_pack
+
+    raise RuntimeError(
+        "FieldBridge was not found. Keep the standalone fieldbridge repository "
+        "beside morphwiki or set FIELDBRIDGE_ROOT. Searched: " + ", ".join(searched)
+    )
 
 
 def active_scores(
