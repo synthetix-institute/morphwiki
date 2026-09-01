@@ -3,9 +3,6 @@
 ## Evidence Status
 a quantum nonlocality modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-In theoretical physics, quantum nonlocality refers to the phenomenon by which the measurement statistics of a multipartite quantum system do not allow an interpretation with local hidden variables. Quantum nonlocality has been experimentally verified under a variety of physical assumptions, with a notable exception being the many-worlds interpretation which violates an assumption of Bell's theorem.
-
 ## Formal Role
 a quantum nonlocality acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a quantum nonlocality acts on the readout layer of the quantum constructor. The 
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.555
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.485
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.480
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.477
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.475
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.471
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.470
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.468
-- [0807.4020](https://arxiv.org/abs/0807.4020) — score 0.454
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.450
-
----
-Wikipedia scaffold: [Quantum nonlocality](https://en.wikipedia.org/wiki/Quantum_nonlocality) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

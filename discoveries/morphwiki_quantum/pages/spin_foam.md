@@ -3,9 +3,6 @@
 ## Evidence Status
 A spin foam can be read as a quantum construction: the boundary conditions that define which histories are included fixes the admissible state space; the action functional assigning phases to histories defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In physics, the topological structure of spinfoam or spin foam consists of two-dimensional faces representing a configuration required by functional integration to obtain a Feynman's path integral description of quantum gravity. These structures are employed in loop quantum gravity as a version of quantum foam.
-
 ## Formal Role
 In quantum-mechanical terms, a spin foam is described by boundary states or field configurations at the endpoints of a process. The physical question is represented by the action functional assigning phases to histories; the experimental or mathematical setting is the boundary conditions that define which histories are included. The observable content is obtained from transition amplitudes and probabilities obtained by summing over histories. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a spin foam is described by boundary states or fiel
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.487
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.485
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.470
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.456
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.449
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.448
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.446
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.438
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.424
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.421
-
----
-Wikipedia scaffold: [Spin foam](https://en.wikipedia.org/wiki/Spin_foam) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

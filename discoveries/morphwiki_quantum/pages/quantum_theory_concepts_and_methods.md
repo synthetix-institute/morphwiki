@@ -3,9 +3,6 @@
 ## Evidence Status
 a quantum Theory: Concepts and Methods modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-Quantum Theory: Concepts and Methods is a 1993 quantum physics textbook by Israeli physicist Asher Peres. Well-regarded among the physics community, it is known for unconventional choices of topics to include.
-
 ## Formal Role
 a quantum Theory: Concepts and Methods acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a quantum Theory: Concepts and Methods acts on the readout layer of the quantum 
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.485
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.477
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.452
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.452
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.451
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.448
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.445
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.435
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.420
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.420
-
----
-Wikipedia scaffold: [Quantum Theory: Concepts and Methods](https://en.wikipedia.org/wiki/Quantum_Theory:_Concepts_and_Methods) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

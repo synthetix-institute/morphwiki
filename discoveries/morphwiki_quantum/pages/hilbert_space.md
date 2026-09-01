@@ -3,9 +3,6 @@
 ## Evidence Status
 The hilbert space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.
 
-## The Standard Story
-The mathematical concept of a Hilbert space generalizes the notion of Euclidean space. It extends the methods of Euclidean geometry and calculus from the two-dimensional Euclidean plane and three-dimensional space to spaces of any finite or infinite dimension.
-
 ## Formal Role
 the Hilbert space is read through the compact quantum constructor. The available language supplies state terms such as quantum state or wave function; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.
 
@@ -44,18 +41,3 @@ the Hilbert space is read through the compact quantum constructor. The available
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.416
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.384
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.382
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.375
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.344
-- [2105.11733](https://arxiv.org/abs/2105.11733) — score 0.343
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.341
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.340
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.339
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.339
-
----
-Wikipedia scaffold: [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

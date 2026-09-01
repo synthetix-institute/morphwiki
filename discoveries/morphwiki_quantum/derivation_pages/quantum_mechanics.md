@@ -1,32 +1,18 @@
 # Quantum mechanics
 
-**Derivation step:** Generator: lawful change before measurement
-
-## Topic Context
-
-Quantum mechanics is the fundamental physical theory that describes the behavior of matter and of light; its unusual characteristics typically occur at and below the scale of atoms. It is the foundation of all quantum physics, which includes quantum chemistry, quantum biology, quantum field theory, quantum technology, and quantum information science.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_mechanics)
-
-## Role In The Derivation
-
-Quantum mechanics is the baseline constructor: states live in Hilbert space, physical questions are represented by operators, and probabilities are assigned to spectral projectors.
-
-## Why This Step Is Needed
-
-Quantum mechanics separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
+**Physical domain:** State space, domain, and representation
 
 ## Mechanism
 
+Quantum mechanics is the baseline constructor: states live in Hilbert space, physical questions are represented by operators, and probabilities are assigned to spectral projectors.
+
+Quantum mechanics is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
+
 The page supplies the general quantum assembly. A preparation gives a state vector or density operator. A self-adjoint observable or measurement operator family gives the possible outcome channels. The Born or trace rule assigns probabilities, while Hamiltonian evolution transports the state between preparation and observable.
 
-## How It Enters The Theory
+## Physical Construction
 
-**Place in the construction.** Quantum mechanics contributes a generator or transformation role to the quantum construction. This page is read first as a lawful-transport move: it identifies what changes the state before measurement.
-
-**State and operation.** A state vector, density operator, wave function, field state, or register on a specified domain. A Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state.
-
-**Admissibility and prediction.** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
+The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The governing operation is a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated observables are Transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
 
 ## Topic Equations
 
@@ -39,32 +25,22 @@ A=\sum_a aP_a,\qquad p(a)=\operatorname{Tr}(\rho P_a)
 [A,B]\ne0\quad\Rightarrow\quad \text{no generic common sharp eigenbasis}
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-The displayed relation should be read as a rule for transporting a state, not as a second definition of the state. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+A unitary or isometric change of representation carries the state and operator together. Amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
 
-## What Remains Stable
+A quantum state belongs to this state space, and every Hamiltonian and observable must act on its stated domain. These domain relations determine whether the resulting amplitudes and probabilities are defined.
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+The relation between prepared states, observables, and spectral probability measures. The use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations. The dependence of the observable on basis, domain, potential, preparation, or measurement context. The commutator structure that limits which observables can be jointly diagonalized.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+The physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation. The representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields. Where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight. The implementation of preparation, boundary condition, detector, or outcome channel.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-A generator predicts a new state but not yet an experimental number. The next step selects an observable, whose spectrum and expectation values expose consequences of the dynamics.
-
-## Checks
-
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+A transfer target provides a state space, a transformation law, and a spectral or categorical observable, with one compatibility relation experimentally unresolved. A useful validation varies the basis, domain, or measurement context and measures whether the allowed observable changes while the underlying transformation law remains identifiable. A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+No V2-aligned source-equation candidate is available for this topic.

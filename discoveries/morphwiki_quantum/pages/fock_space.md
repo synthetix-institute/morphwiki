@@ -1,61 +1,53 @@
 # Fock space
 
-## Evidence Status
-The fock space is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.
-
-## The Standard Story
-The Fock space is an algebraic construction used in quantum mechanics to construct the quantum states space of a variable or unknown number of identical particles from a single particle Hilbert space H. It is named after V.
+## Central Claim
+Fock space is the occupation-number version of quantum state space: it replaces a fixed-particle Hilbert space with a direct sum over sectors containing zero, one, two, or more identical quanta.
 
 ## Formal Role
-the Fock space is read through the compact quantum constructor. The available language supplies state terms such as quantum state or wave function; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.
+Fock space changes the carrier of the theory. A single-particle Hilbert space is lifted to a many-sector space, and the exchange rule selects bosonic or fermionic sectors. Creation and annihilation operators then become the native operations: they move the state between particle-number sectors, while the number operator provides the spectral readout of occupation. The important mechanism is therefore not a generic state-to-spectrum template, but the conversion from fixed-particle description to occupation-number dynamics.
 
 ## Formal Contribution
-- The page records a partial formal construction and states which quantum roles are active.
-- Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.
-- The page separates generic quantum vocabulary from a completed mechanism.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
+- It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Carrier: name the topic-native state space or state variable.
-- Map: name the operator, generator, constraint, or transformation acting on that carrier.
-- Admissibility: name the boundary, gauge, preparation, symmetry, or conservation rule.
-- Readout: name the spectrum, probability distribution, correlation, scattering amplitude, or detector event.
-- Falsifier: name the condition that would break the proposed role assignment.
+- The one-particle Hilbert space H is the seed carrier.
+- The full carrier is a direct sum of n-particle sectors, symmetrized for bosons or antisymmetrized for fermions.
+- Creation and annihilation operators move states between occupation sectors.
+- The number operator or mode observables provide the spectral readout.
+- The commutation or anticommutation rule encodes the particle statistics.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+\mathcal F_{\pm}(\mathcal H)=\bigoplus_{n=0}^{\infty}\mathcal S_{\pm}\mathcal H^{\otimes n}
+[a_i,a_j^\dagger]_{\mp}=\delta_{ij},\quad [a_i,a_j]_{\mp}=0
+N=\sum_i a_i^\dagger a_i
+```
 
 ## Mechanism Roles
-- **state:** quantum state; wave function; density operator
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** basis
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** occupation-number state; Fock vector; n-particle sector
+- **operator:** creation operator; annihilation operator; number operator
+- **spectrum:** occupation number; mode population; particle-number sector
+- **boundary:** bosonic symmetrization; fermionic antisymmetrization
+- **incompatibility:** commutation relation; anticommutation relation
+- **protocol:** sector-changing operation; mode expansion
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- the relation between prepared states, observables, and spectral probability measures
+- the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations
+- the dependence of the readout on basis, domain, potential, preparation, or measurement context
+- the commutator structure that limits which observables can be jointly diagonalized
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation
+- the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields
+- where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight
+- the implementation of preparation, boundary condition, detector, or readout channel
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.548
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.539
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.533
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.528
-- [2105.11733](https://arxiv.org/abs/2105.11733) — score 0.520
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.506
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.506
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.505
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.497
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.495
-
----
-Wikipedia scaffold: [Fock space](https://en.wikipedia.org/wiki/Fock_space) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
+- A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.
+- A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.
+- A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.

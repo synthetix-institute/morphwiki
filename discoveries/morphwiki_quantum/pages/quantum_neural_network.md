@@ -3,9 +3,6 @@
 ## Evidence Status
 a quantum neural network modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-Quantum neural networks are computational neural network models which are based on the principles of quantum mechanics. The first ideas on quantum neural computation were published independently in 1995 by Subhash Kak and Ron Chrisley, engaging with the theory of quantum mind, which posits that quantum effects play a role in cognitive function.
-
 ## Formal Role
 a quantum neural network acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a quantum neural network acts on the readout layer of the quantum constructor. T
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.550
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.545
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.544
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.537
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.530
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.526
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.518
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.512
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.512
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.503
-
----
-Wikipedia scaffold: [Quantum neural network](https://en.wikipedia.org/wiki/Quantum_neural_network) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

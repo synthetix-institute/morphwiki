@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum differential calculus can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In quantum geometry or noncommutative geometry a quantum differential calculus or noncommutative differential structure on an algebra over a field means the specification of a space of differential forms over the algebra. The algebra here is regarded as a coordinate ring but it is important that it may be noncommutative and hence not an actual algebra of coordinate functions on any actual space, so this represents a point of view replacing the specification of a differentiable structure for an actual space.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum differential calculus is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum differential calculus is described by a p
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.509
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.499
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.478
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.473
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.469
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.469
-- [2111.12617](https://arxiv.org/abs/2111.12617) — score 0.466
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.457
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.453
-- [1305.5025](https://arxiv.org/abs/1305.5025) — score 0.443
-
----
-Wikipedia scaffold: [Quantum differential calculus](https://en.wikipedia.org/wiki/Quantum_differential_calculus) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

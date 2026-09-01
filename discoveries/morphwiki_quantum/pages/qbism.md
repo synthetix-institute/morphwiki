@@ -3,9 +3,6 @@
 ## Evidence Status
 QBism modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-In physics and the philosophy of physics, QBism is an interpretation of quantum mechanics that takes an agent's actions and experiences as the central concerns of the theory. It is the most prominent and extreme form of quantum Bayesianism, a collection of related approaches that all involve interpreting quantum probabilities as Bayesian in some manner.
-
 ## Formal Role
 QBism acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ QBism acts on the readout layer of the quantum constructor. The formal ingredien
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.486
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.471
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.452
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.429
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.428
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.427
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.426
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.424
-- [2111.12617](https://arxiv.org/abs/2111.12617) — score 0.417
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.416
-
----
-Wikipedia scaffold: [QBism](https://en.wikipedia.org/wiki/QBism) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

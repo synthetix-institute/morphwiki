@@ -1,61 +1,53 @@
 # Boson
 
-## Evidence Status
-A boson is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.
-
-## The Standard Story
-In particle physics, a boson ( ) is a subatomic particle whose spin quantum number has an integer value. The class of bosons is one of the two fundamental classes of subatomic particle, the other being fermions, which have half odd-integer spin.
+## Central Claim
+A boson is a quantum excitation whose defining mechanism is symmetric exchange: many identical quanta may occupy the same mode.
 
 ## Formal Role
-a boson is read through the compact quantum constructor. The available language supplies state terms such as quantum state or wave function; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.
+The boson constructor is the symmetric counterpart of the fermion constructor. Many-body states live in symmetric sectors, creation and annihilation operators commute, and a single mode can carry any nonnegative occupation number. This is the mechanism behind field modes, coherent states, Bose-Einstein condensation, and photon-like occupation readouts.
 
 ## Formal Contribution
-- The page records a partial formal construction and states which quantum roles are active.
-- Constructor completion requires a specific state carrier, operator or generator, admissibility condition, readout, and falsifier.
-- The page separates generic quantum vocabulary from a completed mechanism.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
+- It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Carrier: name the topic-native state space or state variable.
-- Map: name the operator, generator, constraint, or transformation acting on that carrier.
-- Admissibility: name the boundary, gauge, preparation, symmetry, or conservation rule.
-- Readout: name the spectrum, probability distribution, correlation, scattering amplitude, or detector event.
-- Falsifier: name the condition that would break the proposed role assignment.
+- The many-particle state lives in a symmetric sector.
+- Creation and annihilation operators commute.
+- Each mode allows arbitrary nonnegative occupation.
+- Number, energy, momentum, phase-sensitive field amplitude, or correlations provide readouts.
+- Exchange of identical particles leaves the state unchanged.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+\mathcal F_{+}(\mathcal H)=\bigoplus_{n=0}^{\infty}\operatorname{Sym}^n\mathcal H
+[a_i,a_j^{\dagger}]=\delta_{ij},\quad [a_i,a_j]=0
+n_i=a_i^{\dagger}a_i\in\{0,1,2,\ldots\}
+```
 
 ## Mechanism Roles
-- **state:** quantum state
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** preparation condition; measurement setup; potential or domain condition
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** symmetric many-body state; bosonic Fock state; mode occupation
+- **operator:** bosonic creation operator; bosonic annihilation operator; number operator
+- **spectrum:** occupation number; mode energy; correlation spectrum
+- **boundary:** exchange symmetry sector; mode basis
+- **incompatibility:** commutation relation; number-phase relation
+- **protocol:** mode occupation; bosonic quantization; coherent-state preparation
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- the relation between prepared states, observables, and spectral probability measures
+- the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations
+- the dependence of the readout on basis, domain, potential, preparation, or measurement context
+- the commutator structure that limits which observables can be jointly diagonalized
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation
+- the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields
+- where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight
+- the implementation of preparation, boundary condition, detector, or readout channel
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.448
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.430
-- [1801.08949](https://arxiv.org/abs/1801.08949) — score 0.424
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.421
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.413
-- [1108.5312](https://arxiv.org/abs/1108.5312) — score 0.408
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.407
-- [astro-ph9809246](https://arxiv.org/abs/astro-ph/9809246) — score 0.400
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.400
-- [2112.10557](https://arxiv.org/abs/2112.10557) — score 0.399
-
----
-Wikipedia scaffold: [Boson](https://en.wikipedia.org/wiki/Boson) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
+- A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.
+- A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.
+- A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.

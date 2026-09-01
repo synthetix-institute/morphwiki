@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum image processing can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum image processing (QIMP) is using quantum computing or quantum information processing to create and work with quantum images.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum image processing is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum image processing is described by a two-di
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [2111.12617](https://arxiv.org/abs/2111.12617) — score 0.559
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.541
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.509
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.508
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.502
-- [2105.11733](https://arxiv.org/abs/2105.11733) — score 0.500
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.500
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.498
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.495
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.494
-
----
-Wikipedia scaffold: [Quantum image processing](https://en.wikipedia.org/wiki/Quantum_image_processing) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

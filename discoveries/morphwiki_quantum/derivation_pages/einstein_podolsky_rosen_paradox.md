@@ -1,66 +1,41 @@
 # Einstein–Podolsky–Rosen paradox
 
-**Derivation step:** Compatibility limit: what cannot be jointly sharp
-
-## Topic Context
-
-The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen, which argues that the description of physical reality provided by quantum mechanics is incomplete. In a 1935 paper titled "Can Quantum-Mechanical Description of Physical Reality be Considered Complete?", they argued for the existence of "elements of reality" that were not part of quantum theory, and speculated that it should be possible to construct a theory containing these hidden variables. Resolutions of the paradox have important implications for the interpretation of quantum mechanics.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox)
-
-## Role In The Derivation
-
-Einstein–Podolsky–Rosen paradox belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
-
-## Why This Step Is Needed
-
-Einstein–Podolsky–Rosen paradox is needed because individually valid observables need not admit a common set of definite values. Quantum theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical.
+**Physical domain:** Measurement, instruments, and probabilities
 
 ## Mechanism
 
-This step states which observables, contexts, or correlations cannot be represented by one common sharp assignment.
+Einstein–Podolsky–Rosen paradox belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
 
-## How It Enters The Theory
+Einstein–Podolsky–Rosen paradox connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
-**Place in the construction.** Einstein–Podolsky–Rosen paradox contributes a compatibility and correlation role to the quantum construction. This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
+A measurement couples a prepared state to recorded outcomes and, when conditioning is retained, to the resulting state change.
 
-**State and operation.** One state space or a multipartite state space on which several observables or contexts are defined. Commutators, correlation operators, joint measurements, or hidden-variable assignments under comparison.
+## Physical Construction
 
-**Admissibility and prediction.** Uncertainty relations, contextuality constraints, and Bell-type inequalities restrict possible joint assignments. Joint spectra, uncertainty products, correlation functions, and inequality violations.
+The state carrier is a prepared state together with the measurement context and any apparatus degrees of freedom retained in the model. The governing operation is a projection-valued measure, POVM, quantum instrument, or detector interaction. Outcome probabilities are positive and normalized; conditional state changes must define completely positive maps. The calculated observables are Outcome probabilities, detector records, ensemble frequencies, and conditional post-measurement states.
 
 ## Representative Relation
 
 ```math
-[A,B]\ne0,\quad \Delta A\,\Delta B\ge\frac12|\langle[A,B]\rangle|
+p(y)=\operatorname{Tr}(\rho E_y),\quad E_y\ge0,\quad \sum_yE_y=I
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-A nonzero commutator obstructs a common eigenbasis for the corresponding sharp observables. Uncertainty, contextuality, and Bell inequalities express related obstructions under different assumptions. The assumptions must be stated because the mathematical conclusion changes when the measurement context or factorization changes.
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
 
-## What Remains Stable
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
-Einstein–Podolsky–Rosen paradox identifies when otherwise legal quantum questions cannot be made jointly sharp. The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment. The page belongs to the compatibility layer because it limits which spectra can be read together.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+Einstein–Podolsky–Rosen paradox connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The obstruction may be written as a commutator, inequality, correlation bound, uncertainty relation, or contextuality test. Different experiments realize the same compatibility limit with different observables and detectors. The language of paradox can change while the formal obstruction remains.
+The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-Compatibility limits are then carried into concrete realizations. Boundaries, interfaces, and tensor factorizations decide which observables and correlations can actually be prepared and compared.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied.
-- Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:2501.07524](https://arxiv.org/abs/2501.07524)
-- [arXiv:1706.03846](https://arxiv.org/abs/1706.03846)
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+No V2-aligned source-equation candidate is available for this topic.

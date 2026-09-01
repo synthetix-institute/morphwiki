@@ -1,63 +1,53 @@
 # Quantum geometry
 
-## Evidence Status
-A quantum geometry can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
-
-## The Standard Story
-In quantum gravity, quantum geometry is the set of mathematical concepts that generalize geometry to describe physical phenomena at distance scales comparable to the Planck length. Each theory of quantum gravity uses the term "quantum geometry" in a slightly different fashion.
+## Central Claim
+Quantum geometry treats geometric quantities as quantum observables: geometry is not only a background stage, but a state-dependent structure with possible spectral readouts.
 
 ## Formal Role
-In quantum-mechanical terms, a quantum geometry is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
+Quantum geometry is not the same mechanism as Fock space. Its carrier is a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. The mechanism therefore sits at the geometry/boundary frontier: a geometric quantity is promoted to an operator, and the readout is a spectrum of admissible geometric values.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (preparation condition, measurement setup, or potential or domain condition) determine which states are admissible.
-- State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (spectrum, eigenvalue, or eigenstate) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis.
+- The graph, spin-network, or quantum-gravity state space is the carrier.
+- Geometric data are represented as quantum labels or states rather than as a fixed smooth background.
+- Area, volume, or metric-related quantities become operators.
+- The spectra of those geometric operators provide readouts.
+- The invariant content is the part of the geometric readout that survives changes of graph, gauge, or boundary description.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+\mathcal H_{\Gamma}=L^2(SU(2)^E/SU(2)^V),\quad |\Gamma,j_e,\iota_v\rangle
+\hat A(S)|\Gamma,j,\iota\rangle=8\pi\gamma\ell_P^2\sum_{e\cap S}\sqrt{j_e(j_e+1)}|\Gamma,j,\iota\rangle
+\hat G|g_i\rangle=g_i|g_i\rangle
+```
 
 ## Mechanism Roles
-- **state:** quantum state; wave function; density operator
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** spectrum
-- **boundary:** preparation condition; measurement setup; potential or domain condition
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** spin-network state; quantum geometry state; graph-labelled state
+- **operator:** area operator; volume operator; geometric observable
+- **spectrum:** area spectrum; volume spectrum; geometry eigenvalue
+- **boundary:** graph boundary; spin-network graph; Planck-scale domain
+- **incompatibility:** non-commuting observables; constraint algebra
+- **protocol:** geometric measurement; coarse graining; spin-foam transition
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- the relation between prepared states, observables, and spectral probability measures
+- the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations
+- the dependence of the readout on basis, domain, potential, preparation, or measurement context
+- the commutator structure that limits which observables can be jointly diagonalized
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation
+- the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields
+- where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight
+- the implementation of preparation, boundary condition, detector, or readout channel
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.596
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.595
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.594
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.593
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.592
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.591
-- [cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470) — score 0.586
-- [2105.11733](https://arxiv.org/abs/2105.11733) — score 0.585
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.584
-- [1507.08248](https://arxiv.org/abs/1507.08248) — score 0.583
-
----
-Wikipedia scaffold: [Quantum geometry](https://en.wikipedia.org/wiki/Quantum_geometry) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
+- A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.
+- A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.
+- A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.

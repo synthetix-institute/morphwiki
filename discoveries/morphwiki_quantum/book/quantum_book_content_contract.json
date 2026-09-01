@@ -2,12 +2,16 @@
   "schema_version": 1,
   "report_type": "quantum_book_content_contract",
   "baseline_topic_count": 146,
-  "baseline_topic_words": 84343,
-  "baseline_equation_blocks": 146,
-  "baseline_pdf_pages": 318,
+  "baseline_topic_words": 63619,
+  "baseline_equation_blocks": 129,
+  "baseline_pdf_pages": 311,
   "minimum_topic_count": 146,
-  "minimum_topic_words": 65000,
+  "minimum_topic_words": 57000,
+  "minimum_topic_word_retention": 0.9,
   "minimum_equation_blocks": 128,
+  "minimum_equation_block_retention": 0.99,
   "minimum_pdf_pages": 280,
-  "policy": "Reorganization may remove repeated boilerplate while preserving all topics and substantive physics. Every physical topic must retain an equation-bearing construction; historical and interpretive annotations must not be assigned invented equations. The full book must not be replaced by a synopsis."
+  "minimum_pdf_page_retention": 0.9,
+  "minimum_source_grounded_topics": 1,
+  "policy": "Reorganization may remove repeated boilerplate and the historical Wikipedia scaffold while preserving every topic as a dedicated section and every physical topic as an equation-bearing derivation. Historical and interpretive annotations must not be assigned invented equations. Public source links must resolve to topic-level equation witnesses confirmed by source-card alignment. The full book must not be replaced by a synopsis or a list of topic names."
 }

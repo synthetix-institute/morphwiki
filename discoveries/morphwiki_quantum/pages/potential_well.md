@@ -3,9 +3,6 @@
 ## Evidence Status
 A potential well can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-A potential well is the region surrounding a local minimum of potential energy. Energy captured in a potential well is unable to convert to another type of energy because it is captured in the local minimum of a potential well.
-
 ## Formal Role
 In quantum-mechanical terms, a potential well is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through wave function or state vector, Hamiltonian or observable operator, and spectrum or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a potential well is described by a prepared quantum
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.579
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.575
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.570
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.570
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.570
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.563
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.556
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.552
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.551
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.545
-
----
-Wikipedia scaffold: [Potential well](https://en.wikipedia.org/wiki/Potential_well) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

@@ -3,9 +3,6 @@
 ## Evidence Status
 The self-adjoint operator can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In mathematics, a self-adjoint operator on a complex vector space with inner product is a linear map that is its own adjoint. That is, for all .
-
 ## Formal Role
 In quantum-mechanical terms, the Self-adjoint operator is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, the Self-adjoint operator is described by a wave fu
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.569
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.553
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.550
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.546
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.541
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.536
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.524
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.522
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.518
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.516
-
----
-Wikipedia scaffold: [Self-adjoint operator](https://en.wikipedia.org/wiki/Self-adjoint_operator) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

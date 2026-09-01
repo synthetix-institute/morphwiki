@@ -3,9 +3,6 @@
 ## Evidence Status
 A macroscopic quantum phenomena can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Macroscopic quantum phenomena are processes showing quantum behaviour at the macroscopic scale, rather than at the atomic scale where quantum effects are prevalent. The best-known examples of macroscopic quantum phenomena are superfluidity and superconductivity; other examples include the quantum Hall effect, Josephson effect and topological order.
-
 ## Formal Role
 In quantum-mechanical terms, a macroscopic quantum phenomena is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through wave function or state vector, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a macroscopic quantum phenomena is described by a w
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.544
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.539
-- [hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080) — score 0.518
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.511
-- [astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157) — score 0.510
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.504
-- [2502.06200](https://arxiv.org/abs/2502.06200) — score 0.504
-- [1304.6875](https://arxiv.org/abs/1304.6875) — score 0.501
-- [1304.6875](https://arxiv.org/abs/1304.6875) — score 0.501
-- [2310.19304](https://arxiv.org/abs/2310.19304) — score 0.501
-
----
-Wikipedia scaffold: [Macroscopic quantum phenomena](https://en.wikipedia.org/wiki/Macroscopic_quantum_phenomena) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

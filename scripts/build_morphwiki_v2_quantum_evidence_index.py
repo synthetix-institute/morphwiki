@@ -16,6 +16,10 @@ ARXIV_RE = re.compile(r"(?:arxiv:\s*)?(?:(?P<old>[a-z][a-z-]+/[0-9]{7})|(?P<oldf
 TOKEN_RE = re.compile(r"(?:Ω|Ξ|Λ|T|Τ|Γ|J|Π)[0-9]{2,3}|(?:A\*?|Α)[0-9]{2}")
 ROLES = {"operator_apparatus","real_substrate_geometry","selector","selector_context","closure_constraints","readout_current","protocol_order"}
 ROUTES = {"transport_flow","spectral_operator","boundary_weak_form","constraint_closure","discrete_protocol","commutator_incompatibility","unclassified"}
+TOPIC_STOP = {
+    'quantum', 'theory', 'physics', 'physical', 'mechanics', 'mathematical',
+    'formulation', 'introduction', 'applications', 'modern', 'system',
+}
 
 
 def load_json(path: Path) -> Any:
@@ -82,6 +86,7 @@ def detect(v2_root: Path, explicit: Mapping[str, str]) -> dict[str, str]:
         'source_language_examples': ['*source_language_examples_full.json', '*source_language_examples.json'],
         'source_card_alignment': ['*source_card_alignment.json'],
         'source_card_alignment_jsonl': ['*source_card_alignment.jsonl'],
+        'source_cards_jsonl': ['source_equation_cards*full*.jsonl', 'source_equation_cards*.jsonl'],
         'source_constructor_graph': ['*source_constructor_graph.json'],
         'v2_dag': ['*v2_dag.json'],
         'gamma_bridges': ['*gamma_bridges.json', '*gamma_bridge*.json'],
@@ -102,8 +107,30 @@ def detect(v2_root: Path, explicit: Mapping[str, str]) -> dict[str, str]:
             if found:
                 if k == 'source_language_examples':
                     chosen = sorted(found, key=lambda x: ('full' not in x.name, x.name))[0]
+                elif k in {'source_card_alignment', 'source_card_alignment_jsonl'}:
+                    def alignment_rank(path: Path) -> tuple[int, int, int, str]:
+                        name = path.name.lower()
+                        companion = path.with_suffix('.json') if path.suffix == '.jsonl' else path
+                        complete = companion.exists() and companion.stat().st_size > 0
+                        return (
+                            0 if complete else 1,
+                            0 if 'v21' in name else 1,
+                            0 if 'full' in name else 1,
+                            name,
+                        )
+                    chosen = sorted(found, key=alignment_rank)[0]
                 else:
-                    chosen = sorted(found, key=lambda x: (x.stat().st_size, x.name))[0]
+                    # Prefer the corrected V2.1/full-corpus artifact.  File
+                    # size is not a quality criterion: the previous rule
+                    # systematically selected small pilot outputs.
+                    chosen = sorted(
+                        found,
+                        key=lambda x: (
+                            0 if 'v21' in x.name.lower() else 1,
+                            0 if 'full' in x.name.lower() else 1,
+                            x.name,
+                        ),
+                    )[0]
                 out[k] = str(chosen)
     return out
 
@@ -140,13 +167,18 @@ def load_pages(root: Path) -> tuple[dict[str, dict[str, Any]], dict[str, set[str
         ids = set()
         for w in witnesses:
             ids.update(collect_ids(w, 16))
-        pages[slug] = {'slug': slug, 'title': title, 'path': str(p), 'legacy_witness_count': len(witnesses), 'legacy_arxiv_ids': sorted(ids)}
+        terms = {
+            token
+            for token in re.findall(r'[a-z][a-z0-9-]{2,}', f"{slug.replace('_',' ')} {title.lower()}")
+            if token not in TOPIC_STOP
+        }
+        pages[slug] = {'slug': slug, 'title': title, 'path': str(p), 'legacy_witness_count': len(witnesses), 'legacy_arxiv_ids': sorted(ids), 'topic_terms': sorted(terms)}
         for i in ids:
             id_to_slugs[i].add(slug)
     return pages, id_to_slugs
 
 def empty_page(meta: Mapping[str, Any], max_examples: int) -> dict[str, Any]:
-    return {'title': meta.get('title'), 'legacy_witness_count': meta.get('legacy_witness_count',0), 'legacy_arxiv_ids': meta.get('legacy_arxiv_ids',[]), 'status': 'legacy_witness_only' if meta.get('legacy_witness_count') else 'no_evidence', 'matched_alignment_records': 0, 'matched_source_examples': 0, 'matched_v2_row_ids': [], 'matched_source_card_ids': [], 'tokens': {}, 'routes': {}, 'constructor_roles': {}, 'source_examples': [], 'max_examples': max_examples, '_tokens': Counter(), '_routes': Counter(), '_roles': Counter()}
+    return {'title': meta.get('title'), 'topic_terms': meta.get('topic_terms',[]), 'legacy_witness_count': meta.get('legacy_witness_count',0), 'legacy_arxiv_ids': meta.get('legacy_arxiv_ids',[]), 'status': 'legacy_witness_only' if meta.get('legacy_witness_count') else 'no_evidence', 'matched_alignment_records': 0, 'matched_source_examples': 0, 'topic_relevant_source_examples': 0, 'matched_v2_row_ids': [], 'matched_source_card_ids': [], 'tokens': {}, 'routes': {}, 'constructor_roles': {}, 'source_examples': [], 'max_examples': max_examples, '_tokens': Counter(), '_routes': Counter(), '_roles': Counter()}
 
 def tokens(obj: Any) -> list[str]:
     try:
@@ -269,15 +301,67 @@ def add_match(page: dict[str, Any], obj: Mapping[str, Any], source: str, max_exa
     if len(page['source_examples']) < max_examples:
         page['source_examples'].append({'source': source, 'paper_ids': sorted(collect_ids(obj,8)), 'tokens': tokens(obj)[:8], 'routes': routes(obj)[:8], 'roles': roles(obj)[:8], 'row_ids': sorted(row_ids(obj))[:8], 'card_ids': sorted(card_ids(obj))[:4], 'equation_preview': preview(obj)})
 
+
+def enrich_with_source_cards(pages: dict[str, dict[str, Any]], path: Path) -> dict[str, int]:
+    """Attach local source context to the small set of displayed examples."""
+    waiting: dict[str, list[tuple[dict[str, Any], dict[str, Any]]]] = defaultdict(list)
+    for page in pages.values():
+        for example in page.get('source_examples') or []:
+            for card_id in example.get('card_ids') or []:
+                waiting[str(card_id)].append((page, example))
+    if not waiting:
+        return {'requested_cards': 0, 'matched_cards': 0}
+
+    matched = set()
+    for card in stream_jsonl(path, 0):
+        card_id = str(card.get('equation_card_id') or card.get('card_id') or '')
+        if card_id not in waiting:
+            continue
+        section = card.get('section') or {}
+        local_text = ' '.join(
+            str(value or '')
+            for value in (
+                section.get('title') if isinstance(section, Mapping) else '',
+                card.get('context_before'),
+                card.get('canonical_equation') or card.get('equation'),
+                card.get('context_after'),
+            )
+        )
+        local_text = re.sub(r'\s+', ' ', local_text).strip()
+        lower = local_text.lower()
+        for page, example in waiting[card_id]:
+            terms = [str(term).lower() for term in page.get('topic_terms') or []]
+            hits = sorted({term for term in terms if term and term in lower})
+            example['section_title'] = section.get('title') if isinstance(section, Mapping) else ''
+            example['local_context'] = local_text[:1200]
+            example['equation_preview'] = re.sub(
+                r'\s+', ' ', str(card.get('canonical_equation') or card.get('equation') or '')
+            ).strip()[:520]
+            example['topic_terms_matched'] = hits
+            example['topic_relevance'] = 'local_context_match' if hits else 'not_established'
+        matched.add(card_id)
+        if len(matched) == len(waiting):
+            break
+    return {'requested_cards': len(waiting), 'matched_cards': len(matched)}
+
+
 def finalize(pages: dict[str, dict[str, Any]]) -> None:
     for p in pages.values():
         p['tokens'] = dict(p.pop('_tokens').most_common(20)); p['routes'] = dict(p.pop('_routes').most_common(12)); p['constructor_roles'] = dict(p.pop('_roles').most_common(12))
-        if p['matched_source_examples'] or p['matched_alignment_records']:
+        relevant = sum(
+            1
+            for example in p.get('source_examples') or []
+            if example.get('topic_relevance') == 'local_context_match'
+        )
+        p['topic_relevant_source_examples'] = relevant
+        if relevant:
             p['status'] = 'v2_source_grounded'
+        elif p['matched_source_examples'] or p['matched_alignment_records']:
+            p['status'] = 'v2_identifier_linked'
 
 def render_md(report: Mapping[str, Any]) -> str:
     cov = report.get('coverage') or {}
-    lines = ['# MorphWiki Quantum V2 Evidence Index','',f"- Readiness: `{report.get('readiness')}`",f"- V2 root: `{report.get('v2_root')}`",f"- Pages indexed: `{cov.get('pages_total',0)}`",f"- Pages with legacy witnesses: `{cov.get('pages_with_legacy_witnesses',0)}`",f"- Pages with V2 source evidence: `{cov.get('pages_with_v2_source_grounding',0)}`",f"- Pages with V2 row ids: `{cov.get('pages_with_v2_row_ids',0)}`",'', '## Artifacts']
+    lines = ['# MorphWiki Quantum V2 Evidence Index','',f"- Readiness: `{report.get('readiness')}`",f"- V2 root: `{report.get('v2_root')}`",f"- Pages indexed: `{cov.get('pages_total',0)}`",f"- Pages with legacy witnesses: `{cov.get('pages_with_legacy_witnesses',0)}`",f"- Pages with identifier-linked V2 candidates: `{cov.get('pages_with_v2_identifier_links',0)}`",f"- Pages with topic-relevant V2 source evidence: `{cov.get('pages_with_v2_source_grounding',0)}`",f"- Pages with V2 row ids: `{cov.get('pages_with_v2_row_ids',0)}`",'', '## Artifacts']
     for k, a in sorted((report.get('artifacts') or {}).items()):
         lines.append(f"- `{k}`: `{a.get('path')}`; readiness `{a.get('readiness')}`")
     h = (report.get('artifacts') or {}).get('hierarchical_language') or {}
@@ -304,7 +388,7 @@ def render_md(report: Mapping[str, Any]) -> str:
 
 def build(args: argparse.Namespace) -> dict[str, Any]:
     root, v2_root = Path(args.root), Path(args.v2_root)
-    artifacts = detect(v2_root, {k: getattr(args,k) for k in ['hierarchical_language','symbolic_language','symbolic_full_assignment','grammar_rules','source_language_examples','source_card_alignment','source_card_alignment_jsonl','source_constructor_graph','v2_dag','gamma_bridges','readout_application_coverage','apparatus_basin_a00']})
+    artifacts = detect(v2_root, {k: getattr(args,k) for k in ['hierarchical_language','symbolic_language','symbolic_full_assignment','grammar_rules','source_language_examples','source_card_alignment','source_card_alignment_jsonl','source_cards_jsonl','source_constructor_graph','v2_dag','gamma_bridges','readout_application_coverage','apparatus_basin_a00']})
     meta, id_to_slugs = load_pages(root)
     pages = {s: empty_page(m, args.max_examples_per_page) for s,m in meta.items()}
     if artifacts.get('source_card_alignment_jsonl'):
@@ -320,10 +404,15 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             matched += 1
             for slug in slugs: add_match(pages[slug], obj, 'source_language_examples', args.max_examples_per_page)
             if args.max_source_example_matches and matched >= args.max_source_example_matches: break
+    source_card_enrichment = {'requested_cards': 0, 'matched_cards': 0}
+    if artifacts.get('source_cards_jsonl'):
+        source_card_enrichment = enrich_with_source_cards(
+            pages, Path(artifacts['source_cards_jsonl'])
+        )
     finalize(pages)
     briefs = {k: brief(v) for k,v in sorted(artifacts.items()) if v.endswith('.json')}
-    total = len(pages); with_legacy = sum(1 for p in pages.values() if p['legacy_witness_count']); with_v2 = sum(1 for p in pages.values() if p['status']=='v2_source_grounded'); with_rows = sum(1 for p in pages.values() if p['matched_v2_row_ids'])
-    return {'schema_version':1,'report_type':'morphwiki_quantum_v2_evidence_index','readiness':'usable' if briefs and total else 'partial' if briefs else 'blocked','generated_at':datetime.now(timezone.utc).isoformat(),'root':str(root),'v2_root':str(v2_root),'artifacts':briefs,'artifact_paths':artifacts,'coverage':{'pages_total':total,'pages_with_legacy_witnesses':with_legacy,'pages_with_v2_source_grounding':with_v2,'pages_with_v2_row_ids':with_rows,'page_v2_grounding_rate':with_v2/total if total else 0.0,'page_v2_row_rate':with_rows/total if total else 0.0},'pages':pages,'claim_scope':'Evidence adapter from MorphWiki quantum pages to transferred V2 language/source-card artifacts. It supports page-level grounding checks; it is not a public book chapter and not a physical validation result.'}
+    total = len(pages); with_legacy = sum(1 for p in pages.values() if p['legacy_witness_count']); with_v2 = sum(1 for p in pages.values() if p['status']=='v2_source_grounded'); with_links = sum(1 for p in pages.values() if p['status'] in {'v2_source_grounded','v2_identifier_linked'}); with_rows = sum(1 for p in pages.values() if p['matched_v2_row_ids'])
+    return {'schema_version':2,'report_type':'morphwiki_quantum_v2_evidence_index','readiness':'usable' if briefs and total else 'partial' if briefs else 'blocked','generated_at':datetime.now(timezone.utc).isoformat(),'root':str(root),'v2_root':str(v2_root),'artifacts':briefs,'artifact_paths':artifacts,'source_card_enrichment':source_card_enrichment,'coverage':{'pages_total':total,'pages_with_legacy_witnesses':with_legacy,'pages_with_v2_identifier_links':with_links,'pages_with_v2_source_grounding':with_v2,'pages_with_v2_row_ids':with_rows,'page_v2_identifier_link_rate':with_links/total if total else 0.0,'page_v2_grounding_rate':with_v2/total if total else 0.0,'page_v2_row_rate':with_rows/total if total else 0.0},'pages':pages,'claim_scope':'Evidence adapter from MorphWiki pages to transferred V2 source cards. Identifier overlap routes candidates; source grounding additionally requires a topic term in the equation section or local context. Physical validation remains separate.'}
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
@@ -336,6 +425,7 @@ def main() -> None:
         'source_language_examples': '--source-language-examples-json',
         'source_card_alignment': '--source-card-alignment-json',
         'source_card_alignment_jsonl': '--source-card-alignment-jsonl',
+        'source_cards_jsonl': '--source-cards-jsonl',
         'source_constructor_graph': '--source-constructor-graph-json',
         'v2_dag': '--v2-dag-json',
         'gamma_bridges': '--gamma-bridges-json',

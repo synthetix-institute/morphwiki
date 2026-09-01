@@ -3,9 +3,6 @@
 ## Evidence Status
 the Einstein–Podolsky–Rosen paradox modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen, which argues that the description of physical reality provided by quantum mechanics is incomplete. In a 1935 paper titled "Can Quantum-Mechanical Description of Physical Reality be Considered Complete?", they argued for the existence of "elements of reality" that were not part of quantum theory, and speculated that it should be possible to construct a theory containing these hidden variables.
-
 ## Formal Role
 the Einstein–Podolsky–Rosen paradox acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ the Einstein–Podolsky–Rosen paradox acts on the readout layer of the quantum
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.449
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.447
-- [2501.07524](https://arxiv.org/abs/2501.07524) — score 0.440
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.439
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.437
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.419
-- [astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157) — score 0.411
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.410
-- [1302.5510](https://arxiv.org/abs/1302.5510) — score 0.410
-- [2006.13679](https://arxiv.org/abs/2006.13679) — score 0.404
-
----
-Wikipedia scaffold: [Einstein–Podolsky–Rosen paradox](https://en.wikipedia.org/wiki/Einstein%E2%80%93Podolsky%E2%80%93Rosen_paradox) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

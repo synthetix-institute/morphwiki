@@ -26,11 +26,19 @@ fi
 if [[ "$BUILD_V2_EVIDENCE_INDEX" != "0" && "$BUILD_V2_EVIDENCE_INDEX" != "false" && -n "$V2_ROOT" && -d "$V2_ROOT" ]]; then
   export MORPHWIKI_V2_EVIDENCE_INDEX_JSON="${MORPHWIKI_V2_EVIDENCE_INDEX_JSON:-$ROOT/v2_quantum_evidence_index.json}"
   echo "[MorphWiki] building V2 evidence index from $V2_ROOT"
+  evidence_args=()
+  if [[ -n "${MORPHWIKI_V2_SOURCE_CARD_ALIGNMENT_JSONL:-}" ]]; then
+    evidence_args+=(--source-card-alignment-jsonl "$MORPHWIKI_V2_SOURCE_CARD_ALIGNMENT_JSONL")
+  fi
+  if [[ -n "${MORPHWIKI_V2_SOURCE_CARDS_JSONL:-}" ]]; then
+    evidence_args+=(--source-cards-jsonl "$MORPHWIKI_V2_SOURCE_CARDS_JSONL")
+  fi
   "$PYTHON_BIN" -B scripts/build_morphwiki_v2_quantum_evidence_index.py \
     --root "$ROOT" \
     --v2-root "$V2_ROOT" \
     --out-json "$MORPHWIKI_V2_EVIDENCE_INDEX_JSON" \
-    --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_MD:-$ROOT/v2_quantum_evidence_index.md}"
+    --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_MD:-$ROOT/v2_quantum_evidence_index.md}" \
+    "${evidence_args[@]}"
   "$PYTHON_BIN" -B scripts/audit_morphwiki_v2_quantum_evidence_index.py \
     --index "$MORPHWIKI_V2_EVIDENCE_INDEX_JSON" \
     --tree "$ROOT/quantum_mechanism_tree.json" \
@@ -52,6 +60,14 @@ if [[ -n "$V2_ROOT" && -d "$V2_ROOT" ]]; then
       --out-md "$ROOT/quantum_constructor_dependencies.md"
   fi
 fi
+
+echo "[MorphWiki] refreshing explicit topic-native page models"
+"$PYTHON_BIN" -B scripts/rewrite_morphwiki_quantum_public_language.py \
+  --pages-dir "$ROOT/pages" \
+  --only-overrides
+"$PYTHON_BIN" -B scripts/rewrite_morphwiki_quantum_public_language.py \
+  --pages-dir "$ROOT/pages" \
+  --render-only
 
 echo "[MorphWiki] building mechanism tree"
 tree_args=()

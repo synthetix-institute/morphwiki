@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum spacetime can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In mathematical physics, the concept of quantum spacetime is a generalization of the usual concept of spacetime in which some variables that ordinarily commute are assumed not to commute and form a different Lie algebra. The choice of that algebra varies from one theory to another.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum spacetime is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum spacetime is described by a two-dimension
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.500
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.489
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.478
-- [2111.12617](https://arxiv.org/abs/2111.12617) — score 0.476
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.470
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.467
-- [2307.10388](https://arxiv.org/abs/2307.10388) — score 0.462
-- [2106.04271](https://arxiv.org/abs/2106.04271) — score 0.461
-- [2402.03709](https://arxiv.org/abs/2402.03709) — score 0.461
-- [2103.03635](https://arxiv.org/abs/2103.03635) — score 0.461
-
----
-Wikipedia scaffold: [Quantum spacetime](https://en.wikipedia.org/wiki/Quantum_spacetime) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

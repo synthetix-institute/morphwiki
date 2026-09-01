@@ -3,9 +3,6 @@
 ## Evidence Status
 Quantum cosmology is represented here as an incomplete quantum construction. The available evidence fixes part of the state carrier, operator or map, admissibility condition, readout, or falsifier, but not the full set.
 
-## The Standard Story
-Quantum cosmology is the attempt in theoretical physics to develop a quantum theory of the universe. This approach attempts to answer open questions of classical physical cosmology, particularly those related to the first phases of the universe.
-
 ## Formal Role
 quantum cosmology is read through the compact quantum constructor. The available language supplies state terms such as wave function or state vector; operator terms such as Hamiltonian or observable operator; spectral terms such as eigenvalue or energy level. The mechanism should be completed by naming the state carrier, the operator or generator that acts on it, the admissibility condition, the readout, and the comparison that would distinguish this role from a neighboring one.
 
@@ -44,18 +41,3 @@ quantum cosmology is read through the compact quantum constructor. The available
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.466
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.443
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.441
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.440
-- [0806.4515](https://arxiv.org/abs/0806.4515) — score 0.423
-- [1905.02221](https://arxiv.org/abs/1905.02221) — score 0.422
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.420
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.419
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.418
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.412
-
----
-Wikipedia scaffold: [Quantum cosmology](https://en.wikipedia.org/wiki/Quantum_cosmology) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

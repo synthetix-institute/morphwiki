@@ -1,32 +1,18 @@
 # Wave–particle duality
 
-**Derivation step:** Compatibility limit: what cannot be jointly sharp
-
-## Topic Context
-
-Wave–particle duality is the concept in quantum mechanics that fundamental entities of the universe, like photons and electrons, exhibit particle or wave properties according to the experimental circumstances. It expresses the inability of the classical concepts such as particle or wave to fully describe the behavior of quantum objects. During the 19th and early 20th centuries, light was found to behave as a wave, then later was discovered to have a particle-like behavior, whereas electrons behaved like particles in early experiments, then later were discovered to have wave-like behavior. The concept of duality arose to name these seeming contradictions.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality)
-
-## Role In The Derivation
-
-Wave–particle duality belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
-
-## Why This Step Is Needed
-
-Wave–particle duality is needed because individually valid observables need not admit a common set of definite values. Quantum theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical.
+**Physical domain:** Measurement, instruments, and probabilities
 
 ## Mechanism
 
+Wave–particle duality belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+
+Wave–particle duality connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+
 The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response.
 
-## How It Enters The Theory
+## Physical Construction
 
-**Place in the construction.** Wave–particle duality contributes a many-mode field or particle-realization role to the quantum construction. This page is read first as a compatibility move: it asks which otherwise legal questions cannot share one sharp answer set.
-
-**State and operation.** Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector.
-
-**Admissibility and prediction.** Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Representative Relation
 
@@ -34,33 +20,22 @@ The mechanism is the field/mode version of the constructor: a state space is dec
 \mathcal F_{\pm}(\mathcal H),\quad a_k^\dagger,a_k,\quad N_k=a_k^\dagger a_k,\quad \sigma(H)\ \text{or scattering data}
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-A nonzero commutator obstructs a common eigenbasis for the corresponding sharp observables. Uncertainty, contextuality, and Bell inequalities express related obstructions under different assumptions. The assumptions must be stated because the mathematical conclusion changes when the measurement context or factorization changes.
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
 
-## What Remains Stable
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
-The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response. Wave–particle duality identifies when otherwise legal quantum questions cannot be made jointly sharp. The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment. The page belongs to the compatibility layer because it limits which spectra can be read together.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response. Wave–particle duality connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The obstruction may be written as a commutator, inequality, correlation bound, uncertainty relation, or contextuality test. Different experiments realize the same compatibility limit with different observables and detectors. The language of paradox can change while the formal obstruction remains.
+The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-Compatibility limits are then carried into concrete realizations. Boundaries, interfaces, and tensor factorizations decide which observables and correlations can actually be prepared and compared.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied.
-- Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+No V2-aligned source-equation candidate is available for this topic.

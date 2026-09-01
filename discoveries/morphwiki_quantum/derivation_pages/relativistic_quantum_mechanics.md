@@ -1,66 +1,41 @@
 # Relativistic quantum mechanics
 
-**Derivation step:** Formal context: carrier, domain, and representation
-
-## Topic Context
-
-In physics, relativistic quantum mechanics (RQM) is any Poincaré-covariant formulation of quantum mechanics (QM). This theory is applicable to massive particles propagating at all velocities up to those comparable to the speed of light c, and can accommodate massless particles. The theory has application in high-energy physics, particle physics and accelerator physics, as well as atomic physics, chemistry and condensed matter physics. Non-relativistic quantum mechanics refers to the mathematical formulation of quantum mechanics applied in the context of Galilean relativity, more specifically quantizing the equations of classical mechanics by replacing dynamical variables by operators.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Relativistic_quantum_mechanics)
-
-## Role In The Derivation
-
-Relativistic quantum mechanics belongs at the first step of the constructor: it fixes the Hilbert space, operator domain, basis, representation, or preparation context before any probability statement is meaningful.
-
-## Why This Step Is Needed
-
-Relativistic quantum mechanics is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
+**Physical domain:** Dynamics and transformations
 
 ## Mechanism
 
-This step fixes the state space, representation, basis, or operator domain in which the later equations are defined.
+Relativistic quantum mechanics belongs to the lawful-change step: it specifies how the state changes before a question is asked.
 
-## How It Enters The Theory
+Relativistic quantum mechanics separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
 
-**Place in the construction.** Relativistic quantum mechanics contributes a representation and domain role to the quantum construction. This page is read first as a context-setting move: it fixes the arena in which states, domains, and questions are legal.
+The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
 
-**State and operation.** A Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. A unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence.
+## Physical Construction
 
-**Admissibility and prediction.** Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. Transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
+The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The governing operation is a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated observables are Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
 
 ## Representative Relation
 
 ```math
-V:\mathcal H\to\mathcal H',\quad V^\dagger V=I,\quad \rho'=V\rho V^\dagger,\quad O'=VOV^\dagger
+i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-Read the relation as a comparison between descriptions of the same state and operator. Under a unitary or isometric change of representation, amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
+The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
 
-## What Remains Stable
+The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
 
-Relativistic quantum mechanics supplies the admissible arena in which quantum states and operators are defined. Changing basis or representation should not change physical probabilities when the transformation is unitary. Normalization, domain conditions, and inner products remain part of the same formal container.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+Relativistic quantum mechanics specifies lawful change before measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The chosen basis, coordinate representation, or preparation convention can change. The same calculation may be written with vectors, wave functions, density operators, or operator algebras. Physical realization enters later through boundary conditions, detectors, or fields.
+The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-Once the mathematical arena is fixed, the construction can specify a state within it. Later steps add a generator, an observable, and a measurement model, each constrained by the same domain.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation.
-- The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+No V2-aligned source-equation candidate is available for this topic.

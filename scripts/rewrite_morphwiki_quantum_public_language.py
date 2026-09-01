@@ -262,10 +262,10 @@ TOPIC_PUBLIC_OVERRIDES = {
     },
     "fermion": {
         "takeaway": (
-            "A fermion is a quantum excitation whose defining mechanism is antisymmetric exchange: two identical fermions cannot occupy the same one-particle state."
+            "Fermionic exchange constrains the global many-body state: antisymmetry removes coincidence states and thereby produces exclusion, exchange holes, Fermi surfaces, and degeneracy pressure before a repulsive interaction is introduced."
         ),
         "mechanism_view": (
-            "The fermion constructor is an exchange constraint on state space, not a generic particle label. Many-body states are antisymmetrized, field operators anticommute, and occupation numbers are restricted to zero or one for each mode. This exchange rule explains why the same operator/spectrum machinery produces Pauli exclusion, Fermi surfaces, and fermionic field excitations."
+            "The fermion construction is an exchange constraint on state space, not a particle label. The wave function changes sign under exchange and vanishes when identical one-particle states coincide. Exterior Fock space and canonical anticommutation preserve that nodal restriction when particle number changes. At finite density, distinct modes fill to a Fermi surface and generate degeneracy pressure without pairwise repulsion. Pairing can move the state into an even-parity collective sector, while mappings to spins or hard-core bosons preserve selected spectra only by changing locality or correlation observables."
         ),
         "conversion_form": [
             "The many-particle state lives in an antisymmetric sector.",
@@ -283,6 +283,7 @@ TOPIC_PUBLIC_OVERRIDES = {
             "protocol": ["mode filling", "fermionic quantization"],
         },
         "mathematical_skeleton": (
+            "\\Psi(\\ldots,x_i,\\ldots,x_j,\\ldots)=-\\Psi(\\ldots,x_j,\\ldots,x_i,\\ldots)\n"
             "\\mathcal F_{-}(\\mathcal H)=\\bigoplus_{n=0}^{\\infty}\\wedge^n\\mathcal H\n"
             "\\{a_i,a_j^{\\dagger}\\}=\\delta_{ij},\\quad \\{a_i,a_j\\}=0\n"
             "n_i=a_i^{\\dagger}a_i\\in\\{0,1\\}"
@@ -447,12 +448,36 @@ def rewrite_page(path: Path) -> bool:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages-dir", type=Path, default=Path("discoveries/morphwiki_quantum/pages"))
+    parser.add_argument(
+        "--only-overrides",
+        action="store_true",
+        help="Rewrite only pages with an explicit topic-native model.",
+    )
+    parser.add_argument(
+        "--render-only",
+        action="store_true",
+        help="Regenerate Markdown from existing JSON without changing page data.",
+    )
     args = parser.parse_args()
     count = 0
     for path in sorted(args.pages_dir.glob("*.json")):
+        if args.render_only:
+            write_text(path.with_suffix(".md"), render_markdown(load_json(path)))
+            count += 1
+            continue
+        if args.only_overrides and path.stem not in TOPIC_PUBLIC_OVERRIDES:
+            continue
         if rewrite_page(path):
             count += 1
-    print(json.dumps({"pages_dir": str(args.pages_dir), "rewritten": count}, indent=2))
+    print(
+        json.dumps(
+            {
+                "pages_dir": str(args.pages_dir),
+                "rendered" if args.render_only else "rewritten": count,
+            },
+            indent=2,
+        )
+    )
 
 
 if __name__ == "__main__":

@@ -3,9 +3,6 @@
 ## Evidence Status
 Quantum information science can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum information science is an interdisciplinary field that combines the principles of quantum mechanics, information theory, and computer science to explore how quantum phenomena can be harnessed for the processing, analysis, and transmission of information. Quantum information science covers both theoretical and experimental aspects of quantum physics, including the limits of what can be achieved with quantum information.
-
 ## Formal Role
 In quantum-mechanical terms, quantum information science is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through wave function or superposition, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, quantum information science is described by a two-d
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.561
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.535
-- [2105.11733](https://arxiv.org/abs/2105.11733) — score 0.533
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.531
-- [cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470) — score 0.530
-- [1507.08248](https://arxiv.org/abs/1507.08248) — score 0.529
-- [0801.3568](https://arxiv.org/abs/0801.3568) — score 0.526
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.524
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.521
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.520
-
----
-Wikipedia scaffold: [Quantum information science](https://en.wikipedia.org/wiki/Quantum_information_science) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

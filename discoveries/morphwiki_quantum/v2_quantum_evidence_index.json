@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "report_type": "morphwiki_quantum_v2_evidence_index",
   "readiness": "usable",
-  "generated_at": "2026-07-08T13:35:18.656381+00:00",
+  "generated_at": "2026-08-31T17:22:38.352993+00:00",
   "root": "discoveries/morphwiki_quantum",
   "v2_root": "discoveries/morphwiki_quantum/v2_language",
   "artifacts": {
@@ -14,11 +14,11 @@
       "claim_scope": "Enrichment audit for a derived V2 apparatus basin using source-card/V2-row alignments. It tests whether the target basin is enriched for marker families; it does not prove physical equivalence or that all rows in the basin are Abelian mechanisms."
     },
     "gamma_bridges": {
-      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_gamma_bridges.json",
+      "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_gamma_bridge_alphabet.json",
       "available": true,
-      "report_type": "operator_substrate_v2_gamma_bridge_candidates",
+      "report_type": "operator_substrate_v2_gamma_bridge_alphabet",
       "readiness": "usable",
-      "claim_scope": "Gamma bridge candidates are learned from V2 transfer roads and typed operator/substrate evidence. They are bridge-family candidates, not proof of physical equivalence and not a solved global Gromov-Wasserstein transport plan."
+      "claim_scope": "Gamma tokens are bridge-family codewords learned from V2 transfer-bridge candidate features. They are not proof of physical equivalence and do not by themselves solve a global GW transport plan."
     },
     "grammar_rules": {
       "path": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
@@ -218,6 +218,7 @@
     }
   },
   "artifact_paths": {
+    "source_cards_jsonl": "/Users/vbaulin/antigr/KnowledgeParser/discoveries/source_equation_cards_lhc_full.jsonl",
     "hierarchical_language": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_hierarchical_language.json",
     "symbolic_language": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_symbolic_language.json",
     "symbolic_full_assignment": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_symbolic_full_assignment.json",
@@ -226,21 +227,32 @@
     "source_card_alignment": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_card_alignment.json",
     "source_card_alignment_jsonl": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_source_card_alignment.jsonl",
     "v2_dag": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_v2_dag.json",
-    "gamma_bridges": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_gamma_bridges.json",
+    "gamma_bridges": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_gamma_bridge_alphabet.json",
     "readout_application_coverage": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_readout_application_coverage.json",
     "apparatus_basin_a00": "discoveries/morphwiki_quantum/v2_language/operator_substrate_v2_full_radius4_apparatus_basin_A00_audit.json"
+  },
+  "source_card_enrichment": {
+    "requested_cards": 37,
+    "matched_cards": 0
   },
   "coverage": {
     "pages_total": 147,
     "pages_with_legacy_witnesses": 147,
-    "pages_with_v2_source_grounding": 112,
+    "pages_with_v2_identifier_links": 112,
+    "pages_with_v2_source_grounding": 0,
     "pages_with_v2_row_ids": 112,
-    "page_v2_grounding_rate": 0.7619047619047619,
+    "page_v2_identifier_link_rate": 0.7619047619047619,
+    "page_v2_grounding_rate": 0.0,
     "page_v2_row_rate": 0.7619047619047619
   },
   "pages": {
     "ads_cft_correspondence": {
       "title": "AdS/CFT correspondence",
+      "topic_terms": [
+        "ads",
+        "cft",
+        "correspondence"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -282,6 +294,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -292,6 +305,11 @@
     },
     "angular_momentum_operator": {
       "title": "Angular momentum operator",
+      "topic_terms": [
+        "angular",
+        "momentum",
+        "operator"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -331,9 +349,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -487,6 +506,7 @@
     },
     "applications_of_quantum_mechanics": {
       "title": "Applications of quantum mechanics",
+      "topic_terms": [],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -527,9 +547,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -683,6 +704,10 @@
     },
     "bell_s_theorem": {
       "title": "Bell's theorem",
+      "topic_terms": [
+        "bell",
+        "theorem"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -723,6 +748,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -733,6 +759,10 @@
     },
     "born_rule": {
       "title": "Born rule",
+      "topic_terms": [
+        "born",
+        "rule"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -772,9 +802,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -937,6 +968,11 @@
     },
     "bose_einstein_statistics": {
       "title": "Bose–Einstein statistics",
+      "topic_terms": [
+        "bose",
+        "einstein",
+        "statistics"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -982,9 +1018,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 26,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         385408,
         385409,
@@ -1164,6 +1201,9 @@
     },
     "boson": {
       "title": "Boson",
+      "topic_terms": [
+        "boson"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0802.2568",
@@ -1205,9 +1245,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 19,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         3680575,
         3680579,
@@ -1370,6 +1411,11 @@
     },
     "canonical_commutation_relation": {
       "title": "Canonical commutation relation",
+      "topic_terms": [
+        "canonical",
+        "commutation",
+        "relation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -1408,9 +1454,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 23,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6088618,
         6088619,
@@ -1577,6 +1624,9 @@
     },
     "coherence_physics": {
       "title": "Coherence (physics)",
+      "topic_terms": [
+        "coherence"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -1619,9 +1669,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 10,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -1778,6 +1829,9 @@
     },
     "commutator": {
       "title": "Commutator",
+      "topic_terms": [
+        "commutator"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.0837",
@@ -1817,9 +1871,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 168,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         1175869,
         1175870,
@@ -2063,6 +2118,12 @@
     },
     "creation_and_annihilation_operators": {
       "title": "Creation and annihilation operators",
+      "topic_terms": [
+        "and",
+        "annihilation",
+        "creation",
+        "operators"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0803.1572",
@@ -2100,9 +2161,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 28,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6088618,
         6088619,
@@ -2271,6 +2333,10 @@
     },
     "david_hilbert": {
       "title": "David Hilbert",
+      "topic_terms": [
+        "david",
+        "hilbert"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -2311,9 +2377,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -2479,6 +2546,12 @@
     },
     "delayed_choice_quantum_eraser": {
       "title": "Delayed-choice quantum eraser",
+      "topic_terms": [
+        "choice",
+        "delayed",
+        "delayed-choice",
+        "eraser"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -2521,6 +2594,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -2531,6 +2605,10 @@
     },
     "density_matrix": {
       "title": "Density matrix",
+      "topic_terms": [
+        "density",
+        "matrix"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -2570,9 +2648,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -2746,6 +2825,10 @@
     },
     "dirac_equation": {
       "title": "Dirac equation",
+      "topic_terms": [
+        "dirac",
+        "equation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -2786,6 +2869,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -2796,6 +2880,11 @@
     },
     "eigenvalues_and_eigenvectors": {
       "title": "Eigenvalues and eigenvectors",
+      "topic_terms": [
+        "and",
+        "eigenvalues",
+        "eigenvectors"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -2840,9 +2929,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 16,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -3011,6 +3101,12 @@
     },
     "einstein_podolsky_rosen_paradox": {
       "title": "Einstein–Podolsky–Rosen paradox",
+      "topic_terms": [
+        "einstein",
+        "paradox",
+        "podolsky",
+        "rosen"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0807.4020",
@@ -3050,6 +3146,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -3060,6 +3157,9 @@
     },
     "electron": {
       "title": "Electron",
+      "topic_terms": [
+        "electron"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -3099,9 +3199,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -3255,6 +3356,10 @@
     },
     "electron_microscope": {
       "title": "Electron microscope",
+      "topic_terms": [
+        "electron",
+        "microscope"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -3298,9 +3403,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 40,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -3494,6 +3600,11 @@
     },
     "erwin_schr_dinger": {
       "title": "Erwin Schrödinger",
+      "topic_terms": [
+        "dinger",
+        "erwin",
+        "schr"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -3535,6 +3646,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -3545,6 +3657,11 @@
     },
     "fermi_dirac_statistics": {
       "title": "Fermi–Dirac statistics",
+      "topic_terms": [
+        "dirac",
+        "fermi",
+        "statistics"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -3587,6 +3704,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -3597,6 +3715,9 @@
     },
     "fermion": {
       "title": "Fermion",
+      "topic_terms": [
+        "fermion"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0806.4515",
@@ -3637,6 +3758,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -3647,6 +3769,10 @@
     },
     "fock_space": {
       "title": "Fock space",
+      "topic_terms": [
+        "fock",
+        "space"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3447",
@@ -3691,9 +3817,10 @@
         "quant-ph0205159",
         "quant-ph0407176"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 32,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         385408,
         385409,
@@ -3882,6 +4009,10 @@
     },
     "fourier_transform": {
       "title": "Fourier transform",
+      "topic_terms": [
+        "fourier",
+        "transform"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0908.0752",
@@ -3918,9 +4049,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 32,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4158670,
         4158671,
@@ -4089,6 +4221,9 @@
     },
     "gauge_theory": {
       "title": "Gauge theory",
+      "topic_terms": [
+        "gauge"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -4131,9 +4266,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -4296,6 +4432,9 @@
     },
     "hamiltonian_mechanics": {
       "title": "Hamiltonian mechanics",
+      "topic_terms": [
+        "hamiltonian"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -4336,9 +4475,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -4504,6 +4644,9 @@
     },
     "hamiltonian_quantum_mechanics": {
       "title": "Hamiltonian (quantum mechanics)",
+      "topic_terms": [
+        "hamiltonian"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -4546,6 +4689,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -4556,6 +4700,10 @@
     },
     "heisenberg_group": {
       "title": "Heisenberg group",
+      "topic_terms": [
+        "group",
+        "heisenberg"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -4596,9 +4744,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -4764,6 +4913,10 @@
     },
     "heisenberg_picture": {
       "title": "Heisenberg picture",
+      "topic_terms": [
+        "heisenberg",
+        "picture"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -4803,9 +4956,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -4971,6 +5125,10 @@
     },
     "hilbert_space": {
       "title": "Hilbert space",
+      "topic_terms": [
+        "hilbert",
+        "space"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3447",
@@ -5013,9 +5171,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 32,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         385408,
         385409,
@@ -5204,6 +5363,10 @@
     },
     "history_of_quantum_field_theory": {
       "title": "History of quantum field theory",
+      "topic_terms": [
+        "field",
+        "history"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -5244,6 +5407,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -5254,6 +5418,9 @@
     },
     "history_of_quantum_mechanics": {
       "title": "History of quantum mechanics",
+      "topic_terms": [
+        "history"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -5293,9 +5460,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -5458,6 +5626,9 @@
     },
     "interpretations_of_quantum_mechanics": {
       "title": "Interpretations of quantum mechanics",
+      "topic_terms": [
+        "interpretations"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -5498,6 +5669,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -5508,6 +5680,7 @@
     },
     "introduction_to_quantum_mechanics": {
       "title": "Introduction to quantum mechanics",
+      "topic_terms": [],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -5548,6 +5721,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -5558,6 +5732,9 @@
     },
     "introduction_to_quantum_mechanics_book": {
       "title": "Introduction to Quantum Mechanics (book)",
+      "topic_terms": [
+        "book"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -5598,9 +5775,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 11,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4200130,
         4200133,
@@ -5753,6 +5931,11 @@
     },
     "klein_gordon_equation": {
       "title": "Klein–Gordon equation",
+      "topic_terms": [
+        "equation",
+        "gordon",
+        "klein"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -5793,6 +5976,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -5803,6 +5987,10 @@
     },
     "loop_quantum_gravity": {
       "title": "Loop quantum gravity",
+      "topic_terms": [
+        "gravity",
+        "loop"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -5843,9 +6031,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -6008,6 +6197,10 @@
     },
     "macroscopic_quantum_phenomena": {
       "title": "Macroscopic quantum phenomena",
+      "topic_terms": [
+        "macroscopic",
+        "phenomena"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -6050,6 +6243,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -6060,6 +6254,7 @@
     },
     "mathematical_formulation_of_quantum_mechanics": {
       "title": "Mathematical formulation of quantum mechanics",
+      "topic_terms": [],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -6098,9 +6293,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -6263,6 +6459,9 @@
     },
     "measurement_in_quantum_mechanics": {
       "title": "Measurement in quantum mechanics",
+      "topic_terms": [
+        "measurement"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -6300,9 +6499,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -6456,6 +6656,10 @@
     },
     "measurement_problem": {
       "title": "Measurement problem",
+      "topic_terms": [
+        "measurement",
+        "problem"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0807.4020",
@@ -6497,6 +6701,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -6507,6 +6712,7 @@
     },
     "modern_quantum_mechanics": {
       "title": "Modern Quantum Mechanics",
+      "topic_terms": [],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -6550,9 +6756,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -6715,6 +6922,9 @@
     },
     "observable": {
       "title": "Observable",
+      "topic_terms": [
+        "observable"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -6753,9 +6963,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -6909,6 +7120,9 @@
     },
     "old_quantum_theory": {
       "title": "Old quantum theory",
+      "topic_terms": [
+        "old"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -6948,9 +7162,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -7104,6 +7319,9 @@
     },
     "operator_physics": {
       "title": "Operator (physics)",
+      "topic_terms": [
+        "operator"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -7145,9 +7363,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -7271,6 +7490,9 @@
     },
     "operator_theory": {
       "title": "Operator theory",
+      "topic_terms": [
+        "operator"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -7312,9 +7534,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -7488,6 +7711,10 @@
     },
     "particle_in_a_box": {
       "title": "Particle in a box",
+      "topic_terms": [
+        "box",
+        "particle"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -7529,9 +7756,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -7697,6 +7925,10 @@
     },
     "path_integral": {
       "title": "Path integral",
+      "topic_terms": [
+        "integral",
+        "path"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -7736,9 +7968,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -7892,6 +8125,10 @@
     },
     "path_integral_formulation": {
       "title": "Path integral formulation",
+      "topic_terms": [
+        "integral",
+        "path"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -7930,9 +8167,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -8056,6 +8294,10 @@
     },
     "pauli_matrices": {
       "title": "Pauli matrices",
+      "topic_terms": [
+        "matrices",
+        "pauli"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -8096,9 +8338,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 46,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -8301,6 +8544,9 @@
     },
     "perturbation_theory": {
       "title": "Perturbation theory",
+      "topic_terms": [
+        "perturbation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -8344,9 +8590,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 40,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -8540,6 +8787,9 @@
     },
     "perturbation_theory_quantum_mechanics": {
       "title": "Perturbation theory (quantum mechanics)",
+      "topic_terms": [
+        "perturbation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -8579,9 +8829,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -8735,6 +8986,9 @@
     },
     "photon": {
       "title": "Photon",
+      "topic_terms": [
+        "photon"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -8775,9 +9029,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -8940,6 +9195,10 @@
     },
     "potential_well": {
       "title": "Potential well",
+      "topic_terms": [
+        "potential",
+        "well"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -8981,9 +9240,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 40,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -9177,6 +9437,9 @@
     },
     "povm": {
       "title": "POVM",
+      "topic_terms": [
+        "povm"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -9219,9 +9482,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -9384,6 +9648,12 @@
     },
     "projection_valued_measure": {
       "title": "Projection-valued measure",
+      "topic_terms": [
+        "measure",
+        "projection",
+        "projection-valued",
+        "valued"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -9427,9 +9697,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -9603,6 +9874,9 @@
     },
     "qbism": {
       "title": "QBism",
+      "topic_terms": [
+        "qbism"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -9643,6 +9917,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -9653,6 +9928,9 @@
     },
     "quantum_algorithm": {
       "title": "Quantum algorithm",
+      "topic_terms": [
+        "algorithm"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -9690,9 +9968,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -9846,6 +10125,9 @@
     },
     "quantum_amplifier": {
       "title": "Quantum amplifier",
+      "topic_terms": [
+        "amplifier"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -9884,9 +10166,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -10040,6 +10323,9 @@
     },
     "quantum_biology": {
       "title": "Quantum biology",
+      "topic_terms": [
+        "biology"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -10080,6 +10366,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -10090,6 +10377,9 @@
     },
     "quantum_bus": {
       "title": "Quantum bus",
+      "topic_terms": [
+        "bus"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -10133,9 +10423,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 34,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8136990,
         8136991,
@@ -10321,6 +10612,10 @@
     },
     "quantum_cellular_automaton": {
       "title": "Quantum cellular automaton",
+      "topic_terms": [
+        "automaton",
+        "cellular"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -10360,9 +10655,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 11,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4200130,
         4200133,
@@ -10515,6 +10811,9 @@
     },
     "quantum_channel": {
       "title": "Quantum channel",
+      "topic_terms": [
+        "channel"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -10552,9 +10851,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -10708,6 +11008,9 @@
     },
     "quantum_chaos": {
       "title": "Quantum chaos",
+      "topic_terms": [
+        "chaos"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -10750,9 +11053,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -10915,6 +11219,9 @@
     },
     "quantum_chemistry": {
       "title": "Quantum chemistry",
+      "topic_terms": [
+        "chemistry"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -10958,9 +11265,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -11123,6 +11431,9 @@
     },
     "quantum_chromodynamics": {
       "title": "Quantum chromodynamics",
+      "topic_terms": [
+        "chromodynamics"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -11164,6 +11475,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -11174,6 +11486,9 @@
     },
     "quantum_circuit": {
       "title": "Quantum circuit",
+      "topic_terms": [
+        "circuit"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -11214,9 +11529,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 46,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -11419,6 +11735,9 @@
     },
     "quantum_complexity_theory": {
       "title": "Quantum complexity theory",
+      "topic_terms": [
+        "complexity"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -11459,9 +11778,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 19,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         3680575,
         3680579,
@@ -11624,6 +11944,9 @@
     },
     "quantum_computing": {
       "title": "Quantum computing",
+      "topic_terms": [
+        "computing"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -11662,9 +11985,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 2,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901
@@ -11713,6 +12037,10 @@
     },
     "quantum_computing_a_gentle_introduction": {
       "title": "Quantum Computing: A Gentle Introduction",
+      "topic_terms": [
+        "computing",
+        "gentle"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0806.4515",
@@ -11755,6 +12083,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -11765,6 +12094,9 @@
     },
     "quantum_cosmology": {
       "title": "Quantum cosmology",
+      "topic_terms": [
+        "cosmology"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0707.2274",
@@ -11804,9 +12136,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 11,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4200130,
         4200133,
@@ -11959,6 +12292,9 @@
     },
     "quantum_cryptography": {
       "title": "Quantum cryptography",
+      "topic_terms": [
+        "cryptography"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -11998,9 +12334,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -12163,6 +12500,9 @@
     },
     "quantum_decoherence": {
       "title": "Quantum decoherence",
+      "topic_terms": [
+        "decoherence"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -12202,9 +12542,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -12328,6 +12669,10 @@
     },
     "quantum_differential_calculus": {
       "title": "Quantum differential calculus",
+      "topic_terms": [
+        "calculus",
+        "differential"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -12368,9 +12713,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -12524,6 +12870,9 @@
     },
     "quantum_dynamics": {
       "title": "Quantum dynamics",
+      "topic_terms": [
+        "dynamics"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -12563,9 +12912,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -12689,6 +13039,9 @@
     },
     "quantum_electrodynamics": {
       "title": "Quantum electrodynamics",
+      "topic_terms": [
+        "electrodynamics"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0803.1791",
@@ -12732,6 +13085,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -12742,6 +13096,9 @@
     },
     "quantum_engineering": {
       "title": "Quantum engineering",
+      "topic_terms": [
+        "engineering"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0707.2274",
@@ -12782,9 +13139,10 @@
         "quant-ph0205159",
         "quant-ph0312187"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 11,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4200130,
         4200133,
@@ -12937,6 +13295,9 @@
     },
     "quantum_entanglement": {
       "title": "Quantum entanglement",
+      "topic_terms": [
+        "entanglement"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -12976,6 +13337,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -12986,6 +13348,10 @@
     },
     "quantum_eraser_experiment": {
       "title": "Quantum eraser experiment",
+      "topic_terms": [
+        "eraser",
+        "experiment"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -13028,9 +13394,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 10,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -13187,6 +13554,10 @@
     },
     "quantum_error_correction": {
       "title": "Quantum error correction",
+      "topic_terms": [
+        "correction",
+        "error"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -13224,9 +13595,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -13380,6 +13752,9 @@
     },
     "quantum_field_theory": {
       "title": "Quantum field theory",
+      "topic_terms": [
+        "field"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -13421,6 +13796,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -13431,6 +13807,10 @@
     },
     "quantum_finite_automaton": {
       "title": "Quantum finite automaton",
+      "topic_terms": [
+        "automaton",
+        "finite"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -13472,6 +13852,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -13482,6 +13863,9 @@
     },
     "quantum_fluctuation": {
       "title": "Quantum fluctuation",
+      "topic_terms": [
+        "fluctuation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0908.0752",
@@ -13517,9 +13901,10 @@
         "2501.12451",
         "2506.01765"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 47,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4158670,
         4158671,
@@ -13701,6 +14086,9 @@
     },
     "quantum_geometry": {
       "title": "Quantum geometry",
+      "topic_terms": [
+        "geometry"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -13744,9 +14132,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 18,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         7869970,
         7869971,
@@ -13916,6 +14305,9 @@
     },
     "quantum_gravity": {
       "title": "Quantum gravity",
+      "topic_terms": [
+        "gravity"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -13956,6 +14348,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -13966,6 +14359,10 @@
     },
     "quantum_harmonic_oscillator": {
       "title": "Quantum harmonic oscillator",
+      "topic_terms": [
+        "harmonic",
+        "oscillator"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -14005,9 +14402,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -14173,6 +14571,10 @@
     },
     "quantum_image_processing": {
       "title": "Quantum image processing",
+      "topic_terms": [
+        "image",
+        "processing"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.0837",
@@ -14213,9 +14615,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 168,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         1175869,
         1175870,
@@ -14459,6 +14862,9 @@
     },
     "quantum_imaging": {
       "title": "Quantum imaging",
+      "topic_terms": [
+        "imaging"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -14498,9 +14904,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -14654,6 +15061,9 @@
     },
     "quantum_information": {
       "title": "Quantum information",
+      "topic_terms": [
+        "information"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -14693,9 +15103,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -14858,6 +15269,10 @@
     },
     "quantum_information_science": {
       "title": "Quantum information science",
+      "topic_terms": [
+        "information",
+        "science"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -14899,9 +15314,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 10,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -15058,6 +15474,9 @@
     },
     "quantum_jump": {
       "title": "Quantum jump",
+      "topic_terms": [
+        "jump"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -15098,9 +15517,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 40,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -15294,6 +15714,10 @@
     },
     "quantum_key_distribution": {
       "title": "Quantum key distribution",
+      "topic_terms": [
+        "distribution",
+        "key"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -15336,9 +15760,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -15512,6 +15937,9 @@
     },
     "quantum_logic": {
       "title": "Quantum logic",
+      "topic_terms": [
+        "logic"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -15550,9 +15978,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -15715,6 +16144,10 @@
     },
     "quantum_logic_gate": {
       "title": "Quantum logic gate",
+      "topic_terms": [
+        "gate",
+        "logic"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -15756,9 +16189,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -15921,6 +16355,9 @@
     },
     "quantum_machine": {
       "title": "Quantum machine",
+      "topic_terms": [
+        "machine"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -15961,9 +16398,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 36,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -16150,6 +16588,10 @@
     },
     "quantum_machine_learning": {
       "title": "Quantum machine learning",
+      "topic_terms": [
+        "learning",
+        "machine"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -16188,9 +16630,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -16314,6 +16757,7 @@
     },
     "quantum_mechanics": {
       "title": "Quantum mechanics",
+      "topic_terms": [],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -16355,6 +16799,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -16365,6 +16810,9 @@
     },
     "quantum_metamaterial": {
       "title": "Quantum metamaterial",
+      "topic_terms": [
+        "metamaterial"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0707.2274",
@@ -16404,9 +16852,10 @@
         "quant-ph0205159",
         "quant-ph0312187"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 11,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4200130,
         4200133,
@@ -16559,6 +17008,9 @@
     },
     "quantum_metrology": {
       "title": "Quantum metrology",
+      "topic_terms": [
+        "metrology"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -16597,9 +17049,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -16753,6 +17206,9 @@
     },
     "quantum_mind": {
       "title": "Quantum mind",
+      "topic_terms": [
+        "mind"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -16792,9 +17248,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 10,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -16951,6 +17408,9 @@
     },
     "quantum_mysticism": {
       "title": "Quantum mysticism",
+      "topic_terms": [
+        "mysticism"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0707.0556",
@@ -16988,9 +17448,10 @@
         "hep-ph/9808365",
         "hep-ph9808365"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 62,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4158670,
         4158671,
@@ -17190,6 +17651,9 @@
     },
     "quantum_network": {
       "title": "Quantum network",
+      "topic_terms": [
+        "network"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -17229,9 +17693,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -17385,6 +17850,10 @@
     },
     "quantum_neural_network": {
       "title": "Quantum neural network",
+      "topic_terms": [
+        "network",
+        "neural"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -17424,9 +17893,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 40,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -17620,6 +18090,9 @@
     },
     "quantum_nonlocality": {
       "title": "Quantum nonlocality",
+      "topic_terms": [
+        "nonlocality"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -17659,9 +18132,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 2,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901
@@ -17710,6 +18184,9 @@
     },
     "quantum_number": {
       "title": "Quantum number",
+      "topic_terms": [
+        "number"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -17748,9 +18225,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -17874,6 +18352,9 @@
     },
     "quantum_optics": {
       "title": "Quantum optics",
+      "topic_terms": [
+        "optics"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -17913,9 +18394,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -18069,6 +18551,9 @@
     },
     "quantum_programming": {
       "title": "Quantum programming",
+      "topic_terms": [
+        "programming"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -18107,9 +18592,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 38,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -18301,6 +18787,9 @@
     },
     "quantum_sensor": {
       "title": "Quantum sensor",
+      "topic_terms": [
+        "sensor"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -18339,9 +18828,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -18495,6 +18985,9 @@
     },
     "quantum_simulator": {
       "title": "Quantum simulator",
+      "topic_terms": [
+        "simulator"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -18534,9 +19027,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -18660,6 +19154,9 @@
     },
     "quantum_spacetime": {
       "title": "Quantum spacetime",
+      "topic_terms": [
+        "spacetime"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0908.0752",
@@ -18694,9 +19191,10 @@
         "2503.11862",
         "2506.01765"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 33,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         4158670,
         4158671,
@@ -18867,6 +19365,9 @@
     },
     "quantum_state": {
       "title": "Quantum state",
+      "topic_terms": [
+        "state"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -18907,6 +19408,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -18917,6 +19419,9 @@
     },
     "quantum_statistical_mechanics": {
       "title": "Quantum statistical mechanics",
+      "topic_terms": [
+        "statistical"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -18959,9 +19464,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -19135,6 +19641,10 @@
     },
     "quantum_stochastic_calculus": {
       "title": "Quantum stochastic calculus",
+      "topic_terms": [
+        "calculus",
+        "stochastic"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -19173,9 +19683,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 14,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -19341,6 +19852,9 @@
     },
     "quantum_superposition": {
       "title": "Quantum superposition",
+      "topic_terms": [
+        "superposition"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -19378,9 +19892,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -19534,6 +20049,9 @@
     },
     "quantum_teleportation": {
       "title": "Quantum teleportation",
+      "topic_terms": [
+        "teleportation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -19574,9 +20092,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 10,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -19733,6 +20252,11 @@
     },
     "quantum_theory_concepts_and_methods": {
       "title": "Quantum Theory: Concepts and Methods",
+      "topic_terms": [
+        "and",
+        "concepts",
+        "methods"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -19771,9 +20295,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -19897,6 +20422,9 @@
     },
     "quantum_tunnelling": {
       "title": "Quantum tunnelling",
+      "topic_terms": [
+        "tunnelling"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -19938,9 +20466,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -20114,6 +20643,9 @@
     },
     "qubit": {
       "title": "Qubit",
+      "topic_terms": [
+        "qubit"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -20153,9 +20685,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -20329,6 +20862,9 @@
     },
     "relational_quantum_mechanics": {
       "title": "Relational quantum mechanics",
+      "topic_terms": [
+        "relational"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -20370,9 +20906,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 10,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         6119900,
         6119901,
@@ -20529,6 +21066,9 @@
     },
     "relativistic_quantum_mechanics": {
       "title": "Relativistic quantum mechanics",
+      "topic_terms": [
+        "relativistic"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -20570,6 +21110,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -20580,6 +21121,9 @@
     },
     "renormalization": {
       "title": "Renormalization",
+      "topic_terms": [
+        "renormalization"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -20620,9 +21164,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -20776,6 +21321,10 @@
     },
     "s_matrix": {
       "title": "S-matrix",
+      "topic_terms": [
+        "matrix",
+        "s-matrix"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -20815,9 +21364,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -20941,6 +21491,9 @@
     },
     "scattering": {
       "title": "Scattering",
+      "topic_terms": [
+        "scattering"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -20980,6 +21533,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -20990,6 +21544,11 @@
     },
     "schr_dinger_equation": {
       "title": "Schrödinger equation",
+      "topic_terms": [
+        "dinger",
+        "equation",
+        "schr"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -21030,9 +21589,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -21156,6 +21716,11 @@
     },
     "schr_dinger_picture": {
       "title": "Schrödinger picture",
+      "topic_terms": [
+        "dinger",
+        "picture",
+        "schr"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -21198,6 +21763,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -21208,6 +21774,11 @@
     },
     "schr_dinger_s_cat": {
       "title": "Schrödinger's cat",
+      "topic_terms": [
+        "cat",
+        "dinger",
+        "schr"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -21248,6 +21819,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -21258,6 +21830,12 @@
     },
     "self_adjoint_operator": {
       "title": "Self-adjoint operator",
+      "topic_terms": [
+        "adjoint",
+        "operator",
+        "self",
+        "self-adjoint"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -21300,9 +21878,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -21476,6 +22055,10 @@
     },
     "spectral_line": {
       "title": "Spectral line",
+      "topic_terms": [
+        "line",
+        "spectral"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0709.4575",
@@ -21516,9 +22099,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -21672,6 +22256,9 @@
     },
     "spectral_theory": {
       "title": "Spectral theory",
+      "topic_terms": [
+        "spectral"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -21712,9 +22299,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 46,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -21917,6 +22505,10 @@
     },
     "spin_foam": {
       "title": "Spin foam",
+      "topic_terms": [
+        "foam",
+        "spin"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -21956,9 +22548,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 40,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -22152,6 +22745,10 @@
     },
     "spin_network": {
       "title": "Spin network",
+      "topic_terms": [
+        "network",
+        "spin"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -22194,9 +22791,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -22370,6 +22968,9 @@
     },
     "spin_physics": {
       "title": "Spin (physics)",
+      "topic_terms": [
+        "spin"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -22408,9 +23009,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -22534,6 +23136,10 @@
     },
     "standard_model": {
       "title": "Standard Model",
+      "topic_terms": [
+        "model",
+        "standard"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -22575,6 +23181,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -22585,6 +23192,9 @@
     },
     "string_theory": {
       "title": "String theory",
+      "topic_terms": [
+        "string"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -22627,9 +23237,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -22803,6 +23414,10 @@
     },
     "superposition_principle": {
       "title": "Superposition principle",
+      "topic_terms": [
+        "principle",
+        "superposition"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -22844,9 +23459,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -23009,6 +23625,9 @@
     },
     "symmetry_in_quantum_mechanics": {
       "title": "Symmetry in quantum mechanics",
+      "topic_terms": [
+        "symmetry"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -23047,9 +23666,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -23223,6 +23843,10 @@
     },
     "the_quantum_universe": {
       "title": "The Quantum Universe",
+      "topic_terms": [
+        "the",
+        "universe"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0707.0556",
@@ -23261,9 +23885,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 30,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         5041164,
         5041165,
@@ -23436,6 +24061,9 @@
     },
     "transformation_theory_quantum_mechanics": {
       "title": "Transformation theory (quantum mechanics)",
+      "topic_terms": [
+        "transformation"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -23478,9 +24106,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -23654,6 +24283,11 @@
     },
     "two_state_quantum_system": {
       "title": "Two-state quantum system",
+      "topic_terms": [
+        "state",
+        "two",
+        "two-state"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -23696,9 +24330,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -23872,6 +24507,10 @@
     },
     "uncertainty_principle": {
       "title": "Uncertainty principle",
+      "topic_terms": [
+        "principle",
+        "uncertainty"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0801.3568",
@@ -23910,9 +24549,10 @@
         "quant-ph0205159",
         "quant-ph0607206"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 8,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         8672341,
         8672342,
@@ -24066,6 +24706,10 @@
     },
     "unitary_operator": {
       "title": "Unitary operator",
+      "topic_terms": [
+        "operator",
+        "unitary"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -24108,9 +24752,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 20,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -24284,6 +24929,11 @@
     },
     "von_neumann_algebra": {
       "title": "Von Neumann algebra",
+      "topic_terms": [
+        "algebra",
+        "neumann",
+        "von"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -24323,9 +24973,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 12,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -24488,6 +25139,10 @@
     },
     "wave_function": {
       "title": "Wave function",
+      "topic_terms": [
+        "function",
+        "wave"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0908.0752",
@@ -24528,6 +25183,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -24538,6 +25194,11 @@
     },
     "wave_function_collapse": {
       "title": "Wave function collapse",
+      "topic_terms": [
+        "collapse",
+        "function",
+        "wave"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -24580,6 +25241,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -24590,6 +25252,10 @@
     },
     "wave_interference": {
       "title": "Wave interference",
+      "topic_terms": [
+        "interference",
+        "wave"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0704.1051",
@@ -24628,9 +25294,10 @@
         "quant-ph/0205159",
         "quant-ph0205159"
       ],
-      "status": "v2_source_grounded",
+      "status": "v2_identifier_linked",
       "matched_alignment_records": 6,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [
         940935,
         940939,
@@ -24754,6 +25421,11 @@
     },
     "wave_particle_duality": {
       "title": "Wave–particle duality",
+      "topic_terms": [
+        "duality",
+        "particle",
+        "wave"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -24794,6 +25466,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -24804,6 +25477,10 @@
     },
     "werner_heisenberg": {
       "title": "Werner Heisenberg",
+      "topic_terms": [
+        "heisenberg",
+        "werner"
+      ],
       "legacy_witness_count": 32,
       "legacy_arxiv_ids": [
         "0805.4565",
@@ -24844,6 +25521,7 @@
       "status": "legacy_witness_only",
       "matched_alignment_records": 0,
       "matched_source_examples": 0,
+      "topic_relevant_source_examples": 0,
       "matched_v2_row_ids": [],
       "matched_source_card_ids": [],
       "tokens": {},
@@ -24853,5 +25531,5 @@
       "max_examples": 8
     }
   },
-  "claim_scope": "Evidence adapter from MorphWiki quantum pages to transferred V2 language/source-card artifacts. It supports page-level grounding checks; it is not a public book chapter and not a physical validation result."
+  "claim_scope": "Evidence adapter from MorphWiki pages to transferred V2 source cards. Identifier overlap routes candidates; source grounding additionally requires a topic term in the equation section or local context. Physical validation remains separate."
 }

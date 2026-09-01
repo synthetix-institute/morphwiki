@@ -1007,26 +1007,26 @@
     "candidate_pool_size": 946
   },
   "morphwiki": {
-    "takeaway": "A creation and annihilation operators can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
+    "takeaway": "Creation and annihilation operators are the algebraic moves that change mode occupation; they are the mechanism by which fixed-particle quantum mechanics becomes field or many-body quantum theory.",
     "object_view": "Creation operators and annihilation operators are mathematical operators that have widespread applications in quantum mechanics, notably in the study of quantum harmonic oscillators and many-particle systems. An annihilation operator lowers the number of particles in a given state by one.",
-    "mechanism_view": "In quantum-mechanical terms, a creation and annihilation operators is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or commutator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or non-commuting observables.",
+    "mechanism_view": "This page is about the operation that moves a state between occupation sectors. A creation operator adds one quantum to a mode, an annihilation operator removes one, and their commutation or anticommutation relation selects bosonic or fermionic statistics. The number operator then supplies the spectral readout of occupation. The central mechanism is therefore sector-changing algebra, not a generic Hamiltonian question.",
     "what_this_adds": [
-      "The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.",
+      "The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.",
       "It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.",
-      "It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.",
-      "It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation."
+      "It treats non-commutativity as a constraint on which observables can share a spectral resolution.",
+      "It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations."
     ],
     "what_survives": [
-      "the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation",
-      "the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels",
-      "the dependence of admissible readout on measurement context or boundary condition",
-      "the non-commuting compatibility structure, which survives changes of representation"
+      "the relation between prepared states, observables, and spectral probability measures",
+      "the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations",
+      "the dependence of the readout on basis, domain, potential, preparation, or measurement context",
+      "the commutator structure that limits which observables can be jointly diagonalized"
     ],
     "what_changes": [
-      "the name of the carrier: particle, wave, field, qubit, or excitation",
-      "where time dependence is represented: on the state, on the operator, or in a path weight",
-      "the coordinate system, basis, or geometric picture used to display the same relation",
-      "the physical implementation of detector, boundary, preparation, or readout"
+      "the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation",
+      "the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields",
+      "where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight",
+      "the implementation of preparation, boundary condition, detector, or readout channel"
     ],
     "active_apparatus": [
       "Α11",
@@ -1053,47 +1053,53 @@
       "Ω16"
     ],
     "missing_experiments": [
-      "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
-      "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
+      "A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.",
+      "A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.",
+      "A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability."
     ],
     "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, state evolution / transport, non-commuting transformations, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
     "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
-      "Preparation or domain terms (context, preparation context, or measurement basis) determine which states are admissible.",
-      "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",
-      "Operator terms (Hamiltonian, commutator, or observable operator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.",
-      "Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.",
-      "The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.",
-      "Compatibility terms (commutator, uncertainty relation, or incompatible observable) mark cases where observables do not admit one common sharp readout basis."
+      "The mode basis defines the occupation sectors.",
+      "Creation and annihilation operators add or remove one quantum in a mode.",
+      "Commutation or anticommutation selects the particle statistics.",
+      "Number operators are constructed from creation-annihilation pairs.",
+      "The occupation spectrum is the readout."
     ],
-    "mathematical_skeleton": "B \\longmapsto \\rho_B \\quad \\text{(context specifies an admissible state)}\n\\rho_t = U_t \\rho_B U_t^\\dagger \\quad \\text{(unitary evolution from preparation to readout)}\nO = \\sum_i \\lambda_i P_i,\\quad p_i=\\operatorname{Tr}(P_i\\rho_t) \\quad \\text{(spectral probability measure)}\n[O_1,O_2]\\neq 0 \\quad \\text{(incompatible observables: no common sharp basis)}",
+    "mathematical_skeleton": "a_i^{\\dagger}|\\ldots,n_i,\\ldots\\rangle=\\sqrt{n_i+1}|\\ldots,n_i+1,\\ldots\\rangle\na_i|\\ldots,n_i,\\ldots\\rangle=\\sqrt{n_i}|\\ldots,n_i-1,\\ldots\\rangle\nN_i=a_i^{\\dagger}a_i",
     "grammar": {
       "state": [
-        "quantum state",
-        "wave function",
-        "density operator"
+        "occupation-number state",
+        "Fock state",
+        "mode state"
       ],
       "operator": [
-        "Hamiltonian",
-        "commutator"
+        "creation operator",
+        "annihilation operator",
+        "number operator"
       ],
       "spectrum": [
-        "eigenvalue",
-        "energy level",
-        "measurement outcome"
+        "occupation number",
+        "mode population"
       ],
       "boundary": [
-        "context"
+        "mode basis",
+        "statistics sector"
       ],
       "incompatibility": [
-        "commutator"
+        "commutation relation",
+        "anticommutation relation"
       ],
       "protocol": [
-        "unitary evolution",
-        "projection or measurement update",
-        "path integral weighting"
+        "add one quantum",
+        "remove one quantum",
+        "normal ordering"
       ]
     },
-    "llm_used": false
+    "llm_used": false,
+    "mathematical_skeleton_is_source_backed": false,
+    "mathematical_skeleton_is_topic_native": true,
+    "public_language_rewritten": true,
+    "public_language_rewritten_at": "2026-08-31T17:02:56.363775+00:00"
   }
 }

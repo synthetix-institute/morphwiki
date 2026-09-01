@@ -1,66 +1,41 @@
 # Heisenberg group
 
-**Derivation step:** Generator: lawful change before measurement
-
-## Topic Context
-
-In mathematics, the Heisenberg group , named after Werner Heisenberg, is the group of 3×3 upper triangular matrices of the form
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Heisenberg_group)
-
-## Role In The Derivation
-
-Heisenberg group belongs to the lawful-change step: it specifies how the state changes before a question is asked.
-
-## Why This Step Is Needed
-
-Heisenberg group separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
+**Physical domain:** Observables and spectra
 
 ## Mechanism
 
-This step specifies the Hamiltonian, action, channel, or other transformation that changes the state.
+Heisenberg group belongs to the question step: it turns a physical question into an operator with admissible answers.
 
-## How It Enters The Theory
+Heisenberg group states which physical question is being asked. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
 
-**Place in the construction.** Heisenberg group contributes a generator or transformation role to the quantum construction. This page is read first as a lawful-transport move: it identifies what changes the state before measurement.
+An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
 
-**State and operation.** A state vector, density operator, wave function, field state, or register on a specified domain. A Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state.
+## Physical Construction
 
-**Admissibility and prediction.** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
+The state carrier is an admissible quantum state space on which the physical quantity is represented. The governing operation is a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated observables are Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
 
 ## Representative Relation
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-The displayed relation should be read as a rule for transporting a state, not as a second definition of the state. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
 
-## What Remains Stable
+An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
 
-Heisenberg group specifies lawful change before measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+Heisenberg group defines the legal question being asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-A generator predicts a new state but not yet an experimental number. The next step selects an observable, whose spectrum and expectation values expose consequences of the dynamics.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation.
-- The short-time and classical limits identify whether the generator has the correct physical regime.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

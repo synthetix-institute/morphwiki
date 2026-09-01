@@ -1,13 +1,13 @@
 # MorphWiki Quantum V2 Evidence Index Audit
 
-- Readiness: `usable`
+- Readiness: `blocked`
 - Pages total: `147`
-- Pages with V2 source grounding: `112`
+- Pages with V2 source grounding: `0`
 - Pages with V2 row ids: `112`
 
 ## Status Counts
 - `legacy_witness_only`: `35`
-- `v2_source_grounded`: `112`
+- `v2_identifier_linked`: `112`
 
 ## Top Constructor Roles
 
@@ -15,40 +15,40 @@
 
 ## Pages Still Needing V2 Source Grounding
 - `ads_cft_correspondence`
+- `angular_momentum_operator`
+- `applications_of_quantum_mechanics`
 - `bell_s_theorem`
+- `born_rule`
+- `bose_einstein_statistics`
+- `boson`
+- `canonical_commutation_relation`
+- `coherence_physics`
+- `commutator`
+- `creation_and_annihilation_operators`
+- `david_hilbert`
 - `delayed_choice_quantum_eraser`
+- `density_matrix`
 - `dirac_equation`
+- `eigenvalues_and_eigenvectors`
 - `einstein_podolsky_rosen_paradox`
+- `electron`
+- `electron_microscope`
 - `erwin_schr_dinger`
 - `fermi_dirac_statistics`
 - `fermion`
+- `fock_space`
+- `fourier_transform`
+- `gauge_theory`
+- `hamiltonian_mechanics`
 - `hamiltonian_quantum_mechanics`
-- `history_of_quantum_field_theory`
-- `interpretations_of_quantum_mechanics`
-- `introduction_to_quantum_mechanics`
-- `klein_gordon_equation`
-- `macroscopic_quantum_phenomena`
-- `measurement_problem`
-- `qbism`
-- `quantum_biology`
-- `quantum_chromodynamics`
-- `quantum_computing_a_gentle_introduction`
-- `quantum_electrodynamics`
-- `quantum_entanglement`
-- `quantum_field_theory`
-- `quantum_finite_automaton`
-- `quantum_gravity`
-- `quantum_mechanics`
-- `quantum_state`
-- `relativistic_quantum_mechanics`
-- `scattering`
-- `schr_dinger_picture`
-- `schr_dinger_s_cat`
+- `heisenberg_group`
+- `heisenberg_picture`
+- `hilbert_space`
 
 ## Conclusions
-- Use the index as evidence routing, not as public language.
-- Pages without V2 source grounding should remain backed by legacy witnesses until full source-card alignment is transferred.
-- The book should translate supported roles into ordinary quantum language and avoid exposing internal token names by default.
+- Publish only equation witnesses confirmed by topic-level source-card alignment.
+- Identifier-linked candidates remain retrieval leads until their local equation context matches the topic.
+- A zero-grounding index is incomplete and cannot support public source citations.
 
 ## Scope
 Audit of the MorphWiki V2 evidence adapter. It measures grounding coverage and token/role support; it does not validate equation derivations.

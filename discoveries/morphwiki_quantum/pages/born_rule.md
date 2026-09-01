@@ -3,9 +3,6 @@
 ## Evidence Status
 the Born rule modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-The Born rule is a postulate of quantum mechanics that gives the probability that a measurement of a quantum system will yield a given result. In one commonly used application, it states that the probability density for finding a particle at a given position is proportional to the square of the amplitude of the system's wavefunction at that position.
-
 ## Formal Role
 the Born rule acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ the Born rule acts on the readout layer of the quantum constructor. The formal i
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.568
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.539
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.537
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.530
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.527
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.521
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.518
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.512
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.505
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.487
-
----
-Wikipedia scaffold: [Born rule](https://en.wikipedia.org/wiki/Born_rule) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

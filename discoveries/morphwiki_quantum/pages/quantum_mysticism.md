@@ -3,9 +3,6 @@
 ## Evidence Status
 a quantum mysticism modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-Quantum mysticism, sometimes referred to pejoratively as quantum quackery or quantum woo, is a set of metaphysical beliefs and associated practices that seek to relate spirituality or mystical worldviews to the ideas of quantum mechanics and its interpretations. Quantum mysticism is considered pseudoscience and quackery by many quantum mechanics experts.
-
 ## Formal Role
 a quantum mysticism acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a quantum mysticism acts on the readout layer of the quantum constructor. The fo
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [2111.12617](https://arxiv.org/abs/2111.12617) — score 0.373
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.361
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.349
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.325
-- [2410.23449](https://arxiv.org/abs/2410.23449) — score 0.319
-- [2402.03709](https://arxiv.org/abs/2402.03709) — score 0.317
-- [2103.03635](https://arxiv.org/abs/2103.03635) — score 0.317
-- [2310.08648](https://arxiv.org/abs/2310.08648) — score 0.316
-- [2304.07405](https://arxiv.org/abs/2304.07405) — score 0.316
-- [2112.12717](https://arxiv.org/abs/2112.12717) — score 0.316
-
----
-Wikipedia scaffold: [Quantum mysticism](https://en.wikipedia.org/wiki/Quantum_mysticism) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

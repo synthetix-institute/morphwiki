@@ -3,9 +3,6 @@
 ## Evidence Status
 A coherence (physics) can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In physics, coherence expresses the potential for two waves to interfere. Two monochromatic beams from a single source always interfere.
-
 ## Formal Role
 In quantum-mechanical terms, a coherence (physics) is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, unitary operator or Hamiltonian, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a coherence (physics) is described by a prepared qu
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.514
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.512
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.471
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.460
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.459
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.458
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.457
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.450
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.448
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.443
-
----
-Wikipedia scaffold: [Coherence (physics)](https://en.wikipedia.org/wiki/Coherence_(physics)) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

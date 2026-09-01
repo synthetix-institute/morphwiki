@@ -1,63 +1,54 @@
 # Photon
 
-## Evidence Status
-a photon modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
-
-## The Standard Story
-A photon is an elementary particle that is a quantum of the electromagnetic field, including electromagnetic radiation such as light and radio waves, and the force carrier for the electromagnetic force. Photons are massless particles that can only move at one speed, the speed of light measured in a vacuum.
+## Central Claim
+A photon is the one-quantum excitation of an electromagnetic field mode: its identity is fixed by field quantization, massless dispersion, polarization, gauge constraints, and detector readout.
 
 ## Formal Role
-a photon acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
+The photon page should not be reduced to a generic prepared-state template. The native construction starts with the electromagnetic field decomposed into modes. Quantization assigns creation and annihilation operators to those modes; applying a creation operator to the vacuum gives a one-photon state. The readouts are mode occupation, frequency or energy, momentum, polarization, and detection events. The admissibility constraints include massless dispersion and transversality or gauge conditions, which distinguish the photon from a generic quantum particle.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (potential or domain condition, preparation context, or measurement basis) determine which states are admissible.
-- State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (observable operator, Hamiltonian, or unitary operator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (energy level, eigenvalue, or eigenstate) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis.
+- The electromagnetic field decomposes into modes labelled by wave vector and polarization.
+- Each mode is quantized with creation and annihilation operators.
+- A one-photon state is the result of applying a creation operator to the vacuum.
+- Occupation number, energy, momentum, polarization, and detector clicks are readout channels.
+- Massless dispersion and transverse or gauge-compatible polarization define admissibility.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+E=\hbar\omega,\quad \mathbf p=\hbar\mathbf k,\quad \omega=c|\mathbf k|
+|1_{\mathbf k,\lambda}\rangle=a_{\mathbf k,\lambda}^{\dagger}|0\rangle
+\hat N_{\mathbf k,\lambda}=a_{\mathbf k,\lambda}^{\dagger}a_{\mathbf k,\lambda}
+\mathbf k\cdot\boldsymbol\epsilon_{\mathbf k,\lambda}=0
+```
 
 ## Mechanism Roles
-- **state:** quantum state
-- **operator:** observable operator
-- **spectrum:** energy level
-- **boundary:** potential or domain condition
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** one-photon Fock state; electromagnetic mode; polarization state
+- **operator:** creation operator; annihilation operator; number operator; field operator
+- **spectrum:** frequency; energy; momentum; polarization
+- **boundary:** mode boundary; cavity; free-space asymptotic condition; gauge constraint
+- **incompatibility:** number-phase relation; polarization basis choice; gauge constraint
+- **protocol:** emission; absorption; photodetection; interferometry
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- the relation between prepared states, observables, and spectral probability measures
+- the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations
+- the dependence of the readout on basis, domain, potential, preparation, or measurement context
+- the commutator structure that limits which observables can be jointly diagonalized
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation
+- the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields
+- where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight
+- the implementation of preparation, boundary condition, detector, or readout channel
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.536
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.504
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.495
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.494
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.488
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.487
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.478
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.473
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.471
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.442
-
----
-Wikipedia scaffold: [Photon](https://en.wikipedia.org/wiki/Photon) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
+- A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.
+- A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.
+- A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.

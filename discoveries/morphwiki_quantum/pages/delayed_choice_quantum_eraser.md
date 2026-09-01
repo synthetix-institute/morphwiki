@@ -3,9 +3,6 @@
 ## Evidence Status
 a delayed-choice quantum eraser modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-A delayed-choice quantum eraser experiment is an elaboration on the quantum eraser experiment that incorporates concepts considered in John Archibald Wheeler's delayed-choice experiment. The experiment was designed to investigate peculiar consequences of the well-known double-slit experiment in quantum mechanics, as well as the consequences of quantum entanglement.
-
 ## Formal Role
 a delayed-choice quantum eraser acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a delayed-choice quantum eraser acts on the readout layer of the quantum constru
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.492
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.492
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.480
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.445
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.444
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.443
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.441
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.439
-- [2501.07524](https://arxiv.org/abs/2501.07524) — score 0.438
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.437
-
----
-Wikipedia scaffold: [Delayed-choice quantum eraser](https://en.wikipedia.org/wiki/Delayed-choice_quantum_eraser) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

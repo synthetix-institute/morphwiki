@@ -3,9 +3,6 @@
 ## Evidence Status
 a wave function collapse modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-In various interpretations of quantum mechanics, wave function collapse, also called reduction of the state vector, occurs when a wave function—initially in a superposition of several eigenstates—reduces to a single eigenstate due to interaction with the external world. This interaction is called an observation and is the essence of a measurement in quantum mechanics, which connects the wave function with classical observables such as position and momentum.
-
 ## Formal Role
 a wave function collapse acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a wave function collapse acts on the readout layer of the quantum constructor. T
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.535
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.525
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.524
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.494
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.493
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.492
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.489
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.482
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.478
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.461
-
----
-Wikipedia scaffold: [Wave function collapse](https://en.wikipedia.org/wiki/Wave_function_collapse) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

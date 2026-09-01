@@ -1532,7 +1532,6 @@ def render_markdown(page: Mapping[str, Any]) -> str:
     route_line = ", ".join(f"{route_label(key)}: {value:.2f}" for key, value in sorted(routes.items(), key=lambda item: item[1], reverse=True)[:6])
     fiber_line = ", ".join(f"{fiber_label(key)}: {value:.2f}" for key, value in sorted(fibers.items(), key=lambda item: item[1], reverse=True)[:5])
     grammar = page["morphwiki"]["grammar"]
-    evidence = page["hyperion"]["equation_witnesses"][:10]
     lines = [
         f"# {title}",
         "",
@@ -1545,9 +1544,6 @@ def render_markdown(page: Mapping[str, Any]) -> str:
         )
         lines.extend([f"## {claim_heading}", morph.get("takeaway", ""), ""])
     lines.extend([
-        "## The Standard Story",
-        morph.get("object_view", ""),
-        "",
         "## Formal Role",
         morph.get("mechanism_view", ""),
         "",
@@ -1595,20 +1591,6 @@ def render_markdown(page: Mapping[str, Any]) -> str:
     lines.extend(f"- {item}" for item in morph.get("what_changes", []))
     lines.extend(["", "## Validation Checks"])
     lines.extend(f"- {item}" for item in morph.get("missing_experiments", []))
-    lines.extend(["", "## Evidence Links"])
-    for row in evidence:
-        link = f"[{row['paper_id']}]({row['arxiv_url']})" if row.get("arxiv_url") and row.get("paper_id") else ""
-        score = row.get('score')
-        score_str = f"{score:.3f}" if isinstance(score, float) else str(score)
-        lines.append(f"- {link} — score {score_str}" if link else f"- score {score_str}")
-    wiki_url = page['wikipedia'].get('url') or ''
-    lines.extend(
-        [
-            "",
-            "---",
-            f"Wikipedia scaffold: [{page['wikipedia']['title']}]({wiki_url}) (CC BY-SA). {morph.get('claim_boundary', '')}",
-        ]
-    )
     return "\n".join(lines).rstrip() + "\n"
 
 

@@ -1,10 +1,37 @@
 # Method
 
-MorphWiki represents a scientific field with two synchronized graphs. The
-operational graph records what a construction does. The provenance graph records
-where each clause, equation, and interpretation came from.
+MorphWiki represents a scientific theory by the physical roles required to
+produce a prediction. A second graph records the paper, equation, and local
+context supporting each relation.
 
-## Operational Identity
+## Predictive Closure
+
+At a chosen resolution, a state must retain enough information to determine
+future observable probabilities:
+
+```math
+q(h_1)=q(h_2)
+\Longrightarrow
+p(y,t\mid h_1)=p(y,t\mid h_2).
+```
+
+Two histories that produce the same declared state must therefore give the same
+future probabilities. A violation identifies a missing state coordinate or a
+history-dependent evolution law.
+
+Allowed transformations must also compose consistently. If two physically
+equivalent paths `gamma_1` and `gamma_2` connect the same descriptions, then
+
+```math
+T_{\gamma_1}=T_{\gamma_2}.
+```
+
+A non-neutral closed composition records information absent from the endpoint
+variables. Depending on the physics, the required enlargement can be a
+connection, curvature, frustrated sector, boundary contribution, hidden state,
+or memory kernel.
+
+## Physical Identity
 
 The common hierarchy is
 
@@ -12,24 +39,49 @@ The common hierarchy is
 (Omega, Xi) -> M -> I_op=(M; C, R, P) -> I_real=(I_op; A)
 ```
 
-`Omega` is an operation and `Xi` is the carrier on which it is defined. Their
-pair is the mechanism core `M`. Closure `C`, observable map `R`, and protocol `P`
-complete the operational identity. The realization `A` supplies the named
-objects, parameters, units, geometry, boundaries, devices, and experimental
-conditions of a concrete model.
+`q in Xi` is a physical state at the chosen resolution. `Omega` is an operation
+defined on `Xi`; their pair is the mechanism core `M`. Closure `C` fixes
+normalization, positivity, domains, gauge restrictions, or constitutive
+relations. The observable map `R` produces a probability, spectrum, correlator,
+current, or other measured quantity. The protocol `P` fixes the order of
+preparation, intervention, evolution, and measurement. The realization `A`
+supplies fields, material, parameters, geometry, boundary values, drives,
+devices, and trajectories.
 
-The hierarchy does not impose one temporal order. It distinguishes levels of
-specification. Within a paper, a derivation may add a clause, project a complete
-relation onto one consequence, or rewrite the same mechanism in another
-representation.
+The hierarchy records physical dependence rather than temporal order. A
+derivation can add a missing clause, project a complete relation onto one
+consequence, or rewrite the same mechanism in another representation.
+
+## Physical Role Promotion
+
+A realization parameter remains external while it selects a member of one fixed
+mechanism. It is promoted when changing it changes the state space, operator
+domain, dynamical map, closure, observable, or protocol:
+
+```math
+a\in A\quad\text{while}\quad
+(\Xi,\Omega,C,R,P)_a=(\Xi,\Omega,C,R,P),
+```
+
+```math
+a\longrightarrow X\in\{\Xi,\Omega,C,R,P\}
+\quad\text{when the typed object }X\text{ changes}.
+```
+
+This criterion separates parameter variation from a change of theory. Moving a
+wall can vary one realization. Changing the boundary condition can instead
+select another self-adjoint domain and another spectrum. Quantizing a prescribed
+field enlarges the Hilbert space and dynamics. Retaining environmental
+correlations enlarges the state or introduces memory. Representing a detector as
+an interacting subsystem turns apparatus into a quantum instrument.
 
 ## Quantum Specialization
 
-For quantum theory, a broad operational form is
+A broad quantum mechanism has the form
 
 ```math
 \Xi_Q=(\mathcal H,\mathcal D,\mathcal S),\qquad
-\Omega_Q\supset\{\mathcal E_P,\{E_y\}_y\},
+\rho_0\in\mathcal S(\mathcal H),
 ```
 
 ```math
@@ -37,22 +89,20 @@ For quantum theory, a broad operational form is
 p(y\mid P)=\operatorname{Tr}(E_y\rho_P).
 ```
 
-The carrier includes the Hilbert or Fock space, admissible states, domains, and
-factorizations used by the problem. The operation includes generators,
-observables, channels, symmetry actions, and compositions. Closure imposes
-normalization, positivity, domain, self-adjointness, gauge, conservation, or
-compatibility conditions. The observable map and protocol connect the formal mechanism to
-an observable consequence and an executable order of operations.
+The Hilbert or Fock space, state class, and operator domain define `Xi_Q`. The
+channel `E_P` describes evolution under protocol `P`. The positive operators
+`E_y` define measurement outcomes. Normalization, complete positivity,
+self-adjointness, gauge closure, and domain conditions enter through `C_Q`.
 
-For a closed system with a time-independent self-adjoint Hamiltonian,
-`E_P(rho)=U(t) rho U(t)^dagger` with `U(t)=exp(-iHt/hbar)`. The channel form is
-kept in the upper-level constructor because it also covers open systems,
-measurements, feedback, and quantum information protocols.
+This form includes closed and open dynamics, projective and generalized
+measurements, feedback, and quantum-information protocols. For a closed system
+with a time-independent self-adjoint Hamiltonian,
+`E_P(rho)=U(t)rho U(t)^dagger` with `U(t)=exp(-iHt/hbar)`.
 
 ## Transformations
 
-MorphWiki links two scientific representations only after specifying the
-retained relation:
+Two physical descriptions are connected only after the retained relation is
+specified:
 
 ```math
 I_i=((\Omega_i,\Xi_i);C_i,R_i,P_i)
@@ -60,69 +110,63 @@ I_i=((\Omega_i,\Xi_i);C_i,R_i,P_i)
 I_j=((\Omega_j,\Xi_j);C_j,R_j,P_j).
 ```
 
-The index change may describe physical evolution, reformulation, completion,
-carrier replacement, projection, composition, deformation, or revision. The
-retained relation may be an amplitude, expectation value, algebra, conserved
-flux, probability law, correlator family, or controlled approximation. Equation
-shape and vocabulary do not establish the link.
-
-## Constructor Operations
-
-The public constructor uses six verbs:
-
-1. `complete`: add a missing closure, observable map, or protocol;
-2. `reattach`: replace the operation or carrier under explicit compatibility maps;
-3. `compose`: join supported transformations;
-4. `deform`: vary a boundary, parameter, scale, or representation while tracking an invariant;
-5. `observe`: build the observable or measurement that exposes a consequence;
-6. `revise`: use a failed consequence to replace the responsible clause.
-
-The discovery contract is
+The retained relation can be an amplitude, expectation value, operator algebra,
+conserved current, probability law, correlator, or controlled approximation.
+For state and output maps `alpha` and `beta`, compatibility is measured by
 
 ```math
-(I_{\mathrm{op}},p;Q_{\mathrm{keep}},B_{\mathrm{edit}})
-\longmapsto
-(\widehat I_{\mathrm{op}},\widehat A,\widehat y).
+\Delta_{\alpha,\beta}=\Omega_j\alpha-\beta\Omega_i.
 ```
 
-`Q_keep` states what must survive. `B_edit` states which clauses may change.
-The output includes a new operational identity, a physical realization, and a
-derived consequence. This record makes the proposal reproducible and identifies
-the clause to revise if the consequence fails.
+A vanishing residual and matching observables identify the same retained
+mechanism in another realization. A reproducible residual can become a new
+physical term when it obeys a closure relation and changes an independent
+observable. The promoted term may modify the operation, enlarge the state,
+select a new domain, define a memory law, or require another realization.
 
-## Provenance And Evidence
+## Construction Operations
 
-Every public page retains:
+The public constructor uses six operations:
 
-```text
-topic and historical vocabulary
-source document and passage
-equation witness
-constructor clauses
-transformation and retained relation
-realization and predicted consequence
-```
+1. `complete`: derive a missing closure, observable, or protocol;
+2. `reattach`: place a law on another state space through explicit maps;
+3. `compose`: join supported transformations;
+4. `deform`: vary a parameter, boundary, scale, or representation while tracking an invariant;
+5. `observe`: derive the measurement that distinguishes the construction;
+6. `revise`: replace the physical role identified by a failed consequence.
 
-Provenance does not determine operational identity, but it remains necessary for
-attribution, priority, interpretation, and checking the source assumptions.
+A construction starts from a retained relation and a permitted change. It ends
+with a complete physical identity, a realization, and a consequence that can be
+compared with an alternative.
 
-## From Corpus To Book
+## Source Equations
 
-1. Export topic records and their source equations.
-2. assign each record to the constructor clause it primarily specifies;
-3. recover source-local and cross-topic transformations;
-4. generate the mechanism map and transformation cases;
-5. write all retained topics as specializations of the shared identity;
-6. compile the book and verify that no topic or equation-bearing derivation page was lost.
+The public book cites a paper only when one of its equations supports the topic
+relation in its local source context. Identifier overlap alone does not create a
+citation. Each accepted source record contains the paper identifier, equation,
+nearby text, and the physical role supported by that equation.
 
-Sparse-attention summaries, placement reports, and build diagnostics are retained
-as reproducibility artifacts. They are not chapters in the default public book.
+The current local build contains 111 identifier-linked candidates and no
+equation-level confirmations. Its public pages therefore contain no source
+links. The full V2.1 build reads the source-card alignment and equation cards to
+resolve those candidates.
+
+## From Papers To A Field Map
+
+1. Retain each equation with its paper and local context.
+2. Identify the state space, operation, closure, observable, protocol, and realization.
+3. Assign each topic by the physical relation supplied by its equations.
+4. Record role promotions and the observable change associated with each one.
+5. Recover transformations and name their invariant relation.
+6. Compute the compatibility residual for proposed transfers.
+7. Write source equations beside the physical claim they establish.
+8. Compile the book and verify topic, equation, and citation preservation.
 
 ## Physical Standard
 
-A constructor proposal must satisfy the mathematical conditions of its field.
-In quantum theory these include the relevant domain and self-adjointness
+A quantum construction must satisfy the relevant domain and self-adjointness
 conditions, positivity and normalization, complete positivity for channels,
-gauge or constraint closure, dimensional consistency, and a defined observable or probability law.
-An empirical proposal must also specify apparatus, parameter regime, controls,
-and a consequence that differs from plausible alternatives.
+gauge or constraint closure, dimensional consistency, and a defined probability
+law. A proposed realization must also specify parameters, initial and boundary
+data, controls, and a measurement that distinguishes it from the nearest
+alternative.

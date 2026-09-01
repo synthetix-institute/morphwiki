@@ -1,32 +1,18 @@
 # Quantum machine
 
-**Derivation step:** Protocol layer: engineered transformations
-
-## Topic Context
-
-A quantum machine is a human-made device whose collective motion follows the laws of quantum mechanics. The idea that macroscopic objects may follow the laws of quantum mechanics dates back to the advent of quantum mechanics in the early 20th century. However, as highlighted by the Schrödinger's cat thought experiment, quantum effects are not readily observable in large-scale objects. Consequently, quantum states of motion have only been observed in special circumstances at extremely low temperatures. The fragility of quantum effects in macroscopic objects may arise from rapid quantum decoherence. Researchers created the first quantum machine in 2009, and the achievement was named the "Breakthrough of the Year" by Science in 2010.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_machine)
-
-## Role In The Derivation
-
-Quantum machine belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.
-
-## Why This Step Is Needed
-
-Quantum machine specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
+**Physical domain:** Control sequences and quantum channels
 
 ## Mechanism
 
-This step composes admissible transformations into a circuit, channel, control sequence, sensor, or algorithm.
+Quantum machine belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.
 
-## How It Enters The Theory
+Quantum machine specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
 
-**Place in the construction.** Quantum machine contributes an engineered transformation role to the quantum construction. This page is read first as an operation-sequence move: it specifies an ordered composition of allowed maps.
+Circuits, controls, and sensing sequences are ordered compositions of physical transformations and measurements.
 
-**State and operation.** An input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. An ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps.
+## Physical Construction
 
-**Admissibility and prediction.** Each step must belong to the claimed map class and the composition must preserve normalization and positivity. Output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
+The state carrier is an input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. The governing operation is an ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps. Each step must belong to the claimed map class and the composition must preserve normalization and positivity. The calculated observables are Output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
 
 ## Representative Relation
 
@@ -34,33 +20,22 @@ This step composes admissible transformations into a circuit, channel, control s
 \rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_aK_a\rho K_a^\dagger
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-Read the composition from the prepared input toward the final state. Every intermediate map must preserve the mathematical conditions claimed for it, and conditional operations must be tied to explicit measurement outcomes. Performance is assessed through fidelity, error rate, capacity, precision, or success probability.
-
-## What Remains Stable
-
-Quantum machine turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
-
-## What The Physical Realization Adds
-
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
-
-## Connection To The Next Step
+The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
 
 This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
 
-## Checks
+## Invariance And Realization
 
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update.
-- The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+Quantum machine turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+
+The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+
+## Discriminating Consequences
+
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
 
 ## Evidence Links
 
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

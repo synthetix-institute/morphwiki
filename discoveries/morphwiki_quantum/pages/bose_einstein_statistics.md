@@ -3,9 +3,6 @@
 ## Evidence Status
 A bose–einstein statistics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical particles may occupy a set of available discrete energy states at thermodynamic equilibrium. The aggregation of particles in the same state, which is a characteristic of particles obeying Bose–Einstein statistics, accounts for the cohesive streaming of laser light and the frictionless creeping of superfluid helium.
-
 ## Formal Role
 In quantum-mechanical terms, a bose–Einstein statistics is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and energy level or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a bose–Einstein statistics is described by a two-
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.523
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.495
-- [2105.11733](https://arxiv.org/abs/2105.11733) — score 0.484
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.482
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.480
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.480
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.479
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.476
-- [cond-mat0108470](https://arxiv.org/abs/cond-mat/0108470) — score 0.474
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.471
-
----
-Wikipedia scaffold: [Bose–Einstein statistics](https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_statistics) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

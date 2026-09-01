@@ -3,9 +3,6 @@
 ## Evidence Status
 Quantum chemistry can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum chemistry, also called molecular quantum mechanics, is a branch of physical chemistry focused on the application of quantum mechanics to chemical systems, particularly towards the quantum-mechanical calculation of electronic contributions to physical and chemical properties of molecules, materials, and solutions at the atomic level. These calculations include systematically applied approximations intended to make calculations computationally feasible while still capturing as much information about important contributions to the computed wave functions as well as to observable properties such as structures, spectra, and thermodynamic properties.
-
 ## Formal Role
 In quantum-mechanical terms, quantum chemistry is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through wave function or quantum state, observable operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, quantum chemistry is described by a two-dimensional
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.562
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.523
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.516
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.512
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.508
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.501
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.498
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.495
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.492
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.491
-
----
-Wikipedia scaffold: [Quantum chemistry](https://en.wikipedia.org/wiki/Quantum_chemistry) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

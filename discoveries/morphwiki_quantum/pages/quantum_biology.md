@@ -3,9 +3,6 @@
 ## Evidence Status
 Quantum biology can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum biology is the study of applications of quantum mechanics and theoretical chemistry to aspects of biology that cannot be accurately described by the classical laws of physics. An understanding of fundamental quantum interactions is important because they determine the properties of the next level of organization in biological systems.
-
 ## Formal Role
 In quantum-mechanical terms, quantum biology is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through complementarity or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, quantum biology is described by a wave function or 
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.447
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.438
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.437
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.429
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.422
-- [2006.13679](https://arxiv.org/abs/2006.13679) — score 0.421
-- [2501.07524](https://arxiv.org/abs/2501.07524) — score 0.421
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.415
-- [1109.3239](https://arxiv.org/abs/1109.3239) — score 0.404
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.402
-
----
-Wikipedia scaffold: [Quantum biology](https://en.wikipedia.org/wiki/Quantum_biology) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

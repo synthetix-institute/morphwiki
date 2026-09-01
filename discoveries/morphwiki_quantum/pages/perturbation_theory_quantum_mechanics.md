@@ -3,9 +3,6 @@
 ## Evidence Status
 A perturbation theory (quantum mechanics) can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In quantum mechanics, perturbation theory is a set of approximation schemes directly related to mathematical perturbation for describing a complicated quantum system in terms of a simpler, known system. The idea is to start with a simple system for which a mathematical solution is known and add an additional "perturbing" Hamiltonian representing a weak disturbance to the known system to the original Hamiltonian of the known system.
-
 ## Formal Role
 In quantum-mechanical terms, a perturbation theory (quantum mechanics) is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a perturbation theory (quantum mechanics) is descri
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.509
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.475
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.449
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.436
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.436
-- [1206.6727](https://arxiv.org/abs/1206.6727) — score 0.435
-- [gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110) — score 0.435
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.432
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.431
-- [gr-qc0303063](https://arxiv.org/abs/gr-qc/0303063) — score 0.429
-
----
-Wikipedia scaffold: [Perturbation theory (quantum mechanics)](https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

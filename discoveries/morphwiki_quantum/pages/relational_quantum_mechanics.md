@@ -3,9 +3,6 @@
 ## Evidence Status
 a relational quantum mechanics modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-Relational quantum mechanics (RQM) is an interpretation of quantum mechanics which treats the state of a quantum system as being relational, that is, the state is the relation between the observer and the system. This interpretation was first delineated by Carlo Rovelli in a 1994 preprint, and has since been expanded upon by a number of theorists.
-
 ## Formal Role
 a relational quantum mechanics acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a relational quantum mechanics acts on the readout layer of the quantum construc
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.508
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.453
-- [quant-ph0607206](https://arxiv.org/abs/quant-ph/0607206) — score 0.435
-- [2306.13129](https://arxiv.org/abs/2306.13129) — score 0.430
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.424
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.422
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.417
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.416
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.415
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.415
-
----
-Wikipedia scaffold: [Relational quantum mechanics](https://en.wikipedia.org/wiki/Relational_quantum_mechanics) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

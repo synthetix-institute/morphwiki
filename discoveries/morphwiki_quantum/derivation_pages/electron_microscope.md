@@ -1,32 +1,18 @@
 # Electron microscope
 
-**Derivation step:** Spectral question: what can be asked
-
-## Topic Context
-
-An electron microscope is a microscope that uses a beam of electrons as a source of illumination. It uses electron optics that are analogous to the glass lenses of an optical light microscope to control the electron beam, for instance focusing it to produce magnified images or electron diffraction patterns. As the wavelength of an electron can be more than 100,000 times smaller than that of visible light, electron microscopes have a much higher resolution of about 0.1 nm, which compares to about 200 nm for light microscopes. Electron microscope may refer to:Transmission electron microscope (TEM) where swift electrons go through a thin sample Scanning transmission electron microscope (STEM) which is similar to TEM with a scanned electron probe Scanning electron microscope (SEM) which is similar to STEM, but with thick samples Electron microprobe similar to a SEM, but more for chemical...
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Electron_microscope)
-
-## Role In The Derivation
-
-Electron microscope belongs to the question step: it turns a physical question into an operator with admissible answers.
-
-## Why This Step Is Needed
-
-Electron microscope states which physical question is being asked. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
+**Physical domain:** Measurement, instruments, and probabilities
 
 ## Mechanism
 
+Electron microscope belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+
+Electron microscope connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+
 The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
 
-## How It Enters The Theory
+## Physical Construction
 
-**Place in the construction.** Electron microscope contributes an instrument-mediated observable role to the quantum construction. This page is read first as a question-selection move: it identifies the observable and its possible values.
-
-**State and operation.** A probe state, sample state, field mode, detector state, or estimation register. An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-
-**Admissibility and prediction.** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The governing operation is an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated observables are Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
 
 ## Representative Relation
 
@@ -34,33 +20,22 @@ The mechanism is an apparatus-coupled observable: a prepared probe state interac
 \rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
 
-## What Remains Stable
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Electron microscope defines the legal question being asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Electron microscope connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable.
-- A complete spectral resolution supplies all outcome channels for the question being asked.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:0805.4565](https://arxiv.org/abs/0805.4565)
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

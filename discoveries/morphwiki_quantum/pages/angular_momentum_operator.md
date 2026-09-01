@@ -3,9 +3,6 @@
 ## Evidence Status
 The angular momentum operator can be read as a quantum construction: the measurement basis and experimental arrangement fixes the admissible state space; the self-adjoint observable being asked of that state defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In quantum mechanics, the angular momentum operator is one of several related operators analogous to classical angular momentum. The angular momentum operator plays a central role in the theory of atomic and molecular physics and other quantum problems involving rotational symmetry.
-
 ## Formal Role
 In quantum-mechanical terms, the Angular momentum operator is described by a prepared quantum state before the measurement. The physical question is represented by the self-adjoint observable being asked of that state; the experimental or mathematical setting is the measurement basis and experimental arrangement. The observable content is obtained from the observable's spectral projectors and the Born probabilities assigned to them. In the local terminology of this topic, the same construction appears through quantum state or wave function, observable operator or commutator, and eigenstate or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or non-commuting observables.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, the Angular momentum operator is described by a pre
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.538
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.516
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.515
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.511
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.506
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.506
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.505
-- [2111.12617](https://arxiv.org/abs/2111.12617) — score 0.502
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.493
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.491
-
----
-Wikipedia scaffold: [Angular momentum operator](https://en.wikipedia.org/wiki/Angular_momentum_operator) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

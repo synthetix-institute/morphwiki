@@ -1,32 +1,18 @@
 # String theory
 
-**Derivation step:** Many-mode extension: fields, particles, and scaling
-
-## Topic Context
-
-In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by one-dimensional objects called strings. String theory describes how these strings move through space and interact with each other by vibrations. On distance scales larger than the string scale, a string acts like a particle, with its mass, charge, and other properties determined by the vibrational state of the string. In string theory, one of the many vibrational states of the string corresponds to the graviton, a quantum mechanical particle that carries the gravitational force. Thus, string theory is a theory of quantum gravity.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/String_theory)
-
-## Role In The Derivation
-
-String theory belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
-
-## Why This Step Is Needed
-
-String theory is needed when particle number can change, collective modes matter, or locality and gauge symmetry organize the admissible states. A single-particle Hilbert space is then replaced by a Fock space, field configuration space, or constrained sector.
+**Physical domain:** Fields, constraints, and scale
 
 ## Mechanism
 
+String theory belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+
+String theory places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+
 Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible.
 
-## How It Enters The Theory
+## Physical Construction
 
-**Place in the construction.** String theory contributes a geometry or holographic realization role to the quantum construction. This page is read first as a many-mode or field-realization move: it extends the state and operator construction beyond a single-particle carrier.
-
-**State and operation.** A spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations.
-
-**Admissibility and prediction.** Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
+The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The governing operation is Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated observables are Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
 
 ## Representative Relation
 
@@ -34,33 +20,22 @@ Geometry supplies the realization, boundary, gauge, or dual description in which
 \mathcal A_{\rm bulk}\leftrightarrow \mathcal A_{\partial},\quad Z_{\rm bulk}[\phi|_{\partial}=J]=\left\langle e^{\int J\mathcal O}\right\rangle_{\partial}
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-Creation and annihilation operators change occupation while respecting bosonic or fermionic statistics. Correlation functions replace single-particle wave functions as the principal predictions. Gauge constraints remove redundant descriptions, and renormalization states how parameters change with observational scale.
-
-## What Remains Stable
-
-Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. String theory extends the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
-
-## What The Physical Realization Adds
-
-The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
-
-## Connection To The Next Step
+Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
 
 Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
 
-## Checks
+## Invariance And Realization
 
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible.
-- The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. String theory extends the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+
+The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
+
+## Discriminating Consequences
+
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
-- [arXiv:1708.03640](https://arxiv.org/abs/1708.03640)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

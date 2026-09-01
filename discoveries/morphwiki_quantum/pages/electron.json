@@ -1007,26 +1007,26 @@
     "candidate_pool_size": 946
   },
   "morphwiki": {
-    "takeaway": "An electron can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
+    "takeaway": "An electron is a stable charged spin-1/2 excitation whose operational identity is fixed by charge, mass, spin, fermionic statistics, and its coupling to electromagnetic fields.",
     "object_view": "The electron is a subatomic particle whose electric charge is negative one elementary charge. It is an elementary particle that comprises the ordinary matter that makes up the universe, along with up and down quarks.",
-    "mechanism_view": "In quantum-mechanical terms, an electron is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.",
+    "mechanism_view": "The electron page has a native constructor that combines a spinor state, a relativistic generator, a conserved charge, and fermionic anticommutation. In nonrelativistic settings this appears as a Schrödinger or Pauli state under electromagnetic coupling; in relativistic field theory it appears as a Dirac field excitation. The readouts are charge, mass-energy, spin, momentum, and scattering or detector events.",
     "what_this_adds": [
-      "The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.",
+      "The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.",
       "It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.",
-      "It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.",
-      "It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation."
+      "It treats non-commutativity as a constraint on which observables can share a spectral resolution.",
+      "It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations."
     ],
     "what_survives": [
-      "the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation",
-      "the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels",
-      "the dependence of admissible readout on measurement context or boundary condition",
-      "the non-commuting compatibility structure, which survives changes of representation"
+      "the relation between prepared states, observables, and spectral probability measures",
+      "the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations",
+      "the dependence of the readout on basis, domain, potential, preparation, or measurement context",
+      "the commutator structure that limits which observables can be jointly diagonalized"
     ],
     "what_changes": [
-      "the name of the carrier: particle, wave, field, qubit, or excitation",
-      "where time dependence is represented: on the state, on the operator, or in a path weight",
-      "the coordinate system, basis, or geometric picture used to display the same relation",
-      "the physical implementation of detector, boundary, preparation, or readout"
+      "the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation",
+      "the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields",
+      "where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight",
+      "the implementation of preparation, boundary condition, detector, or readout channel"
     ],
     "active_apparatus": [
       "Α11",
@@ -1052,49 +1052,56 @@
       "Ω13"
     ],
     "missing_experiments": [
-      "A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.",
-      "The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
+      "A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.",
+      "A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.",
+      "A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability."
     ],
     "public_evidence_summary": "Equation evidence ranks this page near operator and spectrum, boundary or preparation, state evolution / transport, and closure / conservation, with strongest public fingerprints in field-specific vocabulary, probability / information, and symbolic structure.",
     "claim_boundary": "Evidence from Wikipedia scaffold and 32 equation witnesses.",
     "conversion_form": [
-      "Preparation or domain terms (potential or domain condition, basis, or preparation context) determine which states are admissible.",
-      "State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.",
-      "Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.",
-      "Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.",
-      "The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.",
-      "Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis."
+      "The spinor or field state carries electron quantum numbers.",
+      "The Schrödinger, Pauli, or Dirac generator defines the regime-specific evolution.",
+      "Charge conservation and fermionic exchange statistics define admissibility.",
+      "Electromagnetic potentials couple through minimal coupling.",
+      "Energy, momentum, spin, charge, and scattering response are readout channels."
     ],
-    "mathematical_skeleton": "B \\longmapsto \\rho_B \\quad \\text{(context specifies an admissible state)}\n\\rho_t = U_t \\rho_B U_t^\\dagger \\quad \\text{(unitary evolution from preparation to readout)}\nO = \\sum_i \\lambda_i P_i,\\quad p_i=\\operatorname{Tr}(P_i\\rho_t) \\quad \\text{(spectral probability measure)}\n[O_1,O_2]\\neq 0 \\quad \\text{(incompatible observables: no common sharp basis)}",
+    "mathematical_skeleton": "(i\\hbar\\gamma^{\\mu}D_{\\mu}-mc)\\psi=0\nD_{\\mu}=\\partial_{\\mu}+\\frac{ie}{\\hbar c}A_{\\mu}\n\\{\\psi_{\\alpha}(x),\\psi_{\\beta}^{\\dagger}(y)\\}=\\delta_{\\alpha\\beta}\\delta(x-y)",
     "grammar": {
       "state": [
-        "quantum state"
+        "spinor state",
+        "Dirac field excitation",
+        "electron wave packet"
       ],
       "operator": [
-        "Hamiltonian",
-        "observable operator",
-        "generator"
+        "Dirac operator",
+        "Pauli Hamiltonian",
+        "charge operator"
       ],
       "spectrum": [
-        "eigenvalue",
-        "energy level",
-        "measurement outcome"
+        "energy",
+        "momentum",
+        "spin projection",
+        "charge"
       ],
       "boundary": [
-        "potential",
-        "basis"
+        "electromagnetic potential",
+        "scattering boundary",
+        "confining potential"
       ],
       "incompatibility": [
-        "commutator",
-        "uncertainty relation",
-        "non-commuting transformations"
+        "fermionic anticommutation",
+        "spin measurement basis"
       ],
       "protocol": [
-        "unitary evolution",
-        "projection or measurement update",
-        "path integral weighting"
+        "scattering",
+        "spectroscopy",
+        "charge detection"
       ]
     },
-    "llm_used": false
+    "llm_used": false,
+    "mathematical_skeleton_is_source_backed": false,
+    "mathematical_skeleton_is_topic_native": true,
+    "public_language_rewritten": true,
+    "public_language_rewritten_at": "2026-08-31T17:02:56.389807+00:00"
   }
 }

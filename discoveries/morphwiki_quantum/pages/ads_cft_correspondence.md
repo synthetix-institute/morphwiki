@@ -3,9 +3,6 @@
 ## Evidence Status
 The ads/cft correspondence can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In theoretical physics, the anti-de Sitter/conformal field theory correspondence is a conjectured relationship between two kinds of physical theories. On one side are anti-de Sitter spaces (AdS) that are used in theories of quantum gravity, formulated in terms of string theory or M-theory.
-
 ## Formal Role
 In quantum-mechanical terms, the AdS/CFT correspondence is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, the AdS/CFT correspondence is described by a wave f
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.576
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.514
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.511
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.511
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.509
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.509
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.505
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.496
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.492
-- [astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157) — score 0.488
-
----
-Wikipedia scaffold: [AdS/CFT correspondence](https://en.wikipedia.org/wiki/AdS/CFT_correspondence) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

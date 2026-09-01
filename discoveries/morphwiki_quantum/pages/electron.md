@@ -1,63 +1,53 @@
 # Electron
 
-## Evidence Status
-An electron can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
-
-## The Standard Story
-The electron is a subatomic particle whose electric charge is negative one elementary charge. It is an elementary particle that comprises the ordinary matter that makes up the universe, along with up and down quarks.
+## Central Claim
+An electron is a stable charged spin-1/2 excitation whose operational identity is fixed by charge, mass, spin, fermionic statistics, and its coupling to electromagnetic fields.
 
 ## Formal Role
-In quantum-mechanical terms, an electron is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
+The electron page has a native constructor that combines a spinor state, a relativistic generator, a conserved charge, and fermionic anticommutation. In nonrelativistic settings this appears as a Schrödinger or Pauli state under electromagnetic coupling; in relativistic field theory it appears as a Dirac field excitation. The readouts are charge, mass-energy, spin, momentum, and scattering or detector events.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (potential or domain condition, basis, or preparation context) determine which states are admissible.
-- State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis.
+- The spinor or field state carries electron quantum numbers.
+- The Schrödinger, Pauli, or Dirac generator defines the regime-specific evolution.
+- Charge conservation and fermionic exchange statistics define admissibility.
+- Electromagnetic potentials couple through minimal coupling.
+- Energy, momentum, spin, charge, and scattering response are readout channels.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+(i\hbar\gamma^{\mu}D_{\mu}-mc)\psi=0
+D_{\mu}=\partial_{\mu}+\frac{ie}{\hbar c}A_{\mu}
+\{\psi_{\alpha}(x),\psi_{\beta}^{\dagger}(y)\}=\delta_{\alpha\beta}\delta(x-y)
+```
 
 ## Mechanism Roles
-- **state:** quantum state
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** potential or domain condition; basis
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** spinor state; Dirac field excitation; electron wave packet
+- **operator:** Dirac operator; Pauli Hamiltonian; charge operator
+- **spectrum:** energy; momentum; spin projection; charge
+- **boundary:** electromagnetic potential; scattering boundary; confining potential
+- **incompatibility:** fermionic anticommutation; spin measurement basis
+- **protocol:** scattering; spectroscopy; charge detection
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- the relation between prepared states, observables, and spectral probability measures
+- the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations
+- the dependence of the readout on basis, domain, potential, preparation, or measurement context
+- the commutator structure that limits which observables can be jointly diagonalized
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation
+- the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields
+- where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight
+- the implementation of preparation, boundary condition, detector, or readout channel
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.507
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.467
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.436
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.435
-- [gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110) — score 0.431
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.431
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.429
-- [1206.6727](https://arxiv.org/abs/1206.6727) — score 0.429
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.427
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.421
-
----
-Wikipedia scaffold: [Electron](https://en.wikipedia.org/wiki/Electron) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
+- A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.
+- A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.
+- A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.

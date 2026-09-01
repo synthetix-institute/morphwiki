@@ -1,32 +1,18 @@
 # Quantum amplifier
 
-**Derivation step:** Generator: lawful change before measurement
-
-## Topic Context
-
-In physics, a quantum amplifier is an amplifier that uses quantum mechanical methods to amplify a signal; examples include the active elements of lasers and optical amplifiers.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_amplifier)
-
-## Role In The Derivation
-
-Quantum amplifier belongs to the lawful-change step: it specifies how the state changes before a question is asked.
-
-## Why This Step Is Needed
-
-Quantum amplifier separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
+**Physical domain:** Measurement, instruments, and probabilities
 
 ## Mechanism
 
+Quantum amplifier belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+
+Quantum amplifier connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+
 The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
 
-## How It Enters The Theory
+## Physical Construction
 
-**Place in the construction.** Quantum amplifier contributes an instrument-mediated observable role to the quantum construction. This page is read first as a lawful-transport move: it identifies what changes the state before measurement.
-
-**State and operation.** A probe state, sample state, field mode, detector state, or estimation register. An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-
-**Admissibility and prediction.** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The governing operation is an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated observables are Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
 
 ## Representative Relation
 
@@ -34,33 +20,22 @@ The mechanism is an apparatus-coupled observable: a prepared probe state interac
 \rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-The displayed relation should be read as a rule for transporting a state, not as a second definition of the state. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
 
-## What Remains Stable
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Quantum amplifier specifies lawful change before measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Quantum amplifier connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-A generator predicts a new state but not yet an experimental number. The next step selects an observable, whose spectrum and expectation values expose consequences of the dynamics.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation.
-- The short-time and classical limits identify whether the generator has the correct physical regime.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:2108.07838](https://arxiv.org/abs/2108.07838)
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
-- [arXiv:1801.03283](https://arxiv.org/abs/1801.03283)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

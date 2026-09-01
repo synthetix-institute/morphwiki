@@ -1,76 +1,146 @@
-# MorphWiki: Scientific Fields By Mechanism
+# MorphWiki
 
-MorphWiki rebuilds a scientific field around the mechanisms that make its
-theories predictive. Familiar names remain searchable, and their sources remain
-attached, but they no longer determine the structure of the field.
+Quantum theories differ in what they treat as physical. A geometry can remain a
+fixed background or become a quantum degree of freedom. An environment can be
+discarded or retained as memory. A detector can record an outcome or enter the
+dynamics that produces it. MorphWiki organizes a field by these changes of
+physical role.
 
 ![MorphWiki mechanism-construction workflow](docs/assets/morphwiki-operator-native-physics.svg)
 
-The shared representation is
+## Predictive Closure
 
-```text
-(Omega, Xi) -> M -> I_op=(M; C, R, P) -> I_real=(I_op; A)
+A theory at a chosen resolution must satisfy two conditions. Its declared state
+must determine later observable probabilities, and equivalent physical
+transformations must compose to the same result:
+
+```math
+q(h_1)=q(h_2)
+\Longrightarrow
+p(y,t\mid h_1)=p(y,t\mid h_2),
+\qquad
+T_{\gamma_1}=T_{\gamma_2}.
 ```
 
-- `Omega` is the operation: generator, observable, channel, projection, symmetry
-  action, or composition.
-- `Xi` is its carrier: state space, domain, substrate, factorization, or algebra.
-- `C`, `R`, and `P` are closure, observable map, and protocol.
-- `A` is the realization: named objects, parameters, units, boundaries, geometry,
-  apparatus, and experimental conditions.
+The first condition fails when discarded correlations influence the future.
+Restoring them produces an internal state coordinate or a memory kernel. The
+second fails when a closed sequence retains path information. Restoring global
+consistency produces curvature, frustration, a boundary contribution, or
+another compatibility term. Both failures identify information missing from
+the smaller theory.
 
-The clauses are addressable but not freely interchangeable. A proposed change
-must state what relation is retained, why the new clauses are compatible, and
-which consequence can reject the construction.
+This gives one principle for theory construction:
 
-## Quantum Theory: As A Mechanism Tree
+> Enlarge the physical description by the smallest field, state coordinate,
+> operator, closure condition, observable, or protocol that makes predictions
+> single-valued and transformations compositionally consistent.
 
-The first complete build is a mechanism-first quantum theory book. It keeps the
-full topic archive while reorganizing the exposition into five parts:
+## Physical Roles
 
-```text
-carrier and states
-operations
-completion
-realizations and extensions
-provenance and interpretations
+A realized mechanism is written as
+
+```math
+(\Omega,\Xi)\longrightarrow M\longrightarrow
+I_{\mathrm{op}}=(M;C,R,P)\longrightarrow
+I_{\mathrm{real}}=(I_{\mathrm{op}};A).
 ```
 
-The opening chapters derive the quantum operational identity, show standard
-mechanism-preserving transformations, and turn six constructor verbs into a
-procedure for discovery:
+A physical state `q` belongs to the admissible state space `Xi`. The operation
+`Omega` acts on that state as a generator, channel, projection, constraint, or
+observable. Their pair `M=(Omega,Xi)` specifies which law acts on which degrees
+of freedom. Closure `C` fixes domains and admissibility. The map `R` produces an
+observable prediction, and `P` fixes the order of preparation, control, and
+measurement. The realization `A` supplies the fields, material, geometry,
+parameters, initial data, and apparatus of a particular experiment.
+
+Each role removes a physical ambiguity. Without `Xi`, the operator has no
+domain. Without `C`, its states or probabilities need not be admissible. Without
+`R`, formal evolution gives no predicted measurement. Without `P`, the order of
+noncommuting operations is undefined.
+
+## Role Promotion
+
+A parameter remains in the realization while it selects a member of a fixed
+theory. It enters the mechanism when it changes the state space, operator
+domain, dynamical map, closure, observable, or operation order.
+
+| Physical change | Promotion | Consequence |
+| --- | --- | --- |
+| A prescribed background becomes a fluctuating field | `A -> (Xi, Omega)` | Quanta, correlations, and back-reaction enter the theory |
+| Geometry becomes a quantum degree of freedom | `A -> (Xi, Omega)` | Areas, connections, or causal relations acquire spectra and fluctuations |
+| Environmental correlations influence later motion | `A -> (Xi, Omega, C)` | Hidden state or a memory kernel restores the reduced dynamics |
+| A detector participates in the interaction | `A -> (Xi, Omega, R)` | Back-action and conditional state change enter outcome probabilities |
+| A boundary selects an operator domain | `A -> (C, Omega)` | Spectra, scattering channels, and edge states change |
+| Gauge or exchange symmetry selects physical states | `C -> Xi` | Charges, statistics, and admissible observables follow from the surviving sector |
+| A subsystem split defines locality | `A -> (Xi, C)` | Entanglement and Bell correlations become properties of the joint state |
+| An ordered control sequence defines the implemented map | `P -> Omega` | Reordering gates or measurements changes the channel |
+| Effective couplings depend on observation scale | `A -> (Omega, C)` | Renormalization flow connects effective laws and fixed points |
+
+These promotions connect subjects that are usually taught separately. Quantum
+field theory promotes fields into operator-valued degrees of freedom. Open
+quantum dynamics promotes environmental correlations into retained state or
+memory. Measurement theory promotes apparatus coupling into a quantum
+instrument. Quantum information promotes ordered protocols into channels.
+Quantum gravity asks whether geometry itself must be promoted.
+
+## Transfer And Missing Physics
+
+A transformation between two mechanisms names the amplitude, expectation
+value, algebra, current, or probability law that should remain invariant. State
+and output maps `alpha` and `beta` define the compatibility residual
+
+```math
+\Delta_{\alpha,\beta}=\Omega_B\alpha-\beta\Omega_A.
+```
+
+`Delta=0` identifies another realization of the retained mechanism when the
+stated observables also agree. A reproducible nonzero residual can instead
+acquire its own closure and observable consequence. It then becomes a candidate
+field, interaction, boundary term, memory coordinate, or correction to the law.
+Thus the same calculation tests whether a mechanism transfers and identifies
+the physics required when it does not.
+
+MorphWiki expresses these calculations through six physical operations:
 
 ```text
-complete    add a missing closure, observable map, or protocol
-reattach    replace an operation or carrier under stated compatibility maps
-compose     join supported transformations in a new order
-deform      vary a boundary, parameter, scale, or representation
-observe     construct a discriminating observable or measurement
-revise      replace the clause identified by a failed consequence
+complete    derive a missing closure, observable, or operation order
+reattach    place a law on another state space through explicit maps
+compose     join supported transformations
+deform      vary a boundary, scale, parameter, or representation
+observe     derive the measurement that distinguishes the construction
+revise      replace the physical role identified by a failed consequence
 ```
+
+## Quantum Theory Through Physical Roles
+
+The first complete field build contains 146 quantum topics. Entanglement is
+placed with composite state structure; commutators with observable algebra;
+Bell experiments with local measurement of joint states; boundaries with
+operator domains; and gauge constraints with the physical Hilbert space.
+Historical and interpretive pages remain searchable as annotations.
 
 Current book:
-[Quantum Theory: As A Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+[Quantum Theory Through Physical Roles](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
 
-## Why A Mechanism Wiki
+## Source Equations
 
-Conventional encyclopedias are organized around objects, discoveries, people,
-and established field boundaries. That organization is useful for finding a
-name. It is less useful for answering four constructive questions:
+A public citation appears only when an equation from the cited paper supports
+the displayed physical relation. The local build presently contains 111
+identifier-linked candidates and no equation-level confirmations. It therefore
+publishes no source links. Rebuilding against the full V2.1 source-card export
+will determine how many candidates survive equation-level matching.
 
-1. What operation produces the claimed consequence?
-2. On what carrier is that operation defined?
-3. Which closure, observable map, and protocol make the mechanism predictive?
-4. Which parts can change while a specified prediction remains invariant?
-
-MorphWiki answers those questions without discarding provenance. Topic names and
-historical vocabulary enter through the realization and evidence layers. The
-operational graph supplies a second, mechanism-first view of the same field.
+```bash
+MORPHWIKI_V2_ROOT=/path/to/KnowledgeParser/discoveries \
+MORPHWIKI_V2_SOURCE_CARD_ALIGNMENT_JSONL=/path/to/KnowledgeParser/discoveries/operator_substrate_v2_full_v21_source_card_alignment.jsonl \
+MORPHWIKI_V2_SOURCE_CARDS_JSONL=/path/to/KnowledgeParser/discoveries/source_equation_cards_full_v21.jsonl \
+bash scripts/run_quantum_book.sh
+```
 
 ## Quick Start
 
 The deterministic build uses the Python standard library. XeLaTeX or LuaLaTeX
-is required only for the PDF.
+is required for the PDF.
 
 ```bash
 git clone https://github.com/synthetix-institute/morphwiki.git
@@ -78,80 +148,61 @@ cd morphwiki
 bash scripts/run_quantum_book.sh
 ```
 
-Outputs are written to:
-
-```text
-discoveries/morphwiki_quantum/book/
-```
-
-Sparse-attention and build diagnostics remain separate repository artifacts.
-They inform the field structure and candidate connections but are not chapters
-in the PDF.
-
-## Build A Field Wiki From Papers
-
-MorphWiki can start from a folder containing text-layer PDFs, TeX, Markdown, or
-plain-text papers. The FieldBridge-backed workflow retains source passages and
-equations while producing synchronized topic, mechanism, transformation, and
-evidence views.
-
-See [Build A Mechanism-First Field Wiki From PDFs](docs/PDF_CORPUS_WORKFLOW.md)
-and [Getting Started](docs/GETTING_STARTED.md).
+Outputs are written to `discoveries/morphwiki_quantum/`.
 
 ## Repository Map
 
 ```text
 scripts/morphwiki_constructor.py
-    Shared constructor clauses, discovery verbs, and book grouping.
-
-scripts/export_morphwiki_topic_index.py
-    Build source-grounded topic records and equation-witness links.
+    Predictive closure, physical roles, role promotions, and constructor operations.
 
 scripts/build_morphwiki_quantum_tree.py
-    Place quantum topics in the operational identity and write the public map.
+    Assign quantum topics to physical roles and export promotion metadata.
+
+scripts/build_morphwiki_v2_quantum_evidence_index.py
+    Match topic relations to source equations from the full V2.1 export.
 
 scripts/analyze_quantum_constructor_rewiring.py
-    Derive worked mechanism-preserving transformations across quantum topics.
+    Derive transformations that preserve a named quantum relation.
 
 scripts/build_morphwiki_quantum_book.py
-    Generate the complete LaTeX book and optional method appendices.
+    Generate the LaTeX book and topic derivations.
 
 scripts/run_quantum_book.sh
-    Rebuild the tree, transformation cases, book, PDF, and preservation report.
+    Rebuild the evidence index, quantum map, book, PDF, and reproduction report.
 
 discoveries/morphwiki_quantum/
-    Topic records, equation witnesses, mechanism map, derivation pages, and book.
+    Quantum map, role promotions, topic pages, equation evidence, and book.
 ```
 
-## Adapt The Constructor To Another Field
+## Building Another Field
 
-A new field uses the same upper-level identity but supplies its own operations,
-carriers, closure conditions, observables, protocols, and realizations. The field
-structure must be inferred from its equations and source-local transformations,
-not produced by renaming quantum terms.
+The same upper-level identity applies to another field, but its physical roles
+must be inferred from its equations and source-local transformations.
 
 ```text
-1. Ingest the field corpus and retain source identity.
-2. Extract candidate operation, carrier, completion, and realization clauses.
-3. Group topics by the clauses they specify.
-4. Recover transformations and state what each one preserves.
-5. Write topic pages as realized operational identities.
-6. Generate discovery questions by controlled clause edits.
-7. Derive and test the consequences of the proposed constructions.
+1. Retain each equation with its paper and local context.
+2. Identify the state space, operation, closure, observable, protocol, and realization.
+3. Find quantities whose physical role changes across theories.
+4. State the relation retained by each transformation.
+5. Compute the compatibility residual.
+6. Complete an exact transfer or promote a structured residual.
+7. Derive an observable consequence in the target realization.
 ```
 
-The formal contract is in
-[FIELD_WIKI_CONTRACT.md](docs/FIELD_WIKI_CONTRACT.md). The worked tutorial starts
-at [Building A Mechanism-First Field Wiki](docs/tutorial/index.md).
+The formal requirements are described in
+[FIELD_WIKI_CONTRACT.md](docs/FIELD_WIKI_CONTRACT.md), and the reproducible
+workflow begins in [Getting Started](docs/GETTING_STARTED.md).
 
 ## Contribution Standard
 
-A useful contribution does at least one of the following:
+A contribution should supply at least one of the following:
 
-1. supplies a topic-native equation and identifies its constructor clauses;
-2. states a mechanism-preserving transformation and its retained relation;
-3. adds a physically executable realization and a discriminating consequence;
-4. builds another field from a reproducible source corpus.
+1. a source equation with its physical roles identified;
+2. a transformation with a stated invariant relation;
+3. a role promotion that changes an independent observable;
+4. a physical realization with parameters, boundaries, and a discriminating measurement;
+5. a reproducible field build from a source corpus.
 
 Broader Hyperion and FieldBridge work is maintained by the
 [Synthetix Institute](https://synthetix.institute).

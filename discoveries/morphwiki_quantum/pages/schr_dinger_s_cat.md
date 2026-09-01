@@ -3,9 +3,6 @@
 ## Evidence Status
 a schrödinger's cat modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
 
-## The Standard Story
-In quantum mechanics, Schrödinger's cat is a thought experiment concerning quantum superposition. In the thought experiment, a hypothetical cat in a closed box may be considered to be simultaneously both alive and dead while it is unobserved, as a result of its fate being linked to a random subatomic event that may or may not occur.
-
 ## Formal Role
 a schrödinger's cat acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
 
@@ -46,18 +43,3 @@ a schrödinger's cat acts on the readout layer of the quantum constructor. The f
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.514
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.513
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.481
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.463
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.463
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.462
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.460
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.458
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.455
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.448
-
----
-Wikipedia scaffold: [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

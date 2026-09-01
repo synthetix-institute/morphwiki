@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum cellular automaton can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-A quantum cellular automaton (QCA) is an abstract model of quantum computation, devised in analogy to conventional models of cellular automata introduced by John von Neumann.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum cellular automaton is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, unitary operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum cellular automaton is described by a two-
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.512
-- [1109.3239](https://arxiv.org/abs/1109.3239) — score 0.490
-- [gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110) — score 0.487
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.486
-- [astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157) — score 0.480
-- [hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080) — score 0.480
-- [1509.00542](https://arxiv.org/abs/1509.00542) — score 0.474
-- [2502.06200](https://arxiv.org/abs/2502.06200) — score 0.467
-- [1304.6875](https://arxiv.org/abs/1304.6875) — score 0.464
-- [2310.19304](https://arxiv.org/abs/2310.19304) — score 0.464
-
----
-Wikipedia scaffold: [Quantum cellular automaton](https://en.wikipedia.org/wiki/Quantum_cellular_automaton) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

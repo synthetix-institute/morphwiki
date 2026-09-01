@@ -1,32 +1,18 @@
 # Quantum imaging
 
-**Derivation step:** Boundary realization: how effects appear
-
-## Topic Context
-
-Quantum imaging is a new sub-field of quantum optics that exploits quantum correlations such as quantum entanglement of the electromagnetic field in order to image objects with a resolution or other imaging criteria that is beyond what is possible in classical optics. Examples of quantum imaging are quantum ghost imaging, quantum lithography, imaging with undetected photons, sub-shot-noise imaging, and quantum sensing. Quantum imaging may someday be useful for storing patterns of data in quantum computers and transmitting large amounts of highly secure encrypted information. Quantum mechanics has shown that light has inherent "uncertainties" in its features, manifested as moment-to-moment fluctuations in its properties.
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Quantum_imaging)
-
-## Role In The Derivation
-
-Quantum imaging belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
-
-## Why This Step Is Needed
-
-Quantum imaging makes the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
+**Physical domain:** Measurement, instruments, and probabilities
 
 ## Mechanism
 
+Quantum imaging belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+
+Quantum imaging connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+
 The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
 
-## How It Enters The Theory
+## Physical Construction
 
-**Place in the construction.** Quantum imaging contributes an instrument-mediated observable role to the quantum construction. This page is read first as a realization move: it changes the domain, boundary, geometry, or interface in which the operator acts.
-
-**State and operation.** A probe state, sample state, field mode, detector state, or estimation register. An interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator.
-
-**Admissibility and prediction.** The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The governing operation is an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated observables are Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
 
 ## Representative Relation
 
@@ -34,33 +20,22 @@ The mechanism is an apparatus-coupled observable: a prepared probe state interac
 \rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-The eigenvalue or scattering equation must be read together with its domain and matching conditions. Confinement selects discrete modes; open channels produce transmission, reflection, and resonances. Removing the boundary should recover the appropriate free or infinite-domain limit.
+Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
 
-## What Remains Stable
+Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Quantum imaging shows how a context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Quantum imaging connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The potential, geometry, asymptotic condition, or detector arrangement can change. The same boundary role may appear as a box, barrier, cavity, interface, or scattering region. Changing the boundary can change the spectrum without changing the general quantum constructor.
+The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-Boundary-shaped single-particle mechanisms extend naturally to many modes and fields. The field-theory chapter replaces a fixed particle number with occupation sectors, local fields, and symmetry constraints.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels.
-- The same operator can have different spectra when the admissible domain changes.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
 ## Evidence Links
 
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:1604.05385](https://arxiv.org/abs/1604.05385)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
-- [arXiv:quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159)
-- [arXiv:gr-qc0411110](https://arxiv.org/abs/gr-qc/0411110)
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

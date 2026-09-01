@@ -1,63 +1,54 @@
 # Fermion
 
-## Evidence Status
-A fermion can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
-
-## The Standard Story
-In particle physics, a fermion is a subatomic particle that follows Fermi–Dirac statistics. Fermions have a half-integer spin and obey the Pauli exclusion principle.
+## Central Claim
+Fermionic exchange constrains the global many-body state: antisymmetry removes coincidence states and thereby produces exclusion, exchange holes, Fermi surfaces, and degeneracy pressure before a repulsive interaction is introduced.
 
 ## Formal Role
-In quantum-mechanical terms, a fermion is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
+The fermion construction is an exchange constraint on state space, not a particle label. The wave function changes sign under exchange and vanishes when identical one-particle states coincide. Exterior Fock space and canonical anticommutation preserve that nodal restriction when particle number changes. At finite density, distinct modes fill to a Fermi surface and generate degeneracy pressure without pairwise repulsion. Pairing can move the state into an even-parity collective sector, while mappings to spins or hard-core bosons preserve selected spectra only by changing locality or correlation observables.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (potential or domain condition, preparation context, or measurement basis) determine which states are admissible.
-- State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis.
+- The many-particle state lives in an antisymmetric sector.
+- Creation and annihilation operators anticommute.
+- Mode occupation is restricted to zero or one.
+- Number, energy, momentum, spin, or charge provide field-dependent readouts.
+- Exchange of identical particles changes the sign of the state.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+\Psi(\ldots,x_i,\ldots,x_j,\ldots)=-\Psi(\ldots,x_j,\ldots,x_i,\ldots)
+\mathcal F_{-}(\mathcal H)=\bigoplus_{n=0}^{\infty}\wedge^n\mathcal H
+\{a_i,a_j^{\dagger}\}=\delta_{ij},\quad \{a_i,a_j\}=0
+n_i=a_i^{\dagger}a_i\in\{0,1\}
+```
 
 ## Mechanism Roles
-- **state:** quantum state
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** potential or domain condition
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** antisymmetric many-body state; fermionic Fock state; occupied mode
+- **operator:** fermionic creation operator; fermionic annihilation operator; number operator
+- **spectrum:** occupation number; energy; momentum; spin
+- **boundary:** exchange symmetry sector; mode basis
+- **incompatibility:** anticommutation; Pauli exclusion
+- **protocol:** mode filling; fermionic quantization
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- the relation between prepared states, observables, and spectral probability measures
+- the use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations
+- the dependence of the readout on basis, domain, potential, preparation, or measurement context
+- the commutator structure that limits which observables can be jointly diagonalized
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- the physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation
+- the representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields
+- where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight
+- the implementation of preparation, boundary condition, detector, or readout channel
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.487
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.479
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.465
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.453
-- [astro-ph0604157](https://arxiv.org/abs/astro-ph/0604157) — score 0.452
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.449
-- [1108.5312](https://arxiv.org/abs/1108.5312) — score 0.444
-- [hep-lat9608080](https://arxiv.org/abs/hep-lat/9608080) — score 0.443
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.439
-- [2112.10557](https://arxiv.org/abs/2112.10557) — score 0.438
-
----
-Wikipedia scaffold: [Fermion](https://en.wikipedia.org/wiki/Fermion) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
+- A transfer target provides a state space, a transformation law, and a spectral or categorical readout, with one compatibility relation experimentally unresolved.
+- A useful validation varies the basis, domain, or measurement context and measures whether the allowed readout changes while the underlying transformation law remains identifiable.
+- A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.

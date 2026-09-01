@@ -3,9 +3,6 @@
 ## Evidence Status
 The schrödinger picture can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In physics, the Schrödinger picture or Schrödinger representation is a formulation of quantum mechanics in which the state vectors evolve in time, but the operators are mostly constant with respect to time. This differs from the Heisenberg picture which keeps the states constant while the observables evolve in time, and from the interaction picture in which both the states and the observables evolve in time.
-
 ## Formal Role
 In quantum-mechanical terms, the Schrödinger picture is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through state vector or wavefunction, Hamiltonian or unitary operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, the Schrödinger picture is described by a wave fun
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.464
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.442
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.435
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.418
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.414
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.411
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.408
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.404
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.403
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.391
-
----
-Wikipedia scaffold: [Schrödinger picture](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_picture) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

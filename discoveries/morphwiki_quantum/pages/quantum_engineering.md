@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum engineering can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum engineering is the development of technology that capitalizes on the laws of quantum mechanics. This type of engineering uses quantum mechanics to develop technologies such as quantum sensors and quantum computers.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum engineering is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through quantum state or superposition, generator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum engineering is described by a two-dimensi
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.527
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.504
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.500
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.496
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.478
-- [1803.02207](https://arxiv.org/abs/1803.02207) — score 0.475
-- [1905.02221](https://arxiv.org/abs/1905.02221) — score 0.474
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.474
-- [2107.01923](https://arxiv.org/abs/2107.01923) — score 0.473
-- [quant-ph0312187](https://arxiv.org/abs/quant-ph/0312187) — score 0.473
-
----
-Wikipedia scaffold: [Quantum engineering](https://en.wikipedia.org/wiki/Quantum_engineering) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

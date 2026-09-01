@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum finite automaton can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In quantum computing, quantum finite automata (QFA) or quantum state machines are a quantum analog of probabilistic automata or a Markov decision process. They provide a mathematical abstraction of real-world quantum computers.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum finite automaton is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or state vector, matrix or unitary operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum finite automaton is described by a wave f
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.446
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.442
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.420
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.410
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.408
-- [0806.4515](https://arxiv.org/abs/0806.4515) — score 0.402
-- [1302.5510](https://arxiv.org/abs/1302.5510) — score 0.400
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.398
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.396
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.393
-
----
-Wikipedia scaffold: [Quantum finite automaton](https://en.wikipedia.org/wiki/Quantum_finite_automaton) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

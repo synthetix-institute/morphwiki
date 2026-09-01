@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""Build a mechanism-first tree over MorphWiki quantum pages.
-
-The topic pages are generated from Wikipedia article boundaries.  This script
-adds a second layer: a quantum-theory tree organized by operational roles rather
-than page names or historical taxonomy.  It uses only the exported MorphWiki
-JSON pages: route profiles, grammar terms, witness scores, and public summaries.
-"""
+"""Build a quantum-theory map from physical roles and their promotions."""
 
 from __future__ import annotations
 
@@ -21,17 +15,31 @@ from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
 try:
     from morphwiki_constructor import (
+        CANONICAL_TOPIC_ALIASES,
         CONSTRUCTOR_CHAIN_TEXT,
         CONSTRUCTOR_CLAUSES,
         DISCOVERY_VERBS,
+        PREDICTIVE_CLOSURE_LATEX,
+        PREDICTIVE_CLOSURE_PRINCIPLE,
+        QUANTUM_ROLE_PROMOTIONS,
+        ROLE_PROMOTION_CRITERION_LATEX,
+        ROLE_PROMOTION_PRINCIPLE,
         public_theory_language,
+        quantum_role_promotions_for_slug,
     )
 except ModuleNotFoundError:  # Imported as scripts.build_morphwiki_quantum_tree.
     from scripts.morphwiki_constructor import (
+        CANONICAL_TOPIC_ALIASES,
         CONSTRUCTOR_CHAIN_TEXT,
         CONSTRUCTOR_CLAUSES,
         DISCOVERY_VERBS,
+        PREDICTIVE_CLOSURE_LATEX,
+        PREDICTIVE_CLOSURE_PRINCIPLE,
+        QUANTUM_ROLE_PROMOTIONS,
+        ROLE_PROMOTION_CRITERION_LATEX,
+        ROLE_PROMOTION_PRINCIPLE,
         public_theory_language,
+        quantum_role_promotions_for_slug,
     )
 
 
@@ -69,12 +77,12 @@ LAGRANGIAN_CLASS_LABELS = {
 
 BRANCHES = {
     "root": {
-        "title": "The quantum operational identity",
+        "title": "Quantum theories differ by what they make physical",
         "definition": (
-            "A quantum prediction is produced by a realized mechanism: an operation on an admissible "
-            "carrier, completed by closure, an observable map, and protocol, then supplied with the physical "
-            "objects, parameters, boundaries, and apparatus of a particular problem. Named topics "
-            "specify or transform clauses of this identity."
+            "Quantum theories assign different physical roles to geometry, environments, boundaries, "
+            "apparatus, constraints, and control sequences. A quantity can remain external data in one "
+            "theory and become a state variable, dynamical field, closure condition, observable, or "
+            "operation in another. These role changes organize the map."
         ),
         "query": {
             "spectral_operator_route": 1.0,
@@ -95,18 +103,17 @@ BRANCHES = {
         ],
     },
     "context": {
-        "title": "Formal context: carrier, domain, and representation",
+        "title": "State space, domain, and representation",
         "definition": (
-            "A quantum calculation first fixes the Hilbert space, operator domain, basis, preparation "
-            "context, representation, gauge, or boundary condition. This is not the measured answer; "
-            "it is the legal carrier on which states, transformations, observables, and probabilities "
-            "can be defined."
+            "The Hilbert or Fock space, operator domain, basis, gauge sector, and subsystem decomposition "
+            "determine which states and operations exist. Changing this structure can change the theory "
+            "before any Hamiltonian parameter is varied."
         ),
         "query": {"boundary_weak_form_route": 0.55, "constraint_closure_route": 0.45, "spectral_operator_route": 0.45},
         "keywords": ["hilbert", "basis", "preparation", "representation", "formalism", "domain", "space", "gauge"],
     },
     "states": {
-        "title": "State carrier inside Hilbert space",
+        "title": "Quantum states and subsystem structure",
         "definition": (
             "A state is the probability-bearing element of the selected Hilbert space or its density-operator "
             "state space. Wave functions, density matrices, superpositions, and coherent states are "
@@ -116,7 +123,7 @@ BRANCHES = {
         "keywords": ["state", "wave function", "density matrix", "superposition", "coherence", "decoherence"],
     },
     "generators": {
-        "title": "Generator: lawful change before measurement",
+        "title": "Dynamics and transformations",
         "definition": (
             "Hamiltonians, unitary maps, equations of motion, and path weights describe the lawful "
             "transport of the state before a question is resolved."
@@ -125,7 +132,7 @@ BRANCHES = {
         "keywords": ["hamiltonian", "schrodinger", "unitary", "dynamics", "path integral", "perturbation", "evolution"],
     },
     "observables": {
-        "title": "Spectral question: what can be asked",
+        "title": "Observables and spectra",
         "definition": (
             "An observable is a permitted question whose operator form determines the possible numerical answers."
         ),
@@ -133,7 +140,7 @@ BRANCHES = {
         "keywords": ["observable", "operator", "self-adjoint", "eigenvalue", "eigenvector", "spectrum", "pauli"],
     },
     "measurement": {
-        "title": "Measurement rule: how observables become probabilities",
+        "title": "Measurement, instruments, and probabilities",
         "definition": (
             "Measurement connects a state and an observable to recorded frequencies.  Projection, "
             "POVMs, Born weights, and collapse language are alternative ways of presenting this "
@@ -148,11 +155,12 @@ BRANCHES = {
         "keywords": ["measurement", "born", "povm", "projection", "collapse", "quantum jump", "outcome"],
     },
     "incompatibility": {
-        "title": "Compatibility limit: what cannot be jointly sharp",
+        "title": "Noncommuting observables",
         "definition": (
-            "The non-classical part of the theory appears when two otherwise legal questions do "
-            "not compose into one common sharp question.  Commutators, uncertainty relations, "
-            "contextuality, Bell tests, and entanglement live here."
+            "Two observables need not possess a common sharp spectral resolution. Their commutator "
+            "and uncertainty relations quantify this algebraic incompatibility. Entanglement belongs "
+            "instead to the structure of composite states, while Bell experiments join that state "
+            "structure to local measurements."
         ),
         "query": {
             "commutator_incompatibility_route": 0.85,
@@ -160,24 +168,24 @@ BRANCHES = {
             "constraint_closure_route": 0.35,
             "boundary_weak_form_route": 0.25,
         },
-        "keywords": ["commutator", "uncertainty", "entanglement", "bell", "contextual", "epr", "nonlocal"],
+        "keywords": ["commutator", "uncertainty", "noncommuting", "contextual", "complementarity"],
     },
     "boundaries": {
-        "title": "Boundary realization: how effects appear",
+        "title": "Boundaries and operator domains",
         "definition": (
-            "Many named quantum effects are boundary realizations of the same construction.  A "
-            "potential, barrier, box, cavity, detector, or medium changes the allowed spectral "
-            "channels without changing the basic prediction problem."
+            "Walls, interfaces, asymptotic conditions, and media become part of the mechanism when "
+            "they select the operator domain. The resulting self-adjoint extension fixes spectra, "
+            "scattering channels, tunnelling amplitudes, and edge states."
         ),
         "query": {"boundary_weak_form_route": 0.85, "spectral_operator_route": 0.65, "transport_flow_route": 0.35},
         "keywords": ["potential", "barrier", "tunnelling", "box", "well", "cavity", "optics", "interference", "scattering"],
     },
     "fields": {
-        "title": "Many-mode extension: fields, particles, and scaling",
+        "title": "Fields, constraints, and scale",
         "definition": (
-            "Quantum field theory, gauge theory, renormalization, photons, fermions, and related "
-            "topics extend the same state-operator-spectrum logic to variable particle number, "
-            "local fields, and scale-dependent descriptions."
+            "Quantum field theory promotes fields to operator-valued degrees of freedom. Gauge "
+            "constraints select the physical Hilbert space, particle statistics select admissible "
+            "sectors, and renormalization makes the effective law depend on scale."
         ),
         "query": {
             "transport_flow_route": 0.65,
@@ -188,7 +196,7 @@ BRANCHES = {
         "keywords": ["field", "gauge", "renormalization", "photon", "fermion", "boson", "dirac", "electrodynamics", "vacuum"],
     },
     "protocols": {
-        "title": "Protocol layer: engineered transformations",
+        "title": "Control sequences and quantum channels",
         "definition": (
             "Quantum computing, channels, circuits, algorithms, networks, sensors, and error "
             "correction turn the same formal machinery into controlled sequences of operations."
@@ -222,7 +230,7 @@ BRANCH_ORDER = [
 ]
 
 ANNOTATION_RE = re.compile(
-    r"\b(history|book|gentle introduction|the quantum universe|mysticism|mind|interpretations|interpretation|qbism|quantum bayesian|relational quantum mechanics|"
+    r"\b(history|book|gentle introduction|introduction to quantum mechanics|the quantum universe|mysticism|mind|interpretations|interpretation|qbism|quantum bayesian|relational quantum mechanics|"
     r"copenhagen|many-worlds|consistent histories|erwin|werner heisenberg|david hilbert|applications of quantum mechanics|concepts and methods|modern quantum mechanics)\b",
     re.IGNORECASE,
 )
@@ -233,7 +241,7 @@ CORE_TITLE_PATTERNS = {
     "generators": r"\b(hamiltonian|schrodinger|unitary|path integral|dynamics|perturbation)\b",
     "observables": r"\b(observable|self-adjoint|operator|spectral theory|eigenvalue|pauli|hilbert)\b",
     "measurement": r"\b(born rule|povm|measurement|collapse|quantum jump)\b",
-    "incompatibility": r"\b(entanglement|bell|commutator|uncertainty|nonlocality|epr|einstein.podolsky)\b",
+    "incompatibility": r"\b(commutator|uncertainty|noncommuting|complementarity)\b",
     "boundaries": r"\b(tunnell|particle in a box|potential well|scattering|interference|optics|spectral line)\b",
     "fields": r"\b(quantum field theory|gauge|renormalization|dirac|electrodynamics|chromodynamics|fermion|boson|photon)\b",
     "protocols": r"\b(channel|logic gate|error correction|circuit|algorithm|computing|network|information|key distribution)\b",
@@ -396,16 +404,22 @@ def v2_page_evidence_summary(slug: str, evidence_index: Mapping[str, Any]) -> Di
     if not page:
         return {"available": False, "status": "page_not_in_v2_index"}
     examples = page.get("source_examples") or []
+    grounded_examples = [
+        {**example, "source_grounded": True}
+        for example in examples
+        if example.get("topic_relevance") == "local_context_match"
+    ]
     return {
-        "available": page.get("status") == "v2_source_grounded",
+        "available": bool(grounded_examples),
         "status": page.get("status"),
-        "matched_source_examples": page.get("matched_source_examples", 0),
+        "matched_source_examples": len(grounded_examples),
+        "identifier_linked_examples": len(examples),
         "matched_alignment_records": page.get("matched_alignment_records", 0),
         "matched_v2_row_count": len(page.get("matched_v2_row_ids") or []),
         "tokens": dict(list((page.get("tokens") or {}).items())[:12]),
         "routes": dict(list((page.get("routes") or {}).items())[:8]),
         "constructor_roles": dict(list((page.get("constructor_roles") or {}).items())[:8]),
-        "source_examples": examples[:3],
+        "source_examples": grounded_examples[:3],
         "claim_boundary": "Private V2 evidence summary for page grounding; not public explanatory text.",
     }
 
@@ -606,18 +620,21 @@ def route_dot(left: Mapping[str, float], right: Mapping[str, float]) -> float:
 def page_counter(page: Mapping[str, Any]) -> Counter:
     mw = page.get("morphwiki", {})
     wiki = page.get("wikipedia", {})
+    grammar = mw.get("grammar") or {}
     return words(
         wiki.get("title"),
-        wiki.get("description"),
-        wiki.get("summary"),
-        mw.get("object_view"),
         mw.get("takeaway"),
+        mw.get("mechanism_view"),
+        mw.get("what_this_adds"),
+        mw.get("conversion_form"),
+        mw.get("mathematical_skeleton"),
+        grammar,
     )
 
 
 def title_text(page: Mapping[str, Any]) -> str:
     wiki = page.get("wikipedia", {})
-    return " ".join(str(wiki.get(key) or "") for key in ("title", "description")).lower()
+    return str(wiki.get("title") or page.get("_slug") or "").lower()
 
 
 def explicit_branch(page: Mapping[str, Any]) -> Optional[str]:
@@ -629,15 +646,15 @@ def explicit_branch(page: Mapping[str, Any]) -> Optional[str]:
     if is_annotation_title(text):
         return "annotations"
     title_overrides = [
-        ("states", r"^(quantum state|wave function|density matrix|superposition principle|quantum superposition|coherence|quantum decoherence|two-state quantum system|qubit|quantum fluctuation|spin \(physics\))$"),
-        ("generators", r"^(unitary operator|hamiltonian|hamiltonian \(quantum mechanics\)|schrödinger equation|schrodinger equation|schrödinger picture|path integral|path integral formulation|quantum dynamics|perturbation theory.*|creation and annihilation operators)$"),
-        ("observables", r"^(observable|self-adjoint operator|operator theory|operator \(physics\)|spectral theory|eigenvalues and eigenvectors|pauli matrices|angular momentum operator|von neumann algebra)$"),
-        ("measurement", r"^(born rule|povm|projection-valued measure|measurement in quantum mechanics|measurement problem|wave function collapse|quantum jump|delayed-choice quantum eraser|quantum eraser experiment)$"),
-        ("incompatibility", r"^(bell's theorem|quantum entanglement|commutator|uncertainty principle|einstein.*podolsky.*rosen paradox|quantum nonlocality|wave.*particle duality)$"),
+        ("states", r"^(quantum state|wave function|density matrix|superposition principle|quantum superposition|coherence|quantum decoherence|two-state quantum system|qubit|quantum fluctuation|spin \(physics\)|quantum entanglement|quantum biology|schrödinger's cat|schrodinger's cat|macroscopic quantum phenomena)$"),
+        ("generators", r"^(unitary operator|hamiltonian|hamiltonian \(quantum mechanics\)|schrödinger equation|schrodinger equation|schrödinger picture|path integral|path integral formulation|quantum dynamics|perturbation theory.*|creation and annihilation operators|quantum chaos|symmetry in quantum mechanics|heisenberg picture|quantum stochastic calculus)$"),
+        ("observables", r"^(observable|self-adjoint operator|operator theory|operator \(physics\)|spectral theory|eigenvalues and eigenvectors|pauli matrices|angular momentum operator|von neumann algebra|quantum logic|heisenberg group)$"),
+        ("measurement", r"^(born rule|povm|projection-valued measure|measurement in quantum mechanics|measurement problem|wave function collapse|quantum jump|delayed-choice quantum eraser|quantum eraser experiment|bell's theorem|einstein.*podolsky.*rosen paradox|quantum nonlocality|wave.*particle duality|electron microscope|quantum amplifier|quantum imaging)$"),
+        ("incompatibility", r"^(commutator|uncertainty principle|canonical commutation relation)$"),
         ("boundaries", r"^(potential well|particle in a box|quantum tunnelling|quantum tunneling|scattering|wave interference|quantum optics|spectral line|s-matrix|quantum imaging|quantum metamaterial|quantum harmonic oscillator|macroscopic quantum phenomena)$"),
         ("fields", r"^(quantum field theory|quantum electrodynamics|quantum chromodynamics|gauge theory|renormalization|dirac equation|klein.*gordon equation|fock space|photon|electron|fermion|boson|string theory|ads/cft correspondence|quantum gravity|loop quantum gravity|quantum geometry|spin network|spin foam|quantum cosmology|standard model|quantum chemistry|quantum statistical mechanics|bose.*einstein statistics|fermi.*dirac statistics)$"),
-        ("protocols", r"^(quantum information|quantum information science|quantum computing|quantum algorithm|quantum circuit|quantum logic gate|quantum channel|quantum network|quantum error correction|quantum key distribution|quantum teleportation|quantum sensor|quantum metrology|quantum programming|quantum image processing|quantum complexity theory|quantum machine learning|quantum machine|quantum engineering)$"),
-        ("context", r"^(fourier transform|quantum differential calculus|transformation theory \(quantum mechanics\)|mathematical formulation of quantum mechanics|hilbert space)$"),
+        ("protocols", r"^(quantum information|quantum information science|quantum computing|quantum algorithm|quantum circuit|quantum logic gate|quantum channel|quantum network|quantum error correction|quantum key distribution|quantum teleportation|quantum sensor|quantum metrology|quantum programming|quantum image processing|quantum complexity theory|quantum machine learning|quantum machine|quantum engineering|quantum simulator|quantum cellular automaton|quantum bus)$"),
+        ("context", r"^(fourier transform|quantum differential calculus|transformation theory \(quantum mechanics\)|mathematical formulation of quantum mechanics|hilbert space|quantum mechanics)$"),
     ]
     for branch_id, pattern in title_overrides:
         if re.search(pattern, title_only, re.IGNORECASE):
@@ -649,7 +666,7 @@ def explicit_branch(page: Mapping[str, Any]) -> Optional[str]:
         ),
         (
             "incompatibility",
-            r"\b(entanglement|bell|epr|einstein.podolsky|nonlocality|uncertainty|commutator|contextual|complementarity|wave.particle)\b",
+            r"\b(uncertainty|commutator|noncommuting|contextual|complementarity)\b",
         ),
         (
             "measurement",
@@ -749,9 +766,15 @@ def assign_pages(
         else:
             primary = max(scores.items(), key=lambda item: item[1])[0]
             secondary = sorted(scores.items(), key=lambda item: item[1], reverse=True)[1][0]
+        slug = str(page.get("_slug") or "")
+        promotions = [dict(item) for item in quantum_role_promotions_for_slug(slug)]
+        canonical_slug = CANONICAL_TOPIC_ALIASES.get(slug, slug)
         row = {
             "title": page_title,
-            "slug": page.get("_slug"),
+            "slug": slug,
+            "canonical_slug": canonical_slug,
+            "is_alias": canonical_slug != slug,
+            "placement_basis": "curated_physical_role" if explicit else "topic_native_role_score",
             "score": round(scores[primary], 4),
             "secondary": secondary,
             "secondary_score": round(scores[secondary], 4),
@@ -763,6 +786,7 @@ def assign_pages(
             "lagrangian": lagrangian,
             "takeaway": page.get("morphwiki", {}).get("takeaway", ""),
             "witnesses": len(page.get("hyperion", {}).get("equation_witnesses") or []),
+            "role_promotions": promotions,
         }
         assignments[primary].append(row)
         page_rows.append(row | {"branch": primary})
@@ -990,42 +1014,38 @@ def anomalies(pages: Sequence[Mapping[str, Any]], page_rows: Sequence[Mapping[st
 def branch_insights(assignments: Mapping[str, Sequence[Mapping[str, Any]]]) -> Dict[str, str]:
     return {
         "context": (
-            "This branch is the first step because quantum mechanics is not defined on raw objects. "
-            "It begins by specifying the space, basis, representation, or admissibility condition in which states and questions make sense."
+            "A Hilbert space and an operator domain determine which states and operations exist. "
+            "Gauge sectors, bases, and subsystem decompositions refine that physical domain."
         ),
         "states": (
-            "The state branch should be introduced before particles.  It is the predictive carrier; particles, "
-            "waves, fields, and qubits are later realizations of that carrier."
+            "The state must retain every coordinate needed to determine later probabilities. "
+            "Entanglement enters here because it is a property of a joint state relative to a stated subsystem decomposition."
         ),
         "generators": (
-            "Time evolution is a transport problem over states.  The Hamiltonian and path integral are two "
-            "views of the same generator role rather than unrelated formalisms."
+            "Hamiltonians, channels, and path amplitudes determine how a prepared state changes. "
+            "Equivalent formulations belong together when they preserve amplitudes or expectation values on a common domain."
         ),
         "observables": (
-            "The central unit is a legal question posed to a state. Spectra make the possible answers visible."
+            "An observable determines possible outcomes through its spectral measure. The state then fixes their probabilities."
         ),
         "measurement": (
-            "Measurement is best placed after observables and spectra: it is the rule that turns spectral "
-            "resolution into recorded probability, not the mystical starting point of the theory."
+            "A quantum instrument joins an outcome probability to the corresponding state change. "
+            "Bell experiments enter here because local measurements interrogate correlations in a composite state."
         ),
         "incompatibility": (
-            "The non-classical core appears as failure of joint sharpness.  Entanglement, Bell phenomena, and "
-            "uncertainty are different faces of this compatibility structure."
+            "Noncommuting observables lack a common sharp spectral resolution. Commutators and uncertainty relations quantify this algebraic fact."
         ),
         "boundaries": (
-            "Named effects such as tunnelling and particle-in-a-box are boundary realizations of the state-operator-readout construction."
+            "A boundary becomes physical closure when it fixes an operator domain. Tunnelling, confinement, scattering, and edge spectra follow from that domain."
         ),
         "fields": (
-            "Field theory and gauge theory extend the same construction to many modes, local generators, and "
-            "scale-dependent descriptions."
+            "Fields enlarge the state space to variable occupation and local operator algebras. Gauge constraints, statistics, and scale then select the physical sectors and effective law."
         ),
         "protocols": (
-            "Quantum information is the engineering layer: the same state-operator-readout machinery becomes "
-            "a controlled sequence of transformations."
+            "An ordered sequence becomes dynamics when its composition defines the implemented channel. Quantum control and information theory exploit this promotion directly."
         ),
         "annotations": (
-            "These pages remain useful for orientation and are placed downstream of the construction steps. "
-            "This prevents biographies, books, and interpretations from becoming false roots of the mechanism."
+            "Historical and interpretive sources explain how the formalism developed and how its probabilities are read. They remain linked to the physical relations they discuss."
         ),
     }
 
@@ -1175,38 +1195,48 @@ def _render_diagnostic_markdown(report: Mapping[str, Any]) -> str:
 
 
 def render_markdown(report: Mapping[str, Any]) -> str:
-    """Render the public mechanism map around construction and discovery."""
+    """Render the public quantum map around predictive closure."""
     lines = [
-        "# Quantum Theory By Construction",
+        "# Quantum Theory Through Physical Roles",
         "",
-        "Quantum theory is usually entered through named subjects: wave functions, particles, "
-        "measurement, entanglement, fields, and information. MorphWiki retains those entry points "
-        "but reorganizes them by the work they perform in a prediction.",
+        "Quantum theories differ in what they treat as physical. Geometry may be fixed background "
+        "or a quantum degree of freedom. An environment may be discarded or retained as memory. "
+        "A detector may record an outcome or participate in the dynamics that produces it. The map "
+        "is organized by these changes of physical role.",
         "",
-        "## The Operational Identity",
+        "## Predictive Closure",
+        "",
+        PREDICTIVE_CLOSURE_PRINCIPLE,
+        "",
+        "```math",
+        PREDICTIVE_CLOSURE_LATEX,
+        "```",
+        "",
+        "The first relation requires the declared state to contain every coordinate needed for later "
+        "probabilities. The second requires equivalent sequences of transformations to agree. Hidden "
+        "environmental correlations violate the first relation; curvature, frustration, and other "
+        "path-dependent effects violate the second. A complete theory restores closure by adding the "
+        "smallest missing physical object.",
+        "",
+        "## A Quantum Mechanism",
         "",
         "```text",
         CONSTRUCTOR_CHAIN_TEXT,
         "```",
         "",
-        "The first pair is the mechanism core. `Omega` states what transformation is performed; "
-        "`Xi` states the carrier on which that transformation is defined. Closure, readout, and "
-        "protocol complete the operational identity. The realization layer supplies the named "
-        "system, parameters, units, boundaries, geometry, and apparatus needed for a concrete prediction.",
+        "A physical state `q` belongs to `Xi`, the space of admissible states. The operation `Omega` "
+        "moves that state, constrains it, or asks a measurable question of it. Their pair "
+        "`M=(Omega,Xi)` is the mechanism core. Closure `C` fixes domains and admissibility. The map "
+        "`R` gives probabilities or observables, and `P` gives the order of preparation, control, and "
+        "measurement. The realization `A` fixes the fields, material, geometry, parameters, and apparatus.",
         "",
     ]
-    for symbol, name, description in CONSTRUCTOR_CLAUSES:
-        lines.append(f"- **{symbol}, {name}.** {description}")
-
     lines.extend(
         [
-            "",
-            "These clauses are addressable but not independent. A Hamiltonian is meaningful only "
-            "on a stated domain; a readout is meaningful only for an admissible state; a protocol "
-            "must preserve the closure conditions required by the mechanism. The hierarchy records "
-            "what has been specified, not a universal temporal order.",
-            "",
-            "## Quantum Specialization",
+            "The clauses are physically coupled. A Hamiltonian requires a domain. A measurement "
+            "requires an admissible state and a positive probability rule. A control sequence must "
+            "preserve the constraints of every intermediate state. Removing any one of these relations "
+            "leaves the prediction undefined or ambiguous.",
             "",
             "```math",
             "\\Xi_Q=(\\mathcal H,\\mathcal D,\\mathcal S),\\qquad "
@@ -1216,50 +1246,47 @@ def render_markdown(report: Mapping[str, Any]) -> str:
             "p(y)=\\operatorname{Tr}(E_y\\rho_t)",
             "```",
             "",
-            "Here the carrier includes the Hilbert or Fock space, state class, and operator domain. "
-            "The operation may be a generator, observable, channel, symmetry action, or composition. "
-            "Closure imposes normalization, positivity, domain, gauge, or compatibility conditions. "
-            "Readout connects the construction to probabilities, spectra, correlators, currents, or "
-            "detector records. Protocol states how the system is prepared, transformed, and measured.",
+            "Here the density operator `rho` is the state. The Hilbert space, state class, and domain "
+            "belong to `Xi_Q`; generators, observables, and channels belong to `Omega_Q`. The Born rule "
+            "then converts the evolved state and the measurement operators into outcome probabilities.",
             "",
-            "## Mechanism-Preserving Transformations",
+            "## Role Promotion",
             "",
-            "A scientific connection is useful when it states what survives a change. In quantum "
-            "theory this may be an amplitude, expectation value, operator algebra, conserved flux, "
-            "complete positivity, or a family of correlators. A transformation is written as",
+            ROLE_PROMOTION_PRINCIPLE,
             "",
             "```math",
-            "I_i=((\\Omega_i,\\Xi_i);C_i,R_i,P_i) "
-            "\\xrightarrow{T} I_j=((\\Omega_j,\\Xi_j);C_j,R_j,P_j).",
+            ROLE_PROMOTION_CRITERION_LATEX,
             "```",
             "",
-            "The index change need not denote physical time. It can denote reformulation, completion, "
-            "carrier replacement, projection, composition, deformation, or revision. The invariant "
-            "must be named for each transformation; visual similarity between equations is not enough.",
-            "",
-            "## Six Constructor Verbs",
+            "The resulting promotions connect the major frontiers of quantum theory:",
             "",
         ]
     )
-    for name, description in DISCOVERY_VERBS:
-        lines.append(f"- **{name}.** {description.capitalize()}.")
+    for promotion in report.get("role_promotion", {}).get("families", []):
+        targets = ", ".join(promotion.get("target_roles") or [])
+        lines.append(
+            f"- **{promotion['label']}** (`{promotion['source_role']} -> {targets}`). "
+            f"{promotion['physical_change']} {promotion['consequence']}"
+        )
 
     lines.extend(
         [
             "",
-            "## A Discovery Procedure",
+            "## Transformations And Missing Physics",
             "",
-            "1. Select a source identity and state the prediction or relation that must be retained.",
-            "2. Choose one clause to edit. Do not change the whole model at once.",
-            "3. Construct the new operational identity and supply any missing closure, readout, or protocol.",
-            "4. Attach a physical realization with dimensions, parameters, boundaries, and an executable procedure.",
-            "5. Derive a consequence that distinguishes the construction from the source model and from negative controls.",
-            "6. Accept the construction only if the consequence survives; otherwise revise the clause that failed.",
+            "A transformation relates two mechanisms while naming the amplitude, expectation value, "
+            "operator algebra, current, or probability law that should remain unchanged:",
             "",
-            "A detached operation `(Omega, 0_Xi)` and a carrier `(0_Omega, Xi')` define a particularly "
-            "clear construction question: can the operation be realized on the new carrier, and what "
-            "closure and readout are then required? This is a search over typed mechanisms, not an "
-            "invitation to attach arbitrary equations to arbitrary systems.",
+            "```math",
+            "I_i=((\\Omega_i,\\Xi_i);C_i,R_i,P_i) "
+            "\\xrightarrow{T} I_j=((\\Omega_j,\\Xi_j);C_j,R_j,P_j),",
+            "\\qquad \\Delta_{\\alpha,\\beta}=\\Omega_j\\alpha-\\beta\\Omega_i.",
+            "```",
+            "",
+            "When `Delta` vanishes, the retained mechanism has another realization. When it closes as "
+            "a reproducible operator and changes an independent observable, the missing term becomes a "
+            "candidate field, interaction, boundary contribution, or internal coordinate. Predictive "
+            "closure therefore connects transfer and theory extension in one calculation.",
             "",
             "## The Quantum Map",
             "",
@@ -1281,30 +1308,25 @@ def render_markdown(report: Mapping[str, Any]) -> str:
 
     lines.extend(
         [
-            "## Worked Transformations",
-            "",
-            "- **Schrodinger, Heisenberg, and path-integral descriptions:** deform the representation "
-            "while retaining transition amplitudes or expectation values on a common domain.",
-            "- **Gauge systems:** complete the mechanism with the constraint sector before defining "
-            "a physical readout on the quotient state space.",
-            "- **Quantum instruments and error correction:** compose outcome-resolved channels with "
-            "conditional recovery while retaining complete positivity and total probability.",
-            "- **Quantum simulation and duality:** reattach a selected operator algebra to another "
-            "carrier through an intertwining map, then compare correlators rather than state labels.",
-            "",
-            "## Discovery Questions Generated By The Map",
+            "## Constructing A Theory",
             "",
         ]
     )
-    for lead in report["discovery_leads"]:
-        lines.append(f"- {lead}")
+    for name, description in DISCOVERY_VERBS:
+        lines.append(f"- **{name}.** {description.capitalize()}.")
     lines.extend(
         [
             "",
-            "## Evidence And Reproduction",
+            "A detached law `(Omega,0)` and a target state space `(0,Xi')` define a concrete theoretical "
+            "problem. The law becomes physical on the new state space only after its domain, closure, "
+            "observable, and realization have been derived. The same calculation either produces a new "
+            "embodiment or identifies the term needed to restore predictive closure.",
             "",
-            "Every topic page retains the source links and equation witnesses from which its "
-            "mathematical relations were reconstructed.",
+            "## Sources",
+            "",
+            "A paper is cited on a topic page only when one of its equations supports the displayed "
+            "physical relation. Candidate identifiers without a matching equation remain absent from "
+            "the public text. This build records the unresolved topics in the reproduction report.",
             "",
         ]
     )
@@ -1341,13 +1363,36 @@ def build_report(
             "insight": insights[branch_id],
             "pages": branch_pages,
         }
+    promotion_summary = []
+    for promotion in QUANTUM_ROLE_PROMOTIONS:
+        topics = [
+            row["slug"]
+            for row in page_rows
+            if any(item.get("id") == promotion["id"] for item in (row.get("role_promotions") or []))
+        ]
+        promotion_summary.append(
+            dict(promotion)
+            | {
+                "topic_count": len(topics),
+                "topics": topics,
+            }
+        )
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": str(root),
         "root": {
             "title": BRANCHES["root"]["title"],
             "definition": BRANCHES["root"]["definition"],
+        },
+        "predictive_closure": {
+            "principle": PREDICTIVE_CLOSURE_PRINCIPLE,
+            "criterion_latex": PREDICTIVE_CLOSURE_LATEX,
+        },
+        "role_promotion": {
+            "principle": ROLE_PROMOTION_PRINCIPLE,
+            "criterion_latex": ROLE_PROMOTION_CRITERION_LATEX,
+            "families": promotion_summary,
         },
         "sparse_attention": stats,
         "constructor_dependencies": constructor_dependencies,
@@ -1356,8 +1401,8 @@ def build_report(
             "page_projection_available": bool(lagrangian_model.get("page_projection_available")),
             "source": lagrangian_model.get("source"),
             "method": (
-                "The atlas Lagrangian is used as a global construction constraint: it identifies low-action roads, high-tension paths, and void-boundary targets in the equation-evidence atlas. "
-                "Page-level scoring requires page-coordinate vectors or witness transition vectors for each page."
+                "The legacy representation-distance score screens nearby roads and candidate boundaries in the equation-evidence atlas. "
+                "It is a ranking over learned coordinates, not a physical action or an invariant test."
             ),
             "path_class_counts": dict(Counter(str((row.get("lagrangian") or {}).get("path_class")) for row in page_rows)),
         },

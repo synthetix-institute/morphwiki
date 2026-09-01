@@ -1,66 +1,41 @@
 # Canonical commutation relation
 
-**Derivation step:** Generator: lawful change before measurement
-
-## Topic Context
-
-In quantum mechanics, the canonical commutation relation is the fundamental relation between canonical conjugate quantities. For example,
-
-[Topic scaffold: Wikipedia, CC BY-SA; adapted.](https://en.wikipedia.org/wiki/Canonical_commutation_relation)
-
-## Role In The Derivation
-
-Canonical commutation relation belongs to the lawful-change step: it specifies how the state changes before a question is asked.
-
-## Why This Step Is Needed
-
-Canonical commutation relation separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
+**Physical domain:** Noncommuting observables
 
 ## Mechanism
 
-This step specifies the Hamiltonian, action, channel, or other transformation that changes the state.
+Canonical commutation relation belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
 
-## How It Enters The Theory
+Canonical commutation relation is needed because individually valid observables need not admit a common set of definite values. Quantum theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical.
 
-**Place in the construction.** Canonical commutation relation contributes a generator or transformation role to the quantum construction. This page is read first as a lawful-transport move: it identifies what changes the state before measurement.
+Commutators and correlation constraints determine which observables can share a sharp assignment.
 
-**State and operation.** A state vector, density operator, wave function, field state, or register on a specified domain. A Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state.
+## Physical Construction
 
-**Admissibility and prediction.** Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
+The state carrier is One state space or a multipartite state space on which several observables or contexts are defined. The governing operation is Commutators, correlation operators, joint measurements, or hidden-variable assignments under comparison. Uncertainty relations, contextuality constraints, and Bell-type inequalities restrict possible joint assignments. The calculated observables are Joint spectra, uncertainty products, correlation functions, and inequality violations.
 
 ## Representative Relation
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+[A,B]\ne0,\quad \Delta A\,\Delta B\ge\frac12|\langle[A,B]\rangle|
 ```
 
-## How To Read The Relation
+## Physical Meaning
 
-The displayed relation should be read as a rule for transporting a state, not as a second definition of the state. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+A nonzero commutator obstructs a common eigenbasis for the corresponding sharp observables. Uncertainty, contextuality, and Bell inequalities express related obstructions under different assumptions. The assumptions must be stated because the mathematical conclusion changes when the measurement context or factorization changes.
 
-## What Remains Stable
+Compatibility limits are then carried into concrete realizations. Boundaries, interfaces, and tensor factorizations decide which observables and correlations can actually be prepared and compared.
 
-Canonical commutation relation specifies lawful change before measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+## Invariance And Realization
 
-## What The Physical Realization Adds
+Canonical commutation relation identifies when otherwise legal quantum questions cannot be made jointly sharp. The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment. The page belongs to the compatibility layer because it limits which spectra can be read together.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+The local title, representation, and physical realization may change while the constructor role is preserved. The obstruction may be written as a commutator, inequality, correlation bound, uncertainty relation, or contextuality test. Different experiments realize the same compatibility limit with different observables and detectors. The language of paradox can change while the formal obstruction remains.
 
-## Connection To The Next Step
+## Discriminating Consequences
 
-A generator predicts a new state but not yet an experimental number. The next step selects an observable, whose spectrum and expectation values expose consequences of the dynamics.
-
-## Checks
-
-- Specify the topic's state carrier, operator or map, observable or predicted quantity, and compatibility condition in its own quantum language.
-- Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation.
-- The short-time and classical limits identify whether the generator has the correct physical regime.
+The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied. Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
 
 ## Evidence Links
 
-- [arXiv:1604.06537](https://arxiv.org/abs/1604.06537)
-- [arXiv:2111.12617](https://arxiv.org/abs/2111.12617)
-- [arXiv:0912.2823](https://arxiv.org/abs/0912.2823)
-- [arXiv:0908.0752](https://arxiv.org/abs/0908.0752)
-- [arXiv:1506.05598](https://arxiv.org/abs/1506.05598)
-- [arXiv:1612.00682](https://arxiv.org/abs/1612.00682)
+Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

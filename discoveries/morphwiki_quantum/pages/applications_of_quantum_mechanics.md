@@ -3,9 +3,6 @@
 ## Evidence Status
 An applications of quantum mechanics can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum physics is a branch of modern physics in which energy and matter are described at their most fundamental level, that of energy quanta, elementary particles, and quantum fields. Quantum physics encompasses any discipline concerned with systems that exhibit notable quantum-mechanical effects, where waves have properties of particles, and particles behave like waves.
-
 ## Formal Role
 In quantum-mechanical terms, an applications of quantum mechanics is described by a two-dimensional Hilbert space, usually written as a qubit state or a density matrix. The physical question is represented by a Hamiltonian or unitary matrix rotating that state between preparation and measurement; the experimental or mathematical setting is the chosen basis, pulse sequence, or measurement axis. The observable content is obtained from projectors onto the two eigenstates of the measured observable. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or observable operator, and spectrum or eigenstate. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, an applications of quantum mechanics is described b
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.549
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.548
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.524
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.523
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.518
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.516
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.515
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.512
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.510
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.504
-
----
-Wikipedia scaffold: [Applications of quantum mechanics](https://en.wikipedia.org/wiki/Applications_of_quantum_mechanics) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

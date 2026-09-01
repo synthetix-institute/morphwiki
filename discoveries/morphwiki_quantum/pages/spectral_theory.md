@@ -3,9 +3,6 @@
 ## Evidence Status
 Spectral theory can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In mathematics, spectral theory is an inclusive term for theories extending the eigenvector and eigenvalue theory of a single square matrix to a much broader theory of the structure of operators in a variety of mathematical spaces. It is a result of studies of linear algebra and the solutions of systems of linear equations and their generalizations.
-
 ## Formal Role
 In quantum-mechanical terms, spectral theory is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, matrix or Hamiltonian, and eigenvalue or spectrum. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, spectral theory is described by a wave function or 
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [2108.07838](https://arxiv.org/abs/2108.07838) — score 0.501
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.497
-- [0805.4565](https://arxiv.org/abs/0805.4565) — score 0.492
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.480
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.472
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.466
-- [2308.15676](https://arxiv.org/abs/2308.15676) — score 0.465
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.462
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.447
-- [0809.5271](https://arxiv.org/abs/0809.5271) — score 0.445
-
----
-Wikipedia scaffold: [Spectral theory](https://en.wikipedia.org/wiki/Spectral_theory) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

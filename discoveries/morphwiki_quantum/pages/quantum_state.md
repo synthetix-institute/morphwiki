@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum state can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In quantum physics, a quantum state is a mathematical entity that represents a physical system. Quantum mechanics specifies the construction, evolution, and measurement of a quantum state.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum state is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through Quantum state or wave function, observable operator or matrix, and eigenstate or spectrum. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or incompatible observables.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum state is described by a wave function or 
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.539
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.534
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.511
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.495
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.495
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.494
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.493
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.492
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.492
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.490
-
----
-Wikipedia scaffold: [Quantum state](https://en.wikipedia.org/wiki/Quantum_state) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

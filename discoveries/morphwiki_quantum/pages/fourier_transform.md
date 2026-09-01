@@ -3,9 +3,6 @@
 ## Evidence Status
 A fourier transform can be read as a quantum construction: the input encoding, circuit architecture, and final measurement basis fixes the admissible state space; a sequence of unitary gates or quantum channels defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-In mathematics, the Fourier transform (FT) is an integral transform that takes a function as input and outputs another function that describes the extent to which various frequencies are present in the original function. The output of the transform is a complex valued function of frequency.
-
 ## Formal Role
 In quantum-mechanical terms, a fourier transform is described by a register state in a finite-dimensional Hilbert space. The physical question is represented by a sequence of unitary gates or quantum channels; the experimental or mathematical setting is the input encoding, circuit architecture, and final measurement basis. The observable content is obtained from measurement probabilities over computational-basis outcomes. In the local terminology of this topic, the same construction appears through quantum state or wave function, unitary operator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through uncertainty relation or commutator.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a fourier transform is described by a register stat
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.563
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.539
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.538
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.535
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.533
-- [2501.07524](https://arxiv.org/abs/2501.07524) — score 0.527
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.524
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.513
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.509
-- [2104.04275](https://arxiv.org/abs/2104.04275) — score 0.506
-
----
-Wikipedia scaffold: [Fourier transform](https://en.wikipedia.org/wiki/Fourier_transform) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.

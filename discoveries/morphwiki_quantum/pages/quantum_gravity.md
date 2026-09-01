@@ -3,9 +3,6 @@
 ## Evidence Status
 A quantum gravity can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
 
-## The Standard Story
-Quantum gravity (QG) is a field of theoretical physics that seeks unification of the theory of gravity with the principles of quantum mechanics. It deals with environments in which neither gravitational nor quantum effects can be ignored, such as in the vicinity of black holes or similar compact astrophysical objects, as well as in the early stages of the universe moments after the Big Bang.
-
 ## Formal Role
 In quantum-mechanical terms, a quantum gravity is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through superposition or wave function, Hamiltonian or observable operator, and spectrum or eigenvalue. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
 
@@ -46,18 +43,3 @@ In quantum-mechanical terms, a quantum gravity is described by a wave function o
 ## Validation Checks
 - A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
 - The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-- [1604.05385](https://arxiv.org/abs/1604.05385) — score 0.535
-- [0912.2823](https://arxiv.org/abs/0912.2823) — score 0.535
-- [1708.03640](https://arxiv.org/abs/1708.03640) — score 0.500
-- [1801.03283](https://arxiv.org/abs/1801.03283) — score 0.497
-- [quant-ph0205159](https://arxiv.org/abs/quant-ph/0205159) — score 0.495
-- [0908.0752](https://arxiv.org/abs/0908.0752) — score 0.493
-- [1506.05598](https://arxiv.org/abs/1506.05598) — score 0.492
-- [1706.03846](https://arxiv.org/abs/1706.03846) — score 0.492
-- [1612.00682](https://arxiv.org/abs/1612.00682) — score 0.487
-- [1604.06537](https://arxiv.org/abs/1604.06537) — score 0.478
-
----
-Wikipedia scaffold: [Quantum gravity](https://en.wikipedia.org/wiki/Quantum_gravity) (CC BY-SA). Evidence from Wikipedia scaffold and 32 equation witnesses.
