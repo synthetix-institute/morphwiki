@@ -4,24 +4,25 @@
 
 ## Mechanism
 
-Quantum entanglement is the non-factorization constructor: a composite state can carry correlations not reducible to independent subsystem states.
+Quantum entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.
 
 Entanglement is required when the state of a composite system cannot be assembled from independent states of its parts. It changes which correlations are possible and makes subsystem states mixed even when the total state is pure.
 
-Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability.
+The tensor-product decomposition specifies what counts as subsystem A and subsystem B. A pure state is entangled when its Schmidt rank exceeds one. Each subsystem can then be mixed even though the joint state is pure, because partial tracing discards the correlations that purify it. Local basis changes preserve the Schmidt coefficients, while a different physical factorization can change whether the same vector is called entangled. Bell measurements test whether the resulting correlations admit a local hidden-variable model.
 
 ## Physical Construction
 
-The state carrier is One state space or a multipartite state space on which several questions can be asked. The governing operation is Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated observables are Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+The state carrier is a composite Hilbert space with a physically specified subsystem algebra or tensor-product factorization. The governing operation is Schmidt decomposition, partial trace, local observables, and joint correlation operators. The joint density operator is positive and normalized; separability is defined relative to the chosen subsystem structure. The calculated observables are Reduced-state spectra, entanglement entropy, correlation witnesses, and Bell parameters.
 
 ## Topic Equations
 
-Standard constructor skeleton: tensor composition, non-factorization, and reduced state.
+Subsystem factorization, Schmidt spectrum, reduced-state entropy, and Bell correlations separate the state relation from its local observable.
 
 ```math
 \mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B
-\ket{\Psi}_{AB}\ne \ket{\psi}_A\otimes\ket{\phi}_B
-\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}
+\ket{\Psi}_{AB}=\sum_k\sqrt{\lambda_k}\ket{k_A}\ket{k_B},\qquad \sum_k\lambda_k=1
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi},\qquad S_A=-\operatorname{Tr}(\rho_A\log\rho_A)
+|S_{\mathrm{CHSH}}|\leq2,\qquad |S_{\mathrm{CHSH}}|_{\mathrm{QM}}\leq2\sqrt2
 ```
 
 ## Physical Meaning
@@ -32,16 +33,20 @@ In a Bell pair, each spin alone is maximally mixed, yet measurements on the pair
 
 Bell's theorem and contextuality determine which entangled correlations are incompatible with classical joint assignments.
 
+## Consequences Forced By The Relation
+
+A pure bipartite state with more than one nonzero Schmidt coefficient gives mixed reduced states and correlations unavailable to product preparations. Local unitary changes of basis preserve the Schmidt coefficients and the pure-state entanglement entropy. Suitable local measurements can violate a Bell inequality even though each subsystem alone carries no corresponding pure state.
+
+## Domain Of The Construction
+
+Entanglement is defined relative to a physical subsystem algebra or tensor-product factorization. For mixed states, nonfactorization of one decomposition is insufficient; separability requires testing all convex product decompositions.
+
 ## Invariance And Realization
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+Schmidt coefficients and pure-state entanglement entropy are invariant under local unitary changes of basis. The reduced-state spectra preserve the amount of bipartite pure-state entanglement. Correlations remain joint properties even when neither subsystem has a pure local state.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+The subsystem factorization and accessible observable algebra determine which correlations count as entanglement. Noise, loss, and coarse graining can convert pure-state entanglement into mixed-state correlations. Photons, spins, atoms, modes, and encoded qubits can realize the same Schmidt structure.
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-
-No V2-aligned source-equation candidate is available for this topic.
+Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce. Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged. A separable-state control fixes the correlation background of the apparatus.

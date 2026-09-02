@@ -1,15 +1,15 @@
 {
   "report_type": "quantum_derivation_pages_manifest",
   "row_count": 146,
-  "topic_specific_count": 41,
-  "branch_level_count": 88,
-  "core_derived_count": 88,
+  "topic_specific_count": 42,
+  "branch_level_count": 87,
+  "core_derived_count": 87,
   "annotation_count": 17,
   "source_grounded_count": 0,
   "identifier_linked_count": 101,
   "derivation_basis_counts": {
-    "identifier_linked_placement": 71,
-    "identifier_linked_topic_model": 30,
+    "identifier_linked_placement": 70,
+    "identifier_linked_topic_model": 31,
     "topic_model": 11,
     "branch_template": 17,
     "annotation": 17
@@ -109,8 +109,8 @@
       "slug": "quantum_decoherence",
       "title": "Quantum decoherence",
       "branch": "states",
-      "status": "branch_level",
-      "derivation_basis": "identifier_linked_placement",
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
       "source_grounded": false,
       "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_decoherence.md"
@@ -1056,6 +1056,16 @@
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_metamaterial.md"
     },
     {
+      "slug": "gauge_theory",
+      "title": "Gauge theory",
+      "branch": "fields",
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
+      "path": "discoveries/morphwiki_quantum/derivation_pages/gauge_theory.md"
+    },
+    {
       "slug": "photon",
       "title": "Photon",
       "branch": "fields",
@@ -1114,16 +1124,6 @@
       "source_grounded": false,
       "identifier_linked": false,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_electrodynamics.md"
-    },
-    {
-      "slug": "gauge_theory",
-      "title": "Gauge theory",
-      "branch": "fields",
-      "status": "topic_specific",
-      "derivation_basis": "identifier_linked_topic_model",
-      "source_grounded": false,
-      "identifier_linked": true,
-      "path": "discoveries/morphwiki_quantum/derivation_pages/gauge_theory.md"
     },
     {
       "slug": "boson",

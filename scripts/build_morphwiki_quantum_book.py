@@ -555,6 +555,20 @@ TOPIC_EXPLANATION_OVERRIDES: Dict[str, Dict[str, str]] = {
             "With the state representation established, unitary and non-unitary maps specify how it changes."
         ),
     },
+    "quantum_decoherence": {
+        "why": (
+            "Interference is lost when alternative system amplitudes become correlated with environmental states that can, even in principle, distinguish them. The missing coherence has then moved into correlations of the larger state rather than being erased by the subsystem equation alone."
+        ),
+        "reading": (
+            "Unitary system-environment evolution can suppress the off-diagonal elements of the reduced density matrix after the environment is traced out. The overlap of the corresponding environmental states fixes the remaining visibility. Decoherence can be Markovian; memory requires the stronger condition that hidden correlations later alter evolution from the same reduced state."
+        ),
+        "example": (
+            "In a two-path interferometer, scattering one distinguishable environmental state from each path lowers the fringe visibility in proportion to their overlap. Erasing the distinguishing record can restore interference in suitable conditional measurements."
+        ),
+        "connection": (
+            "The distinction between lost visibility and returning correlations leads directly to quantum channels, non-Markovian dynamics, and the composition test for memory."
+        ),
+    },
     "unitary_operator": {
         "why": (
             "Unitary operators express reversible quantum change and changes of representation with one mathematical condition: preservation of "
@@ -2035,14 +2049,24 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             "equation_note": "Standard constructor skeleton: generalized measurement probability and conditional update.",
         },
         "commutator": {
-            "claim": "{title} is the incompatibility constructor: it measures the failure of two transformations or questions to be freely exchanged.",
-            "reading": "The commutator is the algebraic source of many non-classical restrictions. If two observables do not commute, they generally cannot be resolved in one common sharp basis.",
+            "claim": "{title} measures the physical consequence of exchanging two operations: it governs joint measurability, generated motion, and the leading difference between reversed protocols.",
+            "reading": "For two operators on a common domain, [A,B]=AB-BA compares the two possible orders. For observables, a nonzero commutator obstructs a common sharp spectral resolution and enters uncertainty bounds. For a Hamiltonian H, [H,A] gives the dynamical change of A. For short control pulses, [A,B] is the first term that distinguishes the two reversed sequences. One algebraic object therefore connects compatibility, dynamics, and order-sensitive response.",
             "equations": [
                 r"[A,B]=AB-BA",
-                r"[A,B]=0\quad\Rightarrow\quad \text{common spectral refinement may exist}",
-                r"[x,p]=i\hbar",
+                r"\frac{dA}{dt}=\frac{i}{\hbar}[H,A]+\left(\frac{\partial A}{\partial t}\right)",
+                r"\Delta A\,\Delta B\geq\frac12\left|\langle[A,B]\rangle\right|",
+                r"e^{\epsilon A}e^{\epsilon B}e^{-\epsilon A}e^{-\epsilon B}=I+\epsilon^2[A,B]+O(\epsilon^3)",
             ],
-            "equation_note": "Standard constructor skeleton: order obstruction and canonical commutation.",
+            "equation_note": "Order exchange, Heisenberg evolution, uncertainty, and the leading closed-sequence response are four consequences of the same commutator.",
+            "forced_consequences": [
+                "A nonzero commutator prevents a generic common sharp eigenbasis and imposes state-dependent uncertainty bounds.",
+                "The commutator with the Hamiltonian determines whether an observable is conserved and how it changes in time.",
+                "Reversing two short operations produces a difference proportional to their commutator at leading nontrivial order.",
+            ],
+            "scope_conditions": [
+                "For unbounded operators, the common domain belongs to the physical statement; a formal commutator without a domain need not define an observable relation.",
+                "A nonzero commutator is not by itself a new interaction. It becomes physical through a state and an observable consequence.",
+            ],
         },
         "uncertainty_principle": {
             "claim": "{title} is a compatibility-limit theorem: non-commuting observables impose lower bounds on joint sharpness.",
@@ -2054,14 +2078,44 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             "equation_note": "Standard constructor skeleton: variance bound from commutator structure.",
         },
         "quantum_entanglement": {
-            "claim": "{title} is the non-factorization constructor: a composite state can carry correlations not reducible to independent subsystem states.",
-            "reading": "Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability.",
+            "claim": "{title} is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.",
+            "reading": "The tensor-product decomposition specifies what counts as subsystem A and subsystem B. A pure state is entangled when its Schmidt rank exceeds one. Each subsystem can then be mixed even though the joint state is pure, because partial tracing discards the correlations that purify it. Local basis changes preserve the Schmidt coefficients, while a different physical factorization can change whether the same vector is called entangled. Bell measurements test whether the resulting correlations admit a local hidden-variable model.",
             "equations": [
                 r"\mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B",
-                r"\ket{\Psi}_{AB}\ne \ket{\psi}_A\otimes\ket{\phi}_B",
-                r"\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}",
+                r"\ket{\Psi}_{AB}=\sum_k\sqrt{\lambda_k}\ket{k_A}\ket{k_B},\qquad \sum_k\lambda_k=1",
+                r"\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi},\qquad S_A=-\operatorname{Tr}(\rho_A\log\rho_A)",
+                r"|S_{\mathrm{CHSH}}|\leq2,\qquad |S_{\mathrm{CHSH}}|_{\mathrm{QM}}\leq2\sqrt2",
             ],
-            "equation_note": "Standard constructor skeleton: tensor composition, non-factorization, and reduced state.",
+            "equation_note": "Subsystem factorization, Schmidt spectrum, reduced-state entropy, and Bell correlations separate the state relation from its local readout.",
+            "forced_consequences": [
+                "A pure bipartite state with more than one nonzero Schmidt coefficient gives mixed reduced states and correlations unavailable to product preparations.",
+                "Local unitary changes of basis preserve the Schmidt coefficients and the pure-state entanglement entropy.",
+                "Suitable local measurements can violate a Bell inequality even though each subsystem alone carries no corresponding pure state.",
+            ],
+            "scope_conditions": [
+                "Entanglement is defined relative to a physical subsystem algebra or tensor-product factorization.",
+                "For mixed states, nonfactorization of one decomposition is insufficient; separability requires testing all convex product decompositions.",
+            ],
+        },
+        "quantum_decoherence": {
+            "claim": "{title} is the loss of observable phase coherence in a subsystem when information about alternative amplitudes becomes encoded in environmental correlations.",
+            "reading": "The joint system and environment may evolve unitarily while the reduced system loses interference. Interaction correlates different system alternatives with distinguishable environmental states; tracing over the environment then suppresses off-diagonal terms in the selected pointer basis. Decoherence does not select one outcome, and it is not identical to memory. Markovian decoherence is possible when the reduced state still determines its future. Memory begins when discarded correlations return and two preparations with the same reduced state acquire different later statistics.",
+            "equations": [
+                r"\rho_S(t)=\operatorname{Tr}_E[U_{SE}(t)\rho_{SE}(0)U_{SE}^{\dagger}(t)]",
+                r"\frac{\ket0\ket{E_0}+\ket1\ket{E_1}}{\sqrt2},\qquad (\rho_S)_{01}\propto\langle E_1|E_0\rangle",
+                r"\dot\rho_S=-\frac{i}{\hbar}[H_S,\rho_S]+\sum_k\gamma_k\mathcal D[L_k]\rho_S",
+                r"V_{t+s}=V_tV_s\quad\text{only in the time-homogeneous Markov limit}",
+            ],
+            "equation_note": "Joint unitary evolution, environmental distinguishability, reduced decoherence, and the semigroup test distinguish loss of interference from dynamical memory.",
+            "forced_consequences": [
+                "Interference visibility falls with the overlap of the environmental states correlated with the interfering alternatives.",
+                "The phase information can remain in the joint state even when it is absent from all reduced-system observables.",
+                "When hidden correlations later alter the reduced dynamics, an auxiliary state coordinate or a memory kernel is required for predictive closure.",
+            ],
+            "scope_conditions": [
+                "The preferred basis and decoherence rate depend on the interaction, environmental spectrum, and initial system-environment state.",
+                "Suppression of off-diagonal terms does not by itself derive a unique recorded outcome.",
+            ],
         },
         "bell_s_theorem": {
             "claim": "{title} is a compatibility/locality stress test: quantum correlations violate bounds satisfied by local hidden-variable assignments.",
@@ -2120,24 +2174,44 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             "equation_note": "Standard constructor skeleton: field expansion, mode algebra, and correlation readout.",
         },
         "gauge_theory": {
-            "claim": "{title} is a redundancy-and-constraint constructor: different local presentations can represent the same physical state.",
-            "reading": "Gauge theory belongs at the field/geometry interface. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection.",
+            "claim": "{title} defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove.",
+            "reading": "A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content.",
             "equations": [
                 r"D_\mu=\partial_\mu+igA_\mu",
-                r"F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]",
-                r"\psi(x)\mapsto U(x)\psi(x)",
+                r"[D_\mu,D_\nu]=igF_{\mu\nu}",
+                r"W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(ig\oint_\gamma A_\mu dx^\mu\right)",
+                r"G^a\ket{\Psi_{\mathrm{phys}}}=0",
             ],
-            "equation_note": "Standard constructor skeleton: covariant derivative, curvature, and local gauge transformation.",
+            "equation_note": "The connection defines local comparison, curvature measures its infinitesimal path dependence, and the constraint selects physical states.",
+            "forced_consequences": [
+                "Gauge-related potentials give identical gauge-invariant amplitudes, charges, field strengths, and loop observables.",
+                "A nontrivial Wilson loop can retain global transport information that is absent from any one local gauge representative.",
+                "The Gauss constraint removes redundant state vectors and fixes the physical charge sector.",
+            ],
+            "scope_conditions": [
+                "The gauge group, representation, matter content, dimension, and boundary conditions distinguish different physical theories.",
+                "A gauge-dependent potential becomes observable only through a gauge-invariant relation such as field strength, phase difference, charge, or loop holonomy.",
+            ],
         },
         "renormalization": {
-            "claim": "{title} is the scale-flow constructor: the effective parameters of the theory change with resolution while predictions remain controlled.",
-            "reading": "Renormalization explains why a mechanism can preserve its operator role while changing its apparent parameters across scales.",
+            "claim": "{title} relates physical descriptions at different resolutions by changing couplings and operator weights while preserving long-distance predictions.",
+            "reading": "Coarse graining removes short-distance variables and generates every operator allowed by the remaining symmetries. Their coefficients flow with scale. Relevant directions grow, irrelevant directions decay, and fixed points organize scale-invariant behaviour. Microscopically different systems can therefore share critical exponents and scaling functions when their flows approach the same fixed point. Universality is the invariance class of this scale transformation, not a visual similarity between equations.",
             "equations": [
-                r"\mu\frac{dg}{d\mu}=\beta(g)",
-                r"g=g(\mu)",
+                r"\mu\frac{dg_i}{d\mu}=\beta_i(\{g\})",
+                r"\left(\mu\partial_\mu+\beta_i\partial_{g_i}+n\gamma\right)G^{(n)}=0",
+                r"\beta_i(g_*)=0,\qquad \delta g_i(b)=b^{y_i}\delta g_i",
                 r"\mathcal L_{\mathrm{eff}}(\mu)=\sum_i c_i(\mu)\mathcal O_i",
             ],
-            "equation_note": "Standard constructor skeleton: beta flow and effective operator expansion.",
+            "equation_note": "Beta functions, scale-independent observables, fixed points, and scaling directions define the transport of a theory across resolution.",
+            "forced_consequences": [
+                "Observable predictions are independent of the arbitrary renormalization scale when explicit scale dependence and coupling flow compensate.",
+                "Systems approaching the same fixed point with the same relevant directions share critical exponents and scaling functions.",
+                "Relevant perturbations drive the flow away from a fixed point and select the accessible phases or crossover regimes.",
+            ],
+            "scope_conditions": [
+                "Universality requires matching dimensionality, symmetries, conserved quantities, interaction range, and relevant directions; a shared dimensionless group alone is insufficient.",
+                "An effective theory is tied to a scale and accuracy, because omitted operators return through controlled corrections.",
+            ],
         },
         "quantum_channel": {
             "claim": "{title} is the open-system protocol constructor: it maps input states to output states while preserving complete positivity and trace.",
@@ -2240,6 +2314,34 @@ TOPIC_FRAME_OVERRIDES: Dict[str, Dict[str, str]] = {
         "readout": "Compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.",
         "test": "The mechanism is supported only when changing operator order changes the algebraic or statistical prediction.",
     },
+    "quantum_entanglement": {
+        "carrier": "A composite Hilbert space with a physically specified subsystem algebra or tensor-product factorization.",
+        "operator": "Schmidt decomposition, partial trace, local observables, and joint correlation operators.",
+        "admissibility": "The joint density operator is positive and normalized; separability is defined relative to the chosen subsystem structure.",
+        "readout": "Reduced-state spectra, entanglement entropy, correlation witnesses, and Bell parameters.",
+        "test": "Product and separable controls cannot reproduce a validated entanglement witness or Bell violation under the same local measurements.",
+    },
+    "quantum_decoherence": {
+        "carrier": "A joint system-environment state together with the reduced density operator accessible to the observer.",
+        "operator": "System-environment unitary evolution followed by partial trace, or the corresponding reduced dynamical map.",
+        "admissibility": "The joint state remains normalized and positive; a Markovian reduction additionally requires future maps to be fixed by the present reduced state.",
+        "readout": "Off-diagonal coherence, interference visibility, purity, and history-dependent response.",
+        "test": "Environmental distinguishability suppresses interference, while equal reduced states with different later responses identify retained hidden correlations rather than decoherence alone.",
+    },
+    "gauge_theory": {
+        "carrier": "Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector.",
+        "operator": "A covariant derivative and connection whose commutator gives the field strength.",
+        "admissibility": "Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges.",
+        "readout": "Field strengths, Wilson loops, conserved charges, scattering amplitudes, and other gauge-invariant quantities.",
+        "test": "Gauge-related representatives give identical physical observables, while a nontrivial loop observable records curvature or global holonomy.",
+    },
+    "renormalization": {
+        "carrier": "Effective fields and degrees of freedom defined at a stated resolution or cutoff.",
+        "operator": "A coarse-graining transformation and beta functions acting on the coefficients of an effective operator expansion.",
+        "admissibility": "Symmetry, dimensionality, locality assumptions, relevant directions, and renormalization conditions determine the allowed flow.",
+        "readout": "Running couplings, correlation functions, scaling dimensions, critical exponents, and corrections to scaling.",
+        "test": "Observables remain independent of the arbitrary renormalization scale, and distinct microscopic systems share scaling data only when their flows approach the same fixed point.",
+    },
     "quantum_channel": {
         "carrier": "Input and output density operators, possibly on different Hilbert spaces or subsystem carriers.",
         "operator": "A completely positive trace-preserving map, often represented by Kraus operators or by a Stinespring dilation.",
@@ -2272,6 +2374,91 @@ TOPIC_FRAME_OVERRIDES: Dict[str, Dict[str, str]] = {
 
 
 TOPIC_SUPPORT_OVERRIDES: Dict[str, tuple[List[str], List[str], List[str]]] = {
+    "commutator": (
+        [
+            "The commutator transforms covariantly under a simultaneous unitary change of representation.",
+            "Joint spectral compatibility is unchanged by a consistent representation change.",
+            "The leading order-sensitive response survives when different physical controls realize the same operator algebra.",
+        ],
+        [
+            "The matrix entries, basis, carrier, and physical implementation of the two operations may change.",
+            "Domains can change the meaning of formal commutation relations for unbounded operators.",
+            "The observable consequence depends on the prepared state and on how the operator difference is read out.",
+        ],
+        [
+            "Reversing two calibrated operations isolates the response generated by their commutator.",
+            "A commuting control pair removes the order-sensitive contribution without changing the individual operations.",
+            "Agreement requires the same operator domain and measured observable, not merely similar notation.",
+        ],
+    ),
+    "quantum_entanglement": (
+        [
+            "Schmidt coefficients and pure-state entanglement entropy are invariant under local unitary changes of basis.",
+            "The reduced-state spectra preserve the amount of bipartite pure-state entanglement.",
+            "Correlations remain joint properties even when neither subsystem has a pure local state.",
+        ],
+        [
+            "The subsystem factorization and accessible observable algebra determine which correlations count as entanglement.",
+            "Noise, loss, and coarse graining can convert pure-state entanglement into mixed-state correlations.",
+            "Photons, spins, atoms, modes, and encoded qubits can realize the same Schmidt structure.",
+        ],
+        [
+            "Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce.",
+            "Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged.",
+            "A separable-state control fixes the correlation background of the apparatus.",
+        ],
+    ),
+    "quantum_decoherence": (
+        [
+            "The joint state retains phase information transferred from the subsystem into system-environment correlations.",
+            "Reduced interference visibility is fixed by the overlap of environmental states correlated with the alternatives.",
+            "Equivalent system-environment dilations give the same reduced channel and system observables.",
+        ],
+        [
+            "The preferred basis, decay rate, and recoherence depend on the interaction, environmental spectrum, and initial correlations.",
+            "Changing the system-environment partition changes which correlations are hidden.",
+            "A Markov approximation removes returning correlations; retaining them introduces auxiliary coordinates or a memory kernel.",
+        ],
+        [
+            "Interference visibility is compared with a control in which the environment cannot distinguish the alternatives.",
+            "Two preparations with the same reduced state determine whether hidden correlations alter later observables.",
+            "Reversing or decoupling the interaction determines whether coherence remains recoverable in the joint state.",
+        ],
+    ),
+    "gauge_theory": (
+        [
+            "Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables.",
+            "Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice.",
+            "The physical state belongs to the constraint sector rather than to an arbitrary field-coordinate representation.",
+        ],
+        [
+            "The gauge potential, local basis, gauge-fixing condition, and coordinate description may change.",
+            "The gauge group, representation, matter content, dimension, and boundary conditions specify different physical theories.",
+            "Topological sectors and boundary charges can survive even where the local field strength vanishes.",
+        ],
+        [
+            "A closed-loop phase or Wilson observable distinguishes nontrivial holonomy from a removable local gauge choice.",
+            "Gauge-related descriptions give identical probabilities for the same physical preparation and readout.",
+            "An additional field or interaction changes a gauge-invariant observable rather than only the gauge potential.",
+        ],
+    ),
+    "renormalization": (
+        [
+            "Observable predictions remain independent of the arbitrary renormalization scale when couplings and fields flow consistently.",
+            "Critical exponents and scaling functions are shared by systems approaching the same fixed point with the same relevant directions.",
+            "Symmetry and dimensionality constrain the effective operators generated by coarse graining.",
+        ],
+        [
+            "Couplings, field normalizations, effective degrees of freedom, and operator coefficients depend on scale.",
+            "Microscopic Hamiltonians can differ while their long-distance flows enter the same universality class.",
+            "A relevant perturbation can drive the system away from one fixed point toward another phase or crossover regime.",
+        ],
+        [
+            "Measurements at several scales determine whether running couplings follow one beta function.",
+            "Microscopically different realizations determine whether critical exponents and scaling functions coincide.",
+            "Corrections to scaling distinguish approach to a fixed point from an exact scale-invariant law.",
+        ],
+    ),
     "fermion": (
         [
             "Exchange antisymmetry, exterior-product state space, canonical anticommutation and zero-or-one mode occupation are equivalent forms of the fermionic restriction.",
@@ -4162,7 +4349,7 @@ def markdown_evidence(
     row: Mapping[str, Any],
 ) -> str:
     if not evidence:
-        return evidence_status_text(row) + "\n"
+        return ""
     lines = []
     for witness in evidence[:6]:
         arxiv = witness.get("paper_id") or ""
@@ -4203,10 +4390,9 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
             "The source discusses states, operators, probability rules, or protocols whose mathematical consequences are developed in the physical chapters. "
             "Its interpretation changes the theory only when it changes an equation, admissibility condition, probability law, or experimental prediction.",
             "",
-            "## Evidence Links",
-            "",
-            markdown_evidence(evidence, row),
         ])
+        if evidence:
+            lines.extend(["## Source Equations", "", markdown_evidence(evidence, row)])
         return public_theory_language("\n".join(lines).rstrip() + "\n")
     constructed = has_topic_constructor(page, str(row.get("slug") or ""))
     constructor = constructor_text(title, branch_id, row, hyperion, mw)
@@ -4293,7 +4479,8 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
         lines.extend([prose_from_items(changes, 4), ""])
     if tests:
         lines.extend(["## Discriminating Consequences", "", consequence_prose_from_items(tests, 3), ""])
-    lines.extend(["## Evidence Links", "", markdown_evidence(evidence, row)])
+    if evidence:
+        lines.extend(["## Source Equations", "", markdown_evidence(evidence, row)])
     return public_theory_language("\n".join(lines).rstrip() + "\n")
 
 

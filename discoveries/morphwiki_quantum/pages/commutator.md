@@ -1,45 +1,51 @@
 # Commutator
 
-## Evidence Status
-A commutator can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+## Central Claim
+A commutator measures the physical consequence of exchanging two operations: it governs joint measurability, generated motion, and the leading difference between reversed protocols.
 
 ## Formal Role
-In quantum-mechanical terms, a commutator is described by a wave function or density operator defined on the Hilbert space allowed by the system's domain. The physical question is represented by the Hamiltonian, whose exponential gives unitary time evolution; the experimental or mathematical setting is the potential, domain, initial condition, or boundary condition. The observable content is obtained from the eigenvalues and eigenfunctions of the relevant observable. In the local terminology of this topic, the same construction appears through quantum state or wave function, Commutator or Hamiltonian, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through Commutator or uncertainty relation.
+For two operators defined on a common domain, [A,B]=AB-BA compares the two possible orders. For observables, a nonzero commutator obstructs a common sharp spectral resolution and enters uncertainty bounds. For a Hamiltonian H, [H,A] gives the dynamical change of A in the Heisenberg picture. For short control pulses, [A,B] is the first term that distinguishes the protocols exp(epsilon A)exp(epsilon B) and exp(epsilon B)exp(epsilon A). The same algebraic object therefore connects compatibility, dynamics, and order-sensitive response.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (basis, preparation context, or measurement basis) determine which states are admissible.
-- State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (Commutator, Hamiltonian, or observable operator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (Commutator, uncertainty relation, or incompatible observable) mark cases where observables do not admit one common sharp readout basis.
+- Both operators are defined on a stated common domain.
+- The ordered products AB and BA are formed on that domain.
+- Their difference determines joint spectral compatibility or order sensitivity.
+- A state and observable convert the algebraic difference into a measurable bound or response.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+[A,B]=AB-BA
+\frac{dA}{dt}=\frac{i}{\hbar}[H,A]+\left(\frac{\partial A}{\partial t}\right)
+\Delta A\,\Delta B\geq\frac12|\langle[A,B]\rangle|
+e^{\epsilon A}e^{\epsilon B}e^{-\epsilon A}e^{-\epsilon B}=I+\epsilon^2[A,B]+O(\epsilon^3)
+```
 
 ## Mechanism Roles
-- **state:** quantum state; wave function; density operator
-- **operator:** Commutator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** basis
-- **incompatibility:** Commutator; uncertainty relation
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** common operator domain; prepared quantum state
+- **operator:** ordered product; commutator; Hamiltonian generator
+- **spectrum:** common eigenspace; uncertainty bound; order-dependent response
+- **boundary:** operator domain; control-pulse duration
+- **incompatibility:** nonzero commutator; absence of common sharp refinement
+- **protocol:** AB ordering; BA ordering; short-pulse sequence
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- The commutator transforms covariantly under a simultaneous unitary change of representation.
+- Joint spectral compatibility is unchanged by a consistent representation change.
+- The leading order-sensitive response survives when different physical controls realize the same operator algebra.
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- The matrix entries, basis, carrier, and physical implementation of the two operations may change.
+- Domains can change the meaning of formal commutation relations for unbounded operators.
+- The observable consequence depends on the prepared state and on how the operator difference is read out.
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Reversing two calibrated operations isolates the part of the response proportional to their commutator.
+- A commuting control pair removes the order-sensitive contribution without changing the individual operations.
+- Agreement requires the same domain and the same measured observable, not merely similar operator notation.

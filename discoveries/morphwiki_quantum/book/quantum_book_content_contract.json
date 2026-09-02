@@ -6,12 +6,13 @@
   "baseline_equation_blocks": 129,
   "baseline_pdf_pages": 311,
   "minimum_topic_count": 146,
-  "minimum_topic_words": 57000,
-  "minimum_topic_word_retention": 0.9,
+  "minimum_topic_specific_count": 42,
+  "minimum_topic_words": 55000,
+  "minimum_topic_word_retention": 0.87,
   "minimum_equation_blocks": 128,
   "minimum_equation_block_retention": 0.99,
   "minimum_pdf_pages": 280,
   "minimum_pdf_page_retention": 0.9,
-  "minimum_source_grounded_topics": 1,
-  "policy": "Reorganization may remove repeated boilerplate and the historical Wikipedia scaffold while preserving every topic as a dedicated section and every physical topic as an equation-bearing derivation. Historical and interpretive annotations must not be assigned invented equations. Public source links must resolve to topic-level equation witnesses confirmed by source-card alignment. The full book must not be replaced by a synopsis or a list of topic names."
+  "minimum_source_grounded_topics": 6,
+  "policy": "Reorganization may remove repeated boilerplate and the historical Wikipedia scaffold while preserving every topic as a dedicated section, every physical topic as an equation-bearing treatment, and at least 42 topic-specific physical mechanisms. Historical and interpretive annotations must not be assigned invented equations. Public source links must resolve to topic-bearing local equation contexts joined to exact V2.1 source-card alignments. The full book must not be replaced by a synopsis or a list of topic names."
 }

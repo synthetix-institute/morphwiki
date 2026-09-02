@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-31T20:35:10.345450+00:00",
+  "generated_at": "2026-09-02T17:05:34.494071+00:00",
   "source": "discoveries/morphwiki_quantum",
   "root": {
     "title": "Quantum theories differ by what they make physical",
@@ -1045,8 +1045,8 @@
           "is_alias": false,
           "placement_basis": "curated_physical_role",
           "score": 0.9695,
-          "secondary": "generators",
-          "secondary_score": 0.949,
+          "secondary": "context",
+          "secondary_score": 0.8743,
           "core_priority": 1.0,
           "is_annotation": false,
           "top_route": "observables and spectra (0.37)",
@@ -1080,7 +1080,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "a quantum decoherence modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
+          "takeaway": "Quantum decoherence is the loss of observable phase coherence in a subsystem when information about alternative amplitudes becomes encoded in environmental correlations.",
           "witnesses": 32,
           "role_promotions": [
             {
@@ -1645,8 +1645,8 @@
           "is_alias": false,
           "placement_basis": "curated_physical_role",
           "score": 0.9111,
-          "secondary": "generators",
-          "secondary_score": 0.9224,
+          "secondary": "context",
+          "secondary_score": 0.8795,
           "core_priority": 0.0,
           "is_annotation": false,
           "top_route": "state evolution (0.27)",
@@ -1680,7 +1680,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "a quantum entanglement modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
+          "takeaway": "Entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.",
           "witnesses": 32,
           "role_promotions": [
             {
@@ -3531,8 +3531,8 @@
           "is_alias": false,
           "placement_basis": "curated_physical_role",
           "score": 0.9077,
-          "secondary": "states",
-          "secondary_score": 0.9787,
+          "secondary": "observables",
+          "secondary_score": 0.9083,
           "core_priority": 1.0,
           "is_annotation": false,
           "top_route": "observables and spectra (0.41)",
@@ -3565,7 +3565,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "A commutator can be read as a quantum construction: the potential, domain, initial condition, or boundary condition fixes the admissible state space; the Hamiltonian, whose exponential gives unitary time evolution defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
+          "takeaway": "A commutator measures the physical consequence of exchanging two operations: it governs joint measurability, generated motion, and the leading difference between reversed protocols.",
           "witnesses": 32,
           "role_promotions": [],
           "v2_evidence": {
@@ -7169,6 +7169,87 @@
       "insight": "Fields enlarge the state space to variable occupation and local operator algebras. Gauge constraints, statistics, and scale then select the physical sectors and effective law.",
       "pages": [
         {
+          "title": "Gauge theory",
+          "slug": "gauge_theory",
+          "canonical_slug": "gauge_theory",
+          "is_alias": false,
+          "placement_basis": "curated_physical_role",
+          "score": 0.9431,
+          "secondary": "states",
+          "secondary_score": 0.8989,
+          "core_priority": 1.0,
+          "is_annotation": false,
+          "top_route": "observables and spectra (0.39)",
+          "routes": {
+            "transport_flow_route": 0.2509,
+            "constraint_closure_route": 0.1861,
+            "spectral_operator_route": 0.3852,
+            "boundary_weak_form_route": 0.1191,
+            "commutator_incompatibility_route": 0.0461,
+            "discrete_protocol_route": 0.0692
+          },
+          "fibers": {
+            "structure": 0.3333,
+            "spectral": 0.3333,
+            "geometry": 0.3333,
+            "syntax": 0.5858,
+            "entropy": 0.4142
+          },
+          "lagrangian": {
+            "available": false,
+            "global_only": false,
+            "active_bands": [
+              "boundary",
+              "constraint",
+              "flow",
+              "spectral"
+            ],
+            "dominant_fiber": "structure",
+            "path_class": "unavailable",
+            "road_label": "no Lagrangian road map available",
+            "road_score": 0.0,
+            "branch_bonus": 0.0
+          },
+          "takeaway": "Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove.",
+          "witnesses": 32,
+          "role_promotions": [
+            {
+              "id": "background_to_field",
+              "label": "A background becomes a quantum field",
+              "source_role": "A",
+              "target_roles": [
+                "Xi",
+                "Omega"
+              ],
+              "physical_change": "A prescribed background potential or geometry becomes a fluctuating degree of freedom with its own state and equation of motion.",
+              "consequence": "The enlarged theory contains quanta, correlations, and back-reaction that a fixed background cannot carry."
+            },
+            {
+              "id": "constraint_to_state_space",
+              "label": "A constraint defines the physical state space",
+              "source_role": "C",
+              "target_roles": [
+                "Xi"
+              ],
+              "physical_change": "Gauge conditions, exchange symmetry, or superselection rules remove vectors that do not represent physical states.",
+              "consequence": "The surviving Hilbert-space sectors determine particle statistics, charges, and admissible observables."
+            }
+          ],
+          "v2_evidence": {
+            "available": false,
+            "status": "v2_identifier_linked",
+            "matched_source_examples": 0,
+            "identifier_linked_examples": 8,
+            "matched_alignment_records": 12,
+            "matched_v2_row_count": 8,
+            "tokens": {},
+            "routes": {},
+            "constructor_roles": {},
+            "source_examples": [],
+            "claim_boundary": "Private V2 evidence summary for page grounding; not public explanatory text."
+          }
+        },
+        {
           "title": "Photon",
           "slug": "photon",
           "canonical_slug": "photon",
@@ -7244,9 +7325,9 @@
           "canonical_slug": "renormalization",
           "is_alias": false,
           "placement_basis": "curated_physical_role",
-          "score": 0.8673,
-          "secondary": "states",
-          "secondary_score": 0.9766,
+          "score": 0.9103,
+          "secondary": "observables",
+          "secondary_score": 0.9304,
           "core_priority": 1.0,
           "is_annotation": false,
           "top_route": "observables and spectra (0.38)",
@@ -7279,7 +7360,7 @@
             "road_score": 0.0,
             "branch_bonus": 0.0
           },
-          "takeaway": "Renormalization can be read as a quantum construction: the boundary conditions that define which histories are included fixes the admissible state space; the action functional assigning phases to histories defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
+          "takeaway": "Renormalization relates physical descriptions at different resolutions by changing couplings and operator weights while preserving long-distance predictions.",
           "witnesses": 32,
           "role_promotions": [
             {
@@ -7583,87 +7664,6 @@
             "identifier_linked_examples": 0,
             "matched_alignment_records": 0,
             "matched_v2_row_count": 0,
-            "tokens": {},
-            "routes": {},
-            "constructor_roles": {},
-            "source_examples": [],
-            "claim_boundary": "Private V2 evidence summary for page grounding; not public explanatory text."
-          }
-        },
-        {
-          "title": "Gauge theory",
-          "slug": "gauge_theory",
-          "canonical_slug": "gauge_theory",
-          "is_alias": false,
-          "placement_basis": "curated_physical_role",
-          "score": 0.812,
-          "secondary": "states",
-          "secondary_score": 0.9791,
-          "core_priority": 1.0,
-          "is_annotation": false,
-          "top_route": "observables and spectra (0.39)",
-          "routes": {
-            "transport_flow_route": 0.2509,
-            "constraint_closure_route": 0.1861,
-            "spectral_operator_route": 0.3852,
-            "boundary_weak_form_route": 0.1191,
-            "commutator_incompatibility_route": 0.0461,
-            "discrete_protocol_route": 0.0692
-          },
-          "fibers": {
-            "structure": 0.3333,
-            "spectral": 0.3333,
-            "geometry": 0.3333,
-            "syntax": 0.5858,
-            "entropy": 0.4142
-          },
-          "lagrangian": {
-            "available": false,
-            "global_only": false,
-            "active_bands": [
-              "boundary",
-              "constraint",
-              "flow",
-              "spectral"
-            ],
-            "dominant_fiber": "structure",
-            "path_class": "unavailable",
-            "road_label": "no Lagrangian road map available",
-            "road_score": 0.0,
-            "branch_bonus": 0.0
-          },
-          "takeaway": "Gauge theory can be read as a quantum construction: the chosen basis, pulse sequence, or measurement axis fixes the admissible state space; a Hamiltonian or unitary matrix rotating that state between preparation and measurement defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.",
-          "witnesses": 32,
-          "role_promotions": [
-            {
-              "id": "background_to_field",
-              "label": "A background becomes a quantum field",
-              "source_role": "A",
-              "target_roles": [
-                "Xi",
-                "Omega"
-              ],
-              "physical_change": "A prescribed background potential or geometry becomes a fluctuating degree of freedom with its own state and equation of motion.",
-              "consequence": "The enlarged theory contains quanta, correlations, and back-reaction that a fixed background cannot carry."
-            },
-            {
-              "id": "constraint_to_state_space",
-              "label": "A constraint defines the physical state space",
-              "source_role": "C",
-              "target_roles": [
-                "Xi"
-              ],
-              "physical_change": "Gauge conditions, exchange symmetry, or superselection rules remove vectors that do not represent physical states.",
-              "consequence": "The surviving Hilbert-space sectors determine particle statistics, charges, and admissible observables."
-            }
-          ],
-          "v2_evidence": {
-            "available": false,
-            "status": "v2_identifier_linked",
-            "matched_source_examples": 0,
-            "identifier_linked_examples": 8,
-            "matched_alignment_records": 12,
-            "matched_v2_row_count": 8,
             "tokens": {},
             "routes": {},
             "constructor_roles": {},
@@ -10146,7 +10146,7 @@
       ],
       "score": 2.8838,
       "branch": "states",
-      "secondary": "generators",
+      "secondary": "context",
       "routes": {
         "boundary_weak_form_route": 0.1535,
         "commutator_incompatibility_route": 0.076,
@@ -10155,7 +10155,7 @@
         "spectral_operator_route": 0.2163,
         "transport_flow_route": 0.2665
       },
-      "takeaway": "a quantum entanglement modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.",
+      "takeaway": "Entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.",
       "explanation": "Entanglement is a tensor-factorization and correlation constraint. The state is not reducible to independently readable subsystem states, while the readout is still local and spectral. The required distinction is between joint state, subsystem observables, and correlation test."
     },
     {

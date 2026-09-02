@@ -1,45 +1,51 @@
 # Quantum entanglement
 
-## Evidence Status
-a quantum entanglement modifies the interpretation of the probability/readout layer while preserving the formal quantum dynamics.
+## Central Claim
+Entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.
 
 ## Formal Role
-a quantum entanglement acts on the readout layer of the quantum constructor. The formal ingredients remain the state assignment, the operator or measurement being applied, and the Born-rule map from projectors to probabilities. What changes is the status assigned to those ingredients: for this topic, the state or probability is treated through the agent, measurement context, or interpretive stance attached to the formalism. The page should therefore be read as a statement about the interpretation of state, probability, update, or recorded outcome while the Hamiltonian, spectral resolution, and commutator structure remain the formal reference layer.
+The tensor-product decomposition specifies what counts as subsystem A and subsystem B. A pure state is entangled when its Schmidt rank exceeds one. Each subsystem can then be mixed even though the joint state is pure, because partial tracing discards the correlations that purify it. Local basis changes preserve the Schmidt coefficients, while a different physical factorization can change whether the same vector is called entangled. Bell measurements test whether the resulting correlations admit a local hidden-variable model.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (potential or domain condition, basis, or preparation context) determine which states are admissible.
-- State terms (quantum state, wave function, or superposition) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis.
+- A physical subsystem algebra or tensor-product factorization is stated.
+- The joint state is decomposed into Schmidt modes or tested for separability.
+- Partial traces give the states available to local observers.
+- Correlation observables distinguish the joint state from independent local preparations.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+|\Psi\rangle=\sum_k\sqrt{\lambda_k}|k_A\rangle|k_B\rangle,\quad \sum_k\lambda_k=1
+\rho_A=\operatorname{Tr}_B|\Psi\rangle\langle\Psi|
+S(\rho_A)=-\operatorname{Tr}(\rho_A\log\rho_A)
+|S_{\mathrm{CHSH}}|\leq2,\qquad |S_{\mathrm{CHSH}}|_{\mathrm{QM}}\leq2\sqrt2
+```
 
 ## Mechanism Roles
-- **state:** quantum state; wave function; superposition
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** potential or domain condition; basis
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** projection update
+- **state:** bipartite state; Schmidt decomposition; reduced density operator
+- **operator:** partial trace; local observable; correlation operator
+- **spectrum:** Schmidt spectrum; entanglement entropy; Bell correlator
+- **boundary:** subsystem algebra; tensor-product factorization
+- **incompatibility:** nonseparability; Bell inequality violation
+- **protocol:** local preparation; separated measurement; correlation readout
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- Schmidt coefficients and entanglement entropy are invariant under local unitary changes of basis.
+- The reduced-state spectra preserve the amount of pure-state bipartite entanglement.
+- Correlations remain joint properties even when neither subsystem has a pure local state.
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- The chosen subsystem factorization and accessible observable algebra determine which correlations count as entanglement.
+- Noise, loss, and coarse graining can convert pure-state entanglement into mixed-state correlations.
+- Different platforms realize the same Schmidt structure with photons, spins, atoms, modes, or encoded qubits.
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce.
+- Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged.
+- A separable-state control fixes the correlation background of the apparatus.

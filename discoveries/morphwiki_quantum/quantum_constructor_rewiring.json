@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "report_type": "quantum_constructor_rewiring",
-  "generated_at": "2026-08-02T18:14:33.539425+00:00",
+  "generated_at": "2026-09-02T17:05:44.184716+00:00",
   "readiness": "usable",
   "connection_count": 7,
   "connections": [
@@ -89,7 +89,7 @@
         "Quantum field theory"
       ],
       "branches": [
-        "incompatibility",
+        "states",
         "protocols",
         "fields"
       ],
@@ -217,7 +217,7 @@
         "Quantum error correction"
       ],
       "branches": [
-        "states",
+        "protocols",
         "fields",
         "protocols"
       ],

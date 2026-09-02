@@ -58,7 +58,7 @@
 
 {\large Synthetix Institute\par}
 
-{\large Generated 2026-09-01 17:12 UTC\par}
+{\large Generated 2026-09-02 17:05 UTC\par}
 
 \vfill
 
@@ -663,30 +663,43 @@ The topic is physically defined by its state carrier, operator or map, observabl
 \label{topic:quantum-decoherence}
 
 \subsection*{Mechanism}
-Quantum decoherence supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+Quantum decoherence is the loss of observable phase coherence in a subsystem when information about alternative amplitudes becomes encoded in environmental correlations.
 
-Quantum decoherence specifies the object from which quantum probabilities are calculated. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
+Interference is lost when alternative system amplitudes become correlated with environmental states that can, even in principle, distinguish them. The missing coherence has then moved into correlations of the larger state rather than being erased by the subsystem equation alone.
 
-The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system.
+The joint system and environment may evolve unitarily while the reduced system loses interference. Interaction correlates different system alternatives with distinguishable environmental states; tracing over the environment then suppresses off-diagonal terms in the selected pointer basis. Decoherence does not select one outcome, and it is not identical to memory. Markovian decoherence is possible when the reduced state still determines its future. Memory begins when discarded correlations return and two preparations with the same reduced state acquire different later statistics.
 
 \subsection*{Physical Construction}
-The state carrier is a density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier. The governing operation is Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator. Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal. The calculated observables are Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
+The state carrier is a joint system-environment state together with the reduced density operator accessible to the observer. The governing operation is System-environment unitary evolution followed by partial trace, or the corresponding reduced dynamical map. The joint state remains normalized and positive; a Markovian reduction additionally requires future maps to be fixed by the present reduced state. The calculated observables are Off-diagonal coherence, interference visibility, purity, and history-dependent response.
 
-\subsection*{Defining Relations}
-Preparation or domain terms (basis, preparation context, or measurement basis) determine which states are admissible. State terms (quantum state, wave function, or wavefunction) name the predictive carrier: vector, wave function, density operator, field state, or register state. Operator terms (matrix, unitary operator, or Hamiltonian) name the observable, Hamiltonian, unitary, or constraint acting on the carrier. Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define outcome channels. The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure. Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp observable basis.
+\subsection*{Topic Equations}
+Joint unitary evolution, environmental distinguishability, reduced decoherence, and the semigroup test distinguish loss of interference from dynamical memory.
+\begin{centeredalign}
+\rho_S(t)=\operatorname{Tr}_E[U_{SE}(t)\rho_{SE}(0)U_{SE}^{\dagger}(t)]\\
+\frac{\ket0\ket{E_0}+\ket1\ket{E_1}}{\sqrt2},\qquad (\rho_S)_{01}\propto\langle E_1|E_0\rangle\\
+\dot\rho_S=-\frac{i}{\hbar}[H_S,\rho_S]+\sum_k\gamma_k\mathcal D[L_k]\rho_S\\
+V_{t+s}=V_tV_s\quad\text{only in the time-homogeneous Markov limit}
+\end{centeredalign}
 
 \subsection*{Physical Meaning}
-Normalization guarantees that the probabilities sum to one, while positivity prevents negative probabilities. Pure vectors and density operators are not competing theories: the density-operator form also represents mixtures and reduced states obtained when unobserved degrees of freedom are traced out.
+Unitary system-environment evolution can suppress the off-diagonal elements of the reduced density matrix after the environment is traced out. The overlap of the corresponding environmental states fixes the remaining visibility. Decoherence can be Markovian; memory requires the stronger condition that hidden correlations later alter evolution from the same reduced state.
 
-The Hamiltonian or channel evolves the prepared state. An observable and measurement map then convert that evolved state into outcome probabilities.
+In a two-path interferometer, scattering one distinguishable environmental state from each path lowers the fringe visibility in proportion to their overlap. Erasing the distinguishing record can restore interference in suitable conditional measurements.
+
+The distinction between lost visibility and returning correlations leads directly to quantum channels, non-Markovian dynamics, and the composition test for memory.
+
+\subsection*{Consequences Forced By The Relation}
+Interference visibility falls with the overlap of the environmental states correlated with the interfering alternatives. The phase information can remain in the joint state even when it is absent from all reduced-system observables. When hidden correlations later alter the reduced dynamics, an auxiliary state coordinate or a memory kernel is required for predictive closure.
+\subsection*{Domain Of The Construction}
+The preferred basis and decoherence rate depend on the interaction, environmental spectrum, and initial system-environment state. Suppression of off-diagonal terms does not by itself derive a unique recorded outcome.
 
 \subsection*{Invariance And Realization}
-The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. Quantum decoherence carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
+The joint state retains phase information transferred from the subsystem into system-environment correlations. Reduced interference visibility is fixed by the overlap of environmental states correlated with the alternatives. Equivalent system-environment dilations give the same reduced channel and system observables.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
+The preferred basis, decay rate, and recoherence depend on the interaction, environmental spectrum, and initial correlations. Changing the system-environment partition changes which correlations are hidden. A Markov approximation removes returning correlations; retaining them introduces auxiliary coordinates or a memory kernel.
 
 \subsection*{Discriminating Consequences}
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
+Interference visibility is compared with a control in which the environment cannot distinguish the alternatives. Two preparations with the same reduced state determine whether hidden correlations alter later observables. Reversing or decoupling the interaction determines whether coherence remains recoverable in the joint state.
 
 
 \clearpage
@@ -963,21 +976,22 @@ The topic is physically defined by its state carrier, operator or map, observabl
 \label{topic:quantum-entanglement}
 
 \subsection*{Mechanism}
-Quantum entanglement is the non-factorization constructor: a composite state can carry correlations not reducible to independent subsystem states.
+Quantum entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.
 
 Entanglement is required when the state of a composite system cannot be assembled from independent states of its parts. It changes which correlations are possible and makes subsystem states mixed even when the total state is pure.
 
-Entanglement belongs to composition and compatibility. It appears when the tensor-product state cannot be written as a product or mixture of local states, producing correlations that stress classical separability.
+The tensor-product decomposition specifies what counts as subsystem A and subsystem B. A pure state is entangled when its Schmidt rank exceeds one. Each subsystem can then be mixed even though the joint state is pure, because partial tracing discards the correlations that purify it. Local basis changes preserve the Schmidt coefficients, while a different physical factorization can change whether the same vector is called entangled. Bell measurements test whether the resulting correlations admit a local hidden-variable model.
 
 \subsection*{Physical Construction}
-The state carrier is One state space or a multipartite state space on which several questions can be asked. The governing operation is Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated observables are Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+The state carrier is a composite Hilbert space with a physically specified subsystem algebra or tensor-product factorization. The governing operation is Schmidt decomposition, partial trace, local observables, and joint correlation operators. The joint density operator is positive and normalized; separability is defined relative to the chosen subsystem structure. The calculated observables are Reduced-state spectra, entanglement entropy, correlation witnesses, and Bell parameters.
 
 \subsection*{Topic Equations}
-Standard constructor skeleton: tensor composition, non-factorization, and reduced state.
+Subsystem factorization, Schmidt spectrum, reduced-state entropy, and Bell correlations separate the state relation from its local observable.
 \begin{centeredalign}
 \mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B\\
-\ket{\Psi}_{AB}\ne \ket{\psi}_A\otimes\ket{\phi}_B\\
-\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}
+\ket{\Psi}_{AB}=\sum_k\sqrt{\lambda_k}\ket{k_A}\ket{k_B},\qquad \sum_k\lambda_k=1\\
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi},\qquad S_A=-\operatorname{Tr}(\rho_A\log\rho_A)\\
+|S_{\mathrm{CHSH}}|\leq2,\qquad |S_{\mathrm{CHSH}}|_{\mathrm{QM}}\leq2\sqrt2
 \end{centeredalign}
 
 \subsection*{Physical Meaning}
@@ -987,13 +1001,18 @@ In a Bell pair, each spin alone is maximally mixed, yet measurements on the pair
 
 Bell's theorem and contextuality determine which entangled correlations are incompatible with classical joint assignments.
 
-\subsection*{Invariance And Realization}
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+\subsection*{Consequences Forced By The Relation}
+A pure bipartite state with more than one nonzero Schmidt coefficient gives mixed reduced states and correlations unavailable to product preparations. Local unitary changes of basis preserve the Schmidt coefficients and the pure-state entanglement entropy. Suitable local measurements can violate a Bell inequality even though each subsystem alone carries no corresponding pure state.
+\subsection*{Domain Of The Construction}
+Entanglement is defined relative to a physical subsystem algebra or tensor-product factorization. For mixed states, nonfactorization of one decomposition is insufficient; separability requires testing all convex product decompositions.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+\subsection*{Invariance And Realization}
+Schmidt coefficients and pure-state entanglement entropy are invariant under local unitary changes of basis. The reduced-state spectra preserve the amount of bipartite pure-state entanglement. Correlations remain joint properties even when neither subsystem has a pure local state.
+
+The subsystem factorization and accessible observable algebra determine which correlations count as entanglement. Noise, loss, and coarse graining can convert pure-state entanglement into mixed-state correlations. Photons, spins, atoms, modes, and encoded qubits can realize the same Schmidt structure.
 
 \subsection*{Discriminating Consequences}
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce. Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged. A separable-state control fixes the correlation background of the apparatus.
 
 
 \clearpage
@@ -1958,21 +1977,22 @@ Page \\
 \label{topic:commutator}
 
 \subsection*{Mechanism}
-Commutator is the incompatibility constructor: it measures the failure of two transformations or questions to be freely exchanged.
+Commutator measures the physical consequence of exchanging two operations: it governs joint measurability, generated motion, and the leading difference between reversed protocols.
 
 The commutator measures whether the order of two transformations matters. For observables it also tests whether a common eigenbasis, and hence a joint sharp description, can exist.
 
-The commutator is the algebraic source of many non-classical restrictions. If two observables do not commute, they generally cannot be resolved in one common sharp basis.
+For two operators on a common domain, [A,B]=AB-BA compares the two possible orders. For observables, a nonzero commutator obstructs a common sharp spectral resolution and enters uncertainty bounds. For a Hamiltonian H, [H,A] gives the dynamical change of A. For short control pulses, [A,B] is the first term that distinguishes the two reversed sequences. One algebraic object therefore connects compatibility, dynamics, and order-sensitive response.
 
 \subsection*{Physical Construction}
 The state carrier is a common state space on which two transformations, observables, or questions are both defined. The governing operation is the ordered products AB and BA, compared through the obstruction [A,B]=AB-BA. A nonzero commutator marks an order-dependence or compatibility limit; a zero commutator permits a common sharp refinement only when the remaining spectral conditions hold. The calculated observables are Compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.
 
 \subsection*{Topic Equations}
-Standard constructor skeleton: order obstruction and canonical commutation.
+Order exchange, Heisenberg evolution, uncertainty, and the leading closed-sequence response are four consequences of the same commutator.
 \begin{centeredalign}
 [A,B]=AB-BA\\
-[A,B]=0\quad\Rightarrow\quad \text{common spectral refinement may exist}\\
-[x,p]=i\hbar
+\frac{dA}{dt}=\frac{i}{\hbar}[H,A]+\left(\frac{\partial A}{\partial t}\right)\\
+\Delta A\,\Delta B\geq\frac12\left|\langle[A,B]\rangle\right|\\
+e^{\epsilon A}e^{\epsilon B}e^{-\epsilon A}e^{-\epsilon B}=I+\epsilon^2[A,B]+O(\epsilon^3)
 \end{centeredalign}
 
 \subsection*{Physical Meaning}
@@ -1982,13 +2002,18 @@ Position followed by momentum is not the same operation as momentum followed by 
 
 The uncertainty-principle page converts this algebraic obstruction into a state-dependent bound on simultaneous dispersion.
 
-\subsection*{Invariance And Realization}
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+\subsection*{Consequences Forced By The Relation}
+A nonzero commutator prevents a generic common sharp eigenbasis and imposes state-dependent uncertainty bounds. The commutator with the Hamiltonian determines whether an observable is conserved and how it changes in time. Reversing two short operations produces a difference proportional to their commutator at leading nontrivial order.
+\subsection*{Domain Of The Construction}
+For unbounded operators, the common domain belongs to the physical statement; a formal commutator without a domain need not define an observable relation. A nonzero commutator is not by itself a new interaction. It becomes physical through a state and an observable consequence.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+\subsection*{Invariance And Realization}
+The commutator transforms covariantly under a simultaneous unitary change of representation. Joint spectral compatibility is unchanged by a consistent representation change. The leading order-sensitive response survives when different physical controls realize the same operator algebra.
+
+The matrix entries, basis, carrier, and physical implementation of the two operations may change. Domains can change the meaning of formal commutation relations for unbounded operators. The observable consequence depends on the prepared state and on how the operator difference is read out.
 
 \subsection*{Discriminating Consequences}
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Reversing two calibrated operations isolates the response generated by their commutator. A commuting control pair removes the order-sensitive contribution without changing the individual operations. Agreement requires the same operator domain and measured observable, not merely similar notation.
 
 
 \clearpage
@@ -3814,13 +3839,13 @@ Fields enlarge the state space to variable occupation and local operator algebra
 Page \\
 \midrule
 \endhead
+\phantomsection\label{page:gauge-theory}Gauge theory \\
 \phantomsection\label{page:photon}Photon \\
 \phantomsection\label{page:renormalization}Renormalization \\
 \phantomsection\label{page:quantum-field-theory}Quantum field theory \\
 \phantomsection\label{page:fermi-dirac-statistics}Fermi–Dirac statistics \\
 \phantomsection\label{page:dirac-equation}Dirac equation \\
 \phantomsection\label{page:quantum-electrodynamics}Quantum electrodynamics \\
-\phantomsection\label{page:gauge-theory}Gauge theory \\
 \phantomsection\label{page:boson}Boson \\
 \phantomsection\label{page:fermion}Fermion \\
 \phantomsection\label{page:quantum-chromodynamics}Quantum chromodynamics \\
@@ -3841,6 +3866,50 @@ Page \\
 \phantomsection\label{page:fock-space}Fock space \\
 \bottomrule
 \end{longtable}
+
+\clearpage
+\section{Gauge theory}
+\label{topic:gauge-theory}
+
+\subsection*{Mechanism}
+Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove.
+
+Gauge theory separates physical states from multiple mathematical descriptions related by local transformations. The redundancy is useful because it makes locality and interaction structure explicit, but constraints are required to remove unphysical degrees of freedom.
+
+A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content.
+
+\subsection*{Physical Construction}
+The state carrier is Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector. The governing operation is a covariant derivative and connection whose commutator gives the field strength. Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges. The calculated observables are Field strengths, Wilson loops, conserved charges, scattering amplitudes, and other gauge-invariant quantities.
+
+\subsection*{Topic Equations}
+The connection defines local comparison, curvature measures its infinitesimal path dependence, and the constraint selects physical states.
+\begin{centeredalign}
+D_\mu=\partial_\mu+igA_\mu\\
+[D_\mu,D_\nu]=igF_{\mu\nu}\\
+W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(ig\oint_\gamma A_\mu dx^\mu\right)\\
+G^a\ket{\Psi_{\mathrm{phys}}}=0
+\end{centeredalign}
+
+\subsection*{Physical Meaning}
+Gauge-related field configurations represent the same physical state. Observable quantities must therefore be gauge invariant, or transform covariantly within a construction whose final predictions are invariant. Gauge fixing chooses one representative without changing the physical equivalence class.
+
+Changing the electromagnetic scalar and vector potentials by a gauge transformation changes their formulas but leaves electric and magnetic fields, phase-consistent amplitudes, and measured forces unchanged.
+
+Renormalization adds a second kind of transformation: changing the scale at which the same theory is parametrized.
+
+\subsection*{Consequences Forced By The Relation}
+Gauge-related potentials give identical gauge-invariant amplitudes, charges, field strengths, and loop observables. A nontrivial Wilson loop can retain global transport information that is absent from any one local gauge representative. The Gauss constraint removes redundant state vectors and fixes the physical charge sector.
+\subsection*{Domain Of The Construction}
+The gauge group, representation, matter content, dimension, and boundary conditions distinguish different physical theories. A gauge-dependent potential becomes observable only through a gauge-invariant relation such as field strength, phase difference, charge, or loop holonomy.
+
+\subsection*{Invariance And Realization}
+Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables. Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice. The physical state belongs to the constraint sector rather than to an arbitrary field-coordinate representation.
+
+The gauge potential, local basis, gauge-fixing condition, and coordinate description may change. The gauge group, representation, matter content, dimension, and boundary conditions specify different physical theories. Topological sectors and boundary charges can survive even where the local field strength vanishes.
+
+\subsection*{Discriminating Consequences}
+A closed-loop phase or Wilson observable distinguishes nontrivial holonomy from a removable local gauge choice. Gauge-related descriptions give identical probabilities for the same physical preparation and observable. An additional field or interaction changes a gauge-invariant observable rather than only the gauge potential.
+
 
 \clearpage
 \section{Photon}
@@ -3884,20 +3953,21 @@ A transfer target provides a state space, a transformation law, and a spectral o
 \label{topic:renormalization}
 
 \subsection*{Mechanism}
-Renormalization is the scale-flow constructor: the effective parameters of the theory change with resolution while predictions remain controlled.
+Renormalization relates physical descriptions at different resolutions by changing couplings and operator weights while preserving long-distance predictions.
 
 Renormalization explains how a theory preserves predictions while its effective parameters and degrees of freedom change with scale. It is therefore a transformation between descriptions, not merely a device for removing infinities.
 
-Renormalization explains why a mechanism can preserve its operator role while changing its apparent parameters across scales.
+Coarse graining removes short-distance variables and generates every operator allowed by the remaining symmetries. Their coefficients flow with scale. Relevant directions grow, irrelevant directions decay, and fixed points organize scale-invariant behaviour. Microscopically different systems can therefore share critical exponents and scaling functions when their flows approach the same fixed point. Universality is the invariance class of this scale transformation, not a visual similarity between equations.
 
 \subsection*{Physical Construction}
-The state carrier is a Fock space, field configuration space, gauge sector, many-body Hilbert space, or effective low-energy sector. The governing operation is Field, creation, annihilation, charge, Hamiltonian, constraint, or renormalization operators. Statistics, locality, gauge symmetry, domain conditions, and renormalization prescriptions determine the physical sector. The calculated observables are Correlation functions, particle spectra, charges, scattering amplitudes, effective couplings, or geometric observables.
+The state carrier is Effective fields and degrees of freedom defined at a stated resolution or cutoff. The governing operation is a coarse-graining transformation and beta functions acting on the coefficients of an effective operator expansion. Symmetry, dimensionality, locality assumptions, relevant directions, and renormalization conditions determine the allowed flow. The calculated observables are Running couplings, correlation functions, scaling dimensions, critical exponents, and corrections to scaling.
 
 \subsection*{Topic Equations}
-Standard constructor skeleton: beta flow and effective operator expansion.
+Beta functions, scale-independent observables, fixed points, and scaling directions define the transport of a theory across resolution.
 \begin{centeredalign}
-\mu\frac{dg}{d\mu}=\beta(g)\\
-g=g(\mu)\\
+\mu\frac{dg_i}{d\mu}=\beta_i(\{g\})\\
+\left(\mu\partial_\mu+\beta_i\partial_{g_i}+n\gamma\right)G^{(n)}=0\\
+\beta_i(g_*)=0,\qquad \delta g_i(b)=b^{y_i}\delta g_i\\
 \mathcal L_{\mathrm{eff}}(\mu)=\sum_i c_i(\mu)\mathcal O_i
 \end{centeredalign}
 
@@ -3908,13 +3978,18 @@ Different lattice models can approach the same critical exponents because coarse
 
 Effective field theory uses this scale organization to decide which operators must be retained for a specified accuracy.
 
-\subsection*{Invariance And Realization}
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+\subsection*{Consequences Forced By The Relation}
+Observable predictions are independent of the arbitrary renormalization scale when explicit scale dependence and coupling flow compensate. Systems approaching the same fixed point with the same relevant directions share critical exponents and scaling functions. Relevant perturbations drive the flow away from a fixed point and select the accessible phases or crossover regimes.
+\subsection*{Domain Of The Construction}
+Universality requires matching dimensionality, symmetries, conserved quantities, interaction range, and relevant directions; a shared dimensionless group alone is insufficient. An effective theory is tied to a scale and accuracy, because omitted operators return through controlled corrections.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+\subsection*{Invariance And Realization}
+Observable predictions remain independent of the arbitrary renormalization scale when couplings and fields flow consistently. Critical exponents and scaling functions are shared by systems approaching the same fixed point with the same relevant directions. Symmetry and dimensionality constrain the effective operators generated by coarse graining.
+
+Couplings, field normalizations, effective degrees of freedom, and operator coefficients depend on scale. Microscopic Hamiltonians can differ while their long-distance flows enter the same universality class. A relevant perturbation can drive the system away from one fixed point toward another phase or crossover regime.
 
 \subsection*{Discriminating Consequences}
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Measurements at several scales determine whether running couplings follow one beta function. Microscopically different realizations determine whether critical exponents and scaling functions coincide. Corrections to scaling distinguish approach to a fixed point from an exact scale-invariant law.
 
 
 \clearpage
@@ -4052,44 +4127,6 @@ The local title, representation, and physical realization may change while the c
 
 \subsection*{Discriminating Consequences}
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
-
-
-\clearpage
-\section{Gauge theory}
-\label{topic:gauge-theory}
-
-\subsection*{Mechanism}
-Gauge theory is a redundancy-and-constraint constructor: different local presentations can represent the same physical state.
-
-Gauge theory separates physical states from multiple mathematical descriptions related by local transformations. The redundancy is useful because it makes locality and interaction structure explicit, but constraints are required to remove unphysical degrees of freedom.
-
-Gauge theory belongs at the field/geometry interface. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection.
-
-\subsection*{Physical Construction}
-The state carrier is a Fock space, field configuration space, gauge sector, many-body Hilbert space, or effective low-energy sector. The governing operation is Field, creation, annihilation, charge, Hamiltonian, constraint, or renormalization operators. Statistics, locality, gauge symmetry, domain conditions, and renormalization prescriptions determine the physical sector. The calculated observables are Correlation functions, particle spectra, charges, scattering amplitudes, effective couplings, or geometric observables.
-
-\subsection*{Topic Equations}
-Standard constructor skeleton: covariant derivative, curvature, and local gauge transformation.
-\begin{centeredalign}
-D_\mu=\partial_\mu+igA_\mu\\
-F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]\\
-\psi(x)\mapsto U(x)\psi(x)
-\end{centeredalign}
-
-\subsection*{Physical Meaning}
-Gauge-related field configurations represent the same physical state. Observable quantities must therefore be gauge invariant, or transform covariantly within a construction whose final predictions are invariant. Gauge fixing chooses one representative without changing the physical equivalence class.
-
-Changing the electromagnetic scalar and vector potentials by a gauge transformation changes their formulas but leaves electric and magnetic fields, phase-consistent amplitudes, and measured forces unchanged.
-
-Renormalization adds a second kind of transformation: changing the scale at which the same theory is parametrized.
-
-\subsection*{Invariance And Realization}
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
-
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
-
-\subsection*{Discriminating Consequences}
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
 
 
 \clearpage

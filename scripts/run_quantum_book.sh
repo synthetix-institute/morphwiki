@@ -36,6 +36,7 @@ if [[ "$BUILD_V2_EVIDENCE_INDEX" != "0" && "$BUILD_V2_EVIDENCE_INDEX" != "false"
   "$PYTHON_BIN" -B scripts/build_morphwiki_v2_quantum_evidence_index.py \
     --root "$ROOT" \
     --v2-root "$V2_ROOT" \
+    --tree-json "$ROOT/quantum_mechanism_tree.json" \
     --out-json "$MORPHWIKI_V2_EVIDENCE_INDEX_JSON" \
     --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_MD:-$ROOT/v2_quantum_evidence_index.md}" \
     "${evidence_args[@]}"

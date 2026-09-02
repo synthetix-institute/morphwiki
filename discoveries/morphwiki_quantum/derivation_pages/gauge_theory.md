@@ -4,24 +4,25 @@
 
 ## Mechanism
 
-Gauge theory is a redundancy-and-constraint constructor: different local presentations can represent the same physical state.
+Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove.
 
 Gauge theory separates physical states from multiple mathematical descriptions related by local transformations. The redundancy is useful because it makes locality and interaction structure explicit, but constraints are required to remove unphysical degrees of freedom.
 
-Gauge theory belongs at the field/geometry interface. It separates physical degrees of freedom from representational choices and imposes covariant transport through a connection.
+A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content.
 
 ## Physical Construction
 
-The state carrier is a Fock space, field configuration space, gauge sector, many-body Hilbert space, or effective low-energy sector. The governing operation is Field, creation, annihilation, charge, Hamiltonian, constraint, or renormalization operators. Statistics, locality, gauge symmetry, domain conditions, and renormalization prescriptions determine the physical sector. The calculated observables are Correlation functions, particle spectra, charges, scattering amplitudes, effective couplings, or geometric observables.
+The state carrier is Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector. The governing operation is a covariant derivative and connection whose commutator gives the field strength. Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges. The calculated observables are Field strengths, Wilson loops, conserved charges, scattering amplitudes, and other gauge-invariant quantities.
 
 ## Topic Equations
 
-Standard constructor skeleton: covariant derivative, curvature, and local gauge transformation.
+The connection defines local comparison, curvature measures its infinitesimal path dependence, and the constraint selects physical states.
 
 ```math
 D_\mu=\partial_\mu+igA_\mu
-F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig[A_\mu,A_\nu]
-\psi(x)\mapsto U(x)\psi(x)
+[D_\mu,D_\nu]=igF_{\mu\nu}
+W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(ig\oint_\gamma A_\mu dx^\mu\right)
+G^a\ket{\Psi_{\mathrm{phys}}}=0
 ```
 
 ## Physical Meaning
@@ -32,16 +33,20 @@ Changing the electromagnetic scalar and vector potentials by a gauge transformat
 
 Renormalization adds a second kind of transformation: changing the scale at which the same theory is parametrized.
 
+## Consequences Forced By The Relation
+
+Gauge-related potentials give identical gauge-invariant amplitudes, charges, field strengths, and loop observables. A nontrivial Wilson loop can retain global transport information that is absent from any one local gauge representative. The Gauss constraint removes redundant state vectors and fixes the physical charge sector.
+
+## Domain Of The Construction
+
+The gauge group, representation, matter content, dimension, and boundary conditions distinguish different physical theories. A gauge-dependent potential becomes observable only through a gauge-invariant relation such as field strength, phase difference, charge, or loop holonomy.
+
 ## Invariance And Realization
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables. Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice. The physical state belongs to the constraint sector rather than to an arbitrary field-coordinate representation.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+The gauge potential, local basis, gauge-fixing condition, and coordinate description may change. The gauge group, representation, matter content, dimension, and boundary conditions specify different physical theories. Topological sectors and boundary charges can survive even where the local field strength vanishes.
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
-
-## Evidence Links
-
-Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.
+A closed-loop phase or Wilson observable distinguishes nontrivial holonomy from a removable local gauge choice. Gauge-related descriptions give identical probabilities for the same physical preparation and observable. An additional field or interaction changes a gauge-invariant observable rather than only the gauge potential.

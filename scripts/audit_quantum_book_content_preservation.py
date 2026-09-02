@@ -89,7 +89,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
     missing_equations: List[str] = []
     total_words = 0
     equation_blocks = 0
-    evidence_status_pages = 0
+    source_equation_pages = 0
     for slug in expected_slugs:
         path = derivation_dir / f"{slug}.md"
         if not path.exists():
@@ -101,18 +101,15 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         equation_blocks += blocks
         if blocks == 0 and slug in equation_required_slugs:
             missing_equations.append(slug)
-        if "## Evidence Links" in text and (
-            "no citation is assigned" in text
-            or "No V2-aligned source-equation candidate" in text
-            or "No source equation has passed topic-level alignment" in text
-            or re.search(r"^- \[arXiv:", text, flags=re.MULTILINE)
-        ):
-            evidence_status_pages += 1
+        if "## Source Equations" in text:
+            source_equation_pages += 1
 
     derivation_manifest = (
         load_json(derivation_manifest_path) if derivation_manifest_path.exists() else {}
     )
     derivation_rows = derivation_manifest.get("pages") or []
+    topic_specific_count = int(derivation_manifest.get("topic_specific_count", 0))
+    branch_level_count = int(derivation_manifest.get("branch_level_count", 0))
     derivation_slugs = {
         str(row.get("slug") or "").strip()
         for row in derivation_rows
@@ -166,6 +163,8 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "derivation_manifest_matches_tree": (
             not manifest_missing_slugs and not manifest_extra_slugs
         ),
+        "topic_specific_depth": topic_specific_count
+        >= int(contract.get("minimum_topic_specific_count", 0)),
         "all_physics_topics_have_equations": not missing_equations,
         "topic_words": total_words >= int(contract["minimum_topic_words"]),
         "topic_word_retention": word_retention
@@ -176,7 +175,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "pdf_pages": pdf_pages >= int(contract["minimum_pdf_pages"]),
         "pdf_page_retention": page_retention
         >= float(contract.get("minimum_pdf_page_retention", 0.0)),
-        "evidence_status_reported": evidence_status_pages == len(expected_slugs),
+        "source_equations_only_when_grounded": source_equation_pages == grounded_topics,
         "source_grounding": grounded_topics >= minimum_grounded,
         "source_summary_consistent": (
             "Each topic page retains its source links and equation witnesses" not in tex
@@ -191,6 +190,11 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
             and not wikipedia_scaffold_pages
         ),
         "no_unverified_topic_page_links": not unverified_arxiv_topic_pages,
+        "no_internal_pipeline_language": not re.search(
+            r"\b(?:Hyperion|V2|sparse[- ]attention|evidence placement|audit queue)\b",
+            tex,
+            flags=re.IGNORECASE,
+        ),
     }
     readiness = "usable" if all(checks.values()) else "blocked"
     report = {
@@ -205,6 +209,8 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
             "dedicated_topic_section_count": len(topic_label_set & expected_label_set),
             "equation_required_topic_count": len(equation_required_slugs),
             "annotation_count": len(expected_slugs) - len(equation_required_slugs),
+            "topic_specific_count": topic_specific_count,
+            "branch_level_count": branch_level_count,
             "topic_words": total_words,
             "topic_word_retention": word_retention,
             "equation_blocks": equation_blocks,
@@ -213,7 +219,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
             "pdf_page_retention": page_retention,
             "source_grounded_topics": grounded_topics,
             "identifier_linked_topics": identifier_linked_topics,
-            "evidence_status_pages": evidence_status_pages,
+            "source_equation_pages": source_equation_pages,
         },
         "checks": checks,
         "missing_map_labels": missing_map_labels,
@@ -236,6 +242,8 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         f"- Topics in the mechanism map: `{len(expected_slugs)}`",
         f"- Dedicated topic sections: `{len(topic_label_set & expected_label_set)}`",
         f"- Topic words: `{total_words}`",
+        f"- Topic-specific physical treatments: `{topic_specific_count}`",
+        f"- Branch-level topic maps: `{branch_level_count}`",
         f"- Topic-word retention: `{word_retention:.3f}`",
         f"- Equation blocks: `{equation_blocks}`",
         f"- PDF pages: `{pdf_pages}`",

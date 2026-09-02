@@ -401,6 +401,223 @@ TOPIC_PUBLIC_OVERRIDES = {
             "\\hat G|g_i\\rangle=g_i|g_i\\rangle"
         ),
     },
+    "commutator": {
+        "takeaway": (
+            "A commutator measures the physical consequence of exchanging two operations: it governs joint measurability, generated motion, and the leading difference between reversed protocols."
+        ),
+        "mechanism_view": (
+            "For two operators defined on a common domain, [A,B]=AB-BA compares the two possible orders. For observables, a nonzero commutator obstructs a common sharp spectral resolution and enters uncertainty bounds. For a Hamiltonian H, [H,A] gives the dynamical change of A in the Heisenberg picture. For short control pulses, [A,B] is the first term that distinguishes the protocols exp(epsilon A)exp(epsilon B) and exp(epsilon B)exp(epsilon A). The same algebraic object therefore connects compatibility, dynamics, and order-sensitive response."
+        ),
+        "conversion_form": [
+            "Both operators are defined on a stated common domain.",
+            "The ordered products AB and BA are formed on that domain.",
+            "Their difference determines joint spectral compatibility or order sensitivity.",
+            "A state and observable convert the algebraic difference into a measurable bound or response.",
+        ],
+        "grammar": {
+            "state": ["common operator domain", "prepared quantum state"],
+            "operator": ["ordered product", "commutator", "Hamiltonian generator"],
+            "spectrum": ["common eigenspace", "uncertainty bound", "order-dependent response"],
+            "boundary": ["operator domain", "control-pulse duration"],
+            "incompatibility": ["nonzero commutator", "absence of common sharp refinement"],
+            "protocol": ["AB ordering", "BA ordering", "short-pulse sequence"],
+        },
+        "mathematical_skeleton": (
+            "[A,B]=AB-BA\n"
+            "\\frac{dA}{dt}=\\frac{i}{\\hbar}[H,A]+\\left(\\frac{\\partial A}{\\partial t}\\right)\n"
+            "\\Delta A\\,\\Delta B\\geq\\frac12|\\langle[A,B]\\rangle|\n"
+            "e^{\\epsilon A}e^{\\epsilon B}e^{-\\epsilon A}e^{-\\epsilon B}=I+\\epsilon^2[A,B]+O(\\epsilon^3)"
+        ),
+        "what_survives": [
+            "The commutator transforms covariantly under a simultaneous unitary change of representation.",
+            "Joint spectral compatibility is unchanged by a consistent representation change.",
+            "The leading order-sensitive response survives when different physical controls realize the same operator algebra.",
+        ],
+        "what_changes": [
+            "The matrix entries, basis, carrier, and physical implementation of the two operations may change.",
+            "Domains can change the meaning of formal commutation relations for unbounded operators.",
+            "The observable consequence depends on the prepared state and on how the operator difference is read out.",
+        ],
+        "missing_experiments": [
+            "Reversing two calibrated operations isolates the part of the response proportional to their commutator.",
+            "A commuting control pair removes the order-sensitive contribution without changing the individual operations.",
+            "Agreement requires the same domain and the same measured observable, not merely similar operator notation.",
+        ],
+    },
+    "quantum_entanglement": {
+        "takeaway": (
+            "Entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor."
+        ),
+        "mechanism_view": (
+            "The tensor-product decomposition specifies what counts as subsystem A and subsystem B. A pure state is entangled when its Schmidt rank exceeds one. Each subsystem can then be mixed even though the joint state is pure, because partial tracing discards the correlations that purify it. Local basis changes preserve the Schmidt coefficients, while a different physical factorization can change whether the same vector is called entangled. Bell measurements test whether the resulting correlations admit a local hidden-variable model."
+        ),
+        "conversion_form": [
+            "A physical subsystem algebra or tensor-product factorization is stated.",
+            "The joint state is decomposed into Schmidt modes or tested for separability.",
+            "Partial traces give the states available to local observers.",
+            "Correlation observables distinguish the joint state from independent local preparations.",
+        ],
+        "grammar": {
+            "state": ["bipartite state", "Schmidt decomposition", "reduced density operator"],
+            "operator": ["partial trace", "local observable", "correlation operator"],
+            "spectrum": ["Schmidt spectrum", "entanglement entropy", "Bell correlator"],
+            "boundary": ["subsystem algebra", "tensor-product factorization"],
+            "incompatibility": ["nonseparability", "Bell inequality violation"],
+            "protocol": ["local preparation", "separated measurement", "correlation readout"],
+        },
+        "mathematical_skeleton": (
+            "|\\Psi\\rangle=\\sum_k\\sqrt{\\lambda_k}|k_A\\rangle|k_B\\rangle,\\quad \\sum_k\\lambda_k=1\n"
+            "\\rho_A=\\operatorname{Tr}_B|\\Psi\\rangle\\langle\\Psi|\n"
+            "S(\\rho_A)=-\\operatorname{Tr}(\\rho_A\\log\\rho_A)\n"
+            "|S_{\\mathrm{CHSH}}|\\leq2,\\qquad |S_{\\mathrm{CHSH}}|_{\\mathrm{QM}}\\leq2\\sqrt2"
+        ),
+        "what_survives": [
+            "Schmidt coefficients and entanglement entropy are invariant under local unitary changes of basis.",
+            "The reduced-state spectra preserve the amount of pure-state bipartite entanglement.",
+            "Correlations remain joint properties even when neither subsystem has a pure local state.",
+        ],
+        "what_changes": [
+            "The chosen subsystem factorization and accessible observable algebra determine which correlations count as entanglement.",
+            "Noise, loss, and coarse graining can convert pure-state entanglement into mixed-state correlations.",
+            "Different platforms realize the same Schmidt structure with photons, spins, atoms, modes, or encoded qubits.",
+        ],
+        "missing_experiments": [
+            "Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce.",
+            "Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged.",
+            "A separable-state control fixes the correlation background of the apparatus.",
+        ],
+    },
+    "gauge_theory": {
+        "takeaway": (
+            "Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove."
+        ),
+        "mechanism_view": (
+            "A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content."
+        ),
+        "conversion_form": [
+            "A local symmetry group acts on matter or field variables.",
+            "A connection defines covariant comparison between neighboring points.",
+            "The commutator of covariant derivatives gives the field strength.",
+            "Constraints remove gauge-equivalent descriptions from the physical state space.",
+            "Wilson loops, charges, scattering amplitudes, or field strengths provide observables.",
+        ],
+        "grammar": {
+            "state": ["gauge-equivalence class", "matter field", "physical constraint sector"],
+            "operator": ["covariant derivative", "connection", "Gauss constraint"],
+            "spectrum": ["charge sector", "Wilson loop", "gauge-invariant amplitude"],
+            "boundary": ["gauge choice", "bundle patch", "boundary charge"],
+            "incompatibility": ["curvature", "nontrivial holonomy", "constraint anomaly"],
+            "protocol": ["parallel transport", "closed-loop transport", "gauge fixing"],
+        },
+        "mathematical_skeleton": (
+            "D_\\mu=\\partial_\\mu+igA_\\mu\n"
+            "[D_\\mu,D_\\nu]=igF_{\\mu\\nu}\n"
+            "W(\\gamma)=\\operatorname{Tr}\\,\\mathcal P\\exp\\left(ig\\oint_\\gamma A_\\mu dx^\\mu\\right)\n"
+            "G^a|\\Psi_{\\mathrm{phys}}\\rangle=0"
+        ),
+        "what_survives": [
+            "Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables.",
+            "Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice.",
+            "The physical state belongs to the constraint sector rather than to an arbitrary field coordinate representation.",
+        ],
+        "what_changes": [
+            "The gauge potential, local basis, gauge-fixing condition, and coordinate description may change.",
+            "The gauge group, representation, matter content, dimension, and boundary conditions specify different physical theories.",
+            "Topological sectors and boundary charges can survive even where the local field strength vanishes.",
+        ],
+        "missing_experiments": [
+            "A closed-loop phase or Wilson observable distinguishes nontrivial holonomy from a removable local gauge choice.",
+            "Gauge-related descriptions must give identical probabilities for the same physical preparation and readout.",
+            "A proposed extra field or interaction must change a gauge-invariant observable rather than only the gauge potential.",
+        ],
+    },
+    "quantum_decoherence": {
+        "takeaway": (
+            "Quantum decoherence is the loss of observable phase coherence in a subsystem when information about alternative amplitudes becomes encoded in environmental correlations."
+        ),
+        "mechanism_view": (
+            "The combined system and environment may evolve unitarily while the reduced system loses interference. Interaction correlates different system alternatives with distinguishable environmental states; tracing over the environment then suppresses off-diagonal terms in the selected pointer basis. Decoherence does not by itself select one outcome, and it is not identical to memory. Markovian decoherence is possible when the reduced state still determines its future. Memory begins when discarded correlations return and two preparations with the same reduced state acquire different later statistics."
+        ),
+        "conversion_form": [
+            "A joint system-environment state and interaction are specified.",
+            "Unitary evolution creates correlations between system alternatives and environmental states.",
+            "Partial tracing gives the reduced density operator available to the observer.",
+            "Interference visibility or off-diagonal coherence provides the readout.",
+            "A divisibility or history test distinguishes Markovian decoherence from memory.",
+        ],
+        "grammar": {
+            "state": ["joint system-environment state", "reduced density operator", "pointer basis"],
+            "operator": ["interaction Hamiltonian", "partial trace", "reduced dynamical map"],
+            "spectrum": ["coherence", "interference visibility", "purity"],
+            "boundary": ["initial environmental state", "system-environment partition"],
+            "incompatibility": ["returning correlations", "failure of divisible reduced dynamics"],
+            "protocol": ["prepare", "couple", "trace environment", "measure interference"],
+        },
+        "mathematical_skeleton": (
+            "\\rho_S(t)=\\operatorname{Tr}_E[U_{SE}(t)\\rho_{SE}(0)U_{SE}^{\\dagger}(t)]\n"
+            "\\frac{|0\\rangle|E_0\\rangle+|1\\rangle|E_1\\rangle}{\\sqrt2},\\quad \\rho_{01}\\propto\\langle E_1|E_0\\rangle\n"
+            "\\dot\\rho_S=-\\frac{i}{\\hbar}[H_S,\\rho_S]+\\sum_k\\gamma_k\\mathcal D[L_k]\\rho_S\n"
+            "V_{t+s}=V_tV_s\\quad\\text{only in the time-homogeneous Markov limit}"
+        ),
+        "what_survives": [
+            "The joint state retains the phase information transferred from the subsystem into system-environment correlations.",
+            "The reduced interference visibility is fixed by the overlap of the corresponding environmental states.",
+            "Equivalent dilations give the same reduced channel and the same system observables.",
+        ],
+        "what_changes": [
+            "The preferred basis, decay rate, and recoherence depend on the interaction, environmental spectrum, and initial correlations.",
+            "Changing the system-environment partition changes which correlations are hidden.",
+            "A Markov approximation removes returning correlations; retaining them introduces auxiliary coordinates or a memory kernel.",
+        ],
+        "missing_experiments": [
+            "Interference visibility is compared with a control in which the environment cannot distinguish the alternatives.",
+            "Two preparations with the same reduced state test whether hidden correlations alter later observables.",
+            "Reversing or decoupling the interaction tests whether the lost coherence remains recoverable in the joint state.",
+        ],
+    },
+    "renormalization": {
+        "takeaway": (
+            "Renormalization relates physical descriptions at different resolutions by changing couplings and operator weights while preserving long-distance predictions."
+        ),
+        "mechanism_view": (
+            "Coarse graining removes short-distance variables and generates every operator allowed by the remaining symmetries. Their coefficients flow with scale. Relevant directions grow, irrelevant directions decay, and fixed points organize scale-invariant behaviour. Microscopically different systems can therefore share critical exponents and scaling functions when their flows approach the same fixed point. Universality is the invariance class of this scale transformation, not a visual similarity between equations."
+        ),
+        "conversion_form": [
+            "A resolution scale and a set of effective operators are specified.",
+            "Short-distance degrees of freedom are integrated out or coarse grained.",
+            "Couplings flow so that observables remain independent of the arbitrary renormalization scale.",
+            "Fixed points and relevant directions determine the long-distance universality class.",
+        ],
+        "grammar": {
+            "state": ["effective degrees of freedom", "coarse-grained field", "critical state"],
+            "operator": ["renormalization map", "beta function", "effective operator expansion"],
+            "spectrum": ["scaling dimension", "critical exponent", "running coupling"],
+            "boundary": ["cutoff", "renormalization condition", "coarse-graining scale"],
+            "incompatibility": ["relevant perturbation", "anomalous dimension", "operator mixing"],
+            "protocol": ["integrate short scales", "rescale", "compare observables"],
+        },
+        "mathematical_skeleton": (
+            "\\mu\\frac{dg_i}{d\\mu}=\\beta_i(\\{g\\})\n"
+            "\\left(\\mu\\partial_\\mu+\\beta_i\\partial_{g_i}+n\\gamma\\right)G^{(n)}=0\n"
+            "\\beta_i(g_*)=0,\\qquad \\delta g_i(b)=b^{y_i}\\delta g_i\n"
+            "\\mathcal L_{\\mathrm{eff}}(\\mu)=\\sum_i c_i(\\mu)\\mathcal O_i"
+        ),
+        "what_survives": [
+            "Observable predictions remain independent of the arbitrary renormalization scale when couplings and fields flow consistently.",
+            "Critical exponents and scaling functions are shared by systems approaching the same fixed point with the same relevant directions.",
+            "Symmetry and dimensionality constrain the effective operators generated by coarse graining.",
+        ],
+        "what_changes": [
+            "Couplings, field normalizations, effective degrees of freedom, and operator coefficients depend on scale.",
+            "Microscopic Hamiltonians can differ while their long-distance flows enter the same universality class.",
+            "A relevant perturbation can drive the system away from one fixed point toward another phase or scale regime.",
+        ],
+        "missing_experiments": [
+            "Measurements at several scales determine whether running couplings follow one beta function.",
+            "Microscopically different realizations test whether critical exponents and scaling functions coincide.",
+            "Corrections to scaling distinguish approach to a fixed point from an exact scale-invariant law.",
+        ],
+    },
 }
 
 
@@ -420,12 +637,12 @@ def rewrite_page(path: Path) -> bool:
     )
     override = TOPIC_PUBLIC_OVERRIDES.get(path.stem)
     if override:
+        morph.update(update_public_lists())
         morph.update({key: value for key, value in override.items() if key != "grammar"})
         morph["grammar"] = override["grammar"]
         grammar = morph["grammar"]
         morph["mathematical_skeleton_is_source_backed"] = False
         morph["mathematical_skeleton_is_topic_native"] = True
-        morph.update(update_public_lists())
     else:
         morph["object_view"] = sanitize_object_view(str(morph.get("object_view") or wiki.get("summary") or ""))
         morph["takeaway"] = conservative_takeaway(title, page)

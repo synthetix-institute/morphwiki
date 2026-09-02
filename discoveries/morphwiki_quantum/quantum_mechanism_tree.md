@@ -106,7 +106,7 @@ Representative topics: Potential well; Scattering; Particle in a box; Quantum op
 ### Fields, constraints, and scale
 Quantum field theory promotes fields to operator-valued degrees of freedom. Gauge constraints select the physical Hilbert space, particle statistics select admissible sectors, and renormalization makes the effective law depend on scale.
 
-Representative topics: Photon; Renormalization; Quantum field theory; Fermi–Dirac statistics; Dirac equation; Quantum electrodynamics; Gauge theory; Boson.
+Representative topics: Gauge theory; Photon; Renormalization; Quantum field theory; Fermi–Dirac statistics; Dirac equation; Quantum electrodynamics; Boson.
 
 ### Annotations: history, interpretations, and popular frames
 Some pages help readers navigate the subject but do not form steps in the mechanism. They are kept as annotations so books, historical figures, interpretations, and popular frames do not distort the constructive tree.

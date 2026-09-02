@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Build a page-level MorphWiki quantum evidence index from V2 artifacts.
+"""Join quantum topics to source equations through exact V2.1 card alignments.
 
-This is an evidence adapter. It keeps V2 symbolic artifacts private and links
-quantum pages to source-card examples only when identifiers overlap.
+Topic and relation terms are resolved in the local source context before a
+paper is cited. Legacy identifiers remain retrieval leads and cannot establish
+source support by themselves.
 """
 from __future__ import annotations
 
-import argparse, json, re, hashlib
+import argparse
+import hashlib
+import json
+import re
+import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -19,6 +24,24 @@ ROUTES = {"transport_flow","spectral_operator","boundary_weak_form","constraint_
 TOPIC_STOP = {
     'quantum', 'theory', 'physics', 'physical', 'mechanics', 'mathematical',
     'formulation', 'introduction', 'applications', 'modern', 'system',
+}
+
+CORE_RELATION_CUES = {
+    'fermion': ('antisymmetr', 'anticommut', 'pauli', 'fermi-dirac', 'fermi dirac'),
+    'gauge_theory': ('covariant derivative', 'field strength', 'gauge potential', 'connection', 'curvature'),
+    'quantum_decoherence': ('decoher', 'lindblad', 'master equation', 'reduced density', 'environment'),
+    'commutator': ('commutator', 'noncommut', 'lie bracket'),
+    'quantum_entanglement': ('entangl', 'schmidt', 'partial trace', 'bell inequality'),
+    'renormalization': ('renormalization group', 'beta function', 'running coupling', 'fixed point', 'coarse grain'),
+}
+
+CORE_TOPIC_ALIASES = {
+    'fermion': ('fermionic',),
+    'gauge_theory': ('gauge field', 'gauge symmetry'),
+    'quantum_decoherence': ('decoherence', 'decoherent'),
+    'commutator': ('commutation relation', 'noncommuting operators'),
+    'quantum_entanglement': ('entanglement', 'entangled state'),
+    'renormalization': ('renormalisation', 'renormalization group'),
 }
 
 
@@ -177,6 +200,204 @@ def load_pages(root: Path) -> tuple[dict[str, dict[str, Any]], dict[str, set[str
             id_to_slugs[i].add(slug)
     return pages, id_to_slugs
 
+
+def normalized_words(value: Any) -> str:
+    text = unicodedata.normalize('NFKD', str(value or ''))
+    text = ''.join(char for char in text if not unicodedata.combining(char))
+    text = text.lower().replace('_', ' ').replace('-', ' ')
+    return re.sub(r'[^a-z0-9]+', ' ', text).strip()
+
+
+def topic_phrases(slug: str, meta: Mapping[str, Any]) -> tuple[str, ...]:
+    title = normalized_words(meta.get('title'))
+    title_without_parenthesis = normalized_words(
+        re.sub(r'\([^)]*\)', ' ', str(meta.get('title') or ''))
+    )
+    slug_phrase = normalized_words(slug)
+    phrases = {value for value in (title, title_without_parenthesis, slug_phrase) if value}
+    phrases.update(normalized_words(value) for value in CORE_TOPIC_ALIASES.get(slug, ()))
+    return tuple(sorted(phrases, key=lambda value: (-len(value.split()), value)))
+
+
+def tree_page_branches(path: Path) -> dict[str, str]:
+    if not path.is_file():
+        return {}
+    tree = load_json(path)
+    return {
+        str(row.get('slug')): str(branch_id)
+        for branch_id, branch in (tree.get('branches') or {}).items()
+        for row in (branch.get('pages') or [])
+        if row.get('slug')
+    }
+
+
+def source_first_topic_candidates(
+    pages: Mapping[str, Mapping[str, Any]],
+    branches: Mapping[str, str],
+    path: Path,
+    max_per_page: int,
+    aligned_card_ids: set[str] | None = None,
+) -> tuple[dict[str, list[tuple[str, dict[str, Any]]]], dict[str, Any]]:
+    """Find topic-bearing equation cards before consulting legacy citations."""
+    queries: dict[str, tuple[str, ...]] = {}
+    anchor_to_slugs: dict[str, set[str]] = defaultdict(set)
+    for slug, meta in pages.items():
+        if branches.get(slug) == 'annotations':
+            continue
+        phrases = topic_phrases(slug, meta)
+        if not phrases:
+            continue
+        queries[slug] = phrases
+        for phrase in phrases:
+            words = phrase.split()
+            preferred = [word for word in words if word not in TOPIC_STOP]
+            anchor = max(preferred or words, key=len)
+            anchor_to_slugs[anchor].add(slug)
+
+    selected: dict[str, list[tuple[str, dict[str, Any]]]] = defaultdict(list)
+    per_page: Counter[str] = Counter()
+    papers_per_page: dict[str, set[str]] = defaultdict(set)
+    cards_seen = 0
+    eligible_cards = 0
+    for card in stream_jsonl(path, 0):
+        cards_seen += 1
+        if cards_seen % 1_000_000 == 0:
+            print(
+                json.dumps(
+                    {
+                        'event': 'morphwiki_source_first_scan',
+                        'cards_seen': cards_seen,
+                        'pages_with_candidates': sum(
+                            value > 0 for value in per_page.values()
+                        ),
+                        'candidate_cards': len(selected),
+                    }
+                ),
+                flush=True,
+            )
+        card_id = str(card.get('equation_card_id') or card.get('card_id') or '')
+        if aligned_card_ids is not None and card_id not in aligned_card_ids:
+            continue
+        equation = str(card.get('canonical_equation') or card.get('raw_equation') or '')
+        quality = set(card.get('quality_flags') or [])
+        if (
+            not card_id
+            or not equation.strip()
+            or card.get('clean_endpoint') is False
+            or ('has_relation' not in quality and quality)
+        ):
+            continue
+        eligible_cards += 1
+        section = card.get('section') or {}
+        local_context = ' '.join(
+            str(value or '')
+            for value in (
+                section.get('title') if isinstance(section, Mapping) else '',
+                card.get('context_before'),
+                equation,
+                card.get('context_after'),
+            )
+        )
+        normalized = normalized_words(local_context)
+        words = set(normalized.split())
+        paper_id = str(
+            card.get('source_id')
+            or card.get('paper_id')
+            or card.get('arxiv_id')
+            or ''
+        )
+        candidate_slugs = set().union(
+            *(anchor_to_slugs.get(word, set()) for word in words)
+        )
+        for slug in candidate_slugs:
+            if per_page[slug] >= max_per_page:
+                continue
+            if paper_id and paper_id in papers_per_page[slug]:
+                continue
+            phrase_hits = [phrase for phrase in queries[slug] if phrase in normalized]
+            if not phrase_hits:
+                continue
+            cue_hits = [
+                cue
+                for cue in CORE_RELATION_CUES.get(slug, ())
+                if normalized_words(cue) in normalized
+            ]
+            if slug in CORE_RELATION_CUES and not cue_hits:
+                continue
+            record = {
+                'equation_card_id': card_id,
+                'source_id': paper_id,
+                'paper_id': paper_id,
+                'equation_preview': re.sub(r'\s+', ' ', equation).strip()[:520],
+                'section_title': section.get('title') if isinstance(section, Mapping) else '',
+                'local_context': re.sub(r'\s+', ' ', local_context).strip()[:1600],
+                'topic_terms_matched': sorted(phrase_hits),
+                'relation_terms_matched': sorted(cue_hits),
+                'topic_relevance': 'local_context_match',
+                'relation_relevance': (
+                    'relation_context_match' if cue_hits else 'topic_equation_match'
+                ),
+            }
+            selected[card_id].append((slug, record))
+            per_page[slug] += 1
+            if paper_id:
+                papers_per_page[slug].add(paper_id)
+    return dict(selected), {
+        'cards_seen': cards_seen,
+        'eligible_cards': eligible_cards,
+        'candidate_cards': len(selected),
+        'aligned_card_pool': len(aligned_card_ids or ()),
+        'pages_with_candidates': sum(value > 0 for value in per_page.values()),
+        'candidate_counts_by_page': dict(sorted(per_page.items())),
+        'candidate_paper_counts_by_page': {
+            slug: len(papers) for slug, papers in sorted(papers_per_page.items())
+        },
+    }
+
+
+def align_source_first_candidates(
+    pages: dict[str, dict[str, Any]],
+    candidates: Mapping[str, list[tuple[str, dict[str, Any]]]],
+    path: Path,
+    max_examples: int,
+) -> dict[str, int]:
+    matched_cards: set[str] = set()
+    links_seen = 0
+    matches = 0
+    for alignment in stream_jsonl(path, 0):
+        links_seen += 1
+        if links_seen % 500_000 == 0:
+            print(
+                json.dumps(
+                    {
+                        'event': 'morphwiki_source_first_alignment',
+                        'links_seen': links_seen,
+                        'matched_candidate_cards': len(matched_cards),
+                        'page_card_alignment_matches': matches,
+                    }
+                ),
+                flush=True,
+            )
+        card_id = str(
+            alignment.get('equation_card_id')
+            or alignment.get('source_card_id')
+            or alignment.get('card_id')
+            or ''
+        )
+        if card_id not in candidates:
+            continue
+        for slug, card in candidates[card_id]:
+            merged = dict(alignment)
+            merged.update(card)
+            add_match(pages[slug], merged, 'source_first_alignment', max_examples)
+            matches += 1
+        matched_cards.add(card_id)
+    return {
+        'alignment_links_seen': links_seen,
+        'matched_candidate_cards': len(matched_cards),
+        'page_card_alignment_matches': matches,
+    }
+
 def empty_page(meta: Mapping[str, Any], max_examples: int) -> dict[str, Any]:
     return {'title': meta.get('title'), 'topic_terms': meta.get('topic_terms',[]), 'legacy_witness_count': meta.get('legacy_witness_count',0), 'legacy_arxiv_ids': meta.get('legacy_arxiv_ids',[]), 'status': 'legacy_witness_only' if meta.get('legacy_witness_count') else 'no_evidence', 'matched_alignment_records': 0, 'matched_source_examples': 0, 'topic_relevant_source_examples': 0, 'matched_v2_row_ids': [], 'matched_source_card_ids': [], 'tokens': {}, 'routes': {}, 'constructor_roles': {}, 'source_examples': [], 'max_examples': max_examples, '_tokens': Counter(), '_routes': Counter(), '_roles': Counter()}
 
@@ -293,13 +514,33 @@ def stream_jsonl(path: Path, max_rows: int) -> Iterable[Mapping[str, Any]]:
                 yield d
 
 def add_match(page: dict[str, Any], obj: Mapping[str, Any], source: str, max_examples: int) -> None:
-    if source == 'source_language_examples': page['matched_source_examples'] += 1
+    if source in {'source_language_examples', 'source_first_alignment'}:
+        page['matched_source_examples'] += 1
     if source == 'alignment_jsonl': page['matched_alignment_records'] += 1
     page['_tokens'].update(tokens(obj)); page['_routes'].update(routes(obj)); page['_roles'].update(roles(obj))
     page['matched_v2_row_ids'] = sorted((set(page['matched_v2_row_ids']) | row_ids(obj)))[:64]
     page['matched_source_card_ids'] = sorted((set(page['matched_source_card_ids']) | card_ids(obj)))[:64]
-    if len(page['source_examples']) < max_examples:
-        page['source_examples'].append({'source': source, 'paper_ids': sorted(collect_ids(obj,8)), 'tokens': tokens(obj)[:8], 'routes': routes(obj)[:8], 'roles': roles(obj)[:8], 'row_ids': sorted(row_ids(obj))[:8], 'card_ids': sorted(card_ids(obj))[:4], 'equation_preview': preview(obj)})
+    example = {
+            'source': source,
+            'paper_ids': sorted(collect_ids(obj,8)),
+            'tokens': tokens(obj)[:8],
+            'routes': routes(obj)[:8],
+            'roles': roles(obj)[:8],
+            'row_ids': sorted(row_ids(obj))[:8],
+            'card_ids': sorted(card_ids(obj))[:4],
+            'equation_preview': preview(obj),
+            'section_title': obj.get('section_title') or '',
+            'local_context': obj.get('local_context') or '',
+            'topic_terms_matched': obj.get('topic_terms_matched') or [],
+            'relation_terms_matched': obj.get('relation_terms_matched') or [],
+            'topic_relevance': obj.get('topic_relevance') or 'not_established',
+            'relation_relevance': obj.get('relation_relevance') or 'not_established',
+        }
+    if source == 'source_first_alignment':
+        page['source_examples'].insert(0, example)
+        page['source_examples'] = page['source_examples'][:max_examples]
+    elif len(page['source_examples']) < max_examples:
+        page['source_examples'].append(example)
 
 
 def enrich_with_source_cards(pages: dict[str, dict[str, Any]], path: Path) -> dict[str, int]:
@@ -364,6 +605,15 @@ def render_md(report: Mapping[str, Any]) -> str:
     lines = ['# MorphWiki Quantum V2 Evidence Index','',f"- Readiness: `{report.get('readiness')}`",f"- V2 root: `{report.get('v2_root')}`",f"- Pages indexed: `{cov.get('pages_total',0)}`",f"- Pages with legacy witnesses: `{cov.get('pages_with_legacy_witnesses',0)}`",f"- Pages with identifier-linked V2 candidates: `{cov.get('pages_with_v2_identifier_links',0)}`",f"- Pages with topic-relevant V2 source evidence: `{cov.get('pages_with_v2_source_grounding',0)}`",f"- Pages with V2 row ids: `{cov.get('pages_with_v2_row_ids',0)}`",'', '## Artifacts']
     for k, a in sorted((report.get('artifacts') or {}).items()):
         lines.append(f"- `{k}`: `{a.get('path')}`; readiness `{a.get('readiness')}`")
+    scan = report.get('source_first_scan') or {}
+    alignment = report.get('source_first_alignment') or {}
+    lines += [
+        '',
+        '## Source-first matching',
+        f"- Source cards scanned: `{scan.get('cards_seen', 0)}`",
+        f"- Pages with topic-bearing equation candidates: `{scan.get('pages_with_candidates', 0)}`",
+        f"- Candidate cards joined to V2 rows: `{alignment.get('matched_candidate_cards', 0)}`",
+    ]
     h = (report.get('artifacts') or {}).get('hierarchical_language') or {}
     if h.get('language_counts'):
         lines += ['', '## Global Language Counts']
@@ -390,9 +640,18 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     root, v2_root = Path(args.root), Path(args.v2_root)
     artifacts = detect(v2_root, {k: getattr(args,k) for k in ['hierarchical_language','symbolic_language','symbolic_full_assignment','grammar_rules','source_language_examples','source_card_alignment','source_card_alignment_jsonl','source_cards_jsonl','source_constructor_graph','v2_dag','gamma_bridges','readout_application_coverage','apparatus_basin_a00']})
     meta, id_to_slugs = load_pages(root)
+    branches = tree_page_branches(Path(args.tree_json)) if args.tree_json else {}
+    if branches:
+        meta = {slug: page for slug, page in meta.items() if slug in branches}
+        id_to_slugs = defaultdict(set)
+        for slug, page in meta.items():
+            for identifier in page.get('legacy_arxiv_ids') or []:
+                id_to_slugs[str(identifier)].add(slug)
     pages = {s: empty_page(m, args.max_examples_per_page) for s,m in meta.items()}
+    aligned_card_ids: set[str] = set()
     if artifacts.get('source_card_alignment_jsonl'):
         for obj in stream_jsonl(Path(artifacts['source_card_alignment_jsonl']), args.max_alignment_rows):
+            aligned_card_ids.update(card_ids(obj))
             slugs = set().union(*(id_to_slugs.get(i,set()) for i in collect_ids(obj,16)))
             for slug in slugs: add_match(pages[slug], obj, 'alignment_jsonl', args.max_examples_per_page)
     source = try_json(artifacts.get('source_language_examples'))
@@ -405,18 +664,36 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             for slug in slugs: add_match(pages[slug], obj, 'source_language_examples', args.max_examples_per_page)
             if args.max_source_example_matches and matched >= args.max_source_example_matches: break
     source_card_enrichment = {'requested_cards': 0, 'matched_cards': 0}
+    source_first_scan = {'cards_seen': 0, 'candidate_cards': 0, 'pages_with_candidates': 0}
+    source_first_alignment = {'alignment_links_seen': 0, 'matched_candidate_cards': 0, 'page_card_alignment_matches': 0}
     if artifacts.get('source_cards_jsonl'):
-        source_card_enrichment = enrich_with_source_cards(
-            pages, Path(artifacts['source_cards_jsonl'])
+        candidates, source_first_scan = source_first_topic_candidates(
+            meta,
+            branches,
+            Path(artifacts['source_cards_jsonl']),
+            args.max_topic_cards_per_page,
+            aligned_card_ids,
         )
+        if candidates and artifacts.get('source_card_alignment_jsonl'):
+            source_first_alignment = align_source_first_candidates(
+                pages,
+                candidates,
+                Path(artifacts['source_card_alignment_jsonl']),
+                args.max_examples_per_page,
+            )
+        elif not candidates:
+            source_card_enrichment = enrich_with_source_cards(
+                pages, Path(artifacts['source_cards_jsonl'])
+            )
     finalize(pages)
     briefs = {k: brief(v) for k,v in sorted(artifacts.items()) if v.endswith('.json')}
     total = len(pages); with_legacy = sum(1 for p in pages.values() if p['legacy_witness_count']); with_v2 = sum(1 for p in pages.values() if p['status']=='v2_source_grounded'); with_links = sum(1 for p in pages.values() if p['status'] in {'v2_source_grounded','v2_identifier_linked'}); with_rows = sum(1 for p in pages.values() if p['matched_v2_row_ids'])
-    return {'schema_version':2,'report_type':'morphwiki_quantum_v2_evidence_index','readiness':'usable' if briefs and total else 'partial' if briefs else 'blocked','generated_at':datetime.now(timezone.utc).isoformat(),'root':str(root),'v2_root':str(v2_root),'artifacts':briefs,'artifact_paths':artifacts,'source_card_enrichment':source_card_enrichment,'coverage':{'pages_total':total,'pages_with_legacy_witnesses':with_legacy,'pages_with_v2_identifier_links':with_links,'pages_with_v2_source_grounding':with_v2,'pages_with_v2_row_ids':with_rows,'page_v2_identifier_link_rate':with_links/total if total else 0.0,'page_v2_grounding_rate':with_v2/total if total else 0.0,'page_v2_row_rate':with_rows/total if total else 0.0},'pages':pages,'claim_scope':'Evidence adapter from MorphWiki pages to transferred V2 source cards. Identifier overlap routes candidates; source grounding additionally requires a topic term in the equation section or local context. Physical validation remains separate.'}
+    return {'schema_version':3,'report_type':'morphwiki_quantum_v2_evidence_index','readiness':'usable' if briefs and total else 'partial' if briefs else 'blocked','generated_at':datetime.now(timezone.utc).isoformat(),'root':str(root),'v2_root':str(v2_root),'artifacts':briefs,'artifact_paths':artifacts,'source_card_enrichment':source_card_enrichment,'source_first_scan':source_first_scan,'source_first_alignment':source_first_alignment,'coverage':{'pages_total':total,'pages_with_legacy_witnesses':with_legacy,'pages_with_v2_identifier_links':with_links,'pages_with_v2_source_grounding':with_v2,'pages_with_v2_row_ids':with_rows,'page_v2_identifier_link_rate':with_links/total if total else 0.0,'page_v2_grounding_rate':with_v2/total if total else 0.0,'page_v2_row_rate':with_rows/total if total else 0.0},'pages':pages,'claim_scope':'Equation evidence is selected from topic-bearing local source context and then joined to an exact V2 source-card alignment. Legacy identifiers are retained only as retrieval leads.'}
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--root', default='discoveries/morphwiki_quantum'); ap.add_argument('--v2-root', default='../tm'); ap.add_argument('--out-json', default='discoveries/morphwiki_quantum/v2_quantum_evidence_index.json'); ap.add_argument('--out-md', default='discoveries/morphwiki_quantum/v2_quantum_evidence_index.md')
+    ap.add_argument('--tree-json', default='discoveries/morphwiki_quantum/quantum_mechanism_tree.json')
     artifact_args = {
         'hierarchical_language': '--hierarchical-language-json',
         'symbolic_language': '--symbolic-language-json',
@@ -435,6 +712,7 @@ def main() -> None:
     for dest, option in artifact_args.items():
         ap.add_argument(option, dest=dest, default='')
     ap.add_argument('--max-alignment-rows', type=int, default=0); ap.add_argument('--max-source-example-matches', type=int, default=0); ap.add_argument('--max-examples-per-page', type=int, default=8)
+    ap.add_argument('--max-topic-cards-per-page', type=int, default=32)
     args = ap.parse_args(); report = build(args); dump_json(Path(args.out_json), report); Path(args.out_md).parent.mkdir(parents=True, exist_ok=True); Path(args.out_md).write_text(render_md(report), encoding='utf-8')
     print(json.dumps({'json': args.out_json, 'markdown': args.out_md, 'readiness': report['readiness'], 'coverage': report['coverage']}, indent=2, ensure_ascii=False))
 if __name__ == '__main__': main()

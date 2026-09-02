@@ -113,28 +113,50 @@ revise      replace the physical role identified by a failed consequence
 
 ## Quantum Theory Through Physical Roles
 
-The first complete field build contains 146 quantum topics. Entanglement is
-placed with composite state structure; commutators with observable algebra;
-Bell experiments with local measurement of joint states; boundaries with
-operator domains; and gauge constraints with the physical Hilbert space.
-Historical and interpretive pages remain searchable as annotations.
+The first complete field build contains 146 quantum topics and 42 worked
+physical mechanisms. Its opening synthesis develops the same concepts used in
+the accompanying paper: predictive closure, transfer between realizations, and
+the promotion of a structured incompatibility into additional physics.
+Entanglement is placed with composite state structure; commutators with
+observable algebra; Bell experiments with local measurement of joint states;
+boundaries with operator domains; and gauge constraints with the physical
+Hilbert space. The gauge, decoherence, entanglement, commutator, renormalization,
+and fermion chapters give the principal equation-level examples.
 
 Current book:
 [Quantum Theory Through Physical Roles](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
 
 ## Source Equations
 
-A public citation appears only when an equation from the cited paper supports
-the displayed physical relation. The local build presently contains 111
-identifier-linked candidates and no equation-level confirmations. It therefore
-publishes no source links. Rebuilding against the full V2.1 source-card export
-will determine how many candidates survive equation-level matching.
+A source pointer is published only after a topic-bearing local equation context
+has been joined to its exact V2.1 source-card alignment. The six central
+mechanisms are held to a stricter condition: the local context must also name
+the defining relation, such as anticommutation for fermions, field strength for
+gauge theory, or a reduced-state equation for decoherence. Candidate identifiers
+alone never become citations.
 
 ```bash
 MORPHWIKI_V2_ROOT=/path/to/KnowledgeParser/discoveries \
 MORPHWIKI_V2_SOURCE_CARD_ALIGNMENT_JSONL=/path/to/KnowledgeParser/discoveries/operator_substrate_v2_full_v21_source_card_alignment.jsonl \
 MORPHWIKI_V2_SOURCE_CARDS_JSONL=/path/to/KnowledgeParser/discoveries/source_equation_cards_full_v21.jsonl \
 bash scripts/run_quantum_book.sh
+```
+
+On a machine containing the full V2.1 artifacts, the complete evidence and book
+build is:
+
+```bash
+KNOWLEDGE_PARSER_DISCOVERIES=/path/to/KnowledgeParser/discoveries \
+bash scripts/run_quantum_book_v21_full.sh
+```
+
+For a detached overnight run:
+
+```bash
+mkdir -p logs
+setsid env KNOWLEDGE_PARSER_DISCOVERIES=/path/to/KnowledgeParser/discoveries \
+  ./scripts/run_quantum_book_v21_full.sh \
+  > logs/quantum_book_v21_full.log 2>&1 < /dev/null &
 ```
 
 ## Quick Start
@@ -170,6 +192,9 @@ scripts/build_morphwiki_quantum_book.py
 
 scripts/run_quantum_book.sh
     Rebuild the evidence index, quantum map, book, PDF, and reproduction report.
+
+scripts/run_quantum_book_v21_full.sh
+    Require the full V2.1 source cards and alignments, then run the complete build.
 
 discoveries/morphwiki_quantum/
     Quantum map, role promotions, topic pages, equation evidence, and book.

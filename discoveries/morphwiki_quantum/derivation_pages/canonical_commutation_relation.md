@@ -35,7 +35,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied. Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
-
-## Evidence Links
-
-Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

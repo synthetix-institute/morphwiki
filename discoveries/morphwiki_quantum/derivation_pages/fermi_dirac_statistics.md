@@ -40,7 +40,3 @@ The dispersion relation, dimensionality, degeneracy, density of states, and inte
 ## Discriminating Consequences
 
 The theory recovers occupations restricted to zero or one and the ideal zero-temperature Fermi sea. The theory recovers the Maxwell-Boltzmann distribution in the dilute low-fugacity limit. Integrate the mode occupations against the density of states and verify the specified particle number.
-
-## Evidence Links
-
-No V2-aligned source-equation candidate is available for this topic.

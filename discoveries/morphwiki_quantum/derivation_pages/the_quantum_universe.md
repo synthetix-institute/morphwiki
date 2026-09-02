@@ -9,7 +9,3 @@ The Quantum Universe records the history, pedagogy, or interpretation of quantum
 ## Relation To The Formal Theory
 
 The source discusses states, operators, probability rules, or protocols whose mathematical consequences are developed in the physical chapters. Its interpretation changes the theory only when it changes an equation, admissibility condition, probability law, or experimental prediction.
-
-## Evidence Links
-
-Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

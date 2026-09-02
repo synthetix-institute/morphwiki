@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "report_type": "quantum_book_content_preservation_audit",
-  "generated_at": "2026-09-01T17:12:49.464968+00:00",
+  "generated_at": "2026-09-02T17:06:01.556456+00:00",
   "readiness": "blocked",
   "contract": "discoveries/morphwiki_quantum/book/quantum_book_content_contract.json",
   "metrics": {
@@ -10,15 +10,17 @@
     "dedicated_topic_section_count": 146,
     "equation_required_topic_count": 129,
     "annotation_count": 17,
-    "topic_words": 58126,
-    "topic_word_retention": 0.9136578695043933,
+    "topic_specific_count": 42,
+    "branch_level_count": 87,
+    "topic_words": 55944,
+    "topic_word_retention": 0.8793599396406734,
     "equation_blocks": 129,
     "equation_block_retention": 1.0,
     "pdf_pages": 306,
     "pdf_page_retention": 0.9839228295819936,
     "source_grounded_topics": 0,
     "identifier_linked_topics": 111,
-    "evidence_status_pages": 146
+    "source_equation_pages": 0
   },
   "checks": {
     "topic_count": true,
@@ -26,6 +28,7 @@
     "all_topics_have_dedicated_sections": true,
     "all_derivation_pages_present": true,
     "derivation_manifest_matches_tree": true,
+    "topic_specific_depth": true,
     "all_physics_topics_have_equations": true,
     "topic_words": true,
     "topic_word_retention": true,
@@ -33,11 +36,12 @@
     "equation_block_retention": true,
     "pdf_pages": true,
     "pdf_page_retention": true,
-    "evidence_status_reported": true,
+    "source_equations_only_when_grounded": true,
     "source_grounding": false,
     "source_summary_consistent": true,
     "no_wikipedia_scaffold": true,
-    "no_unverified_topic_page_links": true
+    "no_unverified_topic_page_links": true,
+    "no_internal_pipeline_language": true
   },
   "missing_map_labels": [],
   "missing_topic_sections": [],

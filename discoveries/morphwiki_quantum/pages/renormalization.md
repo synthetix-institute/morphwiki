@@ -1,45 +1,51 @@
 # Renormalization
 
-## Evidence Status
-Renormalization can be read as a quantum construction: the boundary conditions that define which histories are included fixes the admissible state space; the action functional assigning phases to histories defines the transformation or question; and spectral projectors with the Born rule determine the recorded probability distribution.
+## Central Claim
+Renormalization relates physical descriptions at different resolutions by changing couplings and operator weights while preserving long-distance predictions.
 
 ## Formal Role
-In quantum-mechanical terms, renormalization is described by boundary states or field configurations at the endpoints of a process. The physical question is represented by the action functional assigning phases to histories; the experimental or mathematical setting is the boundary conditions that define which histories are included. The observable content is obtained from transition amplitudes and probabilities obtained by summing over histories. In the local terminology of this topic, the same construction appears through quantum state or wave function, Hamiltonian or observable operator, and eigenvalue or energy level. Probabilities enter only after this spectral decomposition: the Born rule assigns weights to projectors, not to informal object names. When two observables have a non-zero commutator, no single basis diagonalizes both; the limitation is therefore a statement about jointly available spectra, not about detector imperfection. In this page the compatibility condition is expressed through commutator or uncertainty relation.
+Coarse graining removes short-distance variables and generates every operator allowed by the remaining symmetries. Their coefficients flow with scale. Relevant directions grow, irrelevant directions decay, and fixed points organize scale-invariant behaviour. Microscopically different systems can therefore share critical exponents and scaling functions when their flows approach the same fixed point. Universality is the invariance class of this scale transformation, not a visual similarity between equations.
 
 ## Formal Contribution
-- The standard article organizes concepts by topic names and historical formalisms; this page reorganizes them by the quantum construction that relates preparation, operator action, spectral decomposition, and probability.
+- The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
 - It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.
-- It treats non-commutativity as a constraint on which observables can share a spectral resolution, rather than as a topic-specific vocabulary item.
-- It turns analogy into a testable criterion: another system must supply a state space, admissible transformations, a readout basis, and a compatibility relation.
+- It treats non-commutativity as a constraint on which observables can share a spectral resolution.
+- It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations.
 
 ## Mechanism Form
-- Preparation or domain terms (basis, preparation context, or measurement basis) determine which states are admissible.
-- State terms (quantum state, wave function, or density operator) name the predictive carrier: vector, wave function, density operator, field state, or register state.
-- Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier.
-- Spectral terms (eigenvalue, energy level, or measurement outcome) name the outcome labels and projectors that define readout channels.
-- The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure.
-- Compatibility terms (commutator, uncertainty relation, or non-commuting observables) mark cases where observables do not admit one common sharp readout basis.
+- A resolution scale and a set of effective operators are specified.
+- Short-distance degrees of freedom are integrated out or coarse grained.
+- Couplings flow so that observables remain independent of the arbitrary renormalization scale.
+- Fixed points and relevant directions determine the long-distance universality class.
+
+## Topic-Native Formal Skeleton
+This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
+```math
+\mu\frac{dg_i}{d\mu}=\beta_i(\{g\})
+\left(\mu\partial_\mu+\beta_i\partial_{g_i}+n\gamma\right)G^{(n)}=0
+\beta_i(g_*)=0,\qquad \delta g_i(b)=b^{y_i}\delta g_i
+\mathcal L_{\mathrm{eff}}(\mu)=\sum_i c_i(\mu)\mathcal O_i
+```
 
 ## Mechanism Roles
-- **state:** quantum state; wave function; density operator
-- **operator:** Hamiltonian; observable operator; generator
-- **spectrum:** eigenvalue; energy level; measurement outcome
-- **boundary:** basis
-- **incompatibility:** commutator; uncertainty relation; non-commuting observables
-- **protocol:** unitary evolution; projection or measurement update; path integral weighting
+- **state:** effective degrees of freedom; coarse-grained field; critical state
+- **operator:** renormalization map; beta function; effective operator expansion
+- **spectrum:** scaling dimension; critical exponent; running coupling
+- **boundary:** cutoff; renormalization condition; coarse-graining scale
+- **incompatibility:** relevant perturbation; anomalous dimension; operator mixing
+- **protocol:** integrate short scales; rescale; compare observables
 
 ## Representation-Stable Content
-- the rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation
-- the operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels
-- the dependence of admissible readout on measurement context or boundary condition
-- the non-commuting compatibility structure, which survives changes of representation
+- Observable predictions remain independent of the arbitrary renormalization scale when couplings and fields flow consistently.
+- Critical exponents and scaling functions are shared by systems approaching the same fixed point with the same relevant directions.
+- Symmetry and dimensionality constrain the effective operators generated by coarse graining.
 
 ## Representation-Dependent Content
-- the name of the carrier: particle, wave, field, qubit, or excitation
-- where time dependence is represented: on the state, on the operator, or in a path weight
-- the coordinate system, basis, or geometric picture used to display the same relation
-- the physical implementation of detector, boundary, preparation, or readout
+- Couplings, field normalizations, effective degrees of freedom, and operator coefficients depend on scale.
+- Microscopic Hamiltonians can differ while their long-distance flows enter the same universality class.
+- A relevant perturbation can drive the system away from one fixed point toward another phase or scale regime.
 
 ## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+- Measurements at several scales determine whether running couplings follow one beta function.
+- Microscopically different realizations test whether critical exponents and scaling functions coincide.
+- Corrections to scaling distinguish approach to a fixed point from an exact scale-invariant law.

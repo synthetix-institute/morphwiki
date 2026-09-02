@@ -39,7 +39,3 @@ The orbit family, potential, number of action variables, and applicable quantiza
 ## Discriminating Consequences
 
 The theory recovers the hydrogenic level and line spectrum in the regime where action quantization applies. A comparison of the semiclassical prediction with the corresponding Schrödinger spectrum and identify its controlled limit. Treat failures outside that limit as evidence for the modern state-and-operator formalism, rather than as adjustable orbit parameters.
-
-## Evidence Links
-
-Candidate paper and equation-card identifiers were found, but no source equation has passed topic-level alignment; no citation is assigned.

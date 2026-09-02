@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "report_type": "morphwiki_quantum_v2_evidence_index_audit",
   "readiness": "blocked",
   "index": "discoveries/morphwiki_quantum/v2_quantum_evidence_index.json",
@@ -14,11 +14,38 @@
     "page_v2_grounding_rate": 0.0,
     "page_v2_row_rate": 0.7619047619047619
   },
+  "checks": {
+    "tree_and_index_have_identical_topics": false,
+    "source_first_scan_completed": false,
+    "minimum_grounded_topics": false,
+    "core_relations_are_grounded": false
+  },
   "status_counts": {
     "legacy_witness_only": 35,
     "v2_identifier_linked": 112
   },
   "tree_pages_missing_from_index": [],
+  "index_pages_absent_from_tree": [
+    "quantum_cosmology"
+  ],
+  "source_grounded_topics": [],
+  "source_grounded_topic_count": 0,
+  "required_core_topics": [
+    "fermion",
+    "gauge_theory",
+    "quantum_decoherence",
+    "commutator",
+    "quantum_entanglement",
+    "renormalization"
+  ],
+  "core_topics_without_relation_grounding": [
+    "commutator",
+    "fermion",
+    "gauge_theory",
+    "quantum_decoherence",
+    "quantum_entanglement",
+    "renormalization"
+  ],
   "pages_without_v2_source_grounding_count": 147,
   "pages_without_v2_source_grounding_examples": [
     "ads_cft_correspondence",
@@ -70,10 +97,7 @@
   ],
   "top_constructor_roles": [],
   "top_routes": [],
-  "conclusions": [
-    "Publish only equation witnesses confirmed by topic-level source-card alignment.",
-    "Identifier-linked candidates remain retrieval leads until their local equation context matches the topic.",
-    "A zero-grounding index is incomplete and cannot support public source citations."
-  ],
-  "claim_scope": "Audit of the MorphWiki V2 evidence adapter. It measures grounding coverage and token/role support; it does not validate equation derivations."
+  "source_first_scan": {},
+  "source_first_alignment": {},
+  "claim_scope": "A grounded page contains a topic-bearing source equation joined through its exact equation-card identifier to a V2 mechanism row. Core pages also require a relation-specific term in the local derivation."
 }
