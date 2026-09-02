@@ -5602,7 +5602,8 @@ def _legacy_render_book(root: Path, max_pages_per_branch: Optional[int] = None) 
         [
             r"\documentclass[11pt,oneside]{book}",
             r"\usepackage[a4paper,margin=1in]{geometry}",
-            r"\usepackage{fontspec}",
+            r"\usepackage[T1]{fontenc}",
+            r"\usepackage[utf8]{inputenc}",
             r"\usepackage{amsmath,amssymb}",
             r"\usepackage{booktabs,longtable,array}",
             r"\usepackage{xcolor}",
@@ -5783,7 +5784,8 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
     lines: List[str] = [
         r"\documentclass[11pt,oneside]{book}",
         r"\usepackage[a4paper,margin=1in]{geometry}",
-        r"\usepackage{fontspec}",
+        r"\usepackage[T1]{fontenc}",
+        r"\usepackage[utf8]{inputenc}",
         r"\usepackage{amsmath,amssymb}",
         r"\usepackage{booktabs,longtable,array}",
         r"\usepackage{xcolor}",

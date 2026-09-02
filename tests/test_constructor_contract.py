@@ -82,6 +82,9 @@ def test_default_book_uses_physical_constructor_and_hides_internal_audits(monkey
     assert "Global Composition: Curvature, Frustration, And Memory" in tex
     assert "Equivalence Across Quantum Descriptions" in tex
     assert "Theory Extension By Transfer And Obstruction" in tex
+    assert r"\usepackage[T1]{fontenc}" in tex
+    assert r"\usepackage[utf8]{inputenc}" in tex
+    assert "fontspec" not in tex
     assert "Structured Failure" in tex
     assert "Incomplete Mechanisms" in tex
     assert "Constructor Contract" not in tex
