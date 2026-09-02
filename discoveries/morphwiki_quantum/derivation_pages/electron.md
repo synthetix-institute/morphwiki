@@ -39,3 +39,10 @@ The physical carrier: particle, wave, field mode, spin, qubit, detector, or exci
 ## Discriminating Consequences
 
 A transfer target provides a state space, a transformation law, and a spectral or categorical observable, with one compatibility relation experimentally unresolved. A useful validation varies the basis, domain, or measurement context and measures whether the allowed observable changes while the underlying transformation law remains identifiable. A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.
+
+## Source Equations
+
+- [arXiv:math-ph/0004012](https://arxiv.org/abs/math-ph/0004012)
+- [arXiv:math-ph0004012](https://arxiv.org/abs/math-ph0004012)
+- [arXiv:cond-mat/0001085](https://arxiv.org/abs/cond-mat/0001085)
+- [arXiv:cond-mat0001085](https://arxiv.org/abs/cond-mat0001085)

@@ -50,3 +50,8 @@ The subsystem factorization and accessible observable algebra determine which co
 ## Discriminating Consequences
 
 Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce. Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged. A separable-state control fixes the correlation background of the apparatus.
+
+## Source Equations
+
+- [arXiv:quant-ph/0001091](https://arxiv.org/abs/quant-ph/0001091)
+- [arXiv:quant-ph0001091](https://arxiv.org/abs/quant-ph0001091)

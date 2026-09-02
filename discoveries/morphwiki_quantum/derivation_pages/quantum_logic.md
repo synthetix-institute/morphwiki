@@ -35,3 +35,8 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+
+## Source Equations
+
+- [arXiv:quant-ph/0403141](https://arxiv.org/abs/quant-ph/0403141)
+- [arXiv:quant-ph0403141](https://arxiv.org/abs/quant-ph0403141)

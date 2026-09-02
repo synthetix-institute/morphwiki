@@ -37,3 +37,8 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+
+## Source Equations
+
+- [arXiv:quant-ph/0302006](https://arxiv.org/abs/quant-ph/0302006)
+- [arXiv:quant-ph0302006](https://arxiv.org/abs/quant-ph0302006)

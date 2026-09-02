@@ -3,9 +3,9 @@
   "report_type": "quantum_constructor_dependency_audit",
   "readiness": "usable",
   "inputs": {
-    "dag": "../goidanich/tm/operator_substrate_v2_full_radius4_v2_dag.json",
-    "grammar": "../goidanich/tm/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
-    "source_constructor": "../goidanich/tm/operator_substrate_v2_full_radius4_source_constructor_graph.md"
+    "dag": "/home/softmat/Desktop/Hyperion/KnowledgeParser/discoveries/operator_substrate_v2_full_v2_dag.json",
+    "grammar": "/home/softmat/Desktop/Hyperion/KnowledgeParser/discoveries/operator_substrate_v2_full_radius4_grammar_rule_learner.json",
+    "source_constructor": "/home/softmat/Desktop/Hyperion/KnowledgeParser/discoveries/operator_substrate_v2_full_radius4_source_constructor_graph.md"
   },
   "v2_completion_dag": {
     "rows": 14523959,

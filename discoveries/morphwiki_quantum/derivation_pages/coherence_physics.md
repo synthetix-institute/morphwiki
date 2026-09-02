@@ -35,3 +35,10 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
+
+## Source Equations
+
+- [arXiv:hep-ph/0010238](https://arxiv.org/abs/hep-ph/0010238)
+- [arXiv:hep-ph0010238](https://arxiv.org/abs/hep-ph0010238)
+- [arXiv:quant-ph/0005080](https://arxiv.org/abs/quant-ph/0005080)
+- [arXiv:quant-ph0005080](https://arxiv.org/abs/quant-ph0005080)

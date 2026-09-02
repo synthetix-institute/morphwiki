@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "report_type": "quantum_book_content_preservation_audit",
-  "generated_at": "2026-09-02T17:06:01.556456+00:00",
-  "readiness": "blocked",
+  "generated_at": "2026-09-02T18:52:40.376768+00:00",
+  "readiness": "usable",
   "contract": "discoveries/morphwiki_quantum/book/quantum_book_content_contract.json",
   "metrics": {
     "topic_count": 146,
@@ -12,15 +12,15 @@
     "annotation_count": 17,
     "topic_specific_count": 42,
     "branch_level_count": 87,
-    "topic_words": 55944,
-    "topic_word_retention": 0.8793599396406734,
+    "topic_words": 56987,
+    "topic_word_retention": 0.89575441298983,
     "equation_blocks": 129,
     "equation_block_retention": 1.0,
-    "pdf_pages": 306,
-    "pdf_page_retention": 0.9839228295819936,
-    "source_grounded_topics": 0,
-    "identifier_linked_topics": 111,
-    "source_equation_pages": 0
+    "pdf_pages": 307,
+    "pdf_page_retention": 0.9871382636655949,
+    "source_grounded_topics": 123,
+    "identifier_linked_topics": 18,
+    "source_equation_pages": 123
   },
   "checks": {
     "topic_count": true,
@@ -37,7 +37,7 @@
     "pdf_pages": true,
     "pdf_page_retention": true,
     "source_equations_only_when_grounded": true,
-    "source_grounding": false,
+    "source_grounding": true,
     "source_summary_consistent": true,
     "no_wikipedia_scaffold": true,
     "no_unverified_topic_page_links": true,

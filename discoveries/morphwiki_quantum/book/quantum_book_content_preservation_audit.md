@@ -1,17 +1,17 @@
 # Quantum Book Content Preservation Audit
 
-- Readiness: `blocked`
+- Readiness: `usable`
 - Topics in the mechanism map: `146`
 - Dedicated topic sections: `146`
-- Topic words: `55944`
+- Topic words: `56987`
 - Topic-specific physical treatments: `42`
 - Branch-level topic maps: `87`
-- Topic-word retention: `0.879`
+- Topic-word retention: `0.896`
 - Equation blocks: `129`
-- PDF pages: `306`
-- PDF-page retention: `0.984`
-- Source-grounded topics: `0`
-- Identifier-linked candidates: `111`
+- PDF pages: `307`
+- PDF-page retention: `0.987`
+- Source-grounded topics: `123`
+- Identifier-linked candidates: `18`
 
 ## Checks
 
@@ -29,7 +29,7 @@
 - `pdf_pages`: **passed**
 - `pdf_page_retention`: **passed**
 - `source_equations_only_when_grounded`: **passed**
-- `source_grounding`: **failed**
+- `source_grounding`: **passed**
 - `source_summary_consistent`: **passed**
 - `no_wikipedia_scaffold`: **passed**
 - `no_unverified_topic_page_links`: **passed**

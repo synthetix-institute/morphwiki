@@ -50,3 +50,8 @@ The gauge potential, local basis, gauge-fixing condition, and coordinate descrip
 ## Discriminating Consequences
 
 A closed-loop phase or Wilson observable distinguishes nontrivial holonomy from a removable local gauge choice. Gauge-related descriptions give identical probabilities for the same physical preparation and observable. An additional field or interaction changes a gauge-invariant observable rather than only the gauge potential.
+
+## Source Equations
+
+- [arXiv:hep-ph/0001312](https://arxiv.org/abs/hep-ph/0001312)
+- [arXiv:hep-ph0001312](https://arxiv.org/abs/hep-ph0001312)

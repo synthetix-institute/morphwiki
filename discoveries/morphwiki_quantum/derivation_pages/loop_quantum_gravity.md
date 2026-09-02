@@ -35,3 +35,9 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+
+## Source Equations
+
+- [arXiv:hep-th/0401160](https://arxiv.org/abs/hep-th/0401160)
+- [arXiv:hep-th0401160](https://arxiv.org/abs/hep-th0401160)
+- [arXiv:2110.10667](https://arxiv.org/abs/2110.10667)

@@ -35,3 +35,9 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels. The same operator can have different spectra when the admissible domain changes.
+
+## Source Equations
+
+- [arXiv:1905.01212](https://arxiv.org/abs/1905.01212)
+- [arXiv:1005.0333](https://arxiv.org/abs/1005.0333)
+- [arXiv:1708.05814](https://arxiv.org/abs/1708.05814)

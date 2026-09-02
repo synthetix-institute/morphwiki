@@ -40,3 +40,10 @@ The dispersion relation, dimensionality, density of states, conserved particle n
 ## Discriminating Consequences
 
 The theory recovers unrestricted mode occupation and Bose enhancement relative to distinguishable particles. The theory recovers the Maxwell-Boltzmann distribution in the dilute low-fugacity limit. The defining relation is particle-number or energy constraints and test whether the inferred condensate fraction follows the correct dimensional dependence.
+
+## Source Equations
+
+- [arXiv:1108.4273](https://arxiv.org/abs/1108.4273)
+- [arXiv:1811.09883](https://arxiv.org/abs/1811.09883)
+- [arXiv:hep-th/0501215](https://arxiv.org/abs/hep-th/0501215)
+- [arXiv:hep-th0501215](https://arxiv.org/abs/hep-th0501215)

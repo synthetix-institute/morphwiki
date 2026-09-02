@@ -50,3 +50,10 @@ Couplings, field normalizations, effective degrees of freedom, and operator coef
 ## Discriminating Consequences
 
 Measurements at several scales determine whether running couplings follow one beta function. Microscopically different realizations determine whether critical exponents and scaling functions coincide. Corrections to scaling distinguish approach to a fixed point from an exact scale-invariant law.
+
+## Source Equations
+
+- [arXiv:hep-ph/0104098](https://arxiv.org/abs/hep-ph/0104098)
+- [arXiv:hep-ph0104098](https://arxiv.org/abs/hep-ph0104098)
+- [arXiv:hep-ph/0106305](https://arxiv.org/abs/hep-ph/0106305)
+- [arXiv:hep-ph0106305](https://arxiv.org/abs/hep-ph0106305)

@@ -41,3 +41,10 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 ## Discriminating Consequences
 
 A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+
+## Source Equations
+
+- [arXiv:1003.5582](https://arxiv.org/abs/1003.5582)
+- [arXiv:2212.14568](https://arxiv.org/abs/2212.14568)
+- [arXiv:quant-ph/0703020](https://arxiv.org/abs/quant-ph/0703020)
+- [arXiv:quant-ph0703020](https://arxiv.org/abs/quant-ph0703020)

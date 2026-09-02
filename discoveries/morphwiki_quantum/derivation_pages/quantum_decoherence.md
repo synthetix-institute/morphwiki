@@ -50,3 +50,10 @@ The preferred basis, decay rate, and recoherence depend on the interaction, envi
 ## Discriminating Consequences
 
 Interference visibility is compared with a control in which the environment cannot distinguish the alternatives. Two preparations with the same reduced state determine whether hidden correlations alter later observables. Reversing or decoupling the interaction determines whether coherence remains recoverable in the joint state.
+
+## Source Equations
+
+- [arXiv:quant-ph/0306087](https://arxiv.org/abs/quant-ph/0306087)
+- [arXiv:quant-ph0306087](https://arxiv.org/abs/quant-ph0306087)
+- [arXiv:quant-ph/0008131](https://arxiv.org/abs/quant-ph/0008131)
+- [arXiv:quant-ph0008131](https://arxiv.org/abs/quant-ph0008131)

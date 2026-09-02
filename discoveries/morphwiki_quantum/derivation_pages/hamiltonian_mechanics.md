@@ -35,3 +35,9 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+
+## Source Equations
+
+- [arXiv:math/9808109](https://arxiv.org/abs/math/9808109)
+- [arXiv:math9808109](https://arxiv.org/abs/math9808109)
+- [arXiv:1206.3939](https://arxiv.org/abs/1206.3939)

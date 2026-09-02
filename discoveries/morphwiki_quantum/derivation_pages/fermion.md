@@ -54,3 +54,12 @@ Mass, charge, dispersion, dimensionality, interaction law and gauge representati
 ## Discriminating Consequences
 
 The defining relation is antisymmetry or canonical anticommutation and the resulting zero-or-one occupation spectrum. At fixed one-particle spectrum, compare with distinguishable-particle and sign-erased controls to isolate exchange. For a claimed transfer, compare correlations and locality as well as energies; spectral agreement alone is insufficient.
+
+## Source Equations
+
+- [arXiv:cond-mat/0005069](https://arxiv.org/abs/cond-mat/0005069)
+- [arXiv:cond-mat0005069](https://arxiv.org/abs/cond-mat0005069)
+- [arXiv:quant-ph/0305150](https://arxiv.org/abs/quant-ph/0305150)
+- [arXiv:quant-ph0305150](https://arxiv.org/abs/quant-ph0305150)
+- [arXiv:hep-ph/0007343](https://arxiv.org/abs/hep-ph/0007343)
+- [arXiv:hep-ph0007343](https://arxiv.org/abs/hep-ph0007343)

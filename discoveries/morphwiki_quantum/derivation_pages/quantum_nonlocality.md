@@ -35,3 +35,8 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+
+## Source Equations
+
+- [arXiv:1504.03797](https://arxiv.org/abs/1504.03797)
+- [arXiv:2407.03114](https://arxiv.org/abs/2407.03114)
