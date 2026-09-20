@@ -260,9 +260,13 @@ def test_fermion_page_derives_physical_consequences_and_transfer_limits():
     assert "Jordan--Wigner" in markdown
     assert "hard-core bosons" in markdown
     assert "spectral agreement alone is insufficient" in markdown
-    assert derivation_basis(
-        json.loads((ROOT / "pages" / "fermion.json").read_text()), row, "fields"
-    ) == "topic_model"
+    page = json.loads((ROOT / "pages" / "fermion.json").read_text())
+    assert row["v2_evidence"]["available"] is True
+    assert row["v2_evidence"]["matched_source_examples"] > 0
+    assert top_evidence(page, row)
+    assert derivation_basis(page, row, "fields") == "source_grounded_topic_model"
+    ungrounded = {**row, "v2_evidence": {"available": False}}
+    assert derivation_basis(page, ungrounded, "fields") == "topic_model"
 
 
 def test_public_evidence_requires_source_card_grounding():
