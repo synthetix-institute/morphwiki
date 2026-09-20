@@ -1,48 +1,58 @@
-# Chapter 2: Topic Scaffold and Operational Evidence
+# Follow a topic back to its evidence
 
-MorphWiki begins with public topic pages but does not treat their prose as the
-mechanism. Wikipedia supplies titles, summaries, links and attribution. The
-Hyperion witness index supplies equation-level route and fiber evidence.
+A chapter may have a familiar title, a mathematically correct explanation and
+several candidate paper identifiers. To cite one of those papers for a specific
+equation, the equation and its assumptions must actually be located there.
+MorphWiki retains these stages separately.
 
-Rebuild a compact quantum topic set from the cached Wikipedia pages:
-
-```bash
-python3 -B scripts/export_morphwiki_topic_index.py \
-  --topics 'Schrödinger equation,Hilbert space,Observable,Born rule,Commutator' \
-  --hyperion-index discoveries/fieldbridge_static_index/hyperion_static_index.json \
-  --cache-dir discoveries/morphwiki_quantum/wiki_cache \
-  --out-dir build/tutorial_quantum
-```
-
-Each generated JSON record keeps the two evidence layers separate:
-
-```text
-wikipedia.title / summary / url
-hyperion.route_profile
-hyperion.fiber_profile
-hyperion.equation_witnesses
-mechanism reading and evidence boundary
-```
-
-Inspect one full record:
+Start with a cached record; no network request or rebuild is needed:
 
 ```bash
 python3 -m json.tool \
-  discoveries/morphwiki_quantum/pages/schr_dinger_equation.json | less
+  discoveries/morphwiki_quantum/pages/schr_dinger_equation.json
 ```
 
-The route profile measures evidence for transport, closure, spectral
-operators, boundaries, incompatibility and protocol. It is not a topic
-classification. The witness links identify source equations with related
-operational evidence; they do not prove that any one witness explains the
-entire page.
+The record's `wikipedia` field stores legacy topic metadata and attribution.
+Its `hyperion` field includes route profiles and candidate witnesses. Other
+fields hold the topic's explanation. A witness retrieved through a route match
+may be about a different physical problem with similar notation.
 
-```mermaid
-flowchart LR
-    W["Wikipedia scaffold"] --> P["Topic record"]
-    H["Hyperion evidence"] --> P
-    P --> S["Source boundary"]
-    P --> M["Mechanism rewrite"]
+## Read the evidence in layers
+
+| Record | Question it answers |
+| --- | --- |
+| Topic metadata | What page or concept was used to organize the material? |
+| Candidate paper identifier | Where might relevant material be found? |
+| Source card and local context | What equation and assumptions were recovered? |
+| V2.1 equation alignment | Which extracted equation record corresponds to that context? |
+| Topic-relation check | Does the recovered context support the relation this chapter explains? |
+
+[build_morphwiki_v2_quantum_evidence_index.py](../../scripts/build_morphwiki_v2_quantum_evidence_index.py)
+joins candidates to source-card evidence.
+[audit_morphwiki_v2_quantum_evidence_index.py](../../scripts/audit_morphwiki_v2_quantum_evidence_index.py)
+checks the required topic relation, including the stricter central examples.
+This is why a paper identifier alone is not published as a confirmed source
+pointer.
+
+The legacy Wikipedia scaffold can help locate topics, but it is excluded from
+the public theory-book explanation and its scientific source pointers. For a
+new paper-based field, start with the
+[local-corpus workflow](06_new_field.md) instead of downloading an encyclopedia.
+
+## Inspect the source index of the artifact you have
+
+```bash
+python3 -m json.tool \
+  discoveries/morphwiki_quantum/v2_quantum_evidence_index.json
 ```
 
-Next: [Rewrite one topic as a mechanism](03_mechanism_page.md).
+Use this index with the book generated from it. A newer cluster build and an
+older local book can have different evidence coverage; a readiness statement
+from one cannot certify the other.
+
+**Exercise.** Choose one candidate identifier from a topic record. Find whether
+it appears as a confirmed local equation witness in the evidence index. If it
+does not, record which link is missing rather than filling the citation from
+the topic name.
+
+[Next: build an explanatory page](03_mechanism_page.md) · [Tutorial](index.md)

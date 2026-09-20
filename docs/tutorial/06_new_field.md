@@ -1,84 +1,73 @@
-# Chapter 6: Create a Wiki for Another Field
+# Start a field wiki from your own papers
 
-The reusable object is the field-wiki contract, not the quantum chapter list.
-A new field needs its own corpus and its own measured constructor spine.
+A useful first wiki answers one bounded physical question with a small set of
+papers. For active matter, this might be how particle propulsion and wall
+interactions determine boundary accumulation. The initial collection should
+contain the governing equations, boundary conditions and measured quantities,
+not merely papers sharing a topic keyword.
 
-## Step 1: Define the Public Entry Points
+The PDF workflow reuses FieldBridge's text extraction and evidence scoring.
+It creates linked first-pass pages; a coherent field explanation still needs
+the physical derivations that connect them.
 
-Create a newline-separated topic file from Wikipedia titles, review sections
-or a curated field vocabulary:
+## Rehearse with local examples
 
-```text
-active matter
-motility-induced phase separation
-active stress
-collective motion
-boundary accumulation
-```
-
-## Step 2: Export Source-Grounded Pages
-
-For a folder of PDFs, use the shared FieldBridge ingestion path:
+With FieldBridge next to MorphWiki, install it in the current environment:
 
 ```bash
 python3 -m pip install -e '../fieldbridge[pdf]'
-python3 -B scripts/build_morphwiki_field_from_pdfs.py /path/to/papers \
-  --field-id active_matter \
-  --label "Active Matter" \
-  --out-dir discoveries/morphwiki_active_matter
+python3 -B scripts/build_morphwiki_field_from_pdfs.py ../fieldbridge/examples \
+  --field-id tutorial_field --label "Tutorial field" \
+  --extensions .txt,.tex --max-docs 4 --max-anchors 12 --max-pages 12 \
+  --out-dir build/tutorial_field_wiki
 ```
 
-This produces source-indexed topic, mechanism, and construction views. PDFs
-must contain a text layer; scanned papers require OCR first. Full details are
-in [PDF_CORPUS_WORKFLOW.md](../PDF_CORPUS_WORKFLOW.md).
+This uses bundled text and TeX examples, so no PDF corpus or network connection
+is needed. Open `build/tutorial_field_wiki/index.md`, then one linked page.
+The `fieldbridge/` subdirectory contains the underlying extracted records.
 
-For Wikipedia or a curated topic list, use the topic exporter:
+## Supply a research collection
 
 ```bash
-python3 -B scripts/export_morphwiki_topic_index.py \
-  --topic-file topics/active_matter.txt \
-  --expand-wikipedia-links \
-  --hyperion-index discoveries/fieldbridge_static_index/hyperion_static_index.json \
-  --out-dir discoveries/morphwiki_active_matter
+python3 -B scripts/build_morphwiki_field_from_pdfs.py /path/to/papers \
+  --field-id active_matter --label "Active Matter" \
+  --out-dir build/active_matter_wiki
 ```
 
-This stage creates the topic and operational-evidence views. It does not yet
-justify a constructor order.
+Text-layer PDFs, TeX, Markdown and plain text are accepted; scanned PDFs require
+OCR. The resulting `field_wiki.json` records source files, extraction failures,
+recognized roles and generated page paths. Source indexing means a passage can
+be traced to an input file, not that every extracted formula has survived PDF
+conversion correctly.
 
-## Step 3: Infer the Field Roles
+## Develop the explanation from the equations
 
-Profile the pages for recurrent carriers, operations, closure conditions,
-observables and protocols. Candidate active-matter roles might include particle
-or field state, propulsion, transport/interaction, density or stress closure,
-boundary coupling, collective observable and perturbation protocol. These labels
-must be inferred and audited against the field corpus rather than copied from
-the quantum spine.
+Choose a page with a recoverable equation. Identify the physical state and the
+quantity whose behavior is sought. Explain how the boundary, constitutive law
+or interaction enters that prediction. Then connect the page to the next
+equation required to finish the calculation.
 
-## Step 4: Build Three Synchronized Views
+For boundary accumulation, a route score can locate transport and boundary
+passages. The actual explanation must show how propulsion and reorientation,
+together with the wall condition, affect the density. Simply renaming the
+quantum branches would not supply that relation.
 
-```text
-topic view        familiar field vocabulary and sources
-mechanism view    Omega, Xi, C, R, P clauses for each page
-construction view dependencies and missing obligations
-```
+The generic builder produces a Markdown field wiki. The quantum book generator
+contains quantum-specific authored treatments; it is not a universal
+textbook generator for any new folder.
 
-## Step 5: Audit Before Publication
+## Add a construction
 
-A publishable field wiki should report:
+Recover a source model and state what is to change: a coordinate, boundary,
+interaction, measured quantity or operation order. Write the mathematical
+relation to be tested. A supported Itô or finite-Hamiltonian problem can use
+FieldBridge's exact verifier; another problem requires an appropriate solver
+and its own independent checks.
 
-- page coverage and source coverage;
-- stability of the inferred role structure;
-- pages with insufficient equation evidence;
-- overloaded topics assigned to several incompatible roles;
-- unresolved constructor dependencies;
-- links back to the original sources and equations.
+Keep source and target assumptions visible. A successful calculation then
+shows why the target response follows. To call it a new discovery candidate,
+also establish what consequence was not supplied, how it could be tested,
+and how it differs from existing work.
 
-## Cross-Field Use
-
-Once two field wikis use the same upper-level contract, they can be linked by
-mechanism-preserving transformations. The link should state which operation is
-retained, which carrier or completion clause changes and which observation
-would reject the proposed transfer. That is how MorphWiki becomes a map of
-fields organized by mechanisms rather than a collection of AI summaries.
-
-Return to the [tutorial index](index.md).
+[Source evidence and calculations](09_sources_and_calculations.md) ·
+[Detailed PDF workflow](../PDF_CORPUS_WORKFLOW.md) · [Tutorial](index.md)

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Build evidence-backed cross-topic connections from the quantum constructor."""
+"""Annotate authored cross-topic hypotheses with topic availability and overlap.
+
+CONNECTIONS supplies the equations and relationships. This script neither
+discovers them from route vectors nor independently verifies their physics.
+"""
 
 from __future__ import annotations
 
@@ -150,6 +154,10 @@ def build(args: argparse.Namespace) -> Dict[str, Any]:
                 "minimum_route_overlap": min(overlaps) if overlaps else 0.0,
                 "cross_branch": len(set(topic_branches)) > 1,
                 "status": "candidate_connection" if not absent else "incomplete_evidence",
+                "connection_origin": "authored_definition",
+                "equations_origin": "authored_definition",
+                "mathematical_verification": "not_performed",
+                "source_equation_alignment": "not_evaluated",
             }
         )
         rows.append(row)
@@ -160,12 +168,14 @@ def build(args: argparse.Namespace) -> Dict[str, Any]:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "readiness": "usable" if not missing else "partial",
         "connection_count": len(rows),
+        "connection_origin": "authored_definitions",
+        "readiness_scope": "availability of the named topic pages, not mathematical or source-equation verification",
         "connections": rows,
         "missing_topics": sorted(set(missing)),
-        "interpretation": "Connections are type-preserving constructor hypotheses. Route overlap is supporting corpus evidence, not proof of mathematical equivalence.",
+        "interpretation": "The connections and equations are authored hypotheses. Route overlap describes the associated topic profiles; it does not establish a transformation, source-equation alignment or mathematical equivalence.",
     }
     Path(args.out_json).write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    lines = ["# Quantum Constructor Rewiring", "", f"- Readiness: `{report['readiness']}`", f"- Connections: `{len(rows)}`", ""]
+    lines = ["# Quantum Constructor Rewiring", "", f"- Readiness: `{report['readiness']}`", f"- Connections: `{len(rows)}`", "", report["interpretation"], "", "Readiness concerns the availability of named topic pages only.", ""]
     for row in rows:
         lines.extend(
             [

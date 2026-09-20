@@ -1,233 +1,179 @@
 # MorphWiki
 
-Quantum theories differ in what they treat as physical. A geometry can remain a
-fixed background or become a quantum degree of freedom. An environment can be
-discarded or retained as memory. A detector can record an outcome or enter the
-dynamics that produces it. MorphWiki organizes a field by these changes of
-physical role.
+**Explain a field through the equations needed to predict an experiment.**
 
-![MorphWiki mechanism-construction workflow](docs/assets/morphwiki-operator-native-physics.svg)
+[Tutorial](docs/tutorial/index.md) · [Quantum book](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
 
-## Predictive Closure
+Predicting the magnetization of one interacting spin can require a correlation
+with a second spin. The state space, Hamiltonian, correlation and measurement
+then belong to one calculation, even though a topic-based account may discuss
+them in separate chapters. MorphWiki organizes quantum theory around such
+dependencies and keeps familiar topic names as entry points.
 
-A theory at a chosen resolution must satisfy two conditions. Its declared state
-must determine later observable probabilities, and equivalent physical
-transformations must compose to the same result:
+The repository produces a navigable field map and an explanatory book. A
+separate calculation companion uses [FieldBridge](https://github.com/synthetix-institute/fieldbridge)
+to derive consequences of explicit equations. The book provides the physical
+connections; the companion makes selected constructions executable.
+
+## Begin with a prediction
+
+For two spins with interaction $H=gZ\otimes Z$, let $x(t)$ be the transverse
+magnetization of the first spin and $c(t)$ its correlation
+$\langle Y\otimes Z\rangle$ with the second. In units with $\hbar=1$,
 
 ```math
-q(h_1)=q(h_2)
-\Longrightarrow
-p(y,t\mid h_1)=p(y,t\mid h_2),
+\dot x=-2g c,\qquad \dot c=2g x,
 \qquad
-T_{\gamma_1}=T_{\gamma_2}.
+x(t)=x(0)\cos(2gt)-c(0)\sin(2gt).
 ```
 
-The first condition fails when discarded correlations influence the future.
-Restoring them produces an internal state coordinate or a memory kernel. The
-second fails when a closed sequence retains path information. Restoring global
-consistency produces curvature, frustration, a boundary contribution, or
-another compatibility term. Both failures identify information missing from
-the smaller theory.
+Two preparations with the same $x(0)$ can give different later signals.
+The Hamiltonian determines which additional expectation value is needed.
+The companion finds this closed pair by repeated commutators; its input
+contains the Hamiltonian and measured operator, not the answer.
 
-This gives one principle for theory construction:
+### Run the companion
 
-> Enlarge the physical description by the smallest field, state coordinate,
-> operator, closure condition, observable, or protocol that makes predictions
-> single-valued and transformations compositionally consistent.
+Keep the repositories next to each other:
 
-## Physical Roles
+```text
+work/
+  fieldbridge/
+  morphwiki/
+```
 
-A realized mechanism is written as
+From `morphwiki/`, using Python 3.10 or newer:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -e '../fieldbridge[construction]'
+python3 -B scripts/build_construction_companion.py \
+  --fieldbridge-root ../fieldbridge --out-dir build/construction_companion
+```
+
+Open `build/construction_companion/README.md`. A successful run reports
+`status: complete` and three calculations:
+
+| Calculation | Result to inspect |
+| --- | --- |
+| Affine stochastic coordinate change | The generator transforms with no extra Itô drift |
+| Squared stochastic coordinate | A required drift is derived; omitting it leaves residual 1 |
+| Interacting spins | Two observables close exactly under the Hamiltonian |
+
+These known examples demonstrate and test the method. The command runs locally,
+needs no LLM or TeX installation, and leaves the quantum book unchanged.
+[Understand the outputs](docs/tutorial/10_submission_companion.md).
+
+### Solve for interactions
+
+An optional fourth example asks which Ising couplings allow exchange and
+collective phase evolution to separate when the exchange strengths vary.
+The constructor solves the coupling equations, predicts an end-spin
+cancellation, checks full Hamiltonian evolution, and repeats the design with
+nearest-neighbour Ising interactions:
+
+```bash
+python3 -B scripts/build_construction_companion.py \
+  --fieldbridge-root ../fieldbridge --include-spin-design \
+  --out-dir build/construction_companion_with_design
+```
+
+[Follow the inverse construction](docs/tutorial/11_inverse_construction.md).
+This is a runnable method example using known collective-spin physics. The
+coupling constraint is calculated; physical novelty is not presumed.
+
+## Why organize a book this way?
+
+The Hilbert space determines which states and operators exist. The Hamiltonian
+and its domain determine evolution. Preparation fixes the initial state, and
+the measured operator determines which part of that evolution an experiment
+reveals. Changing one of these choices can change what must be specified in
+the others.
+
+MorphWiki records this dependence in a nested description:
 
 ```math
-(\Omega,\Xi)\longrightarrow M\longrightarrow
-I_{\mathrm{op}}=(M;C,R,P)\longrightarrow
+M=(\Omega,\Xi),\qquad
+I_{\mathrm{op}}=(M;C,R,P),\qquad
 I_{\mathrm{real}}=(I_{\mathrm{op}};A).
 ```
 
-A physical state `q` belongs to the admissible state space `Xi`. The operation
-`Omega` acts on that state as a generator, channel, projection, constraint, or
-observable. Their pair `M=(Omega,Xi)` specifies which law acts on which degrees
-of freedom. Closure `C` fixes domains and admissibility. The map `R` produces an
-observable prediction, and `P` fixes the order of preparation, control, and
-measurement. The realization `A` supplies the fields, material, geometry,
-parameters, initial data, and apparatus of a particular experiment.
+Here $\Omega$ identifies an operation class and $\Xi$ its carrier.
+Conditions $C$ include constitutive relations, admissibility and operator
+domains; $R$ specifies the observable and $P$ the preparation and sequence
+of operations. $A$ attaches a particular physical implementation.
+A changed boundary or an additional dynamical degree of freedom must also
+change the relevant inner description.
 
-Each role removes a physical ambiguity. Without `Xi`, the operator has no
-domain. Without `C`, its states or probabilities need not be admissible. Without
-`R`, formal evolution gives no predicted measurement. Without `P`, the order of
-noncommuting operations is undefined.
+The roles are the organizing model of the book. Topic placement combines
+curated physical assignments with scores computed from source records.
+Recurring families within a representation and evidence that this particular
+role partition is preferred by data are separate questions.
 
-## Role Promotion
+## Navigate the field
 
-A parameter remains in the realization while it selects a member of a fixed
-theory. It enters the mechanism when it changes the state space, operator
-domain, dynamical map, closure, observable, or operation order.
-
-| Physical change | Promotion | Consequence |
-| --- | --- | --- |
-| A prescribed background becomes a fluctuating field | `A -> (Xi, Omega)` | Quanta, correlations, and back-reaction enter the theory |
-| Geometry becomes a quantum degree of freedom | `A -> (Xi, Omega)` | Areas, connections, or causal relations acquire spectra and fluctuations |
-| Environmental correlations influence later motion | `A -> (Xi, Omega, C)` | Hidden state or a memory kernel restores the reduced dynamics |
-| A detector participates in the interaction | `A -> (Xi, Omega, R)` | Back-action and conditional state change enter outcome probabilities |
-| A boundary selects an operator domain | `A -> (C, Omega)` | Spectra, scattering channels, and edge states change |
-| Gauge or exchange symmetry selects physical states | `C -> Xi` | Charges, statistics, and admissible observables follow from the surviving sector |
-| A subsystem split defines locality | `A -> (Xi, C)` | Entanglement and Bell correlations become properties of the joint state |
-| An ordered control sequence defines the implemented map | `P -> Omega` | Reordering gates or measurements changes the channel |
-| Effective couplings depend on observation scale | `A -> (Omega, C)` | Renormalization flow connects effective laws and fixed points |
-
-These promotions connect subjects that are usually taught separately. Quantum
-field theory promotes fields into operator-valued degrees of freedom. Open
-quantum dynamics promotes environmental correlations into retained state or
-memory. Measurement theory promotes apparatus coupling into a quantum
-instrument. Quantum information promotes ordered protocols into channels.
-Quantum gravity asks whether geometry itself must be promoted.
-
-## Transfer And Missing Physics
-
-A transformation between two mechanisms names the amplitude, expectation
-value, algebra, current, or probability law that should remain invariant. State
-and output maps `alpha` and `beta` define the compatibility residual
-
-```math
-\Delta_{\alpha,\beta}=\Omega_B\alpha-\beta\Omega_A.
+```mermaid
+flowchart LR
+    T["Topic names"] --> P["Physical explanation"]
+    S["Equation and nearby assumptions"] --> P
+    P --> D["Dependencies: states, evolution, measurement"]
+    D --> Q["A specific prediction or proposed change"]
+    Q --> C["Explicit mathematical calculation"]
+    C --> O["Observable consequence and comparison"]
 ```
 
-`Delta=0` identifies another realization of the retained mechanism when the
-stated observables also agree. A reproducible nonzero residual can instead
-acquire its own closure and observable consequence. It then becomes a candidate
-field, interaction, boundary term, memory coordinate, or correction to the law.
-Thus the same calculation tests whether a mechanism transfers and identifies
-the physics required when it does not.
+The [tutorial](docs/tutorial/index.md) follows a quantum example from explanation
+to calculation, then shows how the repository builds and checks the source
+index. It explains why observable incompatibility, state correlations and
+measurement back-action play different roles.
 
-MorphWiki expresses these calculations through six physical operations:
+A local equation context must pass V2.1 alignment and topic-relevance checks
+before it is published as a source pointer. Candidate identifiers remain
+distinct from confirmed witnesses. A successful symbolic calculation does not
+fill a missing citation.
 
-```text
-complete    derive a missing closure, observable, or operation order
-reattach    place a law on another state space through explicit maps
-compose     join supported transformations
-deform      vary a boundary, scale, parameter, or representation
-observe     derive the measurement that distinguishes the construction
-revise      replace the physical role identified by a failed consequence
-```
+## Read, rebuild, or extend
 
-## Quantum Theory Through Physical Roles
+| Goal | Start here |
+| --- | --- |
+| Read the book | [Quantum Theory Through Physical Roles](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
+| Learn the code through physics | [Guided tutorial](docs/tutorial/index.md) |
+| Inspect how a topic becomes a chapter | [One mechanism page](docs/tutorial/03_mechanism_page.md) |
+| Rebuild in a separate output tree | [Safe book build](docs/tutorial/05_build_and_audit.md) |
+| Connect sources and calculations | [Evidence and transformations](docs/tutorial/09_sources_and_calculations.md) |
+| Organize another paper collection | [New-field walkthrough](docs/tutorial/06_new_field.md) |
+| Prepare a research companion | [Reproduction and submission](docs/tutorial/10_submission_companion.md) |
 
-The first complete field build contains 146 quantum topics and 42 worked
-physical mechanisms. Its opening synthesis develops the same concepts used in
-the accompanying paper: predictive closure, transfer between realizations, and
-the promotion of a structured incompatibility into additional physics.
-Entanglement is placed with composite state structure; commutators with
-observable algebra; Bell experiments with local measurement of joint states;
-boundaries with operator domains; and gauge constraints with the physical
-Hilbert space. The gauge, decoherence, entanglement, commutator, renormalization,
-and fermion chapters give the principal equation-level examples.
+The deterministic quantum build uses cached records. For PDF compilation the
+runner tries `latexmk/pdflatex`, `pdflatex`, `xelatex`, then `lualatex`.
+Full source-grounding regeneration also needs the V2.1 source cards and
+alignments. The tutorial separates that larger job from local examples.
 
-Current book:
-[Quantum Theory Through Physical Roles](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+## Where the work happens
 
-## Source Equations
+| Source | Responsibility |
+| --- | --- |
+| [morphwiki_constructor.py](scripts/morphwiki_constructor.py) | Physical-role definitions and constructor operations |
+| [build_morphwiki_quantum_tree.py](scripts/build_morphwiki_quantum_tree.py) | Curated and scored topic placement |
+| [build_morphwiki_v2_quantum_evidence_index.py](scripts/build_morphwiki_v2_quantum_evidence_index.py) | Join local source equations to topic evidence |
+| [analyze_quantum_constructor_rewiring.py](scripts/analyze_quantum_constructor_rewiring.py) | Annotate authored hypotheses with topic availability and overlap |
+| [build_morphwiki_quantum_book.py](scripts/build_morphwiki_quantum_book.py) | Render explanatory chapters and LaTeX |
+| [build_construction_companion.py](scripts/build_construction_companion.py) | Reproduce three FieldBridge calculations and the optional inverse interaction design |
+| [build_morphwiki_field_from_pdfs.py](scripts/build_morphwiki_field_from_pdfs.py) | Build a source-indexed wiki from another collection |
 
-A source pointer is published only after a topic-bearing local equation context
-has been joined to its exact V2.1 source-card alignment. The six central
-mechanisms are held to a stricter condition: the local context must also name
-the defining relation, such as anticommutation for fermions, field strength for
-gauge theory, or a reduced-state equation for decoherence. Candidate identifiers
-alone never become citations.
+## Contribute a physical connection
 
-```bash
-MORPHWIKI_V2_ROOT=/path/to/KnowledgeParser/discoveries \
-MORPHWIKI_V2_SOURCE_CARD_ALIGNMENT_JSONL=/path/to/KnowledgeParser/discoveries/operator_substrate_v2_full_v21_source_card_alignment.jsonl \
-MORPHWIKI_V2_SOURCE_CARDS_JSONL=/path/to/KnowledgeParser/discoveries/source_equation_cards_full_v21.jsonl \
-bash scripts/run_quantum_book.sh
-```
+A useful addition starts with a question whose answer depends on more than one
+topic: a boundary that changes a spectrum, a correlation required by a measured
+response, or a change of coordinates that alters a stochastic drift. Supply
+the equations and assumptions, explain the dependence, and calculate a
+consequence. Keep source evidence and calculation together.
 
-On a machine containing the full V2.1 artifacts, the complete evidence and book
-build is:
+The [field-wiki contract](docs/FIELD_WIKI_CONTRACT.md) and
+[contribution walkthrough](docs/tutorial/06_new_field.md) describe the records.
+The book explains established quantum theory. A discovery candidate additionally
+needs a previously unprovided consequence, a test in its target system, and
+comparison with existing work.
 
-```bash
-KNOWLEDGE_PARSER_DISCOVERIES=/path/to/KnowledgeParser/discoveries \
-bash scripts/run_quantum_book_v21_full.sh
-```
-
-For a detached overnight run:
-
-```bash
-mkdir -p logs
-setsid env KNOWLEDGE_PARSER_DISCOVERIES=/path/to/KnowledgeParser/discoveries \
-  ./scripts/run_quantum_book_v21_full.sh \
-  > logs/quantum_book_v21_full.log 2>&1 < /dev/null &
-```
-
-## Quick Start
-
-The deterministic build uses the Python standard library. XeLaTeX or LuaLaTeX
-is required for the PDF.
-
-```bash
-git clone https://github.com/synthetix-institute/morphwiki.git
-cd morphwiki
-bash scripts/run_quantum_book.sh
-```
-
-Outputs are written to `discoveries/morphwiki_quantum/`.
-
-## Repository Map
-
-```text
-scripts/morphwiki_constructor.py
-    Predictive closure, physical roles, role promotions, and constructor operations.
-
-scripts/build_morphwiki_quantum_tree.py
-    Assign quantum topics to physical roles and export promotion metadata.
-
-scripts/build_morphwiki_v2_quantum_evidence_index.py
-    Match topic relations to source equations from the full V2.1 export.
-
-scripts/analyze_quantum_constructor_rewiring.py
-    Derive transformations that preserve a named quantum relation.
-
-scripts/build_morphwiki_quantum_book.py
-    Generate the LaTeX book and topic derivations.
-
-scripts/run_quantum_book.sh
-    Rebuild the evidence index, quantum map, book, PDF, and reproduction report.
-
-scripts/run_quantum_book_v21_full.sh
-    Require the full V2.1 source cards and alignments, then run the complete build.
-
-discoveries/morphwiki_quantum/
-    Quantum map, role promotions, topic pages, equation evidence, and book.
-```
-
-## Building Another Field
-
-The same upper-level identity applies to another field, but its physical roles
-must be inferred from its equations and source-local transformations.
-
-```text
-1. Retain each equation with its paper and local context.
-2. Identify the state space, operation, closure, observable, protocol, and realization.
-3. Find quantities whose physical role changes across theories.
-4. State the relation retained by each transformation.
-5. Compute the compatibility residual.
-6. Complete an exact transfer or promote a structured residual.
-7. Derive an observable consequence in the target realization.
-```
-
-The formal requirements are described in
-[FIELD_WIKI_CONTRACT.md](docs/FIELD_WIKI_CONTRACT.md), and the reproducible
-workflow begins in [Getting Started](docs/GETTING_STARTED.md).
-
-## Contribution Standard
-
-A contribution should supply at least one of the following:
-
-1. a source equation with its physical roles identified;
-2. a transformation with a stated invariant relation;
-3. a role promotion that changes an independent observable;
-4. a physical realization with parameters, boundaries, and a discriminating measurement;
-5. a reproducible field build from a source corpus.
-
-Broader Hyperion and FieldBridge work is maintained by the
-[Synthetix Institute](https://synthetix.institute).
+Developed within the [Synthetix Institute](https://synthetix.institute).
