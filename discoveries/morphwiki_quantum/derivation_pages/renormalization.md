@@ -53,7 +53,5 @@ Measurements at several scales determine whether running couplings follow one be
 
 ## Source Equations
 
-- [arXiv:hep-ph/0104098](https://arxiv.org/abs/hep-ph/0104098)
-- [arXiv:hep-ph0104098](https://arxiv.org/abs/hep-ph0104098)
 - [arXiv:hep-ph/0106305](https://arxiv.org/abs/hep-ph/0106305)
-- [arXiv:hep-ph0106305](https://arxiv.org/abs/hep-ph0106305)
+- [arXiv:hep-th/0104197](https://arxiv.org/abs/hep-th/0104197)

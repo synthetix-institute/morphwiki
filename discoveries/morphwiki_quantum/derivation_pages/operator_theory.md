@@ -2,6 +2,8 @@
 
 **Physical domain:** Observables and spectra
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Operator theory belongs to the question step: it turns a physical question into an operator with admissible answers.
@@ -35,7 +37,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
-
-## Source Equations
-
-- [arXiv:0812.0630](https://arxiv.org/abs/0812.0630)

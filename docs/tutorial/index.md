@@ -18,6 +18,7 @@ last part shows how to begin a wiki for another field.
 | Reproduce calculations now | [Companion walkthrough](10_submission_companion.md) → [Spin calculation](08_quantum_construction.md) |
 | Construct an interaction from a physical requirement | [Spin calculation](08_quantum_construction.md) → [Inverse construction](11_inverse_construction.md) |
 | Maintain the quantum book | [Source records](02_topic_and_evidence.md) → [Topic placement](04_constructor_spine.md) → [Safe rebuild](05_build_and_audit.md) → [Evidence and calculation](09_sources_and_calculations.md) |
+| Recover an original equation | [Original-paper recovery](12_original_sources.md) → [Safe rebuild](05_build_and_audit.md) |
 | Work on another field | [New-field walkthrough](06_new_field.md) → [PDF workflow](../PDF_CORPUS_WORKFLOW.md) → [Evidence and calculation](09_sources_and_calculations.md) |
 
 Chapter filenames remain unchanged for stable links. You do not need to

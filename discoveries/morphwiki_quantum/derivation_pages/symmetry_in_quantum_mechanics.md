@@ -1,42 +1,26 @@
 # Symmetry in quantum mechanics
 
-**Physical domain:** Dynamics and transformations
+A rotation of an isolated atom changes the description of its orientation while leaving transition probabilities unchanged. Such transformations act on quantum rays and are represented, under the hypotheses of Wigner's theorem, by unitary or antiunitary maps. Continuous transformations connected to the identity are represented unitarily; their generators turn an invariance of probabilities into a relation between operators.
 
-## Mechanism
-
-Symmetry in quantum mechanics belongs to the lawful-change step: it specifies how the state changes before a question is asked.
-
-Symmetry in quantum mechanics separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The governing operation is a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated observables are Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
-
-## Representative Relation
+Let a one-parameter symmetry be $U(\epsilon)=\exp(-i\epsilon G/\hbar)$, with self-adjoint generator $G$ and a parameter whose units make the exponent dimensionless. For a time-independent Hamiltonian, invariance under this group implies
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+U(\epsilon)HU(\epsilon)^\dagger=H,
+\qquad [G,H]=0,\qquad \frac{d}{dt}\langle G\rangle=0.
 ```
 
-## Physical Meaning
+The last equality follows from the Heisenberg equation when $G$ has no explicit time dependence and the operator domains permit the calculation. Spatial translations give momentum conservation; rotations give angular momentum conservation. A boundary or an external field can break the symmetry even if a local bulk term remains invariant. Conservation therefore belongs to the full physical problem.
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+Symmetry also controls which transitions can occur. Suppose parity $\Pi$ commutes with $H$ and two nondegenerate states have definite parities $\pi_i,\pi_f=\pm1$. Position is odd under parity. Inserting $\Pi^\dagger\Pi$ into its matrix element yields
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+```math
+\langle f|X|i\rangle=-\pi_f\pi_i\langle f|X|i\rangle.
+```
 
-## Invariance And Realization
+The electric-dipole matrix element vanishes for states of the same parity. This is a selection rule for the pair consisting of the dynamics and the coupling to the probe. It can suppress a spectral line without creating an additional conserved quantity. Conversely, an accidental equality of two energy differences can merge lines without imposing any selection rule. These mechanisms must be distinguished when a spectral pattern simplifies.
 
-Symmetry in quantum mechanics specifies lawful change before measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+For a proposed transfer between physical systems, a shared symmetry is useful because it restricts the admissible target interactions and observables. It does not determine their coupling constants or all matrix elements. The construction becomes predictive only after the target representation, Hamiltonian and measurement are fixed. Symmetry then supplies exact relations, such as forbidden transitions, that can test the proposed realization.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+## References For The Physical Derivation
 
-## Discriminating Consequences
-
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
-
-## Source Equations
-
-- [arXiv:1202.4998](https://arxiv.org/abs/1202.4998)
-- [arXiv:1505.05311](https://arxiv.org/abs/1505.05311)
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)

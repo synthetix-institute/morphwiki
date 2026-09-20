@@ -4,38 +4,54 @@
 
 ## Mechanism
 
-Quantum chromodynamics belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+Quarks carry three colour components. Quantum chromodynamics couples them to eight gluon fields through a local SU(3) connection.
 
-Quantum chromodynamics places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+The colour connection specifies how quark amplitudes at neighbouring spacetime points are compared. Its action is inseparable from the colour representation of the quark: replacing the three-component carrier by an uncharged scalar would remove the very interaction being described.
 
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement.
+The colour matrices do not commute. Their commutator enters the field strength, so the gluon field contributes to its own interactions as well as mediating interactions between quarks. With natural units $\hbar=c=1$, the quark field of flavour $f$ is $q_f$, its mass is $m_f$, the coupling is $g_s$, and $A_\mu$ is a matrix in colour space. The action joins their covariant Dirac motion to the energy of the colour field.
 
 ## Physical Construction
 
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The governing operation is Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated observables are Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+The state carrier is quark and gluon field states in the physical SU(3) constraint sector. The governing operation is the QCD action, with covariant Dirac motion and non-Abelian field strength. Gauss constraints, quark statistics and specified boundary conditions select physical states. The calculated observables are colour-singlet spectra, correlation functions and scattering cross sections.
 
-## Representative Relation
+## Topic Equations
+
+The Hermitian colour generators and their normalization are given first. The metric has one positive timelike component and three negative spacelike components; $f$ labels quark flavours. In the final equation, $\mu$ is the renormalization scale and $n_f$ the number of active flavours. The sign of the commutator follows the stated covariant-derivative convention.
 
 ```math
-i\hbar\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad H\psi=E\psi
+[T^a,T^b]=if^{abc}T^c,\qquad\operatorname{Tr}(T^aT^b)=\frac12\delta^{ab}
+A_\mu=A_\mu^aT^a,\qquad D_\mu=\partial_\mu+ig_s A_\mu
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig_s[A_\mu,A_\nu]
+\mathcal L_{\mathrm{QCD}}=-\frac12\operatorname{Tr}(F_{\mu\nu}F^{\mu\nu})+\sum_f\bar q_f(i\gamma^\mu D_\mu-m_f)q_f
+\mu\frac{d g_s}{d\mu}=-\frac{11-2n_f/3}{16\pi^2}g_s^3+O(g_s^5)
 ```
 
 ## Physical Meaning
 
-Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
+Physical observables include colour-singlet correlation functions, hadron energies and scattering cross sections. A Wilson loop follows a heavy test colour charge around a closed contour and traces over its colour index. Its large-time decay defines the static quark-antiquark potential after the self-energy convention is fixed.
 
-Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
+In pure gauge theory a long confining flux tube gives an approximately linear static potential. With dynamical quarks the tube can break through pair creation. The observable must therefore be specified along with the matter content; the same loop notation does not impose the same long-distance force in both theories.
+
+Changing resolution replaces short-distance fluctuations by effective couplings and operators. Heavy-quark effective descriptions preserve selected QCD amplitudes through matching, which supplies a concrete example of transferring a physical relation between different sets of variables.
+
+## Consequences Forced By The Relation
+
+Squaring the field strength produces terms cubic and quartic in the gauge potential. These are the three-gluon and four-gluon interactions. They disappear when the gauge algebra is replaced by an Abelian one; the covariant derivative alone is therefore not the whole distinction between QCD and electrodynamics. For $n_f$ active flavours with $11-2n_f/3$ positive, the weak-coupling beta function makes the coupling decrease as the energy scale increases. This permits short-distance perturbation theory. The same expansion loses accuracy when the coupling grows at hadronic scales; confinement is investigated through nonperturbative calculations rather than inferred by extrapolating the one-loop formula.
+
+## Domain Of The Construction
+
+The beta function is the one-loop result for SU(3) with fundamental quarks. Active flavour thresholds require matching. Hadron masses and long-distance forces additionally depend on quark masses and the nonperturbative state of the gauge field.
 
 ## Invariance And Realization
 
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement. Quantum chromodynamics extends the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+Gauge changes rotate colour coordinates while leaving colour-singlet probabilities unchanged. Matching to an effective theory preserves the amplitudes included at the stated order.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
+Quark masses, the coupling, temperature and volume change spectra and correlations. A different gauge group changes the interaction algebra itself.
 
 ## Discriminating Consequences
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+Static potentials, hadron spectra and short-distance cross sections probe different regimes of the same action and require the corresponding controlled approximations.
 
-## Source Equations
+## References For The Physical Derivation
 
-- [arXiv:1904.13372](https://arxiv.org/abs/1904.13372)
+- [G. S. Bali, QCD forces and heavy quark bound states, sections 3-4 and Appendices B-C: colour fields, static potential and running coupling.](https://arxiv.org/abs/hep-ph/0001312)

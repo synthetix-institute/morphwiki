@@ -2,6 +2,8 @@
 
 **Physical domain:** Dynamics and transformations
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Relativistic quantum mechanics belongs to the lawful-change step: it specifies how the state changes before a question is asked.
@@ -35,10 +37,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
-
-## Source Equations
-
-- [arXiv:physics/0505181](https://arxiv.org/abs/physics/0505181)
-- [arXiv:physics0505181](https://arxiv.org/abs/physics0505181)
-- [arXiv:hep-th/0605069](https://arxiv.org/abs/hep-th/0605069)
-- [arXiv:hep-th0605069](https://arxiv.org/abs/hep-th0605069)

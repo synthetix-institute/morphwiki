@@ -71,6 +71,12 @@ echo "[MorphWiki] refreshing explicit topic-native page models"
   --render-only
 
 echo "[MorphWiki] building mechanism tree"
+EVIDENCE_INDEX="${MORPHWIKI_V2_EVIDENCE_INDEX_JSON:-$ROOT/v2_quantum_evidence_index.json}"
+if [[ -f "$EVIDENCE_INDEX" ]]; then
+  "$PYTHON_BIN" -B scripts/revalidate_quantum_evidence_index.py \
+    --index "$EVIDENCE_INDEX" --out-json "$EVIDENCE_INDEX" \
+    --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_MD:-$ROOT/v2_quantum_evidence_index.md}"
+fi
 tree_args=()
 if [[ -n "${MORPHWIKI_V2_LANGUAGE_JSON:-}" ]]; then
   tree_args+=(--v2-language-json "$MORPHWIKI_V2_LANGUAGE_JSON")
@@ -91,6 +97,13 @@ if ((${#tree_args[@]})); then
 else
   "$PYTHON_BIN" -B scripts/build_morphwiki_quantum_tree.py \
     --root "$ROOT"
+fi
+
+if [[ -f "$EVIDENCE_INDEX" ]]; then
+  "$PYTHON_BIN" -B scripts/audit_morphwiki_v2_quantum_evidence_index.py \
+    --index "$EVIDENCE_INDEX" --tree "$ROOT/quantum_mechanism_tree.json" \
+    --out-json "${MORPHWIKI_V2_EVIDENCE_INDEX_AUDIT_JSON:-$ROOT/v2_quantum_evidence_index_audit.json}" \
+    --out-md "${MORPHWIKI_V2_EVIDENCE_INDEX_AUDIT_MD:-$ROOT/v2_quantum_evidence_index_audit.md}"
 fi
 
 echo "[MorphWiki] running sparse-attention rewrite analysis"

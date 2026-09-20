@@ -1,44 +1,36 @@
 # Angular momentum operator
 
-**Physical domain:** Observables and spectra
-
-## Mechanism
-
-Angular momentum operator belongs to the question step: it turns a physical question into an operator with admissible answers.
-
-Angular momentum operator states which physical question is being asked. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
-
-An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
-
-## Physical Construction
-
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The governing operation is a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated observables are Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
-
-## Representative Relation
+Rotations about different axes change orientation in an order-dependent way. In quantum mechanics their generators $J_x,J_y,J_z$ obey an algebra whose representations determine the allowed angular-momentum values. With $\hbar$ the reduced Planck constant,
 
 ```math
-O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
+[J_i,J_j]=i\hbar\sum_k\epsilon_{ijk}J_k,\qquad
+[J^2,J_i]=0,\qquad J^2=J_x^2+J_y^2+J_z^2.
 ```
 
-## Physical Meaning
+A simultaneous eigenstate of $J^2$ and $J_z$ can be labeled $|j,m\rangle$. Define $J_\pm=J_x\pm iJ_y$. Their commutators with $J_z$ show that they raise or lower its eigenvalue by $\hbar$, while preserving $j$. Positivity of the squared norms fixes the endpoints of the ladder:
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+```math
+J^2|j,m\rangle=\hbar^2j(j+1)|j,m\rangle,\qquad
+J_z|j,m\rangle=\hbar m|j,m\rangle,
+```
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
+```math
+J_\pm|j,m\rangle=\hbar\sqrt{j(j+1)-m(m\pm1)}\,|j,m\pm1\rangle.
+```
 
-## Invariance And Realization
+The ladder terminates at $m=\pm j$, giving $2j+1$ states. Single-valued orbital wave functions on ordinary three-dimensional space carry integer orbital angular momentum. Intrinsic spin uses representations of the covering group SU(2), allowing half-integer $j$. The same local commutator algebra is therefore realized on carriers with different global transformation properties.
 
-Angular momentum operator defines the legal question being asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+For two spins, total angular momentum is $\mathbf J=\mathbf J_1+\mathbf J_2$. An isotropic exchange interaction can be rewritten using the total Casimir:
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+```math
+H=\frac{K}{\hbar^2}\mathbf J_1\cdot\mathbf J_2
+=\frac{K}{2\hbar^2}(J^2-J_1^2-J_2^2).
+```
 
-## Discriminating Consequences
+Here $K$ is an energy. Two spin-one-half particles then have a singlet energy $-3K/4$ and a triplet energy $K/4$. The gap is fixed by the coupling and the representation, without diagonalizing a general four-dimensional matrix. A magnetic field separates magnetic sublevels; an anisotropic interaction can also mix sectors that the isotropic model kept separate.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+This calculation connects symmetry to a measurable excitation energy. Transferring the exchange formula to another object requires identifying which angular-momentum representation its degrees of freedom carry and whether anisotropy, orbital coupling or the environment changes the generator. A common algebra supplies the ladder relations, while the Hamiltonian selects which of those states a physical system occupies.
 
-## Source Equations
+## References For The Physical Derivation
 
-- [arXiv:hep-th/0008181](https://arxiv.org/abs/hep-th/0008181)
-- [arXiv:hep-th0008181](https://arxiv.org/abs/hep-th0008181)
-- [arXiv:hep-th/0512204](https://arxiv.org/abs/hep-th/0512204)
-- [arXiv:hep-th0512204](https://arxiv.org/abs/hep-th0512204)
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)

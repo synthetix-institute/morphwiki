@@ -2,6 +2,8 @@
 
 **Physical domain:** Boundaries and operator domains
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Potential well belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
@@ -35,8 +37,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels. The same operator can have different spectra when the admissible domain changes.
-
-## Source Equations
-
-- [arXiv:astro-ph/0611193](https://arxiv.org/abs/astro-ph/0611193)
-- [arXiv:astro-ph0611193](https://arxiv.org/abs/astro-ph0611193)

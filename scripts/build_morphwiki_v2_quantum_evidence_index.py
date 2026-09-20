@@ -17,6 +17,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Mapping, Iterable
 
+try:
+    from quantum_source_evidence import canonical_arxiv_id, equation_issues, evidence_issues
+except ModuleNotFoundError:
+    from scripts.quantum_source_evidence import canonical_arxiv_id, equation_issues, evidence_issues
+
 ARXIV_RE = re.compile(r"(?:arxiv:\s*)?(?:(?P<old>[a-z][a-z-]+/[0-9]{7})|(?P<oldflat>[a-z][a-z-]+[0-9]{7})|(?P<new>[0-9]{4}\.[0-9]{4,5}))(?:v[0-9]+)?", re.I)
 TOKEN_RE = re.compile(r"(?:Ω|Ξ|Λ|T|Τ|Γ|J|Π)[0-9]{2,3}|(?:A\*?|Α)[0-9]{2}")
 ROLES = {"operator_apparatus","real_substrate_geometry","selector","selector_context","closure_constraints","readout_current","protocol_order"}
@@ -33,6 +38,8 @@ CORE_RELATION_CUES = {
     'commutator': ('commutator', 'noncommut', 'lie bracket'),
     'quantum_entanglement': ('entangl', 'schmidt', 'partial trace', 'bell inequality'),
     'renormalization': ('renormalization group', 'beta function', 'running coupling', 'fixed point', 'coarse grain'),
+    'quantum_chromodynamics': ('quark', 'yang mills', 'colour', 'color', 'su 3'),
+    'quantum_electrodynamics': ('electron photon', 'electromagnetic interaction', 'dirac field', 'ward identity'),
 }
 
 CORE_TOPIC_ALIASES = {
@@ -279,10 +286,14 @@ def source_first_topic_candidates(
         if aligned_card_ids is not None and card_id not in aligned_card_ids:
             continue
         equation = str(card.get('canonical_equation') or card.get('raw_equation') or '')
+        raw_equation = str(card.get('raw_equation') or '')
+        if equation_issues(equation) and raw_equation and not equation_issues(raw_equation):
+            equation = raw_equation
         quality = set(card.get('quality_flags') or [])
         if (
             not card_id
             or not equation.strip()
+            or equation_issues(equation)
             or card.get('clean_endpoint') is False
             or ('has_relation' not in quality and quality)
         ):
@@ -335,7 +346,7 @@ def source_first_topic_candidates(
                 'relation_terms_matched': sorted(cue_hits),
                 'topic_relevance': 'local_context_match',
                 'relation_relevance': (
-                    'relation_context_match' if cue_hits else 'topic_equation_match'
+                    'relation_context_match' if cue_hits else 'not_established'
                 ),
             }
             selected[card_id].append((slug, record))
@@ -536,6 +547,11 @@ def add_match(page: dict[str, Any], obj: Mapping[str, Any], source: str, max_exa
             'topic_relevance': obj.get('topic_relevance') or 'not_established',
             'relation_relevance': obj.get('relation_relevance') or 'not_established',
         }
+    # Multiple feature rows for the same display are one witness, not independent sources.
+    for previous in page['source_examples']:
+        if example['card_ids'] and previous['card_ids'] == example['card_ids']:
+            previous['row_ids'] = sorted(set(previous['row_ids']) | set(example['row_ids']))[:64]
+            return
     if source == 'source_first_alignment':
         page['source_examples'].insert(0, example)
         page['source_examples'] = page['source_examples'][:max_examples]
@@ -589,10 +605,14 @@ def enrich_with_source_cards(pages: dict[str, dict[str, Any]], path: Path) -> di
 def finalize(pages: dict[str, dict[str, Any]]) -> None:
     for p in pages.values():
         p['tokens'] = dict(p.pop('_tokens').most_common(20)); p['routes'] = dict(p.pop('_routes').most_common(12)); p['constructor_roles'] = dict(p.pop('_roles').most_common(12))
+        for example in p.get('source_examples') or []:
+            example['paper_ids'] = sorted({canonical_arxiv_id(x) for x in example.get('paper_ids', [])} - {''})
+            example['screening_issues'] = evidence_issues(example)
+            example['source_grounded'] = not example['screening_issues']
         relevant = sum(
             1
             for example in p.get('source_examples') or []
-            if example.get('topic_relevance') == 'local_context_match'
+            if example.get('source_grounded')
         )
         p['topic_relevant_source_examples'] = relevant
         if relevant:

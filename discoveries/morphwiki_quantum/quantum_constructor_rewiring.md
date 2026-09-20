@@ -3,6 +3,10 @@
 - Readiness: `usable`
 - Connections: `7`
 
+The connections and equations are authored hypotheses. Route overlap describes the associated topic profiles; it does not establish a transformation, source-equation alignment or mathematical equivalence.
+
+Readiness concerns the availability of named topic pages only.
+
 ## One operator, two roles: generator and observable
 
 - Topics: Hamiltonian (quantum mechanics), Observable, Spectral theory

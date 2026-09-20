@@ -1,46 +1,39 @@
 # Fourier transform
 
-**Physical domain:** State space, domain, and representation
-
-## Mechanism
-
-Fourier transform belongs at the first step of the constructor: it fixes the Hilbert space, operator domain, basis, representation, or preparation context before any probability statement is meaningful.
-
-Fourier transform is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
-
-The state space, representation, basis, and operator domain determine which vectors are physical and which operators are defined.
-
-## Physical Construction
-
-The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The governing operation is a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated observables are Transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
-
-## Representative Relation
+A free particle propagates most simply in momentum space, where each momentum component accumulates its own phase. A localized detector, however, asks for a position probability. The Fourier transform connects these descriptions while preserving the physical state. On the real line, for a square-integrable wave function $\psi$ and momentum $p$, take
 
 ```math
-V:\mathcal H\to\mathcal H',\quad V^\dagger V=I,\quad \rho'=V\rho V^\dagger,\quad O'=VOV^\dagger
+\widetilde\psi(p)=\frac{1}{\sqrt{2\pi\hbar}}\int_{\mathbb R}
+e^{-ipx/\hbar}\psi(x)\,dx,\qquad
+\int|\widetilde\psi(p)|^2dp=\int|\psi(x)|^2dx.
 ```
 
-## Physical Meaning
+For wave functions on a common suitable domain, integration by parts carries the position-space momentum operator $-i\hbar\partial_x$ into multiplication by $p$. Multiplication by position becomes $i\hbar\partial_p$. The kinetic equation and the detector must both be transformed:
 
-A unitary or isometric change of representation carries the state and operator together. Amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
+```math
+\mathcal F(-i\hbar\partial_x)\mathcal F^{-1}=p,\qquad
+\mathcal F x\mathcal F^{-1}=i\hbar\partial_p,\qquad
+\widetilde H=\frac{p^2}{2m}+V(i\hbar\partial_p).
+```
 
-A quantum state belongs to this state space, and every Hamiltonian and observable must act on its stated domain. These domain relations determine whether the resulting amplitudes and probabilities are defined.
+The last expression is immediately useful for polynomial potentials; for a general potential, multiplication in position space is represented by an integral kernel in momentum space. A local interaction can therefore become nonlocal in the new coordinates without changing the theory. Similarity of displayed formulas is neither necessary nor sufficient for physical equivalence.
 
-## Invariance And Realization
+For a normalized Gaussian packet with initial position variance $\sigma_x^2$, zero position-momentum covariance and minimum uncertainty, the free evolution multiplies each momentum amplitude by $\exp[-ip^2t/(2m\hbar)]$. Transforming back gives
 
-Fourier transform supplies the admissible arena in which quantum states and operators are defined. Changing basis or representation should not change physical probabilities when the transformation is unitary. Normalization, domain conditions, and inner products remain part of the same formal container.
+```math
+\operatorname{Var}x(t)=\sigma_x^2+
+\frac{\hbar^2t^2}{4m^2\sigma_x^2}.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The chosen basis, coordinate representation, or preparation convention can change. The same calculation may be written with vectors, wave functions, density operators, or operator algebras. Physical realization enters later through boundary conditions, detectors, or fields.
+The packet broadens because its different momentum components separate during propagation. The momentum distribution itself remains unchanged. This provides a direct comparison between descriptions: one representation makes the conservation of momentum probabilities explicit, while the other displays the spatial spreading produced by those same components.
 
-## Discriminating Consequences
+Boundaries change this correspondence. Periodic functions on a finite interval have a discrete Fourier series; Dirichlet eigenfunctions lead instead to a sine expansion. Surface terms must vanish under the actual boundary conditions before the integration-by-parts identity defines the required operator map. The operation of Fourier transformation is transferable, but the domain and measure determine which transform and which spectrum describe the physical system.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation. The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
+## References For The Physical Derivation
 
-## Source Equations
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)
 
-- [arXiv:hep-ph/0007331](https://arxiv.org/abs/hep-ph/0007331)
-- [arXiv:hep-ph0007331](https://arxiv.org/abs/hep-ph0007331)
-- [arXiv:math/0005088](https://arxiv.org/abs/math/0005088)
-- [arXiv:math0005088](https://arxiv.org/abs/math0005088)
-- [arXiv:cond-mat/0001289](https://arxiv.org/abs/cond-mat/0001289)
-- [arXiv:cond-mat0001289](https://arxiv.org/abs/cond-mat0001289)
+
+## Relations In The Original Papers
+
+[arXiv:1508.06951, S2.EGx7](https://arxiv.org/html/1508.06951#S2.EGx7). The Fourier transformation expresses the position wavefunction in wavevector coordinates. This source uses wavevector k; the chapter uses momentum p = hbar k with the corresponding normalization.

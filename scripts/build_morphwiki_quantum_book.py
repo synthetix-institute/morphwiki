@@ -14,6 +14,11 @@ from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Sequence
 
 try:
+    from quantum_source_evidence import accepted_source_example, canonical_arxiv_id
+except ModuleNotFoundError:
+    from scripts.quantum_source_evidence import accepted_source_example, canonical_arxiv_id
+
+try:
     from morphwiki_constructor import (
         CONSTRUCTOR_CHAIN_LATEX,
         CONSTRUCTOR_CLAUSES,
@@ -750,7 +755,7 @@ TOPIC_EXPLANATION_OVERRIDES: Dict[str, Dict[str, str]] = {
     },
     "fermion": {
         "why": (
-            "A many-particle Hilbert space does not specify how identical particles are exchanged. Choosing the antisymmetric representation removes coincidence states and changes the spectrum, pressure, correlations, and admissible collective phases before a particular interaction Hamiltonian is chosen."
+            "The tensor product of one-particle spaces contains both symmetric and antisymmetric states. Identical fermions occupy its antisymmetric sector: exchanging the complete position and spin coordinates changes the sign of the amplitude. This restriction determines which many-particle occupations are allowed for a specified Hamiltonian."
         ),
         "reading": (
             "The minus sign acquired under exchange makes every Slater determinant vanish when two columns coincide. In occupation language the same restriction is encoded by anticommutation and by eigenvalues zero or one of each mode-number operator. These are equivalent descriptions of one state-space constraint."
@@ -1329,6 +1334,13 @@ def latex_url(value: Any) -> str:
     return text.replace("\\", "/").replace("%", "\\%")
 
 
+def latex_editorial_math(value: Any) -> str:
+    """Typeset inline math in explicitly authored templates, not source excerpts."""
+    parts = re.split(r"(\$[^$\n]+\$)", str(value or ""))
+    return "".join(r"\(" + part[1:-1] + r"\)" if part.startswith("$") and part.endswith("$")
+                   else latex_escape(part) for part in parts)
+
+
 def latex_label(value: Any) -> str:
     text = str(value or "item").lower()
     text = re.sub(r"[^a-z0-9:.-]+", "-", text)
@@ -1501,13 +1513,7 @@ def top_evidence(
     row: Mapping[str, Any] | None = None,
     limit: int = 5,
 ) -> List[Mapping[str, Any]]:
-    """Return only source witnesses confirmed by the transferred V2 index.
-
-    Legacy route matches are useful for retrieval, but they are not page-level
-    equation provenance.  The V2 evidence index records the papers and source
-    cards that survived source-card alignment.  Restricting public links to
-    that overlap prevents a topic model from acquiring unrelated citations.
-    """
+    """Publish the screened card itself, never a different excerpt from its paper."""
     v2 = ((row or {}).get("v2_evidence") or {}) if isinstance(row, Mapping) else {}
     if not v2.get("available"):
         return []
@@ -1515,41 +1521,25 @@ def top_evidence(
     source_examples = [
         example
         for example in (v2.get("source_examples") or [])
-        if example.get("source_grounded") is True
+        if accepted_source_example(example)
     ]
     if not source_examples:
         return []
-    confirmed_ids = {
-        str(paper_id)
-        for example in source_examples
-        for paper_id in (example.get("paper_ids") or [])
-        if str(paper_id)
-    }
-    legacy = list(page.get("hyperion", {}).get("equation_witnesses") or [])
-    matched = [row for row in legacy if str(row.get("paper_id") or "") in confirmed_ids]
-
-    if len(matched) < limit:
-        represented = {str(item.get("paper_id") or "") for item in matched}
-        for example in source_examples:
-            preview = clean_source_equation(example.get("equation_preview"))
-            for paper_id in example.get("paper_ids") or []:
-                paper_id = str(paper_id)
-                if not paper_id or paper_id in represented:
-                    continue
-                matched.append(
-                    {
-                        "paper_id": paper_id,
-                        "arxiv_url": f"https://arxiv.org/abs/{paper_id}",
-                        "equation_excerpt": preview,
-                        "record_id": (example.get("card_ids") or ["source card"])[0],
-                        "source_grounded": True,
-                    }
-                )
-                represented.add(paper_id)
-                if len(matched) >= limit:
-                    break
-            if len(matched) >= limit:
-                break
+    matched = []
+    represented = set()
+    for example in source_examples:
+        for raw_id in example.get("paper_ids") or []:
+            paper_id = canonical_arxiv_id(raw_id)
+            if not paper_id or paper_id in represented:
+                continue
+            matched.append({
+                "paper_id": paper_id,
+                "arxiv_url": f"https://arxiv.org/abs/{paper_id}",
+                "equation_excerpt": clean_source_equation(example.get("equation_preview")),
+                "record_id": example["card_ids"][0],
+                "source_grounded": True,
+            })
+            represented.add(paper_id)
     return matched[:limit]
 
 
@@ -1794,23 +1784,24 @@ TOPIC_CONSTRUCTOR_OVERRIDES = {
         "claim": (
             "{title} is an exchange-antisymmetry construction: exchanging two identical fermions reverses the many-body amplitude, so coincident one-particle states are removed from the admissible state space."
         ),
+        "editorial_inline_math": True,
         "reading": (
-            "The defining object is the antisymmetric many-body sector, not a particle name. Its nodal set contains every coincidence configuration, and the canonical anticommutation relations preserve that restriction while particles are added or removed. "
-            "Filling distinct one-particle modes then produces an exchange hole, a Fermi surface and degeneracy pressure even in the absence of a repulsive potential."
+            r"Let $z=(x,\sigma)$ denote the complete one-particle coordinate, including spin. Antisymmetry makes the amplitude vanish when two $z$ coordinates coincide. Equal positions with opposite spins do not satisfy that condition: two electrons may occupy one spatial orbital in a spin singlet. The anticommutation relations impose the same exclusion when particles are added to individual spin-orbitals."
         ),
         "equations": [
-            r"\Psi(\ldots,x_i,\ldots,x_j,\ldots)=-\Psi(\ldots,x_j,\ldots,x_i,\ldots),\qquad \Psi(\ldots,x,\ldots,x,\ldots)=0",
+            r"z_i=(x_i,\sigma_i),\qquad \Psi(\ldots,z_i,\ldots,z_j,\ldots)=-\Psi(\ldots,z_j,\ldots,z_i,\ldots)",
+            r"\Psi(\ldots,z,\ldots,z,\ldots)=0",
             r"\mathcal F_{-}(\mathcal H)=\bigoplus_{n=0}^{\infty}\wedge^n\mathcal H",
             r"\{a_i,a_j^\dagger\}=\delta_{ij},\qquad \{a_i,a_j\}=0",
-            r"n_i=a_i^\dagger a_i\in\{0,1\}",
+            r"n_i=a_i^\dagger a_i,\qquad n_i^2=n_i,\qquad\operatorname{spec}(n_i)=\{0,1\}",
         ],
         "equation_note": (
-            "The exchange sign fixes the admissible state space; exterior Fock space and anticommutation extend it to variable particle number."
+            "Each index i labels a complete spin-orbital. The number operator has eigenvalues zero and one; its expectation can take any value between them. Exterior Fock space extends the antisymmetric state construction to variable particle number."
         ),
         "forced_consequences": [
             "Antisymmetry forces the wave function to vanish when two identical fermions occupy the same one-particle state. The resulting exchange hole is present before a dynamical interaction is specified.",
-            "At finite density, distinct momentum states fill up to the Fermi surface. The associated kinetic energy and degeneracy pressure arise from state counting rather than from pairwise repulsion.",
-            "Pairing changes the exchange sector: a bound state of two fermions has even fermion parity and can acquire bosonic collective behaviour, as in superconductors and superfluid helium-3.",
+            "For a homogeneous ideal gas at zero temperature, filling distinct momentum spin-orbitals up to the Fermi energy produces degeneracy pressure without pairwise repulsion.",
+            "Pairing preserves antisymmetry of the constituent fermions. A pair has even fermion parity and may support a bosonic collective order parameter, as in superconductors and superfluid helium-3; it need not be a tightly bound elementary boson.",
         ],
         "transfer_relations": [
             "In one dimension, hard-core bosons and free fermions can share the same density spectrum. The map changes exchange phases and off-diagonal correlations, so equality of energies does not imply identity of all observables.",
@@ -2179,18 +2170,19 @@ TOPIC_CONSTRUCTOR_OVERRIDES.update(
             "equations": [
                 r"D_\mu=\partial_\mu+igA_\mu",
                 r"[D_\mu,D_\nu]=igF_{\mu\nu}",
-                r"W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(ig\oint_\gamma A_\mu dx^\mu\right)",
+                r"F_{\mu\nu}'=U F_{\mu\nu}U^{-1}",
+                r"W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(-ig\oint_\gamma A_\mu dx^\mu\right)",
                 r"G^a\ket{\Psi_{\mathrm{phys}}}=0",
             ],
             "equation_note": "The connection defines local comparison, curvature measures its infinitesimal path dependence, and the constraint selects physical states.",
             "forced_consequences": [
-                "Gauge-related potentials give identical gauge-invariant amplitudes, charges, field strengths, and loop observables.",
-                "A nontrivial Wilson loop can retain global transport information that is absent from any one local gauge representative.",
-                "The Gauss constraint removes redundant state vectors and fixes the physical charge sector.",
+                "In a non-Abelian theory the field-strength matrix changes by conjugation. Traces of its products and closed Wilson loops are invariant. For electromagnetism the group is Abelian, so the field strength itself is unchanged.",
+                "A flat connection can still have nontrivial holonomy on a multiply connected domain. The connection and the topology together determine this global information.",
+                "The Gauss constraint ties matter charge to the divergence of the electric field. Transformations that act nontrivially at a boundary can carry charges and must be distinguished from gauge redundancies that vanish there.",
             ],
             "scope_conditions": [
                 "The gauge group, representation, matter content, dimension, and boundary conditions distinguish different physical theories.",
-                "A gauge-dependent potential becomes observable only through a gauge-invariant relation such as field strength, phase difference, charge, or loop holonomy.",
+                "A measured interference phase includes the connection along the paths and the phases of the charged states. The traced holonomy is gauge invariant; an untraced non-Abelian holonomy transforms by conjugation at its base point.",
             ],
         },
         "renormalization": {
@@ -2332,7 +2324,7 @@ TOPIC_FRAME_OVERRIDES: Dict[str, Dict[str, str]] = {
         "carrier": "Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector.",
         "operator": "A covariant derivative and connection whose commutator gives the field strength.",
         "admissibility": "Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges.",
-        "readout": "Field strengths, Wilson loops, conserved charges, scattering amplitudes, and other gauge-invariant quantities.",
+        "readout": "Gauge-invariant contractions of field strengths, traced Wilson loops, physical charges, and scattering amplitudes.",
         "test": "Gauge-related representatives give identical physical observables, while a nontrivial loop observable records curvature or global holonomy.",
     },
     "renormalization": {
@@ -2427,7 +2419,7 @@ TOPIC_SUPPORT_OVERRIDES: Dict[str, tuple[List[str], List[str], List[str]]] = {
     ),
     "gauge_theory": (
         [
-            "Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables.",
+            "Gauge-equivalent potentials give the same physical probabilities, invariant contractions of the field strength, and traced closed-loop observables.",
             "Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice.",
             "The physical state belongs to the constraint sector rather than to an arbitrary field-coordinate representation.",
         ],
@@ -2462,7 +2454,7 @@ TOPIC_SUPPORT_OVERRIDES: Dict[str, tuple[List[str], List[str], List[str]]] = {
     "fermion": (
         [
             "Exchange antisymmetry, exterior-product state space, canonical anticommutation and zero-or-one mode occupation are equivalent forms of the fermionic restriction.",
-            "The coincidence node and exchange hole survive changes between first-quantized wave functions, Slater determinants and second-quantized fields.",
+            "The node at equal complete coordinates and the same-spin exchange hole survive changes between first-quantized wave functions and second-quantized fields. Antisymmetric correlated states can require a superposition of Slater determinants.",
             "Fermion parity remains meaningful when particle number changes, including in paired and superconducting states.",
         ],
         [
@@ -2530,6 +2522,68 @@ TOPIC_SUPPORT_OVERRIDES: Dict[str, tuple[List[str], List[str], List[str]]] = {
 }
 
 
+try:
+    from quantum_reviewed_topics import CONSTRUCTORS, EXPLANATIONS, FRAMES, REFERENCES, SUPPORT
+    from quantum_physical_derivations import NARRATIVES, REFERENCES as DERIVATION_REFERENCES
+    from quantum_mechanisms_opening import OPENING
+    from quantum_original_sources import load_original_sources
+except ModuleNotFoundError:
+    from scripts.quantum_reviewed_topics import CONSTRUCTORS, EXPLANATIONS, FRAMES, REFERENCES, SUPPORT
+    from scripts.quantum_physical_derivations import NARRATIVES, REFERENCES as DERIVATION_REFERENCES
+    from scripts.quantum_mechanisms_opening import OPENING
+    from scripts.quantum_original_sources import load_original_sources
+
+TOPIC_CONSTRUCTOR_OVERRIDES.update(CONSTRUCTORS)
+TOPIC_EXPLANATION_OVERRIDES.update(EXPLANATIONS)
+TOPIC_FRAME_OVERRIDES.update(FRAMES)
+TOPIC_SUPPORT_OVERRIDES.update(SUPPORT)
+REFERENCES.update(DERIVATION_REFERENCES)
+
+
+def narrative_body(slug: str, latex: bool = False) -> str:
+    lines = []
+    for kind, body in NARRATIVES[slug]:
+        if kind == "eq":
+            lines.append((r"\begin{centeredalign}" + "\n" + body + "\n" + r"\end{centeredalign}")
+                         if latex else "```math\n" + body + "\n```")
+        elif kind == "p":
+            lines.append(latex_editorial_math(body) if latex else body)
+        else:
+            raise ValueError(f"Unknown narrative element: {kind}")
+    return "\n\n".join(lines)
+
+
+def original_source_references(root: Path, slug: str, latex: bool = False) -> str:
+    records = [r for r in load_original_sources(root)["records"] if r["topic"] == slug]
+    if not records:
+        return ""
+    lines = [r"\subsection*{Relations In The Original Papers}" if latex else "## Relations In The Original Papers"]
+    for record in records:
+        label = f"arXiv:{record['paper_id']}, {record['display_id']}"
+        link = (rf"\href{{{record['url']}}}{{{latex_escape(label)}}}"
+                if latex else f"[{label}]({record['url']})")
+        explanation = record["relation"] + " " + record["scope"]
+        lines.append(link + ". " + (latex_escape(explanation) if latex else explanation))
+    return "\n\n".join(lines)
+
+
+def editorial_references(slug: str, latex: bool = False) -> str:
+    references = REFERENCES.get(slug, [])
+    if not references:
+        return ""
+    if latex:
+        return "\n".join([
+            r"\subsection*{References For The Physical Derivation}",
+            r"\begin{itemize}",
+            *(rf"\item \href{{https://arxiv.org/abs/{paper}}}{{{latex_escape(description)}}}" for paper, description in references),
+            r"\end{itemize}",
+        ])
+    return "\n".join([
+        "## References For The Physical Derivation", "",
+        *(f"- [{description}](https://arxiv.org/abs/{paper})" for paper, description in references), "",
+    ])
+
+
 def page_display_name(title: str) -> str:
     clean = clean_text(title)
     special = {
@@ -2575,11 +2629,12 @@ def constructor_template(branch_id: str, row: Mapping[str, Any]) -> Mapping[str,
 def latex_derivation_depth_sections(template: Mapping[str, Any]) -> str:
     """Render optional consequences and transformations for any field wiki."""
     lines: List[str] = []
+    prose = latex_editorial_math if template.get("editorial_inline_math") else latex_escape
     for key, title in DERIVATION_DEPTH_SECTIONS:
         items = [clean_text(item, 700) for item in (template.get(key) or []) if clean_text(item)]
         if not items:
             continue
-        lines.extend([rf"\subsection*{{{title}}}", latex_escape(prose_from_items(items, len(items)))])
+        lines.extend([rf"\subsection*{{{title}}}", prose(prose_from_items(items, len(items)))])
     return "\n".join(lines)
 
 
@@ -2602,7 +2657,25 @@ def center_equation_rows(tex: str) -> str:
     )
 
     def rewrite(match: re.Match[str]) -> str:
-        body = re.sub(r"(?<!\\)&", "", match.group(2))
+        environments = []
+
+        def keep_nested_alignment(token: re.Match[str]) -> str:
+            value = token[0]
+            if value.startswith(r"\begin"):
+                environments.append(value[value.index("{")+1:-1])
+            elif value.startswith(r"\end"):
+                name = value[value.index("{")+1:-1]
+                if not environments or environments.pop() != name:
+                    raise ValueError("Unbalanced nested equation environment")
+            elif not environments:
+                return ""
+            return value
+
+        # Outer alignment marks are obsolete in gathered, but matrix/array
+        # column separators are mathematical content and must survive.
+        body = re.sub(r"\\(?:begin|end)\{[^}]+\}|(?<!\\)&", keep_nested_alignment, match.group(2))
+        if environments:
+            raise ValueError("Unclosed nested equation environment")
         return match.group(1) + body + match.group(3)
 
     return pattern.sub(rewrite, tex)
@@ -2631,6 +2704,8 @@ def has_topic_constructor(page: Mapping[str, Any], slug: str) -> bool:
     source-backed pages from pages that are expanded by the shared constructor
     spine.
     """
+    if slug in NARRATIVES:
+        return True
     mw = page.get("morphwiki") or {}
     if slug in TOPIC_CONSTRUCTOR_OVERRIDES:
         return True
@@ -2769,9 +2844,10 @@ def constructor_block(
     if slug in TOPIC_CONSTRUCTOR_OVERRIDES:
         if not template.get("equation_note"):
             return ""
+        prose = latex_editorial_math if template.get("editorial_inline_math") else latex_escape
         lines = [
             r"\subsection*{Topic Equations}",
-            latex_escape(
+            prose(
                 str(
                     template.get("equation_note")
                     or (
@@ -2788,21 +2864,19 @@ def constructor_block(
         lines.append(r"\end{centeredalign}")
         return "\n".join(lines)
     conversion = [public_book_text(item) for item in (mw.get("conversion_form") or []) if clean_text(item)]
+    lines = []
     if conversion:
-        return "\n".join(
-            [r"\subsection*{Defining Relations}", latex_escape(prose_from_items(conversion, 6))]
-        )
-    else:
-        lines = [
+        lines.extend([r"\subsection*{Defining Relations}", latex_escape(prose_from_items(conversion, 6))])
+    lines.extend([
             r"\subsection*{Representative Relation}",
             latex_escape(
-                "The equation identifies the state, operation, and observable relation associated with this physical role."
+                "This relation describes the shared physical role; a topic-specific Hamiltonian or field equation is required to calculate this system."
             ),
             r"\begin{centeredalign}",
             role_equation_for_page(slug, title, branch_id),
             r"\end{centeredalign}",
-        ]
-        return "\n".join(lines)
+        ])
+    return "\n".join(lines)
 
 
 def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str], List[str], List[str]]:
@@ -4232,6 +4306,13 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
                     lines.append(rf"\item {latex_escape(label)}")
             lines.append(r"\end{itemize}")
         return public_theory_language("\n".join(lines))
+    slug = str(row.get("slug") or "")
+    if slug in NARRATIVES:
+        return "\n\n".join([
+            r"\clearpage", rf"\section{{{latex_escape(title)}}}", topic_label,
+            narrative_body(slug, latex=True), editorial_references(slug, latex=True),
+            original_source_references(root, slug, latex=True),
+        ])
     constructed = has_topic_constructor(page, str(row.get("slug") or ""))
     constructor = constructor_text(title, branch_id, row, hyperion, mw)
     claim = constructor["claim"]
@@ -4239,6 +4320,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     slug = str(row.get("slug") or "")
     template = constructor_template(branch_id, row)
     explanation = topic_explanation_for_page(slug, title, branch_id)
+    prose = latex_editorial_math if template.get("editorial_inline_math") else latex_escape
     survives, changes, tests = support_lists_for_page(page, row, branch_id, constructed)
     route_profile = hyperion.get("route_profile") or {}
     route_summary = ", ".join(
@@ -4248,6 +4330,8 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines = [r"\clearpage"]
     lines.append(rf"\section{{{latex_escape(title)}}}")
     lines.append(topic_label)
+    if not constructed:
+        lines.append(r"\par\smallskip\noindent\textit{Physical-role overview. The representative relation below is shared with other topics in this chapter.}")
     if branch_id == "annotations" or row.get("is_annotation"):
         lines.append(r"\par\smallskip\noindent\textit{This page is treated as historical, interpretive, or popular context rather than as a conceptual root.}")
     lines.append("")
@@ -4265,7 +4349,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines.append("")
     lines.append(latex_escape(explanation["why"]))
     lines.append("")
-    lines.append(latex_escape(clean_text(mechanism, 1200)))
+    lines.append(prose(clean_text(mechanism, 1200)))
     lines.append("")
     lines.append(r"\subsection*{Physical Construction}")
     lines.append(latex_escape(physical_construction_prose(title, branch_id, row, mw)))
@@ -4316,6 +4400,8 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
             else:
                 lines.append(rf"\item {latex_escape(label)}")
         lines.append(r"\end{itemize}")
+    lines.append(editorial_references(slug, latex=True))
+    lines.append(original_source_references(root, slug, latex=True))
     return public_theory_language("\n".join(lines))
 
 
@@ -4394,6 +4480,12 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
         if evidence:
             lines.extend(["## Source Equations", "", markdown_evidence(evidence, row)])
         return public_theory_language("\n".join(lines).rstrip() + "\n")
+    slug = str(row.get("slug") or "")
+    if slug in NARRATIVES:
+        return "\n\n".join([
+            f"# {title}", narrative_body(slug), editorial_references(slug),
+            original_source_references(root, slug),
+        ]).rstrip() + "\n"
     constructed = has_topic_constructor(page, str(row.get("slug") or ""))
     constructor = constructor_text(title, branch_id, row, hyperion, mw)
     slug = str(row.get("slug") or "")
@@ -4405,6 +4497,8 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
         f"**Physical domain:** {branch.get('title')}",
         "",
     ]
+    if not constructed:
+        lines.extend(["*Physical-role overview. The representative relation below is shared with other topics in this chapter.*", ""])
     if topic_context:
         lines.extend(["## Topic Context", "", topic_context, ""])
         if topic_url:
@@ -4453,9 +4547,9 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
                         "",
                     ]
                 )
-        elif conversion:
-            lines.extend(["## Defining Relations", "", prose_from_items(conversion, 6), ""])
         else:
+            if conversion:
+                lines.extend(["## Defining Relations", "", prose_from_items(conversion, 6), ""])
             equations = template.get("equations") or []
             if slug not in TOPIC_CONSTRUCTOR_OVERRIDES:
                 equations = [role_equation_for_page(slug, title, branch_id)]
@@ -4481,6 +4575,7 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
         lines.extend(["## Discriminating Consequences", "", consequence_prose_from_items(tests, 3), ""])
     if evidence:
         lines.extend(["## Source Equations", "", markdown_evidence(evidence, row)])
+    lines.append(editorial_references(slug))
     return public_theory_language("\n".join(lines).rstrip() + "\n")
 
 
@@ -5281,7 +5376,7 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
             "The first relation compares two histories that produce the same declared state. Their later probabilities must agree. "
             "If they do not, the state has discarded a physically active correlation; an internal coordinate or memory kernel restores the missing dependence. "
             "The second relation compares two physically equivalent paths. Their transformations must agree when applied to the same state. "
-            "A non-neutral loop records curvature, frustration, or another obstruction to global composition."
+            "Physical transport along different paths can instead give different states, as in an interference experiment with geometric phase; that difference is a prediction of the connection, not a failure of consistency."
         ),
         latex_escape(
             "Predictive closure also determines the boundary between a mechanism and its realization. A parameter remains external while it selects a member of a fixed theory. "
@@ -5289,8 +5384,7 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
         ),
         rf"\[{ROLE_PROMOTION_CRITERION_LATEX}\]",
         latex_escape(
-            "A wall illustrates the distinction. Its position can parameterize one boundary-value problem, while its boundary condition selects the domain of the Hamiltonian. "
-            "The first quantity belongs to a realization. The second fixes the spectrum and therefore belongs to the closure of the mechanism."
+            "For a particle confined to an interval, both its length and the conditions at its ends affect the energy spectrum. A family of intervals can be mapped onto one reference interval by rescaling the coordinate, with the length then appearing in the kinetic coefficient. Dirichlet and Neumann conditions still define different operator domains on that reference interval. The realization therefore instantiates a specified family of operators; it is not a layer whose every change leaves the predictions fixed."
         ),
         rf"\[{CONSTRUCTOR_CHAIN_LATEX}\]",
         rf"\[{PHYSICAL_STATE_LATEX}\]",
@@ -5316,6 +5410,7 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
             "The positive operators E_y define the possible outcomes, and the trace rule assigns their probabilities. "
             "Unitary dynamics, open-system evolution, measurement, and feedback differ in which physical structures enter these three lines."
         ),
+        r"Here \(\mathcal E_P\) describes a deterministic protocol, including measurement outcomes averaged or retained in a classical register. A selected measurement outcome is represented by a completely positive, trace-nonincreasing map; its trace gives the probability of that outcome. A reduced channel also presupposes a specified environment preparation compatible with the chosen input states.",
         latex_escape(
             f"These relations order the following {total_pages} topics by the physical role each one fixes or changes. "
             "Entanglement belongs to composite state structure. Commutators belong to observable algebra. Bell experiments join the two through local measurements. "
@@ -5439,8 +5534,7 @@ def global_composition_chapter() -> str:
         r"\chapter{Global Composition: Curvature, Frustration, And Memory}",
         r"\begin{claimbox}",
         latex_escape(
-            "Local quantum relations define one global physical state only when their ordered composition is independent of the path used to connect the descriptions. "
-            "Curvature, frustration, and memory arise when this composition retains information that is absent from the endpoint variables."
+            "Parallel transport, bond-energy minimization and reduced evolution ask different questions about the information carried by a path. Their equations distinguish a geometric phase, incompatible local preferences and dependence on discarded correlations."
         ),
         r"\end{claimbox}",
         r"\section{From Local Transformations To A Global State}",
@@ -5450,7 +5544,7 @@ def global_composition_chapter() -> str:
         r"\begin{equation*}",
         r"\mathfrak H_\gamma=T_{0n}T_{n,n-1}\cdots T_{21}T_{10}.",
         r"\end{equation*}",
-        r"For changes of description, \(\mathfrak H_\gamma=I\) means that the local identifications fit one path-independent global description. "
+        r"For pure changes of basis, returning to the initial basis gives \(\mathfrak H_\gamma=I\) when the transition maps are consistent. Parallel transport between physical points is a different operation and can have nontrivial holonomy in a fully specified theory. "
         r"A physical protocol need not return the state when its external controls close a loop. The corresponding completeness test compares histories "
         r"that end at the same retained state. If their later observables differ, the retained endpoint variables have omitted physically active path information.",
         r"\section{Curvature Records Transport Around A Loop}",
@@ -5459,24 +5553,18 @@ def global_composition_chapter() -> str:
             "for a small loop its departure from the identity is set by the field strength. Berry curvature gives the corresponding relation in parameter space."
         ),
         r"\begin{centeredalign}",
-        r"W(\gamma)&=\operatorname{Tr}\,\mathcal P\exp\!\left(i\oint_\gamma A_\mu\,dx^\mu\right),\\",
-        r"\mathfrak H_\gamma&=I+iF_{\mu\nu}S^{\mu\nu}+O(S^2).",
+        r"W(\gamma)&=\operatorname{Tr}\,\mathcal P\exp\!\left(-ig\oint_\gamma A_\mu\,dx^\mu\right),\\",
+        r"\mathfrak H_{\mu\nu}(\ell)&=I-igF_{\mu\nu}\ell^2+O(\ell^3).",
         r"\end{centeredalign}",
-        latex_escape(
-            "The connection specifies how neighboring descriptions are compared; the curvature measures the infinitesimal failure of those comparisons to be path independent. "
-            "The loop, rather than any one local coordinate choice, carries the observable geometric information."
-        ),
+        r"Here \(g\) is the gauge coupling and \(\ell\) the side of a positively oriented square in the \(\mu\nu\) plane. The convention is \(D_\mu=\partial_\mu+igA_\mu\), with \([D_\mu,D_\nu]=igF_{\mu\nu}\). The connection specifies how neighboring descriptions are compared; the curvature measures the infinitesimal failure of those comparisons to be path independent. The traced loop is invariant under a change of local gauge.",
         r"\section{Frustration Records Incompatible Local Preferences}",
-        latex_escape(
-            "In a frustrated quantum magnet, each bond can impose a well-defined local preference while no spin configuration satisfies every bond around a loop. "
-            "For an Ising loop, a negative product of bond signs is the simplest obstruction:"
-        ),
+        r"In a frustrated magnet, each bond can impose a well-defined local preference while no spin configuration satisfies every bond around a loop. For an Ising energy \(H=-\sum_{\langle ij\rangle}J_{ij}s_i s_j\), with \(s_i=\pm1\) and nonzero bonds, minimizing each bond separately requires \(s_i s_j=\operatorname{sign}J_{ij}\). Multiplying those requirements around a loop gives \(+1\) on the left. A negative product of bond signs therefore makes simultaneous minimization impossible:",
         r"\begin{equation*}",
         r"\prod_{\langle ij\rangle\in\gamma}\operatorname{sign}J_{ij}=-1.",
         r"\end{equation*}",
         latex_escape(
             "The mismatch survives every local reassignment of spin signs and is therefore a property of the loop. In quantum magnets the same logic is carried by loop operators, flux sectors, or non-commuting bond terms. "
-            "The loop flux or frustration sector becomes an additional physical label that local bond variables alone cannot determine."
+            "The signed bonds already determine this obstruction. A loop label summarizes their joint incompatibility; adding a label does not remove the unsatisfied bond or restore an unfrustrated ground state."
         ),
         r"\section{Memory Records Hidden Paths Through State Space}",
         r"A reduced quantum state is complete only if equal present states give equal future observable statistics. Let \(h_1\) and \(h_2\) be two histories "
@@ -5486,17 +5574,15 @@ def global_composition_chapter() -> str:
         r"V_{t+s}&\ne V_tV_s.",
         r"\end{centeredalign}",
         latex_escape(
-            "The second relation is the failure of the reduced propagator to compose as a Markov semigroup. A memory kernel keeps the missing history explicit; an auxiliary mode or correlation coordinate enlarges the state and can restore a local evolution law. "
+            "For stationary preparations the second relation tests a time-homogeneous semigroup description. A time-dependent Markovian generator can also violate that one-parameter identity, so history dependence is decided by the first comparison under identical subsequent controls. Eliminating environmental coordinates can produce both a memory kernel and a term depending on their initial preparation. Both contributions must be included when assessing whether the retained state determines later observations. "
             "For order memory, two write operations followed by the same relaxation are distinguishable precisely when their ordered products leave different retained states."
         ),
         r"\begin{equation*}",
         r"R\mathcal R_tW_BW_A(q_0)\ne R\mathcal R_tW_AW_B(q_0).",
         r"\end{equation*}",
         r"\section{The Shared Physical Content}",
-        r"Gauge curvature, frustrated loops, and reduced-state memory attach different physical meanings to \(\mathfrak H_\gamma\). Their common content is failure "
-        r"of global composition: locally valid relations do not assemble into a path-independent state. The obstruction identifies what the smaller description has omitted. "
-        r"A connection and field strength complete local gauge comparisons; a flux or defect sector completes an incompatible interaction network; a memory kernel "
-        r"or hidden coordinate completes reduced dynamics. In each case the enlarged state distinguishes paths that the original endpoint variables identified as the same.",
+        r"These calculations compare what local information determines about a larger construction. A connection determines parallel transport, and its curvature makes that transport depend on the path. Signed Ising bonds determine local energy preferences whose product can prevent simultaneous satisfaction. A reduced density operator can discard correlations that affect later evolution. The relevant physical information is respectively the connection along the path, the arrangement of bond signs, and the system--environment state. "
+        r"The comparison motivates searching for such missing dependencies when assembling mechanisms. It does not identify the three mathematical objects: curvature can occur in a complete theory, frustration can be fully specified by its bonds, and reduced memory need not be a geometric holonomy. Their equations establish the relation in each physical setting.",
     ]
     return "\n".join(lines)
 
@@ -5618,17 +5704,18 @@ def _legacy_render_book(root: Path, max_pages_per_branch: Optional[int] = None) 
             r"\definecolor{ink}{HTML}{1C1E1A}",
             r"\titleformat{\chapter}[display]{\normalfont\huge\bfseries\color{ink}}{\chaptertitlename\ \thechapter}{14pt}{\Huge}",
             r"\newtcolorbox{claimbox}{colback=softgray,colframe=quantumgreen!65!black,arc=2pt,boxrule=0.7pt,left=8pt,right=8pt,top=6pt,bottom=6pt}",
-            r"\newenvironment{centeredalign}{\[\begin{gathered}}{\end{gathered}\]}",
+            r"\newenvironment{centeredalign}{\[\begin{gathered}[c]}{\end{gathered}\]}",
             r"\newcommand{\ket}[1]{\lvert #1\rangle}",
             r"\newcommand{\bra}[1]{\langle #1\rvert}",
             r"\begin{document}",
             r"\frontmatter",
+            r"\hypersetup{pageanchor=false}",
             r"\begin{titlepage}",
             r"\centering",
             r"\vspace*{1.5cm}",
         r"{\Huge\bfseries Quantum Theory\par}",
         r"\vspace{0.12cm}",
-        r"{\Huge\bfseries Through Physical Roles\par}",
+        r"{\Huge\bfseries Mechanisms And Predictions\par}",
             r"\vspace{1.2cm}",
             r"{\large Synthetix Institute\par}",
             rf"{{\large Generated {latex_escape(generated)}\par}}",
@@ -5637,6 +5724,7 @@ def _legacy_render_book(root: Path, max_pages_per_branch: Optional[int] = None) 
             r"\noindent This book reorganizes quantum theory away from historical article names and toward the recurring construction detected across the quantum page archive: context-selected Hilbert space, state carrier, generator, spectral question, probability/readout, compatibility limits, boundary realization, many-mode extension, and protocols.",
             r"\end{claimbox}",
             r"\end{titlepage}",
+            r"\hypersetup{pageanchor=true}",
             r"\tableofcontents",
         ]
     )
@@ -5800,30 +5888,36 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         r"\definecolor{ink}{HTML}{1C1E1A}",
         r"\titleformat{\chapter}[display]{\normalfont\huge\bfseries\color{ink}\raggedright}{\chaptertitlename\ \thechapter}{14pt}{\Huge}",
         r"\newtcolorbox{claimbox}{colback=softgray,colframe=quantumgreen!70!black,arc=2pt,boxrule=0.7pt,left=8pt,right=8pt,top=6pt,bottom=6pt}",
-        r"\newenvironment{centeredalign}{\[\begin{gathered}}{\end{gathered}\]}",
+        r"\newenvironment{centeredalign}{\[\begin{gathered}[c]}{\end{gathered}\]}",
         r"\newcommand{\ket}[1]{\lvert #1\rangle}",
         r"\newcommand{\bra}[1]{\langle #1\rvert}",
         r"\begin{document}",
         r"\frontmatter",
+        r"\hypersetup{pageanchor=false}",
         r"\begin{titlepage}",
         r"\centering",
         r"\vspace*{1.7cm}",
         r"{\Huge\bfseries Quantum Theory\par}",
         r"\vspace{0.12cm}",
-        r"{\Huge\bfseries Through Physical Roles\par}",
+        r"{\Huge\bfseries Mechanisms And Predictions\par}",
         r"\vspace{1.2cm}",
         r"{\large Synthetix Institute\par}",
         rf"{{\large Generated {latex_escape(generated)}\par}}",
         r"\vfill",
         r"\begin{claimbox}",
-        r"\noindent Quantum theories differ in what they treat as state, dynamics, constraint, measurement, protocol, or external realization. Predictive closure connects these choices and identifies the physical structure missing from an incomplete description.",
+        r"\noindent Interactions generate phases, correlations and transitions. Their observable consequences connect the preparation of a quantum system to its later behaviour. This book develops those mechanisms through equations and follows their realization in different physical systems.",
         r"\end{claimbox}",
         r"\end{titlepage}",
+        r"\hypersetup{pageanchor=true}",
         r"\tableofcontents",
-        render_mechanism_guide(tree),
+        r"\chapter*{About This Edition}",
+        r"This companion orders quantum descriptions by the states, interactions, constraints and measurements that enter their predictions. Topic-specific derivations develop individual mechanisms; physical-role overviews locate additional subjects within the same organization. Their shared representative equations are identified as such. The interpretations and explanatory equations are editorial constructions, rather than new quantum laws inferred from the archive.",
+        r"References for a physical derivation are listed separately from recovered equation sources. Links headed Relations In The Original Papers locate displays inspected in the original articles, with their mathematical relevance and assumptions. They are distinguished in the accompanying records from equations recovered through the corpus alignment. The explanatory calculations are developed here; an original-paper link identifies the stated relation, rather than attributing the entire chapter to that paper.",
         r"\mainmatter",
-        r"\part{Predictive Closure And Physical Role}",
+        r"\part{Mechanisms And Predictions}",
+        OPENING,
         compact_operator_formulation_chapter(),
+        render_mechanism_guide(tree),
         quantum_structure_chapter(),
         global_composition_chapter(),
     ]
@@ -5869,9 +5963,9 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
     )
     if grounded:
         source_statement = (
-            f"Source citations are included only for topic-level equation witnesses confirmed by source-card alignment. "
-            f"This edition contains {grounded} topics with confirmed witnesses; {identifier_linked} topics have "
-            f"identifier-linked candidates awaiting equation-level confirmation, and {without_candidate} have no aligned candidate."
+            f"This edition contains {grounded} topics with recovered relations that pass checks for complete expressions, relevant relation terms and exact equation identifiers. "
+            f"A further {identifier_linked} topics have retrieval candidates awaiting confirmation, and {without_candidate} have no aligned candidate. "
+            "References for the physical derivations were selected separately and are not counted as recovered relations."
         )
     else:
         source_statement = (
@@ -5882,6 +5976,12 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
     source_statement += (
         " The repository contains the generated tree, topic records, derivation pages, build scripts, "
         "and preservation report needed to reproduce this edition."
+    )
+    originals = load_original_sources(root)
+    source_statement += (
+        f" Original-paper recovery additionally supplies {len(originals['records'])} display records "
+        f"for {originals['topic_count']} topics, with article locations and recorded expression hashes. "
+        "These independently selected displays do not establish alignment to the original corpus rows."
     )
 
     lines.extend(

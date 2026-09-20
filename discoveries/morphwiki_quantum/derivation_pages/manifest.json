@@ -1,16 +1,16 @@
 {
   "report_type": "quantum_derivation_pages_manifest",
   "row_count": 146,
-  "topic_specific_count": 42,
-  "branch_level_count": 87,
-  "core_derived_count": 87,
+  "topic_specific_count": 62,
+  "branch_level_count": 67,
+  "core_derived_count": 67,
   "annotation_count": 17,
-  "source_grounded_count": 123,
-  "identifier_linked_count": 6,
+  "source_grounded_count": 6,
+  "identifier_linked_count": 123,
   "derivation_basis_counts": {
-    "source_grounded_placement": 81,
-    "source_grounded_topic_model": 42,
-    "identifier_linked_placement": 6,
+    "identifier_linked_placement": 67,
+    "identifier_linked_topic_model": 56,
+    "source_grounded_topic_model": 6,
     "annotation": 17
   },
   "pages": [
@@ -19,9 +19,9 @@
       "title": "Transformation theory (quantum mechanics)",
       "branch": "context",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/transformation_theory_quantum_mechanics.md"
     },
     {
@@ -29,9 +29,9 @@
       "title": "Mathematical formulation of quantum mechanics",
       "branch": "context",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/mathematical_formulation_of_quantum_mechanics.md"
     },
     {
@@ -39,9 +39,9 @@
       "title": "Hilbert space",
       "branch": "context",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/hilbert_space.md"
     },
     {
@@ -59,9 +59,9 @@
       "title": "Quantum mechanics",
       "branch": "context",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_mechanics.md"
     },
     {
@@ -69,19 +69,19 @@
       "title": "Old quantum theory",
       "branch": "context",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/old_quantum_theory.md"
     },
     {
       "slug": "fourier_transform",
       "title": "Fourier transform",
       "branch": "context",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/fourier_transform.md"
     },
     {
@@ -89,9 +89,9 @@
       "title": "Density matrix",
       "branch": "states",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/density_matrix.md"
     },
     {
@@ -99,9 +99,9 @@
       "title": "Quantum superposition",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_superposition.md"
     },
     {
@@ -119,9 +119,9 @@
       "title": "Coherence (physics)",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/coherence_physics.md"
     },
     {
@@ -129,9 +129,9 @@
       "title": "Superposition principle",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/superposition_principle.md"
     },
     {
@@ -139,29 +139,29 @@
       "title": "Wave function",
       "branch": "states",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/wave_function.md"
     },
     {
       "slug": "quantum_state",
       "title": "Quantum state",
       "branch": "states",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_state.md"
     },
     {
       "slug": "two_state_quantum_system",
       "title": "Two-state quantum system",
       "branch": "states",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/two_state_quantum_system.md"
     },
     {
@@ -169,9 +169,9 @@
       "title": "Qubit",
       "branch": "states",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/qubit.md"
     },
     {
@@ -179,9 +179,9 @@
       "title": "Quantum number",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_number.md"
     },
     {
@@ -189,9 +189,9 @@
       "title": "Spin (physics)",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/spin_physics.md"
     },
     {
@@ -199,9 +199,9 @@
       "title": "Schrödinger's cat",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/schr_dinger_s_cat.md"
     },
     {
@@ -229,9 +229,9 @@
       "title": "Macroscopic quantum phenomena",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/macroscopic_quantum_phenomena.md"
     },
     {
@@ -239,9 +239,9 @@
       "title": "Quantum fluctuation",
       "branch": "states",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_fluctuation.md"
     },
     {
@@ -249,9 +249,9 @@
       "title": "Unitary operator",
       "branch": "generators",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/unitary_operator.md"
     },
     {
@@ -259,9 +259,9 @@
       "title": "Perturbation theory",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/perturbation_theory.md"
     },
     {
@@ -269,9 +269,9 @@
       "title": "Quantum dynamics",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_dynamics.md"
     },
     {
@@ -279,9 +279,9 @@
       "title": "Path integral formulation",
       "branch": "generators",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/path_integral_formulation.md"
     },
     {
@@ -289,9 +289,9 @@
       "title": "Hamiltonian mechanics",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/hamiltonian_mechanics.md"
     },
     {
@@ -299,9 +299,9 @@
       "title": "Path integral",
       "branch": "generators",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/path_integral.md"
     },
     {
@@ -309,9 +309,9 @@
       "title": "Hamiltonian (quantum mechanics)",
       "branch": "generators",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/hamiltonian_quantum_mechanics.md"
     },
     {
@@ -319,9 +319,9 @@
       "title": "Perturbation theory (quantum mechanics)",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/perturbation_theory_quantum_mechanics.md"
     },
     {
@@ -329,9 +329,9 @@
       "title": "Quantum chaos",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chaos.md"
     },
     {
@@ -339,29 +339,29 @@
       "title": "Schrödinger equation",
       "branch": "generators",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/schr_dinger_equation.md"
     },
     {
       "slug": "symmetry_in_quantum_mechanics",
       "title": "Symmetry in quantum mechanics",
       "branch": "generators",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/symmetry_in_quantum_mechanics.md"
     },
     {
       "slug": "heisenberg_picture",
       "title": "Heisenberg picture",
       "branch": "generators",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/heisenberg_picture.md"
     },
     {
@@ -369,9 +369,9 @@
       "title": "Quantum stochastic calculus",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_stochastic_calculus.md"
     },
     {
@@ -379,9 +379,9 @@
       "title": "Relativistic quantum mechanics",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/relativistic_quantum_mechanics.md"
     },
     {
@@ -389,9 +389,9 @@
       "title": "Schrödinger picture",
       "branch": "generators",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/schr_dinger_picture.md"
     },
     {
@@ -399,39 +399,39 @@
       "title": "Creation and annihilation operators",
       "branch": "generators",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/creation_and_annihilation_operators.md"
     },
     {
       "slug": "spectral_theory",
       "title": "Spectral theory",
       "branch": "observables",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/spectral_theory.md"
     },
     {
       "slug": "pauli_matrices",
       "title": "Pauli matrices",
       "branch": "observables",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/pauli_matrices.md"
     },
     {
       "slug": "angular_momentum_operator",
       "title": "Angular momentum operator",
       "branch": "observables",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/angular_momentum_operator.md"
     },
     {
@@ -439,9 +439,9 @@
       "title": "Observable",
       "branch": "observables",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/observable.md"
     },
     {
@@ -449,9 +449,9 @@
       "title": "Self-adjoint operator",
       "branch": "observables",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/self_adjoint_operator.md"
     },
     {
@@ -459,9 +459,9 @@
       "title": "Operator theory",
       "branch": "observables",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/operator_theory.md"
     },
     {
@@ -469,9 +469,9 @@
       "title": "Operator (physics)",
       "branch": "observables",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/operator_physics.md"
     },
     {
@@ -479,19 +479,19 @@
       "title": "Eigenvalues and eigenvectors",
       "branch": "observables",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/eigenvalues_and_eigenvectors.md"
     },
     {
       "slug": "heisenberg_group",
       "title": "Heisenberg group",
       "branch": "observables",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/heisenberg_group.md"
     },
     {
@@ -499,9 +499,9 @@
       "title": "Von Neumann algebra",
       "branch": "observables",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/von_neumann_algebra.md"
     },
     {
@@ -509,9 +509,9 @@
       "title": "Quantum logic",
       "branch": "observables",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_logic.md"
     },
     {
@@ -529,19 +529,19 @@
       "title": "Uncertainty principle",
       "branch": "incompatibility",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/uncertainty_principle.md"
     },
     {
       "slug": "canonical_commutation_relation",
       "title": "Canonical commutation relation",
       "branch": "incompatibility",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/canonical_commutation_relation.md"
     },
     {
@@ -549,9 +549,9 @@
       "title": "POVM",
       "branch": "measurement",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/povm.md"
     },
     {
@@ -559,19 +559,19 @@
       "title": "Measurement in quantum mechanics",
       "branch": "measurement",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/measurement_in_quantum_mechanics.md"
     },
     {
       "slug": "quantum_jump",
       "title": "Quantum jump",
       "branch": "measurement",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_jump.md"
     },
     {
@@ -579,9 +579,9 @@
       "title": "Wave function collapse",
       "branch": "measurement",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/wave_function_collapse.md"
     },
     {
@@ -589,9 +589,9 @@
       "title": "Born rule",
       "branch": "measurement",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/born_rule.md"
     },
     {
@@ -599,9 +599,9 @@
       "title": "Measurement problem",
       "branch": "measurement",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/measurement_problem.md"
     },
     {
@@ -609,9 +609,9 @@
       "title": "Quantum eraser experiment",
       "branch": "measurement",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_eraser_experiment.md"
     },
     {
@@ -619,19 +619,19 @@
       "title": "Projection-valued measure",
       "branch": "measurement",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/projection_valued_measure.md"
     },
     {
       "slug": "quantum_amplifier",
       "title": "Quantum amplifier",
       "branch": "measurement",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_amplifier.md"
     },
     {
@@ -639,9 +639,9 @@
       "title": "Bell's theorem",
       "branch": "measurement",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/bell_s_theorem.md"
     },
     {
@@ -649,9 +649,9 @@
       "title": "Quantum nonlocality",
       "branch": "measurement",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_nonlocality.md"
     },
     {
@@ -669,9 +669,9 @@
       "title": "Quantum imaging",
       "branch": "measurement",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_imaging.md"
     },
     {
@@ -679,9 +679,9 @@
       "title": "Wave–particle duality",
       "branch": "measurement",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/wave_particle_duality.md"
     },
     {
@@ -699,9 +699,9 @@
       "title": "Electron microscope",
       "branch": "measurement",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/electron_microscope.md"
     },
     {
@@ -709,9 +709,9 @@
       "title": "Quantum computing",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_computing.md"
     },
     {
@@ -719,9 +719,9 @@
       "title": "Quantum information science",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_information_science.md"
     },
     {
@@ -729,9 +729,9 @@
       "title": "Quantum network",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_network.md"
     },
     {
@@ -739,19 +739,19 @@
       "title": "Quantum algorithm",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_algorithm.md"
     },
     {
       "slug": "quantum_error_correction",
       "title": "Quantum error correction",
       "branch": "protocols",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_error_correction.md"
     },
     {
@@ -759,9 +759,9 @@
       "title": "Quantum channel",
       "branch": "protocols",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_channel.md"
     },
     {
@@ -769,9 +769,9 @@
       "title": "Quantum logic gate",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_logic_gate.md"
     },
     {
@@ -779,9 +779,9 @@
       "title": "Quantum neural network",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_neural_network.md"
     },
     {
@@ -789,9 +789,9 @@
       "title": "Quantum circuit",
       "branch": "protocols",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_circuit.md"
     },
     {
@@ -799,19 +799,19 @@
       "title": "Quantum information",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_information.md"
     },
     {
       "slug": "quantum_key_distribution",
       "title": "Quantum key distribution",
       "branch": "protocols",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_key_distribution.md"
     },
     {
@@ -819,9 +819,9 @@
       "title": "Quantum sensor",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_sensor.md"
     },
     {
@@ -829,19 +829,19 @@
       "title": "Quantum machine",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_machine.md"
     },
     {
       "slug": "quantum_teleportation",
       "title": "Quantum teleportation",
       "branch": "protocols",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_teleportation.md"
     },
     {
@@ -849,9 +849,9 @@
       "title": "Quantum finite automaton",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_finite_automaton.md"
     },
     {
@@ -859,9 +859,9 @@
       "title": "Quantum machine learning",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_machine_learning.md"
     },
     {
@@ -869,9 +869,9 @@
       "title": "Quantum programming",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_programming.md"
     },
     {
@@ -879,9 +879,9 @@
       "title": "Quantum simulator",
       "branch": "protocols",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_simulator.md"
     },
     {
@@ -889,19 +889,19 @@
       "title": "Quantum cryptography",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_cryptography.md"
     },
     {
       "slug": "quantum_metrology",
       "title": "Quantum metrology",
       "branch": "protocols",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_metrology.md"
     },
     {
@@ -909,9 +909,9 @@
       "title": "Quantum bus",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_bus.md"
     },
     {
@@ -919,9 +919,9 @@
       "title": "Quantum image processing",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_image_processing.md"
     },
     {
@@ -929,9 +929,9 @@
       "title": "Quantum engineering",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_engineering.md"
     },
     {
@@ -939,9 +939,9 @@
       "title": "Quantum cellular automaton",
       "branch": "protocols",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_cellular_automaton.md"
     },
     {
@@ -959,9 +959,9 @@
       "title": "Potential well",
       "branch": "boundaries",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/potential_well.md"
     },
     {
@@ -969,9 +969,9 @@
       "title": "Scattering",
       "branch": "boundaries",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/scattering.md"
     },
     {
@@ -979,9 +979,9 @@
       "title": "Particle in a box",
       "branch": "boundaries",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/particle_in_a_box.md"
     },
     {
@@ -989,9 +989,9 @@
       "title": "Quantum optics",
       "branch": "boundaries",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_optics.md"
     },
     {
@@ -999,9 +999,9 @@
       "title": "Wave interference",
       "branch": "boundaries",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/wave_interference.md"
     },
     {
@@ -1009,9 +1009,9 @@
       "title": "Spectral line",
       "branch": "boundaries",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/spectral_line.md"
     },
     {
@@ -1019,9 +1019,9 @@
       "title": "Quantum tunnelling",
       "branch": "boundaries",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_tunnelling.md"
     },
     {
@@ -1029,19 +1029,19 @@
       "title": "S-matrix",
       "branch": "boundaries",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/s_matrix.md"
     },
     {
       "slug": "quantum_harmonic_oscillator",
       "title": "Quantum harmonic oscillator",
       "branch": "boundaries",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_harmonic_oscillator.md"
     },
     {
@@ -1069,9 +1069,9 @@
       "title": "Photon",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/photon.md"
     },
     {
@@ -1089,9 +1089,9 @@
       "title": "Quantum field theory",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_field_theory.md"
     },
     {
@@ -1099,9 +1099,9 @@
       "title": "Fermi–Dirac statistics",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/fermi_dirac_statistics.md"
     },
     {
@@ -1109,19 +1109,19 @@
       "title": "Dirac equation",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/dirac_equation.md"
     },
     {
       "slug": "quantum_electrodynamics",
       "title": "Quantum electrodynamics",
       "branch": "fields",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_electrodynamics.md"
     },
     {
@@ -1129,10 +1129,20 @@
       "title": "Boson",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/boson.md"
+    },
+    {
+      "slug": "quantum_chromodynamics",
+      "title": "Quantum chromodynamics",
+      "branch": "fields",
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
+      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chromodynamics.md"
     },
     {
       "slug": "fermion",
@@ -1145,23 +1155,13 @@
       "path": "discoveries/morphwiki_quantum/derivation_pages/fermion.md"
     },
     {
-      "slug": "quantum_chromodynamics",
-      "title": "Quantum chromodynamics",
-      "branch": "fields",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
-      "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chromodynamics.md"
-    },
-    {
       "slug": "electron",
       "title": "Electron",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/electron.md"
     },
     {
@@ -1169,9 +1169,9 @@
       "title": "Spin foam",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/spin_foam.md"
     },
     {
@@ -1179,9 +1179,9 @@
       "title": "AdS/CFT correspondence",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/ads_cft_correspondence.md"
     },
     {
@@ -1189,9 +1189,9 @@
       "title": "Loop quantum gravity",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/loop_quantum_gravity.md"
     },
     {
@@ -1199,9 +1199,9 @@
       "title": "Spin network",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/spin_network.md"
     },
     {
@@ -1209,9 +1209,9 @@
       "title": "Quantum chemistry",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_chemistry.md"
     },
     {
@@ -1219,9 +1219,9 @@
       "title": "Standard Model",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/standard_model.md"
     },
     {
@@ -1229,9 +1229,9 @@
       "title": "Klein–Gordon equation",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/klein_gordon_equation.md"
     },
     {
@@ -1239,9 +1239,9 @@
       "title": "Bose–Einstein statistics",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/bose_einstein_statistics.md"
     },
     {
@@ -1249,19 +1249,19 @@
       "title": "String theory",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/string_theory.md"
     },
     {
       "slug": "quantum_statistical_mechanics",
       "title": "Quantum statistical mechanics",
       "branch": "fields",
-      "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_statistical_mechanics.md"
     },
     {
@@ -1269,9 +1269,9 @@
       "title": "Quantum gravity",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_gravity.md"
     },
     {
@@ -1279,9 +1279,9 @@
       "title": "Quantum geometry",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_geometry.md"
     },
     {
@@ -1289,9 +1289,9 @@
       "title": "Quantum spacetime",
       "branch": "fields",
       "status": "branch_level",
-      "derivation_basis": "source_grounded_placement",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_placement",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_spacetime.md"
     },
     {
@@ -1299,9 +1299,9 @@
       "title": "Fock space",
       "branch": "fields",
       "status": "topic_specific",
-      "derivation_basis": "source_grounded_topic_model",
-      "source_grounded": true,
-      "identifier_linked": false,
+      "derivation_basis": "identifier_linked_topic_model",
+      "source_grounded": false,
+      "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/fock_space.md"
     },
     {

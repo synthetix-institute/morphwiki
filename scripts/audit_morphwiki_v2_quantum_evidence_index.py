@@ -9,6 +9,11 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Mapping
 
+try:
+    from quantum_source_evidence import accepted_source_example
+except ModuleNotFoundError:
+    from scripts.quantum_source_evidence import accepted_source_example
+
 
 DEFAULT_CORE_TOPICS = (
     "fermion",
@@ -43,10 +48,7 @@ def tree_slugs(tree: Mapping[str, Any]) -> set[str]:
 
 def has_relation_grounding(page: Mapping[str, Any]) -> bool:
     return any(
-        example.get("topic_relevance") == "local_context_match"
-        and example.get("relation_relevance") == "relation_context_match"
-        and example.get("row_ids")
-        and example.get("card_ids")
+        accepted_source_example(example)
         for example in (page.get("source_examples") or [])
     )
 
@@ -85,6 +87,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         "source_first_scan_completed": int(source_first.get("cards_seen") or 0) > 0,
         "minimum_grounded_topics": len(grounded_slugs) >= args.minimum_grounded,
         "core_relations_are_grounded": not core_missing,
+        "no_unsupported_grounding_status": all(has_relation_grounding(pages[slug]) for slug in grounded_slugs),
     }
     readiness = "usable" if pages and all(checks.values()) else "blocked"
     ungrounded = sorted(indexed - set(grounded_slugs))
@@ -111,9 +114,9 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         "source_first_scan": source_first,
         "source_first_alignment": index.get("source_first_alignment") or {},
         "claim_scope": (
-            "A grounded page contains a topic-bearing source equation joined through "
-            "its exact equation-card identifier to a V2 mechanism row. Core pages also "
-            "require a relation-specific term in the local derivation."
+            "A screened source relation has a complete expression, exact card-to-row alignment, "
+            "local context and relation-specific terms. This is not a semantic verification "
+            "of the complete chapter or its derivations."
         ),
     }
 

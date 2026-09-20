@@ -75,7 +75,7 @@ def test_default_book_uses_physical_constructor_and_hides_internal_audits(monkey
     tex = render_book(ROOT, max_pages_per_branch=0)
 
     assert "Quantum Theory" in tex
-    assert "Through Physical Roles" in tex
+    assert "Mechanisms And Predictions" in tex
     assert "When External Conditions Become Quantum Physics" in tex
     assert "The Physical Identity Of A Quantum Mechanism" in tex
     assert "When External Structure Becomes Dynamical" in tex
@@ -102,7 +102,7 @@ def test_default_book_uses_physical_constructor_and_hides_internal_audits(monkey
 def test_public_equation_rows_are_centered_independently():
     tex = render_book(ROOT, max_pages_per_branch=0)
 
-    assert r"\newenvironment{centeredalign}{\[\begin{gathered}}{\end{gathered}\]}" in tex
+    assert r"\newenvironment{centeredalign}{\[\begin{gathered}[c]}{\end{gathered}\]}" in tex
     for block in tex.split(r"\begin{centeredalign}")[1:]:
         body = block.split(r"\end{centeredalign}", 1)[0]
         assert "&" not in body.replace(r"\&", "")
@@ -286,8 +286,13 @@ def test_public_evidence_requires_source_card_grounding():
             "source_examples": [
                 {
                     "paper_ids": ["2222.2222"],
-                    "equation_preview": "matched",
-                    "source_grounded": True,
+                        "equation_preview": "A=B",
+                        "source_grounded": True,
+                        "row_ids": [2], "card_ids": ["matched-card"],
+                        "local_context": "A and B describe the same commutator.",
+                        "topic_relevance": "local_context_match",
+                        "relation_relevance": "relation_context_match",
+                        "relation_terms_matched": ["commutator"],
                 }
             ],
         }
@@ -295,6 +300,7 @@ def test_public_evidence_requires_source_card_grounding():
 
     assert top_evidence(page, ungrounded) == []
     assert [row["paper_id"] for row in top_evidence(page, grounded)] == ["2222.2222"]
+    assert top_evidence(page, grounded)[0]["equation_excerpt"] == "A=B"
 
 
 def test_tree_exports_only_topic_relevant_source_examples():
@@ -305,7 +311,10 @@ def test_tree_exports_only_topic_relevant_source_examples():
                 "status": "v2_source_grounded",
                 "source_examples": [
                     {"paper_ids": ["1111.1111"], "topic_relevance": "not_established"},
-                    {"paper_ids": ["2222.2222"], "topic_relevance": "local_context_match"},
+                    {"paper_ids": ["2222.2222"], "topic_relevance": "local_context_match",
+                     "equation_preview": "A=B", "row_ids": [2], "card_ids": ["card"],
+                     "local_context": "Fermionic anticommutation relation.",
+                     "relation_relevance": "relation_context_match", "relation_terms_matched": ["anticommut"]},
                 ],
             }
         },

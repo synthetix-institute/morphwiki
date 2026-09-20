@@ -1,42 +1,43 @@
 # Heisenberg picture
 
-**Physical domain:** Dynamics and transformations
-
-## Mechanism
-
-Heisenberg picture belongs to the lawful-change step: it specifies how the state changes before a question is asked.
-
-Heisenberg picture separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The governing operation is a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated observables are Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
-
-## Representative Relation
+The Schrodinger and Heisenberg pictures assign time dependence to different parts of the same prediction. With unitary evolution $U(t)$, an initial density operator $\rho_0$ and an observable $O$, the expectation can be evaluated either by evolving the state or by evolving the operator:
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+\rho_S(t)=U(t)\rho_0U(t)^\dagger,\qquad
+O_H(t)=U(t)^\dagger OU(t),\qquad
+\operatorname{Tr}[\rho_S(t)O]=\operatorname{Tr}[\rho_0O_H(t)].
 ```
 
-## Physical Meaning
+Differentiating $O_H$ for a time-independent Hamiltonian $H$ gives the Heisenberg equation:
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+```math
+\dot O_H=\frac{i}{\hbar}[H,O_H].
+```
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+The resulting commutators identify which other observables enter the prediction. This is particularly useful when an experiment observes only a small part of a many-body system.
 
-## Invariance And Realization
+Consider two spins with $H=\hbar g\,Z_1Z_2$, where $X_j,Y_j,Z_j$ denote dimensionless Pauli operators and $g$ is a frequency. If the measured quantity is $x=\langle X_1\rangle$, its derivative contains the correlation $c=\langle Y_1Z_2\rangle$. A second commutator closes the pair:
 
-Heisenberg picture specifies lawful change before measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+```math
+\dot x=-2gc,\qquad \dot c=2gx,\qquad
+x(t)=x(0)\cos(2gt)-c(0)\sin(2gt).
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+The correlation is physically necessary: preparations with the same initial transverse magnetization but different $c(0)$ give different later magnetizations. Its appearance is fixed by the interaction algebra. Retaining the two expectations supplies a complete closed prediction for this observable even though it does not reconstruct every entry of the two-spin density operator.
 
-## Discriminating Consequences
+Eliminating the correlation replaces the pair of first-order equations by a history-dependent equation for $x$. The initial correlation survives as a separate term:
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+```math
+\dot x(t)=-2g c(0)-4g^2\int_0^t x(s)\,ds.
+```
 
-## Source Equations
+Both descriptions give the same signal when they use the same preparation. Discarding the integral or the initial-correlation term gives a different physical prediction. Repeated commutators thus provide a concrete way to construct the set of observables needed by a measurement, and to identify when a smaller description requires memory. For more complicated interactions the sequence may generate a much larger space rather than closing after two steps.
 
-- [arXiv:gr-qc/0104053](https://arxiv.org/abs/gr-qc/0104053)
-- [arXiv:gr-qc0104053](https://arxiv.org/abs/gr-qc0104053)
+## References For The Physical Derivation
+
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)
+
+
+## Relations In The Original Papers
+
+[arXiv:1508.06951, S3.Ex177](https://arxiv.org/html/1508.06951#S3.Ex177). State evolution and observable evolution give identical spectral probabilities. The source chooses its unitary convention explicitly. The two-spin calculation uses U = exp(-iHt/hbar).

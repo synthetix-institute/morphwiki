@@ -1,41 +1,31 @@
 # Two-state quantum system
 
-**Physical domain:** Quantum states and subsystem structure
-
-## Mechanism
-
-Two-state quantum system supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
-
-Two-state quantum system specifies the object from which quantum probabilities are calculated. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
-
-The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state.
-
-## Physical Construction
-
-The state carrier is the mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. The governing operation is Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed. Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. The calculated observables are Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
-
-## Representative Relation
+An avoided crossing couples two states that would otherwise evolve independently. In their basis, a constant energy offset contributes only an overall phase, whereas the remaining Hamiltonian determines both transition probabilities and phase evolution. Let $\Delta$ be the angular-frequency detuning between the uncoupled levels and $\Omega$ a real coupling frequency. With $|0\rangle$ and $|1\rangle$ the eigenstates of $\sigma_z$, choose
 
 ```math
-\ket{\psi}\in\mathcal H,\quad \rho\ge0,\quad \operatorname{Tr}\rho=1,\quad p_i=\operatorname{Tr}(\rho P_i)
+H=\frac{\hbar}{2}(\Delta\sigma_z+\Omega\sigma_x),\qquad \omega_R=\sqrt{\Delta^2+\Omega^2}.
 ```
 
-## Physical Meaning
+The Pauli algebra gives $(\Delta\sigma_z+\Omega\sigma_x)^2=\omega_R^2I$. Every higher power in the exponential therefore reduces to either the identity or the Hamiltonian. The evolution follows without fitting a transition curve:
 
-Normalization guarantees that the probabilities sum to one, while positivity prevents negative probabilities. Pure vectors and density operators are not competing theories: the density-operator form also represents mixtures and reduced states obtained when unobserved degrees of freedom are traced out.
+```math
+U(t)=\cos\frac{\omega_Rt}{2}\,I-i\sin\frac{\omega_Rt}{2}\,
+\frac{\Delta\sigma_z+\Omega\sigma_x}{\omega_R}.
+```
 
-The Hamiltonian or channel evolves the prepared state. An observable and measurement map then convert that evolved state into outcome probabilities.
+For the preparation $|0\rangle$, the off-diagonal matrix element of $U$ gives the transition probability
 
-## Invariance And Realization
+```math
+P_{0\to1}(t)=\frac{\Omega^2}{\Delta^2+\Omega^2}
+\sin^2\!\left(\frac{t}{2}\sqrt{\Delta^2+\Omega^2}\right).
+```
 
-The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. Two-state quantum system carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
+On resonance the coupling can transfer the entire population; a pulse of duration $\pi/|\Omega|$ interchanges the levels. Detuning increases the oscillation frequency but reduces the greatest achievable population transfer. These two consequences distinguish a changed level splitting from a changed coupling even when a short segment of an oscillation looks similar.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
+The Bloch vector rotates about the effective axis $(\Omega,0,\Delta)$. A second pulse about another axis can convert a relative phase into a population difference. Reversing two such pulses generally changes the result because their Hamiltonians do not commute. The state space is the same in both experiments; the difference lies in the sequence of interactions, and the measured population exposes that difference.
 
-## Discriminating Consequences
+This calculation applies to any isolated pair of levels governed by the stated Hamiltonian, including two coupled modes or selected atomic states. Its use for a larger physical system requires that other levels remain unpopulated and environmental relaxation be negligible over the pulse duration. If the Hamiltonian was obtained in a rotating frame, the rotating-wave approximation and the transformation of the measured operator are additional parts of the correspondence. Specifying a two-dimensional matrix does not by itself establish those conditions in a device.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
+## References For The Physical Derivation
 
-## Source Equations
-
-- [arXiv:1811.08830](https://arxiv.org/abs/1811.08830)
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)

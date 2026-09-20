@@ -1,41 +1,32 @@
 # Spectral theory
 
-**Physical domain:** Observables and spectra
-
-## Mechanism
-
-Spectral theory belongs to the question step: it turns a physical question into an operator with admissible answers.
-
-Spectral theory states which physical question is being asked. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
-
-An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
-
-## Physical Construction
-
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The governing operation is a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated observables are Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
-
-## Representative Relation
+An observable specifies both possible outcomes and how a prepared state distributes probability among them. For a self-adjoint operator $A$, the spectral measure $E_A$ assigns an orthogonal projector to each measurable set of real outcomes. The operator and its measurement probabilities are reconstructed from this measure:
 
 ```math
-O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
+A=\int_{\mathbb R}\lambda\,dE_A(\lambda),\qquad
+p(\lambda\in B)=\operatorname{Tr}[\rho E_A(B)].
 ```
 
-## Physical Meaning
+Here $B$ is an interval or other measurable outcome set and $\rho$ the density operator. For a discrete spectrum the integral becomes a sum over eigenspace projectors. For position or free-particle momentum it is genuinely continuous; their ideal eigenvectors are generalized distributions rather than normalizable prepared states. A detector with finite resolution measures an interval probability, not a normalizable state at one exact continuum value.
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+The same spectral measure determines functions of the operator. If $H$ is the time-independent Hamiltonian, the function $\exp(-iEt/\hbar)$ gives its unitary evolution. An energy decomposition therefore connects a spectroscopic question to dynamics:
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
+```math
+U(t)=\int e^{-iEt/\hbar}\,dE_H(E),\qquad
+\langle\psi|U(t)|\psi\rangle=\int e^{-iEt/\hbar}\,d\mu_\psi(E),
+```
 
-## Invariance And Realization
+where $\mu_\psi(B)=\langle\psi|E_H(B)|\psi\rangle$ is the energy distribution of the preparation. The survival amplitude is its Fourier transform. A narrow energy distribution changes phase slowly relative to itself; a broad distribution can dephase rapidly. This connects spectral width to temporal evolution without assuming irreversible decay.
 
-Spectral theory defines the legal question being asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+The spectrum belongs to the operator with its domain. On an interval of length $L$, the same differential expression $-\hbar^2\partial_x^2/(2m)$ has a zero-energy constant mode with Neumann conditions, while Dirichlet conditions exclude it and begin at $\pi^2\hbar^2/(2mL^2)$. A change of boundary therefore changes both the energy outcomes and the time evolution, even though the bulk equation is unchanged.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+Two Hamiltonians with identical energy values can still have different observable matrix elements. Transporting a mechanism requires a correspondence between states and observables, not just a matched list of eigenvalues. Spectral theory supplies the predictions once that correspondence and the operator domains are specified; it also identifies precisely what an isospectral comparison leaves undecided.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)
 
-## Source Equations
 
-- [arXiv:1312.0150](https://arxiv.org/abs/1312.0150)
+## Relations In The Original Papers
+
+[arXiv:1508.06951, S2.EGx25](https://arxiv.org/html/1508.06951#S2.EGx25). Functions of a self-adjoint observable are defined by integration against its spectral measure. The domain of an unbounded function of the operator must be retained.

@@ -2,6 +2,8 @@
 
 **Physical domain:** Control sequences and quantum channels
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Quantum complexity theory belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.

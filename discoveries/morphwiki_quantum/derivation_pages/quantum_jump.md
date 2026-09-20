@@ -1,43 +1,32 @@
 # Quantum jump
 
-**Physical domain:** Measurement, instruments, and probabilities
+A fluorescence detector records discrete photons, whereas an unobserved excited atom is often described by a smoothly decaying density operator. These descriptions refer to different information about the same atom and its radiation field. Conditioning on the detection record gives quantum trajectories; averaging over records recovers the master equation.
 
-## Mechanism
-
-Quantum jump belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
-
-Quantum jump connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-A measurement couples a prepared state to recorded outcomes and, when conditioning is retained, to the resulting state change.
-
-## Physical Construction
-
-The state carrier is a prepared state together with the measurement context and any apparatus degrees of freedom retained in the model. The governing operation is a projection-valued measure, POVM, quantum instrument, or detector interaction. Outcome probabilities are positive and normalized; conditional state changes must define completely positive maps. The calculated observables are Outcome probabilities, detector records, ensemble frequencies, and conditional post-measurement states.
-
-## Representative Relation
+For Hamiltonian $H$ and monitored decay operators $L_k$, assume a Markovian reservoir and time-independent detection channels. In a short interval $dt$, the no-count operator $M_0$ and the count operators $M_k$ are
 
 ```math
-p(y)=\operatorname{Tr}(\rho E_y),\quad E_y\ge0,\quad \sum_yE_y=I
+M_0=I-\frac{iH\,dt}{\hbar}-\frac{dt}{2}\sum_kL_k^\dagger L_k,
+\qquad M_k=\sqrt{dt}\,L_k.
 ```
 
-## Physical Meaning
+They satisfy $\sum_{k\geq0}M_k^\dagger M_k=I+O(dt^2)$. The probability of a count in channel $k$ is $dt\,\operatorname{Tr}(L_k^\dagger L_k\rho)$; the state after that count is $L_k\rho L_k^\dagger$ divided by its trace. Even the absence of a count changes the conditioned state, because it supplies information about its excited-state population.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+```math
+\dot\rho=-\frac{i}{\hbar}[H,\rho]+\sum_k
+\left(L_k\rho L_k^\dagger-\frac12\{L_k^\dagger L_k,\rho\}\right).
+```
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+This equation follows by summing the unnormalized states for all outcomes, expanding to first order in $dt$ and subtracting the previous density operator. It is the ensemble prediction, not one particular observed sequence. For a two-level atom with $L=\sqrt{\gamma}|g\rangle\langle e|$, no drive and an initially excited state, the survival probability is $e^{-\gamma t}$ and the first-photon waiting-time density is $\gamma e^{-\gamma t}$.
 
-## Invariance And Realization
+Changing the measurement of the outgoing field can change the conditioned trajectories while leaving the ensemble master equation unchanged. Direct photon counting gives jumps; quadrature detection gives a continuous noisy record. Consequently a trajectory belongs to the atom-field dynamics together with the measurement, not to the reduced Hamiltonian alone.
 
-Quantum jump connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+Finite efficiency separates the decay operator into observed and unobserved channels. A missed photon still affects the atom, but does not produce an observed jump. Feedback adds a further dependence: the detector record controls a subsequent Hamiltonian or operation. A mechanism assembled from decay, observation and feedback must retain these distinctions to predict both the mean population and the distribution of individual records.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+## References For The Physical Derivation
 
-## Discriminating Consequences
+- [M. B. Plenio and P. L. Knight, The Quantum Jump Approach to Dissipative Dynamics in Quantum Optics; conditional and ensemble evolution.](https://arxiv.org/abs/quant-ph/9702007)
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
 
-## Source Equations
+## Relations In The Original Papers
 
-- [arXiv:quant-ph/9606025](https://arxiv.org/abs/quant-ph/9606025)
-- [arXiv:quant-ph9606025](https://arxiv.org/abs/quant-ph9606025)
-- [arXiv:1701.00081](https://arxiv.org/abs/1701.00081)
+[arXiv:quant-ph/9702007, S4.E66](https://arxiv.org/html/quant-ph/9702007#S4.E66). Evolution conditioned on no detected emission is generated by an effective non-Hermitian Hamiltonian. The neighbouring equation gives the no-emission probability as the squared norm; detector assumptions determine the conditional evolution.

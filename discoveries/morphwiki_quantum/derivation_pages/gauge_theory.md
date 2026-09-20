@@ -12,7 +12,7 @@ A local gauge transformation changes the field coordinates used at each point wi
 
 ## Physical Construction
 
-The state carrier is Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector. The governing operation is a covariant derivative and connection whose commutator gives the field strength. Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges. The calculated observables are Field strengths, Wilson loops, conserved charges, scattering amplitudes, and other gauge-invariant quantities.
+The state carrier is Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector. The governing operation is a covariant derivative and connection whose commutator gives the field strength. Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges. The calculated observables are Gauge-invariant contractions of field strengths, traced Wilson loops, physical charges, and scattering amplitudes.
 
 ## Topic Equations
 
@@ -21,7 +21,8 @@ The connection defines local comparison, curvature measures its infinitesimal pa
 ```math
 D_\mu=\partial_\mu+igA_\mu
 [D_\mu,D_\nu]=igF_{\mu\nu}
-W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(ig\oint_\gamma A_\mu dx^\mu\right)
+F_{\mu\nu}'=U F_{\mu\nu}U^{-1}
+W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\!\left(-ig\oint_\gamma A_\mu dx^\mu\right)
 G^a\ket{\Psi_{\mathrm{phys}}}=0
 ```
 
@@ -35,15 +36,15 @@ Renormalization adds a second kind of transformation: changing the scale at whic
 
 ## Consequences Forced By The Relation
 
-Gauge-related potentials give identical gauge-invariant amplitudes, charges, field strengths, and loop observables. A nontrivial Wilson loop can retain global transport information that is absent from any one local gauge representative. The Gauss constraint removes redundant state vectors and fixes the physical charge sector.
+In a non-Abelian theory the field-strength matrix changes by conjugation. Traces of its products and closed Wilson loops are invariant. For electromagnetism the group is Abelian, so the field strength itself is unchanged. A flat connection can still have nontrivial holonomy on a multiply connected domain. The connection and the topology together determine this global information. The Gauss constraint ties matter charge to the divergence of the electric field. Transformations that act nontrivially at a boundary can carry charges and must be distinguished from gauge redundancies that vanish there.
 
 ## Domain Of The Construction
 
-The gauge group, representation, matter content, dimension, and boundary conditions distinguish different physical theories. A gauge-dependent potential becomes observable only through a gauge-invariant relation such as field strength, phase difference, charge, or loop holonomy.
+The gauge group, representation, matter content, dimension, and boundary conditions distinguish different physical theories. A measured interference phase includes the connection along the paths and the phases of the charged states. The traced holonomy is gauge invariant; an untraced non-Abelian holonomy transforms by conjugation at its base point.
 
 ## Invariance And Realization
 
-Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables. Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice. The physical state belongs to the constraint sector rather than to an arbitrary field-coordinate representation.
+Gauge-equivalent potentials give the same physical probabilities, invariant contractions of the field strength, and traced closed-loop observables. Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice. The physical state belongs to the constraint sector rather than to an arbitrary field-coordinate representation.
 
 The gauge potential, local basis, gauge-fixing condition, and coordinate description may change. The gauge group, representation, matter content, dimension, and boundary conditions specify different physical theories. Topological sectors and boundary charges can survive even where the local field strength vanishes.
 
@@ -53,5 +54,9 @@ A closed-loop phase or Wilson observable distinguishes nontrivial holonomy from 
 
 ## Source Equations
 
-- [arXiv:hep-ph/0001312](https://arxiv.org/abs/hep-ph/0001312)
-- [arXiv:hep-ph0001312](https://arxiv.org/abs/hep-ph0001312)
+- [arXiv:hep-th/0106242](https://arxiv.org/abs/hep-th/0106242)
+- [arXiv:hep-th/0010277](https://arxiv.org/abs/hep-th/0010277)
+
+## References For The Physical Derivation
+
+- [G. S. Bali, QCD forces and heavy quark bound states, Appendix B: covariant derivative, curvature and gauge transformations.](https://arxiv.org/abs/hep-ph/0001312)

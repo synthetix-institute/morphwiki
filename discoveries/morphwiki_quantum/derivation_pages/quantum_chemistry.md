@@ -2,6 +2,8 @@
 
 **Physical domain:** Fields, constraints, and scale
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Quantum chemistry belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
@@ -35,8 +37,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
-
-## Source Equations
-
-- [arXiv:1812.03637](https://arxiv.org/abs/1812.03637)
-- [arXiv:2410.08929](https://arxiv.org/abs/2410.08929)

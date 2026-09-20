@@ -21,6 +21,11 @@ shutil.copytree(
                                  'book', 'derivation_pages', 'wiki_cache'))
 PY
 
+python3 -B scripts/revalidate_quantum_evidence_index.py \
+  --index build/tutorial_quantum_source/v2_quantum_evidence_index.json \
+  --out-json build/tutorial_quantum_source/v2_quantum_evidence_index.json \
+  --out-md build/tutorial_quantum_source/v2_quantum_evidence_index.md
+
 python3 -B scripts/build_morphwiki_quantum_tree.py \
   --root build/tutorial_quantum_source
 
@@ -36,6 +41,12 @@ copied input tree, not a newly downloaded corpus. The copy keeps the cached
 page records and JSON summaries, while omitting raw alignment streams,
 matrices and previous rendered files. This is a rendering exercise from
 cached evidence, not a new source-grounding run.
+Revalidation retains rejected candidates in the copied index; it does not
+invent replacements for incomplete or irrelevant source equations.
+The copy also retains `original_source_relations.json`. Those independently
+inspected arXiv displays supply separate original-paper links, without changing
+the corpus-alignment status. [The recovery tutorial](12_original_sources.md)
+explains how to reproduce them from the articles.
 
 With a TeX installation that provides `latexmk` and `pdflatex`:
 

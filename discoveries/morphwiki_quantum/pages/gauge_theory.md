@@ -4,7 +4,7 @@
 Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove.
 
 ## Formal Role
-A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content.
+A local gauge transformation changes the internal basis in which fields are expressed. A covariant derivative compares neighboring fields using a connection, and its commutator gives the field strength. In a non-Abelian theory the field strength transforms by conjugation; its invariant contractions and traced holonomies, rather than its individual matrix components, define gauge-invariant quantities. Gauss constraints impose the local charge balance. Transformations carrying boundary charges must be distinguished from redundancies that act trivially on physical states.
 
 ## Formal Contribution
 - The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.
@@ -17,14 +17,15 @@ A local gauge transformation changes the field coordinates used at each point wi
 - A connection defines covariant comparison between neighboring points.
 - The commutator of covariant derivatives gives the field strength.
 - Constraints remove gauge-equivalent descriptions from the physical state space.
-- Wilson loops, charges, scattering amplitudes, or field strengths provide observables.
+- Traced Wilson loops, invariant contractions of field strengths, and physical amplitudes provide observables.
 
 ## Topic-Native Formal Skeleton
 This is a standard topic-level skeleton used to make the mechanism readable; it is not a raw parser excerpt.
 ```math
 D_\mu=\partial_\mu+igA_\mu
 [D_\mu,D_\nu]=igF_{\mu\nu}
-W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\left(ig\oint_\gamma A_\mu dx^\mu\right)
+F'_{\mu\nu}=UF_{\mu\nu}U^{-1}
+W(\gamma)=\operatorname{Tr}\,\mathcal P\exp\left(-ig\oint_\gamma A_\mu dx^\mu\right)
 G^a|\Psi_{\mathrm{phys}}\rangle=0
 ```
 
@@ -37,7 +38,7 @@ G^a|\Psi_{\mathrm{phys}}\rangle=0
 - **protocol:** parallel transport; closed-loop transport; gauge fixing
 
 ## Representation-Stable Content
-- Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables.
+- Gauge-equivalent potentials give the same physical amplitudes and traced loop observables; non-Abelian field strengths transform covariantly.
 - Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice.
 - The physical state belongs to the constraint sector rather than to an arbitrary field coordinate representation.
 

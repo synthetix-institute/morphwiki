@@ -2,6 +2,8 @@
 
 **Physical domain:** State space, domain, and representation
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Mathematical formulation of quantum mechanics belongs at the first step of the constructor: it fixes the Hilbert space, operator domain, basis, representation, or preparation context before any probability statement is meaningful.
@@ -37,7 +39,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation. The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
-
-## Source Equations
-
-- [arXiv:2411.08445](https://arxiv.org/abs/2411.08445)

@@ -398,6 +398,10 @@ def v2_evidence_index_context(root: Path, evidence_index_json: str = "") -> Dict
 
 
 def v2_page_evidence_summary(slug: str, evidence_index: Mapping[str, Any]) -> Dict[str, Any]:
+    try:
+        from quantum_source_evidence import accepted_source_example
+    except ModuleNotFoundError:
+        from scripts.quantum_source_evidence import accepted_source_example
     if not evidence_index.get("available"):
         return {"available": False, "status": "no_v2_index"}
     page = ((evidence_index.get("pages") or {}).get(slug) or {})
@@ -407,11 +411,13 @@ def v2_page_evidence_summary(slug: str, evidence_index: Mapping[str, Any]) -> Di
     grounded_examples = [
         {**example, "source_grounded": True}
         for example in examples
-        if example.get("topic_relevance") == "local_context_match"
+        if accepted_source_example(example)
     ]
     return {
         "available": bool(grounded_examples),
-        "status": page.get("status"),
+        "status": "v2_source_grounded" if grounded_examples else (
+            "v2_identifier_linked" if examples else page.get("status")
+        ),
         "matched_source_examples": len(grounded_examples),
         "identifier_linked_examples": len(examples),
         "matched_alignment_records": page.get("matched_alignment_records", 0),

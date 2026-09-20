@@ -1,43 +1,36 @@
 # Canonical commutation relation
 
-**Physical domain:** Noncommuting observables
-
-## Mechanism
-
-Canonical commutation relation belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.
-
-Canonical commutation relation is needed because individually valid observables need not admit a common set of definite values. Quantum theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical.
-
-Commutators and correlation constraints determine which observables can share a sharp assignment.
-
-## Physical Construction
-
-The state carrier is One state space or a multipartite state space on which several observables or contexts are defined. The governing operation is Commutators, correlation operators, joint measurements, or hidden-variable assignments under comparison. Uncertainty relations, contextuality constraints, and Bell-type inequalities restrict possible joint assignments. The calculated observables are Joint spectra, uncertainty products, correlation functions, and inequality violations.
-
-## Representative Relation
+Translations in position and changes in momentum act differently when their order is reversed. For a particle on the real line, let $X$ multiply a wave function by $x$ and let $P=-i\hbar\partial_x$. On smooth rapidly decreasing wave functions, direct differentiation gives
 
 ```math
-[A,B]\ne0,\quad \Delta A\,\Delta B\ge\frac12|\langle[A,B]\rangle|
+[X,P]\psi=X(-i\hbar\partial_x\psi)+i\hbar\partial_x(x\psi)
+=i\hbar\psi.
 ```
 
-## Physical Meaning
+The additional term comes from differentiating the coordinate itself. It fixes the relation between the two operations, independently of the Hamiltonian subsequently chosen. With standard deviations defined in the prepared state and finite relevant moments, the Cauchy--Schwarz inequality applied to $(X-\langle X\rangle)\psi$ and $(P-\langle P\rangle)\psi$ then gives
 
-A nonzero commutator obstructs a common eigenbasis for the corresponding sharp observables. Uncertainty, contextuality, and Bell inequalities express related obstructions under different assumptions. The assumptions must be stated because the mathematical conclusion changes when the measurement context or factorization changes.
+```math
+\Delta X\,\Delta P\geq\frac{\hbar}{2}.
+```
 
-Compatibility limits are then carried into concrete realizations. Boundaries, interfaces, and tensor factorizations decide which observables and correlations can actually be prepared and compared.
+This bound concerns the spread of outcomes in identically prepared ensembles. A measurement-disturbance experiment introduces an apparatus and a sequence of measurements and requires its own dynamical model. The preparation bound should not be substituted for that separate calculation.
 
-## Invariance And Realization
+The exponentiated relation makes domain issues more transparent. Let $T(a)=\exp(-iaP/\hbar)$ translate a wave function by length $a$, and $B(b)=\exp(ibX/\hbar)$ shift its momentum by $b$. Acting on a wave function in either order gives
 
-Canonical commutation relation identifies when otherwise legal quantum questions cannot be made jointly sharp. The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment. The page belongs to the compatibility layer because it limits which spectra can be read together.
+```math
+[T(a)\psi](x)=\psi(x-a),\qquad
+T(a)B(b)=e^{-iab/\hbar}B(b)T(a).
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The obstruction may be written as a commutator, inequality, correlation bound, uncertainty relation, or contextuality test. Different experiments realize the same compatibility limit with different observables and detectors. The language of paradox can change while the formal obstruction remains.
+The phase is proportional to the phase-space area enclosed by the two moves. It is common to the state for a single path, but can become a relative phase when the two operation sequences form coherent alternatives. This is the physical content of the central extension represented by the Heisenberg group.
 
-## Discriminating Consequences
+No finite-dimensional matrices obey $[X,P]=i\hbar I$ exactly: taking a trace makes the left side zero and the right side nonzero. A truncated oscillator basis or a finite numerical grid must therefore depart from the relation somewhere. Such departures can be approximation effects rather than additional interactions. An exact construction records the representation and tests the states on which the commutator identity is being used.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A common eigenbasis or joint probability model exists only when the relevant compatibility conditions are satisfied. Commutators, uncertainty bounds, Bell inequalities, and contextuality tests are different forms of the same joint-observable obstruction.
+## References For The Physical Derivation
 
-## Source Equations
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)
 
-- [arXiv:1005.0846](https://arxiv.org/abs/1005.0846)
-- [arXiv:hep-ph/0007138](https://arxiv.org/abs/hep-ph/0007138)
-- [arXiv:hep-ph0007138](https://arxiv.org/abs/hep-ph0007138)
+
+## Relations In The Original Papers
+
+[arXiv:1508.06951, S1.E21](https://arxiv.org/html/1508.06951#S1.E21). Position and momentum obey the canonical commutation relations on a common invariant domain. The surrounding derivation specifies Schwartz functions; the finite-matrix obstruction is calculated separately in the chapter.

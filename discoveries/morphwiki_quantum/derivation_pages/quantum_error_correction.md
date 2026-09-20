@@ -1,44 +1,37 @@
 # Quantum error correction
 
-**Physical domain:** Control sequences and quantum channels
+A quantum memory must distinguish errors without measuring the unknown logical amplitudes it is intended to preserve. The state is encoded into a subspace in which different correctable errors leave distinguishable information in auxiliary degrees of freedom, while their probabilities reveal no logical-state information.
 
-## Mechanism
-
-Quantum error correction belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.
-
-Quantum error correction protects a subspace against a family of noise operations without learning the encoded amplitudes. It is a mechanism design problem involving encoding, error syndromes, conditional correction, and a final logical observable.
-
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state.
-
-## Physical Construction
-
-The state carrier is an input state, register, channel state, error syndrome, key, or controlled experimental configuration. The governing operation is an ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps. Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective. The calculated observables are Output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+Let $P$ project onto the code subspace and let $E_a$ be the error operators in a specified noise model. Exact correction of their linear span is possible when there is a matrix $c$ such that
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
+P E_a^\dagger E_b P=c_{ab}P.
 ```
 
-## Physical Meaning
+The right side is proportional to the identity within the code. Thus overlaps of the error-affected states depend on the error labels, but not on which logical superposition was stored. Diagonalizing $c$ organizes the error spaces so that a measurement can identify the required correction without resolving the encoded state.
 
-The error-correction conditions require different errors either to act identically on the code space or to move it into distinguishable syndrome sectors. A recovery map then restores the logical state while preserving superpositions.
+For a simple illustration, encode $\alpha|0\rangle+\beta|1\rangle$ as $\alpha|000\rangle+\beta|111\rangle$ and consider at most one bit flip. The commuting observables $Z_1Z_2$ and $Z_2Z_3$ give four distinct syndromes:
 
-A repetition-style code can diagnose one class of flips by comparing parity checks. The syndrome identifies the error location without measuring the unknown logical amplitudes themselves.
+```math
+\begin{array}{c|rrrr}
+\text{error}&I&X_1&X_2&X_3\\\hline
+(Z_1Z_2,Z_2Z_3)&(+,+)&(-,+)&(-,-)&(+,-)
+\end{array}
+```
 
-Fault-tolerant protocols extend this logic by constraining how errors propagate through an entire sequence of gates and measurements.
+Both basis codewords have the same syndrome before an error. The syndrome measurement therefore preserves their coherence. Applying the indicated bit flip restores the encoded state for any $\alpha$ and $\beta$. Measuring the individual $Z_j$ instead would reveal which codeword was present and destroy an unknown superposition.
 
-## Invariance And Realization
+The noise specification matters. A phase flip acts within this code as a logical error and is not identified by those two syndromes. Protecting arbitrary single-qubit errors requires additional structure, such as a code that corrects both bit and phase errors. Increasing the number of spins without changing the encoded subspace and syndrome observables does not automatically supply that protection.
 
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. Quantum error correction turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+Error correction connects interaction, preparation, measurement and conditional dynamics in one mechanism. The environment determines the error operators; encoding determines the carrier subspace; syndrome extraction determines what information becomes observable; and the conditional operation restores the logical state. The algebraic correction condition is an exact test of this assembly. Fault tolerance adds another problem: the physical operations used to extract a syndrome can themselves propagate errors, so those operations must be analyzed as part of the noise model.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+## References For The Physical Derivation
 
-## Discriminating Consequences
+- [D. Gottesman, Stabilizer Codes and Quantum Error Correction; error correction conditions and syndrome measurements.](https://arxiv.org/abs/quant-ph/9705052)
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
 
-## Source Equations
+## Relations In The Original Papers
 
-- [arXiv:quant-ph/0302006](https://arxiv.org/abs/quant-ph/0302006)
-- [arXiv:quant-ph0302006](https://arxiv.org/abs/quant-ph0302006)
+[arXiv:quant-ph/9705052, Ch2.E10](https://arxiv.org/html/quant-ph/9705052#Ch2.E10). Correctable errors have overlaps independent of the logical state inside the code space. A specified code and error set; the three-qubit example corrects single bit flips, not arbitrary single-qubit errors.
+
+[arXiv:quant-ph/0302006, S3.E22](https://arxiv.org/html/quant-ph/0302006#S3.E22). A detected error can be reversed on the code when its norm does not distinguish logical codewords. Detected-emission feedback with a specified error record; it is narrower than correction of an arbitrary unobserved error set.

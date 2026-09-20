@@ -99,9 +99,10 @@ ROLE_PROMOTION_PRINCIPLE = (
 
 PREDICTIVE_CLOSURE_PRINCIPLE = (
     "At a chosen resolution, a physical theory is closed when its declared state fixes future "
-    "observable probabilities and its allowed transformations compose consistently. If either "
-    "condition fails, the smallest missing field, state coordinate, operator, closure condition, "
-    "observable, or protocol must enter the theory."
+    "observable probabilities for a specified subsequent experiment. Equivalent descriptions "
+    "must give the same predictions under composition. A failure identifies a dependence "
+    "that must be represented or controlled, such as an environmental correlation, a boundary "
+    "condition or an omitted interaction."
 )
 
 PREDICTIVE_CLOSURE_LATEX = (

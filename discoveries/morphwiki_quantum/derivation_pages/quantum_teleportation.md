@@ -1,44 +1,34 @@
 # Quantum teleportation
 
-**Physical domain:** Control sequences and quantum channels
+An unknown qubit can be transferred using a shared entangled pair and two classical bits. The entangled resource alone does not transmit a usable signal: a joint measurement at the sender and a correction conditioned on its outcome are essential parts of the mechanism.
 
-## Mechanism
-
-Quantum teleportation belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.
-
-Quantum teleportation specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-Circuits, controls, and sensing sequences are ordered compositions of physical transformations and measurements.
-
-## Physical Construction
-
-The state carrier is an input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. The governing operation is an ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps. Each step must belong to the claimed map class and the composition must preserve normalization and positivity. The calculated observables are Output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+Let the input be $|\psi\rangle=a|0\rangle+b|1\rangle$ and let the shared pair be $|\Phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt2$, with the second member held by the receiver. Define the Bell states $|B_{mn}\rangle=(I\otimes X^nZ^m)|\Phi^+\rangle$, where $m,n\in\{0,1\}$. Expansion in this joint basis gives
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_aK_a\rho K_a^\dagger
+|\psi\rangle_1|\Phi^+\rangle_{23}
+=\frac12\sum_{m,n=0}^{1}|B_{mn}\rangle_{12}\,X^nZ^m|\psi\rangle_3.
 ```
 
-## Physical Meaning
+Each Bell outcome has probability one quarter, independent of the input amplitudes. Once the sender communicates $m,n$, the receiver applies $Z^mX^n$ and obtains the original state. The measurement determines a known transformation of the state, rather than its unknown amplitudes. This is why transmitting two classical bits suffices when the entangled pair has already been supplied.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+Without the outcome record the receiver averages the four possible transformed states. For any input density operator $\rho$, that average is
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+```math
+\frac14\sum_{m,n}X^nZ^m\rho Z^mX^n=\frac I2.
+```
 
-## Invariance And Realization
+The receiver's local statistics then contain no dependence on the input. The same calculation establishes that the protocol cannot be used for faster-than-light signalling. The original input has participated in a destructive joint measurement, so the transfer does not create two independently available copies.
 
-Quantum teleportation turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+A nonideal entangled resource changes the resulting channel. For a Bell-diagonal resource, its Bell weights become probabilities of Pauli errors in the corrected output. Resource quality, Bell-measurement fidelity and the conditional correction can therefore be distinguished experimentally; all three can reduce the final state fidelity, but they enter the calculation at different steps.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+Teleportation illustrates how a mechanism can be transferred across physical carriers. Photonic polarization, internal atomic levels and superconducting circuits may realize the same qubit relation, provided their entangling resource, joint measurement and correction implement the required maps. Changing only the name of the carrier leaves those requirements unresolved; demonstrating the maps establishes the actual correspondence.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+- [D. Gottesman, Stabilizer Codes and Quantum Error Correction; entanglement, measurements and teleportation.](https://arxiv.org/abs/quant-ph/9705052)
+- [C. Weedbrook and colleagues, Gaussian Quantum Information; continuous-variable realizations and finite-resource effects.](https://arxiv.org/abs/1110.3234)
 
-## Source Equations
 
-- [arXiv:quant-ph/9909031](https://arxiv.org/abs/quant-ph/9909031)
-- [arXiv:quant-ph9909031](https://arxiv.org/abs/quant-ph9909031)
-- [arXiv:quant-ph/9906075](https://arxiv.org/abs/quant-ph/9906075)
-- [arXiv:quant-ph9906075](https://arxiv.org/abs/quant-ph9906075)
+## Relations In The Original Papers
+
+[arXiv:1110.3234v1, S4.E101](https://arxiv.org/html/1110.3234v1#S4.E101). Teleportation of coherent states with a finite two-mode squeezed resource has fidelity below one. A continuous-variable comparison to the exact ideal qubit protocol; it is not the derivation of the qubit Bell-state identity.

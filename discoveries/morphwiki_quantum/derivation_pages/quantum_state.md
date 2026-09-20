@@ -1,46 +1,35 @@
 # Quantum state
 
-**Physical domain:** Quantum states and subsystem structure
-
-## Mechanism
-
-Quantum state supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
-
-A quantum state is the minimal object that assigns probabilities to every admissible measurement in a fixed context. It is therefore defined by its predictive role, not by a preferred wave-function notation.
-
-The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state.
-
-## Physical Construction
-
-The state carrier is the mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. The governing operation is Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed. Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. The calculated observables are Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
-
-## Representative Relation
+Preparing a spin along one axis fixes probabilities for measurements along every other axis. The information needed for those predictions can be collected in a density operator $\rho$. For a two-level system let $\boldsymbol\sigma=(\sigma_x,\sigma_y,\sigma_z)$ be the Pauli matrices and $\mathbf r$ the vector of their expectation values. The three components of $\mathbf r$ determine the state:
 
 ```math
-\ket{\psi}\in\mathcal H,\quad \rho\ge0,\quad \operatorname{Tr}\rho=1,\quad p_i=\operatorname{Tr}(\rho P_i)
+\rho=\frac12(I+\mathbf r\cdot\boldsymbol\sigma),\qquad |\mathbf r|\leq1.
 ```
 
-## Physical Meaning
+The bound follows from positivity: the two eigenvalues are $(1\pm|\mathbf r|)/2$. A unit vector describes a pure preparation. An interior point describes a mixed state, which may arise from uncontrolled preparation or from ignoring a correlated partner. Different ensembles can produce the same density operator. A later experiment acting only on this spin cannot distinguish those ensembles unless additional information about the preparation is accessible.
 
-A pure state is represented by a ray rather than by a unique vector, because an overall phase changes no probability. More general preparations are density operators. In either form, the state must be normalized and must yield non-negative probabilities.
+A Stern--Gerlach measurement along a unit vector $\mathbf n$ has projectors $E_\pm=(I\pm\mathbf n\cdot\boldsymbol\sigma)/2$. The probability of each outcome is consequently
 
-Two laboratories may prepare the same polarization statistics by different procedures. If every allowed measurement has the same probability distribution, quantum theory assigns the same density operator to both preparations.
+```math
+p_\pm=\operatorname{Tr}(\rho E_\pm)=\frac12(1\pm\mathbf r\cdot\mathbf n).
+```
 
-The wave-function and density-matrix pages develop the two principal representations of this predictive object.
+The same state gives certainty along its preparation axis and an equal distribution along a perpendicular axis. The uncertainty therefore belongs to the relation between preparation and measurement. It is not evidence that a pure state is an unspecified classical direction. Measurements along three independent axes reconstruct the Bloch vector, while measurements along only one axis leave a disk of compatible states.
 
-## Invariance And Realization
+For a composite system the density operator also contains correlations. The singlet and an equal mixture of oppositely aligned spins both give $\rho_A=I/2$ for either individual spin, but they predict different joint measurements. A partial trace retains every expectation of an operator acting on subsystem $A$ alone. It need not retain the information required for subsequent interacting evolution, because the interaction can convert a joint correlation into a local expectation value.
 
-The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. Quantum state carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
+```math
+\langle O_A\rangle=\operatorname{Tr}_{AB}[\rho_{AB}(O_A\otimes I_B)]
+=\operatorname{Tr}_A(\rho_A O_A),\qquad \rho_A=\operatorname{Tr}_B\rho_{AB}.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
+Thus the state required by a mechanism is fixed by the available measurements and subsequent interactions together. Local spin probabilities require $\rho_A$ at the present time; a prediction after coupling to $B$ generally requires the joint state or an independently specified preparation of $B$. This distinction is the physical reason to keep the carrier, interaction and preparation connected in the description.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; states, operators and symmetry.](https://arxiv.org/abs/1508.06951)
 
-## Source Equations
 
-- [arXiv:quant-ph/0302165](https://arxiv.org/abs/quant-ph/0302165)
-- [arXiv:quant-ph0302165](https://arxiv.org/abs/quant-ph0302165)
-- [arXiv:gr-qc/0008032](https://arxiv.org/abs/gr-qc/0008032)
-- [arXiv:gr-qc0008032](https://arxiv.org/abs/gr-qc0008032)
+## Relations In The Original Papers
+
+[arXiv:1508.06951, S3.Ex131](https://arxiv.org/html/1508.06951#S3.Ex131). The spectral probability of an observable is the trace of the density operator with its spectral projector. Density operators and projection-valued measurements; the Bloch-state example is derived in the chapter.

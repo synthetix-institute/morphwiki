@@ -2,7 +2,7 @@
 
 - Readiness: `usable`
 - Topics in index: `146`
-- Source-grounded topics: `123`
+- Source-grounded topics: `6`
 
 ## Checks
 
@@ -10,6 +10,7 @@
 - `source_first_scan_completed`: **passed**
 - `minimum_grounded_topics`: **passed**
 - `core_relations_are_grounded`: **passed**
+- `no_unsupported_grounding_status`: **passed**
 
 ## Scope
-A grounded page contains a topic-bearing source equation joined through its exact equation-card identifier to a V2 mechanism row. Core pages also require a relation-specific term in the local derivation.
+A screened source relation has a complete expression, exact card-to-row alignment, local context and relation-specific terms. This is not a semantic verification of the complete chapter or its derivations.

@@ -2,6 +2,8 @@
 
 **Physical domain:** Measurement, instruments, and probabilities
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Electron microscope belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
@@ -35,9 +37,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
-
-## Source Equations
-
-- [arXiv:1308.1043](https://arxiv.org/abs/1308.1043)
-- [arXiv:2411.18045](https://arxiv.org/abs/2411.18045)
-- [arXiv:2104.05371](https://arxiv.org/abs/2104.05371)

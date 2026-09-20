@@ -2,6 +2,8 @@
 
 **Physical domain:** Quantum states and subsystem structure
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Quantum superposition supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
@@ -35,7 +37,3 @@ The local title, representation, and physical realization may change while the c
 ## Discriminating Consequences
 
 The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
-
-## Source Equations
-
-- [arXiv:2506.00647](https://arxiv.org/abs/2506.00647)

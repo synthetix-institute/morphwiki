@@ -1,41 +1,32 @@
 # Quantum key distribution
 
-**Physical domain:** Control sequences and quantum channels
+Quantum key distribution creates correlated classical data whose secrecy is inferred from a specified quantum communication model. Its physical basis is that information about nonorthogonal signal states cannot be acquired perfectly while leaving those states unchanged. The task is key generation, not the transmission of an encrypted message or the authentication of an unknown partner.
 
-## Mechanism
-
-Quantum key distribution belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.
-
-Quantum key distribution specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-Circuits, controls, and sensing sequences are ordered compositions of physical transformations and measurements.
-
-## Physical Construction
-
-The state carrier is an input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. The governing operation is an ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps. Each step must belong to the claimed map class and the composition must preserve normalization and positivity. The calculated observables are Output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+In ideal BB84 the sender chooses between the eigenstates of $Z$ and $X$. Write $|\pm\rangle=(|0\rangle\pm|1\rangle)/\sqrt2$. Suppose an eavesdropper's unitary interaction preserves both $|0\rangle$ and $|1\rangle$ while recording them in probe states $|e_0\rangle$ and $|e_1\rangle$. Linearity then requires
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_aK_a\rho K_a^\dagger
+|+\rangle|e\rangle\longmapsto
+\frac{|0\rangle|e_0\rangle+|1\rangle|e_1\rangle}{\sqrt2}.
 ```
 
-## Physical Meaning
+The signal remains a pure $|+\rangle$ only when the two probe states coincide up to the phase compatible with the signal. Distinguishable probe records suppress its off-diagonal coherence. A check in the complementary basis can therefore detect the disturbance associated with that information gain.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+After transmission, the legitimate parties disclose their basis choices, retain the compatible outcomes and estimate an error rate from a random sample. Classical error correction reconciles their strings and privacy amplification reduces the information that may remain with an adversary. For the ideal asymptotic single-photon BB84 setting with the relevant bit and phase error rates both bounded by $Q$, the one-way secret fraction per sifted bit has the familiar form
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+```math
+r\geq1-2h_2(Q),\qquad
+h_2(Q)=-Q\log_2Q-(1-Q)\log_2(1-Q).
+```
 
-## Invariance And Realization
+This expression is tied to its security model. Finite data require statistical confidence terms; multiphoton emission, detector imperfections and information disclosed during reconciliation require explicit treatment. An observed low bit-error rate alone does not establish secrecy for an arbitrary device. Loss and source statistics can carry information that a two-level idealization omits.
 
-Quantum key distribution turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+The classical channel must be authenticated. Otherwise an adversary can impersonate each party in a separate quantum exchange. The quantum mechanism supplies a relation between information and disturbance under stated source and measurement assumptions; authentication supplies the identity of the parties using that relation. Keeping these contributions distinct is necessary to transfer a security argument from an ideal qubit model to an optical implementation.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+## References For The Physical Derivation
 
-## Discriminating Consequences
+- [V. Scarani and colleagues, The Security of Practical Quantum Key Distribution; ideal protocols, device assumptions and security bounds.](https://arxiv.org/abs/0802.4155)
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
 
-## Source Equations
+## Relations In The Original Papers
 
-- [arXiv:2002.05937](https://arxiv.org/abs/2002.05937)
+[arXiv:0802.4155, S4.EGx43](https://arxiv.org/html/0802.4155#S4.EGx43). For the specified entanglement-based protocol, the asymptotic key rate subtracts phase-error information and error-correction leakage. Ideal single-photon assumptions and asymptotic rates; setting leakage to binary entropy gives the bound discussed in the chapter.

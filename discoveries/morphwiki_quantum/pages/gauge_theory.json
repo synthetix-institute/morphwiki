@@ -1009,7 +1009,7 @@
   "morphwiki": {
     "takeaway": "Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove.",
     "object_view": "In physics, a gauge theory is a type of field theory in which the Lagrangian, and hence the dynamics of the system itself, does not change under local transformations according to certain smooth families of operations. Formally, the Lagrangian is invariant under these transformations.",
-    "mechanism_view": "A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content.",
+    "mechanism_view": "A local gauge transformation changes the internal basis in which fields are expressed. A covariant derivative compares neighboring fields using a connection, and its commutator gives the field strength. In a non-Abelian theory the field strength transforms by conjugation; its invariant contractions and traced holonomies, rather than its individual matrix components, define gauge-invariant quantities. Gauss constraints impose the local charge balance. Transformations carrying boundary charges must be distinguished from redundancies that act trivially on physical states.",
     "what_this_adds": [
       "The page reorganizes the topic by the quantum construction that relates preparation, state space, operator action, spectral decomposition, and probability.",
       "It separates physical carriers such as particles, waves, fields, qubits, and detectors from the mathematical roles they play in Hilbert space.",
@@ -1017,7 +1017,7 @@
       "It makes cross-formulation analogy testable: another formulation should preserve state space, admissible transformations, readout basis, and compatibility relations."
     ],
     "what_survives": [
-      "Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables.",
+      "Gauge-equivalent potentials give the same physical amplitudes and traced loop observables; non-Abelian field strengths transform covariantly.",
       "Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice.",
       "The physical state belongs to the constraint sector rather than to an arbitrary field coordinate representation."
     ],
@@ -1061,9 +1061,9 @@
       "A connection defines covariant comparison between neighboring points.",
       "The commutator of covariant derivatives gives the field strength.",
       "Constraints remove gauge-equivalent descriptions from the physical state space.",
-      "Wilson loops, charges, scattering amplitudes, or field strengths provide observables."
+      "Traced Wilson loops, invariant contractions of field strengths, and physical amplitudes provide observables."
     ],
-    "mathematical_skeleton": "D_\\mu=\\partial_\\mu+igA_\\mu\n[D_\\mu,D_\\nu]=igF_{\\mu\\nu}\nW(\\gamma)=\\operatorname{Tr}\\,\\mathcal P\\exp\\left(ig\\oint_\\gamma A_\\mu dx^\\mu\\right)\nG^a|\\Psi_{\\mathrm{phys}}\\rangle=0",
+    "mathematical_skeleton": "D_\\mu=\\partial_\\mu+igA_\\mu\n[D_\\mu,D_\\nu]=igF_{\\mu\\nu}\nF'_{\\mu\\nu}=UF_{\\mu\\nu}U^{-1}\nW(\\gamma)=\\operatorname{Tr}\\,\\mathcal P\\exp\\left(-ig\\oint_\\gamma A_\\mu dx^\\mu\\right)\nG^a|\\Psi_{\\mathrm{phys}}\\rangle=0",
     "grammar": {
       "state": [
         "gauge-equivalence class",
@@ -1100,6 +1100,6 @@
     "mathematical_skeleton_is_source_backed": false,
     "mathematical_skeleton_is_topic_native": true,
     "public_language_rewritten": true,
-    "public_language_rewritten_at": "2026-09-02T18:52:31.471799+00:00"
+    "public_language_rewritten_at": "2026-09-20T21:23:06.720948+00:00"
   }
 }

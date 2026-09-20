@@ -1,43 +1,40 @@
 # Quantum statistical mechanics
 
-**Physical domain:** Fields, constraints, and scale
-
-## Mechanism
-
-Quantum statistical mechanics belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
-
-Quantum statistical mechanics places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
-
-Field and many-body theories enlarge the state space to variable occupation, local fields, gauge sectors, and collective modes.
-
-## Physical Construction
-
-The state carrier is a Fock space, field configuration space, gauge sector, many-body Hilbert space, or effective low-energy sector. The governing operation is Field, creation, annihilation, charge, Hamiltonian, constraint, or renormalization operators. Statistics, locality, gauge symmetry, domain conditions, and renormalization prescriptions determine the physical sector. The calculated observables are Correlation functions, particle spectra, charges, scattering amplitudes, effective couplings, or geometric observables.
-
-## Representative Relation
+Thermal equilibrium assigns probabilities to quantum energy states while respecting the quantities that can be exchanged with the surroundings. For a system that exchanges energy with a large reservoir at temperature $T$ but has fixed particle number, the canonical state is determined by the Hamiltonian $H$:
 
 ```math
-\mathcal F_\pm(\mathcal H),\quad a_k^\dagger,a_k,\quad N_k=a_k^\dagger a_k,\quad \langle\Phi(x_1)\cdots\Phi(x_n)\rangle
+\rho_\beta=\frac{e^{-\beta H}}{Z},\qquad
+Z=\operatorname{Tr}e^{-\beta H},\qquad \beta=(k_BT)^{-1}.
 ```
 
-## Physical Meaning
+The trace sums over the actual many-particle state space, including exchange statistics and boundary conditions. It is not an independent classical distribution imposed on particle positions. Derivatives of the same partition function connect average energy and fluctuations:
 
-Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
+```math
+\langle H\rangle=-\partial_\beta\log Z,\qquad
+\operatorname{Var}H=\partial_\beta^2\log Z,\qquad
+C=\frac{\operatorname{Var}H}{k_BT^2}.
+```
 
-Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
+The last equality holds for a temperature-independent Hamiltonian in the canonical ensemble. It explains why equilibrium energy fluctuations measure the heat capacity: both are responses of the same probability weights to temperature. A different ensemble constrains different fluctuations and must be analyzed separately.
 
-## Invariance And Realization
+For independent modes of energy $\epsilon$ exchanging particles with a reservoir at chemical potential $\mu$, set $z=\exp[-\beta(\epsilon-\mu)]$. A fermionic mode contributes $1+z$ to the grand partition function because only occupations zero and one are allowed. A bosonic mode contributes the geometric sum $(1-z)^{-1}$ when $z<1$. Differentiation gives
 
-Quantum statistical mechanics extends the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+```math
+\overline n_F=\frac{1}{e^{\beta(\epsilon-\mu)}+1},\qquad
+\overline n_B=\frac{1}{e^{\beta(\epsilon-\mu)}-1}.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
+The sign difference follows from the allowed state occupations. It produces Fermi filling and Bose enhancement before a specific interaction is added. In the dilute limit both expressions approach the Maxwell--Boltzmann weight. Interactions generally prevent factorization into independent mode contributions, although an effective quasiparticle description may recover it approximately.
 
-## Discriminating Consequences
+For a single harmonic mode, the same sum gives $Z=[2\sinh(\beta\hbar\omega/2)]^{-1}$ and mean energy $(\hbar\omega/2)\coth(\beta\hbar\omega/2)$. The mean approaches the zero-point energy as temperature tends to zero; quadrature fluctuations persist while the energy variance vanishes. At high temperature the mean energy approaches $k_BT$. This links the oscillator algebra to thermodynamic response through the choice of preparation.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+Equilibrium statistics do not specify the rate of approach to equilibrium. Relaxation requires dynamics, reservoir coupling and sometimes additional conserved quantities. A Gibbs state can describe stationary observables while giving no information about a transport coefficient or memory time. Constructing those predictions requires extending the equilibrium description by the corresponding physical evolution.
 
-## Source Equations
+## References For The Physical Derivation
 
-- [arXiv:cond-mat/0007210](https://arxiv.org/abs/cond-mat/0007210)
-- [arXiv:cond-mat0007210](https://arxiv.org/abs/cond-mat0007210)
-- [arXiv:0803.4358](https://arxiv.org/abs/0803.4358)
+- [S. Giorgini, L. P. Pitaevskii and S. Stringari, Theory of ultracold atomic Fermi gases; ideal and interacting quantum gases.](https://arxiv.org/abs/0706.3360)
+
+
+## Relations In The Original Papers
+
+[arXiv:1110.3234v1, S2.E27](https://arxiv.org/html/1110.3234v1#S2.E27). A thermal harmonic mode has a geometric distribution of number-state populations. The single-mode bosonic example, not the interacting Fermi-gas discussion.

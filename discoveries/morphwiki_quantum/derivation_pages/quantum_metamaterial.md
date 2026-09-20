@@ -2,6 +2,8 @@
 
 **Physical domain:** Boundaries and operator domains
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Quantum metamaterial belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.

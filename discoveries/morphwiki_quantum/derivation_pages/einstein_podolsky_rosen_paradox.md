@@ -2,6 +2,8 @@
 
 **Physical domain:** Measurement, instruments, and probabilities
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Einstein–Podolsky–Rosen paradox belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.

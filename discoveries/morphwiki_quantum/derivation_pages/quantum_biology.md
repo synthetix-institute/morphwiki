@@ -2,6 +2,8 @@
 
 **Physical domain:** Quantum states and subsystem structure
 
+*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+
 ## Mechanism
 
 Quantum biology supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.

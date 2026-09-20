@@ -1,42 +1,34 @@
 # Quantum metrology
 
-**Physical domain:** Control sequences and quantum channels
+A sensor estimates a physical parameter from how that parameter changes a prepared state. Sensitivity depends on the interaction that encodes the parameter, on the fluctuations of its generator in the preparation, and on the measurement used to distinguish nearby states. Entanglement is useful only when it improves this complete estimation problem.
 
-## Mechanism
-
-Quantum metrology belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and observables.
-
-Quantum metrology specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
-
-## Physical Construction
-
-The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The governing operation is an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated observables are Counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-
-## Representative Relation
+Let a dimensionless parameter $\theta$ be encoded by $|\psi_\theta\rangle=e^{-i\theta G}|\psi_0\rangle$, with Hermitian dimensionless generator $G$. For this pure-state unitary family, the quantum Fisher information is
 
 ```math
-\rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
+F_Q=4(\langle G^2\rangle-\langle G\rangle^2),\qquad
+\operatorname{Var}\widehat\theta\geq\frac{1}{\nu F_Q}.
 ```
 
-## Physical Meaning
+Here $\nu$ counts independent repetitions and the bound applies to locally unbiased estimation, with attainability requiring a suitable measurement and statistical regime. Large generator variance makes neighboring parameter-dependent states more distinguishable. A state that is an eigenstate of $G$ acquires only an overall phase and has no sensitivity to $\theta$ in this task.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+For $N$ spins exposed to the same phase, choose $G=\tfrac12\sum_j Z_j$. Independent spins prepared along $x$ have $F_Q=N$. The coherent superposition $(|0\rangle^{\otimes N}+|1\rangle^{\otimes N})/\sqrt2$ has $F_Q=N^2$, because the two components acquire phases separated by $N\theta$.
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+```math
+\Delta\theta_{\rm product}\geq\frac{1}{\sqrt{\nu N}},\qquad
+\Delta\theta_{\rm GHZ}\geq\frac{1}{N\sqrt\nu}.
+```
 
-## Invariance And Realization
+These expressions compare the same single-spin coupling with a counted number of uses. They are not universal bounds for arbitrary many-body Hamiltonians or uncounted preparation resources. The enhanced oscillation also creates phase ambiguities over a broad prior interval, so an estimation scheme must establish which fringe contains the parameter.
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. Quantum metrology turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+Independent dephasing exposes the cost of the collective coherence. If a single-spin off-diagonal element decays as $e^{-\gamma t}$, the coherence between the two GHZ branches decays as $e^{-N\gamma t}$. For phase encoding over a fixed duration this gives $F_Q=N^2e^{-2N\gamma t}$. Increasing $N$ can then reduce rather than improve the usable information. Optimizing frequency estimation further requires counting the interrogation time and available repetitions.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+A proposed sensing mechanism must therefore specify what is being estimated and which resources are fixed. The generator identifies the useful preparation, while environmental coupling and measurement determine how much of its distinguishability is available. This makes sensitivity a calculable property of the assembled experiment rather than a consequence of entanglement alone.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+- [V. Giovannetti, S. Lloyd and L. Maccone, Quantum metrology; generator fluctuations and counted resources.](https://arxiv.org/abs/quant-ph/0509179)
 
-## Source Equations
 
-- [arXiv:2207.14746](https://arxiv.org/abs/2207.14746)
-- [arXiv:2202.02482](https://arxiv.org/abs/2202.02482)
+## Relations In The Original Papers
+
+[arXiv:quant-ph/0509179, S0.EGx4](https://arxiv.org/html/quant-ph/0509179#S0.EGx4). An entangled probe gives an uncertainty bound scaling inversely with the number of uses of the parameter generator. Unitary encoding, counted resources and the estimator assumptions of the source; noise changes the attainable scaling.

@@ -11,6 +11,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Mapping
 
+try:
+    from quantum_source_evidence import accepted_source_example, canonical_arxiv_id
+    from quantum_original_sources import load_original_sources
+except ModuleNotFoundError:
+    from scripts.quantum_source_evidence import accepted_source_example, canonical_arxiv_id
+    from scripts.quantum_original_sources import load_original_sources
+
 
 def load_json(path: Path) -> Dict[str, Any]:
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -53,6 +60,23 @@ def retention(current: int, baseline: int) -> float:
     return float(current) / float(baseline)
 
 
+def topic_equations_in_tex(tex: str) -> Dict[str, bool]:
+    """Inspect the deliverable source, not equation fences in a different export."""
+    result = {}
+    for section in re.split(r"\\section\{", tex)[1:]:
+        label = re.search(r"\\label\{topic:([^}]+)\}", section)
+        if label:
+            result[label[1]] = bool(re.search(
+                r"\\begin\{(?:centeredalign|equation\*?|align\*?|gather\*?|displaymath)\}|\\\[", section
+            ))
+    return result
+
+
+def noncanonical_arxiv_links(tex: str) -> List[str]:
+    identifiers = re.findall(r"https://arxiv\.org/abs/([^}\s]+)", tex)
+    return sorted({identifier for identifier in identifiers if canonical_arxiv_id(identifier) != identifier})
+
+
 def audit(args: argparse.Namespace) -> Dict[str, Any]:
     root = Path(args.root)
     tree = load_json(root / "quantum_mechanism_tree.json")
@@ -69,6 +93,17 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         slug for slug, branch_id in expected_pages.items() if branch_id != "annotations"
     ]
     tex = tex_path.read_text(encoding="utf-8", errors="replace")
+    originals = load_original_sources(root)
+    missing_original_links = [r["url"] for r in originals["records"] if r["url"] not in tex]
+    rendered_equations = topic_equations_in_tex(tex)
+    malformed_links = noncanonical_arxiv_links(tex)
+    aliases = {
+        row["slug"]: row.get("canonical_slug")
+        for branch in tree.get("branches", {}).values()
+        for row in branch.get("pages", []) if row.get("is_alias")
+    }
+    missing_tex_equations = [slug for slug in equation_required_slugs
+        if not rendered_equations.get(latex_label(aliases.get(slug) or slug), False)]
     expected_labels = {latex_label(slug): slug for slug in expected_slugs}
     expected_label_set = set(expected_labels)
     map_labels = labels_with_prefix(tex, "page")
@@ -124,8 +159,12 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         for row in (branch.get("pages") or [])
     ]
     grounded_topics = sum(
-        bool((row.get("v2_evidence") or {}).get("available")) for row in tree_rows
+        any(accepted_source_example(e) for e in (row.get("v2_evidence") or {}).get("source_examples", []))
+        for row in tree_rows
     )
+    unsupported_grounding = [row["slug"] for row in tree_rows
+        if (row.get("v2_evidence") or {}).get("available")
+        and not any(accepted_source_example(e) for e in row["v2_evidence"].get("source_examples", []))]
     identifier_linked_topics = sum(
         (row.get("v2_evidence") or {}).get("status") == "v2_identifier_linked"
         for row in tree_rows
@@ -166,6 +205,20 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "topic_specific_depth": topic_specific_count
         >= int(contract.get("minimum_topic_specific_count", 0)),
         "all_physics_topics_have_equations": not missing_equations,
+        "all_physics_topics_have_equations_in_tex": not missing_tex_equations,
+        "canonical_arxiv_links": not malformed_links,
+        "original_display_links_preserved": not missing_original_links,
+        "original_source_coverage": (
+            originals["topic_count"] >= int(contract.get("minimum_original_display_topics", 0))
+            and len(originals["records"]) >= int(contract.get("minimum_original_display_records", 0))
+        ),
+        "mechanisms_before_roles_and_closure": (
+            tex.find(r"\chapter{Quantum Mechanisms And Their Predictions}") >= 0
+            and tex.find(r"\chapter{Quantum Mechanisms And Their Predictions}")
+            < tex.find(r"\chapter{The Physical Identity Of A Quantum Mechanism}")
+            < tex.find(r"\chapter*{When External Conditions Become Quantum Physics}")
+        ),
+        "no_unsupported_grounding_status": not unsupported_grounding,
         "topic_words": total_words >= int(contract["minimum_topic_words"]),
         "topic_word_retention": word_retention
         >= float(contract.get("minimum_topic_word_retention", 0.0)),
@@ -218,8 +271,11 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
             "pdf_pages": pdf_pages,
             "pdf_page_retention": page_retention,
             "source_grounded_topics": grounded_topics,
+            "original_display_topics": originals["topic_count"],
+            "original_display_records": len(originals["records"]),
             "identifier_linked_topics": identifier_linked_topics,
             "source_equation_pages": source_equation_pages,
+            "tex_topics_with_displayed_equations": sum(rendered_equations.values()),
         },
         "checks": checks,
         "missing_map_labels": missing_map_labels,
@@ -230,6 +286,11 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "manifest_missing_topics": manifest_missing_slugs,
         "manifest_extra_topics": manifest_extra_slugs,
         "missing_equation_blocks": missing_equations,
+        "missing_tex_equations": missing_tex_equations,
+        "noncanonical_arxiv_links": malformed_links,
+        "missing_original_links": missing_original_links,
+        "unsupported_grounding_status": unsupported_grounding,
+        "scientific_review_status": "incomplete: topic-specific treatments and physical-role overviews remain distinct; build checks are not physics verification",
         "wikipedia_scaffold_pages": wikipedia_scaffold_pages,
         "unverified_arxiv_topic_pages": unverified_arxiv_topic_pages,
         "claim_scope": "Build-integrity audit. It requires equation-bearing content for physical topics while keeping historical and interpretive entries free of invented equations; it does not validate the physics of individual pages.",
@@ -246,15 +307,19 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         f"- Branch-level topic maps: `{branch_level_count}`",
         f"- Topic-word retention: `{word_retention:.3f}`",
         f"- Equation blocks: `{equation_blocks}`",
+        f"- TeX topics with displayed equations: `{sum(rendered_equations.values())}`",
         f"- PDF pages: `{pdf_pages}`",
         f"- PDF-page retention: `{page_retention:.3f}`",
         f"- Source-grounded topics: `{grounded_topics}`",
+        f"- Original-paper topics (separate from corpus alignment): `{originals['topic_count']}`",
+        f"- Original-paper display records: `{len(originals['records'])}`",
         f"- Identifier-linked candidates: `{identifier_linked_topics}`",
         "",
         "## Checks",
         "",
     ]
     lines.extend(f"- `{key}`: **{'passed' if value else 'failed'}**" for key, value in checks.items())
+    lines.extend(["", "## Scope", report["claim_scope"], "", report["scientific_review_status"]])
     Path(args.out_md).write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps({"json": args.out_json, "markdown": args.out_md, "readiness": readiness}, indent=2))
     if readiness != "usable":

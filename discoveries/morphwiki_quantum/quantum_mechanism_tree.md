@@ -4,7 +4,7 @@ Quantum theories differ in what they treat as physical. Geometry may be fixed ba
 
 ## Predictive Closure
 
-At a chosen resolution, a physical theory is closed when its declared state fixes future observable probabilities and its allowed transformations compose consistently. If either condition fails, the smallest missing field, state coordinate, operator, closure condition, observable, or protocol must enter the theory.
+At a chosen resolution, a physical theory is closed when its declared state fixes future observable probabilities for a specified subsequent experiment. Equivalent descriptions must give the same predictions under composition. A failure identifies a dependence that must be represented or controlled, such as an environmental correlation, a boundary condition or an omitted interaction.
 
 ```math
 q(h_1)=q(h_2)\Longrightarrow p(y,t\mid h_1)=p(y,t\mid h_2),\qquad T_{\gamma_1}=T_{\gamma_2}\ \text{for physically equivalent paths}

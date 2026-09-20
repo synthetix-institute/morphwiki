@@ -6,23 +6,24 @@
 
 Fermion is an exchange-antisymmetry construction: exchanging two identical fermions reverses the many-body amplitude, so coincident one-particle states are removed from the admissible state space.
 
-A many-particle Hilbert space does not specify how identical particles are exchanged. Choosing the antisymmetric representation removes coincidence states and changes the spectrum, pressure, correlations, and admissible collective phases before a particular interaction Hamiltonian is chosen.
+The tensor product of one-particle spaces contains both symmetric and antisymmetric states. Identical fermions occupy its antisymmetric sector: exchanging the complete position and spin coordinates changes the sign of the amplitude. This restriction determines which many-particle occupations are allowed for a specified Hamiltonian.
 
-The defining object is the antisymmetric many-body sector, not a particle name. Its nodal set contains every coincidence configuration, and the canonical anticommutation relations preserve that restriction while particles are added or removed. Filling distinct one-particle modes then produces an exchange hole, a Fermi surface and degeneracy pressure even in the absence of a repulsive potential.
+Let $z=(x,\sigma)$ denote the complete one-particle coordinate, including spin. Antisymmetry makes the amplitude vanish when two $z$ coordinates coincide. Equal positions with opposite spins do not satisfy that condition: two electrons may occupy one spatial orbital in a spin singlet. The anticommutation relations impose the same exclusion when particles are added to individual spin-orbitals.
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is the antisymmetric many-particle sector of the one-particle Hilbert space, including spin. The governing operation is the many-body Hamiltonian and fermionic creation and annihilation operators. Exchange antisymmetry restricts states and mode occupations; the Hamiltonian specifies interactions and evolution. The calculated observables are mode occupations, spin-resolved correlations, energies and thermodynamic response.
 
 ## Topic Equations
 
-The exchange sign fixes the admissible state space; exterior Fock space and anticommutation extend it to variable particle number.
+Each index i labels a complete spin-orbital. The number operator has eigenvalues zero and one; its expectation can take any value between them. Exterior Fock space extends the antisymmetric state construction to variable particle number.
 
 ```math
-\Psi(\ldots,x_i,\ldots,x_j,\ldots)=-\Psi(\ldots,x_j,\ldots,x_i,\ldots),\qquad \Psi(\ldots,x,\ldots,x,\ldots)=0
+z_i=(x_i,\sigma_i),\qquad \Psi(\ldots,z_i,\ldots,z_j,\ldots)=-\Psi(\ldots,z_j,\ldots,z_i,\ldots)
+\Psi(\ldots,z,\ldots,z,\ldots)=0
 \mathcal F_{-}(\mathcal H)=\bigoplus_{n=0}^{\infty}\wedge^n\mathcal H
 \{a_i,a_j^\dagger\}=\delta_{ij},\qquad \{a_i,a_j\}=0
-n_i=a_i^\dagger a_i\in\{0,1\}
+n_i=a_i^\dagger a_i,\qquad n_i^2=n_i,\qquad\operatorname{spec}(n_i)=\{0,1\}
 ```
 
 ## Physical Meaning
@@ -35,7 +36,7 @@ Fermi--Dirac statistics adds thermal occupation to this exchange-constrained sta
 
 ## Consequences Forced By The Relation
 
-Antisymmetry forces the wave function to vanish when two identical fermions occupy the same one-particle state. The resulting exchange hole is present before a dynamical interaction is specified. At finite density, distinct momentum states fill up to the Fermi surface. The associated kinetic energy and degeneracy pressure arise from state counting rather than from pairwise repulsion. Pairing changes the exchange sector: a bound state of two fermions has even fermion parity and can acquire bosonic collective behaviour, as in superconductors and superfluid helium-3.
+Antisymmetry forces the wave function to vanish when two identical fermions occupy the same one-particle state. The resulting exchange hole is present before a dynamical interaction is specified. For a homogeneous ideal gas at zero temperature, filling distinct momentum spin-orbitals up to the Fermi energy produces degeneracy pressure without pairwise repulsion. Pairing preserves antisymmetry of the constituent fermions. A pair has even fermion parity and may support a bosonic collective order parameter, as in superconductors and superfluid helium-3; it need not be a tightly bound elementary boson.
 
 ## Transformations To Other Physical Realizations
 
@@ -47,7 +48,7 @@ The relativistic spin--statistics theorem additionally requires locality, positi
 
 ## Invariance And Realization
 
-Exchange antisymmetry, exterior-product state space, canonical anticommutation and zero-or-one mode occupation are equivalent forms of the fermionic restriction. The coincidence node and exchange hole survive changes between first-quantized wave functions, Slater determinants and second-quantized fields. Fermion parity remains meaningful when particle number changes, including in paired and superconducting states.
+Exchange antisymmetry, exterior-product state space, canonical anticommutation and zero-or-one mode occupation are equivalent forms of the fermionic restriction. The node at equal complete coordinates and the same-spin exchange hole survive changes between first-quantized wave functions and second-quantized fields. Antisymmetric correlated states can require a superposition of Slater determinants. Fermion parity remains meaningful when particle number changes, including in paired and superconducting states.
 
 Mass, charge, dispersion, dimensionality, interaction law and gauge representation belong to the physical realization and are not fixed by exchange statistics. A change of carrier can turn local fermion operators into nonlocal strings, as in the Jordan--Wigner transformation. Two-dimensional braid statistics and composite-particle structure alter the exchange construction beyond the elementary boson--fermion dichotomy.
 
@@ -58,8 +59,9 @@ The defining relation is antisymmetry or canonical anticommutation and the resul
 ## Source Equations
 
 - [arXiv:cond-mat/0005069](https://arxiv.org/abs/cond-mat/0005069)
-- [arXiv:cond-mat0005069](https://arxiv.org/abs/cond-mat0005069)
 - [arXiv:quant-ph/0305150](https://arxiv.org/abs/quant-ph/0305150)
-- [arXiv:quant-ph0305150](https://arxiv.org/abs/quant-ph0305150)
 - [arXiv:hep-ph/0007343](https://arxiv.org/abs/hep-ph/0007343)
-- [arXiv:hep-ph0007343](https://arxiv.org/abs/hep-ph0007343)
+
+## References For The Physical Derivation
+
+- [S. Giorgini, L. P. Pitaevskii and S. Stringari, Theory of ultracold atomic Fermi gases, sections II and V.2.2: occupation and spin-resolved correlations.](https://arxiv.org/abs/0706.3360)

@@ -262,10 +262,10 @@ TOPIC_PUBLIC_OVERRIDES = {
     },
     "fermion": {
         "takeaway": (
-            "Fermionic exchange constrains the global many-body state: antisymmetry removes coincidence states and thereby produces exclusion, exchange holes, Fermi surfaces, and degeneracy pressure before a repulsive interaction is introduced."
+            "Fermionic exchange makes the many-body wave function antisymmetric in the complete one-particle coordinates, including spin. It forbids double occupation of one mode and produces a same-spin exchange hole; opposite-spin particles may occupy the same spatial orbital."
         ),
         "mechanism_view": (
-            "The fermion construction is an exchange constraint on state space, not a particle label. The wave function changes sign under exchange and vanishes when identical one-particle states coincide. Exterior Fock space and canonical anticommutation preserve that nodal restriction when particle number changes. At finite density, distinct modes fill to a Fermi surface and generate degeneracy pressure without pairwise repulsion. Pairing can move the state into an even-parity collective sector, while mappings to spins or hard-core bosons preserve selected spectra only by changing locality or correlation observables."
+            "Exchanging identical fermions reverses the sign of the wave function when both spatial and spin coordinates are exchanged. Exterior Fock space and canonical anticommutation express this restriction when particle number varies. In a homogeneous ideal gas at zero temperature, occupied momentum modes fill a Fermi sphere and produce degeneracy pressure without repulsive interactions. Pairing creates collective even-parity degrees of freedom while the constituent particles retain fermionic antisymmetry. Mappings to spins or hard-core bosons require the corresponding transformation of operators and correlation functions."
         ),
         "conversion_form": [
             "The many-particle state lives in an antisymmetric sector.",
@@ -283,10 +283,10 @@ TOPIC_PUBLIC_OVERRIDES = {
             "protocol": ["mode filling", "fermionic quantization"],
         },
         "mathematical_skeleton": (
-            "\\Psi(\\ldots,x_i,\\ldots,x_j,\\ldots)=-\\Psi(\\ldots,x_j,\\ldots,x_i,\\ldots)\n"
+            "z_i=(\\mathbf x_i,\\sigma_i),\\quad \\Psi(\\ldots,z_i,\\ldots,z_j,\\ldots)=-\\Psi(\\ldots,z_j,\\ldots,z_i,\\ldots)\n"
             "\\mathcal F_{-}(\\mathcal H)=\\bigoplus_{n=0}^{\\infty}\\wedge^n\\mathcal H\n"
             "\\{a_i,a_j^{\\dagger}\\}=\\delta_{ij},\\quad \\{a_i,a_j\\}=0\n"
-            "n_i=a_i^{\\dagger}a_i\\in\\{0,1\\}"
+            "n_i=a_i^{\\dagger}a_i,\\quad n_i^2=n_i,\\quad \\operatorname{spec}(n_i)=\\{0,1\\}"
         ),
     },
     "boson": {
@@ -492,14 +492,14 @@ TOPIC_PUBLIC_OVERRIDES = {
             "Gauge theory defines how internal states are compared at different spacetime points: a connection relates neighboring frames, and curvature records the path dependence that no single gauge choice can remove."
         ),
         "mechanism_view": (
-            "A local gauge transformation changes the field coordinates used at each point without changing the physical state. Ordinary derivatives compare fields in different local frames and therefore cease to transform covariantly. The gauge connection repairs that comparison. Its commutator gives the field strength, while Wilson loops measure the accumulated transport around a closed path. Gauss constraints select physical states and charges. The connection is representation dependent; curvature, loop observables, and gauge-invariant amplitudes carry the physical content."
+            "A local gauge transformation changes the internal basis in which fields are expressed. A covariant derivative compares neighboring fields using a connection, and its commutator gives the field strength. In a non-Abelian theory the field strength transforms by conjugation; its invariant contractions and traced holonomies, rather than its individual matrix components, define gauge-invariant quantities. Gauss constraints impose the local charge balance. Transformations carrying boundary charges must be distinguished from redundancies that act trivially on physical states."
         ),
         "conversion_form": [
             "A local symmetry group acts on matter or field variables.",
             "A connection defines covariant comparison between neighboring points.",
             "The commutator of covariant derivatives gives the field strength.",
             "Constraints remove gauge-equivalent descriptions from the physical state space.",
-            "Wilson loops, charges, scattering amplitudes, or field strengths provide observables.",
+            "Traced Wilson loops, invariant contractions of field strengths, and physical amplitudes provide observables.",
         ],
         "grammar": {
             "state": ["gauge-equivalence class", "matter field", "physical constraint sector"],
@@ -512,11 +512,12 @@ TOPIC_PUBLIC_OVERRIDES = {
         "mathematical_skeleton": (
             "D_\\mu=\\partial_\\mu+igA_\\mu\n"
             "[D_\\mu,D_\\nu]=igF_{\\mu\\nu}\n"
-            "W(\\gamma)=\\operatorname{Tr}\\,\\mathcal P\\exp\\left(ig\\oint_\\gamma A_\\mu dx^\\mu\\right)\n"
+            "F'_{\\mu\\nu}=UF_{\\mu\\nu}U^{-1}\n"
+            "W(\\gamma)=\\operatorname{Tr}\\,\\mathcal P\\exp\\left(-ig\\oint_\\gamma A_\\mu dx^\\mu\\right)\n"
             "G^a|\\Psi_{\\mathrm{phys}}\\rangle=0"
         ),
         "what_survives": [
-            "Gauge-equivalent potentials give the same gauge-invariant amplitudes, field strengths, charges, and loop observables.",
+            "Gauge-equivalent potentials give the same physical amplitudes and traced loop observables; non-Abelian field strengths transform covariantly.",
             "Curvature records the infinitesimal holonomy of the connection and cannot be removed by a local gauge choice.",
             "The physical state belongs to the constraint sector rather than to an arbitrary field coordinate representation.",
         ],

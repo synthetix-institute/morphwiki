@@ -5,7 +5,7 @@
 - Pages indexed: `146`
 - Pages with legacy witnesses: `146`
 - Pages with identifier-linked V2 candidates: `141`
-- Pages with topic-relevant V2 source evidence: `123`
+- Pages with topic-relevant V2 source evidence: `6`
 - Pages with V2 row ids: `141`
 
 ## Artifacts
@@ -50,60 +50,36 @@
 - [Q,Q^+] =1
 - psi_R &=& k_1
 
-### String theory (`string_theory`)
-- V2 source examples: `96`; row ids: `64`
-- W=h^I(\\phi)V_I
-- \\chi^9=v_3t^3
-- \\chi^9=v_3t^3
-
-### Quantum teleportation (`quantum_teleportation`)
-- V2 source examples: `91`; row ids: `64`
-- sum_{j=0}^{d-1}\n{a_j
-- sum_{j=0}^{d-1}\n{a_j
-- hat{p}_4&=&(e^{-s_1}
-
-### Wave function (`wave_function`)
-- V2 source examples: `91`; row ids: `64`
-- \n U_D(\\lambda)\\psi_{\\pi/2}(r,p) = e^{-\\lambda/2}\\psi_{\\pi/2}(e^{-\\lambda}r,p).\n\
-- \n U_D(\\lambda)\\psi_{\\pi/2}(r,p) = e^{-\\lambda/2}\\psi_{\\pi/2}(e^{-\\lambda}r,p).\n\
-- \n U_D(\\lambda)\\psi_{\\pi/2}(r,p) = e^{-\\lambda/2}\\psi_{\\pi/2}(e^{-\\lambda}r,p).\n\
-
-### Bell's theorem (`bell_s_theorem`)
-- V2 source examples: `90`; row ids: `64`
-- \n\\hat{F}(\\vec{a}_1,\\vec{a}_2,\\vec{a}_3,z)=(\\til{F}(\\vec{a}_1,z),\\til{F}(\\vec{a}_2,z),\\til{F}(\\vec{a}_3,z)),\n\
-- \\sum_{i = 1}^{3}{(p_{i} - 1)^2 = 3}
-- \\sum_{i = 1}^{3}{(p_{i} - 1)^2 = 3}
-
-### Dirac equation (`dirac_equation`)
-- V2 source examples: `90`; row ids: `64`
-- E+m_0 c^2=(m+m_0)c^2\\cong2m_0 c^2
-- E+m_0 c^2=(m+m_0)c^2\\cong2m_0 c^2
-- rho,z)= & &
-
-### Uncertainty principle (`uncertainty_principle`)
-- V2 source examples: `89`; row ids: `64`
-- \nP_{i,j,\\pi} = \\frac{d(\\pi)}{N} |\\pi_{ij}><\\pi_{ij}|.\n
-- \nP_{i,j,\\pi} = \\frac{d(\\pi)}{N} |\\pi_{ij}><\\pi_{ij}|.\n
-- \nP_{i,j,\\pi} = \\frac{d(\\pi)}{N} |\\pi_{ij}><\\pi_{ij}|.\n
-
 ### Commutator (`commutator`)
 - V2 source examples: `86`; row ids: `64`
 - \\Lambda_S^{H.Q.} \\circ V_S^{total} = V_S^{H.Q}
-- \\Lambda_S^{H.Q.} \\circ V_S^{total} = V_S^{H.Q}
 - I_{A}=4D\\langle\\hat{J}\\rangle+\\sqrt{2D}\\frac{dW(t)}{dt}
+- hspace{-4mm}\nE^{(4)} & = & E^{(4)}_{11} +E^{(4)}_{22} - 2 E^{(4)}_{12}
 
-### Fock space (`fock_space`)
-- V2 source examples: `86`; row ids: `64`
-- b_{n,(i,a)}, \\, n < 0
-- {\\mathcal{F}}\n= \\exp { L^2 ( {\\mathR}^3\\!, \\,{d^3}\\underline{x} ) }
-- {\\mathcal{F}}\n= \\exp { L^2 ( {\\mathR}^3\\!, \\,{d^3}\\underline{x} ) }
+### Gauge theory (`gauge_theory`)
+- V2 source examples: `83`; row ids: `64`
+- nu}&=&
+- \n\\{Q, b_a\\} = T_a - f_{ae}^g c^eb_g \\equiv {\\cal T}_a \\, .\n\
+- A=A_{t}dt+A_{z}dz+A_{\\bar{z}}d\\bar{z}
 
-### Hilbert space (`hilbert_space`)
-- V2 source examples: `86`; row ids: `64`
-- \\mathcal{H}_p (G)=H^1 (G_r, H^1(G_l,l^p(G))
-- \\mathcal{H}_p (G)=H^1 (G_r, H^1(G_l,l^p(G))
-- \\mathcal{H}_p (G)=H^1 (G_r, H^1(G_l,l^p(G))
+### Quantum entanglement (`quantum_entanglement`)
+- V2 source examples: `81`; row ids: `64`
+- varphi} = -s e^{i
+- 0<|c_{n+1}|<|c_n|<1
+- \\hat{\\omega }(E(Q)A)=\\hat{\\omega }(QA)
+
+### Quantum decoherence (`quantum_decoherence`)
+- V2 source examples: `72`; row ids: `64`
+- {\\rm det}[\\rho(t)]=\\rho_{11}(t)\\rho_{00}(t)-\\rho_{10}(t)\\rho_{01}(t)
+- s=|\\vec{r}_p-\\vec{r}_p{\\mbox{\\hspace{0.1mm}}\'}|/a_B
+- rho_N\' &=&
+
+### Renormalization (`renormalization`)
+- V2 source examples: `56`; row ids: `64`
+- \\alpha_{UV}<0
+- \\beta_{0} = 11 - 2\\,n_{\\mbox{\\scriptsize f}}\\,/\\,3,\\,\n\\beta_{1}=102 - 38 \\,n_{\\mbox{\\scriptsize f}}\\,/\\,3
+- x_i \\to t^{-1} x_i
 
 
 ## Scope
-Equation evidence is selected from topic-bearing local source context and then joined to an exact V2 source-card alignment. Legacy identifiers are retained only as retrieval leads.
+Source-grounded denotes a screened recovered relation, not validation of a chapter. Topic-only mentions and damaged equations remain retrieval candidates.

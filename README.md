@@ -128,16 +128,34 @@ to calculation, then shows how the repository builds and checks the source
 index. It explains why observable incompatibility, state correlations and
 measurement back-action play different roles.
 
-A local equation context must pass V2.1 alignment and topic-relevance checks
-before it is published as a source pointer. Candidate identifiers remain
-distinct from confirmed witnesses. A successful symbolic calculation does not
-fill a missing citation.
+A recovered equation must have an exact source-card link, a complete relation,
+and local context specific to that relation before it is published as a source
+pointer. A topic name in nearby prose is insufficient. References selected for
+an explanatory derivation are listed separately from these recovered equations.
+A successful symbolic calculation does not fill a missing citation.
+
+The book opens with **Quantum Mechanisms And Their Predictions**, developing
+an interaction, the correlation it generates, and its measured consequence
+before introducing the nested description. Closure enters when the calculation
+shows what information a reduced description has omitted.
+
+The current book preserves all 146 topic entries: 62 have topic-specific
+physical treatments, 67 are physical-role overviews, and 17 concern history or
+interpretation. Six topics retain screened corpus-aligned equation examples.
+Original-paper recovery adds 16 located displays for 15 further topics,
+including the error-correction condition, canonical commutators, amplifier
+noise constraints and quantum metrology. These displays were selected and
+inspected in the original arXiv articles; they are not relabelled as automatic
+corpus alignment. [Recover and inspect the sources](docs/tutorial/12_original_sources.md).
+The build checks content preservation and traceability; they do not certify
+every chapter's physics. See the [correction notes](docs/QUANTUM_BOOK_CORRECTIONS.md)
+for the scientific corrections and remaining review work.
 
 ## Read, rebuild, or extend
 
 | Goal | Start here |
 | --- | --- |
-| Read the book | [Quantum Theory Through Physical Roles](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
+| Read the book | [Quantum Theory: Mechanisms And Predictions](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
 | Learn the code through physics | [Guided tutorial](docs/tutorial/index.md) |
 | Inspect how a topic becomes a chapter | [One mechanism page](docs/tutorial/03_mechanism_page.md) |
 | Rebuild in a separate output tree | [Safe book build](docs/tutorial/05_build_and_audit.md) |
@@ -150,6 +168,18 @@ runner tries `latexmk/pdflatex`, `pdflatex`, `xelatex`, then `lualatex`.
 Full source-grounding regeneration also needs the V2.1 source cards and
 alignments. The tutorial separates that larger job from local examples.
 
+The tests include exact symbolic checks of the worked mechanisms and checks
+that source records survive the build:
+
+```bash
+python3 -m pip install -r requirements-dev.txt
+python3 -B -m pytest -q
+```
+
+The construction-companion test also uses the standalone FieldBridge repository.
+It is found automatically at `../fieldbridge`; set `FIELDBRIDGE_ROOT` when it
+is elsewhere. Original-source downloads are opt-in and are not run by the tests.
+
 ## Where the work happens
 
 | Source | Responsibility |
@@ -159,6 +189,8 @@ alignments. The tutorial separates that larger job from local examples.
 | [build_morphwiki_v2_quantum_evidence_index.py](scripts/build_morphwiki_v2_quantum_evidence_index.py) | Join local source equations to topic evidence |
 | [analyze_quantum_constructor_rewiring.py](scripts/analyze_quantum_constructor_rewiring.py) | Annotate authored hypotheses with topic availability and overlap |
 | [build_morphwiki_quantum_book.py](scripts/build_morphwiki_quantum_book.py) | Render explanatory chapters and LaTeX |
+| [quantum_physical_derivations.py](scripts/quantum_physical_derivations.py) | Eighteen worked explanations with their equations and references |
+| [recover_quantum_original_sources.py](scripts/recover_quantum_original_sources.py) | Recover selected original arXiv displays with locations and hashes |
 | [build_construction_companion.py](scripts/build_construction_companion.py) | Reproduce three FieldBridge calculations and the optional inverse interaction design |
 | [build_morphwiki_field_from_pdfs.py](scripts/build_morphwiki_field_from_pdfs.py) | Build a source-indexed wiki from another collection |
 

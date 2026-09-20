@@ -152,6 +152,10 @@ def test_evidence_audit_requires_tree_identity_and_core_relations(tmp_path: Path
         "quantum_entanglement", "renormalization",
     )
     example = {
+        "paper_ids": ["2401.00001"],
+        "equation_preview": "A=B",
+        "local_context": "The relation is stated here.",
+        "relation_terms_matched": ["relation"],
         "topic_relevance": "local_context_match",
         "relation_relevance": "relation_context_match",
         "row_ids": [1],

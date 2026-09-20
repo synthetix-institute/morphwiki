@@ -53,5 +53,4 @@ Local measurements reconstruct a correlation witness or Bell parameter that prod
 
 ## Source Equations
 
-- [arXiv:quant-ph/0001091](https://arxiv.org/abs/quant-ph/0001091)
-- [arXiv:quant-ph0001091](https://arxiv.org/abs/quant-ph0001091)
+- [arXiv:math-ph/0211065](https://arxiv.org/abs/math-ph/0211065)
