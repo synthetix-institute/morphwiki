@@ -155,7 +155,7 @@ for the scientific corrections and remaining review work.
 
 | Goal | Start here |
 | --- | --- |
-| Read the book | [Quantum Theory: Mechanisms And Predictions](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
+| Read the book | [Quantum Theory as a Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
 | Learn the code through physics | [Guided tutorial](docs/tutorial/index.md) |
 | Inspect how a topic becomes a chapter | [One mechanism page](docs/tutorial/03_mechanism_page.md) |
 | Rebuild in a separate output tree | [Safe book build](docs/tutorial/05_build_and_audit.md) |

@@ -75,7 +75,7 @@ def test_default_book_uses_physical_constructor_and_hides_internal_audits(monkey
     tex = render_book(ROOT, max_pages_per_branch=0)
 
     assert "Quantum Theory" in tex
-    assert "Mechanisms And Predictions" in tex
+    assert r"{\Huge\bfseries As A Mechanism Tree\par}" in tex
     assert "When External Conditions Become Quantum Physics" in tex
     assert "The Physical Identity Of A Quantum Mechanism" in tex
     assert "When External Structure Becomes Dynamical" in tex
