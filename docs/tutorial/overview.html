@@ -1,0 +1,425 @@
+<title>Observable Closure and Source Provenance</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F7F9; --surface:#FFFFFF; --surface-2:#EFF1F5;
+    --ink:#151A21; --muted:#5B6472; --faint:#8A93A3;
+    --rule:#DDE1E7; --rule-strong:#C4CBD4;
+    --accent:#3A3F8F; --accent-soft:#E7E8F6;
+    --verify:#1B6E5F; --verify-soft:#E2F1ED;
+    --warn:#9C4A2F; --warn-soft:#F7E9E3;
+    --measure:68ch;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#10141A; --surface:#171C24; --surface-2:#1E242E;
+      --ink:#E6E9EE; --muted:#9AA3B1; --faint:#6F7886;
+      --rule:#2A313B; --rule-strong:#3A434F;
+      --accent:#8C90E8; --accent-soft:#232842;
+      --verify:#4FBFA8; --verify-soft:#16302C;
+      --warn:#D98A6A; --warn-soft:#33211A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#10141A; --surface:#171C24; --surface-2:#1E242E;
+    --ink:#E6E9EE; --muted:#9AA3B1; --faint:#6F7886;
+    --rule:#2A313B; --rule-strong:#3A434F;
+    --accent:#8C90E8; --accent-soft:#232842;
+    --verify:#4FBFA8; --verify-soft:#16302C;
+    --warn:#D98A6A; --warn-soft:#33211A;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"Spectral",Georgia,"Times New Roman",serif;
+    font-size:17px; line-height:1.68; margin:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:var(--measure); margin:0 auto; padding-inline:20px; padding-block:0; }
+
+  h1,h2,h3,h4{ text-wrap:balance; line-height:1.22; margin:0; font-weight:600; }
+  h1{ font-size:clamp(1.9rem,5.4vw,2.7rem); font-weight:700; letter-spacing:-.015em; }
+  h2{ font-size:clamp(1.4rem,3.8vw,1.75rem); letter-spacing:-.01em; }
+  h3{ font-size:1.14rem; margin-top:.4em; }
+  p{ margin:0 0 1.05em; }
+  a{ color:var(--accent); text-underline-offset:2px; text-decoration-thickness:.06em; }
+
+  code,kbd,.mono{ font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; }
+  p code, li code, td code{
+    font-size:.86em; background:var(--surface-2); padding:.1em .34em;
+    border-radius:3px; border:1px solid var(--rule);
+  }
+  pre{
+    font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+    font-size:.82rem; line-height:1.6; background:var(--surface);
+    border:1px solid var(--rule); border-left:2px solid var(--rule-strong);
+    padding:14px 16px; overflow-x:auto; margin:0 0 1.2em; border-radius:2px;
+  }
+  pre.mermaid{ border:1px solid var(--rule); background:var(--surface); text-align:center; padding:18px 10px; }
+
+  header.masthead{
+    border-bottom:1px solid var(--rule); background:var(--surface);
+    padding-block:clamp(34px,7vw,60px) clamp(26px,5vw,40px);
+  }
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--faint); margin:0 0 14px;
+  }
+  .standfirst{ font-size:1.08rem; color:var(--muted); margin:16px 0 0; max-width:60ch; }
+  .meta-row{
+    display:flex; flex-wrap:wrap; gap:8px; margin-top:24px;
+    font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.04em;
+  }
+  .chip{
+    border:1px solid var(--rule-strong); padding:4px 9px; border-radius:2px;
+    color:var(--muted); background:var(--paper);
+  }
+  .chip.ok{ color:var(--verify); border-color:var(--verify); background:var(--verify-soft); }
+
+  section.sec{ padding-block:clamp(36px,6.5vw,58px); border-bottom:1px solid var(--rule); }
+  .sec-no{
+    font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 10px; font-weight:600;
+  }
+  .lede{
+    color:var(--muted); border-left:2px solid var(--accent);
+    padding:2px 0 2px 16px; margin:0 0 28px; max-width:62ch;
+  }
+
+  .check{
+    border:1px solid var(--rule); border-left:3px solid var(--verify);
+    background:var(--verify-soft); padding:14px 16px; margin:0 0 1.3em; border-radius:2px;
+  }
+  .check .label{
+    font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--verify); font-weight:600; display:block; margin-bottom:7px;
+  }
+  .check p:last-child{ margin-bottom:0; }
+
+  .caution{
+    border:1px solid var(--rule); border-left:3px solid var(--warn);
+    background:var(--warn-soft); padding:14px 16px; margin:0 0 1.3em; border-radius:2px;
+  }
+  .caution .label{
+    font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--warn); font-weight:600; display:block; margin-bottom:7px;
+  }
+  .caution p:last-child{ margin-bottom:0; }
+
+  .scroll{ overflow-x:auto; margin:0 0 1.4em; border:1px solid var(--rule); border-radius:2px; }
+  table{ border-collapse:collapse; width:100%; font-size:.88rem; background:var(--surface); }
+  th,td{ text-align:left; padding:9px 13px; border-bottom:1px solid var(--rule); vertical-align:top; }
+  th{
+    font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--muted); font-weight:600;
+    background:var(--surface-2); white-space:nowrap;
+  }
+  tr:last-child td{ border-bottom:none; }
+  td.num{ font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap; }
+
+  .chapters{ list-style:none; padding:0; margin:0 0 1.4em; }
+  .chapters li{
+    display:flex; gap:14px; padding:11px 0; border-bottom:1px solid var(--rule); align-items:baseline;
+  }
+  .chapters li:last-child{ border-bottom:none; }
+  .chapters .n{
+    font-family:"IBM Plex Mono",monospace; font-size:.74rem; color:var(--faint);
+    min-width:2.2em; font-variant-numeric:tabular-nums;
+  }
+  .chapters .t{ font-weight:600; }
+  .chapters .d{ color:var(--muted); font-size:.92rem; display:block; font-weight:400; }
+
+  figcaption{
+    font-size:.82rem; color:var(--muted); margin-top:9px;
+    border-left:2px solid var(--rule-strong); padding-inline-start:10px;
+  }
+  figure{ margin:0 0 1.6em; }
+
+  .footnote{ font-size:.86rem; color:var(--muted); }
+  footer{ padding-block:38px 54px; color:var(--muted); font-size:.88rem; }
+
+  ul.plain{ padding-left:1.15em; }
+  ul.plain li{ margin-bottom:.55em; }
+
+  @media (prefers-reduced-motion:no-preference){ html{ scroll-behavior:smooth; } }
+  a:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">MorphWiki · docs/tutorial</p>
+    <h1>Observable Closure and Source Provenance</h1>
+    <p class="standfirst">Thirteen chapters organized around one calculation: the minimal closed set of expectation values sufficient to predict a measured spin observable, and the arXiv displays from which each governing equation was recovered.</p>
+    <div class="meta-row">
+      <span class="chip ok">16/16 arXiv displays verified</span>
+      <span class="chip ok">closed-form claims recomputed</span>
+      <span class="chip">7 source papers</span>
+      <span class="chip">13 chapters</span>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">1 · Statement of the problem</p>
+    <h2>Two coupled spins, one measured observable</h2>
+    <p>Take two spin-½ degrees of freedom with Hamiltonian <span class="mono">H = g&#8202;Z⊗Z</span>, and measure the transverse magnetization of the first spin, <span class="mono">X⊗I</span>.</p>
+    <p>Its expectation at preparation does not determine its later motion. One Heisenberg derivative introduces a two-spin correlation that was neither measured nor deliberately prepared. The distinction between the quantity measured and the quantities required to predict it is the subject of the tutorial.</p>
+
+    <figure>
+      <pre class="mermaid">
+flowchart LR
+    O0["Measured<br/>X ⊗ I"] -->|"i[H, ·]"| O1["Correlation<br/>−2g Y ⊗ Z"]
+    O1 -->|"i[H, ·]"| O0
+    O0 --> P["Prediction<br/>x(t)"]
+    O1 --> P
+      </pre>
+      <figcaption>The operator orbit closes after one step. Two expectation values, not a full density matrix, suffice for this signal.</figcaption>
+    </figure>
+
+    <div class="check">
+      <span class="label">Recomputed</span>
+      <p><span class="mono">i[gZ⊗Z, X⊗I] = −2g&#8202;Y⊗Z</span> and <span class="mono">i[gZ⊗Z, Y⊗Z] = 2g&#8202;X⊗I</span>. The span {X⊗I, Y⊗Z} is closed and two-dimensional within a four-dimensional Hilbert space, as the companion reports.</p>
+    </div>
+
+    <h3>Dependency structure of a physical description</h3>
+    <p>MorphWiki records a description as an ordered set of choices that cannot be specified independently. A Hamiltonian acts on a particular space; a partial trace requires a declared factorization; an observable must act on the resulting system. A change at an earlier level alters the meaning of the later ones.</p>
+
+    <figure>
+      <pre class="mermaid">
+flowchart TD
+    X["Carrier Ξ<br/>admissible states"] --> M["Core M = (Ω, Ξ)"]
+    OM["Operation class Ω"] --> M
+    M --> C["Conditions C<br/>domain, constitutive law"]
+    C --> E["Specified evolution"]
+    E --> R["Observable R"]
+    E --> P["Preparation and order P"]
+    R --> T["Predicted measurement"]
+    P --> T
+    A["Realization A<br/>apparatus, parameters"] --> T
+    A -. "alters domain or degrees of freedom" .-> C
+      </pre>
+      <figcaption>Mathematical dependency, not execution order. The tutorial states that this is a schema for organizing equations, not a theorem that every theory admits a unique factorization into these roles.</figcaption>
+    </figure>
+
+    <div class="scroll"><table>
+      <thead><tr><th>Level</th><th>Supplied object</th><th>Effect on the prediction</th></tr></thead>
+      <tbody>
+        <tr><td>Carrier</td><td class="num">ℂ² ⊗ ℂ²</td><td>Fixes joint states and two-spin observables</td></tr>
+        <tr><td>Dynamics</td><td class="num">H = g Z⊗Z</td><td>Couples transverse magnetization to a correlation</td></tr>
+        <tr><td>Admissibility</td><td>Positive unit-trace ρ; Hermitian H</td><td>Makes probabilities and unitary evolution well defined</td></tr>
+        <tr><td>Observable</td><td class="num">X ⊗ I</td><td>Selects the signal whose dynamics must close</td></tr>
+        <tr><td>Preparation</td><td class="num">⟨X⊗I⟩, ⟨Y⊗Z⟩ at t = 0</td><td>Fixes the two initial conditions</td></tr>
+        <tr><td>Realization</td><td>Implementation and coupling value</td><td>Assigns a time scale and measurement procedure</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">2 · Representations — chapters 1, 3, 7</p>
+    <h2>Three representations of the same system</h2>
+    <p class="lede">The same system admits three entry points: a topic name, an equation of motion, an experiment. The first requirement is that they denote one object rather than three summaries.</p>
+
+    <p>The <strong>topic representation</strong> supplies names — Hilbert space, Hamiltonian, observable, spin, correlation. These locate material. Cached topic metadata is navigation, not evidence for a physical equation.</p>
+    <p>The <strong>mechanism representation</strong> specifies the prediction: the state on a tensor product, the Hamiltonian fixing observable evolution, the preparation setting initial expectations, the measured operator selecting the signal.</p>
+    <p>The <strong>construction representation</strong> determines what must be added. Repeated commutators generate the smallest invariant span containing the measured operator; for this interaction it closes after one correlation.</p>
+
+    <h3>Conditions on the generator</h3>
+    <p>Chapter 3 builds a page around <span class="mono">|ψ(t)⟩ = e<sup>−iHt/ħ</sup>|ψ(0)⟩</span> with <span class="mono">p<sub>E</sub>(t) = ⟨ψ(t)|E|ψ(t)⟩</span>, deriving each condition from what it secures. Self-adjointness gives unitary evolution. In finite dimensions this reduces to a Hermitian matrix; for an unbounded differential operator the domain and boundary conditions are essential, and a formally symmetric expression is insufficient.</p>
+    <p>A change of orthonormal basis transforms state, Hamiltonian and effect together — <span class="mono">U|ψ⟩</span>, <span class="mono">UHU<sup>†</sup></span>, <span class="mono">UEU<sup>†</sup></span> preserve the probability. Altering the physical boundary is a distinct operation: it may change the generator and its spectrum rather than re-express the same experiment.</p>
+
+    <div class="check">
+      <span class="label">Recomputed</span>
+      <p>Chapter 7 states that <span class="mono">Z⊗I</span> commutes with <span class="mono">H</span>. Confirmed: <span class="mono">[gZ⊗Z, Z⊗I] = 0</span> since <span class="mono">Z² = I</span>. Its expectation is constant and requires no additional coordinate. The same material supports different predictive descriptions according to the observable.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">3 · Construction — chapters 8, 11</p>
+    <h2>Direct and inverse construction</h2>
+    <p class="lede">Two directions of one procedure: from a given Hamiltonian to the sufficient observable set, and from a required response to the admissible interaction.</p>
+
+    <h3>Minimal closed observable span</h3>
+    <p>With <span class="mono">O₀ = X⊗I</span> and <span class="mono">O₁ = −2g&#8202;Y⊗Z</span>, a second application of the Heisenberg derivative introduces no further independent operator:</p>
+    <pre>Ȯ₀ = O₁          Ȯ₁ = −4g² O₀</pre>
+    <p>For <span class="mono">x(t) = Tr(ρ X⊗I)</span> and <span class="mono">c(t) = Tr(ρ Y⊗Z)</span>, the prediction is <span class="mono">x(t) = x(0)cos(2gt) − c(0)sin(2gt)</span>.</p>
+    <p>A preparation specified only by <span class="mono">x(0)</span> is therefore incomplete. With the first spin along <span class="mono">+y</span> or <span class="mono">−y</span> and the second along <span class="mono">+z</span>, both have <span class="mono">x(0) = 0</span> while <span class="mono">c(0)</span> takes opposite signs, so the later signals differ in sign. Both are product states: the missing coordinate is not synonymous with entanglement.</p>
+
+    <div class="check">
+      <span class="label">Recomputed</span>
+      <p>The closed system, the solution <span class="mono">x(0)cos2gt − c(0)sin2gt</span>, the evolution matrix <span class="mono">[[0, 1], [−4g², 0]]</span> in the <span class="mono">(O₀, O₁)</span> basis, and the exercise's observable matrix <span class="mono">diag(1, 1, −1, −1) = Z⊗I</span> all confirm. At <span class="mono">g = 0</span> the span reduces to one observable, as stated.</p>
+    </div>
+
+    <h3>Inverse problem: determining the interaction</h3>
+    <p>Chapter 11 reverses the procedure. Three spins carry independent exchange energies <span class="mono">a</span> and <span class="mono">b</span>; an added interaction <span class="mono">Q = q₀₁Z₀Z₁ + q₀₂Z₀Z₂ + q₁₂Z₁Z₂</span> has unknown coefficients. Requiring the exchange and Ising evolutions to separate for arbitrary <span class="mono">a, b</span> sets the commutator with each exchange bond to zero; exact linear algebra returns <span class="mono">q₀₁ = q₀₂ = q₁₂ = λ</span>. The relative couplings are determined by the requirement; the overall energy scale remains free.</p>
+    <p>The interaction is <span class="mono">λ(M² − 3I)/2</span> with <span class="mono">M = Z₀+Z₁+Z₂</span>, and its polarization zeros occur at <span class="mono">(2m+1)πħ/(4|λ|)</span>, independent of the exchange energies.</p>
+
+    <div class="check">
+      <span class="label">Recomputed</span>
+      <p>The commutation constraints have a null space of dimension exactly 1, with null vector <span class="mono">(1, 1, 1)</span>, confirming both the equality and the free scale. The response formula agreed with full Hamiltonian evolution to <span class="mono">9.5 × 10⁻¹⁶</span>, and ⟨X₀⟩ at the predicted zeros evaluated to <span class="mono">10⁻¹⁶</span>. Setting <span class="mono">q₀₂ = 0</span> forces every coupling to zero.</p>
+    </div>
+
+    <div class="caution">
+      <span class="label">Stated scope</span>
+      <p>Both examples are identified as known mathematical benchmarks demonstrating a construction procedure — not new physics, not evidence of automatic source recovery, and not a discovery count. The tutorial repeats this constraint in each chapter.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">4 · Provenance — chapters 2, 9, 12</p>
+    <h2>Source evidence and its separation from calculation</h2>
+    <p class="lede">Mathematical correctness and source attribution are independent properties. The tutorial separates them at every stage, and this section was the most directly testable.</p>
+
+    <p>A chapter may carry a familiar title, a correct explanation, and a plausible arXiv identifier without that equation having been recovered from that paper. The stages are recorded separately:</p>
+
+    <div class="scroll"><table>
+      <thead><tr><th>Record</th><th>Question it answers</th></tr></thead>
+      <tbody>
+        <tr><td>Topic metadata</td><td>What concept organized the material?</td></tr>
+        <tr><td>Candidate identifier</td><td>Where might relevant material be found?</td></tr>
+        <tr><td>Source card and local context</td><td>What equation and assumptions were recovered?</td></tr>
+        <tr><td>V2.1 alignment</td><td>Which extracted equation record matches that context?</td></tr>
+        <tr><td>Topic-relation check</td><td>Does the context support the relation the chapter explains?</td></tr>
+      </tbody>
+    </table></div>
+
+    <figure>
+      <pre class="mermaid">
+flowchart LR
+    P["Source paper"] --> E["Equation and<br/>neighbouring assumptions"]
+    E --> A["Equation-card alignment"]
+    A --> B["Citable book explanation"]
+    E --> S["Explicit mathematical<br/>specification"]
+    S --> V["Independent calculation"]
+    V --> R["Predicted observable"]
+    B -. "explains" .-> R
+      </pre>
+      <figcaption>Two branches from one source equation. The left establishes citability, the right establishes consequence; neither substitutes for the other.</figcaption>
+    </figure>
+
+    <h3>Recovery of original displays</h3>
+    <p>Chapter 12 treats quantum error correction. The chapter states the projector condition <span class="mono">P E<sub>a</sub><sup>†</sup>E<sub>b</sub> P = c<sub>ab</sub> P</span>; the source record locates Gottesman's equation (2.10), which states it in a basis of logical codewords.</p>
+
+    <div class="check">
+      <span class="label">Verified against arxiv.org</span>
+      <p>All seven papers were fetched and every stored record compared. <strong>16 of 16</strong> display identifiers resolve in the live HTML, and <strong>every stored LaTeX string matches the source exactly.</strong> Gottesman <span class="mono">Ch2.E10</span> returns <span class="mono">⟨ψ<sub>i</sub>|E<sub>a</sub><sup>†</sup>E<sub>b</sub>|ψ<sub>j</sub>⟩ = C<sub>ab</sub>δ<sub>ij</sub></span>, with adjacent prose confirming it combines (2.8) and (2.9). The count of seven arXiv HTML documents is exact.</p>
+    </div>
+
+    <div class="scroll"><table>
+      <thead><tr><th>arXiv</th><th>Paper</th><th>Displays</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1508.06951</td><td>Mathematical Foundations of Quantum Mechanics</td><td class="num">6 ✓</td></tr>
+        <tr><td class="num">quant-ph/9705052</td><td>Stabilizer Codes and Quantum Error Correction</td><td class="num">2 ✓</td></tr>
+        <tr><td class="num">1110.3234v1</td><td>Gaussian Quantum Information</td><td class="num">4 ✓</td></tr>
+        <tr><td class="num">quant-ph/9702007</td><td>The Quantum Jump Approach to Dissipative Dynamics</td><td class="num">1 ✓</td></tr>
+        <tr><td class="num">0802.4155</td><td>The Security of Practical Quantum Key Distribution</td><td class="num">1 ✓</td></tr>
+        <tr><td class="num">quant-ph/0509179</td><td>Quantum Metrology</td><td class="num">1 ✓</td></tr>
+        <tr><td class="num">quant-ph/0302006</td><td>QEC for Continuously Detected Errors</td><td class="num">1 ✓</td></tr>
+      </tbody>
+    </table></div>
+
+    <p>Every record carries <span class="mono">v2_card_alignment: not_established</span>. Recovering an equation from a paper that was also a retrieval candidate does not establish that it was the display represented by the earlier feature row, and the records state this rather than promoting the link.</p>
+
+    <div class="caution">
+      <span class="label">Limits of hash verification</span>
+      <p>A hash establishes which stored input was used. It does not establish conservation, equivalence of evolutions, or physical validity. Syntax and hashes cannot establish physical relevance; a reviewer must inspect the equation and its neighbouring definitions.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">5 · Procedures — chapters 4, 5, 6, 10</p>
+    <h2>Topic placement, rebuilds and new fields</h2>
+    <p class="lede">Operational chapters, under a common constraint: a build must leave the artifact under comparison intact.</p>
+
+    <p><strong>Topic placement</strong> (ch. 4) scores branch-route overlap and keywords where explicit physical assignments are absent. The tutorial identifies this as a curated and scored organization, not an unconstrained discovery of the operation/carrier distinction. It also warns against filing the spin calculation under "incompatibility" because it contains a commutator: here the commutator computes time evolution, while the missing predictive coordinate is a property of the joint state.</p>
+
+    <p><strong>Rebuilds</strong> (ch. 5) copy the source tree to a new directory that fails deliberately if the destination exists, then redirect both the LaTeX and the page outputs. Changing only the PDF directory is insufficient, since the generator writes both.</p>
+
+    <p><strong>New fields</strong> (ch. 6) begin from a local paper corpus rather than an encyclopedia. A first wiki should answer one bounded physical question and contain the governing equations, boundary conditions and measured quantities, not papers sharing a keyword.</p>
+
+    <h3>The six constructor operations</h3>
+    <div class="scroll"><table>
+      <thead><tr><th>Operation</th><th>Corresponding question</th></tr></thead>
+      <tbody>
+        <tr><td>Complete</td><td>Which additional expectation makes the measured response closed?</td></tr>
+        <tr><td>Reattach</td><td>Which state and observable maps realize the same evolution elsewhere?</td></tr>
+        <tr><td>Compose</td><td>What results from an ordered sequence of allowed maps?</td></tr>
+        <tr><td>Deform</td><td>How does a parameter or boundary change the predicted spectrum?</td></tr>
+        <tr><td>Observe</td><td>Which measurement distinguishes two proposed mechanisms?</td></tr>
+        <tr><td>Revise</td><td>Which changed assumption corrects a failed consequence?</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="check">
+      <span class="label">Recomputed</span>
+      <p>The edition counts in chapter 10 match the build's integrity report exactly: <span class="mono">62</span> developed treatments, <span class="mono">63</span> overview entries, <span class="mono">4</span> aliases, <span class="mono">17</span> annotations, summing to <span class="mono">146</span> indexed topics. The report also records <span class="mono">no_representative_relation_templates: true</span>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">6 · Reproduction</p>
+    <h2>Minimal run</h2>
+    <p class="lede">Offline after installation. Requires no TeX engine, and modifies neither the book, the cached topic pages, nor the source index.</p>
+
+    <pre>python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -e '../fieldbridge[construction]'
+python3 -B scripts/build_construction_companion.py \
+  --fieldbridge-root ../fieldbridge --out-dir build/construction_companion</pre>
+
+    <p>Expected: <span class="mono">status: complete</span>, <span class="mono">calculations: 3</span>. The quantum calculation reports four fields:</p>
+    <pre>hilbert_dimension    4
+observable_dimension 2
+evolution_matrix     [['0', '1'], ['-4*g**2', '0']]
+closed_identities    two, both true</pre>
+    <p>The matrix is written in the <span class="mono">(O₀, O₁)</span> basis and therefore differs in appearance from the equations for <span class="mono">(x, c)</span> while giving the same prediction. A changed basis is not a changed interaction.</p>
+    <p>Substituting <span class="mono">Z⊗I</span> as the observable reduces the span to dimension 1 with evolution matrix <span class="mono">[['0']]</span>: predictive sufficiency depends on the observable, not only on the material or the Hamiltonian. The flag <span class="mono">--include-spin-design</span> adds the inverse construction as a fourth calculation.</p>
+
+    <h3>Chapter index</h3>
+    <ul class="chapters">
+      <li><span class="n">01</span><span><span class="t">Three views</span><span class="d">Topic, mechanism and construction entry points on one experiment</span></span></li>
+      <li><span class="n">02</span><span><span class="t">Topic and evidence</span><span class="d">Why a paper identifier is not a confirmed source pointer</span></span></li>
+      <li><span class="n">03</span><span><span class="t">Mechanism page</span><span class="d">Writing a page around a calculable prediction</span></span></li>
+      <li><span class="n">04</span><span><span class="t">Constructor spine</span><span class="d">Topic placement, and the limits of the placement scores</span></span></li>
+      <li><span class="n">05</span><span><span class="t">Build and audit</span><span class="d">Rebuilding without replacing the current book</span></span></li>
+      <li><span class="n">06</span><span><span class="t">New field</span><span class="d">Starting a wiki from a local paper corpus</span></span></li>
+      <li><span class="n">07</span><span><span class="t">Nested dependencies</span><span class="d">Why the levels of a description are not independent</span></span></li>
+      <li><span class="n">08</span><span><span class="t">Quantum construction</span><span class="d">Deriving the information required to predict a spin</span></span></li>
+      <li><span class="n">09</span><span><span class="t">Sources and calculations</span><span class="d">Connecting a source equation to a checked transformation</span></span></li>
+      <li><span class="n">10</span><span><span class="t">Submission companion</span><span class="d">Packaging a reproducible methods companion</span></span></li>
+      <li><span class="n">11</span><span><span class="t">Inverse construction</span><span class="d">From explaining a mechanism to constructing its interactions</span></span></li>
+      <li><span class="n">12</span><span><span class="t">Original sources</span><span class="d">Recovering a relation from its original paper</span></span></li>
+      <li><span class="n">--</span><span><span class="t">Index</span><span class="d">Six reading routes by purpose</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="sec-no">7 · Scope of verification</p>
+    <h2>What was checked</h2>
+    <p>Every closed-form claim was recomputed symbolically or numerically, and every source record was fetched from arxiv.org and compared string for string. <strong>No factual errors were found.</strong></p>
+    <ul class="plain">
+      <li><strong>Confirmed:</strong> both commutators and the closure of the two-operator span; the solution <span class="mono">x(t)</span>; the evolution matrix; <span class="mono">[H, Z⊗I] = 0</span> and the exercise's observable matrix; the sign reversal between the two product-state preparations; the three-spin null space and its <span class="mono">(1,1,1)</span> vector, the response formula to <span class="mono">10⁻¹⁶</span>, and its polarization zeros; the edition counts against the integrity report; all 16 arXiv displays and their LaTeX.</li>
+      <li><strong>Not checked:</strong> the build commands were not executed, since they require FieldBridge installed alongside MorphWiki. That each script produces the stated output rests on the tutorial's own account, although the expected values it quotes are consistent with the verified mathematics.</li>
+    </ul>
+    <p class="footnote">Chapter 8 cites Cambridge lecture notes rather than an arXiv display for the Heisenberg equation, which is appropriate: the tutorial frames it as standard quantum mechanics rather than a recovered result.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Source: <span class="mono">morphwiki/docs/tutorial</span> — 13 chapters, 1,090 lines. This page reorganizes that material into seven sections and carries the verification status inline. It does not replace the chapters, which contain the full command sequences and exercises.</p>
+  </div>
+</footer>
