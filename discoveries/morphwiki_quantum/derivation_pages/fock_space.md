@@ -6,17 +6,15 @@
 
 Fock space is the occupation-number state space: the construction that replaces a fixed-particle Hilbert space by a direct sum over particle number.
 
-Fock space places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
 
 Fock space changes the carrier of the quantum state. Instead of describing one system in one Hilbert space, it builds sectors with zero, one, two, and more identical quanta, then imposes the bosonic or fermionic exchange rule. Creation and annihilation operators are the native coordinates of this page because they move the state between occupation sectors.
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express variable particle number, exchange symmetry, and occupation-number observable.
 
 ```math
 \mathcal F_{\pm}(\mathcal H)=\bigoplus_{n=0}^{\infty} \mathcal S_{\pm}\mathcal H^{\otimes n}

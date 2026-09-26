@@ -12,11 +12,9 @@ Bose-Einstein statistics is an admissibility rule for symmetric many-particle st
 
 ## Physical Construction
 
-The state carrier is a bosonic Fock space assembled from symmetric many-particle sectors or occupation-number modes. The governing operation is Creation, annihilation, and number operators obeying canonical commutation relations. Exchange symmetry permits any non-negative integer occupation of a one-particle mode. The calculated observables are Mode occupations, condensate fraction, particle density, pressure, heat capacity, and coherence observables.
+The state carrier is a bosonic Fock space assembled from symmetric many-particle sectors or occupation-number modes. The calculation involves creation, annihilation, and number operators obeying canonical commutation relations. Exchange symmetry permits any non-negative integer occupation of a one-particle mode. The calculated quantities include mode occupations, condensate fraction, particle density, pressure, heat capacity, and coherence observables.
 
 ## Topic Equations
-
-Topic-specific construction: symmetric mode algebra, unrestricted occupation, and equilibrium population.
 
 ```math
 [a_i,a_j^\dagger]=\delta_{ij},\qquad n_i\in\{0,1,2,\ldots\}

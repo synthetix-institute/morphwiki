@@ -255,6 +255,8 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "report_type": "quantum_book_content_preservation_audit",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "readiness": readiness,
+        "build_integrity": "pass" if all(checks.values()) else "fail",
+        "readiness_scope": "Reproducible reference build, not scientific certification or discovery evidence.",
         "contract": str(args.contract),
         "metrics": {
             "topic_count": len(expected_slugs),
@@ -290,7 +292,7 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "noncanonical_arxiv_links": malformed_links,
         "missing_original_links": missing_original_links,
         "unsupported_grounding_status": unsupported_grounding,
-        "scientific_review_status": "incomplete: topic-specific treatments and physical-role overviews remain distinct; build checks are not physics verification",
+        "scientific_review_status": "incomplete: selected identities have executable checks; no chapter-wide scientific certification",
         "wikipedia_scaffold_pages": wikipedia_scaffold_pages,
         "unverified_arxiv_topic_pages": unverified_arxiv_topic_pages,
         "claim_scope": "Build-integrity audit. It requires equation-bearing content for physical topics while keeping historical and interpretive entries free of invented equations; it does not validate the physics of individual pages.",

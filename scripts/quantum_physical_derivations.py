@@ -95,7 +95,7 @@ e^{i(ba'-ab')/(2\hbar)}D(a+a',b+b')."""),
         ("p", r"For a proposed transfer between physical systems, a shared symmetry is useful because it restricts the admissible target interactions and observables. It does not determine their coupling constants or all matrix elements. The construction becomes predictive only after the target representation, Hamiltonian and measurement are fixed. Symmetry then supplies exact relations, such as forbidden transitions, that can test the proposed realization."),
     ],
     "heisenberg_picture": [
-        ("p", r"The Schrodinger and Heisenberg pictures assign time dependence to different parts of the same prediction. With unitary evolution $U(t)$, an initial density operator $\rho_0$ and an observable $O$, the expectation can be evaluated either by evolving the state or by evolving the operator:"),
+        ("p", r"The Schrödinger and Heisenberg pictures assign time dependence to different parts of the same prediction. With unitary evolution $U(t)$, an initial density operator $\rho_0$ and an observable $O$, the expectation can be evaluated either by evolving the state or by evolving the operator:"),
         ("eq", r"""\rho_S(t)=U(t)\rho_0U(t)^\dagger,\qquad
 O_H(t)=U(t)^\dagger OU(t),\qquad
 \operatorname{Tr}[\rho_S(t)O]=\operatorname{Tr}[\rho_0O_H(t)]."""),

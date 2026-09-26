@@ -12,11 +12,9 @@ The page shows how a boundary condition changes the domain of the Hamiltonian an
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
-
-Standard constructor skeleton: boundary condition and discrete spectrum.
 
 ```math
 \psi(0)=\psi(L)=0
@@ -40,4 +38,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels. The same operator can have different spectra when the admissible domain changes. Removing the boundary recovers the appropriate free, infinite-domain, or asymptotic limit.

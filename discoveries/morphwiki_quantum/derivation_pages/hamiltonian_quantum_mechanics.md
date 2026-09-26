@@ -12,11 +12,9 @@ The Hamiltonian has a dual role. Dynamically, it generates unitary time evolutio
 
 ## Physical Construction
 
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The governing operation is Hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated observables are Time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
+The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The calculation involves hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated quantities include time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
 
 ## Topic Equations
-
-Standard constructor skeleton: energy spectrum and unitary generation.
 
 ```math
 H\ket{E_n}=E_n\ket{E_n}
@@ -30,7 +28,7 @@ Exponentiating a self-adjoint Hamiltonian produces the unitary propagator. Its e
 
 For a particle in a static potential, kinetic and potential terms determine both stationary energy levels and the evolution of a wave packet assembled from those levels.
 
-The Schrodinger equation gives the differential form of this evolution, while path integrals and the Heisenberg picture reorganize the same predictions.
+The Schrödinger equation gives the differential form of this evolution, while path integrals and the Heisenberg picture reorganize the same predictions.
 
 ## Invariance And Realization
 
@@ -40,4 +38,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime. Hamiltonian, propagator, and path-integral forms are equivalent only when they yield the same transition amplitudes or correlation functions.

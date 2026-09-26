@@ -12,11 +12,9 @@ Fermi-Dirac statistics is an admissibility rule, not a generator of time evoluti
 
 ## Physical Construction
 
-The state carrier is a fermionic Fock space assembled from antisymmetric many-particle sectors or occupation-number modes. The governing operation is Creation, annihilation, and number operators obeying canonical anticommutation relations. Exchange antisymmetry restricts each one-particle mode to occupation zero or one for each internal state. The calculated observables are Mode occupations, Fermi energy, particle density, pressure, heat capacity, and other equilibrium response functions.
+The state carrier is a fermionic Fock space assembled from antisymmetric many-particle sectors or occupation-number modes. The calculation involves creation, annihilation, and number operators obeying canonical anticommutation relations. Exchange antisymmetry restricts each one-particle mode to occupation zero or one for each internal state. The calculated quantities include mode occupations, Fermi energy, particle density, pressure, heat capacity, and other equilibrium response functions.
 
 ## Topic Equations
-
-Topic-specific construction: antisymmetric mode algebra, exclusion, and equilibrium occupation.
 
 ```math
 \{a_i,a_j^\dagger\}=\delta_{ij},\qquad n_i\in\{0,1\}

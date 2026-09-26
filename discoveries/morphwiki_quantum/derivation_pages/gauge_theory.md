@@ -12,11 +12,9 @@ A local gauge transformation changes the field coordinates used at each point wi
 
 ## Physical Construction
 
-The state carrier is Matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector. The governing operation is a covariant derivative and connection whose commutator gives the field strength. Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges. The calculated observables are Gauge-invariant contractions of field strengths, traced Wilson loops, physical charges, and scattering amplitudes.
+The state carrier is matter and gauge fields modulo local gauge equivalence, restricted to the physical constraint sector. The calculation involves a covariant derivative and connection whose commutator gives the field strength. Gauss constraints, gauge covariance, operator domains, and boundary conditions select the physical states and charges. The calculated quantities include gauge-invariant contractions of field strengths, traced Wilson loops, physical charges, and scattering amplitudes.
 
 ## Topic Equations
-
-The connection defines local comparison, curvature measures its infinitesimal path dependence, and the constraint selects physical states.
 
 ```math
 D_\mu=\partial_\mu+igA_\mu

@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Wave interference belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
+Wave interference is placed at realization, where the abstract state-operator construction is made definite on a domain, interface, potential, detector geometry, or scattering boundary.
 
-Wave interference makes the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
+Boundary conditions make the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
 
 Boundary conditions, interfaces, and asymptotic channels enter the operator domain and alter the allowed solutions and spectra.
 
 ## Physical Construction
 
-The state carrier is a state space equipped with a domain, potential, interface, cavity, or asymptotic channel. The governing operation is a Hamiltonian, wave operator, transfer operator, or scattering map whose domain depends on the boundary data. Boundary and matching conditions determine the allowed modes, resonances, and conserved fluxes. The calculated observables are Energy levels, resonances, transmission and reflection amplitudes, phase shifts, or scattering cross-sections.
+The state carrier is a state space equipped with a domain, potential, interface, cavity, or asymptotic channel. The calculation involves a Hamiltonian, wave operator, transfer operator, or scattering map whose domain depends on the boundary data. Boundary and matching conditions determine the allowed modes, resonances, and conserved fluxes. The calculated quantities include energy levels, resonances, transmission and reflection amplitudes, phase shifts, or scattering cross-sections.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ Boundary-shaped single-particle mechanisms extend naturally to many modes and fi
 
 ## Invariance And Realization
 
-Wave interference shows how a context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
+A context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The potential, geometry, asymptotic condition, or detector arrangement can change. The same boundary role may appear as a box, barrier, cavity, interface, or scattering region. Changing the boundary can change the spectrum without changing the general quantum constructor.
 

@@ -12,11 +12,9 @@ Let $z=(x,\sigma)$ denote the complete one-particle coordinate, including spin. 
 
 ## Physical Construction
 
-The state carrier is the antisymmetric many-particle sector of the one-particle Hilbert space, including spin. The governing operation is the many-body Hamiltonian and fermionic creation and annihilation operators. Exchange antisymmetry restricts states and mode occupations; the Hamiltonian specifies interactions and evolution. The calculated observables are mode occupations, spin-resolved correlations, energies and thermodynamic response.
+The state carrier is the antisymmetric many-particle sector of the one-particle Hilbert space, including spin. The calculation involves the many-body Hamiltonian and fermionic creation and annihilation operators. Exchange antisymmetry restricts states and mode occupations; the Hamiltonian specifies interactions and evolution. The calculated quantities include mode occupations, spin-resolved correlations, energies and thermodynamic response.
 
 ## Topic Equations
-
-Each index i labels a complete spin-orbital. The number operator has eigenvalues zero and one; its expectation can take any value between them. Exterior Fock space extends the antisymmetric state construction to variable particle number.
 
 ```math
 z_i=(x_i,\sigma_i),\qquad \Psi(\ldots,z_i,\ldots,z_j,\ldots)=-\Psi(\ldots,z_j,\ldots,z_i,\ldots)

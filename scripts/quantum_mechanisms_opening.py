@@ -1,6 +1,6 @@
 """Mechanism-first introduction, shared by the reproducible book builder."""
 
-OPENING = r"""\chapter{Quantum Mechanisms And Their Predictions}
+OPENING = r"""\chapter{Quantum Mechanisms And Their Predictions}\label{chap:mechanisms-predictions}
 
 An interaction between two quantum systems can make a property of one depend
 on their joint preparation. This dependence is responsible both for useful
@@ -64,6 +64,32 @@ or restrict the preparations and observations so that the omitted information
 cannot affect a prediction. Closure describes the sufficiency of those chosen
 variables. The mechanism is the interaction that made the correlation
 physically relevant in the first place.
+
+This example specifies the operational language used in the book. The
+carrier \(\Xi\) is the set of density operators on
+\(\mathbb C^2\otimes\mathbb C^2\), and the operation
+\(\Omega[\rho]=-i[H,\rho]/\hbar\) evolves them. Positivity and unit trace
+are the admissibility conditions \(C\). The observable map
+\(R_X(\rho)=\operatorname{Tr}(\rho X_1)\) gives the polarization, and the
+protocol \(P\) specifies the joint preparation, evolution time and
+measurement. A pair of coupled spins realizing \(H\) supplies the physical
+implementation \(A\). Thus \(I_{\mathrm{op}}=((\Omega,\Xi);C,R_X,P)\)
+records the ingredients needed to predict this signal; their roles follow
+from the calculated evolution and measurement.
+
+The reduction to \(x\) shows why these roles cannot be discarded
+independently. Define \(\alpha_x(\rho)=R_X(\rho)\). For the two preparations
+above, with \(c_0\ne0\),
+\begin{centeredalign}
+\alpha_x(\rho_+)=\alpha_x(\rho_-)=x_0,\qquad
+\alpha_x(\Omega[\rho_\pm])=\mp 2gc_0.
+\end{centeredalign}
+No evolution law depending only on \(x_0\) can reproduce both initial slopes.
+The correlation \(c\) is the extra state coordinate required for autonomous
+evolution; when it is eliminated instead, its initial value and the history
+integral in the preceding equation retain precisely the information that
+\(x\) lost. A state map between descriptions must therefore preserve the
+evolution and the specified observable consequence.
 
 The organization of quantum theory follows these dependencies. A spin
 Hamiltonian acts on a tensor product of spin spaces; exchange symmetry changes

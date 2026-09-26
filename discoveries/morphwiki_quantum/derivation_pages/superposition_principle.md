@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Superposition principle supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+Superposition principle is placed at the state step, where the carrier of prediction is specified: the object that is propagated, transformed, restricted, or measured.
 
-Superposition principle specifies the object from which quantum probabilities are calculated. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
+Quantum probabilities are calculated from a state. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
 
 The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state.
 
 ## Physical Construction
 
-The state carrier is the mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. The governing operation is Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed. Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. The calculated observables are Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+The state carrier is the mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed. Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. The calculated quantities include probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ The Hamiltonian or channel evolves the prepared state. An observable and measure
 
 ## Invariance And Realization
 
-The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. Superposition principle carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
+The topic contributes the mathematical carrier of prediction: vector, wavefunction, density operator, register, coherent state, or field state. The state carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
 

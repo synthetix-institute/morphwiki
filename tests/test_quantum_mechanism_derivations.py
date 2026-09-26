@@ -39,6 +39,12 @@ def test_interaction_generates_the_correlation_in_the_opening():
     assert (x*a+c*b)**2 == (x*x+c*c)*s.eye(4)
     reduced = s.Matrix(2, 2, lambda i,j: sum(rho[2*i+k,2*j+k] for k in range(2)))
     assert reduced == (I+x*X)/2
+    rho_minus = (s.eye(4)+x*a-c*b)/4
+    alpha_x = lambda state: s.trace(state*a)
+    omega = lambda state: -s.I*comm(h, state)
+    assert alpha_x(rho) == alpha_x(rho_minus) == x
+    assert s.simplify(alpha_x(omega(rho)) + 2*g*c) == 0
+    assert s.simplify(alpha_x(omega(rho_minus)) - 2*g*c) == 0
 
 
 def test_eliminating_correlation_keeps_initial_term_and_memory():

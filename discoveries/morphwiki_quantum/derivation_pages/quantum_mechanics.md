@@ -6,17 +6,15 @@
 
 Quantum mechanics is the baseline constructor: states live in Hilbert space, physical questions are represented by operators, and probabilities are assigned to spectral projectors.
 
-Quantum mechanics is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
+A quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
 
 The page supplies the general quantum assembly. A preparation gives a state vector or density operator. A self-adjoint observable or measurement operator family gives the possible outcome channels. The Born or trace rule assigns probabilities, while Hamiltonian evolution transports the state between preparation and observable.
 
 ## Physical Construction
 
-The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The governing operation is a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated observables are Transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
+The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The calculation involves a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated quantities include transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express state admissibility, spectral prediction, unitary evolution, and incompatibility.
 
 ```math
 \rho\ge 0,\qquad \operatorname{Tr}\rho=1

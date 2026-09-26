@@ -12,11 +12,9 @@ Quantum field theory lifts the state-operator-spectrum construction to fields, l
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
-
-Standard constructor skeleton: field expansion, mode algebra, and correlation observable.
 
 ```math
 \Phi(x)=\sum_k\left(a_k u_k(x)+a_k^\dagger u_k^*(x)\right)
@@ -40,4 +38,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist. Dual presentations are credible only when observables, spectra, or correlation functions are preserved across the translation.

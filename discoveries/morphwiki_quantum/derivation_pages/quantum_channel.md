@@ -12,11 +12,9 @@ A channel is the mechanism for noisy transformations, measurements with forgotte
 
 ## Physical Construction
 
-The state carrier is Input and output density operators, possibly on different Hilbert spaces or subsystem carriers. The governing operation is a completely positive trace-preserving map, often represented by Kraus operators or by a Stinespring dilation. Complete positivity and trace preservation are the legal conditions; non-trace-preserving maps require an explicitly conditioned outcome. The calculated observables are Output state, final POVM probabilities, fidelity, capacity, error rate, or recovered subsystem statistics.
+The state carrier is input and output density operators, possibly on different Hilbert spaces or subsystem carriers. The calculation involves a completely positive trace-preserving map, often represented by Kraus operators or by a Stinespring dilation. Complete positivity and trace preservation are the legal conditions; non-trace-preserving maps require an explicitly conditioned outcome. The calculated quantities include output state, final POVM probabilities, fidelity, capacity, error rate, or recovered subsystem statistics.
 
 ## Topic Equations
-
-Standard constructor skeleton: completely positive trace-preserving map and observable.
 
 ```math
 \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
@@ -40,4 +38,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates. Changing operation order or replacing a quantum channel with a classical control identifies which part of the protocol carries the effect.

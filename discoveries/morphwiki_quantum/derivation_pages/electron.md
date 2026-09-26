@@ -6,17 +6,15 @@
 
 Electron is a charged spinor constructor: its identity is fixed by mass, charge, spin-1/2 representation, fermionic statistics, and electromagnetic coupling.
 
-Electron places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
 
 The electron is not a generic object label in this tree. Its native mechanism combines a spinor state, a Schrödinger/Pauli/Dirac generator depending on regime, conserved charge, and fermionic anticommutation. The observables are charge, spin, momentum, energy, and scattering response.
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express relativistic spinor transport, electromagnetic coupling, and fermionic field statistics.
 
 ```math
 (i\hbar\gamma^{\mu}D_{\mu}-mc)\psi=0

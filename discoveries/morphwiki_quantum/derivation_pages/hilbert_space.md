@@ -12,11 +12,9 @@ Hilbert space is not physical space and not a geometric background in this book.
 
 ## Physical Construction
 
-The state carrier is a complex Hilbert space, or a density-operator state space built on it. The governing operation is Self-adjoint observables, unitary maps, spectral projectors, and domain-restricted generators defined on the carrier. Inner-product structure, normalization, positivity for density states, and operator-domain conditions make states and observables legal. The calculated observables are Born probabilities, spectral projectors, expectation values, and preserved norms.
+The state carrier is a complex Hilbert space, or a density-operator state space built on it. The calculation involves self-adjoint observables, unitary maps, spectral projectors, and domain-restricted generators defined on the carrier. Inner-product structure, normalization, positivity for density states, and operator-domain conditions make states and observables legal. The calculated quantities include Born probabilities, spectral projectors, expectation values, and preserved norms.
 
 ## Topic Equations
-
-Standard constructor skeleton: normalized states, density states, spectral resolution, Born observable, and unitary identity preservation.
 
 ```math
 \ket{\psi}\in\mathcal H,\qquad \langle\psi|\psi\rangle=1
@@ -42,4 +40,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation. The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space. Basis names are bookkeeping; inner products, spectra, and probabilities are the physical content that must survive the rewrite.

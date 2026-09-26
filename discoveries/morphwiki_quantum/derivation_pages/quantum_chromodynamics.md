@@ -12,11 +12,9 @@ The colour matrices do not commute. Their commutator enters the field strength, 
 
 ## Physical Construction
 
-The state carrier is quark and gluon field states in the physical SU(3) constraint sector. The governing operation is the QCD action, with covariant Dirac motion and non-Abelian field strength. Gauss constraints, quark statistics and specified boundary conditions select physical states. The calculated observables are colour-singlet spectra, correlation functions and scattering cross sections.
+The state carrier is quark and gluon field states in the physical SU(3) constraint sector. The calculation involves the QCD action, with covariant Dirac motion and non-Abelian field strength. Gauss constraints, quark statistics and specified boundary conditions select physical states. The calculated quantities include colour-singlet spectra, correlation functions and scattering cross sections.
 
 ## Topic Equations
-
-The Hermitian colour generators and their normalization are given first. The metric has one positive timelike component and three negative spacelike components; $f$ labels quark flavours. In the final equation, $\mu$ is the renormalization scale and $n_f$ the number of active flavours. The sign of the commutator follows the stated covariant-derivative convention.
 
 ```math
 [T^a,T^b]=if^{abc}T^c,\qquad\operatorname{Tr}(T^aT^b)=\frac12\delta^{ab}

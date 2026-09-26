@@ -3,14 +3,14 @@
 - Readiness: `usable`
 - Topics in the mechanism map: `146`
 - Dedicated topic sections: `146`
-- Topic words: `57048`
+- Topic words: `56100`
 - Topic-specific physical treatments: `62`
 - Branch-level topic maps: `67`
-- Topic-word retention: `0.897`
+- Topic-word retention: `0.882`
 - Equation blocks: `158`
-- TeX topics with displayed equations: `123`
-- PDF pages: `292`
-- PDF-page retention: `0.939`
+- TeX topics with displayed equations: `125`
+- PDF pages: `294`
+- PDF-page retention: `0.945`
 - Source-grounded topics: `6`
 - Original-paper topics (separate from corpus alignment): `15`
 - Original-paper display records: `16`
@@ -47,4 +47,4 @@
 ## Scope
 Build-integrity audit. It requires equation-bearing content for physical topics while keeping historical and interpretive entries free of invented equations; it does not validate the physics of individual pages.
 
-incomplete: topic-specific treatments and physical-role overviews remain distinct; build checks are not physics verification
+incomplete: selected identities have executable checks; no chapter-wide scientific certification

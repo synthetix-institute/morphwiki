@@ -12,11 +12,9 @@ Tunnelling shows that the realization layer matters. A potential barrier changes
 
 ## Physical Construction
 
-The state carrier is a Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. The governing operation is a Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary. Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. The calculated observables are Eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
+The state carrier is a Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. The calculation involves a Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary. Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. The calculated quantities include eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
 
 ## Topic Equations
-
-Standard constructor skeleton: barrier-domain Schrödinger equation and WKB transmission.
 
 ```math
 T\sim \exp\!\left(-2\int_{x_1}^{x_2}\sqrt{\frac{2m(V(x)-E)}{\hbar^2}}\,dx\right)
@@ -39,4 +37,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels. The same operator can have different spectra when the admissible domain changes. Removing the boundary recovers the appropriate free, infinite-domain, or asymptotic limit.

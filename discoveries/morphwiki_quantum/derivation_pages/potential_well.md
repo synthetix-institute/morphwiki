@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Potential well belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.
+Potential well is placed at realization, where the abstract state-operator construction is made definite on a domain, interface, potential, detector geometry, or scattering boundary.
 
-Potential well makes the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
+Boundary conditions make the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
 
 The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel.
 
 ## Physical Construction
 
-The state carrier is a Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. The governing operation is a Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary. Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. The calculated observables are Eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
+The state carrier is a Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. The calculation involves a Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary. Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. The calculated quantities include eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ Boundary-shaped single-particle mechanisms extend naturally to many modes and fi
 
 ## Invariance And Realization
 
-The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. Potential well shows how a context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
+The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. A context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The potential, geometry, asymptotic condition, or detector arrangement can change. The same boundary role may appear as a box, barrier, cavity, interface, or scattering region. Changing the boundary can change the spectrum without changing the general quantum constructor.
 

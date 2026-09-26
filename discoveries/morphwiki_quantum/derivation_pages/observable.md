@@ -12,11 +12,9 @@ An observable is the mathematical form of a question that can be asked of a stat
 
 ## Physical Construction
 
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The governing operation is a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated observables are Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
+The state carrier is an admissible quantum state space on which the physical quantity is represented. The calculation involves a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated quantities include eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
 
 ## Topic Equations
-
-Standard constructor skeleton: self-adjoint question, spectral projectors, and Born probabilities.
 
 ```math
 A=A^\dagger
@@ -40,4 +38,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked. Equivalent representations preserve expectation values and probability distributions.

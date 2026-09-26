@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Loop quantum gravity belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
+Loop quantum gravity is placed at the many-mode extension, where the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
 
-Loop quantum gravity places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
 
 Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible.
 
 ## Physical Construction
 
-The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The governing operation is Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated observables are Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
+The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The calculation involves hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated quantities include boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ Field and many-body mechanisms become experimentally useful when assembled into 
 
 ## Invariance And Realization
 
-Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. Loop quantum gravity extends the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. The field extension carries the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
 

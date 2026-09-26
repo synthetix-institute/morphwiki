@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Quantum logic belongs to the question step: it turns a physical question into an operator with admissible answers.
+Quantum logic is placed at the question step, where a physical question becomes an operator with admissible answers.
 
-Quantum logic states which physical question is being asked. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
+A prediction concerns a stated physical question. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
 
 An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
 
 ## Physical Construction
 
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The governing operation is a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated observables are Eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
+The state carrier is an admissible quantum state space on which the physical quantity is represented. The calculation involves a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated quantities include eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ An observable defines possible outcomes. The measurement chapter adds the probab
 
 ## Invariance And Realization
 
-Quantum logic defines the legal question being asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+The observable defines the question asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
 

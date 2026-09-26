@@ -6,17 +6,15 @@
 
 Projection-valued measure is the sharp-observable constructor: mutually exclusive outcome projectors partition the identity.
 
-Projection-valued measure connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 A projection-valued measure encodes an ideal sharp measurement. It defines outcome channels that are orthogonal and exhaustive.
 
 ## Physical Construction
 
-The state carrier is a state vector or density operator together with the measurement context in which outcome channels are defined. The governing operation is a projection-valued measure, POVM, update map, or instrument map connecting state to record. Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. The calculated observables are Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
+The state carrier is a state vector or density operator together with the measurement context in which outcome channels are defined. The calculation involves a projection-valued measure, POVM, update map, or instrument map connecting state to record. Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. The calculated quantities include Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
 
 ## Topic Equations
-
-Standard constructor skeleton: sharp outcome channels, probability, and projective update.
 
 ```math
 P_iP_j=\delta_{ij}P_i,\qquad \sum_iP_i=I
@@ -38,4 +36,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.

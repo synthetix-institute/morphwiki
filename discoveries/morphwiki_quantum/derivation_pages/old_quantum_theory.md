@@ -6,17 +6,15 @@
 
 Old quantum theory is the semiclassical quantization precursor to modern quantum mechanics: classical periodic motion is retained, while only selected actions and transition frequencies are admitted.
 
-Old quantum theory is needed because a quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
+A quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
 
 Old quantum theory predates the Hilbert-space formalism. Its carrier is classical phase space, its motion follows Hamiltonian trajectories, and its quantum restriction is imposed on periodic action integrals. The resulting discrete energies and transition frequencies anticipated quantum spectra but did not provide a general theory of states, observables, or noncommuting transformations.
 
 ## Physical Construction
 
-The state carrier is Classical phase space, especially periodic or multiply periodic Hamiltonian trajectories described by action variables. The governing operation is Hamiltonian flow together with Bohr--Sommerfeld action quantization; no general Hilbert-space operator calculus is assumed. Only trajectories satisfying quantized action conditions are retained, with correspondence to classical frequencies required at large quantum number. The calculated observables are Discrete energies, transition frequencies, and the spectral regularities inferred from them.
+The state carrier is classical phase space, especially periodic or multiply periodic Hamiltonian trajectories described by action variables. The calculation involves Hamiltonian flow together with Bohr--Sommerfeld action quantization; no general Hilbert-space operator calculus is assumed. Only trajectories satisfying quantized action conditions are retained, with correspondence to classical frequencies required at large quantum number. The calculated quantities include discrete energies, transition frequencies, and the spectral regularities inferred from them.
 
 ## Topic Equations
-
-Semiclassical constructor: Hamiltonian orbits are restricted by action quantization, and energy differences determine spectral frequencies.
 
 ```math
 J_k=\oint p_k\,dq_k=n_k h

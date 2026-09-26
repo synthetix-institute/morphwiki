@@ -6,17 +6,15 @@
 
 Qubit is the two-dimensional state-carrier constructor used when the admissible state space is \(\mathbb C^2\).
 
-Qubit specifies the object from which quantum probabilities are calculated. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
+Quantum probabilities are calculated from a state. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
 
 A qubit is the minimal quantum state space with a basis, amplitudes, unitary control, and measurement observable. Bloch-vector language is a representation of the same two-dimensional carrier.
 
 ## Physical Construction
 
-The state carrier is the mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. The governing operation is Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed. Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. The calculated observables are Probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
+The state carrier is the mathematical state object: vector, wavefunction, density operator, coherent state, field state, or register. Operators, maps, and observables become meaningful only after this carrier and its domain have been fixed. Normalization, positivity, inner product, representation, tensor factorization, or superselection conditions define legal states. The calculated quantities include probability distributions obtained by applying the appropriate observables or measurement maps to the carrier.
 
 ## Topic Equations
-
-Standard constructor skeleton: two-state carrier, Bloch representation, and basis observable.
 
 ```math
 \ket{\psi}=\alpha\ket{0}+\beta\ket{1},\qquad |\alpha|^2+|\beta|^2=1
@@ -38,4 +36,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map. Physical state changes preserve positivity and trace, or norm in the pure closed-system limit.

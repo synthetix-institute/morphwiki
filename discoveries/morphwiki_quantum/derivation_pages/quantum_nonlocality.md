@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Quantum nonlocality belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+Quantum nonlocality is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
 
-Quantum nonlocality connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments.
 
 ## Physical Construction
 
-The state carrier is One state space or a multipartite state space on which several questions can be asked. The governing operation is Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated observables are Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+The state carrier is one state space or a multipartite state space on which several questions can be asked. The calculation involves two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated quantities include joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ Once the probability rule is explicit, incompatibility can be tested rather than
 
 ## Invariance And Realization
 
-The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. Quantum nonlocality connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 

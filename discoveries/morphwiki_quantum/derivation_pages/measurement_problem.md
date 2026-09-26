@@ -6,17 +6,15 @@
 
 Measurement problem is the junction between unitary system--apparatus coupling, probability assignment, and conditional state update; these are distinct maps and need not be identified.
 
-Measurement problem connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 A measurement model first couples the system to an apparatus or environment. A POVM or instrument then assigns outcome probabilities, and a conditional map specifies the post-record state. The foundational problem concerns the relation between these operations and a definite record, not the absence of a probability formula.
 
 ## Physical Construction
 
-The state carrier is a joint system--apparatus state, possibly enlarged by environmental degrees of freedom. The governing operation is a premeasurement interaction followed by a measurement instrument whose components label possible records. The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity. The calculated observables are Outcome probabilities and conditional post-record states must be stated separately.
+The state carrier is a joint system--apparatus state, possibly enlarged by environmental degrees of freedom. The calculation involves a premeasurement interaction followed by a measurement instrument whose components label possible records. The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity. Outcome probabilities and conditional post-record states must be stated separately.
 
 ## Topic Equations
-
-Topic-specific constructor: premeasurement coupling, outcome probability, conditional update, and unconditioned evolution are separated.
 
 ```math
 \rho_{SA}'=U_{SA}(\rho_S\otimes\rho_A)U_{SA}^{\dagger}
@@ -38,4 +36,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.

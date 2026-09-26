@@ -337,7 +337,7 @@ BRANCH_PUBLIC_DESCRIPTION: Dict[str, str] = {
 BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     "context": {
         "why": (
-            "{title} is needed because a quantum equation has no fixed meaning until its state space, "
+            "A quantum equation has no fixed meaning until its state space, "
             "inner product, representation, and operator domains have been specified. These choices decide "
             "which states are admissible and which apparent changes are only changes of coordinates."
         ),
@@ -352,7 +352,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "states": {
         "why": (
-            "{title} specifies the object from which quantum probabilities are calculated. A Hamiltonian or an "
+            "Quantum probabilities are calculated from a state. A Hamiltonian or an "
             "observable does not make a prediction by itself; it must act on a normalized state vector, density "
             "operator, or statistical sector that records the preparation."
         ),
@@ -367,7 +367,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "generators": {
         "why": (
-            "{title} separates quantum kinematics from dynamics. The state space lists what can exist, whereas a "
+            "Kinematics and dynamics are separate. The state space lists what can exist, whereas a "
             "Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale."
         ),
         "reading": (
@@ -380,7 +380,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "observables": {
         "why": (
-            "{title} states which physical question is being asked. The same state supports many incompatible questions, "
+            "A prediction concerns a stated physical question. The same state supports many incompatible questions, "
             "so a prediction requires an operator, spectral measure, or effect family in addition to the state itself."
         ),
         "reading": (
@@ -395,7 +395,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "measurement": {
         "why": (
-            "{title} connects the formal state and observable to experimental frequencies. It distinguishes the probability "
+            "The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability "
             "assigned to an outcome from the conditional state change that may follow a recorded event."
         ),
         "reading": (
@@ -410,7 +410,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "incompatibility": {
         "why": (
-            "{title} is needed because individually valid observables need not admit a common set of definite values. Quantum "
+            "Individually valid observables need not admit a common set of definite values. Quantum "
             "theory therefore requires a separate compatibility analysis rather than treating every collection of questions as classical."
         ),
         "reading": (
@@ -425,7 +425,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "boundaries": {
         "why": (
-            "{title} makes the operator domain physical. The same differential expression can have different spectra, resonances, "
+            "Boundary conditions make the operator domain physical. The same differential expression can have different spectra, resonances, "
             "and scattering channels when its boundary conditions, potential, or asymptotic states are changed."
         ),
         "reading": (
@@ -440,8 +440,8 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "fields": {
         "why": (
-            "{title} places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. "
-            "The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model."
+            "Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, "
+            "specified for that setting rather than inferred from a single-particle model."
         ),
         "reading": (
             "Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, "
@@ -455,7 +455,7 @@ BRANCH_EXPLANATIONS: Dict[str, Dict[str, str]] = {
     },
     "protocols": {
         "why": (
-            "{title} specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available "
+            "A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available "
             "gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle."
         ),
         "reading": (
@@ -605,12 +605,12 @@ TOPIC_EXPLANATION_OVERRIDES: Dict[str, Dict[str, str]] = {
             "packet assembled from those levels."
         ),
         "connection": (
-            "The Schrodinger equation gives the differential form of this evolution, while path integrals and the Heisenberg picture reorganize the same predictions."
+            "The Schrödinger equation gives the differential form of this evolution, while path integrals and the Heisenberg picture reorganize the same predictions."
         ),
     },
     "schr_dinger_equation": {
         "why": (
-            "The Schrodinger equation turns a Hamiltonian into a local rule for the time dependence of a state. It is the point at which the chosen "
+            "The Schrödinger equation turns a Hamiltonian into a local rule for the time dependence of a state. It is the point at which the chosen "
             "state space, boundary conditions, and interaction model become a calculable prediction."
         ),
         "reading": (
@@ -1098,18 +1098,23 @@ def physical_construction_prose(
 
     def fragment(value: str) -> str:
         text = clean_text(value, 1200).rstrip(" .")
-        for prefix in ("A ", "An ", "The "):
-            if text.startswith(prefix):
-                return prefix.lower() + text[len(prefix) :]
+        first = text.split(" ", 1)[0]
+        proper_names = {"Born", "Dirac", "Fock", "Gauss", "Hamiltonian", "Hilbert", "Schmidt"}
+        if first and first not in proper_names and (first in {"A", "An", "The"} or not first.isupper()):
+            return text[0].lower() + text[1:]
         return text
 
     admissibility = clean_text(frame.get("Admissibility", ""), 1200).rstrip(" .")
+    operation = clean_text(frame.get("Operator or map", ""), 1200).rstrip(" .")
+    observable = clean_text(frame.get("Observable or prediction", ""), 1200).rstrip(" .")
     return " ".join(
         [
             f"The state carrier is {fragment(frame.get('Carrier or domain', ''))}.",
-            f"The governing operation is {fragment(frame.get('Operator or map', ''))}.",
+            (operation + "." if "become meaningful" in operation
+             else f"The calculation involves {fragment(operation)}."),
             admissibility + ".",
-            f"The calculated observables are {fragment(frame.get('Observable or prediction', ''))}.",
+            (observable + "." if "must be stated" in observable
+             else f"The calculated quantities include {fragment(observable)}."),
         ]
     )
 
@@ -1620,7 +1625,7 @@ FIBER_PUBLIC = {
 
 BRANCH_CONSTRUCTOR = {
     "context": {
-        "claim": "{title} belongs at the first step of the constructor: it fixes the Hilbert space, operator domain, basis, representation, or preparation context before any probability statement is meaningful.",
+        "claim": "{title} is placed at the first step of the constructor, where the Hilbert space, operator domain, basis, representation, or preparation context is fixed before any probability statement is meaningful.",
         "reading": "The constructor starts by declaring the legal state carrier and the conditions under which states are admissible. In this role, {title} specifies the mathematical setting in which states, operators, spectra, and readout probabilities can be written without ambiguity.",
         "equations": [
             r"B \longmapsto (\mathcal H_B,\mathcal D_B)",
@@ -1628,7 +1633,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "states": {
-        "claim": "{title} supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.",
+        "claim": "{title} is placed at the state step, where the carrier of prediction is specified: the object that is propagated, transformed, restricted, or measured.",
         "reading": "At this step the constructor names the predictive carrier, not the final physical story. The carrier may be a state vector, wave function, density operator, field state, or register state. What matters is that later operations can act on it and that probabilities can be computed from it.",
         "equations": [
             r"\ket{\psi}\in\mathcal H,\qquad \rho=\ket{\psi}\bra{\psi}\ \text{or}\ \rho=\sum_a p_a\ket{\psi_a}\bra{\psi_a}",
@@ -1636,7 +1641,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "generators": {
-        "claim": "{title} belongs to the lawful-change step: it specifies how the state changes before a question is asked.",
+        "claim": "{title} is placed at the step of lawful change, which specifies how the state changes before a question is asked.",
         "reading": "The generator is the part of the construction that makes the state move while preserving the admissibility conditions. In ordinary quantum mechanics this is usually a Hamiltonian or unitary map; in path-integral language it is an action weight over histories.",
         "equations": [
             r"i\hbar\,\partial_t\ket{\psi_t}=H\ket{\psi_t}",
@@ -1644,7 +1649,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "observables": {
-        "claim": "{title} belongs to the question step: it turns a physical question into an operator with admissible answers.",
+        "claim": "{title} is placed at the question step, where a physical question becomes an operator with admissible answers.",
         "reading": "The constructor separates the state from the question asked of it. A measurable question is represented by an operator; the allowed answers are exposed by its spectral resolution. This is why the operator/spectrum signal is the spine of the quantum tree.",
         "equations": [
             r"O=\sum_i \lambda_i P_i",
@@ -1652,7 +1657,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "measurement": {
-        "claim": "{title} belongs to the readout step: it connects a prepared state and an operator spectrum to probabilities or state updates.",
+        "claim": "{title} is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.",
         "reading": "The constructor reads probabilities from the pair consisting of a state and a spectral question. Interpretive pages in this branch assign meaning to probability, state, or update while preserving the formal readout rule.",
         "equations": [
             r"p(i\mid \rho,O)=\operatorname{Tr}(P_i\rho)",
@@ -1660,7 +1665,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "incompatibility": {
-        "claim": "{title} belongs to the compatibility step: it marks when two valid questions cannot be jointly sharpened in one basis.",
+        "claim": "{title} is placed at the compatibility step, which marks when two valid questions cannot be made jointly sharp in one basis.",
         "reading": "In this role the constructor describes an algebraic obstruction. If two operators fail to commute, the same state cannot generally supply one common sharp spectral decomposition for both.",
         "equations": [
             r"[A,B]\ne 0",
@@ -1668,7 +1673,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "boundaries": {
-        "claim": "{title} belongs to realization: it shows how the abstract state-operator construction becomes legal on a domain, interface, potential, detector geometry, or scattering boundary.",
+        "claim": "{title} is placed at realization, where the abstract state-operator construction is made definite on a domain, interface, potential, detector geometry, or scattering boundary.",
         "reading": "Boundary realization is where the same operator logic receives a physical presentation. The state space and generator are restricted by a domain, potential, asymptotic condition, interface, or detector arrangement. This is where geometry enters as the realization layer around the invariant operator role.",
         "equations": [
             r"H_B=-\frac{\hbar^2}{2m}\Delta_B+V_B",
@@ -1676,7 +1681,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "fields": {
-        "claim": "{title} belongs to the many-mode extension: the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.",
+        "claim": "{title} is placed at the many-mode extension, where the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.",
         "reading": "The field layer extends the same constructor to variable numbers of modes and symmetry constraints. Creation and annihilation operators, correlation functions, gauge conditions, and renormalization flows are higher-capacity versions of the same assembly.",
         "equations": [
             r"[a_k,a_l^\dagger]=\delta_{kl}",
@@ -1685,7 +1690,7 @@ BRANCH_CONSTRUCTOR = {
         ],
     },
     "protocols": {
-        "claim": "{title} belongs to the protocol layer: it packages the quantum constructor into engineered sequences of admissible transformations and readouts.",
+        "claim": "{title} is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.",
         "reading": "Protocols are built after the state, operation, and readout rules exist. A circuit, channel, sensor, network, or algorithm is a controlled composition of maps whose output is checked by a final measurement.",
         "equations": [
             r"\rho\mapsto \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger,\qquad \sum_aK_a^\dagger K_a=I",
@@ -2586,6 +2591,7 @@ def editorial_references(slug: str, latex: bool = False) -> str:
 
 def page_display_name(title: str) -> str:
     clean = clean_text(title)
+    clean = re.sub(r"Schr(?:[ _]+Dinger|odinger)", "Schrödinger", clean, flags=re.IGNORECASE)
     special = {
         "qbism": "QBism",
         "qed": "QED",
@@ -2593,6 +2599,55 @@ def page_display_name(title: str) -> str:
         "ads/cft correspondence": "AdS/CFT correspondence",
     }
     return special.get(clean.lower(), clean)
+
+
+def edition_inventory(root: Path, tree: Mapping[str, Any]) -> Dict[str, Dict[str, Any]]:
+    inventory = {}
+    for branch_id, branch in tree["branches"].items():
+        for row in branch.get("pages", []):
+            page = load_json(page_path(root, row["slug"]))
+            if branch_id == "annotations" or row.get("is_annotation"):
+                kind = "annotation"
+            elif has_topic_constructor(page, row["slug"]):
+                kind = "treatment"
+            elif row.get("is_alias"):
+                kind = "alias"
+            else:
+                kind = "overview"
+            inventory[row["slug"]] = {
+                "title": page_display_name(page_title(page)), "branch": branch_id,
+                "kind": kind, "canonical_slug": row.get("canonical_slug"),
+            }
+    return inventory
+
+
+def companion_topic_index(tree: Mapping[str, Any], inventory: Mapping[str, Any]) -> str:
+    lines = [r"\chapter{Topic Reference Index}",
+             "This index retains every subject in the field map. A worked treatment has its own section in the preceding chapters. "
+             "An overview entry records an editorial placement only; no repeated branch equation is offered as a derivation of that subject. "
+             "Historical entries and alternative names are distinguished from physical treatments."]
+    for branch_id in BRANCH_ORDER:
+        branch = tree["branches"][branch_id]
+        lines.extend([rf"\section*{{{latex_escape(branch['title'])}}}",
+                      r"\begin{longtable}{p{0.57\linewidth}p{0.35\linewidth}}",
+                      r"\toprule Subject & Treatment in this edition \\", r"\midrule\endhead"])
+        for row in branch.get("pages", []):
+            slug = row["slug"]
+            entry = inventory[slug]
+            label = latex_label(slug)
+            title = latex_escape(entry["title"])
+            if entry["kind"] == "treatment":
+                status = rf"\hyperref[topic:{label}]{{Worked treatment, p.~\pageref*{{topic:{label}}}}}"
+            elif entry["kind"] == "alias":
+                canonical = inventory[entry["canonical_slug"]]
+                status = "Alternative name: " + latex_escape(canonical["title"])
+            elif entry["kind"] == "annotation":
+                status = "Historical or interpretive entry"
+            else:
+                status = "Overview entry; no individual derivation"
+            lines.append(rf"\phantomsection\label{{index:{label}}}{title} & {status} \\")
+        lines.extend([r"\bottomrule", r"\end{longtable}"])
+    return "\n".join(lines)
 
 
 def indefinite_article(phrase: str) -> str:
@@ -2844,17 +2899,8 @@ def constructor_block(
     if slug in TOPIC_CONSTRUCTOR_OVERRIDES:
         if not template.get("equation_note"):
             return ""
-        prose = latex_editorial_math if template.get("editorial_inline_math") else latex_escape
         lines = [
             r"\subsection*{Topic Equations}",
-            prose(
-                str(
-                    template.get("equation_note")
-                    or (
-                        "Role-level skeleton: a branch-level mechanism equation for checking the page's source evidence; source notation may differ."
-                    )
-                )
-            ),
             r"\begin{centeredalign}",
         ]
         equations = list(template["equations"])
@@ -2888,7 +2934,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
     rules: Dict[str, tuple[List[str], List[str], List[str]]] = {
         "context": (
             [
-                f"{title} supplies the admissible arena in which quantum states and operators are defined.",
+                "The context supplies the admissible arena in which quantum states and operators are defined.",
                 "Changing basis or representation should not change physical probabilities when the transformation is unitary.",
                 "Normalization, domain conditions, and inner products remain part of the same formal container.",
             ],
@@ -2905,7 +2951,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "states": (
             [
-                f"{title} carries the predictive information before a measurement question is asked.",
+                "The state carries the predictive information before a measurement question is asked.",
                 "The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state.",
                 "Normalization and positivity are the admissibility checks that make the state usable for probability readout.",
             ],
@@ -2922,7 +2968,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "generators": (
             [
-                f"{title} specifies lawful change before readout.",
+                "The generator specifies lawful change before a measurement.",
                 "The generator determines the propagator or path weight that carries the state between preparation and measurement.",
                 "Conserved quantities and symmetries are read from the generator and its commutation relations.",
             ],
@@ -2939,7 +2985,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "observables": (
             [
-                f"{title} defines the legal question being asked of the state.",
+                "The observable defines the question asked of the state.",
                 "The measurable answers are encoded by the operator spectrum, projectors, or spectral measure.",
                 "The operator role is preserved across equivalent bases even when matrix entries change.",
             ],
@@ -2956,7 +3002,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "measurement": (
             [
-                f"{title} connects the state and the spectral question to observed probabilities.",
+                "The measurement rule connects the state and the spectral question to observed probabilities.",
                 "The invariant step is the map from state plus measurement operators to a normalized probability distribution.",
                 "Projection-valued and POVM readouts preserve the same role: outcome channels weighted by the state.",
             ],
@@ -2973,7 +3019,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "incompatibility": (
             [
-                f"{title} identifies when otherwise legal quantum questions cannot be made jointly sharp.",
+                "The compatibility condition identifies when otherwise valid quantum questions cannot be made jointly sharp.",
                 "The stable object is the obstruction: non-commutation, non-factorization, contextuality, or failure of a joint assignment.",
                 "The page belongs to the compatibility layer because it limits which spectra can be read together.",
             ],
@@ -2990,7 +3036,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "boundaries": (
             [
-                f"{title} shows how a context, domain, potential, or boundary changes the allowed quantum channels.",
+                "A context, domain, potential, or boundary changes the allowed quantum channels.",
                 "The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes.",
                 "Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.",
             ],
@@ -3007,7 +3053,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "fields": (
             [
-                f"{title} extends the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale.",
+                "The field extension carries the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale.",
                 "Particle identity is treated as a stable excitation or representation role rather than as the starting object.",
                 "Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.",
             ],
@@ -3024,7 +3070,7 @@ def constructed_support_for_branch(title: str, branch_id: str) -> tuple[List[str
         ),
         "protocols": (
             [
-                f"{title} turns the quantum constructor into an ordered operation sequence.",
+                "A protocol turns the quantum constructor into an ordered operation sequence.",
                 "The stable role is compositional: admissible maps transform an input state into an output state before readout.",
                 "Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-readout logic.",
             ],
@@ -3119,16 +3165,8 @@ def support_lists_for_page(
     if tests and not unresolved_tests:
         falsifiers = tests[:3]
     else:
-        template = constructor_template(branch_id, row)
-        equation_note = clean_text(template.get("equation_note"))
-        if slug in TOPIC_CONSTRUCTOR_OVERRIDES or equation_note:
-            _, _, falsifiers = constructed_support_for_branch(page_display_name(page_title(page)), branch_id)
-        else:
-            falsifiers = [
-                "The constructor is meaningful only if it fits this branch better than an alternative branch placement.",
-                "The same formal role should survive a change of representation when the change is only notational.",
-                "A source-backed equation upgrades the branch placement into a completed mechanism.",
-            ]
+        # no topic-specific consequence: the physical consequences of the chapter's role, not text about the constructor
+        _, _, falsifiers = constructed_support_for_branch(page_display_name(page_title(page)), branch_id)
     return stable, variable, falsifiers
 
 
@@ -4255,9 +4293,9 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     topic_context = topic_context_text(page)
     topic_url = topic_source_url(page)
     topic_label = rf"\label{{topic:{latex_label(str(row.get('slug') or ''))}}}"
-    if row.get("is_alias"):
+    if row.get("is_alias") and not has_topic_constructor(page, str(row.get("slug") or "")):
         canonical_slug = str(row.get("canonical_slug") or "").strip()
-        canonical_title = canonical_slug.replace("_", " ").strip().title() or "the canonical topic"
+        canonical_title = page_display_name(canonical_slug.replace("_", " ").strip().title()) or "the canonical topic"
         target = latex_label(canonical_slug)
         return "\n".join(
             [
@@ -4295,7 +4333,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
             ),
         ])
         if evidence:
-            lines.extend([r"\subsection*{Source Pointers}", r"\begin{itemize}"])
+            lines.extend([r"\subsection*{Equation Sources}", r"\begin{itemize}"])
             for witness in evidence:
                 arxiv = witness.get("paper_id") or ""
                 url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
@@ -4389,7 +4427,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
     lines.append(latex_escape(consequence_prose_from_items(tests, 3)))
     lines.append("")
     if evidence:
-        lines.append(r"\subsection*{Source Pointers}")
+        lines.append(r"\subsection*{Equation Sources}")
         lines.append(r"\begin{itemize}")
         for witness in evidence:
             arxiv = witness.get("paper_id") or ""
@@ -4538,8 +4576,6 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
                 lines.extend(
                     [
                         "## Topic Equations",
-                        "",
-                        str(template.get("equation_note") or "Topic-specific constructor skeleton."),
                         "",
                         "```math",
                         "\n".join(equations),
@@ -5386,13 +5422,9 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
         latex_escape(
             "For a particle confined to an interval, both its length and the conditions at its ends affect the energy spectrum. A family of intervals can be mapped onto one reference interval by rescaling the coordinate, with the length then appearing in the kinetic coefficient. Dirichlet and Neumann conditions still define different operator domains on that reference interval. The realization therefore instantiates a specified family of operators; it is not a layer whose every change leaves the predictions fixed."
         ),
-        rf"\[{CONSTRUCTOR_CHAIN_LATEX}\]",
+        r"In the nested construction of Chapter~\ref{chap:physical-identity}, the dynamics and the observable consequence read",
         rf"\[{PHYSICAL_STATE_LATEX}\]",
-        r"A physical state \(q\) contains the information required to determine later observables at the chosen resolution. "
-        r"The admissible states form \(\Xi\), and \(\Omega\) acts on them as a generator, channel, projection, constraint, or observable. "
-        r"Their pair \(M=(\Omega,\Xi)\) fixes which operation acts on which physical degrees of freedom. "
-        r"Closure \(C\) fixes domains and admissibility, \(R\) maps states to observable predictions, and \(P\) fixes the order of preparation, control, and measurement. "
-        r"The realization \(A\) supplies the fields, material, parameters, geometry, initial data, and apparatus of a particular experiment.",
+        r"where a physical state \(q\) contains the information required to determine later observables at the chosen resolution.",
         latex_escape(
             "Each clause prevents a specific ambiguity. Without the state space, the operator has no domain. Without closure, its solutions or probabilities need not be admissible. "
             "Without an observable, the formal evolution has no predicted measurement. Without a protocol, noncommuting operations have no defined order."
@@ -5424,7 +5456,7 @@ def render_mechanism_guide(tree: Mapping[str, Any]) -> str:
 def compact_operator_formulation_chapter() -> str:
     """State the nested language and its quantum specialization."""
     lines: List[str] = [
-        r"\chapter{The Physical Identity Of A Quantum Mechanism}",
+        r"\chapter{The Physical Identity Of A Quantum Mechanism}\label{chap:physical-identity}",
         r"\begin{claimbox}",
         latex_escape(
             "Quantum predictions join an admissible state space to an operation, the conditions under which that operation is defined, and an observable consequence. "
@@ -5433,10 +5465,11 @@ def compact_operator_formulation_chapter() -> str:
         r"\end{claimbox}",
         r"\section{Nested Construction}",
         rf"\[{CONSTRUCTOR_CHAIN_LATEX}\]",
-        r"A physical state \(q\) belongs to \(\Xi\). The operation \(\Omega\) acts on \(q\), while \(M=(\Omega,\Xi)\) identifies the law together "
-        r"with the state space on which it is meaningful. Closure, an observable map, and protocol give the operational identity. "
-        r"The realization layer fixes the material or field content, scales, parameter values, initial and boundary data, geometry, drives, "
-        r"and apparatus needed for a particular calculation or experiment.",
+        r"The roles \(\Xi\), \(\Omega\), \(C\), \(R\), \(P\), and \(A\) are those introduced with the two coupled spins of "
+        r"Chapter~\ref{chap:mechanisms-predictions}; the chain nests them. The pair \(M=(\Omega,\Xi)\) identifies the law together "
+        r"with the state space on which it is meaningful. Closure, an observable map, and a protocol complete it to the operational identity, "
+        r"and the realization adds the material or field content, scales, parameter values, initial and boundary data, geometry, drives, "
+        r"and apparatus of a particular calculation or experiment.",
         r"\section{State Space And Operation Must Agree}",
         r"\begin{centeredalign}",
         r"\Xi_Q &= (\mathcal H,\mathcal D,\mathcal S,\mathcal A_{\rm obs}),\\",
@@ -5588,7 +5621,7 @@ def global_composition_chapter() -> str:
 
 
 def constructor_rewiring_chapter(root: Path) -> str:
-    """Render source-grounded equivalences between quantum descriptions."""
+    """Render authored connections, with their provenance visible in the book."""
     report = load_optional_json(root / "quantum_constructor_rewiring.json")
     connections = report.get("connections") if report else None
     if not isinstance(connections, list) or not connections:
@@ -5596,6 +5629,8 @@ def constructor_rewiring_chapter(root: Path) -> str:
 
     lines: List[str] = [
         r"\chapter{Equivalence Across Quantum Descriptions}",
+        "The following relations compare descriptions through their dynamics and observable consequences. "
+        "Their domain and measurement conditions determine whether the proposed correspondence holds.",
         r"\begin{claimbox}",
         latex_escape(
             "Two quantum descriptions represent the same physical mechanism when a map between their states preserves the dynamics and the stated observable consequences."
@@ -5609,8 +5644,9 @@ def constructor_rewiring_chapter(root: Path) -> str:
     ]
 
     for connection in connections:
-        title = str(connection.get("title") or "Constructor connection")
-        topics = ", ".join(str(value).replace("_", " ").title() for value in connection.get("topics") or [])
+        title = page_display_name(str(connection.get("title") or "Constructor connection"))
+        topic_titles = connection.get("topic_titles") or [str(value).replace("_", " ").title() for value in connection.get("topics") or []]
+        topics = ", ".join(page_display_name(str(value)) for value in topic_titles)
         invariant = str(connection.get("invariant") or "")
         rewiring = str(connection.get("rewiring") or "")
         test = str(connection.get("test") or "")
@@ -5660,7 +5696,7 @@ def quantum_discovery_chapter() -> str:
             "The maps alpha and beta carry source states and outputs into the target description. A vanishing residual means that evolution followed by translation gives the same state as translation followed by target evolution. Agreement of the corresponding observables then establishes another physical realization of the retained mechanism."
         ),
         latex_escape(
-            "Schrodinger, Heisenberg, and path-integral descriptions provide standard examples. Their variables and intermediate objects differ, while amplitudes and expectation values agree on the common domain. Quantum simulation uses the same structure when an encoded target algebra reproduces selected correlators in another physical device."
+            "Schrödinger, Heisenberg, and path-integral descriptions provide standard examples. Their variables and intermediate objects differ, while amplitudes and expectation values agree on the common domain. Quantum simulation uses the same structure when an encoded target algebra reproduces selected correlators in another physical device."
         ),
         r"\section{Structured Failure}",
         latex_escape(
@@ -5865,9 +5901,15 @@ def _legacy_render_book(root: Path, max_pages_per_branch: Optional[int] = None) 
     return center_equation_rows(public_theory_language("\n\n".join(lines)))
 
 
-def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
+def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition: str = "full") -> str:
     """Render the public discovery-oriented book and optional method appendices."""
+    if edition not in {"full", "companion"}:
+        raise ValueError(f"Unknown book edition: {edition}")
+    if edition == "companion" and max_pages_per_branch is not None:
+        raise ValueError("The companion edition preserves every topic-specific treatment; it cannot be truncated.")
     tree = load_json(root / "quantum_mechanism_tree.json")
+    inventory = edition_inventory(root, tree)
+    counts = Counter(entry["kind"] for entry in inventory.values())
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines: List[str] = [
         r"\documentclass[11pt,oneside]{book}",
@@ -5900,19 +5942,37 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         r"{\Huge\bfseries Quantum Theory\par}",
         r"\vspace{0.12cm}",
         r"{\Huge\bfseries As A Mechanism Tree\par}",
+        r"\vspace{0.3cm}",
+        r"{\large Expository companion\par}" if edition == "companion" else r"{\large Full reference edition\par}",
         r"\vspace{1.2cm}",
         r"{\large Synthetix Institute\par}",
-        rf"{{\large Generated {latex_escape(generated)}\par}}",
+        rf"{{\large Edition dated {latex_escape(generated)}\par}}",
         r"\vfill",
         r"\begin{claimbox}",
         r"\noindent Interactions generate phases, correlations and transitions. Their observable consequences connect the preparation of a quantum system to its later behaviour. This book develops those mechanisms through equations and follows their realization in different physical systems.",
         r"\end{claimbox}",
+        r"\vspace{0.5cm}",
+        r"\begin{minipage}{0.94\linewidth}\small\raggedright",
+        r"\textbf{Scope and authorship.} This companion develops established quantum theory through its physical mechanisms. "
+        r"The mechanism tree and its cross-topic connections are the authors' organization of those mechanisms. "
+        r"References identify the particular relations used in each treatment.",
+        r"\end{minipage}",
         r"\end{titlepage}",
         r"\hypersetup{pageanchor=true}",
         r"\tableofcontents",
         r"\chapter*{About This Edition}",
-        r"This companion orders quantum descriptions by the states, interactions, constraints and measurements that enter their predictions. Topic-specific derivations develop individual mechanisms; physical-role overviews locate additional subjects within the same organization. Their shared representative equations are identified as such. The interpretations and explanatory equations are editorial constructions, rather than new quantum laws inferred from the archive.",
-        r"References for a physical derivation are listed separately from recovered equation sources. Links headed Relations In The Original Papers locate displays inspected in the original articles, with their mathematical relevance and assumptions. They are distinguished in the accompanying records from equations recovered through the corpus alignment. The explanatory calculations are developed here; an original-paper link identifies the stated relation, rather than attributing the entire chapter to that paper.",
+        r"This companion orders quantum descriptions by the states, interactions, constraints and measurements that enter their predictions. "
+        r"Topic-specific derivations develop individual mechanisms. The role division is the authors' organizing choice; "
+        r"the structure of the tree is not presented as a partition independently recovered from the archive. "
+        r"The interpretations and explanatory equations are editorial constructions, rather than new quantum laws inferred from the archive.",
+        (rf"All {counts['treatment']} topic-specific treatments are retained. The reference index records "
+         rf"{counts['overview']} subjects whose full-edition entries repeat shared equations, {counts['alias']} alternative names, "
+         rf"and {counts['annotation']} historical or interpretive entries. An indexed subject is not counted as a developed treatment. "
+         r"The complete reference edition and topic files remain available separately."
+         if edition == "companion" else
+         r"Physical-role overviews locate additional subjects within the same organization. Their shared representative equations are identified as such. "
+         r"The shorter expository companion retains the topic-specific treatments and places these overviews in a reference index."),
+        r"References follow the calculations they support. Links headed Relations In The Original Papers identify particular displays in those articles; Equation Sources identifies relations aligned to corpus records. The authors develop the explanatory calculations in this volume.",
         r"\mainmatter",
         r"\part{Mechanisms And Predictions}",
         OPENING,
@@ -5928,17 +5988,25 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
     lines.append(quantum_discovery_chapter())
 
     for part_title, branch_ids in QUANTUM_BRANCH_PARTS:
+        if edition == "companion" and not any(
+            item["kind"] == "treatment" and item["branch"] in branch_ids for item in inventory.values()
+        ):
+            continue
         lines.append(rf"\part{{{latex_escape(part_title)}}}")
         for branch_id in branch_ids:
             branch = tree["branches"][branch_id]
+            pages = list(branch.get("pages") or [])
+            if edition == "companion":
+                pages = [row for row in pages if inventory[row["slug"]]["kind"] == "treatment"]
+                if not pages:
+                    continue
             lines.append(rf"\chapter{{{latex_escape(branch['title'])}}}")
             lines.append(r"\begin{claimbox}")
             lines.append(latex_escape(branch["definition"]))
             lines.append(r"\end{claimbox}")
             lines.append(latex_escape(branch["insight"]))
-            lines.append(r"\section{Topics}")
-            lines.append(branch_table(branch))
-            pages = list(branch.get("pages") or [])
+            lines.append(r"\section*{Topics}")
+            lines.append(branch_table({**branch, "pages": pages}))
             if max_pages_per_branch is not None:
                 pages = pages[:max_pages_per_branch]
             if not pages:
@@ -5947,41 +6015,25 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
                 for index, row in enumerate(pages, 1):
                     lines.append(page_entry(root, row, index, branch_id, branch))
 
+    if edition == "companion":
+        lines.append(companion_topic_index(tree, inventory))
+
     evidence_rows = [
         row
         for branch in (tree.get("branches") or {}).values()
         for row in (branch.get("pages") or [])
     ]
-    grounded = sum(bool((row.get("v2_evidence") or {}).get("available")) for row in evidence_rows)
-    identifier_linked = sum(
-        (row.get("v2_evidence") or {}).get("status") == "v2_identifier_linked"
-        for row in evidence_rows
-    )
-    without_candidate = sum(
-        (row.get("v2_evidence") or {}).get("status") == "legacy_witness_only"
-        for row in evidence_rows
-    )
-    if grounded:
-        source_statement = (
-            f"This edition contains {grounded} topics with recovered relations that pass checks for complete expressions, relevant relation terms and exact equation identifiers. "
-            f"A further {identifier_linked} topics have retrieval candidates awaiting confirmation, and {without_candidate} have no aligned candidate. "
-            "References for the physical derivations were selected separately and are not counted as recovered relations."
-        )
-    else:
-        source_statement = (
-            "Source citations are included only for topic-level equation witnesses confirmed by source-card alignment. "
-            f"The present source-card export confirms none: {identifier_linked} topics have identifier-linked candidates "
-            f"awaiting equation-level confirmation, and {without_candidate} have no aligned candidate."
-        )
-    source_statement += (
-        " The repository contains the generated tree, topic records, derivation pages, build scripts, "
-        "and preservation report needed to reproduce this edition."
-    )
+    grounded = sum(bool(top_evidence({}, row)) for row in evidence_rows)
     originals = load_original_sources(root)
-    source_statement += (
-        f" Original-paper recovery additionally supplies {len(originals['records'])} display records "
-        f"for {originals['topic_count']} topics, with article locations and recorded expression hashes. "
-        "These independently selected displays do not establish alignment to the original corpus rows."
+    source_statement = (
+        f"Equation Sources links corpus-aligned relations for {grounded} topics. "
+        f"Relations In The Original Papers links {len(originals['records'])} displays "
+        f"from {len({record['paper_id'] for record in originals['records']})} articles across "
+        f"{originals['topic_count']} topics. The cited relations and their conditions appear "
+        "beside the relevant treatment. The mechanism tree and cross-topic comparisons are "
+        "the authors' explanatory organization of established theory. "
+        "The edition manifest records the individual equation and article identifiers. "
+        "Independent scientific review of every chapter remains to be completed."
     )
 
     lines.extend(
@@ -6001,16 +6053,42 @@ def main() -> None:
     parser.add_argument("--out-dir", default="discoveries/morphwiki_quantum/book")
     parser.add_argument("--pages-out-dir", default="discoveries/morphwiki_quantum/derivation_pages")
     parser.add_argument("--max-pages-per-branch", type=int, default=None)
+    parser.add_argument("--edition", choices=("full", "companion"), default="full")
     args = parser.parse_args()
 
     root = Path(args.root)
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    tex = render_book(root, args.max_pages_per_branch)
+    tex = render_book(root, args.max_pages_per_branch, edition=args.edition)
     tex_path = out_dir / "quantum_mechanism_tree_book.tex"
     tex_path.write_text(tex, encoding="utf-8")
     tree = load_json(root / "quantum_mechanism_tree.json")
     pages_manifest = write_derivation_pages(root, Path(args.pages_out_dir), tree)
+    topics = edition_inventory(root, tree)
+    originals = load_original_sources(root)["records"]
+    for branch in tree["branches"].values():
+        for row in branch.get("pages", []):
+            slug = row["slug"]
+            page = load_json(page_path(root, slug))
+            topics[slug]["equation_sources"] = {
+                "corpus_aligned": [
+                    {"paper_id": witness["paper_id"], "record_id": witness["record_id"],
+                     "url": witness["arxiv_url"]}
+                    for witness in top_evidence(page, row)
+                ],
+                "original_paper_displays": [
+                    {"paper_id": record["paper_id"], "display_id": record["display_id"],
+                     "url": record["url"]}
+                    for record in originals if record["topic"] == slug
+                ],
+            }
+    edition_manifest = {
+        "edition": args.edition,
+        "scope": "Exposition with authored organizing interpretations; not evidence of automated physical discovery.",
+        "scientific_review_status": "incomplete",
+        "topics": topics,
+    }
+    (out_dir / "edition_manifest.json").write_text(json.dumps(edition_manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"tex": str(tex_path), "derivation_pages": pages_manifest}, indent=2))
 
 

@@ -12,11 +12,9 @@ The tensor-product decomposition specifies what counts as subsystem A and subsys
 
 ## Physical Construction
 
-The state carrier is a composite Hilbert space with a physically specified subsystem algebra or tensor-product factorization. The governing operation is Schmidt decomposition, partial trace, local observables, and joint correlation operators. The joint density operator is positive and normalized; separability is defined relative to the chosen subsystem structure. The calculated observables are Reduced-state spectra, entanglement entropy, correlation witnesses, and Bell parameters.
+The state carrier is a composite Hilbert space with a physically specified subsystem algebra or tensor-product factorization. The calculation involves Schmidt decomposition, partial trace, local observables, and joint correlation operators. The joint density operator is positive and normalized; separability is defined relative to the chosen subsystem structure. The calculated quantities include reduced-state spectra, entanglement entropy, correlation witnesses, and Bell parameters.
 
 ## Topic Equations
-
-Subsystem factorization, Schmidt spectrum, reduced-state entropy, and Bell correlations separate the state relation from its local observable.
 
 ```math
 \mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B

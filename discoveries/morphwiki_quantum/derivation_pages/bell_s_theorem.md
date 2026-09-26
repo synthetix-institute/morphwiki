@@ -6,17 +6,15 @@
 
 Bell's theorem is a compatibility/locality stress test: quantum correlations violate bounds satisfied by local hidden-variable assignments.
 
-Bell's theorem connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 Bell's theorem is not a page about a mysterious object. It is a falsifier for a classical joint-assignment model of measurement outcomes.
 
 ## Physical Construction
 
-The state carrier is One state space or a multipartite state space on which several questions can be asked. The governing operation is Two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated observables are Joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
+The state carrier is one state space or a multipartite state space on which several questions can be asked. The calculation involves two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated quantities include joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
 
 ## Topic Equations
-
-Standard constructor skeleton: CHSH inequality and quantum violation bound.
 
 ```math
 |E(a,b)+E(a,b')+E(a',b)-E(a',b')|\le 2
@@ -37,4 +35,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.

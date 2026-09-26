@@ -6,17 +6,15 @@
 
 Boson is an exchange-symmetry constructor: identical bosons live in symmetric sectors and can share the same mode.
 
-Boson places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
 
 The mechanism is symmetric exchange. Commuting creation and annihilation operators allow arbitrary nonnegative occupation of a mode, which supports field modes, coherent states, condensates, and photon-like observables.
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express symmetric sectors, commutation, and unrestricted mode occupation.
 
 ```math
 \mathcal F_{+}(\mathcal H)=\bigoplus_{n=0}^{\infty}\operatorname{Sym}^n\mathcal H

@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Einstein–Podolsky–Rosen paradox belongs to the measurement step: it connects a prepared state and an operator spectrum to probabilities or state updates.
+Einstein–Podolsky–Rosen paradox is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
 
-Einstein–Podolsky–Rosen paradox connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
+The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
 
 A measurement couples a prepared state to recorded outcomes and, when conditioning is retained, to the resulting state change.
 
 ## Physical Construction
 
-The state carrier is a prepared state together with the measurement context and any apparatus degrees of freedom retained in the model. The governing operation is a projection-valued measure, POVM, quantum instrument, or detector interaction. Outcome probabilities are positive and normalized; conditional state changes must define completely positive maps. The calculated observables are Outcome probabilities, detector records, ensemble frequencies, and conditional post-measurement states.
+The state carrier is a prepared state together with the measurement context and any apparatus degrees of freedom retained in the model. The calculation involves a projection-valued measure, POVM, quantum instrument, or detector interaction. Outcome probabilities are positive and normalized; conditional state changes must define completely positive maps. The calculated quantities include outcome probabilities, detector records, ensemble frequencies, and conditional post-measurement states.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ Once the probability rule is explicit, incompatibility can be tested rather than
 
 ## Invariance And Realization
 
-Einstein–Podolsky–Rosen paradox connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
 

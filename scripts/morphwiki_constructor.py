@@ -31,8 +31,9 @@ CONSTRUCTOR_CLAUSES = (
     (
         "C",
         "closure",
-        "The conditions that make the construction admissible: normalization, "
-        "positivity, domain, gauge, constitutive, or compatibility constraints.",
+        "What is specified or discarded to obtain closed equations: constitutive relations, "
+        "admissibility (normalization, positivity, gauge, or compatibility constraints), operator "
+        "domains, boundaries, imposed conservation laws, and eliminated degrees of freedom.",
     ),
     (
         "R",
@@ -49,8 +50,9 @@ CONSTRUCTOR_CLAUSES = (
     (
         "A",
         "realization",
-        "The named physical embodiment: material or field content, initial and "
-        "boundary data, parameter ranges, units, geometry, drives, devices, and trajectories.",
+        "The material or apparatus that implements the model, entered as parameter values: "
+        "material or field content, initial and boundary data, parameter ranges, units, "
+        "geometry, drives, devices, and trajectories.",
     ),
 )
 

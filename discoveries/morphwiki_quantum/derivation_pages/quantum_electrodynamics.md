@@ -12,11 +12,9 @@ In natural units $\hbar=c=1$, let $\psi$ be the charged Dirac field, $m$ its mas
 
 ## Physical Construction
 
-The state carrier is Dirac and electromagnetic field states satisfying the Gauss constraint. The governing operation is the minimally coupled Dirac-Maxwell action and its quantized evolution. Charge conservation, fermionic statistics and gauge constraints restrict amplitudes. The calculated observables are emission and scattering probabilities, energy shifts and electromagnetic response.
+The state carrier is Dirac and electromagnetic field states satisfying the Gauss constraint. The calculation involves the minimally coupled Dirac-Maxwell action and its quantized evolution. Charge conservation, fermionic statistics and gauge constraints restrict amplitudes. The calculated quantities include emission and scattering probabilities, energy shifts and electromagnetic response.
 
 ## Topic Equations
-
-The metric is (+,-,-,-). The current j^mu is the electric current in this convention. Local phase transformations change psi and A_mu together.
 
 ```math
 D_\mu=\partial_\mu+iqA_\mu,\qquad F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu

@@ -12,11 +12,9 @@ For two operators on a common domain, [A,B]=AB-BA compares the two possible orde
 
 ## Physical Construction
 
-The state carrier is a common state space on which two transformations, observables, or questions are both defined. The governing operation is the ordered products AB and BA, compared through the obstruction [A,B]=AB-BA. A nonzero commutator marks an order-dependence or compatibility limit; a zero commutator permits a common sharp refinement only when the remaining spectral conditions hold. The calculated observables are Compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.
+The state carrier is a common state space on which two transformations, observables, or questions are both defined. The calculation involves the ordered products AB and BA, compared through the obstruction [A,B]=AB-BA. A nonzero commutator marks an order-dependence or compatibility limit; a zero commutator permits a common sharp refinement only when the remaining spectral conditions hold. The calculated quantities include compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.
 
 ## Topic Equations
-
-Order exchange, Heisenberg evolution, uncertainty, and the leading closed-sequence response are four consequences of the same commutator.
 
 ```math
 [A,B]=AB-BA

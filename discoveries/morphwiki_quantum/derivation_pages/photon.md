@@ -6,17 +6,15 @@
 
 Photon is a field-mode constructor: a one-quantum excitation of the electromagnetic field, constrained by massless dispersion and transverse polarization.
 
-Photon places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
 
 The native photon mechanism is field quantization. The electromagnetic field is decomposed into modes, creation and annihilation operators act on those modes, and a one-photon state is created from the vacuum. The relevant observables are occupation number, energy, momentum, polarization, and detector clicks; the constraints are dispersion and gauge-compatible transversality.
 
 ## Physical Construction
 
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The governing operation is Creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated observables are Occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
+The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express massless dispersion, one-mode occupation, number observable, and transverse polarization.
 
 ```math
 E=\hbar\omega,\qquad \mathbf p=\hbar\mathbf k,\qquad \omega=c|\mathbf k|

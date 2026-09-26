@@ -12,11 +12,9 @@ Coarse graining removes short-distance variables and generates every operator al
 
 ## Physical Construction
 
-The state carrier is Effective fields and degrees of freedom defined at a stated resolution or cutoff. The governing operation is a coarse-graining transformation and beta functions acting on the coefficients of an effective operator expansion. Symmetry, dimensionality, locality assumptions, relevant directions, and renormalization conditions determine the allowed flow. The calculated observables are Running couplings, correlation functions, scaling dimensions, critical exponents, and corrections to scaling.
+The state carrier is effective fields and degrees of freedom defined at a stated resolution or cutoff. The calculation involves a coarse-graining transformation and beta functions acting on the coefficients of an effective operator expansion. Symmetry, dimensionality, locality assumptions, relevant directions, and renormalization conditions determine the allowed flow. The calculated quantities include running couplings, correlation functions, scaling dimensions, critical exponents, and corrections to scaling.
 
 ## Topic Equations
-
-Beta functions, scale-independent observables, fixed points, and scaling directions define the transport of a theory across resolution.
 
 ```math
 \mu\frac{dg_i}{d\mu}=\beta_i(\{g\})

@@ -1,0 +1,1638 @@
+{
+  "edition": "full",
+  "scope": "Exposition with authored organizing interpretations; not evidence of automated physical discovery.",
+  "scientific_review_status": "incomplete",
+  "topics": {
+    "transformation_theory_quantum_mechanics": {
+      "title": "Transformation theory (quantum mechanics)",
+      "branch": "context",
+      "kind": "overview",
+      "canonical_slug": "transformation_theory_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "mathematical_formulation_of_quantum_mechanics": {
+      "title": "Mathematical formulation of quantum mechanics",
+      "branch": "context",
+      "kind": "overview",
+      "canonical_slug": "mathematical_formulation_of_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "hilbert_space": {
+      "title": "Hilbert space",
+      "branch": "context",
+      "kind": "treatment",
+      "canonical_slug": "hilbert_space",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_differential_calculus": {
+      "title": "Quantum differential calculus",
+      "branch": "context",
+      "kind": "overview",
+      "canonical_slug": "quantum_differential_calculus",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_mechanics": {
+      "title": "Quantum mechanics",
+      "branch": "context",
+      "kind": "treatment",
+      "canonical_slug": "quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "old_quantum_theory": {
+      "title": "Old quantum theory",
+      "branch": "context",
+      "kind": "treatment",
+      "canonical_slug": "old_quantum_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "fourier_transform": {
+      "title": "Fourier transform",
+      "branch": "context",
+      "kind": "treatment",
+      "canonical_slug": "fourier_transform",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1508.06951",
+            "display_id": "S2.EGx7",
+            "url": "https://arxiv.org/html/1508.06951#S2.EGx7"
+          }
+        ]
+      }
+    },
+    "density_matrix": {
+      "title": "Density matrix",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "density_matrix",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_superposition": {
+      "title": "Quantum superposition",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "quantum_superposition",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_decoherence": {
+      "title": "Quantum decoherence",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "quantum_decoherence",
+      "equation_sources": {
+        "corpus_aligned": [
+          {
+            "paper_id": "quant-ph/0306087",
+            "record_id": "EQC-fc435d2476332823",
+            "url": "https://arxiv.org/abs/quant-ph/0306087"
+          },
+          {
+            "paper_id": "quant-ph/0008131",
+            "record_id": "EQC-fb32a0be67c16fd5",
+            "url": "https://arxiv.org/abs/quant-ph/0008131"
+          },
+          {
+            "paper_id": "quant-ph/0211096",
+            "record_id": "EQC-e60585639dd72309",
+            "url": "https://arxiv.org/abs/quant-ph/0211096"
+          }
+        ],
+        "original_paper_displays": []
+      }
+    },
+    "coherence_physics": {
+      "title": "Coherence (physics)",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "coherence_physics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "superposition_principle": {
+      "title": "Superposition principle",
+      "branch": "states",
+      "kind": "alias",
+      "canonical_slug": "quantum_superposition",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "wave_function": {
+      "title": "Wave function",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "wave_function",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_state": {
+      "title": "Quantum state",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "quantum_state",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1508.06951",
+            "display_id": "S3.Ex131",
+            "url": "https://arxiv.org/html/1508.06951#S3.Ex131"
+          }
+        ]
+      }
+    },
+    "two_state_quantum_system": {
+      "title": "Two-state quantum system",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "two_state_quantum_system",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "qubit": {
+      "title": "Qubit",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "qubit",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_number": {
+      "title": "Quantum number",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "quantum_number",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "spin_physics": {
+      "title": "Spin (physics)",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "spin_physics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "schr_dinger_s_cat": {
+      "title": "Schrödinger's cat",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "schr_dinger_s_cat",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_entanglement": {
+      "title": "Quantum entanglement",
+      "branch": "states",
+      "kind": "treatment",
+      "canonical_slug": "quantum_entanglement",
+      "equation_sources": {
+        "corpus_aligned": [
+          {
+            "paper_id": "math-ph/0211065",
+            "record_id": "EQC-d42c97633affb4e8",
+            "url": "https://arxiv.org/abs/math-ph/0211065"
+          }
+        ],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_biology": {
+      "title": "Quantum biology",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "quantum_biology",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "macroscopic_quantum_phenomena": {
+      "title": "Macroscopic quantum phenomena",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "macroscopic_quantum_phenomena",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_fluctuation": {
+      "title": "Quantum fluctuation",
+      "branch": "states",
+      "kind": "overview",
+      "canonical_slug": "quantum_fluctuation",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "unitary_operator": {
+      "title": "Unitary operator",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "unitary_operator",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "perturbation_theory": {
+      "title": "Perturbation theory",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "perturbation_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_dynamics": {
+      "title": "Quantum dynamics",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "quantum_dynamics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "path_integral_formulation": {
+      "title": "Path integral formulation",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "path_integral",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "hamiltonian_mechanics": {
+      "title": "Hamiltonian mechanics",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "hamiltonian_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "path_integral": {
+      "title": "Path integral",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "path_integral",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "hamiltonian_quantum_mechanics": {
+      "title": "Hamiltonian (quantum mechanics)",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "hamiltonian_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "perturbation_theory_quantum_mechanics": {
+      "title": "Perturbation theory (quantum mechanics)",
+      "branch": "generators",
+      "kind": "alias",
+      "canonical_slug": "perturbation_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_chaos": {
+      "title": "Quantum chaos",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "quantum_chaos",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "schr_dinger_equation": {
+      "title": "Schrödinger equation",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "schr_dinger_equation",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "symmetry_in_quantum_mechanics": {
+      "title": "Symmetry in quantum mechanics",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "symmetry_in_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "heisenberg_picture": {
+      "title": "Heisenberg picture",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "heisenberg_picture",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1508.06951",
+            "display_id": "S3.Ex177",
+            "url": "https://arxiv.org/html/1508.06951#S3.Ex177"
+          }
+        ]
+      }
+    },
+    "quantum_stochastic_calculus": {
+      "title": "Quantum stochastic calculus",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "quantum_stochastic_calculus",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "relativistic_quantum_mechanics": {
+      "title": "Relativistic quantum mechanics",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "relativistic_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "schr_dinger_picture": {
+      "title": "Schrödinger picture",
+      "branch": "generators",
+      "kind": "overview",
+      "canonical_slug": "schr_dinger_picture",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "creation_and_annihilation_operators": {
+      "title": "Creation and annihilation operators",
+      "branch": "generators",
+      "kind": "treatment",
+      "canonical_slug": "creation_and_annihilation_operators",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "spectral_theory": {
+      "title": "Spectral theory",
+      "branch": "observables",
+      "kind": "treatment",
+      "canonical_slug": "spectral_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1508.06951",
+            "display_id": "S2.EGx25",
+            "url": "https://arxiv.org/html/1508.06951#S2.EGx25"
+          }
+        ]
+      }
+    },
+    "pauli_matrices": {
+      "title": "Pauli matrices",
+      "branch": "observables",
+      "kind": "treatment",
+      "canonical_slug": "pauli_matrices",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "quant-ph/9705052",
+            "display_id": "Ch1.E3",
+            "url": "https://arxiv.org/html/quant-ph/9705052#Ch1.E3"
+          }
+        ]
+      }
+    },
+    "angular_momentum_operator": {
+      "title": "Angular momentum operator",
+      "branch": "observables",
+      "kind": "treatment",
+      "canonical_slug": "angular_momentum_operator",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "observable": {
+      "title": "Observable",
+      "branch": "observables",
+      "kind": "treatment",
+      "canonical_slug": "observable",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "self_adjoint_operator": {
+      "title": "Self-adjoint operator",
+      "branch": "observables",
+      "kind": "treatment",
+      "canonical_slug": "self_adjoint_operator",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "operator_theory": {
+      "title": "Operator theory",
+      "branch": "observables",
+      "kind": "overview",
+      "canonical_slug": "operator_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "operator_physics": {
+      "title": "Operator (physics)",
+      "branch": "observables",
+      "kind": "alias",
+      "canonical_slug": "operator_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "eigenvalues_and_eigenvectors": {
+      "title": "Eigenvalues and eigenvectors",
+      "branch": "observables",
+      "kind": "overview",
+      "canonical_slug": "eigenvalues_and_eigenvectors",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "heisenberg_group": {
+      "title": "Heisenberg group",
+      "branch": "observables",
+      "kind": "treatment",
+      "canonical_slug": "heisenberg_group",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1508.06951",
+            "display_id": "S1.E21",
+            "url": "https://arxiv.org/html/1508.06951#S1.E21"
+          }
+        ]
+      }
+    },
+    "von_neumann_algebra": {
+      "title": "Von Neumann algebra",
+      "branch": "observables",
+      "kind": "overview",
+      "canonical_slug": "von_neumann_algebra",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_logic": {
+      "title": "Quantum logic",
+      "branch": "observables",
+      "kind": "overview",
+      "canonical_slug": "quantum_logic",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "commutator": {
+      "title": "Commutator",
+      "branch": "incompatibility",
+      "kind": "treatment",
+      "canonical_slug": "commutator",
+      "equation_sources": {
+        "corpus_aligned": [
+          {
+            "paper_id": "quant-ph/0005019",
+            "record_id": "EQC-f06091c300651d82",
+            "url": "https://arxiv.org/abs/quant-ph/0005019"
+          },
+          {
+            "paper_id": "quant-ph/0001056",
+            "record_id": "EQC-e71ddb9f81d89e74",
+            "url": "https://arxiv.org/abs/quant-ph/0001056"
+          },
+          {
+            "paper_id": "hep-ph/0104068",
+            "record_id": "EQC-d402d5055e818797",
+            "url": "https://arxiv.org/abs/hep-ph/0104068"
+          }
+        ],
+        "original_paper_displays": []
+      }
+    },
+    "uncertainty_principle": {
+      "title": "Uncertainty principle",
+      "branch": "incompatibility",
+      "kind": "treatment",
+      "canonical_slug": "uncertainty_principle",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "canonical_commutation_relation": {
+      "title": "Canonical commutation relation",
+      "branch": "incompatibility",
+      "kind": "treatment",
+      "canonical_slug": "canonical_commutation_relation",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1508.06951",
+            "display_id": "S1.E21",
+            "url": "https://arxiv.org/html/1508.06951#S1.E21"
+          }
+        ]
+      }
+    },
+    "povm": {
+      "title": "POVM",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "povm",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "measurement_in_quantum_mechanics": {
+      "title": "Measurement in quantum mechanics",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "measurement_in_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_jump": {
+      "title": "Quantum jump",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "quantum_jump",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "quant-ph/9702007",
+            "display_id": "S4.E66",
+            "url": "https://arxiv.org/html/quant-ph/9702007#S4.E66"
+          }
+        ]
+      }
+    },
+    "wave_function_collapse": {
+      "title": "Wave function collapse",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "wave_function_collapse",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "born_rule": {
+      "title": "Born rule",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "born_rule",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "measurement_problem": {
+      "title": "Measurement problem",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "measurement_problem",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_eraser_experiment": {
+      "title": "Quantum eraser experiment",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "quantum_eraser_experiment",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "projection_valued_measure": {
+      "title": "Projection-valued measure",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "projection_valued_measure",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_amplifier": {
+      "title": "Quantum amplifier",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "quantum_amplifier",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1110.3234v1",
+            "display_id": "S5.E110",
+            "url": "https://arxiv.org/html/1110.3234v1#S5.E110"
+          }
+        ]
+      }
+    },
+    "bell_s_theorem": {
+      "title": "Bell's theorem",
+      "branch": "measurement",
+      "kind": "treatment",
+      "canonical_slug": "bell_s_theorem",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_nonlocality": {
+      "title": "Quantum nonlocality",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "quantum_nonlocality",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "delayed_choice_quantum_eraser": {
+      "title": "Delayed-choice quantum eraser",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "delayed_choice_quantum_eraser",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_imaging": {
+      "title": "Quantum imaging",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "quantum_imaging",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "wave_particle_duality": {
+      "title": "Wave–particle duality",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "wave_particle_duality",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "einstein_podolsky_rosen_paradox": {
+      "title": "Einstein–Podolsky–Rosen paradox",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "einstein_podolsky_rosen_paradox",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "electron_microscope": {
+      "title": "Electron microscope",
+      "branch": "measurement",
+      "kind": "overview",
+      "canonical_slug": "electron_microscope",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_computing": {
+      "title": "Quantum computing",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_computing",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_information_science": {
+      "title": "Quantum information science",
+      "branch": "protocols",
+      "kind": "alias",
+      "canonical_slug": "quantum_information",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_network": {
+      "title": "Quantum network",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_network",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_algorithm": {
+      "title": "Quantum algorithm",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_algorithm",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_error_correction": {
+      "title": "Quantum error correction",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_error_correction",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "quant-ph/9705052",
+            "display_id": "Ch2.E10",
+            "url": "https://arxiv.org/html/quant-ph/9705052#Ch2.E10"
+          },
+          {
+            "paper_id": "quant-ph/0302006",
+            "display_id": "S3.E22",
+            "url": "https://arxiv.org/html/quant-ph/0302006#S3.E22"
+          }
+        ]
+      }
+    },
+    "quantum_channel": {
+      "title": "Quantum channel",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_channel",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_logic_gate": {
+      "title": "Quantum logic gate",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_logic_gate",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_neural_network": {
+      "title": "Quantum neural network",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_neural_network",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_circuit": {
+      "title": "Quantum circuit",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_circuit",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_information": {
+      "title": "Quantum information",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_information",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_key_distribution": {
+      "title": "Quantum key distribution",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_key_distribution",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "0802.4155",
+            "display_id": "S4.EGx43",
+            "url": "https://arxiv.org/html/0802.4155#S4.EGx43"
+          }
+        ]
+      }
+    },
+    "quantum_sensor": {
+      "title": "Quantum sensor",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_sensor",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_machine": {
+      "title": "Quantum machine",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_machine",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_teleportation": {
+      "title": "Quantum teleportation",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_teleportation",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1110.3234v1",
+            "display_id": "S4.E101",
+            "url": "https://arxiv.org/html/1110.3234v1#S4.E101"
+          }
+        ]
+      }
+    },
+    "quantum_finite_automaton": {
+      "title": "Quantum finite automaton",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_finite_automaton",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_machine_learning": {
+      "title": "Quantum machine learning",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_machine_learning",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_programming": {
+      "title": "Quantum programming",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_programming",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_simulator": {
+      "title": "Quantum simulator",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_simulator",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_cryptography": {
+      "title": "Quantum cryptography",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_cryptography",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_metrology": {
+      "title": "Quantum metrology",
+      "branch": "protocols",
+      "kind": "treatment",
+      "canonical_slug": "quantum_metrology",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "quant-ph/0509179",
+            "display_id": "S0.EGx4",
+            "url": "https://arxiv.org/html/quant-ph/0509179#S0.EGx4"
+          }
+        ]
+      }
+    },
+    "quantum_bus": {
+      "title": "Quantum bus",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_bus",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_image_processing": {
+      "title": "Quantum image processing",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_image_processing",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_engineering": {
+      "title": "Quantum engineering",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_engineering",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_cellular_automaton": {
+      "title": "Quantum cellular automaton",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_cellular_automaton",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_complexity_theory": {
+      "title": "Quantum complexity theory",
+      "branch": "protocols",
+      "kind": "overview",
+      "canonical_slug": "quantum_complexity_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "potential_well": {
+      "title": "Potential well",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "potential_well",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "scattering": {
+      "title": "Scattering",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "scattering",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "particle_in_a_box": {
+      "title": "Particle in a box",
+      "branch": "boundaries",
+      "kind": "treatment",
+      "canonical_slug": "particle_in_a_box",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_optics": {
+      "title": "Quantum optics",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "quantum_optics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "wave_interference": {
+      "title": "Wave interference",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "wave_interference",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "spectral_line": {
+      "title": "Spectral line",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "spectral_line",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_tunnelling": {
+      "title": "Quantum tunnelling",
+      "branch": "boundaries",
+      "kind": "treatment",
+      "canonical_slug": "quantum_tunnelling",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "s_matrix": {
+      "title": "S-matrix",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "s_matrix",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_harmonic_oscillator": {
+      "title": "Quantum harmonic oscillator",
+      "branch": "boundaries",
+      "kind": "treatment",
+      "canonical_slug": "quantum_harmonic_oscillator",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1110.3234v1",
+            "display_id": "S2.E3",
+            "url": "https://arxiv.org/html/1110.3234v1#S2.E3"
+          }
+        ]
+      }
+    },
+    "quantum_metamaterial": {
+      "title": "Quantum metamaterial",
+      "branch": "boundaries",
+      "kind": "overview",
+      "canonical_slug": "quantum_metamaterial",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "gauge_theory": {
+      "title": "Gauge theory",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "gauge_theory",
+      "equation_sources": {
+        "corpus_aligned": [
+          {
+            "paper_id": "hep-th/0106242",
+            "record_id": "EQC-e9a633b113b2193f",
+            "url": "https://arxiv.org/abs/hep-th/0106242"
+          },
+          {
+            "paper_id": "hep-th/0010277",
+            "record_id": "EQC-e6a584da5514f97a",
+            "url": "https://arxiv.org/abs/hep-th/0010277"
+          }
+        ],
+        "original_paper_displays": []
+      }
+    },
+    "photon": {
+      "title": "Photon",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "photon",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "renormalization": {
+      "title": "Renormalization",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "renormalization",
+      "equation_sources": {
+        "corpus_aligned": [
+          {
+            "paper_id": "hep-ph/0106305",
+            "record_id": "EQC-e9e2ae4dab32be3e",
+            "url": "https://arxiv.org/abs/hep-ph/0106305"
+          },
+          {
+            "paper_id": "hep-th/0104197",
+            "record_id": "EQC-ce075bf424b6119a",
+            "url": "https://arxiv.org/abs/hep-th/0104197"
+          }
+        ],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_field_theory": {
+      "title": "Quantum field theory",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "quantum_field_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "fermi_dirac_statistics": {
+      "title": "Fermi–Dirac statistics",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "fermi_dirac_statistics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "dirac_equation": {
+      "title": "Dirac equation",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "dirac_equation",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_electrodynamics": {
+      "title": "Quantum electrodynamics",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "quantum_electrodynamics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "boson": {
+      "title": "Boson",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "boson",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_chromodynamics": {
+      "title": "Quantum chromodynamics",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "quantum_chromodynamics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "fermion": {
+      "title": "Fermion",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "fermion",
+      "equation_sources": {
+        "corpus_aligned": [
+          {
+            "paper_id": "cond-mat/0005069",
+            "record_id": "EQC-fa88c854a37acf6a",
+            "url": "https://arxiv.org/abs/cond-mat/0005069"
+          },
+          {
+            "paper_id": "quant-ph/0305150",
+            "record_id": "EQC-f7eb1067fd26feeb",
+            "url": "https://arxiv.org/abs/quant-ph/0305150"
+          },
+          {
+            "paper_id": "hep-ph/0007343",
+            "record_id": "EQC-f67dfc12cbe04e8f",
+            "url": "https://arxiv.org/abs/hep-ph/0007343"
+          }
+        ],
+        "original_paper_displays": []
+      }
+    },
+    "electron": {
+      "title": "Electron",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "electron",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "spin_foam": {
+      "title": "Spin foam",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "spin_foam",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "ads_cft_correspondence": {
+      "title": "AdS/CFT correspondence",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "ads_cft_correspondence",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "loop_quantum_gravity": {
+      "title": "Loop quantum gravity",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "loop_quantum_gravity",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "spin_network": {
+      "title": "Spin network",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "spin_network",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_chemistry": {
+      "title": "Quantum chemistry",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "quantum_chemistry",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "standard_model": {
+      "title": "Standard Model",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "standard_model",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "klein_gordon_equation": {
+      "title": "Klein–Gordon equation",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "klein_gordon_equation",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "bose_einstein_statistics": {
+      "title": "Bose–Einstein statistics",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "bose_einstein_statistics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "string_theory": {
+      "title": "String theory",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "string_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_statistical_mechanics": {
+      "title": "Quantum statistical mechanics",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "quantum_statistical_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": [
+          {
+            "paper_id": "1110.3234v1",
+            "display_id": "S2.E27",
+            "url": "https://arxiv.org/html/1110.3234v1#S2.E27"
+          }
+        ]
+      }
+    },
+    "quantum_gravity": {
+      "title": "Quantum gravity",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "quantum_gravity",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_geometry": {
+      "title": "Quantum geometry",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "quantum_geometry",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_spacetime": {
+      "title": "Quantum spacetime",
+      "branch": "fields",
+      "kind": "overview",
+      "canonical_slug": "quantum_spacetime",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "fock_space": {
+      "title": "Fock space",
+      "branch": "fields",
+      "kind": "treatment",
+      "canonical_slug": "fock_space",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "introduction_to_quantum_mechanics_book": {
+      "title": "Introduction to Quantum Mechanics (book)",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "introduction_to_quantum_mechanics_book",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_mind": {
+      "title": "Quantum mind",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "quantum_mind",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "erwin_schr_dinger": {
+      "title": "Erwin Schrödinger",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "erwin_schr_dinger",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "history_of_quantum_mechanics": {
+      "title": "History of quantum mechanics",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "history_of_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "introduction_to_quantum_mechanics": {
+      "title": "Introduction to quantum mechanics",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "introduction_to_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "history_of_quantum_field_theory": {
+      "title": "History of quantum field theory",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "history_of_quantum_field_theory",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "david_hilbert": {
+      "title": "David Hilbert",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "david_hilbert",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_computing_a_gentle_introduction": {
+      "title": "Quantum Computing: A Gentle Introduction",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "quantum_computing_a_gentle_introduction",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_mysticism": {
+      "title": "Quantum mysticism",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "quantum_mysticism",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "interpretations_of_quantum_mechanics": {
+      "title": "Interpretations of quantum mechanics",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "interpretations_of_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "quantum_theory_concepts_and_methods": {
+      "title": "Quantum Theory: Concepts and Methods",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "quantum_theory_concepts_and_methods",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "qbism": {
+      "title": "QBism",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "qbism",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "relational_quantum_mechanics": {
+      "title": "Relational quantum mechanics",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "relational_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "modern_quantum_mechanics": {
+      "title": "Modern Quantum Mechanics",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "modern_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "applications_of_quantum_mechanics": {
+      "title": "Applications of quantum mechanics",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "applications_of_quantum_mechanics",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "werner_heisenberg": {
+      "title": "Werner Heisenberg",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "werner_heisenberg",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    },
+    "the_quantum_universe": {
+      "title": "The Quantum Universe",
+      "branch": "annotations",
+      "kind": "annotation",
+      "canonical_slug": "the_quantum_universe",
+      "equation_sources": {
+        "corpus_aligned": [],
+        "original_paper_displays": []
+      }
+    }
+  }
+}

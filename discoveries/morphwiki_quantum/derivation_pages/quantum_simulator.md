@@ -6,17 +6,15 @@
 
 Quantum simulator is a target--carrier--validation construction: a controllable physical system encodes another model, and selected observables test whether the encoded dynamics is faithful.
 
-Quantum simulator specifies an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
+A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
 
 The simulator Hamiltonian is not by itself the target theory. The claim also needs an encoding between target and device states, a correspondence between their generators or channels, and validation observables with an error budget over the stated time and parameter range.
 
 ## Physical Construction
 
-The state carrier is a controllable device state space together with an explicit encoding of the target state space. The governing operation is Device Hamiltonians, channels, or gate sequences intended to reproduce target dynamics under the encoding. Control errors, leakage, finite size, noise, and approximation order define the regime in which the correspondence is claimed. The calculated observables are Encoded target observables compared with independently predicted or calibrated device measurements.
+The state carrier is a controllable device state space together with an explicit encoding of the target state space. The calculation involves device Hamiltonians, channels, or gate sequences intended to reproduce target dynamics under the encoding. Control errors, leakage, finite size, noise, and approximation order define the regime in which the correspondence is claimed. The calculated quantities include encoded target observables compared with independently predicted or calibrated device measurements.
 
 ## Topic Equations
-
-Topic-specific constructor: encoding, dynamical correspondence, and observable validation are separate obligations.
 
 ```math
 V:\mathcal H_{\mathrm{target}}\hookrightarrow\mathcal H_{\mathrm{device}}
@@ -38,4 +36,4 @@ The name of the carrier: particle, wave, field, qubit, or excitation. Where time
 
 ## Discriminating Consequences
 
-A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical observable, but without a tested incompatibility relation. The validation criterion is that varying the context changes the admissible observable while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
+Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates. Changing operation order or replacing a quantum channel with a classical control identifies which part of the protocol carries the effect.

@@ -1,6 +1,6 @@
 # Heisenberg picture
 
-The Schrodinger and Heisenberg pictures assign time dependence to different parts of the same prediction. With unitary evolution $U(t)$, an initial density operator $\rho_0$ and an observable $O$, the expectation can be evaluated either by evolving the state or by evolving the operator:
+The Schrödinger and Heisenberg pictures assign time dependence to different parts of the same prediction. With unitary evolution $U(t)$, an initial density operator $\rho_0$ and an observable $O$, the expectation can be evaluated either by evolving the state or by evolving the operator:
 
 ```math
 \rho_S(t)=U(t)\rho_0U(t)^\dagger,\qquad

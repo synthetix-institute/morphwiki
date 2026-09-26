@@ -6,15 +6,15 @@
 
 ## Mechanism
 
-Quantum biology supplies the carrier of prediction: the object that is propagated, transformed, restricted, or read out.
+Quantum biology is placed at the state step, where the carrier of prediction is specified: the object that is propagated, transformed, restricted, or measured.
 
-Quantum biology specifies the object from which quantum probabilities are calculated. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
+Quantum probabilities are calculated from a state. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
 
 The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system.
 
 ## Physical Construction
 
-The state carrier is a density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier. The governing operation is Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator. Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal. The calculated observables are Coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
+The state carrier is a density operator, reduced state, coherence variable, bath-coupled state, or effective mesoscopic carrier. The calculation involves Hamiltonian plus environmental coupling, Lindbladian, memory kernel, stochastic map, or effective transport operator. Positivity, trace preservation, timescale separation, bath assumptions, and control over classical noise determine whether the model is legal. The calculated quantities include coherence, population transfer, relaxation rate, transport efficiency, noise spectrum, or macroscopic response.
 
 ## Representative Relation
 
@@ -30,7 +30,7 @@ The Hamiltonian or channel evolves the prepared state. An observable and measure
 
 ## Invariance And Realization
 
-The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. Quantum biology carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
+The topic concerns quantum state transport under environmental coupling, coherence loss, biological or macroscopic boundary conditions, or effective dynamics outside an ideal closed system. The state carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
 
 The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
 

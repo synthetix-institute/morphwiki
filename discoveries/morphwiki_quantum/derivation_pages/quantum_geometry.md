@@ -6,17 +6,15 @@
 
 Quantum geometry is a geometry-realization page: geometric quantities are promoted to quantum observables rather than assumed as a smooth background.
 
-Quantum geometry places quantum dynamics in a relativistic, many-body, field, gauge, geometric, or scale-dependent setting. The state space and operator domain must therefore be specified for that setting rather than inferred from a single-particle model.
+Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
 
 Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary interface rather than inside a generic many-mode field layer.
 
 ## Physical Construction
 
-The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The governing operation is Hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated observables are Boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
+The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The calculation involves hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated quantities include boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express graph-based geometry states and spectral prediction of geometric observables.
 
 ```math
 \mathcal H_{\Gamma}=L^2\!\left(SU(2)^E/SU(2)^V\right),\qquad \ket{\Gamma,j_e,\iota_v}

@@ -12,11 +12,9 @@ The joint system and environment may evolve unitarily while the reduced system l
 
 ## Physical Construction
 
-The state carrier is a joint system-environment state together with the reduced density operator accessible to the observer. The governing operation is System-environment unitary evolution followed by partial trace, or the corresponding reduced dynamical map. The joint state remains normalized and positive; a Markovian reduction additionally requires future maps to be fixed by the present reduced state. The calculated observables are Off-diagonal coherence, interference visibility, purity, and history-dependent response.
+The state carrier is a joint system-environment state together with the reduced density operator accessible to the observer. The calculation involves system-environment unitary evolution followed by partial trace, or the corresponding reduced dynamical map. The joint state remains normalized and positive; a Markovian reduction additionally requires future maps to be fixed by the present reduced state. The calculated quantities include off-diagonal coherence, interference visibility, purity, and history-dependent response.
 
 ## Topic Equations
-
-Joint unitary evolution, environmental distinguishability, reduced decoherence, and the semigroup test distinguish loss of interference from dynamical memory.
 
 ```math
 \rho_S(t)=\operatorname{Tr}_E[U_{SE}(t)\rho_{SE}(0)U_{SE}^{\dagger}(t)]

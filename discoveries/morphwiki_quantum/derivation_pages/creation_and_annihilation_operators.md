@@ -6,17 +6,15 @@
 
 Creation and annihilation operators are sector-changing operators: they add or remove one quantum from a mode and make many-body or field descriptions executable.
 
-Creation and annihilation operators separates quantum kinematics from dynamics. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
+Kinematics and dynamics are separate. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
 
 The page is about the algebraic move that changes occupation number. Creation raises the population of a mode, annihilation lowers it, and the commutation or anticommutation rule determines the statistics. The number operator gives the spectral prediction.
 
 ## Physical Construction
 
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The governing operation is a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated observables are Time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
+The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The calculation involves a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated quantities include time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
 
 ## Topic Equations
-
-Topic-specific constructor: the equations express raising, lowering, and occupation-number observable.
 
 ```math
 a_i^\dagger\ket{\ldots,n_i,\ldots}=\sqrt{n_i+1}\ket{\ldots,n_i+1,\ldots}
