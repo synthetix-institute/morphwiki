@@ -85,21 +85,38 @@ or shape variable
 
 ## What The LLM Must Understand
 
-Hyperion language is an audit language:
+Hyperion records an operation, its carrier, completion conditions and tested
+consequences. Use the selected schema from `SKILL.md`; the following roles
+describe the V2 atlas, while the nested constructor distinguishes a physical
+realization clause from an atlas regime:
 
 ```text
-Ω tells which reusable operator apparatus remains recognizable.
+Ω indexes operator-side evidence; reusable apparatus requires the factor-scope test.
 Ξ tells which substrate, carrier, or selector-context can realize it.
-C/R/P tell which closure, readout/current, and protocol obligations complete it.
+C/R/P give imposed admissibility, observables/derived invariants and operation order.
 Α tells the derived operator-on-substrate regime; it is not a primitive factor.
 Λ tells the local transformation family.
 Τ tells a directed transition only when promoted by edge evidence.
 Γ tells bridge or transfer evidence across operator/substrate views.
-J tells current/conservation evidence only after Noether validation.
+J gives a variation diagnostic; physical conservation requires its own derivation.
 V tells variance-axis diagnostics only.
 GW tells relational similarity transport, not causality or physical flow.
 Ricci/GGAE tells graph topology, not spacetime geometry by default.
 ```
+
+The logical structure has three objects:
+
+```text
+state      = operator coordinate × substrate coordinate + completion fiber
+transport  = typed relation between states, with a separate variation audit
+assembly   = the subset of relations that increases constructor completion
+```
+
+The source-sequence graph records how equations appeared in a paper; it is not
+the assembly graph. Human-readable token names summarize feature centroids;
+they become source-supported interpretations only when aligned equation cards
+contain the corresponding constructor roles. A clean equation is not, by
+itself, a pure mechanism example.
 
 Human text should translate this into:
 
@@ -111,6 +128,44 @@ what constraint closes it,
 what readout/current or protocol is required,
 what symmetry or current may be preserved,
 what evidence is missing.
+```
+
+## Compression And Construction Pattern
+
+Use compression language narrowly:
+
+```text
+good:
+  The index maps many written equation forms to a bounded operator/substrate
+  code while retaining source equations in a separate evidence layer.
+
+bad:
+  The language losslessly compresses all theoretical knowledge.
+  Six roads are the terminal grammar of science.
+```
+
+Use constructor language as a tested extension:
+
+```text
+good:
+  A constructor starts from a factorized mechanism state, attaches a missing
+  substrate or completion role, proposes a source-level equation and submits
+  it to closure, residual and provenance checks.
+
+bad:
+  The constructor reverses compression and reconstructs the true law.
+```
+
+Atlas and road language must follow the measurement contract:
+
+```text
+good:
+  Complete role contracts are sparse under the extraction schema.
+  The displayed road follows an occupied-neighborhood path.
+
+bad:
+  Blank pixels show that 98% of scientific possibility space is empty.
+  A curved display line proves that the mechanism avoids a physical void.
 ```
 
 ## Description Paragraph Patterns
