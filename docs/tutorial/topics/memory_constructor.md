@@ -1,4 +1,4 @@
-# Test an ordered material memory
+# Ordered memory in a material
 
 The [double-well calculation](memory_dynamics.md) finds writable states and
 the field that switches between them. The [carrier-transfer calculation](memory_transfer.md)
@@ -6,7 +6,7 @@ tests whether a proposed change of material preserves the dynamics. A memory
 of an input sequence also depends on the order in which those inputs act and
 on what a later measurement can resolve.
 
-## 1. Write, retain and measure
+## 1. Writing, retention and measurement
 
 A material-memory experiment applies inputs in sequence. To distinguish
 their order from simple retention of the most recent input, compare the
@@ -48,7 +48,7 @@ generators act on that state; preparation fixes its starting point and the
 measured population defines the observable. A material realization supplies
 the couplings, timescales and physical means of applying those operations.
 
-## 2. Test a proposed realization
+## 2. Tests of a proposed realization
 
 The KnowledgeParser protocol screen reads a specified realization's write
 supports, release, measurement and control arms. It also identifies candidate
@@ -85,7 +85,7 @@ development checkout. The preceding [transfer module](memory_transfer.md)
 uses its dynamical constructor to calculate model states and drift residuals;
 the protocol screen here specifies the corresponding material comparison.
 
-## 3. Separate memory from computation
+## 3. Memory and computation
 
 Retention supplies a state that later inputs can act on. A material computation
 also requires a task and a measured answer. Learning

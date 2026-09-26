@@ -1,4 +1,4 @@
-# Find a writable state
+# Writable states in a double well
 
 The [spin example](../08_quantum_construction.md) asks which coordinates are
 needed to predict a measured signal. A memory experiment adds a temporal
@@ -6,7 +6,7 @@ question: after an input is removed, which physical state carries its effect
 into a later measurement? The answer requires a writing operation, dynamics
 during release and a measurement that distinguishes the resulting states.
 
-## Derive a write threshold
+## Write threshold
 
 Let $s$ be a scalar material coordinate, $\epsilon$ a control parameter and
 $h(t)$ an applied writing field. A simple overdamped model is
@@ -62,7 +62,7 @@ FieldBridge. In `fieldbridge/memory/`, `analysis.py` finds stable states and
 barriers, `construct.py` locates write points, and `discovery.py` assembles
 the results into a card.
 
-## Construct the same local write in a reaction
+## The same local write in an autocatalytic reaction
 
 The autocatalytic reaction model in the same library has concentration $x$,
 reservoir-controlled parameters $a,b$ and a fixed rate coefficient $k_3$:
@@ -95,7 +95,7 @@ to cancel their quadratic asymmetry. The reaction calculation runs with
 symmetric write (FieldBridge tutorial, Module 5).
 The analytic shift explains why tuning both reservoir parameters is needed.
 
-## Keep the state that the measurement needs
+## Unmeasured coordinates and prediction
 
 The scalar model stores one bit, but a measured coordinate may conceal the
 state that carries earlier inputs. Let $x$ be a measured population

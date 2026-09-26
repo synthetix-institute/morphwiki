@@ -19,7 +19,7 @@ standalone FieldBridge repository installed next to MorphWiki
 (`python3 -m pip install -e '../fieldbridge[memory]'`). The ordered-memory
 path uses a protocol runner that is not yet public.
 
-## Extend the constructor to another material
+## Extension to another material
 
 A new material is written as a FieldBridge memory specification: one JSON
 file with a carrier and drift $F(q;p)$, its parameters, noise, boundary or bath

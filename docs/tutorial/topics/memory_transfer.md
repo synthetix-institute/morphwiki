@@ -1,4 +1,4 @@
-# Transfer a memory mechanism between carriers
+# Transfer of a memory mechanism between carriers
 
 The [double-well example](memory_dynamics.md) specifies a write and retention
 mechanism on one coordinate. A transfer to another carrier must preserve the
@@ -65,7 +65,7 @@ specified patch and seed. The source map and residual calculation are in
 `fieldbridge/memory/transfer.py`; the two target models are defined in
 `library.py`.
 
-## Loops constrain the available states
+## Loop compatibility and available states
 
 An interaction edge also maps one local preferred orientation to the next.
 Composing those maps around a closed loop gives a return map $H$. A common
@@ -87,5 +87,5 @@ bond geometry together with the orientation coordinate? Identify the
 interaction and observable that a physical implementation would need to
 reproduce the mapped memory experiment.
 
-[Previous: find a writable state](memory_dynamics.md) ·
-[Next: test ordered memory](memory_constructor.md)
+[Previous: writable states](memory_dynamics.md) ·
+[Next: ordered memory](memory_constructor.md)

@@ -15,7 +15,7 @@ separate calculation companion uses [FieldBridge](https://github.com/synthetix-i
 to derive consequences of explicit equations. The book provides the physical
 connections; the companion makes selected constructions executable.
 
-## Begin with a prediction
+## A worked prediction
 
 For two spins with interaction $H=gZ\otimes Z$, let $x(t)$ be the transverse
 magnetization of the first spin and $c(t)$ its correlation
@@ -32,7 +32,7 @@ The Hamiltonian determines which additional expectation value is needed.
 The companion finds this closed pair by repeated commutators; its input
 contains the Hamiltonian and measured operator, not the answer.
 
-### Run the companion
+### Calculation companion
 
 Keep the repositories next to each other:
 
@@ -65,7 +65,7 @@ These known examples demonstrate and test the method. The command runs locally,
 needs no LLM or TeX installation, and leaves the quantum book unchanged.
 [Understand the outputs](docs/tutorial/10_submission_companion.md).
 
-### Solve for interactions
+### Interaction design
 
 An optional fourth example asks which Ising couplings allow exchange and
 collective phase evolution to separate when the exchange strengths vary.
@@ -83,7 +83,7 @@ python3 -B scripts/build_construction_companion.py \
 This is a runnable method example using known collective-spin physics. The
 coupling constraint is calculated; physical novelty is not presumed.
 
-## Why organize a book this way?
+## Organization by physical role
 
 The Hilbert space determines which states and operators exist. The Hamiltonian
 and its domain determine evolution. Preparation fixes the initial state, and
@@ -113,7 +113,7 @@ curated physical assignments with scores computed from source records.
 Recurring families within a representation and evidence that this particular
 role partition is preferred by data are separate questions.
 
-## Navigate the field
+## Structure of the field map
 
 ```mermaid
 flowchart LR
@@ -174,7 +174,7 @@ entries and records the status of scientific review. See the
 [correction notes](docs/QUANTUM_BOOK_CORRECTIONS.md)
 for the scientific corrections and remaining review work.
 
-## Read, rebuild, or extend
+## Reading, rebuilding and extending
 
 | Goal | Start here |
 | --- | --- |
@@ -217,7 +217,7 @@ The construction-companion test also uses the standalone FieldBridge repository.
 It is found automatically at `../fieldbridge`; set `FIELDBRIDGE_ROOT` when it
 is elsewhere. Original-source downloads are opt-in and are not run by the tests.
 
-## Where the work happens
+## Implementation
 
 | Source | Responsibility |
 | --- | --- |
@@ -231,7 +231,7 @@ is elsewhere. Original-source downloads are opt-in and are not run by the tests.
 | [build_construction_companion.py](scripts/build_construction_companion.py) | Reproduce three FieldBridge calculations and the optional inverse interaction design |
 | [build_morphwiki_field_from_pdfs.py](scripts/build_morphwiki_field_from_pdfs.py) | Build a source-indexed wiki from another collection |
 
-## Contribute a physical connection
+## Contributions
 
 A useful addition starts with a question whose answer depends on more than one
 topic: a boundary that changes a spectrum, a correlation required by a measured

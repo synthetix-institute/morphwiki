@@ -47,7 +47,7 @@ candidate transitions. The division into roles was supplied to the analysis;
 the book uses it to relate established equations and calculate their
 consequences.
 
-## What changes when the experiment changes?
+## Changes of the experiment
 
 For the two-spin example, the levels become concrete:
 
