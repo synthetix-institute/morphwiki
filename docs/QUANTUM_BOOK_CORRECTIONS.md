@@ -59,12 +59,55 @@ about artifact integrity, not certification of all scientific content.
 
 ## Remaining review
 
-There are 62 topic-specific treatments, 67 physical-role overviews and 17
-historical or interpretive entries. The overviews retain their representative
+There are 62 topic-specific treatments, 63 physical-role overviews, four
+alternative-name entries and 17 historical or interpretive entries. In the
+full reference edition, the overviews retain their representative
 relations and are explicitly identified as overviews. They still need individual
 derivations and suitable references before this can be presented as a fully
 reviewed quantum-physics textbook. Independent checks of the accompanying
 FieldBridge calculations apply to those calculations alone.
+
+## Expository companion edition
+
+The separate companion retains all 62 topic-specific treatments and the
+cross-topic explanations. The 63 generic overviews, four alternative-name
+entries and 17 historical or interpretive entries appear in a reference index
+rather than as developed physics chapters. The full edition and all source
+records remain available. Two existing derivations, for the quantum Hamiltonian
+and path-integral formulation, are now printed rather than hidden by
+alternative-name redirects.
+
+The title page attributes the mechanism tree to the authors. Source links sit
+beside the relations they support. Per-page build comments have been removed;
+the edition manifest records the source route and equation identifiers for
+each topic. Corpus-aligned equations remain distinct from separately
+inspected original-paper displays. The scientific review remains incomplete.
+
+The generator repairs the broken Schrödinger spelling and capitalized sentence
+fragments. Separate companion checks require an actual section with equations
+for every retained treatment, exact body preservation relative to the full
+edition, source links at the relevant relation, and an index entry for every subject. Duplicate
+labels, deleted equations and generic representative-relation blocks fail these
+checks. Build integrity is reported separately from scientific review.
+
+Rebuild both editions and run their checks with
+`bash scripts/run_quantum_expository_companion.sh`.
+
+## Repeated and generic text
+
+Every topic page carried the same two validation sentences, about transfer
+targets and shuffled contexts, whatever its physics. They have been removed
+from the cached pages and from the generator. A treatment without a
+topic-specific consequence now states the physical consequences of its
+chapter's role, as treatments with constructor overrides already did; no page
+states what the constructor itself requires.
+
+Branch-level sentences no longer make a topic the subject of a physical role.
+A topic is placed at a step, for example "Quantum biology is placed at the
+state step, where the carrier of prediction is specified", and the step
+carries the role. Chapter 1 defines the roles on two coupled spins and
+Chapter 2 nests them; the unnumbered chapter that follows refers back instead
+of repeating the definitions.
 
 ## Mechanisms before roles
 

@@ -25,8 +25,18 @@ again. Defining O1=-2g Y tensor Z gives
 ```
 
 No further independent operator appears. The two expectation values obey the
-same closed linear system for every initial density matrix. In terms of
-x(t)=Tr(rho(t) X tensor I) and c(t)=Tr(rho(t) Y tensor Z), the prediction is
+same closed linear system for every initial density matrix.
+
+```mermaid
+flowchart LR
+    A["Measured O0 = X tensor I"] -->|commutator| B["Correlation O1 = -2g Y tensor Z"]
+    B -->|commutator| C["-4g² O0: span closes"]
+    C -.-> A
+```
+
+The return to $O_0$ is why the two-dimensional span closes. In terms of
+$x(t)=\operatorname{Tr}(\rho(t)X\otimes I)$ and
+$c(t)=\operatorname{Tr}(\rho(t)Y\otimes Z)$, taking initial expectations gives
 
 ```math
 x(t)=x(0)\cos(2gt)-c(0)\sin(2gt).
@@ -41,16 +51,16 @@ the missing correlation coordinate is not synonymous with entanglement.
 FieldBridge derives the two-operator span from the four-dimensional Hamiltonian
 and the supplied measured operator. It repeatedly evaluates commutators and
 tests linear independence. It then solves for the closed evolution matrix and
-verifies the operator identities. At g=0 the span reduces to one observable.
-The companion tests also compare the reduced result with full unitary evolution.
+verifies the operator identities. At $g=0$ the span reduces to one observable.
+The calculation tests also compare the reduced result with full unitary evolution.
 
 The underlying Heisenberg equation is standard quantum mechanics; see
 [the Cambridge lecture notes](https://www.damtp.cam.ac.uk/user/tong/qm/qmhtml/S3.html).
-The example demonstrates a computational construction of a sufficient
-observable set. It is not a newly discovered quantum interaction, a proof of
-automatic source recovery, or a test of a learned model's proposal quality.
+The calculation constructs a sufficient observable set from a supplied
+Hamiltonian and measurement. Its source is an authored example; the separate
+[source module](09_sources_and_calculations.md) tracks recovery from papers.
 
-## Run it with the book companion
+## Run the calculation
 
 ```bash
 python3 -m pip install -e '../fieldbridge[construction]'
@@ -67,7 +77,7 @@ of a mechanism and derivation of a required correction.
 
 Code: [`build_construction_companion.py`](../../scripts/build_construction_companion.py)
 calls `fieldbridge.verification.quantum_closure` in the explicitly selected
-sibling repository. Next: [source evidence and calculated relations](09_sources_and_calculations.md).
+sibling repository.
 
 ## Read the numerical record in physical terms
 
@@ -121,4 +131,5 @@ observable, not only on the material or Hamiltonian. For an exercise changing
 the Hamiltonian instead, see the
 [FieldBridge transverse-field construction](https://github.com/synthetix-institute/fieldbridge/blob/main/docs/tutorial/11_quantum_closure.md).
 
+[Next: interpret the nested description](07_nested_dependencies.md) ·
 [Tutorial](index.md)

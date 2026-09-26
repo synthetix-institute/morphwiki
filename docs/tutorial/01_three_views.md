@@ -7,17 +7,33 @@ description identifies the equations and conditions; the construction view
 shows why several topics are needed for one prediction.
 
 Consider two spin-1/2 degrees of freedom with Hamiltonian
-$H=gZ\otimes Z$, where $Z$ is a Pauli matrix. Suppose the experiment
-measures $X\otimes I$, the transverse magnetization of the first spin.
+$H=gZ\otimes Z$ in units with $\hbar=1$, where $Z$ is a Pauli matrix.
+Suppose the experiment measures $X\otimes I$, the transverse magnetization
+of the first spin.
 The Heisenberg equation produces $-2gY\otimes Z$. Predicting the signal
 therefore requires a two-spin correlation as well as the magnetization.
+
+Two product-state preparations make the missing information visible. In both,
+the second spin points along $+z$; the first points along $+y$ or $-y$.
+Writing $x=\langle X\otimes I\rangle$ and
+$c=\langle Y\otimes Z\rangle$, the initial slopes follow from
+$\dot x=-2gc$:
+
+| First spin at preparation | $x(0)$ | $c(0)$ | $\dot x(0)$ |
+| --- | ---: | ---: | ---: |
+| $+y$ | 0 | $+1$ | $-2g$ |
+| $-y$ | 0 | $-1$ | $+2g$ |
+
+The same recorded $x(0)$ leads to opposite initial motion. The correlation
+$c(0)$ is needed for this prediction even though both complete preparations
+are unentangled.
 
 ## Topic view: find the concepts
 
 The familiar names include Hilbert space, Hamiltonian, observable, spin and
 correlation. Cached topic metadata may also retain historical titles and
-attribution. That metadata supports navigation; it is not the source evidence
-for the physical equations.
+attribution. That metadata supports navigation. Equation citations come from
+inspected displays and their surrounding definitions.
 
 ## Mechanism view: specify the prediction
 
@@ -52,4 +68,5 @@ the equations that lead to it.
 measurement without treating correlation and entanglement as synonyms. The
 two contrasting preparations in the worked calculation are product states.
 
-[Next: source records](02_topic_and_evidence.md) · [Tutorial](index.md)
+[Next: derive the closed prediction](08_quantum_construction.md) ·
+[Tutorial](index.md)

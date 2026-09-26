@@ -1,22 +1,28 @@
 # Connecting a source equation to a checked transformation
 
-A quantum topic can have a readable explanation, a relevant arXiv identifier
-and a correct illustrative equation without that equation having been recovered
-from the identified paper. These are different forms of evidence. The book's
-source index should tell the reader which connection has actually been made.
+A readable topic explanation, a relevant arXiv identifier and a worked
+equation answer different questions. Citing that paper for the equation
+requires locating its display and the assumptions around it. The book's
+source index records which relations have such a witness.
+
+For the two-spin calculation in this tutorial,
+`build/construction_companion/quantum_correlations/input.json`
+specifies $H=gZ\otimes Z$ and the measured $X\otimes I$. FieldBridge checks
+the resulting observable closure from an authored benchmark. Its input has
+no original-paper display. [The original-paper example](12_original_sources.md)
+shows what a located equation and its surrounding assumptions add.
 
 [`build_morphwiki_v2_quantum_evidence_index.py`](../../scripts/build_morphwiki_v2_quantum_evidence_index.py)
 joins topic candidates to source-card evidence. The stricter
 [`audit_morphwiki_v2_quantum_evidence_index.py`](../../scripts/audit_morphwiki_v2_quantum_evidence_index.py)
 checks whether the topic's defining relation has a relevant equation witness.
-Identifier-linked candidates remain useful for recovery, but they cannot be
-published as confirmed witnesses merely because their paper is accessible.
+Identifier-linked papers are recovery candidates; confirmed witnesses carry
+the matching display and its local context.
 
 Inspect the evidence index belonging to the book you intend to distribute.
 An older local copy and a newer cluster build can have different coverage.
-Keep the book, evidence index and reports from the same build together;
-neither a historical count nor a later completion message identifies the
-contents of a different artifact.
+Keep the book, evidence index and reports from the same build together. Their
+counts then refer to the same set of source relations.
 
 ## Evidence and calculation are separate branches
 
@@ -32,8 +38,9 @@ flowchart LR
 ```
 
 The source neighbourhood matters because a transformation may be defined in a
-different display from either endpoint of an atlas edge. The edge is a locator;
-the relation must be recovered and calculated separately. A useful record
+different display from either endpoint of an atlas edge. The edge locates
+candidate equations; their relation is established by recovery and
+calculation. A useful record
 therefore includes the source display identifiers, domain and preparation
 assumptions, state and observable maps, the relation to preserve, its computed
 remainder, and the comparison with the essential term omitted.
@@ -41,42 +48,37 @@ remainder, and the comparison with the essential term omitted.
 FieldBridge's `construct --calculate` now connects a retrieved source record
 to a supplied map or observable. Its adapter checks the record identifier and
 the agreement of a typed annotation with the local canonical equation, then
-emits and verifies the mathematical specification. This local binding does
-not establish alignment to an original paper. The bundled source records are
-authored examples, and their status is retained in the calculation output.
+emits and verifies the mathematical specification. The bundled records are
+authored examples, identified as such in the output; original-paper alignment
+requires the separate display and context check above.
 
 The connections in `analyze_quantum_constructor_rewiring.py` are likewise
-authored definitions. Its reports now state that origin and distinguish topic
-availability from mathematical verification. A route-overlap score annotates
-those definitions; it does not derive their equations.
+authored definitions. Its reports record their origin and use route overlap
+to locate relevant topics. The equations are supplied with the definitions.
 
 For a transfer between stochastic coordinates, the generator relation can be
 checked by comparing the coefficients acting on arbitrary smooth test
 functions. For the finite quantum example, closure is checked by matrix
-identities. A hash only proves which stored input was used. It does not prove
-conservation, equivalence of evolutions or physical validity.
+identities. A hash identifies the stored input; the generator and observable
+relations establish the calculated physical consequence.
 
 ## Interpretation of an unsuccessful transfer
 
-A discrepancy has to be interpreted within the specified relation. Numerical
-error should decrease under a suitable refinement. An omitted drift may be
-derived from the transformed generator. A reduced observable set may require
-an additional correlation. A false correspondence may simply need to be
-discarded. None of these outcomes can be selected from the magnitude of an
-embedding distance alone.
+A discrepancy is interpreted through the relation it was meant to preserve.
+Numerical error decreases under suitable refinement. A transformed generator
+can determine an omitted drift; repeated commutators can identify an
+additional correlation. A correspondence whose domain or observable cannot
+be matched is rejected. Each conclusion requires its own calculation.
 
-Likewise, a nontrivial closed transport can be the correct prediction of a
-complete theory with curvature. It becomes evidence of omitted structure
-only relative to a smaller description that was claimed to reproduce that
-transport. Noncommuting edits to stored text are not a measurement of physical
-holonomy.
+A theory with curvature can predict nontrivial closed transport exactly. If
+a reduced description predicts neutral transport for the same loop, the
+difference locates structure omitted by that reduction. Testing this claim
+requires composed maps on physical states and a measured transported
+quantity.
 
-The companion script leaves the source-grounding status of the book unchanged.
-Its three mathematical examples identify themselves as authored benchmarks.
-Their exact calculations can accompany the explanation while the source-index
-work proceeds, but they do not repair missing citations by relabelling examples.
-
-Next: [reproduction and submission packaging](10_submission_companion.md).
+The companion script calculates three authored benchmarks. Their inputs,
+identities and controls accompany the explanation; the book's source index
+continues to record its own equation witnesses.
 
 ## Assemble one complete record
 
@@ -98,4 +100,5 @@ Use those findings to decide the next action: recover a source, derive a map,
 or test a prediction. Re-running the overlap score cannot substitute for the
 missing action.
 
+[Next: reproduce the calculation package](10_submission_companion.md) ·
 [Tutorial](index.md)

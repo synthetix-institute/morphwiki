@@ -1,77 +1,73 @@
-# A reproducible companion to the discovery method
+# Reproduce the construction calculations
 
-The quantum book and the calculation software answer different reader needs.
-The book explains how choices of states, generators, observables and physical
-conditions fit together. The software derives consequences from specified
-equations and makes the decisive assumptions testable. Together they can
-support a methods demonstration without presenting the entire book as a new
-quantum theory.
+FieldBridge derives consequences of supplied equations. MorphWiki packages
+those inputs with the resulting identities, omission checks and software
+versions. The three default inputs are authored mathematical benchmarks; the
+book's source index records recovered equations separately.
 
-## Reproduction
+## Run the calculations
 
-From MorphWiki, with FieldBridge checked out next to it:
+Use Python 3.10 or newer. Check out FieldBridge next to MorphWiki. From the
+MorphWiki root, create an environment and run:
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 python3 -m pip install -e '../fieldbridge[construction]'
 python3 -B scripts/build_construction_companion.py \
   --fieldbridge-root ../fieldbridge --out-dir build/construction_companion
 ```
 
-The builder runs three examples, checks their expected identities and
-omission results, copies each mathematical input, and records the implementation
+Expect `status: complete` and `calculations: 3`. The builder checks identities
+and omission results, copies each mathematical input, and records implementation
 hashes and software versions in `manifest.json`. An unsuccessful rerun marks
 the manifest incomplete or failed rather than leaving an earlier completed
-manifest in place. The full quantum book is not regenerated or overwritten.
+manifest in place. The build writes to the selected calculation directory.
 
-The default build has three calculations. Add `--include-spin-design` to
-include the [inverse interaction construction](11_inverse_construction.md)
-as a fourth. Its outputs are `spin_cancellation_design/design.json` and
-`design.md`; the manifest links to the appropriate report for every case.
+The optional [inverse interaction construction](11_inverse_construction.md)
+uses `--include-spin-design` and produces a fourth calculation in
+`spin_cancellation_design/design.json` and `design.md`.
 
-The output contains:
+## Read the output
 
 | File | Purpose |
 | --- | --- |
 | `README.md` | Summary of the derived results and links to each calculation |
 | `manifest.json` | Calculation identities, source hashes and software versions |
-| `*/input.json` | Equations, assumptions and provenance for each example |
-| `*/calculation.json` | Machine-readable derived coefficients or observable basis |
-| `*/calculation.md` | The same calculation in a readable record |
+| `<case>/input.json` | Supplied equations, assumptions and provenance |
+| `<case>/calculation.json` | Derived coefficients or observable basis for the three default cases |
+| `<case>/calculation.md` | Readable derivation for the three default cases |
+
+Start with `quantum_correlations/calculation.md` and compare its closed
+observable span with the [two-spin derivation](08_quantum_construction.md).
+For the optional inverse case, the report names are `design.json` and
+`design.md` instead; the manifest records the actual paths.
+
+```text
+build/construction_companion/
+  manifest.json                 inputs, code identity and case status
+  quantum_correlations/
+    input.json                  supplied Hamiltonian and observable
+    calculation.md             derived closed observable span
+    calculation.json           identities and evolution matrix
+```
+
+The calculation gives a two-dimensional span. Change the measured operator
+as in the [spin exercise](08_quantum_construction.md), and the span falls to
+one dimension. This comparison shows what the calculation depends on.
 
 For a retrieved-record demonstration, FieldBridge also provides
 `construct --calculate`, with the walkthrough in its
 `docs/tutorial/13_retrieval_to_calculation.md`. That path emits its specification
 from the selected retrieved source and an explicit correspondence. Its
-additional source-binding check should be described separately from original
-paper alignment and from a comparison of retrieval methods.
+additional source-binding check relates the retrieved record to the
+calculation input. Original-paper alignment identifies the display and nearby
+assumptions.
 
-The command uses the supplied FieldBridge path, so no hidden optional package
-or atlas download is required. SymPy must be installed in the selected Python
-environment. The scalar examples verify local differential expressions; the
-quantum example verifies the finite Hamiltonian dynamics. The scope travels
-with every result.
-
-## Material for a submission
-
-A focused supplementary account can develop the exact transfer, the derived
-stochastic correction and the quantum observable construction. The essential
-equations and the physical reason for the correction belong in that account;
-input hashes and execution details belong with the reproduction files.
-
-The complete book can be deposited as a separately versioned companion,
-together with its source index and a permanent identifier. A code release
-should include the inputs, software dependencies, expected outputs and the
-same version of the calculation module used to obtain them. These are
-packaging recommendations, not a claim that the local book's evidence layer
-is already complete.
-
-An additional prospective discovery would require a physical construction
-whose distinguishing response was not supplied in its input. That example
-should show where the candidate came from, which equation was derived, and
-which calculation or measurement tested the prediction. The three current
-examples are known mathematical benchmarks and must remain identified as
-such. Their role is to establish that a proposed construction can produce
-and test an equation, not to increase a discovery count.
+The selected Python environment must contain SymPy; the installation command
+above provides it. No atlas download or TeX engine is needed. The scalar
+examples verify local differential expressions, while the quantum example
+verifies finite Hamiltonian dynamics.
 
 ## Check the package before sharing it
 
@@ -105,7 +101,8 @@ and controls establish what the reproduction means physically.
 | Manifest says failed | Read the exception, correct the input or environment, then rerun; do not distribute the old summary alone |
 | Book source coverage is missing | Recover or label the book evidence separately; these benchmark calculations do not supply its citations |
 
-The book, manuscript, figures and language-skill files are outside this
-companion build. Only the selected output directory is regenerated.
+The build regenerates the selected output directory. The
+[submission module](13_submission_scope.md) assigns the resulting calculations
+and the expository book their respective roles.
 
-[Tutorial](index.md)
+[Next: submission scope](13_submission_scope.md) · [Tutorial](index.md)

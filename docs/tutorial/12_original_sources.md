@@ -22,9 +22,10 @@ chapter, while `scope` keeps the assumptions alongside that connection.
 
 The records have `source_origin: original_arxiv_html` and
 `v2_card_alignment: not_established`. Some papers were already retrieval
-candidates. Recovering a suitable equation from such a paper does not prove
-that it was the display represented by the earlier feature row. Candidate card
-identifiers are retained for later comparison, not promoted to confirmed links.
+candidates. Their recovered equations now have inspected displays, while
+the correspondence to earlier feature rows retains its own
+`not_established` status. Candidate card identifiers remain available for
+that comparison.
 
 ## Reproduce the recovery
 
@@ -45,10 +46,10 @@ present, the same command without `--fetch` runs offline.
 
 The selection plan gives an exact display identifier and required expression
 terms for each relation. A missing display, truncated expression or changed
-required term makes recovery fail. A reviewer must still inspect the equation
-and neighbouring definitions: syntax and hashes cannot establish physical
-relevance. The public record retains mathematical expressions and authored
-descriptions, not copies of the article's surrounding prose.
+required term makes recovery fail. A reviewer then checks the equation against
+its neighbouring definitions and the chapter's physical relation. The public
+record retains mathematical expressions and authored descriptions rather
+than copies of the article's surrounding prose.
 
 Inspect the example:
 
@@ -71,8 +72,8 @@ python3 -B -m pytest -q tests/test_quantum_mechanism_derivations.py
 
 The three-qubit calculation verifies all four bit-flip syndromes and the
 correction condition on the stated error set. It also checks that a phase flip
-acts as an undetected logical error. That negative control explains the limit
-of the mechanism, rather than merely confirming that its formula parses.
+acts as an undetected logical error. That control identifies which errors
+the stated correction mechanism covers.
 
 ## Add another source
 

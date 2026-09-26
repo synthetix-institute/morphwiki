@@ -44,6 +44,17 @@ with each exchange bond to zero. Exact linear algebra gives
 $q_{01}=q_{02}=q_{12}=\lambda$. Thus the relative couplings are calculated
 from the requirement, while their overall energy scale remains free.
 
+```mermaid
+flowchart LR
+    R["Separate exchange and Ising evolution for any a,b"] --> C["Commute Q with each exchange bond"]
+    C --> S["q01 = q02 = q12"]
+    S --> P["Calculate the measured polarization"]
+```
+
+The arrows follow the calculation from the supplied commutation requirement
+to the coupling coefficients and measured polarization. The preparation and
+observable fix which polarization is predicted.
+
 This interaction is $\lambda(M^2-3I)/2$, where $M=Z_0+Z_1+Z_2$ is conserved
 by exchange. Its physical action is a phase evolution conditional on the
 other spins. Preparing the first spin along $+x$ and the others maximally
@@ -61,9 +72,9 @@ evolution. Changing one Ising coupling breaks a zero in the supplied example;
 changing the exchange strengths preserves it.
 
 Restricting the Ising interaction to neighbours sets $q_{02}=0$, which,
-with the derived equalities, forces every coupling to zero. That is a
-constraint on this commuting construction, not a claim that short-range
-systems can never have a polarization zero.
+with the derived equalities, forces every coupling to zero. This commuting
+construction therefore requires the longer-range $q_{02}$ coupling for a
+nonzero Ising interaction.
 
 ## Explain what was constructed
 
@@ -74,15 +85,12 @@ the Hamiltonian formula: a different preparation need not produce the same
 phase average, and another observable need not have the same zeros.
 
 The calculation uses a known collective-spin mechanism to demonstrate a
-search procedure. A discovery study would next impose a physical constraint
-that an existing construction does not meet, derive what remains possible,
-and compare its predictions with established results. Noise, pulse synthesis,
-automatic literature annotation and novelty assessment are not performed by
-this companion command.
+search procedure. A discovery study would impose a further physical
+constraint, derive the interactions that satisfy it and compare their
+predictions with established results. This command calculates the ideal
+Hamiltonian; noise and pulse synthesis would enter a later realization study.
 
-The four examples belong to the reproducible methods companion. They do not
-replace missing source citations in the book and do not count as four new
-physical discoveries. The original book, manuscript and figures remain
-unchanged by this build.
+The four examples form a reproducible methods companion. The book retains its
+own source citations, and this build writes only its selected output directory.
 
 [Tutorial](index.md) | [Companion packaging](10_submission_companion.md)

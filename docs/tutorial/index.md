@@ -6,25 +6,44 @@ its later motion. The interaction also couples it to a correlation between the
 spins. Finding that correlation connects state composition, Hamiltonian
 evolution and measurement in one calculation.
 
-You will read a mechanism page, see how the topic map is built, reproduce the
-calculation, and learn how source evidence accompanies an explanation. The
-last part shows how to begin a wiki for another field.
+The main path follows this measurement from physical question to calculation,
+interpretation, source evidence and reproduction. It uses one two-spin example
+throughout, so the notation gains a physical meaning before it is applied to
+other theories.
 
-## Choose your route
+## Learning path
 
-| Purpose | Recommended path |
-| --- | --- |
-| Understand the physical idea | [Three views](01_three_views.md) → [One page](03_mechanism_page.md) → [Nested dependencies](07_nested_dependencies.md) → [Spin calculation](08_quantum_construction.md) |
-| Reproduce calculations now | [Companion walkthrough](10_submission_companion.md) → [Spin calculation](08_quantum_construction.md) |
-| Construct an interaction from a physical requirement | [Spin calculation](08_quantum_construction.md) → [Inverse construction](11_inverse_construction.md) |
-| Maintain the quantum book | [Source records](02_topic_and_evidence.md) → [Topic placement](04_constructor_spine.md) → [Safe rebuild](05_build_and_audit.md) → [Evidence and calculation](09_sources_and_calculations.md) |
-| Recover an original equation | [Original-paper recovery](12_original_sources.md) → [Safe rebuild](05_build_and_audit.md) |
-| Work on another field | [New-field walkthrough](06_new_field.md) → [PDF workflow](../PDF_CORPUS_WORKFLOW.md) → [Evidence and calculation](09_sources_and_calculations.md) |
+```mermaid
+flowchart LR
+    E["Two preparations, one initial signal"] --> D["Derive the coupled observable"]
+    D --> M["Identify the mechanism's dependent parts"]
+    M --> S["Locate equations and assumptions"]
+    S --> V["Reproduce and change the calculation"]
+```
 
-Chapter filenames remain unchanged for stable links. You do not need to
-rebuild the book before trying a calculation.
+1. [Start with the experiment](01_three_views.md). Two preparations can have
+   the same measured magnetization at $t=0$ but different later signals.
+   Identify the missing initial quantity before looking at a topic map.
+2. [Derive the smallest closed prediction](08_quantum_construction.md).
+   A commutator with the Hamiltonian produces a correlation; a second
+   commutator returns to the measured operator. The diagram and equations
+   show why two expectations suffice for this signal at nonzero coupling.
+3. [Read the nested description](07_nested_dependencies.md). Map the state
+   space, evolution, physical conditions, preparation and measurement onto
+   the calculation just completed. Changing the measured operator then shows
+   which parts of the prediction must change.
+4. [Connect the equation to its evidence](09_sources_and_calculations.md).
+   Follow the diagram from a source display and its nearby assumptions to a
+   specified calculation. A correct calculation and a confirmed paper link
+   answer different questions.
+5. [Reproduce the results](10_submission_companion.md). Run the three supplied
+   constructions and inspect their inputs, derived identities and omission
+   controls. The optional [inverse construction](11_inverse_construction.md)
+   then starts from a required response and solves for interactions.
 
-## First successful run
+The path uses the cached pages and a separate calculation build.
+
+## First calculation
 
 Use Python 3.10 or newer, with the standalone FieldBridge repository next to
 MorphWiki. All commands below run from `morphwiki/`.
@@ -45,23 +64,19 @@ two-dimensional observable span.
 After installation this run is offline. It needs no TeX engine and leaves the
 book, cached topic pages and source index unchanged.
 
-## Two kinds of connection
+## Further modules
 
-```mermaid
-flowchart TD
-    P["Paper and local equation context"] --> S["Source-evidence index"]
-    T["Topic records and authored explanations"] --> B["Organized book"]
-    S --> B
-    H["Specified Hamiltonian and observable"] --> C["Repeated commutators"]
-    C --> O["Closed expectation dynamics"]
-    B -. "explains the physical dependence" .-> O
-    O --> R["Reproducible calculation companion"]
-```
+| To do this | Continue here |
+| --- | --- |
+| Trace a candidate paper to an original equation | [Topic evidence](02_topic_and_evidence.md) → [Original-paper recovery](12_original_sources.md) |
+| Explain and regenerate a quantum chapter | [Mechanism page](03_mechanism_page.md) → [Topic placement](04_constructor_spine.md) → [Isolated rebuild](05_build_and_audit.md) |
+| Start a wiki in another field | [New-field walkthrough](06_new_field.md) → [PDF workflow](../PDF_CORPUS_WORKFLOW.md) |
+| Decide what accompanies a manuscript | [Submission scope](13_submission_scope.md) |
+| Explore another physical question | [Material-memory path](topics/index.md), beginning with [writable states](topics/memory_dynamics.md) |
 
-The source index answers where an equation was found. The mathematical input
-answers which equation was used. A research example needs both, but the
-supplied benchmark calculations can be understood before a full source archive
-is available.
+The source index locates an equation in a paper; the calculation input records
+the equations supplied to a verifier. The three benchmarks are authored
+examples with independently checked mathematical consequences.
 
 For the stochastic derivation and retrieval software, use the
 [FieldBridge tutorial](https://github.com/synthetix-institute/fieldbridge/blob/main/docs/tutorial/index.md).

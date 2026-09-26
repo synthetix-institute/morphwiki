@@ -2,7 +2,7 @@
 
 **Explain a field through the equations needed to predict an experiment.**
 
-[Tutorial](docs/tutorial/index.md) · [Quantum book](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
+[Tutorial](docs/tutorial/index.md) · [Expository companion](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
 
 Predicting the magnetization of one interacting spin can require a correlation
 with a second spin. The state space, Hamiltonian, correlation and measurement
@@ -99,10 +99,12 @@ I_{\mathrm{op}}=(M;C,R,P),\qquad
 I_{\mathrm{real}}=(I_{\mathrm{op}};A).
 ```
 
-Here $\Omega$ identifies an operation class and $\Xi$ its carrier.
-Conditions $C$ include constitutive relations, admissibility and operator
-domains; $R$ specifies the observable and $P$ the preparation and sequence
-of operations. $A$ attaches a particular physical implementation.
+Here $\Omega$ identifies an operation class and $\Xi$ its carrier. The
+closure $C$ is what is specified or discarded to obtain closed equations:
+constitutive relations, admissible states and operator domains, boundaries,
+imposed conservation laws and eliminated degrees of freedom. $R$ specifies the
+observable and $P$ the preparation and sequence of operations. $A$ is the
+material or apparatus that implements the model, entered as parameter values.
 A changed boundary or an additional dynamical degree of freedom must also
 change the relevant inner description.
 
@@ -123,50 +125,85 @@ flowchart LR
     C --> O["Observable consequence and comparison"]
 ```
 
-The [tutorial](docs/tutorial/index.md) follows a quantum example from explanation
-to calculation, then shows how the repository builds and checks the source
-index. It explains why observable incompatibility, state correlations and
-measurement back-action play different roles.
+The [tutorial](docs/tutorial/index.md) follows one quantum measurement from
+two physical preparations through commutator closure, nested dependencies,
+source evidence and a reproducible calculation. Book construction and other
+physical topics have separate modules.
 
-A recovered equation must have an exact source-card link, a complete relation,
-and local context specific to that relation before it is published as a source
-pointer. A topic name in nearby prose is insufficient. References selected for
-an explanatory derivation are listed separately from these recovered equations.
-A successful symbolic calculation does not fill a missing citation.
+Equation citations carry an exact source-card link, a complete relation and
+its local assumptions. General references selected for an explanatory
+derivation are listed separately from recovered equations.
+The calculation establishes consequences of its supplied inputs; citations
+locate the corresponding relations in inspected sources.
 
 The book opens with **Quantum Mechanisms And Their Predictions**, developing
 an interaction, the correlation it generates, and its measured consequence
 before introducing the nested description. Closure enters when the calculation
 shows what information a reduced description has omitted.
 
-The current book preserves all 146 topic entries: 62 have topic-specific
-physical treatments, 67 are physical-role overviews, and 17 concern history or
-interpretation. Six topics retain screened corpus-aligned equation examples.
-Original-paper recovery adds 16 located displays for 15 further topics,
+The **expository companion** is the book to read. It develops all 62
+topic-specific treatments and indexes all 146 subjects. The index distinguishes 63 overview entries without
+an individual derivation, four alternative names, and 17 historical or
+interpretive entries. Repeated branch-level equations are omitted from this
+edition. The [full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+is for lookup rather than reading: it gives every subject its own entry,
+including overviews that repeat the equations of their chapter. Individual
+topic files remain available. Two treatments previously hidden
+by alternative-name redirects now appear with their equations.
+
+The first page states the book's scope. Each treatment identifies its authored
+exposition and the source routes available for particular relations;
+cross-topic connections are marked as authored interpretations. Six topics
+retain screened corpus-aligned equation examples. Original-paper recovery adds
+16 located displays for 15 topics,
 including the error-correction condition, canonical commutators, amplifier
 noise constraints and quantum metrology. These displays were selected and
-inspected in the original arXiv articles; they are not relabelled as automatic
-corpus alignment. [Recover and inspect the sources](docs/tutorial/12_original_sources.md).
-The build checks content preservation and traceability; they do not certify
-every chapter's physics. See the [correction notes](docs/QUANTUM_BOOK_CORRECTIONS.md)
+inspected in the original arXiv articles; their records identify
+original-paper recovery separately from corpus alignment.
+[Recover and inspect the sources](docs/tutorial/12_original_sources.md).
+The companion supplies background exposition and can be cited as a separately
+versioned accompanying work. The three calculation examples form a focused
+methods supplement; discovery claims require their own target-system tests.
+The local edition has no DOI.
+
+The [companion checks](discoveries/morphwiki_quantum/book/companion/companion_integrity.md)
+require all 62 treatments to retain the same bodies as the full edition, all
+146 index entries to be present exactly once, and visible provenance and source
+links to survive. The report counts developed treatments separately from index
+entries and records the status of scientific review. See the
+[correction notes](docs/QUANTUM_BOOK_CORRECTIONS.md)
 for the scientific corrections and remaining review work.
 
 ## Read, rebuild, or extend
 
 | Goal | Start here |
 | --- | --- |
-| Read the book | [Quantum Theory as a Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
+| Read the companion | [Quantum Theory as a Mechanism Tree](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf) |
+| Look up any of the 146 subjects | [Full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
 | Learn the code through physics | [Guided tutorial](docs/tutorial/index.md) |
 | Inspect how a topic becomes a chapter | [One mechanism page](docs/tutorial/03_mechanism_page.md) |
 | Rebuild in a separate output tree | [Safe book build](docs/tutorial/05_build_and_audit.md) |
 | Connect sources and calculations | [Evidence and transformations](docs/tutorial/09_sources_and_calculations.md) |
 | Organize another paper collection | [New-field walkthrough](docs/tutorial/06_new_field.md) |
-| Prepare a research companion | [Reproduction and submission](docs/tutorial/10_submission_companion.md) |
+| Explore other physical mechanisms | [Material-memory path](docs/tutorial/topics/index.md) |
+| Reproduce the calculations | [Calculation package](docs/tutorial/10_submission_companion.md) |
+| Prepare a research companion | [Submission scope](docs/tutorial/13_submission_scope.md) |
 
 The deterministic quantum build uses cached records. For PDF compilation the
 runner tries `latexmk/pdflatex`, `pdflatex`, `xelatex`, then `lualatex`.
 Full source-grounding regeneration also needs the V2.1 source cards and
 alignments. The tutorial separates that larger job from local examples.
+
+To rebuild both book editions from the existing records, with Python and
+`latexmk` available:
+
+```bash
+bash scripts/run_quantum_expository_companion.sh
+```
+
+This command renders both editions from the cached records and existing topic
+assignments. Mathematical tests and build-integrity checks cover different
+properties of the output.
 
 The tests include exact symbolic checks of the worked mechanisms and checks
 that source records survive the build:

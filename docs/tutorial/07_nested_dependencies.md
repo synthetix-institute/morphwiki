@@ -2,16 +2,16 @@
 
 A quantum measurement asks for the probability of an outcome in a prepared
 system. Answering it requires a state space, a state on that space, an
-evolution and an observable. These choices cannot be specified independently.
+evolution and an observable. Each choice constrains the next.
 A Hamiltonian acts on a particular space; a partial trace requires a declared
 subsystem factorization; an observable must act on the resulting system. A
 change in an earlier choice can change the meaning of the later ones.
 
 MorphWiki records these dependencies with a core M=(Omega,Xi), followed by
 conditions C, observables R and preparation or ordered operations P. A physical
-realization A supplies a particular implementation. The notation is a schema
-for organizing equations, not a theorem that every theory has a unique
-factorization into these roles.
+realization A supplies a particular implementation. These roles specify how
+the equations in this tutorial enter a prediction; their assignment is an
+organizing choice.
 
 ```mermaid
 flowchart TD
@@ -27,12 +27,12 @@ flowchart TD
     A -. "change of domain or degrees of freedom" .-> C
 ```
 
-The diagram describes mathematical dependencies rather than the software's
-execution order. The implementation defines the clauses in
+The arrows follow the mathematical dependencies. The implementation defines
+the clauses in
 [`morphwiki_constructor.py`](../../scripts/morphwiki_constructor.py). In
-particular, realization is attached to a defined mechanism; a material label
-does not determine the mechanism. A change of apparatus that alters the state
-space or boundary condition must also change the relevant inner description.
+particular, realization attaches to a defined mechanism. An apparatus that
+changes the state space or boundary condition also changes the corresponding
+inner description.
 
 For a spin experiment, choosing the Hilbert space fixes the possible density
 matrices. Choosing the Hamiltonian then fixes how their expectation values
@@ -42,14 +42,10 @@ that magnetization. The needed additional quantity is obtained by applying
 the Hamiltonian to the measured operator. This gives a concrete use of the
 dependencies, rather than merely assigning each symbol to a category.
 
-The archive can identify recurring families and useful transitions within
-such a representation. Whether it selects this role division over alternative
-feature partitions is an empirical question. The quantum book does not
-resolve that question by explaining familiar theories in the supplied schema.
-Its contribution is to make the resulting relationships intelligible and
-available for calculation.
-
-Continue with [the coupled-spin calculation](08_quantum_construction.md).
+Within this representation, the archive identifies recurring families and
+candidate transitions. The division into roles was supplied to the analysis;
+the book uses it to relate established equations and calculate their
+consequences.
 
 ## What changes when the experiment changes?
 
@@ -71,9 +67,9 @@ instead changes the dynamics and may enlarge the required span. The same
 material can therefore support different predictive descriptions depending on
 the interaction and measurement.
 
-This is the physical reason for keeping the dependencies explicit. The
-constructor can ask what must be recalculated after a change rather than
-replacing an entire model by analogy. The hierarchy itself supplies the places
-to record those choices; the commutator calculation establishes their effect.
+The constructor can ask what must be recalculated after a change rather than
+replacing an entire model by analogy. The hierarchy supplies places to record
+those choices; the commutator calculation establishes their effect.
 
+[Next: connect sources and calculations](09_sources_and_calculations.md) ·
 [Tutorial](index.md)

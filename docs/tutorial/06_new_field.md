@@ -3,8 +3,7 @@
 A useful first wiki answers one bounded physical question with a small set of
 papers. For active matter, this might be how particle propulsion and wall
 interactions determine boundary accumulation. The initial collection should
-contain the governing equations, boundary conditions and measured quantities,
-not merely papers sharing a topic keyword.
+contain the governing equations, boundary conditions and measured quantities.
 
 The PDF workflow reuses FieldBridge's text extraction and evidence scoring.
 It creates linked first-pass pages; a coherent field explanation still needs
@@ -53,8 +52,8 @@ together with the wall condition, affect the density. Simply renaming the
 quantum branches would not supply that relation.
 
 The generic builder produces a Markdown field wiki. The quantum book generator
-contains quantum-specific authored treatments; it is not a universal
-textbook generator for any new folder.
+adds authored treatments specific to quantum theory; another field needs its
+own physical derivations.
 
 ## Add a construction
 
@@ -70,4 +69,5 @@ also establish what consequence was not supplied, how it could be tested,
 and how it differs from existing work.
 
 [Source evidence and calculations](09_sources_and_calculations.md) ·
+[Physical topic paths](topics/index.md) ·
 [Detailed PDF workflow](../PDF_CORPUS_WORKFLOW.md) · [Tutorial](index.md)
