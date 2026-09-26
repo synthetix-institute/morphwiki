@@ -28,7 +28,3 @@ Electron microscope is organized by the relation between state terms (quantum st
 - the local terms used for mechanism roles, such as particle, wave, detector, field, or qubit
 - the coordinate system or representation used to write the same relation
 - the physical hardware that plays the role of boundary or readout
-
-## Validation Checks
-- Candidate transfer targets are systems where the same state-to-operator-to-spectrum conversion appears, but one edge of the construction remains experimentally unresolved.
-- A valid transfer test varies the context and shows that the readout changes while the transformation law remains identifiable.

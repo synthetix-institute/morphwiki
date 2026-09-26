@@ -1232,16 +1232,8 @@ def quantum_mechanism_profile(
         "the coordinate system, basis, or geometric picture used to display the same relation",
         "the physical implementation of detector, boundary, preparation, or readout",
     ]
-    missing_experiments = [
-        (
-            "A concrete transfer target is a material, biological, or collective system with a state, a transformation, "
-            "and a spectral or categorical readout, but without a tested incompatibility relation."
-        ),
-        (
-            "The validation criterion is that varying the context changes the admissible readout while the "
-            "transformation law remains identifiable; shuffled or erased contexts should weaken the effect."
-        ),
-    ]
+    # A validation check names a consequence of this topic; no generic check is written for every topic.
+    missing_experiments: List[str] = []
     return {
         "takeaway": takeaway,
         "mechanism_view": mechanism_view,
@@ -1335,16 +1327,7 @@ def deterministic_morphwiki(topic: Mapping[str, Any], grammar: Mapping[str, Sequ
         ],
         "active_apparatus": [name for name, _ in apparatus_counts.most_common(8)],
         "active_operator_atoms": [name for name, _ in omega_counts.most_common(12)],
-        "missing_experiments": [
-            (
-                f"Candidate transfer targets are systems where the same state-to-operator-to-spectrum conversion appears, "
-                f"but one edge of the construction remains experimentally unresolved."
-            ),
-            (
-                "A valid transfer test varies the context and shows that the readout changes while the "
-                "transformation law remains identifiable."
-            ),
-        ],
+        "missing_experiments": [],
         "public_evidence_summary": (
             f"Dominant evidence pattern: {active_routes}, carried by {active_fibers}."
         ),
@@ -1589,8 +1572,9 @@ def render_markdown(page: Mapping[str, Any]) -> str:
     lines.extend(f"- {item}" for item in morph.get("what_survives", []))
     lines.extend(["", "## Representation-Dependent Content"])
     lines.extend(f"- {item}" for item in morph.get("what_changes", []))
-    lines.extend(["", "## Validation Checks"])
-    lines.extend(f"- {item}" for item in morph.get("missing_experiments", []))
+    if morph.get("missing_experiments"):
+        lines.extend(["", "## Validation Checks"])
+        lines.extend(f"- {item}" for item in morph.get("missing_experiments", []))
     return "\n".join(lines).rstrip() + "\n"
 
 

@@ -39,7 +39,3 @@ In quantum-mechanical terms, the Path integral formulation is described by a two
 - where time dependence is represented: on the state, on the operator, or in a path weight
 - the coordinate system, basis, or geometric picture used to display the same relation
 - the physical implementation of detector, boundary, preparation, or readout
-
-## Validation Checks
-- A concrete transfer target is a material, biological, or collective system with a state, a transformation, and a spectral or categorical readout, but without a tested incompatibility relation.
-- The validation criterion is that varying the context changes the admissible readout while the transformation law remains identifiable; shuffled or erased contexts should weaken the effect.
