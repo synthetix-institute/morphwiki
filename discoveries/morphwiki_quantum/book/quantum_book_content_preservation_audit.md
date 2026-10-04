@@ -3,10 +3,10 @@
 - Readiness: `usable`
 - Topics in the mechanism map: `146`
 - Dedicated topic sections: `146`
-- Topic words: `56765`
+- Topic words: `56851`
 - Topic-specific physical treatments: `63`
 - Branch-level topic maps: `66`
-- Topic-word retention: `0.892`
+- Topic-word retention: `0.894`
 - Equation blocks: `158`
 - TeX topics with displayed equations: `125`
 - PDF pages: `296`

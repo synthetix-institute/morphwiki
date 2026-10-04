@@ -126,6 +126,8 @@ REFERENCES["quantum_sensor"] = [
     ("2209.03934", "N. E. Frattini et al., Observation of pairwise level degeneracies and the quantum regime of the Arrhenius law in a double-well parametric oscillator, Phys. Rev. X 14, 031040 (2024), posted as The squeezed Kerr oscillator: spectral kissing and phase-flip robustness: a few-photon Kerr parametric oscillator."),
     ("2010.02621", "T. Yamaji et al., Spectroscopic observation of the crossover from a classical Duffing oscillator to a Kerr parametric oscillator, Phys. Rev. A 105, 023519 (2022): branch selection by an injected signal."),
     ("1905.05783", "M. M. Rams, J. Dziarmaga and W. H. Zurek, Symmetry breaking bias and the dynamics of a quantum phase transition, Phys. Rev. Lett. 123, 130603 (2019): a bias across a swept transition."),
+    ("1105.0426", "K. Baumann, R. Mottl, F. Brennecke and T. Esslinger, Exploring symmetry breaking at the Dicke quantum phase transition, Phys. Rev. Lett. 107, 140402 (2011): the selected state against the crossing rate under a residual bias, read as a freeze-out."),
+    ("2506.23539", "T. Yamaji et al., Quantum annealing in capacitively coupled Kerr parametric oscillators using frequency-chirped drives, Phys. Rev. Applied 24, 064052 (2025): a Josephson oscillator with about twelve photons, its pump raised with a one-photon bias, and the probability of the favoured state against the bias."),
 ]
 
 CONSTRUCTORS["quantum_sensor"] = {

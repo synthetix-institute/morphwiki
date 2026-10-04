@@ -33,7 +33,7 @@
   "changed_treatments": [],
   "missing_equations": [],
   "missing_original_sources": [],
-  "tex_sha256": "6538bc21e7ff30c193cc7e33c6f8a58d03832799924e44a547061ddb86ab2ecb",
+  "tex_sha256": "d8b7b53e86b346282c60d481396fffc63470541afbc03f0ce317ecadf4f10d68",
   "preserved_body_sha256": {
     "hilbert-space": "25c874e789c5c088d9d28585561d661995d530038ad4f6a15380b639392a3518",
     "quantum-mechanics": "9c432d85d42e6be3300c2d767e85217e73bd7f3d8eab796594c6b08da3f54635",
@@ -75,7 +75,7 @@
     "quantum-channel": "79f38b26e8411abe19af04b69a1a15831747a137f8d86ce199cc52c46e835018",
     "quantum-circuit": "ce736c96d7068bf4d8fce8e01c49ec52f3d03b9501e5b2f78000ec3a3fe6f701",
     "quantum-key-distribution": "81749d9d0f950dee97380e411a9236f79de5a8d246fe186012288a270a86760b",
-    "quantum-sensor": "395ae8cc645f80b3c632b81f1498e51f1d614beab8b76739e30c161461a3231b",
+    "quantum-sensor": "cac108fabc656e3792a45007fc5c720052a4c3d38a41b38e83d9cd4d3e7beba7",
     "quantum-teleportation": "350293d3c745dbd2bf9999284699a8a5e3ec03090b6f605f44e93520d635a6df",
     "quantum-simulator": "3709401e693551042bd78d50d91f92163849514300072792accd6a6ec9f8900b",
     "quantum-metrology": "9fc4301295acfefffea4824068b0c7920460ae7e3e2b9638564a2e555b72d243",
