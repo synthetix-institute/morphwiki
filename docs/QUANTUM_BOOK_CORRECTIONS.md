@@ -59,7 +59,7 @@ about artifact integrity, not certification of all scientific content.
 
 ## Remaining review
 
-There are 62 topic-specific treatments, 63 physical-role overviews, four
+There are 63 topic-specific treatments, 62 physical-role overviews, four
 alternative-name entries and 17 historical or interpretive entries. In the
 full reference edition, the overviews retain their representative
 relations and are explicitly identified as overviews. They still need individual
@@ -69,8 +69,8 @@ FieldBridge calculations apply to those calculations alone.
 
 ## Expository companion edition
 
-The separate companion retains all 62 topic-specific treatments and the
-cross-topic explanations. The 63 generic overviews, four alternative-name
+The separate companion retains all 63 topic-specific treatments and the
+cross-topic explanations. The 62 generic overviews, four alternative-name
 entries and 17 historical or interpretive entries appear in a reference index
 rather than as developed physics chapters. The full edition and all source
 records remain available. Two existing derivations, for the quantum Hamiltonian

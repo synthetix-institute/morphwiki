@@ -5708,9 +5708,39 @@ def quantum_discovery_chapter() -> str:
         latex_escape(
             "Promotion into Omega introduces a correction law or interaction. Promotion into Xi adds a hidden degree of freedom or state sector. Promotion into C changes the admissible domain. Promotion into P makes operation order part of the dynamics. The enlarged theory is fixed by the smallest promotion that restores predictive closure."
         ),
+        r"\section{Worked Example: A Classical Write Law In A Quantum Oscillator}",
+        latex_editorial_math(
+            "A parametric oscillator holds two stored states of opposite phase above its threshold. When the two-photon drive $\\varepsilon_2$ is swept through the threshold at a rate $r$ while a weak one-photon drive $h$ favours one state, the probability of the favoured state is the write. For a classical oscillator with noise of strength $D$ the selection law is $P=\\Phi(\\pi^{1/4}h/(D^{1/2}r^{1/4}))$, with $\\Phi$ the normal distribution function (Kondepudi and Nelson, Nature 314, 438, 1985). The quantum oscillator is the target state space. The transfer is exact in one regime and fails in a structured way in another."
+        ),
+        r"\begin{centeredalign}",
+        r"H=-Ka^{\dagger2}a^{2}+\tfrac{i}{2}\varepsilon_2(t)\,(a^{\dagger2}-a^{2})+ih\,(a^{\dagger}-a),\\",
+        r"\dot\rho=-i[H,\rho]+\kappa(\bar n+1)\,\mathcal D[a]\rho+\kappa\bar n\,\mathcal D[a^{\dagger}]\rho.",
+        r"\end{centeredalign}",
+        latex_editorial_math(
+            "Exact transfer. While the amplitude is small the Kerr term is negligible, and the Wigner function of a Gaussian state under a quadratic generator with linear loss obeys exactly the Fokker--Planck equation of the classical process for the amplified quadrature $x=\\operatorname{Re}\\langle a\\rangle$: $\\dot x=(\\varepsilon_2-\\kappa/2)\\,x+h+\\sqrt{2D}\\,\\xi$ with $2D=\\kappa(2\\bar n+1)/4$. The residual of the transfer vanishes, and the law carries over with one change: $D$ is no longer a parameter but is fixed by the vacuum and the temperature. For a ramp $\\varepsilon_2=rt$ from a thermal state of variance $\\sigma_0^2=(2\\bar n_0+1)/4$ the general form is"
+        ),
+        r"\begin{centeredalign}",
+        r"P=\Phi\!\left(\frac{hI_1}{\sqrt{\sigma_0^2+2DI_2}}\right),\qquad I_k=\int_0^{\infty}e^{-k\varphi(s)}\,ds,\qquad \varphi(s)=\tfrac12 rs^{2}-\tfrac12\kappa s,",
+        r"\end{centeredalign}",
+        latex_editorial_math(
+            "which gives the classical law for $\\kappa\\gg\\sqrt r$, where the loss renews the seed during the sweep, and $P=\\Phi(h\\sqrt{2\\pi/r})$ for $\\kappa\\to0$, where the seed is the preparation and the rate enters with the exponent $-1/2$ instead of $-1/4$. The same structure, for a step of the gain instead of a ramp, is the bias-probability relation of Gu et al. (Phys. Rev. Research 7, L022056, 2025) measured by Roques-Carmes et al. (Science 381, 205, 2023). Exact evolution of the density operator at 27 stored photons follows the ramp law to $6\\times10^{-5}$ across the crossover between the two limits."
+        ),
+        latex_editorial_math(
+            "Structured failure. At a few stored photons the measured probability falls below the law by up to $0.22$. The residual is not irregular: for slow sweeps it equals the selection of the biased steady state, $P_{\\mathrm{eq}}(h,K,\\kappa)$, to within $0.006$. The promotion is into the operation: the switching between the two shallow wells, whose rate is the gap $\\Gamma$ of the Lindbladian, enters the dynamics of the write. One reduction then covers both regimes, the relaxation of the slowest mode toward the biased steady state until the gap falls below the sweep rate,"
+        ),
+        r"\begin{centeredalign}",
+        r"\frac{dp}{dt}=\Gamma(\varepsilon_2(t))\,\bigl[P_{\mathrm{eq}}(\varepsilon_2(t))-p\bigr],",
+        r"\end{centeredalign}",
+        latex_editorial_math(
+            "with $\\Gamma$ and $P_{\\mathrm{eq}}$ computed from the generator. At $1.5$ stored photons it reproduces the exact probability within $0.01$ over two decades of rate; in the semiclassical regime its freeze-out at $\\Gamma\\sim\\sqrt r$ recovers the scaling of the classical law, whose constant $\\pi^{1/4}$ belongs to the exact linear stage. The consequence that was not used to define the promoted term is the dependence on the rate: the probability rises with slower sweeps in the linear-stage regime and becomes independent of the rate in the few-photon regime. Raising the photon number at fixed bias and rate removes the term and restores the law."
+        ),
         r"\section{Observable Consequences}",
         latex_escape(
             "The promoted term becomes physical when it changes an observable that was not used to define it. Removing the obstructing coupling must remove that consequence. Curvature, memory, edge flux, and effective interactions are familiar outcomes of this logic: each retains information that the smaller state or transformation law had discarded."
+        ),
+        r"\section{Openings}",
+        latex_editorial_math(
+            "The structure of this chapter predicts relations that the written record does not yet contain. For the quantum oscillator: the selection $P_{\\mathrm{eq}}(h,K,\\kappa)$ of the biased steady state and the gap $\\Gamma(\\varepsilon_2)$ in closed form at a few photons, where both are known only numerically; the same transfer for a threshold write, a fold crossed under a sweep with quantum activation before the fold; and the information left by a quantum write against the work spent on it, the counterpart of the classical bound $\\tfrac12\\ln(1+W)$. Each is a calculation with a definite answer, and each would extend the chapter by one certified relation."
         ),
     ]
     return "\n".join(lines)

@@ -185,3 +185,29 @@ def test_centering_preserves_matrix_and_syndrome_table_columns():
         for kind,body in NARRATIVES[slug]:
             if kind == "eq" and "&" in body:
                 assert body in book
+
+
+def test_quantum_write_law_limits_in_the_transfer_chapter():
+    r, k, u, h = s.symbols("r kappa u h", positive=True)
+    phi = r*u**2/2 - k*u/2
+    i1_closed = s.sqrt(s.pi/(2*r))*s.exp(k**2/(8*r))*s.erfc(-k/(2*s.sqrt(2*r)))
+    i2_closed = s.sqrt(s.pi/r)/2*s.exp(k**2/(4*r))*s.erfc(-k/(2*s.sqrt(r)))
+    values = {r: s.Rational(3, 10), k: s.Rational(11, 10)}
+    for factor, closed in ((1, i1_closed), (2, i2_closed)):
+        numeric = s.Integral(s.exp(-factor*phi).subs(values), (u, 0, s.oo)).evalf(20)
+        assert abs(float(numeric - closed.subs(values))) < 1e-12
+    # closed limit: the seed is the vacuum, sigma0 = 1/2, and the rate enters with the exponent -1/2
+    assert s.simplify(h*i1_closed.subs(k, 0)/s.Rational(1, 2) - h*s.sqrt(2*s.pi/r)) == 0
+    # dissipative limit: kappa >> sqrt(r) gives pi^(1/4) h / (D^(1/2) r^(1/4)) with D = kappa/8 for the vacuum
+    d = k/8
+    ratio = h*i1_closed/s.sqrt(2*d*i2_closed)
+    limit = s.pi**s.Rational(1, 4)*h/(s.sqrt(d)*r**s.Rational(1, 4))
+    point = {r: s.Rational(1, 10000), k: 1, h: 1}
+    assert abs(float(ratio.subs(point) - limit.subs(point))) < 1e-6
+    # the stored states of the mean field: |alpha|^2 = sqrt(eps^2 - kappa^2/4)/(2K), sin 2theta = 2K|alpha|^2/eps
+    eps, kk = s.symbols("epsilon K", positive=True)
+    rho2 = s.sqrt(eps**2 - k**2/4)/(2*kk)
+    theta = s.asin(2*kk*rho2/eps)/2
+    alpha = s.sqrt(rho2)*s.exp(s.I*theta)
+    drift = -(k/2)*alpha + eps*s.conjugate(alpha) + 2*s.I*kk*rho2*alpha
+    assert abs(complex(drift.subs({eps: 3, k: 1, kk: 1}).evalf())) < 1e-12

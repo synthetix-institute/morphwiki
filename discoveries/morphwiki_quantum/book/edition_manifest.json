@@ -915,7 +915,7 @@
     "quantum_sensor": {
       "title": "Quantum sensor",
       "branch": "protocols",
-      "kind": "overview",
+      "kind": "treatment",
       "canonical_slug": "quantum_sensor",
       "equation_sources": {
         "corpus_aligned": [],

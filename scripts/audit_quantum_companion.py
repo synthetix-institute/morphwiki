@@ -45,7 +45,7 @@ def displayed_equations(tex: str) -> list[str]:
             for match in pattern.finditer(body)]
 
 
-def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: int = 62) -> dict:
+def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: int = 63) -> dict:
     tree = load_json(root / "quantum_mechanism_tree.json")
     inventory = edition_inventory(root, tree)
     expected = {latex_label(slug) for slug, row in inventory.items() if row["kind"] == "treatment"}
@@ -85,7 +85,7 @@ def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: 
         for connection in connections
     ]
     checks = {
-        "all_62_topic_specific_treatments_preserved": len(expected) == expected_treatments and set(sections) == expected,
+        "all_topic_specific_treatments_preserved": len(expected) == expected_treatments and set(sections) == expected,
         "each_treatment_appears_once": Counter(section_labels) == Counter(expected),
         "retained_treatment_bodies_match_full_edition": not changed,
         "every_treatment_has_equations": not missing_equations,

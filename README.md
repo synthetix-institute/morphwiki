@@ -141,8 +141,8 @@ an interaction, the correlation it generates, and its measured consequence
 before introducing the nested description. Closure enters when the calculation
 shows what information a reduced description has omitted.
 
-The **expository companion** is the book to read. It develops all 62
-topic-specific treatments and indexes all 146 subjects. The index distinguishes 63 overview entries without
+The **expository companion** is the book to read. It develops all 63
+topic-specific treatments and indexes all 146 subjects. The index distinguishes 62 overview entries without
 an individual derivation, four alternative names, and 17 historical or
 interpretive entries. Repeated branch-level equations are omitted from this
 edition. The [full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
@@ -167,7 +167,7 @@ methods supplement; discovery claims require their own target-system tests.
 The local edition has no DOI.
 
 The [companion checks](discoveries/morphwiki_quantum/book/companion/companion_integrity.md)
-require all 62 treatments to retain the same bodies as the full edition, all
+require all 63 treatments to retain the same bodies as the full edition, all
 146 index entries to be present exactly once, and visible provenance and source
 links to survive. The report counts developed treatments separately from index
 entries and records the status of scientific review. See the

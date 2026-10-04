@@ -66,7 +66,7 @@
 
 {\large Synthetix Institute\par}
 
-{\large Edition dated 2026-09-26 10:36 UTC\par}
+{\large Edition dated 2026-10-04 04:14 UTC\par}
 
 \vfill
 
@@ -421,8 +421,26 @@ A nonzero residual separates two physical possibilities. An irregular residual r
 \Delta\longmapsto\Omega',\ \Xi',\ C',\ R',\ P',\ \text{or }A'.
 \end{equation*}
 Promotion into Omega introduces a correction law or interaction. Promotion into Xi adds a hidden degree of freedom or state sector. Promotion into C changes the admissible domain. Promotion into P makes operation order part of the dynamics. The enlarged theory is fixed by the smallest promotion that restores predictive closure.
+\section{Worked Example: A Classical Write Law In A Quantum Oscillator}
+A parametric oscillator holds two stored states of opposite phase above its threshold. When the two-photon drive \(\varepsilon_2\) is swept through the threshold at a rate \(r\) while a weak one-photon drive \(h\) favours one state, the probability of the favoured state is the write. For a classical oscillator with noise of strength \(D\) the selection law is \(P=\Phi(\pi^{1/4}h/(D^{1/2}r^{1/4}))\), with \(\Phi\) the normal distribution function (Kondepudi and Nelson, Nature 314, 438, 1985). The quantum oscillator is the target state space. The transfer is exact in one regime and fails in a structured way in another.
+\begin{centeredalign}
+H=-Ka^{\dagger2}a^{2}+\tfrac{i}{2}\varepsilon_2(t)\,(a^{\dagger2}-a^{2})+ih\,(a^{\dagger}-a),\\
+\dot\rho=-i[H,\rho]+\kappa(\bar n+1)\,\mathcal D[a]\rho+\kappa\bar n\,\mathcal D[a^{\dagger}]\rho.
+\end{centeredalign}
+Exact transfer. While the amplitude is small the Kerr term is negligible, and the Wigner function of a Gaussian state under a quadratic generator with linear loss obeys exactly the Fokker--Planck equation of the classical process for the amplified quadrature \(x=\operatorname{Re}\langle a\rangle\): \(\dot x=(\varepsilon_2-\kappa/2)\,x+h+\sqrt{2D}\,\xi\) with \(2D=\kappa(2\bar n+1)/4\). The residual of the transfer vanishes, and the law carries over with one change: \(D\) is no longer a parameter but is fixed by the vacuum and the temperature. For a ramp \(\varepsilon_2=rt\) from a thermal state of variance \(\sigma_0^2=(2\bar n_0+1)/4\) the general form is
+\begin{centeredalign}
+P=\Phi\!\left(\frac{hI_1}{\sqrt{\sigma_0^2+2DI_2}}\right),\qquad I_k=\int_0^{\infty}e^{-k\varphi(s)}\,ds,\qquad \varphi(s)=\tfrac12 rs^{2}-\tfrac12\kappa s,
+\end{centeredalign}
+which gives the classical law for \(\kappa\gg\sqrt r\), where the loss renews the seed during the sweep, and \(P=\Phi(h\sqrt{2\pi/r})\) for \(\kappa\to0\), where the seed is the preparation and the rate enters with the exponent \(-1/2\) instead of \(-1/4\). The same structure, for a step of the gain instead of a ramp, is the bias-probability relation of Gu et al. (Phys. Rev. Research 7, L022056, 2025) measured by Roques-Carmes et al. (Science 381, 205, 2023). Exact evolution of the density operator at 27 stored photons follows the ramp law to \(6\times10^{-5}\) across the crossover between the two limits.
+Structured failure. At a few stored photons the measured probability falls below the law by up to \(0.22\). The residual is not irregular: for slow sweeps it equals the selection of the biased steady state, \(P_{\mathrm{eq}}(h,K,\kappa)\), to within \(0.006\). The promotion is into the operation: the switching between the two shallow wells, whose rate is the gap \(\Gamma\) of the Lindbladian, enters the dynamics of the write. One reduction then covers both regimes, the relaxation of the slowest mode toward the biased steady state until the gap falls below the sweep rate,
+\begin{centeredalign}
+\frac{dp}{dt}=\Gamma(\varepsilon_2(t))\,\bigl[P_{\mathrm{eq}}(\varepsilon_2(t))-p\bigr],
+\end{centeredalign}
+with \(\Gamma\) and \(P_{\mathrm{eq}}\) computed from the generator. At \(1.5\) stored photons it reproduces the exact probability within \(0.01\) over two decades of rate; in the semiclassical regime its freeze-out at \(\Gamma\sim\sqrt r\) recovers the scaling of the classical law, whose constant \(\pi^{1/4}\) belongs to the exact linear stage. The consequence that was not used to define the promoted term is the dependence on the rate: the probability rises with slower sweeps in the linear-stage regime and becomes independent of the rate in the few-photon regime. Raising the photon number at fixed bias and rate removes the term and restores the law.
 \section{Observable Consequences}
 The promoted term becomes physical when it changes an observable that was not used to define it. Removing the obstructing coupling must remove that consequence. Curvature, memory, edge flux, and effective interactions are familiar outcomes of this logic: each retains information that the smaller state or transformation law had discarded.
+\section{Openings}
+The structure of this chapter predicts relations that the written record does not yet contain. For the quantum oscillator: the selection \(P_{\mathrm{eq}}(h,K,\kappa)\) of the biased steady state and the gap \(\Gamma(\varepsilon_2)\) in closed form at a few photons, where both are known only numerically; the same transfer for a threshold write, a fold crossed under a sweep with quantum activation before the fold; and the information left by a quantum write against the work spent on it, the counterpart of the classical bound \(\tfrac12\ln(1+W)\). Each is a calculation with a definite answer, and each would extend the chapter by one certified relation.
 
 \part{State Spaces And Dynamical Laws}
 
@@ -3677,40 +3695,55 @@ The classical channel must be authenticated. Otherwise an adversary can imperson
 \clearpage
 \section{Quantum sensor}
 \label{topic:quantum-sensor}
-\par\smallskip\noindent\textit{Physical-role overview. The representative relation below is shared with other topics in this chapter.}
 
 \subsection*{Mechanism}
-Quantum sensor is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
+A parametric oscillator swept through its threshold amplifies vacuum fluctuations into one of two states of opposite phase. A bias field far below one photon shifts the probabilities of the two states, so the oscillator senses a sub-photon field through the statistics of its written state.
 
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
+The sensor is the oscillator itself. A field far below one photon cannot be read directly, but it displaces the seed that the parametric gain amplifies, and the displacement is recorded in which of two macroscopic states the oscillator reaches. The record is a probability, so the sensing is statistical: many sweeps give the bias through the distribution function of the normal law.
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
+In the frame rotating at half the pump frequency, with \(\\hbar=1\), the mode \(a\) has a Kerr coefficient \(K\), a two-photon drive \(\\varepsilon_2\) swept at the rate \(r\), a one-photon bias \(h\) and a loss \(\\kappa\) at thermal occupation \(\\bar n\). While the amplitude is small, the amplified quadrature obeys the classical equation with a noise fixed by the vacuum and the temperature, \(2D=\\kappa(2\\bar n+1)/4\), since the Wigner function of a Gaussian state under a quadratic generator with linear loss obeys exactly the classical Fokker--Planck equation. The probability of the favoured state is the normal distribution function of \(hI_1/\\sqrt{\\sigma_0^2+2DI_2}\): for \(\\kappa\\gg\\sqrt r\) the selection law of a swept pitchfork with no free parameter, for \(\\kappa\\to0\) a law with the exponent \(-1/2\) of the rate. Exact evolution at 27 stored photons follows it to \(6\\times10^{-5}\). At a few stored photons switching between the shallow wells outruns a slow sweep, and the probability relaxes to the selection \(P_{\\mathrm{eq}}\) of the biased steady state at the rate of the Lindbladian's gap \(\\Gamma\).
 
 \subsection*{Physical Construction}
-The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The calculation involves an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated quantities include counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
+The state carrier is the density operator of one field mode in a truncated Fock space. The calculation involves the Lindbladian with the Kerr term, the swept two-photon drive, the one-photon bias and the loss. Positivity and unit trace; the truncation holds the stored states and their Fock tails; the frame rotates at half the pump frequency. The calculated quantities include the sign of the amplified quadrature at the end of the sweep, with its probability over repetitions.
 
-\subsection*{Defining Relations}
-Preparation or domain terms (potential or domain condition, preparation context, or measurement basis) determine which states are admissible. State terms (superposition, wave function, or quantum state) name the predictive carrier: vector, wave function, density operator, field state, or register state. Operator terms (Hamiltonian, observable operator, or generator) name the observable, Hamiltonian, unitary, or constraint acting on the carrier. Spectral terms (mode, eigenvalue, or eigenstate) name the outcome labels and projectors that define outcome channels. The probability rule maps states and projectors to recorded probabilities through the Born rule, trace rule, or projection-valued measure. Compatibility terms (uncertainty relation, commutator, or incompatible observable) mark cases where observables do not admit one common sharp observable basis.
-\subsection*{Representative Relation}
-This relation describes the shared physical role; a topic-specific Hamiltonian or field equation is required to calculate this system.
+\subsection*{Topic Equations}
 \begin{centeredalign}
-\rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
+H=-Ka^{\dagger2}a^{2}+\tfrac{i}{2}\varepsilon_2(t)(a^{\dagger2}-a^{2})+ih(a^{\dagger}-a),\qquad\dot\rho=-i[H,\rho]+\kappa(\bar n+1)\mathcal D[a]\rho+\kappa\bar n\mathcal D[a^{\dagger}]\rho\\
+\dot\alpha=-\tfrac{\kappa}{2}\alpha+\varepsilon_2\alpha^{*}+2iK|\alpha|^{2}\alpha+h,\qquad |\alpha|^{2}=\frac{\sqrt{\varepsilon_2^{2}-\kappa^{2}/4}}{2K}\\
+\dot x=(\varepsilon_2-\tfrac{\kappa}{2})x+h+\sqrt{2D}\,\xi(t),\qquad 2D=\tfrac{\kappa}{4}(2\bar n+1)\\
+P=\Phi\!\left(\frac{hI_1}{\sqrt{\sigma_0^{2}+2DI_2}}\right),\quad I_k=\int_0^{\infty}e^{-k\varphi(s)}ds,\quad P\to\Phi\!\left(\frac{\pi^{1/4}h}{D^{1/2}r^{1/4}}\right)\ \text{or}\ \Phi\!\left(h\sqrt{2\pi/r}\right)\\
+\frac{dp}{dt}=\Gamma(\varepsilon_2)\,\bigl[P_{\mathrm{eq}}(\varepsilon_2)-p\bigr]
 \end{centeredalign}
 
 \subsection*{Physical Meaning}
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+The observable is the sign of the amplified quadrature at the end of the sweep, a Born probability of one half-plane. In the semiclassical regime that probability is set in the linear stage and inherits the classical selection law with the vacuum as its noise. In the few-photon regime it is set later, by the balance of the two shallow wells, and the Lindbladian's gap and biased steady state decide it.
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+A Josephson Kerr parametric oscillator with 27 stored photons, swept at a rate one hundredth of the square of its loss rate and biased so that the law predicts a probability of 0.9, reaches 0.899; the same oscillator with 1.5 stored photons reaches 0.68, the value of its biased steady state, and keeps that value for any slower sweep.
+
+The same calculation is the quantum counterpart of a classical write into a bistable material: the symmetric write of the memory of matter, with the swept pitchfork and the probit law, transferred to a quantum carrier where the seed is fixed by the vacuum. The failure of the transfer at a few photons promotes the switching between the wells into the dynamics, as the chapter on transfer and obstruction describes.
+
+\subsection*{Consequences Forced By The Relation}
+The noise that seeds the choice is not a parameter. In the semiclassical regime the probability of the favoured state depends on \(\kappa\) and \(\bar n\) only through \(D=\kappa(2\bar n+1)/8\), so raising the temperature lowers the argument of \(\Phi\) as \((2\bar n+1)^{-1/2}\). The exponent of the sweep rate tells which seed is amplified: \(-1/4\) when the loss renews the seed during the sweep, \(-1/2\) when the seed is the preparation; the crossover is set by \(\kappa/\sqrt r\). At a few stored photons the probability becomes independent of the sweep rate and equals the selection of the biased steady state; raising the photon number at fixed bias and rate restores the law. The deficit below the law grows as \(K^{2}\) at large photon numbers.
+\subsection*{Domain Of The Construction}
+The Gaussian-stage law needs the decision to be complete before the Kerr term acts, which holds when the stored states contain many photons; the few-photon statements rest on exact evolution of the density operator in a truncated Fock space at \(K/\kappa\) between \(0.01\) and \(1\). The classical limit is the selection law of Kondepudi and Nelson (Nature 314, 438, 1985); the step-of-gain form of the same relation is derived by Gu et al. (2025).
 
 \subsection*{Invariance And Realization}
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+A rotation of the pump phase rotates the amplified quadrature and the bias together; the probability depends on the bias only through its projection on that quadrature. Changing the loss and the temperature at fixed D leaves the semiclassical law unchanged.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+The Kerr coefficient sets the photon number of the stored states and thereby which regime applies. A thermal bath enters through 2n+1. The sweep rate decides which seed is amplified and, at a few photons, whether the wells equilibrate.
 
 \subsection*{Discriminating Consequences}
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+The dependence on the sweep rate separates the regimes: a probability rising with slower sweeps belongs to the linear stage, a probability independent of the rate to the balance of the wells. A superconducting oscillator can be prepared in both regimes by its Kerr coefficient.
 
-
+\subsection*{References For The Physical Derivation}
+\begin{itemize}
+\item \href{https://arxiv.org/abs/2303.03455}{C. Roques-Carmes et al., Biasing the quantum vacuum to control macroscopic probability distributions, Science 381, 205 (2023): bias pulses below one photon set the probabilities of the two states of an optical parametric oscillator.}
+\item \href{https://arxiv.org/abs/2412.02887}{A. Gu et al., Quantum sensitivity of parametric oscillators, Phys. Rev. Research 7, L022056 (2025): the bias-probability relation for a step of the gain, with the initial quantum state and the gain noise.}
+\item \href{https://arxiv.org/abs/cond-mat/0602288}{M. Marthaler and M. I. Dykman, Switching via quantum activation: a parametrically modulated oscillator, Phys. Rev. A 73, 042108 (2006): switching between the two states of the oscillator.}
+\item \href{https://arxiv.org/abs/2209.03934}{N. E. Frattini et al., Observation of pairwise level degeneracies and the quantum regime of the Arrhenius law in a double-well parametric oscillator, Phys. Rev. X 14, 031040 (2024), posted as The squeezed Kerr oscillator: spectral kissing and phase-flip robustness: a few-photon Kerr parametric oscillator.}
+\item \href{https://arxiv.org/abs/2010.02621}{T. Yamaji et al., Spectroscopic observation of the crossover from a classical Duffing oscillator to a Kerr parametric oscillator, Phys. Rev. A 105, 023519 (2022): branch selection by an injected signal.}
+\item \href{https://arxiv.org/abs/1905.05783}{M. M. Rams, J. Dziarmaga and W. H. Zurek, Symmetry breaking bias and the dynamics of a quantum phase transition, Phys. Rev. Lett. 123, 130603 (2019): a bias across a swept transition.}
+\end{itemize}
 
 
 \clearpage

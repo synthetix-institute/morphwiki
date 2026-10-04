@@ -20,11 +20,11 @@ def editions():
 def test_companion_preserves_treatments_not_template_pages(editions):
     full, companion = editions
     inventory = edition_inventory(ROOT, load_json(ROOT / "quantum_mechanism_tree.json"))
-    assert sum(row["kind"] == "treatment" for row in inventory.values()) == 62
-    assert sum(row["kind"] == "overview" for row in inventory.values()) == 63
+    assert sum(row["kind"] == "treatment" for row in inventory.values()) == 63
+    assert sum(row["kind"] == "overview" for row in inventory.values()) == 62
     assert len(re.findall(r"\\label\{index:", companion)) == 146
     full_bodies, bodies = topic_bodies(full), topic_bodies(companion)
-    assert len(bodies) == 62
+    assert len(bodies) == 63
     assert all(body == full_bodies[slug] for slug, body in bodies.items())
     assert "Representative Relation" not in companion
     assert "a topic-specific Hamiltonian or field equation is required" not in companion
@@ -59,7 +59,7 @@ def test_inventory_is_not_allowed_to_masquerade_as_sections(editions, tmp_path):
     full, companion = editions
     broken = companion.replace(r"\label{topic:quantum-state}", r"\label{index:quantum-state}")
     report = assess(ROOT, broken, full, tmp_path / "missing.pdf")
-    assert not report["checks"]["all_62_topic_specific_treatments_preserved"]
+    assert not report["checks"]["all_topic_specific_treatments_preserved"]
     assert "quantum-state" in report["missing_treatments"]
     corrupted = companion.replace(r"|\mathbf r|\leq1", r"|\mathbf r|\leq2")
     report = assess(ROOT, corrupted, full, tmp_path / "missing.pdf")

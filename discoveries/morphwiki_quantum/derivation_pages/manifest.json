@@ -1,15 +1,15 @@
 {
   "report_type": "quantum_derivation_pages_manifest",
   "row_count": 146,
-  "topic_specific_count": 62,
-  "branch_level_count": 67,
-  "core_derived_count": 67,
+  "topic_specific_count": 63,
+  "branch_level_count": 66,
+  "core_derived_count": 66,
   "annotation_count": 17,
   "source_grounded_count": 6,
   "identifier_linked_count": 123,
   "derivation_basis_counts": {
-    "identifier_linked_placement": 67,
-    "identifier_linked_topic_model": 56,
+    "identifier_linked_placement": 66,
+    "identifier_linked_topic_model": 57,
     "source_grounded_topic_model": 6,
     "annotation": 17
   },
@@ -818,8 +818,8 @@
       "slug": "quantum_sensor",
       "title": "Quantum sensor",
       "branch": "protocols",
-      "status": "branch_level",
-      "derivation_basis": "identifier_linked_placement",
+      "status": "topic_specific",
+      "derivation_basis": "identifier_linked_topic_model",
       "source_grounded": false,
       "identifier_linked": true,
       "path": "discoveries/morphwiki_quantum/derivation_pages/quantum_sensor.md"
