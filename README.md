@@ -2,7 +2,26 @@
 
 **Explain a field through the equations needed to predict an experiment.**
 
-[Tutorial](docs/tutorial/index.md) · [Expository companion](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
+[Read the book (PDF)](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf) · [Full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) · [Tutorial](docs/tutorial/index.md) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
+
+## The book: *Quantum Theory as a Mechanism Tree*
+
+**[Read the expository companion (PDF, 236 pages)](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf)**
+
+The book develops quantum theory through worked calculations. Every one of its
+125 topics, from the particle in a box and tunnelling to Bell's theorem,
+quantum error correction, renormalization and string theory, opens with a
+physical question, derives the relation that answers it and follows that
+relation to a number or a named experiment. The opening chapters show what any
+quantum prediction requires and how fields, environments, boundaries and pulse
+sequences become part of a quantum system. The
+[full reference edition (PDF, 255 pages)](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+adds short accounts of 17 historical, bibliographic and interpretive entries.
+The treatments are written per chapter in
+[`scripts/quantum_narratives/`](scripts/quantum_narratives/) and can be read
+there as source.
+
+## The approach
 
 Predicting the magnetization of one interacting spin can require a correlation
 with a second spin. The state space, Hamiltonian, correlation and measurement
