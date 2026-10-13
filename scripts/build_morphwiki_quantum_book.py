@@ -2637,33 +2637,6 @@ def edition_inventory(root: Path, tree: Mapping[str, Any]) -> Dict[str, Dict[str
     return inventory
 
 
-def companion_topic_index(tree: Mapping[str, Any], inventory: Mapping[str, Any]) -> str:
-    lines = [r"\chapter{Topic Reference Index}",
-             "This index retains every subject in the field map. A worked treatment has its own section in the preceding chapters. "
-             "An overview entry records an editorial placement only; no repeated branch equation is offered as a derivation of that subject. "
-             "Historical entries and alternative names are distinguished from physical treatments."]
-    for branch_id in BRANCH_ORDER:
-        branch = tree["branches"][branch_id]
-        lines.extend([rf"\section*{{{latex_escape(branch['title'])}}}",
-                      r"\begin{longtable}{p{0.57\linewidth}p{0.35\linewidth}}",
-                      r"\toprule Subject & Treatment in this edition \\", r"\midrule\endhead"])
-        for row in branch.get("pages", []):
-            slug = row["slug"]
-            entry = inventory[slug]
-            label = latex_label(slug)
-            title = latex_escape(entry["title"])
-            if entry["kind"] == "treatment":
-                status = rf"\hyperref[topic:{label}]{{Worked treatment, p.~\pageref*{{topic:{label}}}}}"
-            elif entry["kind"] == "alias":
-                canonical = inventory[entry["canonical_slug"]]
-                status = "Alternative name: " + latex_escape(canonical["title"])
-            elif entry["kind"] == "annotation":
-                status = "Historical or interpretive entry"
-            else:
-                status = "Overview entry; no individual derivation"
-            lines.append(rf"\phantomsection\label{{index:{label}}}{title} & {status} \\")
-        lines.extend([r"\bottomrule", r"\end{longtable}"])
-    return "\n".join(lines)
 
 
 def indefinite_article(phrase: str) -> str:
@@ -5973,12 +5946,8 @@ def _legacy_render_book(root: Path, max_pages_per_branch: Optional[int] = None) 
     return center_equation_rows(public_theory_language("\n\n".join(lines)))
 
 
-def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition: str = "full") -> str:
+def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
     """Render the public discovery-oriented book and optional method appendices."""
-    if edition not in {"full", "companion"}:
-        raise ValueError(f"Unknown book edition: {edition}")
-    if edition == "companion" and max_pages_per_branch is not None:
-        raise ValueError("The companion edition preserves every topic-specific treatment; it cannot be truncated.")
     tree = load_json(root / "quantum_mechanism_tree.json")
     inventory = edition_inventory(root, tree)
     counts = Counter(entry["kind"] for entry in inventory.values())
@@ -6015,7 +5984,6 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
         r"\vspace{0.12cm}",
         r"{\Huge\bfseries As A Mechanism Tree\par}",
         r"\vspace{0.3cm}",
-        r"{\large Expository companion\par}" if edition == "companion" else r"{\large Full reference edition\par}",
         r"\vspace{1.2cm}",
         r"{\large Synthetix Institute\par}",
         rf"{{\large Edition dated {latex_escape(generated)}\par}}",
@@ -6025,7 +5993,7 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
         r"\end{claimbox}",
         r"\vspace{0.5cm}",
         r"\begin{minipage}{0.94\linewidth}\small\raggedright",
-        r"\textbf{Scope and authorship.} This companion develops established quantum theory through its physical mechanisms. "
+        r"\textbf{Scope and authorship.} This book develops established quantum theory through its physical mechanisms. "
         r"The mechanism tree and its cross-topic connections are the authors' organization of those mechanisms. "
         r"References identify the particular relations used in each treatment.",
         r"\end{minipage}",
@@ -6038,10 +6006,7 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
         r"fixed background becomes part of the system, and follows what is left behind when a state is carried around a loop or a law is carried into "
         r"another system. The grouping of topics into chapters is the authors' choice; the physics in each treatment is established theory, and the "
         r"calculations are written for this volume.",
-        (rf"This edition contains {counts['treatment']} worked treatments, {counts['annotation']} historical, bibliographic or interpretive entries "
-         rf"and {counts['alias']} alternative names, listed in the closing index. "
-         if edition == "companion" else
-         rf"This edition contains {counts['treatment']} worked treatments together with {counts['annotation']} historical, bibliographic or "
+        (rf"The book contains {counts['treatment']} worked treatments together with {counts['annotation']} historical, bibliographic or "
          rf"interpretive entries and {counts['alias']} alternative names. "),
         r"References follow the calculations they support. Links headed Relations In The Original Papers identify particular displays in those articles; Equation Sources identifies relations aligned to corpus records.",
         r"\mainmatter",
@@ -6059,18 +6024,10 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
     lines.append(FRAME.TRANSFER_EXAMPLE_INTRO)
 
     for part_title, branch_ids in QUANTUM_BRANCH_PARTS:
-        if edition == "companion" and not any(
-            item["kind"] == "treatment" and item["branch"] in branch_ids for item in inventory.values()
-        ):
-            continue
         lines.append(rf"\part{{{latex_escape(part_title)}}}")
         for branch_id in branch_ids:
             branch = tree["branches"][branch_id]
             pages = list(branch.get("pages") or [])
-            if edition == "companion":
-                pages = [row for row in pages if inventory[row["slug"]]["kind"] == "treatment"]
-                if not pages:
-                    continue
             lines.append(rf"\chapter{{{latex_escape(branch['title'])}}}")
             definition, insight = FRAME.BRANCH_TEXT.get(branch_id, (branch["definition"], branch["insight"]))
             lines.append(r"\begin{claimbox}")
@@ -6086,9 +6043,6 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
             else:
                 for index, row in enumerate(pages, 1):
                     lines.append(page_entry(root, row, index, branch_id, branch))
-
-    if edition == "companion":
-        lines.append(companion_topic_index(tree, inventory))
 
     evidence_rows = [
         row
@@ -6126,13 +6080,12 @@ def main() -> None:
     parser.add_argument("--out-dir", default="discoveries/morphwiki_quantum/book")
     parser.add_argument("--pages-out-dir", default="discoveries/morphwiki_quantum/derivation_pages")
     parser.add_argument("--max-pages-per-branch", type=int, default=None)
-    parser.add_argument("--edition", choices=("full", "companion"), default="full")
     args = parser.parse_args()
 
     root = Path(args.root)
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    tex = render_book(root, args.max_pages_per_branch, edition=args.edition)
+    tex = render_book(root, args.max_pages_per_branch)
     tex_path = out_dir / "quantum_mechanism_tree_book.tex"
     tex_path.write_text(tex, encoding="utf-8")
     tree = load_json(root / "quantum_mechanism_tree.json")
@@ -6156,7 +6109,7 @@ def main() -> None:
                 ],
             }
     edition_manifest = {
-        "edition": args.edition,
+        "edition": "book",
         "scope": "Exposition with authored organizing interpretations; not evidence of automated physical discovery.",
         "scientific_review_status": "incomplete",
         "topics": topics,

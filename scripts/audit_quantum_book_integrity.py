@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the expository edition without treating an index as developed physics."""
+"""Check that the quantum book prints every treatment once, with its equations, sources and provenance."""
 from __future__ import annotations
 
 import argparse
@@ -45,15 +45,13 @@ def displayed_equations(tex: str) -> list[str]:
             for match in pattern.finditer(body)]
 
 
-def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: int = 125) -> dict:
+def assess(root: Path, tex: str, pdf: Path, expected_treatments: int = 125) -> dict:
     tree = load_json(root / "quantum_mechanism_tree.json")
     inventory = edition_inventory(root, tree)
     expected = {latex_label(slug) for slug, row in inventory.items() if row["kind"] == "treatment"}
-    sections, full_sections = topic_bodies(tex), topic_bodies(full_tex)
+    sections = topic_bodies(tex)
     section_labels = re.findall(r"\\section\{[^\n]+\}\s*\\label\{topic:([^}]+)\}", tex)
-    index = re.findall(r"\\label\{index:([^}]+)\}", tex)
     omitted = sorted(expected - sections.keys())
-    changed = sorted(label for label in expected if label in sections and sections[label] != full_sections.get(label))
     equations = displayed_equations(tex)
     missing_equations = sorted(label for label in expected & sections.keys()
         if not re.search(r"\\begin\{(?:centeredalign|equation\*?)\}|\\\[", sections[label]))
@@ -85,13 +83,11 @@ def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: 
         for connection in connections
     ]
     checks = {
-        "all_topic_specific_treatments_preserved": len(expected) == expected_treatments and set(sections) == expected,
-        "each_treatment_appears_once": Counter(section_labels) == Counter(expected),
-        "retained_treatment_bodies_match_full_edition": not changed,
+        "all_topic_specific_treatments_preserved": len(expected) == expected_treatments and not omitted,
+        "each_treatment_appears_once": all(Counter(section_labels)[label] == 1 for label in expected),
+        "every_topic_has_one_section": Counter(section_labels) == Counter(latex_label(s) for s in inventory),
         "every_treatment_has_equations": not missing_equations,
         "source_links_remain_at_the_relevant_treatment": not missing_sources,
-        "all_topics_indexed_once": Counter(index) == Counter(latex_label(s) for s in inventory),
-        "index_not_counted_as_treatments": not any(label.startswith("index:") for label in sections),
         "no_representative_relation_templates": "Representative Relation" not in tex and "a topic-specific Hamiltonian or field equation is required" not in tex,
         "first_page_explains_scope": "Scope and authorship" in title_page and "authors' organization" in title_page,
         "cross_topic_connections_retained": bool(connections) and all(tex.count(section) == 1 for section in connection_sections),
@@ -104,16 +100,16 @@ def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: 
     }
     counts = Counter(row["kind"] for row in inventory.values())
     return {
-        "report_type": "quantum_expository_companion_integrity",
+        "report_type": "quantum_book_integrity",
         "build_integrity": "pass" if all(checks.values()) else "fail",
-        "publication_role": "separate expository companion; not discovery evidence",
+        "publication_role": "exposition of established quantum theory; not discovery evidence",
         "scientific_review_status": "incomplete; selected equations have executable checks, not chapter-wide certification",
         "checks": checks,
-        "metrics": {"indexed_topics": len(index), "developed_treatments": len(sections),
+        "metrics": {"topic_sections": len(section_labels), "developed_treatments": len(expected & sections.keys()),
                     "overview_entries": counts["overview"], "aliases": counts["alias"], "annotations": counts["annotation"],
                     "display_blocks": len(equations), "distinct_display_blocks": len(set(re.sub(r"\s+", "", e) for e in equations)),
                     "pdf_pages": pdf_page_count(pdf)},
-        "missing_treatments": omitted, "changed_treatments": changed,
+        "missing_treatments": omitted,
         "missing_equations": missing_equations,
         "missing_original_sources": missing_sources,
         "tex_sha256": hashlib.sha256(tex.encode()).hexdigest(),
@@ -124,18 +120,17 @@ def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path("discoveries/morphwiki_quantum"))
-    parser.add_argument("--full-tex", type=Path, default=Path("discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.tex"))
-    parser.add_argument("--companion-dir", type=Path, default=Path("discoveries/morphwiki_quantum/book/companion"))
+    parser.add_argument("--tex", type=Path, default=Path("discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.tex"))
     args = parser.parse_args()
-    tex = args.companion_dir / "quantum_mechanism_tree_book.tex"
-    report = assess(args.root, tex.read_text(), args.full_tex.read_text(), tex.with_suffix(".pdf"))
-    (args.companion_dir / "companion_integrity.json").write_text(json.dumps(report, indent=2) + "\n")
-    lines = ["# Expository companion", "", f"Build integrity: {report['build_integrity']}",
+    report = assess(args.root, args.tex.read_text(), args.tex.with_suffix(".pdf"))
+    out = args.tex.parent
+    (out / "book_integrity.json").write_text(json.dumps(report, indent=2) + "\n")
+    lines = ["# Quantum book integrity", "", f"Build integrity: {report['build_integrity']}",
              f"Role: {report['publication_role']}", f"Scientific review: {report['scientific_review_status']}", "", "## Contents"]
     lines.extend(f"- {key}: {value}" for key, value in report["metrics"].items())
-    lines.extend(["", "## Preservation and provenance"])
+    lines.extend(["", "## Treatments, sources and provenance"])
     lines.extend(f"- {key}: {'pass' if value else 'FAIL'}" for key, value in report["checks"].items())
-    (args.companion_dir / "companion_integrity.md").write_text("\n".join(lines) + "\n")
+    (out / "book_integrity.md").write_text("\n".join(lines) + "\n")
     print(json.dumps({"build_integrity": report["build_integrity"], "metrics": report["metrics"]}, indent=2))
     if report["build_integrity"] != "pass":
         raise SystemExit(1)

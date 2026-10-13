@@ -66,31 +66,29 @@ scientific review before this can be presented as a fully reviewed
 quantum-physics textbook. Independent checks of the accompanying FieldBridge
 calculations apply to those calculations alone.
 
-## Expository companion edition
+## One edition
 
-The separate companion retains all 125 topic-specific treatments and the
-cross-topic explanations. The four alternative-name entries and 17 historical
-or interpretive entries appear in a reference index rather than as developed
-physics chapters. The full edition and all source
-records remain available. Two existing derivations, for the quantum Hamiltonian
-and path-integral formulation, are now printed rather than hidden by
-alternative-name redirects.
+The expository companion and the full reference edition were merged on
+2026-10-13 into one book. Once every physical subject had a worked treatment,
+the two differed only in the 17 historical and interpretive entries, which the
+book now prints with short accounts of the physics they concern. Two existing
+derivations, for the quantum Hamiltonian and the path-integral formulation, are
+printed rather than hidden by alternative-name redirects.
 
-The title page attributes the mechanism tree to the authors. Source links sit
-beside the relations they support. Per-page build comments have been removed;
-the edition manifest records the source route and equation identifiers for
-each topic. Corpus-aligned equations remain distinct from separately
+The title page attributes the organization of the book to the authors. Source
+links sit beside the relations they support. Per-page build comments have been
+removed; the edition manifest records the source route and equation identifiers
+for each topic. Corpus-aligned equations remain distinct from separately
 inspected original-paper displays. The scientific review remains incomplete.
 
 The generator repairs the broken Schrödinger spelling and capitalized sentence
-fragments. Separate companion checks require an actual section with equations
-for every retained treatment, exact body preservation relative to the full
-edition, source links at the relevant relation, and an index entry for every subject. Duplicate
-labels, deleted equations and generic representative-relation blocks fail these
-checks. Build integrity is reported separately from scientific review.
+fragments. The book integrity checks require exactly one section for every
+subject, equations in every treatment and source links at the relevant
+relation. Duplicate labels, deleted equations and generic representative-relation
+blocks fail these checks. Build integrity is reported separately from scientific
+review.
 
-Rebuild both editions and run their checks with
-`bash scripts/run_quantum_expository_companion.sh`.
+Rebuild the book and run its checks with `bash scripts/render_quantum_book.sh`.
 
 ## Repeated and generic text
 

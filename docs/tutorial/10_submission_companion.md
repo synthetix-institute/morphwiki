@@ -103,6 +103,6 @@ and controls establish what the reproduction means physically.
 
 The build regenerates the selected output directory. The
 [submission module](13_submission_scope.md) assigns the resulting calculations
-and the expository book their respective roles.
+and the quantum book their respective roles.
 
 [Next: submission scope](13_submission_scope.md) · [Tutorial](index.md)

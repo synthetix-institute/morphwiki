@@ -2,11 +2,11 @@
 
 **Explain a field through the equations needed to predict an experiment.**
 
-[Read the book (PDF)](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf) · [Full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) · [Tutorial](docs/tutorial/index.md) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
+[Read the book (PDF)](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) · [Tutorial](docs/tutorial/index.md) · [Worked calculation](docs/tutorial/08_quantum_construction.md) · [Build from papers](docs/tutorial/06_new_field.md)
 
 ## The book: *Quantum Theory as a Mechanism Tree*
 
-**[Read the expository companion (PDF, 236 pages)](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf)**
+**[Read the book (PDF, 255 pages)](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)**
 
 The book develops quantum theory through worked calculations. Every one of its
 125 topics, from the particle in a box and tunnelling to Bell's theorem,
@@ -14,9 +14,9 @@ quantum error correction, renormalization and string theory, opens with a
 physical question, derives the relation that answers it and follows that
 relation to a number or a named experiment. The opening chapters show what any
 quantum prediction requires and how fields, environments, boundaries and pulse
-sequences become part of a quantum system. The
-[full reference edition (PDF, 255 pages)](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
-adds short accounts of 17 historical, bibliographic and interpretive entries.
+sequences become part of a quantum system. Short accounts of 17 historical,
+bibliographic and interpretive entries point to the treatments that work out
+their physics.
 The treatments are written per chapter in
 [`scripts/quantum_narratives/`](scripts/quantum_narratives/) and can be read
 there as source.
@@ -166,12 +166,10 @@ descriptions is confined to one appendix.
 
 Every physical subject is a worked treatment: it opens with a phenomenon,
 derives the relation that answers it, and follows that relation to a number or
-a named experiment. The **expository companion** contains all 125 treatments
-and indexes all 146 subjects, including four alternative names and 17
-historical or interpretive entries. The
-[full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
-also prints the historical and interpretive entries, each with a short account
-of the physics it concerns. Individual topic files remain available.
+a named experiment. The book gives each of its 146 subjects a section: 125
+worked treatments, 17 historical or interpretive entries with a short account
+of the physics they concern, and four alternative names. Individual topic files
+remain available.
 
 The first page states the book's scope. Each treatment identifies its authored
 exposition and the source routes available for particular relations;
@@ -183,16 +181,15 @@ noise constraints and quantum metrology. These displays were selected and
 inspected in the original arXiv articles; their records identify
 original-paper recovery separately from corpus alignment.
 [Recover and inspect the sources](docs/tutorial/12_original_sources.md).
-The companion supplies background exposition and can be cited as a separately
-versioned accompanying work. The three calculation examples form a focused
+The book supplies background exposition and can be cited as a separately
+versioned work. The three calculation examples form a focused
 methods supplement; discovery claims require their own target-system tests.
 The local edition has no DOI.
 
-The [companion checks](discoveries/morphwiki_quantum/book/companion/companion_integrity.md)
-require all 125 treatments to retain the same bodies as the full edition, all
-146 index entries to be present exactly once, and visible provenance and source
-links to survive. The report counts developed treatments separately from index
-entries and records the status of scientific review. See the
+The [book integrity checks](discoveries/morphwiki_quantum/book/book_integrity.md)
+require every one of the 146 subjects to have exactly one section, every one of
+the 125 treatments to carry its equations, and visible provenance and source
+links to survive. The report records the status of scientific review. See the
 [correction notes](docs/QUANTUM_BOOK_CORRECTIONS.md)
 for the scientific corrections and remaining review work.
 
@@ -200,8 +197,7 @@ for the scientific corrections and remaining review work.
 
 | Goal | Start here |
 | --- | --- |
-| Read the companion | [Quantum Theory as a Mechanism Tree](discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf) |
-| Look up any of the 146 subjects | [Full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
+| Read the book | [Quantum Theory as a Mechanism Tree](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf) |
 | Learn the code through physics | [Guided tutorial](docs/tutorial/index.md) |
 | Inspect how a topic becomes a chapter | [One mechanism page](docs/tutorial/03_mechanism_page.md) |
 | Rebuild in a separate output tree | [Safe book build](docs/tutorial/05_build_and_audit.md) |
@@ -216,14 +212,14 @@ runner tries `latexmk/pdflatex`, `pdflatex`, `xelatex`, then `lualatex`.
 Full source-grounding regeneration also needs the V2.1 source cards and
 alignments. The tutorial separates that larger job from local examples.
 
-To rebuild both book editions from the existing records, with Python and
-`latexmk` available:
+To rebuild the book from the existing records, with Python and `latexmk`
+available:
 
 ```bash
-bash scripts/run_quantum_expository_companion.sh
+bash scripts/render_quantum_book.sh
 ```
 
-This command renders both editions from the cached records and existing topic
+This command renders the book from the cached records and existing topic
 assignments. Mathematical tests and build-integrity checks cover different
 properties of the output.
 

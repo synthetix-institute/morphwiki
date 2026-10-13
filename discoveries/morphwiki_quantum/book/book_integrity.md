@@ -1,27 +1,25 @@
-# Expository companion
+# Quantum book integrity
 
 Build integrity: pass
-Role: separate expository companion; not discovery evidence
+Role: exposition of established quantum theory; not discovery evidence
 Scientific review: incomplete; selected equations have executable checks, not chapter-wide certification
 
 ## Contents
-- indexed_topics: 146
+- topic_sections: 146
 - developed_treatments: 125
 - overview_entries: 0
 - aliases: 4
 - annotations: 17
-- display_blocks: 378
-- distinct_display_blocks: 378
-- pdf_pages: 236
+- display_blocks: 403
+- distinct_display_blocks: 403
+- pdf_pages: 255
 
-## Preservation and provenance
+## Treatments, sources and provenance
 - all_topic_specific_treatments_preserved: pass
 - each_treatment_appears_once: pass
-- retained_treatment_bodies_match_full_edition: pass
+- every_topic_has_one_section: pass
 - every_treatment_has_equations: pass
 - source_links_remain_at_the_relevant_treatment: pass
-- all_topics_indexed_once: pass
-- index_not_counted_as_treatments: pass
 - no_representative_relation_templates: pass
 - first_page_explains_scope: pass
 - cross_topic_connections_retained: pass
