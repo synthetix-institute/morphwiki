@@ -23,7 +23,7 @@ Both basis codewords have the same syndrome before an error. The syndrome measur
 
 The noise specification matters. A phase flip acts within this code as a logical error and is not identified by those two syndromes. Protecting arbitrary single-qubit errors requires additional structure, such as a code that corrects both bit and phase errors. Increasing the number of spins without changing the encoded subspace and syndrome observables does not automatically supply that protection.
 
-Error correction connects interaction, preparation, measurement and conditional dynamics in one mechanism. The environment determines the error operators; encoding determines the carrier subspace; syndrome extraction determines what information becomes observable; and the conditional operation restores the logical state. The algebraic correction condition is an exact test of this assembly. Fault tolerance adds another problem: the physical operations used to extract a syndrome can themselves propagate errors, so those operations must be analyzed as part of the noise model.
+Error correction connects interaction, preparation, measurement and conditional dynamics in one mechanism. The environment determines the error operators; encoding determines the code subspace; syndrome extraction determines what information becomes observable; and the conditional operation restores the logical state. The algebraic correction condition is an exact test of this assembly. Fault tolerance adds another problem: the physical operations used to extract a syndrome can themselves propagate errors, so those operations must be analyzed as part of the noise model.
 
 ## References For The Physical Derivation
 

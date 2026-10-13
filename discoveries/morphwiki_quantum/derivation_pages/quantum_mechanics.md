@@ -1,40 +1,39 @@
 # Quantum mechanics
 
-**Physical domain:** State space, domain, and representation
+A beam of silver atoms passing an inhomogeneous magnet splits into two spots instead of a continuous smear. Stern and Gerlach observed this in 1922. Sequences of such magnets display most of the structure of quantum mechanics in one experiment.
 
-## Mechanism
+The magnetic moment of a silver atom comes from one unpaired electron spin. Its spin state is a unit vector $|\psi\rangle=\alpha|\uparrow\rangle+\beta|\downarrow\rangle$ in a two-dimensional complex space. A magnet with its field gradient along $z$ sends the atom up or down with probabilities $|\alpha|^2$ and $|\beta|^2$. Blocking the lower beam prepares $|\uparrow\rangle$: every atom of the upper beam goes up again in a second $z$ magnet.
 
-Quantum mechanics is the baseline constructor: states live in Hilbert space, physical questions are represented by operators, and probabilities are assigned to spectral projectors.
-
-A quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
-
-The page supplies the general quantum assembly. A preparation gives a state vector or density operator. A self-adjoint observable or measurement operator family gives the possible outcome channels. The Born or trace rule assigns probabilities, while Hamiltonian evolution transports the state between preparation and observable.
-
-## Physical Construction
-
-The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The calculation involves a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated quantities include transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
-
-## Topic Equations
+A magnet tilted by an angle $\theta$ from $z$ in the $xz$ plane has its own pair of output states. The probability of each output is the squared modulus of an overlap, the Born rule:
 
 ```math
-\rho\ge 0,\qquad \operatorname{Tr}\rho=1
-A=\sum_a aP_a,\qquad p(a)=\operatorname{Tr}(\rho P_a)
-\rho(t)=U(t)\rho(0)U(t)^\dagger,\qquad U(t)=e^{-iHt/\hbar}
-[A,B]\ne0\quad\Rightarrow\quad \text{no generic common sharp eigenbasis}
+|{+}\mathbf n\rangle=\cos\tfrac\theta2|\uparrow\rangle+\sin\tfrac\theta2|\downarrow\rangle,\qquad
+p({+}\mathbf n\,|\uparrow)=|\langle{+}\mathbf n|\uparrow\rangle|^2=\cos^2\tfrac\theta2.
 ```
 
-## Physical Meaning
+At $\theta=60^\circ$ three quarters of the atoms take the upper path; at $90^\circ$ half do. Single atoms arrive at random, and only the relative counts approach these values.
 
-A unitary or isometric change of representation carries the state and operator together. Amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
+Now place a third magnet along $z$ after the tilted one. Suppose the path through the tilted magnet is recorded. The probabilities of the two paths then add, and atoms that entered as $|\uparrow\rangle$ leave as $|\downarrow\rangle$ with probability $\tfrac12\sin^2\theta$. If the two paths are recombined without any record, the amplitudes add instead. Completeness of the two output states then gives zero:
 
-A quantum state belongs to this state space, and every Hamiltonian and observable must act on its stated domain. These domain relations determine whether the resulting amplitudes and probabilities are defined.
+```math
+p_{\rm recorded}(\downarrow)=\sum_\pm|\langle\downarrow|{\pm}\mathbf n\rangle|^2|\langle{\pm}\mathbf n|\uparrow\rangle|^2
+=\tfrac12\sin^2\theta,\\
+p_{\rm recombined}(\downarrow)=\Bigl|\sum_\pm\langle\downarrow|{\pm}\mathbf n\rangle\langle{\pm}\mathbf n|\uparrow\rangle\Bigr|^2=0.
+```
 
-## Invariance And Realization
+The difference between the two lines is set by whether any physical system keeps information about the path. Coherent recombination is demanding, because the two paths must overlap again in position and momentum. A full-loop Stern--Gerlach interferometer driven by the precise field of an atom chip has achieved it.
 
-The relation between prepared states, observables, and spectral probability measures. The use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations. The dependence of the observable on basis, domain, potential, preparation, or measurement context. The commutator structure that limits which observables can be jointly diagonalized.
+The spin components $S_z$ and $S_x$ are represented by noncommuting operators, $[S_z,S_x]=i\hbar S_y$. No preparation gives definite values to both. After the $x$ magnet selects its upper beam, a $z$ magnet again splits the atoms evenly. The commutator and the uncertainty principle treat this incompatibility quantitatively.
 
-The physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation. The representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields. Where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight. The implementation of preparation, boundary condition, detector, or outcome channel.
+Between magnets the state evolves by the Schrödinger equation. In a uniform field $B$ along $z$, take $H=\omega S_z$ with $\omega$ proportional to $B$. A spin prepared along $x$ precesses about $z$, and the probability of finding it along $x$ oscillates:
 
-## Discriminating Consequences
+```math
+i\hbar\frac{d}{dt}|\psi\rangle=H|\psi\rangle,\qquad
+p_{+x}(t)=\cos^2\frac{\omega t}{2}.
+```
 
-A transfer target provides a state space, a transformation law, and a spectral or categorical observable, with one compatibility relation experimentally unresolved. A useful validation varies the basis, domain, or measurement context and measures whether the allowed observable changes while the underlying transformation law remains identifiable. A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.
+For an electron spin, $\omega/2\pi$ equals 28.0 gigahertz for each tesla of field. The same rules extend to any system. States are unit vectors or density operators, and outcomes are eigenvalues of self-adjoint operators. Probabilities are squared overlaps, evolution between measurements is unitary, and composite systems use tensor products. The two spots appear only when the gradient separates the paths by more than the beam width. With weaker gradients the spots overlap, and the magnet performs an unsharp measurement of the kind discussed under observables.
+
+## References For The Physical Derivation
+
+- [Y. Margalit and colleagues, Realization of a complete Stern-Gerlach interferometer; coherent recombination of the two spin paths with an atom-chip field.](https://arxiv.org/abs/1801.02708)

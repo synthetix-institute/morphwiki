@@ -1,39 +1,33 @@
 # Delayed-choice quantum eraser
 
-**Physical domain:** Measurement, instruments, and probabilities
+A photon reaches a detector that scans across a screen, and its position is recorded. Several nanoseconds later its partner photon is sent at random along one of two routes. One leads to a detector that reveals where the pair was emitted; the other leads to a beam splitter that hides this information. Sorting the screen records by the partner's later result reveals interference fringes in some subsets.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+In the experiment of Kim, Yu, Kulik, Shih and Scully, a pump laser illuminates a nonlinear crystal in two regions $A$ and $B$. Either region may emit a signal and idler pair, so the pair is in the state $(|A\rangle_s|A\rangle_i+|B\rangle_s|B\rangle_i)/\sqrt2$. A lens maps the two signal paths to amplitudes $\psi_A(x)$ and $\psi_B(x)$ at the screen detector $D_0$.
 
-## Mechanism
-
-Delayed-choice quantum eraser is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments.
-
-## Physical Construction
-
-The state carrier is one state space or a multipartite state space on which several questions can be asked. The calculation involves two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated quantities include joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
-
-## Representative Relation
+The idler meets a 50:50 beam splitter on each path. One output goes to a detector that receives only idlers from $A$ ($D_3$) or only from $B$ ($D_4$). The other outputs are combined on a central beam splitter whose two ports, $D_1$ and $D_2$, cannot tell $A$ from $B$. Projecting both photons onto the detected states gives the joint probabilities
 
 ```math
-[A,B]\ne0,\quad \Delta A\,\Delta B\ge \frac12|\langle[A,B]\rangle|,\quad S_{\rm Bell}\le 2
+P(x,D_{1,2})=\tfrac18|\psi_A(x)\pm\psi_B(x)|^2,\qquad
+P(x,D_3)=\tfrac14|\psi_A(x)|^2,\qquad P(x,D_4)=\tfrac14|\psi_B(x)|^2.
 ```
 
-## Physical Meaning
+Coincidences with $D_1$ show fringes and those with $D_2$ show the complementary antifringes, shifted by half a period. Coincidences with $D_3$ or $D_4$ show the smooth single-path profile. Each idler detector receives a quarter of the pairs.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+The time order of the two detections plays no part in this calculation. The projector for the signal position and the projector for an idler detector act on different photons and commute. The joint probability is therefore the same whichever record is made earlier, and in any reference frame:
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+```math
+P(x,k)=\big\|(\langle x|_s\otimes\langle k|_i)\Psi\big\|^2,\qquad
+\sum_kP(x,k)=\tfrac12\big(|\psi_A(x)|^2+|\psi_B(x)|^2\big).
+```
 
-## Invariance And Realization
+The screen pattern by itself has no fringes, whatever happens to the idler and whenever it happens. The idler path did not affect where the signal landed. It determines which subset of the existing records is selected, and the fringes appear only when the subsets are compared using the idler records. Those records travel by ordinary means, so no information is sent to the earlier detection.
 
-The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+In the 2000 experiment the idler paths were longer, so the idler was registered several nanoseconds after its partner. Ma and colleagues later made the choice with a random number generator spacelike separated from the interference, over a 144 km free-space link between two Canary Islands. Interference again appeared only in the sorted subsets.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+The calculation is the conditional-fringe analysis of the quantum eraser experiment, applied to an entangled pair whose members are recorded at different times. The commuting projectors are also why the correlations in Bell experiments cannot be used to send messages.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+- [Y.-H. Kim, R. Yu, S. P. Kulik, Y. H. Shih and M. O. Scully, A Delayed Choice Quantum Eraser; the two-region down-conversion experiment analysed here.](https://arxiv.org/abs/quant-ph/9903047)
+- [X.-S. Ma and colleagues, Quantum erasure with causally disconnected choice; spacelike-separated choice over 144 km.](https://arxiv.org/abs/1206.6578)
+- [X.-S. Ma, J. Kofler and A. Zeilinger, Delayed-choice gedanken experiments and their realizations; review of the time-order analysis.](https://arxiv.org/abs/1407.2930)

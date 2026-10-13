@@ -1,39 +1,28 @@
 # Quantum geometry
 
-**Physical domain:** Fields, constraints, and scale
+A tetrahedron in flat space is fixed by its six edge lengths. Once its four face areas are known, two further numbers, such as two dihedral angles, specify its shape. Quantum geometry asks what happens when areas and angles become operators. For a single tetrahedron the answer is exact. The face areas can be sharp, but two angles cannot be sharp together when the volume differs from zero.
 
-## Mechanism
-
-Quantum geometry is a geometry-realization page: geometric quantities are promoted to quantum observables rather than assumed as a smooth background.
-
-Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
-
-Quantum geometry uses a quantum state of geometry, often represented by graph or spin-network data. The operator-to-spectrum step asks for eigenvalues of geometric observables such as area or volume. This places the page near the geometry/boundary interface rather than inside a generic many-mode field layer.
-
-## Physical Construction
-
-The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The calculation involves hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated quantities include boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
-
-## Topic Equations
+Describe face $i$ by its area vector $\mathbf A_i$, normal to the face with length equal to its area. For a tetrahedron the four outward vectors sum to zero. Take edge vectors $\mathbf a,\mathbf b,\mathbf c$ from one vertex, so that three faces have $\mathbf A_1=\frac12\mathbf a\times\mathbf b$, $\mathbf A_2=\frac12\mathbf b\times\mathbf c$ and $\mathbf A_3=\frac12\mathbf c\times\mathbf a$. Vector algebra gives $\mathbf A_1\cdot(\mathbf A_2\times\mathbf A_3)=\frac18[\mathbf a\cdot(\mathbf b\times\mathbf c)]^2$, and the volume is $V=|\mathbf a\cdot(\mathbf b\times\mathbf c)|/6$. Hence
 
 ```math
-\mathcal H_{\Gamma}=L^2\!\left(SU(2)^E/SU(2)^V\right),\qquad \ket{\Gamma,j_e,\iota_v}
-\hat A(S)\ket{\Gamma,j,\iota}=8\pi\gamma\ell_P^2\sum_{e\cap S}\sqrt{j_e(j_e+1)}\,\ket{\Gamma,j,\iota}
-\text{geometry observable}:\quad \hat G\,\ket{g_i}=g_i\ket{g_i}
+\sum_{i=1}^4\mathbf A_i=0,\qquad
+V^2=\frac29\,\big|\mathbf A_1\cdot(\mathbf A_2\times\mathbf A_3)\big|.
 ```
 
-## Physical Meaning
+In loop quantum gravity and in spin-foam models each area vector becomes an operator proportional to an angular momentum, $\mathbf A_i=8\pi\gamma l_P^2\,\mathbf J_i$. Here $l_P$ is the Planck length and $\gamma$ the Barbero--Immirzi parameter. Face $i$ carries a spin $j_i$, so its area $8\pi\gamma l_P^2\sqrt{j_i(j_i+1)}$ is sharp. The condition $\sum_i\mathbf J_i=0$ selects the rotation-invariant states of four spins. Their number is the number of ways to couple the four spins to total spin zero. The products $\mathbf J_1\cdot\mathbf J_2$ and $\mathbf J_1\cdot\mathbf J_3$ measure angles between face normals. With $[J^a,J^b]=i\epsilon^{abc}J^c$ and $\hbar=1$, their commutator is
 
-Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
+```math
+[\mathbf J_1\cdot\mathbf J_2,\,\mathbf J_1\cdot\mathbf J_3]=i\,\mathbf J_1\cdot(\mathbf J_2\times\mathbf J_3)\equiv iQ,\\
+V=(8\pi\gamma l_P^2)^{3/2}\sqrt{\tfrac29\,|Q|}.
+```
 
-Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
+Two angles commute only on states of zero volume. A quantum tetrahedron with volume therefore has an uncertainty relation between its dihedral angles, as a spin has between its components. Its classical shape exists only as a mean value. The relative spread of the angles decreases as the spins grow.
 
-## Invariance And Realization
+The smallest case has four faces of spin $1/2$. Two pairs of spin-$1/2$ faces couple to total spin zero in two independent ways, so the shape space is two-dimensional. Let faces 1 and 2 couple to spin $k\in\{0,1\}$. Then $\mathbf J_1\cdot\mathbf J_2=[k(k+1)-3/2]/2$ takes the values $-3/4$ and $1/4$. The operator $Q$ has eigenvalues $\pm\sqrt3/4$, one for each orientation. Both give the volume $V\approx0.31\,(8\pi\gamma)^{3/2}l_P^3$, about $4.5\,l_P^3$ for $\gamma=0.2375$. In either volume eigenstate $\mathbf J_1\cdot\mathbf J_2$ has mean $-1/4$ and variance $1/4$: the angle is maximally uncertain.
 
-The relation between prepared states, observables, and spectral probability measures. The use of eigenvalues, projectors, modes, or outcome channels to represent admissible observations. The dependence of the observable on basis, domain, potential, preparation, or measurement context. The commutator structure that limits which observables can be jointly diagonalized.
+The numerical prefactor of the volume depends on how the operator is regularized on a graph. The vanishing of $Q$ at nodes with fewer than four faces does not. The calculation is kinematical: it concerns one tetrahedron at one instant, before any dynamics of general relativity is imposed. Gluing quantum tetrahedra gives the four-valent nodes of a spin network, and their histories are summed in spin foam models. Whether these discrete spectra describe physical space depends on that dynamics, which remains open, and on the value of $\gamma$ discussed under loop quantum gravity.
 
-The physical carrier: particle, wave, field mode, spin, qubit, detector, or excitation. The representation: wave mechanics, matrix mechanics, density matrices, path integrals, circuits, or fields. Where time dependence is placed: on the state, on the operator, in a propagator, or in a path weight. The implementation of preparation, boundary condition, detector, or outcome channel.
+## References For The Physical Derivation
 
-## Discriminating Consequences
-
-A transfer target provides a state space, a transformation law, and a spectral or categorical observable, with one compatibility relation experimentally unresolved. A useful validation varies the basis, domain, or measurement context and measures whether the allowed observable changes while the underlying transformation law remains identifiable. A stronger validation contains two candidate observables whose predicted commutator controls joint resolvability.
+- [A. Barbieri, Quantum tetrahedra and simplicial spin networks; area vectors as spin operators, volume formula and the angle uncertainty relation.](https://arxiv.org/abs/gr-qc/9707010)
+- [J. C. Baez and J. W. Barrett, The Quantum Tetrahedron in 3 and 4 Dimensions; Hilbert space of a quantum tetrahedron from geometric quantization.](https://arxiv.org/abs/gr-qc/9903060)

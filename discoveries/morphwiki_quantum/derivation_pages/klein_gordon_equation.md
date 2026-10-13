@@ -1,39 +1,36 @@
 # Klein–Gordon equation
 
-**Physical domain:** Fields, constraints, and scale
+Nuclear forces fall to negligible strength within a few femtometres, whereas the Coulomb force has unlimited range. In 1935 Yukawa attributed the short range to the mass of an exchanged particle, later identified as the pion. The relation between mass and range follows from the Klein--Gordon equation, the relativistic wave equation for a particle without spin.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Klein–Gordon equation is placed at the many-mode extension, where the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
-
-Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
-
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The calculation involves hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated quantities include time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-
-## Representative Relation
+Replacing $E$ by $i\hbar\partial_t$ and $\mathbf p$ by $-i\hbar\nabla$ in $E^2=p^2c^2+m^2c^4$ gives an equation for a field $\phi(\mathbf x,t)$. Plane waves solve it for either sign of the energy:
 
 ```math
-i\hbar\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad H\psi=E\psi
+\left(\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\nabla^2+\frac{m^2c^2}{\hbar^2}\right)\phi=0,\\
+\phi=e^{i(\mathbf p\cdot\mathbf x-Et)/\hbar},\qquad E=\pm\sqrt{p^2c^2+m^2c^4}.
 ```
 
-## Physical Meaning
+The negative-energy solutions have no lower bound. A particle described by them could, once coupled to the electromagnetic field, radiate without limit. A second difficulty concerns probability. The equation implies a continuity equation $\partial_t\rho+\nabla\cdot\mathbf j=0$, with
 
-Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
+```math
+\rho=\frac{i\hbar}{2mc^2}\left(\phi^*\partial_t\phi-\phi\,\partial_t\phi^*\right),\qquad
+\mathbf j=\frac{\hbar}{2mi}\left(\phi^*\nabla\phi-\phi\nabla\phi^*\right),\\
+\rho=\frac{E}{mc^2}|\phi|^2\quad\text{for a plane wave}.
+```
 
-Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
+For negative-energy plane waves $\rho$ is negative. More generally, because the equation is second order in time, $\phi$ and $\partial_t\phi$ can be chosen independently at an initial instant, and $\rho$ can be made negative anywhere. It is therefore not a probability density. Pauli and Weisskopf resolved this in 1934 by treating $\phi$ as a quantized field. Multiplied by the charge, $\rho$ becomes a charge density whose sign distinguishes particles from antiparticles. Positive-frequency solutions describe $\pi^+$ mesons, and negative-frequency solutions describe $\pi^-$ mesons with positive energy.
 
-## Invariance And Realization
+For a static point source of strength $g$ the field obeys $(\nabla^2-\mu^2)\phi=-g\,\delta^3(\mathbf r)$, with $\mu=mc/\hbar$. The solution falls off exponentially, and a second nucleon coupled to the same field acquires a potential energy proportional to it:
 
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement. The field extension carries the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+```math
+\phi(r)=\frac{g\,e^{-\mu r}}{4\pi r},\qquad
+V(r)\propto-\frac{e^{-r/\lambda}}{r},\qquad \lambda=\frac{\hbar}{mc}.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
+The range is the reduced Compton wavelength of the exchanged particle. With the charged-pion mass $139.57\,\mathrm{MeV}/c^2$ and $\hbar c=197.33$ MeV fm, $\lambda=1.41$ fm. Nucleon-nucleon scattering in partial waves of high angular momentum, which probe large separations, follows the one-pion-exchange potential. Because the pion is pseudoscalar, that potential also contains spin and isospin factors and a tensor part, but its central part has this Yukawa form. Below about 1 fm, heavier mesons and the quark structure of nucleons take over.
 
-## Discriminating Consequences
+The Klein--Gordon equation with a Coulomb potential also describes pionic atoms, in which a $\pi^-$ replaces an electron. Their X-ray transition energies are used to determine the charged-pion mass. As a single-particle equation it applies when potentials change slowly over $\lambda$ and energies remain well below the pair-creation threshold $2mc^2$. For particles of spin one half it is replaced by the Dirac equation, although each component of a free Dirac spinor still satisfies it. In Quantum field theory every free relativistic field obeys it, as the dispersion relation of each mode.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+## References For The Physical Derivation
+
+- [R. Machleidt and D. R. Entem, Chiral effective field theory and nuclear forces; one-pion exchange as the long-range part of the nucleon-nucleon interaction.](https://arxiv.org/abs/1105.2919)
+- [M. Trassinelli and colleagues, Measurement of the charged pion mass using X-ray spectroscopy of exotic atoms; pionic-atom transitions and the charged-pion mass.](https://arxiv.org/abs/1605.03300)

@@ -1,65 +1,38 @@
 # Fermion
 
-**Physical domain:** Fields, constraints, and scale
+Atoms of helium-3, released from a trap and detected far away, arrive in pairs at nearby points less often than uncorrelated particles would. Atoms of helium-4 in the same apparatus arrive together more often. Electrons with parallel spins in a metal similarly avoid one another, even apart from their Coulomb repulsion. These effects follow from the sign that the amplitude of identical fermions acquires under exchange.
 
-## Mechanism
-
-Fermion is an exchange-antisymmetry construction: exchanging two identical fermions reverses the many-body amplitude, so coincident one-particle states are removed from the admissible state space.
-
-The tensor product of one-particle spaces contains both symmetric and antisymmetric states. Identical fermions occupy its antisymmetric sector: exchanging the complete position and spin coordinates changes the sign of the amplitude. This restriction determines which many-particle occupations are allowed for a specified Hamiltonian.
-
-Let $z=(x,\sigma)$ denote the complete one-particle coordinate, including spin. Antisymmetry makes the amplitude vanish when two $z$ coordinates coincide. Equal positions with opposite spins do not satisfy that condition: two electrons may occupy one spatial orbital in a spin singlet. The anticommutation relations impose the same exclusion when particles are added to individual spin-orbitals.
-
-## Physical Construction
-
-The state carrier is the antisymmetric many-particle sector of the one-particle Hilbert space, including spin. The calculation involves the many-body Hamiltonian and fermionic creation and annihilation operators. Exchange antisymmetry restricts states and mode occupations; the Hamiltonian specifies interactions and evolution. The calculated quantities include mode occupations, spin-resolved correlations, energies and thermodynamic response.
-
-## Topic Equations
+Let $z=(\mathbf x,s)$ denote the position and spin projection of one particle. The amplitude of identical fermions changes sign when two complete coordinates are exchanged. With orthonormal one-particle states $\varphi_a,\varphi_b$ for two particles, or $\varphi_1,\dots,\varphi_N$ for $N$ particles, the antisymmetric amplitudes are
 
 ```math
-z_i=(x_i,\sigma_i),\qquad \Psi(\ldots,z_i,\ldots,z_j,\ldots)=-\Psi(\ldots,z_j,\ldots,z_i,\ldots)
-\Psi(\ldots,z,\ldots,z,\ldots)=0
-\mathcal F_{-}(\mathcal H)=\bigoplus_{n=0}^{\infty}\wedge^n\mathcal H
-\{a_i,a_j^\dagger\}=\delta_{ij},\qquad \{a_i,a_j\}=0
-n_i=a_i^\dagger a_i,\qquad n_i^2=n_i,\qquad\operatorname{spec}(n_i)=\{0,1\}
+\Psi(z_1,z_2)=\frac{\varphi_a(z_1)\varphi_b(z_2)-\varphi_b(z_1)\varphi_a(z_2)}{\sqrt2},\\
+\Psi(z_1,\dots,z_N)=\frac{1}{\sqrt{N!}}\det\left[\varphi_i(z_j)\right].
 ```
 
-## Physical Meaning
+A determinant with two equal rows or two equal columns vanishes. Hence $\Psi=0$ if two particles occupy the same one-particle state, which is the Pauli exclusion principle. The amplitude also vanishes whenever $z_1=z_2$, so two particles with equal spin projection are never found at the same point. Opposite spin projections make the complete coordinates different. Two electrons can therefore share one spatial orbital in a spin singlet, as in the helium ground state or the chemical bond treated under Quantum chemistry.
 
-The minus sign acquired under exchange makes every Slater determinant vanish when two columns coincide. In occupation language the same restriction is encoded by anticommutation and by eigenvalues zero or one of each mode-number operator. These are equivalent descriptions of one state-space constraint.
+The suppression extends over a finite distance. Consider the ground state of free electrons in a large volume, a Slater determinant of plane waves filling a Fermi sphere of radius $k_F$. Let $n_\sigma=k_F^3/6\pi^2$ be the density of one spin orientation. The probability density of finding a same-spin electron at distance $r$ from a given one, divided by $n_\sigma$, is
 
-A zero-temperature ideal Fermi gas fills all momentum modes up to the Fermi momentum. Compressing the gas therefore forces particles into higher-momentum states and raises its pressure even when the interaction potential is set to zero.
+```math
+g_{\uparrow\uparrow}(r)=1-\left[\frac{3j_1(k_Fr)}{k_Fr}\right]^2,\qquad
+j_1(x)=\frac{\sin x-x\cos x}{x^2},\\
+n_\sigma\int\left[g_{\uparrow\uparrow}(r)-1\right]d^3r=-1.
+```
 
-Fermi--Dirac statistics adds thermal occupation to this exchange-constrained state space. Pairing, bosonization and Jordan--Wigner transformations then test which consequences of fermionic algebra survive on a different carrier.
+The bracket is the average of $e^{i\mathbf k\cdot\mathbf r}$ over the filled sphere and comes from the exchange terms of the determinant. The function $g_{\uparrow\uparrow}$ rises from zero at $r=0$ to one half at $k_Fr=1.81$ and approaches one with weak oscillations. The integral shows that this exchange hole contains exactly one missing electron of the same spin. Opposite spins remain uncorrelated in this state, $g_{\uparrow\downarrow}=1$, until the Coulomb interaction is included.
 
-## Consequences Forced By The Relation
+In sodium, with one conduction electron per atom, $k_F=0.92\times10^{10}\,\mathrm{m^{-1}}$, and the same-spin density falls to half within 0.20 nm of each electron. Each electron is thus surrounded by a deficit of negative charge, which lowers its electrostatic energy. For the uniform electron gas this exchange energy is $-(3/4\pi)\,e^2k_F/4\pi\epsilon_0$ per electron. In Rydberg units it is $-0.916/r_s$, with $r_s$ the Wigner--Seitz radius in Bohr radii. Sodium has $r_s=3.93$, which gives $-3.2$ eV per electron, larger in magnitude than the mean kinetic energy of 1.9 eV.
 
-Antisymmetry forces the wave function to vanish when two identical fermions occupy the same one-particle state. The resulting exchange hole is present before a dynamical interaction is specified. For a homogeneous ideal gas at zero temperature, filling distinct momentum spin-orbitals up to the Fermi energy produces degeneracy pressure without pairwise repulsion. Pairing preserves antisymmetry of the constituent fermions. A pair has even fermion parity and may support a bosonic collective order parameter, as in superconductors and superfluid helium-3; it need not be a tightly bound elementary boson.
+The exchange sign is not an interaction and has no adjustable strength; it is fixed by the identity of the particles. Its connection with half-integer spin, the spin-statistics theorem, requires relativistic quantum field theory with locality and positive energy. In the occupation description of Fock space the same rule is the anticommutation $\{a_i^\dagger,a_j^\dagger\}=0$, so that $(a_i^\dagger)^2=0$. Thermal occupations of fermionic states follow Fermi--Dirac statistics. Quasiparticles confined to two dimensions can have other exchange phases.
 
-## Transformations To Other Physical Realizations
+## References For The Physical Derivation
 
-In one dimension, hard-core bosons and free fermions can share the same density spectrum. The map changes exchange phases and off-diagonal correlations, so equality of energies does not imply identity of all observables. A Jordan--Wigner map carries local fermionic occupation into spins by adding a parity string. The exchange algebra survives, but locality is transferred into an ordered, generally nonlocal operator. In two dimensions, exchanges are classified by braids rather than only by permutations. Anyonic statistics therefore extends, rather than merely interpolates between, the boson and fermion constructions.
+- [T. Jeltes and colleagues, Comparison of the Hanbury Brown-Twiss effect for bosons and fermions; antibunching of helium-3 and bunching of helium-4 atoms.](https://arxiv.org/abs/cond-mat/0612278)
+- [S. Giorgini, L. P. Pitaevskii and S. Stringari, Theory of ultracold Fermi gases; occupation and spin-resolved pair correlations of an ideal Fermi gas.](https://arxiv.org/abs/0706.3360)
 
-## Domain Of The Construction
-
-The relativistic spin--statistics theorem additionally requires locality, positive energy and the relativistic field framework. Antisymmetric lattice or effective quasiparticle models do not by themselves establish that theorem. Fermi surfaces and degeneracy pressure require a many-mode spectrum and a specified density or particle-number constraint; they do not follow from the word fermion alone.
-
-## Invariance And Realization
-
-Exchange antisymmetry, exterior-product state space, canonical anticommutation and zero-or-one mode occupation are equivalent forms of the fermionic restriction. The node at equal complete coordinates and the same-spin exchange hole survive changes between first-quantized wave functions and second-quantized fields. Antisymmetric correlated states can require a superposition of Slater determinants. Fermion parity remains meaningful when particle number changes, including in paired and superconducting states.
-
-Mass, charge, dispersion, dimensionality, interaction law and gauge representation belong to the physical realization and are not fixed by exchange statistics. A change of carrier can turn local fermion operators into nonlocal strings, as in the Jordan--Wigner transformation. Two-dimensional braid statistics and composite-particle structure alter the exchange construction beyond the elementary boson--fermion dichotomy.
-
-## Discriminating Consequences
-
-The defining relation is antisymmetry or canonical anticommutation and the resulting zero-or-one occupation spectrum. At fixed one-particle spectrum, compare with distinguishable-particle and sign-erased controls to isolate exchange. For a claimed transfer, compare correlations and locality as well as energies; spectral agreement alone is insufficient.
 
 ## Source Equations
 
 - [arXiv:cond-mat/0005069](https://arxiv.org/abs/cond-mat/0005069)
 - [arXiv:quant-ph/0305150](https://arxiv.org/abs/quant-ph/0305150)
 - [arXiv:hep-ph/0007343](https://arxiv.org/abs/hep-ph/0007343)
-
-## References For The Physical Derivation
-
-- [S. Giorgini, L. P. Pitaevskii and S. Stringari, Theory of ultracold atomic Fermi gases, sections II and V.2.2: occupation and spin-resolved correlations.](https://arxiv.org/abs/0706.3360)

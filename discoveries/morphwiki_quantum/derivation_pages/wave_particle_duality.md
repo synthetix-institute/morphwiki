@@ -1,39 +1,32 @@
 # Wave–particle duality
 
-**Physical domain:** Measurement, instruments, and probabilities
+Electrons sent one at a time through a two-path interferometer arrive at single points, yet their accumulated positions form fringes. A detector that records which path each electron took reduces the fringe contrast. Englert's inequality states exactly how much path information can coexist with how much contrast.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+The wave behaviour follows from the de Broglie relation $\lambda=h/p$, which the diffraction of electrons by a nickel crystal confirmed, as described under the wave function.
 
-## Mechanism
-
-Wave–particle duality is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response.
-
-## Physical Construction
-
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
-
-## Representative Relation
+Now let a beam splitter send the particle into path 1 or 2 with probabilities $w_1$ and $w_2$. An internal degree of freedom, the marker, is left in state $|m_1\rangle$ or $|m_2\rangle$. After recombination with relative phase $\phi$, the two output ports have probabilities $\frac12[1\pm2\sqrt{w_1w_2}\operatorname{Re}(e^{i\phi}\langle m_1|m_2\rangle)]$. The visibility and the a priori predictability of the path are
 
 ```math
-\mathcal F_{\pm}(\mathcal H),\quad a_k^\dagger,a_k,\quad N_k=a_k^\dagger a_k,\quad \sigma(H)\ \text{or scattering data}
+V=2\sqrt{w_1w_2}\,|\langle m_1|m_2\rangle|,\qquad P=|w_1-w_2|.
 ```
 
-## Physical Meaning
+Path information stored in the marker is quantified by the distinguishability $D$. A measurement on the marker identifies the path correctly with probability at most $(1+D)/2$. Helstrom's result for discriminating two states gives $D$ as a trace norm, which for pure markers can be evaluated in closed form:
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+```math
+D=\big\|w_1|m_1\rangle\langle m_1|-w_2|m_2\rangle\langle m_2|\big\|_1
+=\sqrt{1-4w_1w_2|\langle m_1|m_2\rangle|^2},\\
+V^2+D^2=1\ \ \text{(pure markers)},\qquad V^2+D^2\leq1\ \ \text{(general)}.
+```
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+If the marker is mixed, or part of it escapes to an environment that is not examined, the equality becomes an inequality. Without a marker, $D$ reduces to $P$ and the relation becomes $V^2+P^2\leq1$. For equal paths and a marker overlap of $\cos30^\circ$, the fringes keep 87 percent contrast while the path can be guessed correctly 75 percent of the time. Intermediate cases have partial fringes and partial path knowledge, related by this single inequality.
 
-## Invariance And Realization
+The bound refers to the information available in the marker, not to what an experimenter actually measures. A marker measurement in a basis unrelated to the paths extracts no path information. Fringes then reappear in subsets of the records, as in the quantum eraser experiment.
 
-The mechanism is the field/mode version of the constructor: a state space is decomposed into modes or sectors, operators create, annihilate, or constrain those modes, and observables are occupation, charge, spin, momentum, energy, or scattering response. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+Dürr, Nonn and Rempe tested the mechanism in an atom interferometer in 1998. A microwave field stored the path in the internal hyperfine state of each atom, and the fringes vanished. The momentum transferred by the microwave photons was far too small to wash out the fringes by random kicks. The loss of contrast came from the correlation between path and marker, as the formula states.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+The relation applies to any two-path interferometer whose marker can be modelled as a quantum state. With a thermal environment as the unread marker, the same overlap describes decoherence. The electron microscope uses the wave side of this relation, forming images from interference between scattered and unscattered electrons.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+- [P. J. Coles, J. Kaniewski and S. Wehner, Equivalence of wave-particle duality to entropic uncertainty; visibility-distinguishability relations.](https://arxiv.org/abs/1403.4687)
+- [H. Lin, Y.-K. Lu, V. Fedoseev, Y. K. Lee, J. Lyu and W. Ketterle, Fringe visibility and which-way information in Young's double slit experiments with light scattered from single atoms; motional states of trapped atoms as which-path markers.](https://arxiv.org/abs/2507.19801)

@@ -18,7 +18,7 @@ J_z|j,m\rangle=\hbar m|j,m\rangle,
 J_\pm|j,m\rangle=\hbar\sqrt{j(j+1)-m(m\pm1)}\,|j,m\pm1\rangle.
 ```
 
-The ladder terminates at $m=\pm j$, giving $2j+1$ states. Single-valued orbital wave functions on ordinary three-dimensional space carry integer orbital angular momentum. Intrinsic spin uses representations of the covering group SU(2), allowing half-integer $j$. The same local commutator algebra is therefore realized on carriers with different global transformation properties.
+The ladder terminates at $m=\pm j$, giving $2j+1$ states. Single-valued orbital wave functions on ordinary three-dimensional space carry integer orbital angular momentum. Intrinsic spin uses representations of the covering group SU(2), allowing half-integer $j$. The same local commutator algebra is therefore realized on physical systems with different global transformation properties.
 
 For two spins, total angular momentum is $\mathbf J=\mathbf J_1+\mathbf J_2$. An isotropic exchange interaction can be rewritten using the total Casimir:
 

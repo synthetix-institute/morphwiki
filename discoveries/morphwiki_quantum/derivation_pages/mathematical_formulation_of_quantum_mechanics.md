@@ -1,41 +1,42 @@
 # Mathematical formulation of quantum mechanics
 
-**Physical domain:** State space, domain, and representation
+A neutron spin rotated through a full turn points in its original direction again, but its state vector changes sign. In 1975 the groups of Rauch and of Werner observed this sign with neutron interferometers, in which one of two beams crossed a magnetic field. Predicting the measured intensity uses each rule of the standard formulation once.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Mathematical formulation of quantum mechanics is placed at the first step of the constructor, where the Hilbert space, operator domain, basis, representation, or preparation context is fixed before any probability statement is meaningful.
-
-This page is the entrance to the construction because quantum theory separates three objects that classical prose often mixes: a state encoding preparation, an operator encoding a physical question, and a probability rule connecting the two. The formalism is useful precisely because each object can change representation without changing the prediction.
-
-The state space, representation, basis, and operator domain determine which vectors are physical and which operators are defined.
-
-## Physical Construction
-
-The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The calculation involves a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated quantities include transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
-
-## Representative Relation
+The outcomes of a measurement correspond to mutually orthogonal projectors $P_a$ on a complex Hilbert space, with $\sum_aP_a=I$. Probabilities must add over orthogonal projectors, and the probability of $P_a$ must not depend on which other projectors complete the measurement. In dimension three or more, Gleason's theorem shows that every such assignment has the trace form, so the state is a density operator $\rho$:
 
 ```math
-V:\mathcal H\to\mathcal H',\quad V^\dagger V=I,\quad \rho'=V\rho V^\dagger,\quad O'=VOV^\dagger
+p(a)=\operatorname{Tr}(\rho P_a),\qquad \rho\geq0,\qquad \operatorname{Tr}\rho=1.
 ```
 
-## Physical Meaning
+In dimension two, additional assumptions are needed for the same conclusion. Reversible evolution must preserve probabilities and compose in time. If it is continuous, Stone's theorem gives a self-adjoint generator $H$, and the Schrödinger equation follows:
 
-A state vector or density operator carries preparation information; an observable supplies possible values; their pairing gives probabilities and expectation values. When a unitary map changes basis, the state and observable transform together. Their matrices change, but every probability remains the same.
+```math
+U(t+s)=U(t)U(s),\qquad U(t)=e^{-iHt/\hbar},\qquad
+\rho(t)=U(t)\rho\,U(t)^\dagger.
+```
 
-A spin-one-half preparation can be written in the vertical basis or the horizontal basis. The two column vectors look different, and the spin operator has different matrix entries, yet a consistently transformed calculation predicts the same detector counts.
+A measurement that would repeat its result immediately changes the state to $P_a\rho P_a$ divided by its trace, the Lüders rule. If the outcome is not recorded, the state becomes the sum $\sum_aP_a\rho P_a$. Composite systems are described on tensor products of the component spaces.
 
-The Hilbert-space page now specifies the arena in which states, operators, inner products, and unitary transformations are defined.
+In the interferometer a silicon crystal splits each neutron into two paths, $|1\rangle$ and $|2\rangle$, and later recombines them. The state space is the tensor product of this path space with the spin space $\mathbb C^2$. In path 2 a field $B$ along $z$ acts over a length $L$. For a neutron of speed $v$ and gyromagnetic ratio $\gamma_n$, the field Hamiltonian generates a spin rotation by the angle $\alpha=\gamma_nBL/v$:
 
-## Invariance And Realization
+```math
+U(\alpha)=e^{-i\alpha\sigma_z/2},\qquad U(2\pi)=-I,\qquad U(4\pi)=I.
+```
 
-The context supplies the admissible arena in which quantum states and operators are defined. Changing basis or representation should not change physical probabilities when the transformation is unitary. Normalization, domain conditions, and inner products remain part of the same formal container.
+Let $\rho_s$ be the incoming spin state and $\chi$ the phase difference between the paths without field. The trace rule, with the projector onto one output beam, gives the fraction of neutrons leaving that beam. For an unpolarized beam, $\rho_s=I/2$:
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The chosen basis, coordinate representation, or preparation convention can change. The same calculation may be written with vectors, wave functions, density operators, or operator algebras. Physical realization enters later through boundary conditions, detectors, or fields.
+```math
+I(\alpha)=\frac12\Bigl[1+\operatorname{Re}\bigl(e^{i\chi}\operatorname{Tr}\rho_sU(\alpha)\bigr)\Bigr]
+=\frac12\Bigl[1+\cos\chi\,\cos\frac{\alpha}{2}\Bigr].
+```
 
-## Discriminating Consequences
+The interference term reverses its sign at $\alpha=2\pi$ and returns only at $\alpha=4\pi$. A single beam cannot show the sign, because $-I$ multiplies every spin state by the same factor. The unrotated path supplies the reference. Thermal neutrons of wavelength 0.18 nanometres move at about 2200 metres per second. A full turn then needs $BL=2\pi v/\gamma_n\approx7.5\times10^{-5}$ tesla metre, for example 7.5 millitesla over one centimetre. Both 1975 experiments found the intensity periodic in the field with this 4$\pi$ period. A spread of neutron speeds spreads $\alpha$ in proportion to its size, which lowers the contrast after many turns.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation. The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
+A measurement of the spin in path 2 changes the prediction. Its outcomes correspond to the projectors $|2\rangle\langle2|\otimes P_\pm$, completed by $|1\rangle\langle1|\otimes I$ for neutrons in path 1. The Lüders rule removes every term of the density operator that connects the two paths, so the interference term vanishes. The intensity becomes one half for every field and every $\chi$. The record shows which path was taken, whether or not anyone reads it.
+
+The formulation does not state which interactions count as measurements; decoherence and the measurement problem address that physical question. Within its rules, it gives the probability of any sequence of outcomes. The half-angle in $U(\alpha)$ comes from the spin-1/2 representation of rotations described under the Pauli matrices.
+
+## References For The Physical Derivation
+
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; Gleason's theorem, Stone's theorem and the Lüders rule.](https://arxiv.org/abs/1508.06951)
+- [J. Klepp, S. Sponar and Y. Hasegawa, Fundamental phenomena of quantum mechanics explored with neutron interferometers; spinor rotation, spin-path states and measurements in neutron interferometry.](https://arxiv.org/abs/1407.2526)

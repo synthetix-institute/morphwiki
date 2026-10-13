@@ -1,39 +1,36 @@
 # Quantum complexity theory
 
-**Physical domain:** Control sequences and quantum channels
+Grover's algorithm finds one marked entry among $N$ with about $(\pi/4)\sqrt N$ queries. Whether a cleverer quantum algorithm could use far fewer is a statement about all possible circuits, not about one of them. Quantum complexity theory answers such questions by fixing a model of computation and counting resources.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum complexity theory is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
-
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-Circuits, controls, and sensing sequences are ordered compositions of physical transformations and measurements.
-
-## Physical Construction
-
-The state carrier is an input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps. Each step must belong to the claimed map class and the composition must preserve normalization and positivity. The calculated quantities include output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+The standard model is a uniform family of circuits. For each input length $m$, a classical procedure running in time polynomial in $m$ writes down a circuit of polynomially many gates from a fixed universal set. The circuit acts on the input and on ancillas prepared in $|0\rangle$, and one qubit is measured at the end. A decision problem belongs to BQP, bounded-error quantum polynomial time, when the correct answer appears with probability at least $2/3$ for every input:
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_aK_a\rho K_a^\dagger
+\Pr[\text{output}=\text{answer}]\geq\frac23,\qquad
+\Pr[\text{majority of }k\text{ runs wrong}]\leq e^{-k/18}.
 ```
 
-## Physical Meaning
+The constant $2/3$ is conventional. Repeating the circuit $k$ times and taking the majority lowers the error exponentially by the Hoeffding inequality, so 373 repetitions bring it below $10^{-9}$. Classical bounded-error probabilistic computation, BPP, is contained in BQP. BQP is contained in PSPACE, because each outcome probability can be computed as a sum over paths using polynomial memory. Factoring lies in BQP through Shor's algorithm and has no known efficient classical algorithm. Whether BQP is strictly larger than BPP is not proven.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+Lower bounds can be proven in the query model, where the input is a black box. For search, the oracle $O_x$ flips the sign of the query basis state $|x\rangle$. Any algorithm alternates fixed unitaries with $T$ oracle calls. Compare a run with the oracle for marked entry $x$ against a run in which every oracle call is replaced by the identity. Let $|\psi_t\rangle$ be the state of the second run after $t$ calls, and $\alpha_{x,t}$ the norm of its component with query input $x$, so that $\sum_x|\alpha_{x,t}|^2=1$. One call can separate the two runs by at most $2|\alpha_{x,t}|$, and the Cauchy--Schwarz inequality then bounds the total separation:
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+```math
+\big\|\psi_T^x-\psi_T\big\|\leq2\sum_{t=0}^{T-1}|\alpha_{x,t}|,\qquad
+\sum_x\big\|\psi_T^x-\psi_T\big\|^2\leq4T\sum_{t=0}^{T-1}\sum_x|\alpha_{x,t}|^2=4T^2.
+```
 
-## Invariance And Realization
+Success requires that the final state for each $x$ outputs $x$ with probability at least $2/3$. For at least half of the values $x$, the run without a marked entry outputs $x$ with probability at most $2/N$. For each such $x$ the two final states differ in norm by at least $2/3-2/N$, which gives
 
-A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+```math
+\frac N2\Big(\frac23-\frac2N\Big)^2\leq4T^2\quad\Longrightarrow\quad
+T\geq\sqrt{\frac N8}\Big(\frac23-\frac2N\Big)\approx0.24\sqrt N.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+For $N=10^6$ entries any quantum algorithm needs at least 236 queries. Grover's algorithm uses 785, and a classical search about $5\times10^5$ on average. The square-root gain is therefore optimal up to a constant factor, and Zalka showed that $(\pi/4)\sqrt N$ is exactly optimal for near-certain success. Grover's algorithm almost saturates the inequality: for $N=1024$ and 25 iterations the sum of squared separations is 2032, against the bound 2500.
 
-## Discriminating Consequences
+This hybrid argument is due to Bennett, Bernstein, Brassard and Vazirani (1997). It shows that unstructured search admits no exponential quantum speedup. It also yields an oracle relative to which NP is not contained in BQP, although the unrelativized question remains open. Problems with algebraic structure escape the argument; period finding in Shor's algorithm is the standard example. The matching upper bound is the amplitude-amplification angle under quantum algorithm, and the polynomial-size condition counts gates of a quantum circuit.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+## References For The Physical Derivation
+
+- [C. H. Bennett, E. Bernstein, G. Brassard and U. Vazirani, Strengths and Weaknesses of Quantum Computing; the hybrid argument and the square-root lower bound for search.](https://arxiv.org/abs/quant-ph/9701001)
+- [C. Zalka, Grover's quantum searching algorithm is optimal; the exact constant pi/4 for near-certain success.](https://arxiv.org/abs/quant-ph/9711070)
+- [J. Watrous, Quantum Computational Complexity; uniform circuit families, BQP and its relations to classical classes.](https://arxiv.org/abs/0804.3401)

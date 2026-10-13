@@ -21,7 +21,7 @@ The receiver's local statistics then contain no dependence on the input. The sam
 
 A nonideal entangled resource changes the resulting channel. For a Bell-diagonal resource, its Bell weights become probabilities of Pauli errors in the corrected output. Resource quality, Bell-measurement fidelity and the conditional correction can therefore be distinguished experimentally; all three can reduce the final state fidelity, but they enter the calculation at different steps.
 
-Teleportation illustrates how a mechanism can be transferred across physical carriers. Photonic polarization, internal atomic levels and superconducting circuits may realize the same qubit relation, provided their entangling resource, joint measurement and correction implement the required maps. Changing only the name of the carrier leaves those requirements unresolved; demonstrating the maps establishes the actual correspondence.
+Teleportation illustrates how a mechanism can be transferred between physical systems. Photonic polarization, internal atomic levels and superconducting circuits may realize the same qubit relation, provided their entangling resource, joint measurement and correction implement the required maps. Changing only the name of the physical system leaves those requirements unresolved; demonstrating the maps establishes the actual correspondence.
 
 ## References For The Physical Derivation
 

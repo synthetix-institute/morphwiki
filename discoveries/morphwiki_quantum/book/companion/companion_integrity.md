@@ -6,13 +6,13 @@ Scientific review: incomplete; selected equations have executable checks, not ch
 
 ## Contents
 - indexed_topics: 146
-- developed_treatments: 63
-- overview_entries: 62
+- developed_treatments: 125
+- overview_entries: 0
 - aliases: 4
 - annotations: 17
-- display_blocks: 124
-- distinct_display_blocks: 124
-- pdf_pages: 152
+- display_blocks: 378
+- distinct_display_blocks: 378
+- pdf_pages: 236
 
 ## Preservation and provenance
 - all_topic_specific_treatments_preserved: pass

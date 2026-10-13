@@ -1,39 +1,39 @@
 # Quantum eraser experiment
 
-**Physical domain:** Measurement, instruments, and probabilities
+Light passing two slits forms fringes on a screen. If each path leaves a mark in another degree of freedom, the fringes fade. A later measurement of that mark in a suitable basis can recover fringes in sorted subsets of the records.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum eraser experiment is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments.
-
-## Physical Construction
-
-The state carrier is one state space or a multipartite state space on which several questions can be asked. The calculation involves two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated quantities include joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
-
-## Representative Relation
+Let the screen amplitudes from the two slits be $\psi_1(x)$ and $\psi_2(x)$, and let the paths leave marker states $|m_1\rangle$ and $|m_2\rangle$. The joint state is proportional to $\psi_1(x)|m_1\rangle+\psi_2(x)|m_2\rangle$. Ignoring the marker, the screen intensity is
 
 ```math
-[A,B]\ne0,\quad \Delta A\,\Delta B\ge \frac12|\langle[A,B]\rangle|,\quad S_{\rm Bell}\le 2
+P(x)\propto|\psi_1|^2+|\psi_2|^2+2\operatorname{Re}\big[\psi_1^*\psi_2\langle m_1|m_2\rangle\big].
 ```
 
-## Physical Meaning
+The fringe term is multiplied by the marker overlap. For equal intensities the visibility equals $|\langle m_1|m_2\rangle|$, and orthogonal markers remove the fringes entirely. The marking need not deliver any momentum kick. The interference term disappears because the screen amplitude is now correlated with an orthogonal marker state.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+Now take orthogonal markers and measure them in a rotated basis, with an angle $\beta$ and a phase $\gamma$ that the experimenter sets:
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+```math
+|e_+\rangle=\cos\tfrac{\beta}{2}|m_1\rangle+e^{i\gamma}\sin\tfrac{\beta}{2}|m_2\rangle,\\
+|e_-\rangle=\sin\tfrac{\beta}{2}|m_1\rangle-e^{i\gamma}\cos\tfrac{\beta}{2}|m_2\rangle.
+```
 
-## Invariance And Realization
+Conditioning on each outcome projects the marker and leaves a definite screen amplitude. The two conditional patterns have the same visibility:
 
-The topic tests whether separately legal questions can be resolved together. The mechanism is a restriction on joint spectra, correlations, or admissible hidden-variable assignments. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+```math
+\psi_+=\cos\tfrac{\beta}{2}\,\psi_1+e^{-i\gamma}\sin\tfrac{\beta}{2}\,\psi_2,\qquad
+\psi_-=\sin\tfrac{\beta}{2}\,\psi_1-e^{-i\gamma}\cos\tfrac{\beta}{2}\,\psi_2,\\
+V_{\rm cond}=|\sin\beta|.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+At $\beta=0$ the marker measurement reveals the path and the subsets show no fringes. At $\beta=\pi/2$ the marker basis is unbiased with respect to the paths; each subset shows full-contrast fringes, one shifted by half a period relative to the other. The two subsets always add to the unmarked, fringe-free pattern. Erasure therefore selects subsets, and the total distribution on the screen is unchanged.
 
-## Discriminating Consequences
+Walborn, Terra Cunha, Pádua and Monken carried this out with polarization-entangled photon pairs from parametric down-conversion. Quarter-wave plates in front of the two slits marked the path in the circular polarization of the signal photon, and the coincidence fringes vanished. A polarizer on the distant idler photon then projected the pair onto a basis unbiased with respect to the paths. Fringes and antifringes reappeared in the coincidence counts.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+The entangled partner matters. If a single photon carries its own polarization mark, a polarizer at $45^\circ$ before the screen recovers fringes. That version is reproduced by classical polarization optics, through the Fresnel--Arago laws. With an entangled partner, the basis is chosen on a photon that never passes the slits, and the fringes exist only in coincidence data.
+
+The trade-off between partial marking and partial visibility is the subject of wave-particle duality. The delayed-choice quantum eraser applies the same conditioning to an idler recorded after its partner.
+
+## References For The Physical Derivation
+
+- [S. P. Walborn, M. O. Terra Cunha, S. Padua and C. H. Monken, A double-slit quantum eraser; polarization marking and erasure with entangled photons.](https://arxiv.org/abs/quant-ph/0106078)
+- [X.-S. Ma, J. Kofler and A. Zeilinger, Delayed-choice gedanken experiments and their realizations; quantum erasers and complementarity.](https://arxiv.org/abs/1407.2930)

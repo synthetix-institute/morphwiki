@@ -1,39 +1,30 @@
 # Quantum dynamics
 
-**Physical domain:** Dynamics and transformations
+A picosecond laser pulse excites an atom into a superposition of Rydberg levels near $n=50$. The electron then moves as a localized packet around a Kepler orbit. After a few revolutions it spreads around the orbit, and later it reassembles. Each stage follows from the spacing of the energy levels.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum dynamics is placed at the step of lawful change, which specifies how the state changes before a question is asked.
-
-Kinematics and dynamics are separate. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The calculation involves hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated quantities include time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-
-## Representative Relation
+At short times the centre of a narrow packet follows Newton's law. Differentiating expectation values with the Schrödinger equation gives Ehrenfest's theorem:
 
 ```math
-i\hbar\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad H\psi=E\psi
+\frac{d\langle X\rangle}{dt}=\frac{\langle P\rangle}{m},\qquad
+\frac{d\langle P\rangle}{dt}=-\langle V'(X)\rangle\approx-V'(\langle X\rangle).
 ```
 
-## Physical Meaning
+The approximation holds while the force varies little across the packet. For a harmonic potential it is exact at all times, because $V'$ is linear. In other potentials the packet spreads, and the centre no longer obeys a closed classical equation.
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+The energy spectrum shows how long the classical stage lasts. Expand the packet in energy eigenstates with weights $|c_n|^2$ concentrated around $\bar n$, and expand the energies to second order in $n-\bar n$. The amplitude to return to the initial state and the two resulting times are
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+```math
+A(t)=\sum_n|c_n|^2e^{-iE_nt/\hbar},\qquad
+E_n\approx E_{\bar n}+E'(n-\bar n)+\frac{E''}{2}(n-\bar n)^2,\\
+T_{\mathrm{cl}}=\frac{2\pi\hbar}{|E'|},\qquad T_{\mathrm{rev}}=\frac{4\pi\hbar}{|E''|}.
+```
 
-## Invariance And Realization
+The linear term brings every component back in phase after the classical period $T_{\mathrm{cl}}$. The quadratic term slowly dephases the components. With a spread $\Delta n$ in $n$, the packet covers the whole orbit after a time of order $T_{\mathrm{rev}}/(2\pi\Delta n^2)$. At $T_{\mathrm{rev}}$ every quadratic phase is a multiple of $2\pi$, because $n-\bar n$ is an integer, and the packet reforms. At rational fractions of $T_{\mathrm{rev}}$ it appears as several smaller packets, the fractional revivals.
 
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement. The generator specifies lawful change before a measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+For hydrogen $E_n=-R/n^2$ with $R=13.6$ eV, so $E'=2R/n^3$ and $E''=-6R/n^4$. Then $T_{\mathrm{cl}}=\pi\hbar n^3/R$ equals the Kepler period of the classical orbit with the same energy, and $T_{\mathrm{rev}}=(2\bar n/3)T_{\mathrm{cl}}$. For $\bar n=50$ this gives $T_{\mathrm{cl}}=19$ ps and $T_{\mathrm{rev}}=0.63$ ns. Yeazell, Mallalieu and Stroud observed the collapse and revival of such Rydberg packets in 1990.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+Higher terms limit the picture. The cubic term adds a phase of about $8(\Delta n)^3/\bar n$ at $T_{\mathrm{rev}}$, so a clean revival requires $(\Delta n)^3\ll\bar n/8$. A direct sum for $\bar n=50$ gives a return probability of 0.91 at the revival for $\Delta n=1$, but only about 0.5 for $\Delta n=2.5$. An evenly spaced spectrum, as in the quantum harmonic oscillator, never dephases. In a classically chaotic system, agreement with a single trajectory lasts only about the Ehrenfest time, of order $\lambda^{-1}\ln(S/\hbar)$, where $\lambda$ is the Lyapunov exponent and $S$ a typical action. This short time scale is one signature of quantum chaos.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+- [R. W. Robinett, Quantum wave packet revivals; classical period, revival time, fractional revivals and Rydberg wave packets.](https://arxiv.org/abs/quant-ph/0401031)

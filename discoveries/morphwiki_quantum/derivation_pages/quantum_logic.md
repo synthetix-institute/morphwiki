@@ -1,39 +1,37 @@
 # Quantum logic
 
-**Physical domain:** Observables and spectra
+Two crossed polarizers block all light. A third polarizer inserted between them at 45 degrees lets one eighth of unpolarized light through. The propositions tested by polarizers do not combine like the propositions of classical logic, and quantum logic describes how they do combine.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum logic is placed at the question step, where a physical question becomes an operator with admissible answers.
-
-A prediction concerns a stated physical question. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
-
-An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
-
-## Physical Construction
-
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The calculation involves a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated quantities include eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
-
-## Representative Relation
+The proposition that a photon passes a polarizer at angle $\theta$ corresponds to the projector $P_\theta$ onto that polarization. Its negation is the orthogonal polarization. The conjunction of two propositions is certain exactly when both are certain; it corresponds to the intersection of their subspaces. The disjunction corresponds to the smallest closed subspace containing both. Birkhoff and von Neumann showed in 1936 that these operations form a lattice:
 
 ```math
-O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
+a\wedge b\leftrightarrow \operatorname{ran}P_a\cap\operatorname{ran}P_b,\qquad
+a\vee b\leftrightarrow \overline{\operatorname{ran}P_a+\operatorname{ran}P_b},\qquad
+\neg a\leftrightarrow I-P_a.
 ```
 
-## Physical Meaning
+No polarization passes the $0^\circ$ and $45^\circ$ polarizers with certainty, so their conjunction is the zero subspace. Yet light does pass the sequence of three polarizers. A sequence of filters is not a conjunction. Von Neumann showed that the conjunction is the limit of infinitely many alternations of the two projectors. For $0^\circ$ and $45^\circ$, each further polarizer of an alternating stack transmits half the light:
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+```math
+(P_aP_b)^n\longrightarrow P_{a\wedge b}\quad(n\to\infty),\qquad
+I_m=I_1\cos^{2m}45^\circ=2^{-m}I_1.
+```
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
+The intensity after $m$ further polarizers tends to zero, the empty conjunction. For commuting projectors the product $P_aP_b$ is already the conjunction.
 
-## Invariance And Realization
+The distributive law fails. Let $a$ be horizontal polarization, $b$ the diagonal one and $\neg b$ the antidiagonal one. The disjunction $b\vee\neg b$ is the whole space, while neither $a\wedge b$ nor $a\wedge\neg b$ contains a nonzero vector:
 
-The observable defines the question asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+```math
+a\wedge(b\vee\neg b)=a\neq0=(a\wedge b)\vee(a\wedge\neg b).
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+Physically, a diagonal analyzer always gives one of its two outcomes for a horizontal photon, but neither outcome is certain in advance. No polarization makes both horizontal and diagonal certain. A description that assigned every photon a definite answer to both questions would satisfy the distributive law.
 
-## Discriminating Consequences
+A weaker law remains, the orthomodular law: if $a\leq b$ then $b=a\vee(b\wedge\neg a)$. Within any set of mutually commuting projectors the lattice is Boolean, so classical logic holds for compatible propositions. The failures appear only across incompatible measurements. The Kochen--Specker theorem sharpens this. In dimension three or more, no assignment of true or false to all projectors makes exactly one member of every complete orthogonal set true. Kirchmair and coworkers tested a state-independent form with trapped ions in 2009, measuring triples of commuting two-qubit observables. The measured correlations exceeded the bound obeyed by any such assignment.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+The lattice structure, Gleason's theorem and the Kochen--Specker theorem are established mathematics with tested consequences. The proposal that this lattice should replace classical logic in reasoning, argued by Putnam in 1968, is not generally accepted. Reasoning about experiments uses ordinary logic, while the lattice describes the propositions that experiments test. Projectors also generate the operator algebras discussed under von Neumann algebras.
+
+## References For The Physical Derivation
+
+- [M. L. Dalla Chiara and R. Giuntini, Quantum Logic; lattices of sharp and unsharp quantum propositions.](https://arxiv.org/abs/quant-ph/0101028)
+- [G. Kirchmair and colleagues, State-independent experimental test of quantum contextuality; trapped-ion test of noncontextual value assignments.](https://arxiv.org/abs/0904.1655)

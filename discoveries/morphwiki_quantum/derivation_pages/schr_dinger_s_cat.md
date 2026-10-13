@@ -1,39 +1,41 @@
 # Schrödinger's cat
 
-**Physical domain:** Quantum states and subsystem structure
-
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Schrödinger's cat is placed at the state step, where the carrier of prediction is specified: the object that is propagated, transformed, restricted, or measured.
-
-Quantum probabilities are calculated from a state. A Hamiltonian or an observable does not make a prediction by itself; it must act on a normalized state vector, density operator, or statistical sector that records the preparation.
-
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The calculation involves hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated quantities include time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-
-## Representative Relation
+In 1935 Schrödinger imagined a cat sealed in a chamber with a radioactive atom, a Geiger counter and a flask of poison. If the atom decays, the counter releases a hammer that breaks the flask. After the time at which the decay probability is one half, linear evolution of the whole system gives
 
 ```math
-i\hbar\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad H\psi=E\psi
+\ket\Psi=\frac{1}{\sqrt2}\left(\ket{u}\ket{\rm alive}+\ket{d}\ket{\rm dead}\right),
 ```
 
-## Physical Meaning
+where $\ket u$ and $\ket d$ are the undecayed and decayed atom. Schrödinger presented the state as an absurd consequence of applying the wave function to everyday objects. Two physical questions remain: which observation would distinguish this state from a mixture of living and dead cats, and why no such observation succeeds.
 
-Normalization guarantees that the probabilities sum to one, while positivity prevents negative probabilities. Pure vectors and density operators are not competing theories: the density-operator form also represents mixtures and reduced states obtained when unobserved degrees of freedom are traced out.
+Only interference can make the distinction, because it responds to the element $\ket{\rm alive}\bra{\rm dead}$ of the density matrix, and that element is fragile. A laboratory version replaces the cat by a microwave cavity field in a superposition of two coherent states of opposite phase, $\ket\beta+\ket{-\beta}$ up to normalization. The mean photon number is $\bar n=|\beta|^2$. Photons leak out at the energy decay rate $\kappa$. Leakage acts as a weak beam splitter between the cavity and the outside field, and a coherent state divides into two coherent states:
 
-The Hamiltonian or channel evolves the prepared state. An observable and measurement map then convert that evolved state into outcome probabilities.
+```math
+\ket{\pm\beta}_{\rm cav}\ket0_{\rm out}\;\longrightarrow\;
+\ket{\pm\beta e^{-\kappa t/2}}_{\rm cav}\,\ket{\pm\beta\sqrt{1-e^{-\kappa t}}}_{\rm out}.
+```
 
-## Invariance And Realization
+Each component leaves its own coherent state in the outside field. Their overlap, $\langle-\gamma|\gamma\rangle=e^{-2|\gamma|^2}$, multiplies the coherence between the components, as for any record left in an environment. With $|\gamma|^2=\bar n(1-e^{-\kappa t})$ and $\beta_t=\beta e^{-\kappa t/2}$, the weight $C$ of the coherence terms $\ket{\pm\beta_t}\bra{\mp\beta_t}$ relative to the population terms becomes
 
-The Hamiltonian, Liouvillian, action, or channel determines the change of state that precedes measurement. The state carries the predictive information before a measurement question is asked. The same physical preparation may be represented as a vector, wave function, density matrix, or reduced state. Normalization and positivity are the admissibility checks that make the state usable for probability assignment.
+```math
+C(t)=\exp\!\left[-2\bar n\left(1-e^{-\kappa t}\right)\right]
+\approx e^{-2\bar n\kappa t}\quad(\kappa t\ll1).
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The state representation can change between position, momentum, spin, occupation, or density-operator forms. Pure-state and mixed-state descriptions may differ while describing the same formal preparation. Subsystem descriptions change when degrees of freedom are traced out or ignored.
+Each component loses energy at rate $\kappa$, but the coherence between them disappears $2\bar n$ times faster. The rate grows with the squared separation $|2\beta|^2$ of the components in phase space. Coherence falls to $e^{-2}$ once a single photon, on average, has escaped, whatever the size of $\bar n$. Brune, Haroche and colleagues in Paris observed this progressive decoherence in 1996, using fields of a few photons probed by Rydberg atoms. Components further apart lost their coherence faster.
 
-## Discriminating Consequences
+For a massive object the environment is usually scattered gas molecules or thermal radiation. In the quantum Brownian motion model, with relaxation rate $\gamma$ and temperature $T$, a superposition of two positions a distance $\Delta x$ apart loses coherence at the rate
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. A usable state gives normalized probabilities for every complete observable attached to the selected Hilbert space. Vector, wave-function, density-matrix, and reduced-state forms can describe the same preparation when connected by the appropriate representation map.
+```math
+\tau_D^{-1}=\gamma\left(\frac{\Delta x}{\lambda_{\rm th}}\right)^2,\qquad
+\lambda_{\rm th}=\frac{\hbar}{\sqrt{2mk_BT}}.
+```
+
+For a mass of one gram at 300 K, $\lambda_{\rm th}\approx4\times10^{-23}$ m, and a separation of 1 cm gives $\tau_D\approx10^{-41}/\gamma$. The formula assumes high temperature and a separation shorter than the wavelength of the environmental particles. For larger separations each collision resolves the position, and the rate saturates at the collision rate. Either estimate puts decoherence far below any time on which the motion of the object could be observed.
+
+Decoherence explains why the alive and dead components cannot be made to interfere, and why the record forms in macroscopic configurations. It does not state which component is found. The reduced density matrix of the cat becomes indistinguishable from a mixture, while the global state remains a superposition under unitary evolution. Whether a further physical process selects one outcome, as objective-collapse models propose, is the measurement problem. Interference with ever larger molecules and mechanical oscillators continues to constrain such models.
+
+## References For The Physical Derivation
+
+- [W. H. Zurek, Decoherence and the Transition from Quantum to Classical, Revisited; decoherence time of a macroscopic superposition in quantum Brownian motion.](https://arxiv.org/abs/quant-ph/0306072)
+- [S. Deléglise and colleagues, Reconstruction of Non-Classical Cavity Field States with Snapshots of Their Decoherence; cat states of a microwave cavity field and their decay.](https://arxiv.org/abs/0809.1064)

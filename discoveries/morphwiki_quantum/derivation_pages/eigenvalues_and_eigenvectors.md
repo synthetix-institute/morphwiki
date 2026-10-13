@@ -1,39 +1,35 @@
 # Eigenvalues and eigenvectors
 
-**Physical domain:** Observables and spectra
+Sodium vapour illuminated by light with two optical frequencies fluoresces brightly, except where the difference of the two frequencies matches the splitting of two ground levels. There the fluorescence drops sharply. Alzetta and coworkers observed such dark lines in 1976. They are explained by an eigenvector of the atom-light Hamiltonian that has no excited-state component.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Eigenvalues and eigenvectors is placed at the question step, where a physical question becomes an operator with admissible answers.
-
-A prediction concerns a stated physical question. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
-
-An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
-
-## Physical Construction
-
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The calculation involves a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated quantities include eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
-
-## Representative Relation
+An eigenvector of the Hamiltonian, $H|n\rangle=E_n|n\rangle$, changes in time only by a phase, so all of its probabilities stay constant. A general state is a sum of eigenvectors, each with its own phase. Expectation values therefore oscillate at the Bohr frequencies $(E_n-E_m)/\hbar$:
 
 ```math
-O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
+|\psi(t)\rangle=\sum_nc_ne^{-iE_nt/\hbar}|n\rangle,\qquad
+\langle A\rangle(t)=\sum_{m,n}c_m^*c_nA_{mn}\,e^{-i(E_n-E_m)t/\hbar}.
 ```
 
-## Physical Meaning
+Spectral lines appear at differences of eigenvalues for this reason. For a Hermitian $H$, evaluate $\langle m|H|n\rangle$ by acting to the right and to the left. The two results give $(E_n-E_m^*)\langle m|n\rangle=0$. Setting $m=n$ shows that eigenvalues are real, and distinct eigenvalues have orthogonal eigenvectors. In finite dimensions the eigenvalues are the roots of $\det(H-EI)=0$.
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+In the dark-resonance experiment, two ground levels $|1\rangle$ and $|2\rangle$ couple to one excited level $|e\rangle$. Two light fields drive the transitions with Rabi frequencies $\Omega_p$ and $\Omega_c$. In a frame rotating with the fields, within the rotating-wave approximation and with both fields on resonance, the Hamiltonian in the basis $(|1\rangle,|2\rangle,|e\rangle)$ is
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
+```math
+H=\frac\hbar2\begin{pmatrix}0&0&\Omega_p\\0&0&\Omega_c\\ \Omega_p&\Omega_c&0\end{pmatrix},\qquad
+\det(H-EI)=-E\left(E^2-\frac{\hbar^2\Omega^2}{4}\right),
+```
 
-## Invariance And Realization
+with $\Omega^2=\Omega_p^2+\Omega_c^2$. The eigenvalues are $0$ and $\pm\hbar\Omega/2$. The eigenvector with eigenvalue zero is
 
-The observable defines the question asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+```math
+|D\rangle=\frac{\Omega_c|1\rangle-\Omega_p|2\rangle}{\Omega}.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+Its excited-state amplitude vanishes because the two excitation paths interfere destructively. An atom in $|D\rangle$ neither absorbs nor fluoresces. Spontaneous decay from $|e\rangle$ returns atoms to the ground levels at random, and atoms accumulate in $|D\rangle$. This is coherent population trapping. The state remains an exact eigenvector for any common detuning of the two fields, as long as their frequency difference matches the ground splitting. A mismatch $\delta$ couples $|D\rangle$ to the other states in proportion to $\delta$, and fluorescence returns.
 
-## Discriminating Consequences
+The width of the dark resonance is set by the decay of the coherence between the ground levels and by power broadening. It can be far narrower than the optical linewidth. Compact atomic clocks use this resonance to lock a laser frequency difference to the cesium ground-state splitting of 9.192631770 gigahertz.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+Eigenvalues alone would not explain the effect: the spectrum $0,\pm\hbar\Omega/2$ says nothing about fluorescence. The prediction depends on the composition of the eigenvector. When eigenvalues are degenerate, the eigenvectors are not unique, and a perturbation selects the physically relevant combinations, as in perturbation theory. The two-state quantum system gives the simplest case of the same calculation.
+
+## References For The Physical Derivation
+
+- [N. Belcher, E. E. Mikhailov and I. Novikova, Atomic Clocks and Coherent Population Trapping: Experiments for Undergraduate Laboratories; dark states and the measurement of a ground-state splitting.](https://arxiv.org/abs/0810.2071)

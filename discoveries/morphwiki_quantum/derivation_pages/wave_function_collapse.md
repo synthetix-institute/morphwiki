@@ -1,39 +1,28 @@
 # Wave function collapse
 
-**Physical domain:** Measurement, instruments, and probabilities
+A trapped ion is driven from one hyperfine level to another by a resonant radio-frequency field. If the level is checked repeatedly during the drive, the transfer slows down. Frequent enough checks nearly stop it.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Wave function collapse is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule.
-
-## Physical Construction
-
-The state carrier is a state vector or density operator together with the measurement context in which outcome channels are defined. The calculation involves a projection-valued measure, POVM, update map, or instrument map connecting state to record. Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. The calculated quantities include Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-
-## Representative Relation
+The calculation uses the update rule for a recorded outcome. For a measurement with orthogonal projectors $P_k$, the Lüders rule replaces the density operator $\rho$ after outcome $k$ by the normalized projection. If the outcome is not recorded, the state becomes the probability-weighted average:
 
 ```math
-\Pr(\Delta)=\operatorname{Tr}(\rho E(\Delta)),\quad \rho\mapsto \frac{M_y\rho M_y^\dagger}{\operatorname{Tr}(M_y\rho M_y^\dagger)}
+\rho\;\longmapsto\;\frac{P_k\rho P_k}{\operatorname{Tr}(\rho P_k)},\qquad
+\rho\;\longmapsto\;\sum_kP_k\rho P_k.
 ```
 
-## Physical Meaning
+Because $P_k^2=P_k$, an immediate repetition returns outcome $k$ with certainty. The second map removes the coherences between different outcomes and keeps their populations.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+Let the drive rotate the Bloch vector of the two-level ion about the $x$ axis, completing a $\pi$ rotation in time $T$. Without interruption it transfers the ion completely. Divide $T$ into $N$ intervals, each rotating the vector by $\pi/N$ and followed by a measurement of the level. Each measurement removes the transverse components, so the $z$ component is multiplied by $\cos(\pi/N)$ at every step:
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+```math
+P_N=\frac12\left[1-\cos^N\frac{\pi}{N}\right]\approx\frac{\pi^2}{4N}\qquad(N\gg1).
+```
 
-## Invariance And Realization
+One interruption gives full transfer, two give 0.5, and 64 give 0.037. Itano, Heinzen, Bollinger and Wineland observed this suppression in 1990. They drove a hyperfine transition of beryllium ions with a 256 ms radio-frequency pulse, interrupted by up to 64 short laser pulses. Ions in one of the levels scattered light from each pulse, and the measured transfer followed the prediction. This slowing is the quantum Zeno effect.
 
-The topic modifies how a state is connected to recorded outcomes. The stable machinery is the spectral measure or POVM together with the probability rule. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+The suppression relies on the quadratic start of the transfer: with Rabi frequency $\Omega$, the probability of leaving the initial level grows as $(\Omega t/2)^2$ at short times. A decay into a broad continuum is quadratic only for times shorter than the correlation time of the continuum. Ordinary radioactive decay is therefore not slowed by any realistic observation. Each laser pulse must also dephase the two levels completely without driving the radio-frequency transition.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+The same suppression follows when each laser pulse is treated as a coupling of the ion to the scattered light, without invoking the update rule. The experiment therefore confirms that a strong probe removes the coherence between levels. It does not show that collapse is a physical process distinct from that interaction. Whether the update describes a physical change or a revision of information is the measurement problem. The quantum jump description gives the same conditioning for continuous photon counting.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+- [W. M. Itano, Perspectives on the quantum Zeno paradox; the 1990 trapped-ion experiment and its interpretation.](https://arxiv.org/abs/quant-ph/0612187)

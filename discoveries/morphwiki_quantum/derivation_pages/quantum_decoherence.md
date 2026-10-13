@@ -1,53 +1,43 @@
 # Quantum decoherence
 
-**Physical domain:** Quantum states and subsystem structure
+Fullerene molecules sent through a grating interferometer produce clear fringes. When gas is admitted to the vacuum chamber, or when the molecules are heated before they enter, the contrast falls, although every molecule still passes the gratings. Collisions with gas molecules and thermally emitted photons leave a record of the path in the surroundings. Decoherence is the loss of interference that follows from such records.
 
-## Mechanism
-
-Quantum decoherence is the loss of observable phase coherence in a subsystem when information about alternative amplitudes becomes encoded in environmental correlations.
-
-Interference is lost when alternative system amplitudes become correlated with environmental states that can, even in principle, distinguish them. The missing coherence has then moved into correlations of the larger state rather than being erased by the subsystem equation alone.
-
-The joint system and environment may evolve unitarily while the reduced system loses interference. Interaction correlates different system alternatives with distinguishable environmental states; tracing over the environment then suppresses off-diagonal terms in the selected pointer basis. Decoherence does not select one outcome, and it is not identical to memory. Markovian decoherence is possible when the reduced state still determines its future. Memory begins when discarded correlations return and two preparations with the same reduced state acquire different later statistics.
-
-## Physical Construction
-
-The state carrier is a joint system-environment state together with the reduced density operator accessible to the observer. The calculation involves system-environment unitary evolution followed by partial trace, or the corresponding reduced dynamical map. The joint state remains normalized and positive; a Markovian reduction additionally requires future maps to be fixed by the present reduced state. The calculated quantities include off-diagonal coherence, interference visibility, purity, and history-dependent response.
-
-## Topic Equations
+Consider a particle in an equal superposition of two paths, $\ket L$ and $\ket R$, and an environment initially in $\ket E$. A scattering event that depends on the path leaves the environment in $\ket{E_L}$ or $\ket{E_R}$. The joint evolution is unitary. Tracing out the environment gives the reduced density matrix of the particle:
 
 ```math
-\rho_S(t)=\operatorname{Tr}_E[U_{SE}(t)\rho_{SE}(0)U_{SE}^{\dagger}(t)]
-\frac{\ket0\ket{E_0}+\ket1\ket{E_1}}{\sqrt2},\qquad (\rho_S)_{01}\propto\langle E_1|E_0\rangle
-\dot\rho_S=-\frac{i}{\hbar}[H_S,\rho_S]+\sum_k\gamma_k\mathcal D[L_k]\rho_S
-V_{t+s}=V_tV_s\quad\text{only in the time-homogeneous Markov limit}
+\tfrac{1}{\sqrt2}(\ket L+\ket R)\ket E\;\longrightarrow\;
+\tfrac{1}{\sqrt2}\left(\ket L\ket{E_L}+\ket R\ket{E_R}\right),\\
+\rho_S=\tfrac12\left(\ket L\bra L+\ket R\bra R+\langle E_R|E_L\rangle\ket L\bra R
++\langle E_L|E_R\rangle\ket R\bra L\right).
 ```
 
-## Physical Meaning
+At the screen the path amplitudes $\psi_L(x)$ and $\psi_R(x)$ overlap, and the interference term is multiplied by $\langle E_R|E_L\rangle$. For equal intensities the fringe visibility equals $|\langle E_R|E_L\rangle|$. Visibility is lost to the extent that the environment could in principle identify the path; nobody needs to examine the scattered particle.
 
-Unitary system-environment evolution can suppress the off-diagonal elements of the reduced density matrix after the environment is traced out. The overlap of the corresponding environmental states fixes the remaining visibility. Decoherence can be Markovian; memory requires the stronger condition that hidden correlations later alter evolution from the same reduced state.
+Independent collisions multiply their overlaps. Suppose collisions occur at random with mean rate $\Gamma$, and each leaves a real overlap $\chi$ between zero and one. Averaging $\chi^N$ over the Poisson distribution of the number $N$ of collisions in time $t$ gives
 
-In a two-path interferometer, scattering one distinguishable environmental state from each path lowers the fringe visibility in proportion to their overlap. Erasing the distinguishing record can restore interference in suitable conditional measurements.
+```math
+V(t)=\sum_{N=0}^\infty e^{-\Gamma t}\frac{(\Gamma t)^N}{N!}\,\chi^N=e^{-\Gamma(1-\chi)t}.
+```
 
-The distinction between lost visibility and returning correlations leads directly to quantum channels, non-Markovian dynamics, and the composition test for memory.
+The decoherence rate $\Gamma(1-\chi)$ depends on how well one collision resolves the path. A scattered wave whose wavelength $\lambda$ greatly exceeds the path separation $d$ gives $\chi$ close to one, with $1-\chi$ growing as $(d/\lambda)^2$. When $d\gg\lambda$, a single event suffices and the rate saturates at $\Gamma$. Since $\Gamma$ is proportional to the gas pressure, the visibility falls exponentially with pressure. This dependence was measured for $\mathrm{C}_{70}$ molecules in a Talbot--Lau interferometer. Heated molecules emit more thermal photons and lose visibility in the same way.
 
-## Consequences Forced By The Relation
+Over times long compared with one collision, the same decay follows from a Lindblad master equation with a dephasing operator. With $\sigma_z=\ket L\bra L-\ket R\bra R$ and rate $\gamma=\Gamma(1-\chi)$,
 
-Interference visibility falls with the overlap of the environmental states correlated with the interfering alternatives. The phase information can remain in the joint state even when it is absent from all reduced-system observables. When hidden correlations later alter the reduced dynamics, an auxiliary state coordinate or a memory kernel is required for predictive closure.
+```math
+\frac{d\rho}{dt}=-\frac{i}{\hbar}[H,\rho]+\frac{\gamma}{2}\left(\sigma_z\rho\sigma_z-\rho\right),
+\qquad \frac{d\rho_{LR}}{dt}\Big|_{\rm env}=-\gamma\rho_{LR}.
+```
 
-## Domain Of The Construction
+The populations of the two paths are unchanged; only their coherence decays. Coherence is lost in the basis in which the interaction is diagonal, here position. Decoherence therefore explains why records form in that basis. It does not determine on which path a given molecule is found; that question belongs to the measurement problem.
 
-The preferred basis and decoherence rate depend on the interaction, environmental spectrum, and initial system-environment state. Suppression of off-diagonal terms does not by itself derive a unique recorded outcome.
+The master equation assumes that each scattered particle leaves and never returns, so that records made at different times are independent. A small environment violates this assumption. For one environmental spin, initially up along its $z$ axis and coupled through $\hbar g\sigma_z\otimes\sigma_x^E$, the overlap is $\cos2gt$, and the visibility $|\cos2gt|$ returns to one at $t=\pi/2g$. Such revivals, and the restored fringes of the quantum eraser experiment, show that the phase information has moved into system-environment correlations rather than being destroyed. A Markovian master equation for the particle alone cannot describe them.
 
-## Invariance And Realization
+## References For The Physical Derivation
 
-The joint state retains phase information transferred from the subsystem into system-environment correlations. Reduced interference visibility is fixed by the overlap of environmental states correlated with the alternatives. Equivalent system-environment dilations give the same reduced channel and system observables.
+- [K. Hornberger, Introduction to Decoherence Theory; which-path records, reduced dynamics and master equations.](https://arxiv.org/abs/quant-ph/0612118)
+- [K. Hornberger and colleagues, Collisional Decoherence Observed in Matter Wave Interferometry; exponential loss of fullerene fringe visibility with gas pressure.](https://arxiv.org/abs/quant-ph/0303093)
+- [W. H. Zurek, Decoherence, Einselection, and the Quantum Origins of the Classical; pointer basis and the role of the environment.](https://arxiv.org/abs/quant-ph/0105127)
 
-The preferred basis, decay rate, and recoherence depend on the interaction, environmental spectrum, and initial correlations. Changing the system-environment partition changes which correlations are hidden. A Markov approximation removes returning correlations; retaining them introduces auxiliary coordinates or a memory kernel.
-
-## Discriminating Consequences
-
-Interference visibility is compared with a control in which the environment cannot distinguish the alternatives. Two preparations with the same reduced state determine whether hidden correlations alter later observables. Reversing or decoupling the interaction determines whether coherence remains recoverable in the joint state.
 
 ## Source Equations
 

@@ -1,39 +1,43 @@
 # Quantum stochastic calculus
 
-**Physical domain:** Dynamics and transformations
+Light leaks out of an optical cavity through a partly transmitting mirror. The emerging beam carries the cavity field, and the same mirror admits vacuum fluctuations from outside. Quantum stochastic calculus describes this exchange with the external field in infinitesimal time steps, in the way Itô calculus describes classical noise.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum stochastic calculus is placed at the step of lawful change, which specifies how the state changes before a question is asked.
-
-Kinematics and dynamics are separate. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The calculation involves a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated quantities include time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
-
-## Representative Relation
+Treat the external field as a sequence of independent time bins of length $dt$ that pass the mirror one after another. Let $b_{\mathrm{in}}(t)$ be the incoming field operator, with $[b_{\mathrm{in}}(t),b_{\mathrm{in}}^\dagger(t')]=\delta(t-t')$. Define the increment $dA_t=\int_t^{t+dt}b_{\mathrm{in}}(s)\,ds$. For an incoming vacuum, products of increments obey the quantum Itô table:
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+dA_t\,dA_t^\dagger=dt,\qquad dA_t^\dagger\,dA_t=dA_t\,dA_t=dA_t^\dagger\,dA_t^\dagger=0,
+\qquad dt\,dA_t=0.
 ```
 
-## Physical Meaning
+The asymmetry between the two orderings is the vacuum noise. Creating and then removing a quantum in an empty bin leaves a term proportional to $dt$, whereas the reverse order gives zero. A classical Wiener increment gives $dW^2=dt$ for either order. For a thermal input with mean occupation $N$, the table becomes $dA\,dA^\dagger=(N+1)\,dt$ and $dA^\dagger dA=N\,dt$.
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+Let the system couple to the field through an operator $L$, for example $L=\sqrt\kappa\,a$ for a cavity mode $a$ with energy decay rate $\kappa$. Hudson and Parthasarathy showed that the joint unitary evolution of system and field obeys
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+```math
+dU_t=\Big[-\Big(\frac{i}{\hbar}H+\frac12L^\dagger L\Big)dt
++L\,dA_t^\dagger-L^\dagger dA_t\Big]U_t.
+```
 
-## Invariance And Realization
+The term $-\frac12L^\dagger L\,dt$ is required by unitarity. In $d(U^\dagger U)=dU^\dagger U+U^\dagger dU+dU^\dagger dU$, the last product contributes $L^\dagger L\,dA\,dA^\dagger=L^\dagger L\,dt$, which cancels it exactly. Averaging over the vacuum field gives the Lindblad master equation written under quantum jump. The calculus also yields the outgoing field: it equals the incoming field plus the emission of the system,
 
-The generator specifies lawful change before a measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+```math
+dA^{\mathrm{out}}_t=L\,dt+dA_t,\qquad
+b_{\mathrm{out}}=b_{\mathrm{in}}+\sqrt\kappa\,a.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+For a cavity driven through the same mirror by a coherent beam of amplitude $\beta$, detuned by $\Delta$ from resonance, the mean cavity field obeys $\dot a=-(i\Delta+\kappa/2)a-\sqrt\kappa\,\beta$. In the steady state the reflection coefficient is
 
-## Discriminating Consequences
+```math
+r(\Delta)=\frac{b_{\mathrm{out}}}{\beta}=\frac{2i\Delta-\kappa}{2i\Delta+\kappa},\qquad
+|r|=1,\qquad r(0)=-1.
+```
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+All light returns, as expected for a lossless single-sided cavity, but its phase $\pi-2\arctan(2\Delta/\kappa)$ turns by $2\pi$ across a window of width about $\kappa$. A superconducting qubit that shifts the cavity frequency by $\pm\chi$ therefore imprints reflected phases that differ by $4\arctan(2\chi/\kappa)$. The difference reaches $\pi$ at $\chi=\kappa/2$, where the two reflected coherent states are most distinguishable for a given input flux. Pound--Drever--Hall laser locking uses the same phase near resonance.
+
+The calculus rests on a Markov approximation. The coupling to the external field must be flat in frequency over a band much wider than $\kappa$, and the rotating-wave approximation requires $\kappa$ far below the cavity frequency. Optical cavities and microwave resonators satisfy both conditions well. Structured reservoirs, such as photonic band edges, require a memory kernel instead. Photon counting on the same output field gives the quantum-jump trajectories of quantum optics.
+
+## References For The Physical Derivation
+
+- [K. R. Parthasarathy, Quantum Stochastic Calculus and Quantum Gaussian Processes; the Hudson-Parthasarathy calculus on boson Fock space.](https://arxiv.org/abs/1408.5686)
+- [J. Combes, J. Kerckhoff and M. Sarovar, The SLH framework for modeling quantum input-output networks; quantum stochastic differential equations and input-output relations.](https://arxiv.org/abs/1611.00375)
+- [A. A. Clerk, M. H. Devoret, S. M. Girvin, F. Marquardt and R. J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification; cavity input-output theory and dispersive qubit measurement.](https://arxiv.org/abs/0810.4729)

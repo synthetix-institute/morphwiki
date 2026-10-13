@@ -1,39 +1,31 @@
 # Perturbation theory
 
-**Physical domain:** Dynamics and transformations
+An electric field of 100 kV/cm splits the $n=2$ level of hydrogen into components hundreds of gigahertz apart, while the ground level moves by only a few megahertz. Both shifts come from the same weak addition to the atomic Hamiltonian. Perturbation theory explains why one shift is linear in the field and the other quadratic.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Perturbation theory is placed at the step of lawful change, which specifies how the state changes before a question is asked.
-
-Kinematics and dynamics are separate. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The calculation involves a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated quantities include time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
-
-## Representative Relation
+Write $H=H_0+\lambda V$, where the eigenstates $|n\rangle$ and energies $E_n^{(0)}$ of $H_0$ are known and $\lambda$ counts powers of the perturbation. Expand the exact eigenvalue and eigenvector in powers of $\lambda$ and insert them into $H|\psi_n\rangle=E_n|\psi_n\rangle$. Projecting the equation at each order onto $\langle n|$ and onto $\langle m|$ with $m\neq n$ gives the energy and the admixed states:
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+E_n=E_n^{(0)}+\lambda V_{nn}
++\lambda^2\sum_{m\neq n}\frac{|V_{mn}|^2}{E_n^{(0)}-E_m^{(0)}}+O(\lambda^3),\\
+|\psi_n\rangle=|n\rangle+\lambda\sum_{m\neq n}\frac{V_{mn}}{E_n^{(0)}-E_m^{(0)}}|m\rangle+O(\lambda^2),
+\qquad V_{mn}=\langle m|V|n\rangle.
 ```
 
-## Physical Meaning
+The expansion is useful when every coupling is small compared with the corresponding gap, $|V_{mn}|\ll|E_n^{(0)}-E_m^{(0)}|$. For the ground state every denominator is negative, so the second-order shift always lowers the energy. The sum runs over the complete set of unperturbed states, including any continuum.
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+For an electron in a uniform field $F$ along $z$, the perturbation is $V=eFz$. The hydrogen ground state has even parity and $z$ is odd, so $V_{nn}=0$. The leading shift is quadratic, $\Delta E=-\alpha_{\mathrm{pol}}F^2/2$, with static polarizability $\alpha_{\mathrm{pol}}=\tfrac92(4\pi\varepsilon_0)a_0^3$. At 100 kV/cm this gives 5.6 MHz. The bound states supply only 81 percent of the polarizability; the ionization continuum supplies the rest.
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+The $n=2$ level behaves differently because the $2s$ and $2p$ states have the same unperturbed energy. The denominators vanish, and the expansion must start by diagonalizing $V$ within the degenerate subspace. Only $2s$ and $2p_0$ are coupled, and
 
-## Invariance And Realization
+```math
+\langle2s|z|2p_0\rangle=-3a_0,\qquad E=E_2\pm3ea_0F,\qquad
+|\pm\rangle=\frac{|2s\rangle\mp|2p_0\rangle}{\sqrt2}.
+```
 
-The generator specifies lawful change before a measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+The mixed states carry permanent electric dipoles of $\mp3ea_0$, so their shift is linear in $F$. At 100 kV/cm the outer components lie $\pm384$ GHz from the unperturbed level, while $2p_{\pm1}$ remains unshifted. Stark observed this linear splitting of the Balmer lines in 1913.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+The degenerate treatment assumes that the Stark coupling exceeds the small splittings omitted from the nonrelativistic $H_0$. The fine-structure splitting of $n=2$ is 10.9 GHz, and the Lamb shift between $2s_{1/2}$ and $2p_{1/2}$ is 1.06 GHz. Below a few hundred volts per centimetre the coupling is smaller than the Lamb shift, and the shift of $2s_{1/2}$ becomes quadratic again. In any static field the electron can also tunnel out of the atom, at a rate that vanishes faster than any power of $F$. The levels are therefore resonances, and the series in $F$ is asymptotic rather than convergent. A perturbation that oscillates in time produces transitions instead of shifts. The same expansion then gives Fermi's golden rule for transition rates, used for spectral lines and scattering.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+- [U. D. Jentschura, Resummation of the Divergent Perturbation Series for a Hydrogen Atom in an Electric Field; the Stark perturbation series and its divergence.](https://arxiv.org/abs/physics/0010038)

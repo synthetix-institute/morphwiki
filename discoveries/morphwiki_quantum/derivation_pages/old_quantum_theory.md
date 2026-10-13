@@ -1,39 +1,35 @@
 # Old quantum theory
 
-**Physical domain:** State space, domain, and representation
+Hydrogen emits light at sharp wavelengths, among them the red Balmer line at 656 nanometres. Between 1913 and 1925 these lines were explained by selecting particular classical orbits, before wave mechanics existed. The selection rule of that period, Bohr--Sommerfeld quantization, worked for hydrogen and for the oscillator, and its failures show what the later theory had to change.
 
-## Mechanism
-
-Old quantum theory is the semiclassical quantization precursor to modern quantum mechanics: classical periodic motion is retained, while only selected actions and transition frequencies are admitted.
-
-A quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
-
-Old quantum theory predates the Hilbert-space formalism. Its carrier is classical phase space, its motion follows Hamiltonian trajectories, and its quantum restriction is imposed on periodic action integrals. The resulting discrete energies and transition frequencies anticipated quantum spectra but did not provide a general theory of states, observables, or noncommuting transformations.
-
-## Physical Construction
-
-The state carrier is classical phase space, especially periodic or multiply periodic Hamiltonian trajectories described by action variables. The calculation involves Hamiltonian flow together with Bohr--Sommerfeld action quantization; no general Hilbert-space operator calculus is assumed. Only trajectories satisfying quantized action conditions are retained, with correspondence to classical frequencies required at large quantum number. The calculated quantities include discrete energies, transition frequencies, and the spectral regularities inferred from them.
-
-## Topic Equations
+The rule applies to motion that separates into periodic coordinates $q_k$ with conjugate momenta $p_k$. The action integral over one period of each coordinate must be an integer multiple of Planck's constant $h$:
 
 ```math
-J_k=\oint p_k\,dq_k=n_k h
-E_m-E_n=h\nu_{mn}
-\frac{\partial E}{\partial J_k}=\nu_k^{\mathrm{cl}}\quad\text{in the correspondence regime}
+J_k=\oint p_k\,dq_k=n_k h,\qquad n_k=0,1,2,\ldots
 ```
 
-## Physical Meaning
+For an oscillator of mass $m$ and angular frequency $\omega$, the orbit at energy $E$ is an ellipse in phase space with area $2\pi E/\omega$. The rule gives $E_n=n\hbar\omega$, with the spacing $\hbar\omega$ seen in molecular vibrational ladders. The ground energy is wrong, however. Wave mechanics gives $(n+\tfrac12)\hbar\omega$, and isotope shifts in molecular band spectra, analysed by Mulliken in 1924 and 1925, already required the half quantum. The modern semiclassical rule replaces $n$ by $n+\tfrac12$ for motion between two smooth turning points. That correction comes from the phase of the wave at the turning points, which an orbit cannot supply.
 
-A unitary or isometric change of representation carries the state and operator together. Amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
+For hydrogen, write $k=e^2/(4\pi\varepsilon_0)$ for the Coulomb strength and use circular orbits. Quantized angular momentum $mvr=n\hbar$ together with the force balance $mv^2/r=k/r^2$ gives
 
-A quantum state belongs to this state space, and every Hamiltonian and observable must act on its stated domain. These domain relations determine whether the resulting amplitudes and probabilities are defined.
+```math
+r_n=\frac{n^2\hbar^2}{mk}=n^2a_0,\qquad
+E_n=-\frac{mk^2}{2\hbar^2n^2}=-\frac{13.6\ \text{eV}}{n^2}.
+```
 
-## Invariance And Realization
+Here $a_0=52.9$ picometres is the Bohr radius. The transition from $n=3$ to $n=2$, with the reduced-mass correction, gives a vacuum wavelength of 656.5 nanometres. Sommerfeld's elliptic orbits add a radial action. The sum of the radial and angular actions depends only on the energy, so the levels depend only on $n=n_r+n_\varphi$. This reproduces the degeneracy of the Kepler problem:
 
-Hamiltonian trajectories and their action variables provide the classical carrier of the construction. Action quantization selects a discrete subset of otherwise continuous classical motions. Energy differences determine transition frequencies, with correspondence to classical orbital frequencies at large quantum number.
+```math
+J_r+J_\varphi=2\pi k\sqrt{\frac{m}{-2E}}=(n_r+n_\varphi)h.
+```
 
-The orbit family, potential, number of action variables, and applicable quantization condition depend on the physical system. Modern semiclassical theory adds phase and turning-point corrections absent from the earliest quantization rules. The construction ceases to be adequate for generic nonintegrable motion, many-electron spectra, and intrinsically noncommuting questions.
+For large $n$ the spacing of neighbouring levels, divided by $h$, approaches the classical orbital frequency $mk^2/(2\pi\hbar^3n^3)$. Bohr used this correspondence in 1913 to fix the constant in his rule, requiring large orbits to radiate at their classical frequency. Sommerfeld's relativistic treatment of the elliptic orbits gave a fine-structure formula that agrees with the later Dirac result. Semiclassical analysis of the Dirac equation, including the precession of the spin, helps explain that agreement.
 
-## Discriminating Consequences
+The failures are specific. The rule requires $n_\varphi\geq1$, because an orbit with zero angular momentum would pass through the nucleus. The predicted ground state therefore carries angular momentum $\hbar$, whereas the hydrogen ground state has none; wave mechanics gives $L^2=\ell(\ell+1)\hbar^2$ with $\ell=0,\ldots,n-1$. Einstein pointed out in 1917 that the rule can be stated without special coordinates, as conditions on loops around invariant tori in phase space. Motion without such tori cannot be quantized this way. The three-body motion of helium has no such structure, and orbit models failed to reproduce its ionization energy of 24.6 eV. The anomalous Zeeman effect demanded half-integer quantum numbers, later traced to electron spin. Line intensities lay outside the rule, and their calculation led Heisenberg to matrix mechanics in 1925.
 
-The theory recovers the hydrogenic level and line spectrum in the regime where action quantization applies. A comparison of the semiclassical prediction with the corresponding Schrödinger spectrum and identify its controlled limit. Treat failures outside that limit as evidence for the modern state-and-operator formalism, rather than as adjustable orbit parameters.
+The corrected rule survives as the leading term of semiclassical WKB theory. It remains accurate for highly excited Rydberg states and for the vibrational levels of molecules. The quantum harmonic oscillator and the angular momentum operator give the exact results that replaced the orbit picture.
+
+## References For The Physical Derivation
+
+- [S. Keppeler, Semiclassical quantisation rules for the Dirac and Pauli equations; Maslov corrections and the relativistic Kepler problem behind Sommerfeld's fine-structure formula.](https://arxiv.org/abs/quant-ph/0212082)
+- [A. Afriat, Einstein and the old quantum theory; Einstein's coordinate-independent quantum conditions on invariant tori.](https://arxiv.org/abs/2112.14194)

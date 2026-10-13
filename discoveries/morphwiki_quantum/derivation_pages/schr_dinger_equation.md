@@ -1,41 +1,35 @@
 # Schrödinger equation
 
-**Physical domain:** Dynamics and transformations
+Atomic hydrogen absorbs ultraviolet light only at sharp wavelengths, and its Lyman series ends at 91.2 nm, the ionization threshold of 13.6 eV. A wave equation for the electron's amplitude must reproduce these numbers. Its form follows from the de Broglie relations and the nonrelativistic energy.
 
-## Mechanism
-
-Schrödinger equation is the state-transport constructor: the Hamiltonian generates lawful change of the state before measurement.
-
-The Schrödinger equation turns a Hamiltonian into a local rule for the time dependence of a state. It is the point at which the chosen state space, boundary conditions, and interaction model become a calculable prediction.
-
-The Schrödinger equation is not a measurement rule. It is the generator step of the quantum constructor. It evolves the predictive carrier while preserving normalization when the Hamiltonian is self-adjoint.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The calculation involves hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated quantities include time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-
-## Topic Equations
+A plane wave $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ with $\mathbf p=\hbar\mathbf k$ and $E=\hbar\omega$ satisfies $i\hbar\partial_t\psi=E\psi$ and $-i\hbar\nabla\psi=\mathbf p\psi$. Requiring $E=p^2/2m+V$ for every component, and linearity so that superpositions of solutions remain solutions, gives
 
 ```math
-i\hbar\,\partial_t\ket{\psi(t)}=H\ket{\psi(t)}
-\ket{\psi(t)}=U(t)\ket{\psi(0)},\qquad U(t)=e^{-iHt/\hbar}
-\frac{d}{dt}\langle\psi(t)|\psi(t)\rangle=0\quad (H=H^\dagger)
+i\hbar\frac{\partial\psi}{\partial t}=-\frac{\hbar^2}{2m}\nabla^2\psi+V(\mathbf x)\,\psi,
+\qquad i\hbar\frac{d}{dt}|\psi(t)\rangle=H|\psi(t)\rangle.
 ```
 
-## Physical Meaning
+For a constant potential this argument is complete. For a varying $V$ the equation is postulated, and its predictions test it. It contains a single time derivative, so the wave function at one instant fixes it at all later times. For real $V$, multiplying by $\psi^*$ and subtracting the complex conjugate equation gives a local conservation law:
 
-The time derivative of the state is fixed by the Hamiltonian acting on that state. For a self-adjoint Hamiltonian, the equation preserves norm. Stationary solutions separate time dependence from the spatial eigenvalue problem, but a general preparation is their superposition.
+```math
+\frac{\partial|\psi|^2}{\partial t}+\nabla\cdot\mathbf j=0,\qquad
+\mathbf j=\frac{\hbar}{m}\,\mathrm{Im}\big(\psi^*\nabla\psi\big).
+```
 
-A wave packet in a potential well spreads and interferes according to the same equation whose stationary solutions define the well's energy levels.
+Probability flows from one region to another, but it is not created or destroyed. An imaginary part of $V$ would act as a source or sink, which is how absorption into unobserved channels is sometimes modelled. If $V$ does not depend on time, separable solutions $\psi=\phi(\mathbf x)e^{-iEt/\hbar}$ reduce the equation to the eigenvalue problem $H\phi=E\phi$. Normalizable solutions exist only for particular energies, which is the origin of discrete levels. A general preparation is a superposition of such stationary states, and its probability density changes in time only through interference between components of different energy.
 
-Observables determine which consequences of the evolved state are compared with experiment.
+For hydrogen, $V=-k/r$ with $k=e^2/4\pi\varepsilon_0$. Try the spherically symmetric function $\phi=e^{-r/a}$, for which $\nabla^2\phi=(1/a^2-2/ar)\phi$. Substitution gives
 
-## Invariance And Realization
+```math
+H\phi=\Big[-\frac{\hbar^2}{2ma^2}+\Big(\frac{\hbar^2}{ma}-k\Big)\frac1r\Big]\phi,\\
+a_0=\frac{\hbar^2}{mk}=0.0529\ \mathrm{nm},\qquad
+E_1=-\frac{mk^2}{2\hbar^2}=-13.6\ \mathrm{eV}.
+```
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+The $1/r$ term must vanish for $\phi$ to be an eigenfunction, which fixes the Bohr radius $a_0$. The remaining constant is the ground-state energy. The full solution gives $E_n=E_1/n^2$, so the Lyman limit lies at $hc/|E_1|=91.1$ nm. Replacing $m$ by the reduced mass of electron and proton moves it to the observed 91.2 nm.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+The equation treats the electron as nonrelativistic. In hydrogen its typical speed is $\alpha c$, with $\alpha\approx1/137$, so corrections of relative size $\alpha^2\approx5\times10^{-5}$ appear. They split levels of equal $n$ into the fine structure described under relativistic quantum mechanics. Spin, nuclear size and the coupling to the radiation field add smaller corrections, such as the Lamb shift. The abstract form $i\hbar\,d|\psi\rangle/dt=H|\psi\rangle$ applies to any closed system, and the organization of its solutions in time is treated under the Schrödinger picture.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime. Hamiltonian, propagator, and path-integral forms are equivalent only when they yield the same transition amplitudes or correlation functions.
+- [A. Galler, J. Canfield and J. K. Freericks, Schrödinger's original quantum-mechanical solution for hydrogen; the 1926 wave-mechanical derivation of the hydrogen spectrum.](https://arxiv.org/abs/2007.14798)

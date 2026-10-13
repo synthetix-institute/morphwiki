@@ -1,39 +1,35 @@
 # Quantum algorithm
 
-**Physical domain:** Control sequences and quantum channels
+A list of $N$ entries contains one marked entry, and the only access is a test that answers whether a given entry is marked. A classical search needs about $N/2$ tests on average. Grover's algorithm finds the entry with about $(\pi/4)\sqrt N$ tests by rotating a quantum state, step by step, toward the answer.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum algorithm is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
-
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state.
-
-## Physical Construction
-
-The state carrier is an input state, register, channel state, error syndrome, key, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps. Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective. The calculated quantities include output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+Hadamard gates prepare a register of $n=\log_2N$ qubits in the uniform superposition $|s\rangle=N^{-1/2}\sum_x|x\rangle$. Let $|w\rangle$ be the marked state and $|r\rangle$ the normalized superposition of the other $N-1$ states. Then $|s\rangle=\sin\theta\,|w\rangle+\cos\theta\,|r\rangle$ with $\sin\theta=1/\sqrt N$. The test acts as a phase oracle $O$ that flips the sign of the marked amplitude, and a second operation $D$ reflects about $|s\rangle$:
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
+O=I-2|w\rangle\langle w|,\qquad D=2|s\rangle\langle s|-I,\qquad G=DO.
 ```
 
-## Physical Meaning
+Both reflections map the plane spanned by $|w\rangle$ and $|r\rangle$ into itself. The oracle reflects about $|r\rangle$ and $D$ reflects about $|s\rangle$. Two reflections about lines separated by the angle $\theta$ combine into a rotation by $2\theta$. After $k$ iterations the state and the probability of finding the marked entry are
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+```math
+G^k|s\rangle=\sin\big((2k+1)\theta\big)|w\rangle+\cos\big((2k+1)\theta\big)|r\rangle,\qquad
+P_k=\sin^2\big((2k+1)\theta\big).
+```
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+The probability is nearest one when $(2k+1)\theta\approx\pi/2$, after $k\approx\pi/(4\theta)-1/2\approx(\pi/4)\sqrt N$ iterations. The oracle sign flip is realized with an ancilla in the state $|-\rangle$, by the phase kickback described under quantum circuit. The reflection $D$ equals $H^{\otimes n}(2|0\rangle\langle0|-I)H^{\otimes n}$, a sign flip of the all-zero state between two layers of Hadamards.
 
-## Invariance And Realization
+For $N=4$ the angle is $\theta=30^\circ$. One iteration gives $(2k+1)\theta=90^\circ$, so the marked entry is found with certainty after a single query. A classical strategy with one query followed by a guess succeeds with probability one half. Chuang, Gershenfeld and Kubinec ran this two-qubit search with nuclear spins in 1998. For $N=2^{20}$, 804 iterations give a success probability above $0.9999997$, against about half a million classical tests on average.
 
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+The rotation does not stop at the answer. Continuing beyond the optimum turns the state past $|w\rangle$; for $N=16$, six iterations give a success probability of only $0.02$, while three give $0.96$. The number of marked entries must therefore be known, or estimated from the eigenphases $\pm2\theta$ of $G$ by phase estimation.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+The same geometry applies to any preparation circuit $\mathcal A$ that succeeds with probability $a=\sin^2\theta$. Alternating a reflection that flags success with a reflection about $\mathcal A|0\rangle$ raises the success probability close to one:
 
-## Discriminating Consequences
+```math
+k\approx\frac{\pi}{4\sqrt a}\ \text{rounds}\qquad\text{instead of}\qquad\sim\frac1a\ \text{classical repetitions}.
+```
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+This amplitude amplification is a quadratic gain, and for unstructured search it cannot be improved, as shown under quantum complexity theory. In practice noise limits it. Every iteration needs an oracle circuit and an $n$-qubit reflection, and errors accumulated over about $\sqrt N$ iterations dephase the coherent rotation.
+
+## References For The Physical Derivation
+
+- [L. K. Grover, A fast quantum mechanical algorithm for database search; the search algorithm with about the square root of N queries.](https://arxiv.org/abs/quant-ph/9605043)
+- [G. Brassard, P. Hoyer, M. Mosca and A. Tapp, Quantum Amplitude Amplification and Estimation; the rotation angle and its estimation for general preparation circuits.](https://arxiv.org/abs/quant-ph/0005055)

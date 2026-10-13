@@ -1,39 +1,32 @@
 # Quantum imaging
 
-**Physical domain:** Measurement, instruments, and probabilities
+Imaging a faintly absorbing sample with few photons, such as a cell that light damages, is limited by the random arrival of photons. Light from parametric down-conversion comes in pairs. Counting the partner photons measures that randomness, which can then be subtracted.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+Consider one pixel and an object with transmission $t=1-\alpha$. With coherent light, the transmitted count $N_t$ is Poisson distributed with mean $t\bar N$. The estimate $\hat t=N_t/\bar N$ then has variance $t/\bar N$, the shot-noise limit. In twin beams, signal and idler pixel pairs contain equal photon numbers. The idler count $N_i$ therefore tells how many photons entered the sample in the matching signal pixel.
 
-## Mechanism
-
-Quantum imaging is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
-
-## Physical Construction
-
-The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The calculation involves an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated quantities include counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-
-## Representative Relation
+Each photon then survives the object independently with probability $t$. The signal count $N_s$ is binomially distributed given $N_i$, and the ratio $\hat t=N_s/N_i$ has a smaller variance:
 
 ```math
-\rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
+\operatorname{Var}\hat t_{\rm coh}=\frac{t}{\bar N},\qquad
+\operatorname{Var}\hat t_{\rm twin}=\frac{t(1-t)}{\bar N},\qquad
+\frac{\operatorname{Var}\hat t_{\rm twin}}{\operatorname{Var}\hat t_{\rm coh}}=\alpha.
 ```
 
-## Physical Meaning
+Fluctuations in the number of pairs cancel, because they appear equally in both beams. Only the randomness of absorption itself remains. For a sample absorbing $\alpha=1\%$, the variance falls a hundredfold. The same precision is then reached with a hundredth of the photons, an important saving for light-sensitive samples.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+Real detectors miss photons. If each beam is detected with efficiency $\eta$, a missed idler is mistaken for an absent photon. The statistic used in experiments is the noise reduction factor. For a transparent region of the sample it becomes
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+```math
+\frac{\operatorname{Var}(N_s-N_i)}{\langle N_s+N_i\rangle}=1-\eta\qquad(t=1),
+```
 
-## Invariance And Realization
+compared with 1 for two independent beams at the shot-noise level. The advantage thus requires high efficiency. Each pixel must also collect both members of most pairs, so pixels must be larger than the coherence area of the down-converted light. That area sets the spatial resolution.
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+Brida, Genovese and Ruo Berchera demonstrated sub-shot-noise imaging in 2010. They recorded twin beams from parametric down-conversion on a CCD camera, placed a weakly absorbing object in one beam, and subtracted the matching pixels of the other. The object appeared with a larger signal-to-noise ratio than with classical illumination at the same photon number.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+Ghost imaging also uses pair correlations. A detector without spatial resolution collects light behind the object, while a camera in the other beam forms the image in coincidence counts. Ghost images can also be formed with classical thermal light at lower visibility, so a ghost image alone is not a signature of quantum correlations. The photon-number difference above is quantum, because classical fields cannot push the noise reduction factor below 1. Quantum metrology treats the same comparison of precision per photon in general form.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+- [G. Brida, M. Genovese and I. Ruo Berchera, Experimental realization of sub-shot-noise quantum imaging; twin-beam absorption imaging.](https://arxiv.org/abs/1004.1274)
+- [M. Genovese, Real applications of quantum imaging; sub-shot-noise and ghost imaging.](https://arxiv.org/abs/1601.06066)

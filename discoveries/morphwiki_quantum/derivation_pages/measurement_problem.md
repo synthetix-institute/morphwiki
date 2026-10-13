@@ -1,39 +1,38 @@
 # Measurement problem
 
-**Physical domain:** Measurement, instruments, and probabilities
+A detector whose pointer can swing left or right interacts with a spin prepared in a superposition of up and down. Linear quantum dynamics applied to spin and detector predicts a superposition of both pointer positions. Each actual run shows one.
 
-## Mechanism
-
-Measurement problem is the junction between unitary system--apparatus coupling, probability assignment, and conditional state update; these are distinct maps and need not be identified.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-A measurement model first couples the system to an apparatus or environment. A POVM or instrument then assigns outcome probabilities, and a conditional map specifies the post-record state. The foundational problem concerns the relation between these operations and a definite record, not the absence of a probability formula.
-
-## Physical Construction
-
-The state carrier is a joint system--apparatus state, possibly enlarged by environmental degrees of freedom. The calculation involves a premeasurement interaction followed by a measurement instrument whose components label possible records. The instrument maps are completely positive and their sum is trace preserving; the outcome effects sum to the identity. Outcome probabilities and conditional post-record states must be stated separately.
-
-## Topic Equations
+Suppose the detector works correctly on the basis states. Starting in a ready state $|A_0\rangle$, the interaction $U$ produces $|{\uparrow}\rangle|A_\uparrow\rangle$ from $|{\uparrow}\rangle|A_0\rangle$ and $|{\downarrow}\rangle|A_\downarrow\rangle$ from $|{\downarrow}\rangle|A_0\rangle$. Linearity then fixes its action on any superposition:
 
 ```math
-\rho_{SA}'=U_{SA}(\rho_S\otimes\rho_A)U_{SA}^{\dagger}
-p(i)=\operatorname{Tr}[\mathcal I_i(\rho_S)]=\operatorname{Tr}(\rho_SE_i)
-\rho_{S|i}=\frac{\mathcal I_i(\rho_S)}{p(i)},\qquad \rho_S'=\sum_i\mathcal I_i(\rho_S)
+U(\alpha|{\uparrow}\rangle+\beta|{\downarrow}\rangle)|A_0\rangle
+=\alpha|{\uparrow}\rangle|A_\uparrow\rangle+\beta|{\downarrow}\rangle|A_\downarrow\rangle.
 ```
 
-## Physical Meaning
+Adding an observer, a camera or a printer extends this correlation to more systems without ending it. The Born rule assigns the probabilities $|\alpha|^2$ and $|\beta|^2$, but the evolution contains no step at which one term is selected.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+Decoherence explains part of what is seen. Air molecules and thermal photons scatter from the pointer and acquire states that depend on its position. With environment states $|E_\uparrow\rangle$ and $|E_\downarrow\rangle$, the reduced state of spin and pointer becomes
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+```math
+\rho_{SA}=|\alpha|^2|{\uparrow}A_\uparrow\rangle\langle{\uparrow}A_\uparrow|
++|\beta|^2|{\downarrow}A_\downarrow\rangle\langle{\downarrow}A_\downarrow|\\
++\left(\alpha\beta^*\Gamma|{\uparrow}A_\uparrow\rangle\langle{\downarrow}A_\downarrow|+{\rm h.c.}\right),
+\qquad \Gamma=\langle E_\downarrow|E_\uparrow\rangle.
+```
 
-## Invariance And Realization
+If $N$ independent scatterers each leave states with overlap $c$, then $\Gamma=c^N$. With $c=\cos0.1\approx0.995$ and $N=10^4$, $|\Gamma|\approx2\times10^{-22}$, so interference between pointer positions cannot be detected on spin and pointer alone. The pointer basis is selected by the interaction, here position, because scattering depends on where the pointer is.
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+Decoherence does not select an outcome. The global state still contains both terms, and $\rho_{SA}$ is a reduced description of an entangled state, not a list of which outcome occurred. The measurement problem is that unitary evolution alone yields neither single records nor their probabilities; both enter as separate assumptions. Interpretations divide on how to supply the missing step: by keeping all branches, by adding particle positions, or by changing the dynamics.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+The last option makes predictions. In the Ghirardi--Rimini--Weber model each nucleon is spontaneously localized to a length $r_C\approx10^{-7}$ m at a rate $\lambda\approx10^{-16}$ s$^{-1}$. For a pointer whose $N$ nucleons are displaced by more than $r_C$, one localization of any nucleon collapses the whole superposition:
 
-## Discriminating Consequences
+```math
+\Gamma_{\rm collapse}=N\lambda\approx10^{23}\times10^{-16}\,{\rm s^{-1}}=10^{7}\,{\rm s^{-1}}.
+```
 
-Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.
+A single nucleon is localized about once in $3\times10^8$ years, while a macroscopic pointer resolves within 0.1 microsecond. The modified dynamics also predicts slight heating and spontaneous radiation. Interferometry with massive molecules and searches for this radiation bound $\lambda$ at each $r_C$. Current upper bounds on $\lambda$ at $r_C=10^{-7}$ m remain above the original value, so the model is constrained but not excluded. Schrödinger's cat poses the same problem for a larger system.
+
+## References For The Physical Derivation
+
+- [M. Schlosshauer, Decoherence, the measurement problem, and interpretations of quantum mechanics; pointer states and what decoherence does not resolve.](https://arxiv.org/abs/quant-ph/0312059)
+- [A. Bassi, K. Lochan, S. Satin, T. P. Singh and H. Ulbricht, Models of Wave-function Collapse, Underlying Theories, and Experimental Tests; GRW amplification and experimental bounds.](https://arxiv.org/abs/1204.4325)

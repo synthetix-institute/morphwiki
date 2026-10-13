@@ -1,53 +1,35 @@
 # Commutator
 
-**Physical domain:** Noncommuting observables
+Rotating a spin by a small angle about $x$, then about $y$, and then reversing both rotations in the same order leaves it rotated about $z$. The net rotation is of second order in the angle. Its size and axis are fixed by the commutator of the two generators, not by either rotation alone.
 
-## Mechanism
-
-Commutator measures the physical consequence of exchanging two operations: it governs joint measurability, generated motion, and the leading difference between reversed protocols.
-
-The commutator measures whether the order of two transformations matters. For observables it also tests whether a common eigenbasis, and hence a joint sharp description, can exist.
-
-For two operators on a common domain, [A,B]=AB-BA compares the two possible orders. For observables, a nonzero commutator obstructs a common sharp spectral resolution and enters uncertainty bounds. For a Hamiltonian H, [H,A] gives the dynamical change of A. For short control pulses, [A,B] is the first term that distinguishes the two reversed sequences. One algebraic object therefore connects compatibility, dynamics, and order-sensitive response.
-
-## Physical Construction
-
-The state carrier is a common state space on which two transformations, observables, or questions are both defined. The calculation involves the ordered products AB and BA, compared through the obstruction [A,B]=AB-BA. A nonzero commutator marks an order-dependence or compatibility limit; a zero commutator permits a common sharp refinement only when the remaining spectral conditions hold. The calculated quantities include compatibility tests, uncertainty bounds, common eigenspaces, or canonical commutation relations.
-
-## Topic Equations
+The commutator $[A,B]=AB-BA$ compares the two orders of applying two operators. For generators $X$ and $Y$ of transformations, the Baker--Campbell--Hausdorff formula gives $e^Xe^Y=\exp(X+Y+\tfrac12[X,Y]+\cdots)$. The four-step loop therefore has the commutator as its leading term. For spin rotations $R_{\mathbf n}(\varepsilon)=e^{-i\varepsilon\,\mathbf n\cdot\boldsymbol\sigma/2}$, with $[\sigma_x,\sigma_y]=2i\sigma_z$, this gives
 
 ```math
-[A,B]=AB-BA
-\frac{dA}{dt}=\frac{i}{\hbar}[H,A]+\left(\frac{\partial A}{\partial t}\right)
-\Delta A\,\Delta B\geq\frac12\left|\langle[A,B]\rangle\right|
-e^{\epsilon A}e^{\epsilon B}e^{-\epsilon A}e^{-\epsilon B}=I+\epsilon^2[A,B]+O(\epsilon^3)
+e^Xe^Ye^{-X}e^{-Y}=e^{[X,Y]+O(3)},\\
+R_x(\varepsilon)R_y(\varepsilon)R_x(-\varepsilon)R_y(-\varepsilon)=R_z(\varepsilon^2)+O(\varepsilon^3).
 ```
 
-## Physical Meaning
+The operator product acts from right to left. For $\varepsilon=0.1$ radian the exact product is a rotation by 0.0100 radian about an axis tilted about four degrees from $z$. Reversing the orientation of the loop reverses the sense of the rotation. Pulse sequences in magnetic resonance generate rotations about $z$ from $x$ and $y$ pulses alone. More generally, repeated commutators of the available Hamiltonians determine which operations a set of controls can reach.
 
-A zero commutator is a compatibility condition under the stated domains; a nonzero commutator identifies an algebraic obstruction. The value can also generate symmetry transformations, so the same operation links compatibility, dynamics, and conservation.
+The same term measures the error of splitting an evolution. Approximating $e^{-i(A+B)t/\hbar}$ by alternating $A$ and $B$ gives
 
-Position followed by momentum is not the same operation as momentum followed by position. Their canonical commutator fixes the lower bound in the corresponding uncertainty relation.
+```math
+e^{-iAt/\hbar}e^{-iBt/\hbar}
+=\exp\!\left(-\frac{i(A+B)t}{\hbar}-\frac{t^2}{2\hbar^2}[A,B]+\cdots\right).
+```
 
-The uncertainty-principle page converts this algebraic obstruction into a state-dependent bound on simultaneous dispersion.
+Divided into $n$ steps, the error is bounded to leading order by $t^2\|[A,B]\|/(2n\hbar^2)$, which sets the cost of digital quantum simulation. Commuting terms can be split without error.
 
-## Consequences Forced By The Relation
+Two identities make commutators computable. The Leibniz rule $[A,BC]=[A,B]C+B[A,C]$ reduces composite expressions to simple ones, and the Jacobi identity relates commutators of commutators. For example, $[L_z,x]=i\hbar y$ and $[L_z,y]=-i\hbar x$ give $[L_z,x^2+y^2]=0$. The generator of rotations about $z$ therefore commutes with any potential that depends on $x$ and $y$ only through $x^2+y^2$.
 
-A nonzero commutator prevents a generic common sharp eigenbasis and imposes state-dependent uncertainty bounds. The commutator with the Hamiltonian determines whether an observable is conserved and how it changes in time. Reversing two short operations produces a difference proportional to their commutator at leading nontrivial order.
+Commuting Hermitian operators share an eigenbasis. If $[A,B]=0$ and $A|a\rangle=a|a\rangle$, then $A(B|a\rangle)=aB|a\rangle$, so $B$ maps each eigenspace of $A$ into itself and can be diagonalized there. The labels $n,\ell,m$ of hydrogen come from the commuting set $H$, $L^2$, $L_z$. A measurement of $L_x$ on such an eigenstate preserves $n$ and $\ell$, because $L_x$ also commutes with $H$ and $L^2$, but it generally leaves no definite value of $m$. A nonzero commutator excludes a complete common eigenbasis but not every common eigenvector: all three components of $L$ annihilate an $\ell=0$ state.
 
-## Domain Of The Construction
+For unbounded operators, commuting on a common dense domain does not guarantee that the spectral projectors commute. Nelson constructed operators with that property whose unitary groups fail to commute. Compatibility is therefore defined through the projectors or the unitary groups. The uncertainty principle turns a nonzero commutator into a bound on spreads, and the Heisenberg picture uses $[H,A]$ for the time dependence of $A$.
 
-For unbounded operators, the common domain belongs to the physical statement; a formal commutator without a domain need not define an observable relation. A nonzero commutator is not by itself a new interaction. It becomes physical through a state and an observable consequence.
+## References For The Physical Derivation
 
-## Invariance And Realization
+- [A. M. Childs, Y. Su, M. C. Tran, N. Wiebe and S. Zhu, A Theory of Trotter Error; product-formula errors controlled by commutators of the Hamiltonian terms.](https://arxiv.org/abs/1912.08854)
 
-The commutator transforms covariantly under a simultaneous unitary change of representation. Joint spectral compatibility is unchanged by a consistent representation change. The leading order-sensitive response survives when different physical controls realize the same operator algebra.
-
-The matrix entries, basis, carrier, and physical implementation of the two operations may change. Domains can change the meaning of formal commutation relations for unbounded operators. The observable consequence depends on the prepared state and on how the operator difference is read out.
-
-## Discriminating Consequences
-
-Reversing two calibrated operations isolates the response generated by their commutator. A commuting control pair removes the order-sensitive contribution without changing the individual operations. Agreement requires the same operator domain and measured observable, not merely similar notation.
 
 ## Source Equations
 

@@ -1,39 +1,32 @@
 # Operator theory
 
-**Physical domain:** Observables and spectra
+The energy of an electron in an atom can take arbitrarily large values, while a spin-1/2 component never exceeds $\hbar/2$ in magnitude. Operator theory distinguishes these cases as unbounded and bounded operators. The distinction decides which mathematical statements hold, and it explains why a hydrogen atom does not collapse.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
+The norm $\|A\|$ is the largest factor by which $A$ can stretch a unit vector. For an observable it is the largest magnitude of an outcome. A bounded operator acts on every state. An unbounded symmetric operator, such as the kinetic energy, cannot act on every state. By the Hellinger--Toeplitz theorem, a symmetric operator defined everywhere is bounded.
 
-## Mechanism
-
-Operator theory is placed at the question step, where a physical question becomes an operator with admissible answers.
-
-A prediction concerns a stated physical question. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
-
-An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
-
-## Physical Construction
-
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The calculation involves a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated quantities include eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
-
-## Representative Relation
+Position and momentum cannot both be bounded. Suppose $[A,B]=cI$ with $c\neq0$. Induction gives $[A,B^n]=ncB^{n-1}$. Taking norms of both sides yields
 
 ```math
-O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
+n|c|\,\|B^{n-1}\|\leq2\|A\|\,\|B\|\,\|B^{n-1}\|.
 ```
 
-## Physical Meaning
+No power of $B$ vanishes, because $B^{n-1}=0$ would force $B^{n-2}=0$ and so on down to $I=0$. Dividing by $\|B^{n-1}\|$ gives $n\leq2\|A\|\|B\|/|c|$ for every $n$, which is impossible. This argument of Wielandt holds in infinite dimensions; the finite-dimensional trace argument appears under the canonical commutation relation. Canonical pairs therefore require unbounded operators, and with them stated domains.
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+In hydrogen, $H=p^2/2m-k/r$ with $k=e^2/(4\pi\varepsilon_0)$. The Coulomb term is unbounded below, and a classical electron would radiate and spiral into the nucleus. The kinetic energy controls the singularity through Hardy's inequality, valid for wave functions in three dimensions:
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
+```math
+\int|\nabla\psi|^2d^3x\geq\frac14\int\frac{|\psi|^2}{r^2}\,d^3x
+\quad\Longrightarrow\quad
+H\geq\frac{\hbar^2}{8mr^2}-\frac{k}{r}\geq-\frac{2mk^2}{\hbar^2}.
+```
 
-## Invariance And Realization
+The last step minimizes the function of $r$ at $r=\hbar^2/(4mk)$. The bound equals four rydbergs below zero, $-54.4$ eV, compared with the exact ground energy of $-13.6$ eV. It is not sharp, but it proves that the energy is bounded below. Compressing the wave function raises its kinetic energy faster than the Coulomb attraction lowers its potential energy.
 
-The observable defines the question asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+The same comparison shows that the Coulomb term is small relative to the kinetic energy. The Kato--Rellich theorem then makes $H$ self-adjoint on the domain of the kinetic energy, as Kato proved for atoms in 1951. The evolution $e^{-iHt/\hbar}$ is therefore uniquely defined.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+The argument fails for stronger singularities. For $V=-g/r^2$, Hardy's inequality gives $H\geq0$ when $g\leq\hbar^2/(8m)$. For larger $g$ the energy is unbounded below, and the Hamiltonian needs an extra condition at the origin to define the dynamics. A point electric dipole produces an inverse-square potential with angular dependence. It can bind an electron only above a critical moment of about 1.63 debye. The relativistic kinetic energy $\sqrt{p^2c^2+m^2c^4}$ grows only linearly with momentum. A Coulomb potential of nuclear charge $Ze$ then keeps the energy bounded below only for $Z\alpha\leq2/\pi$. Self-adjointness and spectral theory build on these estimates.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+- [F. Gieres, Mathematical surprises and Dirac's formalism in quantum mechanics; unbounded operators, domains and the canonical commutation relation.](https://arxiv.org/abs/quant-ph/9907069)
+- [E. H. Lieb, The Stability of Matter and Quantum Electrodynamics; stability of the hydrogen atom and of matter, with and without relativistic kinetic energy.](https://arxiv.org/abs/math-ph/0209034)

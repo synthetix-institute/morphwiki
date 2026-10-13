@@ -1,39 +1,31 @@
 # Quantum chaos
 
-**Physical domain:** Dynamics and transformations
+Slow neutrons striking heavy nuclei excite many narrow resonances, and neighbouring resonances are rarely found close together. The levels of a particle in a rectangular box with incommensurate sides behave differently, because near coincidences are common there. The difference reflects the classical motion, which is regular in the box and chaotic or highly complex in the nucleus.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum chaos is placed at the step of lawful change, which specifies how the state changes before a question is asked.
-
-Kinematics and dynamics are separate. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The calculation involves a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated quantities include time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
-
-## Representative Relation
+Consider two neighbouring levels that may be coupled. When the system is invariant under time reversal, the Hamiltonian can be chosen real and symmetric. The $2\times2$ block and its level spacing are
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+H=\begin{pmatrix}h_{11}&h_{12}\\h_{12}&h_{22}\end{pmatrix},\qquad
+s=E_+-E_-=\sqrt{(h_{11}-h_{22})^2+4h_{12}^2}.
 ```
 
-## Physical Meaning
+A degeneracy requires two independent conditions, $h_{11}=h_{22}$ and $h_{12}=0$. If the matrix elements are spread smoothly, the probability of a spacing below $s$ scales as $s^2$, and the spacing density vanishes linearly. This is level repulsion, described by von Neumann and Wigner. Independent Gaussian matrix elements define the Gaussian orthogonal ensemble. Scaling the spacing to unit mean gives the Wigner surmise. Without time-reversal invariance $h_{12}$ is complex, three conditions are needed, and the density vanishes as $s^2$:
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+```math
+P_{\mathrm{Poisson}}(s)=e^{-s},\qquad
+P_{\mathrm{GOE}}(s)=\frac{\pi s}{2}\,e^{-\pi s^2/4},\\
+P_{\mathrm{GUE}}(s)=\frac{32s^2}{\pi^2}\,e^{-4s^2/\pi}.
+```
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+In an integrable system, levels carry independent quantum numbers, and levels with different labels do not repel. Their sequence is uncorrelated, which gives the Poisson law, as Berry and Tabor argued for generic integrable systems. The laws differ most at small spacing. The probability of a spacing below one tenth of the mean is 0.095 for Poisson statistics, 0.0078 for the Wigner surmise and 0.0011 for the unitary ensemble.
 
-## Invariance And Realization
+Bohigas, Giannoni and Schmit conjectured in 1984 that quantum systems with a chaotic classical limit follow these random-matrix laws. The conjecture is supported by stadium and Sinai billiards, by microwave cavities of the same shapes, by hydrogen in strong magnetic fields and by the nuclear data ensemble of neutron resonances. Semiclassical sums over periodic orbits explain the spectral correlations. A general proof remains open.
 
-The generator specifies lawful change before a measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+These statistics require care. Before any comparison the spectrum is unfolded, by rescaling energies with the smooth level density so that the mean spacing is one everywhere. Levels must also be sorted by exact symmetry. Independent sequences of different parity or angular momentum superpose without repulsion and look Poissonian. The random-matrix laws hold only over energy ranges smaller than $h$ divided by the period of the shortest periodic orbit. Eigenstates concentrated along unstable periodic orbits, called scars, show that eigenfunctions also deviate from random behaviour.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+In the time domain, chaos limits how long a wave packet follows a single classical trajectory, a theme of quantum dynamics. The random-matrix character of chaotic eigenstates also underlies thermalization of isolated systems in quantum statistical mechanics.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+- [T. Guhr, A. Mueller-Groeling and H. A. Weidenmueller, Random Matrix Theories in Quantum Physics: Common Concepts; level spacing statistics, the Wigner surmise, nuclear data and chaotic billiards.](https://arxiv.org/abs/cond-mat/9707301)
+- [L. D'Alessio, Y. Kafri, A. Polkovnikov and M. Rigol, From Quantum Chaos and Eigenstate Thermalization to Statistical Mechanics and Thermodynamics; random-matrix statistics and thermalization of isolated systems.](https://arxiv.org/abs/1509.06411)

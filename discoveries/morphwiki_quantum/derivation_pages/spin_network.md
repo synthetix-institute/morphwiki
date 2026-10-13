@@ -1,39 +1,29 @@
 # Spin network
 
-**Physical domain:** Fields, constraints, and scale
-
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Spin network is placed at the many-mode extension, where the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
-
-Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
-
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state.
-
-## Physical Construction
-
-The state carrier is an input state, register, channel state, error syndrome, key, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps. Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective. The calculated quantities include output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+In a lattice gauge theory, a line of electric flux gives a definite flux through every surface it pierces and none through surfaces it misses. Loop quantum gravity gives space the same structure. Area belongs to lines that pierce a surface, and volume to points where several lines meet. The states with this property are spin networks, built like lattice gauge fields but with the group $SU(2)$ on an arbitrary graph. Each edge $e$ of a graph $\Gamma$ carries a spin $j_e$. Each node $n$ carries an intertwiner $\iota_n$, a tensor that couples the spins meeting there to total spin zero. The state depends on the connection $A$ through the holonomies $h_e$ along the edges:
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
+\Psi_{\Gamma,j,\iota}[A]=\Big(\bigotimes_n\iota_n\Big)\cdot\Big(\bigotimes_e D^{(j_e)}\big(h_e[A]\big)\Big),\qquad
+h_e=\mathcal P\exp\int_eA.
 ```
 
-## Physical Meaning
+Here $D^{(j)}$ is the spin-$j$ matrix of a group element, and the dot contracts each matrix index with an index of an intertwiner. Gauge transformations act at the nodes and rotate the indices of all edges meeting there. The state is invariant because each intertwiner is a rotation-invariant tensor. Whether such a tensor exists, and how many independent ones exist, follows from the addition of angular momenta.
 
-Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
+The simplest graph is a closed loop with one two-valent node. Two spins couple to total spin zero only if they are equal, and then in exactly one way. The intertwiner is the identity map between the two edges, so the node can be removed. The state is the Wilson loop $\operatorname{Tr}D^{(j)}(h_\gamma)$ of the spin-$j$ representation around the loop $\gamma$. An edge of spin $1/2$ cannot join an edge of spin $1$ at a two-valent node: no invariant exists. The spin along a line therefore changes only where a third edge meets it. At a three-valent node the spins must satisfy $|j_1-j_2|\leq j_3\leq j_1+j_2$ with an integer sum. The intertwiner is again unique, a Clebsch--Gordan coefficient. Four spin-$1/2$ edges admit two independent intertwiners.
 
-Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
+Geometric operators act on these states locally. For a surface $S$ crossed by edges at points $p$, with no node on the surface, the area is diagonal. The volume of a region $R$ is a sum of contributions from the nodes inside it:
 
-## Invariance And Realization
+```math
+\hat A(S)\,\Psi=8\pi\gamma l_P^2\sum_{p\in S\cap\Gamma}\sqrt{j_p(j_p+1)}\;\Psi,\qquad
+\hat V(R)\,\Psi=\sum_{n\in R}\hat V_n\Psi.
+```
 
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. The field extension carries the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+Here $\gamma$ is the Barbero--Immirzi parameter and $l_P$ the Planck length. Each crossing contributes the square root of the Casimir operator of its edge. Consider a loop of spin $j$ that crosses a closed surface twice. The area eigenvalue is $16\pi\gamma l_P^2\sqrt{j(j+1)}$. For $j=1/2$ and $\gamma=0.2375$ this is $8\sqrt3\pi\gamma l_P^2\approx10.3\,l_P^2$. The volume of the loop is zero. A node contributes volume only if at least four edges meet there with tangents not all in one plane. For three edges, the triple product of their generators vanishes on the unique invariant state.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
+The loop therefore carries area but no volume. It is a flux line of geometry, in the same way that a Wilson line in lattice gauge theory is a line of electric flux. The triad measured by the area plays the part of the electric field, and its square gives the Casimir. These statements are kinematical. They hold on the state space before the Hamiltonian constraint is imposed. Diffeomorphism invariance makes only the combinatorics and knotting of the graph physical, not its coordinates. The four-valent node is worked out as the quantum tetrahedron under quantum geometry. The area spectrum and the value of $\gamma$ are discussed under loop quantum gravity.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+- [C. Rovelli and L. Smolin, Spin Networks and Quantum Gravity; spin-network basis of loop quantum gravity.](https://arxiv.org/abs/gr-qc/9505006)
+- [J. C. Baez, Spin Network States in Gauge Theory; holonomies, intertwiners and gauge-invariant states on graphs.](https://arxiv.org/abs/gr-qc/9411007)
+- [C. Rovelli and L. Smolin, Discreteness of area and volume in quantum gravity; area and volume spectra on spin-network states.](https://arxiv.org/abs/gr-qc/9411005)

@@ -1,39 +1,35 @@
 # Quantum network
 
-**Physical domain:** Control sequences and quantum channels
+Telecom fiber at a wavelength of 1550 nm attenuates light by about 0.2 decibels per kilometre. One photon in a hundred survives 100 km, and one in $10^{20}$ survives 1000 km. Entanglement between distant laboratories cannot simply be amplified on the way, because amplifying an unknown quantum state adds noise, as the quantum amplifier shows. Quantum networks instead combine heralded short links, quantum memories and entanglement swapping.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum network is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
-
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state.
-
-## Physical Construction
-
-The state carrier is an input state, register, channel state, error syndrome, key, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps. Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective. The calculated quantities include output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+For attenuation $\alpha$ in decibels per kilometre, the transmission over length $L$ is $\eta=10^{-\alpha L/10}=e^{-L/L_{\rm att}}$, with $L_{\rm att}\approx22$ km for $\alpha=0.2$. A source emitting pairs at rate $R_0$ delivers $\eta R_0$ of them. Pirandola and colleagues proved a stronger statement for a pure-loss channel. Without intermediate stations, no protocol distributes entanglement faster than
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
+R\leq-\log_2(1-\eta)\approx1.44\,\eta\quad\text{ebits per channel use}\qquad(\eta\ll1).
 ```
 
-## Physical Meaning
+For a 10 GHz source and 1000 km this allows about $10^{-10}$ pairs per second, roughly one pair every two centuries. Loss lowers the rate but need not lower the quality of delivered pairs. If the arrival of a photon is detected and announced, failed attempts are discarded. Imperfect sources, memory dephasing and dark counts lower instead the fidelity $F=\langle\Phi^+|\rho|\Phi^+\rangle$ with the Bell state $|\Phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt2$. A common model is the Werner state $\rho=F|\Phi^+\rangle\langle\Phi^+|+(1-F)(I-|\Phi^+\rangle\langle\Phi^+|)/3$.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+Entanglement swapping joins two links. Node B holds one qubit entangled with A and another entangled with C. A Bell measurement on the two qubits at B projects A and C onto a Bell state labelled by the outcome, by the same expansion as in quantum teleportation. A Pauli correction then gives $|\Phi^+\rangle$. For Werner links of fidelities $F_1$ and $F_2$, direct evaluation gives
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+```math
+F_{AC}=F_1F_2+\frac{(1-F_1)(1-F_2)}{3},\qquad w_{AC}=w_1w_2,\qquad w=\frac{4F-1}{3}.
+```
 
-## Invariance And Realization
+The parameter $w$ multiplies along a chain. With $F=0.95$ per link, eight links give $F=0.68$ and sixteen give $0.499$. A Werner state with $F\leq1/2$ is separable, because its partial transpose is then positive. Long chains therefore need entanglement purification, which consumes several noisy pairs to produce fewer pairs of higher fidelity, much as quantum error correction uses redundancy.
 
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+Swapping changes the rate scaling when the links are stored. Divide $L$ into $N$ segments with quantum memories at the nodes. Each segment retries until its photon arrives, with success probability $\eta^{1/N}$ per attempt, and a memory holds each success while the other segments retry. Swaps then join the segments, and the rate scales as
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+```math
+R\propto\eta^{1/N},\qquad \eta^{1/8}\approx3\times10^{-3}\ \text{for 1000 km, against}\ \eta=10^{-20}.
+```
 
-## Discriminating Consequences
+Factors from waiting for the slowest segment and from the swap success probability multiply this scaling. The memories must stay coherent over many attempts, each lasting at least the signalling time across a segment, about 0.6 ms for 125 km. Bell measurements with linear optics and no auxiliary photons succeed at most half the time, which lowers the rate further.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+Hensen and colleagues used this scheme with two electron spins in diamond, 1.3 km apart. Each spin emitted a photon entangled with it, and a Bell measurement on the two photons at a middle station heralded entanglement of the spins. In 245 heralded trials the spins violated the CHSH form of Bell's inequality, with $S=2.42\pm0.20$ against the local bound of 2.
+
+## References For The Physical Derivation
+
+- [S. Pirandola, R. Laurenza, C. Ottaviani and L. Banchi, Fundamental Limits of Repeaterless Quantum Communications; the rate bound for a pure-loss channel.](https://arxiv.org/abs/1510.08863)
+- [N. Sangouard, C. Simon, H. de Riedmatten and N. Gisin, Quantum repeaters based on atomic ensembles and linear optics; heralding, memories, swapping and rate scaling.](https://arxiv.org/abs/0906.2699)
+- [B. Hensen and colleagues, Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km; event-ready entanglement of distant spins.](https://arxiv.org/abs/1508.05949)

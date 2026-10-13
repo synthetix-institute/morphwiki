@@ -1,53 +1,38 @@
 # Quantum entanglement
 
-**Physical domain:** Quantum states and subsystem structure
+Polarization-entangled photon pairs from parametric down-conversion each appear unpolarized when examined alone: a polarizer at any angle passes half of them. When both photons of a pair meet linear polarizers set to a common angle, whichever angle is chosen, their results agree. Pairs with definite and correlated polarizations can reproduce the agreement along one axis, but not along two axes such as $0^\circ$ and $45^\circ$. A joint state that does not factor into states of the two photons accounts for both observations.
 
-## Mechanism
-
-Quantum entanglement is a property of a composite state that cannot be written as a classical mixture of product states across a chosen subsystem decomposition; for a pure state, this reduces to failure to factor.
-
-Entanglement is required when the state of a composite system cannot be assembled from independent states of its parts. It changes which correlations are possible and makes subsystem states mixed even when the total state is pure.
-
-The tensor-product decomposition specifies what counts as subsystem A and subsystem B. A pure state is entangled when its Schmidt rank exceeds one. Each subsystem can then be mixed even though the joint state is pure, because partial tracing discards the correlations that purify it. Local basis changes preserve the Schmidt coefficients, while a different physical factorization can change whether the same vector is called entangled. Bell measurements test whether the resulting correlations admit a local hidden-variable model.
-
-## Physical Construction
-
-The state carrier is a composite Hilbert space with a physically specified subsystem algebra or tensor-product factorization. The calculation involves Schmidt decomposition, partial trace, local observables, and joint correlation operators. The joint density operator is positive and normalized; separability is defined relative to the chosen subsystem structure. The calculated quantities include reduced-state spectra, entanglement entropy, correlation witnesses, and Bell parameters.
-
-## Topic Equations
+For subsystems $A$ and $B$ the joint state space is the tensor product $\mathcal H_A\otimes\mathcal H_B$. Expand a pure state as $\ket\Psi=\sum_{ij}c_{ij}\ket{i}\ket{j}$ in product bases. The singular-value decomposition of the coefficient matrix $c$ rewrites it as a single sum, the Schmidt form:
 
 ```math
-\mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B
-\ket{\Psi}_{AB}=\sum_k\sqrt{\lambda_k}\ket{k_A}\ket{k_B},\qquad \sum_k\lambda_k=1
-\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi},\qquad S_A=-\operatorname{Tr}(\rho_A\log\rho_A)
-|S_{\mathrm{CHSH}}|\leq2,\qquad |S_{\mathrm{CHSH}}|_{\mathrm{QM}}\leq2\sqrt2
+\ket\Psi=\sum_k\sqrt{\lambda_k}\,\ket{k_A}\ket{k_B},\qquad \sum_k\lambda_k=1,\qquad
+\rho_A=\operatorname{Tr}_B\ket\Psi\bra\Psi=\sum_k\lambda_k\ket{k_A}\bra{k_A}.
 ```
 
-## Physical Meaning
+The state is a product exactly when only one Schmidt coefficient is nonzero. Otherwise each subsystem is in a mixed state although the pair is pure. Both reduced states have the eigenvalues $\lambda_k$, so the entanglement entropy is the same on either side:
 
-The tensor-product structure defines the proposed subsystems. A state is entangled when it is not separable across that factorization. Partial traces describe each part, while joint observables expose correlations that no product state can reproduce.
+```math
+S_A=-\operatorname{Tr}\rho_A\log_2\rho_A=-\sum_k\lambda_k\log_2\lambda_k=S_B.
+```
 
-In a Bell pair, each spin alone is maximally mixed, yet measurements on the pair are strongly correlated. The information resides in the relation between subsystems rather than in either local state.
+Local unitary operations change the Schmidt vectors but not the coefficients. Local operations assisted by classical communication cannot increase this entropy on average. For $\cos\theta\ket{HH}+\sin\theta\ket{VV}$ the coefficients are $\cos^2\theta$ and $\sin^2\theta$. The choice $\theta=\pi/4$ gives one bit, the largest value for two-level systems, and $\theta=\pi/8$ gives 0.60 bit.
 
-Bell's theorem and contextuality determine which entangled correlations are incompatible with classical joint assignments.
+Noise turns a pure pair into a mixed state, and then the failure of one product decomposition proves nothing. A mixed state is separable when it can be written as $\rho=\sum_kp_k\rho_k^A\otimes\rho_k^B$ with probabilities $p_k$, and entangled otherwise. Transposing only the $B$ factor maps every separable state to a positive operator. The Werner state mixes the singlet $\ket{\Psi^-}$ with white noise, and its partial transpose has the eigenvalues
 
-## Consequences Forced By The Relation
+```math
+\rho_W=p\ket{\Psi^-}\bra{\Psi^-}+(1-p)\frac{I}{4},\qquad
+\operatorname{spec}\rho_W^{T_B}=\left\{\tfrac{1+p}{4},\tfrac{1+p}{4},\tfrac{1+p}{4},\tfrac{1-3p}{4}\right\}.
+```
 
-A pure bipartite state with more than one nonzero Schmidt coefficient gives mixed reduced states and correlations unavailable to product preparations. Local unitary changes of basis preserve the Schmidt coefficients and the pure-state entanglement entropy. Suitable local measurements can violate a Bell inequality even though each subsystem alone carries no corresponding pure state.
+A negative eigenvalue appears for $p>1/3$, and for two qubits the criterion of Peres and the Horodeckis is also sufficient. The largest Clauser--Horne--Shimony--Holt combination for this state is $2\sqrt2\,p$, so the inequality is violated only for $p>1/\sqrt2\approx0.71$. For $1/3<p\leq1/\sqrt2$ the pairs are entangled, yet their correlations violate no such inequality. Werner constructed a local hidden-variable model for all projective measurements when $p\leq1/2$. Entanglement and Bell nonlocality are therefore different properties; Bell's theorem concerns the second.
 
-## Domain Of The Construction
+Entanglement is defined relative to a stated division into subsystems. A single photon sent through a balanced beam splitter is entangled between the two output modes, while in the input modes it is a product of one photon and vacuum. The relevant division is the one matched to the available operations, such as two separate laboratories. With that division fixed, a shared Bell pair is the resource consumed in quantum teleportation.
 
-Entanglement is defined relative to a physical subsystem algebra or tensor-product factorization. For mixed states, nonfactorization of one decomposition is insufficient; separability requires testing all convex product decompositions.
+## References For The Physical Derivation
 
-## Invariance And Realization
+- [R. Horodecki, P. Horodecki, M. Horodecki and K. Horodecki, Quantum Entanglement; Schmidt decomposition, entropy, separability, Werner states and Bell inequalities.](https://arxiv.org/abs/quant-ph/0702225)
+- [A. Peres, Separability Criterion for Density Matrices; the partial-transpose test and its application to Werner states.](https://arxiv.org/abs/quant-ph/9604005)
 
-Schmidt coefficients and pure-state entanglement entropy are invariant under local unitary changes of basis. The reduced-state spectra preserve the amount of bipartite pure-state entanglement. Correlations remain joint properties even when neither subsystem has a pure local state.
-
-The subsystem factorization and accessible observable algebra determine which correlations count as entanglement. Noise, loss, and coarse graining can convert pure-state entanglement into mixed-state correlations. Photons, spins, atoms, modes, and encoded qubits can realize the same Schmidt structure.
-
-## Discriminating Consequences
-
-Local measurements reconstruct a correlation witness or Bell parameter that product preparations cannot reproduce. Independent local-unitary rotations leave the inferred Schmidt spectrum unchanged. A separable-state control fixes the correlation background of the apparatus.
 
 ## Source Equations
 

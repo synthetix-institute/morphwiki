@@ -1,39 +1,36 @@
 # String theory
 
-**Physical domain:** Fields, constraints, and scale
-
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-String theory is placed at the many-mode extension, where the same state, generator, observable, and compatibility logic is lifted from one system to fields, particles, scaling limits, or gauge constraints.
-
-Relativistic, many-body, field, gauge, geometric, and scale-dependent settings each need their own state space and operator domain, specified for that setting rather than inferred from a single-particle model.
-
-Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible.
-
-## Physical Construction
-
-The state carrier is a spacetime, boundary algebra, gauge orbit, spin network, bulk/boundary pair, or geometric representation of a quantum state space. The calculation involves hamiltonian, action, constraint, boundary operator, correlation map, or dictionary between two representations. Gauge, boundary, metric, covariance, and constraint conditions decide which geometric descriptions represent the same physical content. The calculated quantities include boundary correlators, spectra, entropies, scattering data, geometric invariants, or reconstructed bulk quantities.
-
-## Representative Relation
+Mesons of increasing spin $J$ lie close to straight lines when $J$ is plotted against mass squared. A rotating relativistic string with its ends moving at the speed of light gives this relation. String theory begins from the quantum mechanics of such a string, and its best-established results concern the spectrum. A string of tension $T$ sweeps out a worldsheet $X^\mu(\tau,\sigma)$ in $D$-dimensional spacetime. With $\hbar=c=1$, the Nambu--Goto action is proportional to the area of that worldsheet:
 
 ```math
-\mathcal A_{\rm bulk}\leftrightarrow \mathcal A_{\partial},\quad Z_{\rm bulk}[\phi|_{\partial}=J]=\left\langle e^{\int J\mathcal O}\right\rangle_{\partial}
+S=-T\int d\tau\,d\sigma\,\sqrt{-\det\big(\partial_\alpha X^\mu\,\partial_\beta X_\mu\big)},\qquad
+T=\frac{1}{2\pi\alpha'}.
 ```
 
-## Physical Meaning
+Consider a straight open string of length $2R$ rotating rigidly, with free ends moving at the speed of light. Integrating the relativistic energy and angular momentum densities gives $E=\pi TR$ and $J=\pi TR^2/2$, so $J=\alpha'E^2$. The mesons $\rho(775)$, $a_2(1320)$ and $\rho_3(1690)$ fit $J\approx0.46+0.89M^2$, with $M$ in GeV. The slope corresponds to a tension of about $0.9$ GeV per femtometre, close to the flux-tube tension of quantum chromodynamics.
 
-Different topics in this branch use different carriers: spinor wave functions, Fock spaces, many-body states, gauge sectors, geometric states, or effective low-energy sectors. Their physical content is fixed by the associated field equation or Hamiltonian, its constraints and domain, and the amplitudes, spectra, charges, or correlation functions it predicts.
+Quantization is simplest in light-cone gauge. It removes the two longitudinal directions and leaves $D-2$ transverse oscillators $\alpha^i_n$ for each harmonic $n$. For an open string with free ends the mass is
 
-Field and many-body mechanisms become experimentally useful when assembled into an ordered intervention. The protocol chapter shows how preparation, controlled evolution, measurement, and correction compose into one executable map.
+```math
+\alpha'M^2=N+a,\qquad
+N=\sum_{n\geq1}\sum_{i=1}^{D-2}\alpha^i_{-n}\alpha^i_n,\qquad
+a=\frac{D-2}{2}\sum_{n\geq1}n\ \to\ -\frac{D-2}{24}.
+```
 
-## Invariance And Realization
+The constant $a$ is the zero-point energy of the oscillators, half a quantum per mode, summed over harmonics. With a cutoff, $\sum_nne^{-\epsilon n}=\epsilon^{-2}-1/12+O(\epsilon^2)$. The divergent term is removed by a local counterterm on the worldsheet. The finite remainder $-1/12$ equals the value $\zeta(-1)$ of the Riemann zeta function. The same subtraction gives the Casimir energy of a field between two plates.
 
-Geometry supplies the realization, boundary, gauge, or dual description in which the operator construction becomes physically legible. The field extension carries the state-operator-spectrum constructor to many modes, fields, particles, gauge structure, or scale. Particle identity is treated as a stable excitation or representation role rather than as the starting object. Creation/annihilation, field operators, gauge constraints, and scale flow preserve operator structure across realizations.
+The lowest excited level, $N=1$, consists of the states $\alpha^i_{-1}|0;k\rangle$, with one vector index taking $D-2$ values. A massive vector in $D$ dimensions has $D-1$ polarizations; only a massless one has $D-2$. Lorentz invariance, which light-cone gauge does not make manifest, therefore requires $1+a=0$:
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The carrier can be a field state, occupation-number state, gauge orbit, spin network, or effective theory. The same formal role may be displayed through particles, modes, amplitudes, correlation functions, or boundary dictionaries. Scale and geometry can change the realization while preserving operator or spectral content.
+```math
+\frac{D-2}{24}=1\;\Rightarrow\;D=26,\qquad
+\alpha'M^2=-1\ \ (N=0),\qquad \alpha'M^2=0\ \ (N=1).
+```
 
-## Discriminating Consequences
+A complete check confirms this: the Lorentz generators built from the oscillators close only for $D=26$ and $a=-1$. At level $N=2$ the $324$ states form a symmetric traceless tensor of $SO(25)$, the rotation group of a massive particle at rest. The ground state is a tachyon, which signals that the bosonic string in flat space is unstable.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist.
+Established results are of this kind: consistency conditions and spectra of a perturbative quantum theory. Closed strings contain a massless spin-two state whose low-energy interactions are those of general relativity. That is why the theory is studied as a theory of quantum gravity. With worldsheet fermions the critical dimension becomes ten, and a projection of the spectrum removes the tachyon. For certain supersymmetric black holes, counting string states reproduces the Bekenstein--Hawking entropy. No string excitation or extra dimension has been detected, and the string length is unknown. The choice among many four-dimensional solutions is open. The AdS/CFT correspondence supplies a nonperturbative formulation in anti-de Sitter backgrounds.
+
+## References For The Physical Derivation
+
+- [D. Tong, Lectures on String Theory; Nambu-Goto action, light-cone quantization and the critical dimension.](https://arxiv.org/abs/0908.0333)
+- [J. Polchinski, What is String Theory?; open and closed string spectra and the zero-point energy.](https://arxiv.org/abs/hep-th/9411028)

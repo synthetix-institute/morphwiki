@@ -1,41 +1,45 @@
 # Quantum field theory
 
-**Physical domain:** Fields, constraints, and scale
+A mirror moving at a speed close to that of light emits photons even when no light was present before. In 2011 Wilson and coworkers observed this dynamical Casimir effect in a superconducting circuit, where microwave photons appeared in correlated pairs. Two features of quantum field theory explain it: particle number is not conserved, and the vacuum depends on the Hamiltonian.
 
-## Mechanism
-
-Quantum field theory is the many-mode local-field extension of the quantum constructor.
-
-Quantum field theory is needed when relativity, locality, and particle creation must be described together. Fields become the primary operator-valued objects, while particles appear as excitations of their modes.
-
-Quantum field theory lifts the state-operator-spectrum construction to fields, local operators, creation and annihilation modes, and scattering amplitudes. Particles become stable excitation/observable roles of fields.
-
-## Physical Construction
-
-The state carrier is Fock space, field configuration space, or a sector selected by charge, spin, momentum, statistics, or gauge data. The calculation involves creation, annihilation, field, charge, spin, Hamiltonian, or scattering operators acting on the admissible sector. Statistics, gauge constraints, commutation or anticommutation rules, domain conditions, and sector labels decide which states are legal. The calculated quantities include occupation number, charge, spin, momentum, energy, correlation function, cross-section, or scattering amplitude.
-
-## Topic Equations
+Consider a real scalar field $\phi(\mathbf x,t)$ in a box of volume $V$, in units with $\hbar=c=1$. Its conjugate momentum is $\pi=\dot\phi$, and its energy contains kinetic, gradient and mass terms. Expanding in plane waves decouples the field into one oscillator for each wave vector $\mathbf k$:
 
 ```math
-\Phi(x)=\sum_k\left(a_k u_k(x)+a_k^\dagger u_k^*(x)\right)
-[a_k,a_l^\dagger]_{\mp}=\delta_{kl}
-\langle 0|T\{\Phi(x)\Phi(y)\}|0\rangle
+H=\int d^3x\left[\frac{\pi^2}{2}+\frac{(\nabla\phi)^2}{2}+\frac{m^2\phi^2}{2}\right]
+=\sum_{\mathbf k}\omega_{\mathbf k}\left(a_{\mathbf k}^\dagger a_{\mathbf k}+\frac12\right),\\
+\phi(\mathbf x)=\sum_{\mathbf k}\frac{a_{\mathbf k}e^{i\mathbf k\cdot\mathbf x}
++a_{\mathbf k}^\dagger e^{-i\mathbf k\cdot\mathbf x}}{\sqrt{2\omega_{\mathbf k}V}},\qquad
+\omega_{\mathbf k}=\sqrt{\mathbf k^2+m^2}.
 ```
 
-## Physical Meaning
+The operators obey $[a_{\mathbf k},a_{\mathbf k'}^\dagger]=\delta_{\mathbf k\mathbf k'}$. Each mode is a Quantum harmonic oscillator, and its occupation number counts particles of momentum $\mathbf k$ and energy $\omega_{\mathbf k}$. States with any number of particles form a Fock space. The vacuum is the state annihilated by every $a_{\mathbf k}$, so it is defined with respect to these particular oscillators. Correlation functions such as $\langle0|T\{\phi(x)\phi(y)\}|0\rangle$ describe the propagation of a quantum between two spacetime points and are the elements of perturbative scattering amplitudes.
 
-The state lives in a many-particle or field space, local operators create correlations, and the action or Hamiltonian generates their evolution. Perturbative amplitudes are expansions of these operator relations, not independent pictorial rules.
+A single mode shows what happens when the Hamiltonian changes. Let a mode of unit mass have angular frequency $\omega_0$ for $t<0$ and be prepared in its ground state, which $a$ annihilates. At $t=0$ the frequency jumps to $\omega_1$. An instantaneous change leaves the state unchanged, but the new Hamiltonian is diagonalized by different operators. Expressing the coordinate and momentum through $a$ and $a^\dagger$ gives the Bogoliubov transformation and the mean number of new quanta:
 
-A photon is represented as an excitation of the electromagnetic field. Processes that change photon number are natural in Fock space but cannot be represented in a fixed one-particle Hilbert space.
+```math
+b=u\,a+v\,a^\dagger,\qquad
+u=\frac{\omega_0+\omega_1}{2\sqrt{\omega_0\omega_1}},\qquad
+v=\frac{\omega_1-\omega_0}{2\sqrt{\omega_0\omega_1}},\\
+\langle n_1\rangle=\langle0|b^\dagger b|0\rangle=v^2=\frac{(\omega_0-\omega_1)^2}{4\omega_0\omega_1}.
+```
 
-Gauge theory identifies redundant field descriptions, and renormalization connects parameters measured at different scales.
+The relation $u^2-v^2=1$ preserves $[b,b^\dagger]=1$. The old ground state is not the new one: it contains new quanta, always in even numbers, because the transformation mixes $a$ with $a^\dagger$. Halving the frequency gives $\langle n_1\rangle=1/8$, with probability 0.943 of finding no quanta and 0.052 of finding two. The mean energy $\omega_1(\langle n_1\rangle+\frac12)$ exceeds the new zero-point energy, and the difference is the work done by whatever changed the frequency. If the frequency changes slowly, with $|\dot\omega|\ll\omega^2$, the mode follows its instantaneous ground state and no quanta appear.
 
-## Invariance And Realization
+In a field, a change that is uniform in space, such as a sudden change of the mass $m$, conserves momentum. It therefore mixes each $a_{\mathbf k}$ only with $a_{-\mathbf k}^\dagger$:
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+```math
+b_{\mathbf k}=u_{\mathbf k}a_{\mathbf k}+v_{\mathbf k}a_{-\mathbf k}^\dagger,\qquad
+\langle n_{\mathbf k}\rangle=|v_{\mathbf k}|^2,\qquad
+u_{\mathbf k}^2-|v_{\mathbf k}|^2=1.
+```
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+Quanta are created in pairs of opposite momentum, so the total momentum stays zero while the total number changes. A periodic modulation at angular frequency $\Omega$ acts as a parametric drive and creates pairs whose frequencies add up to $\Omega$. In cosmology the same transformation describes the creation of field quanta by the expansion of space.
 
-## Discriminating Consequences
+In the Wilson experiment a coplanar microwave waveguide is terminated by a SQUID, whose inductance depends on the magnetic flux through it. Modulating the flux near 11 GHz moves the effective end of the line back and forth at a few percent of the speed of light in the line. A material mirror cannot approach such speeds, and for small amplitudes the number of created quanta grows as the square of the speed ratio. The circuit was cooled so that thermal photons were negligible. The emitted radiation was symmetric about half the drive frequency, and its two-mode squeezing showed that photons at $\omega$ and $\Omega-\omega$ were produced together, as pair creation requires.
 
-Commutation, anticommutation, gauge, and occupation rules define which many-mode states are admissible. The field or many-mode construction must reduce to the appropriate single-particle, quasiparticle, or low-energy limit when those limits exist. Dual presentations are credible only when observables, spectra, or correlation functions are preserved across the translation.
+The static attraction between conducting plates, which arises from the zero-point energy of the same modes, is treated under Quantum fluctuation. These calculations assume free fields. With interactions the vacuum itself becomes a correlated state, and Renormalization relates the parameters of the theory to measured masses and charges.
+
+## References For The Physical Derivation
+
+- [C. M. Wilson and colleagues, Observation of the Dynamical Casimir Effect in a Superconducting Circuit; photon pairs and two-mode squeezing from a SQUID-modulated transmission line.](https://arxiv.org/abs/1105.4714)
+- [P. D. Nation, J. R. Johansson, M. P. Blencowe and F. Nori, Stimulating uncertainty: Amplifying the quantum vacuum with superconducting circuits; Bogoliubov transformations and the dynamical Casimir effect.](https://arxiv.org/abs/1103.0835)

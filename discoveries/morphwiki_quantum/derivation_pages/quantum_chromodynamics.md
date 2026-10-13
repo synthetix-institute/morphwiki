@@ -1,55 +1,36 @@
 # Quantum chromodynamics
 
-**Physical domain:** Fields, constraints, and scale
-
-## Mechanism
-
-Quarks carry three colour components. Quantum chromodynamics couples them to eight gluon fields through a local SU(3) connection.
-
-The colour connection specifies how quark amplitudes at neighbouring spacetime points are compared. Its action is inseparable from the colour representation of the quark: replacing the three-component carrier by an uncharged scalar would remove the very interaction being described.
-
-The colour matrices do not commute. Their commutator enters the field strength, so the gluon field contributes to its own interactions as well as mediating interactions between quarks. With natural units $\hbar=c=1$, the quark field of flavour $f$ is $q_f$, its mass is $m_f$, the coupling is $g_s$, and $A_\mu$ is a matrix in colour space. The action joins their covariant Dirac motion to the energy of the colour field.
-
-## Physical Construction
-
-The state carrier is quark and gluon field states in the physical SU(3) constraint sector. The calculation involves the QCD action, with covariant Dirac motion and non-Abelian field strength. Gauss constraints, quark statistics and specified boundary conditions select physical states. The calculated quantities include colour-singlet spectra, correlation functions and scattering cross sections.
-
-## Topic Equations
+Electrons scattered from protons at large momentum transfer behave as if they struck nearly free point-like quarks. At low momentum transfer the same quarks are never observed in isolation. Both facts follow from the dependence of the strong coupling on the resolution scale. Quantum chromodynamics is an $SU(3)$ gauge theory. Each quark field $q_f$ of flavour $f$ and mass $m_f$ has three colour components. Eight gluon fields $A^a_\mu$ act on them through generators $T^a$ with $[T^a,T^b]=if^{abc}T^c$ and $\operatorname{Tr}T^aT^b=\delta^{ab}/2$. In natural units $\hbar=c=1$,
 
 ```math
-[T^a,T^b]=if^{abc}T^c,\qquad\operatorname{Tr}(T^aT^b)=\frac12\delta^{ab}
-A_\mu=A_\mu^aT^a,\qquad D_\mu=\partial_\mu+ig_s A_\mu
-F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+ig_s[A_\mu,A_\nu]
-\mathcal L_{\mathrm{QCD}}=-\frac12\operatorname{Tr}(F_{\mu\nu}F^{\mu\nu})+\sum_f\bar q_f(i\gamma^\mu D_\mu-m_f)q_f
-\mu\frac{d g_s}{d\mu}=-\frac{11-2n_f/3}{16\pi^2}g_s^3+O(g_s^5)
+\mathcal L=-\frac12\operatorname{Tr}F_{\mu\nu}F^{\mu\nu}
++\sum_f\bar q_f\big(i\gamma^\mu D_\mu-m_f\big)q_f,\\
+D_\mu=\partial_\mu-ig_sA^a_\mu T^a,\qquad
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu-ig_s[A_\mu,A_\nu].
 ```
 
-## Physical Meaning
+Squaring the commutator term gives three-gluon and four-gluon vertices, so gluons carry colour themselves. Virtual quarks and gluons make the effective coupling depend on the momentum scale $\mu$ at which it is measured. At one loop,
 
-Physical observables include colour-singlet correlation functions, hadron energies and scattering cross sections. A Wilson loop follows a heavy test colour charge around a closed contour and traces over its colour index. Its large-time decay defines the static quark-antiquark potential after the self-energy convention is fixed.
+```math
+\mu\frac{dg_s}{d\mu}=-\frac{\beta_0}{16\pi^2}g_s^3,\qquad
+\beta_0=\frac{11}{3}C_A-\frac43T_Fn_f=11-\frac23n_f,
+```
 
-In pure gauge theory a long confining flux tube gives an approximately linear static potential. With dynamical quarks the tube can break through pair creation. The observable must therefore be specified along with the matter content; the same loop notation does not impose the same long-distance force in both theories.
+with $C_A=3$ the quadratic Casimir of the gluon representation, $T_F=1/2$ the normalization of the quark generators, and $n_f$ the number of quark flavours light compared with $\mu$. The two signs have a physical origin. A quark loop polarizes the vacuum as an electron loop does in electrodynamics: virtual pairs screen a test charge. In a background colour-magnetic field, a massless field of spin $s$ contributes in proportion to $(-1)^{2s}[(2s)^2-1/3]$. The term $-1/3$ is the diamagnetic response of orbital motion, and $(2s)^2$ is the paramagnetic response of the spin. The factor $(-1)^{2s}$ is the sign of a fermion loop.
 
-Changing resolution replaces short-distance fluctuations by effective couplings and operators. Heavy-quark effective descriptions preserve selected QCD amplitudes through matching, which supplies a concrete example of transferring a physical relation between different sets of variables.
+For gluons, $s=1$ gives $4-1/3=11/3$, and the spin term dominates. A Dirac quark gives $-2/3$ per flavour. The vacuum then acts as a medium with magnetic permeability above one. Relativistic invariance makes its dielectric constant the inverse, below one, so a colour charge is antiscreened. In terms of $\alpha_s=g_s^2/4\pi$ the equation integrates to
 
-## Consequences Forced By The Relation
+```math
+\alpha_s(Q^2)=\frac{\alpha_s(\mu^2)}{1+\frac{\beta_0}{4\pi}\alpha_s(\mu^2)\ln(Q^2/\mu^2)}
+=\frac{4\pi}{\beta_0\ln(Q^2/\Lambda^2)}.
+```
 
-Squaring the field strength produces terms cubic and quartic in the gauge potential. These are the three-gluon and four-gluon interactions. They disappear when the gauge algebra is replaced by an Abelian one; the covariant derivative alone is therefore not the whole distinction between QCD and electrodynamics. For $n_f$ active flavours with $11-2n_f/3$ positive, the weak-coupling beta function makes the coupling decrease as the energy scale increases. This permits short-distance perturbation theory. The same expansion loses accuracy when the coupling grows at hadronic scales; confinement is investigated through nonperturbative calculations rather than inferred by extrapolating the one-loop formula.
+With five light flavours $\beta_0=23/3$. Starting from the measured $\alpha_s=0.118$ at the $Z$ mass, $91.2$ GeV, the one-loop formula gives $\alpha_s=0.173$ at 10 GeV and $0.088$ at 1 TeV. Determinations from tau decays, quarkonia, jet rates and the $Z$ width follow this decrease. The one-loop scale is $\Lambda\approx90$ MeV. Higher orders and the renormalization scheme change $\Lambda$, so its value is quoted with both specified. Asymptotic freedom requires $\beta_0>0$, that is at most sixteen flavours.
 
-## Domain Of The Construction
-
-The beta function is the one-loop result for SU(3) with fundamental quarks. Active flavour thresholds require matching. Hadron masses and long-distance forces additionally depend on quark masses and the nonperturbative state of the gauge field.
-
-## Invariance And Realization
-
-Gauge changes rotate colour coordinates while leaving colour-singlet probabilities unchanged. Matching to an effective theory preserves the amplitudes included at the stated order.
-
-Quark masses, the coupling, temperature and volume change spectra and correlations. A different gauge group changes the interaction algebra itself.
-
-## Discriminating Consequences
-
-Static potentials, hadron spectra and short-distance cross sections probe different regimes of the same action and require the corresponding controlled approximations.
+The formula holds while $\alpha_s$ is small. Its divergence as $Q$ approaches $\Lambda$ marks the breakdown of perturbation theory, not a measured infinity. Confinement and hadron masses are computed by lattice simulation. There the Wilson loop of a static quark--antiquark pair gives a potential that grows linearly with separation. The slope, the string tension, is close to 1 GeV per femtometre, until pair creation breaks the flux tube. A similar tension fixes the slope of meson Regge trajectories, which motivated the string models described under string theory. The underlying covariant derivative is derived under gauge theory.
 
 ## References For The Physical Derivation
 
-- [G. S. Bali, QCD forces and heavy quark bound states, sections 3-4 and Appendices B-C: colour fields, static potential and running coupling.](https://arxiv.org/abs/hep-ph/0001312)
+- [A. Deur, S. J. Brodsky and G. F. de Teramond, The QCD Running Coupling; beta function, running of alpha_s and its measurements.](https://arxiv.org/abs/1604.08082)
+- [F. Wilczek, Asymptotic Freedom: From Paradox to Paradigm; antiscreening by gluons and its physical interpretation.](https://arxiv.org/abs/hep-ph/0502113)
+- [G. S. Bali, QCD forces and heavy quark bound states; static potential and string tension from Wilson loops.](https://arxiv.org/abs/hep-ph/0001312)

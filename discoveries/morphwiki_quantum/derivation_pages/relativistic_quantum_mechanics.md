@@ -1,39 +1,30 @@
 # Relativistic quantum mechanics
 
-**Physical domain:** Dynamics and transformations
+The $n=2$ level of hydrogen is not a single level. Spectroscopy resolves components 10.9 GHz apart, about $1.3\times10^{-5}$ of the binding energy, while the Schrödinger equation predicts exact degeneracy. The electron moves at about $\alpha c$, so relativistic kinematics is the natural place to look for the splitting.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Relativistic quantum mechanics is placed at the step of lawful change, which specifies how the state changes before a question is asked.
-
-Kinematics and dynamics are separate. The state space lists what can exist, whereas a Hamiltonian, action, Liouvillian, or channel generator specifies which changes are allowed and on what timescale.
-
-The Hamiltonian, action, Liouvillian, or channel determines how an admissible state changes.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wave function, field state, or register on a specified domain. The calculation involves a Hamiltonian, action, Liouvillian, channel generator, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary conditions determine whether the evolution is legal. The calculated quantities include time-dependent probabilities, transition amplitudes, response functions, conserved quantities, or spectra implied by the dynamics.
-
-## Representative Relation
+Replace the nonrelativistic energy by $E^2=p^2c^2+m^2c^4$ and substitute $E\to i\hbar\partial_t$ and $\mathbf p\to-i\hbar\nabla$. For a spin-zero particle in an electrostatic potential energy $V$, this gives the Klein--Gordon equation and its conserved density:
 
 ```math
-i\hbar\,\partial_t\rho=[H,\rho],\quad U(t)=e^{-iHt/\hbar},\quad \rho(t)=U(t)\rho(0)U^\dagger(t)
+\big(i\hbar\partial_t-V\big)^2\phi=\big(-\hbar^2c^2\nabla^2+m^2c^4\big)\phi,\\
+\rho=\frac{i\hbar}{2mc^2}\big(\phi^*\partial_t\phi-\phi\,\partial_t\phi^*\big)-\frac{V}{mc^2}|\phi|^2.
 ```
 
-## Physical Meaning
+The equation is of second order in time, so $\phi$ and $\partial_t\phi$ are independent initial data, and $\rho$ is not positive. A stationary solution with energy $E$ has $\rho=(E-V)|\phi|^2/mc^2$, which is negative for the negative-energy solutions that the quadratic relation allows. The density is therefore a charge density, not a probability density. A single-particle reading is consistent only when the potential is weak compared with $2mc^2$ and varies slowly over the Compton wavelength $\hbar/mc$, which is 386 fm for an electron. Stronger or steeper potentials create particle-antiparticle pairs, as the Klein paradox shows, and require quantum field theory.
 
-The evolution law transports a state without redefining it. Closed-system evolution is unitary; effective open-system evolution must preserve trace and positivity. Equivalent Hamiltonian, propagator, and path-integral descriptions agree on transition amplitudes.
+For an attractive Coulomb potential $V=-Z\alpha\hbar c/r$, the radial equation keeps the hydrogen form with $l(l+1)$ replaced by $l(l+1)-(Z\alpha)^2$. The exact levels and their expansion in $Z\alpha$ are
 
-The evolved state becomes experimentally meaningful through an observable whose spectrum and expectation values expose the consequences of the dynamics.
+```math
+E_{nl}=mc^2\Big[1+\frac{(Z\alpha)^2}
+{\big(n-l-\frac12+\sqrt{(l+\frac12)^2-(Z\alpha)^2}\big)^2}\Big]^{-1/2},\\
+E_{nl}\approx mc^2\Big[1-\frac{(Z\alpha)^2}{2n^2}
+-\frac{(Z\alpha)^4}{2n^4}\Big(\frac{n}{l+\frac12}-\frac34\Big)\Big].
+```
 
-## Invariance And Realization
+The second term is the Bohr energy. The third depends on $l$, so relativistic kinematics does lift the degeneracy. For hydrogen it is smaller than the Bohr energy by a factor of order $\alpha^2$, about $10^{-5}$, which matches the observed scale of the splitting. At $n=2$ it places $2s$ below $2p$ by $mc^2\alpha^4/12$, which is 29 GHz. Observation disagrees: $2s_{1/2}$ and $2p_{1/2}$ nearly coincide, and the 10.9 GHz splitting separates $2p_{1/2}$ from $2p_{3/2}$. Schrödinger met this mismatch before publishing his nonrelativistic equation. The Dirac equation, which includes spin, replaces $l+\frac12$ by $j+\frac12$ and reproduces the observed pattern, apart from the 1.06 GHz Lamb shift.
 
-The generator specifies lawful change before a measurement. The generator determines the propagator or path weight that carries the state between preparation and measurement. Conserved quantities and symmetries are read from the generator and its commutation relations.
+For spin-zero particles the Klein--Gordon equation is correct. In pionic atoms a negative pion replaces the electron. X-ray energies between orbits of high $l$, where the strong interaction is negligible, are calculated with this equation and small QED corrections. Such measurements determine the charged-pion mass. The exact formula also marks a limit. For $s$ states the square root becomes imaginary when $Z\alpha>\frac12$, that is for $Z\geq69$. A point nucleus is then unphysical, and the finite nuclear size must be included.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. Time dependence can be assigned to states, operators, propagators, or path amplitudes. Perturbative, Hamiltonian, Lagrangian, and path-integral presentations can represent the same evolution. Approximation schemes change the calculational route without changing the target transition amplitude.
+## References For The Physical Derivation
 
-## Discriminating Consequences
-
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime.
+- [A. Calogeracos and N. Dombey, History and Physics of the Klein Paradox; single-particle relativistic wave equations and pair creation in strong potentials.](https://arxiv.org/abs/quant-ph/9905076)
+- [M. Trassinelli, D. F. Anagnostopoulos, G. Borchert and colleagues, Measurement of the charged pion mass using X-ray spectroscopy of exotic atoms; Klein-Gordon energies of pionic atoms.](https://arxiv.org/abs/1605.03300)

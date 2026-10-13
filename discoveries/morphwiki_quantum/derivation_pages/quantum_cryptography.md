@@ -1,39 +1,33 @@
 # Quantum cryptography
 
-**Physical domain:** Control sequences and quantum channels
+A banknote that cannot be copied needs a physical feature that no measurement reproduces. Classical features can in principle always be measured precisely and copied. Around 1970 Stephen Wiesner proposed storing, together with a serial number, qubits prepared in randomly chosen states. The proposal, published in 1983, later led to quantum key distribution. Its security rests on the no-cloning theorem.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum cryptography is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
-
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state.
-
-## Physical Construction
-
-The state carrier is an input state, register, channel state, error syndrome, key, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, corrections, encodings, or conditional maps. Each step must belong to the claimed map class: unitary, completely positive, trace-preserving, projective, conditional, or corrective. The calculated quantities include output state, key, error rate, fidelity, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+Suppose a unitary $U$ copied two states onto a blank qubit, $U|\psi\rangle|0\rangle=|\psi\rangle|\psi\rangle$ and $U|\phi\rangle|0\rangle=|\phi\rangle|\phi\rangle$. Unitary maps preserve inner products, so
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_a K_a\rho K_a^\dagger
+\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2\quad\Longrightarrow\quad
+\langle\psi|\phi\rangle\in\{0,1\}.
 ```
 
-## Physical Meaning
+Copying is possible only for orthogonal or identical states. For $|0\rangle$ and $|+\rangle=(|0\rangle+|1\rangle)/\sqrt2$ the overlap $1/\sqrt2$ differs from its square $1/2$, so no device copies both. An ancilla or an intermediate measurement does not help. Any physical operation is a unitary on a larger system, and the same inner-product argument applies there.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+In Wiesner's scheme the bank prepares each of $n$ qubits in one of the four states $|0\rangle$, $|1\rangle$, $|+\rangle$ and $|-\rangle$, chosen at random. It keeps the list of choices secret under the serial number of the note. To verify a note, the bank measures each qubit in its recorded basis, and a genuine note passes with certainty.
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+A counterfeiter with one note tries to produce two notes that both pass. The simplest attack measures each qubit in the $Z$ basis and prepares two copies of the outcome. With the right basis both copies pass; with the wrong basis each copy passes with probability one half. The success probabilities per qubit, and for a whole note, are
 
-## Invariance And Realization
+```math
+p_{\rm meas}=\frac12\cdot1+\frac12\cdot\frac14=\frac58,\qquad p_{\rm opt}=\frac34,\qquad
+P_{\rm forge}=\Big(\frac34\Big)^n.
+```
 
-The mechanism is a controlled composition of allowed maps: a sequence that prepares, transforms, protects, transmits, or reads a quantum state. A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+The optimum over all physical operations, $3/4$ per qubit, was found by Molina, Vidick and Watrous (2012) using semidefinite programming over channels from one qubit to two. A dual bound and an explicit attack both give $3/4$. They also showed that entangled attacks on several qubits do no better than independent ones. A note of $n=50$ qubits is therefore forged with probability $(3/4)^{50}\approx6\times10^{-7}$.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+The scheme assumes that only the bank verifies notes and that the bases stay secret. If the bank hands back notes that fail verification, repeated queries reveal the states one qubit at a time (Lutomirski, 2010). Even returning only valid notes permits an attack based on interaction-free measurement. Issuing a fresh note after every verification removes both attacks. A practical bank must also tolerate a small fraction of failed qubits, which raises the forging probability by an amount fixed by the tolerated error.
 
-## Discriminating Consequences
+Notes that anyone could verify without the secret list, public-key quantum money, cannot be secure against unbounded adversaries. Proposed constructions rely on computational assumptions whose security against quantum attacks is still being tested. The four Wiesner states and their trade-off between information and disturbance reappear in BB84 quantum key distribution. The counterfeiter's operation is a quantum channel from one qubit to two, constrained by complete positivity.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+## References For The Physical Derivation
+
+- [A. Molina, T. Vidick and J. Watrous, Optimal counterfeiting attacks and generalizations for Wiesner's quantum money; the optimal success probability (3/4)^n.](https://arxiv.org/abs/1202.4010)
+- [A. Brodutch, D. Nagaj, O. Sattath and D. Unruh, An adaptive attack on Wiesner's quantum money; attacks when valid notes are returned, based on interaction-free measurement.](https://arxiv.org/abs/1404.1507)
+- [A. Broadbent and C. Schaffner, Quantum Cryptography Beyond Quantum Key Distribution; quantum money and other cryptographic tasks.](https://arxiv.org/abs/1510.06120)

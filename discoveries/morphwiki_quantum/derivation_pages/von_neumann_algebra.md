@@ -1,39 +1,37 @@
 # Von Neumann algebra
 
-**Physical domain:** Observables and spectra
+An experimenter who controls one of two entangled spins, or the field inside one region of space, can apply only some operations. The set of those operations is an algebra closed under products, adjoints and limits. Von Neumann algebras describe such sets. Their structure decides whether the subsystem has a density matrix and how thermal equilibrium can be defined.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Von Neumann algebra is placed at the question step, where a physical question becomes an operator with admissible answers.
-
-A prediction concerns a stated physical question. The same state supports many incompatible questions, so a prediction requires an operator, spectral measure, or effect family in addition to the state itself.
-
-An observable represents a physical quantity; its spectrum gives the possible sharp values and the state fixes their probabilities.
-
-## Physical Construction
-
-The state carrier is an admissible quantum state space on which the physical quantity is represented. The calculation involves a self-adjoint operator, operator-valued measure, or algebra element representing the physical question. Domain, self-adjointness, gauge invariance, and spectral conditions determine whether the quantity is a physical observable. The calculated quantities include eigenvalues, spectral measures, expectation values, moments, and response functions associated with the observable.
-
-## Representative Relation
+The commutant $M'$ of a set $M$ of operators contains every operator that commutes with all of $M$. Von Neumann's bicommutant theorem states that an algebra containing the identity, closed under adjoints and under weak limits, equals its double commutant. For two spins the operations on $A$ and on $B$ are each other's commutants:
 
 ```math
-O=\int_{\sigma(O)}\lambda\,dE_O(\lambda),\quad \langle O\rangle_\rho=\operatorname{Tr}(\rho O)
+M'=\{B:\ [A,B]=0\ \text{for all}\ A\in M\},\qquad M''=M,\\
+\bigl(\mathcal B(\mathcal H_A)\otimes I\bigr)'=I\otimes\mathcal B(\mathcal H_B).
 ```
 
-## Physical Meaning
+The centre $M\cap M'$ contains operators that commute with everything in the algebra. If it holds more than multiples of the identity, the states split into sectors with no coherent superpositions between them. Total electric charge separates sectors in this way.
 
-The operator's spectrum lists possible sharp values, while the state determines their weights. Matrix entries depend on basis, but the spectrum, expectation values, and probability distribution are unchanged by an equivalent representation. Domain and self-adjointness conditions are part of the physical definition.
+Algebras with trivial centre are called factors, and they come in types. A subsystem of finitely many degrees of freedom gives type I, where every state is a density matrix $\rho_A$ with $\langle A\rangle=\operatorname{Tr}(\rho_AA)$. An infinite chain of Bell pairs gives, on one side, an algebra with a normalized trace but no minimal projector, of type $\mathrm{II}_1$. The algebra of a region in relativistic quantum field theory has type III, with no trace at all. There the entanglement entropy of a region diverges unless a short-distance cutoff is imposed.
 
-An observable defines possible outcomes. The measurement chapter adds the probability rule and, when needed, the physical interaction that records one of those outcomes.
+Thermal equilibrium can be stated without a density matrix. For a finite system, the Gibbs state $\rho=e^{-\beta H}/Z$ with $\beta=1/k_BT$ satisfies the Kubo--Martin--Schwinger condition. It follows from cyclicity of the trace, with $e^{-\beta H}$ acting as an evolution in imaginary time:
 
-## Invariance And Realization
+```math
+\langle A(t)B\rangle_\beta=\langle B\,A(t+i\hbar\beta)\rangle_\beta,\qquad
+A(t)=e^{iHt/\hbar}Ae^{-iHt/\hbar}.
+```
 
-The observable defines the question asked of the state. The measurable answers are encoded by the operator spectrum, projectors, or spectral measure. The operator role is preserved across equivalent bases even when matrix entries change.
+In an infinite system $e^{-\beta H}$ has no trace, but the condition still makes sense on the algebra and defines equilibrium. Several solutions at the same temperature describe coexisting phases, such as the two magnetizations of a ferromagnet. Tomita--Takesaki theory shows that every faithful normal state of a von Neumann algebra satisfies this condition for a flow of its own, the modular flow.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The same observable may be represented by matrices, differential operators, projectors, or algebraic elements. Degeneracy, basis choice, and domain conditions can change how the spectrum is displayed. Detector implementation changes the physical realization, not the operator role itself.
+The condition has a measured consequence. Fourier transforming it for the correlation function of an observable gives detailed balance, with $\omega>0$ the energy taken up by the system:
 
-## Discriminating Consequences
+```math
+S(\omega)=\int dt\,e^{i\omega t}\langle A(t)A(0)\rangle_\beta,\qquad
+S(-\omega)=e^{-\beta\hbar\omega}S(\omega).
+```
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Self-adjointness, or the appropriate POVM positivity condition, is what makes the question a legal observable. A complete spectral resolution supplies all outcome channels for the question being asked.
+In Raman scattering from silicon at 300 kelvin, the optical phonon at 520 inverse centimetres gives an anti-Stokes to Stokes ratio of $e^{-2.49}\approx0.083$. This value holds after correction for the frequency dependence of scattering. The ratio serves as a contactless thermometer. The Bisognano--Wichmann theorem applies the same condition to the vacuum restricted to a wedge of spacetime, with boosts as the flow. It predicts the Unruh temperature $\hbar a/(2\pi ck_B)$, about 0.41 kelvin for an acceleration of $10^{20}$ metres per second squared. The theorem is established; a direct observation of the Unruh effect is still lacking. Quantum statistical mechanics uses the finite-system form of the same condition.
+
+## References For The Physical Derivation
+
+- [E. Witten, Notes on Some Entanglement Properties of Quantum Field Theory; local algebras, modular theory and the Bisognano--Wichmann theorem.](https://arxiv.org/abs/1803.04993)
+- [J. Yngvason, The Role of Type III Factors in Quantum Field Theory; type I and type III algebras and their physical consequences.](https://arxiv.org/abs/math-ph/0411058)

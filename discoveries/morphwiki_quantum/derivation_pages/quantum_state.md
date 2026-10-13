@@ -23,7 +23,7 @@ For a composite system the density operator also contains correlations. The sing
 =\operatorname{Tr}_A(\rho_A O_A),\qquad \rho_A=\operatorname{Tr}_B\rho_{AB}.
 ```
 
-Thus the state required by a mechanism is fixed by the available measurements and subsequent interactions together. Local spin probabilities require $\rho_A$ at the present time; a prediction after coupling to $B$ generally requires the joint state or an independently specified preparation of $B$. This distinction is the physical reason to keep the carrier, interaction and preparation connected in the description.
+Thus the state required by a mechanism is fixed by the available measurements and subsequent interactions together. Local spin probabilities require $\rho_A$ at the present time; a prediction after coupling to $B$ generally requires the joint state or an independently specified preparation of $B$. This distinction is the physical reason to keep the state space, interaction and preparation connected in the description.
 
 ## References For The Physical Derivation
 

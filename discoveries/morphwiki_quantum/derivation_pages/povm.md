@@ -1,39 +1,33 @@
 # POVM
 
-**Physical domain:** Measurement, instruments, and probabilities
+A photon arrives polarized either horizontally or diagonally, with equal probability. The two states are not orthogonal, so no measurement identifies them every time without error. A measurement can nevertheless be built that never errs and sometimes declares the result inconclusive.
 
-## Mechanism
-
-POVM is the generalized-observable constructor: outcome effects need not be orthogonal projectors.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-POVMs separate the probability assignment from the idealized projection assumption. They are the natural mechanism for noisy, coarse-grained, indirect, or open-system measurements.
-
-## Physical Construction
-
-The state carrier is a state vector or density operator together with the measurement context in which outcome channels are defined. The calculation involves a projection-valued measure, POVM, update map, or instrument map connecting state to record. Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. The calculated quantities include Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-
-## Topic Equations
+Write the states as $|\psi_0\rangle$ and $|\psi_1\rangle$ with phases chosen so that $s=\langle\psi_0|\psi_1\rangle$ is real and positive. Let $|\psi_j^\perp\rangle$ be the state orthogonal to $|\psi_j\rangle$. A measurement with three outcomes is defined by the positive operators
 
 ```math
-E_i\ge0,\qquad \sum_iE_i=I
-p(i)=\operatorname{Tr}(\rho E_i)
-E_i=\sum_\alpha K_{i\alpha}^\dagger K_{i\alpha}
+E_0=\frac{|\psi_1^\perp\rangle\langle\psi_1^\perp|}{1+s},\qquad
+E_1=\frac{|\psi_0^\perp\rangle\langle\psi_0^\perp|}{1+s},\qquad
+E_?=I-E_0-E_1.
 ```
 
-## Physical Meaning
+Outcome 0 never occurs for $|\psi_1\rangle$, and outcome 1 never occurs for $|\psi_0\rangle$. The prefactor $1/(1+s)$ is the largest value that keeps $E_?$ positive; its smaller eigenvalue then vanishes. Each state is identified with probability $|\langle\psi_0|\psi_1^\perp\rangle|^2/(1+s)=1-s$. This is the Ivanovic--Dieks--Peres limit, optimal for equal prior probabilities.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+For horizontal and diagonal polarization, $s=1/\sqrt2$ and the success probability is $0.293$. A projective measurement in the basis containing $|\psi_0^\perp\rangle$ also never errs, but identifies only $|\psi_1\rangle$, giving an average of $(1-s^2)/2=0.25$. Three nonzero orthogonal projectors cannot fit in a two-dimensional space. This is the general structure: a positive operator-valued measure (POVM) has effects $E_k\geq0$ that sum to the identity, with $p(k)=\operatorname{Tr}(\rho E_k)$.
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+Naimark's theorem shows how such a measurement is performed. The photon is coupled to an additional mode, the ancilla, prepared in $|0\rangle_a$. A unitary interaction acts as
 
-## Invariance And Realization
+```math
+U|\psi_j\rangle|0\rangle_a=\sqrt{1-s}\,|u_j\rangle|0\rangle_a+\sqrt{s}\,|\chi\rangle|1\rangle_a,
+\qquad\langle u_0|u_1\rangle=0.
+```
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+Inner products are preserved, since $(1-s)\langle u_0|u_1\rangle+s=s$, so such a unitary exists. When the ancilla is found in $|0\rangle_a$, the photon is in one of two orthogonal states and a projective measurement identifies it without error. When the ancilla is found in $|1\rangle_a$, both inputs leave the same state $|\chi\rangle$, and the result is inconclusive. Restricting this larger projective measurement to the photon reproduces $E_0$, $E_1$ and $E_?$ exactly.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+In general, a POVM fixes only the outcome probabilities. The state after outcome $k$ depends on how the measurement is carried out, through operators $K_{k\alpha}$ with $E_k=\sum_\alpha K_{k\alpha}^\dagger K_{k\alpha}$. Different implementations of the same effects can leave the photon in different states, or absorb it altogether.
 
-## Discriminating Consequences
+Huttner and colleagues realized this scheme in 1996 using polarization-dependent loss in optical fibre. Photons removed by the loss element play the role of the inconclusive outcome. The same measurement underlies the B92 version of quantum key distribution. Missed detections add inconclusive events without creating errors. The sharp special case, with orthogonal projectors, is the projection-valued measure.
 
-Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.
+## References For The Physical Derivation
+
+- [S. M. Barnett and S. Croke, Quantum state discrimination; unambiguous discrimination, the Ivanovic-Dieks-Peres limit and its optical realizations.](https://arxiv.org/abs/0810.1970)
+- [T. Heinosaari and M. Ziman, Guide to Mathematical Concepts of Quantum Theory; POVMs and Naimark dilation.](https://arxiv.org/abs/0810.3536)

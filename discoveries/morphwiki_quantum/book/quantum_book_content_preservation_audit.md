@@ -3,14 +3,14 @@
 - Readiness: `usable`
 - Topics in the mechanism map: `146`
 - Dedicated topic sections: `146`
-- Topic words: `56851`
-- Topic-specific physical treatments: `63`
-- Branch-level topic maps: `66`
-- Topic-word retention: `0.894`
-- Equation blocks: `158`
-- TeX topics with displayed equations: `125`
-- PDF pages: `296`
-- PDF-page retention: `0.952`
+- Topic words: `71377`
+- Topic-specific physical treatments: `125`
+- Branch-level topic maps: `4`
+- Topic-word retention: `1.000`
+- Equation blocks: `379`
+- TeX topics with displayed equations: `142`
+- PDF pages: `255`
+- PDF-page retention: `1.000`
 - Source-grounded topics: `6`
 - Original-paper topics (separate from corpus alignment): `15`
 - Original-paper display records: `16`

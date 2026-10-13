@@ -1,39 +1,35 @@
 # Quantum engineering
 
-**Physical domain:** Control sequences and quantum channels
+Two superconducting pads joined by a thin insulating barrier behave as a single quantum degree of freedom, although they contain a macroscopic number of electrons. Such circuits are designed and fabricated like electrical circuits, and quantum engineering chooses their parameters so that the lowest levels form a usable qubit. The transmon, a widely used design, shows these choices in one calculation.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum engineering is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
-
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-Circuits, controls, and sensing sequences are ordered compositions of physical transformations and measurements.
-
-## Physical Construction
-
-The state carrier is an input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps. Each step must belong to the claimed map class and the composition must preserve normalization and positivity. The calculated quantities include output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+Let $n$ be the number of Cooper pairs that have tunnelled across the Josephson junction and $\varphi$ the superconducting phase difference, with $[\varphi,n]=i$. The charging energy $E_C=e^2/(2C)$ sets the cost of charge on the capacitance $C$, and the Josephson energy $E_J$ sets the strength of pair tunnelling. The Hamiltonian is
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_aK_a\rho K_a^\dagger
+H=4E_C(n-n_g)^2-E_J\cos\varphi.
 ```
 
-## Physical Meaning
+Here $n_g$ is an offset charge set by the electrostatic environment, which fluctuates in time. For $E_J\gg E_C$ the phase stays near zero. Expanding the cosine to fourth order gives a harmonic oscillator with a quartic correction. With $b$ the oscillator lowering operator and $\varphi=(2E_C/E_J)^{1/4}(b+b^\dagger)$,
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+```math
+H\approx\sqrt{8E_JE_C}\Big(b^\dagger b+\frac12\Big)-E_J-\frac{E_C}{12}\big(b+b^\dagger\big)^4.
+```
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+In lowest order the quartic term shifts level $m$ by $-(E_C/2)(m^2+m+1/2)$. The level spacings therefore decrease with $m$, and the two lowest transitions differ by the anharmonicity $\alpha$:
 
-## Invariance And Realization
+```math
+\hbar\omega_{01}\approx\sqrt{8E_JE_C}-E_C,\qquad
+\hbar\alpha=\hbar(\omega_{12}-\omega_{01})\approx-E_C.
+```
 
-A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+The anharmonicity turns the oscillator into a qubit. A microwave pulse resonant with $\omega_{01}$ drives the $1\to2$ transition with a detuning $|\alpha|$. Pulses much longer than $1/|\alpha|$ therefore keep the population in the two lowest levels. For $E_C/h=250$ MHz and $E_J/E_C=50$, the formulas give $\omega_{01}/2\pi=4.75$ GHz and $\alpha/2\pi=-250$ MHz. Exact diagonalization in the charge basis gives $4.74$ GHz and $-287$ MHz. Since $1/|\alpha|$ is about $0.6$ ns, pulses of tens of nanoseconds keep leakage small, and shaped pulses suppress it further.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+The large ratio $E_J/E_C$ is the other design choice. The sensitivity of the levels to the fluctuating offset charge falls as $\exp(-\sqrt{8E_J/E_C})$. In the example, the transition frequency varies with $n_g$ by about 10 kHz. At $E_J/E_C=1$, as in the earlier Cooper-pair box, it varies by almost 800 MHz. The price is a weaker relative anharmonicity, which decreases only as $(8E_J/E_C)^{-1/2}$ (Koch and colleagues, 2007).
 
-## Discriminating Consequences
+The device must also be cold. At $4.74$ GHz the transition energy corresponds to $0.23$ K. At a refrigerator temperature of 20 mK the thermal excited population $e^{-h\nu/k_BT}$ is about $10^{-5}$, although residual excitation measured in devices is often larger. Loss in dielectric interfaces and broken Cooper pairs then limit the coherence times.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+The transmon is a quantum harmonic oscillator made weakly anharmonic, and its Josephson term describes tunnelling of Cooper pairs through the barrier. Transmons coupled through a common resonator exchange excitations as described under quantum bus.
+
+## References For The Physical Derivation
+
+- [J. Koch, T. M. Yu, J. Gambetta, A. A. Houck, D. I. Schuster, J. Majer and colleagues, Charge insensitive qubit design derived from the Cooper pair box; transmon spectrum, anharmonicity and charge dispersion.](https://arxiv.org/abs/cond-mat/0703002)
+- [P. Krantz, M. Kjaergaard, F. Yan, T. P. Orlando, S. Gustavsson and W. D. Oliver, A Quantum Engineer's Guide to Superconducting Qubits; device design, control pulses and loss mechanisms.](https://arxiv.org/abs/1904.06560)

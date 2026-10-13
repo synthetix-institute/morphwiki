@@ -1,39 +1,30 @@
 # Quantum machine learning
 
-**Physical domain:** Control sequences and quantum channels
+A quantum processor runs a fixed sequence of gates in which some rotation angles can be set. Each run ends with a measurement of a spin, and the average over many runs estimates an expectation value. Training adjusts the angles to lower a cost built from such averages, and it needs derivatives with respect to the angles. These derivatives can be measured on the same device by shifting each angle by a quarter turn.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum machine learning is placed at the protocol layer, where the quantum constructor is assembled into engineered sequences of admissible transformations and measurements.
-
-A protocol is an ordered sequence of operations. Order is physical whenever the maps do not commute, so a list of available gates or channels is insufficient to define an algorithm, sensor, communication scheme, or correction cycle.
-
-Circuits, controls, and sensing sequences are ordered compositions of physical transformations and measurements.
-
-## Physical Construction
-
-The state carrier is an input state, register, encoded subspace, channel state, key, syndrome, or controlled experimental configuration. The calculation involves an ordered sequence of gates, channels, measurements, encodings, corrections, or feedback maps. Each step must belong to the claimed map class and the composition must preserve normalization and positivity. The calculated quantities include output state, fidelity, error rate, key rate, channel capacity, algorithmic success probability, or sensor estimate.
-
-## Representative Relation
+Let one gate be $U(\theta)=e^{-i\theta G/2}$, where the generator $G$ is a product of Pauli matrices, so $G^2=I$. Collect all earlier gates into the input state $|\psi\rangle$. Collect all later gates, together with the measured observable, into a Hermitian operator $A$. The measured average is $f(\theta)=\langle\psi|U(\theta)^\dagger AU(\theta)|\psi\rangle$. Because $G^2=I$, the gate equals $\cos(\theta/2)I-i\sin(\theta/2)G$. The average contains only products of $\cos(\theta/2)$ and $\sin(\theta/2)$, and hence
 
 ```math
-\rho_{\rm out}=\mathcal E_n\circ\cdots\circ\mathcal E_1(\rho_{\rm in}),\quad \mathcal E(\rho)=\sum_aK_a\rho K_a^\dagger
+f(\theta)=a+b\cos\theta+c\sin\theta,\qquad
+\frac{df}{d\theta}=\frac{f(\theta+\pi/2)-f(\theta-\pi/2)}{2}.
 ```
 
-## Physical Meaning
+The rule follows from $\cos(\theta+\pi/2)-\cos(\theta-\pi/2)=-2\sin\theta$ and the corresponding identity for the sine. It is exact rather than a finite-difference estimate. Because the shifts are large, the difference is not divided by a small step, and shot noise is not amplified. For a qubit prepared in $|0\rangle$, rotated by $R_y(\theta)$ and measured along $z$, $f=\cos\theta$ and the rule returns $-\sin\theta$. If $A$ has eigenvalues $\pm1$ and each average uses $M$ runs, the gradient estimate has variance at most $1/(2M)$. Generators with more than two eigenvalues need rules with more shifts.
 
-The ordered composition carries a prepared input to a final state. Every intermediate map must preserve its stated physical conditions, and conditional operations are tied to explicit measurement outcomes. Performance is quantified through fidelity, error rate, capacity, precision, or success probability.
+Whether the gradients are large enough to measure is a separate question. McClean and colleagues considered circuits in which the gates on each side of the parameter reproduce the first two moments of uniformly random unitaries. Such an ensemble is called a 2-design. For $n$ qubits the gradient then averages to zero, and its variance decreases exponentially:
 
-This is the executable end of the mechanism tree. It also closes the loop: failed predictions can be traced backward to the operation order, the generator, the state preparation, or the mathematical domain rather than attributed to the topic as a whole.
+```math
+\langle\partial_kf\rangle=0,\qquad \operatorname{Var}(\partial_kf)\propto2^{-n}.
+```
 
-## Invariance And Realization
+For Pauli generator and observable, a direct sampling of random unitaries on both sides gives a variance close to $2^{-(n+1)}$. Resolving the sign of such a gradient requires a shot-noise variance $1/(2M)$ below it. For 50 qubits this means of order $10^{15}$ runs per gradient component.
 
-A protocol turns the quantum constructor into an ordered operation sequence. The stable role is compositional: admissible maps transform an input state into an output state before measurement. Unitary gates, channels, measurements, correction steps, and algorithms are protocolized versions of the same state-map-observable logic.
+The condition matters. Cerezo and colleagues proved that observables acting on few qubits, with circuit depth of order $\log n$, give at worst polynomially small gradients. Global observables give exponentially small gradients even in shallow circuits. A simulation of layered $y$ rotations and controlled-$Z$ gates shows both regimes. For the product of $Z$ over all qubits, the gradient variance decreased roughly as $2^{-n}$ from $n=2$ to 12 at depth two. For $Z$ on one qubit at the same depth it stayed between 0.35 and 0.39.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The implementation can be a circuit, channel, network, sensor, automaton, or cryptographic protocol. Noise, measurement timing, and correction rules change the realized map. Different hardware can implement the same abstract sequence of completely positive or unitary operations.
+Established are the shift rule, the trigonometric dependence on each angle, and the exponential suppression of gradients under the stated randomness. Open is whether such circuits, trained on classical data, outperform classical learning on tasks of practical interest. Proven separations exist for specially constructed problems, discussed under quantum neural networks. The same derivative of an average with respect to a phase sets the sensitivity in quantum metrology.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Each operation in the sequence is constrained by the map class it claims: unitary, completely positive, trace preserving, measurement, correction, or conditional update. The composed protocol is defined by its output state and outcome probabilities, not only by the names of the gates.
+- [M. Schuld, V. Bergholm, C. Gogolin, J. Izaac and N. Killoran, Evaluating analytic gradients on quantum hardware; parameter-shift rules for gate derivatives.](https://arxiv.org/abs/1811.11184)
+- [J. R. McClean and colleagues, Barren plateaus in quantum neural network training landscapes; exponentially small gradients for circuits forming 2-designs.](https://arxiv.org/abs/1803.11173)
+- [M. Cerezo and colleagues, Cost Function Dependent Barren Plateaus in Shallow Parametrized Quantum Circuits; global versus local observables at logarithmic depth.](https://arxiv.org/abs/2001.00550)

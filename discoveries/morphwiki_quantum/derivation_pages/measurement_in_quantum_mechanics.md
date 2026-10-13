@@ -1,41 +1,28 @@
 # Measurement in quantum mechanics
 
-**Physical domain:** Measurement, instruments, and probabilities
+A Stern--Gerlach magnet sends silver atoms up or down according to their spin, and a screen records where each atom lands. The spin is never observed directly. It is inferred from a position that the magnet has correlated with it.
 
-## Mechanism
-
-Measurement in quantum mechanics is the complete measurement junction: it combines a state, a measurement model, probabilities, and sometimes an update rule.
-
-Measurement theory must describe both an outcome distribution and the physical operation that produces a record. Keeping these roles separate prevents an interpretive account of state change from being mistaken for the probability law itself.
-
-Measurement is not the root of quantum theory in this book. It is the junction where a prepared state and an observable or POVM are converted into probabilities and recorded outcomes.
-
-## Physical Construction
-
-The state carrier is a state vector or density operator together with the measurement context in which outcome channels are defined. The calculation involves a projection-valued measure, POVM, update map, or instrument map connecting state to record. Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. The calculated quantities include Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-
-## Topic Equations
+Von Neumann's model makes this correlation explicit. Let the measured observable be $A=\sum_aa|a\rangle\langle a|$, and let a pointer have position $q$, momentum $p_q$ and initial wave function $\phi(q)$ of width $\sigma$. A brief interaction $H=g(t)A\otimes p_q$ with total strength $G=\int g\,dt$ translates the pointer by an amount proportional to the eigenvalue:
 
 ```math
-p(i)=\operatorname{Tr}(\rho E_i)
-\rho\mapsto \rho_i=\frac{K_i\rho K_i^\dagger}{\operatorname{Tr}(K_i\rho K_i^\dagger)}
-E_i=K_i^\dagger K_i
+e^{-iGA\otimes p_q/\hbar}\sum_ac_a|a\rangle\phi(q)
+=\sum_ac_a|a\rangle\phi(q-Ga).
 ```
 
-## Physical Meaning
+Finding the pointer at $q$ then has probability density $\sum_a|c_a|^2|\phi(q-Ga)|^2$, a sum of displaced pointer profiles. When $G$ times the eigenvalue spacing greatly exceeds $\sigma$, the peaks separate and outcome $a$ occurs with probability $|c_a|^2$. When the peaks overlap, the record yields only partial information about $A$. The corresponding effects $\sum_a|\phi(q-Ga)|^2|a\rangle\langle a|$ form a POVM rather than a set of projectors.
 
-A POVM gives outcome probabilities, whereas a quantum instrument gives the corresponding conditional transformations. Projective measurement is an ideal sharp limit. Real detectors are calibrated by showing that their effects are positive, complete, and consistent with observed frequencies.
+The same coupling disturbs the system. Tracing over the pointer multiplies each coherence $\rho_{aa'}$ of the system by the overlap of the two displaced pointer states. For a Gaussian pointer,
 
-A photon counter may report click or no click with non-unit efficiency. A two-effect POVM models those probabilities; the associated instrument is needed only when the state after the event matters.
+```math
+\rho_{aa'}\;\longmapsto\;\rho_{aa'}\exp\!\left[-\frac{G^2(a-a')^2}{8\sigma^2}\right].
+```
 
-The incompatibility chapter asks which families of such measurements can be jointly realized or assigned simultaneous sharp values.
+Resolution and disturbance are therefore controlled by the same ratio $G|a-a'|/\sigma$. A pointer that separates two eigenvalues cleanly removes the coherence between them, and with it the interference that observables not commuting with $A$ would show. The diagonal elements are untouched because the interaction commutes with $A$. This is the quantum nondemolition condition: an immediate repetition returns the same eigenvalue.
 
-## Invariance And Realization
+In the Stern--Gerlach magnet, the field gradient $B'$ couples the spin component $\sigma_z$ to the transverse position $z$ through the energy $\mu_BB'z\sigma_z$, with $\mu_B$ the Bohr magneton. The pointer is the transverse momentum, shifted by $\pm\mu_BB'\tau$ during the transit time $\tau$. For silver atoms at 500 m/s in a 3.5 cm magnet with $B'=10^3$ T/m, the two components separate by about 0.25 mm at the exit. This is comparable to the splitting seen in 1922.
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+The momentum kick far exceeds the momentum spread of a collimated beam. The interference between the spin components is therefore lost, and restoring it would require undoing the kick to within that spread. The update that follows a recorded outcome is discussed under wave function collapse. Continuous monitoring of an emitting atom, in which the pointer is the radiation field, leads to the quantum jump description.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+## References For The Physical Derivation
 
-## Discriminating Consequences
-
-Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.
+- [A. A. Clerk, M. H. Devoret, S. M. Girvin, F. Marquardt and R. J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification; von Neumann pointer model, back-action and quantum limits.](https://arxiv.org/abs/0810.4729)

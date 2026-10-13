@@ -1,39 +1,34 @@
 # Quantum metamaterial
 
-**Physical domain:** Boundaries and operator domains
+Microwaves in a superconducting transmission line can be sent through a row of artificial atoms. Each atom is a superconducting qubit with a transition frequency of several gigahertz, and the qubits sit far closer together than one wavelength. A microwave then responds to the row as to a continuous medium with a refractive index. That index, and the frequencies at which the medium stops transmitting, follow from the scattering of one qubit.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Quantum metamaterial is placed at realization, where the abstract state-operator construction is made definite on a domain, interface, potential, detector geometry, or scattering boundary.
-
-Boundary conditions make the operator domain physical. The same differential expression can have different spectra, resonances, and scattering channels when its boundary conditions, potential, or asymptotic states are changed.
-
-The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel.
-
-## Physical Construction
-
-The state carrier is a Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. The calculation involves a Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary. Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. The calculated quantities include eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
-
-## Representative Relation
+Let a qubit of transition frequency $\omega_0$ emit into the line at rate $\Gamma_{1D}$, shared equally between the two directions. For weak probe power the qubit stays close to its ground state and responds linearly. A wave of frequency $\omega$ and wave number $k=\omega/v$, with $v$ the phase velocity of the line, is then reflected and transmitted with amplitudes
 
 ```math
-H_B\psi=E\psi,\quad \psi\in\mathcal D(H_B),\quad S:\psi_{\rm in}\mapsto\psi_{\rm out}
+r=-\frac{i\Gamma_{1D}/2}{\omega-\omega_0+i\Gamma_{1D}/2},\qquad t=1+r.
 ```
 
-## Physical Meaning
+On resonance the reflection is complete, so a single qubit acts as a mirror one atom wide. Now place identical qubits at spacing $d$. Between neighbours the wave propagates freely, and at each qubit it is scattered with $r$ and $t$. The transfer matrix of one period has unit determinant. Bloch's theorem requires its eigenvalues to be $e^{\pm iqd}$, where $q$ is the wave number of the collective wave. Half the trace of the matrix gives the dispersion relation
 
-The eigenvalue or scattering equation must be read together with its domain and matching conditions. Confinement selects discrete modes; open channels produce transmission, reflection, and resonances. Removing the boundary should recover the appropriate free or infinite-domain limit.
+```math
+\cos qd=\cos kd+\frac{\Gamma_{1D}}{2(\omega-\omega_0)}\sin kd.
+```
 
-Boundary-shaped single-particle mechanisms extend naturally to many modes and fields. The field-theory chapter replaces a fixed particle number with occupation sectors, local fields, and symmetry constraints.
+When the right side exceeds one in magnitude, $q$ is complex and the wave decays along the array. For subwavelength spacing, $kd\ll1$, expanding both sides to second order gives an effective permittivity of Lorentz form:
 
-## Invariance And Realization
+```math
+\varepsilon_{\rm eff}(\omega)=\frac{q^2}{k^2}\approx1+\frac{\Gamma_{1D}}{kd\,(\omega_0-\omega)},
+\qquad \varepsilon_{\rm eff}<0\ \text{ for }\ \omega_0<\omega<\omega_0+\frac{\Gamma_{1D}}{k_0d}.
+```
 
-The topic changes the admissible domain or boundary condition and thereby changes the allowed spectrum, transmission amplitude, resonance, or scattering channel. A context, domain, potential, or boundary changes the allowed quantum channels. The invariant role is boundary-shaped spectral selection: the operator is the same kind of object, but its domain changes. Transmission, confinement, scattering, and mode selection are read as consequences of admissible boundary conditions.
+Below resonance the index exceeds one and the microwaves slow down. Just above resonance the permittivity is negative, and a stop band opens with width about $\Gamma_{1D}/(k_0d)$, where $k_0=\omega_0/v$. The band is much wider than the linewidth of one qubit, because many qubits within a wavelength respond together. For $\Gamma_{1D}/2\pi=10$ MHz and a spacing of about one sixtieth of a wavelength, $k_0d\approx0.1$, the stop band is about 100 MHz wide. Arrays of transmon qubits on a coplanar waveguide show such a band in transmission, and tuning the qubits with magnetic flux moves it.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The potential, geometry, asymptotic condition, or detector arrangement can change. The same boundary role may appear as a box, barrier, cavity, interface, or scattering region. Changing the boundary can change the spectrum without changing the general quantum constructor.
+Three approximations enter. The probe must be weak, because a qubit that holds one excitation cannot absorb a second; at higher power the reflection saturates and the medium becomes nonlinear. Losses into other channels and dephasing must be small compared with $\Gamma_{1D}$; they add an imaginary part to $\omega_0$ and round the band edges. The coupling must also be weak compared with $\omega_0$, so that the resonant form of $r$ holds.
 
-## Discriminating Consequences
+The medium differs from a classical metamaterial because each element is a two-level quantum system. Its saturation at the level of single photons produces strong photon--photon interactions, and its state can be prepared in superpositions. The linear band structure and the tunable stop band are established experimentally. Using the quantum state of the whole array to control propagation remains largely a proposal. The reflection by one qubit is the waveguide form of the atom--field coupling treated under quantum optics. The band calculation repeats the Kronig--Penney construction for an electron in a periodic array of potential wells.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels. The same operator can have different spectra when the admissible domain changes.
+## References For The Physical Derivation
+
+- [J. D. Brehm, A. N. Poddubny, A. Stehli, T. Wolz, H. Rotzinger and A. V. Ustinov, Waveguide Bandgap Engineering with an Array of Superconducting Qubits; polaritonic band gap of eight tunable transmons in a waveguide.](https://arxiv.org/abs/2006.03330)
+- [A. S. Sheremet, M. I. Petrov, I. V. Iorsh, A. V. Poshakinskiy and A. N. Poddubny, Waveguide quantum electrodynamics: collective radiance and photon-photon correlations; single-emitter reflection and band structure of emitter arrays.](https://arxiv.org/abs/2103.06824)
+- [A. L. Rakhmanov, A. M. Zagoskin, S. Savel'ev and F. Nori, Quantum metamaterials: Electromagnetic waves in a Josephson qubit line; proposal in which the qubit quantum state controls propagation.](https://arxiv.org/abs/0709.1314)

@@ -1,39 +1,36 @@
 # Transformation theory (quantum mechanics)
 
-**Physical domain:** State space, domain, and representation
+Cold atoms released into a harmonic trap form, after a quarter of an oscillation period, an image of their initial momentum distribution. The explanation is a calculation of the kind introduced by Dirac and Jordan in 1927. Their transformation theory treats every prediction as a product of amplitudes between eigenstates of different observables.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Transformation theory (quantum mechanics) is placed at the first step of the constructor, where the Hilbert space, operator domain, basis, representation, or preparation context is fixed before any probability statement is meaningful.
-
-A quantum equation has no fixed meaning until its state space, inner product, representation, and operator domains have been specified. These choices decide which states are admissible and which apparent changes are only changes of coordinates.
-
-The state space, representation, basis, and operator domain determine which vectors are physical and which operators are defined.
-
-## Physical Construction
-
-The state carrier is a Hilbert, Fock, or function space together with the operator domains and representation used in the calculation. The calculation involves a unitary or isometric change of basis, Fourier transform, coordinate map, or representation equivalence. Inner products, domains, normalization, and completeness relations must be preserved by a purely representational change. The calculated quantities include transition amplitudes, expectation values, spectra, and probabilities that remain invariant under an admissible representation change.
-
-## Representative Relation
+The amplitude $\langle a|b\rangle$ is the transformation function between eigenstates of two observables. Its squared modulus is the probability of finding $a$ after preparing $b$. Amplitudes compose by summing over a complete set of intermediate eigenstates. Wave mechanics and matrix mechanics then differ only in which basis the same amplitudes are written:
 
 ```math
-V:\mathcal H\to\mathcal H',\quad V^\dagger V=I,\quad \rho'=V\rho V^\dagger,\quad O'=VOV^\dagger
+\langle a|c\rangle=\int db\,\langle a|b\rangle\langle b|c\rangle,\qquad
+\psi(q)=\langle q|\psi\rangle,\qquad \widetilde\psi(p)=\langle p|\psi\rangle.
 ```
 
-## Physical Meaning
+The central transformation function connects position and momentum. Because $[Q,P]=i\hbar$, momentum generates translations, and in the position basis it acts as $-i\hbar\,\partial_q$. Applied to a momentum eigenstate this gives a first-order differential equation. Normalization to $\langle p|p'\rangle=\delta(p-p')$ fixes the constant:
 
-A unitary or isometric change of representation carries the state and operator together. Amplitudes, expectation values, and spectra agree. If they do not, the physical model has changed rather than merely its notation.
+```math
+-i\hbar\,\partial_q\langle q|p\rangle=p\,\langle q|p\rangle
+\quad\Longrightarrow\quad
+\langle q|p\rangle=\frac{e^{ipq/\hbar}}{\sqrt{2\pi\hbar}}.
+```
 
-A quantum state belongs to this state space, and every Hamiltonian and observable must act on its stated domain. These domain relations determine whether the resulting amplitudes and probabilities are defined.
+The modulus is the same for every $q$ and $p$. A state of sharp momentum therefore has a uniform position distribution, and the converse also holds. The spin version is $|\langle{\pm}x|{\pm}z\rangle|^2=\tfrac12$: complete knowledge of $S_z$ leaves the outcomes of $S_x$ equally likely.
 
-## Invariance And Realization
+Time evolution is also a transformation, from positions at one time to positions at another. For a particle of mass $m$ in a harmonic trap of angular frequency $\omega$, the energy eigenfunctions are Hermite functions $h_n$, each acquiring the phase $e^{-i(n+1/2)\omega t}$. At the quarter period $t=\pi/(2\omega)$ this phase equals $e^{-i\pi/4}(-i)^n$. The Hermite functions are also eigenfunctions of the Fourier transform with eigenvalues $(-i)^n$. The quarter-period evolution is therefore the position-to-momentum transformation itself:
 
-The context supplies the admissible arena in which quantum states and operators are defined. Changing basis or representation should not change physical probabilities when the transformation is unitary. Normalization, domain conditions, and inner products remain part of the same formal container.
+```math
+\psi\!\left(x,\frac{\pi}{2\omega}\right)=e^{-i\pi/4}\sqrt{m\omega}\;\widetilde\psi(m\omega x),
+\qquad |\psi|^2dx=|\widetilde\psi(p)|^2dp\ \ \text{at}\ p=m\omega x.
+```
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The chosen basis, coordinate representation, or preparation convention can change. The same calculation may be written with vectors, wave functions, density operators, or operator algebras. Physical realization enters later through boundary conditions, detectors, or fields.
+For rubidium-87 in a trap with a frequency of 10 hertz, the quarter period is 25 milliseconds. A momentum of $\hbar$ times one inverse micrometre maps to a displacement of 11.6 micrometres. Experiments with cold gases use this mapping to measure momentum distributions. The image is faithful when interactions are negligible during the quarter period and the trap is harmonic over the size of the cloud; anharmonicity blurs it.
 
-## Discriminating Consequences
+The same composition rule underlies the Fourier transform between representations and the far-field imaging of a freely expanding cloud. Dirac also noted that the transformation function for a short time interval behaves like $\exp(iS/\hbar)$, with $S$ the classical action. Feynman developed that observation into the path integral. Von Neumann later recast the theory in Hilbert space without delta-normalized states; rigged Hilbert spaces restore them as generalized eigenvectors.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation. The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space.
+## References For The Physical Derivation
+
+- [P. A. Murthy and colleagues, Matter wave Fourier optics with a strongly interacting two-dimensional Fermi gas; imaging momentum distributions by evolution in a harmonic potential.](https://arxiv.org/abs/1408.4680)
+- [F. Gieres, Mathematical surprises and Dirac's formalism in quantum mechanics; equivalence of wave mechanics, matrix mechanics and Dirac's formalism, and the status of delta-normalized states.](https://arxiv.org/abs/quant-ph/9907069)

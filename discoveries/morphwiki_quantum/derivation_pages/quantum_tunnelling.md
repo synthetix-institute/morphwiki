@@ -1,40 +1,35 @@
 # Quantum tunnelling
 
-**Physical domain:** Boundaries and operator domains
+A scanning tunnelling microscope holds a metal tip a few tenths of a nanometre above a conducting surface. A bias of a fraction of a volt drives about a nanoampere across the vacuum gap, although the electrons lack the energy to pass over it. Moving the tip by 0.1 nm changes the current by nearly a factor of ten. A rectangular barrier shows where this sensitivity comes from.
 
-## Mechanism
-
-Quantum tunnelling is a boundary-realization constructor: a state has nonzero transmission through a classically forbidden region.
-
-Quantum tunnelling tests the consequence of wave evolution across a classically forbidden region. The effect depends jointly on the generator, barrier geometry, matching conditions, and incident state.
-
-Tunnelling shows that the realization layer matters. A potential barrier changes the admissible wave solutions and produces transmission even where classical kinetic energy would be negative.
-
-## Physical Construction
-
-The state carrier is a Hilbert space with a selected domain, potential, interface, asymptotic channel, cavity, well, or boundary condition. The calculation involves a Hamiltonian, wave operator, transfer operator, or scattering map whose domain is changed by the boundary. Boundary conditions and matching conditions determine allowed states, resonances, transmission amplitudes, and spectra. The calculated quantities include eigenvalues, resonances, tunnelling probabilities, phase shifts, reflection/transmission amplitudes, or scattering data.
-
-## Topic Equations
+Let a particle of mass $m$ and energy $E$ meet a barrier of height $V_0>E$ occupying $0<x<a$. Outside the barrier the solutions are travelling waves with wave number $k=\sqrt{2mE}/\hbar$. Inside, the kinetic energy is negative, and the solutions grow or decay with $\kappa=\sqrt{2m(V_0-E)}/\hbar$:
 
 ```math
-T\sim \exp\!\left(-2\int_{x_1}^{x_2}\sqrt{\frac{2m(V(x)-E)}{\hbar^2}}\,dx\right)
--\frac{\hbar^2}{2m}\psi''(x)+V(x)\psi(x)=E\psi(x)
+\psi(x)=\begin{cases}e^{ikx}+r\,e^{-ikx}, & x<0,\\
+C e^{\kappa x}+D e^{-\kappa x}, & 0<x<a,\\
+t\,e^{ikx}, & x>a.\end{cases}
 ```
 
-## Physical Meaning
+Continuity of $\psi$ and $\psi'$ at both edges gives four linear equations for $r$, $C$, $D$ and $t$. The probability current $j=(\hbar/m)\operatorname{Im}(\psi^*\psi')$ is the same on both sides, so $|r|^2+|t|^2=1$. Solving for the transmitted fraction gives
 
-Inside the barrier the stationary wave function is evanescent rather than oscillatory. Continuity and flux conditions connect it to incoming and outgoing waves, producing a nonzero transmission amplitude that falls approximately exponentially with barrier width in the semiclassical regime.
+```math
+T=|t|^2=\left[1+\frac{V_0^2\sinh^2\kappa a}{4E(V_0-E)}\right]^{-1}
+\\ \kappa a\gg1:\qquad T\approx\frac{16E(V_0-E)}{V_0^2}\,e^{-2\kappa a}.
+```
 
-Changing the barrier width while holding its height and the incident energy fixed isolates the predicted exponential dependence and separates tunnelling from an over-barrier contribution.
+The approximation holds for a thick barrier, where the decaying exponential inside dominates. The prefactor varies slowly with energy, while the exponent depends on the width and on the square root of the barrier height above $E$. For $E>V_0$ the hyperbolic sine becomes an ordinary sine. Transmission is then incomplete, except at the resonances $a\sqrt{2m(E-V_0)}/\hbar=n\pi$ where reflections from the two edges cancel. The amplitudes $r$ and $t$ for waves arriving from either side form the two-channel S-matrix of the barrier.
 
-Scattering theory generalizes the same matching construction to many incoming, outgoing, and resonant channels.
+In the microscope the barrier height is approximately the work function of the metals, 4 to 5 eV above the Fermi level. With $\phi=4.5$ eV, the decay constant is $\kappa=1.09$ per ångström. The current at small bias is proportional to $e^{-2\kappa d}$ for a gap $d$, so a change of 0.1 nm alters it by a factor of 8.8. A height change of 10 pm, a small fraction of an atomic diameter, changes the current by about 24 per cent. Feedback that holds the current constant therefore follows the surface height with picometre precision. A full treatment adds the image-charge potential, which lowers and rounds the barrier, and the electronic states of tip and sample. These change the prefactor and the effective barrier height, but keep the exponential dependence on distance.
 
-## Invariance And Realization
+For a smoothly varying barrier, the local decay constant $\kappa(x)=\sqrt{2m[V(x)-E]}/\hbar$ replaces $\kappa$, and the exponent becomes an integral between the classical turning points. This WKB estimate requires $\kappa$ to change little over one decay length, $|d\kappa/dx|\ll\kappa^2$, and the exponent to be large:
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+```math
+T\approx\exp\Big(-2\int_{x_1}^{x_2}\kappa(x)\,dx\Big),\\
+2G=\frac{2\sqrt{2\mu E}\,b}{\hbar}\Big[\arccos\sqrt{R/b}-\sqrt{(R/b)(1-R/b)}\Big].
+```
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+In alpha decay the barrier is the Coulomb repulsion between the alpha particle and a daughter nucleus of charge $Ze$. It extends from the nuclear radius $R$ to the turning point $b=2Ze^2/(4\pi\varepsilon_0E)$, where $E$ is the decay energy and $\mu$ the reduced mass. The integral gives the Gamow exponent $2G$ above. Take $R=1.2\,(A^{1/3}+4^{1/3})$ fm, with $A$ the mass number of the daughter. The exponents for uranium-238 ($E=4.27$ MeV) and polonium-212 ($E=8.95$ MeV) then differ by about 56. The exponent alone predicts a half-life ratio near $10^{24}$, and the measured ratio is $5\times10^{23}$. A factor of two in energy changes the lifetime by 24 orders of magnitude, which is the Geiger--Nuttall systematics. As $V_0$ grows without limit, the decay length vanishes and the walls of particle in a box are recovered.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-The boundary changes the operator domain, and therefore the allowed modes, transmission amplitudes, or scattering channels. The same operator can have different spectra when the admissible domain changes. Removing the boundary recovers the appropriate free, infinite-domain, or asymptotic limit.
+- [C. Qi, A. N. Andreyev, M. Huyse, R. J. Liotta, P. Van Duppen and R. Wyss, On the Validity of the Geiger-Nuttall Alpha-Decay Law and its Microscopic Basis; barrier penetration and the energy dependence of alpha-decay half-lives.](https://arxiv.org/abs/1405.5633)

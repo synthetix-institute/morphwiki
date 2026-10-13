@@ -1,39 +1,31 @@
 # Electron microscope
 
-**Physical domain:** Measurement, instruments, and probabilities
+A transmission electron microscope sends electrons, accelerated by about 200 kV, through a specimen a few tens of nanometres thick. Its images resolve columns of atoms 0.1 to 0.2 nm apart. The electron wavelength is a few picometres, so lens aberrations rather than diffraction set the resolution.
 
-*Physical-role overview. The representative relation below is shared with other topics in this chapter.*
-
-## Mechanism
-
-Electron microscope is placed at the measurement step, which connects a prepared state and an operator spectrum to probabilities or state updates.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate.
-
-## Physical Construction
-
-The state carrier is a probe state, sample state, field mode, detector state, or estimation register. The calculation involves an interaction Hamiltonian, transfer map, measurement channel, reconstruction map, or estimator. The instrument must separate sample signal from preparation, detector response, calibration, noise, and reconstruction artifacts. The calculated quantities include counts, images, spectra, phase shifts, trajectories, intensity maps, correlation data, or parameter estimates.
-
-## Representative Relation
+An electron of rest mass $m_0$ and charge $e$ accelerated through a potential difference $U$ gains kinetic energy $eU$. The relativistic relation $(pc)^2=(eU+m_0c^2)^2-(m_0c^2)^2$ fixes its momentum $p$, and the de Broglie relation gives the wavelength:
 
 ```math
-\rho_{\rm probe}\mapsto \mathcal E_{\rm sample}(\rho_{\rm probe}),\quad p(y)=\operatorname{Tr}(M_y\mathcal E_{\rm sample}(\rho_{\rm probe})),\quad \hat s=R(\{y_i\})
+\lambda=\frac{h}{\sqrt{2m_0eU\left(1+\dfrac{eU}{2m_0c^2}\right)}},\qquad
+\lambda(200\,{\rm kV})=2.51\,{\rm pm}.
 ```
 
-## Physical Meaning
+At 200 kV the electron moves at 0.70 $c$, and the nonrelativistic formula would give 2.74 pm, an error of 9 percent. At 300 kV the wavelength is 1.97 pm. Scattering angles from atomic spacings are then of order 10 mrad, so the electron optics works close to the axis.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+A thin specimen barely absorbs the beam. It delays the electron wave by an amount proportional to the projected electrostatic potential $V_p(\mathbf x)$. The transmitted wave is $e^{i\sigma V_p}\approx1+i\sigma V_p$, where $\sigma=2\pi me\lambda/h^2$ with the relativistic mass $m$. At 200 kV, $\sigma=7.29\times10^{-3}$ rad per volt-nanometre. An ideal lens would reproduce $|1+i\sigma V_p|^2\approx1$, and the atoms would be invisible.
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+A real objective lens adds a phase $\chi(k)$ to the wave scattered at spatial frequency $k$, the scattering angle divided by $\lambda$. Defocus $\Delta f$ and spherical aberration $C_s$ give the leading terms. Interference with the unscattered beam then turns the phase delay into intensity, with image Fourier transform
 
-## Invariance And Realization
+```math
+\chi(k)=\pi\Delta f\,\lambda k^2+\frac{\pi}{2}C_s\lambda^3k^4,\qquad
+\widetilde I(\mathbf k)=\delta(\mathbf k)+2\sigma\widetilde V_p(\mathbf k)\sin\chi(k).
+```
 
-The mechanism is an apparatus-coupled observable: a prepared probe state interacts with a sample or field, the interaction changes phase, momentum, intensity, or counting statistics, and the instrument reconstructs an image, spectrum, trajectory, or estimate. The measurement rule connects the state and the spectral question to observed probabilities. The invariant step is the map from state plus measurement operators to a normalized probability distribution. Projection-valued and POVM observables preserve the same role: outcome channels weighted by the state.
+The factor $\sin\chi$ is the contrast transfer function in this sign convention. Scherzer chose the defocus $\Delta f=-\sqrt{4C_s\lambda/3}$, so that $\sin\chi$ stays close to $-1$ over a broad band while $\chi$ never falls below $-2\pi/3$. The lowest zero of $\sin\chi$ beyond that band gives the point resolution $d\approx0.66\,C_s^{1/4}\lambda^{3/4}$. For $C_s=1$ mm at 200 kV this gives $\Delta f\approx-58$ nm and $d\approx0.23$ nm. The diffraction limit for a 10 mrad aperture would be $0.61\lambda/\alpha\approx0.15$ nm.
 
-The local title, representation, and physical realization may change while the constructor role is preserved. The detector model, basis, and update convention can change. State-vector, density-matrix, projective, and generalized-measurement forms may present the observable differently. Interpretive language about collapse or information update can vary without changing the probability rule.
+Aberration correctors made from multipole lenses reduce $C_s$ and bring the resolution below 0.1 nm. A phase plate that shifts the unscattered beam by $\pi/2$ converts $\sin\chi$ into $\cos\chi$, the electron analogue of Zernike phase contrast in light microscopy. The linear relation holds only for weak phase objects with $\sigma V_p\ll1$. Thicker crystals scatter electrons several times and require dynamical calculations, and partial coherence of the beam damps the highest frequencies. For biological specimens radiation damage limits the dose, so the shot noise of the electron count limits contrast.
 
-## Discriminating Consequences
+The instrument is a direct application of wave-particle duality: the same electrons that strike the detector one at a time form an interference pattern. The specimen potential enters as in the Born approximation of scattering theory, with single scattering from the projected potential.
 
-The topic is physically defined by its state carrier, operator or map, observable consequence, and compatibility condition. Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors.
+## References For The Physical Derivation
+
+- [B. Gamm, K. Schultheiss, R. R. Schroder and D. Gerthsen, Effect of a Physical Phase Plate on Contrast Transfer in an Aberration-Corrected Transmission Electron Microscope; weak-phase-object contrast transfer, spherical aberration, defocus and phase plates.](https://arxiv.org/abs/1009.4038)

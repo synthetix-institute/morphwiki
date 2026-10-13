@@ -1,53 +1,39 @@
 # Renormalization
 
-**Physical domain:** Fields, constraints, and scale
+The strength of the electromagnetic interaction depends on the momentum transfer at which it is measured. Atomic experiments give $\alpha=1/137.036$, while electron-positron scattering at the Z-boson mass of 91 GeV requires $\alpha\approx1/129$. The difference is calculable. Virtual charged pairs screen a charge, and a probe with larger momentum transfer penetrates more of the screening cloud. Renormalization organizes this dependence on scale.
 
-## Mechanism
-
-Renormalization relates physical descriptions at different resolutions by changing couplings and operator weights while preserving long-distance predictions.
-
-Renormalization explains how a theory preserves predictions while its effective parameters and degrees of freedom change with scale. It is therefore a transformation between descriptions, not merely a device for removing infinities.
-
-Coarse graining removes short-distance variables and generates every operator allowed by the remaining symmetries. Their coefficients flow with scale. Relevant directions grow, irrelevant directions decay, and fixed points organize scale-invariant behaviour. Microscopically different systems can therefore share critical exponents and scaling functions when their flows approach the same fixed point. Universality is the invariance class of this scale transformation, not a visual similarity between equations.
-
-## Physical Construction
-
-The state carrier is effective fields and degrees of freedom defined at a stated resolution or cutoff. The calculation involves a coarse-graining transformation and beta functions acting on the coefficients of an effective operator expansion. Symmetry, dimensionality, locality assumptions, relevant directions, and renormalization conditions determine the allowed flow. The calculated quantities include running couplings, correlation functions, scaling dimensions, critical exponents, and corrections to scaling.
-
-## Topic Equations
+In quantum electrodynamics, loops of charged fermions modify the photon propagator, an effect called vacuum polarization. The interaction between two charges at momentum transfer $Q$ keeps its lowest-order form, with a modified coupling. Let fermion $f$ have mass $m_f$, charge $e_fe$ and $N_c$ colours. For $Q\gg m_f$, and with $\alpha$ defined at zero momentum transfer, the one-loop result is
 
 ```math
-\mu\frac{dg_i}{d\mu}=\beta_i(\{g\})
-\left(\mu\partial_\mu+\beta_i\partial_{g_i}+n\gamma\right)G^{(n)}=0
-\beta_i(g_*)=0,\qquad \delta g_i(b)=b^{y_i}\delta g_i
-\mathcal L_{\mathrm{eff}}(\mu)=\sum_i c_i(\mu)\mathcal O_i
+\alpha(Q)=\frac{\alpha}{1-\Delta\alpha(Q)},\\
+\Delta\alpha(Q)=\frac{\alpha}{3\pi}\sum_fN_ce_f^2\left[\ln\frac{Q^2}{m_f^2}-\frac53\right].
 ```
 
-## Physical Meaning
+Differentiating with respect to $\ln Q$ removes the constants and gives the rate of change of the coupling, the beta function. Integrating it between a reference scale $\mu$ and $Q$ gives
 
-A change of scale moves the couplings along a flow. Predictions remain fixed when explicit scale dependence and coupling dependence compensate. Fixed points and relevant directions then organize universality across microscopically different systems.
+```math
+\mu\frac{d\alpha}{d\mu}=\beta(\alpha)=\frac{2\alpha^2}{3\pi}\sum_fN_ce_f^2,\\
+\frac{1}{\alpha(Q)}=\frac{1}{\alpha(\mu)}-\frac{2}{3\pi}\sum_fN_ce_f^2\ln\frac{Q}{\mu}.
+```
 
-Different lattice models can approach the same critical exponents because coarse-graining removes microscopic details while preserving the long-distance transformation structure.
+The positive beta function expresses screening: the effective charge grows at short distance. Only fermions lighter than $Q$ contribute appreciably, while heavier ones decouple, so the sum changes at each mass threshold. A prediction written in terms of $\alpha(Q)$ does not depend on the reference scale $\mu$ used to define the coupling. This independence is the content of the renormalization group equation.
 
-Effective field theory uses this scale organization to decide which operators must be retained for a specified accuracy.
+The three charged leptons give $\Delta\alpha_{\rm lep}(M_Z)=0.0314$ at one loop. Quarks are confined at low momentum, so their contribution is obtained from the measured cross section for $e^+e^-\to\mathrm{hadrons}$ through a dispersion relation, which gives $\Delta\alpha_{\rm had}\approx0.0277$. Together they yield $1/\alpha(M_Z)\approx137.036\times(1-0.059)\approx128.9$. Bhabha scattering at LEP observed the predicted increase of the coupling directly. This running value enters the W-mass relation of the Standard Model.
 
-## Consequences Forced By The Relation
+Wilson's formulation explains why the same structure governs very different systems. Integrating out fluctuations between a cutoff $\Lambda$ and $\Lambda/b$ changes the couplings $g_i$ of the remaining long-wavelength theory. Near a fixed point $g^*$, where all beta functions vanish, small deviations scale with powers of $b$:
 
-Observable predictions are independent of the arbitrary renormalization scale when explicit scale dependence and coupling flow compensate. Systems approaching the same fixed point with the same relevant directions share critical exponents and scaling functions. Relevant perturbations drive the flow away from a fixed point and select the accessible phases or crossover regimes.
+```math
+\beta_i(g^*)=0,\qquad \delta g_i(b)=b^{y_i}\,\delta g_i(1).
+```
 
-## Domain Of The Construction
+Directions with $y_i>0$ grow and are called relevant; those with $y_i<0$ shrink and are called irrelevant. Long-distance behaviour then depends only on the few relevant couplings. For this reason a liquid near its critical point and a uniaxial magnet share the same critical exponents.
 
-Universality requires matching dimensionality, symmetries, conserved quantities, interaction range, and relevant directions; a shared dimensionless group alone is insufficient. An effective theory is tied to a scale and accuracy, because omitted operators return through controlled corrections.
+The one-loop QED formula holds while $(\alpha/3\pi)\ln(Q^2/m^2)$ remains small. Taken literally with the electron loop alone, it would make $\alpha$ diverge near $10^{280}$ MeV, far beyond the range where the theory is applied. In Quantum chromodynamics the self-interaction of gluons reverses the sign of the beta function, and the strong coupling decreases at short distance.
 
-## Invariance And Realization
+## References For The Physical Derivation
 
-Observable predictions remain independent of the arbitrary renormalization scale when couplings and fields flow consistently. Critical exponents and scaling functions are shared by systems approaching the same fixed point with the same relevant directions. Symmetry and dimensionality constrain the effective operators generated by coarse graining.
+- [F. Jegerlehner, The running fine structure constant alpha(E) via the Adler function; leptonic and hadronic contributions to the running of alpha.](https://arxiv.org/abs/0807.4206)
 
-Couplings, field normalizations, effective degrees of freedom, and operator coefficients depend on scale. Microscopic Hamiltonians can differ while their long-distance flows enter the same universality class. A relevant perturbation can drive the system away from one fixed point toward another phase or crossover regime.
-
-## Discriminating Consequences
-
-Measurements at several scales determine whether running couplings follow one beta function. Microscopically different realizations determine whether critical exponents and scaling functions coincide. Corrections to scaling distinguish approach to a fixed point from an exact scale-invariant law.
 
 ## Source Equations
 

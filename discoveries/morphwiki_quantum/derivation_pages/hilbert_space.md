@@ -1,43 +1,37 @@
 # Hilbert space
 
-**Physical domain:** State space, domain, and representation
+A particle between two hard walls a distance $L$ apart is prepared with the same amplitude at every point of the box. A measurement of its energy then returns the lowest level in a definite fraction of runs. Computing that fraction uses the two properties that define a Hilbert space: an inner product and completeness.
 
-## Mechanism
-
-Hilbert space is the admissible state carrier of quantum theory: it supplies the space in which states, operators, bases, spectra, and probabilities become legally defined.
-
-Hilbert space is not merely a container for wave functions. Its inner product defines amplitudes and orthogonality, while the domains of unbounded operators decide whether expressions for position, momentum, and energy are mathematically and physically admissible.
-
-Hilbert space is not physical space and not a geometric background in this book. It is the legal carrier of quantum identity. A state is a vector or density operator on it; the inner product gives amplitudes and norms; observables are self-adjoint operators on it; spectral projectors define possible answers; and unitary evolution preserves norm and probability. Hilbert space is therefore central because it binds state, probability, operator spectrum, and identity preservation into one formal carrier.
-
-## Physical Construction
-
-The state carrier is a complex Hilbert space, or a density-operator state space built on it. The calculation involves self-adjoint observables, unitary maps, spectral projectors, and domain-restricted generators defined on the carrier. Inner-product structure, normalization, positivity for density states, and operator-domain conditions make states and observables legal. The calculated quantities include Born probabilities, spectral projectors, expectation values, and preserved norms.
-
-## Topic Equations
+The states of the particle are square-integrable functions on the interval. The inner product of two of them gives an amplitude, and its squared modulus gives the probability of finding one prepared state in another. The energy eigenfunctions $\phi_n(x)=\sqrt{2/L}\,\sin(n\pi x/L)$ are orthonormal, and every state is a convergent sum of them:
 
 ```math
-\ket{\psi}\in\mathcal H,\qquad \langle\psi|\psi\rangle=1
-\rho\in\mathcal S(\mathcal H),\qquad \rho\ge0,\quad \operatorname{Tr}\rho=1
-A=A^\dagger,\qquad A=\int_{\sigma(A)}\lambda\,dE_A(\lambda)
-\Pr(\Delta\mid \rho,A)=\operatorname{Tr}\!\left(\rho E_A(\Delta)\right)
-\rho_t=U(t)\rho U(t)^\dagger,\qquad U^\dagger U=I
+\langle\phi|\psi\rangle=\int_0^L\phi^*(x)\psi(x)\,dx,\qquad
+\psi=\sum_{n\geq1}c_n\phi_n,\\
+c_n=\langle\phi_n|\psi\rangle,\qquad
+\sum_{n\geq1}|c_n|^2=\langle\psi|\psi\rangle=1.
 ```
 
-## Physical Meaning
+For the flat state $\psi=1/\sqrt L$ the coefficients are $c_n=\sqrt2\,[1-(-1)^n]/(n\pi)$. The even terms vanish because the flat state is symmetric about the centre of the box, while the even eigenfunctions are antisymmetric. The odd terms give
 
-The linear structure permits superposition, the inner product converts pairs of states into amplitudes, and completeness guarantees that convergent sequences of approximations remain inside the space. Operator domains must be carried with the operators; the same differential formula on another domain can describe a different physical system.
+```math
+P(E_1)=|c_1|^2=\frac{8}{\pi^2}\approx0.811,\qquad
+P(E_n)=\frac{8}{n^2\pi^2}\quad(n\ \text{odd}).
+```
 
-A qubit lives in a two-dimensional complex space, whereas a particle on a line is described in a space of square-integrable functions. Both obey the same Hilbert-space logic, but their operators, spectra, and boundary conditions are different.
+The probabilities add up to one because the sum of $1/n^2$ over odd $n$ equals $\pi^2/8$. This is Parseval's identity. It holds because the space is complete: a sequence of finite superpositions whose members approach each other in mean square converges to a state inside the space. The probability missing after the terms up to $n=N$ falls roughly as $4/(\pi^2N)$ for large $N$. The partial sums vanish at the walls themselves and overshoot the flat value by 18 percent next to them, however many terms are kept. Convergence in the norm is nevertheless the physically relevant sense, because the norm controls every probability.
 
-After the arena is fixed, a quantum state selects one preparation or statistical ensemble within it.
+The same state has infinite mean energy. With $E_n=n^2\pi^2\hbar^2/(2mL^2)$, every odd term of the energy sum contributes the same amount:
 
-## Invariance And Realization
+```math
+\langle H\rangle=\sum_{n\ \text{odd}}\frac{8}{n^2\pi^2}\,
+\frac{n^2\pi^2\hbar^2}{2mL^2}
+=\sum_{n\ \text{odd}}\frac{4\hbar^2}{mL^2}=\infty.
+```
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+The flat wave function belongs to the Hilbert space, but not to the domain of the Hamiltonian. It jumps at the walls, where every eigenfunction vanishes, and an abrupt step needs arbitrarily large momentum components. The divergence comes from the step itself, so walls of finite height do not remove it. A preparation with finite energy must round the edges over some length, and that length cuts off the sum.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+The Hilbert space is not physical space. For one particle in three dimensions it is a space of wave functions of three coordinates; for $N$ particles the functions depend on $3N$ coordinates. A single spin needs only the two-dimensional space $\mathbb C^2$, and $N$ spins need dimension $2^N$. A finite set of box modes suffices for questions about low energies, but not for the mean energy of a state with sharp edges. The distinction between the space and an operator's domain recurs in spectral theory and in the treatment of self-adjoint operators.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-Unitary changes of basis preserve Born probabilities; if probabilities change, the page has changed the physical context rather than only the representation. The operator domain and normalization conditions determine which questions are legal on the selected Hilbert space. Basis names are bookkeeping; inner products, spectra, and probabilities are the physical content that must survive the rewrite.
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; Hilbert spaces, operator domains and spectral decompositions.](https://arxiv.org/abs/1508.06951)

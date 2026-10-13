@@ -1,41 +1,30 @@
 # Hamiltonian (quantum mechanics)
 
-**Physical domain:** Dynamics and transformations
+Ammonia absorbs microwaves near 24 GHz, and its line at 23.87 GHz was used in the ammonia maser of 1954. The same frequency describes a motion: a nitrogen atom placed on one side of the plane of the three hydrogens tunnels to the other side and back. One operator, the Hamiltonian $H$, fixes both the energy outcomes and this time evolution.
 
-## Mechanism
-
-Hamiltonian (quantum mechanics) is the generator observable: it both transports states and supplies the energy spectrum.
-
-The Hamiltonian specifies both the energy observable and, for a closed system, the generator of time translation. These roles coincide but should not be confused: one concerns possible energy values, the other the path followed by every prepared state.
-
-The Hamiltonian has a dual role. Dynamically, it generates unitary time evolution. Spectrally, its eigenvalues are admissible energy observables. This dual role is one reason the operator/spectrum branch is central.
-
-## Physical Construction
-
-The state carrier is a state vector, density operator, wavefunction, field state, or register on a specified domain. The calculation involves hamiltonian, unitary map, channel generator, action, constraint, or differential operator that transports the state. Self-adjointness, complete positivity, trace preservation, gauge constraints, and boundary/domain conditions decide whether the evolution is legal. The calculated quantities include time-dependent probabilities, spectra, transition amplitudes, conserved quantities, or response functions.
-
-## Topic Equations
+For a closed system with time-independent $H$, the energy eigenstates $|E_n\rangle$ form a basis, and evolution multiplies each component by its own phase. Write the prepared state as $|\psi\rangle=\sum_nc_n|E_n\rangle$. For any observable $O$ with matrix elements $O_{mn}=\langle E_m|O|E_n\rangle$,
 
 ```math
-H\ket{E_n}=E_n\ket{E_n}
-U(t)=e^{-iHt/\hbar}
-\rho(t)=U(t)\rho(0)U(t)^\dagger
+H|E_n\rangle=E_n|E_n\rangle,\qquad
+U(t)=e^{-iHt/\hbar}=\sum_ne^{-iE_nt/\hbar}|E_n\rangle\langle E_n|,\\
+\langle O\rangle(t)=\sum_{m,n}c_m^*c_n\,O_{mn}\,e^{i(E_m-E_n)t/\hbar}.
 ```
 
-## Physical Meaning
+Only energy differences enter, so a constant added to $H$ changes no prediction. The weights $|c_n|^2$ never change, which is energy conservation. Every observable oscillates at the Bohr frequencies $(E_m-E_n)/\hbar$, the same frequencies a spectrometer records as absorption or emission lines. An eigenstate acquires only an overall phase, so all its expectation values are constant. Motion requires a superposition of different energies.
 
-Exponentiating a self-adjoint Hamiltonian produces the unitary propagator. Its eigenvectors acquire phases at rates set by their energies; relative phases then produce interference and motion. Time dependence or external driving requires a time-ordered propagator.
+In ammonia the umbrella-inversion coordinate has two equivalent minima. Let $|L\rangle$ and $|R\rangle$ be states localized in each well with equal energy $E_0$, and let $A>0$ be the tunnelling amplitude through the barrier between them. Within this pair of states,
 
-For a particle in a static potential, kinetic and potential terms determine both stationary energy levels and the evolution of a wave packet assembled from those levels.
+```math
+H=\begin{pmatrix}E_0&-A\\-A&E_0\end{pmatrix},\qquad E_\pm=E_0\pm A,\qquad
+P_L(t)=\cos^2\frac{\Delta E\,t}{2\hbar},\qquad \Delta E=2A.
+```
 
-The Schrödinger equation gives the differential form of this evolution, while path integrals and the Heisenberg picture reorganize the same predictions.
+The symmetric combination of $|L\rangle$ and $|R\rangle$ is the lower level, and the antisymmetric combination lies higher by $\Delta E$. A molecule prepared in $|L\rangle$ is an equal superposition of the two. Its probability $P_L$ of remaining on the left therefore oscillates at the line frequency $\Delta E/h$. A line at 23.87 GHz gives $\Delta E=9.9\times10^{-5}$ eV, or $0.80\,\mathrm{cm}^{-1}$, and a crossing time $\pi\hbar/\Delta E\approx21$ ps.
 
-## Invariance And Realization
+The maser used the same two levels. An inhomogeneous electric field shifts them in opposite directions, so it separates molecules in the upper level from those in the lower level. Molecules in the upper level were focused into a microwave cavity, where they emitted at $\Delta E/h$.
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+The two-level description holds because the next vibrational level of the umbrella motion lies near $950\,\mathrm{cm}^{-1}$, far above the splitting. Rotation changes the splitting slightly, which spreads the inversion lines over a band near 24 GHz. More generally, $H$ must be self-adjoint for $U(t)$ to be unitary, and bounded below for a ground state to exist. For a particle in a potential, $H=P^2/2m+V(X)$ follows from the classical energy, as described under Hamiltonian mechanics. When $H$ depends on time, energy is not conserved and $U$ becomes a time-ordered product, treated under the Schrödinger picture.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+## References For The Physical Derivation
 
-## Discriminating Consequences
-
-Lawful closed-system evolution preserves norm or trace; open-system evolution must preserve positivity and trace under the stated approximation. The short-time and classical limits identify whether the generator has the correct physical regime. Hamiltonian, propagator, and path-integral forms are equivalent only when they yield the same transition amplitudes or correlation functions.
+- [V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course; self-adjoint Hamiltonians, spectral decomposition and the unitary evolution they generate.](https://arxiv.org/abs/1508.06951)

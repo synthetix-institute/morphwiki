@@ -1,38 +1,34 @@
 # Bell's theorem
 
-**Physical domain:** Measurement, instruments, and probabilities
+Two spin-1/2 particles leave a common source in opposite directions. Each meets a Stern--Gerlach magnet whose orientation is chosen at random just before arrival, and each detector records $+1$ or $-1$. Bell asked whether the correlations of these records can be produced by properties fixed at the source together with the local settings alone.
 
-## Mechanism
-
-Bell's theorem is a compatibility/locality stress test: quantum correlations violate bounds satisfied by local hidden-variable assignments.
-
-The measurement rule connects the formal state and observable to experimental frequencies. It distinguishes the probability assigned to an outcome from the conditional state change that may follow a recorded event.
-
-Bell's theorem is not a page about a mysterious object. It is a falsifier for a classical joint-assignment model of measurement outcomes.
-
-## Physical Construction
-
-The state carrier is one state space or a multipartite state space on which several questions can be asked. The calculation involves two or more observables, contexts, correlation operators, or hidden-variable assignments being compared. Commutators, uncertainty bounds, contextuality constraints, or Bell-type inequalities decide which joint assignments are possible. The calculated quantities include joint spectra, correlations, inequality violations, uncertainty products, or incompatible outcome statistics.
-
-## Topic Equations
+Let each pair carry a variable $\lambda$ with distribution $\rho(\lambda)$. A local model gives outcomes $A_a(\lambda)=\pm1$ and $B_b(\lambda)=\pm1$, where $A$ does not depend on the distant setting $b$ and $\rho$ depends on neither setting. With two settings per side, one bracket below vanishes and the other equals $\pm2$ for every pair:
 
 ```math
-|E(a,b)+E(a,b')+E(a',b)-E(a',b')|\le 2
-\text{quantum prediction can reach }2\sqrt2
+S_\lambda=A_a(B_b+B_{b'})+A_{a'}(B_b-B_{b'})=\pm2\\
+|E(a,b)+E(a,b')+E(a',b)-E(a',b')|\leq2
 ```
 
-## Physical Meaning
+Here $E(a,b)$ is the average of $A_aB_b$ over $\lambda$. Random local responses do not help, because they are mixtures of deterministic ones and the bound is linear in the probabilities. This is the Clauser--Horne--Shimony--Holt (CHSH) inequality.
 
-Each positive effect represents an outcome channel and the effects sum to the identity, which enforces normalized probabilities. A projective measurement is a special case. A complete detector model may further specify a quantum instrument, whose maps describe both the outcome probability and the corresponding post-measurement state.
+For the spin singlet, quantum mechanics gives $E(a,b)=-\cos(\theta_a-\theta_b)$, with $\theta$ the magnet angle in a common plane. The angles $0^\circ$ and $90^\circ$ on one side, with $45^\circ$ and $-45^\circ$ on the other, give $|S|=4/\sqrt2=2\sqrt2\approx2.83$.
 
-Once the probability rule is explicit, incompatibility can be tested rather than asserted. Commutators, uncertainty relations, and Bell-type constraints identify when several measurement questions cannot share one sharp assignment.
+No quantum state and no choice of $\pm1$ observables does better. For the Bell operator $\mathcal B=A\otimes(B+B')+A'\otimes(B-B')$, squaring and using $A^2=B^2=I$ gives
 
-## Invariance And Realization
+```math
+\mathcal B^2=4I-[A,A']\otimes[B,B'],\qquad
+|\langle\mathcal B\rangle|\leq2\sqrt2.
+```
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+Each commutator has norm at most 2, so no eigenvalue of $\mathcal B^2$ exceeds 8. This is the Tsirelson bound. It also shows that a violation requires noncommuting settings on both sides; commuting pairs return the classical value 2. If the singlet is mixed with white noise so that correlations shrink by a factor $v$, then $S=2\sqrt2\,v$ and a violation requires $v>1/\sqrt2$.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+An experiment must also close two gaps in the derivation. If detectors miss many particles, the detected subset may be unrepresentative; for a maximally entangled state the CHSH test needs efficiency above $2(\sqrt2-1)\approx0.83$. If one setting can influence the distant detector before its record is final, a local signal could fix the correlations. The settings must also be statistically independent of $\lambda$.
 
-## Discriminating Consequences
+In 2015 Hensen and colleagues entangled electron spins in two diamond defects 1.3 km apart. Settings were chosen randomly and each spin was measured within the light travel time between the sites. In 245 heralded trials, each giving an outcome at both sites, they found $S=2.42\pm0.20$. Photon experiments in Vienna and Boulder closed both gaps in the same year.
 
-Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.
+The theorem constrains local models of the records; it does not modify quantum mechanics. The Einstein--Podolsky--Rosen argument, which motivated it, used predictions with certainty; quantum nonlocality extends the comparison to three particles without an inequality. Device-independent quantum key distribution uses the observed value of $S$ to bound an eavesdropper's information.
+
+## References For The Physical Derivation
+
+- [N. Brunner, D. Cavalcanti, S. Pironio, V. Scarani and S. Wehner, Bell nonlocality; CHSH inequality, Tsirelson bound and loopholes.](https://arxiv.org/abs/1303.2849)
+- [B. Hensen and colleagues, Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km; S = 2.42 in 245 trials.](https://arxiv.org/abs/1508.05949)

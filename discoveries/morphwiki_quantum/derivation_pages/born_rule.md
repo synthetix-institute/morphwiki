@@ -1,41 +1,32 @@
 # Born rule
 
-**Physical domain:** Measurement, instruments, and probabilities
+A spin prepared up along $z$ enters a Stern--Gerlach magnet tilted by an angle $\theta$. Each atom lands in one of two spots. Over many atoms, the fraction in the upper spot approaches $\cos^2(\theta/2)$, although no single run reveals that number.
 
-## Mechanism
-
-Born rule is the probability-observable constructor: it maps a state and a spectral channel to an observed probability.
-
-The Born rule is the bridge from complex amplitudes to experimentally testable probabilities. It is an additional postulate: linear state evolution alone does not say how often a detector outcome should occur.
-
-The Born rule is the point where the constructor becomes predictive. It does not name an object; it connects state preparation and a legal question to frequencies over outcome channels.
-
-## Physical Construction
-
-The state carrier is a state vector or density operator together with the measurement context in which outcome channels are defined. The calculation involves a projection-valued measure, POVM, update map, or instrument map connecting state to record. Outcome probabilities must be positive, normalized, and tied to a specified measurement map rather than to informal observer language. The calculated quantities include Born probabilities, detector records, post-measurement states, ensemble frequencies, or decision probabilities.
-
-## Topic Equations
+The spin state up along the tilted axis $\mathbf n$ is $\cos(\theta/2)|{\uparrow}\rangle+\sin(\theta/2)|{\downarrow}\rangle$. Its inner product with the prepared state is the amplitude $\cos(\theta/2)$, and the Born rule assigns probability equal to its squared modulus. For a density operator $\rho$ and an outcome projector $P_k$ the same rule reads
 
 ```math
-p(i|\rho,\{P_i\})=\operatorname{Tr}(\rho P_i)
-\Pr(X\in\Delta|\psi)=\int_\Delta|\psi(x)|^2\,d\mu(x)
-\sum_i p(i)=1
+p_+=|\langle{+_{\mathbf n}}|{\uparrow_z}\rangle|^2=\cos^2\frac{\theta}{2},\qquad
+p(k)=\operatorname{Tr}(\rho P_k).
 ```
 
-## Physical Meaning
+The rule refers to relative frequencies in repeated, identically prepared runs. For $N$ independent atoms the observed fraction scatters about $p$ with standard deviation $\sqrt{p(1-p)/N}$. At $\theta=120^\circ$, $p=1/4$, and $10^4$ atoms fix the fraction to about $\pm0.004$. Comparing such fractions at many angles tests the rule, provided detector efficiency and background are calibrated independently.
 
-For a sharp measurement, the probability of an outcome is the state weight in the corresponding eigenspace. The density-operator form extends the same rule to mixtures and generalized measurements. Completeness of the outcome operators makes the probabilities sum to one.
+The squared modulus is not an arbitrary choice. Gleason's theorem states that, in a space of dimension three or more, any assignment of probabilities to projectors must take the form $\operatorname{Tr}(\rho P)$. The assumption is that probabilities add over mutually orthogonal projectors and do not depend on which other projectors are measured alongside. The rule thus follows from the projector structure and this additivity, not from the Schrödinger equation.
 
-A spin prepared equally between two vertical outcomes gives one-half for each vertical detector channel, even though each individual run records only one result.
+A sharp consequence concerns interference among more than two paths. Let $a$, $b$ and $c$ be the amplitudes at one screen point from three slits $A$, $B$ and $C$. Write $P_{AB}$ for the probability with slits $A$ and $B$ open, and so on. Expanding the squared moduli gives
 
-Measurement theory adds detector coupling and conditional state change without altering this probability assignment.
+```math
+|a+b+c|^2=|a|^2+|b|^2+|c|^2+2\operatorname{Re}(a^*b+b^*c+a^*c),\\
+I_3=P_{ABC}-P_{AB}-P_{BC}-P_{AC}+P_A+P_B+P_C=0.
+```
 
-## Invariance And Realization
+Every cross term appears once in $P_{ABC}$ and once in a two-slit pattern, so the combination $I_3$ cancels identically. A rule in which probability were a higher power of the amplitude would leave a third-order interference term. Sinha and colleagues measured the patterns for every combination of open slits, using single photons and three slits. They bounded the three-path term below one percent of the two-path interference.
 
-The rule connecting prepared states, observables, and spectral probability measures across wave, matrix, path-integral, circuit, or field notation. The operator-to-spectrum relation: admissible observations are represented through eigenvalues, projections, modes, or outcome channels. The dependence of admissible observable on measurement context or boundary condition. The non-commuting compatibility structure, which survives changes of representation.
+The cancellation assumes that opening a slit only adds an amplitude. Near-field paths that loop between neighbouring open slits violate this assumption slightly. Within ordinary quantum mechanics they produce a small nonzero $I_3$, which precise tests must subtract.
 
-The name of the carrier: particle, wave, field, qubit, or excitation. Where time dependence is represented: on the state, on the operator, or in a path weight. The coordinate system, basis, or geometric picture used to display the same relation. The physical implementation of detector, boundary, preparation, or observable.
+For unsharp detectors the projector is replaced by a positive effect, as described under POVM. The sharp case, with orthogonal projectors that sum to the identity, is described under projection-valued measure. Wave interference supplies the amplitudes; the Born rule converts them into counting rates.
 
-## Discriminating Consequences
+## References For The Physical Derivation
 
-Outcome probabilities are non-negative and normalized because the observable acts on a valid state with a complete effect family. Projective measurement is the sharp limit of the same probability rule when effects become orthogonal projectors. The probability assignment is distinct from any optional post-measurement update convention.
+- [U. Sinha, C. Couteau, T. Jennewein, R. Laflamme and G. Weihs, Ruling Out Multi-Order Interference in Quantum Mechanics; three-slit bound on third-order interference.](https://arxiv.org/abs/1007.4193)
+- [R. D. Sorkin, Quantum Mechanics as Quantum Measure Theory; hierarchy of sum rules in which quantum probabilities have only pairwise interference.](https://arxiv.org/abs/gr-qc/9401003)
