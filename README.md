@@ -137,19 +137,22 @@ The calculation establishes consequences of its supplied inputs; citations
 locate the corresponding relations in inspected sources.
 
 The book opens with **Quantum Mechanisms And Their Predictions**, developing
-an interaction, the correlation it generates, and its measured consequence
-before introducing the nested description. Closure enters when the calculation
-shows what information a reduced description has omitted.
+an interaction, the correlation it generates, and its measured consequence.
+The following chapters work through physical examples: one equation with two
+spectra set by its boundary conditions, a classical field that becomes a
+quantized mode, an environment that causes decay or revival, the geometric
+phase and frustration around loops, and the potential that appears when a law
+is carried onto a curved surface. The formal notation of the mechanism
+descriptions is confined to one appendix.
 
-The **expository companion** is the book to read. It develops all 63
-topic-specific treatments and indexes all 146 subjects. The index distinguishes 62 overview entries without
-an individual derivation, four alternative names, and 17 historical or
-interpretive entries. Repeated branch-level equations are omitted from this
-edition. The [full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
-is for lookup rather than reading: it gives every subject its own entry,
-including overviews that repeat the equations of their chapter. Individual
-topic files remain available. Two treatments previously hidden
-by alternative-name redirects now appear with their equations.
+Every physical subject is a worked treatment: it opens with a phenomenon,
+derives the relation that answers it, and follows that relation to a number or
+a named experiment. The **expository companion** contains all 125 treatments
+and indexes all 146 subjects, including four alternative names and 17
+historical or interpretive entries. The
+[full reference edition](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
+also prints the historical and interpretive entries, each with a short account
+of the physics it concerns. Individual topic files remain available.
 
 The first page states the book's scope. Each treatment identifies its authored
 exposition and the source routes available for particular relations;
@@ -167,7 +170,7 @@ methods supplement; discovery claims require their own target-system tests.
 The local edition has no DOI.
 
 The [companion checks](discoveries/morphwiki_quantum/book/companion/companion_integrity.md)
-require all 63 treatments to retain the same bodies as the full edition, all
+require all 125 treatments to retain the same bodies as the full edition, all
 146 index entries to be present exactly once, and visible provenance and source
 links to survive. The report counts developed treatments separately from index
 entries and records the status of scientific review. See the

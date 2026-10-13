@@ -170,8 +170,8 @@ def test_every_new_derivation_is_rendered_in_both_editions():
 def test_book_begins_with_mechanism_before_formal_roles():
     tex = render_book(ROOT)
     assert "Quantum Mechanisms And Their Predictions" in OPENING
-    assert tex.index(OPENING) < tex.index(r"\chapter{The Physical Identity Of A Quantum Mechanism}")
-    assert tex.index(OPENING) < tex.index(r"\chapter*{When External Conditions Become Quantum Physics}")
+    assert tex.index(OPENING) < tex.index(r"\chapter{What A Quantum Prediction Requires}")
+    assert tex.index(OPENING) < tex.index(r"\chapter{When A Fixed Background Becomes Part Of The System}")
     assert "Through Physical Roles" not in tex
 
 

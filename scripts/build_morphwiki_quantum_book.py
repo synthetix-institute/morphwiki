@@ -2531,11 +2531,13 @@ try:
     from quantum_reviewed_topics import CONSTRUCTORS, EXPLANATIONS, FRAMES, REFERENCES, SUPPORT
     from quantum_physical_derivations import NARRATIVES, REFERENCES as DERIVATION_REFERENCES
     from quantum_mechanisms_opening import OPENING
+    import quantum_framework_chapters as FRAME
     from quantum_original_sources import load_original_sources
 except ModuleNotFoundError:
     from scripts.quantum_reviewed_topics import CONSTRUCTORS, EXPLANATIONS, FRAMES, REFERENCES, SUPPORT
     from scripts.quantum_physical_derivations import NARRATIVES, REFERENCES as DERIVATION_REFERENCES
     from scripts.quantum_mechanisms_opening import OPENING
+    from scripts import quantum_framework_chapters as FRAME
     from scripts.quantum_original_sources import load_original_sources
 
 TOPIC_CONSTRUCTOR_OVERRIDES.update(CONSTRUCTORS)
@@ -2543,6 +2545,20 @@ TOPIC_EXPLANATION_OVERRIDES.update(EXPLANATIONS)
 TOPIC_FRAME_OVERRIDES.update(FRAMES)
 TOPIC_SUPPORT_OVERRIDES.update(SUPPORT)
 REFERENCES.update(DERIVATION_REFERENCES)
+
+
+def latex_equation_sources(evidence: Sequence[Mapping[str, Any]]) -> str:
+    """Corpus-aligned equation sources of a topic, as rendered on every topic page."""
+    if not evidence:
+        return ""
+    lines = [r"\subsection*{Equation Sources}", r"\begin{itemize}"]
+    for witness in evidence:
+        arxiv = witness.get("paper_id") or ""
+        url = witness.get("arxiv_url") or (f"https://arxiv.org/abs/{arxiv}" if arxiv else "")
+        label = f"arXiv:{arxiv}" if arxiv else str(witness.get("record_id") or "source witness")
+        lines.append(rf"\item \href{{{latex_url(url)}}}{{{latex_escape(label)}}}" if url else rf"\item {latex_escape(label)}")
+    lines.append(r"\end{itemize}")
+    return "\n".join(lines)
 
 
 def narrative_body(slug: str, latex: bool = False) -> str:
@@ -4306,6 +4322,14 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
                 rf"The physical derivation is given in \hyperref[topic:{target}]{{{latex_escape(canonical_title)}}}.",
             ]
         )
+    if (branch_id == "annotations" or row.get("is_annotation")) and str(row.get("slug") or "") in NARRATIVES:
+        slug = str(row.get("slug") or "")
+        return "\n\n".join([
+            r"\clearpage", rf"\section{{{latex_escape(title)}}}", topic_label,
+            r"\par\smallskip\noindent\textit{Historical, bibliographic or interpretive entry.}",
+            narrative_body(slug, latex=True), editorial_references(slug, latex=True),
+            original_source_references(root, slug, latex=True), latex_equation_sources(evidence),
+        ])
     if branch_id == "annotations" or row.get("is_annotation"):
         lines = [
             r"\clearpage",
@@ -4349,7 +4373,7 @@ def page_entry(root: Path, row: Mapping[str, Any], index: int, branch_id: str, b
         return "\n\n".join([
             r"\clearpage", rf"\section{{{latex_escape(title)}}}", topic_label,
             narrative_body(slug, latex=True), editorial_references(slug, latex=True),
-            original_source_references(root, slug, latex=True),
+            original_source_references(root, slug, latex=True), latex_equation_sources(evidence),
         ])
     constructed = has_topic_constructor(page, str(row.get("slug") or ""))
     constructor = constructor_text(title, branch_id, row, hyperion, mw)
@@ -4492,6 +4516,16 @@ def render_derivation_page(root: Path, row: Mapping[str, Any], branch_id: str, b
     topic_context = topic_context_text(page)
     topic_url = topic_source_url(page)
     evidence = top_evidence(page, row, 6)
+    narrative_slug = str(row.get("slug") or "")
+    if narrative_slug in NARRATIVES:
+        parts = [f"# {title}"]
+        if branch_id == "annotations" or row.get("is_annotation"):
+            parts.append("*Historical, bibliographic or interpretive entry.*")
+        parts += [narrative_body(narrative_slug), editorial_references(narrative_slug),
+                  original_source_references(root, narrative_slug)]
+        if evidence:
+            parts.append("## Source Equations\n\n" + markdown_evidence(evidence, row))
+        return public_theory_language("\n\n".join(p for p in parts if p).rstrip() + "\n")
     if branch_id == "annotations" or row.get("is_annotation"):
         lines = [
             f"# {title}",
@@ -5620,6 +5654,14 @@ def global_composition_chapter() -> str:
     return "\n".join(lines)
 
 
+EQUIVALENCE_TITLES = {
+    "Carrier factorization defines locality": "The choice of subsystems defines locality",
+    "Boundary conditions are spectral control variables": "Boundary conditions control spectra",
+    "Measurement, channels, and error correction share an instrument calculus": "Measurement, channels and error correction share one description",
+    "Duality and simulation require an intertwining map": "Duality and simulation require a map that follows the dynamics",
+}
+
+
 def constructor_rewiring_chapter(root: Path) -> str:
     """Render authored connections, with their provenance visible in the book."""
     report = load_optional_json(root / "quantum_constructor_rewiring.json")
@@ -5629,8 +5671,7 @@ def constructor_rewiring_chapter(root: Path) -> str:
 
     lines: List[str] = [
         r"\chapter{Equivalence Across Quantum Descriptions}",
-        "The following relations compare descriptions through their dynamics and observable consequences. "
-        "Their domain and measurement conditions determine whether the proposed correspondence holds.",
+        FRAME.EQUIVALENCE_INTRO,
         r"\begin{claimbox}",
         latex_escape(
             "Two quantum descriptions represent the same physical mechanism when a map between their states preserves the dynamics and the stated observable consequences."
@@ -5638,8 +5679,8 @@ def constructor_rewiring_chapter(root: Path) -> str:
         r"\end{claimbox}",
         latex_escape(
             "Quantum theory uses several forms of this equivalence. A change of representation carries states and observables together. "
-            "A change of carrier embeds the same operator algebra in another Hilbert space. A reduced description projects onto fewer degrees of freedom, "
-            "and a measurement or boundary condition completes the relation by fixing its observable content. In each case the equivalence is decided by the quantity that remains unchanged."
+            "An encoding represents the same operators in another physical system, as a quantum simulator does. A reduced description keeps fewer degrees of freedom, "
+            "and a measurement or a boundary condition decides which quantities are compared. In each case the equivalence is decided by what stays the same."
         ),
     ]
 
@@ -5651,12 +5692,13 @@ def constructor_rewiring_chapter(root: Path) -> str:
         rewiring = str(connection.get("rewiring") or "")
         test = str(connection.get("test") or "")
         equations = [str(x) for x in (connection.get("equations") or []) if str(x).strip()]
+        title = EQUIVALENCE_TITLES.get(title, title)
         lines.extend(
             [
                 rf"\section{{{latex_escape(title)}}}",
-                latex_escape(f"This relation connects {topics}."),
-                latex_escape(rewiring_description_text(rewiring)),
-                latex_escape(f"The retained physical relation is {invariant}" + ("." if invariant and not invariant.endswith(".") else "")),
+                r"\par\noindent\textit{" + latex_escape(f"Related topics: {topics}.") + "}\\par",
+                latex_escape(rewiring_description_text(rewiring)
+                             + (f" Both descriptions give the same {invariant}." if invariant else "")),
             ]
         )
         if equations:
@@ -5991,31 +6033,30 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
         r"\hypersetup{pageanchor=true}",
         r"\tableofcontents",
         r"\chapter*{About This Edition}",
-        r"This companion orders quantum descriptions by the states, interactions, constraints and measurements that enter their predictions. "
-        r"Topic-specific derivations develop individual mechanisms. The role division is the authors' organizing choice; "
-        r"the structure of the tree is not presented as a partition independently recovered from the archive. "
-        r"The interpretations and explanatory equations are editorial constructions, rather than new quantum laws inferred from the archive.",
-        (rf"All {counts['treatment']} topic-specific treatments are retained. The reference index records "
-         rf"{counts['overview']} subjects whose full-edition entries repeat shared equations, {counts['alias']} alternative names, "
-         rf"and {counts['annotation']} historical or interpretive entries. An indexed subject is not counted as a developed treatment. "
-         r"The complete reference edition and topic files remain available separately."
+        r"This book develops quantum theory through worked calculations. Each topic begins with a physical question, derives the relation that answers it, "
+        r"and follows that relation to a measurable consequence. The opening part introduces the ingredients that every prediction needs, shows how a "
+        r"fixed background becomes part of the system, and follows what is left behind when a state is carried around a loop or a law is carried into "
+        r"another system. The grouping of topics into chapters is the authors' choice; the physics in each treatment is established theory, and the "
+        r"calculations are written for this volume.",
+        (rf"This edition contains {counts['treatment']} worked treatments, {counts['annotation']} historical, bibliographic or interpretive entries "
+         rf"and {counts['alias']} alternative names, listed in the closing index. "
          if edition == "companion" else
-         r"Physical-role overviews locate additional subjects within the same organization. Their shared representative equations are identified as such. "
-         r"The shorter expository companion retains the topic-specific treatments and places these overviews in a reference index."),
-        r"References follow the calculations they support. Links headed Relations In The Original Papers identify particular displays in those articles; Equation Sources identifies relations aligned to corpus records. The authors develop the explanatory calculations in this volume.",
+         rf"This edition contains {counts['treatment']} worked treatments together with {counts['annotation']} historical, bibliographic or "
+         rf"interpretive entries and {counts['alias']} alternative names. "),
+        r"References follow the calculations they support. Links headed Relations In The Original Papers identify particular displays in those articles; Equation Sources identifies relations aligned to corpus records.",
         r"\mainmatter",
         r"\part{Mechanisms And Predictions}",
         OPENING,
-        compact_operator_formulation_chapter(),
-        render_mechanism_guide(tree),
-        quantum_structure_chapter(),
-        global_composition_chapter(),
+        FRAME.PREDICTION_CHAPTER,
+        FRAME.BACKGROUND_CHAPTER,
+        FRAME.LOOPS_CHAPTER,
     ]
 
     rewiring = constructor_rewiring_chapter(root)
     if rewiring:
         lines.append(rewiring)
-    lines.append(quantum_discovery_chapter())
+    lines.append(FRAME.TRANSFER_CHAPTER_HEAD)
+    lines.append(FRAME.TRANSFER_EXAMPLE_INTRO)
 
     for part_title, branch_ids in QUANTUM_BRANCH_PARTS:
         if edition == "companion" and not any(
@@ -6031,10 +6072,11 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
                 if not pages:
                     continue
             lines.append(rf"\chapter{{{latex_escape(branch['title'])}}}")
+            definition, insight = FRAME.BRANCH_TEXT.get(branch_id, (branch["definition"], branch["insight"]))
             lines.append(r"\begin{claimbox}")
-            lines.append(latex_escape(branch["definition"]))
+            lines.append(latex_escape(definition))
             lines.append(r"\end{claimbox}")
-            lines.append(latex_escape(branch["insight"]))
+            lines.append(latex_escape(insight))
             lines.append(r"\section*{Topics}")
             lines.append(branch_table({**branch, "pages": pages}))
             if max_pages_per_branch is not None:
@@ -6069,6 +6111,7 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None, edition:
     lines.extend(
         [
             r"\backmatter",
+            FRAME.NOTATION_APPENDIX,
             r"\chapter{Sources And Reproduction}",
             latex_escape(source_statement),
             r"\end{document}",

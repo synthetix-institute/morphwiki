@@ -18,9 +18,9 @@ coefficients follow from a commutation requirement.
 ## Keep the expository book separate
 
 The [expository edition](../../discoveries/morphwiki_quantum/book/companion/quantum_mechanism_tree_book.pdf)
-retains all 62 topic-specific treatments. Its reference index also records 63
-overview subjects, four alternative names and 17 historical or interpretive
-entries, without presenting repeated branch equations as individual derivations.
+retains all 125 topic-specific treatments. Its reference index also records
+four alternative names and 17 historical or interpretive entries, which the
+full edition prints with short accounts of the physics they concern.
 The [full reference edition](../../discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)
 remains available separately. Both editions state the authorship of the
 mechanism tree on the title page. Paper links appear beside the relations they

@@ -13,13 +13,13 @@ try:
     from audit_quantum_book_content_preservation import pdf_page_count, noncanonical_arxiv_links
     from build_morphwiki_quantum_book import (
         edition_inventory, latex_escape, latex_label, load_json, load_original_sources,
-        page_display_name, page_path, top_evidence,
+        page_display_name, page_path, top_evidence, EQUIVALENCE_TITLES,
     )
 except ModuleNotFoundError:
     from scripts.audit_quantum_book_content_preservation import pdf_page_count, noncanonical_arxiv_links
     from scripts.build_morphwiki_quantum_book import (
         edition_inventory, latex_escape, latex_label, load_json, load_original_sources,
-        page_display_name, page_path, top_evidence,
+        page_display_name, page_path, top_evidence, EQUIVALENCE_TITLES,
     )
 
 
@@ -45,7 +45,7 @@ def displayed_equations(tex: str) -> list[str]:
             for match in pattern.finditer(body)]
 
 
-def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: int = 63) -> dict:
+def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: int = 125) -> dict:
     tree = load_json(root / "quantum_mechanism_tree.json")
     inventory = edition_inventory(root, tree)
     expected = {latex_label(slug) for slug, row in inventory.items() if row["kind"] == "treatment"}
@@ -81,7 +81,7 @@ def assess(root: Path, tex: str, full_tex: str, pdf: Path, expected_treatments: 
     title_page = tex.split(r"\end{titlepage}", 1)[0]
     connections = load_json(root / "quantum_constructor_rewiring.json").get("connections", [])
     connection_sections = [
-        rf"\section{{{latex_escape(page_display_name(str(connection.get('title') or 'Constructor connection')))}}}"
+        rf"\section{{{latex_escape(EQUIVALENCE_TITLES.get(page_display_name(str(connection.get('title') or 'Constructor connection')), page_display_name(str(connection.get('title') or 'Constructor connection'))))}}}"
         for connection in connections
     ]
     checks = {

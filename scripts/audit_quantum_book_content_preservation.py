@@ -215,8 +215,8 @@ def audit(args: argparse.Namespace) -> Dict[str, Any]:
         "mechanisms_before_roles_and_closure": (
             tex.find(r"\chapter{Quantum Mechanisms And Their Predictions}") >= 0
             and tex.find(r"\chapter{Quantum Mechanisms And Their Predictions}")
-            < tex.find(r"\chapter{The Physical Identity Of A Quantum Mechanism}")
-            < tex.find(r"\chapter*{When External Conditions Become Quantum Physics}")
+            < tex.find(r"\chapter{What A Quantum Prediction Requires}")
+            < tex.find(r"\chapter{When A Fixed Background Becomes Part Of The System}")
         ),
         "no_unsupported_grounding_status": not unsupported_grounding,
         "topic_words": total_words >= int(contract["minimum_topic_words"]),

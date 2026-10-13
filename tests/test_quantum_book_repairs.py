@@ -70,6 +70,7 @@ def test_book_audit_inspects_tex_equations_and_link_syntax():
 
 
 def test_qcd_and_qed_have_specific_physical_derivations_in_both_outputs():
+    from scripts.quantum_physical_derivations import NARRATIVES
     tree = json.loads((ROOT / "quantum_mechanism_tree.json").read_text())
     for slug in ("quantum_chromodynamics", "quantum_electrodynamics"):
         branch = tree["branches"]["fields"]
@@ -77,7 +78,9 @@ def test_qcd_and_qed_have_specific_physical_derivations_in_both_outputs():
         tex = page_entry(ROOT, row, 1, "fields", branch)
         md = render_derivation_page(ROOT, row, "fields", branch)
         assert "References For The Physical Derivation" in tex
-        for equation in TOPIC_CONSTRUCTOR_OVERRIDES[slug]["equations"]:
+        displays = [body for kind, body in NARRATIVES[slug] if kind == "eq"]
+        assert len(displays) >= 2
+        for equation in displays:
             assert equation in tex
             assert equation in md
         assert "many-mode extension" not in tex

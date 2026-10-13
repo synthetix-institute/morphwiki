@@ -59,20 +59,19 @@ about artifact integrity, not certification of all scientific content.
 
 ## Remaining review
 
-There are 63 topic-specific treatments, 62 physical-role overviews, four
-alternative-name entries and 17 historical or interpretive entries. In the
-full reference edition, the overviews retain their representative
-relations and are explicitly identified as overviews. They still need individual
-derivations and suitable references before this can be presented as a fully
-reviewed quantum-physics textbook. Independent checks of the accompanying
-FieldBridge calculations apply to those calculations alone.
+There are 125 topic-specific treatments, four alternative-name entries and
+17 historical or interpretive entries; no physical-role overview remains (see
+the section on worked treatments below). The treatments still need independent
+scientific review before this can be presented as a fully reviewed
+quantum-physics textbook. Independent checks of the accompanying FieldBridge
+calculations apply to those calculations alone.
 
 ## Expository companion edition
 
-The separate companion retains all 63 topic-specific treatments and the
-cross-topic explanations. The 62 generic overviews, four alternative-name
-entries and 17 historical or interpretive entries appear in a reference index
-rather than as developed physics chapters. The full edition and all source
+The separate companion retains all 125 topic-specific treatments and the
+cross-topic explanations. The four alternative-name entries and 17 historical
+or interpretive entries appear in a reference index rather than as developed
+physics chapters. The full edition and all source
 records remain available. Two existing derivations, for the quantum Hamiltonian
 and path-integral formulation, are now printed rather than hidden by
 alternative-name redirects.
@@ -146,3 +145,29 @@ MORPHWIKI_BUILD_V2_EVIDENCE_INDEX=0 bash scripts/run_quantum_book.sh
 
 The runner revalidates the saved evidence before generating the book. A fresh
 corpus extraction remains a separate operation requiring the source-card data.
+
+## Worked treatments for every topic (2026-10-12)
+
+The generic overviews and the template sections of the remaining treatments
+(the one-line constructor label, Physical Construction, Invariance And
+Realization and Discriminating Consequences) were replaced by individual
+treatments. Each opens with a physical question, derives the relation that
+answers it, works one example to a number or a named experiment, and states
+the conditions of validity. The 124 new treatments, including short accounts
+for the 17 historical and interpretive entries, live in
+`scripts/quantum_narratives/`, one module per chapter, and are merged by
+`scripts/quantum_physical_derivations.py`. Each module passes
+`scripts/quantum_narratives/check_module.py`, which typesets it as the book does,
+rejects internal vocabulary and compiles it. Key equations were checked
+symbolically or numerically when written, and every arXiv reference was
+confirmed against the arXiv API; experimental details quoted without a
+reference remain to be checked against the original papers.
+
+The opening part was rewritten around physical examples (boundary conditions
+and spectra, the vacuum Rabi oscillation, decay and revival in a spin bath, the
+spin echo, the Aharonov--Bohm ring, the Berry phase, a frustrated triangle, the
+geometric potential of a curved surface) in `scripts/quantum_framework_chapters.py`.
+The role notation of the mechanism descriptions appears only in the closing
+appendix. The content contract was rebased on the new edition: topic words rose
+from 63,619 to 71,373 and displayed equations from 129 to 379, while the PDF fell
+from 311 to 255 pages because repeated boilerplate was removed.

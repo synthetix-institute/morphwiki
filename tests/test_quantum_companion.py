@@ -20,11 +20,11 @@ def editions():
 def test_companion_preserves_treatments_not_template_pages(editions):
     full, companion = editions
     inventory = edition_inventory(ROOT, load_json(ROOT / "quantum_mechanism_tree.json"))
-    assert sum(row["kind"] == "treatment" for row in inventory.values()) == 63
-    assert sum(row["kind"] == "overview" for row in inventory.values()) == 62
+    assert sum(row["kind"] == "treatment" for row in inventory.values()) == 125
+    assert sum(row["kind"] == "overview" for row in inventory.values()) == 0
     assert len(re.findall(r"\\label\{index:", companion)) == 146
     full_bodies, bodies = topic_bodies(full), topic_bodies(companion)
-    assert len(bodies) == 63
+    assert len(bodies) == 125
     assert all(body == full_bodies[slug] for slug, body in bodies.items())
     assert "Representative Relation" not in companion
     assert "a topic-specific Hamiltonian or field equation is required" not in companion
@@ -51,7 +51,7 @@ def test_aliases_do_not_hide_existing_physical_treatments():
         for row in branch["pages"]:
             if row["slug"] in {"hamiltonian_quantum_mechanics", "path_integral_formulation"}:
                 tex = page_entry(ROOT, row, 1, branch_id, branch)
-                assert "Topic Equations" in tex
+                assert r"\begin{centeredalign}" in tex
                 assert "is an alternative name" not in tex
 
 

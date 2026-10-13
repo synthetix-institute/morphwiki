@@ -76,20 +76,19 @@ def test_default_book_uses_physical_constructor_and_hides_internal_audits(monkey
 
     assert "Quantum Theory" in tex
     assert r"{\Huge\bfseries As A Mechanism Tree\par}" in tex
-    assert "When External Conditions Become Quantum Physics" in tex
-    assert "The Physical Identity Of A Quantum Mechanism" in tex
-    assert "When External Structure Becomes Dynamical" in tex
-    assert "Global Composition: Curvature, Frustration, And Memory" in tex
+    assert "What A Quantum Prediction Requires" in tex
+    assert "When A Fixed Background Becomes Part Of The System" in tex
+    assert "Loops: Geometric Phase, Frustration And Memory" in tex
     assert "Equivalence Across Quantum Descriptions" in tex
-    assert "Theory Extension By Transfer And Obstruction" in tex
+    assert "Carrying A Law Into Another System" in tex
+    assert "Notation Of The Mechanism Descriptions" in tex
     assert r"\usepackage[T1]{fontenc}" in tex
     assert r"\usepackage[utf8]{inputenc}" in tex
     assert "fontspec" not in tex
-    assert "Structured Failure" in tex
-    assert "Incomplete Mechanisms" in tex
+    assert "Exact Transfer And Its Failure" in tex
     assert "Constructor Contract" not in tex
-    assert r"\mathcal E_P\ \text{completely positive and trace preserving}" in tex
-    assert r"E_y\ge0" in tex
+    # the role notation appears only in the notation appendix, after the main matter
+    assert tex.index(r"\Xi") > tex.index(r"\backmatter")
     assert "Sparse Attention Summary" not in tex
     assert "Mechanism Validation Layers" not in tex
     assert "Anomalies And Leads" not in tex
@@ -224,14 +223,11 @@ def test_quantum_topic_pages_explain_the_construction_in_connected_prose():
 
     markdown = render_derivation_page(ROOT, row, "context", branch)
 
-    assert "## Mechanism" in markdown
-    assert "## Physical Meaning" in markdown
-    assert "## Invariance And Realization" in markdown
-    assert "## Discriminating Consequences" in markdown
-    assert "## Checks" not in markdown
-    assert "## Connection To The Next Step" not in markdown
-    assert "a state encoding preparation" in markdown
-    assert "- **Role:**" not in markdown
+    for template_heading in ("## Mechanism", "## Physical Construction", "## Invariance And Realization",
+                             "## Discriminating Consequences", "## Checks", "- **Role:**"):
+        assert template_heading not in markdown
+    assert markdown.count("```math") >= 2
+    assert "Gleason" in markdown and "Stone" in markdown
     assert "readout" not in markdown.lower()
 
 
@@ -242,9 +238,9 @@ def test_quantum_statistics_are_admissibility_rules_not_time_generators():
 
     markdown = render_derivation_page(ROOT, row, "fields", branch)
 
-    assert "antisymmetric-state constructor" in markdown
-    assert "Fermi-Dirac statistics is an admissibility rule, not a generator" in markdown
-    assert r"\{a_i,a_j^\dagger\}=\delta_{ij}" in markdown
+    assert "Fermi energy" in markdown and "Sommerfeld" in markdown
+    assert markdown.count("```math") >= 2
+    assert "constructor" not in markdown
     assert "supplies or modifies the generator of state evolution" not in markdown
 
 
@@ -256,10 +252,8 @@ def test_fermion_page_derives_physical_consequences_and_transfer_limits():
     markdown = render_derivation_page(ROOT, row, "fields", branch)
 
     assert "exchange hole" in markdown
-    assert "degeneracy pressure" in markdown
-    assert "Jordan--Wigner" in markdown
-    assert "hard-core bosons" in markdown
-    assert "spectral agreement alone is insufficient" in markdown
+    assert "Slater" in markdown
+    assert "## Source Equations" in markdown
     page = json.loads((ROOT / "pages" / "fermion.json").read_text())
     assert row["v2_evidence"]["available"] is True
     assert row["v2_evidence"]["matched_source_examples"] > 0
