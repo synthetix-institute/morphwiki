@@ -7,6 +7,53 @@ connect established quantum physics, not a discovery of new quantum laws.
 
 ## Physics
 
+### Explanatory revision, 14 October 2026
+
+The opening now derives the measured two-spin polarization from its
+commutators, then follows the initial correlation and the memory integral
+through the reduction. The seven cross-topic connections have separate
+physical calculations in `scripts/quantum_connections.py`. They replace
+the role-label, equation, equivalence-condition summaries. All 146 individual
+topic sections remain unchanged, including their equations and source links.
+
+The transfer chapter separates linear state maps from nonlinear stochastic
+coordinate changes. It derives the oscillator selection law from its
+quadrature mean and variance, states the finite-ramp and continued-ramp
+limits separately, and defines every coefficient of the quantum generator.
+The mechanism appendix explains the nested notation using the spin and
+confinement calculations and distinguishes a dynamical correspondence from
+an observable correspondence.
+
+The revision also corrects several specific statements:
+
+- The stochastic quadrature is not its deterministic expectation value.
+- A single-neighbour spin polarization changes sign at `pi/(2|g|)` and
+  returns to its original signed value at `pi/|g|`; its magnitude returns
+  earlier. Finite unequal spin baths may recur, so Gaussian short-time
+  decay is not irreversible loss.
+- The ring-energy sign agrees with the declared boundary twist.
+- Noncommuting observables may share particular eigenvectors. They lack
+  a common complete eigenbasis, rather than excluding every joint sharp state.
+- A switching rate can be identified with the Lindblad gap only where
+  the relevant slow mode is separated and represents population switching.
+- The oscillator rate scan has a deviation near `6e-4` at its slowest
+  reported rate, not less than `6e-5` at every rate.
+
+The two pinned FieldBridge calculations were rerun. The 27-photon example
+gives `P_exact = 0.75045` versus `P_Gaussian = 0.75047`, a difference of
+`1.3654e-5`. The half-photon example gives `0.6845` versus `0.7505`,
+with a biased steady-state value of `0.6856`. These are numerical calculations
+of the stated models, not new experimental measurements.
+
+Fifteen additional tests independently check the new examples, including
+pulse order, the free propagator, constraint-preserving flips, flux-weighted
+transmission, conditional measurement and the encoded spin observable.
+The full local suite has 82 passing tests. These checks apply to the
+specified calculations; the remaining chapter-wide scientific review
+status is unchanged.
+
+### Earlier corrections
+
 - Non-Abelian field strength transforms by conjugation. Its invariant
   contractions and traced Wilson loops are distinguished from its components.
   The parallel-transport sign agrees with the covariant-derivative convention.

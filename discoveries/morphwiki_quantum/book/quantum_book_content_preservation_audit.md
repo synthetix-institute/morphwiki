@@ -9,8 +9,8 @@
 - Topic-word retention: `1.000`
 - Equation blocks: `379`
 - TeX topics with displayed equations: `142`
-- PDF pages: `255`
-- PDF-page retention: `1.000`
+- PDF pages: `258`
+- PDF-page retention: `1.012`
 - Source-grounded topics: `6`
 - Original-paper topics (separate from corpus alignment): `15`
 - Original-paper display records: `16`

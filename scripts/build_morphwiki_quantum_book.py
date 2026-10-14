@@ -2531,12 +2531,14 @@ try:
     from quantum_reviewed_topics import CONSTRUCTORS, EXPLANATIONS, FRAMES, REFERENCES, SUPPORT
     from quantum_physical_derivations import NARRATIVES, REFERENCES as DERIVATION_REFERENCES
     from quantum_mechanisms_opening import OPENING
+    from quantum_connections import CONNECTION_TREATMENTS
     import quantum_framework_chapters as FRAME
     from quantum_original_sources import load_original_sources
 except ModuleNotFoundError:
     from scripts.quantum_reviewed_topics import CONSTRUCTORS, EXPLANATIONS, FRAMES, REFERENCES, SUPPORT
     from scripts.quantum_physical_derivations import NARRATIVES, REFERENCES as DERIVATION_REFERENCES
     from scripts.quantum_mechanisms_opening import OPENING
+    from scripts.quantum_connections import CONNECTION_TREATMENTS
     from scripts import quantum_framework_chapters as FRAME
     from scripts.quantum_original_sources import load_original_sources
 
@@ -5636,7 +5638,7 @@ EQUIVALENCE_TITLES = {
 
 
 def constructor_rewiring_chapter(root: Path) -> str:
-    """Render authored connections, with their provenance visible in the book."""
+    """Develop the physical calculations connecting the book's subjects."""
     report = load_optional_json(root / "quantum_constructor_rewiring.json")
     connections = report.get("connections") if report else None
     if not isinstance(connections, list) or not connections:
@@ -5645,43 +5647,16 @@ def constructor_rewiring_chapter(root: Path) -> str:
     lines: List[str] = [
         r"\chapter{Equivalence Across Quantum Descriptions}",
         FRAME.EQUIVALENCE_INTRO,
-        r"\begin{claimbox}",
-        latex_escape(
-            "Two quantum descriptions represent the same physical mechanism when a map between their states preserves the dynamics and the stated observable consequences."
-        ),
-        r"\end{claimbox}",
-        latex_escape(
-            "Quantum theory uses several forms of this equivalence. A change of representation carries states and observables together. "
-            "An encoding represents the same operators in another physical system, as a quantum simulator does. A reduced description keeps fewer degrees of freedom, "
-            "and a measurement or a boundary condition decides which quantities are compared. In each case the equivalence is decided by what stays the same."
-        ),
     ]
 
     for connection in connections:
         title = page_display_name(str(connection.get("title") or "Constructor connection"))
-        topic_titles = connection.get("topic_titles") or [str(value).replace("_", " ").title() for value in connection.get("topics") or []]
-        topics = ", ".join(page_display_name(str(value)) for value in topic_titles)
-        invariant = str(connection.get("invariant") or "")
-        rewiring = str(connection.get("rewiring") or "")
-        test = str(connection.get("test") or "")
-        equations = [str(x) for x in (connection.get("equations") or []) if str(x).strip()]
+        treatment = CONNECTION_TREATMENTS.get(str(connection.get("id") or ""))
+        if treatment is None:
+            raise ValueError(f"Connection needs a physical explanation: {connection.get('id')}")
         title = EQUIVALENCE_TITLES.get(title, title)
-        lines.extend(
-            [
-                rf"\section{{{latex_escape(title)}}}",
-                r"\par\noindent\textit{" + latex_escape(f"Related topics: {topics}.") + "}\\par",
-                latex_escape(rewiring_description_text(rewiring)
-                             + (f" Both descriptions give the same {invariant}." if invariant else "")),
-            ]
-        )
-        if equations:
-            lines.append(r"\begin{centeredalign}")
-            for index, equation in enumerate(equations):
-                lines.append(equation + (r"\\" if index + 1 < len(equations) else ""))
-            lines.append(r"\end{centeredalign}")
-        if test:
-            lines.append(latex_escape(equivalence_condition_text(test)))
-    return "\n".join(lines)
+        lines.extend([rf"\section{{{latex_escape(title)}}}", treatment])
+    return "\n\n".join(lines)
 
 
 def quantum_discovery_chapter() -> str:
@@ -6030,9 +6005,7 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
             pages = list(branch.get("pages") or [])
             lines.append(rf"\chapter{{{latex_escape(branch['title'])}}}")
             definition, insight = FRAME.BRANCH_TEXT.get(branch_id, (branch["definition"], branch["insight"]))
-            lines.append(r"\begin{claimbox}")
             lines.append(latex_escape(definition))
-            lines.append(r"\end{claimbox}")
             lines.append(latex_escape(insight))
             lines.append(r"\section*{Topics}")
             lines.append(branch_table({**branch, "pages": pages}))

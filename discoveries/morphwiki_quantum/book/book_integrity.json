@@ -23,14 +23,14 @@
     "overview_entries": 0,
     "aliases": 4,
     "annotations": 17,
-    "display_blocks": 403,
-    "distinct_display_blocks": 403,
-    "pdf_pages": 255
+    "display_blocks": 416,
+    "distinct_display_blocks": 416,
+    "pdf_pages": 258
   },
   "missing_treatments": [],
   "missing_equations": [],
   "missing_original_sources": [],
-  "tex_sha256": "d5b576ca3ba7d517316eb3e3ba6d4b26385af25afcee637684552cfb8585329e",
+  "tex_sha256": "f5f13ecdcbe2617ebd316ee8e86b4e0c3fe10af2950c61abfd24e910a28581ae",
   "preserved_body_sha256": {
     "transformation-theory-quantum-mechanics": "cbd9824f937513c711c5ff9e79626a9397b014096a1ceef1c712fd0b4abe96f5",
     "mathematical-formulation-of-quantum-mechanics": "08f1786d253d1dca1def3e4328d8635245c8f4e3891b7d7eb4d202e8fdc4384e",

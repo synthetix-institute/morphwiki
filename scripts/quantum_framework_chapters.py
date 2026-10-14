@@ -24,10 +24,15 @@ waves, including the constant function:
 E_n^{\mathrm{wall}}=\frac{n^2\pi^2\hbar^2}{2mL^2},\quad n=1,2,\ldots\qquad
 E_n^{\mathrm{slope}}=\frac{n^2\pi^2\hbar^2}{2mL^2},\quad n=0,1,2,\ldots
 \end{centeredalign}
-The lowest absorption line therefore lies at \(3\pi^2\hbar^2/(2mL^2)\) in the first case and at
-\(\pi^2\hbar^2/(2mL^2)\) in the second, a factor of three apart, although the Hamiltonian is written identically. What
-differs is the set of wave functions on which the Hamiltonian acts, its domain. A boundary condition is in this sense
-part of the law of motion, and a spectroscopic measurement can tell which one nature has chosen.
+A weak probe coupled to position can excite the lowest state to the next
+one in either case. The energy absorbed is
+\(3\pi^2\hbar^2/(2mL^2)\) for hard walls and
+\(\pi^2\hbar^2/(2mL^2)\) for zero-slope ends. The transition energies
+differ by a factor of three because the second problem admits the
+constant, zero-energy state. The differential expression is the same,
+but the set of wave functions on which it acts, its domain, is different.
+A boundary condition therefore enters the law of motion itself, and
+spectroscopy distinguishes the two choices.
 
 \section{What Each Part Of A Prediction Contributes}
 The two coupled spins of Chapter~\ref{chap:mechanisms-predictions} show the same dependence on every ingredient of a
@@ -38,13 +43,23 @@ polarization \(\langle X_1\rangle\) oscillates at the angular frequency \(2g\), 
 change at all, because \(Z_1\) commutes with \(H\). The interaction is the same in both experiments; only the question
 put to the system differs.
 
-The order of operations is a further ingredient. A rotation of spin 1 by a quarter turn about \(x\) followed by a
-quarter turn about \(z\) leaves it in a different state from the same rotations applied in reverse order, because the
-two generators do not commute. A protocol that specifies which pulses act, for how long and in which sequence is
-therefore part of what determines the measured outcome. Finally, the numerical values of \(g\), \(m\) or \(L\) select
-one member of a family of physical systems. Changing them rescales frequencies and energies without changing which
-states exist, unless the change is large enough to alter the domain or the conserved quantities, as when a box is
-opened into a free line.
+Preparing spin 1 along \(+z\) and applying two quarter-turn pulses
+gives another experimentally distinguishable change. Define
+\(U_x=e^{-i\pi X_1/4}\) and \(U_z=e^{-i\pi Z_1/4}\). The first
+sequence \(U_zU_x\) turns the spin toward \(+x\), whereas
+\(U_xU_z\) turns it toward \(-y\). A final measurement along \(x\)
+gives
+\begin{centeredalign}
+P(+x\mid U_zU_x)=1,\qquad P(+x\mid U_xU_z)=\tfrac12.
+\end{centeredalign}
+The initial state, pulse angles and measured component are identical;
+the different probabilities come from the order of the two rotations.
+Their specification, including the duration of any intervening
+evolution, is the experimental protocol. Numerical values such as
+\(g\), \(m\) and \(L\) then fix frequencies or energies within the
+chosen physical model. Opening a box onto the free line changes more
+than a value: it replaces the domain and its discrete spectrum by a
+different physical problem.
 
 \section{When Two Descriptions Describe The Same Physics}
 Two descriptions of a system are equivalent when translating a state from one to the other and then evolving it gives
@@ -69,9 +84,10 @@ chapters that follow use this observation repeatedly.
 BACKGROUND_CHAPTER = r"""
 \chapter{When A Fixed Background Becomes Part Of The System}\label{chap:background}
 \begin{claimbox}
-A quantity treated as a fixed background must become a dynamical variable when two preparations that agree on every
-retained variable still lead to different measurements. Fields, environments, boundary conditions and control
-sequences have all crossed this line in the history of quantum theory.
+An atom can exchange energy with a cavity, and a spin can exchange
+correlations with its surroundings. Treating the field or environment
+as fixed discards those changes. Their dynamics becomes part of the
+model when it affects the measurement being predicted.
 \end{claimbox}
 
 \section{A Test For Missing Variables}
@@ -113,12 +129,17 @@ one sense or the other, and averaging over their orientations gives the transver
 \begin{centeredalign}
 x(t)=x_0\prod_k\cos(2g_kt)\;\approx\;x_0\exp\!\Big(-2t^2\sum_kg_k^2\Big).
 \end{centeredalign}
-With one neighbour the signal returns completely at \(t=\pi/(2g_1)\): the environment remembers the phase it received.
-With many weak couplings the revivals never align, and the signal decays as a Gaussian with time constant
-\(T_2^*=(2\sum_kg_k^2)^{-1/2}\), the free-induction decay of nuclear magnetic resonance. The same environment is
-therefore a memory or a sink depending on how many degrees of freedom share the correlation. In both cases spin 1
-alone is an incomplete description: its future depends on correlations with the neighbours that its reduced state does
-not record.
+With one neighbour, \(x\) changes sign at \(t=\pi/(2|g_1|)\)
+and returns to its initial signed value at \(t=\pi/|g_1|\).
+The magnitude of the transverse polarization has already recovered
+at the first time. With several unequal couplings these revivals can
+occur at different times. For \(|g_kt|\ll1\), expanding each cosine
+gives the Gaussian in the second expression and the decay time
+\(T_2^*=(2\sum_kg_k^2)^{-1/2}\). This short-time decay resembles
+free-induction decay in nuclear magnetic resonance. The exact finite
+product still permits recurrences; it does not establish irreversible
+loss. The neighbours retain the conditional phases even when their
+average contribution to the measured polarization is small.
 
 \section{A Pulse Sequence Becomes Part Of The Dynamics}
 The decay above is not irreversible. A pulse that flips spin 1 halfway through the evolution reverses the sense of
@@ -132,7 +153,7 @@ same way part of the physics implemented in an experiment.
 An electron confined to a ring of radius \(R\) that encloses a magnetic flux \(\Phi\) experiences no magnetic field
 along its path. Its energies nevertheless depend on the flux,
 \begin{centeredalign}
-E_n=\frac{\hbar^2}{2mR^2}\left(n-\frac{\Phi}{\Phi_0}\right)^2,\qquad \Phi_0=\frac{h}{e},\qquad n\in\mathbb Z,
+E_n=\frac{\hbar^2}{2mR^2}\left(n+\frac{\Phi}{\Phi_0}\right)^2,\qquad \Phi_0=\frac{h}{e},\qquad n\in\mathbb Z,
 \end{centeredalign}
 because a gauge transformation that removes the vector potential from the ring moves it into the condition
 \(\psi(\varphi+2\pi)=e^{2\pi i\Phi/\Phi_0}\psi(\varphi)\) imposed on the wave function. The spectrum repeats with
@@ -179,22 +200,38 @@ The best configurations satisfy two bonds and leave one unsatisfied, giving the 
 \begin{centeredalign}
 \prod_{\langle ij\rangle\in\gamma}\operatorname{sign}J_{ij}=-1,
 \end{centeredalign}
-and no relabelling of individual spins can remove this sign. The large ground-state degeneracy of frustrated lattices,
-and the residual entropy that follows from it, are consequences of this property of loops rather than of any single
-bond.
+and no relabelling of individual spins can remove this sign. In the
+triangle, choosing which bond remains unsatisfied gives three possibilities,
+each with its globally reversed partner. Extended frustrated lattices can
+similarly have many minimizing configurations. Whether their degeneracy
+grows extensively, and hence leaves a nonzero residual entropy per spin,
+depends on the lattice and its interactions as well as the frustrated loops.
 
 \section{A Reduced Description Remembers Its Path}
-The polarization of spin 1 in Chapter~\ref{chap:mechanisms-predictions}, for a preparation without correlation,
-evolves as \(x(t)=x_0\cos(2gt)\). No rule of the form \(x(t+s)=V_s\,x(t)\) reproduces this evolution for all times,
-because \(\cos(2g(t+s))\ne\cos(2gt)\cos(2gs)\): the future of \(x\) depends on how it got to its present value, through
-the correlation \(c\) that it does not record. In general, a reduced evolution \(V_t\) obeys
+The polarization of spin 1 in Chapter~\ref{chap:mechanisms-predictions},
+for a preparation without correlation, evolves as
+\(x(t)=x_0\cos(2gt)\). At \(t=\pi/(4g)\), for \(g>0\), all
+these preparations give \(x=0\), although their correlations are
+\(c=x_0\). The subsequent slope is \(-2gx_0\). Knowing the present
+polarization alone therefore does not determine its subsequent motion.
+The reduced map for this preparation family is multiplication by
+\(\cos(2gt)\), and its composition gives
 \begin{centeredalign}
-V_{t+s}\ne V_tV_s
+V_{t+s}\ne V_tV_s,\qquad
+\cos[2g(t+s)]\ne\cos(2gt)\cos(2gs)
 \end{centeredalign}
-whenever discarded correlations return to influence the retained variables, and eliminating them leaves a memory kernel
-and a term carrying their initial preparation. The same dependence on path makes a system able to record the order of
-events: two operations \(W_A\) and \(W_B\) followed by the same relaxation leave distinguishable records precisely when
-\(W_BW_A\) and \(W_AW_B\) produce different retained states.
+at general times. The larger rotation of \((x,c)\) does compose:
+its final state contains the correlation required to start the next
+interval. Eliminating \(c\) instead leaves the memory integral and
+initial-correlation term derived in the opening chapter.
+
+Order can also be recorded by applying two different operations to a
+state. If \(W_BW_A\) and \(W_AW_B\) produce different states, a
+later measurement can distinguish their order only to the extent that
+the subsequent relaxation retains that difference and the measured
+operator is sensitive to it. Noncommuting operations can create a
+record; a relaxation that erases the difference, or a measurement
+orthogonal to it, removes the record from the observed signal.
 
 \section{What The Three Loops Share}
 In each case local information fails to determine a global outcome. A connection fixes how a state is carried from point
@@ -205,31 +242,57 @@ for missing quantities rather than an identity between them.
 """
 
 EQUIVALENCE_INTRO = r"""
-Two quantum descriptions describe the same physics when a map between their states carries the dynamics of one into the
-dynamics of the other and preserves the measured quantities. The Schr\"odinger and Heisenberg pictures are the familiar
-example: one moves the state and the other moves the operators, yet every expectation value agrees. The sections below
-collect such correspondences. Each states what is translated, the relations that express it, and the condition under
-which the translation holds; when that condition fails, the two descriptions predict different measurements.
+An energy spectrum predicts both the results of an energy measurement and
+the phases acquired during evolution. Changing from a moving state to a
+moving observable leaves those predictions unchanged. By contrast,
+discarding a correlated subsystem or changing a boundary can change the
+measurement itself. Quantum theory connects its descriptions through these
+particular mathematical relations. The following calculations explain
+which relations are identities, which retain only specified observations,
+and which define a changed physical problem.
 """
 
 TRANSFER_CHAPTER_HEAD = r"""
 \chapter{Carrying A Law Into Another System}\label{chap:transfer}
 \begin{claimbox}
-A physical law found in one system can hold unchanged in another, or its failure can identify the term that the second
-system adds. Both outcomes are results: an exact transfer establishes a new realization, and a structured failure
-predicts a new physical effect.
+A coordinate transformation, an encoding or a reduction relates two
+physical descriptions. Substituting that relation into their equations
+shows which evolution is preserved and which additional contribution
+is needed to reproduce the original motion.
 \end{claimbox}
 
 \section{Exact Transfer And Its Failure}
-A law transfers exactly from a source system to a target system when a map \(\alpha\) between their states commutes with
-the two evolutions: evolving in the source and then mapping gives the same target state as mapping first and evolving in
-the target. With \(L_s\) and \(L_t\) the generators of the two evolutions, the condition and its failure read
+A mechanical oscillator and an LC circuit have different constituents,
+but charge and magnetic flux can reproduce the equations for position
+and momentum. The comparison becomes a calculation when the
+correspondence is specified. Let \(\alpha\) be a linear map from source
+states to target states, and let \(L_s,L_t\) generate their linear
+evolutions on compatible domains. Evolving and then mapping agrees
+with mapping and then evolving when
 \begin{centeredalign}
-L_t\,\alpha=\alpha\,L_s\qquad\text{or}\qquad L_t\,\alpha-\alpha\,L_s=\Delta\ne0 .
+e^{tL_t}\alpha=\alpha e^{tL_s},\qquad
+L_t\alpha=\alpha L_s,\qquad \Delta=L_t\alpha-\alpha L_s.
 \end{centeredalign}
-The mechanical oscillator and the LC circuit of Chapter~\ref{chap:physical-identity} satisfy the first relation. A
-nonzero difference \(\Delta\) that varies irregularly from state to state means only that the proposed map is wrong. A
-difference with a definite form is more informative, because the target system must contain a term that cancels it.
+The generator relation gives the infinitesimal version of the same
+correspondence. The measured quantities must also agree after the map.
+The oscillator--circuit correspondence of
+Chapter~\ref{chap:physical-identity} meets both requirements. A nonlinear
+change of a stochastic coordinate instead acts by composition on test
+functions; applying its generator includes the second derivative of
+that composition. This is the origin of the It\^o correction developed
+in the calculation companion.
+
+For a proposed target description, \(\Delta\) gives the missing rate
+of change on mapped source states. A correction \(\mathcal K\) satisfies
+\((L_t+\mathcal K)\alpha=\alpha L_s\) when \(\mathcal K\alpha=-\Delta\).
+In the two-spin example, mapping \(\rho\) to the single number
+\(x\) leaves a missing rate \(-2gc\). Different correlations
+can have the same \(x\), so no function of \(x\) alone supplies
+that rate for every preparation. Retaining \(c\), or its initial
+value and the memory integral, restores the prediction. The
+calculation determines what has been lost; the physical source
+equations determine whether it is a changed local term or a
+degree of freedom that must be retained.
 
 A particle confined to a thin curved surface gives a classic example. Carrying the free Schr\"odinger equation from
 flat space onto the surface by keeping only the motion along it leaves a difference that does not vanish as the
@@ -238,83 +301,283 @@ confinement tightens. It takes the form of a potential set by the curvature of t
 \begin{centeredalign}
 V_{\mathrm{geom}}=-\frac{\hbar^2}{2m}\left(M^2-K\right),
 \end{centeredalign}
-with \(M\) the mean and \(K\) the Gaussian curvature. On a cylinder of radius \(R\) it is a constant
-\(-\hbar^2/(8mR^2)\); on a surface whose curvature varies it binds states where the surface bends most. The failure of the
-naive transfer has become a physical term with measurable consequences for electrons in curved nanostructures.
+with \(M\) the mean and \(K\) the Gaussian curvature. If
+\(k_1,k_2\) are the principal curvatures, then
+\(M^2-K=(k_1-k_2)^2/4\). The potential consequently vanishes
+on a sphere, although the sphere is curved, and is
+\(-\hbar^2/(8mR^2)\) on a cylinder of radius \(R\).
+Spatial variations in this difference of curvatures can trap
+states. The term follows from taking the thin-confinement limit
+of the three-dimensional dynamics; replacing derivatives by
+surface derivatives alone would omit it. Its physical content
+is the influence of transverse confinement on the retained
+surface motion.
 """
 
 TRANSFER_EXAMPLE_INTRO = r"""
-\section{Worked Example: A Classical Selection Law In A Quantum Oscillator}
-A parametric oscillator driven above its threshold oscillates in one of two states of opposite phase. When the
-two-photon drive \(\varepsilon_2\) is swept through the threshold at a rate \(r\) while a weak one-photon drive \(h\)
-favours one state, the probability of ending in the favoured state is the quantity of interest. For a classical
-oscillator with noise of strength \(D\) it follows the law \(P=\Phi(\pi^{1/4}h/(D^{1/2}r^{1/4}))\), with \(\Phi\) the
-normal distribution function (Kondepudi and Nelson, Nature 314, 438, 1985). The question is whether a quantum oscillator
-obeys the same law. The answer is that it does exactly in one regime and fails, in a structured way, in another.
-\begin{centeredalign}
-H=-Ka^{\dagger2}a^{2}+\tfrac{i}{2}\varepsilon_2(t)\,(a^{\dagger2}-a^{2})+ih\,(a^{\dagger}-a),\\
-\dot\rho=-i[H,\rho]+\kappa(\bar n+1)\,\mathcal D[a]\rho+\kappa\bar n\,\mathcal D[a^{\dagger}]\rho.
-\end{centeredalign}
-While the amplitude is small the Kerr term is negligible, and the Wigner function of the Gaussian state obeys exactly the
-Fokker--Planck equation of a classical process for the amplified quadrature \(x=\operatorname{Re}\langle a\rangle\):
-\(\dot x=(\varepsilon_2-\kappa/2)\,x+h+\sqrt{2D}\,\xi\) with \(2D=\kappa(2\bar n+1)/4\). The classical law therefore
-carries over with one change: \(D\) is no longer a free parameter but is fixed by the vacuum and the temperature. For a
-ramp \(\varepsilon_2=rt\) starting from a thermal state of variance \(\sigma_0^2=(2\bar n_0+1)/4\) the general form is
-\begin{centeredalign}
-P=\Phi\!\left(\frac{hI_1}{\sqrt{\sigma_0^2+2DI_2}}\right),\qquad I_k=\int_0^{\infty}e^{-k\varphi(s)}\,ds,\qquad \varphi(s)=\tfrac12 rs^{2}-\tfrac12\kappa s .
-\end{centeredalign}
-It reduces to the classical law for \(\kappa\gg\sqrt r\), where loss renews the initial fluctuations during the sweep, and
-to \(P=\Phi(h\sqrt{2\pi/r})\) for \(\kappa\to0\), where the initial vacuum fluctuations alone compete with the bias and the
-rate enters with the exponent \(-1/2\) instead of \(-1/4\). The same structure for a step of the gain instead of a ramp is
-the bias-probability relation of Gu et al. (Phys. Rev. Research 7, L022056, 2025), measured by Roques-Carmes et al.
-(Science 381, 205, 2023). Exact evolution of the density operator at 27 stored photons follows the ramp law to
-\(6\times10^{-5}\) across the crossover between the two limits.
+\section{How Fluctuations Select The Phase Of An Oscillator}
+A parametric drive can make an oscillator settle into either of two
+states whose phases differ by \(\pi\). A weak field at the oscillator
+frequency favours one state, but fluctuations can select the other.
+The measurable quantity is the fraction of repeated preparations that
+end on the favoured side. In a classical noisy oscillator swept
+through a symmetric instability, this fraction depends on the bias,
+the sweep rate and the fluctuations present during growth. A quantum
+oscillator raises a precise additional question: do vacuum and thermal
+fluctuations enter the same calculation, or does the quantum dynamics
+change how the phase is selected?
 
-At a few stored photons the measured probability falls below the law by up to \(0.22\), and the shortfall has a definite
-form: for slow sweeps the probability equals the selection made by the biased steady state, \(P_{\mathrm{eq}}(h,K,\kappa)\),
-to within \(0.006\). The two wells are then shallow enough that the oscillator switches between them during the sweep,
-at a rate set by the gap \(\Gamma\) of the Lindbladian. One relaxation equation describes both regimes: the slowest mode
-relaxes toward the biased steady state until the gap falls below the sweep rate,
+Take a single bosonic mode with annihilation operator \(a\),
+\([a,a^\dagger]=1\), in a frame rotating at half the pump frequency.
+In units with \(\hbar=1\), let \(K\) be the Kerr coefficient,
+\(\varepsilon_2(t)\) the two-photon drive and \(h\) a real
+one-photon bias. The mode loses photons at rate \(\kappa\) to a
+bath with occupation \(\bar n\). Its Hamiltonian and density-operator
+evolution are
 \begin{centeredalign}
-\frac{dp}{dt}=\Gamma(\varepsilon_2(t))\,\bigl[P_{\mathrm{eq}}(\varepsilon_2(t))-p\bigr].
+H=-Ka^{\dagger2}a^2
++\tfrac{i}{2}\varepsilon_2(t)(a^{\dagger2}-a^2)
++ih(a^\dagger-a),\\
+\dot\rho=-i[H,\rho]
++\kappa(\bar n+1)\mathcal D[a]\rho
++\kappa\bar n\mathcal D[a^\dagger]\rho,\\
+\mathcal D[b]\rho=b\rho b^\dagger
+-\tfrac12(b^\dagger b\rho+\rho b^\dagger b).
 \end{centeredalign}
-At \(1.5\) stored photons it reproduces the exact probability within \(0.01\) over two decades of rate, and in the
-semiclassical regime its freeze-out at \(\Gamma\sim\sqrt r\) recovers the scaling of the classical law, whose constant
-\(\pi^{1/4}\) belongs to the exact linear stage. The added term predicts something that was not used to construct it:
-the probability rises with slower sweeps when the linear stage decides, and becomes independent of the rate in the
-few-photon regime. Raising the photon number at fixed bias and rate removes the term and restores the classical law.
+The two-photon term amplifies the quadrature
+\(\widehat x=(a+a^\dagger)/2\), while the bias pushes it toward
+positive values. The linear gain changes sign at
+\(\varepsilon_2=\kappa/2\). Above this threshold, the Kerr term
+limits the growth and produces opposite-phase states. The measured
+selection probability is the probability that \(\widehat x>0\)
+at the end of the specified ramp and hold.
 
-\section{What A New Term Must Predict}
-A term introduced to repair a failed transfer becomes physics only when it changes a measurement that was not used to
-define it, and removing the cause of the failure must remove that consequence. The geometric potential of a curved
-surface, the switching term of the few-photon oscillator, the curvature of a gauge field and the memory kernel of a
-reduced description all meet this test: each restores information that a smaller description had discarded, and each
-predicts a signal of its own.
+Before the nonlinear term becomes important, the Hamiltonian is
+quadratic and the dissipation is linear. The Wigner function then
+obeys a Fokker--Planck equation with a positive Gaussian marginal
+for this quadrature. That marginal is reproduced by a classical
+random variable \(x\) satisfying
+\begin{centeredalign}
+dx=[(\varepsilon_2(t)-\kappa/2)x+h]\,dt+\sqrt{2D}\,dW_t,
+\qquad D=\frac{\kappa(2\bar n+1)}{8}.
+\end{centeredalign}
+Here \(W_t\) is a Wiener process. The random variable represents
+quadrature statistics, whereas \(\langle\widehat x\rangle\)
+is its mean and contains no random increment. The diffusion
+coefficient is fixed by loss and bath temperature. At zero bath
+temperature it remains nonzero because the vacuum quadrature
+variance is \(1/4\).
+
+For a linear ramp \(\varepsilon_2=rt\), define
+\(\varphi(t)=rt^2/2-\kappa t/2\). Multiplication by
+\(e^{-\varphi(t)}\) removes the gain from the stochastic
+equation. Starting from a centred thermal preparation with
+variance \(\sigma_0^2=(2\bar n_0+1)/4\), its mean and variance
+at time \(t\) are
+\begin{centeredalign}
+\mu(t)=h e^{\varphi(t)}I_1(t),\qquad
+\sigma^2(t)=e^{2\varphi(t)}[\sigma_0^2+2DI_2(t)],\\
+I_k(t)=\int_0^t e^{-k\varphi(s)}\,ds,\qquad
+P(t)=\Phi\!\left(\frac{hI_1(t)}{\sqrt{\sigma_0^2+2DI_2(t)}}\right).
+\end{centeredalign}
+The function \(\Phi\) is the cumulative distribution function
+of a standard normal random variable. The mean and standard
+deviation grow by the same gain factor, so that factor cancels
+from their ratio. The probability depends instead on the bias
+accumulated during the ramp and on the initial and continuously
+supplied fluctuations.
+
+For an indefinitely continued ramp, the convergent integrals are
+\(I_k=\int_0^\infty e^{-k\varphi(s)}\,ds\). When
+\(\kappa\gg\sqrt r\), bath fluctuations overwhelm the initial
+variance before the threshold is crossed. Evaluating the
+Gaussian integrals yields
+\begin{centeredalign}
+P\simeq\Phi\!\left(\frac{\pi^{1/4}h}{D^{1/2}r^{1/4}}\right).
+\end{centeredalign}
+This is the classical selection law of Kondepudi and Nelson
+(Nature 314, 438, 1985), now with \(D\) determined by the
+quantum bath. In the opposite limit \(\kappa\to0\), an
+initial vacuum supplies the variance and
+\(I_1=\sqrt{\pi/(2r)}\). The result becomes
+\(P=\Phi(h\sqrt{2\pi/r})\): the rate has exponent
+\(-1/2\) rather than \(-1/4\). A different initial thermal
+variance changes this limit. The distinction is whether the
+choice is seeded by the prepared state or by fluctuations
+supplied during the ramp. Related bias-selection calculations
+for a step in gain are given by Gu et al. (Phys. Rev. Research
+7, L022056, 2025), alongside the oscillator experiment of
+Roques-Carmes et al. (Science 381, 205, 2023).
+
+\section{Following The Selection Into The Nonlinear Regime}
+The Gaussian probability is exact for the quadratic model.
+To compare it with a Kerr oscillator, the finite ramp, hold
+and nonlinear evolution must be followed. In the FieldBridge
+example, \(\kappa=1\), \(K=0.02\), \(\bar n=0\), and
+the drive rises from zero to \(1.2\) at rate \(r=0.1\),
+then remains fixed for ten loss-time units. A bias
+\(h=0.10691\) favours positive \(x\). The finite-time
+Gaussian law gives \(P=0.75047\), and density-operator
+evolution gives \(0.75045\), a difference of approximately
+\(1.4\times10^{-5}\). The final states contain about
+27 photons. In this calculation nonlinear growth largely
+preserves the sign selected during the early stage.
+
+The reported rate scan at the same final photon number gives
+differences below \(6\times10^{-5}\) at rates \(0.1,1,10\),
+but about \(6\times10^{-4}\) at \(r=0.01\). The latter
+is the beginning of a nonlinear correction, rather than
+agreement to \(6\times10^{-5}\) at every rate. The
+\href{https://github.com/synthetix-institute/fieldbridge/blob/main/docs/tutorial/30_quantum_write.md}{quantum-oscillator calculation}
+specifies the Hamiltonians, ramps and numerical comparisons.
+
+Increasing \(K\) to one, with the other settings unchanged,
+reduces the final mean-field amplitude to about half a photon.
+The computed probability is then approximately \(0.684\),
+against the Gaussian value \(0.750\); the biased steady state
+gives about \(0.686\). The phase distribution can change
+after the initial growth because transitions between the
+two weakly populated alternatives remain appreciable. In
+the reported few-photon scans, deficits reach \(0.22\),
+and sufficiently slow sweeps approach the steady-state
+probability within \(0.006\). These are numerical results
+for the specified oscillators, not exact consequences of
+the Gaussian law.
+
+If a separated, slowly decaying mode of the Lindblad
+generator governs the exchange of population, a two-state
+reduction writes
+\begin{centeredalign}
+\frac{dp}{dt}=\Gamma(\varepsilon_2(t))
+[P_{\mathrm{eq}}(\varepsilon_2(t))-p].
+\end{centeredalign}
+Here \(p\) is the positive-side population,
+\(P_{\mathrm{eq}}\) its instantaneous steady-state value,
+and \(\Gamma\) the decay rate of the relevant switching
+mode. The gap determines that rate only when this mode
+is the slowest relaxing one and other modes have decayed.
+For the reported 1.5-photon example the reduction reproduces
+the density-operator result within \(0.01\) over two decades
+of sweep rate. The sweep time near threshold is of order
+\(1/\sqrt r\), so \(\Gamma\gg\sqrt r\) permits
+relaxation during that interval, whereas a smaller
+\(\Gamma\) can retain the earlier selection. The
+coefficient \(\pi^{1/4}\) comes from the preceding
+Gaussian integrals, not from this time-scale comparison.
+
+\section{What The Comparison Establishes}
+The change from a classical noise parameter to vacuum and
+thermal quadrature fluctuations is an explicit transfer:
+the quantum generator supplies the coefficients of the
+same Gaussian selection equation. Following the full
+oscillator then shows when that equation predicts the
+final measurement and when later dynamics alters the
+selection. The proposed switching equation represents
+that later change through quantities calculated from
+the Lindblad generator. It is an approximation whose
+accuracy depends on a separated switching mode.
+
+The curved-surface potential and the two-spin memory
+equation illustrate the same method with different
+mathematics. In each case the full source equations
+determine a contribution omitted by a smaller model.
+Their consequences are different: a shifted surface
+energy, a history-dependent polarization, or a changed
+oscillator-selection probability. Preserving a common
+operation means retaining those contributions when the
+target experiment makes them relevant.
 
 \section{Open Calculations}
-The oscillator example leaves definite questions. The selection \(P_{\mathrm{eq}}(h,K,\kappa)\) of the biased steady
-state and the gap \(\Gamma(\varepsilon_2)\) are known only numerically at a few photons, and closed forms would turn the
-relaxation equation into a formula. The same transfer can be attempted for a state lost at a turning point rather than
-selected at a symmetric instability, where quantum activation may act before the turning point is reached. The
-information left by a quantum selection, compared with the work spent on it, has a classical counterpart in the bound
-\(\tfrac12\ln(1+W)\), and its quantum form is open.
+For few-photon oscillators, the biased steady state and
+switching mode are currently obtained numerically.
+An analytic reduction would have to derive their
+dependence on drive and Kerr strength and determine
+where other decay modes can be eliminated. A second
+question concerns a state lost at a turning point,
+where escape may begin before the deterministic state
+disappears; that change requires a different growth
+and fluctuation calculation. The information carried
+by a selected quantum phase and the work expended in
+preparing it also remain to be related. The classical
+Gaussian-channel bound \(\tfrac12\ln(1+W)\) is relevant
+only when \(W\) is its specified signal-to-noise ratio
+and the same input and noise assumptions are retained.
+It supplies no universal quantum work--information law.
 """
 
 NOTATION_APPENDIX = r"""
 \chapter{Notation Of The Mechanism Descriptions}\label{chap:notation}
-The companion manuscripts on mechanisms write each physical calculation as a nested description,
+The opening spin calculation gives a concrete meaning to the notation
+used in the companion manuscripts. The operation is commutator
+evolution, and the carrier is the two-spin operator space. Together
+they specify the kind of motion being considered. The Hamiltonian
+and its domain, the measured polarization and the preparation then
+determine a particular prediction. A physical pair of spins supplies
+the coupling and the duration of the experiment. These descriptions
+are written
 \begin{centeredalign}
-(\Omega,\Xi)\longrightarrow M\longrightarrow I_{\mathrm{op}}=(M;C,R,P)\longrightarrow I_{\mathrm{real}}=(I_{\mathrm{op}};A),
+M=(\Omega,\Xi),\qquad I_{\mathrm{op}}=(M;C,R,P),\qquad
+I_{\mathrm{real}}=(I_{\mathrm{op}};A).
 \end{centeredalign}
-and compare two descriptions through maps \(\alpha\) of states and \(\beta\) of outputs, with the defect
-\(\Delta_{\alpha,\beta}=\Omega_B\alpha-\beta\Omega_A\). The symbols correspond to the physical ingredients used throughout
-this book as follows. \(\Xi\) is the space of states, such as density operators on a Hilbert space with a stated domain.
-\(\Omega\) is the law of motion or the operation acting on them, such as the generator \(-i[H,\cdot]/\hbar\), a channel or
-a measurement. \(C\) collects the conditions that make the problem well defined: positivity and normalization, boundary
-conditions and operator domains, exchange symmetry and gauge constraints. \(R\) is the measured quantity and its
-probability rule. \(P\) is the protocol, the order and timing of preparation, evolution, control and measurement. \(A\)
-gives the material values of a particular system: masses, couplings, geometry and drives. The defect
-\(\Delta_{\alpha,\beta}\) is the difference \(L_t\alpha-\alpha L_s\) of Chapter~\ref{chap:transfer}.
+The nesting expresses dependence, not a sequence of instructions.
+The later description contains the earlier one together with the
+information needed to calculate a more specific consequence. It
+also permits shared inner descriptions to appear in several physical
+realizations.
+
+For the spins, \(\Xi\) contains density operators on
+\(\mathbb C^2\otimes\mathbb C^2\). The operation \(\Omega\)
+is the Hamiltonian-commutator class, realized here by
+\(L\rho=-i[\hbar gZ_1Z_2,\rho]/\hbar\).
+\(C\) includes positivity, unit trace and the stated domain.
+\(R\) specifies the polarization
+\(\operatorname{Tr}(\rho X_1)\); \(P\) fixes the initial
+joint state, the evolution interval and any applied pulses.
+The particular coupling \(g\) and apparatus belong to
+\(A\). Changing \(g\) within this family changes the
+oscillation frequency. Replacing the interaction by another
+Hamiltonian changes \(L\), while measuring \(Z_1\) changes
+\(R\) and the set of equations needed for the prediction.
+
+For a particle, \(\Omega\) can identify a differential
+operation such as the kinetic Laplacian, but the generator
+is that operation on the domain fixed by \(\Xi\) and
+\(C\). Dirichlet and Neumann conditions therefore give
+different generators even when the bulk formula matches.
+Exchange symmetry and gauge constraints similarly change
+the admissible state space. A physical modification that
+changes these choices belongs in the corresponding inner
+description, as well as in the description of the device.
+
+Comparing two mechanisms requires maps of like mathematical
+objects. For linear state evolutions, a map \(\alpha\)
+from source states to target states gives
+\begin{centeredalign}
+\Delta_\alpha=L_t\alpha-\alpha L_s,\qquad
+R_t\alpha=\beta R_s.
+\end{centeredalign}
+The first relation measures failure to preserve evolution.
+The second compares the measured quantities, with
+\(\beta\) translating their units or outcome labels.
+The two-spin reduction to \(x\) retains the immediate
+measurement but loses the rate determined by \(c\).
+It thus illustrates why the two comparisons are distinct.
+
+For a more general relation \(\Omega_s:X_s\to Y_s\),
+the source and target can have different input and output
+spaces. The general operator defect is then
+\begin{centeredalign}
+\Delta_{\alpha,\beta}=\Omega_t\alpha-\beta\Omega_s,
+\qquad \alpha:X_s\to X_t,\quad \beta:Y_s\to Y_t.
+\end{centeredalign}
+For the preceding linear evolution comparison, both output
+spaces are state spaces and \(\beta=\alpha\); the defect
+reduces to \(\Delta_\alpha\). A nonlinear coordinate change
+uses a derivative or a pullback on test functions instead
+of ordinary multiplication by a linear state map. These
+choices give the notation its physical meaning: the
+comparison is made between specified evolutions or
+relations, with their domains and measured consequences.
 """
 
 # Chapter openings for the topic parts, in place of the role definitions of the field map.
@@ -338,9 +601,11 @@ BRANCH_TEXT = {
         "probabilities.",
         "Spectral theory, self-adjointness and operator algebras make this correspondence precise."),
     "incompatibility": (
-        "Two observables that do not commute cannot both have sharp values in the same preparation.",
+        "Noncommuting observables generally require different measurement bases. Their commutator determines how "
+        "their dispersions are constrained in a given preparation.",
         "The commutator and the uncertainty relations measure this incompatibility, which is a property of the "
-        "observables rather than of the precision of an apparatus."),
+        "observable algebra and state. Noncommuting operators may share particular eigenvectors; their noncommutation "
+        "excludes a common complete eigenbasis, not every state with two sharp values."),
     "measurement": (
         "A measurement couples a system to an apparatus, produces a recorded outcome with a definite probability and "
         "changes the state of the system.",

@@ -10,9 +10,9 @@ Scientific review: incomplete; selected equations have executable checks, not ch
 - overview_entries: 0
 - aliases: 4
 - annotations: 17
-- display_blocks: 403
-- distinct_display_blocks: 403
-- pdf_pages: 255
+- display_blocks: 416
+- distinct_display_blocks: 416
+- pdf_pages: 258
 
 ## Treatments, sources and provenance
 - all_topic_specific_treatments_preserved: pass

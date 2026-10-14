@@ -6,7 +6,7 @@
 
 ## The book: *Quantum Theory as a Mechanism Tree*
 
-**[Read the book (PDF, 255 pages)](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)**
+**[Read the book (PDF, 258 pages)](discoveries/morphwiki_quantum/book/quantum_mechanism_tree_book.pdf)**
 
 The book develops quantum theory through worked calculations. Every one of its
 125 topics, from the particle in a box and tunnelling to Bell's theorem,
@@ -20,6 +20,23 @@ their physics.
 The treatments are written per chapter in
 [`scripts/quantum_narratives/`](scripts/quantum_narratives/) and can be read
 there as source.
+
+The opening calculation follows one measured spin polarization into a
+correlation with its neighbour. It shows why two identical local preparations
+can later give different signals, and derives the memory equation obtained
+when the correlation is eliminated. The connecting chapters then work out
+energy phases, changes of representation, constrained states, scattering
+currents, conditional measurements and quantum encodings. The classical and
+quantum oscillator comparison derives its selection probability from the mean
+and variance rather than introducing a probability law without its derivation.
+The compact mechanism notation is explained afterwards in an appendix through
+these same examples.
+
+Those connecting explanations are maintained in
+[`scripts/quantum_connections.py`](scripts/quantum_connections.py) and
+[`scripts/quantum_framework_chapters.py`](scripts/quantum_framework_chapters.py).
+Rebuilding the book therefore retains the explanations, rather than restoring
+the earlier role-label summaries.
 
 ## The approach
 
