@@ -157,7 +157,6 @@ def render_mechanism_page(
     *,
     record: Mapping[str, Any],
     field_label: str,
-    active_substrates: Sequence[Mapping[str, Any]],
 ) -> tuple[str, Dict[str, Any]]:
     roles = role_evidence(record)
     status = record_status(roles)
@@ -166,6 +165,9 @@ def render_mechanism_page(
     routes = active_scores(record.get("routes") or {}, threshold=0.18)
     fibers = active_scores(record.get("fibers") or {}, threshold=0.18)
     equations = [clean_text(value, 420) for value in record.get("equations") or []]
+    active_substrates = active_scores(
+        record.get("substrates") or {}, threshold=0.025, limit=6,
+    ) if record.get("substrate_evidence_scope") == "source_chunk" else []
 
     lines = [
         f"# {title}",
@@ -200,13 +202,13 @@ def render_mechanism_page(
             "no source passage identified the carrier",
         ),
         "",
-        "Candidate substrate classes:",
+        "Carrier indicators in this source passage:",
         *bullet_rows(
             [
                 f"{row['id']} ({float(row['score']):.3f})"
                 for row in active_substrates
             ],
-            "no substrate class crossed the corpus threshold",
+            "no source-local carrier indicator was retained",
         ),
         "",
         "### C: closure and admissibility",
@@ -273,6 +275,8 @@ def render_mechanism_page(
         "routes": routes,
         "fibers": fibers,
         "equations": equations,
+        "substrates": active_substrates,
+        "substrate_evidence_scope": "source_chunk" if active_substrates else "unresolved",
     }
     return "\n".join(lines), payload
 
@@ -378,12 +382,6 @@ def build_field_wiki(
         fieldbridge_dir / "field_pack_evidence" / f"{field_id}.json"
     )
     records = load_json(fieldbridge_dir / "index" / "core_examples.json")[:max_pages]
-    active_substrates = active_scores(
-        adapter.get("substrate_profile") or {},
-        threshold=0.025,
-        limit=6,
-    )
-
     pages: List[Dict[str, Any]] = []
     used_names: Dict[str, int] = defaultdict(int)
     for index, record in enumerate(records):
@@ -394,7 +392,6 @@ def build_field_wiki(
         markdown, payload = render_mechanism_page(
             record=record,
             field_label=label,
-            active_substrates=active_substrates,
         )
         write_text(out_dir / "pages" / filename, markdown)
         pages.append({"filename": filename, **payload})

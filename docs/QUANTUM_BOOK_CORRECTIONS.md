@@ -7,6 +7,21 @@ connect established quantum physics, not a discovery of new quantum laws.
 
 ## Physics
 
+### Energy accounting and geometric coefficient, 15 October 2026
+
+The frequency-quench example now separates total mean work, measured relative
+to the initial energy, from excitation above the final ground state. Halving
+the frequency from 1 to 1/2 gives work -3/16 and excitation 1/16 in units
+with hbar = 1. The regular-tetrahedron volume is written explicitly as
+`l^3/(6 sqrt(2))`. Independent symbolic tests check both calculations.
+The other 144 topic treatments are preserved.
+
+The generic new-field builder now assigns carrier indicators from each
+source chunk rather than copying the corpus-average profile into every
+page. Adding an unrelated graph paper leaves a probability-diffusion
+page's carrier indicators unchanged. This fixes source attribution; it
+does not add a general textbook generator for other fields.
+
 ### Explanatory revision, 14 October 2026
 
 The opening now derives the measured two-spin polarization from its

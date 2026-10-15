@@ -1,6 +1,6 @@
 import json
 
-from scripts.build_morphwiki_field_from_pdfs import build_field_wiki
+from scripts.build_morphwiki_field_from_pdfs import build_field_wiki, render_mechanism_page
 
 
 def test_build_field_wiki_from_document_folder(tmp_path):
@@ -44,3 +44,33 @@ def test_build_field_wiki_from_document_folder(tmp_path):
     assert "## Mechanism View" in page
     assert "### P: protocol" in page
     assert "partial_t q" in page
+
+
+def test_carrier_indicators_are_local_to_the_source_passage(tmp_path):
+    papers = tmp_path / "papers"
+    papers.mkdir()
+    text = "A probability distribution obeys stochastic diffusion. partial_t p = D nabla^2 p"
+    (papers / "diffusion.txt").write_text(text, encoding="utf-8")
+
+    def build(destination):
+        build_field_wiki(pdf_dir=papers, field_id="local_evidence", label="Local evidence", description="Test",
+                         out_dir=destination, max_docs=10, max_chunks_per_doc=10, max_chars=1200,
+                         max_anchors=8, max_pages=8, extensions=(".txt",))
+        pages = json.loads((destination / "field_wiki.json").read_text())["pages"]
+        return next(page for page in pages if "txt:diffusion.txt" in page["sources"])
+
+    before = build(tmp_path / "before")
+    (papers / "network.txt").write_text(
+        "A graph network has nodes, edges and adjacency. A graph Laplacian acts on the network. y = L x",
+        encoding="utf-8")
+    after = build(tmp_path / "after")
+    assert before["substrates"] == after["substrates"]
+    assert after["substrate_evidence_scope"] == "source_chunk"
+    assert any(row["id"] == "probability_space" for row in after["substrates"])
+    assert all(row["id"] != "graph_topology" for row in after["substrates"])
+
+
+def test_legacy_record_without_local_scores_leaves_carrier_unresolved():
+    page, record = render_mechanism_page(record={"title": "Legacy source"}, field_label="Test")
+    assert record["substrates"] == [] and record["substrate_evidence_scope"] == "unresolved"
+    assert "no source-local carrier indicator" in page

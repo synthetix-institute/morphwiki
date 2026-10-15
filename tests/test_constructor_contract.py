@@ -165,7 +165,6 @@ def test_public_pdf_folder_page_uses_theoretical_physics_vocabulary():
             "variables": ["state_or_carrier: Hilbert space"],
         },
         field_label="Quantum theory",
-        active_substrates=[],
     )
 
     assert "### R: observable or prediction" in markdown
