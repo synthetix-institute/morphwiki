@@ -5939,6 +5939,9 @@ def render_book(root: Path, max_pages_per_branch: Optional[int] = None) -> str:
         r"\usepackage[most]{tcolorbox}",
         r"\usepackage{hyperref}",
         r"\hypersetup{colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black,citecolor=blue!55!black}",
+        r"\hypersetup{pdftitle={Quantum Theory As A Mechanism Tree},pdfauthor={Synthetix Institute}}",
+        # room for two-digit section numbers in the contents (10.10, 12.16)
+        r"\makeatletter\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.9em}}\makeatother",
         r"\pagestyle{plain}",
         r"\emergencystretch=3em",
         r"\definecolor{quantumgreen}{HTML}{3F6F5A}",

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "report_type": "quantum_book_content_preservation_audit",
-  "generated_at": "2026-10-15T07:24:17.316889+00:00",
+  "generated_at": "2026-10-16T19:55:42.026255+00:00",
   "readiness": "usable",
   "build_integrity": "pass",
   "readiness_scope": "Reproducible reference build, not scientific certification or discovery evidence.",
